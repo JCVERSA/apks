@@ -11,6 +11,7 @@ PATTERNS = {
     "official_signature_check": re.compile(r"Lo/xi7;->c\(Landroid/content/Context;Z\)Z"),
     "signature_helper_any": re.compile(r"Lo/xi7;->"),
     "official_warning_class": re.compile(r"Lcom/snaptube/premium/dialog/PiraticalApkWarningDialogFragment;"),
+    "extractor_piratical_classes": re.compile(r"Lcom/snaptube/extractor/pluginlib/piratical/"),
     "crack_exit_intent": re.compile(r"phoenix\.intent\.action\.EXIT_FOR_CRACK"),
     "crack_code_extra": re.compile(r"crack_code"),
     "official_warning_telemetry": re.compile(r"not_an_official_version_popup|is_not_an_official_version"),
@@ -20,7 +21,9 @@ PATTERNS = {
     "official_signature_literal": re.compile(r"be135353437d704f3a37e2b413d040a5ddff4f19"),
 }
 COPY_CLASSES = {
-    "o/xi7", "o/i80",
+    "o/xi7", "o/i80", "o/rf5", "o/xl", "o/et5",
+    "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog",
+    "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
     "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment",
     "com/snaptube/premium/dialog/UpgradeDialog",
     "com/snaptube/premium/selfupgrade/BaseUpgradeActivity",
