@@ -1,0 +1,79 @@
+name: APK static analysis
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: apk-static-analysis-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  inspect:
+    name: Inspect original APK without executing it
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      APK_PATH: google_drive/SnapTube.apk
+      EXPECTED_SHA256: 34a8689824044252135ebecdfa432f2c07dc1d95ec91623730c36fc72dc3aff3
+      WORK_ROOT: ${{ runner.temp }}/snaptube-analysis
+      TOOLS_ROOT: ${{ runner.temp }}/snaptube-tools
+      APKTOOL_VERSION: 3.0.3
+      APKTOOL_SHA256: dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423
+      JADX_VERSION: 1.5.6
+      JADX_SHA256: 545ea2be9c242511bc145755cf4bda2485ade42966e096f8b4d3da2a230e8974
+    steps:
+      - name: Check out analysis inputs
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Set up JDK on the GitHub runner only
+        uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00 # v4.7.1
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Verify input and run pinned static-analysis tools
+        shell: bash
+        run: bash scripts/analyze_apk.sh
+
+      - name: Build evidence inventory and candidate report
+        if: always()
+        shell: bash
+        run: |
+          python3 scripts/static_inventory.py "$WORK_ROOT" "$APK_PATH" "$EXPECTED_SHA256"
+
+      - name: Publish bounded job summary
+        if: always()
+        shell: bash
+        run: |
+          if [ -f "$WORK_ROOT/reports/analysis-summary.md" ]; then
+            head -c 900000 "$WORK_ROOT/reports/analysis-summary.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload reports, logs, and targeted evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: snaptube-static-report
+          path: |
+            ${{ runner.temp }}/snaptube-analysis/reports/
+            ${{ runner.temp }}/snaptube-analysis/logs/
+          if-no-files-found: warn
+          retention-days: 7
+          compression-level: 6
+
+      - name: Upload decoded and decompiled trees
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: snaptube-static-trees
+          path: |
+            ${{ runner.temp }}/snaptube-analysis/decoded/
+            ${{ runner.temp }}/snaptube-analysis/jadx/
+          if-no-files-found: warn
+          retention-days: 7
+          compression-level: 6

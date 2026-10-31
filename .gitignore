@@ -1,0 +1,14 @@
+# Local tools and generated analysis artifacts are not committed.
+/tools/
+/extracted/
+/decoded/
+/working/
+/builds/
+/signing/
+/logs/
+/outputs/
+/analysis/remote/
+/analysis/artifacts/
+__pycache__/
+*.pyc
+.venv/

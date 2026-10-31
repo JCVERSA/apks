@@ -1,0 +1,40 @@
+{
+  "source": {
+    "service": "Google Drive",
+    "file_id": "1VrzmP6TB0EkgJ9IHWpsiyCe2DsjEV1XV",
+    "name": "SnapTube.apk",
+    "web_view_link": "https://drive.google.com/file/d/1VrzmP6TB0EkgJ9IHWpsiyCe2DsjEV1XV/view?usp=drivesdk",
+    "modified_time": "2026-10-31T01:01:42.902Z",
+    "size_bytes": 51708137,
+    "md5": "4775129d7574cff2beef962b3bea2d0e"
+  },
+  "local_input": {
+    "path": "google_drive/SnapTube.apk",
+    "size_bytes": 51708137,
+    "sha256": "34a8689824044252135ebecdfa432f2c07dc1d95ec91623730c36fc72dc3aff3",
+    "drive_size_match": true,
+    "drive_md5_match": true,
+    "zip_integrity": "PASS",
+    "contains_AndroidManifest.xml": true,
+    "contains_classes.dex": true,
+    "zip_member_count": 3924
+  },
+  "scope": "Retrieval and input integrity checks only; no APK modification or execution.",
+  "apk_signature_verification": "NOT TESTED",
+  "device_testing": "NOT TESTED",
+  "initial_tool_audit": {
+    "host": "Linux x86_64",
+    "java": "not found on PATH",
+    "apktool": "not found on PATH",
+    "adb": "not found on PATH",
+    "apksigner": "not found on PATH",
+    "zipalign": "not found on PATH",
+    "aapt": "not found on PATH",
+    "aapt2": "not found on PATH",
+    "apkanalyzer": "not found on PATH",
+    "bundletool": "not found on PATH",
+    "jadx": "not found on PATH",
+    "python3": "/usr/bin/python3",
+    "curl": "/usr/bin/curl"
+  }
+}
