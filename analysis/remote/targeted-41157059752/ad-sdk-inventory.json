@@ -1,0 +1,81 @@
+{
+  "com/bytedance": {
+    "java_files": 1947,
+    "top_subpackages": [
+      "adsdk",
+      "sdk"
+    ]
+  },
+  "com/mbridge": {
+    "java_files": 1643,
+    "top_subpackages": [
+      "msdk"
+    ]
+  },
+  "com/vungle": {
+    "java_files": 380,
+    "top_subpackages": [
+      "ads"
+    ]
+  },
+  "net/pubnative": {
+    "java_files": 238,
+    "top_subpackages": [
+      "advertising_id_client",
+      "library",
+      "mediation",
+      "url_driller"
+    ]
+  },
+  "com/google/ads": {
+    "java_files": 965,
+    "top_subpackages": [
+      "interactivemedia"
+    ]
+  },
+  "com/snaptube/ads": {
+    "java_files": 216,
+    "top_subpackages": [
+      "activity",
+      "base",
+      "daemon",
+      "feedback",
+      "guardian",
+      "infomobi",
+      "keeper",
+      "log",
+      "mintegral",
+      "mintergral",
+      "mraid",
+      "nativead",
+      "old",
+      "pangle",
+      "selfbuild",
+      "utils",
+      "view"
+    ]
+  },
+  "com/snaptube/premium/ads": {
+    "java_files": 23,
+    "top_subpackages": [
+      "mraid",
+      "splash",
+      "utils"
+    ]
+  },
+  "com/snaptube/ad": {
+    "java_files": 167,
+    "top_subpackages": [
+      "frequency",
+      "guardian",
+      "mediation",
+      "preload",
+      "test",
+      "tracker"
+    ]
+  },
+  "com/snaptube/ads_log_v2": {
+    "java_files": 19,
+    "top_subpackages": []
+  }
+}

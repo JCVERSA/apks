@@ -1,0 +1,15 @@
+version: 3.0.3
+apkFileName: SnapTube.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 35
+versionInfo:
+  versionCode: 75250210
+  versionName: 7.52.0.75250210
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc

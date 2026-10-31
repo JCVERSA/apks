@@ -1,0 +1,14 @@
+file	line	method	text
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/BaseUpgradeActivity.smali	1254	.method public onCreate(Landroid/os/Bundle;)V	    invoke-static {p0, p1}, Lo/xi7;->c(Landroid/content/Context;Z)Z
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/BaseUpgradeActivity.smali	1300	.method public onCreate(Landroid/os/Bundle;)V	    invoke-static {v1, v2}, Lo/xi7;->c(Landroid/content/Context;Z)Z
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/BaseUpgradeActivity.smali	1304	.method public onCreate(Landroid/os/Bundle;)V	"    const-string v2, ""is_not_an_official_version"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/force/ForceUpdateActivity.smali	266	.method public final d2()V	    invoke-static {v1, v2}, Lo/xi7;->c(Landroid/content/Context;Z)Z
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/force/ForceUpdateActivity.smali	274	.method public final d2()V	"    const-string v2, ""is_not_an_official_version"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$f.smali	389	.method public run()V	    invoke-static {v1, v2}, Lo/xi7;->c(Landroid/content/Context;Z)Z
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$f.smali	397	.method public run()V	"    const-string v2, ""is_not_an_official_version"""
+decoded/smali_classes4/com/snaptube/premium/user/activity/MeAboutActivity.smali	827	.method public onCreate(Landroid/os/Bundle;)V	    invoke-static {p0, v0}, Lo/xi7;->c(Landroid/content/Context;Z)Z
+decoded/smali_classes4/com/wandoujia/base/R$string.smali	2592		.field public static final update_for_crack:I = 0x7f11072e
+decoded/smali_classes4/o/xi7.smali	37	.method static constructor <clinit>()V	    sput-object v0, Lo/xi7;->c:Ljava/lang/String;
+decoded/smali_classes4/o/xi7.smali	57	.method public static a(Landroid/content/Context;)Ljava/lang/String;	    sget-object v0, Lo/xi7;->c:Ljava/lang/String;
+decoded/smali_classes4/o/xi7.smali	69	.method public static a(Landroid/content/Context;)Ljava/lang/String;	    sput-object p0, Lo/xi7;->c:Ljava/lang/String;
+decoded/smali_classes4/o/xi7.smali	72	.method public static a(Landroid/content/Context;)Ljava/lang/String;	    sget-object p0, Lo/xi7;->c:Ljava/lang/String;

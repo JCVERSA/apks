@@ -1,0 +1,11 @@
+file	line	method	text
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	2762	.method public static P2()Z	"    const-string v1, ""key.enable_ad"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	3210	.method public static R6(Ljava/lang/String;)Z	"    const-string p0, ""key.guide_switch_new_install_enable"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	3215	.method public static R6(Ljava/lang/String;)Z	"    const-string p0, ""key.ad_switch_new_install_enable"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	6963	.method public static l2()J	"    const-string v1, ""key.vip_no_ad_success_time_millis"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	7131	.method public static m2()I	"    const-string v0, ""key.vip_switch_max_no_ad_buffer_seconds"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	8822	.method public static v4()Z	"    const-string v1, ""key.is_upgrade_enabled"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	8989	.method public static w3(Z)Z	"    const-string v1, ""key.is_hot_splash_ads_enabled"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	9557	.method public static z6(J)V	"    const-string v1, ""key.vip_no_ad_success_time_millis"""
+decoded/smali_classes4/o/y6.smali	55	.method public static a()Z	"    const-string v1, ""key.enable_ad_block"""
+decoded/smali_classes4/o/y6.smali	89	.method public static b()Z	"    const-string v1, ""key.enable_ad_block"""

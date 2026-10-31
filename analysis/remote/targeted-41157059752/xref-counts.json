@@ -1,0 +1,28 @@
+{
+  "scanned_smali_files": 43100,
+  "counts": {
+    "webview_ad_bridge": 563,
+    "ad_sdk_init": 1063,
+    "splash_ad_calls": 199,
+    "start_download_ad_calls": 21,
+    "ad_enable_keys": 10,
+    "piratical_warning_refs": 41,
+    "force_helper_calls": 53,
+    "upgrade_priority_calls": 13,
+    "official_signature_check": 13,
+    "force_activity_refs": 50
+  },
+  "stored": {
+    "force_helper_calls": 53,
+    "upgrade_priority_calls": 13,
+    "force_activity_refs": 50,
+    "piratical_warning_refs": 41,
+    "official_signature_check": 13,
+    "ad_enable_keys": 10,
+    "splash_ad_calls": 199,
+    "start_download_ad_calls": 21,
+    "ad_sdk_init": 1063,
+    "webview_ad_bridge": 563
+  },
+  "limit_per_pattern": 1500
+}

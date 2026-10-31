@@ -1,0 +1,11 @@
+.method public g(Lo/n9;)V
+    .locals 1
+
+    invoke-virtual {p0}, Lo/w25;->h()Lo/ne3;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lo/x93;->g(Lo/n9;)V
+
+    return-void
+.end method

@@ -1,0 +1,130 @@
+kind	name	exported	enabled	permission	process	authorities	intent_filter_actions
+activity	com.snaptube.premium.activity.SimpleInterstitialAdActivity						
+activity	com.snaptube.premium.activity.ExploreActivity	true					android.intent.action.MAIN|phoenix.intent.action.EXPLORE_NAVIGATE|phoenix.intent.action.ACTION_SELF_UPDATE_AVAILABLE|phoenix.intent.action.MY_THINGS_NAVIGATE|phoenix.intent.action.VAULT_SHORT_CUT|phoenix.intent.action.MY_THINGS_NAVIGATE
+activity	com.snaptube.premium.activity.ThemeChangeActivity						
+activity	com.snaptube.premium.sites.SpeedDialActivity	true					android.intent.action.VIEW
+activity	com.snaptube.premium.sites.BookmarkActivity						
+activity	com.snaptube.premium.search.MixedSearchActivity	false					android.intent.action.SEARCH
+activity	com.snaptube.premium.activity.VideoWebViewActivity						
+activity	com.snaptube.premium.hybrid.HybridWebViewActivity						
+activity	com.snaptube.premium.activity.YoutubeVideoWebViewActivity						
+activity	com.snaptube.premium.activity.LandingActivity	true					
+activity	com.snaptube.premium.activity.ZendeskPushActivity	false					
+activity	com.snaptube.premium.activity.CleanSettingActivity						
+activity	com.snaptube.premium.activity.CreditsActivity	true					android.intent.action.VIEW
+activity	com.snaptube.premium.activity.DragonActivity	false					
+activity	com.snaptube.premium.activity.ChooseDownloadPathActivity						
+activity	com.snaptube.premium.activity.MultiSelectActivity	false					
+activity	com.snaptube.premium.activity.CommonMultiTabActivity	false					
+activity	com.snaptube.premium.activity.CommonMixedListActivity	false					
+activity	com.snaptube.premium.activity.VideoPlaybackActivity						
+activity	com.snaptube.premium.activity.VideoPlaybackActivityTransTheme						
+activity	com.snaptube.premium.preview.audio.LocalMediaPreviewActivity	true					android.intent.action.VIEW
+activity	com.snaptube.premium.activity.PlayerGuideActivity						
+activity	com.snaptube.premium.activity.InstallGuideOverlayActivity						
+activity	com.snaptube.premium.activity.GPInstallTipActivity						
+activity	com.snaptube.premium.activity.YouTubeLoginActivity						
+activity	com.snaptube.premium.activity.ChooseFormatActivity						
+activity	com.snaptube.premium.ClipMonitor.ClipMonitorDownloadActivity						
+activity	com.snaptube.premium.ads.splash.RewardSplashAdActivity	false					
+activity	com.snaptube.premium.activity.ActionSendDispatchActivity	true					android.intent.action.SEND
+activity	com.snaptube.premium.webview.tab.WebTabsActivity						
+activity	com.snaptube.premium.webview.HistoryActivity						
+activity	com.snaptube.premium.whatsapp.WhatsAppStatusActivity						
+activity	com.snaptube.premium.whatsapp.gallery.GalleryActivity						
+activity	com.snaptube.premium.activity.DeepLinkActivity						
+activity	com.snaptube.premium.dialog.WindowPermissionActivity						
+activity	com.snaptube.premium.activity.CleanActivity	false					phoenix.intent.action.CLEAN
+activity	com.snaptube.premium.activity.VaultActivity						
+activity	com.dayuwuxian.clean.ui.base.CleanBaseActivity						
+activity	com.snaptube.premium.activity.PhoneBoostActivity	false					android.intent.action.MAIN
+activity	com.snaptube.premium.activity.PhoneBoostInsideActivity	false					android.intent.action.MAIN
+activity	com.snaptube.premium.activity.PhoneBoostJumpActivity	true					android.intent.action.MAIN
+activity	com.snaptube.premium.activity.OuterScanActivity	true					android.intent.action.MAIN|phoenix.intent.action.OUTER_CLEAN
+activity	com.snaptube.premium.activity.InsideScanActivity						
+activity	com.snaptube.premium.activity.BatteryCleanActivity	true					android.intent.action.MAIN
+activity	com.snaptube.premium.activity.ScanAppJunkFinishActivity						
+activity	com.snaptube.premium.activity.CleanAdRedirectActivity						
+activity	com.snaptube.premium.activity.CleanSplashAdActivity						
+activity	com.dayuwuxian.clean.ui.permission.GuidePermissionActivity						
+activity	com.snaptube.premium.webview.common.CommonWebActivity						
+activity	com.dayuwuxian.clean.ui.base.AppUninstallPopupActivity						
+activity	com.snaptube.premium.activity.LockFromSendActivity	true					android.intent.action.SEND|android.intent.action.SEND_MULTIPLE
+activity	com.snaptube.premium.activity.LockFromInsideActivity						
+activity	com.snaptube.premium.activity.SingleVaultActivity	true					android.intent.action.MAIN
+activity	com.snaptube.premium.log.report.LogReportActivity	false					phoenix.intent.action.LOG_REPORT
+activity	com.snaptube.premium.search.local.LocalSearchActivity						
+activity	com.snaptube.premium.search.local.VaultLocalSearchActivity						
+activity	com.snaptube.premium.user.activity.MeAboutActivity						
+activity	com.snaptube.premium.user.activity.MePoliciesActivity						
+activity	com.snaptube.premium.vault.ui.ImagePreviewActivity	true					snaptube.intent.action.VIEW_IMAGE|android.intent.action.VIEW
+activity	com.snaptube.premium.vault.ui.ImageChooseActivity						
+activity	com.snaptube.premium.vault.ui.ImageChooseLandingActivity						
+activity	com.snaptube.premium.activity.SwitchStorageActivity						
+activity	com.snaptube.premium.activity.DownloadDialogWrapperActivity						
+activity	com.snaptube.premium.activity.ExternalDownloadDialogWrapperActivity						
+activity	com.snaptube.premium.activity.ForegroundAppActivity						
+activity	com.snaptube.plugin.extension.chooseformat.SingleAllFormatActivity						
+activity	com.snaptube.plugin.extension.chooseformat.subtitles.SubtitleChoiceActivity						
+activity	com.snaptube.plugin.extension.chooseformat.ExternalYoutubeAllFormatActivity						
+activity	com.snaptube.premium.activity.BroadcastDeliverActivity						
+activity	com.snaptube.premium.activity.ServiceDeliverActivity						
+activity	com.snaptube.premium.home.social.SocialGuideAdActivity						
+activity	com.snaptube.premium.guide.launch.LaunchGuideActivity	false					
+activity	com.dayuwuxian.clean.ui.SettingsGuideActivity						
+activity	com.dayuwuxian.clean.base.CleanDetailActivity	true					
+activity	com.dayuwuxian.clean.base.PhotoCleanDetailActivity	true					
+activity	com.snaptube.ads.activity.SplashAdActivity	false					
+activity	com.dayuwuxian.safebox.ui.base.BaseSafeBoxActivity						
+activity	com.zhihu.matisse.ui.MatisseActivity						
+activity	com.zhihu.matisse.ui.MatisseActionActivity						
+activity	com.zhihu.matisse.internal.ui.AlbumPreviewActivity						
+activity	com.zhihu.matisse.internal.ui.SelectedPreviewActivity						
+activity	com.google.android.gms.auth.api.signin.internal.SignInHubActivity	false					
+activity	com.google.android.gms.common.api.GoogleApiActivity	false					
+activity	com.sensorsdata.analytics.android.sdk.dialog.SchemeActivity	true					android.intent.action.VIEW
+activity-alias	com.snaptube.linkhook.LinkHandleActivity	true					android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.media.action.MEDIA_PLAY_FROM_SEARCH|android.nfc.action.NDEF_DISCOVERED|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|android.intent.action.VIEW|snaptube.intent.action.OPEN_WEBVIEW|android.intent.action.WEB_SEARCH
+service	com.snaptube.premium.playback.window.WindowPlaybackService						
+service	com.snaptube.premium.alarm.AlarmService						
+service	com.snaptube.premium.push.parser.PushEntityParseService						
+service	com.snaptube.premium.ClipMonitor.ClipMonitorService						
+service	com.snaptube.premium.notification.ToolbarService						
+service	com.snaptube.premium.service.PlayerService	false					
+service	com.phoenix.download.DownloadService		true				
+service	com.snaptube.premium.localplay.download.BackgroundDownloadService	false					com.google.android.exoplayer.downloadService.action.RESTART
+service	com.google.android.exoplayer2.scheduler.PlatformScheduler$PlatformSchedulerService	true		android.permission.BIND_JOB_SERVICE			
+service	com.google.firebase.components.ComponentDiscoveryService	false					
+service	com.google.android.gms.auth.api.signin.RevocationBoundService	true		com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION			
+service	com.google.firebase.sessions.SessionLifecycleService	false	true				
+service	androidx.work.impl.background.systemalarm.SystemAlarmService	false	@bool/enable_system_alarm_service_default				
+service	androidx.work.impl.background.systemjob.SystemJobService	true	@bool/enable_system_job_service_default	android.permission.BIND_JOB_SERVICE			
+service	androidx.work.impl.foreground.SystemForegroundService	false	@bool/enable_system_foreground_service_default				
+service	androidx.room.MultiInstanceInvalidationService	false					
+receiver	com.snaptube.taskManager.notification.TaskReceiver	false					phoenix.intent.action.DOWNLOAD_OPEN|phoenix.intent.action.DOWNLOAD_LIST|phoenix.intent.action.DOWNLOAD_HIDE|phoenix.intent.action.DOWNLOAD_LIST_HIDE|phoenix.intent.action.DOWNLOAD_OPEN_SELF_UPGRADE_APK
+receiver	com.snaptube.premium.receiver.MediaMountReceiver	true					android.intent.action.MEDIA_MOUNTED|android.intent.action.MEDIA_UNMOUNTED
+receiver	com.snaptube.premium.onlineconfig.SnapTubeOnlineConfigScheduleReceiver	false					phoenix.intent.action.CHECK_ONLINE_CONFIG
+receiver	com.snaptube.premium.receiver.MediaScannerReceiver	true	true				android.intent.action.MEDIA_SCANNER_STARTED|android.intent.action.MEDIA_SCANNER_FINISHED|android.intent.action.MEDIA_SCANNER_SCAN_FILE
+receiver	com.snaptube.premium.receiver.AppFirstStartReceiver	true					com.snaptube.premium.APP_FIRST_START|com.dywx.growth.APP_FIRST_START
+receiver	com.snaptube.premium.notification.NotificationTimeoutReceiver	true					com.snaptube.premium.NOTIFICATION_TIMEOUT
+receiver	com.snaptube.premium.notification.NotificationToolBarReceiver	false					phoenix.intent.action.CLOSE_TOOLBAR
+receiver	com.stumbler.stander.config.StanderReceiver						
+receiver	com.snaptube.ads.infomobi.receiver.ReceiverDelegate	true					android.intent.action.PACKAGE_ADDED|android.intent.action.PACKAGE_REMOVED|android.intent.action.USER_PRESENT|android.intent.action.DOWNLOAD_COMPLETE|android.intent.action.ACTION_POWER_CONNECTED|android.intent.action.ACTION_POWER_DISCONNECTED
+receiver	com.snaptube.ads.infomobi.receiver.InitReceiver	false					com.snaptube.ads.infomobi.TRY_INIT
+receiver	androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver	false	true				
+receiver	androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy	false	false				android.intent.action.ACTION_POWER_CONNECTED|android.intent.action.ACTION_POWER_DISCONNECTED
+receiver	androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy	false	false				android.intent.action.BATTERY_OKAY|android.intent.action.BATTERY_LOW
+receiver	androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy	false	false				android.intent.action.DEVICE_STORAGE_LOW|android.intent.action.DEVICE_STORAGE_OK
+receiver	androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy	false	false				android.net.conn.CONNECTIVITY_CHANGE
+receiver	androidx.work.impl.background.systemalarm.RescheduleReceiver	false	false				android.intent.action.BOOT_COMPLETED|android.intent.action.TIME_SET|android.intent.action.TIMEZONE_CHANGED
+receiver	androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver	false	@bool/enable_system_alarm_service_default				androidx.work.impl.background.systemalarm.UpdateProxies
+receiver	androidx.work.impl.diagnostics.DiagnosticsReceiver	true	true	android.permission.DUMP			androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+receiver	androidx.profileinstaller.ProfileInstallReceiver	true	true	android.permission.DUMP			androidx.profileinstaller.action.INSTALL_PROFILE|androidx.profileinstaller.action.SKIP_FILE|androidx.profileinstaller.action.SAVE_PROFILE|androidx.profileinstaller.action.BENCHMARK_OPERATION
+receiver	com.snaptube.titan.carrier.CarrierReceiver	true					android.intent.action.PACKAGE_ADDED|android.intent.action.PACKAGE_REPLACED|android.intent.action.PACKAGE_REMOVED|android.intent.action.PACKAGE_CHANGED
+provider	com.snaptube.taskManager.provider.SnaptubeContentProvider	false	true			com.snaptube.premium.provider.SnaptubeContentProvider	
+provider	com.snaptube.premium.provider.SnaptubeExportedProvider	true	true			com.snaptube.premium.provider.SnaptubeExportedProvider;com.dywx.growth.provider.GuideExportedProvider	
+provider	com.phoenix.launch.FirebasePerfProvider	false				com.snaptube.premium.firebaseinitprovider	
+provider	androidx.startup.InitializationProvider	false				com.snaptube.premium.androidx-startup	
+provider	com.snaptube.premium.share.GenericFileProvider	false				com.snaptube.premium.fileprovider	
+provider	com.dywx.premium.core.udid.impl.UDIDProvider	true	true			com.snaptube.premium.provider.UDIDProvider;com.dywx.growth.provider.UDIDProvider	
+provider	com.dywx.hybrid.InitProvider	false				com.snaptube.premium.hybrid.initprovider	
+provider	com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider	false	true			com.snaptube.premium.SensorsDataContentProvider	

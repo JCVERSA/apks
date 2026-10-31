@@ -1,0 +1,13 @@
+.method public final l(Landroid/content/SharedPreferences;)I
+    .locals 2
+
+    sget-object v0, Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;->f:Ljava/lang/String;
+
+    const/4 v1, -0x1
+
+    invoke-interface {p1, v0, v1}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result p1
+
+    return p1
+.end method

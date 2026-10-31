@@ -1,0 +1,1448 @@
+{
+  "summary": {
+    "package": "com.snaptube.premium",
+    "application": {
+      "name": "com.snaptube.premium.app.PhoenixApplication",
+      "label": "@string/app_name",
+      "debuggable": null,
+      "allowBackup": "false",
+      "usesCleartextTraffic": "true",
+      "networkSecurityConfig": "@xml/network_security_config",
+      "extractNativeLibs": null,
+      "requestLegacyExternalStorage": "true",
+      "preserveLegacyExternalStorage": "true"
+    }
+  },
+  "components": [
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.SimpleInterstitialAdActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ExploreActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.MAIN",
+        "phoenix.intent.action.EXPLORE_NAVIGATE",
+        "phoenix.intent.action.ACTION_SELF_UPDATE_AVAILABLE",
+        "phoenix.intent.action.MY_THINGS_NAVIGATE",
+        "phoenix.intent.action.VAULT_SHORT_CUT",
+        "phoenix.intent.action.MY_THINGS_NAVIGATE"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ThemeChangeActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.sites.SpeedDialActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.VIEW"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.sites.BookmarkActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.search.MixedSearchActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.SEARCH"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.VideoWebViewActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.hybrid.HybridWebViewActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.YoutubeVideoWebViewActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.LandingActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ZendeskPushActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CleanSettingActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CreditsActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.VIEW"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.DragonActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ChooseDownloadPathActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.MultiSelectActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CommonMultiTabActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CommonMixedListActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.VideoPlaybackActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.VideoPlaybackActivityTransTheme",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.preview.audio.LocalMediaPreviewActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.VIEW"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.PlayerGuideActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.InstallGuideOverlayActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.GPInstallTipActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.YouTubeLoginActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ChooseFormatActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.ClipMonitor.ClipMonitorDownloadActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.ads.splash.RewardSplashAdActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ActionSendDispatchActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.SEND"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.webview.tab.WebTabsActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.webview.HistoryActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.whatsapp.WhatsAppStatusActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.whatsapp.gallery.GalleryActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.DeepLinkActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.dialog.WindowPermissionActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CleanActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "phoenix.intent.action.CLEAN"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.VaultActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.ui.base.CleanBaseActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.PhoneBoostActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.MAIN"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.PhoneBoostInsideActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.MAIN"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.PhoneBoostJumpActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.MAIN"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.OuterScanActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.MAIN",
+        "phoenix.intent.action.OUTER_CLEAN"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.InsideScanActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.BatteryCleanActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.MAIN"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ScanAppJunkFinishActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CleanAdRedirectActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CleanSplashAdActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.ui.permission.GuidePermissionActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.webview.common.CommonWebActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.ui.base.AppUninstallPopupActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.LockFromSendActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.SEND",
+        "android.intent.action.SEND_MULTIPLE"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.LockFromInsideActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.SingleVaultActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.MAIN"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.log.report.LogReportActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "phoenix.intent.action.LOG_REPORT"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.search.local.LocalSearchActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.search.local.VaultLocalSearchActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.user.activity.MeAboutActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.user.activity.MePoliciesActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.vault.ui.ImagePreviewActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "snaptube.intent.action.VIEW_IMAGE",
+        "android.intent.action.VIEW"
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.vault.ui.ImageChooseActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.vault.ui.ImageChooseLandingActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.SwitchStorageActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.DownloadDialogWrapperActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ExternalDownloadDialogWrapperActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ForegroundAppActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.plugin.extension.chooseformat.SingleAllFormatActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.plugin.extension.chooseformat.subtitles.SubtitleChoiceActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.plugin.extension.chooseformat.ExternalYoutubeAllFormatActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.BroadcastDeliverActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ServiceDeliverActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.home.social.SocialGuideAdActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.guide.launch.LaunchGuideActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.ui.SettingsGuideActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.base.CleanDetailActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.base.PhotoCleanDetailActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.ads.activity.SplashAdActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.safebox.ui.base.BaseSafeBoxActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.zhihu.matisse.ui.MatisseActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.zhihu.matisse.ui.MatisseActionActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.zhihu.matisse.internal.ui.AlbumPreviewActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.zhihu.matisse.internal.ui.SelectedPreviewActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.google.android.gms.common.api.GoogleApiActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.sensorsdata.analytics.android.sdk.dialog.SchemeActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.VIEW"
+      ]
+    },
+    {
+      "kind": "activity-alias",
+      "name": "com.snaptube.linkhook.LinkHandleActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.media.action.MEDIA_PLAY_FROM_SEARCH",
+        "android.nfc.action.NDEF_DISCOVERED",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "android.intent.action.VIEW",
+        "snaptube.intent.action.OPEN_WEBVIEW",
+        "android.intent.action.WEB_SEARCH"
+      ]
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.playback.window.WindowPlaybackService",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.alarm.AlarmService",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.push.parser.PushEntityParseService",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.ClipMonitor.ClipMonitorService",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.notification.ToolbarService",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.service.PlayerService",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "com.phoenix.download.DownloadService",
+      "exported": null,
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.localplay.download.BackgroundDownloadService",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "com.google.android.exoplayer.downloadService.action.RESTART"
+      ]
+    },
+    {
+      "kind": "service",
+      "name": "com.google.android.exoplayer2.scheduler.PlatformScheduler$PlatformSchedulerService",
+      "exported": "true",
+      "enabled": null,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "com.google.firebase.components.ComponentDiscoveryService",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+      "exported": "true",
+      "enabled": null,
+      "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "com.google.firebase.sessions.SessionLifecycleService",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+      "exported": "false",
+      "enabled": "@bool/enable_system_alarm_service_default",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.background.systemjob.SystemJobService",
+      "exported": "true",
+      "enabled": "@bool/enable_system_job_service_default",
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.foreground.SystemForegroundService",
+      "exported": "false",
+      "enabled": "@bool/enable_system_foreground_service_default",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "service",
+      "name": "androidx.room.MultiInstanceInvalidationService",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.taskManager.notification.TaskReceiver",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "phoenix.intent.action.DOWNLOAD_OPEN",
+        "phoenix.intent.action.DOWNLOAD_LIST",
+        "phoenix.intent.action.DOWNLOAD_HIDE",
+        "phoenix.intent.action.DOWNLOAD_LIST_HIDE",
+        "phoenix.intent.action.DOWNLOAD_OPEN_SELF_UPGRADE_APK"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.receiver.MediaMountReceiver",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.MEDIA_MOUNTED",
+        "android.intent.action.MEDIA_UNMOUNTED"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.onlineconfig.SnapTubeOnlineConfigScheduleReceiver",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "phoenix.intent.action.CHECK_ONLINE_CONFIG"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.receiver.MediaScannerReceiver",
+      "exported": "true",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.MEDIA_SCANNER_STARTED",
+        "android.intent.action.MEDIA_SCANNER_FINISHED",
+        "android.intent.action.MEDIA_SCANNER_SCAN_FILE"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.receiver.AppFirstStartReceiver",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "com.snaptube.premium.APP_FIRST_START",
+        "com.dywx.growth.APP_FIRST_START"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.notification.NotificationTimeoutReceiver",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "com.snaptube.premium.NOTIFICATION_TIMEOUT"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.notification.NotificationToolBarReceiver",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "phoenix.intent.action.CLOSE_TOOLBAR"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.stumbler.stander.config.StanderReceiver",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.ads.infomobi.receiver.ReceiverDelegate",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.PACKAGE_ADDED",
+        "android.intent.action.PACKAGE_REMOVED",
+        "android.intent.action.USER_PRESENT",
+        "android.intent.action.DOWNLOAD_COMPLETE",
+        "android.intent.action.ACTION_POWER_CONNECTED",
+        "android.intent.action.ACTION_POWER_DISCONNECTED"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.ads.infomobi.receiver.InitReceiver",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "com.snaptube.ads.infomobi.TRY_INIT"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.ACTION_POWER_CONNECTED",
+        "android.intent.action.ACTION_POWER_DISCONNECTED"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.BATTERY_OKAY",
+        "android.intent.action.BATTERY_LOW"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.DEVICE_STORAGE_LOW",
+        "android.intent.action.DEVICE_STORAGE_OK"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.net.conn.CONNECTIVITY_CHANGE"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.BOOT_COMPLETED",
+        "android.intent.action.TIME_SET",
+        "android.intent.action.TIMEZONE_CHANGED"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+      "exported": "false",
+      "enabled": "@bool/enable_system_alarm_service_default",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "androidx.work.impl.background.systemalarm.UpdateProxies"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+      "exported": "true",
+      "enabled": "true",
+      "permission": "android.permission.DUMP",
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.profileinstaller.ProfileInstallReceiver",
+      "exported": "true",
+      "enabled": "true",
+      "permission": "android.permission.DUMP",
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "androidx.profileinstaller.action.INSTALL_PROFILE",
+        "androidx.profileinstaller.action.SKIP_FILE",
+        "androidx.profileinstaller.action.SAVE_PROFILE",
+        "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.titan.carrier.CarrierReceiver",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "intent_filter_actions": [
+        "android.intent.action.PACKAGE_ADDED",
+        "android.intent.action.PACKAGE_REPLACED",
+        "android.intent.action.PACKAGE_REMOVED",
+        "android.intent.action.PACKAGE_CHANGED"
+      ]
+    },
+    {
+      "kind": "provider",
+      "name": "com.snaptube.taskManager.provider.SnaptubeContentProvider",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.provider.SnaptubeContentProvider",
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.snaptube.premium.provider.SnaptubeExportedProvider",
+      "exported": "true",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.provider.SnaptubeExportedProvider;com.dywx.growth.provider.GuideExportedProvider",
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.phoenix.launch.FirebasePerfProvider",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.firebaseinitprovider",
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "provider",
+      "name": "androidx.startup.InitializationProvider",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.androidx-startup",
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.snaptube.premium.share.GenericFileProvider",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.fileprovider",
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.dywx.premium.core.udid.impl.UDIDProvider",
+      "exported": "true",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.provider.UDIDProvider;com.dywx.growth.provider.UDIDProvider",
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.dywx.hybrid.InitProvider",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.hybrid.initprovider",
+      "intent_filter_actions": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.SensorsDataContentProvider",
+      "intent_filter_actions": []
+    }
+  ]
+}

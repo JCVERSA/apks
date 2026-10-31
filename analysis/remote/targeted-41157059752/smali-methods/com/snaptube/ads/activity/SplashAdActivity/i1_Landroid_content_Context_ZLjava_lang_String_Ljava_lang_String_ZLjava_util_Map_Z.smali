@@ -1,0 +1,31 @@
+.method public static i1(Landroid/content/Context;ZLjava/lang/String;Ljava/lang/String;ZLjava/util/Map;)Z
+    .locals 8
+
+    const-string v0, "ISplashAdsManager"
+
+    invoke-static {v0}, Lo/zh4;->b(Ljava/lang/String;)Lo/vd3;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    check-cast v1, Lo/vh3;
+
+    move-object v2, p0
+
+    move v3, p1
+
+    move-object v4, p2
+
+    move-object v5, p3
+
+    move v6, p4
+
+    move-object v7, p5
+
+    invoke-interface/range {v1 .. v7}, Lo/vh3;->d(Landroid/content/Context;ZLjava/lang/String;Ljava/lang/String;ZLjava/util/Map;)Z
+
+    move-result p0
+
+    return p0
+.end method

@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:installLocation="auto" package="com.snaptube.premium" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <queries>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.zhiliaoapp.musically"/>
+        <package android:name="com.ss.android.ugc.trill"/>
+        <package android:name="com.google.android.youtube"/>
+        <package android:name="org.telegram.messenger"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="android.speech.RecognitionService"/>
+        </intent>
+        <intent>
+            <action android:name="android.accounts.AccountAuthenticator"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="com.android.contacts" android:mimeType="vnd.android.cursor.item/*" android:scheme="content"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+    </queries>
+    <permission android:name="com.snaptube.premium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.snaptube.premium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.snaptube.premium.app.PhoenixApplication" android:networkSecurityConfig="@xml/network_security_config" android:persistent="true" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:testOnly="false" android:theme="@style/P4.Theme.CustomActionBar" android:usesCleartextTraffic="true" security="activity">
+        <meta-data android:name="is_shorts_supported" android:value="@bool/base_true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="is_ins_multi_format_support" android:value="true"/>
+        <meta-data android:name="is_hls_query_bug_fixed" android:value="true"/>
+        <meta-data android:name="is_ytb_post_support" android:value="true"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:launchMode="singleTask" android:name="com.snaptube.premium.activity.SimpleInterstitialAdActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Transparent"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:exported="true" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.ExploreActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Splash.Explore.SplashScreen" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="phoenix.intent.action.EXPLORE_NAVIGATE"/>
+                <data android:scheme="navigation"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="phoenix.intent.action.ACTION_SELF_UPDATE_AVAILABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="phoenix.intent.action.MY_THINGS_NAVIGATE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="phoenix.intent.action.VAULT_SHORT_CUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="phoenix.intent.action.MY_THINGS_NAVIGATE"/>
+                <data android:host="mything" android:scheme="navigation"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.ThemeChangeActivity" android:theme="@style/P4.Theme.ChooseFormat"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:exported="true" android:label="@string/title_speeddial" android:name="com.snaptube.premium.sites.SpeedDialActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="app" android:pathPrefix="/speeddial" android:scheme="app"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:label="@string/title_bookmark" android:name="com.snaptube.premium.sites.BookmarkActivity" android:theme="@style/Theme.NoActionBar.WithActionMode" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTop" android:name="com.snaptube.premium.search.MixedSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:launchMode="singleTask" android:name="com.snaptube.premium.activity.VideoWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:launchMode="standard" android:name="com.snaptube.premium.hybrid.HybridWebViewActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.NoActionBar"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:launchMode="singleTask" android:name="com.snaptube.premium.activity.YoutubeVideoWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:exported="true" android:launchMode="singleTask" android:name="com.snaptube.premium.activity.LandingActivity" android:theme="@style/P4.Theme.NoActionBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTask" android:name="com.snaptube.premium.activity.ZendeskPushActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Zendesk" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:name="com.snaptube.premium.activity.CleanSettingActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.CustomActionBar"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:exported="true" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.CreditsActivity" android:theme="@style/Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="app" android:pathPrefix="/credits" android:scheme="app"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.DragonActivity" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.ChooseDownloadPathActivity" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:exported="false" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.MultiSelectActivity" android:screenOrientation="portrait" android:theme="@style/MultiSelectPageTheme"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:exported="false" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.CommonMultiTabActivity" android:theme="@style/Theme.CommonMultiTabActivity"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.CommonMixedListActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.CommonMixedList"/>
+        <activity android:autoRemoveFromRecents="true" android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.VideoPlaybackActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:taskAffinity="com.snaptube.player" android:theme="@style/P4.Theme.DetailNoTranslucent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.VideoPlaybackActivityTransTheme" android:screenOrientation="user" android:theme="@style/P4.Theme.Detail" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:exported="true" android:launchMode="singleTask" android:name="com.snaptube.premium.preview.audio.LocalMediaPreviewActivity" android:screenOrientation="portrait" android:theme="@style/LocalPreviewPageTheme">
+            <intent-filter android:label="@string/play_with_snaptube">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:name="com.snaptube.premium.activity.PlayerGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:launchMode="singleInstance" android:name="com.snaptube.premium.activity.InstallGuideOverlayActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.NoTitleDialog"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.snaptube.premium.activity.GPInstallTipActivity" android:screenOrientation="unspecified" android:theme="@style/TransparentActivity"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:label="@string/activity_empty_title" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.YouTubeLoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:alwaysRetainTaskState="false" android:configChanges="locale|uiMode|layoutDirection" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.snaptube.premium.activity.ChooseFormatActivity" android:screenOrientation="portrait" android:taskAffinity=".ChooseFormat" android:theme="@style/P4.Theme.ChooseFormat" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:alwaysRetainTaskState="false" android:configChanges="locale|uiMode|layoutDirection" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.snaptube.premium.ClipMonitor.ClipMonitorDownloadActivity" android:screenOrientation="portrait" android:taskAffinity=".ChooseFormat" android:theme="@style/ST.Dialog.NoTitle.NoFrame" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:alwaysRetainTaskState="false" android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize|layoutDirection" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.snaptube.premium.ads.splash.RewardSplashAdActivity" android:screenOrientation="portrait" android:taskAffinity=".ChooseFormatReward" android:theme="@style/Theme.Ad.NoAnimation"/>
+        <activity android:alwaysRetainTaskState="false" android:configChanges="locale|uiMode|layoutDirection" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.snaptube.premium.activity.ActionSendDispatchActivity" android:screenOrientation="portrait" android:taskAffinity=".ChooseFormat" android:theme="@style/P4.Theme.ChooseFormat">
+            <intent-filter android:label="@string/snaptube">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.webview.tab.WebTabsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar.WithActionMode"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.webview.HistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:launchMode="singleTask" android:name="com.snaptube.premium.whatsapp.WhatsAppStatusActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Clean"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:launchMode="singleTask" android:name="com.snaptube.premium.whatsapp.gallery.GalleryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.DeepLinkActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitleDialog"/>
+        <activity-alias android:exported="true" android:name="com.snaptube.linkhook.LinkHandleActivity" android:targetActivity="com.snaptube.premium.activity.DeepLinkActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.thedylink.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="deeplink" android:scheme="snaptube"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.fbwat.ch" android:pathPattern="/.*" android:scheme="http"/>
+                <data android:host="m.fbwat.ch" android:pathPattern="/.*" android:scheme="https"/>
+                <data android:host="www.fbwat.ch" android:pathPattern="/.*" android:scheme="http"/>
+                <data android:host="www.fbwat.ch" android:pathPattern="/.*" android:scheme="https"/>
+                <data android:host="fb.watch" android:pathPattern="/.*" android:scheme="http"/>
+                <data android:host="fb.watch" android:pathPattern="/.*" android:scheme="https"/>
+                <data android:host="m.fb.watch" android:pathPattern="/.*" android:scheme="http"/>
+                <data android:host="m.fb.watch" android:pathPattern="/.*" android:scheme="https"/>
+                <data android:host="www.fb.watch" android:pathPattern="/.*" android:scheme="http"/>
+                <data android:host="www.fb.watch" android:pathPattern="/.*" android:scheme="https"/>
+                <data android:host="fb.watch" android:pathPattern="/.*" android:scheme="http"/>
+                <data android:host="fb.watch" android:pathPattern="/.*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/stories/collab" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/stories/collab" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/stories/collab" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/stories/collab" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/mobile-redirect/login" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/mobile-redirect/login" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/mobile-redirect/login" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/mobile-redirect/login" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/donate" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/donate" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/events" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/events" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/fundraisers" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/fundraisers" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/hashtag/..*" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/hashtag/..*" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/groups" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/groups" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/group_subfeed/.*" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/group_subfeed/.*" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/recommendations" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/recommendations" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/messenger_kids/redirect/invite" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/messenger_kids/redirect/invite" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/messenger_kids" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/messenger_kids" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/privacy/checkup" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/privacy/checkup" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/videos/.*" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/videos/.*" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/reel/.*" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/reel/.*" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/live" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/live" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/live" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/live" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/live" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/live" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/live/.*" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/live/.*" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/live" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/live" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/live/.*" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/live/.*" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/live_videos" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/live_videos" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/live_videos/.*" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/live_videos/.*" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/live_videos" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/live_videos" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/live_videos/.*" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/live_videos/.*" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/watch/music" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/music" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/watch/music" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/music" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/mediaplaylist" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/mediaplaylist" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/mediaplaylist" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/mediaplaylist" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/watchparty" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/watchparty" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/ads/experience/confirmation" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/ads/experience/confirmation" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/live/" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/live/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/stories/" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/stories/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/offers/" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/offers/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/groups/" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/groups/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/groups" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/groups" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/fanning_send_page_invite" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/fanning_send_page_invite" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/marketing_dl_facebook/recommendations_hub" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/marketing_dl_facebook/recommendations_hub" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/marketing_dl_facebook/mp_seller_listings" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/marketing_dl_facebook/mp_seller_listings" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/marketing_dl_facebook/page_surface" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/marketing_dl_facebook/page_surface" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/marketing_dl_facebook/poe_create" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/marketing_dl_facebook/poe_create" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/marketing_dl_facebook/live_shopping" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/marketing_dl_facebook/live_shopping" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/inbox/" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/inbox/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/choose_cta/" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/choose_cta/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/create_post/get_messages" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/free_suite_ads/create_post/get_messages" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/loyalty_otp/magic_link" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/loyalty_otp/magic_link" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/videos/.*" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/videos/.*" android:scheme="https"/>
+                <data android:host="www.alpha.facebook.com" android:pathPattern="/.*/videos/.*" android:scheme="http"/>
+                <data android:host="www.alpha.facebook.com" android:pathPattern="/.*/videos/.*" android:scheme="https"/>
+                <data android:host="www.beta.facebook.com" android:pathPattern="/.*/videos/.*" android:scheme="http"/>
+                <data android:host="www.beta.facebook.com" android:pathPattern="/.*/videos/.*" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/reel/.*" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/reel/.*" android:scheme="https"/>
+                <data android:host="www.alpha.facebook.com" android:pathPattern="/reel/.*" android:scheme="http"/>
+                <data android:host="www.alpha.facebook.com" android:pathPattern="/reel/.*" android:scheme="https"/>
+                <data android:host="www.beta.facebook.com" android:pathPattern="/reel/.*" android:scheme="http"/>
+                <data android:host="www.beta.facebook.com" android:pathPattern="/reel/.*" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/watchparty/.*" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/watchparty/.*" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/watch" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/watch" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/storiescomposerforadscampaign" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/storiescomposerforadscampaign" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/storiescomposerforadscampaign" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/storiescomposerforadscampaign" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/watch" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/watch" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/watch/.*" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/watch/.*" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/watch/.*" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/watch/.*" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/watch/subscription/.*" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/watch/subscription/.*" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/watch/subscription/.*" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/watch/subscription/.*" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/watch/channel" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/watch/channel" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/watch/channel" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/watch/channel" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/donate" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/donate" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/events" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/events" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/events/creation" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/events/creation" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/movies" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/movies" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/fundraisers" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/fundraisers" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/hashtag/..*" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/hashtag/..*" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/ads/experience/confirmation" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/ads/experience/confirmation" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/inbox/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/inbox/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/choose_cta/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/choose_cta/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/create_post/get_messages" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/create_post/get_messages" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/stories/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/stories/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/live/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/live/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/offers/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/offers/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/groups/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/free_suite_ads/groups/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/loyalty_otp/magic_link/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/loyalty_otp/magic_link/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/pages/create/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/pages/create/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/pages/creation/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/pages/creation/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/pages/place_claim/redirect_email_invite" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/pages/place_claim/redirect_email_invite" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/privacy/checkup" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/privacy/checkup" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/recommendations" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/recommendations" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/messenger_kids/redirect/invite" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/messenger_kids/redirect/invite" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/messenger_kids" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/messenger_kids" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/safetycheck" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/safetycheck" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/safetycheck" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/safetycheck" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/fanning_send_page_invite" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/fanning_send_page_invite" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/marketing_dl_facebook/recommendations_hub" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/marketing_dl_facebook/recommendations_hub" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/marketing_dl_facebook/mp_seller_listings" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/marketing_dl_facebook/mp_seller_listings" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/marketing_dl_facebook/poe_create" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/marketing_dl_facebook/poe_create" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/marketing_dl_facebook/live_shopping" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/marketing_dl_facebook/live_shopping" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/crisisresponse" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/crisisresponse" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/crisisresponse" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/crisisresponse" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:path="/device" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:path="/devices" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:path="/device/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:path="/devices/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/xdl/approve" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/private_sharing/home_view" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/private_sharing/home_view" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/private_sharing/home_view" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/private_sharing/home_view" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/location_history" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/location_history" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/location_history" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/location_history" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/place_curation" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/place_curation" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/dating" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/dating" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/dating" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/dating" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/local_business_discovery" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/local_business_discovery" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/local_business_discovery" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/local_business_discovery" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/business_nearby" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/business_nearby" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/business_nearby" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/business_nearby" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/supportsmallbusinessONP/groups" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/supportsmallbusinessONP/groups" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/supportsmallbusinessONP/groups" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/supportsmallbusinessONP/groups" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/gameshow_invite" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/gameshow_invite" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/gameshow_invite" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/gameshow_invite" android:scheme="http"/>
+                <data android:host="facebook.com" android:pathPrefix="/.*/subscribe" android:scheme="http"/>
+                <data android:host="facebook.com" android:pathPrefix="/.*/subscribe" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/.*/subscribe" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/.*/subscribe" android:scheme="https"/>
+                <data android:host="fb.com" android:pathPrefix="/book/" android:scheme="https"/>
+                <data android:host="fb.com" android:pathPrefix="/book/" android:scheme="http"/>
+                <data android:host="fb.com" android:pathPrefix="/covidsupport" android:scheme="https"/>
+                <data android:host="fb.com" android:pathPrefix="/covidsupport" android:scheme="http"/>
+                <data android:host="fb.com" android:pathPrefix="/coronavirus_info/request_offer_help" android:scheme="https"/>
+                <data android:host="fb.com" android:pathPrefix="/coronavirus_info/request_offer_help" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/saved/list" android:scheme="https"/>
+                <data android:host="facebook.com" android:pathPrefix="/topic/request/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/playlist/.*/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/playlist/.*/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/playlist/.*/" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/playlist/.*/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/carrier_wifi/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/avatars_create" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/avatars_create" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/local/communities" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/local/communities" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/neighborhoods" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/neighborhoods" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/menu" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/menu" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/menu" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/menu" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/menu/.*" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/.*/menu/.*" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/menu/.*" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/.*/menu/.*" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPattern="/rewards/program/.*" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPattern="/rewards/program/.*" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPattern="/rewards/program/.*" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPattern="/rewards/program/.*" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/wifi_profile/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/pages/whatsapp/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/pages/whatsapp/" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/pages/whatsapp/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/pages/whatsapp/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/page/whatsapp/verification/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/page/whatsapp/verification/" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/page/whatsapp/verification/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/page/whatsapp/verification/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/page/whatsapp/linking/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/page/whatsapp/linking/" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/page/whatsapp/linking/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/page/whatsapp/linking/" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:path="/payments/offsite_button_login" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:path="/payments/offsite_button_login" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/page_admin_completion_meter" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/page_admin_completion_meter" android:scheme="http"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/page_admin_completion_meter" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/page_admin_completion_meter" android:scheme="http"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/transfer_your_information/redirect/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/transfer_your_information/redirect/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/tyi/mobile/redirect/" android:scheme="https"/>
+                <data android:host="m.facebook.com" android:pathPrefix="/tyi/mobile/redirect/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.fb.me" android:pathPattern="/mp/..*" android:scheme="http"/>
+                <data android:host="www.fb.me" android:pathPattern="/mp/..*" android:scheme="https"/>
+                <data android:host="fb.me" android:pathPattern="/mp/..*" android:scheme="http"/>
+                <data android:host="fb.me" android:pathPattern="/mp/..*" android:scheme="https"/>
+                <data android:host="www.fb.me" android:pathPattern="/e/..*" android:scheme="http"/>
+                <data android:host="www.fb.me" android:pathPattern="/e/..*" android:scheme="https"/>
+                <data android:host="fb.me" android:pathPattern="/e/..*" android:scheme="http"/>
+                <data android:host="fb.me" android:pathPattern="/e/..*" android:scheme="https"/>
+                <data android:host="www.fb.me" android:pathPattern="/g/..*" android:scheme="http"/>
+                <data android:host="www.fb.me" android:pathPattern="/g/..*" android:scheme="https"/>
+                <data android:host="fb.me" android:pathPattern="/g/..*" android:scheme="http"/>
+                <data android:host="fb.me" android:pathPattern="/g/..*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.fb.audio" android:pathPattern="/live/..*" android:scheme="https"/>
+                <data android:host="www.fb.audio" android:pathPattern="/live/..*" android:scheme="http"/>
+                <data android:host="fb.audio" android:pathPattern="/live/..*" android:scheme="https"/>
+                <data android:host="fb.audio" android:pathPattern="/live/..*" android:scheme="http"/>
+                <data android:host="www.fb.audio" android:pathPattern="/soundbites/..*" android:scheme="https"/>
+                <data android:host="www.fb.audio" android:pathPattern="/soundbites/..*" android:scheme="http"/>
+                <data android:host="fb.audio" android:pathPattern="/soundbites/..*" android:scheme="https"/>
+                <data android:host="fb.audio" android:pathPattern="/soundbites/..*" android:scheme="http"/>
+                <data android.host="fb.audio" android.scheme="http" android:pathPattern="/podcasts/..*"/>
+                <data android:host="www.fb.audio" android:pathPattern="/podcasts/..*" android:scheme="http"/>
+                <data android:host="fb.audio" android:pathPattern="/podcasts/..*" android:scheme="https"/>
+                <data android:host="www.fb.audio" android:pathPattern="/podcasts/..*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="wallets.facebook.com"/>
+                <data android:host="www.wallets.facebook.com"/>
+                <data android:host="m.wallets.facebook.com"/>
+                <data android:host="wallets.fb.com"/>
+                <data android:host="www.wallets.fb.com"/>
+                <data android:host="m.wallets.fb.com"/>
+                <data android:pathPattern="/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android.host="m.me" android.scheme="http" android:pathPattern="/cm/..*"/>
+                <data android:host="www.m.me" android:pathPattern="/cm/..*" android:scheme="http"/>
+                <data android:host="m.me" android:pathPattern="/cm/..*" android:scheme="https"/>
+                <data android:host="www.m.me" android:pathPattern="/cm/..*" android:scheme="https"/>
+                <data android.host="m.me" android.scheme="http" android:pathPattern="/ch/..*"/>
+                <data android:host="www.m.me" android:pathPattern="/ch/..*" android:scheme="http"/>
+                <data android:host="m.me" android:pathPattern="/ch/..*" android:scheme="https"/>
+                <data android:host="www.m.me" android:pathPattern="/ch/..*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/gaming/" android:scheme="https"/>
+                <data android:host="www.facebook.com" android:pathPrefix="/gaming/" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="www.facebook.com"/>
+                <data android:host="m.facebook.com"/>
+                <data android:host="facebook.com"/>
+                <data android:pathPrefix="/order_food"/>
+                <data android:pathPrefix="/orderfood"/>
+                <data android:pathPrefix="/page_select_cta/"/>
+                <data android:pathPrefix="/page_config_cta/"/>
+                <data android:pathPrefix="/custom_cta/mobile_admin/destination_types/"/>
+                <data android:pathPrefix="/qr"/>
+                <data android:pathPrefix="/coronavirus_info"/>
+                <data android:pathPrefix="/emotional_health"/>
+                <data android:pathPrefix="/biz_info_center"/>
+                <data android:pathPrefix="/business_resources"/>
+                <data android:pathPrefix="/coronavirus_business_info"/>
+                <data android:pathPrefix="/covidsupport"/>
+                <data android:pathPrefix="/deserve_to_be_found"/>
+                <data android:pathPrefix="/discovery/hub/.*"/>
+                <data android:pathPrefix="/votinginformationcenter"/>
+                <data android:pathPrefix="/votinginfocenter"/>
+                <data android:pathPrefix="/voyager"/>
+                <data android:pathPrefix="/business_economic_relief"/>
+                <data android:pathPrefix="/facebook_pay"/>
+                <data android:pathPrefix="/accountquality"/>
+                <data android:pathPrefix="/ar/commerce/try"/>
+                <data android:pathPrefix="/mobile_center"/>
+                <data android:pathPrefix="/premium_content"/>
+                <data android:pathPrefix="/communityexplore/.*"/>
+                <data android:pathPrefix="/SoutenonsLesBonnesIdees"/>
+                <data android:pathPrefix="/VerdientGefundenZuWerden"/>
+                <data android:pathPrefix="/fb_shop_referral"/>
+                <data android:pathPrefix="/fb_shop_leave_review"/>
+                <data android:pathPrefix="/fantasy_games"/>
+                <data android:pathPrefix="/hub_order_details"/>
+                <data android:pathPrefix="/orders_hub"/>
+                <data android:pathPrefix="/app_direct_install/"/>
+                <data android:pathPrefix="/childhood_vaccines"/>
+                <data android:pathPrefix="/fb_mini_apps"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="www.facebook.com"/>
+                <data android:host="m.facebook.com"/>
+                <data android:pathPrefix="/iw/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="www.facebook.com"/>
+                <data android:pathPrefix="/fx_cal/fb"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="www.facebook.com"/>
+                <data android:pathPrefix="/inter_app/redirect"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="www.facebook.com"/>
+                <data android:pathPrefix="/acredirect"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="instagram.com"/>
+                <data android:host="www.instagram.com"/>
+                <data android:host="applink.instagram.com"/>
+                <data android:host="familycenter.instagram.com"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="call.instagram.com"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="ig.me"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="app-va.tiktokv.com"/>
+                <data android:pathPattern="/"/>
+                <data android:pathPrefix="/redirect"/>
+                <data android:pathPrefix="/v/"/>
+                <data android:pathPrefix="/V/"/>
+                <data android:pathPrefix="/live/"/>
+                <data android:pathPrefix="/h5/share/usr/"/>
+                <data android:pathPrefix="/h5/share/tag/"/>
+                <data android:pathPrefix="/h5/share/music/"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="m.tiktok.com"/>
+                <data android:host="t.tiktok.com"/>
+                <data android:pathPattern="/"/>
+                <data android:pathPrefix="/redirect"/>
+                <data android:pathPrefix="/v/"/>
+                <data android:pathPrefix="/V/"/>
+                <data android:pathPrefix="/live/"/>
+                <data android:pathPrefix="/h5/share/usr/"/>
+                <data android:pathPrefix="/h5/share/tag/"/>
+                <data android:pathPrefix="/h5/share/music/"/>
+                <data android:pathPrefix="/H5/share/"/>
+                <data android:pathPrefix="/i18n/share/music/"/>
+                <data android:pathPrefix="/i18n/share/video/"/>
+                <data android:pathPrefix="/i18n/share/challenge/"/>
+                <data android:pathPrefix="/i18n/share/user/"/>
+                <data android:pathPrefix="/share/stickers/detail/"/>
+                <data android:pathPrefix="/share/live/"/>
+                <data android:pathPrefix="/share/game/"/>
+                <data android:pathPrefix="/playlist-music/"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="www.tiktok.com"/>
+                <data android:host="us.tiktok.com"/>
+                <data android:host="www.tiktok.in"/>
+                <data android:pathPattern="/"/>
+                <data android:pathPattern="/@.*"/>
+                <data android:pathPattern="/share/@.*"/>
+                <data android:pathPrefix="/redirect"/>
+                <data android:pathPrefix="/tag/"/>
+                <data android:pathPrefix="/music/"/>
+                <data android:pathPrefix="/playlist-music/"/>
+                <data android:pathPrefix="/sticker/"/>
+                <data android:pathPrefix="/v/"/>
+                <data android:pathPrefix="/V/"/>
+                <data android:pathPrefix="/share/live/"/>
+                <data android:pathPrefix="/share/stickers/detail/"/>
+                <data android:pathPrefix="/share/game/"/>
+                <data android:pathPrefix="/share/tag/"/>
+                <data android:pathPrefix="/share/music/"/>
+                <data android:pathPrefix="/share/sticker/"/>
+                <data android:pathPrefix="/share/video/"/>
+                <data android:pathPrefix="/share/user/"/>
+                <data android:pathPrefix="/share/challenge/"/>
+                <data android:pathPrefix="/h5/share/usr/"/>
+                <data android:pathPrefix="/h5/share/tag/"/>
+                <data android:pathPrefix="/h5/share/music/"/>
+                <data android:pathPrefix="/H5/share/"/>
+                <data android:pathPrefix="/i18n/share/music/"/>
+                <data android:pathPrefix="/i18n/share/video/"/>
+                <data android:pathPrefix="/i18n/share/challenge/"/>
+                <data android:pathPrefix="/i18n/share/user/"/>
+                <data android:pathPrefix="/messages/"/>
+                <data android:pathPrefix="/t/"/>
+                <data android:pathPrefix="/search/campaign/"/>
+                <data android:pathPrefix="/question/"/>
+                <data android:pathPrefix="/discover/"/>
+                <data android:pathPrefix="/revenue/subscription/invitation"/>
+                <data android:pathPrefix="/ug/ads/landing/"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="vm.tiktok.com"/>
+                <data android:host="vt.tiktok.com"/>
+                <data android:pathPattern="/.*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="link.e.tiktok.com"/>
+                <data android:pathPrefix="/uni/"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="oec-api.tiktokv.com"/>
+                <data android:pathPattern="/view/product/.*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH"/>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="youtube.com"/>
+                <data android:host="www.youtube.com"/>
+                <data android:host="m.youtube.com"/>
+                <data android:host="youtu.be"/>
+                <data android:pathPattern=".*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="share.getsnap.link" android:pathPrefix="/video" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="share.getsnap.link" android:pathPrefix="/campaigns" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="share.getsnap.link" android:pathPrefix="/video" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="share.getsnap.link" android:pathPrefix="/campaigns" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="getsnap.link" android:scheme="http"/>
+                <data android:host="getsnap.link" android:scheme="https"/>
+                <data android:host="getsnap.link" android:scheme="snap"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.snaptubeapp.com" android:scheme="http"/>
+                <data android:host="www.snaptubeapp.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="snaptube.intent.action.OPEN_WEBVIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <receiver android:exported="false" android:name="com.snaptube.taskManager.notification.TaskReceiver">
+            <intent-filter>
+                <action android:name="phoenix.intent.action.DOWNLOAD_OPEN"/>
+                <action android:name="phoenix.intent.action.DOWNLOAD_LIST"/>
+                <action android:name="phoenix.intent.action.DOWNLOAD_HIDE"/>
+                <action android:name="phoenix.intent.action.DOWNLOAD_LIST_HIDE"/>
+                <action android:name="phoenix.intent.action.DOWNLOAD_OPEN_SELF_UPGRADE_APK"/>
+                <data android:host="com.snaptube.premium.provider.SnaptubeContentProvider" android:scheme="content"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.snaptube.premium.receiver.MediaMountReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.snaptube.premium.onlineconfig.SnapTubeOnlineConfigScheduleReceiver">
+            <intent-filter>
+                <action android:name="phoenix.intent.action.CHECK_ONLINE_CONFIG"/>
+            </intent-filter>
+        </receiver>
+        <service android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize|layoutDirection" android:foregroundServiceType="mediaPlayback" android:name="com.snaptube.premium.playback.window.WindowPlaybackService"/>
+        <service android:foregroundServiceType="specialUse" android:name="com.snaptube.premium.alarm.AlarmService"/>
+        <service android:foregroundServiceType="specialUse" android:name="com.snaptube.premium.push.parser.PushEntityParseService"/>
+        <service android:foregroundServiceType="specialUse" android:name="com.snaptube.premium.ClipMonitor.ClipMonitorService"/>
+        <service android:foregroundServiceType="specialUse" android:name="com.snaptube.premium.notification.ToolbarService"/>
+        <provider android:authorities="com.snaptube.premium.provider.SnaptubeContentProvider" android:enabled="true" android:exported="false" android:name="com.snaptube.taskManager.provider.SnaptubeContentProvider"/>
+        <provider android:authorities="com.snaptube.premium.provider.SnaptubeExportedProvider;com.dywx.growth.provider.GuideExportedProvider" android:enabled="true" android:exported="true" android:name="com.snaptube.premium.provider.SnaptubeExportedProvider"/>
+        <provider android:authorities="com.snaptube.premium.firebaseinitprovider" android:exported="false" android:initOrder="101" android:name="com.phoenix.launch.FirebasePerfProvider"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.VTrack" android:value="false"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.AutoTrack" android:value="true"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.snaptube.premium.service.PlayerService"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.snaptube.premium.receiver.MediaScannerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:launchMode="singleTask" android:name="com.snaptube.premium.dialog.WindowPermissionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar.WindowPermissionDialog"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:name="com.snaptube.premium.activity.CleanActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Clean">
+            <intent-filter>
+                <action android:name="phoenix.intent.action.CLEAN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:name="com.snaptube.premium.activity.VaultActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Vault"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:launchMode="singleTop" android:name="com.dayuwuxian.clean.ui.base.CleanBaseActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Clean"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleInstance" android:name="com.snaptube.premium.activity.PhoneBoostActivity" android:screenOrientation="portrait" android:taskAffinity=".OuterScan" android:theme="@style/P4.Theme.Clean.Boost">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleInstance" android:name="com.snaptube.premium.activity.PhoneBoostInsideActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Clean.Boost">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:exported="true" android:launchMode="singleInstance" android:name="com.snaptube.premium.activity.PhoneBoostJumpActivity" android:screenOrientation="portrait" android:taskAffinity=".OuterScan" android:theme="@style/P4.Theme.Clean.ToolsNotification">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:exported="true" android:launchMode="singleInstance" android:name="com.snaptube.premium.activity.OuterScanActivity" android:screenOrientation="portrait" android:taskAffinity=".OuterScan" android:theme="@style/P4.Theme.Clean.ToolsNotification">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="phoenix.intent.action.OUTER_CLEAN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.InsideScanActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Clean.Boost"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:exported="true" android:launchMode="singleInstance" android:name="com.snaptube.premium.activity.BatteryCleanActivity" android:screenOrientation="portrait" android:taskAffinity=".OuterScan" android:theme="@style/P4.Theme.Clean.ToolsNotification">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.snaptube.premium.activity.ScanAppJunkFinishActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Clean.Boost"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:excludeFromRecents="true" android:name="com.snaptube.premium.activity.CleanAdRedirectActivity" android:screenOrientation="portrait" android:taskAffinity=".OuterScan" android:theme="@style/P4.Theme.AdSplashTransparent"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:excludeFromRecents="true" android:name="com.snaptube.premium.activity.CleanSplashAdActivity" android:screenOrientation="portrait" android:taskAffinity=".OuterScan" android:theme="@style/P4.Theme.AdSplashTransparent"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:name="com.dayuwuxian.clean.ui.permission.GuidePermissionActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Clean.Boost"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:label="" android:launchMode="singleTask" android:name="com.snaptube.premium.webview.common.CommonWebActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.HomeIndicatorActionBar"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.dayuwuxian.clean.ui.base.AppUninstallPopupActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.NoTitleDialog"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:excludeFromRecents="true" android:exported="true" android:icon="@drawable/ic_lock_in_vault" android:launchMode="singleInstance" android:name="com.snaptube.premium.activity.LockFromSendActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.NoTitleDialog.NoFloating">
+            <intent-filter android:label="@string/lock_into_vault">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter android:label="@string/lock_into_vault">
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:icon="@drawable/ic_lock_in_vault" android:name="com.snaptube.premium.activity.LockFromInsideActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.NoTitleDialog.NoFloating"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:exported="true" android:name="com.snaptube.premium.activity.SingleVaultActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Clean.Boost">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.snaptube.premium.log.report.LogReportActivity" android:taskAffinity=".LogReport">
+            <intent-filter>
+                <action android:name="phoenix.intent.action.LOG_REPORT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.search.local.LocalSearchActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.search.local.VaultLocalSearchActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:name="com.snaptube.premium.user.activity.MeAboutActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:name="com.snaptube.premium.user.activity.MePoliciesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:exported="true" android:name="com.snaptube.premium.vault.ui.ImagePreviewActivity" android:screenOrientation="portrait" android:theme="@style/DayNight.NoActionBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="snaptube.intent.action.VIEW_IMAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter android:label="@string/view_with_snaptube">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:name="com.snaptube.premium.vault.ui.ImageChooseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.snaptube.premium.vault.ui.ImageChooseLandingActivity" android:theme="@style/Theme.Fullscreen.Transparent"/>
+        <service android:enabled="true" android:foregroundServiceType="specialUse" android:name="com.phoenix.download.DownloadService"/>
+        <provider android:authorities="com.snaptube.premium.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:authorities="com.snaptube.premium.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.snaptube.premium.share.GenericFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/fileprovider_paths"/>
+        </provider>
+        <meta-data android:name="android.max_aspect" android:value="2.4"/>
+        <receiver android:exported="true" android:name="com.snaptube.premium.receiver.AppFirstStartReceiver">
+            <intent-filter>
+                <action android:name="com.snaptube.premium.APP_FIRST_START"/>
+                <action android:name="com.dywx.growth.APP_FIRST_START"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.snaptube.premium.notification.NotificationTimeoutReceiver">
+            <intent-filter>
+                <action android:name="com.snaptube.premium.NOTIFICATION_TIMEOUT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.snaptube.premium.notification.NotificationToolBarReceiver">
+            <intent-filter>
+                <action android:name="phoenix.intent.action.CLOSE_TOOLBAR"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.SwitchStorageActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.ChooseFormat"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.activity.DownloadDialogWrapperActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.ChooseFormat"/>
+        <activity android:alwaysRetainTaskState="false" android:configChanges="locale|uiMode|layoutDirection" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.snaptube.premium.activity.ExternalDownloadDialogWrapperActivity" android:screenOrientation="portrait" android:taskAffinity=".ExternalDownloadDialog" android:theme="@style/P4.Theme.ChooseFormat"/>
+        <activity android:name="com.snaptube.premium.activity.ForegroundAppActivity"/>
+        <meta-data android:name="minFrameworkVersion" android:value="4"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:name="com.snaptube.plugin.extension.chooseformat.SingleAllFormatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:name="com.snaptube.plugin.extension.chooseformat.subtitles.SubtitleChoiceActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.SubtitlesChoice"/>
+        <activity android:alwaysRetainTaskState="false" android:configChanges="locale|keyboard|orientation|uiMode|screenSize|layoutDirection" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.snaptube.plugin.extension.chooseformat.ExternalYoutubeAllFormatActivity" android:screenOrientation="portrait" android:taskAffinity=".ChooseFormat" android:theme="@style/P4.Theme.ChooseFormat"/>
+        <activity android:name="com.snaptube.premium.activity.BroadcastDeliverActivity" android:theme="@style/TransparentNoAnimActivity"/>
+        <activity android:name="com.snaptube.premium.activity.ServiceDeliverActivity" android:theme="@style/TransparentNoAnimActivity"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:launchMode="singleTop" android:name="com.snaptube.premium.home.social.SocialGuideAdActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTop" android:name="com.snaptube.premium.guide.launch.LaunchGuideActivity" android:screenOrientation="portrait" android:theme="@style/P4.Theme.Splash.LaunchGuide"/>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.snaptube.premium.localplay.download.BackgroundDownloadService">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:foregroundServiceType="specialUse" android:name="com.google.android.exoplayer2.scheduler.PlatformScheduler$PlatformSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.snaptube.premium.provider.UDIDProvider;com.dywx.growth.provider.UDIDProvider" android:enabled="true" android:exported="true" android:name="com.dywx.premium.core.udid.impl.UDIDProvider"/>
+        <meta-data android:name="is_tiktok_url_spacial_char_fixed" android:value="true"/>
+        <meta-data android:name="is_photo_music_support" android:value="true"/>
+        <meta-data android:name="is_photo_video_support" android:value="true"/>
+        <meta-data android:name="is_ytb_sabr_support" android:value="true"/>
+        <meta-data android:name="is_fb_more_format_support" android:value="true"/>
+        <meta-data android:name="is_ins_mock_mp3_support" android:value="true"/>
+        <meta-data android:name="is_tt_mock_mp3_support" android:value="true"/>
+        <meta-data android:name="is_ytb_live_support" android:value="true"/>
+        <meta-data android:name="is_ytb_living_support" android:value="true"/>
+        <meta-data android:name="is_youtube_js_inject_fix_csp" android:value="true"/>
+        <meta-data android:name="is_tt_photo_alias_remove_index" android:value="true"/>
+        <activity android:name="com.dayuwuxian.clean.ui.SettingsGuideActivity" android:theme="@style/Theme.AppCompat.Dialog.NoTitle"/>
+        <activity android:configChanges="keyboard|orientation|screenSize" android:exported="true" android:name="com.dayuwuxian.clean.base.CleanDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenSize" android:exported="true" android:name="com.dayuwuxian.clean.base.PhotoCleanDetailActivity" android:screenOrientation="portrait" android:theme="@style/DayNight.NoActionBar"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTop" android:name="com.snaptube.ads.activity.SplashAdActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Ad.NoAnimation"/>
+        <activity android:name="com.dayuwuxian.safebox.ui.base.BaseSafeBoxActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <meta-data android:name="is_cronet_support" android:value="true"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+        <receiver android:name="com.stumbler.stander.config.StanderReceiver"/>
+        <receiver android:exported="true" android:name="com.snaptube.ads.infomobi.receiver.ReceiverDelegate">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.snaptube.ads.infomobi.receiver.InitReceiver">
+            <intent-filter>
+                <action android:name="com.snaptube.ads.infomobi.TRY_INIT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.zhihu.matisse.ui.MatisseActivity"/>
+        <activity android:name="com.zhihu.matisse.ui.MatisseActionActivity"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.snaptube.premium.hybrid.initprovider" android:exported="false" android:initOrder="89" android:name="com.dywx.hybrid.InitProvider"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <meta-data android:name="is_meta_search_support" android:value="true"/>
+        <meta-data android:name="youtube_content_type_version" android:value="0"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.sensorsdata.analytics.android.sdk.dialog.SchemeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sa1840ddbb"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.snaptube.premium.SensorsDataContentProvider" android:enabled="true" android:exported="false" android:name="com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.MainProcessName" android:value="com.snaptube.premium"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.version" android:value="unspecified"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.snaptube.titan.carrier.CarrierReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,75 @@
+.method public final o(Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;Ljava/lang/String;)Z
+    .locals 3
+
+    invoke-static {p1}, Lo/rh8;->b(Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;)Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_4
+
+    invoke-static {}, Lo/sq5;->c()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    invoke-virtual {p1}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->isStrongUpdate()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->isStrictForceUpdate()Z
+
+    move-result v0
+
+    const/4 v2, 0x1
+
+    if-eqz v0, :cond_1
+
+    return v2
+
+    :cond_1
+    invoke-virtual {p1}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->isApkExist()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    sget-boolean v0, Lcom/snaptube/premium/selfupgrade/force/AppForceUpdateHelper;->d:Z
+
+    if-nez v0, :cond_3
+
+    invoke-virtual {p1}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->isApkMd5Correct()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    invoke-virtual {p1}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->deleteApk()Z
+
+    const/4 p1, 0x0
+
+    invoke-static {p1, p2}, Lcom/snaptube/premium/selfupgrade/CheckSelfUpgradeManager;->r(Landroid/app/Activity;Ljava/lang/String;)V
+
+    return v1
+
+    :cond_2
+    return v2
+
+    :cond_3
+    invoke-virtual {p0, p1}, Lcom/snaptube/premium/selfupgrade/force/AppForceUpdateHelper;->f(Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_4
+    :goto_0
+    return v1
+.end method
