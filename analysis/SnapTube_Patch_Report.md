@@ -1,92 +1,94 @@
-# SnapTube patch report — ad-free / no forced update
+# SnapTube patched APK — revision 2
 
-Status: **BUILD + STATIC VERIFICATION PASS** · Runtime/device behavior: **UNVERIFIED** (no install or device testing was performed).
+**Status: build and static verification PASS. Device/runtime behavior remains unverified.**
 
-## Deliverable
+Revision 2 keeps the ad and forced-update changes from revision 1 and adds explicit suppression of the built-in **“Please Install the Official Snaptube” / “Update to official version”** warning paths that can interrupt video downloading.
 
-- **Patched APK (GitHub release asset):**  
-  https://github.com/JCVERSA/apks/releases/download/snaptube-patched-41160993577/SnapTube-7.52.0.75250210-adfree-noforce.apk
-- **Release page:** https://github.com/JCVERSA/apks/releases/tag/snaptube-patched-41160993577
-- **Filename:** `SnapTube-7.52.0.75250210-adfree-noforce.apk`
+## Current download
+
+- **APK:** https://github.com/JCVERSA/apks/releases/download/snaptube-patched-41163398772/SnapTube-7.52.0.75250210-adfree-noforce-no-official-popup.apk
+- **Release:** https://github.com/JCVERSA/apks/releases/tag/snaptube-patched-41163398772
+- **Filename:** `SnapTube-7.52.0.75250210-adfree-noforce-no-official-popup.apk`
 - **Size:** 51,708,139 bytes
-- **SHA-256:** `ccf575e5526b2b3035de26021a62e5d1e7598510a0a4716f972be201d8eb11b3`
-- GitHub’s release-asset digest matches the build report SHA-256 exactly.
+- **SHA-256:** `009a66c5631d6899c1286353eef9015f53edf3ae2717c89f86d4bae356da7014`
+- **Successful GitHub Actions run:** `41163398772`
 
-The original input was preserved unchanged:
+GitHub's release-asset SHA-256 digest matches the build report. This release supersedes revision 1 (`snaptube-patched-41160993577`).
 
-- `google_drive/SnapTube.apk`
+## What changed for the official-app screen
+
+### 1. Video-extraction boundary
+
+`ExtractorWrapper.extract(...)` calls `OfficialWarningDialog.h(Context)`. A true result sends execution to `buildForbiddenResult(...)` instead of the normal site extractor.
+
+Revision 2 makes `OfficialWarningDialog.h(Context)` return false. The normal `findSite(...)` / `extract(...)` path remains unchanged; `ExtractorWrapper.smali` itself was not modified.
+
+The known helper that constructs and calls `show()` on the “Please Install the Official Snaptube” dialog was also made a no-op.
+
+### 2. Upgrade-screen warning branch
+
+`BaseUpgradeActivity.onCreate(...)` previously conditionally constructed `PiraticalApkWarningDialogFragment`, which displays “Update to official version” and instructions to download/uninstall/reinstall.
+
+Revision 2 changes only that conditional branch to skip the warning and continue to the existing `K1()` call. The rest of the method is preserved. The separate About-screen warning was not changed.
+
+### Important diagnostic limitation
+
+The input APK already contained an early false return in a nested extractor-warning helper. Therefore, static analysis alone cannot prove that this built-in helper was the exact screen seen at runtime. Revision 2 explicitly guards both the extractor boundary and the known display path, plus the upgrade-screen warning branch. A screenshot or device test would be needed to confirm a remaining screen supplied by a website or dynamically loaded extractor plugin.
+
+The app's `xi7` certificate detection/reporting was **not** globally disabled or spoofed.
+
+## Retained revision 1 changes
+
+| Area | Targets | Effect |
+|---|---|---|
+| Forced update | `AppForceUpdateHelper.r(...)`, `o(...)` | Return false; block the forced-update launch/activity-finishing path. |
+| Splash ads | `SplashAdActivity.i1(...)`, `l1(...)`, `m1(...)` | Return false for normal, cached, and clean-screen splash paths. |
+| Hot splash | `HotSplashAdManager.e()`, `g()` | Disable the gate and make the trigger a no-op. |
+| Download ads | `StartDownloadAdViewModel.z(...)`, `w(...)` | Stop post-download ad preload/show eligibility. |
+| Placement switches | `od.v(...)`, `od.c(...)` | Disable per-placement enable/preload gates. |
+| Native ad engine | `w25.h()` | Return the existing no-op dummy engine. |
+| Global ad gate | `Config.P2()` | Return false at the global enable-ad gate. |
+
+Total: **16 patched methods across 10 Smali class files**. No VIP/payment/license state was forged, no SDK classes were deleted, and no package identity, permissions, or native libraries were changed.
+
+## Verification
+
+All tooling ran on GitHub Actions; no APK tools were installed in the local workspace.
+
+- Original APK hash verified before and after: **PASS**
+- Fresh Apktool 3.0.3 decode and rebuild: **PASS**
+- Only the 10 intended Smali class files changed: **PASS**
+- Patched APK ZIP integrity: **PASS**
+- 4-byte ZIP alignment: **PASS**
+- 16 KB page alignment: **PASS**
+- APK signatures v1, v2, v3: **PASS**
+- Package, versionCode, versionName, minSdk, targetSdk, permissions, ABIs unchanged: **PASS**
+- Re-decoded patched APK: **16/16 patch checks PASS**
+- Upgrade-warning check verified actual control flow after Smali label renumbering, not just text replacement.
+- No device install, uninstall, or runtime test was performed.
+
+Package remains `com.snaptube.premium`, version `7.52.0.75250210` / code `75250210`, minSdk 21, targetSdk 35, ABIs `arm64-v8a` and `armeabi-v7a`.
+
+## Original preserved
+
+- Path: `google_drive/SnapTube.apk`
 - Size: 51,708,137 bytes
 - SHA-256: `34a8689824044252135ebecdfa432f2c07dc1d95ec91623730c36fc72dc3aff3`
 
-## What was patched
+## Installation warning
 
-13 exact Smali methods across 7 class files. No SDK classes were deleted, no manifest identity was changed, and no VIP/payment/license, core download, or playback logic was modified.
+This build uses a **new ephemeral signing key**, different from both the original APK and revision 1. Android will not install it over either differently signed installation. Uninstalling an existing copy first may erase its local data. Back up anything important before making that choice.
 
-| Area | Class / method | Patch | Intended effect |
-|---|---|---|---|
-| Forced update | `AppForceUpdateHelper.r(...)` | return `false` | Primary gate: never launch the forced-update flow or finish other activities. |
-| Forced update | `AppForceUpdateHelper.o(...)` | return `false` | Backup predicate stays false even if `r()` is bypassed. |
-| Splash ads | `SplashAdActivity.i1(...)` | return `false` | Cold/hot splash interstitial load+show returns “not shown”. |
-| Splash ads | `SplashAdActivity.l1(...)` | return `false` | Cached-ad splash path returns “not shown” without launching a cached interstitial. |
-| Splash ads | `SplashAdActivity.m1(...)` | return `false` | CleanActivity splash interstitial returns “not shown”. |
-| Hot splash | `HotSplashAdManager.e()` | return `false` | Hot-launch splash disabled. |
-| Hot splash | `HotSplashAdManager.g()` | `return-void` | Hot-launch preload/show trigger is a no-op. |
-| Download ads | `StartDownloadAdViewModel.z(...)` | `return-void` | Post-download interstitial preload is a no-op. |
-| Download ads | `StartDownloadAdViewModel.w(...)` | return `false` | Post-download show gate short-circuits before `K()/L()`. |
-| Placement config | `od.v(pos)` | return `false` | Per-placement `/<pos>/enabled` switch disabled for all placements. |
-| Placement config | `od.c(pos)` | return `false` | Per-placement preload switch disabled. |
-| Native ad engine | `w25.h()` | return existing dummy `w25$a` | Native ad provider always uses the no-op dummy (`a(pos)=false`, load/show no-ops). |
-| Global ad gate | `Config.P2()` | return `false` | Global `enable_ad` gate disabled; sole caller `o/be.h` (`IAdsManager.h`) returns false. |
+Do not use the old revision 1 APK when testing this change.
 
-Reward callback paths were intentionally left intact (`o1(gn7)`, `SplashAdActivity.p/e1`, `jn7` events). The reward loader already has a `NO_FILL` fallback when no valid ad is available, so disabling ad fill is expected to invoke that fallback rather than deadlock the reward flow. This is a static/code-level expectation, not a device-verified result.
+## Evidence
 
-The third-party signature gate `o/xi7.c` was **not** patched.
-
-## Verification performed on GitHub Actions
-
-Successful run: **41160993577** (`APK patch build`).
-
-- Fresh Apktool 3.0.3 decode of the original APK.
-- Exact-method patches applied; only the 7 intended Smali files changed.
-- Apktool rebuild succeeded.
-- `zipalign` 4-byte alignment: **PASS**.
-- `zipalign -P 16` 16 KB page alignment: **PASS**.
-- Signed with a **new ephemeral RSA-2048 key** (private key was not committed).
-- `apksigner verify --verbose --print-certs`: **PASS** for v1, v2, and v3 schemes.
-- Package identity/metadata comparison against the original: **PASS** for package name, versionCode, versionName, minSdk, targetSdk, permissions, and native ABIs.
-- Re-decoded the patched APK and confirmed all 13 patched method bodies survived the round trip: **13/13 PASS**.
-- Original APK SHA-256 re-checked after the build: unchanged.
-- Patched APK ZIP integrity: PASS.
-
-Package identity remains:
-
-- Package: `com.snaptube.premium`
-- versionCode: `75250210`
-- versionName: `7.52.0.75250210`
-- minSdk: 21 · targetSdk: 35
-- ABIs: `arm64-v8a`, `armeabi-v7a`
-
-## Important install warning
-
-The patched APK is signed with a **different key** from the input APK. Android will refuse to install it over an existing SnapTube installation signed with another key. Installing it as an update is therefore not possible without first uninstalling the existing app, and **uninstalling would erase that app’s local data**. No uninstall, install, or other device-changing action was performed.
-
-## Limitations
-
-- No emulator/device runtime testing was performed; ad-free behavior and forced-update blocking are statically verified, not runtime-confirmed.
-- Embedded ads inside public websites loaded by the app may still appear; the app itself notes it cannot block those.
-- Ad SDK classes remain in the APK; the patch disables the app’s ad gates/engine rather than stripping SDK code.
-- Server-side behavior and remote configuration responses were not tested.
-
-## Evidence and reproducibility
-
-- Build report: `analysis/remote/patch-41160993577/build-report.json`
-- Per-method diffs: `analysis/remote/patch-41160993577/patches/*.diff`
-- Patch inventory: `analysis/remote/patch-41160993577/patches.json`
-- Round-trip checks: `analysis/remote/patch-41160993577/roundtrip-checks.json`
-- Signature/alignment/badging logs: `analysis/remote/patch-41160993577/logs/`
-- Pre-patch safety evidence: `analysis/remote/safety-41160171378/`
-- Original static analysis: `analysis/SnapTube_Static_Analysis_Report.md`
+- Build report: `analysis/remote/patch-41163398772/build-report.json`
+- Patch inventory: `analysis/remote/patch-41163398772/patches.json`
+- Exact diffs: `analysis/remote/patch-41163398772/patches/`
+- Round-trip checks: `analysis/remote/patch-41163398772/roundtrip-checks.json`
+- Signature and alignment logs: `analysis/remote/patch-41163398772/logs/`
+- Official-warning trace: `analysis/remote/official-warning-41162699822/`
+- Initial static analysis: `analysis/SnapTube_Static_Analysis_Report.md`
 - Build workflow: `.github/workflows/apk-patch-build.yml`
-- Patch script: `.github/scripts/patch_apk.py`
-
-All tooling ran on disposable GitHub Actions runners; no tools were installed in the local workspace.
+- Patch implementation: `.github/scripts/patch_apk.py`
