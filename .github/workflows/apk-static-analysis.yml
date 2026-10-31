@@ -25,8 +25,6 @@ jobs:
     env:
       APK_PATH: google_drive/SnapTube.apk
       EXPECTED_SHA256: 34a8689824044252135ebecdfa432f2c07dc1d95ec91623730c36fc72dc3aff3
-      WORK_ROOT: ${{ runner.temp }}/snaptube-analysis
-      TOOLS_ROOT: ${{ runner.temp }}/snaptube-tools
       APKTOOL_VERSION: 3.0.3
       APKTOOL_SHA256: dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423
       JADX_VERSION: 1.5.6
@@ -45,17 +43,24 @@ jobs:
 
       - name: Verify input and run pinned static-analysis tools
         shell: bash
+        env:
+          WORK_ROOT: ${{ runner.temp }}/snaptube-analysis
+          TOOLS_ROOT: ${{ runner.temp }}/snaptube-tools
         run: bash scripts/analyze_apk.sh
 
       - name: Build evidence inventory and candidate report
         if: always()
         shell: bash
+        env:
+          WORK_ROOT: ${{ runner.temp }}/snaptube-analysis
         run: |
           python3 scripts/static_inventory.py "$WORK_ROOT" "$APK_PATH" "$EXPECTED_SHA256"
 
       - name: Publish bounded job summary
         if: always()
         shell: bash
+        env:
+          WORK_ROOT: ${{ runner.temp }}/snaptube-analysis
         run: |
           if [ -f "$WORK_ROOT/reports/analysis-summary.md" ]; then
             head -c 900000 "$WORK_ROOT/reports/analysis-summary.md" >> "$GITHUB_STEP_SUMMARY"
