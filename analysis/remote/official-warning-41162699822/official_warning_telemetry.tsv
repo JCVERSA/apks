@@ -1,0 +1,6 @@
+file	line	method	text
+decoded/smali_classes4/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment.smali	214	.method public final K2()V	"    const-string v1, ""not_an_official_version_popup_go_download"""
+decoded/smali_classes4/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment.smali	396	.method public onCreate(Landroid/os/Bundle;)V	"    const-string v0, ""not_an_official_version_popup"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/BaseUpgradeActivity.smali	1304	.method public onCreate(Landroid/os/Bundle;)V	"    const-string v2, ""is_not_an_official_version"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/force/ForceUpdateActivity.smali	274	.method public final d2()V	"    const-string v2, ""is_not_an_official_version"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$f.smali	397	.method public run()V	"    const-string v2, ""is_not_an_official_version"""

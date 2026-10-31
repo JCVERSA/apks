@@ -1,0 +1,5 @@
+file	line	method	text
+decoded/smali_classes4/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment.smali	184	.method public final K2()V	    invoke-static {}, Lcom/wandoujia/base/config/GlobalConfig;->getOfficialSiteUrl()Ljava/lang/String;
+decoded/smali_classes4/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment.smali	585	.method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V	    invoke-static {}, Lcom/wandoujia/base/config/GlobalConfig;->getOfficialSiteUrl()Ljava/lang/String;
+decoded/smali_classes4/com/wandoujia/base/config/GlobalConfig.smali	3388	.method public static getOfficialSiteUrl()Ljava/lang/String;	.method public static getOfficialSiteUrl()Ljava/lang/String;
+decoded/smali_classes4/o/bt6.smali	17	.method public static a()Ljava/lang/String;	    invoke-static {}, Lcom/wandoujia/base/config/GlobalConfig;->getOfficialSiteUrl()Ljava/lang/String;

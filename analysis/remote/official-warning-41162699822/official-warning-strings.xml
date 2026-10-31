@@ -1,0 +1,8 @@
+<resources>
+<string name="update_for_crack">Please update to the latest version of Snaptube.</string>
+<string name="update_official">Update to official version</string>
+<string name="update_official_tips1">"Please update Snaptube to the latest version: 
+Step1：Download Official version from %1$s and find the APK 
+Step2：Uninstall the current Snaptube 
+Step3：Install new version with the new APK"</string>
+</resources>

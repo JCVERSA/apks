@@ -1,0 +1,2 @@
+file	line	method	text
+decoded/smali_classes4/com/snaptube/premium/activity/ExploreActivity.smali	3020	.method public q1(Landroid/content/Intent;Z)Z	"    const-string v3, ""phoenix.intent.action.EXIT_FOR_CRACK"""
