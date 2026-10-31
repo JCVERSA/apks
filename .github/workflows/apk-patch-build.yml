@@ -60,12 +60,14 @@ jobs:
         run: python3 .github/scripts/patch_apk.py
 
       - name: Publish patch evidence to repository
+        if: always()
         shell: bash
         run: |
           set -euo pipefail
           dest="analysis/remote/patch-${GITHUB_RUN_ID}"
           mkdir -p "$dest"
-          cp -a "$REPORT_DIR/." "$dest/"
+          if [ -d "$REPORT_DIR" ]; then cp -a "$REPORT_DIR/." "$dest/"; fi
+          printf 'run_outcome=%s\nrun_id=%s\n' '${{ job.status }}' "$GITHUB_RUN_ID" > "$dest/run-status.txt"
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -f "$dest"
@@ -73,14 +75,14 @@ jobs:
           git push origin HEAD:arena/7234f8d6-apks
 
       - name: Upload patched APK artifact
+        if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: snaptube-patched-apk
           path: |
             ${{ env.OUTPUT_DIR }}/*.apk
-            ${{ env.REPORT_DIR }}/build-report.json
-            ${{ env.REPORT_DIR }}/patches.json
-          if-no-files-found: error
+            ${{ env.REPORT_DIR }}
+          if-no-files-found: warn
           retention-days: 14
 
       - name: Publish patched APK as GitHub release asset
