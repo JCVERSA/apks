@@ -78,7 +78,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: snaptube-patched-apk
+          name: snaptube-patched-apk-no-official-popup
           path: |
             ${{ env.OUTPUT_DIR }}/*.apk
             ${{ env.REPORT_DIR }}
@@ -95,9 +95,9 @@ jobs:
           test -n "$apk"
           tag="snaptube-patched-${GITHUB_RUN_ID}"
           sha="$(sha256sum "$apk" | awk '{print $1}')"
-          notes="$(printf 'Minimally patched SnapTube %s.\n\nChanges: disable app ads (splash/hot-splash/post-download/native engine/global + per-placement gates) and forced-update blocking.\nOriginal APK preserved unchanged.\nSHA-256: %s\n\nWARNING: signed with a NEW key. It cannot be installed over an existing SnapTube install signed with a different key; uninstalling first would erase app data. No device testing was performed.\n\nEvidence: analysis/remote/patch-%s in the repository.\n' '7.52.0.75250210' "$sha" "$GITHUB_RUN_ID")"
+          notes="$(printf 'Minimally patched SnapTube %s — revision 2.\n\nChanges: retain app-ad and forced-update suppression; explicitly suppress the official-app warning at the video-extraction boundary and its known show path; skip the official-version warning branch in the upgrade screen. Normal video extraction is not replaced or bypassed.\nOriginal APK preserved unchanged. Certificate detection/reporting (xi7) is unchanged.\nSHA-256: %s\n\nWARNING: signed with a NEW ephemeral key, different from both the original app and the previous patched release. It cannot install over either. Uninstalling first may erase app data. No device testing was performed; website/remote-plugin screens may differ.\n\nEvidence: analysis/remote/patch-%s in the repository.\n' '7.52.0.75250210' "$sha" "$GITHUB_RUN_ID")"
           gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
-            --title "SnapTube patched (ad-free / no forced update) — run ${GITHUB_RUN_ID}" \
+            --title "SnapTube revision 2 — no official-app download popup — run ${GITHUB_RUN_ID}" \
             --notes "$notes" "$apk" "$REPORT_DIR/build-report.json"
           url="https://github.com/${GITHUB_REPOSITORY}/releases/download/${tag}/$(basename "$apk")"
           echo "RELEASE_APK_URL=$url" >> "$GITHUB_ENV"
@@ -108,5 +108,5 @@ jobs:
             echo "- APK: ${url}"
             echo "- SHA-256: \`${sha}\`"
             echo ""
-            echo "**New signing key:** cannot install over an existing differently-signed SnapTube; uninstalling first erases app data. No device testing performed."
+            echo "**New signing key:** cannot install over the original app or the previous patched release. Uninstalling first may erase app data. No device testing performed."
           } >> "$GITHUB_STEP_SUMMARY"

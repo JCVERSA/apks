@@ -128,6 +128,30 @@ PATCHES = [
         "body": FALSE_BODY,
         "reason": "Global enable_ad gate returns false; sole caller o/be.h (IAdsManager.h) disables ads app-wide.",
     },
+    {
+        "id": "extractor_official_warning_gate_false",
+        "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog",
+        "header": ".method public static final h(Landroid/content/Context;)Z",
+        "body": FALSE_BODY,
+        "reason": "At the video-extraction boundary, explicitly skip the official-app warning/forbidden-result branch and continue normal extraction. The input already had an unreachable-code bypass in the nested helper; this makes the boundary suppression explicit without changing certificate reporting.",
+    },
+    {
+        "id": "extractor_official_warning_show_void",
+        "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+        "header": ".method public static final d(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a;Landroid/app/Activity;)V",
+        "body": VOID_BODY,
+        "reason": "Suppress the known show() path for the 'Please Install the Official Snaptube' dialog. This helper only constructs/displays that warning and records its shown state.",
+    },
+    {
+        "id": "upgrade_official_warning_branch_skip",
+        "class": "com/snaptube/premium/selfupgrade/BaseUpgradeActivity",
+        "header": ".method public onCreate(Landroid/os/Bundle;)V",
+        "replacements": [
+            {"old": "    if-eqz p1, :cond_3", "new": "    goto :cond_3", "count": 1}
+        ],
+        "required_tokens": ["goto :cond_3", ":cond_3", "->K1()V"],
+        "reason": "Skip only the PiraticalApkWarningDialogFragment branch in the upgrade screen; preserve the rest of onCreate, including K1(). Do not globally alter xi7 signature detection or the About-screen warning.",
+    },
 ]
 
 
@@ -186,6 +210,19 @@ def method_text(header: str, body: list[str]) -> list[str]:
     return [header, "    " + body[0], ""] + ["    " + x if x else "" for x in body[1:]] + [".end method"]
 
 
+def render_patched_method(patch: dict, old_lines: list[str]) -> list[str]:
+    if "replacements" not in patch:
+        return method_text(patch["header"], patch["body"])
+    new_lines = list(old_lines)
+    for replacement in patch["replacements"]:
+        old, new, expected = replacement["old"], replacement["new"], replacement["count"]
+        actual = new_lines.count(old)
+        if actual != expected:
+            raise SystemExit(f"{patch['id']}: expected {expected} exact source lines, found {actual}: {old!r}")
+        new_lines = [new if line == old else line for line in new_lines]
+    return new_lines
+
+
 def smali_hashes(decoded: Path) -> dict[str, str]:
     return {str(p.relative_to(decoded)): sha256(p) for p in sorted(decoded.glob("smali*/**/*.smali"))}
 
@@ -211,12 +248,15 @@ def verify_roundtrip_method(redecoded: Path, patch: dict) -> dict:
     _, _, lines = extract_method(text, patch["header"])
     body = "\n".join(lines)
     header = patch["header"]
-    if header.endswith(")V"):
+    if "replacements" in patch:
+        ok = all(r["new"] in lines and r["old"] not in lines for r in patch["replacements"])
+        ok = ok and all(token in body for token in patch.get("required_tokens", []))
+    elif patch["id"] == "w25_h_dummy":
+        ok = "Lo/w25;->d:Lo/w25$a;" in body and "Lo/w25;->b:Lo/ne3;" in body and "return-object" in body
+    elif header.endswith(")V"):
         ok = "return-void" in body and "invoke-" not in body
     elif header.endswith(")Z"):
         ok = "return v0" in body and "const/4 v0, 0x0" in body and "invoke-" not in body
-    elif patch["id"] == "w25_h_dummy":
-        ok = "Lo/w25;->d:Lo/w25$a;" in body and "Lo/w25;->b:Lo/ne3;" in body and "return-object" in body
     else:
         ok = False
     return {"id": patch["id"], "class": patch["class"], "header": header, "ok": ok, "smali_file": str(path.relative_to(redecoded))}
@@ -230,7 +270,7 @@ def main() -> None:
     bt = Path(os.environ["BUILD_TOOLS_BIN"]).resolve()
     out_dir = Path(os.environ.get("OUTPUT_DIR", work / "outputs")).resolve()
     report = Path(os.environ.get("REPORT_DIR", work / "patch-report")).resolve()
-    label = os.environ.get("PATCH_LABEL", "adfree-noforce")
+    label = os.environ.get("PATCH_LABEL", "adfree-noforce-no-official-popup")
     for p in (work, out_dir, report, report / "logs", report / "patches"):
         p.mkdir(parents=True, exist_ok=True)
 
@@ -261,22 +301,34 @@ def main() -> None:
     run(["java", "-Xmx6g", "-jar", str(apktool), "d", "-f", "-o", str(decoded), str(apk)], report / "logs/apktool_decode.log")
     before_hashes = smali_hashes(decoded)
 
-    # 3. Apply exact-method patches.
-    patch_records = []
-    changed_files = set()
+    # 3. Preflight every exact target before writing any patch.
+    prepared = []
     for patch in PATCHES:
         path = find_class(decoded, patch["class"])
         text = path.read_text(encoding="utf-8")
         start, end, old_lines = extract_method(text, patch["header"])
-        new_lines = method_text(patch["header"], patch["body"])
+        new_lines = render_patched_method(patch, old_lines)
+        if new_lines == old_lines:
+            raise SystemExit(f"patch would not change its target: {patch['id']}")
+        prepared.append((patch, path, old_lines, new_lines))
+
+    patch_records = []
+    changed_files = set()
+    for patch, path, old_lines, new_lines in prepared:
         diff = "\n".join(difflib.unified_diff(old_lines, new_lines, fromfile=f"a/{path.relative_to(decoded)}", tofile=f"b/{path.relative_to(decoded)}", lineterm=""))
         (report / "patches" / f"{patch['id']}.diff").write_text(diff + "\n")
-        lines = text.splitlines()
+        # Re-read for every patch so multiple methods in one class are preserved.
+        current_text = path.read_text(encoding="utf-8")
+        start, end, current_lines = extract_method(current_text, patch["header"])
+        if current_lines != old_lines:
+            raise SystemExit(f"target method changed during preflight/apply: {patch['id']}")
+        lines = current_text.splitlines()
         lines[start : end + 1] = new_lines
         path.write_text("\n".join(lines) + "\n", encoding="utf-8")
         changed_files.add(str(path.relative_to(decoded)))
         patch_records.append({
             "id": patch["id"], "class": patch["class"], "header": patch["header"], "reason": patch["reason"],
+            "patch_type": "exact_line_replacement" if "replacements" in patch else "method_body",
             "smali_file": str(path.relative_to(decoded)), "before_method_sha256": hashlib.sha256("\n".join(old_lines).encode()).hexdigest(),
             "after_method_sha256": hashlib.sha256("\n".join(new_lines).encode()).hexdigest(), "diff": f"patches/{patch['id']}.diff",
         })
@@ -349,6 +401,9 @@ def main() -> None:
         "original": {"path": str(apk), "sha256": original_hash, "size_bytes": apk.stat().st_size, "zip_members": original_members, "metadata": orig_meta},
         "patched": {"path": str(patched), "filename": patched.name, "sha256": patched_hash, "size_bytes": patched.stat().st_size, "zip_members": patched_members, "metadata": patched_meta},
         "patched_method_count": len(PATCHES),
+        "revision": 2,
+        "scope": ["disable app ad gates", "block forced update", "suppress official-app warning at video extraction and upgrade dialog"],
+        "official_warning_note": "The original extractor helper already contained an early false return. Revision 2 explicitly disables the extractor boundary and known dialog show path, and skips the upgrade-screen warning branch. Runtime cause is not device-confirmed; xi7 certificate detection/reporting is unchanged.",
         "changed_smali_files": actually_changed,
         "identity_checks": identity_checks,
         "roundtrip_checks_ok": all(r["ok"] for r in roundtrip),
