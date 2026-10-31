@@ -1,0 +1,58 @@
+name: APK gate caller evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - arena/7234f8d6-apks
+    paths:
+      - .github/workflows/apk-gate-callers.yml
+      - .github/scripts/gate_callers.py
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: apk-gate-callers-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  callers:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: true
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: snaptube-static-trees
+          run-id: '41155692929'
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/static-trees
+      - name: Extract exact gate callers
+        shell: bash
+        env:
+          TREES_ROOT: ${{ runner.temp }}/static-trees
+          OUTPUT_ROOT: ${{ runner.temp }}/gate-callers
+        run: python3 .github/scripts/gate_callers.py "$TREES_ROOT" "$OUTPUT_ROOT"
+      - name: Publish gate caller evidence
+        shell: bash
+        env:
+          OUTPUT_ROOT: ${{ runner.temp }}/gate-callers
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/gates-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          cp -a "$OUTPUT_ROOT/." "$dest/"
+          du -sh "$dest"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f "$dest"
+          if git diff --cached --quiet; then
+            echo "No new gate evidence."
+          else
+            git commit -m "Publish gate caller evidence from run ${GITHUB_RUN_ID} [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
