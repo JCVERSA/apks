@@ -1,0 +1,49 @@
+name: APK official-app warning evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths:
+      - '.github/workflows/apk-official-warning-evidence.yml'
+      - '.github/scripts/official_warning_evidence.py'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: apk-official-warning-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  trace-warning:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: snaptube-static-trees
+          run-id: '41155692929'
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/static-trees
+      - name: Trace official-app warning and download interruption
+        shell: bash
+        run: python3 .github/scripts/official_warning_evidence.py '${{ runner.temp }}/static-trees' '${{ runner.temp }}/official-warning'
+      - name: Publish warning evidence
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/official-warning-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          src="${RUNNER_TEMP}/official-warning"
+          if [ -d "$src" ]; then cp -a "$src/." "$dest/"; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          if ! git diff --cached --quiet; then
+            git commit -m "Trace official-app download warning (run ${GITHUB_RUN_ID}) [skip ci]"
+            git push origin HEAD:arena/7234f8d6-apks
+          fi
