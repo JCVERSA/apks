@@ -290,7 +290,7 @@ def main() -> None:
 
     # 4. Rebuild.
     unsigned = work / "unsigned.apk"
-    run(["java", "-Xmx6g", "-jar", str(apktool), "b", "-f", str(decoded), "-o", str(unsigned), "--aapt", str(bt / "aapt2")], report / "logs/apktool_build.log")
+    run(["java", "-Xmx6g", "-jar", str(apktool), "b", "-f", str(decoded), "-o", str(unsigned)], report / "logs/apktool_build.log")
 
     # 5. Align (16 KB pages + 4-byte).
     aligned = work / "aligned.apk"
