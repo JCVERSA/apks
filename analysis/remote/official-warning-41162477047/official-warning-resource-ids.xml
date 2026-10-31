@@ -1,0 +1,7 @@
+<resources>
+    <public type="layout" name="fragment_piratical_apk_warning" id="0x7f0c01e4" />
+    <public type="layout" name="upgrade_dialog" id="0x7f0c039d" />
+    <public type="string" name="update_for_crack" id="0x7f11072e" />
+    <public type="string" name="update_official" id="0x7f110731" />
+    <public type="string" name="update_official_tips1" id="0x7f110732" />
+</resources>

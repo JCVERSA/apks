@@ -1,0 +1,372 @@
+[
+  {
+    "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+    "header": ".method public final j(Landroid/content/Context;)Z",
+    "source_line": 413,
+    "patterns": [
+      "official_signature_literal"
+    ],
+    "file": "methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_a/j-413.smali"
+  },
+  {
+    "class": "com/snaptube/premium/activity/ExploreActivity",
+    "header": ".method public final l1(Landroid/content/Context;Landroid/content/Intent;)V",
+    "source_line": 2016,
+    "patterns": [
+      "crack_code_extra"
+    ],
+    "file": "methods/com/snaptube/premium/activity/ExploreActivity/l1-2016.smali"
+  },
+  {
+    "class": "com/snaptube/premium/activity/ExploreActivity",
+    "header": ".method public q1(Landroid/content/Intent;Z)Z",
+    "source_line": 2878,
+    "patterns": [
+      "crack_exit_intent",
+      "upgrade_dialog_intent"
+    ],
+    "file": "methods/com/snaptube/premium/activity/ExploreActivity/q1-2878.smali"
+  },
+  {
+    "class": "com/snaptube/premium/activity/ExploreActivity",
+    "header": ".method public final x2(Ljava/lang/String;)V",
+    "source_line": 3945,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/com/snaptube/premium/activity/ExploreActivity/x2-3945.smali"
+  },
+  {
+    "class": "com/snaptube/premium/activity/LandingActivity",
+    "header": ".method private F0(Landroid/content/Intent;)Z",
+    "source_line": 29,
+    "patterns": [
+      "upgrade_dialog_intent"
+    ],
+    "file": "methods/com/snaptube/premium/activity/LandingActivity/F0-29.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment$mFrom$2",
+    "header": ".method public constructor <init>(Lcom/snaptube/premium/dialog/PiraticalApkWarningDialogFragment;)V",
+    "source_line": 49,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment_mFrom_2/_init_-49.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment$mFrom$2",
+    "header": ".method public final invoke()Ljava/lang/String;",
+    "source_line": 73,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment_mFrom_2/invoke-73.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment$mPos$2",
+    "header": ".method public constructor <init>(Lcom/snaptube/premium/dialog/PiraticalApkWarningDialogFragment;)V",
+    "source_line": 49,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment_mPos_2/_init_-49.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment$mPos$2",
+    "header": ".method public final invoke()Ljava/lang/String;",
+    "source_line": 73,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment_mPos_2/invoke-73.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment",
+    "header": ".method public constructor <init>()V",
+    "source_line": 85,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment/_init_-85.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment",
+    "header": ".method public static synthetic G2(Lcom/snaptube/premium/dialog/PiraticalApkWarningDialogFragment;Landroid/view/View;)V",
+    "source_line": 117,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment/G2-117.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment",
+    "header": ".method private final H2()Ljava/lang/String;",
+    "source_line": 125,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment/H2-125.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment",
+    "header": ".method public static final J2(Lcom/snaptube/premium/dialog/PiraticalApkWarningDialogFragment;Landroid/view/View;)V",
+    "source_line": 139,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment/J2-139.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment",
+    "header": ".method public final I2()Ljava/lang/String;",
+    "source_line": 161,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment/I2-161.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment",
+    "header": ".method public final K2()V",
+    "source_line": 175,
+    "patterns": [
+      "official_warning_class",
+      "official_warning_telemetry",
+      "official_site_navigation"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment/K2-175.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment",
+    "header": ".method public onBackPressed()Z",
+    "source_line": 312,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment/onBackPressed-312.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment",
+    "header": ".method public onCreate(Landroid/os/Bundle;)V",
+    "source_line": 375,
+    "patterns": [
+      "official_warning_class",
+      "official_warning_telemetry"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment/onCreate-375.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment",
+    "header": ".method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;",
+    "source_line": 427,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment/onCreateView-427.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment",
+    "header": ".method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V",
+    "source_line": 463,
+    "patterns": [
+      "official_warning_class",
+      "official_site_navigation"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment/onViewCreated-463.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/UpgradeDialog",
+    "header": ".method public static synthetic G2(Lcom/snaptube/premium/dialog/UpgradeDialog;Landroid/view/View;)V",
+    "source_line": 66,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/UpgradeDialog/G2-66.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/UpgradeDialog",
+    "header": ".method public static synthetic H2(Lcom/snaptube/premium/dialog/UpgradeDialog;Landroid/view/View;)V",
+    "source_line": 74,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/UpgradeDialog/H2-74.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/UpgradeDialog",
+    "header": ".method public static final K2(Lcom/snaptube/premium/dialog/UpgradeDialog;Landroid/view/View;)V",
+    "source_line": 82,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/UpgradeDialog/K2-82.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/UpgradeDialog",
+    "header": ".method public static final L2(Lcom/snaptube/premium/dialog/UpgradeDialog;Landroid/view/View;)V",
+    "source_line": 96,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/UpgradeDialog/L2-96.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/UpgradeDialog",
+    "header": ".method public final I2()Landroid/widget/TextView;",
+    "source_line": 112,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/UpgradeDialog/I2-112.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/UpgradeDialog",
+    "header": ".method public final J2()V",
+    "source_line": 131,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/UpgradeDialog/J2-131.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/UpgradeDialog",
+    "header": ".method public final O2(Landroid/widget/TextView;)V",
+    "source_line": 237,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/UpgradeDialog/O2-237.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/UpgradeDialog",
+    "header": ".method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;",
+    "source_line": 249,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/UpgradeDialog/onCreateView-249.smali"
+  },
+  {
+    "class": "com/snaptube/premium/dialog/UpgradeDialog",
+    "header": ".method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V",
+    "source_line": 321,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/com/snaptube/premium/dialog/UpgradeDialog/onViewCreated-321.smali"
+  },
+  {
+    "class": "com/snaptube/premium/selfupgrade/BaseUpgradeActivity",
+    "header": ".method public onCreate(Landroid/os/Bundle;)V",
+    "source_line": 1149,
+    "patterns": [
+      "official_signature_check",
+      "official_warning_class",
+      "official_warning_telemetry"
+    ],
+    "file": "methods/com/snaptube/premium/selfupgrade/BaseUpgradeActivity/onCreate-1149.smali"
+  },
+  {
+    "class": "com/snaptube/premium/selfupgrade/force/ForceUpdateActivity",
+    "header": ".method public final d2()V",
+    "source_line": 225,
+    "patterns": [
+      "official_signature_check",
+      "official_warning_telemetry"
+    ],
+    "file": "methods/com/snaptube/premium/selfupgrade/force/ForceUpdateActivity/d2-225.smali"
+  },
+  {
+    "class": "com/snaptube/premium/selfupgrade/incremental_upgrade/b$f",
+    "header": ".method public run()V",
+    "source_line": 48,
+    "patterns": [
+      "official_signature_check",
+      "official_warning_telemetry"
+    ],
+    "file": "methods/com/snaptube/premium/selfupgrade/incremental_upgrade/b_f/run-48.smali"
+  },
+  {
+    "class": "com/snaptube/premium/user/activity/MeAboutActivity",
+    "header": ".method public onCreate(Landroid/os/Bundle;)V",
+    "source_line": 686,
+    "patterns": [
+      "official_signature_check",
+      "official_warning_class"
+    ],
+    "file": "methods/com/snaptube/premium/user/activity/MeAboutActivity/onCreate-686.smali"
+  },
+  {
+    "class": "com/wandoujia/base/config/GlobalConfig",
+    "header": ".method public static getOfficialSiteUrl()Ljava/lang/String;",
+    "source_line": 3388,
+    "patterns": [
+      "official_site_navigation"
+    ],
+    "file": "methods/com/wandoujia/base/config/GlobalConfig/getOfficialSiteUrl-3388.smali"
+  },
+  {
+    "class": "o/bt6",
+    "header": ".method public static a()Ljava/lang/String;",
+    "source_line": 14,
+    "patterns": [
+      "official_site_navigation"
+    ],
+    "file": "methods/o/bt6/a-14.smali"
+  },
+  {
+    "class": "o/ft5",
+    "header": ".method public synthetic constructor <init>(Lcom/snaptube/premium/dialog/PiraticalApkWarningDialogFragment;)V",
+    "source_line": 13,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/o/ft5/_init_-13.smali"
+  },
+  {
+    "class": "o/ft5",
+    "header": ".method public final onClick(Landroid/view/View;)V",
+    "source_line": 25,
+    "patterns": [
+      "official_warning_class"
+    ],
+    "file": "methods/o/ft5/onClick-25.smali"
+  },
+  {
+    "class": "o/sh8",
+    "header": ".method public final onClick(Landroid/view/View;)V",
+    "source_line": 25,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/o/sh8/onClick-25.smali"
+  },
+  {
+    "class": "o/th8",
+    "header": ".method public final onClick(Landroid/view/View;)V",
+    "source_line": 25,
+    "patterns": [
+      "upgrade_dialog_class"
+    ],
+    "file": "methods/o/th8/onClick-25.smali"
+  },
+  {
+    "class": "o/uh1",
+    "header": ".method public final m(Landroid/content/Context;Landroid/content/Intent;Lcom/wandoujia/em/common/protomodel/Card;)Z",
+    "source_line": 2986,
+    "patterns": [
+      "upgrade_dialog_intent"
+    ],
+    "file": "methods/o/uh1/m-2986.smali"
+  },
+  {
+    "class": "o/xi7",
+    "header": ".method public static c(Landroid/content/Context;Z)Z",
+    "source_line": 167,
+    "patterns": [
+      "official_signature_literal"
+    ],
+    "file": "methods/o/xi7/c-167.smali"
+  }
+]
