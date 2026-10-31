@@ -1,0 +1,110 @@
+name: APK patch build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths:
+      - '.github/workflows/apk-patch-build.yml'
+      - '.github/scripts/patch_apk.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apk-patch-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  patch-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Prepare pinned tools (runner only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          WORK_ROOT="${RUNNER_TEMP}/snaptube-patch"
+          TOOLS_ROOT="${RUNNER_TEMP}/snaptube-patch-tools"
+          mkdir -p "$WORK_ROOT" "$TOOLS_ROOT"
+          APKTOOL_VERSION=3.0.3
+          APKTOOL_SHA256=dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423
+          APKTOOL_JAR="$TOOLS_ROOT/apktool_${APKTOOL_VERSION}.jar"
+          curl --fail --location --retry 3 --output "$APKTOOL_JAR" \
+            "https://github.com/iBotPeaches/Apktool/releases/download/v${APKTOOL_VERSION}/apktool_${APKTOOL_VERSION}.jar"
+          printf '%s  %s\n' "$APKTOOL_SHA256" "$APKTOOL_JAR" | sha256sum -c -
+          SDK_ROOT="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"
+          BUILD_TOOLS_BIN="$(find "$SDK_ROOT/build-tools" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | sort -V | tail -n 1)"
+          test -n "$BUILD_TOOLS_BIN"
+          for t in apksigner zipalign aapt; do test -x "$BUILD_TOOLS_BIN/$t"; done
+          {
+            echo "WORK_ROOT=$WORK_ROOT"
+            echo "APKTOOL_JAR=$APKTOOL_JAR"
+            echo "BUILD_TOOLS_BIN=$BUILD_TOOLS_BIN"
+            echo "OUTPUT_DIR=$WORK_ROOT/outputs"
+            echo "REPORT_DIR=$WORK_ROOT/patch-report"
+          } >> "$GITHUB_ENV"
+          java -jar "$APKTOOL_JAR" --version
+          "$BUILD_TOOLS_BIN/apksigner" version
+          "$BUILD_TOOLS_BIN/zipalign" 2>&1 | head -n 2 || true
+
+      - name: Patch, rebuild, sign, verify
+        shell: bash
+        run: python3 .github/scripts/patch_apk.py
+
+      - name: Publish patch evidence to repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/patch-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          cp -a "$REPORT_DIR/." "$dest/"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          git diff --cached --quiet || git commit -m "Add SnapTube patch build evidence (run ${GITHUB_RUN_ID}) [skip ci]"
+          git push origin HEAD:arena/7234f8d6-apks
+
+      - name: Upload patched APK artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: snaptube-patched-apk
+          path: |
+            ${{ env.OUTPUT_DIR }}/*.apk
+            ${{ env.REPORT_DIR }}/build-report.json
+            ${{ env.REPORT_DIR }}/patches.json
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Publish patched APK as GitHub release asset
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          apk="$(find "$OUTPUT_DIR" -maxdepth 1 -name '*.apk' -type f | head -n 1)"
+          test -n "$apk"
+          tag="snaptube-patched-${GITHUB_RUN_ID}"
+          sha="$(sha256sum "$apk" | awk '{print $1}')"
+          notes="$(printf 'Minimally patched SnapTube %s.\n\nChanges: disable app ads (splash/hot-splash/post-download/native engine/global + per-placement gates) and forced-update blocking.\nOriginal APK preserved unchanged.\nSHA-256: %s\n\nWARNING: signed with a NEW key. It cannot be installed over an existing SnapTube install signed with a different key; uninstalling first would erase app data. No device testing was performed.\n\nEvidence: analysis/remote/patch-%s in the repository.\n' '7.52.0.75250210' "$sha" "$GITHUB_RUN_ID")"
+          gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "SnapTube patched (ad-free / no forced update) — run ${GITHUB_RUN_ID}" \
+            --notes "$notes" "$apk" "$REPORT_DIR/build-report.json"
+          url="https://github.com/${GITHUB_REPOSITORY}/releases/download/${tag}/$(basename "$apk")"
+          echo "RELEASE_APK_URL=$url" >> "$GITHUB_ENV"
+          {
+            echo "## Patched APK"
+            echo ""
+            echo "- Release: https://github.com/${GITHUB_REPOSITORY}/releases/tag/${tag}"
+            echo "- APK: ${url}"
+            echo "- SHA-256: \`${sha}\`"
+            echo ""
+            echo "**New signing key:** cannot install over an existing differently-signed SnapTube; uninstalling first erases app data. No device testing performed."
+          } >> "$GITHUB_STEP_SUMMARY"
