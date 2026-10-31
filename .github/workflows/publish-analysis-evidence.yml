@@ -1,0 +1,63 @@
+name: Publish completed analysis evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - arena/7234f8d6-apks
+    paths:
+      - .github/workflows/publish-analysis-evidence.yml
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: publish-analysis-evidence-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish bounded report from completed GitHub run
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out analysis branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: true
+
+      - name: Download completed report artifact on GitHub runner
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: snaptube-static-report
+          run-id: '41155692929'
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/completed-evidence
+
+      - name: Commit bounded evidence to the analysis branch
+        shell: bash
+        env:
+          EVIDENCE_ROOT: ${{ runner.temp }}/completed-evidence
+          SOURCE_RUN_ID: '41155692929'
+        run: |
+          set -euo pipefail
+          test -f "$EVIDENCE_ROOT/reports/analysis-summary.md"
+          test -f "$EVIDENCE_ROOT/reports/inventory.json"
+          dest="analysis/remote/${SOURCE_RUN_ID}/report"
+          mkdir -p "$dest"
+          cp -a "$EVIDENCE_ROOT/reports" "$dest/"
+          cp -a "$EVIDENCE_ROOT/logs" "$dest/"
+          printf '\n--- Evidence size ---\n'
+          du -sh "$dest"
+          printf '\n--- Largest evidence files ---\n'
+          find "$dest" -type f -printf '%s %p\n' | sort -nr | head -20
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f "$dest"
+          if git diff --cached --quiet; then
+            echo "Evidence already published."
+          else
+            git commit -m "Publish bounded static-analysis evidence from run ${SOURCE_RUN_ID} [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
