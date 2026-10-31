@@ -74,18 +74,35 @@ def main():
                 manifest_findings["network_config_files"].append(str(p.relative_to(trees)))
     (out / "manifest-findings.json").write_text(json.dumps(manifest_findings, indent=2) + "\n")
 
-    # Copy a few exact gate methods if present.
-    wanted = [
-        ("com/snaptube/ads/activity/SplashAdActivity", "h1_Landroid_content_Context_ZLjava_lang_String_Ljava_lang_String_Ljava_util_Map_Z.smali"),
-        ("com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel", "B_Landroid_os_Bundle_Ljava_lang_String_ILjava_lang_Object_V.smali"),
-        ("o/r24", "run_V.smali"),
-        ("o/y6", "a_Z.smali"),
-        ("o/y6", "b_Z.smali"),
-    ]
+    # Copy network security configs and full decoded manifest for report evidence.
+    extra_files = []
+    for rel in manifest_findings["network_config_files"]:
+        src = trees / rel
+        if src.is_file() and src.stat().st_size <= 200_000:
+            dst = out / "manifest" / Path(rel).name
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            dst.write_bytes(src.read_bytes())
+            extra_files.append(str(dst.relative_to(out)))
+    if manifest.is_file() and manifest.stat().st_size <= 500_000:
+        dst = out / "manifest" / "AndroidManifest.xml"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.write_bytes(manifest.read_bytes())
+        extra_files.append(str(dst.relative_to(out)))
+
+    # Copy exact gate methods by class + method name from full decoded smali.
+    wanted = {
+        "com/snaptube/ads/activity/SplashAdActivity": {"h1", "i1"},
+        "com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel": {"B", "z", "w", "K"},
+        "o/r24": {"run"},
+        "o/y6": {"a", "b"},
+        "o/be": {"h"},
+        "o/w25": {"h", "a"},
+        "com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$e": {"a"},
+        "com/snaptube/premium/ads/splash/HotSplashAdManager": {"e", "g"},
+        "com/snaptube/premium/ads/SplashAdManager": {"c0", "u0"},
+    }
     copied = []
-    for cls, fname in wanted:
-        src = out.parent / "targeted-41157059752" / "smali-methods" / cls / fname
-        # The targeted artifact is not available here; instead extract from full smali by method header.
+    for cls, names in wanted.items():
         for smali in decoded.glob("smali*/" + cls + ".smali"):
             text = smali.read_text(encoding="utf-8", errors="replace")
             methods = []
@@ -99,13 +116,36 @@ def main():
                     cur.append(line)
             for m in methods:
                 header = m[0]
-                if (cls.endswith("SplashAdActivity") and " h1(" in header) or (cls.endswith("StartDownloadAdViewModel") and " B(" in header) or (cls == "o/r24" and " run(" in header) or (cls == "o/y6" and (" a(" in header or " b(" in header)):
+                match = re.search(r"\s([A-Za-z0-9_$]+)\(", header)
+                if match and match.group(1) in names:
                     dst = out / "methods" / cls / (re.sub(r"[^A-Za-z0-9_$.-]+", "_", header.split()[-1])[:180] + ".smali")
                     dst.parent.mkdir(parents=True, exist_ok=True)
                     dst.write_text("\n".join(m) + "\n")
                     copied.append(str(dst.relative_to(out)))
-    (out / "copied-methods.json").write_text(json.dumps(copied, indent=2) + "\n")
-    print(json.dumps({"scanned": scanned, "counts": counts, "copied_methods": copied, "manifest_matching_components": len(manifest_findings["matching_components"]), "network_config_files": manifest_findings["network_config_files"]}, indent=2))
+    # NavigationManager l0/l1 if present.
+    for smali in decoded.glob("smali*/**/NavigationManager.smali"):
+        cls = str(smali.relative_to(decoded).with_suffix("")).replace("\\", "/")
+        cls = re.sub(r"^smali[^/]*/", "", cls)
+        text = smali.read_text(encoding="utf-8", errors="replace")
+        cur = None
+        for line in text.splitlines():
+            if line.startswith(".method"):
+                cur = [line]
+            elif line.startswith(".end method") and cur is not None:
+                cur.append(line)
+                header = cur[0]
+                match = re.search(r"\s([A-Za-z0-9_$]+)\(", header)
+                if match and match.group(1) in {"l0", "l1"}:
+                    dst = out / "methods" / cls / (re.sub(r"[^A-Za-z0-9_$.-]+", "_", header.split()[-1])[:180] + ".smali")
+                    dst.parent.mkdir(parents=True, exist_ok=True)
+                    dst.write_text("\n".join(cur) + "\n")
+                    copied.append(str(dst.relative_to(out)))
+                cur = None
+            elif cur is not None:
+                cur.append(line)
+    (out / "copied-methods.json").write_text(json.dumps(sorted(set(copied)), indent=2) + "\n")
+    (out / "extra-files.json").write_text(json.dumps(extra_files, indent=2) + "\n")
+    print(json.dumps({"scanned": scanned, "counts": counts, "copied_methods": sorted(set(copied)), "extra_files": extra_files, "manifest_matching_components": len(manifest_findings["matching_components"]), "network_config_files": manifest_findings["network_config_files"]}, indent=2))
     return 0
 
 if __name__ == "__main__":
