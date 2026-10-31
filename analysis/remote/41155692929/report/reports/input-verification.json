@@ -1,0 +1,9 @@
+{
+  "original_path": "/home/runner/work/apks/apks/google_drive/SnapTube.apk",
+  "original_size_bytes": 51708137,
+  "expected_sha256": "34a8689824044252135ebecdfa432f2c07dc1d95ec91623730c36fc72dc3aff3",
+  "original_sha256": "34a8689824044252135ebecdfa432f2c07dc1d95ec91623730c36fc72dc3aff3",
+  "working_copy_sha256": "34a8689824044252135ebecdfa432f2c07dc1d95ec91623730c36fc72dc3aff3",
+  "original_matches_expected": true,
+  "working_copy_matches_original": true
+}

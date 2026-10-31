@@ -1,0 +1,4 @@
+=== lib/armeabi-v7a/libvideo_v1_v7a.so ===
+/home/runner/work/_temp/snaptube-analysis/decoded/lib/armeabi-v7a/libvideo_v1_v7a.so: Unicode text, UTF-8 text, with no line terminators
+
+Dynamic dependencies:

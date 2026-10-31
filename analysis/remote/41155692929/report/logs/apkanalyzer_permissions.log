@@ -1,0 +1,17 @@
+android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='32
+android.permission.WRITE_EXTERNAL_STORAGE' maxSdkVersion='32
+android.permission.FOREGROUND_SERVICE
+android.permission.GET_PACKAGE_SIZE
+com.snaptube.premium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+android.permission.SYSTEM_ALERT_WINDOW
+android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+android.permission.REORDER_TASKS
+android.permission.MANAGE_EXTERNAL_STORAGE
+android.permission.KILL_BACKGROUND_PROCESSES
+android.permission.INTERNET
+android.permission.ACCESS_NETWORK_STATE
+android.permission.WAKE_LOCK
+android.permission.ACCESS_WIFI_STATE
+android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+android.permission.POST_NOTIFICATIONS
+android.permission.FOREGROUND_SERVICE_DATA_SYNC

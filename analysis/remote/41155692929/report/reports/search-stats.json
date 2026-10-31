@@ -1,0 +1,33 @@
+{
+  "searched_roots": [
+    "/home/runner/work/_temp/snaptube-analysis/jadx/sources",
+    "/home/runner/work/_temp/snaptube-analysis/decoded"
+  ],
+  "scanned_text_files": {
+    "jadx": 26707,
+    "apktool": 43295
+  },
+  "total_matches": {
+    "ad_sdk": 292039,
+    "ad_lifecycle": 23910,
+    "update_strong": 675,
+    "update_general": 1086,
+    "security_config": 717
+  },
+  "stored_matches": {
+    "update_strong": 675,
+    "update_general": 1086,
+    "ad_sdk": 20000,
+    "ad_lifecycle": 20000,
+    "security_config": 717
+  },
+  "limits": {
+    "per_category": 20000,
+    "per_file_category": 200
+  },
+  "truncated_categories": [
+    "ad_sdk",
+    "ad_lifecycle"
+  ],
+  "interpretation": "Text-search leads only; confirm control flow and resource relationships before modifying anything."
+}

@@ -1,0 +1,1087 @@
+file	line	text
+jadx/sources/com/bykv/vk/openvk/preload/geckox/utils/a.java	31	            return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+jadx/sources/com/bytedance/sdk/component/embedapplog/BuildConfig.java	7	    public static final int VERSION_CODE = 1;
+jadx/sources/com/bytedance/sdk/component/embedapplog/BuildConfig.java	8	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/bytedance/sdk/component/oIF/lc/EW.java	194	"            np.EW(""version_code"", sb4.toString());"
+jadx/sources/com/bytedance/sdk/openadsdk/ApmHelper.java	80	                        MonitorCrash monitorCrashInitSDK = MonitorCrash.initSDK(this.EW, rkJ.EW, 6469L, BuildConfig.VERSION_NAME, strArr);
+jadx/sources/com/bytedance/sdk/openadsdk/ApmHelper.java	88	"                        monitorCrashInitSDK.addTags(""sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/ApmHelper.java	156	"            jSONObject3.put(""sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/ApmHelper.java	163	"            jSONObject2.put(""sdk_version_name"", ""0.0.5"");"
+jadx/sources/com/bytedance/sdk/openadsdk/ApmHelper.java	165	"            jSONObject2.put(""update_version_code"", BuildConfig.VERSION_CODE);"
+jadx/sources/com/bytedance/sdk/openadsdk/ApmHelper.java	182	"        PS.lc().EW(NP(str), Format.DOWNLOAD_HTTPS + str2 + ""/monitor/collect/c/session?version_code=6469&device_platform=android&aid="" + rkJ.EW);"
+jadx/sources/com/bytedance/sdk/openadsdk/BuildConfig.java	8	    public static final int VERSION_CODE = 6469;
+jadx/sources/com/bytedance/sdk/openadsdk/BuildConfig.java	9	"    public static final String VERSION_NAME = ""6.4.6.9"";"
+jadx/sources/com/bytedance/sdk/openadsdk/EW/EW.java	38	                ew.EW(BuildConfig.VERSION_NAME);
+jadx/sources/com/bytedance/sdk/openadsdk/Mw/oA.java	24	        ewGeneratorModel.EW(BuildConfig.VERSION_NAME);
+jadx/sources/com/bytedance/sdk/openadsdk/PS/NP.java	65	        return BuildConfig.VERSION_CODE;
+jadx/sources/com/bytedance/sdk/openadsdk/Wd/EW/Zd.java	27	    private final String Zd = BuildConfig.VERSION_NAME;
+jadx/sources/com/bytedance/sdk/openadsdk/Wd/EW/Zd.java	200	"        return TextUtils.isEmpty(BuildConfig.VERSION_NAME) ? """" : BuildConfig.VERSION_NAME;"
+jadx/sources/com/bytedance/sdk/openadsdk/Zd/EW/bTk.java	80	"            jSONObject.put(""load_get_ad_version"", BuildConfig.VERSION_CODE);"
+jadx/sources/com/bytedance/sdk/openadsdk/Zd/EW/lc.java	241	"            jSONObject.put(""ad_sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/Zd/EW/ypP.java	360	"                jSONObject.put(""req_sign"", com.bytedance.sdk.component.utils.oA.EW(strZd + j + BuildConfig.VERSION_NAME));"
+jadx/sources/com/bytedance/sdk/openadsdk/activity/TTRewardVideoActivity.java	600	"            jSONObject.put(""sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/activity/lc.java	357	"            jSONObject.put(""sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/activity/oA.java	654	"            jSONObject.put(""sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/common/NP.java	45	        return BuildConfig.VERSION_NAME;
+jadx/sources/com/bytedance/sdk/openadsdk/common/PS.java	57	                String[] strArr = {BuildConfig.VERSION_NAME, this.EW, this.NP, this.lc, this.Zd, PS.EW(PS.this)};
+jadx/sources/com/bytedance/sdk/openadsdk/common/PS.java	147	"        com.bytedance.sdk.openadsdk.core.oA.oA oAVarEW = EW(context, ""SDK version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/component/reward/AJB.java	16	"            UtC utCEW = com.bytedance.sdk.openadsdk.core.NP.EW(new JSONObject(""{\n\t\t\""ad_id\"": \""1639941324071955\"",\n\t\t\""app\"": {\n\t\t\t\""app_name\"": \""Mortals cultivate Immortals\"",\n\t\t\t\""app_size\"": 117644467,\n\t\t\t\""appleid\"": \""0\"",\n\t\t\t\""comment_num\"": 7676,\n\t\t\t\""download_url\"": \""\"",\n\t\t\t\""package_name\"": \""com.xyjx.frxx_190\"",\n\t\t\t\""score\"": 4\n\t\t},\n\t\t\""appstore_jump_type\"": 0,\n\t\t\""button_text\"": \""Click me to try\"",\n\t\t\""click_url\"": [],\n\t\t\""creative_type\"": 6,\n\t\t\""description\"": \""Open up for cultivating immortals, transform into gods in one day, ascend in two days, and a half-step immortal emperor in three days!\"",\n\t\t\""download_conf\"": {\n\t\t\t\""auto_control\"": \""0\"",\n\t\t\t\""auto_open\"": 1,\n\t\t\t\""download_mode\"": 0,\n\t\t\t\""download_type\"": 1,\n\t\t\t\""if_suspend_download\"": 1,\n\t\t\t\""support_multiple\"": 0\n\t\t},\n\t\t\""ext\"": \""{\\\""uid\\\"": 65999808247, \\\""package_name\\\"": \\\""com.union_test.toutiao\\\"", \\\""rit\\\"": 901121375, \\\""orit\\\"": 900000000, \\\""ad_type\\\"": 1, \\\""height\\\"": 1920, \\\""pack_time\\\"": 1563973281.779855, \\\""pricing\\\"": 9, \\\""device_type\\\"": \\\""ONEPLUS A3010\\\"", \\\""promotion_type\\\"""
+jadx/sources/com/bytedance/sdk/openadsdk/component/reward/EW/UtC.java	1304	        zd.setUserAgentString(com.bytedance.sdk.openadsdk.utils.Mw.EW(zd.getWebView(), BuildConfig.VERSION_CODE));
+jadx/sources/com/bytedance/sdk/openadsdk/core/AJB/lc.java	46	"            map.put(""ad_sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/core/AJB/lc.java	106	"            Map<String, String> mapEW = NP.NP().EW(""https://api16-access-sg.pangle.io/api/ad/union/sdk/get_ads/?aid=1371&device_platform=android&version_code=4250"", strEW != null ? strEW.getBytes() : new byte[0]);"
+jadx/sources/com/bytedance/sdk/openadsdk/core/AJB/lc.java	113	"                jSONObject.put(""url"", ""https://api16-access-sg.pangle.io/api/ad/union/sdk/get_ads/?aid=1371&device_platform=android&version_code=4250"");"
+jadx/sources/com/bytedance/sdk/openadsdk/core/EW/EW.java	41	            ew.EW(BuildConfig.VERSION_NAME);
+jadx/sources/com/bytedance/sdk/openadsdk/core/EW/EW.java	72	            ew.EW(BuildConfig.VERSION_NAME);
+jadx/sources/com/bytedance/sdk/openadsdk/core/dZO/NP/EW.java	67	        return BuildConfig.VERSION_CODE;
+jadx/sources/com/bytedance/sdk/openadsdk/core/dms/oA.java	103	"            EW = Partner.createPartner(""ByteDance2"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/core/fg.java	137	                ew.EW(BuildConfig.VERSION_NAME);
+jadx/sources/com/bytedance/sdk/openadsdk/core/fg.java	152	                ew.EW(BuildConfig.VERSION_NAME);
+jadx/sources/com/bytedance/sdk/openadsdk/core/fg.java	167	                ew.EW(BuildConfig.VERSION_NAME);
+jadx/sources/com/bytedance/sdk/openadsdk/core/fg.java	821	"            jSONObject2.put(""ad_sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/core/fg.java	867	"                jSONObject.put(""ad_sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/core/fg.java	1217	"            jSONObject2.put(""ad_sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/core/fg.java	1391	"            jSONObject.put(""version_code"", com.bytedance.sdk.openadsdk.utils.WDI.bTk());"
+jadx/sources/com/bytedance/sdk/openadsdk/core/model/Mw.java	628	            zd3.setUserAgentString(com.bytedance.sdk.openadsdk.utils.Mw.EW(zd3.getWebView(), BuildConfig.VERSION_CODE));
+jadx/sources/com/bytedance/sdk/openadsdk/core/nY.java	141	        return BuildConfig.VERSION_NAME;
+jadx/sources/com/bytedance/sdk/openadsdk/core/nY.java	183	"            jSONObject.put(""ad_sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/core/oIF/lc.java	39	"            jSONObject.put(""ad_sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/core/settings/YB.java	186	"            jSONObject.put(""sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/core/settings/YB.java	203	"            jSONObject.put(""req_sign"", com.bytedance.sdk.component.utils.oA.EW(strZd != null ? strZd.concat(String.valueOf(jCurrentTimeMillis)).concat(BuildConfig.VERSION_NAME) : """"));"
+jadx/sources/com/bytedance/sdk/openadsdk/core/seu/fH.java	144	            zd.setUserAgentString(com.bytedance.sdk.openadsdk.utils.Mw.EW(zd.getWebView(), BuildConfig.VERSION_CODE));
+jadx/sources/com/bytedance/sdk/openadsdk/core/widget/EW/NP.java	43	            zd.setUserAgentString(Mw.EW(zd.getWebView(), BuildConfig.VERSION_CODE));
+jadx/sources/com/bytedance/sdk/openadsdk/core/xW.java	49	"        intent.putExtra(""sdk_version"", BuildConfig.VERSION_CODE);"
+jadx/sources/com/bytedance/sdk/openadsdk/du/EW/EW.java	452	        zd.setUserAgentString(Mw.EW(zd.getWebView(), BuildConfig.VERSION_CODE));
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/NP/Zd/oA.java	34	        return BuildConfig.VERSION_NAME;
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/YB/MsH.java	34	                    NP = String.valueOf(packageInfo.versionCode);
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/YB/MsH.java	35	                    lc = packageInfo.versionName;
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/YB/MsH.java	37	"                    com.bytedance.sdk.openadsdk.mediation.EW.lc.EW.Zd(Zd, ""ToolUtils getVersionCode throws exception :"".concat(String.valueOf(th)));"
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/YB/MsH.java	80	                    NP = String.valueOf(packageInfo.versionCode);
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/YB/MsH.java	81	                    lc = packageInfo.versionName;
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/YB/MsH.java	83	"                    com.bytedance.sdk.openadsdk.mediation.EW.lc.EW.Zd(Zd, ""ToolUtils getVersionName throws exception :"".concat(String.valueOf(th)));"
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/YB/seu.java	202	"            jSONObject.put(""sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/YB/seu.java	229	"            jSONObject.put(""version_code"", MsH.NP());"
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/Zd/AJB/lc.java	501	"            jSONObject2.put(""media_sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/Zd/EW/lc.java	371	"            jSONObject.put(""sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/Zd/seu/EW.java	702	"            jSONObject.put(""ad_sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/Zd/seu/EW.java	846	"            jSONObject.put(""version_code"", MsH.NP());"
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/adapter/vungle/VungleMediationAdapter.java	76	        return com.vungle.ads.BuildConfig.VERSION_NAME;
+jadx/sources/com/bytedance/sdk/openadsdk/mediation/dZO/EW.java	334	"            jSONObject3.putOpt(""mediation_sdk_version"", BuildConfig.VERSION_NAME);"
+jadx/sources/com/bytedance/sdk/openadsdk/utils/WDI.java	750	                    dZO = String.valueOf(packageInfo.versionCode);
+jadx/sources/com/bytedance/sdk/openadsdk/utils/WDI.java	751	                    seu = packageInfo.versionName;
+jadx/sources/com/bytedance/sdk/openadsdk/utils/WDI.java	753	"                    com.bytedance.sdk.component.utils.ypP.EW(""TTAD.ToolUtils"", ""ToolUtils getVersionCode throws exception :"", th);"
+jadx/sources/com/bytedance/sdk/openadsdk/utils/WDI.java	1069	                    dZO = String.valueOf(packageInfo.versionCode);
+jadx/sources/com/bytedance/sdk/openadsdk/utils/WDI.java	1070	                    seu = packageInfo.versionName;
+jadx/sources/com/bytedance/sdk/openadsdk/utils/WDI.java	1072	"                    com.bytedance.sdk.component.utils.ypP.EW(""TTAD.ToolUtils"", ""ToolUtils getVersionName throws exception :"", th);"
+jadx/sources/com/bytedance/sdk/openadsdk/utils/WDI.java	1161	"            return Uri.parse(str).buildUpon().appendQueryParameter(""aid"", ""1371"").appendQueryParameter(""device_platform"", ""android"").appendQueryParameter(""version_code"", bTk()).toString();"
+jadx/sources/com/dywx/hybrid/handler/AppInfoHandler.java	15	"    public int getPackageVersionCode(@Parameter(""packageName"") String str) {"
+jadx/sources/com/dywx/hybrid/handler/AppInfoHandler.java	20	"    public String getPackageVersionName(@Parameter(""packageName"") String str) {"
+jadx/sources/com/dywx/hybrid/handler/AppInfoHandler.java	30	    public int getVersionCode() {
+jadx/sources/com/dywx/hybrid/handler/SdkInfoHandler.java	8	    public int getSdkVersionCode() {
+jadx/sources/com/dywx/hybrid/handler/SdkInfoHandler.java	13	    public String getSdkVersionName() {
+jadx/sources/com/github/luben/zstd/BuildConfig.java	8	    public static final int VERSION_CODE = 1;
+jadx/sources/com/github/luben/zstd/BuildConfig.java	9	"    public static final String VERSION_NAME = ""1.5.6-7"";"
+jadx/sources/com/google/ads/interactivemedia/v3/internal/ach.java	175	            return acj.create(packageInfo.versionCode, activityInfo.packageName);
+jadx/sources/com/google/ads/interactivemedia/v3/internal/vf.java	228	            str2 = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+jadx/sources/com/google/android/gms/auth/api/proxy/ProxyRequest.java	22	    public static final int VERSION_CODE = 2;
+jadx/sources/com/google/android/gms/cloudmessaging/zzt.java	41	                this.zzb = packageInfo.versionCode;
+jadx/sources/com/google/android/gms/common/GoogleApiAvailability.java	69	    public static final int GOOGLE_PLAY_SERVICES_VERSION_CODE = GoogleApiAvailabilityLight.GOOGLE_PLAY_SERVICES_VERSION_CODE;
+jadx/sources/com/google/android/gms/common/GoogleApiAvailability.java	172	        int i = GOOGLE_PLAY_SERVICES_VERSION_CODE;
+jadx/sources/com/google/android/gms/common/GoogleApiAvailabilityLight.java	37	    public static final int GOOGLE_PLAY_SERVICES_VERSION_CODE = GooglePlayServicesUtilLight.GOOGLE_PLAY_SERVICES_VERSION_CODE;
+jadx/sources/com/google/android/gms/common/GoogleApiAvailabilityLight.java	96	        sb.append(GOOGLE_PLAY_SERVICES_VERSION_CODE);
+jadx/sources/com/google/android/gms/common/GoogleApiAvailabilityLight.java	108	                sb.append(Wrappers.packageManager(context).getPackageInfo(context.getPackageName(), 0).versionCode);
+jadx/sources/com/google/android/gms/common/GoogleApiAvailabilityLight.java	151	        return isGooglePlayServicesAvailable(context, GOOGLE_PLAY_SERVICES_VERSION_CODE);
+jadx/sources/com/google/android/gms/common/GooglePlayServicesIncorrectManifestValueException.java	8	"        super(i, ""The meta-data tag in your app's AndroidManifest.xml does not have the right value.  Expected "" + GoogleApiAvailabilityLight.GOOGLE_PLAY_SERVICES_VERSION_CODE + "" but found "" + i + "".  You must have the following declaration within the <application> element:     <meta-data android:name=\""com.google.android.gms.version\"" android:value=\""@integer/google_play_services_version\"" />"");"
+jadx/sources/com/google/android/gms/common/GooglePlayServicesManifestException.java	20	        return GoogleApiAvailabilityLight.GOOGLE_PLAY_SERVICES_VERSION_CODE;
+jadx/sources/com/google/android/gms/common/GooglePlayServicesUtil.java	29	    public static final int GOOGLE_PLAY_SERVICES_VERSION_CODE = GooglePlayServicesUtilLight.GOOGLE_PLAY_SERVICES_VERSION_CODE;
+jadx/sources/com/google/android/gms/common/GooglePlayServicesUtilLight.java	55	    public static final int GOOGLE_PLAY_SERVICES_VERSION_CODE = 12451000;
+jadx/sources/com/google/android/gms/common/GooglePlayServicesUtilLight.java	115	"            return context.getPackageManager().getPackageInfo(""com.google.android.gms"", 0).versionCode;"
+jadx/sources/com/google/android/gms/common/GooglePlayServicesUtilLight.java	200	        return isGooglePlayServicesAvailable(context, GOOGLE_PLAY_SERVICES_VERSION_CODE);
+jadx/sources/com/google/android/gms/common/internal/BaseGmsClient.java	585	        return GoogleApiAvailabilityLight.GOOGLE_PLAY_SERVICES_VERSION_CODE;
+jadx/sources/com/google/android/gms/common/internal/BaseGmsClient.java	593	        int i = GoogleApiAvailabilityLight.GOOGLE_PLAY_SERVICES_VERSION_CODE;
+jadx/sources/com/google/android/gms/common/server/response/FastJsonResponse.java	61	"        @SafeParcelable.VersionField(getter = ""getVersionCode"", id = 1)"
+jadx/sources/com/google/android/gms/common/server/response/FastJsonResponse.java	194	"            Objects.ToStringHelper toStringHelperAdd = Objects.toStringHelper(this).add(""versionCode"", Integer.valueOf(this.zai)).add(""typeIn"", Integer.valueOf(this.zaa)).add(""typeInArray"", Boolean.valueOf(this.zab)).add(""typeOut"", Integer.valueOf(this.zac)).add(""typeOutArray"", Boolean.valueOf(this.zad)).add(""outputFieldName"", this.zae).add(""safeParcelFieldId"", Integer.valueOf(this.zaf)).add(""concreteTypeName"", zag());"
+jadx/sources/com/google/android/gms/common/server/response/SafeParcelResponse.java	35	"    @SafeParcelable.VersionField(getter = ""getVersionCode"", id = 1)"
+jadx/sources/com/google/android/gms/common/util/DeviceProperties.java	186	        int i = GooglePlayServicesUtilLight.GOOGLE_PLAY_SERVICES_VERSION_CODE;
+jadx/sources/com/google/android/gms/common/zaa.java	15	        int i = GoogleApiAvailability.GOOGLE_PLAY_SERVICES_VERSION_CODE;
+jadx/sources/com/google/android/gms/common/zab.java	15	        int i = GoogleApiAvailability.GOOGLE_PLAY_SERVICES_VERSION_CODE;
+jadx/sources/com/google/android/gms/fido/u2f/api/common/KeyHandle.java	28	"    @SafeParcelable.VersionField(getter = ""getVersionCode"", id = 1)"
+jadx/sources/com/google/android/gms/fido/u2f/api/common/KeyHandle.java	107	    public int getVersionCode() {
+jadx/sources/com/google/android/gms/fido/u2f/api/common/KeyHandle.java	129	        SafeParcelWriter.writeInt(parcel, 1, getVersionCode());
+jadx/sources/com/google/android/gms/fido/u2f/api/common/RegisterRequest.java	24	"    @SafeParcelable.VersionField(getter = ""getVersionCode"", id = 1)"
+jadx/sources/com/google/android/gms/fido/u2f/api/common/RegisterRequest.java	112	    public int getVersionCode() {
+jadx/sources/com/google/android/gms/fido/u2f/api/common/RegisterRequest.java	141	        SafeParcelWriter.writeInt(parcel, 1, getVersionCode());
+jadx/sources/com/google/android/gms/fido/u2f/api/common/RegisterResponseData.java	89	    public int getVersionCode() {
+jadx/sources/com/google/android/gms/measurement/internal/zzek.java	117	                            str4 = packageInfo.versionName;
+jadx/sources/com/google/android/gms/measurement/internal/zzek.java	118	                            i = packageInfo.versionCode;
+jadx/sources/com/google/android/gms/measurement/internal/zzfl.java	19	"                return packageManagerWrapperPackageManager.getPackageInfo(""com.android.vending"", 128).versionCode >= 80837300;"
+jadx/sources/com/google/android/gms/measurement/internal/zzhc.java	6	"    public static final String[] zza = {""ad_activeview"", ""ad_click"", ""ad_exposure"", ""ad_query"", ""ad_reward"", ""adunit_exposure"", ""app_clear_data"", ""app_exception"", ""app_remove"", ""app_store_refund"", ""app_store_subscription_cancel"", ""app_store_subscription_convert"", ""app_store_subscription_renew"", ""app_upgrade"", AppEvent.APP_UPDATE, ""ga_campaign"", ""error"", ""first_open"", ""first_visit"", ""in_app_purchase"", ""notification_dismiss"", ""notification_foreground"", ""notification_open"", ""notification_receive"", ""os_update"", ""session_start"", ""session_start_with_rollout"", ""user_engagement"", ""ad_impression"", ""screen_view"", ""ga_extra_parameter"", ""app_background"", ""firebase_campaign""};"
+jadx/sources/com/google/android/gms/measurement/internal/zzhd.java	7	"    public static final String[] zza = {""ga_conversion"", ""engagement_time_msec"", ""exposure_time"", ""ad_event_id"", ""ad_unit_id"", ""ga_error"", ""ga_error_value"", ""ga_error_length"", ""ga_event_origin"", ""ga_screen"", ""ga_screen_class"", ""ga_screen_id"", ""ga_previous_screen"", ""ga_previous_class"", ""ga_previous_id"", ""manual_tracking"", ""message_device_time"", ""message_id"", ""message_name"", ""message_time"", ""message_tracking_id"", ""message_type"", ""previous_app_version"", ""previous_os_version"", ""topic"", ""update_with_analytics"", ""previous_first_open_count"", ""system_app"", ""system_app_update"", ""previous_install_count"", ""ga_event_id"", ""ga_extra_params_ct"", ""ga_group_name"", ""ga_list_length"", ""ga_index"", ""ga_event_name"", ""campaign_info_source"", ""cached_campaign"", ""deferred_analytics_collection"", ""ga_session_number"", ""ga_session_id"", ""campaign_extra_referrer"", ""app_in_background"", ""firebase_feature_rollouts"", ""firebase_conversion"", ""firebase_error"", ""firebase_error_value"", ""firebase_error_length"", ""firebase_event_origin"", ""firebase_screen"", ""firebase_screen_class"", ""firebase_screen_id"", ""firebase_previous_screen"", ""firebase_previous_class"", ""firebase_previous_id"", ""session_number"", ""session_id""};"
+jadx/sources/com/google/android/gms/measurement/internal/zzlh.java	189	                if (zzhVar.zzb() == Wrappers.packageManager(this.zzn.zzaw()).getPackageInfo(zzhVar.zzv(), 0).versionCode) {
+jadx/sources/com/google/android/gms/measurement/internal/zzlh.java	193	                String str = Wrappers.packageManager(this.zzn.zzaw()).getPackageInfo(zzhVar.zzv(), 0).versionName;
+jadx/sources/com/google/firebase/crashlytics/ndk/JniNativeApi.java	71	        return Build.VERSION.SDK_INT >= 28 ? Long.toString(qn.a(packageInfo)) : Integer.toString(packageInfo.versionCode);
+jadx/sources/com/google/firebase/perf/config/RemoteConfigManager.java	90	    public static int getVersionCode(Context context) {
+jadx/sources/com/google/firebase/perf/config/RemoteConfigManager.java	92	            return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+jadx/sources/com/google/firebase/perf/v1/a.java	12	    public static final int VERSION_NAME_FIELD_NUMBER = 3;
+jadx/sources/com/google/firebase/perf/v1/a.java	16	"    private String versionName_ = """";"
+jadx/sources/com/google/firebase/perf/v1/a.java	121	"                return GeneratedMessageLite.newMessageInfo(DEFAULT_INSTANCE, ""\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001ဈ\u0000\u0002ဈ\u0001\u0003ဈ\u0002"", new Object[]{""bitField0_"", ""packageName_"", ""sdkVersion_"", ""versionName_""});"
+jadx/sources/com/google/firebase/perf/v1/a.java	173	        this.versionName_ = str;
+jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java	133	                map2.put(RemoteConfigConstants$RequestFieldKey.APP_VERSION, packageInfo.versionName);
+jadx/sources/com/mbridge/msdk/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/banner/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/banner/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/c/a/c.java	24	"        eVar.a(""app_version_name"", z.p(this.mContext));"
+jadx/sources/com/mbridge/msdk/c/a/c.java	25	"        eVar.a(""app_version_code"", z.q(this.mContext) + """");"
+jadx/sources/com/mbridge/msdk/dycreator/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/dycreator/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/foundation/download/core/DownloadTask.java	25	    private volatile boolean _needUpdateDownloadModel = true;
+jadx/sources/com/mbridge/msdk/foundation/download/core/DownloadTask.java	61	        return downloadTask._needUpdateDownloadModel;
+jadx/sources/com/mbridge/msdk/foundation/download/core/DownloadTask.java	104	                    this._needUpdateDownloadModel = false;
+jadx/sources/com/mbridge/msdk/foundation/download/core/DownloadTask.java	111	                    this._needUpdateDownloadModel = false;
+jadx/sources/com/mbridge/msdk/foundation/download/core/DownloadTask.java	143	                this._needUpdateDownloadModel = false;
+jadx/sources/com/mbridge/msdk/foundation/entity/CampaignEx.java	231	    private long cVersionCode;
+jadx/sources/com/mbridge/msdk/foundation/entity/CampaignEx.java	2387	    public long getcVersionCode() {
+jadx/sources/com/mbridge/msdk/foundation/entity/CampaignEx.java	2388	        return this.cVersionCode;
+jadx/sources/com/mbridge/msdk/foundation/entity/CampaignEx.java	3212	    public void setcVersionCode(long j) {
+jadx/sources/com/mbridge/msdk/foundation/entity/CampaignEx.java	3213	        this.cVersionCode = j;
+jadx/sources/com/mbridge/msdk/foundation/same/report/b/d.java	189	            return context.getApplicationContext().getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+jadx/sources/com/mbridge/msdk/foundation/same/report/b/d.java	234	            return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+jadx/sources/com/mbridge/msdk/foundation/same/report/b/d.java	267	"            jSONObject.put(""appversioncode"", d(context));"
+jadx/sources/com/mbridge/msdk/foundation/same/report/b/d.java	268	"            jSONObject.put(""appversionname"", b(context));"
+jadx/sources/com/mbridge/msdk/foundation/same/report/b/d.java	272	"            jSONObject.put(""appversioncode"", ""-1"");"
+jadx/sources/com/mbridge/msdk/foundation/same/report/b/d.java	273	"            jSONObject.put(""appversionname"", ""-1"");"
+jadx/sources/com/mbridge/msdk/foundation/same/report/q.java	174	"            eVar.a(""app_version_name"", URLEncoder.encode(z.p(context)));"
+jadx/sources/com/mbridge/msdk/foundation/tools/ai.java	573	"            if (packageInfoA == null || TextUtils.isEmpty(packageInfoA.versionName) || !packageInfoA.versionName.equals(""77.0.3865.92"")) {"
+jadx/sources/com/mbridge/msdk/foundation/tools/z.java	912	            String str = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+jadx/sources/com/mbridge/msdk/foundation/tools/z.java	949	            int i3 = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+jadx/sources/com/mbridge/msdk/intervideo/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/intervideo/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/mbbanner/common/e/a.java	26	"        eVar.a(""app_version_name"", z.p(this.mContext));"
+jadx/sources/com/mbridge/msdk/mbbanner/common/e/a.java	27	"        eVar.a(""app_version_code"", z.q(this.mContext) + """");"
+jadx/sources/com/mbridge/msdk/mbbid/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/mbbid/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/mbbid/common/b/a.java	31	"        eVar.a(""app_version_name"", z.p(this.mContext));"
+jadx/sources/com/mbridge/msdk/mbbid/common/b/a.java	32	"        eVar.a(""app_version_code"", z.q(this.mContext) + """");"
+jadx/sources/com/mbridge/msdk/mbnative/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/mbnative/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/mbnative/f/a/a.java	25	"        eVar.a(""app_version_name"", z.p(this.mContext));"
+jadx/sources/com/mbridge/msdk/mbnative/f/a/a.java	26	"        eVar.a(""app_version_code"", z.q(this.mContext) + """");"
+jadx/sources/com/mbridge/msdk/mbsignalcommon/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/mbsignalcommon/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/nativex/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/nativex/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/newinterstitial/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/newinterstitial/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/newreward/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/newreward/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/newreward/function/g/a.java	28	"            eVar.a(""app_version_name"", z.p(contextC));"
+jadx/sources/com/mbridge/msdk/newreward/function/g/a.java	29	"            eVar.a(""app_version_code"", z.q(contextC) + """");"
+jadx/sources/com/mbridge/msdk/playercommon/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/playercommon/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/playercommon/exoplayer2/util/Util.java	604	            str2 = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+jadx/sources/com/mbridge/msdk/reward/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/reward/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/reward/d/b.java	25	"        eVar.a(""app_version_name"", z.p(this.mContext));"
+jadx/sources/com/mbridge/msdk/reward/d/b.java	26	"        eVar.a(""app_version_code"", z.q(this.mContext) + """");"
+jadx/sources/com/mbridge/msdk/video/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/video/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/video/dynview/f/b.java	24	"        eVar.a(""app_version_name"", z.p(this.mContext));"
+jadx/sources/com/mbridge/msdk/video/dynview/f/b.java	25	"        eVar.a(""app_version_code"", z.q(this.mContext) + """");"
+jadx/sources/com/mbridge/msdk/video/module/c/a.java	24	"        eVar.a(""app_version_name"", z.p(this.mContext));"
+jadx/sources/com/mbridge/msdk/video/module/c/a.java	25	"        eVar.a(""app_version_code"", z.q(this.mContext) + """");"
+jadx/sources/com/mbridge/msdk/videocommon/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/mbridge/msdk/videocommon/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/mbridge/msdk/videocommon/c/b.java	26	"            eVar.a(""app_version_name"", z.p(this.mContext));"
+jadx/sources/com/mbridge/msdk/videocommon/c/b.java	27	"            eVar.a(""app_version_code"", z.q(this.mContext) + """");"
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	167	        public static final Integer DEFAULT_GMSCORE_VERSION_CODE;
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	211	        public final Integer gmscore_version_code;
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	264	            public Integer gmscore_version_code;
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	338	            public Builder gmscore_version_code(Integer num) {
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	339	                this.gmscore_version_code = num;
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	433	                        builder.gmscore_version_code(ProtoAdapter.INT32.decode(protoReader));
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	509	                protoAdapter2.encodeWithTag(protoWriter, 50, clientInfo.gmscore_version_code);
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	527	                return iEncodedSizeWithTag2 + protoAdapter3.encodedSizeWithTag(39, clientInfo.screen_width_inches) + protoAdapter3.encodedSizeWithTag(40, clientInfo.screen_height_inches) + protoAdapter2.encodedSizeWithTag(41, clientInfo.screen_pixel_density) + ClientFormFactor.ADAPTER.encodedSizeWithTag(46, clientInfo.client_form_factor) + protoAdapter2.encodedSizeWithTag(50, clientInfo.gmscore_version_code) + protoAdapter2.encodedSizeWithTag(55, clientInfo.window_width_points) + protoAdapter2.encodedSizeWithTag(56, clientInfo.window_height_points) + protoAdapter2.encodedSizeWithTag(64, clientInfo.android_sdk_version) + protoAdapter3.encodedSizeWithTag(65, clientInfo.screen_density_float) + ProtoAdapter.INT64.encodedSizeWithTag(67, clientInfo.utc_offset_minutes) + protoAdapter.encodedSizeWithTag(80, clientInfo.time_zone) + protoAdapter.encodedSizeWithTag(92, clientInfo.chipset) + GLDeviceInfo.ADAPTER.encodedSizeWithTag(102, clientInfo.gl_device_info) + clientInfo.unknownFields().size();
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	567	            DEFAULT_GMSCORE_VERSION_CODE = 0;
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	591	            this.gmscore_version_code = builder.gmscore_version_code;
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	610	            return unknownFields().equals(clientInfo.unknownFields()) && Internal.equals(this.device_make, clientInfo.device_make) && Internal.equals(this.device_model, clientInfo.device_model) && Internal.equals(this.client_name, clientInfo.client_name) && Internal.equals(this.client_version, clientInfo.client_version) && Internal.equals(this.os_name, clientInfo.os_name) && Internal.equals(this.os_version, clientInfo.os_version) && Internal.equals(this.accept_language, clientInfo.accept_language) && Internal.equals(this.accept_region, clientInfo.accept_region) && Internal.equals(this.screen_width_points, clientInfo.screen_width_points) && Internal.equals(this.screen_height_points, clientInfo.screen_height_points) && Internal.equals(this.screen_width_inches, clientInfo.screen_width_inches) && Internal.equals(this.screen_height_inches, clientInfo.screen_height_inches) && Internal.equals(this.screen_pixel_density, clientInfo.screen_pixel_density) && Internal.equals(this.client_form_factor, clientInfo.client_form_factor) && Internal.equals(this.gmscore_version_code, clientInfo.gmscore_version_code) && Internal.equals(this.window_width_points, clientInfo.window_width_points) && Interna
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	647	            Integer num5 = this.gmscore_version_code;
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	686	            builder.gmscore_version_code = this.gmscore_version_code;
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	763	            if (this.gmscore_version_code != null) {
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	764	"                sb.append("", gmscore_version_code="");"
+jadx/sources/com/mobiuspace/youtube/ump/proto/StreamerContext.java	765	                sb.append(this.gmscore_version_code);
+jadx/sources/com/mopub/common/util/VersionCode.java	5	public enum VersionCode {
+jadx/sources/com/mopub/common/util/VersionCode.java	29	    VersionCode(int i) {
+jadx/sources/com/mopub/common/util/VersionCode.java	33	    public static VersionCode b(int i) {
+jadx/sources/com/mopub/common/util/VersionCode.java	34	        for (VersionCode versionCode : values()) {
+jadx/sources/com/mopub/common/util/VersionCode.java	35	            if (versionCode.getApiLevel() == i) {
+jadx/sources/com/mopub/common/util/VersionCode.java	36	                return versionCode;
+jadx/sources/com/mopub/common/util/VersionCode.java	42	    public static VersionCode currentApiLevel() {
+jadx/sources/com/mopub/common/util/VersionCode.java	50	    public boolean isAtLeast(VersionCode versionCode) {
+jadx/sources/com/mopub/common/util/VersionCode.java	51	        return getApiLevel() >= versionCode.getApiLevel();
+jadx/sources/com/mopub/common/util/VersionCode.java	54	    public boolean isAtMost(VersionCode versionCode) {
+jadx/sources/com/mopub/common/util/VersionCode.java	55	        return getApiLevel() <= versionCode.getApiLevel();
+jadx/sources/com/mopub/common/util/VersionCode.java	58	    public boolean isBelow(VersionCode versionCode) {
+jadx/sources/com/mopub/common/util/VersionCode.java	59	        return getApiLevel() < versionCode.getApiLevel();
+jadx/sources/com/mopub/mobileads/BaseWebView.java	7	import com.mopub.common.util.VersionCode;
+jadx/sources/com/mopub/mobileads/BaseWebView.java	54	        if (VersionCode.currentApiLevel().isAtLeast(VersionCode.JELLY_BEAN_MR2)) {
+jadx/sources/com/pgl/ssdk/z.java	130	            return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+jadx/sources/com/phoenix/slog/SnapTubeLogger.java	266	            String str = packageInfoD != null ? packageInfoD.versionName : DEFAULT_WEB_VIEW_VERSION;
+jadx/sources/com/sensorsdata/analytics/android/sdk/BuildConfig.java	13	    public static final int VERSION_CODE = 1;
+jadx/sources/com/sensorsdata/analytics/android/sdk/BuildConfig.java	14	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/sensorsdata/analytics/android/sdk/autotrack/ActivityLifecycleCallbacks.java	244	            this.endDataProperty.put(APP_VERSION, AppInfoUtils.getAppVersionName(this.mContext));
+jadx/sources/com/sensorsdata/analytics/android/sdk/plugin/property/SAPresetPropertyPlugin.java	45	"        map.put(""$app_version"", AppInfoUtils.getAppVersionName(this.mContext));"
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/BaseSensorsDataSDKRemoteManager.java	81	        String newVersion;
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/BaseSensorsDataSDKRemoteManager.java	112	                newVersion = sensorsDataSDKRemoteConfig.getNewVersion();
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/BaseSensorsDataSDKRemoteManager.java	115	                newVersion = null;
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/BaseSensorsDataSDKRemoteManager.java	120	"            if (!TextUtils.isEmpty(newVersion) && TextUtils.isEmpty(uri.getQueryParameter(""nv""))) {"
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/BaseSensorsDataSDKRemoteManager.java	121	"                builderBuildUpon.appendQueryParameter(""nv"", newVersion);"
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/BaseSensorsDataSDKRemoteManager.java	214	"                    sensorsDataSDKRemoteConfig.setNewVersion("""");"
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/BaseSensorsDataSDKRemoteManager.java	222	"                    sensorsDataSDKRemoteConfig.setNewVersion(jSONObject2.optString(""nv"", """"));"
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/SensorsDataRemoteManagerDebug.java	70	                    if (sDKRemoteConfig.getNewVersion().equals(queryParameter)) {
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/SensorsDataRemoteManagerDebug.java	76	                        String.format(SADisplayUtil.getStringResource(AnonymousClass1.this.val$activity, R.string.sensors_analytics_remote_version_tip), sDKRemoteConfig.getNewVersion(), queryParameter);
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.java	14	    private String newVersion;
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.java	36	    public String getNewVersion() {
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.java	37	        return this.newVersion;
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.java	104	    public void setNewVersion(String str) {
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.java	105	        this.newVersion = str;
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.java	125	"            jSONObject2.put(""nv"", this.newVersion);"
+jadx/sources/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.java	135	"        return ""{ v="" + this.oldVersion + "", disableDebugMode="" + this.disableDebugMode + "", disableSDK="" + this.disableSDK + "", autoTrackMode="" + this.autoTrackMode + "", event_blacklist="" + this.eventBlacklist + "", nv="" + this.newVersion + "", effect_mode="" + this.effectMode + ""}"";"
+jadx/sources/com/sensorsdata/analytics/android/sdk/track/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/sensorsdata/analytics/android/sdk/track/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.java	19	    private static String mAppVersionName;
+jadx/sources/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.java	50	    public static String getAppVersionName(Context context) {
+jadx/sources/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.java	54	        if (!TextUtils.isEmpty(mAppVersionName)) {
+jadx/sources/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.java	55	            return mAppVersionName;
+jadx/sources/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.java	58	            mAppVersionName = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+jadx/sources/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.java	62	        return mAppVersionName;
+jadx/sources/com/sensorsdata/analytics/android/sdk/visual/AbstractViewCrawler.java	1718	            this.mAppVersion = activity.getPackageManager().getPackageInfo(activity.getPackageName(), 0).versionName;
+jadx/sources/com/sensorsdata/analytics/android/sdk/visual/BuildConfig.java	11	    public static final int VERSION_CODE = 1;
+jadx/sources/com/sensorsdata/analytics/android/sdk/visual/BuildConfig.java	12	"    public static final String VERSION_NAME = ""1.0"";"
+jadx/sources/com/snaptube/ad/guardian/GuardianManager.java	128	"    @Metadata(d1 = {""\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0017\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u001b\u0010\t\u001a\u00020\u00048FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u0005\u0010\u0006\u001a\u0004\b\u0007\u0010\bR\u0014\u0010\u000b\u001a\u00020\n8\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u000b\u0010\fR\u0014\u0010\r\u001a\u00020\n8\u0006X\u0086T¢\u0006\u0006\n\u0004\b\r\u0010\fR\u0014\u0010\u000e\u001a\u00020\n8\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u000e\u0010\fR\u0014\u0010\u000f\u001a\u00020\n8\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u000f\u0010\fR\u0014\u0010\u0010\u001a\u00020\n8\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0010\u0010\fR\u0014\u0010\u0011\u001a\u00020\n8\u0002X\u0082T¢\u0006\u0006\n\u0004\b\u0011\u0010\fR\u0014\u0010\u0012\u001a\u00020\n8\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0012\u0010\fR\u0014\u0010\u0013\u001a\u00020\n8\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0013\u0010\fR\u0014\u0010\u0014\u001a\u00020\n8\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0014\u0010\fR\u0014\u0010\u0015\u001a\u00020\n8\u0006X\u0086T¢\u0006\u0006\n\u000"
+jadx/sources/com/snaptube/ads/selfbuild/request/model/AppEvent.java	9	"    public static final String APP_UPDATE = ""app_update"";"
+jadx/sources/com/snaptube/ads/selfbuild/request/verify/AppInstalledReceiver.java	47	            e(context, AppEvent.APP_UPDATE, encodedSchemeSpecificPart);
+jadx/sources/com/snaptube/ads_log_v2/a.java	26	"                jSONObject.put(""versionCode"", str2);"
+jadx/sources/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.java	32	"    private static final String PARAM_VERSION_CODE = ""vc"";"
+jadx/sources/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.java	33	"    private static final String PARAM_VERSION_NAME = ""v"";"
+jadx/sources/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.java	39	    private static String versionCode;
+jadx/sources/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.java	40	    private static String versionName;
+jadx/sources/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.java	46	        if (versionName == null || versionCode == null) {
+jadx/sources/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.java	49	"        return c93Var.k().N(PARAM_VERSION_NAME, versionName).N(PARAM_VERSION_CODE, versionCode).N(PARAM_CHANNEL, channel).N(PARAM_PACKAGE_NAME, c06.a().getPackageName()).N(""region"", getContentRegion(c06.a())).N(PARAM_NETWORK_COUNTRY_ISO, bz7.a(c06.a())).N(""locale"", Locale.getDefault().toString()).N(PARAM_API_VERSION, API_VERSION).N(PARAM_RANDOM_ID, String.valueOf(getRandomId())).N(PARAM_YOUTUBE, String.valueOf(true)).N(""os"", String.valueOf(Build.VERSION.SDK_INT)).f();"
+jadx/sources/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.java	106	        versionName = bz7.d(context);
+jadx/sources/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.java	107	        versionCode = String.valueOf(bz7.c(context));
+jadx/sources/com/snaptube/dataadapter/plugin/push/util/CrashlyticsInfoUtils.java	17	"    private static final String FIELD_VERSION_NAME = ""VERSION_NAME"";"
+jadx/sources/com/snaptube/dataadapter/plugin/push/util/CrashlyticsInfoUtils.java	61	            Field declaredField = Class.forName(CLASS_BUILD_CONFIG).getDeclaredField(FIELD_VERSION_NAME);
+jadx/sources/com/snaptube/dataadapter/plugin/push/util/MIUIUtil.java	17	"    private static final String KEY_MIUI_VERSION_CODE = ""ro.miui.ui.version.code"";"
+jadx/sources/com/snaptube/dataadapter/plugin/push/util/MIUIUtil.java	18	"    private static final String KEY_MIUI_VERSION_CODE_TIME = ""ro.miui.version.code_time"";"
+jadx/sources/com/snaptube/dataadapter/plugin/push/util/MIUIUtil.java	19	"    private static final String KEY_MIUI_VERSION_NAME = ""ro.miui.ui.version.name"";"
+jadx/sources/com/snaptube/dataadapter/plugin/push/util/MIUIUtil.java	27	            if (KEY_MIUI_VERSION_CODE_TIME.equals(str) && !TextUtils.isEmpty(systemProperty)) {
+jadx/sources/com/snaptube/dataadapter/plugin/push/util/MIUIUtil.java	62	        appendMIUIInfo(sb, KEY_MIUI_VERSION_CODE, KEY_MIUI_VERSION_NAME, KEY_MIUI_INTERNAL_STORAGE, KEY_MIUI_VERSION_CODE_TIME);
+jadx/sources/com/snaptube/dataadapter/plugin/push/util/MIUIUtil.java	87	        boolean zIsPropertiesExist = isPropertiesExist(KEY_MIUI_VERSION_CODE, KEY_MIUI_VERSION_NAME, KEY_MIUI_INTERNAL_STORAGE);
+jadx/sources/com/snaptube/extractor/pluginlib/sites/Facebook.java	27	    private static final int VERSION_CODE_726 = 72600000;
+jadx/sources/com/snaptube/extractor/pluginlib/sites/Facebook.java	72	        if (pz5.b() > VERSION_CODE_726) {
+jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	11	"    LOCAL_BUNDLE(""local-bundle"", ""!function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){\""undefined\""!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:\""Module\""}),Object.defineProperty(t,\""__esModule\"",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&\""object\""==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,\""default\"",{enumerable:!0,value:t}),2&e&&\""string\""!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,\""a\"",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p=\""\"",n(n.s=40)}([function(t,e,n){\""use strict\"";var r,o=function(){return void 0===r&&(r=Boolean(window&&document&&document.all&&!window.atob)),r},i=function(){var t={};return function(e){if(void 0===t[e]){var n=document.querySelector(e);if(window.HTMLIF"
+jadx/sources/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.java	110	    public static int getVersionCode(@NonNull Context context) {
+jadx/sources/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.java	112	            return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+jadx/sources/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.java	126	        int versionCode;
+jadx/sources/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.java	131	        if (context.getClassLoader() != PluginContextUtil.class.getClassLoader() && ((versionCode = getVersionCode(context)) == 4664010 || versionCode == 4663910 || (versionCode >= 4670000 && versionCode < 4671710))) {
+jadx/sources/com/snaptube/player_guide/IPlayerGuideConfig.java	40	        public static final Key APP_VERSION_CODE;
+jadx/sources/com/snaptube/player_guide/IPlayerGuideConfig.java	230	"            APP_VERSION_CODE = new Key(""APP_VERSION_CODE"", 80, ""app_version_code"", Long.class);"
+jadx/sources/com/snaptube/player_guide/IPlayerGuideConfig.java	291	            return new Key[]{ENABLED, PLAYER_GUIDE_TYPE, CTA, TITLE, SUBTITLE, DESCRIPTION, WOULD_NOT, ICON_URL, IMAGE_URL, HEADER_IMAGE_URL, INSTALLER, AUTO_LAUNCH, SEND_NOTIFICATION_WHEN_INSTALLED, NOTIFICATION_TITLE, NOTIFICATION_BODY, NOTIFICATION_URL, DOWNLOAD_URL, DOWNLOAD_URL_ARM64, WEB_URL, WEB_URL_OPEN_INSIDE, GP_REFERRER, GP_LINK_EXTRA, GP_LINK_PREFIX, GP_LINK_DYNAMIC_ENABLED, GP_FORCE_USE_DIALOG, BROADCAST_REFERRER_WHEN_INSTALLED, USE_REFERRER_PROVIDER_WHEN_INSTALLED, APP_IDENTITY, APP_ICON_URL, PACKAGE_NAME, FILTERED_PACKAGE_NAMES, APP_NAME, MIN_SDK, ARCH, SUPPORT_MEDIA_TYPE, IS_DEVELOPED_BY_US, LOG_EXPOSURE, LOG_CLICK, LOG_INSTALLED, SET_AS_DEFAULT_PLAYER, SHOW_GUIDE_ACTIVITY, ENABLE_NOT_INTERESTED, HIDE_GUIDE_ACTIVITY_AFTER_CLICK_CTA, EXECUTE_CTA_AFTER_START_GUIDE_ACTIVITY, ACTIONS_AFTER_INSTALLED, REGISTER_INSTALL_RECEIVER, LAUNCH_IF_INSTALLED, DURATION, GUIDE_IF_SET_DEFAULT_PLAYER, PLAY_AFTER_INSTALLED, AUTO_JUMP_TO_GP, POPUP_INSTALL_TIPS_OVERLAY_GP, ENABLE_GP_GUIDE_TIP, GP_GUIDE_TIP_DESCRIPTION, GP_GUIDE_TIP_CTA, EXECUTE_SEMI_MANDATORY_GUIDE_COUNT, GUIDE_ACTIVITY_STYLE, SILENCE_TASK, DOWNLOAD_ONLY_WIFI, ACTIVITY_LABEL, CTA_BACKGROUND, CTA_BACKGROUND_TINT, CTA_TEXT_
+jadx/sources/com/snaptube/player_guide/resAction/a.java	46	        Long lValueOf = jSONObjectOptJSONObject != null ? Long.valueOf(jSONObjectOptJSONObject.optLong(IPlayerGuideConfig.Key.APP_VERSION_CODE.getName())) : null;
+jadx/sources/com/snaptube/player_guide/strategy/model/AppRes.java	66	"        @SerializedName(""app_version_code"")"
+jadx/sources/com/snaptube/plugin/PluginReportBean.java	20	    public Long versionCode;
+jadx/sources/com/snaptube/plugin/PluginReportBean.java	74	    public Long getVersionCode() {
+jadx/sources/com/snaptube/plugin/PluginReportBean.java	75	        return this.versionCode;
+jadx/sources/com/snaptube/plugin/PluginReportBean.java	130	    public void setVersionCode(Long l) {
+jadx/sources/com/snaptube/plugin/PluginReportBean.java	131	        this.versionCode = l;
+jadx/sources/com/snaptube/premium/R.java	4074	        public static final int ic_app_update_rect = 0x7f08022a;
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	15	"@Metadata(d1 = {""\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010$\n\u0002\b \b\u0087\b\u0018\u00002\u00020\u0001Bi\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\u0003\u0012\u0006\u0010\n\u001a\u00020\u0006\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\u0012\u0010\u000f\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0010¢\u0006\u0002\u0010\u0011J\t\u0010 \u001a\u00020\u0003HÆ\u0003J\t\u0010!\u001a\u00020\u000eHÆ\u0003J\u0015\u0010\""\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0010HÆ\u0003J\t\u0010#\u001a\u00020\u0003HÆ\u0003J\t\u0010$\u001a\u00020\u0006HÆ\u0003J\t\u0010%\u001a\u00020\u0006HÆ\u0003J\t\u0010&\u001a\u00020\u0003HÆ\u0003J\t\u0010'\u001a\u00020\u0003HÆ\u0003J\t\u0010(\u001a\u00020\u0006HÆ\u0003J\t\u0010)\u001a\u00020\u000"
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	56	    private final int versionCode;
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	68	        this.versionCode = i;
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	81	        return aBTestConfigRequestBean.copy((i4 & 1) != 0 ? aBTestConfigRequestBean.app : str, (i4 & 2) != 0 ? aBTestConfigRequestBean.udid : str2, (i4 & 4) != 0 ? aBTestConfigRequestBean.versionCode : i, (i4 & 8) != 0 ? aBTestConfigRequestBean.os : i2, (i4 & 16) != 0 ? aBTestConfigRequestBean.channel : str3, (i4 & 32) != 0 ? aBTestConfigRequestBean.language : str4, (i4 & 64) != 0 ? aBTestConfigRequestBean.randomId : i3, (i4 & 128) != 0 ? aBTestConfigRequestBean.gaid : str5, (i4 & 256) != 0 ? aBTestConfigRequestBean.manufacturer : str6, (i4 & 512) != 0 ? aBTestConfigRequestBean.isFirstDay : z, (i4 & 1024) != 0 ? aBTestConfigRequestBean.customProperties : map);
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	103	    public final int getVersionCode() {
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	104	        return this.versionCode;
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	136	    public final ABTestConfigRequestBean copy(@NotNull String app, @NotNull String udid, int versionCode, int os, @NotNull String channel, @NotNull String language, int randomId, @NotNull String gaid, @NotNull String manufacturer, boolean isFirstDay, @NotNull Map<String, String> customProperties) {
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	144	        return new ABTestConfigRequestBean(app, udid, versionCode, os, channel, language, randomId, gaid, manufacturer, isFirstDay, customProperties);
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	155	        return or3.a(this.app, aBTestConfigRequestBean.app) && or3.a(this.udid, aBTestConfigRequestBean.udid) && this.versionCode == aBTestConfigRequestBean.versionCode && this.os == aBTestConfigRequestBean.os && or3.a(this.channel, aBTestConfigRequestBean.channel) && or3.a(this.language, aBTestConfigRequestBean.language) && this.randomId == aBTestConfigRequestBean.randomId && or3.a(this.gaid, aBTestConfigRequestBean.gaid) && or3.a(this.manufacturer, aBTestConfigRequestBean.manufacturer) && this.isFirstDay == aBTestConfigRequestBean.isFirstDay && or3.a(this.customProperties, aBTestConfigRequestBean.customProperties);
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	201	    public final int getVersionCode() {
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	202	        return this.versionCode;
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	206	        return (((((((((((((((((((this.app.hashCode() * 31) + this.udid.hashCode()) * 31) + this.versionCode) * 31) + this.os) * 31) + this.channel.hashCode()) * 31) + this.language.hashCode()) * 31) + this.randomId) * 31) + this.gaid.hashCode()) * 31) + this.manufacturer.hashCode()) * 31) + k54.a(this.isFirstDay)) * 31) + this.customProperties.hashCode();
+jadx/sources/com/snaptube/premium/abtest/ABTestConfigRequestBean.java	215	"        return ""ABTestConfigRequestBean(app="" + this.app + "", udid="" + this.udid + "", versionCode="" + this.versionCode + "", os="" + this.os + "", channel="" + this.channel + "", language="" + this.language + "", randomId="" + this.randomId + "", gaid="" + this.gaid + "", manufacturer="" + this.manufacturer + "", isFirstDay="" + this.isFirstDay + "", customProperties="" + this.customProperties + "")"";"
+jadx/sources/com/snaptube/premium/configs/Config.java	503	"        editorEdit.putInt(""key_copy_version_code "", i2);"
+jadx/sources/com/snaptube/premium/configs/Config.java	822	"        return az7.P(GlobalConfig.getAppContext()) != b0().getInt(""key.current_version_code"", -1);"
+jadx/sources/com/snaptube/premium/configs/Config.java	830	"        int i2 = b0().getInt(""key.current_version_code"", -1);"
+jadx/sources/com/snaptube/premium/configs/Config.java	836	"        editorEdit.putInt(""key.last_version_code"", i2);"
+jadx/sources/com/snaptube/premium/configs/Config.java	837	"        editorEdit.putInt(""key.current_version_code"", iP);"
+jadx/sources/com/snaptube/premium/configs/Config.java	1089	"        b0().edit().putInt(""install_version_code"", i2).apply();"
+jadx/sources/com/snaptube/premium/configs/Config.java	1117	"        return i1().getBoolean(""key.enable_app_upgrade_download_in_wifi_prefer"", false);"
+jadx/sources/com/snaptube/premium/configs/Config.java	1318	"        return b0().getInt(""install_version_code"", -1);"
+jadx/sources/com/snaptube/premium/configs/Config.java	1564	"        GlobalConfig.getGenericSharedPrefs().edit().putInt(""key.record_version_code"", i2).apply();"
+jadx/sources/com/snaptube/premium/configs/Config.java	2002	"        return GlobalConfig.getGenericSharedPrefs().getInt(""key.record_version_code"", 0);"
+jadx/sources/com/snaptube/premium/configs/Config.java	2030	"        return b0().getInt(""key_copy_version_code "", -1);"
+jadx/sources/com/snaptube/premium/dialog/UpgradeDialog.java	64	                string = context.getResources().getString(R.string.current_value, context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName);
+jadx/sources/com/snaptube/premium/files/downloaded/DownloadedTaskFragment.java	96	"@Metadata(d1 = {""\u0000Þ\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\b\u0004\n\u0002\b\u0007*\u0004\u0085\u0001\u0089\u0001\u0018\u0000 \u008d\u00012\u00020\u00012\u00020\u00022\u00020\u0003:\u0002\u008e\u0001B\u0007¢\u0006\u0004\b\u0004\u0010\u0005J\u001d\u0010\n\u001a\u00020\t2\f\u0010\b\u001a\b\"
+jadx/sources/com/snaptube/premium/files/downloaded/DownloadedTaskFragment.java	124	    public boolean needUpdateData;
+jadx/sources/com/snaptube/premium/files/downloaded/DownloadedTaskFragment.java	272	        return downloadedTaskFragment.needUpdateData;
+jadx/sources/com/snaptube/premium/files/downloaded/DownloadedTaskFragment.java	288	        downloadedTaskFragment.needUpdateData = z;
+jadx/sources/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.java	192	        private int versionCode;
+jadx/sources/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.java	198	        public int getVersionCode() {
+jadx/sources/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.java	199	            return this.versionCode;
+jadx/sources/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.java	206	        public void setVersionCode(int i) {
+jadx/sources/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.java	207	            this.versionCode = i;
+jadx/sources/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.java	421	        localUpdateConfig.setVersionCode(az7.P(PhoenixApplication.z()));
+jadx/sources/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.java	492	            if (localUpdateConfig != null && localUpdateConfig.getVersionCode() >= az7.P(PhoenixApplication.z())) {
+jadx/sources/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.java	514	        return !TextUtils.isEmpty(upgradeConfig.getVersion()) && (upgradeConfig.getVersionCode() != upgradeConfig2.getVersionCode() || j(upgradeConfig, upgradeConfig2)) && rh8.a(upgradeConfig);
+jadx/sources/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.java	787	"        pq5.a().e(activity, new com.snaptube.permission.a.C0392a().h(sq5.e()).i(me7Var).e(1).c(true).j(""app_upgrade"").a());"
+jadx/sources/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.java	799	        if (upgradeConfigF != null && upgradeConfig.getVersionCode() == upgradeConfigF.getVersionCode() && upgradeConfigF.isApkExist()) {
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig.java	101	        if (TextUtils.isEmpty(this.filePath) && (upgradeConfigF = CheckSelfUpgradeManager.F()) != null && getVersionCode() == upgradeConfigF.getVersionCode()) {
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig.java	184	    public int getVersionCode() {
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/a.java	292	            cm3VarQ = q(upgradeConfig, GlobalConfig.isEnableAppUpgradeDownloadWithMobile(), this.k, this.l);
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/b.java	38	"            ReportPropertyBuilder.e().setEventName(""Upgrade"").setAction(""full_upgrade_error"").setProperty(""trigger_campaign"", this.a.V).setProperty(""trigger_tag"", this.a.V).setProperty(""previous_upgrade_time"", b.b(Config.o1())).setProperty(""previous_version_code"", Integer.valueOf(Config.p1())).setProperty(""config_type"", this.a.Y()).setProperty(""arg3"", az7.Q(GlobalConfig.getAppContext())).setProperty(""arg4"", this.a.getVersion()).setProperty(""config_result"", this.a.X()).setProperty(""file_size"", Long.valueOf((this.a.a0() / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID) / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID)).setProperty(""error"", this.b).setProperty(""upgrade_md5"", this.a.v).reportEvent();"
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/b.java	80	"            ReportPropertyBuilder.e().setEventName(""Upgrade"").setAction(""full_upgrade_start"").setProperty(""trigger_campaign"", this.a).setProperty(""trigger_tag"", Config.v()).setProperty(""previous_upgrade_time"", b.b(Config.o1())).setProperty(""previous_version_code"", Integer.valueOf(Config.p1())).setProperty(""config_type"", b.g(this.b)).setProperty(""arg3"", az7.Q(GlobalConfig.getAppContext())).setProperty(""arg4"", b.h(this.b)).setProperty(""config_result"", CheckSelfUpgradeManager.H(this.b)).setProperty(""upgrade_md5"", b.f(this.b)).reportEvent();"
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/b.java	93	"            ReportPropertyBuilder.e().setEventName(""Upgrade"").setAction(""full_upgrade_begin"").setProperty(""trigger_campaign"", this.a.V).setProperty(""trigger_tag"", this.a.W()).setProperty(""previous_upgrade_time"", b.b(Config.o1())).setProperty(""previous_version_code"", Integer.valueOf(Config.p1())).setProperty(""config_type"", this.a.Y()).setProperty(""arg3"", az7.Q(GlobalConfig.getAppContext())).setProperty(""arg4"", this.a.getVersion()).setProperty(""config_result"", this.a.X()).setProperty(""upgrade_md5"", this.a.v).setProperty(""arg2"", Integer.valueOf(this.a.c)).setProperty(""full_url"", this.a.y0).setProperty(""position_source"", this.a.V).setProperty(""signature"", this.a.v).reportEvent();"
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/b.java	106	"            ReportPropertyBuilder.e().setEventName(""Upgrade"").setAction(""full_upgrade_done"").setProperty(""trigger_campaign"", this.a.V).setProperty(""trigger_tag"", this.a.W()).setProperty(""previous_upgrade_time"", b.b(Config.o1())).setProperty(""previous_version_code"", Integer.valueOf(Config.p1())).setProperty(""config_type"", this.a.Y()).setProperty(""arg3"", az7.Q(GlobalConfig.getAppContext())).setProperty(""arg4"", this.a.getVersion()).setProperty(""config_result"", this.a.X()).setProperty(""file_size"", Long.valueOf((this.a.a0() / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID) / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID)).setProperty(""time_cost"", Long.valueOf(b.a(this.a))).setProperty(""upgrade_md5"", this.a.v).setProperty(""md5"", vg4.b(this.a.i())).setProperty(""arg2"", Integer.valueOf(this.a.c)).setProperty(""full_url"", this.a.y0).setProperty(""position_source"", this.a.V).setProperty(""signature"", this.a.v).reportEvent();"
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/b.java	127	"            ReportPropertyBuilder.e().setEventName(""Upgrade"").setAction(""show_"" + this.b).setProperty(""trigger_campaign"", cm3Var == null ? this.c : cm3Var.V).setProperty(""trigger_tag"", cm3Var == null ? Config.v() : cm3Var.W()).setProperty(""previous_upgrade_time"", b.b(Config.o1())).setProperty(""previous_version_code"", Integer.valueOf(Config.p1())).setProperty(""config_type"", cm3Var == null ? b.g(this.a) : cm3Var.Y()).setProperty(""arg3"", az7.Q(GlobalConfig.getAppContext())).setProperty(""arg4"", b.h(this.a)).setProperty(""config_result"", CheckSelfUpgradeManager.H(this.a)).setProperty(""file_size"", Long.valueOf((b.e(this.a) / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID) / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID)).setProperty(""time_cost"", Long.valueOf(b.a(cm3Var))).setProperty(""is_downloaded"", Boolean.valueOf(this.d)).setProperty(""scene"", this.c).setProperty(""download_time"", b.b(cm3Var == null ? 0L : cm3Var.Z())).setProperty(""upgrade_md5"", b.f(this.a)).setProperty(""md5"", vg4.b(cm3Var != null ? cm3Var.i() : """")).setProperty(""card_id"", 3002).setProperty(""signature"", this.a.canFullUpdate() ? b.f(this.a) : """").setProperty(""is_not_an_official_version"", Boolean.valueOf(xi7.c(PhoenixApplic"
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/b.java	154	"            ReportPropertyBuilder.e().setEventName(""Upgrade"").setAction(str).setProperty(""trigger_campaign"", cm3Var == null ? this.d : cm3Var.V).setProperty(""trigger_tag"", cm3Var == null ? Config.v() : cm3Var.W()).setProperty(""previous_upgrade_time"", b.b(Config.o1())).setProperty(""previous_version_code"", Integer.valueOf(Config.p1())).setProperty(""config_type"", cm3Var == null ? b.g(this.a) : cm3Var.Y()).setProperty(""arg3"", az7.Q(GlobalConfig.getAppContext())).setProperty(""arg4"", b.h(this.a)).setProperty(""config_result"", CheckSelfUpgradeManager.H(this.a)).setProperty(""file_size"", Long.valueOf((b.e(this.a) / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID) / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID)).setProperty(""time_cost"", Long.valueOf(b.a(cm3Var))).setProperty(""is_downloaded"", Boolean.valueOf(this.a.isApkExist())).setProperty(""scene"", this.d).setProperty(""download_time"", b.b(cm3Var == null ? 0L : cm3Var.Z())).setProperty(""trigger_pos"", this.e).setProperty(""upgrade_md5"", b.f(this.a)).setProperty(""md5"", vg4.b(cm3Var == null ? """" : cm3Var.i())).reportEvent();"
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/b.java	171	"            ReportPropertyBuilder.e().setEventName(""Upgrade"").setAction(""upgrade_install"").setProperty(""trigger_campaign"", this.a.V).setProperty(""trigger_tag"", this.a.W()).setProperty(""previous_upgrade_time"", b.b(Config.o1())).setProperty(""previous_version_code"", Integer.valueOf(Config.p1())).setProperty(""config_type"", this.a.Y()).setProperty(""arg3"", az7.Q(GlobalConfig.getAppContext())).setProperty(""arg4"", this.a.getVersion()).setProperty(""config_result"", this.a.X()).setProperty(""file_size"", Long.valueOf((this.a.a0() / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID) / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID)).setProperty(""time_cost"", Long.valueOf(b.a(this.a))).setProperty(""is_downloaded"", Boolean.valueOf(this.b.isApkExist())).setProperty(""scene"", this.a.b0()).setProperty(""download_time"", b.b(this.a.Z())).setProperty(""trigger_pos"", this.a.d0()).setProperty(""upgrade_md5"", strF).setProperty(""md5"", strB).setProperty(""is_md5_correct"", Boolean.valueOf(strB.equals(strF))).reportEvent();"
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/b.java	182	"                ReportPropertyBuilder.e().setEventName(""Upgrade"").setAction(""upgrade_from"").setProperty(""trigger_campaign"", cm3Var.V).setProperty(""trigger_tag"", cm3Var.W()).setProperty(""previous_upgrade_time"", b.b(Config.o1())).setProperty(""previous_version_code"", Integer.valueOf(Config.p1())).setProperty(""config_type"", cm3Var.Y()).setProperty(""arg3"", cm3Var.v0).setProperty(""arg4"", cm3Var.getVersion()).setProperty(""config_result"", cm3Var.X()).setProperty(""file_size"", Long.valueOf((cm3Var.a0() / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID) / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID)).setProperty(""time_cost"", Long.valueOf(b.a(cm3Var))).setProperty(""is_downloaded"", Boolean.TRUE).setProperty(""scene"", cm3Var.d0()).setProperty(""download_time"", b.b(cm3Var.Z())).setProperty(""trigger_pos"", cm3Var.d0()).setProperty(""upgrade_md5"", cm3Var.v).setProperty(""md5"", vg4.b(cm3Var.i())).reportEvent();"
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/b.java	202	"            ReportPropertyBuilder.e().setEventName(""Upgrade"").setAction(this.b).setProperty(""trigger_campaign"", cm3Var == null ? this.c : cm3Var.V).setProperty(""trigger_tag"", cm3Var == null ? Config.v() : cm3Var.W()).setProperty(""previous_upgrade_time"", b.b(Config.o1())).setProperty(""previous_version_code"", Integer.valueOf(Config.p1())).setProperty(""config_type"", cm3Var == null ? b.g(this.a) : cm3Var.Y()).setProperty(""arg3"", az7.Q(GlobalConfig.getAppContext())).setProperty(""arg4"", b.h(this.a)).setProperty(""config_result"", CheckSelfUpgradeManager.H(this.a)).setProperty(""file_size"", Long.valueOf((b.e(this.a) / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID) / PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID)).setProperty(""time_cost"", Long.valueOf(b.a(cm3Var))).setProperty(""is_downloaded"", Boolean.TRUE).setProperty(""scene"", this.c).setProperty(""download_time"", b.b(cm3Var == null ? 0L : cm3Var.Z())).setProperty(""upgrade_md5"", b.f(this.a)).setProperty(""md5"", vg4.b(cm3Var == null ? """" : cm3Var.i())).reportEvent();"
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/b.java	259	"        ReportPropertyBuilder.e().setEventName(""Upgrade"").setAction(""check_config"").setProperty(""config_type"", str).setProperty(""previous_upgrade_time"", d(Config.o1())).setProperty(""previous_version_code"", Integer.valueOf(Config.p1())).setProperty(""trigger_tag"", str2).reportEvent();"
+jadx/sources/com/snaptube/premium/selfupgrade/incremental_upgrade/b.java	264	"        ah3 property = ReportPropertyBuilder.e().setEventName(""Upgrade"").setAction(""check_config_result"").setProperty(""previous_upgrade_time"", d(Config.o1())).setProperty(""previous_version_code"", Integer.valueOf(Config.p1())).setProperty(""trigger_tag"", str2).setProperty(""config_result"", str);"
+jadx/sources/com/snaptube/premium/share/c.java	406	"        reportPropertyBuilder.setEventName(""NewShare"").setAction(""visit_share_link"").setProperty(""app_start_pos"", queryParameter3).setProperty(""share_version_code"", queryParameter).setProperty(""share_random_id"", queryParameter2).setProperty(""share_full_url"", str);"
+jadx/sources/com/snaptube/taskManager/provider/TaskInfoDBUtils.java	1214	                        if (packageArchiveInfo.versionCode < i2) {
+jadx/sources/com/vungle/ads/BuildConfig.java	8	    public static final int VERSION_CODE = 70403;
+jadx/sources/com/vungle/ads/BuildConfig.java	9	"    public static final String VERSION_NAME = ""7.4.3"";"
+jadx/sources/com/vungle/ads/internal/VungleInternal.java	121	        return BuildConfig.VERSION_NAME;
+jadx/sources/com/vungle/ads/internal/network/VungleApiClient.java	925	                String str2 = packageInfo.versionName;
+jadx/sources/com/vungle/ads/internal/network/VungleApiClient.java	926	"                or3.e(str2, ""packageInfo.versionName"");"
+jadx/sources/com/vungle/ads/internal/network/VungleHeader.java	30	        sb.append(BuildConfig.VERSION_NAME);
+jadx/sources/com/vungle/ads/internal/omsdk/NativeOMTracker.java	51	            oo5 oo5VarA = oo5.a(BuildConfig.OMSDK_PARTNER_NAME, BuildConfig.VERSION_NAME);
+jadx/sources/com/vungle/ads/internal/omsdk/OMTracker.java	78	            ub ubVarA = ub.a(wb.a(creativeType, impressionType, owner, owner, false), yb.a(oo5.a(BuildConfig.OMSDK_PARTNER_NAME, BuildConfig.VERSION_NAME), webView, null, null));
+jadx/sources/com/vungle/ads/internal/task/CleanupJob.java	80	"        int i = m330checkIfSdkUpgraded$lambda3(t14VarA).getInt(""VERSION_CODE"", -1);"
+jadx/sources/com/vungle/ads/internal/task/CleanupJob.java	94	"            m330checkIfSdkUpgraded$lambda3(t14VarA).put(""VERSION_CODE"", BuildConfig.VERSION_CODE).apply();"
+jadx/sources/com/vungle/ads/internal/task/CleanupJobKt.java	6	"@Metadata(d1 = {""\u0000\u000e\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\""\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\""\u000e\u0010\u0002\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0004""}, d2 = {""NO_VALUE"", """", ""VERSION_CODE_KEY"", """", ""vungle-ads_release""}, k = 2, mv = {1, 7, 1}, xi = 48)"
+jadx/sources/com/vungle/ads/internal/task/CleanupJobKt.java	11	"    private static final String VERSION_CODE_KEY = ""VERSION_CODE"";"
+jadx/sources/com/vungle/ads/internal/ui/VungleWebClient.java	393	            mv3.c(zv3Var, RemoteConfigConstants$RequestFieldKey.SDK_VERSION, BuildConfig.VERSION_NAME);
+jadx/sources/com/wandoujia/base/config/GlobalConfig.java	149	"    private static final String KEY_ENABLE_APP_UPGRADE_DOWNLOAD_ID_MOBILE = ""key.enable_app_upgrade_download_in_mobile"";"
+jadx/sources/com/wandoujia/base/config/GlobalConfig.java	1495	    public static boolean isEnableAppUpgradeDownloadWithMobile() {
+jadx/sources/com/wandoujia/base/config/GlobalConfig.java	1496	        return getPrefSwitch().getBoolean(KEY_ENABLE_APP_UPGRADE_DOWNLOAD_ID_MOBILE, false);
+jadx/sources/com/wandoujia/base/config/GlobalConfig.java	1627	    public static boolean isNeedUpdateJunkRule() {
+jadx/sources/com/wandoujia/feedback/model/FeedbackCustomId$commonNameIdMap$2.java	30	"        map.put(""version_name"", 33182850782996L);"
+jadx/sources/com/wandoujia/feedback/model/FeedbackCustomId$commonNameIdMap$2.java	31	"        map.put(""version_code"", 33182851200660L);"
+jadx/sources/com/youtube/proto/BaseInfo.java	15	"    public static final String DEFAULT_APPVERSIONNAME = """";"
+jadx/sources/com/youtube/proto/BaseInfo.java	18	    public static final Integer DEFAULT_GMSVERSIONCODE;
+jadx/sources/com/youtube/proto/BaseInfo.java	39	    public final String appVersionName;
+jadx/sources/com/youtube/proto/BaseInfo.java	48	    public final Integer gmsVersionCode;
+jadx/sources/com/youtube/proto/BaseInfo.java	107	        public String appVersionName;
+jadx/sources/com/youtube/proto/BaseInfo.java	110	        public Integer gmsVersionCode;
+jadx/sources/com/youtube/proto/BaseInfo.java	134	        public Builder appVersionName(String str) {
+jadx/sources/com/youtube/proto/BaseInfo.java	135	            this.appVersionName = str;
+jadx/sources/com/youtube/proto/BaseInfo.java	146	            return new BaseInfo(this.manufacture, this.model, this.playerType, this.appVersionName, this.platform, this.osVersion, this.local, this.countryCode, this.androidId, this.widthInDp, this.heightInDp, this.widthInInch, this.heightInInch, this.density, this.screenType, this.gmsVersionCode, this.unknow, this.width, this.height, this.networkType, this.sdk, this.timeOffsetInMinutes, super.buildUnknownFields());
+jadx/sources/com/youtube/proto/BaseInfo.java	159	        public Builder gmsVersionCode(Integer num) {
+jadx/sources/com/youtube/proto/BaseInfo.java	160	            this.gmsVersionCode = num;
+jadx/sources/com/youtube/proto/BaseInfo.java	277	                    builder.gmsVersionCode(ProtoAdapter.INT32.decode(protoReader));
+jadx/sources/com/youtube/proto/BaseInfo.java	294	                            builder.appVersionName(ProtoAdapter.STRING.decode(protoReader));
+jadx/sources/com/youtube/proto/BaseInfo.java	345	            String str3 = baseInfo.appVersionName;
+jadx/sources/com/youtube/proto/BaseInfo.java	393	            Integer num6 = baseInfo.gmsVersionCode;
+jadx/sources/com/youtube/proto/BaseInfo.java	431	            String str3 = baseInfo.appVersionName;
+jadx/sources/com/youtube/proto/BaseInfo.java	455	            Integer num6 = baseInfo.gmsVersionCode;
+jadx/sources/com/youtube/proto/BaseInfo.java	504	        DEFAULT_GMSVERSIONCODE = 0;
+jadx/sources/com/youtube/proto/BaseInfo.java	522	        this.appVersionName = str3;
+jadx/sources/com/youtube/proto/BaseInfo.java	534	        this.gmsVersionCode = num6;
+jadx/sources/com/youtube/proto/BaseInfo.java	551	        return unknownFields().equals(baseInfo.unknownFields()) && Internal.equals(this.manufacture, baseInfo.manufacture) && Internal.equals(this.model, baseInfo.model) && Internal.equals(this.playerType, baseInfo.playerType) && Internal.equals(this.appVersionName, baseInfo.appVersionName) && Internal.equals(this.platform, baseInfo.platform) && Internal.equals(this.osVersion, baseInfo.osVersion) && Internal.equals(this.local, baseInfo.local) && Internal.equals(this.countryCode, baseInfo.countryCode) && Internal.equals(this.androidId, baseInfo.androidId) && Internal.equals(this.widthInDp, baseInfo.widthInDp) && Internal.equals(this.heightInDp, baseInfo.heightInDp) && Internal.equals(this.widthInInch, baseInfo.widthInInch) && Internal.equals(this.heightInInch, baseInfo.heightInInch) && Internal.equals(this.density, baseInfo.density) && Internal.equals(this.screenType, baseInfo.screenType) && Internal.equals(this.gmsVersionCode, baseInfo.gmsVersionCode) && Internal.equals(this.unknow, baseInfo.unknow) && Internal.equals(this.width, baseInfo.width) && Internal.equals(this.height, baseInfo.height) && Internal.equals(this.networkType, baseInfo.networkType) && Internal.equals(this.sdk, b
+jadx/sources/com/youtube/proto/BaseInfo.java	566	        String str3 = this.appVersionName;
+jadx/sources/com/youtube/proto/BaseInfo.java	590	        Integer num6 = this.gmsVersionCode;
+jadx/sources/com/youtube/proto/BaseInfo.java	619	        builder.appVersionName = this.appVersionName;
+jadx/sources/com/youtube/proto/BaseInfo.java	631	        builder.gmsVersionCode = this.gmsVersionCode;
+jadx/sources/com/youtube/proto/BaseInfo.java	657	        if (this.appVersionName != null) {
+jadx/sources/com/youtube/proto/BaseInfo.java	658	"            sb.append("", appVersionName="");"
+jadx/sources/com/youtube/proto/BaseInfo.java	659	            sb.append(this.appVersionName);
+jadx/sources/com/youtube/proto/BaseInfo.java	705	        if (this.gmsVersionCode != null) {
+jadx/sources/com/youtube/proto/BaseInfo.java	706	"            sb.append("", gmsVersionCode="");"
+jadx/sources/com/youtube/proto/BaseInfo.java	707	            sb.append(this.gmsVersionCode);
+jadx/sources/me/zhanghai/android/materialprogressbar/BuildConfig.java	8	    public static final int VERSION_CODE = 19;
+jadx/sources/me/zhanghai/android/materialprogressbar/BuildConfig.java	9	"    public static final String VERSION_NAME = ""1.6.1"";"
+jadx/sources/net/pubnative/advertising_id_client/BuildConfig.java	8	    public static final int VERSION_CODE = 2;
+jadx/sources/net/pubnative/advertising_id_client/BuildConfig.java	9	"    public static final String VERSION_NAME = ""1.0.1"";"
+jadx/sources/net/pubnative/mediation/adapter/model/AdGuideAdModel.java	42	"@Metadata(d1 = {""\u0000\u0082\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010$\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0011\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0016\u0018\u0000 K2\u00020\u00012\u00020\u00022\u00020\u0003:\u0001KBO\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\n\u001a\u00020\t\u0012\u0006\u0010\f\u001a\u00020\u000b\u0012\u0012\u0010\u000f\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u000e0\r\u0012\u0006\u0010\u0011\u001a\u00020\u0010¢\u0006\u0004\b\u0012\u0010\u0013J\u000f\u0010\u0015\u001a\u00020\u0014H\u0002¢\u0006\u0004\b\u0015\u0010\u0016J\u000f\u0010\u0017\u001a\u00020\u0014"
+jadx/sources/net/pubnative/mediation/adapter/model/AdGuideAdModel.java	291	    public boolean needUpdateAdLogAttributionCacheWhenClick() {
+jadx/sources/net/pubnative/mediation/config/PubnativeConfigManager.java	70	    private Boolean needUpdateConfig = null;
+jadx/sources/net/pubnative/mediation/config/PubnativeConfigManager.java	260	        Boolean bool = this.needUpdateConfig;
+jadx/sources/net/pubnative/mediation/config/PubnativeConfigManager.java	262	            this.needUpdateConfig = Boolean.FALSE;
+jadx/sources/net/pubnative/mediation/config/PubnativeConfigManager.java	634	    public void setNeedUpdateConfig(boolean z) {
+jadx/sources/net/pubnative/mediation/config/PubnativeConfigManager.java	635	        if (this.needUpdateConfig == null) {
+jadx/sources/net/pubnative/mediation/config/PubnativeConfigManager.java	636	            this.needUpdateConfig = Boolean.valueOf(z);
+jadx/sources/net/pubnative/mediation/request/model/PubnativeAdModel.java	218	                if (this.b.needUpdateAdLogAttributionCacheWhenClick()) {
+jadx/sources/net/pubnative/mediation/request/model/PubnativeAdModel.java	225	            if (this.b.needUpdateAdLogAttributionCacheWhenClick()) {
+jadx/sources/net/pubnative/mediation/request/model/PubnativeAdModel.java	937	    public boolean needUpdateAdLogAttributionCacheWhenClick() {
+jadx/sources/net/pubnative/url_driller/BuildConfig.java	8	    public static final int VERSION_CODE = 5;
+jadx/sources/net/pubnative/url_driller/BuildConfig.java	9	"    public static final String VERSION_NAME = ""1.3.0"";"
+jadx/sources/o/a39.java	86	            Matcher matcher = this.d.matcher(packageInfoC.versionName);
+jadx/sources/o/a39.java	87	            return matcher.find() && Integer.parseInt(packageInfoC.versionName.substring(matcher.start(), matcher.end())) >= 105;
+jadx/sources/o/an5.java	13	"            return context.getPackageManager().getPackageInfo(""com.android.vending"", 0).versionCode;"
+jadx/sources/o/an5.java	30	            return packageInfoB.versionCode;
+jadx/sources/o/an5.java	37	            return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+jadx/sources/o/az7.java	269	            int i2 = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+jadx/sources/o/az7.java	285	                b = packageInfoD.versionName;
+jadx/sources/o/bk2.java	99	                flVar.f(packageArchiveInfo.versionName);
+jadx/sources/o/bk2.java	100	                flVar.e(packageArchiveInfo.versionCode);
+jadx/sources/o/bv6.java	247	            return i2 <= et.c(k30.a.a()).getPackageInfo(str, 0).versionCode;
+jadx/sources/o/bz7.java	54	            int i2 = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+jadx/sources/o/bz7.java	70	                a = packageInfoB.versionName;
+jadx/sources/o/cz7.java	42	                return Build.VERSION.SDK_INT >= 28 ? (int) qn.a(packageInfo) : packageInfo.versionCode;
+jadx/sources/o/er6.java	214	"        ProductionEnv.d(""SLogDBHelper"", ""oldVersion: "" + i + "", newVersion: "" + i2);"
+jadx/sources/o/hj0.java	121	            return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+jadx/sources/o/i.java	44	            return i <= packageInfo.versionCode;
+jadx/sources/o/ir.java	29	        appRes.getGuideTask().f = com.snaptube.player_guide.h.e(aVar, IPlayerGuideConfig.Key.APP_VERSION_CODE.getName());
+jadx/sources/o/jc8.java	110	            String str = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+jadx/sources/o/kh2.java	40	"        bundle.putString(""version_name"", az7.Q(this.a));"
+jadx/sources/o/kh2.java	41	"        bundle.putString(""version_code"", String.valueOf(az7.P(this.a)));"
+jadx/sources/o/kr7.java	21	"            a.put(""st_ver_code"", String.valueOf(packageInfo.versionCode));"
+jadx/sources/o/kr7.java	22	"            a.put(""st_ver_name"", packageInfo.versionName);"
+jadx/sources/o/kt.java	24	        return packageInfo != null ? String.valueOf(packageInfo.versionCode) : UUID.randomUUID().toString();
+jadx/sources/o/kz.java	17	"            throw new NullPointerException(""Null versionCode"");"
+jadx/sources/o/kz.java	21	"            throw new NullPointerException(""Null versionName"");"
+jadx/sources/o/kz.java	81	"        return ""AppData{appIdentifier="" + this.a + "", versionCode="" + this.b + "", versionName="" + this.c + "", installUuid="" + this.d + "", deliveryMechanism="" + this.e + "", developmentPlatformProvider="" + this.f + ""}"";"
+jadx/sources/o/kz3.java	79	"            intent.putExtra(""tf_ct"", ""version_code_"" + az7.P(context) + ""installed_days_"" + Config.T() + ""first_version_code_"" + Config.f0());"
+jadx/sources/o/lk0.java	72	            int i = packageInfo.versionCode;
+jadx/sources/o/lx0.java	43	"            jSONObject.putOpt(""share_version_code"", cm.y(this.b));"
+jadx/sources/o/mj7.java	41	"        return ""majorVersion: "" + this.a + "" minorVersion: "" + this.b + ""  versionCode: "" + b() + "" versionName: "" + c() + ""  totalLength: "" + this.c;"
+jadx/sources/o/nr.java	105	"            jSONObject.put(""previous_version_code"", Config.p1());"
+jadx/sources/o/o24.java	57	        sb.append(packageInfo == null ? null : packageInfo.versionName);
+jadx/sources/o/o24.java	63	        sb2.append(packageInfo2 == null ? null : Integer.valueOf(packageInfo2.versionCode));
+jadx/sources/o/o77.java	40	        String strValueOf = Build.VERSION.SDK_INT >= 28 ? String.valueOf(qn.a(packageInfo)) : String.valueOf(packageInfo.versionCode);
+jadx/sources/o/o77.java	49	        String str3 = packageInfo.versionName;
+jadx/sources/o/og2.java	130	"        return ""https://api22-normal-c-alisg.tiktokv.com/aweme/v1/feed/?iid=7318518857994389254&device_id=7318517321748022790&app_name=musical_ly&version_code=350103&device_platform=android&device_type=SM-ASUS_Z01QD&os_version=9&aweme_id="" + this.a;"
+jadx/sources/o/oh8.java	13	            PubnativeConfigManager.getInstance(PhoenixApplication.C().getApplicationContext()).setNeedUpdateConfig(true);
+jadx/sources/o/ot4.java	69	                this.d = packageInfoF.versionCode;
+jadx/sources/o/ot4.java	128	            this.b = Integer.toString(packageInfoF.versionCode);
+jadx/sources/o/ot4.java	129	            this.c = packageInfoF.versionName;
+jadx/sources/o/oy.java	11	"        public static final ti2 c = ti2.d(""versionName"");"
+jadx/sources/o/pt4.java	69	                this.d = packageInfoF.versionCode;
+jadx/sources/o/pt4.java	134	            this.b = Integer.toString(packageInfoF.versionCode);
+jadx/sources/o/pt4.java	135	            this.c = packageInfoF.versionName;
+jadx/sources/o/pz5.java	23	            int i2 = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+jadx/sources/o/q23.java	204	        Long lE = com.snaptube.player_guide.h.e(aVarP, IPlayerGuideConfig.Key.APP_VERSION_CODE.getName());
+jadx/sources/o/q23.java	286	        return com.snaptube.player_guide.h.e(p(playerGuideAdPos), IPlayerGuideConfig.Key.APP_VERSION_CODE.getName());
+jadx/sources/o/q23.java	305	        Long lE = com.snaptube.player_guide.h.e(aVarP, IPlayerGuideConfig.Key.APP_VERSION_CODE.getName());
+jadx/sources/o/qn.java	7	        return packageInfo.getLongVersionCode();
+jadx/sources/o/rh8.java	9	        return upgradeConfig.getVersionCode() > az7.P(GlobalConfig.getAppContext());
+jadx/sources/o/rh8.java	14	        return upgradeConfig.getVersionCode() <= az7.P(GlobalConfig.getAppContext());
+jadx/sources/o/rj5.java	273	            this.b = packageInfo.versionName;
+jadx/sources/o/rj5.java	274	            this.c = packageInfo.versionCode;
+jadx/sources/o/rn.java	34	        String str3 = packageInfo.versionName;
+jadx/sources/o/rn.java	42	        return Build.VERSION.SDK_INT >= 28 ? Long.toString(qn.a(packageInfo)) : Integer.toString(packageInfo.versionCode);
+jadx/sources/o/rz3.java	20	"        or3.f(str, ""versionCode"");"
+jadx/sources/o/sm5.java	25	            return packageInfo.getLongVersionCode();
+jadx/sources/o/sm5.java	46	        return Build.VERSION.SDK_INT >= 28 ? a.b(packageInfo) : packageInfo.versionCode;
+jadx/sources/o/sz.java	11	"        return ""https://api22-normal-c-alisg.tiktokv.com/aweme/v1/multi/aweme/detail/?os_version=14&device_type=Pixel%208%20Pro&device_platform=android&version_name=musical_ly&version_code=350103&app_name=musical_ly&aid=1233&channel=7379690547022071302&iid=7379691220551141126&device_id="" + k();"
+jadx/sources/o/td5.java	113	"        boolean zK = k(context, ""Channel_Id_Tools_Bar"", az7.F().getInt(""install_version_code"", -1) != az7.P(context) ? true : GlobalConfig.isToolbarNotificationDefaultShow());"
+jadx/sources/o/to.java	21	        return packageInfoA.versionCode;
+jadx/sources/o/to.java	26	"        return packageInfoA == null ? """" : packageInfoA.versionName;"
+jadx/sources/o/to8.java	25	            int i2 = packageInfo.versionCode;
+jadx/sources/o/u91.java	28	            s91Var.v(com.snaptube.player_guide.h.e(aVar, IPlayerGuideConfig.Key.APP_VERSION_CODE.getName()));
+jadx/sources/o/u91.java	94	            Long lE = com.snaptube.player_guide.h.e(aVar, IPlayerGuideConfig.Key.APP_VERSION_CODE.getName());
+jadx/sources/o/um8.java	15	            int i2 = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+jadx/sources/o/vg.java	15	"        or3.f(str2, ""versionName"");"
+jadx/sources/o/vg.java	68	"        return ""AndroidApplicationInfo(packageName="" + this.a + "", versionName="" + this.b + "", appBuildVersion="" + this.c + "", deviceManufacturer="" + this.d + "", currentProcessDetails="" + this.e + "", appProcessDetails="" + this.f + ')';"
+jadx/sources/o/vq6.java	693	"        jSONObject.put(""version_code"", az7.P(context));"
+jadx/sources/o/vq6.java	822	"                    jSONObject2.put(""gp_version_code"", an5.a(context));"
+jadx/sources/o/vq6.java	840	"                    jSONObject2.put(""version_code"", az7.P(context));"
+jadx/sources/o/wl6.java	19	"        return new BaseInfo.Builder().appVersionName(g11.b(context)).local(Locale.getDefault().toString()).countryCode(cz7.b(context)).androidId(cz7.a(context)).widthInDp(Integer.valueOf(mp1Var.a)).heightInDp(Integer.valueOf(mp1Var.b)).widthInInch(Float.valueOf(mp1Var.c)).heightInInch(Float.valueOf(mp1Var.d)).width(Integer.valueOf(mp1Var.a)).height(Integer.valueOf(mp1Var.b)).density(Integer.valueOf(mp1Var.e)).screenType(Integer.valueOf(mp1.a(context))).gmsVersionCode(Integer.valueOf(cz7.c(context))).networkType(Integer.valueOf(new mn9(context).d())).platform(""Android"").manufacture(Build.MANUFACTURER).model(Build.MODEL).sdk(Integer.valueOf(Build.VERSION.SDK_INT)).osVersion(Build.VERSION.RELEASE).timeOffsetInMinutes(Integer.valueOf((int) TimeUnit.MILLISECONDS.toMinutes(TimeZone.getDefault().getOffset(System.currentTimeMillis())))).playerType(3).unknow(4).build();"
+jadx/sources/o/wl8.java	173	"        return packageInfo.versionName + ""."" + String.valueOf(packageInfo.versionCode);"
+jadx/sources/o/wr7.java	70	"            return ""ReflectInfo(versionCode="" + this.a + "", activityStackUtilsClassName="" + this.b + "", statusBarViewId="" + this.c + "")"";"
+jadx/sources/o/x59.java	220	                String str = packageInfo.versionName;
+jadx/sources/o/x77.java	23	"        map.put(""version_code"", str2);"
+jadx/sources/o/x77.java	24	"        map.put(""version_name"", str3);"
+jadx/sources/o/xl8.java	753	            str2 = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+decoded/AndroidManifest.xml	2	"<manifest xmlns:android=""http://schemas.android.com/apk/res/android"" android:compileSdkVersion=""35"" android:compileSdkVersionCodename=""15"" android:installLocation=""auto"" package=""com.snaptube.premium"" platformBuildVersionCode=""35"" platformBuildVersionName=""15"">"
+decoded/apktool.yml	10	  versionCode: 75250210
+decoded/apktool.yml	11	  versionName: 7.52.0.75250210
+decoded/assets/ads_guide.json	74	"        ""app_version_code"": 25530404,"
+decoded/assets/ads_guide.json	127	"        ""app_version_code"": 25596604,"
+decoded/assets/ads_guide.json	180	"        ""app_version_code"": 25596804,"
+decoded/assets/ads_guide.json	233	"        ""app_version_code"": 25596704,"
+decoded/assets/ads_guide.json	286	"        ""app_version_code"": 25596504,"
+decoded/res/values/public.xml	4475	"    <public type=""drawable"" name=""ic_app_update_rect"" id=""0x7f08022a"" />"
+decoded/smali/com/bykv/vk/openvk/preload/geckox/utils/a.smali	53	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali/com/bytedance/sdk/component/embedapplog/BuildConfig.smali	12	.field public static final VERSION_CODE:I = 0x1
+decoded/smali/com/bytedance/sdk/component/embedapplog/BuildConfig.smali	14	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali/com/bytedance/sdk/component/oIF/lc/EW.smali	509	"    const-string v1, ""version_code"""
+decoded/smali/com/bytedance/sdk/openadsdk/ApmHelper.smali	159	"    const-string v2, ""sdk_version_name"""
+decoded/smali/com/bytedance/sdk/openadsdk/ApmHelper.smali	171	"    const-string v2, ""update_version_code"""
+decoded/smali/com/bytedance/sdk/openadsdk/ApmHelper.smali	257	"    const-string p1, ""/monitor/collect/c/session?version_code=6469&device_platform=android&aid="""
+decoded/smali/com/bytedance/sdk/openadsdk/BuildConfig.smali	14	.field public static final VERSION_CODE:I = 0x1945
+decoded/smali/com/bytedance/sdk/openadsdk/BuildConfig.smali	16	".field public static final VERSION_NAME:Ljava/lang/String; = ""6.4.6.9"""
+decoded/smali/com/bytedance/sdk/openadsdk/component/reward/AJB.smali	14	"    const-string v2, ""{\n\t\t\""ad_id\"": \""1639941324071955\"",\n\t\t\""app\"": {\n\t\t\t\""app_name\"": \""Mortals cultivate Immortals\"",\n\t\t\t\""app_size\"": 117644467,\n\t\t\t\""appleid\"": \""0\"",\n\t\t\t\""comment_num\"": 7676,\n\t\t\t\""download_url\"": \""\"",\n\t\t\t\""package_name\"": \""com.xyjx.frxx_190\"",\n\t\t\t\""score\"": 4\n\t\t},\n\t\t\""appstore_jump_type\"": 0,\n\t\t\""button_text\"": \""Click me to try\"",\n\t\t\""click_url\"": [],\n\t\t\""creative_type\"": 6,\n\t\t\""description\"": \""Open up for cultivating immortals, transform into gods in one day, ascend in two days, and a half-step immortal emperor in three days!\"",\n\t\t\""download_conf\"": {\n\t\t\t\""auto_control\"": \""0\"",\n\t\t\t\""auto_open\"": 1,\n\t\t\t\""download_mode\"": 0,\n\t\t\t\""download_type\"": 1,\n\t\t\t\""if_suspend_download\"": 1,\n\t\t\t\""support_multiple\"": 0\n\t\t},\n\t\t\""ext\"": \""{\\\""uid\\\"": 65999808247, \\\""package_name\\\"": \\\""com.union_test.toutiao\\\"", \\\""rit\\\"": 901121375, \\\""orit\\\"": 900000000, \\\""ad_type\\\"": 1, \\\""height\\\"": 1920, \\\""pack_time\\\"": 1563973281.779855, \\\""pricing\\\"": 9, \\\""device_type\\\"": \\\""ONEPLUS A3010\\\"", \\\""promotion_type\\\"": 0, \\\""is_sdk\\\"": true, \\\""app_name\\\"": \\\""APP\\\\u"
+decoded/smali/com/bytedance/sdk/openadsdk/core/AJB/lc.smali	344	"    const-string v0, ""https://api16-access-sg.pangle.io/api/ad/union/sdk/get_ads/?aid=1371&device_platform=android&version_code=4250"""
+decoded/smali/com/bytedance/sdk/openadsdk/core/fg.smali	3505	"    const-string v0, ""version_code"""
+decoded/smali/com/bytedance/sdk/openadsdk/mediation/YB/MsH.smali	148	    iget v2, v1, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali/com/bytedance/sdk/openadsdk/mediation/YB/MsH.smali	156	    iget-object v1, v1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali/com/bytedance/sdk/openadsdk/mediation/YB/MsH.smali	170	"    const-string v3, ""ToolUtils getVersionCode throws exception :"""
+decoded/smali/com/bytedance/sdk/openadsdk/mediation/YB/MsH.smali	414	    iget v2, v1, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali/com/bytedance/sdk/openadsdk/mediation/YB/MsH.smali	422	    iget-object v1, v1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali/com/bytedance/sdk/openadsdk/mediation/YB/MsH.smali	436	"    const-string v3, ""ToolUtils getVersionName throws exception :"""
+decoded/smali/com/bytedance/sdk/openadsdk/mediation/YB/seu.smali	1109	"    const-string v1, ""version_code"""
+decoded/smali/com/bytedance/sdk/openadsdk/mediation/Zd/seu/EW.smali	1712	"    const-string v0, ""version_code"""
+decoded/smali/com/mbridge/msdk/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali/com/mbridge/msdk/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali/com/mbridge/msdk/banner/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali/com/mbridge/msdk/banner/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali/o/a39$a.smali	70	    iget-object v3, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali/o/a39$a.smali	82	    iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali/o/kt.smali	79	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali/o/sm5$a.smali	45	    invoke-virtual {p0}, Landroid/content/pm/PackageInfo;->getLongVersionCode()J
+decoded/smali/o/sm5.smali	34	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/bytedance/sdk/openadsdk/utils/WDI.smali	2650	    iget v2, v1, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/bytedance/sdk/openadsdk/utils/WDI.smali	2658	    iget-object v1, v1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/com/bytedance/sdk/openadsdk/utils/WDI.smali	2672	"    const-string v3, ""ToolUtils getVersionCode throws exception :"""
+decoded/smali_classes2/com/bytedance/sdk/openadsdk/utils/WDI.smali	3891	    iget v2, v1, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/bytedance/sdk/openadsdk/utils/WDI.smali	3899	    iget-object v1, v1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/com/bytedance/sdk/openadsdk/utils/WDI.smali	3913	"    const-string v3, ""ToolUtils getVersionName throws exception :"""
+decoded/smali_classes2/com/bytedance/sdk/openadsdk/utils/WDI.smali	4321	"    const-string v1, ""version_code"""
+decoded/smali_classes2/com/dywx/hybrid/handler/AppInfoHandler.smali	30	.method public getPackageVersionCode(Ljava/lang/String;)I
+decoded/smali_classes2/com/dywx/hybrid/handler/AppInfoHandler.smali	49	.method public getPackageVersionName(Ljava/lang/String;)Ljava/lang/String;
+decoded/smali_classes2/com/dywx/hybrid/handler/AppInfoHandler.smali	88	.method public getVersionCode()I
+decoded/smali_classes2/com/dywx/hybrid/handler/SdkInfoHandler.smali	16	.method public getSdkVersionCode()I
+decoded/smali_classes2/com/dywx/hybrid/handler/SdkInfoHandler.smali	26	.method public getSdkVersionName()Ljava/lang/String;
+decoded/smali_classes2/com/github/luben/zstd/BuildConfig.smali	14	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes2/com/github/luben/zstd/BuildConfig.smali	16	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.5.6-7"""
+decoded/smali_classes2/com/google/ads/interactivemedia/v3/internal/ach.smali	551	    iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/google/ads/interactivemedia/v3/internal/vf.smali	955	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/com/google/android/gms/auth/api/proxy/ProxyRequest.smali	55	.field public static final VERSION_CODE:I = 0x2
+decoded/smali_classes2/com/google/android/gms/cloudmessaging/zzt.smali	112	    iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/google/android/gms/common/GoogleApiAvailability.smali	23	.field public static final GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GoogleApiAvailability.smali	54	    sget v0, Lcom/google/android/gms/common/GoogleApiAvailabilityLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GoogleApiAvailability.smali	56	    sput v0, Lcom/google/android/gms/common/GoogleApiAvailability;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GoogleApiAvailability.smali	524	    sget v0, Lcom/google/android/gms/common/GoogleApiAvailability;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GoogleApiAvailabilityLight.smali	22	.field public static final GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GoogleApiAvailabilityLight.smali	52	    sget v0, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GoogleApiAvailabilityLight.smali	54	    sput v0, Lcom/google/android/gms/common/GoogleApiAvailabilityLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GoogleApiAvailabilityLight.smali	256	    sget v0, Lcom/google/android/gms/common/GoogleApiAvailabilityLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GoogleApiAvailabilityLight.smali	303	    iget p1, p1, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/google/android/gms/common/GoogleApiAvailabilityLight.smali	464	    sget v0, Lcom/google/android/gms/common/GoogleApiAvailabilityLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GooglePlayServicesIncorrectManifestValueException.smali	14	    sget v0, Lcom/google/android/gms/common/GoogleApiAvailabilityLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GooglePlayServicesManifestException.smali	42	    sget v0, Lcom/google/android/gms/common/GoogleApiAvailabilityLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GooglePlayServicesUtil.smali	19	.field public static final GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GooglePlayServicesUtil.smali	34	    sget v0, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GooglePlayServicesUtil.smali	36	    sput v0, Lcom/google/android/gms/common/GooglePlayServicesUtil;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/GooglePlayServicesUtilLight.smali	43	.field public static final GOOGLE_PLAY_SERVICES_VERSION_CODE:I = 0xbdfcb8
+decoded/smali_classes2/com/google/android/gms/common/GooglePlayServicesUtilLight.smali	294	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/google/android/gms/common/GooglePlayServicesUtilLight.smali	620	    sget v0, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/internal/BaseGmsClient.smali	2008	    sget v0, Lcom/google/android/gms/common/GoogleApiAvailabilityLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/internal/BaseGmsClient.smali	2051	    sget v6, Lcom/google/android/gms/common/GoogleApiAvailabilityLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/server/response/FastJsonResponse$Field.smali	104	"        getter = ""getVersionCode"""
+decoded/smali_classes2/com/google/android/gms/common/server/response/FastJsonResponse$Field.smali	949	"    const-string v2, ""versionCode"""
+decoded/smali_classes2/com/google/android/gms/common/server/response/SafeParcelResponse.smali	35	"        getter = ""getVersionCode"""
+decoded/smali_classes2/com/google/android/gms/common/util/DeviceProperties.smali	650	    sget v0, Lcom/google/android/gms/common/GooglePlayServicesUtilLight;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/zaa.smali	40	    sget p1, Lcom/google/android/gms/common/GoogleApiAvailability;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/common/zab.smali	40	    sget p1, Lcom/google/android/gms/common/GoogleApiAvailability;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+decoded/smali_classes2/com/google/android/gms/fido/u2f/api/common/KeyHandle.smali	32	"        getter = ""getVersionCode"""
+decoded/smali_classes2/com/google/android/gms/fido/u2f/api/common/KeyHandle.smali	421	.method public getVersionCode()I
+decoded/smali_classes2/com/google/android/gms/fido/u2f/api/common/KeyHandle.smali	546	    invoke-virtual {p0}, Lcom/google/android/gms/fido/u2f/api/common/KeyHandle;->getVersionCode()I
+decoded/smali_classes2/com/google/android/gms/fido/u2f/api/common/RegisterRequest.smali	34	"        getter = ""getVersionCode"""
+decoded/smali_classes2/com/google/android/gms/fido/u2f/api/common/RegisterRequest.smali	415	.method public getVersionCode()I
+decoded/smali_classes2/com/google/android/gms/fido/u2f/api/common/RegisterRequest.smali	539	    invoke-virtual {p0}, Lcom/google/android/gms/fido/u2f/api/common/RegisterRequest;->getVersionCode()I
+decoded/smali_classes2/com/google/android/gms/fido/u2f/api/common/RegisterResponseData.smali	321	.method public getVersionCode()I
+decoded/smali_classes2/com/google/android/gms/measurement/internal/zzek.smali	219	    iget-object v5, v7, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/com/google/android/gms/measurement/internal/zzek.smali	221	    iget v2, v7, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/google/android/gms/measurement/internal/zzfl.smali	76	    iget v1, v1, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/google/android/gms/measurement/internal/zzhc.smali	49	"    const-string v13, ""app_upgrade"""
+decoded/smali_classes2/com/google/android/gms/measurement/internal/zzhc.smali	51	"    const-string v14, ""app_update"""
+decoded/smali_classes2/com/google/android/gms/measurement/internal/zzhd.smali	79	"    const-string v28, ""system_app_update"""
+decoded/smali_classes2/com/google/android/gms/measurement/internal/zzlh.smali	516	    iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/google/android/gms/measurement/internal/zzlh.smali	551	    iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/com/google/firebase/crashlytics/ndk/JniNativeApi.smali	295	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/google/firebase/perf/config/RemoteConfigManager.smali	291	.method public static getVersionCode(Landroid/content/Context;)I
+decoded/smali_classes2/com/google/firebase/perf/config/RemoteConfigManager.smali	311	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/com/google/firebase/perf/v1/a.smali	31	.field public static final VERSION_NAME_FIELD_NUMBER:I = 0x3
+decoded/smali_classes2/com/google/firebase/perf/v1/a.smali	41	.field private versionName_:Ljava/lang/String;
+decoded/smali_classes2/com/google/firebase/perf/v1/a.smali	72	    iput-object v0, p0, Lcom/google/firebase/perf/v1/a;->versionName_:Ljava/lang/String;
+decoded/smali_classes2/com/google/firebase/perf/v1/a.smali	238	"    const-string p2, ""versionName_"""
+decoded/smali_classes2/com/google/firebase/perf/v1/a.smali	365	    iput-object p1, p0, Lcom/google/firebase/perf/v1/a;->versionName_:Ljava/lang/String;
+decoded/smali_classes2/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.smali	365	    iget-object v1, p1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/com/mbridge/msdk/c/a/c.smali	49	"    const-string v0, ""app_version_name"""
+decoded/smali_classes2/com/mbridge/msdk/c/a/c.smali	73	"    const-string v1, ""app_version_code"""
+decoded/smali_classes2/com/snaptube/premium/R$drawable.smali	264	.field public static final ic_app_update_rect:I = 0x7f08022a
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	19	"        ""versionCode"","
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	45	"        ""getVersionCode"","
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	165	.field private final versionCode:I
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	256	    iput p3, p0, Lcom/snaptube/premium/abtest/ABTestConfigRequestBean;->versionCode:I
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	312	    iget v4, v0, Lcom/snaptube/premium/abtest/ABTestConfigRequestBean;->versionCode:I
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	498	    iget v0, p0, Lcom/snaptube/premium/abtest/ABTestConfigRequestBean;->versionCode:I
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	722	    iget v1, p0, Lcom/snaptube/premium/abtest/ABTestConfigRequestBean;->versionCode:I
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	724	    iget v3, p1, Lcom/snaptube/premium/abtest/ABTestConfigRequestBean;->versionCode:I
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	922	.method public final getVersionCode()I
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	925	    iget v0, p0, Lcom/snaptube/premium/abtest/ABTestConfigRequestBean;->versionCode:I
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	951	    iget v1, p0, Lcom/snaptube/premium/abtest/ABTestConfigRequestBean;->versionCode:I
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	1047	    iget v2, p0, Lcom/snaptube/premium/abtest/ABTestConfigRequestBean;->versionCode:I
+decoded/smali_classes2/com/snaptube/premium/abtest/ABTestConfigRequestBean.smali	1081	"    const-string v0, "", versionCode="""
+decoded/smali_classes2/o/bz7.smali	166	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/o/bz7.smali	216	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/o/hj0.smali	189	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/o/jc8.smali	462	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/o/kz.smali	70	"    const-string p2, ""Null versionName"""
+decoded/smali_classes2/o/kz.smali	79	"    const-string p2, ""Null versionCode"""
+decoded/smali_classes2/o/kz.smali	320	"    const-string v1, "", versionCode="""
+decoded/smali_classes2/o/kz.smali	328	"    const-string v1, "", versionName="""
+decoded/smali_classes2/o/mj7.smali	129	"    const-string v2, "" versionCode: """
+decoded/smali_classes2/o/mj7.smali	139	"    const-string v2, "" versionName: """
+decoded/smali_classes2/o/o77.smali	233	    iget v3, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/o/o77.smali	276	    iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/o/ot4.smali	196	    iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/o/ot4.smali	478	    iget v1, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/o/ot4.smali	486	    iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/o/oy$a.smali	53	"    const-string v0, ""versionName"""
+decoded/smali_classes2/o/pt4.smali	196	    iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/o/pt4.smali	495	    iget v1, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/o/pt4.smali	503	    iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/o/qn.smali	9	    invoke-virtual {p0}, Landroid/content/pm/PackageInfo;->getLongVersionCode()J
+decoded/smali_classes2/o/rn.smali	73	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/o/rn.smali	119	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/o/rz3.smali	72	"    const-string v1, ""versionCode"""
+decoded/smali_classes2/o/to.smali	52	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes2/o/to.smali	72	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes2/o/vg.smali	27	"    const-string v0, ""versionName"""
+decoded/smali_classes2/o/vg.smali	293	"    const-string v1, "", versionName="""
+decoded/smali_classes2/o/x77.smali	62	"    const-string p0, ""version_code"""
+decoded/smali_classes2/o/x77.smali	66	"    const-string p0, ""version_name"""
+decoded/smali_classes2/o/xl8.smali	3332	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/dycreator/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/dycreator/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/foundation/download/core/DownloadTask.smali	19	.field private volatile _needUpdateDownloadModel:Z
+decoded/smali_classes3/com/mbridge/msdk/foundation/download/core/DownloadTask.smali	50	    iput-boolean v0, p0, Lcom/mbridge/msdk/foundation/download/core/DownloadTask;->_needUpdateDownloadModel:Z
+decoded/smali_classes3/com/mbridge/msdk/foundation/download/core/DownloadTask.smali	76	    iget-boolean p0, p0, Lcom/mbridge/msdk/foundation/download/core/DownloadTask;->_needUpdateDownloadModel:Z
+decoded/smali_classes3/com/mbridge/msdk/foundation/download/core/DownloadTask.smali	246	    iput-boolean v10, v1, Lcom/mbridge/msdk/foundation/download/core/DownloadTask;->_needUpdateDownloadModel:Z
+decoded/smali_classes3/com/mbridge/msdk/foundation/download/core/DownloadTask.smali	321	    iput-boolean v10, v1, Lcom/mbridge/msdk/foundation/download/core/DownloadTask;->_needUpdateDownloadModel:Z
+decoded/smali_classes3/com/mbridge/msdk/foundation/download/core/DownloadTask.smali	627	    iput-boolean v10, v1, Lcom/mbridge/msdk/foundation/download/core/DownloadTask;->_needUpdateDownloadModel:Z
+decoded/smali_classes3/com/mbridge/msdk/foundation/entity/CampaignEx.smali	447	.field private cVersionCode:J
+decoded/smali_classes3/com/mbridge/msdk/foundation/entity/CampaignEx.smali	8719	.method public getcVersionCode()J
+decoded/smali_classes3/com/mbridge/msdk/foundation/entity/CampaignEx.smali	8722	    iget-wide v0, p0, Lcom/mbridge/msdk/foundation/entity/CampaignEx;->cVersionCode:J
+decoded/smali_classes3/com/mbridge/msdk/foundation/entity/CampaignEx.smali	10702	.method public setcVersionCode(J)V
+decoded/smali_classes3/com/mbridge/msdk/foundation/entity/CampaignEx.smali	10705	    iput-wide p1, p0, Lcom/mbridge/msdk/foundation/entity/CampaignEx;->cVersionCode:J
+decoded/smali_classes3/com/mbridge/msdk/foundation/same/report/b/d.smali	530	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/foundation/same/report/b/d.smali	768	    iget p1, p1, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes3/com/mbridge/msdk/foundation/same/report/b/d.smali	794	"    const-string v1, ""appversionname"""
+decoded/smali_classes3/com/mbridge/msdk/foundation/same/report/b/d.smali	796	"    const-string v2, ""appversioncode"""
+decoded/smali_classes3/com/mbridge/msdk/foundation/same/report/q.smali	248	"    const-string v0, ""app_version_name"""
+decoded/smali_classes3/com/mbridge/msdk/foundation/tools/ai.smali	1961	    iget-object v2, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/foundation/tools/ai.smali	1969	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/foundation/tools/z.smali	3065	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/foundation/tools/z.smali	3195	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes3/com/mbridge/msdk/intervideo/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/intervideo/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/mbbanner/common/e/a.smali	49	"    const-string v1, ""app_version_name"""
+decoded/smali_classes3/com/mbridge/msdk/mbbanner/common/e/a.smali	73	"    const-string v2, ""app_version_code"""
+decoded/smali_classes3/com/mbridge/msdk/mbbid/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/mbbid/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/mbbid/common/b/a.smali	72	"    const-string v0, ""app_version_name"""
+decoded/smali_classes3/com/mbridge/msdk/mbbid/common/b/a.smali	96	"    const-string v1, ""app_version_code"""
+decoded/smali_classes3/com/mbridge/msdk/mbnative/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/mbnative/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/mbnative/f/a/a.smali	49	"    const-string v0, ""app_version_name"""
+decoded/smali_classes3/com/mbridge/msdk/mbnative/f/a/a.smali	73	"    const-string v1, ""app_version_code"""
+decoded/smali_classes3/com/mbridge/msdk/mbsignalcommon/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/mbsignalcommon/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/nativex/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/nativex/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/newinterstitial/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/newinterstitial/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/newreward/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/newreward/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/newreward/function/g/a.smali	83	"    const-string v3, ""app_version_name"""
+decoded/smali_classes3/com/mbridge/msdk/newreward/function/g/a.smali	109	"    const-string v5, ""app_version_code"""
+decoded/smali_classes3/com/mbridge/msdk/playercommon/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/playercommon/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/playercommon/exoplayer2/util/Util.smali	2275	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/reward/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/reward/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/reward/d/b.smali	49	"    const-string v1, ""app_version_name"""
+decoded/smali_classes3/com/mbridge/msdk/reward/d/b.smali	73	"    const-string v2, ""app_version_code"""
+decoded/smali_classes3/com/mbridge/msdk/video/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/video/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/video/dynview/f/b.smali	49	"    const-string v0, ""app_version_name"""
+decoded/smali_classes3/com/mbridge/msdk/video/dynview/f/b.smali	73	"    const-string v1, ""app_version_code"""
+decoded/smali_classes3/com/mbridge/msdk/video/module/c/a.smali	49	"    const-string v0, ""app_version_name"""
+decoded/smali_classes3/com/mbridge/msdk/video/module/c/a.smali	73	"    const-string v1, ""app_version_code"""
+decoded/smali_classes3/com/mbridge/msdk/videocommon/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/mbridge/msdk/videocommon/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/mbridge/msdk/videocommon/c/b.smali	46	"    const-string p1, ""app_version_name"""
+decoded/smali_classes3/com/mbridge/msdk/videocommon/c/b.smali	56	"    const-string p1, ""app_version_code"""
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$Builder.smali	46	.field public gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$Builder.smali	188	.method public gmscore_version_code(Ljava/lang/Integer;)Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$Builder;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$Builder.smali	191	    iput-object p1, p0, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$Builder;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$a.smali	353	    invoke-virtual {v0, v3}, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$Builder;->gmscore_version_code(Ljava/lang/Integer;)Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$Builder;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$a.smali	570	    iget-object v4, p2, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$a.smali	786	    iget-object v5, p1, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	61	.field public static final DEFAULT_GMSCORE_VERSION_CODE:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	161	.field public final gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	291	    sput-object v0, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo;->DEFAULT_GMSCORE_VERSION_CODE:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	375	    iget-object p2, p1, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$Builder;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	377	    iput-object p2, p0, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	591	    iget-object v1, p0, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	593	    iget-object v3, p1, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	961	    iget-object v1, p0, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	1185	    iget-object v1, p0, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	1187	    iput-object v1, v0, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo$Builder;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	1457	    iget-object v1, p0, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	1461	"    const-string v1, "", gmscore_version_code="""
+decoded/smali_classes3/com/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo.smali	1465	    iget-object v1, p0, Lcom/mobiuspace/youtube/ump/proto/StreamerContext$ClientInfo;->gmscore_version_code:Ljava/lang/Integer;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	1	.class public final enum Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	9	"        ""Lcom/mopub/common/util/VersionCode;"","
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	16	.field public static final enum BASE:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	18	.field public static final enum BASE_1_1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	20	.field public static final enum CUPCAKE:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	22	.field public static final enum CUR_DEVELOPMENT:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	24	.field public static final enum DONUT:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	26	.field public static final enum ECLAIR:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	28	.field public static final enum ECLAIR_0_1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	30	.field public static final enum ECLAIR_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	32	.field public static final enum FROYO:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	34	.field public static final enum GINGERBREAD:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	36	.field public static final enum GINGERBREAD_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	38	.field public static final enum HONEYCOMB:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	40	.field public static final enum HONEYCOMB_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	42	.field public static final enum HONEYCOMB_MR2:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	44	.field public static final enum ICE_CREAM_SANDWICH:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	46	.field public static final enum ICE_CREAM_SANDWICH_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	48	.field public static final enum JELLY_BEAN:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	50	.field public static final enum JELLY_BEAN_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	52	.field public static final enum JELLY_BEAN_MR2:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	54	.field public static final enum KITKAT:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	56	.field public static final synthetic a:[Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	67	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	75	    invoke-direct {v0, v1, v2, v3}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	77	    sput-object v0, Lcom/mopub/common/util/VersionCode;->BASE:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	79	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	85	    invoke-direct {v0, v1, v3, v2}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	87	    sput-object v0, Lcom/mopub/common/util/VersionCode;->BASE_1_1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	89	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	95	    invoke-direct {v0, v1, v2, v3}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	97	    sput-object v0, Lcom/mopub/common/util/VersionCode;->CUPCAKE:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	99	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	105	    invoke-direct {v0, v1, v3, v2}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	107	    sput-object v0, Lcom/mopub/common/util/VersionCode;->DONUT:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	109	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	115	    invoke-direct {v0, v1, v2, v3}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	117	    sput-object v0, Lcom/mopub/common/util/VersionCode;->ECLAIR:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	119	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	125	    invoke-direct {v0, v1, v3, v2}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	127	    sput-object v0, Lcom/mopub/common/util/VersionCode;->ECLAIR_0_1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	129	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	135	    invoke-direct {v0, v1, v2, v3}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	137	    sput-object v0, Lcom/mopub/common/util/VersionCode;->ECLAIR_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	139	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	145	    invoke-direct {v0, v1, v3, v2}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	147	    sput-object v0, Lcom/mopub/common/util/VersionCode;->FROYO:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	149	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	155	    invoke-direct {v0, v1, v2, v3}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	157	    sput-object v0, Lcom/mopub/common/util/VersionCode;->GINGERBREAD:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	159	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	165	    invoke-direct {v0, v1, v3, v2}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	167	    sput-object v0, Lcom/mopub/common/util/VersionCode;->GINGERBREAD_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	169	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	175	    invoke-direct {v0, v1, v2, v3}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	177	    sput-object v0, Lcom/mopub/common/util/VersionCode;->HONEYCOMB:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	179	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	185	    invoke-direct {v0, v1, v3, v2}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	187	    sput-object v0, Lcom/mopub/common/util/VersionCode;->HONEYCOMB_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	189	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	195	    invoke-direct {v0, v1, v2, v3}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	197	    sput-object v0, Lcom/mopub/common/util/VersionCode;->HONEYCOMB_MR2:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	199	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	205	    invoke-direct {v0, v1, v3, v2}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	207	    sput-object v0, Lcom/mopub/common/util/VersionCode;->ICE_CREAM_SANDWICH:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	209	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	215	    invoke-direct {v0, v1, v2, v3}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	217	    sput-object v0, Lcom/mopub/common/util/VersionCode;->ICE_CREAM_SANDWICH_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	219	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	225	    invoke-direct {v0, v1, v3, v2}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	227	    sput-object v0, Lcom/mopub/common/util/VersionCode;->JELLY_BEAN:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	229	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	235	    invoke-direct {v0, v1, v2, v3}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	237	    sput-object v0, Lcom/mopub/common/util/VersionCode;->JELLY_BEAN_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	239	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	245	    invoke-direct {v0, v1, v3, v2}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	247	    sput-object v0, Lcom/mopub/common/util/VersionCode;->JELLY_BEAN_MR2:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	249	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	255	    invoke-direct {v0, v1, v2, v3}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	257	    sput-object v0, Lcom/mopub/common/util/VersionCode;->KITKAT:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	259	    new-instance v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	265	    invoke-direct {v0, v1, v3, v2}, Lcom/mopub/common/util/VersionCode;-><init>(Ljava/lang/String;II)V
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	267	    sput-object v0, Lcom/mopub/common/util/VersionCode;->CUR_DEVELOPMENT:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	269	    invoke-static {}, Lcom/mopub/common/util/VersionCode;->a()[Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	273	    sput-object v0, Lcom/mopub/common/util/VersionCode;->a:[Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	283	    iput p3, p0, Lcom/mopub/common/util/VersionCode;->mApiLevel:I
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	288	.method public static synthetic a()[Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	293	    new-array v0, v0, [Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	295	    sget-object v1, Lcom/mopub/common/util/VersionCode;->BASE:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	301	    sget-object v1, Lcom/mopub/common/util/VersionCode;->BASE_1_1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	307	    sget-object v1, Lcom/mopub/common/util/VersionCode;->CUPCAKE:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	313	    sget-object v1, Lcom/mopub/common/util/VersionCode;->DONUT:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	319	    sget-object v1, Lcom/mopub/common/util/VersionCode;->ECLAIR:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	325	    sget-object v1, Lcom/mopub/common/util/VersionCode;->ECLAIR_0_1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	331	    sget-object v1, Lcom/mopub/common/util/VersionCode;->ECLAIR_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	337	    sget-object v1, Lcom/mopub/common/util/VersionCode;->FROYO:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	343	    sget-object v1, Lcom/mopub/common/util/VersionCode;->GINGERBREAD:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	349	    sget-object v1, Lcom/mopub/common/util/VersionCode;->GINGERBREAD_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	355	    sget-object v1, Lcom/mopub/common/util/VersionCode;->HONEYCOMB:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	361	    sget-object v1, Lcom/mopub/common/util/VersionCode;->HONEYCOMB_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	367	    sget-object v1, Lcom/mopub/common/util/VersionCode;->HONEYCOMB_MR2:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	373	    sget-object v1, Lcom/mopub/common/util/VersionCode;->ICE_CREAM_SANDWICH:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	379	    sget-object v1, Lcom/mopub/common/util/VersionCode;->ICE_CREAM_SANDWICH_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	385	    sget-object v1, Lcom/mopub/common/util/VersionCode;->JELLY_BEAN:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	391	    sget-object v1, Lcom/mopub/common/util/VersionCode;->JELLY_BEAN_MR1:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	397	    sget-object v1, Lcom/mopub/common/util/VersionCode;->JELLY_BEAN_MR2:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	403	    sget-object v1, Lcom/mopub/common/util/VersionCode;->KITKAT:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	409	    sget-object v1, Lcom/mopub/common/util/VersionCode;->CUR_DEVELOPMENT:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	418	.method public static b(I)Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	421	    invoke-static {}, Lcom/mopub/common/util/VersionCode;->values()[Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	434	    invoke-virtual {v3}, Lcom/mopub/common/util/VersionCode;->getApiLevel()I
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	448	    sget-object p0, Lcom/mopub/common/util/VersionCode;->CUR_DEVELOPMENT:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	453	.method public static currentApiLevel()Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	458	    invoke-static {v0}, Lcom/mopub/common/util/VersionCode;->b(I)Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	465	.method public static valueOf(Ljava/lang/String;)Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	468	    const-class v0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	474	    check-cast p0, Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	479	.method public static values()[Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	482	    sget-object v0, Lcom/mopub/common/util/VersionCode;->a:[Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	484	    invoke-virtual {v0}, [Lcom/mopub/common/util/VersionCode;->clone()Ljava/lang/Object;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	488	    check-cast v0, [Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	498	    iget v0, p0, Lcom/mopub/common/util/VersionCode;->mApiLevel:I
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	503	.method public isAtLeast(Lcom/mopub/common/util/VersionCode;)Z
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	506	    invoke-virtual {p0}, Lcom/mopub/common/util/VersionCode;->getApiLevel()I
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	510	    invoke-virtual {p1}, Lcom/mopub/common/util/VersionCode;->getApiLevel()I
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	527	.method public isAtMost(Lcom/mopub/common/util/VersionCode;)Z
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	530	    invoke-virtual {p0}, Lcom/mopub/common/util/VersionCode;->getApiLevel()I
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	534	    invoke-virtual {p1}, Lcom/mopub/common/util/VersionCode;->getApiLevel()I
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	551	.method public isBelow(Lcom/mopub/common/util/VersionCode;)Z
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	554	    invoke-virtual {p0}, Lcom/mopub/common/util/VersionCode;->getApiLevel()I
+decoded/smali_classes3/com/mopub/common/util/VersionCode.smali	558	    invoke-virtual {p1}, Lcom/mopub/common/util/VersionCode;->getApiLevel()I
+decoded/smali_classes3/com/mopub/mobileads/BaseWebView.smali	147	    invoke-static {}, Lcom/mopub/common/util/VersionCode;->currentApiLevel()Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/mobileads/BaseWebView.smali	151	    sget-object v1, Lcom/mopub/common/util/VersionCode;->JELLY_BEAN_MR2:Lcom/mopub/common/util/VersionCode;
+decoded/smali_classes3/com/mopub/mobileads/BaseWebView.smali	153	    invoke-virtual {v0, v1}, Lcom/mopub/common/util/VersionCode;->isAtLeast(Lcom/mopub/common/util/VersionCode;)Z
+decoded/smali_classes3/com/pgl/ssdk/z.smali	437	    iget v0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes3/com/phoenix/slog/SnapTubeLogger.smali	660	    iget-object p1, p1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/BuildConfig.smali	23	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/BuildConfig.smali	25	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/autotrack/ActivityLifecycleCallbacks.smali	452	    invoke-static {p3}, Lcom/sensorsdata/analytics/android/sdk/util/AppInfoUtils;->getAppVersionName(Landroid/content/Context;)Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/plugin/property/SAPresetPropertyPlugin.smali	133	    invoke-static {v0}, Lcom/sensorsdata/analytics/android/sdk/util/AppInfoUtils;->getAppVersionName(Landroid/content/Context;)Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/BaseSensorsDataSDKRemoteManager.smali	394	    invoke-virtual {p1}, Lcom/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig;->getNewVersion()Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/BaseSensorsDataSDKRemoteManager.smali	898	    invoke-virtual {v1, p1}, Lcom/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig;->setNewVersion(Ljava/lang/String;)V
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/BaseSensorsDataSDKRemoteManager.smali	1068	    invoke-virtual {v1, v0}, Lcom/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig;->setNewVersion(Ljava/lang/String;)V
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/SensorsDataRemoteManagerDebug$1$1.smali	130	    invoke-virtual {v0}, Lcom/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig;->getNewVersion()Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/SensorsDataRemoteManagerDebug$1$1.smali	160	    invoke-virtual {v0}, Lcom/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig;->getNewVersion()Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.smali	24	.field private newVersion:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.smali	82	.method public getNewVersion()Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.smali	85	    iget-object v0, p0, Lcom/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig;->newVersion:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.smali	264	.method public setNewVersion(Ljava/lang/String;)V
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.smali	267	    iput-object p1, p0, Lcom/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig;->newVersion:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.smali	332	    iget-object v3, p0, Lcom/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig;->newVersion:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig.smali	410	    iget-object v1, p0, Lcom/sensorsdata/analytics/android/sdk/remote/SensorsDataSDKRemoteConfig;->newVersion:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/track/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/track/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.smali	6	.field private static mAppVersionName:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.smali	122	.method public static getAppVersionName(Landroid/content/Context;)Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.smali	132	    sget-object v0, Lcom/sensorsdata/analytics/android/sdk/util/AppInfoUtils;->mAppVersionName:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.smali	140	    sget-object p0, Lcom/sensorsdata/analytics/android/sdk/util/AppInfoUtils;->mAppVersionName:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.smali	160	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.smali	162	    sput-object p0, Lcom/sensorsdata/analytics/android/sdk/util/AppInfoUtils;->mAppVersionName:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/util/AppInfoUtils.smali	174	    sget-object p0, Lcom/sensorsdata/analytics/android/sdk/util/AppInfoUtils;->mAppVersionName:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/visual/AbstractViewCrawler.smali	125	    iget-object p1, p1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/visual/BuildConfig.smali	19	.field public static final VERSION_CODE:I = 0x1
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/visual/BuildConfig.smali	21	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0"""
+decoded/smali_classes3/com/snaptube/ad/guardian/GuardianManager$Companion.smali	49	"        ""PARAM_VERSION_CODE"","
+decoded/smali_classes3/com/snaptube/ad/guardian/GuardianManager$Companion.smali	50	"        ""PARAM_VERSION_NAME"","
+decoded/smali_classes3/com/snaptube/ads/selfbuild/request/model/AppEvent.smali	13	".field public static final APP_UPDATE:Ljava/lang/String; = ""app_update"""
+decoded/smali_classes3/com/snaptube/ads/selfbuild/request/verify/AppInstalledReceiver.smali	154	"    const-string v0, ""app_update"""
+decoded/smali_classes3/com/snaptube/ads_log_v2/a.smali	68	"    const-string v1, ""versionCode"""
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.smali	34	".field private static final PARAM_VERSION_CODE:Ljava/lang/String; = ""vc"""
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.smali	36	".field private static final PARAM_VERSION_NAME:Ljava/lang/String; = ""v"""
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.smali	48	.field private static versionCode:Ljava/lang/String;
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.smali	50	.field private static versionName:Ljava/lang/String;
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.smali	78	    sget-object v0, Lcom/snaptube/dataadapter/plugin/cache/ReqParamUtils;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.smali	82	    sget-object v0, Lcom/snaptube/dataadapter/plugin/cache/ReqParamUtils;->versionCode:Ljava/lang/String;
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.smali	100	    sget-object v1, Lcom/snaptube/dataadapter/plugin/cache/ReqParamUtils;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.smali	108	    sget-object v1, Lcom/snaptube/dataadapter/plugin/cache/ReqParamUtils;->versionCode:Ljava/lang/String;
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.smali	484	    sput-object v0, Lcom/snaptube/dataadapter/plugin/cache/ReqParamUtils;->versionName:Ljava/lang/String;
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/cache/ReqParamUtils.smali	494	    sput-object p0, Lcom/snaptube/dataadapter/plugin/cache/ReqParamUtils;->versionCode:Ljava/lang/String;
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/push/util/CrashlyticsInfoUtils.smali	12	".field private static final FIELD_VERSION_NAME:Ljava/lang/String; = ""VERSION_NAME"""
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/push/util/CrashlyticsInfoUtils.smali	257	"    const-string v1, ""VERSION_NAME"""
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/push/util/MIUIUtil.smali	12	".field private static final KEY_MIUI_VERSION_CODE:Ljava/lang/String; = ""ro.miui.ui.version.code"""
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/push/util/MIUIUtil.smali	14	".field private static final KEY_MIUI_VERSION_CODE_TIME:Ljava/lang/String; = ""ro.miui.version.code_time"""
+decoded/smali_classes3/com/snaptube/dataadapter/plugin/push/util/MIUIUtil.smali	16	".field private static final KEY_MIUI_VERSION_NAME:Ljava/lang/String; = ""ro.miui.ui.version.name"""
+decoded/smali_classes3/com/snaptube/extractor/pluginlib/sites/Facebook.smali	6	.field private static final VERSION_CODE_726:I = 0x453c9c0
+decoded/smali_classes3/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.smali	127	"    const-string v2, ""!function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){\""undefined\""!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:\""Module\""}),Object.defineProperty(t,\""__esModule\"",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&\""object\""==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,\""default\"",{enumerable:!0,value:t}),2&e&&\""string\""!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,\""a\"",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p=\""\"",n(n.s=40)}([function(t,e,n){\""use strict\"";var r,o=function(){return void 0===r&&(r=Boolean(window&&document&&document.all&&!window.atob)),r},i=function(){var t={};return function(e){if(void 0===t[e]){var n=document.querySelector(e);if(window.HTMLIFrameElement&"
+decoded/smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.smali	95	.method public static getVersionCode(Landroid/content/Context;)I
+decoded/smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.smali	117	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.smali	180	    invoke-static {p0}, Lcom/snaptube/extractor/pluginlib/utils/PluginContextUtil;->getVersionCode(Landroid/content/Context;)I
+decoded/smali_classes3/com/snaptube/player_guide/IPlayerGuideConfig$Key.smali	49	.field public static final enum APP_VERSION_CODE:Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;
+decoded/smali_classes3/com/snaptube/player_guide/IPlayerGuideConfig$Key.smali	1276	"    const-string v2, ""app_version_code"""
+decoded/smali_classes3/com/snaptube/player_guide/IPlayerGuideConfig$Key.smali	1280	"    const-string v7, ""APP_VERSION_CODE"""
+decoded/smali_classes3/com/snaptube/player_guide/IPlayerGuideConfig$Key.smali	1286	    sput-object v0, Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;->APP_VERSION_CODE:Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;
+decoded/smali_classes3/com/snaptube/player_guide/IPlayerGuideConfig$Key.smali	2412	    sget-object v1, Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;->APP_VERSION_CODE:Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;
+decoded/smali_classes3/com/snaptube/player_guide/resAction/a.smali	127	    sget-object v1, Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;->APP_VERSION_CODE:Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;
+decoded/smali_classes3/com/snaptube/player_guide/strategy/model/AppRes$b.smali	49	"        value = ""app_version_code"""
+decoded/smali_classes3/com/snaptube/plugin/PluginReportBean.smali	37	.field public versionCode:Ljava/lang/Long;
+decoded/smali_classes3/com/snaptube/plugin/PluginReportBean.smali	155	.method public getVersionCode()Ljava/lang/Long;
+decoded/smali_classes3/com/snaptube/plugin/PluginReportBean.smali	158	    iget-object v0, p0, Lcom/snaptube/plugin/PluginReportBean;->versionCode:Ljava/lang/Long;
+decoded/smali_classes3/com/snaptube/plugin/PluginReportBean.smali	267	.method public setVersionCode(Ljava/lang/Long;)V
+decoded/smali_classes3/com/snaptube/plugin/PluginReportBean.smali	270	    iput-object p1, p0, Lcom/snaptube/plugin/PluginReportBean;->versionCode:Ljava/lang/Long;
+decoded/smali_classes3/o/er6.smali	913	"    const-string v1, "", newVersion: """
+decoded/smali_classes3/o/ir.smali	297	    sget-object v2, Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;->APP_VERSION_CODE:Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;
+decoded/smali_classes3/o/pz5.smali	83	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes3/o/u91.smali	136	    sget-object p1, Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;->APP_VERSION_CODE:Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;
+decoded/smali_classes3/o/u91.smali	570	    sget-object v1, Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;->APP_VERSION_CODE:Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;
+decoded/smali_classes3/o/um8.smali	53	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes3/o/wr7$a.smali	213	"    const-string v4, ""ReflectInfo(versionCode="""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	1995	"    const-string v1, ""key_copy_version_code """
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	3448	"    const-string v1, ""key.current_version_code"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	3506	"    const-string v1, ""key.current_version_code"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	3541	"    const-string v4, ""key.last_version_code"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	4786	"    const-string v1, ""install_version_code"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	4916	"    const-string v1, ""key.enable_app_upgrade_download_in_wifi_prefer"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	5895	"    const-string v1, ""install_version_code"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	7041	"    const-string v1, ""key.record_version_code"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	9129	"    const-string v1, ""key.record_version_code"""
+decoded/smali_classes4/com/snaptube/premium/configs/Config.smali	9259	"    const-string v1, ""key_copy_version_code """
+decoded/smali_classes4/com/snaptube/premium/dialog/UpgradeDialog.smali	159	    iget-object v2, v2, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes4/com/snaptube/premium/files/downloaded/DownloadedTaskFragment.smali	149	"        ""needUpdateData"","
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$LocalUpdateConfig.smali	22	.field private versionCode:I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$LocalUpdateConfig.smali	44	.method public getVersionCode()I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$LocalUpdateConfig.smali	47	    iget v0, p0, Lcom/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$LocalUpdateConfig;->versionCode:I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$LocalUpdateConfig.smali	60	.method public setVersionCode(I)V
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$LocalUpdateConfig.smali	63	    iput p1, p0, Lcom/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$LocalUpdateConfig;->versionCode:I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.smali	156	    invoke-virtual {v0, v1}, Lcom/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$LocalUpdateConfig;->setVersionCode(I)V
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.smali	432	    invoke-virtual {p0}, Lcom/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$LocalUpdateConfig;->getVersionCode()I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.smali	530	    invoke-virtual {p0}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->getVersionCode()I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.smali	534	    invoke-virtual {p1}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->getVersionCode()I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.smali	1835	"    const-string v0, ""app_upgrade"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.smali	1900	    invoke-virtual {p0}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->getVersionCode()I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager.smali	1904	    invoke-virtual {v0}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->getVersionCode()I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig.smali	363	    invoke-virtual {p0}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->getVersionCode()I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig.smali	367	    invoke-virtual {v0}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->getVersionCode()I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig.smali	666	.method public getVersionCode()I
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/a.smali	605	    invoke-static {}, Lcom/wandoujia/base/config/GlobalConfig;->isEnableAppUpgradeDownloadWithMobile()Z
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$a.smali	101	"    const-string v2, ""previous_version_code"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$c.smali	99	"    const-string v2, ""previous_version_code"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$d.smali	103	"    const-string v2, ""previous_version_code"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$e.smali	103	"    const-string v2, ""previous_version_code"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$f.smali	189	"    const-string v5, ""previous_version_code"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$g.smali	178	"    const-string v3, ""previous_version_code"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$h.smali	119	"    const-string v4, ""previous_version_code"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$i.smali	103	"    const-string v3, ""previous_version_code"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b$j.smali	149	"    const-string v3, ""previous_version_code"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b.smali	261	"    const-string v1, ""previous_version_code"""
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/incremental_upgrade/b.smali	321	"    const-string v2, ""previous_version_code"""
+decoded/smali_classes4/com/snaptube/premium/share/c.smali	455	"    const-string v4, ""share_version_code"""
+decoded/smali_classes4/com/snaptube/taskManager/provider/TaskInfoDBUtils.smali	4497	    iget v11, v11, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes4/com/vungle/ads/BuildConfig.smali	14	.field public static final VERSION_CODE:I = 0x11303
+decoded/smali_classes4/com/vungle/ads/BuildConfig.smali	16	".field public static final VERSION_NAME:Ljava/lang/String; = ""7.4.3"""
+decoded/smali_classes4/com/vungle/ads/internal/network/VungleApiClient.smali	2833	    iget-object v1, v1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes4/com/vungle/ads/internal/network/VungleApiClient.smali	2835	"    const-string v2, ""packageInfo.versionName"""
+decoded/smali_classes4/com/vungle/ads/internal/task/CleanupJob.smali	157	"    const-string v3, ""VERSION_CODE"""
+decoded/smali_classes4/com/vungle/ads/internal/task/CleanupJobKt.smali	13	"        ""VERSION_CODE_KEY"","
+decoded/smali_classes4/com/vungle/ads/internal/task/CleanupJobKt.smali	30	".field private static final VERSION_CODE_KEY:Ljava/lang/String; = ""VERSION_CODE"""
+decoded/smali_classes4/com/wandoujia/base/config/GlobalConfig.smali	251	".field private static final KEY_ENABLE_APP_UPGRADE_DOWNLOAD_ID_MOBILE:Ljava/lang/String; = ""key.enable_app_upgrade_download_in_mobile"""
+decoded/smali_classes4/com/wandoujia/base/config/GlobalConfig.smali	5287	.method public static isEnableAppUpgradeDownloadWithMobile()Z
+decoded/smali_classes4/com/wandoujia/base/config/GlobalConfig.smali	5294	"    const-string v1, ""key.enable_app_upgrade_download_in_mobile"""
+decoded/smali_classes4/com/wandoujia/base/config/GlobalConfig.smali	5919	.method public static isNeedUpdateJunkRule()Z
+decoded/smali_classes4/com/wandoujia/feedback/model/FeedbackCustomId$commonNameIdMap$2.smali	133	"    const-string v2, ""version_name"""
+decoded/smali_classes4/com/wandoujia/feedback/model/FeedbackCustomId$commonNameIdMap$2.smali	143	"    const-string v2, ""version_code"""
+decoded/smali_classes4/o/an5.smali	30	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes4/o/an5.smali	77	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes4/o/an5.smali	105	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes4/o/az7.smali	1059	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes4/o/az7.smali	1109	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes4/o/kh2.smali	80	"    const-string v1, ""version_name"""
+decoded/smali_classes4/o/kh2.smali	94	"    const-string v1, ""version_code"""
+decoded/smali_classes4/o/kr7.smali	102	    iget v3, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes4/o/kr7.smali	114	    iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes4/o/kz3$a.smali	216	"    const-string v4, ""version_code_"""
+decoded/smali_classes4/o/kz3$a.smali	228	"    const-string p2, ""first_version_code_"""
+decoded/smali_classes4/o/lk0.smali	284	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes4/o/lx0.smali	191	"    const-string p1, ""share_version_code"""
+decoded/smali_classes4/o/nr.smali	462	"    const-string v0, ""previous_version_code"""
+decoded/smali_classes4/o/o24.smali	167	    iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes4/o/o24.smali	195	    iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes4/o/og2.smali	55	"    const-string v0, ""https://api22-normal-c-alisg.tiktokv.com/aweme/v1/feed/?iid=7318518857994389254&device_id=7318517321748022790&app_name=musical_ly&version_code=350103&device_platform=android&device_type=SM-ASUS_Z01QD&os_version=9&aweme_id="""
+decoded/smali_classes4/o/oh8.smali	52	    invoke-virtual {v0, v1}, Lnet/pubnative/mediation/config/PubnativeConfigManager;->setNeedUpdateConfig(Z)V
+decoded/smali_classes4/o/q23.smali	882	    sget-object v2, Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;->APP_VERSION_CODE:Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;
+decoded/smali_classes4/o/q23.smali	1322	    sget-object v0, Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;->APP_VERSION_CODE:Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;
+decoded/smali_classes4/o/q23.smali	1426	    sget-object v2, Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;->APP_VERSION_CODE:Lcom/snaptube/player_guide/IPlayerGuideConfig$Key;
+decoded/smali_classes4/o/rh8.smali	13	    invoke-virtual {p0}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->getVersionCode()I
+decoded/smali_classes4/o/rh8.smali	45	    invoke-virtual {p0}, Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;->getVersionCode()I
+decoded/smali_classes4/o/rj5.smali	944	    iget-object v1, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes4/o/rj5.smali	948	    iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes4/o/sz.smali	23	"    const-string v0, ""https://api22-normal-c-alisg.tiktokv.com/aweme/v1/multi/aweme/detail/?os_version=14&device_type=Pixel%208%20Pro&device_platform=android&version_name=musical_ly&version_code=350103&app_name=musical_ly&aid=1233&channel=7379690547022071302&iid=7379691220551141126&device_id="""
+decoded/smali_classes4/o/td5.smali	502	"    const-string v1, ""install_version_code"""
+decoded/smali_classes4/o/to8.smali	79	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes4/o/vq6.smali	2501	"    const-string v1, ""version_code"""
+decoded/smali_classes4/o/vq6.smali	3153	"    const-string v0, ""gp_version_code"""
+decoded/smali_classes4/o/vq6.smali	3309	"    const-string v0, ""version_code"""
+decoded/smali_classes4/o/wl6.smali	75	    invoke-virtual {v1, v3}, Lcom/youtube/proto/BaseInfo$Builder;->appVersionName(Ljava/lang/String;)Lcom/youtube/proto/BaseInfo$Builder;
+decoded/smali_classes4/o/wl6.smali	197	    invoke-virtual {v0, v1}, Lcom/youtube/proto/BaseInfo$Builder;->gmsVersionCode(Ljava/lang/Integer;)Lcom/youtube/proto/BaseInfo$Builder;
+decoded/smali_classes4/o/wl8.smali	265	    iget-object v1, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes4/o/wl8.smali	273	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes4/o/x59.smali	708	    iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$Builder.smali	28	.field public appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$Builder.smali	34	.field public gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$Builder.smali	90	.method public appVersionName(Ljava/lang/String;)Lcom/youtube/proto/BaseInfo$Builder;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$Builder.smali	93	    iput-object p1, p0, Lcom/youtube/proto/BaseInfo$Builder;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$Builder.smali	123	    iget-object v5, v0, Lcom/youtube/proto/BaseInfo$Builder;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$Builder.smali	151	    iget-object v1, v0, Lcom/youtube/proto/BaseInfo$Builder;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$Builder.smali	206	.method public gmsVersionCode(Ljava/lang/Integer;)Lcom/youtube/proto/BaseInfo$Builder;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$Builder.smali	209	    iput-object p1, p0, Lcom/youtube/proto/BaseInfo$Builder;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$a.smali	223	    invoke-virtual {v0, v3}, Lcom/youtube/proto/BaseInfo$Builder;->appVersionName(Ljava/lang/String;)Lcom/youtube/proto/BaseInfo$Builder;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$a.smali	327	    invoke-virtual {v0, v3}, Lcom/youtube/proto/BaseInfo$Builder;->gmsVersionCode(Ljava/lang/Integer;)Lcom/youtube/proto/BaseInfo$Builder;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$a.smali	474	    iget-object v0, p2, Lcom/youtube/proto/BaseInfo;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$a.smali	606	    iget-object v0, p2, Lcom/youtube/proto/BaseInfo;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$a.smali	755	    iget-object v2, p1, Lcom/youtube/proto/BaseInfo;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo$a.smali	995	    iget-object v2, p1, Lcom/youtube/proto/BaseInfo;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	36	".field public static final DEFAULT_APPVERSIONNAME:Ljava/lang/String; = """""
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	42	.field public static final DEFAULT_GMSVERSIONCODE:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	89	.field public final appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	110	.field public final gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	273	    sput-object v0, Lcom/youtube/proto/BaseInfo;->DEFAULT_GMSVERSIONCODE:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	371	    iput-object v1, v0, Lcom/youtube/proto/BaseInfo;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	419	    iput-object v1, v0, Lcom/youtube/proto/BaseInfo;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	515	    iget-object v1, p0, Lcom/youtube/proto/BaseInfo;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	517	    iget-object v3, p1, Lcom/youtube/proto/BaseInfo;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	635	    iget-object v1, p0, Lcom/youtube/proto/BaseInfo;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	637	    iget-object v3, p1, Lcom/youtube/proto/BaseInfo;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	787	    iget-object v1, p0, Lcom/youtube/proto/BaseInfo;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	1003	    iget-object v1, p0, Lcom/youtube/proto/BaseInfo;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	1157	    iget-object v1, p0, Lcom/youtube/proto/BaseInfo;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	1159	    iput-object v1, v0, Lcom/youtube/proto/BaseInfo$Builder;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	1205	    iget-object v1, p0, Lcom/youtube/proto/BaseInfo;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	1207	    iput-object v1, v0, Lcom/youtube/proto/BaseInfo$Builder;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	1288	    iget-object v1, p0, Lcom/youtube/proto/BaseInfo;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	1292	"    const-string v1, "", appVersionName="""
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	1296	    iget-object v1, p0, Lcom/youtube/proto/BaseInfo;->appVersionName:Ljava/lang/String;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	1444	    iget-object v1, p0, Lcom/youtube/proto/BaseInfo;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	1448	"    const-string v1, "", gmsVersionCode="""
+decoded/smali_classes5/com/youtube/proto/BaseInfo.smali	1452	    iget-object v1, p0, Lcom/youtube/proto/BaseInfo;->gmsVersionCode:Ljava/lang/Integer;
+decoded/smali_classes5/me/zhanghai/android/materialprogressbar/BuildConfig.smali	14	.field public static final VERSION_CODE:I = 0x13
+decoded/smali_classes5/me/zhanghai/android/materialprogressbar/BuildConfig.smali	16	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.6.1"""
+decoded/smali_classes5/net/pubnative/advertising_id_client/BuildConfig.smali	14	.field public static final VERSION_CODE:I = 0x2
+decoded/smali_classes5/net/pubnative/advertising_id_client/BuildConfig.smali	16	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.0.1"""
+decoded/smali_classes5/net/pubnative/mediation/adapter/model/AdGuideAdModel.smali	46	"        ""needUpdateAdLogAttributionCacheWhenClick"","
+decoded/smali_classes5/net/pubnative/mediation/adapter/model/AdGuideAdModel.smali	1023	.method public needUpdateAdLogAttributionCacheWhenClick()Z
+decoded/smali_classes5/net/pubnative/mediation/config/PubnativeConfigManager.smali	58	.field private needUpdateConfig:Ljava/lang/Boolean;
+decoded/smali_classes5/net/pubnative/mediation/config/PubnativeConfigManager.smali	200	    iput-object v0, p0, Lnet/pubnative/mediation/config/PubnativeConfigManager;->needUpdateConfig:Ljava/lang/Boolean;
+decoded/smali_classes5/net/pubnative/mediation/config/PubnativeConfigManager.smali	414	    iget-object v0, p0, Lnet/pubnative/mediation/config/PubnativeConfigManager;->needUpdateConfig:Ljava/lang/Boolean;
+decoded/smali_classes5/net/pubnative/mediation/config/PubnativeConfigManager.smali	444	    iput-object v0, p0, Lnet/pubnative/mediation/config/PubnativeConfigManager;->needUpdateConfig:Ljava/lang/Boolean;
+decoded/smali_classes5/net/pubnative/mediation/config/PubnativeConfigManager.smali	2149	.method public setNeedUpdateConfig(Z)V
+decoded/smali_classes5/net/pubnative/mediation/config/PubnativeConfigManager.smali	2152	    iget-object v0, p0, Lnet/pubnative/mediation/config/PubnativeConfigManager;->needUpdateConfig:Ljava/lang/Boolean;
+decoded/smali_classes5/net/pubnative/mediation/config/PubnativeConfigManager.smali	2160	    iput-object p1, p0, Lnet/pubnative/mediation/config/PubnativeConfigManager;->needUpdateConfig:Ljava/lang/Boolean;
+decoded/smali_classes5/net/pubnative/mediation/request/model/PubnativeAdModel$b.smali	155	    invoke-virtual {v1}, Lnet/pubnative/mediation/request/model/PubnativeAdModel;->needUpdateAdLogAttributionCacheWhenClick()Z
+decoded/smali_classes5/net/pubnative/mediation/request/model/PubnativeAdModel$b.smali	202	    invoke-virtual {v1}, Lnet/pubnative/mediation/request/model/PubnativeAdModel;->needUpdateAdLogAttributionCacheWhenClick()Z
+decoded/smali_classes5/net/pubnative/mediation/request/model/PubnativeAdModel.smali	2894	.method public needUpdateAdLogAttributionCacheWhenClick()Z
+decoded/smali_classes5/net/pubnative/url_driller/BuildConfig.smali	14	.field public static final VERSION_CODE:I = 0x5
+decoded/smali_classes5/net/pubnative/url_driller/BuildConfig.smali	16	".field public static final VERSION_NAME:Ljava/lang/String; = ""1.3.0"""
+decoded/smali_classes5/o/bk2.smali	126	    iget-object v2, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali_classes5/o/bk2.smali	130	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes5/o/bv6.smali	899	    iget p2, p2, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes5/o/cz7.smali	132	    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali_classes5/o/i.smali	126	    iget p2, p2, Landroid/content/pm/PackageInfo;->versionCode:I

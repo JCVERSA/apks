@@ -1,0 +1,4780 @@
+{
+  "summary": {
+    "package": "com.snaptube.premium",
+    "version_name": null,
+    "version_code": null,
+    "compile_sdk_version": "35",
+    "compile_sdk_version_codename": "15",
+    "min_sdk": null,
+    "target_sdk": null,
+    "application": {
+      "label": "@string/app_name",
+      "name": "com.snaptube.premium.app.PhoenixApplication",
+      "icon": "@mipmap/ic_launcher",
+      "roundIcon": "@mipmap/ic_launcher_round",
+      "debuggable": null,
+      "allowBackup": "false",
+      "usesCleartextTraffic": "true",
+      "networkSecurityConfig": "@xml/network_security_config",
+      "extractNativeLibs": null,
+      "appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "requestLegacyExternalStorage": "true",
+      "preserveLegacyExternalStorage": "true",
+      "enableOnBackInvokedCallback": null,
+      "localeConfig": null,
+      "dataExtractionRules": null,
+      "fullBackupContent": null
+    },
+    "supports_screens": "<supports-screens xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:anyDensity=\"true\" ns0:largeScreens=\"true\" ns0:normalScreens=\"true\" ns0:smallScreens=\"true\" />\n    "
+  },
+  "permissions": [
+    {
+      "name": "android.permission.ACCESS_NETWORK_STATE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_WIFI_STATE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.INTERNET",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.REORDER_TASKS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.WAKE_LOCK",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "max_sdk": "32",
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.READ_EXTERNAL_STORAGE",
+      "max_sdk": "32",
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.SYSTEM_ALERT_WINDOW",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.GET_PACKAGE_SIZE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.KILL_BACKGROUND_PROCESSES",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.FOREGROUND_SERVICE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.POST_NOTIFICATIONS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.snaptube.premium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "max_sdk": null,
+      "node": "uses-permission"
+    }
+  ],
+  "permission_declarations": [
+    {
+      "name": "com.snaptube.premium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "protectionLevel": "signature"
+    }
+  ],
+  "metadata": [
+    {
+      "name": "is_shorts_supported",
+      "value": "@bool/base_true",
+      "resource": null
+    },
+    {
+      "name": "is_ins_multi_format_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_hls_query_bug_fixed",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_ytb_post_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "com.sensorsdata.analytics.android.VTrack",
+      "value": "false",
+      "resource": null
+    },
+    {
+      "name": "com.sensorsdata.analytics.android.AutoTrack",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "android.max_aspect",
+      "value": "2.4",
+      "resource": null
+    },
+    {
+      "name": "minFrameworkVersion",
+      "value": "4",
+      "resource": null
+    },
+    {
+      "name": "is_tiktok_url_spacial_char_fixed",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_photo_music_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_photo_video_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_ytb_sabr_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_fb_more_format_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_ins_mock_mp3_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_tt_mock_mp3_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_ytb_live_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_ytb_living_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_youtube_js_inject_fix_csp",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "is_tt_photo_alias_remove_index",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "android.notch_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "notch.config",
+      "value": "portrait|landscape",
+      "resource": null
+    },
+    {
+      "name": "is_cronet_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "com.facebook.sdk.ApplicationId",
+      "value": "@string/facebook_app_id",
+      "resource": null
+    },
+    {
+      "name": "com.facebook.sdk.ClientToken",
+      "value": "@string/facebook_client_token",
+      "resource": null
+    },
+    {
+      "name": "com.facebook.sdk.AutoLogAppEventsEnabled",
+      "value": "false",
+      "resource": null
+    },
+    {
+      "name": "is_meta_search_support",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "youtube_content_type_version",
+      "value": "0",
+      "resource": null
+    },
+    {
+      "name": "com.sensorsdata.analytics.android.MainProcessName",
+      "value": "com.snaptube.premium",
+      "resource": null
+    },
+    {
+      "name": "com.sensorsdata.analytics.android.version",
+      "value": "unspecified",
+      "resource": null
+    }
+  ],
+  "components": [
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.SimpleInterstitialAdActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ExploreActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN"
+          ],
+          "categories": [
+            "android.intent.category.LAUNCHER",
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": []
+        },
+        {
+          "actions": [
+            "phoenix.intent.action.EXPLORE_NAVIGATE"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "navigation"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "phoenix.intent.action.ACTION_SELF_UPDATE_AVAILABLE"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        },
+        {
+          "actions": [
+            "phoenix.intent.action.MY_THINGS_NAVIGATE"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        },
+        {
+          "actions": [
+            "phoenix.intent.action.VAULT_SHORT_CUT"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        },
+        {
+          "actions": [
+            "phoenix.intent.action.MY_THINGS_NAVIGATE"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "mything",
+              "{http://schemas.android.com/apk/res/android}scheme": "navigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ThemeChangeActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.sites.SpeedDialActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "app",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/speeddial",
+              "{http://schemas.android.com/apk/res/android}scheme": "app"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.sites.BookmarkActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.search.MixedSearchActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.SEARCH"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.VideoWebViewActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.hybrid.HybridWebViewActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.YoutubeVideoWebViewActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.LandingActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ZendeskPushActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CleanSettingActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CreditsActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "app",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/credits",
+              "{http://schemas.android.com/apk/res/android}scheme": "app"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.DragonActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ChooseDownloadPathActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.MultiSelectActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CommonMultiTabActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CommonMixedListActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.VideoPlaybackActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.VideoPlaybackActivityTransTheme",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.preview.audio.LocalMediaPreviewActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "video/*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "audio/*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.PlayerGuideActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.InstallGuideOverlayActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.GPInstallTipActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.YouTubeLoginActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ChooseFormatActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.ClipMonitor.ClipMonitorDownloadActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.ads.splash.RewardSplashAdActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ActionSendDispatchActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.SEND"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "text/plain"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "image/*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.webview.tab.WebTabsActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.webview.HistoryActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.whatsapp.WhatsAppStatusActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.whatsapp.gallery.GalleryActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.DeepLinkActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.dialog.WindowPermissionActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CleanActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "phoenix.intent.action.CLEAN"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.VaultActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.ui.base.CleanBaseActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.PhoneBoostActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.PhoneBoostInsideActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.PhoneBoostJumpActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.OuterScanActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN",
+            "phoenix.intent.action.OUTER_CLEAN"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.InsideScanActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.BatteryCleanActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ScanAppJunkFinishActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CleanAdRedirectActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CleanSplashAdActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.ui.permission.GuidePermissionActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.webview.common.CommonWebActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.ui.base.AppUninstallPopupActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.LockFromSendActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.SEND"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "video/*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "audio/*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "image/*"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.SEND_MULTIPLE"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "video/*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "audio/*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "image/*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.LockFromInsideActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.SingleVaultActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.log.report.LogReportActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "phoenix.intent.action.LOG_REPORT"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.search.local.LocalSearchActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.search.local.VaultLocalSearchActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.user.activity.MeAboutActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.user.activity.MePoliciesActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.vault.ui.ImagePreviewActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "snaptube.intent.action.VIEW_IMAGE"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "image/*"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "image/*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.vault.ui.ImageChooseActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.vault.ui.ImageChooseLandingActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.SwitchStorageActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.DownloadDialogWrapperActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ExternalDownloadDialogWrapperActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ForegroundAppActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.plugin.extension.chooseformat.SingleAllFormatActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.plugin.extension.chooseformat.subtitles.SubtitleChoiceActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.plugin.extension.chooseformat.ExternalYoutubeAllFormatActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.BroadcastDeliverActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.ServiceDeliverActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.home.social.SocialGuideAdActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.guide.launch.LaunchGuideActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.ui.SettingsGuideActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.base.CleanDetailActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.clean.base.PhotoCleanDetailActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.ads.activity.SplashAdActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.dayuwuxian.safebox.ui.base.BaseSafeBoxActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.zhihu.matisse.ui.MatisseActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.zhihu.matisse.ui.MatisseActionActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.zhihu.matisse.internal.ui.AlbumPreviewActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.zhihu.matisse.internal.ui.SelectedPreviewActivity",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.google.android.gms.common.api.GoogleApiActivity",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "com.sensorsdata.analytics.android.sdk.dialog.SchemeActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.BROWSABLE",
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "sa1840ddbb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity-alias",
+      "name": "com.snaptube.linkhook.LinkHandleActivity",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": "com.snaptube.premium.activity.DeepLinkActivity",
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.thedylink.com",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "deeplink",
+              "{http://schemas.android.com/apk/res/android}scheme": "snaptube"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.fbwat.ch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.fbwat.ch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fbwat.ch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fbwat.ch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.watch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.watch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.fb.watch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.fb.watch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.watch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.watch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.watch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.watch",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/stories/collab",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/stories/collab",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/stories/collab",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/stories/collab",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/mobile-redirect/login",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/mobile-redirect/login",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/mobile-redirect/login",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/mobile-redirect/login",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/donate",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/donate",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/events",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/events",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fundraisers",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fundraisers",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/hashtag/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/hashtag/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/groups",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/groups",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/group_subfeed/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/group_subfeed/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/recommendations",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/recommendations",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/messenger_kids/redirect/invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/messenger_kids/redirect/invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/messenger_kids",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/messenger_kids",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/privacy/checkup",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/privacy/checkup",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/reel/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/reel/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/live",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/live",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/live",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/live",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live_videos",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live_videos",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live_videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live_videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live_videos",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live_videos",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live_videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/live_videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/music",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/music",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/music",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/music",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/mediaplaylist",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/mediaplaylist",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/mediaplaylist",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/mediaplaylist",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watchparty",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watchparty",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/ads/experience/confirmation",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/ads/experience/confirmation",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/live/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/live/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/stories/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/stories/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/offers/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/offers/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/groups/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/groups/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/groups",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/groups",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fanning_send_page_invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fanning_send_page_invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/recommendations_hub",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/recommendations_hub",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/mp_seller_listings",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/mp_seller_listings",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/page_surface",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/page_surface",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/poe_create",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/poe_create",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/live_shopping",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/live_shopping",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/inbox/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/inbox/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/choose_cta/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/choose_cta/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/create_post/get_messages",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/create_post/get_messages",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/loyalty_otp/magic_link",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/loyalty_otp/magic_link",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.alpha.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.alpha.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.beta.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.beta.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/videos/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/reel/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/reel/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.alpha.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/reel/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.alpha.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/reel/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.beta.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/reel/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.beta.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/reel/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watchparty/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watchparty/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/watch",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/watch",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/storiescomposerforadscampaign",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/storiescomposerforadscampaign",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/storiescomposerforadscampaign",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/storiescomposerforadscampaign",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/watch",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/watch",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/subscription/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/subscription/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/subscription/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/subscription/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/watch/channel",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/watch/channel",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/channel",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/watch/channel",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/donate",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/donate",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/events",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/events",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/events/creation",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/events/creation",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/movies",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/movies",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fundraisers",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fundraisers",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/hashtag/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/hashtag/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/ads/experience/confirmation",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/ads/experience/confirmation",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/inbox/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/inbox/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/choose_cta/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/choose_cta/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/create_post/get_messages",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/create_post/get_messages",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/stories/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/stories/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/live/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/live/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/offers/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/offers/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/groups/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/free_suite_ads/groups/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/loyalty_otp/magic_link/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/loyalty_otp/magic_link/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/pages/create/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/pages/create/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/pages/creation/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/pages/creation/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/pages/place_claim/redirect_email_invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/pages/place_claim/redirect_email_invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/privacy/checkup",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/privacy/checkup",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/recommendations",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/recommendations",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/messenger_kids/redirect/invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/messenger_kids/redirect/invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/messenger_kids",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/messenger_kids",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/safetycheck",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/safetycheck",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/safetycheck",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/safetycheck",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fanning_send_page_invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fanning_send_page_invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/recommendations_hub",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/recommendations_hub",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/mp_seller_listings",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/mp_seller_listings",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/poe_create",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/poe_create",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/live_shopping",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/marketing_dl_facebook/live_shopping",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/crisisresponse",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/crisisresponse",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/crisisresponse",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/crisisresponse",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}path": "/device",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}path": "/devices",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}path": "/device/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}path": "/devices/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/xdl/approve",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/private_sharing/home_view",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/private_sharing/home_view",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/private_sharing/home_view",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/private_sharing/home_view",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/location_history",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/location_history",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/location_history",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/location_history",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/place_curation",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/place_curation",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/dating",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/dating",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/dating",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/dating",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/local_business_discovery",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/local_business_discovery",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/local_business_discovery",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/local_business_discovery",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/business_nearby",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/business_nearby",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/business_nearby",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/business_nearby",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/supportsmallbusinessONP/groups",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/supportsmallbusinessONP/groups",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/supportsmallbusinessONP/groups",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/supportsmallbusinessONP/groups",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/gameshow_invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/gameshow_invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/gameshow_invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/gameshow_invite",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/.*/subscribe",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/.*/subscribe",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/.*/subscribe",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/.*/subscribe",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/book/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/book/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/covidsupport",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/covidsupport",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/coronavirus_info/request_offer_help",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/coronavirus_info/request_offer_help",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/saved/list",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/topic/request/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/playlist/.*/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/playlist/.*/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/playlist/.*/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/playlist/.*/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/carrier_wifi/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/avatars_create",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/avatars_create",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/local/communities",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/local/communities",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/neighborhoods",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/neighborhoods",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/menu",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/menu",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/menu",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/menu",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/menu/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/menu/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/menu/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*/menu/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/rewards/program/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/rewards/program/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/rewards/program/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/rewards/program/.*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/wifi_profile/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/pages/whatsapp/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/pages/whatsapp/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/pages/whatsapp/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/pages/whatsapp/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page/whatsapp/verification/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page/whatsapp/verification/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page/whatsapp/verification/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page/whatsapp/verification/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page/whatsapp/linking/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page/whatsapp/linking/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page/whatsapp/linking/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page/whatsapp/linking/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}path": "/payments/offsite_button_login",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}path": "/payments/offsite_button_login",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page_admin_completion_meter",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page_admin_completion_meter",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page_admin_completion_meter",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page_admin_completion_meter",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/transfer_your_information/redirect/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/transfer_your_information/redirect/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/tyi/mobile/redirect/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/tyi/mobile/redirect/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/mp/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/mp/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/mp/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/mp/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/e/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/e/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/e/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/e/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/g/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/g/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/g/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/g/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.audio",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/live/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.audio",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/live/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.audio",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/live/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.audio",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/live/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.audio",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/soundbites/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.audio",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/soundbites/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.audio",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/soundbites/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.audio",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/soundbites/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "android.host": "fb.audio",
+              "android.scheme": "http",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/podcasts/..*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.audio",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/podcasts/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "fb.audio",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/podcasts/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.fb.audio",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/podcasts/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "wallets.facebook.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.wallets.facebook.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.wallets.facebook.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "wallets.fb.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.wallets.fb.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.wallets.fb.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "android.host": "m.me",
+              "android.scheme": "http",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/cm/..*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.m.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/cm/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/cm/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.m.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/cm/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "android.host": "m.me",
+              "android.scheme": "http",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/ch/..*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.m.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/ch/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/ch/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.m.me",
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/ch/..*",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/gaming/",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/gaming/",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "facebook.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/order_food"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/orderfood"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page_select_cta/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/page_config_cta/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/custom_cta/mobile_admin/destination_types/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/qr"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/coronavirus_info"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/emotional_health"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/biz_info_center"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/business_resources"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/coronavirus_business_info"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/covidsupport"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/deserve_to_be_found"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/discovery/hub/.*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/votinginformationcenter"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/votinginfocenter"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/voyager"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/business_economic_relief"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/facebook_pay"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/accountquality"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/ar/commerce/try"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/mobile_center"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/premium_content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/communityexplore/.*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/SoutenonsLesBonnesIdees"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/VerdientGefundenZuWerden"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fb_shop_referral"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fb_shop_leave_review"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fantasy_games"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/hub_order_details"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/orders_hub"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/app_direct_install/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/childhood_vaccines"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fb_mini_apps"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.facebook.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/iw/"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/fx_cal/fb"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/inter_app/redirect"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.facebook.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/acredirect"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "instagram.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.instagram.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "applink.instagram.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "familycenter.instagram.com"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "call.instagram.com"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "ig.me"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "app-va.tiktokv.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/redirect"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/v/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/V/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/live/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/h5/share/usr/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/h5/share/tag/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/h5/share/music/"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.tiktok.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "t.tiktok.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/redirect"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/v/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/V/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/live/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/h5/share/usr/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/h5/share/tag/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/h5/share/music/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/H5/share/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/i18n/share/music/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/i18n/share/video/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/i18n/share/challenge/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/i18n/share/user/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/stickers/detail/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/live/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/game/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/playlist-music/"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.tiktok.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "us.tiktok.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.tiktok.in"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/@.*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/share/@.*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/redirect"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/tag/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/music/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/playlist-music/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/sticker/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/v/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/V/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/live/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/stickers/detail/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/game/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/tag/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/music/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/sticker/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/video/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/user/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/share/challenge/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/h5/share/usr/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/h5/share/tag/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/h5/share/music/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/H5/share/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/i18n/share/music/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/i18n/share/video/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/i18n/share/challenge/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/i18n/share/user/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/messages/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/t/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/search/campaign/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/question/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/discover/"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/revenue/subscription/invitation"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/ug/ads/landing/"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "vm.tiktok.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "vt.tiktok.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/.*"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "link.e.tiktok.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/uni/"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "oec-api.tiktokv.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": "/view/product/.*"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW",
+            "android.media.action.MEDIA_PLAY_FROM_SEARCH",
+            "android.nfc.action.NDEF_DISCOVERED"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "youtube.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.youtube.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "m.youtube.com"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "youtu.be"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "share.getsnap.link",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/video",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "share.getsnap.link",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/campaigns",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "share.getsnap.link",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/video",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "share.getsnap.link",
+              "{http://schemas.android.com/apk/res/android}pathPrefix": "/campaigns",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "getsnap.link",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "getsnap.link",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "getsnap.link",
+              "{http://schemas.android.com/apk/res/android}scheme": "snap"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.snaptubeapp.com",
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "www.snaptubeapp.com",
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW",
+            "snaptube.intent.action.OPEN_WEBVIEW"
+          ],
+          "categories": [
+            "android.intent.category.BROWSABLE",
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "http"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "https"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.WEB_SEARCH"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.playback.window.WindowPlaybackService",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.alarm.AlarmService",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.push.parser.PushEntityParseService",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.ClipMonitor.ClipMonitorService",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.notification.ToolbarService",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.service.PlayerService",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "com.phoenix.download.DownloadService",
+      "exported": null,
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "com.snaptube.premium.localplay.download.BackgroundDownloadService",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.google.android.exoplayer.downloadService.action.RESTART"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "service",
+      "name": "com.google.android.exoplayer2.scheduler.PlatformScheduler$PlatformSchedulerService",
+      "exported": "true",
+      "enabled": null,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "com.google.firebase.components.ComponentDiscoveryService",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+      "exported": "true",
+      "enabled": null,
+      "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "com.google.firebase.sessions.SessionLifecycleService",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+      "exported": "false",
+      "enabled": "@bool/enable_system_alarm_service_default",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.background.systemjob.SystemJobService",
+      "exported": "true",
+      "enabled": "@bool/enable_system_job_service_default",
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.foreground.SystemForegroundService",
+      "exported": "false",
+      "enabled": "@bool/enable_system_foreground_service_default",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "androidx.room.MultiInstanceInvalidationService",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.taskManager.notification.TaskReceiver",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "phoenix.intent.action.DOWNLOAD_OPEN",
+            "phoenix.intent.action.DOWNLOAD_LIST",
+            "phoenix.intent.action.DOWNLOAD_HIDE",
+            "phoenix.intent.action.DOWNLOAD_LIST_HIDE",
+            "phoenix.intent.action.DOWNLOAD_OPEN_SELF_UPGRADE_APK"
+          ],
+          "categories": [],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "com.snaptube.premium.provider.SnaptubeContentProvider",
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.receiver.MediaMountReceiver",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MEDIA_MOUNTED"
+          ],
+          "categories": [],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.MEDIA_UNMOUNTED"
+          ],
+          "categories": [],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.onlineconfig.SnapTubeOnlineConfigScheduleReceiver",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "phoenix.intent.action.CHECK_ONLINE_CONFIG"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.receiver.MediaScannerReceiver",
+      "exported": "true",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MEDIA_SCANNER_STARTED"
+          ],
+          "categories": [],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.MEDIA_SCANNER_FINISHED"
+          ],
+          "categories": [],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.MEDIA_SCANNER_SCAN_FILE"
+          ],
+          "categories": [],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.receiver.AppFirstStartReceiver",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.snaptube.premium.APP_FIRST_START",
+            "com.dywx.growth.APP_FIRST_START"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.notification.NotificationTimeoutReceiver",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.snaptube.premium.NOTIFICATION_TIMEOUT"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.premium.notification.NotificationToolBarReceiver",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "phoenix.intent.action.CLOSE_TOOLBAR"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.stumbler.stander.config.StanderReceiver",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.ads.infomobi.receiver.ReceiverDelegate",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.PACKAGE_ADDED",
+            "android.intent.action.PACKAGE_REMOVED"
+          ],
+          "categories": [],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "package"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.USER_PRESENT",
+            "android.intent.action.DOWNLOAD_COMPLETE",
+            "android.intent.action.ACTION_POWER_CONNECTED",
+            "android.intent.action.ACTION_POWER_DISCONNECTED"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.ads.infomobi.receiver.InitReceiver",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.snaptube.ads.infomobi.TRY_INIT"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.ACTION_POWER_CONNECTED",
+            "android.intent.action.ACTION_POWER_DISCONNECTED"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.BATTERY_OKAY",
+            "android.intent.action.BATTERY_LOW"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.DEVICE_STORAGE_LOW",
+            "android.intent.action.DEVICE_STORAGE_OK"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.net.conn.CONNECTIVITY_CHANGE"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.BOOT_COMPLETED",
+            "android.intent.action.TIME_SET",
+            "android.intent.action.TIMEZONE_CHANGED"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+      "exported": "false",
+      "enabled": "@bool/enable_system_alarm_service_default",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "androidx.work.impl.background.systemalarm.UpdateProxies"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+      "exported": "true",
+      "enabled": "true",
+      "permission": "android.permission.DUMP",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.profileinstaller.ProfileInstallReceiver",
+      "exported": "true",
+      "enabled": "true",
+      "permission": "android.permission.DUMP",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "androidx.profileinstaller.action.INSTALL_PROFILE"
+          ],
+          "categories": [],
+          "data": []
+        },
+        {
+          "actions": [
+            "androidx.profileinstaller.action.SKIP_FILE"
+          ],
+          "categories": [],
+          "data": []
+        },
+        {
+          "actions": [
+            "androidx.profileinstaller.action.SAVE_PROFILE"
+          ],
+          "categories": [],
+          "data": []
+        },
+        {
+          "actions": [
+            "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.titan.carrier.CarrierReceiver",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.PACKAGE_ADDED",
+            "android.intent.action.PACKAGE_REPLACED",
+            "android.intent.action.PACKAGE_REMOVED",
+            "android.intent.action.PACKAGE_CHANGED"
+          ],
+          "categories": [],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "package"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "provider",
+      "name": "com.snaptube.taskManager.provider.SnaptubeContentProvider",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.provider.SnaptubeContentProvider",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.snaptube.premium.provider.SnaptubeExportedProvider",
+      "exported": "true",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.provider.SnaptubeExportedProvider;com.dywx.growth.provider.GuideExportedProvider",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.phoenix.launch.FirebasePerfProvider",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.firebaseinitprovider",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": "androidx.startup.InitializationProvider",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.androidx-startup",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.snaptube.premium.share.GenericFileProvider",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.fileprovider",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.dywx.premium.core.udid.impl.UDIDProvider",
+      "exported": "true",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.provider.UDIDProvider;com.dywx.growth.provider.UDIDProvider",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.dywx.hybrid.InitProvider",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.hybrid.initprovider",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": "com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": "com.snaptube.premium.SensorsDataContentProvider",
+      "target_activity": null,
+      "intent_filters": []
+    }
+  ]
+}

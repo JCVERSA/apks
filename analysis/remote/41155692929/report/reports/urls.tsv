@@ -1,0 +1,599 @@
+scheme	host	path	query_redacted	first_file	first_line
+https	%s		False	jadx/sources/com/bytedance/sdk/openadsdk/utils/WDI.java	809
+https	%s	/%s/%s	False	jadx/sources/com/google/firebase/installations/remote/c.java	282
+http	127.0.0.1		False	jadx/sources/org/mozilla/javascript/tools/debugger/Dim.java	967
+https	2bb6498bd14bff2dfe1f7d05b871d80e.com	/static/js/detect-video-v2.js	False	jadx/sources/o/yj7.java	33
+http	a.gdfsnt.com	/config/	True	jadx/sources/o/vq6.java	426
+http	a.gdfsnt.com	/sa	True	jadx/sources/o/vq6.java	430
+https	accounts.google.com		False	jadx/sources/com/dayuwuxian/safebox/ui/login/GoogleLoginWebViewFragment.java	254
+https	accounts.google.com	/AccountChooser	True	jadx/sources/com/snaptube/dataadapter/plugin/login/YTWebViewSignInPluginImpl.java	23
+https	accounts.google.com	/o/oauth2/revoke	True	jadx/sources/com/google/android/gms/auth/api/signin/internal/zbb.java	38
+https	accounts.google.com	/signin/v2/identifier	False	jadx/sources/com/dayuwuxian/safebox/ui/login/GoogleLoginWebViewFragment.java	65
+http	ad.vastvideo.com		False	jadx/sources/com/snaptube/ads/selfbuild/request/model/SnaptubeAdModel.java	64
+https	and.getsnap.link	/	False	jadx/sources/com/snaptube/premium/marketActivitySupport/api/SupportMarketActivityNetWorkHelper.java	17
+http	android.wdjcdn.com	/	False	jadx/sources/com/wandoujia/download/rpc/SingleThreadBlockDownloadTask.java	730
+http	animalog.com.br	/	False	decoded/assets/full_sites.json	196
+http	animeflv.net	/	False	decoded/assets/full_sites.json	160
+https	aomedia.org	/emsg/ID3	False	jadx/sources/com/google/android/exoplayer2/metadata/emsg/EventMessage.java	95
+http	apache.org	/xml/features/disallow-doctype-decl	False	jadx/sources/org/mozilla/javascript/xmlimpl/XmlProcessor.java	181
+http	apache.org	/xml/features/nonvalidating/load-external-dtd	False	jadx/sources/org/mozilla/javascript/xmlimpl/XmlProcessor.java	185
+https	api-event.falconnet.app	/installapps/realtime	False	jadx/sources/com/snaptube/ads/selfbuild/d.java	326
+https	api-event.falconnet.app	/v1/applist	False	jadx/sources/com/snaptube/ads/selfbuild/d.java	303
+https	api-event.falconnet.app	/v1/playList/click	False	jadx/sources/com/snaptube/premium/files/binder/viewholder/ApkAdViewHolder.java	265
+https	api-event.falconnet.app	/v1/playList/impression	False	jadx/sources/com/snaptube/premium/files/binder/viewholder/ApkAdViewHolder.java	269
+https	api-v2.soundcloud.com	/resolve	True	jadx/sources/com/snaptube/video/videoextractor/impl/SoundCloudVideoExtractor.java	247
+https	api-v2.soundcloud.com	/tracks/	False	jadx/sources/com/snaptube/video/videoextractor/impl/SoundCloudVideoExtractor.java	234
+https	api.deezer.com		False	jadx/sources/com/snaptube/extractor/pluginlib/sites/DeezerVideoExtractor.java	275
+https	api.falconnet.app		False	jadx/sources/com/wandoujia/base/config/GlobalConfig.java	1209
+https	api.snapcleanerapp.com	/em-rosario-ops/cleanRule/all	False	jadx/sources/o/yo.java	9
+http	api.snaptube.app	/sm-video/c/story/	False	jadx/sources/o/zs6.java	8
+http	api.snaptube.app	/video/simple/list	True	jadx/sources/com/snaptube/video/videoextractor/impl/MobiuspaceVideoExtractor.java	109
+https	api.thejeu.com		False	jadx/sources/o/th9.java	55
+https	api.thejeu.com	/	False	jadx/sources/o/lk8.java	90
+https	api.thejeu.com	/adapter/v1/	False	jadx/sources/o/lk8.java	86
+https	api.thejeu.com	/onlineConfig/	False	jadx/sources/com/snaptube/dataadapter/plugin/cache/PluginOnlineResourceManager.java	26
+https	api.thejeu.com	/v1/return/visit	False	jadx/sources/o/w44.java	164
+https	api.thejeu.com	/v1/video/bsd2	False	jadx/sources/o/bb9.java	21
+https	api.thejeu.com	/v2/video	False	jadx/sources/o/vl6.java	13
+https	api.thejeu.com	/v2/video/bookmark/detail	False	jadx/sources/o/xj.java	29
+https	api.thejeu.com	/v2/video/search	False	jadx/sources/o/vl6.java	21
+https	api.tidal.com	/v2/upload/open/items/shares/	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/TidalVideoExtractor.java	437
+https	api.twitter.com	/1.1/guest/activate.json	False	jadx/sources/com/snaptube/video/videoextractor/impl/u.java	760
+https	api.twitter.com	/2/timeline/conversation/%s.json	True	jadx/sources/com/snaptube/video/videoextractor/impl/u.java	306
+https	api.x.com	/1.1/statuses/show/%s.json	True	jadx/sources/com/snaptube/video/videoextractor/impl/u.java	331
+https	api16-access-sg.pangle.io	/api/ad/union/sdk/get_ads/	True	jadx/sources/com/bytedance/sdk/openadsdk/core/AJB/lc.java	106
+https	api16-endcard-pack-sg.pangle.io	/union/endcard/1695802627329057/	True	jadx/sources/com/bytedance/sdk/openadsdk/component/reward/AJB.java	16
+https	api22-normal-c-alisg.tiktokv.com	/aweme/v1/feed/	True	jadx/sources/o/og2.java	130
+https	api22-normal-c-alisg.tiktokv.com	/aweme/v1/multi/aweme/detail/	True	jadx/sources/o/sz.java	11
+https	aquila-space.zendesk.com		False	jadx/sources/o/th9.java	31
+http	beeg.com	/api/v6/%s/video/%s	False	jadx/sources/com/snaptube/video/videoextractor/impl/d.java	191
+http	bit.ly	/22uQgg6	False	decoded/assets/full_sites.json	16
+http	bit.ly	/2gGiWn6	False	decoded/assets/full_sites.json	40
+http	callback.ad.snaptube.app	/v1/event	False	jadx/sources/o/e57.java	262
+https	cdn.syndication.twimg.com	/tweet-result	True	jadx/sources/com/snaptube/video/videoextractor/impl/u.java	85
+https	charts.youtube.com		False	jadx/sources/com/snaptube/dataadapter/youtube/endpoint/ApiEndPoints.java	4
+https	charts.youtube.com	/youtubei/v1/browse	True	jadx/sources/com/snaptube/dataadapter/youtube/endpoint/ApiEndPoints.java	8
+https	chat.whatsapp.com	/BaC7Hu6BdTvBYzbi2d465I	False	jadx/sources/com/wandoujia/base/config/GlobalConfig.java	854
+https	chat.whatsapp.com	/LXrhGSAoJ4dL4aVrn7kxPq	False	jadx/sources/com/wandoujia/base/config/GlobalConfig.java	1353
+https	chat.whatsapp.com	/LtR11c2mskK0MiW7qeOpqZ	False	jadx/sources/com/wandoujia/base/config/GlobalConfig.java	850
+http	clients1.google.com	/complete/search	True	jadx/sources/o/xj.java	21
+https	config.ad.falconnet.app	/v2/config	True	jadx/sources/net/pubnative/mediation/config/PubnativeConfigManager.java	496
+https	console.firebase.google.com		False	jadx/sources/o/l31.java	17
+https	csasail.com	/collections/beauty	False	decoded/assets/full_sites.json	280
+http	d3rxegl586f1ks.cloudfront.net	/%s/%s.mp4	False	jadx/sources/com/snaptube/video/videoextractor/impl/MobiuspaceVideoExtractor.java	127
+http	dailytube.in		False	decoded/assets/full_sites.json	64
+http	dashif.org	/guidelines/last-segment-number	False	jadx/sources/o/nc1.java	175
+http	dashif.org	/guidelines/trickmode	False	jadx/sources/com/google/android/exoplayer2/source/dash/DashMediaPeriod.java	242
+https	debuger.snaptube.app	/debug	True	jadx/sources/o/vq6.java	371
+https	developer.apple.com	/streaming/emsg-id3	False	jadx/sources/com/google/android/exoplayer2/metadata/emsg/EventMessage.java	96
+http	djpunjab.com		False	decoded/assets/full_sites.json	244
+https	dl-master.snaptube.app	/installer/snaptube/latest/Click_me_to_install_SnapTube_tube_sns_share.apk	False	jadx/sources/o/bb7.java	254
+https	dl.larkplayerapp.com	/apk/LarkPlayer-v5.53.4-230609_1646_0a94f21-st-v7a.apk	False	decoded/assets/ads_guide.json	75
+https	dl.larkplayerapp.com	/apk/LarkPlayer-v5.59.65-230726_1651_e10294b-st-v7a.apk	False	decoded/assets/ads_guide.json	287
+https	dl.larkplayerapp.com	/apk/LarkPlayer-v5.59.66-230726_1653_e10294b-st-v7a.apk	False	decoded/assets/ads_guide.json	128
+https	dl.larkplayerapp.com	/apk/LarkPlayer-v5.59.67-230726_1653_e10294b-st-v7a.apk	False	decoded/assets/ads_guide.json	234
+https	dl.larkplayerapp.com	/apk/LarkPlayer-v5.59.68-230726_1654_e10294b-st-v7a.apk	False	decoded/assets/ads_guide.json	181
+https	download		False	jadx/sources/com/snaptube/video/videoextractor/impl/b.java	142
+http	download		False	jadx/sources/com/snaptube/video/videoextractor/impl/b.java	142
+https	embedsito.com	/api/source/%s	False	jadx/sources/com/snaptube/video/videoextractor/impl/b.java	198
+https	en.wikipedia.org	/wiki/Hostname	False	jadx/sources/com/sensorsdata/analytics/android/sdk/SensorsDataAPI.java	614
+https	exoplayer.dev	/issues/player-accessed-on-wrong-thread	False	jadx/sources/com/google/android/exoplayer2/j.java	876
+https	fdownloader.net	/	False	jadx/sources/o/de2.java	62
+https	firebase.google.com	/docs/analytics	False	jadx/sources/com/google/android/gms/internal/measurement/zzef.java	79
+https	firebase.google.com	/docs/android/kotlin-migration	False	jadx/sources/com/google/firebase/crashlytics/ktx/FirebaseCrashlyticsKtxRegistrar.java	13
+https	firebase.google.com	/docs/crashlytics/get-started	True	jadx/sources/o/r71.java	153
+https	firebase.google.com	/support/guides/disable-analytics	False	jadx/sources/com/google/android/gms/measurement/internal/zzek.java	162
+https	firebase.google.com	/support/privacy/init-options	False	jadx/sources/com/google/firebase/iid/FirebaseInstanceId.java	97
+https	firebaseremoteconfig.googleapis.com	/v1/projects/%s/namespaces/%s:fetch	False	jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java	200
+http	freshmaza.info		False	decoded/assets/full_sites.json	46
+http	funnyordie.com		False	decoded/assets/full_sites.json	76
+https	gist.github.com	/atk/1020396	False	jadx/sources/com/mbridge/msdk/c/b/b.java	135
+https	github.com	/L-JINBIN/ApkSignatureKillerEx	False	jadx/sources/com/google/LaunchApp.java	38
+https	github.com	/ReactiveX/RxJava/wiki/Error-Handling	False	jadx/sources/io/reactivex/exceptions/OnErrorNotImplementedException.java	13
+https	github.com	/ReactiveX/RxJava/wiki/Plugins	False	jadx/sources/o/df7.java	11
+https	github.com	/ReactiveX/RxJava/wiki/What	False	jadx/sources/io/reactivex/exceptions/UndeliverableException.java	7
+https	github.com	/yt-dlp/yt-dlp/pull/11190	False	jadx/sources/com/snaptube/extractor/pluginlib/youtube/ClientConfig.java	43
+https	gitlab.mobiuspace.net	/	False	jadx/sources/com/snaptube/account/ktx/AccountKt.java	34
+https	goo.gl	/NAOOOI	False	jadx/sources/com/google/android/gms/measurement/internal/zzlp.java	603
+https	goo.gl	/Tc7cBM	False	decoded/assets/full_sites.json	214
+https	google.com	/search	False	jadx/sources/com/google/android/gms/measurement/internal/zzii.java	48
+https	google.github.io	/ExoPlayer/faqs.html	False	jadx/sources/com/google/ads/interactivemedia/v3/internal/cn.java	189
+https	hooks.slack.com	/services/T0MAUHDSS/B1LDUAPC4/fsfhq3VejXCTIW4MNTyLrhY5	False	jadx/sources/o/lt.java	26
+http	hotsouth.net	/	False	decoded/assets/full_sites.json	130
+https	hotvideo.kwai.com	/rest/o/w/share/pwa/feed	False	jadx/sources/com/snaptube/video/videoextractor/impl/k.java	101
+https	i.instagram.com	/api/v1/feed/reels_media/	True	jadx/sources/o/ao3.java	149
+https	i.instagram.com	/api/v1/users/web_profile_info/	True	jadx/sources/o/ao3.java	132
+https	i.instagram.com	/api/v1/web/get_ruling_for_content/	True	jadx/sources/com/snaptube/video/videoextractor/impl/i.java	1322
+https	i.ytimg.com	/vi/	False	jadx/sources/com/snaptube/premium/fragment/VideoWebViewFragment.java	1422
+https	i1.ytimg.com	/vi/	False	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	276
+https	imasdk.googleapis.com	/native/sdkloader/native_sdk_v3.html	False	jadx/sources/com/google/ads/interactivemedia/v3/internal/adj.java	7
+https	imasdk.googleapis.com	/native/sdkloader/native_sdk_v3_debug.html	False	jadx/sources/com/google/ads/interactivemedia/v3/internal/adj.java	8
+https	img-app.thejeu.com		False	jadx/sources/com/wandoujia/base/config/GlobalConfig.java	934
+http	img-app.thejeu.com	/image/em-video/02e16ab97d0a237aa9c91416e60c0ecd.jpeg	False	decoded/assets/ads_guide.json	551
+http	img-app.thejeu.com	/image/em-video/03da6b1dd1aefd9f0fcf40b9eb457208.jpeg	False	decoded/assets/ads_guide.json	611
+http	img-app.thejeu.com	/image/em-video/07b09bbabe49289b30f25faa111cb8ce.jpeg	False	decoded/assets/ads_guide.json	599
+http	img-app.thejeu.com	/image/em-video/0fd84a16a54932176c2ac3134c793e81.jpeg	False	decoded/assets/ads_guide.json	570
+http	img-app.thejeu.com	/image/em-video/11bec034d54e64fe57e7a324ad1ea1aa.jpeg	False	decoded/assets/ads_guide.json	580
+http	img-app.thejeu.com	/image/em-video/161e646698917f47b7b85f248439b189.png	False	jadx/sources/o/gk4.java	35
+http	img-app.thejeu.com	/image/em-video/1660b9fa2cd0c6dbf5b2228f377b714d.jpeg	False	decoded/assets/ads_guide.json	559
+http	img-app.thejeu.com	/image/em-video/1bde8dbc0a7e114b4660603fddb7b170.jpeg	False	decoded/assets/ads_guide.json	577
+http	img-app.thejeu.com	/image/em-video/2310cf1d157773ea9994a27d999a4d72.jpeg	False	decoded/assets/ads_guide.json	593
+http	img-app.thejeu.com	/image/em-video/25344ee1d13c6a7369324c871126c060.jpeg	False	decoded/assets/ads_guide.json	557
+http	img-app.thejeu.com	/image/em-video/25e6eab8054dccf7ed3f6f2f34463e47.jpeg	False	decoded/assets/ads_guide.json	582
+http	img-app.thejeu.com	/image/em-video/27d9dbd4e2b051f564fef5f037543673.jpeg	False	decoded/assets/ads_guide.json	556
+http	img-app.thejeu.com	/image/em-video/2851e472d7336c2a5051b64f596cc802.jpeg	False	decoded/assets/ads_guide.json	562
+http	img-app.thejeu.com	/image/em-video/2a244a45474416dce0347d00d8d34588.jpeg	False	decoded/assets/ads_guide.json	526
+http	img-app.thejeu.com	/image/em-video/307963576762e1a6382bc44213a86667.jpeg	False	decoded/assets/ads_guide.json	550
+http	img-app.thejeu.com	/image/em-video/37abb9b4957990a298babb67c941ad4c.png	False	jadx/sources/o/gk4.java	33
+http	img-app.thejeu.com	/image/em-video/3c713fb917f31955cfa5a7871d80cc0a.jpeg	False	decoded/assets/ads_guide.json	592
+https	img-app.thejeu.com	/image/em-video/3d31e0c682dc55b010a74c26c79bfb74.jpeg	False	decoded/assets/ads_guide.json	520
+http	img-app.thejeu.com	/image/em-video/4901c9e2e7ff8b2998bb083f347b5db7.jpeg	False	decoded/assets/ads_guide.json	581
+https	img-app.thejeu.com	/image/em-video/4c6cd3b03f70bd5313ef4362df17875a.jpeg	False	decoded/assets/ads_guide.json	522
+http	img-app.thejeu.com	/image/em-video/55af5c075bd706031c67bf7b473b4127.jpeg	False	decoded/assets/ads_guide.json	583
+https	img-app.thejeu.com	/image/em-video/58a12a5568ffd12e69c250e79b2be586.jpeg	False	decoded/assets/ads_guide.json	523
+https	img-app.thejeu.com	/image/em-video/5f7393805bfc6297380fd187ad2fa7eb.jpeg	False	decoded/assets/ads_guide.json	529
+http	img-app.thejeu.com	/image/em-video/5fc0b4db689655c95fe731017f96aefe.jpeg	False	decoded/assets/ads_guide.json	586
+http	img-app.thejeu.com	/image/em-video/63314dd0e260c0ecc4ec2cca1a7b586e.jpeg	False	decoded/assets/ads_guide.json	527
+http	img-app.thejeu.com	/image/em-video/65ba3f89138099aee9be1c56894b5900.jpeg	False	decoded/assets/ads_guide.json	587
+http	img-app.thejeu.com	/image/em-video/660ff06652e518205189c251f05b42f4.jpeg	False	decoded/assets/ads_guide.json	547
+http	img-app.thejeu.com	/image/em-video/668f80630ba15cd32e4c7251fc1d171d.jpeg	False	decoded/assets/ads_guide.json	521
+http	img-app.thejeu.com	/image/em-video/6824c2fb9b8a341ec4b9c363d0b5242a.jpeg	False	decoded/assets/ads_guide.json	563
+http	img-app.thejeu.com	/image/em-video/7320a48a5e1f8a63521b57890ffa02ed.jpeg	False	decoded/assets/ads_guide.json	613
+http	img-app.thejeu.com	/image/em-video/733068e6d4a3c816bca0494d5daff87e.jpeg	False	decoded/assets/ads_guide.json	595
+http	img-app.thejeu.com	/image/em-video/74e5fa5ae93191366d6abc4517e9289b.jpeg	False	decoded/assets/ads_guide.json	574
+http	img-app.thejeu.com	/image/em-video/79e6b1e4a54493401dddf69c0030cf54.jpeg	False	decoded/assets/ads_guide.json	553
+http	img-app.thejeu.com	/image/em-video/7dc43e271beffd3efc2fdaddb2ef81b5.jpeg	False	decoded/assets/ads_guide.json	607
+http	img-app.thejeu.com	/image/em-video/7ded89db4e8f76a4e97b3a04863ced7d.jpeg	False	decoded/assets/ads_guide.json	539
+http	img-app.thejeu.com	/image/em-video/7f994559c7491b1871a6e89cbdf79cd0.jpeg	False	decoded/assets/ads_guide.json	600
+http	img-app.thejeu.com	/image/em-video/83f5db316e23f0c6581a7cfedf15981c.jpeg	False	decoded/assets/ads_guide.json	545
+http	img-app.thejeu.com	/image/em-video/85adf0c3b76fd65ff016cac9b1f8393f.jpeg	False	decoded/assets/ads_guide.json	604
+http	img-app.thejeu.com	/image/em-video/89db44c6145c80d6bbc496bb049df034.jpeg	False	decoded/assets/ads_guide.json	564
+http	img-app.thejeu.com	/image/em-video/8be4d526141231db2423213581e6648f.jpeg	False	decoded/assets/ads_guide.json	612
+http	img-app.thejeu.com	/image/em-video/8c3a5868eb1fb043a1caad1a454ee47c.jpeg	False	decoded/assets/ads_guide.json	598
+http	img-app.thejeu.com	/image/em-video/8f362e2f2474ee49550bdaaddca1b2f6.jpeg	False	decoded/assets/ads_guide.json	528
+http	img-app.thejeu.com	/image/em-video/967993721de14f3959bd518d1667eca1.jpeg	False	decoded/assets/ads_guide.json	535
+http	img-app.thejeu.com	/image/em-video/9f97e2aa0d1594a4ad08851a48b57aa0.jpeg	False	decoded/assets/ads_guide.json	540
+http	img-app.thejeu.com	/image/em-video/9fe65cef783bc7b80984cf28e8978589.jpeg	False	decoded/assets/ads_guide.json	533
+http	img-app.thejeu.com	/image/em-video/a3609445f72616746a6add0c30a31cb6.jpeg	False	decoded/assets/ads_guide.json	576
+http	img-app.thejeu.com	/image/em-video/adcfc6b7d268b901167035cdcd83d477.jpeg	False	decoded/assets/ads_guide.json	552
+http	img-app.thejeu.com	/image/em-video/afcaabd74af8d7ea610b082a79d0b339.jpeg	False	decoded/assets/ads_guide.json	606
+http	img-app.thejeu.com	/image/em-video/b4ef242dae81f5468d1a39a9ed219343.jpeg	False	decoded/assets/ads_guide.json	594
+http	img-app.thejeu.com	/image/em-video/b8b15dd2c9bc796dbe73a864e7c6d88b.png	False	jadx/sources/o/gk4.java	34
+http	img-app.thejeu.com	/image/em-video/ba8aee03823806fcf0a56aa294f44334.jpeg	False	decoded/assets/ads_guide.json	532
+http	img-app.thejeu.com	/image/em-video/ba9552a3be989125d03f759ad34d108c.jpeg	False	decoded/assets/ads_guide.json	610
+http	img-app.thejeu.com	/image/em-video/c6ed9f4a50e4ae76abeec1a8724a2a4d.jpeg	False	decoded/assets/ads_guide.json	538
+http	img-app.thejeu.com	/image/em-video/c73d70d65c276620ea602c074ec2726a.jpeg	False	decoded/assets/ads_guide.json	589
+http	img-app.thejeu.com	/image/em-video/c98d4073f34c537cb6990fbc9dd09a00.jpeg	False	decoded/assets/ads_guide.json	601
+http	img-app.thejeu.com	/image/em-video/caa83fd4e019416e693cda9556b98acf.jpeg	False	decoded/assets/ads_guide.json	571
+http	img-app.thejeu.com	/image/em-video/cd6eac0500e4c488edcd581195787a4f.jpeg	False	decoded/assets/ads_guide.json	568
+http	img-app.thejeu.com	/image/em-video/d8c16b4e48ecea1d316f895f59a0af2b.jpeg	False	decoded/assets/ads_guide.json	544
+http	img-app.thejeu.com	/image/em-video/de45aba707e579bcc560c0327a63ad64.jpeg	False	decoded/assets/ads_guide.json	558
+http	img-app.thejeu.com	/image/em-video/df3f529f67c18fa54b8e77bd502a8e3c.jpeg	False	decoded/assets/ads_guide.json	534
+http	img-app.thejeu.com	/image/em-video/e3c2dbf09e39762f78f1b21112f5579d.jpeg	False	decoded/assets/ads_guide.json	546
+http	img-app.thejeu.com	/image/em-video/e434d09a05aaceafdd93aed0c204b8e1.jpeg	False	decoded/assets/ads_guide.json	565
+http	img-app.thejeu.com	/image/em-video/e9c22548ef82547b60598e7711e11e65.jpeg	False	decoded/assets/ads_guide.json	605
+http	img-app.thejeu.com	/image/em-video/ebca1cd9f046e94c0306e91b9dacf342.jpeg	False	decoded/assets/ads_guide.json	541
+http	img-app.thejeu.com	/image/em-video/f5a1891c4f7ea0ad4248325e4e95ebab.jpeg	False	decoded/assets/ads_guide.json	588
+http	img-app.thejeu.com	/image/em-video/fbc53483bf92431a922bdd13759bd02b.jpeg	False	decoded/assets/ads_guide.json	569
+http	img-app.thejeu.com	/image/website-icon/013385040d063da9a9ae3e0a746ce91a_128_128.png	False	decoded/assets/full_sites.json	23
+http	img-app.thejeu.com	/image/website-icon/02e311253ab2fbeaeece500c91e4e63c_48_48.png	False	decoded/assets/full_sites.json	102
+http	img-app.thejeu.com	/image/website-icon/05a9914bcfe4834a38af02b591292398_48_48.png	False	decoded/assets/full_sites.json	114
+http	img-app.thejeu.com	/image/website-icon/077b1434173634f0767ed93f1b5fdfb0_48_48.png	False	decoded/assets/full_sites.json	18
+http	img-app.thejeu.com	/image/website-icon/08e5bb4fcea3d472ffa8970d4e5db9b1_128_128.jpeg	False	decoded/assets/full_sites.json	281
+http	img-app.thejeu.com	/image/website-icon/08e5bb4fcea3d472ffa8970d4e5db9b1_48_48.jpeg	False	decoded/assets/full_sites.json	282
+http	img-app.thejeu.com	/image/website-icon/0c4332bd64a7db396a0ddc83cb0edd15_128_128.png	False	decoded/assets/full_sites.json	29
+http	img-app.thejeu.com	/image/website-icon/0ca5c555415da3a6939af53fa27ed6df_128_128.png	False	decoded/assets/full_sites.json	17
+http	img-app.thejeu.com	/image/website-icon/0f7495f84395e16e842fd97cc31e9a68_48_48.png	False	decoded/assets/full_sites.json	65
+http	img-app.thejeu.com	/image/website-icon/10ac896608e31b3c13c5e0294ce3e5f0_128_128.png	False	decoded/assets/full_sites.json	107
+http	img-app.thejeu.com	/image/website-icon/11e78b998a6ec4a1a989852202a4b3ef_128_128.png	False	decoded/assets/full_sites.json	149
+http	img-app.thejeu.com	/image/website-icon/161e646698917f47b7b85f248439b189_128_128.png	False	decoded/assets/full_sites.json	287
+http	img-app.thejeu.com	/image/website-icon/18f754756b444427f48fa84144f72055_128_128.png	False	decoded/assets/full_sites.json	185
+http	img-app.thejeu.com	/image/website-icon/19aa994df062cca9031e7032d3fd74f2_128_128.png	False	decoded/assets/full_sites.json	227
+http	img-app.thejeu.com	/image/website-icon/1ae28cc9f1bdbef31a7deb587952f8da_48_48.png	False	decoded/assets/full_sites.json	150
+http	img-app.thejeu.com	/image/website-icon/273697e73e757606593331d8ed9871ad_48_48.png	False	decoded/assets/full_sites.json	66
+http	img-app.thejeu.com	/image/website-icon/3038e427a1de8d30586ce52204803535_48_48.png	False	decoded/assets/full_sites.json	132
+http	img-app.thejeu.com	/image/website-icon/31e6600e0aa5dc8ae6706c5c073198c3_128_128.png	False	decoded/assets/full_sites.json	89
+http	img-app.thejeu.com	/image/website-icon/348e2d13772679edff6fc707633c2e5f_48_48.png	False	decoded/assets/full_sites.json	78
+http	img-app.thejeu.com	/image/website-icon/36f3b00a5d00a38713e24c6f1ef7a722_48_48.png	False	decoded/assets/full_sites.json	192
+http	img-app.thejeu.com	/image/website-icon/39e785bfee3a9cb0ecbd5bb58645a736_128_128.png	False	decoded/assets/full_sites.json	5
+http	img-app.thejeu.com	/image/website-icon/3bb04cc932a20691065b19523d8a10f2_128_128.png	False	decoded/assets/full_sites.json	11
+http	img-app.thejeu.com	/image/website-icon/3bc8afdf20ca8ff1f44283344cb780bc_128_128.png	False	decoded/assets/full_sites.json	59
+http	img-app.thejeu.com	/image/website-icon/3ccee89dd40eb890a597be3e82d9d14c_128_128.png	False	decoded/assets/full_sites.json	263
+http	img-app.thejeu.com	/image/website-icon/3f67669ef8e75716a46a0ba42deec530_48_48.png	False	decoded/assets/full_sites.json	12
+http	img-app.thejeu.com	/image/website-icon/3feda7c2084d654d46501fc61dd7ae74_128_128.png	False	decoded/assets/full_sites.json	215
+http	img-app.thejeu.com	/image/website-icon/3feda7c2084d654d46501fc61dd7ae74_48_48.png	False	decoded/assets/full_sites.json	216
+http	img-app.thejeu.com	/image/website-icon/43be077fe9ba7b7713e18c9561e03649_128_128.png	False	decoded/assets/full_sites.json	101
+http	img-app.thejeu.com	/image/website-icon/44a4414d5bdee8d62296eb3a50d5c86e_128_128.png	False	decoded/assets/full_sites.json	245
+http	img-app.thejeu.com	/image/website-icon/44ccb4ce6aac26a37bf36ab745f4a360_48_48.png	False	decoded/assets/full_sites.json	36
+http	img-app.thejeu.com	/image/website-icon/459a54b331434b19d62a916a0c9397f1_128_128.png	False	decoded/assets/full_sites.json	203
+http	img-app.thejeu.com	/image/website-icon/461bdf1814d68ac543a53ab2a4869317_48_48.png	False	decoded/assets/full_sites.json	120
+http	img-app.thejeu.com	/image/website-icon/46c50c1569290335baabb1483c0127b1_128_128.png	False	decoded/assets/full_sites.json	119
+http	img-app.thejeu.com	/image/website-icon/4acc84069620aacaf9c11f6897a99958_128_128.png	False	decoded/assets/full_sites.json	131
+http	img-app.thejeu.com	/image/website-icon/5134c089173c45f5d82b7f0dd2ca24b2_128_128.png	False	decoded/assets/full_sites.json	137
+http	img-app.thejeu.com	/image/website-icon/52b18614f102e9bd93ccf231b1adc56c_48_48.png	False	decoded/assets/full_sites.json	222
+http	img-app.thejeu.com	/image/website-icon/55285d85d8fc9fb971dea496ec76721e_48_48.png	False	decoded/assets/full_sites.json	126
+http	img-app.thejeu.com	/image/website-icon/5785c855779f9c9d5590c0c2ad5cc17f_128_128.png	False	decoded/assets/full_sites.json	41
+http	img-app.thejeu.com	/image/website-icon/5cd9ff24e1e12438d49da0114e229ba4_48_48.png	False	decoded/assets/full_sites.json	174
+http	img-app.thejeu.com	/image/website-icon/5f59fc194708fc6240554bf91d104094_128_128.png	False	decoded/assets/full_sites.json	269
+http	img-app.thejeu.com	/image/website-icon/5f59fc194708fc6240554bf91d104094_48_48.png	False	decoded/assets/full_sites.json	270
+http	img-app.thejeu.com	/image/website-icon/658724d2f07f1ddb36b07910af03fa2b_48_48.png	False	decoded/assets/full_sites.json	138
+http	img-app.thejeu.com	/image/website-icon/6fd024e818797539284ca7309c04177c_128_128.png	False	decoded/assets/full_sites.json	77
+http	img-app.thejeu.com	/image/website-icon/73ab59bd867b03a477305024534acb49_48_48.png	False	decoded/assets/full_sites.json	108
+http	img-app.thejeu.com	/image/website-icon/76039d05ac3d5c43d1b42e1d014940ce_48_48.png	False	decoded/assets/full_sites.json	6
+http	img-app.thejeu.com	/image/website-icon/79e838fd816730299150216a2c0f6e95_48_48.png	False	decoded/assets/full_sites.json	84
+http	img-app.thejeu.com	/image/website-icon/7c6c280026762956bc9043c18067b695_128_128.png	False	decoded/assets/full_sites.json	125
+http	img-app.thejeu.com	/image/website-icon/7d28e779996ebd65e02563c3688942f8_128_128.png	False	decoded/assets/full_sites.json	83
+http	img-app.thejeu.com	/image/website-icon/7fc8aff94fbc56bc252e5fdc237f34ef_48_48.png	False	decoded/assets/full_sites.json	48
+http	img-app.thejeu.com	/image/website-icon/80acb9f7095740d892f45e31acc29605_48_48.png	False	decoded/assets/full_sites.json	60
+http	img-app.thejeu.com	/image/website-icon/813f110ac6c533c678551c91b21e8905_48_48.png	False	decoded/assets/full_sites.json	288
+http	img-app.thejeu.com	/image/website-icon/84f6db6264fc2102da50cd510a86e350_128_128.png	False	decoded/assets/full_sites.json	221
+http	img-app.thejeu.com	/image/website-icon/88a77a74c858fb6d2dbd4c3f0ea58055_128_128.png	False	decoded/assets/full_sites.json	239
+http	img-app.thejeu.com	/image/website-icon/97bb2dcced97d49253640c64607d8e59_48_48.png	False	decoded/assets/full_sites.json	258
+http	img-app.thejeu.com	/image/website-icon/97c5b4c9dc80e1dcf05bf72004fe81b9_48_48.png	False	decoded/assets/full_sites.json	180
+http	img-app.thejeu.com	/image/website-icon/9815557f17ca63f0137a56dc04125bcd_128_128.png	False	decoded/assets/full_sites.json	95
+http	img-app.thejeu.com	/image/website-icon/9ac2eb80e40797507d15336b9e2b9cf5_48_48.png	False	decoded/assets/full_sites.json	168
+http	img-app.thejeu.com	/image/website-icon/9b1d1c890bd18baf93f9746ed98729d2_48_48.png	False	decoded/assets/full_sites.json	246
+http	img-app.thejeu.com	/image/website-icon/a038410fc8796589b45c28f1073e079e_128_128.png	False	decoded/assets/full_sites.json	251
+http	img-app.thejeu.com	/image/website-icon/a4bd35f0f39b9b9c85d3fc020ef563fd_128_128.png	False	decoded/assets/full_sites.json	71
+http	img-app.thejeu.com	/image/website-icon/a4e006faa6f8102373299d97ed3d498e_48_48.png	False	decoded/assets/full_sites.json	24
+http	img-app.thejeu.com	/image/website-icon/ab279e423d157e0eab7e0df40913e1b0_48_48.png	False	decoded/assets/full_sites.json	240
+http	img-app.thejeu.com	/image/website-icon/ab842ffee72af288df90efc3ba08a011_48_48.png	False	decoded/assets/full_sites.json	144
+http	img-app.thejeu.com	/image/website-icon/acef97d114fe069fd022e64ef37829f4_128_128.png	False	decoded/assets/full_sites.json	167
+http	img-app.thejeu.com	/image/website-icon/addd3aff9326d3dc1b51e61c9d1e3c7f_128_128.png	False	decoded/assets/full_sites.json	143
+http	img-app.thejeu.com	/image/website-icon/b31ea61729b3f9e539f673e3d816d73f_48_48.png	False	decoded/assets/full_sites.json	30
+http	img-app.thejeu.com	/image/website-icon/b791b2d9c3deffed0cf0cf5884b78a4b_128_128.png	False	decoded/assets/full_sites.json	35
+http	img-app.thejeu.com	/image/website-icon/b7f1f6ee9599e0961f3ef372d686f69a_48_48.png	False	decoded/assets/full_sites.json	162
+http	img-app.thejeu.com	/image/website-icon/bd40d0e9d9f44ac93613dec237ca3393_128_128.png	False	decoded/assets/full_sites.json	173
+http	img-app.thejeu.com	/image/website-icon/be72e5a2be7a9ec065be84711796a8ba_128_128.png	False	decoded/assets/full_sites.json	209
+http	img-app.thejeu.com	/image/website-icon/c009822c7d479d51cde1202dcaaf47b2_48_48.png	False	decoded/assets/full_sites.json	42
+http	img-app.thejeu.com	/image/website-icon/c1681162bb6d998422aa306138c5a671_48_48.png	False	decoded/assets/full_sites.json	90
+http	img-app.thejeu.com	/image/website-icon/c2fe37f149cdf4d3e0e846441b75eb93_48_48.png	False	decoded/assets/full_sites.json	228
+http	img-app.thejeu.com	/image/website-icon/ccad4aa24d372d76a57b0c956051a95f_128_128.png	False	decoded/assets/full_sites.json	275
+http	img-app.thejeu.com	/image/website-icon/ccad4aa24d372d76a57b0c956051a95f_48_48.png	False	decoded/assets/full_sites.json	276
+http	img-app.thejeu.com	/image/website-icon/cdc04afe50905efcd4379527860afdbc_128_128.png	False	decoded/assets/full_sites.json	191
+http	img-app.thejeu.com	/image/website-icon/d0f2b5d422cf5bc9b6c525da81b3b365_48_48.png	False	decoded/assets/full_sites.json	186
+http	img-app.thejeu.com	/image/website-icon/d7df800cac82922fc47977b2032788e5_128_128.png	False	decoded/assets/full_sites.json	257
+http	img-app.thejeu.com	/image/website-icon/e1604919b40ab06965c03b3855f24ca9_48_48.png	False	decoded/assets/full_sites.json	264
+http	img-app.thejeu.com	/image/website-icon/e2faed4e58164012e3bff291c498b612_128_128.png	False	decoded/assets/full_sites.json	155
+http	img-app.thejeu.com	/image/website-icon/e2faed4e58164012e3bff291c498b612_48_48.png	False	decoded/assets/full_sites.json	156
+http	img-app.thejeu.com	/image/website-icon/e7628adc21a51a7efde7b5d3855cbbdc_48_48.png	False	decoded/assets/full_sites.json	72
+http	img-app.thejeu.com	/image/website-icon/e8145088f0c9aac986628219e6ea1c44_128_128.png	False	decoded/assets/full_sites.json	53
+http	img-app.thejeu.com	/image/website-icon/e8145088f0c9aac986628219e6ea1c44_48_48.png	False	decoded/assets/full_sites.json	54
+http	img-app.thejeu.com	/image/website-icon/eaba30d81f49e7665d7ce90afe6fcfeb_48_48.png	False	decoded/assets/full_sites.json	204
+http	img-app.thejeu.com	/image/website-icon/edbbebffbb41effb1efc14f5caf7acdd_48_48.png	False	decoded/assets/full_sites.json	252
+http	img-app.thejeu.com	/image/website-icon/ef787034b513c42e69620300e1c2781e_128_128.png	False	decoded/assets/full_sites.json	113
+http	img-app.thejeu.com	/image/website-icon/f079dfd7931e391bb8c7bef8f2740fa2_128_128.png	False	decoded/assets/full_sites.json	197
+http	img-app.thejeu.com	/image/website-icon/f294242daaffb96ff86333bfb9320ea2_128_128.png	False	decoded/assets/full_sites.json	47
+http	img-app.thejeu.com	/image/website-icon/f468913b65c8d630232b6cef7132018b_128_128.png	False	decoded/assets/full_sites.json	179
+http	img-app.thejeu.com	/image/website-icon/f5695230184a833ad986476936b29475_48_48.png	False	decoded/assets/full_sites.json	198
+http	img-app.thejeu.com	/image/website-icon/f8a2325a7815f1a55bb3fdda879f6b0f_48_48.png	False	decoded/assets/full_sites.json	210
+http	img-app.thejeu.com	/image/website-icon/fb51b2d87eeef87170186f0e3024d7cc_128_128.png	False	decoded/assets/full_sites.json	161
+http	img-app.thejeu.com	/image/website-icon/fbeb76c529a6c414450d086e661385e0_48_48.png	False	decoded/assets/full_sites.json	96
+https	img-click.thejeu.com	/image/em-video/87383944815f5fc5091ab9454a058e2f_	False	jadx/sources/com/snaptube/premium/sites/SpeedDialUtil.java	105
+http	img.beeg.com	/320x180/%s.jpg	False	jadx/sources/com/snaptube/video/videoextractor/impl/d.java	194
+http	img.snaptube.in	/social/instagram@2x.png	False	jadx/sources/com/snaptube/premium/dialog/ChooseSocialMediaDialog.java	90
+http	img.snaptube.in	/social/share-fb@2x.png	False	jadx/sources/com/snaptube/premium/dialog/ChooseSocialMediaDialog.java	91
+http	img.snaptube.in	/social/share-twitter@2x.png	False	jadx/sources/com/snaptube/premium/dialog/ChooseSocialMediaDialog.java	92
+http	img.snaptube.in	/static/images/xxxtube	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	11
+https	instagram.com	/snaptubeapp	False	jadx/sources/com/snaptube/premium/dialog/ChooseSocialMediaDialog.java	90
+https	intranet.thejeu.com	/cl3wz4gt3000i01n2bn0oe50e	False	decoded/assets/ads_guide.json	85
+https	intranet.thejeu.com	/cm4tnsdsx000208x837psk32q	False	jadx/sources/o/rg7.java	32
+https	intranet.thejeu.com	/cmbqdbvxp0008071glxifyley	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	242
+https	intranet.thejeu.com	/cmbqdcg2b000706z643blt9ay	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	242
+https	intranet.thejeu.com	/cmbqdf3lh0009071gyiwdc9hs	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	243
+https	intranet.thejeu.com	/cmbqdgbwu000806z6fsxixqtb	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	243
+https	intranet.thejeu.com	/cmbqdi863000a071gklf3lmwv	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	244
+https	intranet.thejeu.com	/cmbqdirkg000906z6fjcchs5l	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	244
+https	intranet.thejeu.com	/cmbqdr4s2000a06z6gllpn7qo	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	245
+https	intranet.thejeu.com	/cmbqdrwfr000b06z6je3ccp9h	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	245
+https	intranet.thejeu.com	/cmbqdtiqo000b071goekc9dx1	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	246
+https	intranet.thejeu.com	/cmbqdvdst000c06z65jabn9rt	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	246
+https	intranet.thejeu.com	/cmbqdwf21000d06z6p4q07ca5	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	247
+https	intranet.thejeu.com	/cmbqdwsaw000e06z6urw913y3	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	247
+https	intranet.thejeu.com	/cmbqe0kjt000f06z6s83fq623	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	248
+https	intranet.thejeu.com	/cmbqe1drm000h06z6tfwii0cy	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	248
+https	intranet.thejeu.com	/cmbqe2hph000i06z6svegrdos	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	249
+https	intranet.thejeu.com	/cmbqe2vck000j06z6bxt3vjqh	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	249
+https	intranet.thejeu.com	/cmbqe7q2l000k06z6b5coffnn	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	250
+https	intranet.thejeu.com	/cmbqe86du000l06z6y8hlyhoi	False	jadx/sources/com/snaptube/premium/home/social/SocialConfigHelper.java	250
+https	intranet.thejeu.com	/cmchvh6zg0001070ul7bc7nog	False	jadx/sources/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.java	33
+https	intranet.thejeu.com	/cmchvnc060002070u9x1ny5sg	False	jadx/sources/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.java	34
+https	issuetracker.google.com	/issues/116541301	False	jadx/sources/androidx/databinding/ViewDataBinding.java	207
+https	issuetracker.google.com	/issues/new	True	jadx/sources/androidx/datastore/core/SingleProcessDataStore$data$1$invokeSuspend$$inlined$map$1.java	81
+http	javax.xml.xmlconstants	/feature/secure-processing	False	jadx/sources/org/mozilla/javascript/xmlimpl/XmlProcessor.java	178
+http	javax.xml.xmlconstants	/property/accessExternalDTD	False	jadx/sources/org/mozilla/javascript/xmlimpl/XmlProcessor.java	197
+http	javax.xml.xmlconstants	/property/accessExternalStylesheet	False	jadx/sources/org/mozilla/javascript/xmlimpl/XmlProcessor.java	201
+http	joymovies.com	/	False	jadx/sources/com/snaptube/video/videoextractor/impl/j.java	35
+https	kupee.page.link	/NLtk	False	decoded/assets/full_sites.json	268
+http	live.cima4u.tv	/structure/server.php	True	jadx/sources/com/snaptube/video/videoextractor/impl/e.java	84
+http	liveleak.com		False	decoded/assets/full_sites.json	70
+http	localhost	/	False	jadx/sources/retrofit2/Response.java	29
+http	m.elanimeonline.com	/	False	decoded/assets/full_sites.json	190
+https	m.facebook.com		True	jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	8
+https	m.facebook.com	/	False	jadx/sources/com/snaptube/premium/sites/SpeedDialUtil.java	36
+https	m.facebook.com	/login	False	jadx/sources/com/snaptube/premium/fragment/VideoWebViewFragment.java	2364
+https	m.facebook.com	/permalink.php	True	jadx/sources/o/re2.java	87
+https	m.facebook.com	/snaptubeapp	False	jadx/sources/com/snaptube/premium/dialog/ChooseSocialMediaDialog.java	91
+https	m.facebook.com	/story.php	True	jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	8
+https	m.kwai.com	/rest/o/w/photo/get	False	jadx/sources/com/snaptube/video/videoextractor/impl/k.java	143
+https	m.ok.ru	/video/	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	12
+https	m.tiktok.com	/	False	jadx/sources/com/snaptube/video/videoextractor/impl/m.java	53
+https	m.twitter.com	/snaptubeapp	False	jadx/sources/com/snaptube/premium/dialog/ChooseSocialMediaDialog.java	92
+http	m.vuclip.com		False	decoded/assets/full_sites.json	58
+https	m.youtube.com		False	jadx/sources/com/snaptube/dataadapter/youtube/Constants.java	9
+https	m.youtube.com	/	True	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	95
+https	m.youtube.com	/feed/account	True	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	94
+https	m.youtube.com	/feed/history	False	jadx/sources/o/if9.java	299
+https	m.youtube.com	/logout	False	jadx/sources/com/snaptube/dataadapter/plugin/login/YTWebViewSignInPluginImpl.java	22
+https	m.youtube.com	/my_videos	False	jadx/sources/o/if9.java	299
+https	m.youtube.com	/playlist	True	jadx/sources/com/snaptube/dataadapter/youtube/Endpoints.java	44
+https	m.youtube.com	/results	False	jadx/sources/com/snaptube/premium/configs/Config.java	1767
+https	m.youtube.com	/select_site	True	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	106
+https	m.youtube.com	/service_ajax	False	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	104
+https	m.youtube.com	/signin	False	jadx/sources/com/snaptube/dataadapter/plugin/login/YTWebViewSignInPluginImpl.java	21
+https	m.youtube.com	/watch	True	jadx/sources/o/bc9.java	1761
+https	m.youtube.com	/watch_comment	True	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	105
+https	manual.sensorsdata.cn	/sa/latest/tech_sdk_client_web_use-7545346.html	False	jadx/sources/com/sensorsdata/analytics/android/sdk/visual/ViewSnapshot.java	119
+https	mediation-sg.pangle.io		False	jadx/sources/com/bytedance/sdk/openadsdk/mediation/Zd/lc.java	38
+http	mirchifun.com	/	False	decoded/assets/full_sites.json	136
+https	misc.api.thejeu.com	/availability	False	jadx/sources/com/snaptube/extractor/pluginlib/common/AvailabilityChecker.java	82
+http	mobile.twitter.com		False	jadx/sources/com/snaptube/premium/sites/SpeedDialUtil.java	39
+https	mobile.twitter.com		False	jadx/sources/com/snaptube/video/videoextractor/impl/u.java	777
+https	mobile.twitter.com	/snaptubeapp	False	jadx/sources/o/gk4.java	35
+https	mp.getsnap.link	/esoct	True	jadx/sources/com/snaptube/premium/marketActivitySupport/api/SupportMarketActivityNetWorkHelper.java	20
+http	mp4mania.com	/	False	decoded/assets/full_sites.json	178
+https	mssdk.tiktokw.us	/web/report	True	jadx/sources/o/n36.java	99
+https	music.youtube.com		False	jadx/sources/com/snaptube/dataadapter/youtube/Endpoints.java	9
+https	music.youtube.com	/	False	jadx/sources/com/snaptube/dataadapter/youtube/Constants.java	34
+https	music.youtube.com	/playlist	True	jadx/sources/com/snaptube/dataadapter/youtube/Endpoints.java	36
+https	music.youtube.com	/watch	True	jadx/sources/com/snaptube/dataadapter/youtube/Endpoints.java	32
+https	music.youtube.com	/youtubei/v1/browse	False	jadx/sources/com/snaptube/dataadapter/youtube/Constants.java	33
+http	musics.wandoujia.com	/api/v1/feedback/dlink	False	jadx/sources/o/cq1.java	24
+https	myaccount.google.com		False	jadx/sources/com/dayuwuxian/safebox/ui/login/GoogleLoginWebViewFragment.java	108
+http	ns.adobe.com	/xap/1.0/	False	jadx/sources/androidx/exifinterface/media/ExifInterface.java	929
+http	ok.ru	/	False	decoded/assets/full_sites.json	172
+https	ok.ru	/	False	decoded/assets/full_sites.json	232
+https	ok.ru	/videoembed/	False	jadx/sources/o/mg5.java	91
+https	online-config.thejeu.com	/v2/onlineConfig	False	jadx/sources/o/rj5.java	149
+https	open.spotify.com	/oembed	True	jadx/sources/o/ro7.java	136
+https	p16-sign-sg.tiktokcdn.com	/v0201/fd71964ced204df586b63b9d8fa3198a~tplv-noop.image	True	jadx/sources/com/bytedance/sdk/openadsdk/component/reward/AJB.java	16
+https	pag_open_icon_id	/appicon.png	False	jadx/sources/com/bytedance/sdk/openadsdk/core/seu/EW/NP.java	26
+https	pin.it		False	jadx/sources/o/dt5.java	9
+https	play.anghami.com	/explore	False	decoded/assets/full_sites.json	184
+https	play.google.com		False	jadx/sources/com/mbridge/msdk/mbsignalcommon/windvane/WindVaneWebView.java	143
+https	play.google.com	/	False	jadx/sources/com/mbridge/msdk/click/a.java	1108
+https	play.google.com	/store/apps/details	True	jadx/sources/com/mbridge/msdk/foundation/tools/ah.java	169
+https	plugins.thejeu.com		False	jadx/sources/o/lk8.java	98
+https	plus.google.com	/	False	jadx/sources/com/google/android/gms/common/internal/zzu.java	10
+https	public.api.bsky.app	/xrpc/app.bsky.feed.getPostThread	False	jadx/sources/o/qb0.java	123
+https	push.thejeu.com		False	jadx/sources/o/xj.java	13
+http	qa.assert.mobiu.space	/validation/sensor/snaptube	False	jadx/sources/o/h11.java	5
+https	redirector.googlevideo.com	/initplayback	False	jadx/sources/o/ri5.java	196
+https	resources.tidal.com	/images/%s/320x320.jpg	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/TidalVideoExtractor.java	260
+https	rr5---sn-i3b7kn6s.googlevideo.com	/videoplayback	False	jadx/sources/com/snaptube/extractor/pluginlib/ExtractorWrapper.java	82
+https	s.ytimg.com	/yts/img/no_thumbnail-vfl4t3-4R.jpg	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	8
+http	s3.animeflv.com		False	jadx/sources/com/snaptube/video/videoextractor/impl/b.java	96
+http	s3.animeflv.com	/	False	jadx/sources/com/snaptube/video/videoextractor/impl/b.java	70
+https	s3.animeflv.com	/embed.php	False	jadx/sources/com/snaptube/video/videoextractor/impl/b.java	83
+https	s3.animeflv.com	/embed_hyperion.php	False	jadx/sources/com/snaptube/video/videoextractor/impl/b.java	83
+https	savethevideo.app	/	False	jadx/sources/o/vt6.java	97
+http	schemas.android.com	/apk/res-auto	False	jadx/sources/com/google/android/material/chip/a.java	1467
+http	schemas.android.com	/apk/res/android	False	jadx/sources/com/google/android/material/chip/Chip.java	343
+http	schemas.microsoft.com	/DRM/2007/03/protocols/AcquireLicense	False	jadx/sources/com/mbridge/msdk/playercommon/exoplayer2/drm/HttpMediaDrmCallback.java	124
+http	setting	/	False	jadx/sources/com/snaptube/dataadapter/plugin/YouTubeCookieJar.java	42
+https	sf16-fe-tos-sg.i18n-pglstatp.com	/obj/ad-pattern-sg/static/images/2023620white.jpeg	False	jadx/sources/com/bytedance/sdk/openadsdk/core/NP.java	809
+https	sf16-scmcdn-sg.ibytedtos.com	/obj/goofy-sg/ad/pangle/homepage/_next/static/assets/images/reward.c7cdf2f9.mp4	False	jadx/sources/com/bytedance/sdk/openadsdk/component/reward/AJB.java	16
+https	sf16-static.i18n-pglstatp.com	/obj/ad-pattern-sg/	False	jadx/sources/com/bytedance/sdk/openadsdk/core/settings/AJB.java	431
+https	sf16-static.i18n-pglstatp.com	/obj/ad-pattern-sg/renderer/package_sg.json	False	jadx/sources/com/bytedance/sdk/openadsdk/utils/WDI.java	680
+https	sf16-static.i18n-pglstatp.com	/obj/ad-pattern-sg/static/images/	False	jadx/sources/com/bytedance/sdk/component/adexpress/dynamic/oA/EW.java	5
+https	sf16-static.i18n-pglstatp.com	/obj/ad-pattern-va/renderer/package_va.json	False	jadx/sources/com/bytedance/sdk/openadsdk/utils/WDI.java	680
+https	sf19-static.i18n-pglstatp.com	/obj/ad-pattern-sg/3p_monitor.9db44671.js	False	jadx/sources/com/bytedance/sdk/openadsdk/core/settings/oIF.java	17
+https	snaptube-br.com	/NcsbOt7w	False	jadx/sources/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$Companion$TRANSLATES$2.java	74
+https	snaptube-eb104.firebaseio.com		False	decoded/res/values/strings.xml	739
+https	snaptube.wufoo.com	/forms/ohhh-no/	False	jadx/sources/o/bm5.java	11
+https	snaptubeapp.com		False	jadx/sources/com/snaptube/dataadapter/plugin/push/impl/IntentUtil.java	20
+https	snaptubeapp.com	/list/youtube/channels	False	jadx/sources/o/u32.java	27
+https	snaptubeapp.com	/list/youtube/feed/trending	False	jadx/sources/com/snaptube/premium/mixed_list/view/card/YouTubeVideoCardViewHolder.java	379
+https	snaptubeapp.com	/list/youtube/subscription	False	jadx/sources/o/xb4.java	33
+https	snaptubeapp.com	/list/youtube/watch/tab_recommend	True	jadx/sources/com/snaptube/premium/youtube/YtbVideoDetailTabFragment.java	737
+https	snaptubeapp.com	/watch	False	jadx/sources/com/snaptube/premium/fragment/VideoWebViewFragment.java	1420
+https	snaptubeapp.com	/zendesk/feedback	False	jadx/sources/o/vh9.java	29
+https	soundcloud.com	/	False	jadx/sources/com/snaptube/video/videoextractor/impl/SoundCloudVideoExtractor.java	247
+https	ssdk-sg.pangle.io	/ssdk/sd/token	False	jadx/sources/com/pgl/ssdk/l0.java	23
+https	ssdk-sg.pangle.io	/ssdk/v2/r	False	jadx/sources/com/pgl/ssdk/l0.java	11
+https	ssdk-va.pangle.io	/ssdk/sd/token	False	jadx/sources/com/pgl/ssdk/l0.java	21
+https	ssdk-va.pangle.io	/ssdk/v2/r	False	jadx/sources/com/pgl/ssdk/l0.java	9
+https	st-lyric.mb-cdn.com		False	jadx/sources/com/snaptube/premium/localplay/LocalPlayConfig$defaultHost$2.java	24
+https	staging.api.snappea.com		False	jadx/sources/o/th9.java	55
+http	staging.api.snaptube.app	/	False	jadx/sources/o/wj7.java	24
+http	staging.api.snaptube.app	/adapter/v1/	False	jadx/sources/o/wj7.java	19
+http	staging.api.snaptube.app	/onlineConfig/	False	jadx/sources/com/snaptube/dataadapter/plugin/cache/PluginOnlineResourceManager.java	27
+http	staging.api.snaptube.app	/v2/onlineConfig	False	jadx/sources/o/rj5.java	149
+http	staging.api.thejeu.com		False	jadx/sources/o/xj.java	9
+http	staging.push.snaptube.app		False	jadx/sources/o/xj.java	13
+https	static.snaptube.in	/ad-config/hosts.txt	False	jadx/sources/o/i11.java	131
+https	static.snaptube.in	/lottie/index.html	False	jadx/sources/com/snaptube/premium/fragment/VideoWebViewFragment.java	1628
+https	streamium.xyz	/	False	jadx/sources/com/snaptube/video/videoextractor/impl/b.java	307
+https	t.tiktok.com	/api/item/detail	True	jadx/sources/o/o19.java	14
+https	tidal.com	/v1	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/TidalVideoExtractor.java	409
+https	tidal.com	/v1/pages/album	True	jadx/sources/com/snaptube/extractor/pluginlib/sites/TidalVideoExtractor.java	447
+https	tidal.com	/v1/pages/mix	True	jadx/sources/com/snaptube/extractor/pluginlib/sites/TidalVideoExtractor.java	442
+https	tidal.com	/v1/playlists/	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/TidalVideoExtractor.java	462
+https	tidal.com	/v1/tracks/	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/TidalVideoExtractor.java	452
+https	tidal.com	/v1/videos/	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/TidalVideoExtractor.java	457
+https	tidal.com	/v2	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/TidalVideoExtractor.java	409
+https	tidal.com	/v2/artist/	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/TidalVideoExtractor.java	432
+http	tizen.org	/feature/platform.version	False	jadx/sources/com/vungle/ads/internal/omsdk/Res.java	13
+http	tizen.org	/system/model_name	False	jadx/sources/com/vungle/ads/internal/omsdk/Res.java	13
+https	twitter.com	/%s/status/%s	False	jadx/sources/o/ar3.java	74
+http	undefined	/	False	jadx/sources/org/jsoup/helper/HttpConnection.java	1102
+https	upgrade.thejeu.com		False	jadx/sources/o/xj.java	17
+https	v.redd.it	/	False	jadx/sources/com/snaptube/video/videoextractor/impl/q.java	199
+http	vid.me		False	decoded/assets/full_sites.json	148
+http	video.mthai.com	/	False	decoded/assets/full_sites.json	208
+http	videoming.com		False	decoded/assets/full_sites.json	262
+http	videos.sapo.pt	/	False	decoded/assets/full_sites.json	124
+https	vimeo.com	/	False	decoded/assets/full_sites.json	10
+http	vine.com		False	decoded/assets/full_sites.json	100
+https	virusraid.page.link	/zXbp	False	decoded/assets/full_sites.json	274
+http	vk.com	/5b2a8728-d737-4f24-a37e-5202d067c7d1	True	jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	16
+http	wapking.com		False	decoded/assets/full_sites.json	28
+http	whatwg.org	/C	False	jadx/sources/com/mbridge/msdk/c/b/b.java	135
+http	whatwg.org	/html/common-microsyntaxes.html	False	jadx/sources/com/mbridge/msdk/c/b/b.java	135
+http	whatwg.org	/html/webappapis.html	False	jadx/sources/com/mbridge/msdk/c/b/b.java	135
+http	www.animeq.com.br	/	False	decoded/assets/full_sites.json	202
+http	www.animeyt.tv	/	False	decoded/assets/full_sites.json	220
+http	www.atozmp3.co	/	False	decoded/assets/full_sites.json	238
+http	www.bola.com	/	False	decoded/assets/full_sites.json	226
+http	www.dailymotion.com	/	False	decoded/assets/full_sites.json	106
+https	www.dailymotion.com	/player/metadata/video/	False	jadx/sources/o/hc1.java	236
+http	www.dom.com	/path	False	jadx/sources/com/google/ads/interactivemedia/v3/internal/aen.java	100
+https	www.eporner.com	/xhr/video/	False	jadx/sources/o/j52.java	78
+http	www.example.com		False	jadx/sources/com/bytedance/sdk/openadsdk/core/act/EW.java	148
+https	www.example.com		False	jadx/sources/com/bytedance/sdk/openadsdk/utils/WDI.java	670
+https	www.facebook.com		False	jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	8
+https	www.facebook.com	/api/graphql	False	jadx/sources/o/bk.java	27
+http	www.facebook.com	/externalhit_uatext.php	False	jadx/sources/o/ro7.java	39
+https	www.facebook.com	/plugins/%s.php	False	jadx/sources/o/yd2.java	9
+https	www.facebook.com	/reel/%s/	False	jadx/sources/o/re2.java	227
+https	www.facebook.com	/video.php	True	jadx/sources/o/re2.java	227
+https	www.facebook.com	/video/embed	True	jadx/sources/o/ce2.java	13
+https	www.facebook.com	/video/playback/dash_mpd_debug.mpd	True	jadx/sources/o/lc1.java	24
+https	www.facebook.com	/watch	True	jadx/sources/com/snaptube/video/videoextractor/impl/g.java	242
+https	www.facebook.com	/watch/	True	jadx/sources/o/re2.java	18
+http	www.filmywap.com		False	decoded/assets/full_sites.json	256
+https	www.google.com		False	jadx/sources/com/google/android/gms/measurement/internal/zzij.java	54
+https	www.google.com	/	False	jadx/sources/o/uv8.java	172
+https	www.google.com	/search	True	jadx/sources/com/snaptube/premium/fragment/GCSWebViewFragment.java	197
+https	www.google.com	/url	False	jadx/sources/com/snaptube/premium/fragment/GCSWebViewFragment.java	202
+https	www.googleapis.com	/	False	jadx/sources/o/up.java	119
+https	www.googleapis.com	/auth/appstate	False	jadx/sources/com/google/android/gms/common/Scopes.java	9
+https	www.googleapis.com	/auth/datastoremobile	False	jadx/sources/com/google/android/gms/common/Scopes.java	12
+https	www.googleapis.com	/auth/drive	False	jadx/sources/com/google/android/gms/common/Scopes.java	26
+https	www.googleapis.com	/auth/drive.appdata	False	jadx/sources/com/google/android/gms/common/Scopes.java	15
+https	www.googleapis.com	/auth/drive.apps	False	jadx/sources/com/google/android/gms/common/Scopes.java	19
+https	www.googleapis.com	/auth/drive.file	False	jadx/sources/com/google/android/gms/common/Scopes.java	22
+https	www.googleapis.com	/auth/games	False	jadx/sources/com/google/android/gms/common/Scopes.java	32
+https	www.googleapis.com	/auth/games.firstparty	False	jadx/sources/com/google/android/gms/common/FirstPartyScopes.java	13
+https	www.googleapis.com	/auth/games_lite	False	jadx/sources/com/google/android/gms/common/Scopes.java	36
+https	www.googleapis.com	/auth/plus.login	False	jadx/sources/com/google/android/gms/common/Scopes.java	52
+https	www.googleapis.com	/auth/plus.me	False	jadx/sources/com/google/android/gms/common/Scopes.java	55
+https	www.googleapis.com	/auth/userinfo.email	False	jadx/sources/com/google/android/gms/common/Scopes.java	40
+https	www.googleapis.com	/auth/userinfo.profile	False	jadx/sources/com/google/android/gms/common/Scopes.java	44
+http	www.icc-cricket.com	/	False	decoded/assets/full_sites.json	142
+https	www.instagram.com		False	jadx/sources/com/snaptube/search/viewmodel/InsSearchViewModel.java	75
+https	www.instagram.com	/	False	jadx/sources/com/snaptube/premium/sites/SpeedDialUtil.java	34
+https	www.instagram.com	/%s/(p|reel|tv|reels	False	jadx/sources/com/snaptube/video/videoextractor/impl/i.java	1420
+https	www.instagram.com	/accounts/login	False	jadx/sources/o/rk7.java	36
+https	www.instagram.com	/api/graphql	False	jadx/sources/com/snaptube/video/videoextractor/impl/i.java	1714
+https	www.instagram.com	/api/v1/clips/music/	False	jadx/sources/com/snaptube/video/videoextractor/impl/i.java	1801
+https	www.instagram.com	/api/v1/clips/user/	False	jadx/sources/com/snaptube/video/videoextractor/impl/i.java	1579
+https	www.instagram.com	/api/v1/media/	False	jadx/sources/com/snaptube/video/videoextractor/impl/i.java	1508
+https	www.instagram.com	/api/v1/users/web_profile_info/	True	jadx/sources/com/snaptube/video/videoextractor/impl/i.java	1390
+https	www.instagram.com	/graphql/query/	True	jadx/sources/com/snaptube/video/videoextractor/impl/i.java	1369
+https	www.instagram.com	/p/	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	11
+https	www.instagram.com	/reels/	False	jadx/sources/com/snaptube/premium/sites/SpeedDialUtil.java	35
+https	www.instagram.com	/snaptubeapp/	False	jadx/sources/o/gk4.java	33
+http	www.iqiyi.com	/	False	decoded/assets/full_sites.json	112
+https	www.larkplayer.com		False	jadx/sources/com/snaptube/premium/configs/Config.java	1496
+http	www.metacafe.com	/	False	decoded/assets/full_sites.json	34
+http	www.metatube.com		False	decoded/assets/full_sites.json	94
+https	www.pangleglobal.com	/	False	jadx/sources/com/bytedance/sdk/openadsdk/TTAdConstant.java	85
+https	www.pinterest.com		False	jadx/sources/o/dt5.java	10
+https	www.pinterest.com	/pin/	False	jadx/sources/com/snaptube/video/videoextractor/impl/o.java	428
+https	www.pinterest.com	/pin/(	False	jadx/sources/com/snaptube/video/videoextractor/impl/o.java	34
+https	www.pinterest.com	/pin/(.*	False	jadx/sources/com/snaptube/video/videoextractor/impl/o.java	36
+https	www.pinterest.com	/resource/PinResource/get/	True	jadx/sources/com/snaptube/video/videoextractor/impl/o.java	443
+https	www.porn.com	/	False	jadx/sources/o/ye.java	27
+https	www.pornhub.com	/	False	jadx/sources/o/ye.java	24
+http	www.pornhub.net	/	False	decoded/res/values-ar/strings.xml	1083
+https	www.reddit.com	/%s/.json	False	jadx/sources/com/snaptube/video/videoextractor/impl/q.java	43
+https	www.redtube.com		False	jadx/sources/com/snaptube/video/videoextractor/impl/r.java	105
+https	www.redtube.com	/	False	jadx/sources/o/ye.java	25
+https	www.shazam.com	/discovery/v5/%s/SG/web/-/track/%s	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/ShazamVideoExtractor.java	139
+https	www.snaptube.com		False	jadx/sources/com/wandoujia/base/config/GlobalConfig.java	57
+https	www.snaptube.com	/2xsnPtpp	False	jadx/sources/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$Companion$TRANSLATES$2.java	76
+https	www.snaptube.com	/Txsrmthd	False	jadx/sources/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$Companion$TRANSLATES$2.java	73
+https	www.snaptube.com	/bJs0OtDB	False	jadx/sources/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$Companion$TRANSLATES$2.java	75
+https	www.snaptube.com	/nCs0VtlC	False	jadx/sources/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$Companion$TRANSLATES$2.java	72
+https	www.snaptube.in		False	jadx/sources/com/snaptube/premium/activity/VideoWebViewActivity.java	122
+https	www.snaptube.in	/_sites-page/index.html	False	jadx/sources/com/snaptube/premium/configs/Config.java	80
+https	www.snaptube.in	/_sites-page/instagram-guide.html	False	jadx/sources/com/snaptube/premium/fragment/VideoWebViewFragment.java	1383
+http	www.snaptubeapp.com		False	jadx/sources/com/snaptube/premium/activity/DeepLinkActivity.java	283
+https	www.snaptubeapp.com		False	jadx/sources/com/snaptube/search/view/provider/SearchResultCardBuilder.java	660
+https	www.snaptubeapp.com	/client-pages/YouTubePlayer.html	False	jadx/sources/o/bt6.java	31
+http	www.snaptubeapp.com	/detail	False	jadx/sources/com/snaptube/premium/fragment/WebViewFragment.java	50
+https	www.snaptubeapp.com	/watch	False	jadx/sources/com/snaptube/search/view/provider/SearchResultCardBuilder.java	408
+https	www.thumbzilla.com	/	False	jadx/sources/o/ye.java	29
+https	www.tiktok.com		False	jadx/sources/o/rk7.java	88
+https	www.tiktok.com	/	False	jadx/sources/com/snaptube/premium/sites/SpeedDialUtil.java	37
+https	www.tiktok.com	/@	False	jadx/sources/o/mg7.java	90
+https	www.tiktok.com	/api/item/detail/	False	jadx/sources/o/n36.java	27
+https	www.tiktok.com	/api/reflow/item/detail/	True	jadx/sources/o/ph6.java	130
+https	www.tiktok.com	/embed/	False	jadx/sources/o/c29.java	121
+https	www.tiktok.com	/foryou	False	jadx/sources/o/mg7.java	90
+https	www.tiktok.com	/login	False	jadx/sources/o/rk7.java	33
+https	www.tiktok.com	/oembed	True	jadx/sources/o/kz7.java	33
+https	www.tiktok.com	/player/api/v1/items	True	jadx/sources/o/dw5.java	76
+http	www.tubetamil.com	/	False	decoded/assets/full_sites.json	250
+http	www.tudou.com	/	False	decoded/assets/full_sites.json	118
+http	www.vevo.com		False	decoded/assets/full_sites.json	88
+http	www.w3.org	/1999/xlink	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	8
+http	www.w3.org	/2000/svg	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	8
+http	www.w3.org	/2000/xmlns/	False	jadx/sources/org/mozilla/javascript/xmlimpl/XmlNode.java	25
+http	www.w3.org	/ns/ttml	False	jadx/sources/com/mbridge/msdk/playercommon/exoplayer2/text/ttml/TtmlDecoder.java	31
+https	www.xnxx.com	/	False	jadx/sources/o/ye.java	23
+http	www.xnxx.com	/	False	decoded/res/values-ar/strings.xml	1067
+http	www.xvideos.com		False	decoded/res/values-ar/strings.xml	1120
+https	www.xvideos.com	/	False	jadx/sources/o/ye.java	22
+https	www.xvideos.com	/quickies-api/load/%s/profile	False	jadx/sources/com/snaptube/video/videoextractor/impl/x.java	122
+http	www.xxxtube.in	/redirect	False	jadx/sources/com/snaptube/extractor/pluginlib/sites/resources/SiteInjectCode.java	11
+http	www.youku.com		False	decoded/assets/full_sites.json	82
+https	www.youporn.com	/	False	jadx/sources/o/ye.java	26
+https	www.youporn.com	/watch/%s	False	jadx/sources/o/na9.java	81
+https	www.yourupload.com		False	jadx/sources/com/snaptube/video/videoextractor/impl/b.java	372
+https	www.youtube.com		False	jadx/sources/com/pierfrancescosoffritti/youtubeplayer/YouTubePlayer.java	269
+https	www.youtube.com	/	False	jadx/sources/com/snaptube/extractor/pluginlib/youtube/Parser.java	575
+https	www.youtube.com	/api/jnn/v1/Create	False	jadx/sources/com/snaptube/extractor/pluginlib/youtube/potoken/PoTokenWebView.java	406
+https	www.youtube.com	/api/jnn/v1/GenerateIT	False	jadx/sources/com/snaptube/extractor/pluginlib/youtube/potoken/PoTokenWebView.java	466
+https	www.youtube.com	/browse_ajax	False	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	97
+https	www.youtube.com	/channel/	False	jadx/sources/com/snaptube/dataadapter/youtube/Endpoints.java	12
+https	www.youtube.com	/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ/featured	False	jadx/sources/com/snaptube/premium/configs/Config.java	2070
+https	www.youtube.com	/comment_service_ajax	True	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	99
+https	www.youtube.com	/embed/	False	jadx/sources/o/gr3.java	56
+https	www.youtube.com	/embed/%s	True	jadx/sources/com/snaptube/extractor/pluginlib/youtube/Parser.java	773
+https	www.youtube.com	/feed/channels	True	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	109
+https	www.youtube.com	/feed/guide_builder	True	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	98
+https	www.youtube.com	/feed/history	True	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	100
+https	www.youtube.com	/feed/subscriptions	True	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	112
+https	www.youtube.com	/feed/trending	True	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	113
+https	www.youtube.com	/getAccountSwitcherEndpoint	False	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	1375
+https	www.youtube.com	/iframe_api	False	jadx/sources/o/ie9.java	118
+https	www.youtube.com	/me/playlist	False	jadx/sources/o/mb9.java	22
+https	www.youtube.com	/oembed	True	jadx/sources/o/of9.java	11
+https	www.youtube.com	/playlist	True	jadx/sources/com/snaptube/dataadapter/youtube/Endpoints.java	40
+https	www.youtube.com	/related_ajax	False	jadx/sources/com/snaptube/dataadapter/youtube/Constants.java	23
+https	www.youtube.com	/results	True	jadx/sources/com/snaptube/premium/configs/Config.java	1938
+https	www.youtube.com	/s/player/%s/player_ias.vflset/en_US/base.js	False	jadx/sources/o/ie9.java	30
+https	www.youtube.com	/service_ajax	True	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	96
+https	www.youtube.com	/shorts/	False	jadx/sources/com/snaptube/dataadapter/youtube/Endpoints.java	48
+https	www.youtube.com	/tv	False	jadx/sources/com/snaptube/extractor/pluginlib/youtube/Parser.java	779
+https	www.youtube.com	/tv_config	True	jadx/sources/o/ri5.java	205
+https	www.youtube.com	/user/	False	jadx/sources/com/snaptube/dataadapter/youtube/Endpoints.java	52
+https	www.youtube.com	/user/videos	False	jadx/sources/com/snaptube/dataadapter/youtube/Endpoints.java	28
+https	www.youtube.com	/watch	True	jadx/sources/com/snaptube/dataadapter/youtube/Endpoints.java	64
+https	www.youtube.com	/youtubei/v1/account/account_menu	False	jadx/sources/com/snaptube/dataadapter/youtube/BaseYoutubeDataAdapter.java	472
+https	www.youtube.com	/youtubei/v1/browse	False	jadx/sources/com/snaptube/dataadapter/youtube/Constants.java	5
+https	www.youtube.com	/youtubei/v1/next	False	jadx/sources/com/snaptube/dataadapter/youtube/engine/BaseDataAdapter.java	379
+https	www.youtube.com	/youtubei/v1/player	False	jadx/sources/com/snaptube/dataadapter/youtube/FrameSetParseHelper.java	22
+https	www.youtube.com	/youtubei/v1/search	False	jadx/sources/com/snaptube/search/a.java	30
+https	www.youtube.com	/youtubei/v1/visitor_id	True	jadx/sources/com/snaptube/search/c.java	71
+https	x.com	/	False	jadx/sources/com/snaptube/premium/sites/SpeedDialUtil.java	40
+https	x.com	/i/api/graphql/2ICDjqPd81tulZcYrtpTuQ/TweetResultByRestId	False	jadx/sources/com/snaptube/video/videoextractor/impl/u.java	227
+https	x.com	/i/status/%s	False	jadx/sources/com/snaptube/video/videoextractor/impl/u.java	554
+https	xhamster.com	/	False	jadx/sources/o/ye.java	28
+http	xmlpull.org	/v1/doc/features.html	False	jadx/sources/com/bytedance/sdk/openadsdk/core/dms/EW/EW/oA.java	269
+https	youtube.com		False	jadx/sources/com/snaptube/account/AccountUtil.java	38
+https	youtubei.googleapis.com		False	jadx/sources/o/g11.java	8
+https	youtubei.googleapis.com	/youtubei/v1/player	True	jadx/sources/o/ri5.java	240
+http	yumvideo.com		False	decoded/assets/full_sites.json	52

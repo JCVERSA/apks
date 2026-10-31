@@ -1,0 +1,58 @@
+=== lib/armeabi-v7a/libmatrix-hookcommon.so ===
+/home/runner/work/_temp/snaptube-analysis/decoded/lib/armeabi-v7a/libmatrix-hookcommon.so: ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, BuildID[sha1]=5d667e3dd2c0f6d4d9ba620b00da65e9e010be38, stripped
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          172792 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         8
+  Size of section headers:           40 (bytes)
+  Number of section headers:         28
+  Section header string table index: 27
+
+Dynamic dependencies:
+
+Dynamic section at offset 0x2996c contains 31 entries:
+  Tag        Type                         Name/Value
+ 0x00000003 (PLTGOT)                     0x2ab68
+ 0x00000002 (PLTRELSZ)                   2328 (bytes)
+ 0x00000017 (JMPREL)                     0xd874
+ 0x00000014 (PLTREL)                     REL
+ 0x00000011 (REL)                        0xa8f4
+ 0x00000012 (RELSZ)                      12160 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffa (RELCOUNT)                   966
+ 0x00000006 (SYMTAB)                     0x1f0
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000005 (STRTAB)                     0x30f0
+ 0x0000000a (STRSZ)                      18814 (bytes)
+ 0x6ffffef5 (GNU_HASH)                   0x7a70
+ 0x00000004 (HASH)                       0x8ecc
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+ 0x0000000e (SONAME)                     Library soname: [libmatrix-hookcommon.so]
+ 0x0000001a (FINI_ARRAY)                 0x2a95c
+ 0x0000001c (FINI_ARRAYSZ)               8 (bytes)
+ 0x00000019 (INIT_ARRAY)                 0x2a964
+ 0x0000001b (INIT_ARRAYSZ)               8 (bytes)
+ 0x0000001e (FLAGS)                      BIND_NOW
+ 0x6ffffffb (FLAGS_1)                    Flags: NOW
+ 0x6ffffff0 (VERSYM)                     0xa2b8
+ 0x6ffffffc (VERDEF)                     0xa898
+ 0x6ffffffd (VERDEFNUM)                  1
+ 0x6ffffffe (VERNEED)                    0xa8b4
+ 0x6fffffff (VERNEEDNUM)                 2
+ 0x00000000 (NULL)                       0x0

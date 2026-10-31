@@ -1,0 +1,4412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="75250210"
+    android:versionName="7.52.0.75250210"
+    android:installLocation="0"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    package="com.snaptube.premium"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="35" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.GET_PACKAGE_SIZE" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <queries>
+
+        <package
+            android:name="com.instagram.android" />
+
+        <package
+            android:name="com.facebook.katana" />
+
+        <package
+            android:name="com.whatsapp" />
+
+        <package
+            android:name="com.twitter.android" />
+
+        <package
+            android:name="jp.naver.line.android" />
+
+        <package
+            android:name="com.zhiliaoapp.musically" />
+
+        <package
+            android:name="com.ss.android.ugc.trill" />
+
+        <package
+            android:name="com.google.android.youtube" />
+
+        <package
+            android:name="org.telegram.messenger" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.PROCESS_TEXT" />
+
+            <data
+                android:mimeType="text/plain" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.speech.RecognitionService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.accounts.AccountAuthenticator" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="vnd.android.cursor.item/*"
+                android:scheme="content"
+                android:host="com.android.contacts" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.browse.MediaBrowserService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.MAIN" />
+        </intent>
+    </queries>
+
+    <permission
+        android:name="com.snaptube.premium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.snaptube.premium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:theme="@ref/0x7f120193"
+        android:label="@ref/0x7f1101c7"
+        android:icon="@ref/0x7f0e0001"
+        android:name="com.snaptube.premium.app.PhoenixApplication"
+        android:persistent="true"
+        android:testOnly="false"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@ref/0x7f150007"
+        android:roundIcon="@ref/0x7f0e0002"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:preserveLegacyExternalStorage="true"
+        security="activity">
+
+        <meta-data
+            android:name="is_shorts_supported"
+            android:value="@ref/0x7f050003" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="is_ins_multi_format_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_hls_query_bug_fixed"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_ytb_post_support"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x7f1201ab"
+            android:name="com.snaptube.premium.activity.SimpleInterstitialAdActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f1201a8"
+            android:name="com.snaptube.premium.activity.ExploreActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2694"
+            android:windowSoftInputMode="0x33">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="phoenix.intent.action.EXPLORE_NAVIGATE" />
+
+                <data
+                    android:scheme="navigation" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="phoenix.intent.action.ACTION_SELF_UPDATE_AVAILABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="phoenix.intent.action.MY_THINGS_NAVIGATE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="phoenix.intent.action.VAULT_SHORT_CUT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="phoenix.intent.action.MY_THINGS_NAVIGATE" />
+
+                <data
+                    android:scheme="navigation"
+                    android:host="mything" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12018d"
+            android:name="com.snaptube.premium.activity.ThemeChangeActivity"
+            android:launchMode="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:label="@ref/0x7f11065d"
+            android:name="com.snaptube.premium.sites.SpeedDialActivity"
+            android:exported="true"
+            android:configChanges="0x2204">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="app"
+                    android:host="app"
+                    android:pathPrefix="/speeddial" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12031d"
+            android:label="@ref/0x7f110657"
+            android:name="com.snaptube.premium.sites.BookmarkActivity"
+            android:configChanges="0x2204"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f12031a"
+            android:name="com.snaptube.premium.search.MixedSearchActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2684">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEARCH" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12031a"
+            android:name="com.snaptube.premium.activity.VideoWebViewActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f12019e"
+            android:name="com.snaptube.premium.hybrid.HybridWebViewActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f12031a"
+            android:name="com.snaptube.premium.activity.YoutubeVideoWebViewActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2694"
+            android:windowSoftInputMode="0x33" />
+
+        <activity
+            android:theme="@ref/0x7f12019e"
+            android:name="com.snaptube.premium.activity.LandingActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f120344"
+            android:name="com.snaptube.premium.activity.ZendeskPushActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x26a4"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f120193"
+            android:name="com.snaptube.premium.activity.CleanSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f12031a"
+            android:name="com.snaptube.premium.activity.CreditsActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:configChanges="0x2684">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="app"
+                    android:host="app"
+                    android:pathPrefix="/credits" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12031a"
+            android:name="com.snaptube.premium.activity.DragonActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x2684" />
+
+        <activity
+            android:theme="@ref/0x7f12031a"
+            android:name="com.snaptube.premium.activity.ChooseDownloadPathActivity"
+            android:launchMode="1"
+            android:configChanges="0x2684" />
+
+        <activity
+            android:theme="@ref/0x7f12017e"
+            android:name="com.snaptube.premium.activity.MultiSelectActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f1202de"
+            android:name="com.snaptube.premium.activity.CommonMultiTabActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f120191"
+            android:name="com.snaptube.premium.activity.CommonMixedListActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x26a4" />
+
+        <activity
+            android:theme="@ref/0x7f120196"
+            android:name="com.snaptube.premium.activity.VideoPlaybackActivity"
+            android:taskAffinity="com.snaptube.player"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2ff4"
+            android:windowSoftInputMode="0x20"
+            android:autoRemoveFromRecents="true"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f120195"
+            android:name="com.snaptube.premium.activity.VideoPlaybackActivityTransTheme"
+            android:launchMode="1"
+            android:screenOrientation="2"
+            android:configChanges="0x2ff4"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.snaptube.premium.preview.audio.LocalMediaPreviewActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2694">
+
+            <intent-filter
+                android:label="@ref/0x7f1104ad">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="content" />
+
+                <data
+                    android:mimeType="video/*" />
+
+                <data
+                    android:mimeType="audio/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.snaptube.premium.activity.PlayerGuideActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f12031e"
+            android:name="com.snaptube.premium.activity.InstallGuideOverlayActivity"
+            android:launchMode="3"
+            android:screenOrientation="-1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f12038a"
+            android:name="com.snaptube.premium.activity.GPInstallTipActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="-1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f12031a"
+            android:label="@ref/0x7f110039"
+            android:name="com.snaptube.premium.activity.YouTubeLoginActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f12018d"
+            android:name="com.snaptube.premium.activity.ChooseFormatActivity"
+            android:taskAffinity=".ChooseFormat"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2204"
+            android:alwaysRetainTaskState="false"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1201ff"
+            android:name="com.snaptube.premium.ClipMonitor.ClipMonitorDownloadActivity"
+            android:taskAffinity=".ChooseFormat"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2204"
+            android:alwaysRetainTaskState="false"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1202c5"
+            android:name="com.snaptube.premium.ads.splash.RewardSplashAdActivity"
+            android:exported="false"
+            android:taskAffinity=".ChooseFormatReward"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x26a4"
+            android:alwaysRetainTaskState="false" />
+
+        <activity
+            android:theme="@ref/0x7f12018d"
+            android:name="com.snaptube.premium.activity.ActionSendDispatchActivity"
+            android:exported="true"
+            android:taskAffinity=".ChooseFormat"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2204"
+            android:alwaysRetainTaskState="false">
+
+            <intent-filter
+                android:label="@ref/0x7f1105de">
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="text/plain" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12031d"
+            android:name="com.snaptube.premium.webview.tab.WebTabsActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:name="com.snaptube.premium.webview.HistoryActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f12018e"
+            android:name="com.snaptube.premium.whatsapp.WhatsAppStatusActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f1202db"
+            android:name="com.snaptube.premium.whatsapp.gallery.GalleryActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f12031e"
+            android:name="com.snaptube.premium.activity.DeepLinkActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2684" />
+
+        <activity-alias
+            android:name="com.snaptube.linkhook.LinkHandleActivity"
+            android:exported="true"
+            android:targetActivity="com.snaptube.premium.activity.DeepLinkActivity">
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.thedylink.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="snaptube"
+                    android:host="deeplink" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.fbwat.ch"
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.fbwat.ch"
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.fbwat.ch"
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.fbwat.ch"
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="fb.watch"
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fb.watch"
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.fb.watch"
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.fb.watch"
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.fb.watch"
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.fb.watch"
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="fb.watch"
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fb.watch"
+                    android:pathPattern="/.*" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/stories/collab" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/stories/collab" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/stories/collab" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/stories/collab" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/mobile-redirect/login" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/mobile-redirect/login" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/mobile-redirect/login" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/mobile-redirect/login" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/donate" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/donate" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/events" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/events" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/fundraisers" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/fundraisers" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/hashtag/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/hashtag/..*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/groups" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/groups" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/group_subfeed/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/group_subfeed/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/recommendations" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/recommendations" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/messenger_kids/redirect/invite" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/messenger_kids/redirect/invite" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/messenger_kids" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/messenger_kids" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/privacy/checkup" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/privacy/checkup" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/videos/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/videos/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/reel/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/reel/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/live" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/live" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/live" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/live" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/live" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/live" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/live/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/live/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/live" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/live" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/live/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/live/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/live_videos" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/live_videos" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/live_videos/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/live_videos/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/live_videos" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/live_videos" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/live_videos/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/live_videos/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/watch/music" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/music" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/watch/music" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/music" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/mediaplaylist" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/mediaplaylist" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/mediaplaylist" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/mediaplaylist" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/watchparty" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/watchparty" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/ads/experience/confirmation" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/ads/experience/confirmation" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/live/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/live/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/stories/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/stories/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/offers/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/offers/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/groups/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/groups/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/groups" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/groups" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/fanning_send_page_invite" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/fanning_send_page_invite" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/recommendations_hub" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/recommendations_hub" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/mp_seller_listings" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/mp_seller_listings" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/page_surface" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/page_surface" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/poe_create" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/poe_create" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/live_shopping" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/live_shopping" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/inbox/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/inbox/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/choose_cta/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/choose_cta/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/create_post/get_messages" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/free_suite_ads/create_post/get_messages" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/loyalty_otp/magic_link" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/loyalty_otp/magic_link" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/videos/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/videos/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.alpha.facebook.com"
+                    android:pathPattern="/.*/videos/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.alpha.facebook.com"
+                    android:pathPattern="/.*/videos/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.beta.facebook.com"
+                    android:pathPattern="/.*/videos/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.beta.facebook.com"
+                    android:pathPattern="/.*/videos/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/reel/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/reel/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.alpha.facebook.com"
+                    android:pathPattern="/reel/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.alpha.facebook.com"
+                    android:pathPattern="/reel/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.beta.facebook.com"
+                    android:pathPattern="/reel/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.beta.facebook.com"
+                    android:pathPattern="/reel/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/watchparty/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/watchparty/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/watch" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/watch" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/storiescomposerforadscampaign" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/storiescomposerforadscampaign" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/storiescomposerforadscampaign" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/storiescomposerforadscampaign" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/watch" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/watch" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/watch/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/watch/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/watch/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/watch/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/watch/subscription/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/watch/subscription/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/watch/subscription/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/watch/subscription/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/watch/channel" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/watch/channel" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/watch/channel" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/watch/channel" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/donate" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/donate" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/events" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/events" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/events/creation" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/events/creation" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/movies" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/movies" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/fundraisers" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/fundraisers" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/hashtag/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/hashtag/..*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/ads/experience/confirmation" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/ads/experience/confirmation" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/inbox/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/inbox/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/choose_cta/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/choose_cta/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/create_post/get_messages" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/create_post/get_messages" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/stories/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/stories/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/live/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/live/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/offers/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/offers/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/groups/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/free_suite_ads/groups/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/loyalty_otp/magic_link/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/loyalty_otp/magic_link/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/pages/create/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/pages/create/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/pages/creation/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/pages/creation/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/pages/place_claim/redirect_email_invite" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/pages/place_claim/redirect_email_invite" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/privacy/checkup" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/privacy/checkup" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/recommendations" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/recommendations" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/messenger_kids/redirect/invite" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/messenger_kids/redirect/invite" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/messenger_kids" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/messenger_kids" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/safetycheck" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/safetycheck" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/safetycheck" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/safetycheck" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/fanning_send_page_invite" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/fanning_send_page_invite" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/recommendations_hub" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/recommendations_hub" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/mp_seller_listings" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/mp_seller_listings" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/poe_create" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/poe_create" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/live_shopping" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/marketing_dl_facebook/live_shopping" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/crisisresponse" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/crisisresponse" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/crisisresponse" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/crisisresponse" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:path="/device" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:path="/devices" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:path="/device/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:path="/devices/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/xdl/approve" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/private_sharing/home_view" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/private_sharing/home_view" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/private_sharing/home_view" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/private_sharing/home_view" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/location_history" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/location_history" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/location_history" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/location_history" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/place_curation" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/place_curation" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/dating" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/dating" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/dating" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/dating" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/local_business_discovery" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/local_business_discovery" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/local_business_discovery" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/local_business_discovery" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/business_nearby" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/business_nearby" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/business_nearby" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/business_nearby" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/supportsmallbusinessONP/groups" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/supportsmallbusinessONP/groups" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/supportsmallbusinessONP/groups" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/supportsmallbusinessONP/groups" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/gameshow_invite" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/gameshow_invite" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/gameshow_invite" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/gameshow_invite" />
+
+                <data
+                    android:scheme="http"
+                    android:host="facebook.com"
+                    android:pathPrefix="/.*/subscribe" />
+
+                <data
+                    android:scheme="https"
+                    android:host="facebook.com"
+                    android:pathPrefix="/.*/subscribe" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/.*/subscribe" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/.*/subscribe" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fb.com"
+                    android:pathPrefix="/book/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="fb.com"
+                    android:pathPrefix="/book/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fb.com"
+                    android:pathPrefix="/covidsupport" />
+
+                <data
+                    android:scheme="http"
+                    android:host="fb.com"
+                    android:pathPrefix="/covidsupport" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fb.com"
+                    android:pathPrefix="/coronavirus_info/request_offer_help" />
+
+                <data
+                    android:scheme="http"
+                    android:host="fb.com"
+                    android:pathPrefix="/coronavirus_info/request_offer_help" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/saved/list" />
+
+                <data
+                    android:scheme="https"
+                    android:host="facebook.com"
+                    android:pathPrefix="/topic/request/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/playlist/.*/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/playlist/.*/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/playlist/.*/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/playlist/.*/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/carrier_wifi/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/avatars_create" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/avatars_create" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/local/communities" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/local/communities" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/neighborhoods" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/neighborhoods" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/menu" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/menu" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/menu" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/menu" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/menu/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/.*/menu/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/menu/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/.*/menu/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/rewards/program/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPattern="/rewards/program/.*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/rewards/program/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPattern="/rewards/program/.*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/wifi_profile/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/pages/whatsapp/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/pages/whatsapp/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/pages/whatsapp/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/pages/whatsapp/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/page/whatsapp/verification/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/page/whatsapp/verification/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/page/whatsapp/verification/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/page/whatsapp/verification/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/page/whatsapp/linking/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/page/whatsapp/linking/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/page/whatsapp/linking/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/page/whatsapp/linking/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:path="/payments/offsite_button_login" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:path="/payments/offsite_button_login" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/page_admin_completion_meter" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/page_admin_completion_meter" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/page_admin_completion_meter" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/page_admin_completion_meter" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/transfer_your_information/redirect/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/transfer_your_information/redirect/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/tyi/mobile/redirect/" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.facebook.com"
+                    android:pathPrefix="/tyi/mobile/redirect/" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.fb.me"
+                    android:pathPattern="/mp/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.fb.me"
+                    android:pathPattern="/mp/..*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="fb.me"
+                    android:pathPattern="/mp/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fb.me"
+                    android:pathPattern="/mp/..*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.fb.me"
+                    android:pathPattern="/e/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.fb.me"
+                    android:pathPattern="/e/..*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="fb.me"
+                    android:pathPattern="/e/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fb.me"
+                    android:pathPattern="/e/..*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.fb.me"
+                    android:pathPattern="/g/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.fb.me"
+                    android:pathPattern="/g/..*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="fb.me"
+                    android:pathPattern="/g/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fb.me"
+                    android:pathPattern="/g/..*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.fb.audio"
+                    android:pathPattern="/live/..*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.fb.audio"
+                    android:pathPattern="/live/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fb.audio"
+                    android:pathPattern="/live/..*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="fb.audio"
+                    android:pathPattern="/live/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.fb.audio"
+                    android:pathPattern="/soundbites/..*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.fb.audio"
+                    android:pathPattern="/soundbites/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fb.audio"
+                    android:pathPattern="/soundbites/..*" />
+
+                <data
+                    android:scheme="http"
+                    android:host="fb.audio"
+                    android:pathPattern="/soundbites/..*" />
+
+                <data
+                    android:pathPattern="/podcasts/..*"
+                    android.host="fb.audio"
+                    android.scheme="http" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.fb.audio"
+                    android:pathPattern="/podcasts/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fb.audio"
+                    android:pathPattern="/podcasts/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.fb.audio"
+                    android:pathPattern="/podcasts/..*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="wallets.facebook.com" />
+
+                <data
+                    android:host="www.wallets.facebook.com" />
+
+                <data
+                    android:host="m.wallets.facebook.com" />
+
+                <data
+                    android:host="wallets.fb.com" />
+
+                <data
+                    android:host="www.wallets.fb.com" />
+
+                <data
+                    android:host="m.wallets.fb.com" />
+
+                <data
+                    android:pathPattern="/.*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:pathPattern="/cm/..*"
+                    android.host="m.me"
+                    android.scheme="http" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.m.me"
+                    android:pathPattern="/cm/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.me"
+                    android:pathPattern="/cm/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.m.me"
+                    android:pathPattern="/cm/..*" />
+
+                <data
+                    android:pathPattern="/ch/..*"
+                    android.host="m.me"
+                    android.scheme="http" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.m.me"
+                    android:pathPattern="/ch/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="m.me"
+                    android:pathPattern="/ch/..*" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.m.me"
+                    android:pathPattern="/ch/..*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/gaming/" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.facebook.com"
+                    android:pathPrefix="/gaming/" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="www.facebook.com" />
+
+                <data
+                    android:host="m.facebook.com" />
+
+                <data
+                    android:host="facebook.com" />
+
+                <data
+                    android:pathPrefix="/order_food" />
+
+                <data
+                    android:pathPrefix="/orderfood" />
+
+                <data
+                    android:pathPrefix="/page_select_cta/" />
+
+                <data
+                    android:pathPrefix="/page_config_cta/" />
+
+                <data
+                    android:pathPrefix="/custom_cta/mobile_admin/destination_types/" />
+
+                <data
+                    android:pathPrefix="/qr" />
+
+                <data
+                    android:pathPrefix="/coronavirus_info" />
+
+                <data
+                    android:pathPrefix="/emotional_health" />
+
+                <data
+                    android:pathPrefix="/biz_info_center" />
+
+                <data
+                    android:pathPrefix="/business_resources" />
+
+                <data
+                    android:pathPrefix="/coronavirus_business_info" />
+
+                <data
+                    android:pathPrefix="/covidsupport" />
+
+                <data
+                    android:pathPrefix="/deserve_to_be_found" />
+
+                <data
+                    android:pathPrefix="/discovery/hub/.*" />
+
+                <data
+                    android:pathPrefix="/votinginformationcenter" />
+
+                <data
+                    android:pathPrefix="/votinginfocenter" />
+
+                <data
+                    android:pathPrefix="/voyager" />
+
+                <data
+                    android:pathPrefix="/business_economic_relief" />
+
+                <data
+                    android:pathPrefix="/facebook_pay" />
+
+                <data
+                    android:pathPrefix="/accountquality" />
+
+                <data
+                    android:pathPrefix="/ar/commerce/try" />
+
+                <data
+                    android:pathPrefix="/mobile_center" />
+
+                <data
+                    android:pathPrefix="/premium_content" />
+
+                <data
+                    android:pathPrefix="/communityexplore/.*" />
+
+                <data
+                    android:pathPrefix="/SoutenonsLesBonnesIdees" />
+
+                <data
+                    android:pathPrefix="/VerdientGefundenZuWerden" />
+
+                <data
+                    android:pathPrefix="/fb_shop_referral" />
+
+                <data
+                    android:pathPrefix="/fb_shop_leave_review" />
+
+                <data
+                    android:pathPrefix="/fantasy_games" />
+
+                <data
+                    android:pathPrefix="/hub_order_details" />
+
+                <data
+                    android:pathPrefix="/orders_hub" />
+
+                <data
+                    android:pathPrefix="/app_direct_install/" />
+
+                <data
+                    android:pathPrefix="/childhood_vaccines" />
+
+                <data
+                    android:pathPrefix="/fb_mini_apps" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="www.facebook.com" />
+
+                <data
+                    android:host="m.facebook.com" />
+
+                <data
+                    android:pathPrefix="/iw/" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="www.facebook.com" />
+
+                <data
+                    android:pathPrefix="/fx_cal/fb" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="www.facebook.com" />
+
+                <data
+                    android:pathPrefix="/inter_app/redirect" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="www.facebook.com" />
+
+                <data
+                    android:pathPrefix="/acredirect" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="instagram.com" />
+
+                <data
+                    android:host="www.instagram.com" />
+
+                <data
+                    android:host="applink.instagram.com" />
+
+                <data
+                    android:host="familycenter.instagram.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="call.instagram.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="ig.me" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="app-va.tiktokv.com" />
+
+                <data
+                    android:pathPattern="/" />
+
+                <data
+                    android:pathPrefix="/redirect" />
+
+                <data
+                    android:pathPrefix="/v/" />
+
+                <data
+                    android:pathPrefix="/V/" />
+
+                <data
+                    android:pathPrefix="/live/" />
+
+                <data
+                    android:pathPrefix="/h5/share/usr/" />
+
+                <data
+                    android:pathPrefix="/h5/share/tag/" />
+
+                <data
+                    android:pathPrefix="/h5/share/music/" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="m.tiktok.com" />
+
+                <data
+                    android:host="t.tiktok.com" />
+
+                <data
+                    android:pathPattern="/" />
+
+                <data
+                    android:pathPrefix="/redirect" />
+
+                <data
+                    android:pathPrefix="/v/" />
+
+                <data
+                    android:pathPrefix="/V/" />
+
+                <data
+                    android:pathPrefix="/live/" />
+
+                <data
+                    android:pathPrefix="/h5/share/usr/" />
+
+                <data
+                    android:pathPrefix="/h5/share/tag/" />
+
+                <data
+                    android:pathPrefix="/h5/share/music/" />
+
+                <data
+                    android:pathPrefix="/H5/share/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/music/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/video/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/challenge/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/user/" />
+
+                <data
+                    android:pathPrefix="/share/stickers/detail/" />
+
+                <data
+                    android:pathPrefix="/share/live/" />
+
+                <data
+                    android:pathPrefix="/share/game/" />
+
+                <data
+                    android:pathPrefix="/playlist-music/" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="www.tiktok.com" />
+
+                <data
+                    android:host="us.tiktok.com" />
+
+                <data
+                    android:host="www.tiktok.in" />
+
+                <data
+                    android:pathPattern="/" />
+
+                <data
+                    android:pathPattern="/@.*" />
+
+                <data
+                    android:pathPattern="/share/@.*" />
+
+                <data
+                    android:pathPrefix="/redirect" />
+
+                <data
+                    android:pathPrefix="/tag/" />
+
+                <data
+                    android:pathPrefix="/music/" />
+
+                <data
+                    android:pathPrefix="/playlist-music/" />
+
+                <data
+                    android:pathPrefix="/sticker/" />
+
+                <data
+                    android:pathPrefix="/v/" />
+
+                <data
+                    android:pathPrefix="/V/" />
+
+                <data
+                    android:pathPrefix="/share/live/" />
+
+                <data
+                    android:pathPrefix="/share/stickers/detail/" />
+
+                <data
+                    android:pathPrefix="/share/game/" />
+
+                <data
+                    android:pathPrefix="/share/tag/" />
+
+                <data
+                    android:pathPrefix="/share/music/" />
+
+                <data
+                    android:pathPrefix="/share/sticker/" />
+
+                <data
+                    android:pathPrefix="/share/video/" />
+
+                <data
+                    android:pathPrefix="/share/user/" />
+
+                <data
+                    android:pathPrefix="/share/challenge/" />
+
+                <data
+                    android:pathPrefix="/h5/share/usr/" />
+
+                <data
+                    android:pathPrefix="/h5/share/tag/" />
+
+                <data
+                    android:pathPrefix="/h5/share/music/" />
+
+                <data
+                    android:pathPrefix="/H5/share/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/music/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/video/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/challenge/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/user/" />
+
+                <data
+                    android:pathPrefix="/messages/" />
+
+                <data
+                    android:pathPrefix="/t/" />
+
+                <data
+                    android:pathPrefix="/search/campaign/" />
+
+                <data
+                    android:pathPrefix="/question/" />
+
+                <data
+                    android:pathPrefix="/discover/" />
+
+                <data
+                    android:pathPrefix="/revenue/subscription/invitation" />
+
+                <data
+                    android:pathPrefix="/ug/ads/landing/" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="vm.tiktok.com" />
+
+                <data
+                    android:host="vt.tiktok.com" />
+
+                <data
+                    android:pathPattern="/.*" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="link.e.tiktok.com" />
+
+                <data
+                    android:pathPrefix="/uni/" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="oec-api.tiktokv.com" />
+
+                <data
+                    android:pathPattern="/view/product/.*" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <action
+                    android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH" />
+
+                <action
+                    android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="youtube.com" />
+
+                <data
+                    android:host="www.youtube.com" />
+
+                <data
+                    android:host="m.youtube.com" />
+
+                <data
+                    android:host="youtu.be" />
+
+                <data
+                    android:pathPattern=".*" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="share.getsnap.link"
+                    android:pathPrefix="/video" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="share.getsnap.link"
+                    android:pathPrefix="/campaigns" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="share.getsnap.link"
+                    android:pathPrefix="/video" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="share.getsnap.link"
+                    android:pathPrefix="/campaigns" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="getsnap.link" />
+
+                <data
+                    android:scheme="https"
+                    android:host="getsnap.link" />
+
+                <data
+                    android:scheme="snap"
+                    android:host="getsnap.link" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.snaptubeapp.com" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.snaptubeapp.com" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <action
+                    android:name="snaptube.intent.action.OPEN_WEBVIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.WEB_SEARCH" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <receiver
+            android:name="com.snaptube.taskManager.notification.TaskReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="phoenix.intent.action.DOWNLOAD_OPEN" />
+
+                <action
+                    android:name="phoenix.intent.action.DOWNLOAD_LIST" />
+
+                <action
+                    android:name="phoenix.intent.action.DOWNLOAD_HIDE" />
+
+                <action
+                    android:name="phoenix.intent.action.DOWNLOAD_LIST_HIDE" />
+
+                <action
+                    android:name="phoenix.intent.action.DOWNLOAD_OPEN_SELF_UPGRADE_APK" />
+
+                <data
+                    android:scheme="content"
+                    android:host="com.snaptube.premium.provider.SnaptubeContentProvider" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.snaptube.premium.receiver.MediaMountReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MEDIA_MOUNTED" />
+
+                <data
+                    android:scheme="file" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data
+                    android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.snaptube.premium.onlineconfig.SnapTubeOnlineConfigScheduleReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="phoenix.intent.action.CHECK_ONLINE_CONFIG" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.snaptube.premium.playback.window.WindowPlaybackService"
+            android:configChanges="0x26a4"
+            android:foregroundServiceType="0x2" />
+
+        <service
+            android:name="com.snaptube.premium.alarm.AlarmService"
+            android:foregroundServiceType="0x40000000" />
+
+        <service
+            android:name="com.snaptube.premium.push.parser.PushEntityParseService"
+            android:foregroundServiceType="0x40000000" />
+
+        <service
+            android:name="com.snaptube.premium.ClipMonitor.ClipMonitorService"
+            android:foregroundServiceType="0x40000000" />
+
+        <service
+            android:name="com.snaptube.premium.notification.ToolbarService"
+            android:foregroundServiceType="0x40000000" />
+
+        <provider
+            android:name="com.snaptube.taskManager.provider.SnaptubeContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.snaptube.premium.provider.SnaptubeContentProvider" />
+
+        <provider
+            android:name="com.snaptube.premium.provider.SnaptubeExportedProvider"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.snaptube.premium.provider.SnaptubeExportedProvider;com.dywx.growth.provider.GuideExportedProvider" />
+
+        <provider
+            android:name="com.phoenix.launch.FirebasePerfProvider"
+            android:exported="false"
+            android:authorities="com.snaptube.premium.firebaseinitprovider"
+            android:initOrder="101" />
+
+        <meta-data
+            android:name="com.sensorsdata.analytics.android.VTrack"
+            android:value="false" />
+
+        <meta-data
+            android:name="com.sensorsdata.analytics.android.AutoTrack"
+            android:value="true" />
+
+        <service
+            android:name="com.snaptube.premium.service.PlayerService"
+            android:exported="false"
+            android:foregroundServiceType="0x2" />
+
+        <receiver
+            android:name="com.snaptube.premium.receiver.MediaScannerReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MEDIA_SCANNER_STARTED" />
+
+                <data
+                    android:scheme="file" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+
+                <data
+                    android:scheme="file" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE" />
+
+                <data
+                    android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f12031c"
+            android:name="com.snaptube.premium.dialog.WindowPermissionActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f12018e"
+            android:name="com.snaptube.premium.activity.CleanActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x2694">
+
+            <intent-filter>
+
+                <action
+                    android:name="phoenix.intent.action.CLEAN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1201ac"
+            android:name="com.snaptube.premium.activity.VaultActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x2684" />
+
+        <activity
+            android:theme="@ref/0x7f12018e"
+            android:name="com.dayuwuxian.clean.ui.base.CleanBaseActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f12018f"
+            android:name="com.snaptube.premium.activity.PhoneBoostActivity"
+            android:exported="false"
+            android:taskAffinity=".OuterScan"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0x2694">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12018f"
+            android:name="com.snaptube.premium.activity.PhoneBoostInsideActivity"
+            android:exported="false"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0x2694">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120190"
+            android:name="com.snaptube.premium.activity.PhoneBoostJumpActivity"
+            android:exported="true"
+            android:taskAffinity=".OuterScan"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0x2694">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120190"
+            android:name="com.snaptube.premium.activity.OuterScanActivity"
+            android:exported="true"
+            android:taskAffinity=".OuterScan"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0x2694">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <action
+                    android:name="phoenix.intent.action.OUTER_CLEAN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12018f"
+            android:name="com.snaptube.premium.activity.InsideScanActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f120190"
+            android:name="com.snaptube.premium.activity.BatteryCleanActivity"
+            android:exported="true"
+            android:taskAffinity=".OuterScan"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0x2694">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12018f"
+            android:name="com.snaptube.premium.activity.ScanAppJunkFinishActivity"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f12018c"
+            android:name="com.snaptube.premium.activity.CleanAdRedirectActivity"
+            android:taskAffinity=".OuterScan"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f12018c"
+            android:name="com.snaptube.premium.activity.CleanSplashAdActivity"
+            android:taskAffinity=".OuterScan"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f12018f"
+            android:name="com.dayuwuxian.clean.ui.permission.GuidePermissionActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f12019a"
+            android:label="@string/0x3c"
+            android:name="com.snaptube.premium.webview.common.CommonWebActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f12031e"
+            android:name="com.dayuwuxian.clean.ui.base.AppUninstallPopupActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="-1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f12031f"
+            android:icon="@ref/0x7f08034d"
+            android:name="com.snaptube.premium.activity.LockFromSendActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="-1"
+            android:configChanges="0x2204">
+
+            <intent-filter
+                android:label="@ref/0x7f110388">
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="video/*" />
+
+                <data
+                    android:mimeType="audio/*" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f110388">
+
+                <action
+                    android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="video/*" />
+
+                <data
+                    android:mimeType="audio/*" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12031f"
+            android:icon="@ref/0x7f08034d"
+            android:name="com.snaptube.premium.activity.LockFromInsideActivity"
+            android:screenOrientation="-1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f12018f"
+            android:name="com.snaptube.premium.activity.SingleVaultActivity"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:configChanges="0x2684">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.snaptube.premium.log.report.LogReportActivity"
+            android:exported="false"
+            android:taskAffinity=".LogReport">
+
+            <intent-filter>
+
+                <action
+                    android:name="phoenix.intent.action.LOG_REPORT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12019e"
+            android:name="com.snaptube.premium.search.local.LocalSearchActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2684"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f12019e"
+            android:name="com.snaptube.premium.search.local.VaultLocalSearchActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2684"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f12031a"
+            android:name="com.snaptube.premium.user.activity.MeAboutActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x2684" />
+
+        <activity
+            android:theme="@ref/0x7f12031a"
+            android:name="com.snaptube.premium.user.activity.MePoliciesActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x2684" />
+
+        <activity
+            android:theme="@ref/0x7f12012d"
+            android:name="com.snaptube.premium.vault.ui.ImagePreviewActivity"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:configChanges="0x2684"
+            android:windowSoftInputMode="0x10">
+
+            <intent-filter>
+
+                <action
+                    android:name="snaptube.intent.action.VIEW_IMAGE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f11079c">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="content" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.snaptube.premium.vault.ui.ImageChooseActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x2684"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1202e6"
+            android:name="com.snaptube.premium.vault.ui.ImageChooseLandingActivity" />
+
+        <service
+            android:name="com.phoenix.download.DownloadService"
+            android:enabled="true"
+            android:foregroundServiceType="0x40000000" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.snaptube.premium.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <provider
+            android:name="com.snaptube.premium.share.GenericFileProvider"
+            android:exported="false"
+            android:authorities="com.snaptube.premium.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150003" />
+        </provider>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1075419520.000000" />
+
+        <receiver
+            android:name="com.snaptube.premium.receiver.AppFirstStartReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.snaptube.premium.APP_FIRST_START" />
+
+                <action
+                    android:name="com.dywx.growth.APP_FIRST_START" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.snaptube.premium.notification.NotificationTimeoutReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.snaptube.premium.NOTIFICATION_TIMEOUT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.snaptube.premium.notification.NotificationToolBarReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="phoenix.intent.action.CLOSE_TOOLBAR" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f12018d"
+            android:name="com.snaptube.premium.activity.SwitchStorageActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f12018d"
+            android:name="com.snaptube.premium.activity.DownloadDialogWrapperActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2204" />
+
+        <activity
+            android:theme="@ref/0x7f12018d"
+            android:name="com.snaptube.premium.activity.ExternalDownloadDialogWrapperActivity"
+            android:taskAffinity=".ExternalDownloadDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2204"
+            android:alwaysRetainTaskState="false" />
+
+        <activity
+            android:name="com.snaptube.premium.activity.ForegroundAppActivity" />
+
+        <meta-data
+            android:name="minFrameworkVersion"
+            android:value="4" />
+
+        <activity
+            android:theme="@ref/0x7f12031a"
+            android:name="com.snaptube.plugin.extension.chooseformat.SingleAllFormatActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f1201aa"
+            android:name="com.snaptube.plugin.extension.chooseformat.subtitles.SubtitleChoiceActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x2694" />
+
+        <activity
+            android:theme="@ref/0x7f12018d"
+            android:name="com.snaptube.plugin.extension.chooseformat.ExternalYoutubeAllFormatActivity"
+            android:taskAffinity=".ChooseFormat"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x2694"
+            android:alwaysRetainTaskState="false" />
+
+        <activity
+            android:theme="@ref/0x7f12038b"
+            android:name="com.snaptube.premium.activity.BroadcastDeliverActivity" />
+
+        <activity
+            android:theme="@ref/0x7f12038b"
+            android:name="com.snaptube.premium.activity.ServiceDeliverActivity" />
+
+        <activity
+            android:theme="@ref/0x7f12019e"
+            android:name="com.snaptube.premium.home.social.SocialGuideAdActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x2684"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1201a9"
+            android:name="com.snaptube.premium.guide.launch.LaunchGuideActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x26a4" />
+
+        <service
+            android:name="com.snaptube.premium.localplay.download.BackgroundDownloadService"
+            android:exported="false"
+            android:foregroundServiceType="0x40000000">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.exoplayer.downloadService.action.RESTART" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.google.android.exoplayer2.scheduler.PlatformScheduler$PlatformSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"
+            android:foregroundServiceType="0x40000000" />
+
+        <provider
+            android:name="com.dywx.premium.core.udid.impl.UDIDProvider"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.snaptube.premium.provider.UDIDProvider;com.dywx.growth.provider.UDIDProvider" />
+
+        <meta-data
+            android:name="is_tiktok_url_spacial_char_fixed"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_photo_music_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_photo_video_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_ytb_sabr_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_fb_more_format_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_ins_mock_mp3_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_tt_mock_mp3_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_ytb_live_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_ytb_living_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_youtube_js_inject_fix_csp"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_tt_photo_alias_remove_index"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x7f1202d2"
+            android:name="com.dayuwuxian.clean.ui.SettingsGuideActivity" />
+
+        <activity
+            android:name="com.dayuwuxian.clean.base.CleanDetailActivity"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:configChanges="0x490" />
+
+        <activity
+            android:theme="@ref/0x7f12012d"
+            android:name="com.dayuwuxian.clean.base.PhotoCleanDetailActivity"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:configChanges="0x490" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <activity
+            android:theme="@ref/0x7f1202c5"
+            android:name="com.snaptube.ads.activity.SplashAdActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x26a4" />
+
+        <activity
+            android:theme="@ref/0x7f120018"
+            android:name="com.dayuwuxian.safebox.ui.base.BaseSafeBoxActivity" />
+
+        <meta-data
+            android:name="is_cronet_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@ref/0x7f1102a2" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@ref/0x7f1102a3" />
+
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false" />
+
+        <receiver
+            android:name="com.stumbler.stander.config.StanderReceiver" />
+
+        <receiver
+            android:name="com.snaptube.ads.infomobi.receiver.ReceiverDelegate"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+
+                <action
+                    android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.snaptube.ads.infomobi.receiver.InitReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.snaptube.ads.infomobi.TRY_INIT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.zhihu.matisse.ui.MatisseActivity" />
+
+        <activity
+            android:name="com.zhihu.matisse.ui.MatisseActionActivity" />
+
+        <activity
+            android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x2684"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.dywx.hybrid.InitProvider"
+            android:exported="false"
+            android:authorities="com.snaptube.premium.hybrid.initprovider"
+            android:initOrder="89" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f050006"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f050008"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f050007"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f050006"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <meta-data
+            android:name="is_meta_search_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="youtube_content_type_version"
+            android:value="0" />
+
+        <activity
+            android:name="com.sensorsdata.analytics.android.sdk.dialog.SchemeActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:configChanges="0x480">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="sa1840ddbb" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <provider
+            android:name="com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.snaptube.premium.SensorsDataContentProvider" />
+
+        <meta-data
+            android:name="com.sensorsdata.analytics.android.MainProcessName"
+            android:value="com.snaptube.premium" />
+
+        <meta-data
+            android:name="com.sensorsdata.analytics.android.version"
+            android:value="unspecified" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.snaptube.titan.carrier.CarrierReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_CHANGED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

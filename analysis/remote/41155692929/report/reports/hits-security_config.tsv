@@ -1,0 +1,718 @@
+file	line	text
+jadx/sources/com/bytedance/sdk/component/EW/XiW.java	87	"    @SuppressLint({""JavascriptInterface"", ""AddJavascriptInterface""})"
+jadx/sources/com/bytedance/sdk/component/EW/XiW.java	107	"    @SuppressLint({""AddJavascriptInterface""})"
+jadx/sources/com/bytedance/sdk/component/EW/XiW.java	112	        this.seu.addJavascriptInterface(this, this.dZO);
+jadx/sources/com/bytedance/sdk/component/adexpress/oA/oA.java	58	        zd.setJavaScriptEnabled(true);
+jadx/sources/com/bytedance/sdk/component/adexpress/oA/oA.java	116	        webView.addJavascriptInterface(zd, str);
+jadx/sources/com/bytedance/sdk/component/embedapplog/PangleEncryptUtils.java	15	            java.lang.System.loadLibrary(r0)     // Catch: java.lang.UnsatisfiedLinkError -> L7
+jadx/sources/com/bytedance/sdk/component/pglcrypt/PglCryptUtils.java	217	"                            System.loadLibrary(""pglarmor"");"
+jadx/sources/com/bytedance/sdk/component/seu/Zd.java	283	    private void setJavaScriptEnabled(String str) {
+jadx/sources/com/bytedance/sdk/component/seu/Zd.java	290	                settings.setJavaScriptEnabled(false);
+jadx/sources/com/bytedance/sdk/component/seu/Zd.java	292	                settings.setJavaScriptEnabled(true);
+jadx/sources/com/bytedance/sdk/component/seu/Zd.java	322	            this.YB.addJavascriptInterface(obj, str);
+jadx/sources/com/bytedance/sdk/component/seu/Zd.java	329	            setJavaScriptEnabled(str);
+jadx/sources/com/bytedance/sdk/component/seu/Zd.java	338	            setJavaScriptEnabled(str);
+jadx/sources/com/bytedance/sdk/component/seu/Zd.java	412	            setJavaScriptEnabled(str);
+jadx/sources/com/bytedance/sdk/component/seu/Zd.java	637	    public void setAllowFileAccess(boolean z) {
+jadx/sources/com/bytedance/sdk/component/seu/Zd.java	639	            this.YB.getSettings().setAllowFileAccess(z);
+jadx/sources/com/bytedance/sdk/component/seu/Zd.java	743	    public void setJavaScriptEnabled(boolean z) {
+jadx/sources/com/bytedance/sdk/component/seu/Zd.java	745	            this.YB.getSettings().setJavaScriptEnabled(z);
+jadx/sources/com/bytedance/sdk/component/seu/lc.java	46	        settings.setAllowFileAccess(false);
+jadx/sources/com/bytedance/sdk/component/seu/lc.java	68	    public void addJavascriptInterface(Object obj, String str) {
+jadx/sources/com/bytedance/sdk/component/seu/lc.java	71	"            ypP.EW(""TTAD.PangleWebView"", ""addJavascriptInterface: has destroyed or has recycler"");"
+jadx/sources/com/bytedance/sdk/component/seu/lc.java	73	            super.addJavascriptInterface(obj, str);
+jadx/sources/com/bytedance/sdk/openadsdk/Zd/YB.java	292	"            webView2.addJavascriptInterface(new EW(this, null), ""JS_LANDING_PAGE_LOG_OBJ"");"
+jadx/sources/com/bytedance/sdk/openadsdk/Zd/YB.java	294	"            com.bytedance.sdk.component.utils.ypP.EW(""LandingPageLog"", ""addJavascriptInterface exception"", e);"
+jadx/sources/com/bytedance/sdk/openadsdk/activity/TTWebsiteActivity.java	327	                    settings.setJavaScriptEnabled(true);
+jadx/sources/com/bytedance/sdk/openadsdk/activity/TTWebsiteActivity.java	330	                    settings.setAllowFileAccess(false);
+jadx/sources/com/bytedance/sdk/openadsdk/component/reward/EW/du.java	202	        zd.setJavaScriptEnabled(true);
+jadx/sources/com/bytedance/sdk/openadsdk/component/reward/EW/du.java	207	        zd.setAllowFileAccess(false);
+jadx/sources/com/bytedance/sdk/openadsdk/core/seu/Zd.java	64	"    @SuppressLint({""SetJavaScriptEnabled""})"
+jadx/sources/com/bytedance/sdk/openadsdk/core/seu/Zd.java	79	            oAVar.setAllowFileAccess(false);
+jadx/sources/com/bytedance/sdk/openadsdk/core/seu/Zd.java	80	            oAVar.setJavaScriptEnabled(true);
+jadx/sources/com/bytedance/sdk/openadsdk/core/seu/fH.java	146	            zd.setJavaScriptEnabled(true);
+jadx/sources/com/bytedance/sdk/openadsdk/core/seu/fH.java	151	            zd.setAllowFileAccess(false);
+jadx/sources/com/bytedance/sdk/openadsdk/core/widget/EW/NP.java	45	            zd.setJavaScriptEnabled(true);
+jadx/sources/com/bytedance/sdk/openadsdk/core/widget/EW/NP.java	50	            zd.setAllowFileAccess(false);
+jadx/sources/com/bytedance/sdk/openadsdk/core/widget/EW/lc.java	50	"    @SuppressLint({""SetJavaScriptEnabled""})"
+jadx/sources/com/bytedance/sdk/openadsdk/core/widget/EW/lc.java	62	            settings.setJavaScriptEnabled(true);
+jadx/sources/com/bytedance/sdk/openadsdk/core/widget/EW/lc.java	79	        settings.setAllowFileAccess(false);
+jadx/sources/com/bytedance/sdk/openadsdk/du/seu.java	27	            settings.setJavaScriptEnabled(true);
+jadx/sources/com/bytedance/sdk/openadsdk/du/seu.java	29	"            oIF.EW(""WebViewSettings"", ""setJavaScriptEnabled error"", th);"
+jadx/sources/com/bytedance/sdk/openadsdk/du/seu.java	39	        settings.setAllowFileAccess(false);
+jadx/sources/com/bytedance/sdk/openadsdk/du/seu.java	43	        settings.setAllowFileAccessFromFileURLs(false);
+jadx/sources/com/dayuwuxian/safebox/ui/login/GoogleLoginWebViewFragment.java	212	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/github/luben/zstd/util/Native.java	35	            System.loadLibrary(this.val$libName);
+jadx/sources/com/github/luben/zstd/util/Native.java	99	            loadLibraryFile(property);
+jadx/sources/com/github/luben/zstd/util/Native.java	105	            loadLibrary(libname);
+jadx/sources/com/github/luben/zstd/util/Native.java	111	                    loadLibrary(libnameShort);
+jadx/sources/com/github/luben/zstd/util/Native.java	147	                                loadLibraryFile(fileCreateTempFile.getAbsolutePath());
+jadx/sources/com/github/luben/zstd/util/Native.java	150	                                    loadLibrary(libnameShort);
+jadx/sources/com/github/luben/zstd/util/Native.java	233	    private static void loadLibrary(String str) {
+jadx/sources/com/github/luben/zstd/util/Native.java	237	    private static void loadLibraryFile(String str) {
+jadx/sources/com/google/LaunchApp.java	424	                        System.loadLibrary(str2);
+jadx/sources/com/google/ads/interactivemedia/v3/internal/acx.java	12	        getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/google/ads/interactivemedia/v3/internal/adz.java	13	"@SuppressLint({""SetJavaScriptEnabled"", ""NewApi""})"
+jadx/sources/com/google/ads/interactivemedia/v3/internal/adz.java	43	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	6	import dalvik.system.DexClassLoader;
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	120	                        DexClassLoader dexClassLoader = new DexClassLoader(fileCreateTempFile.getAbsolutePath(), cacheDir.getAbsolutePath(), null, context.getClassLoader());
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	121	                        Class<?> clsLoadClass = dexClassLoader.loadClass(b(bArrA, qi.p()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	122	                        Class<?> clsLoadClass2 = dexClassLoader.loadClass(b(bArrA, qi.D()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	123	                        Class<?> clsLoadClass3 = dexClassLoader.loadClass(b(bArrA, qi.x()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	124	                        Class<?> clsLoadClass4 = dexClassLoader.loadClass(b(bArrA, qi.t()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	125	                        Class<?> clsLoadClass5 = dexClassLoader.loadClass(b(bArrA, qi.F()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	126	                        Class<?> clsLoadClass6 = dexClassLoader.loadClass(b(bArrA, qi.r()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	127	                        Class<?> clsLoadClass7 = dexClassLoader.loadClass(b(bArrA, qi.B()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	128	                        Class<?> clsLoadClass8 = dexClassLoader.loadClass(b(bArrA, qi.z()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	129	                        Class<?> clsLoadClass9 = dexClassLoader.loadClass(b(bArrA, qi.n()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	130	                        Class<?> clsLoadClass10 = dexClassLoader.loadClass(b(bArrA, qi.l()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	131	                        Class<?> clsLoadClass11 = dexClassLoader.loadClass(b(bArrA, qi.j()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	134	                            Class<?> clsLoadClass12 = dexClassLoader.loadClass(b(bArrA, qi.v()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/afj.java	137	                                Class<?> clsLoadClass13 = dexClassLoader.loadClass(b(bArrA, qi.h()));
+jadx/sources/com/google/ads/interactivemedia/v3/internal/v.java	16	"    @SuppressLint({""SetJavaScriptEnabled""})"
+jadx/sources/com/google/ads/interactivemedia/v3/internal/v.java	20	            webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/google/ads/interactivemedia/v3/internal/x.java	28	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/google/android/gms/dynamite/zzc.java	3	import dalvik.system.PathClassLoader;
+jadx/sources/com/google/android/gms/dynamite/zzc.java	5	final class zzc extends PathClassLoader {
+jadx/sources/com/google/firebase/crashlytics/ndk/JniNativeApi.java	27	"            System.loadLibrary(""crashlytics"");"
+jadx/sources/com/iab/omid/library/bytedance2/publisher/a.java	7	"    @SuppressLint({""SetJavaScriptEnabled""})"
+jadx/sources/com/iab/omid/library/bytedance2/publisher/a.java	11	            webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/iab/omid/library/bytedance2/publisher/b.java	89	"    @SuppressLint({""SetJavaScriptEnabled""})"
+jadx/sources/com/iab/omid/library/bytedance2/publisher/b.java	93	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/iab/omid/library/bytedance2/publisher/b.java	95	        this.g.getSettings().setAllowFileAccess(false);
+jadx/sources/com/mbridge/msdk/click/m.java	312	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/mbridge/msdk/foundation/webview/BrowserView.java	255	            settings.setJavaScriptEnabled(true);
+jadx/sources/com/mbridge/msdk/foundation/webview/BrowserView.java	258	            settings.setAllowFileAccess(true);
+jadx/sources/com/mbridge/msdk/foundation/webview/BrowserView.java	275	                settings.setAllowFileAccessFromFileURLs(false);
+jadx/sources/com/mbridge/msdk/foundation/webview/BrowserView.java	296	                settings.setAllowFileAccessFromFileURLs(false);
+jadx/sources/com/mbridge/msdk/mbsignalcommon/base/BaseWebView.java	75	        settings.setJavaScriptEnabled(true);
+jadx/sources/com/mbridge/msdk/mbsignalcommon/base/BaseWebView.java	78	        settings.setAllowFileAccess(true);
+jadx/sources/com/mbridge/msdk/mbsignalcommon/base/BaseWebView.java	96	        settings.setAllowFileAccessFromFileURLs(false);
+jadx/sources/com/mbridge/msdk/playercommon/exoplayer2/util/LibraryLoader.java	19	                System.loadLibrary(str);
+jadx/sources/com/mbridge/msdk/thrid/okhttp/Address.java	15	    final CertificatePinner certificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/Address.java	33	    public Address(String str, int i, Dns dns, SocketFactory socketFactory, @Nullable SSLSocketFactory sSLSocketFactory, @Nullable HostnameVerifier hostnameVerifier, @Nullable CertificatePinner certificatePinner, Authenticator authenticator, @Nullable Proxy proxy, List<Protocol> list, List<ConnectionSpec> list2, ProxySelector proxySelector) {
+jadx/sources/com/mbridge/msdk/thrid/okhttp/Address.java	62	        this.certificatePinner = certificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/Address.java	66	    public CertificatePinner certificatePinner() {
+jadx/sources/com/mbridge/msdk/thrid/okhttp/Address.java	67	        return this.certificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/Address.java	89	        return this.dns.equals(address.dns) && this.proxyAuthenticator.equals(address.proxyAuthenticator) && this.protocols.equals(address.protocols) && this.connectionSpecs.equals(address.connectionSpecs) && this.proxySelector.equals(address.proxySelector) && Util.equal(this.proxy, address.proxy) && Util.equal(this.sslSocketFactory, address.sslSocketFactory) && Util.equal(this.hostnameVerifier, address.hostnameVerifier) && Util.equal(this.certificatePinner, address.certificatePinner) && url().port() == address.url().port();
+jadx/sources/com/mbridge/msdk/thrid/okhttp/Address.java	100	        CertificatePinner certificatePinner = this.certificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/Address.java	101	        return iHashCode4 + (certificatePinner != null ? certificatePinner.hashCode() : 0);
+jadx/sources/com/mbridge/msdk/thrid/okhttp/CertificatePinner.java	18	public final class CertificatePinner {
+jadx/sources/com/mbridge/msdk/thrid/okhttp/CertificatePinner.java	19	    public static final CertificatePinner DEFAULT = new Builder().build();
+jadx/sources/com/mbridge/msdk/thrid/okhttp/CertificatePinner.java	38	        public CertificatePinner build() {
+jadx/sources/com/mbridge/msdk/thrid/okhttp/CertificatePinner.java	39	            return new CertificatePinner(new LinkedHashSet(this.pins), null);
+jadx/sources/com/mbridge/msdk/thrid/okhttp/CertificatePinner.java	108	    public CertificatePinner(Set<Pin> set, @Nullable CertificateChainCleaner certificateChainCleaner) {
+jadx/sources/com/mbridge/msdk/thrid/okhttp/CertificatePinner.java	196	        if (obj instanceof CertificatePinner) {
+jadx/sources/com/mbridge/msdk/thrid/okhttp/CertificatePinner.java	197	            CertificatePinner certificatePinner = (CertificatePinner) obj;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/CertificatePinner.java	198	            if (Util.equal(this.certificateChainCleaner, certificatePinner.certificateChainCleaner) && this.pins.equals(certificatePinner.pins)) {
+jadx/sources/com/mbridge/msdk/thrid/okhttp/CertificatePinner.java	223	    public CertificatePinner withCertificateChainCleaner(@Nullable CertificateChainCleaner certificateChainCleaner) {
+jadx/sources/com/mbridge/msdk/thrid/okhttp/CertificatePinner.java	224	        return Util.equal(this.certificateChainCleaner, certificateChainCleaner) ? this : new CertificatePinner(this.pins, certificateChainCleaner);
+jadx/sources/com/mbridge/msdk/thrid/okhttp/OkHttpClient.java	44	    final CertificatePinner certificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/OkHttpClient.java	162	        CertificatePinner certificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/OkHttpClient.java	208	            this.certificatePinner = CertificatePinner.DEFAULT;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/OkHttpClient.java	244	            this.certificatePinner = okHttpClient.certificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/OkHttpClient.java	303	        public Builder certificatePinner(CertificatePinner certificatePinner) {
+jadx/sources/com/mbridge/msdk/thrid/okhttp/OkHttpClient.java	304	            if (certificatePinner == null) {
+jadx/sources/com/mbridge/msdk/thrid/okhttp/OkHttpClient.java	305	"                throw new NullPointerException(""certificatePinner == null"");"
+jadx/sources/com/mbridge/msdk/thrid/okhttp/OkHttpClient.java	307	            this.certificatePinner = certificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/OkHttpClient.java	557	        this.certificatePinner = builder.certificatePinner.withCertificateChainCleaner(this.certificateChainCleaner);
+jadx/sources/com/mbridge/msdk/thrid/okhttp/OkHttpClient.java	601	    public CertificatePinner certificatePinner() {
+jadx/sources/com/mbridge/msdk/thrid/okhttp/OkHttpClient.java	602	        return this.certificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/connection/RealConnection.java	7	import com.mbridge.msdk.thrid.okhttp.CertificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/connection/RealConnection.java	133	                        address.certificatePinner().check(address.url().host(), handshake.peerCertificates());
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/connection/RealConnection.java	148	"                    throw new SSLPeerUnverifiedException(""Hostname "" + address.url().host() + "" not verified:\n    certificate: "" + CertificatePinner.pin(x509Certificate) + ""\n    DN: "" + x509Certificate.getSubjectDN().getName() + ""\n    subjectAltNames: "" + OkHostnameVerifier.allSubjectAltNames(x509Certificate));"
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/connection/RealConnection.java	396	            address.certificatePinner().check(address.url().host(), handshake().peerCertificates());
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/http/RetryAndFollowUpInterceptor.java	6	import com.mbridge.msdk.thrid.okhttp.CertificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/http/RetryAndFollowUpInterceptor.java	48	        CertificatePinner certificatePinner;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/http/RetryAndFollowUpInterceptor.java	52	            certificatePinner = this.client.certificatePinner();
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/http/RetryAndFollowUpInterceptor.java	56	            certificatePinner = null;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/http/RetryAndFollowUpInterceptor.java	58	        return new Address(httpUrl.host(), httpUrl.port(), this.client.dns(), this.client.socketFactory(), sslSocketFactory, hostnameVerifier, certificatePinner, this.client.proxyAuthenticator(), this.client.proxy(), this.client.protocols(), this.client.connectionSpecs(), this.client.proxySelector());
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/platform/AndroidPlatform.java	39	        private final Method checkServerTrusted;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/platform/AndroidPlatform.java	44	            this.checkServerTrusted = method;
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/platform/AndroidPlatform.java	50	"                return (List) this.checkServerTrusted.invoke(this.x509TrustManagerExtensions, (X509Certificate[]) list.toArray(new X509Certificate[list.size()]), ""RSA"", str);"
+jadx/sources/com/mbridge/msdk/thrid/okhttp/internal/platform/AndroidPlatform.java	239	"            return new AndroidCertificateChainCleaner(cls.getConstructor(X509TrustManager.class).newInstance(x509TrustManager), cls.getMethod(""checkServerTrusted"", X509Certificate[].class, String.class, String.class));"
+jadx/sources/com/mopub/common/MoPubBrowser.java	239	        settings.setJavaScriptEnabled(true);
+jadx/sources/com/mopub/mobileads/BaseWebView.java	40	        getSettings().setAllowFileAccess(false);
+jadx/sources/com/mopub/mobileads/BaseWebView.java	42	        getSettings().setAllowFileAccessFromFileURLs(false);
+jadx/sources/com/mopub/mobileads/BaseWebView.java	46	"    @SuppressLint({""SetJavaScriptEnabled""})"
+jadx/sources/com/mopub/mobileads/BaseWebView.java	48	        getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/mopub/mraid/BaseWebView.java	27	        getSettings().setAllowFileAccess(false);
+jadx/sources/com/mopub/mraid/BaseWebView.java	29	        getSettings().setAllowFileAccessFromFileURLs(false);
+jadx/sources/com/mopub/mraid/MraidBridge.java	459	        mraidWebView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/pgl/ssdk/t0.java	181	            System.loadLibrary(str);
+jadx/sources/com/pierfrancescosoffritti/youtubeplayer/YouTubePlayer.java	253	        settings.setJavaScriptEnabled(true);
+jadx/sources/com/pierfrancescosoffritti/youtubeplayer/YouTubePlayer.java	261	"        addJavascriptInterface(new com.pierfrancescosoffritti.youtubeplayer.b(this), ""YouTubePlayerBridge"");"
+jadx/sources/com/sensorsdata/analytics/android/sdk/SensorsDataAPI.java	2222	            webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/sensorsdata/analytics/android/sdk/SensorsDataAPI.java	2223	"            webView.addJavascriptInterface(new AppWebViewInterface(this.mContext, jSONObject, z2, webView), ""SensorsData_APP_JS_Bridge"");"
+jadx/sources/com/sensorsdata/analytics/android/sdk/SensorsDataAPI.java	2256	"            Method method = obj.getClass().getMethod(""addJavascriptInterface"", Object.class, String.class);"
+jadx/sources/com/sensorsdata/analytics/android/sdk/SensorsDataAPI.java	2273	"            Method method = obj.getClass().getMethod(""addJavascriptInterface"", Object.class, String.class);"
+jadx/sources/com/sensorsdata/analytics/android/sdk/SensorsDataAutoTrackHelper.java	293	"                H5Util.addJavascriptInterface(view, new AppWebViewInterface(SensorsDataAPI.sharedInstance().getContext(), null, false, view), ""SensorsData_APP_New_H5_Bridge"");"
+jadx/sources/com/sensorsdata/analytics/android/sdk/advert/oaid/SAOaidHelper.java	32	    private static final List<String> mLoadLibrary = new AnonymousClass2();
+jadx/sources/com/sensorsdata/analytics/android/sdk/advert/oaid/SAOaidHelper.java	220	        Iterator<String> it2 = mLoadLibrary.iterator();
+jadx/sources/com/sensorsdata/analytics/android/sdk/advert/oaid/SAOaidHelper.java	223	                System.loadLibrary(it2.next());
+jadx/sources/com/sensorsdata/analytics/android/sdk/util/H5Util.java	7	    public static void addJavascriptInterface(View view, Object obj, String str) {
+jadx/sources/com/sensorsdata/analytics/android/sdk/util/H5Util.java	13	"                    objInvoke.getClass().getMethod(""setJavaScriptEnabled"", Boolean.TYPE).invoke(objInvoke, Boolean.TRUE);"
+jadx/sources/com/sensorsdata/analytics/android/sdk/util/H5Util.java	17	"            cls.getMethod(""addJavascriptInterface"", Object.class, String.class).invoke(view, obj, str);"
+jadx/sources/com/sensorsdata/analytics/android/sdk/visual/SAVisualProtocolImpl.java	42	"                H5Util.addJavascriptInterface(view, new WebViewVisualInterface(view), ""SensorsData_App_Visual_Bridge"");"
+jadx/sources/com/snaptube/ads/mraid/PlayableAdView.java	114	            webView.getSettings().setJavaScriptEnabled(false);
+jadx/sources/com/snaptube/ads/mraid/PlayableAdView.java	134	            webView2.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/snaptube/ads/mraid/PlayableAdView.java	135	            webView2.getSettings().setAllowFileAccessFromFileURLs(true);
+jadx/sources/com/snaptube/ads/mraid/PlayableAdView.java	137	            webView2.getSettings().setAllowFileAccess(true);
+jadx/sources/com/snaptube/ads/view/AdBanner.java	742	        adWebView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/snaptube/ads/view/AdBanner.java	743	"        adWebView.addJavascriptInterface(this, ""MobiuspaceAd"");"
+jadx/sources/com/snaptube/ads/view/AdWebView.java	14	        getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/snaptube/ads/view/AdWebView.java	54	        settings.setJavaScriptEnabled(false);
+jadx/sources/com/snaptube/ads/view/AdWebView.java	56	        settings.setJavaScriptEnabled(true);
+jadx/sources/com/snaptube/ads/view/BaseAdWebView.java	38	        getSettings().setAllowFileAccess(false);
+jadx/sources/com/snaptube/ads/view/BaseAdWebView.java	40	        getSettings().setAllowFileAccessFromFileURLs(false);
+jadx/sources/com/snaptube/extractor/pluginlib/youtube/potoken/PoTokenWebView.java	274	        settings.setJavaScriptEnabled(true);
+jadx/sources/com/snaptube/extractor/pluginlib/youtube/potoken/PoTokenWebView.java	280	"        webView.addJavascriptInterface(this, ""PoTokenWebView"");"
+jadx/sources/com/snaptube/plugin/PluginId.java	20	import dalvik.system.DexClassLoader;
+jadx/sources/com/snaptube/plugin/PluginId.java	220	"                Class<?> clsLoadClass = new DexClassLoader(file.getAbsolutePath(), file2.getAbsolutePath(), file3.getAbsolutePath(), ClassLoader.getSystemClassLoader()).loadClass(""com.snaptube.ads.infomobi.lib.InfomobiApi"");"
+jadx/sources/com/snaptube/plugin/extension/login/SiteLoginGuideView.java	213	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/snaptube/premium/ffmpegkit/FFmpegKitConfig.java	116	        System.loadLibrary(PluginId.PLUGIN_FFMPEG);
+jadx/sources/com/snaptube/premium/fragment/BaseWebViewFragment.java	157	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/snaptube/premium/hybrid/BuildinHybridImpl.java	25	        getWebView().getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/snaptube/premium/views/VideoEnabledWebView.java	75	"        addJavascriptInterface(new a(), ""_VideoEnabledWebView"");"
+jadx/sources/com/snaptube/premium/views/VideoEnabledWebView.java	120	"    @SuppressLint({""SetJavaScriptEnabled""})"
+jadx/sources/com/snaptube/premium/views/VideoEnabledWebView.java	122	        getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/snaptube/premium/webview/PluginForIndividualVideoSites.java	135	"        webView.addJavascriptInterface(new a(this, null), ""Android"");"
+jadx/sources/com/snaptube/premium/webview/c.java	123	        webView.addJavascriptInterface(lu3Var, lu3Var.f());
+jadx/sources/com/snaptube/search/b.java	19	import dalvik.system.DexClassLoader;
+jadx/sources/com/snaptube/search/b.java	435	        DexClassLoader dexClassLoader = new DexClassLoader(fileM.getAbsolutePath(), file.getAbsolutePath(), file2.getAbsolutePath(), ClassLoader.getSystemClassLoader());
+jadx/sources/com/snaptube/search/b.java	438	        vf9Var.a(this.a, dexClassLoader);
+jadx/sources/com/snaptube/search/b.java	440	        kz5.a(dexClassLoader);
+jadx/sources/com/snaptube/search/view/SearchResultListFragment.java	486	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/snaptube/search/view/SearchResultListFragment.java	489	"        webView.addJavascriptInterface(new e(this, null), ""Android"");"
+jadx/sources/com/snaptube/search/view/SearchResultListFragment.java	630	"            webView.addJavascriptInterface(new e(this, null), ""Android"");"
+jadx/sources/com/snaptube/search/view/SocialLoginPopupFragment.java	529	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/com/snaptube/taskManager/ffmpeg/FFmpegHelper.java	20	        loadLibrary();
+jadx/sources/com/snaptube/taskManager/ffmpeg/FFmpegHelper.java	28	        loadLibrary();
+jadx/sources/com/snaptube/taskManager/ffmpeg/FFmpegHelper.java	36	        loadLibrary();
+jadx/sources/com/snaptube/taskManager/ffmpeg/FFmpegHelper.java	41	        loadLibrary();
+jadx/sources/com/snaptube/taskManager/ffmpeg/FFmpegHelper.java	53	        loadLibrary();
+jadx/sources/com/snaptube/taskManager/ffmpeg/FFmpegHelper.java	61	        loadLibrary();
+jadx/sources/com/snaptube/taskManager/ffmpeg/FFmpegHelper.java	70	        loadLibrary();
+jadx/sources/com/snaptube/taskManager/ffmpeg/FFmpegHelper.java	81	    public static synchronized void loadLibrary() {
+jadx/sources/com/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1.java	9	public final class MetaInfoHelper$downloadLibraryLyric$1 extends Lambda implements dx2 {
+jadx/sources/com/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1.java	10	    public static final MetaInfoHelper$downloadLibraryLyric$1 INSTANCE = new MetaInfoHelper$downloadLibraryLyric$1();
+jadx/sources/com/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1.java	12	    public MetaInfoHelper$downloadLibraryLyric$1() {
+jadx/sources/com/snaptube/taskManager/task/video/MetaInfoHelper.java	637	        rx.c cVarU = N().d(str).U(new os4(MetaInfoHelper$downloadLibraryLyric$1.INSTANCE));
+jadx/sources/com/tencent/matrix/hook/HookManager.java	68	"                        System.loadLibrary(""matrix-hookcommon"");"
+jadx/sources/com/tencent/matrix/hook/HookManager.java	90	                            System.loadLibrary(strA);
+jadx/sources/com/tencent/mmkv/MMKV.java	201	"            System.loadLibrary(""mmkv"");"
+jadx/sources/com/vungle/ads/internal/ui/view/MRAIDAdWidget.java	175	        settings.setJavaScriptEnabled(true);
+jadx/sources/com/vungle/ads/internal/ui/view/MRAIDAdWidget.java	179	        settings.setAllowFileAccess(true);
+jadx/sources/com/vungle/ads/internal/ui/view/MRAIDAdWidget.java	180	        settings.setAllowFileAccessFromFileURLs(true);
+jadx/sources/net/pubnative/library/widget/PubnativeWebView.java	35	        getSettings().setJavaScriptEnabled(true);
+jadx/sources/o/bg5.java	21	import okhttp3.CertificatePinner;
+jadx/sources/o/bg5.java	54	    public final CertificatePinner v;
+jadx/sources/o/bg5.java	87	        public CertificatePinner v;
+jadx/sources/o/bg5.java	114	            this.v = CertificatePinner.d;
+jadx/sources/o/bg5.java	428	        public final CertificatePinner p() {
+jadx/sources/o/bg5.java	538	            this.v = CertificatePinner.d;
+jadx/sources/o/bg5.java	551	                        CertificatePinner certificatePinnerP = aVar.p();
+jadx/sources/o/bg5.java	553	                        this.v = certificatePinnerP.e(tj0VarO);
+jadx/sources/o/bg5.java	565	                        CertificatePinner certificatePinnerP2 = aVar.p();
+jadx/sources/o/bg5.java	567	                        this.v = certificatePinnerP2.e(tj0VarA);
+jadx/sources/o/bg5.java	574	            this.v = CertificatePinner.d;
+jadx/sources/o/bg5.java	665	        if (!or3.a(this.v, CertificatePinner.d)) {
+jadx/sources/o/bg5.java	704	    public final CertificatePinner k() {
+jadx/sources/o/e0.java	53	        settings.setJavaScriptEnabled(true);
+jadx/sources/o/e0.java	54	        settings.setAllowFileAccess(true);
+jadx/sources/o/ej9.java	10	            webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/o/gb0.java	44	"            webView.addJavascriptInterface(new a(webView), ""BlobDownloader"");"
+jadx/sources/o/gr3.java	377	            settings.setJavaScriptEnabled(true);
+jadx/sources/o/gr3.java	380	"            this.d.addJavascriptInterface(new e(this, null), ""YouTubeInspector"");"
+jadx/sources/o/h39.java	234	        settings.setJavaScriptEnabled(true);
+jadx/sources/o/h39.java	237	        settings.setAllowFileAccess(true);
+jadx/sources/o/h39.java	241	"        this.a.addJavascriptInterface(cVar, ""JsCallback"");"
+jadx/sources/o/j24.java	64	                System.loadLibrary(str);
+jadx/sources/o/j24.java	68	"                ProductionEnv.errorLog(""LibraryLoaderHelper"", ""loadLibrarySafety normal way error "", e);"
+jadx/sources/o/j24.java	70	"                    String str3 = ""loadLibrarySafety unpackLibrariesOnce fail lib not exist at"" + fileC.getAbsolutePath();"
+jadx/sources/o/j24.java	79	"                    String str4 = ""loadLibrarySafety in apk fail lib exist at:"" + fileC.getAbsolutePath() + "" lib size:"" + fileC.length();"
+jadx/sources/o/j31.java	139	                Conscrypt.setHostnameVerifier(x509TrustManager, b.a);
+jadx/sources/o/jd.java	10	import okhttp3.CertificatePinner;
+jadx/sources/o/jd.java	17	    public final CertificatePinner e;
+jadx/sources/o/jd.java	25	    public jd(String str, int i, dq1 dq1Var, SocketFactory socketFactory, SSLSocketFactory sSLSocketFactory, HostnameVerifier hostnameVerifier, CertificatePinner certificatePinner, hx hxVar, Proxy proxy, List list, List list2, ProxySelector proxySelector) {
+jadx/sources/o/jd.java	37	        this.e = certificatePinner;
+jadx/sources/o/jd.java	46	    public final CertificatePinner a() {
+jadx/sources/o/jf6.java	22	import okhttp3.CertificatePinner;
+jadx/sources/o/jf6.java	328	        CertificatePinner certificatePinnerK;
+jadx/sources/o/jf6.java	332	            certificatePinnerK = this.a.k();
+jadx/sources/o/jf6.java	336	            certificatePinnerK = null;
+jadx/sources/o/jf6.java	338	        return new jd(c93Var.i(), c93Var.o(), this.a.q(), this.a.H(), sSLSocketFactoryI, hostnameVerifierV, certificatePinnerK, this.a.D(), this.a.C(), this.a.B(), this.a.n(), this.a.E());
+jadx/sources/o/jz5.java	3	import dalvik.system.DexClassLoader;
+jadx/sources/o/jz5.java	5	public class jz5 extends DexClassLoader {
+jadx/sources/o/k24.java	62	                System.loadLibrary(str);
+jadx/sources/o/k24.java	66	"                Log.e(""LibraryLoaderHelper"", ""loadLibrarySafety normal way error "", e);"
+jadx/sources/o/k24.java	68	"                    Log.d(""LibraryLoaderHelper"", ""loadLibrarySafety unpackLibrariesOnce fail "");"
+jadx/sources/o/k24.java	76	"                    Log.e(""LibraryLoaderHelper"", ""loadLibrarySafety in apk fail "", e2);"
+jadx/sources/o/lz5.java	3	import dalvik.system.DexClassLoader;
+jadx/sources/o/lz5.java	5	public class lz5 extends DexClassLoader {
+jadx/sources/o/nj9.java	9	            webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/o/pf.java	79	            this.m.getSettings().setJavaScriptEnabled(true);
+jadx/sources/o/pf9.java	56	"            webView.addJavascriptInterface(new b(), ""VideoPlayTracker"");"
+jadx/sources/o/rj3.java	12	    public void checkServerTrusted(X509Certificate[] x509CertificateArr, String str) {
+jadx/sources/o/uv8.java	246	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/o/uv8.java	251	        webView.getSettings().setAllowFileAccess(true);
+jadx/sources/o/uv8.java	252	        webView.getSettings().setAllowFileAccessFromFileURLs(true);
+jadx/sources/o/vy7.java	8	        System.loadLibrary(str);
+jadx/sources/o/wg.java	54	"            List<X509Certificate> listCheckServerTrusted = this.c.checkServerTrusted((X509Certificate[]) array, ""RSA"", str);"
+jadx/sources/o/wg.java	55	"            or3.e(listCheckServerTrusted, ""x509TrustManagerExtensio…ficates, \""RSA\"", hostname)"");"
+jadx/sources/o/wg.java	56	            return listCheckServerTrusted;
+jadx/sources/o/wj9.java	86	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/o/wj9.java	88	        this.f.getSettings().setAllowFileAccess(false);
+jadx/sources/o/xj9.java	65	        webView.getSettings().setJavaScriptEnabled(true);
+jadx/sources/o/xp3.java	299	    public void setHostnameVerifier(HostnameVerifier hostnameVerifier) {
+jadx/sources/o/xp3.java	300	        this.b.setHostnameVerifier(hostnameVerifier);
+jadx/sources/okhttp3/CertificatePinner$check$1.java	16	public final class CertificatePinner$check$1 extends Lambda implements bx2 {
+jadx/sources/okhttp3/CertificatePinner$check$1.java	19	    final CertificatePinner this$0;
+jadx/sources/okhttp3/CertificatePinner$check$1.java	23	    public CertificatePinner$check$1(CertificatePinner certificatePinner, List<? extends Certificate> list, String str) {
+jadx/sources/okhttp3/CertificatePinner$check$1.java	25	        this.this$0 = certificatePinner;
+jadx/sources/okhttp3/CertificatePinner.java	19	public final class CertificatePinner {
+jadx/sources/okhttp3/CertificatePinner.java	21	    public static final CertificatePinner d = new a().a();
+jadx/sources/okhttp3/CertificatePinner.java	28	        public final CertificatePinner a() {
+jadx/sources/okhttp3/CertificatePinner.java	29	            return new CertificatePinner(CollectionsKt___CollectionsKt.H0(this.a), null, 2, null);
+jadx/sources/okhttp3/CertificatePinner.java	58	    public CertificatePinner(Set set, tj0 tj0Var) {
+jadx/sources/okhttp3/CertificatePinner.java	64	    public CertificatePinner(Set set, tj0 tj0Var, int i, pg1 pg1Var) {
+jadx/sources/okhttp3/CertificatePinner.java	71	        b(str, new CertificatePinner$check$1(this, list, str));
+jadx/sources/okhttp3/CertificatePinner.java	128	    public final CertificatePinner e(tj0 tj0Var) {
+jadx/sources/okhttp3/CertificatePinner.java	130	        return or3.a(this.b, tj0Var) ? this : new CertificatePinner(this.a, tj0Var);
+jadx/sources/okhttp3/CertificatePinner.java	134	        if (obj instanceof CertificatePinner) {
+jadx/sources/okhttp3/CertificatePinner.java	135	            CertificatePinner certificatePinner = (CertificatePinner) obj;
+jadx/sources/okhttp3/CertificatePinner.java	136	            if (or3.a(certificatePinner.a, this.a) && or3.a(certificatePinner.b, this.b)) {
+jadx/sources/okhttp3/internal/connection/RealConnection$connectTls$1.java	11	import okhttp3.CertificatePinner;
+jadx/sources/okhttp3/internal/connection/RealConnection$connectTls$1.java	18	    final CertificatePinner $certificatePinner;
+jadx/sources/okhttp3/internal/connection/RealConnection$connectTls$1.java	22	    public RealConnection$connectTls$1(CertificatePinner certificatePinner, Handshake handshake, jd jdVar) {
+jadx/sources/okhttp3/internal/connection/RealConnection$connectTls$1.java	24	        this.$certificatePinner = certificatePinner;
+jadx/sources/okhttp3/internal/connection/RealConnection$connectTls$1.java	37	        tj0 tj0VarD = this.$certificatePinner.d();
+jadx/sources/okhttp3/internal/connection/RealConnection.java	58	import okhttp3.CertificatePinner;
+jadx/sources/okhttp3/internal/connection/RealConnection.java	415	                    CertificatePinner certificatePinnerA = jdVarA.a();
+jadx/sources/okhttp3/internal/connection/RealConnection.java	416	                    or3.c(certificatePinnerA);
+jadx/sources/okhttp3/internal/connection/RealConnection.java	417	                    this.g = new Handshake(handshakeA.e(), handshakeA.a(), handshakeA.c(), new RealConnection$connectTls$1(certificatePinnerA, handshakeA, jdVarA));
+jadx/sources/okhttp3/internal/connection/RealConnection.java	418	                    certificatePinnerA.b(jdVarA.l().i(), new RealConnection$connectTls$2(this));
+jadx/sources/okhttp3/internal/connection/RealConnection.java	432	"                throw new SSLPeerUnverifiedException(StringsKt__IndentKt.h(""\n              |Hostname "" + jdVarA.l().i() + "" not verified:\n              |    certificate: "" + CertificatePinner.c.a(x509Certificate) + ""\n              |    DN: "" + ((Object) x509Certificate.getSubjectDN().getName()) + ""\n              |    subjectAltNames: "" + zf5.a.a(x509Certificate) + ""\n              "", null, 1, null));"
+jadx/sources/okhttp3/internal/connection/RealConnection.java	580	            CertificatePinner certificatePinnerA = jdVar.a();
+jadx/sources/okhttp3/internal/connection/RealConnection.java	581	            or3.c(certificatePinnerA);
+jadx/sources/okhttp3/internal/connection/RealConnection.java	585	            certificatePinnerA.a(strI, handshake.d());
+jadx/sources/org/chromium/net/CronetEngine.java	30	            public abstract void loadLibrary(String str);
+jadx/sources/org/chromium/support_lib_boundary/ServiceWorkerWebSettingsBoundaryInterface.java	18	    void setAllowFileAccess(boolean z);
+decoded/AndroidManifest.xml	72	"    <application android:allowBackup=""false"" android:appComponentFactory=""androidx.core.app.CoreComponentFactory"" android:hardwareAccelerated=""true"" android:icon=""@mipmap/ic_launcher"" android:label=""@string/app_name"" android:largeHeap=""true"" android:name=""com.snaptube.premium.app.PhoenixApplication"" android:networkSecurityConfig=""@xml/network_security_config"" android:persistent=""true"" android:preserveLegacyExternalStorage=""true"" android:requestLegacyExternalStorage=""true"" android:roundIcon=""@mipmap/ic_launcher_round"" android:supportsRtl=""true"" android:testOnly=""false"" android:theme=""@style/P4.Theme.CustomActionBar"" android:usesCleartextTraffic=""true"" security=""activity"">"
+decoded/smali/com/bykv/vk/openvk/preload/geckox/utils/BsPatch.smali	13	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali/com/bykv/vk/openvk/preload/geckox/utils/FileLock.smali	38	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/EW/XiW.smali	239	"            ""AddJavascriptInterface"""
+decoded/smali/com/bytedance/sdk/component/EW/XiW.smali	287	"            ""AddJavascriptInterface"""
+decoded/smali/com/bytedance/sdk/component/EW/XiW.smali	314	    invoke-virtual {v0, p0, v1}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/adexpress/oA/oA.smali	203	    invoke-virtual {p1, v0}, Lcom/bytedance/sdk/component/seu/Zd;->setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/component/adexpress/oA/oA.smali	405	    invoke-virtual {p1, v0, p3}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/embedapplog/PangleEncryptUtils.smali	14	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/pglcrypt/PglCryptUtils.smali	478	    invoke-static {v1}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/seu/Zd.smali	760	.method private setJavaScriptEnabled(Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/seu/Zd.smali	802	    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/component/seu/Zd.smali	809	    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/component/seu/Zd.smali	906	    invoke-virtual {v0, p1, p2}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/seu/Zd.smali	918	    invoke-direct {p0, p1}, Lcom/bytedance/sdk/component/seu/Zd;->setJavaScriptEnabled(Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/seu/Zd.smali	958	    invoke-direct {p0, p1}, Lcom/bytedance/sdk/component/seu/Zd;->setJavaScriptEnabled(Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/seu/Zd.smali	1190	    invoke-direct {p0, p1}, Lcom/bytedance/sdk/component/seu/Zd;->setJavaScriptEnabled(Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/seu/Zd.smali	1773	.method public setAllowFileAccess(Z)V
+decoded/smali/com/bytedance/sdk/component/seu/Zd.smali	1783	    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali/com/bytedance/sdk/component/seu/Zd.smali	2021	.method public setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/component/seu/Zd.smali	2031	    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/component/seu/lc.smali	89	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali/com/bytedance/sdk/component/seu/lc.smali	160	.method public addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/seu/lc.smali	173	    invoke-super {p0, p1, p2}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/component/seu/lc.smali	184	"    const-string p2, ""addJavascriptInterface: has destroyed or has recycler"""
+decoded/smali/com/bytedance/sdk/openadsdk/Zd/YB.smali	362	    invoke-virtual {v3, p2, v0}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali/com/bytedance/sdk/openadsdk/Zd/YB.smali	373	"    const-string v3, ""addJavascriptInterface exception"""
+decoded/smali/com/bytedance/sdk/openadsdk/activity/TTWebsiteActivity.smali	706	    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/activity/TTWebsiteActivity.smali	712	    invoke-virtual {v0, v6}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/component/reward/EW/du.smali	271	    invoke-virtual {p1, v1}, Lcom/bytedance/sdk/component/seu/Zd;->setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/component/reward/EW/du.smali	281	    invoke-virtual {p1, v0}, Lcom/bytedance/sdk/component/seu/Zd;->setAllowFileAccess(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/core/seu/Zd.smali	196	"            ""SetJavaScriptEnabled"""
+decoded/smali/com/bytedance/sdk/openadsdk/core/seu/Zd.smali	245	    invoke-virtual {p1, v1}, Lcom/bytedance/sdk/component/seu/Zd;->setAllowFileAccess(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/core/seu/Zd.smali	249	    invoke-virtual {p1, v2}, Lcom/bytedance/sdk/component/seu/Zd;->setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/core/seu/fH.smali	215	    invoke-virtual {p1, v2}, Lcom/bytedance/sdk/component/seu/Zd;->setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/core/seu/fH.smali	225	    invoke-virtual {p1, v1}, Lcom/bytedance/sdk/component/seu/Zd;->setAllowFileAccess(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/core/widget/EW/NP.smali	94	    invoke-virtual {p1, v0}, Lcom/bytedance/sdk/component/seu/Zd;->setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/core/widget/EW/NP.smali	104	    invoke-virtual {p1, v1}, Lcom/bytedance/sdk/component/seu/Zd;->setAllowFileAccess(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/core/widget/EW/lc.smali	140	"            ""SetJavaScriptEnabled"""
+decoded/smali/com/bytedance/sdk/openadsdk/core/widget/EW/lc.smali	175	    invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/core/widget/EW/lc.smali	230	    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/du/seu.smali	56	    invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/du/seu.smali	65	"    const-string v4, ""setJavaScriptEnabled error"""
+decoded/smali/com/bytedance/sdk/openadsdk/du/seu.smali	93	    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali/com/bytedance/sdk/openadsdk/du/seu.smali	101	    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
+decoded/smali_classes2/com/dayuwuxian/safebox/ui/login/GoogleLoginWebViewFragment.smali	474	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/com/github/luben/zstd/util/Native$1.smali	10	    value = Lcom/github/luben/zstd/util/Native;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes2/com/github/luben/zstd/util/Native$1.smali	60	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes2/com/github/luben/zstd/util/Native$2.smali	10	    value = Lcom/github/luben/zstd/util/Native;->loadLibraryFile(Ljava/lang/String;)V
+decoded/smali_classes2/com/github/luben/zstd/util/Native.smali	311	    invoke-static {v2}, Lcom/github/luben/zstd/util/Native;->loadLibraryFile(Ljava/lang/String;)V
+decoded/smali_classes2/com/github/luben/zstd/util/Native.smali	336	    invoke-static {v2}, Lcom/github/luben/zstd/util/Native;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes2/com/github/luben/zstd/util/Native.smali	363	    invoke-static {p0}, Lcom/github/luben/zstd/util/Native;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes2/com/github/luben/zstd/util/Native.smali	498	    invoke-static {v4}, Lcom/github/luben/zstd/util/Native;->loadLibraryFile(Ljava/lang/String;)V
+decoded/smali_classes2/com/github/luben/zstd/util/Native.smali	531	    invoke-static {v5}, Lcom/github/luben/zstd/util/Native;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes2/com/github/luben/zstd/util/Native.smali	732	.method private static loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes2/com/github/luben/zstd/util/Native.smali	744	.method private static loadLibraryFile(Ljava/lang/String;)V
+decoded/smali_classes2/com/google/ads/interactivemedia/v3/internal/acx.smali	28	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/com/google/ads/interactivemedia/v3/internal/adz.smali	8	"        ""SetJavaScriptEnabled"","
+decoded/smali_classes2/com/google/ads/interactivemedia/v3/internal/adz.smali	78	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/com/google/ads/interactivemedia/v3/internal/afj.smali	419	    new-instance v5, Ldalvik/system/DexClassLoader;
+decoded/smali_classes2/com/google/ads/interactivemedia/v3/internal/afj.smali	433	    invoke-direct {v5, v9, v10, v4, v7}, Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V
+decoded/smali_classes2/com/google/ads/interactivemedia/v3/internal/v.smali	36	"            ""SetJavaScriptEnabled"""
+decoded/smali_classes2/com/google/ads/interactivemedia/v3/internal/v.smali	60	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/com/google/ads/interactivemedia/v3/internal/x.smali	79	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/com/google/android/gms/dynamite/zzc.smali	2	.super Ldalvik/system/PathClassLoader;
+decoded/smali_classes2/com/google/android/gms/dynamite/zzc.smali	9	    invoke-direct {p0, p1, p2}, Ldalvik/system/PathClassLoader;-><init>(Ljava/lang/String;Ljava/lang/ClassLoader;)V
+decoded/smali_classes2/com/google/android/gms/dynamite/zzc.smali	51	    invoke-super {p0, p1, p2}, Ldalvik/system/PathClassLoader;->loadClass(Ljava/lang/String;Z)Ljava/lang/Class;
+decoded/smali_classes2/com/google/firebase/crashlytics/ndk/JniNativeApi.smali	31	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes2/com/iab/omid/library/bytedance2/publisher/a.smali	10	"            ""SetJavaScriptEnabled"""
+decoded/smali_classes2/com/iab/omid/library/bytedance2/publisher/a.smali	34	    invoke-virtual {p1, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/com/iab/omid/library/bytedance2/publisher/b.smali	191	"            ""SetJavaScriptEnabled"""
+decoded/smali_classes2/com/iab/omid/library/bytedance2/publisher/b.smali	215	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/com/iab/omid/library/bytedance2/publisher/b.smali	233	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes2/com/mbridge/msdk/click/m.smali	208	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/o/e0.smali	159	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/o/e0.smali	161	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes2/o/ej9.smali	29	    invoke-virtual {p1, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/o/nj9.smali	29	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/o/vy7.smali	22	    invoke-static {p1}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes2/o/wj9.smali	189	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/o/wj9.smali	207	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes2/o/xj9.smali	189	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes2/o/xp3.smali	672	.method public setHostnameVerifier(Ljavax/net/ssl/HostnameVerifier;)V
+decoded/smali_classes2/o/xp3.smali	677	    invoke-virtual {v0, p1}, Ljavax/net/ssl/HttpsURLConnection;->setHostnameVerifier(Ljavax/net/ssl/HostnameVerifier;)V
+decoded/smali_classes3/com/mbridge/msdk/foundation/webview/BrowserView.smali	82	    invoke-virtual {v4, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/mbridge/msdk/foundation/webview/BrowserView.smali	90	    invoke-virtual {v4, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes3/com/mbridge/msdk/foundation/webview/BrowserView.smali	148	    invoke-virtual {v4, v0}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
+decoded/smali_classes3/com/mbridge/msdk/mbsignalcommon/base/BaseWebView.smali	124	    invoke-virtual {v3, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/mbridge/msdk/mbsignalcommon/base/BaseWebView.smali	132	    invoke-virtual {v3, v0}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes3/com/mbridge/msdk/mbsignalcommon/base/BaseWebView.smali	180	    invoke-virtual {v3, v1}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
+decoded/smali_classes3/com/mbridge/msdk/playercommon/exoplayer2/util/LibraryLoader.smali	69	    invoke-static {v4}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/Address.smali	6	.field final certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/Address.smali	58	.method public constructor <init>(Ljava/lang/String;ILcom/mbridge/msdk/thrid/okhttp/Dns;Ljavax/net/SocketFactory;Ljavax/net/ssl/SSLSocketFactory;Ljavax/net/ssl/HostnameVerifier;Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;Lcom/mbridge/msdk/thrid/okhttp/Authenticator;Ljava/net/Proxy;Ljava/util/List;Ljava/util/List;Ljava/net/ProxySelector;)V
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/Address.smali	68	    .param p7    # Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/Address.smali	85	"            ""Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;"","
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/Address.smali	171	    iput-object p7, p0, Lcom/mbridge/msdk/thrid/okhttp/Address;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/Address.smali	232	.method public certificatePinner()Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/Address.smali	237	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/Address;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/Address.smali	389	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/Address;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/Address.smali	391	    iget-object v1, p1, Lcom/mbridge/msdk/thrid/okhttp/Address;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/Address.smali	549	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/Address;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/Address.smali	553	    invoke-virtual {v0}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->hashCode()I
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	1	.class public final Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	7	    value = Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	21	"            ""Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;"","
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	38	    iput-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder;->pins:Ljava/util/List;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	45	.method public varargs add(Ljava/lang/String;[Ljava/lang/String;)Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	59	    iget-object v3, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder;->pins:Ljava/util/List;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	61	    new-instance v4, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	63	    invoke-direct {v4, p1, v2}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	84	.method public build()Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	87	    new-instance v0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	91	    iget-object v2, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder;->pins:Ljava/util/List;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder.smali	97	    invoke-direct {v0, v1, v2}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;-><init>(Ljava/util/Set;Lcom/mbridge/msdk/thrid/okhttp/internal/tls/CertificateChainCleaner;)V
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	1	.class final Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	7	    value = Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	36	    iput-object p1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->pattern:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	98	    iput-object p1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->canonicalHostname:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	108	    iput-object p1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	120	    iput-object p1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hash:Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	133	    iput-object p1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	145	    iput-object p1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hash:Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	148	    iget-object p1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hash:Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	202	    instance-of v0, p1, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	206	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->pattern:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	208	    check-cast p1, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	210	    iget-object v1, p1, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->pattern:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	218	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	220	    iget-object v1, p1, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	228	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hash:Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	230	    iget-object p1, p1, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hash:Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	252	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->pattern:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	264	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	274	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hash:Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	288	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->pattern:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	314	    iget-object v3, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->canonicalHostname:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	324	    iget-object v7, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->canonicalHostname:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	351	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->canonicalHostname:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	367	    iget-object v1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin.smali	371	    iget-object v1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hash:Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	1	.class public final Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	8	        Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder;,
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	9	        Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	15	.field public static final DEFAULT:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	28	"            ""Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;"","
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	39	    new-instance v0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	41	    invoke-direct {v0}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder;-><init>()V
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	43	    invoke-virtual {v0}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Builder;->build()Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	47	    sput-object v0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->DEFAULT:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	62	"            ""Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;"","
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	71	    iput-object p1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->pins:Ljava/util/Set;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	73	    iput-object p2, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->certificateChainCleaner:Lcom/mbridge/msdk/thrid/okhttp/internal/tls/CertificateChainCleaner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	95	    invoke-static {p0}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->sha256(Ljava/security/cert/X509Certificate;)Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	185	    invoke-virtual {p0, p1}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->findMatchingPins(Ljava/lang/String;)Ljava/util/List;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	198	    iget-object v1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->certificateChainCleaner:Lcom/mbridge/msdk/thrid/okhttp/internal/tls/CertificateChainCleaner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	241	    check-cast v9, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	243	    iget-object v10, v9, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	255	    invoke-static {v4}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->sha256(Ljava/security/cert/X509Certificate;)Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	260	    iget-object v9, v9, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hash:Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	271	    iget-object v10, v9, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	283	    invoke-static {v4}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->sha1(Ljava/security/cert/X509Certificate;)Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	288	    iget-object v9, v9, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hash:Lcom/mbridge/msdk/thrid/okio/ByteString;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	314	    iget-object v0, v9, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	363	    invoke-static {v6}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->pin(Ljava/security/cert/Certificate;)Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	409	    check-cast p2, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	443	    invoke-virtual {p0, p1, p2}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->check(Ljava/lang/String;Ljava/util/List;)V
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	462	    instance-of v1, p1, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	466	    iget-object v1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->certificateChainCleaner:Lcom/mbridge/msdk/thrid/okhttp/internal/tls/CertificateChainCleaner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	468	    check-cast p1, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	470	    iget-object v2, p1, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->certificateChainCleaner:Lcom/mbridge/msdk/thrid/okhttp/internal/tls/CertificateChainCleaner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	478	    iget-object v1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->pins:Ljava/util/Set;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	480	    iget-object p1, p1, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->pins:Ljava/util/Set;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	505	"            ""Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;"","
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	514	    iget-object v1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->pins:Ljava/util/Set;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	532	    check-cast v2, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	534	    invoke-virtual {v2, p1}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner$Pin;->matches(Ljava/lang/String;)Z
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	562	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->certificateChainCleaner:Lcom/mbridge/msdk/thrid/okhttp/internal/tls/CertificateChainCleaner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	578	    iget-object v1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->pins:Ljava/util/Set;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	589	.method public withCertificateChainCleaner(Lcom/mbridge/msdk/thrid/okhttp/internal/tls/CertificateChainCleaner;)Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	596	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->certificateChainCleaner:Lcom/mbridge/msdk/thrid/okhttp/internal/tls/CertificateChainCleaner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	609	    new-instance v0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	611	    iget-object v1, p0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->pins:Ljava/util/Set;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/CertificatePinner.smali	613	    invoke-direct {v0, v1, p1}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;-><init>(Ljava/util/Set;Lcom/mbridge/msdk/thrid/okhttp/internal/tls/CertificateChainCleaner;)V
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder.smali	31	.field certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder.smali	190	    sget-object v0, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->DEFAULT:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder.smali	192	    iput-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder.smali	312	    iget-object v0, p1, Lcom/mbridge/msdk/thrid/okhttp/OkHttpClient;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder.smali	314	    iput-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder.smali	490	.method public certificatePinner(Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;)Lcom/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder.smali	495	    iput-object p1, p0, Lcom/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder.smali	502	"    const-string v0, ""certificatePinner == null"""
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient.smali	52	.field final certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient.smali	352	    iget-object v0, p1, Lcom/mbridge/msdk/thrid/okhttp/OkHttpClient$Builder;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient.smali	356	    invoke-virtual {v0, v1}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->withCertificateChainCleaner(Lcom/mbridge/msdk/thrid/okhttp/internal/tls/CertificateChainCleaner;)Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient.smali	360	    iput-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/OkHttpClient;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient.smali	549	.method public certificatePinner()Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/OkHttpClient.smali	552	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/OkHttpClient;->certificatePinner:Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/internal/connection/RealConnection.smali	424	    invoke-static {p1}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->pin(Ljava/security/cert/Certificate;)Ljava/lang/String;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/internal/connection/RealConnection.smali	494	    invoke-virtual {v0}, Lcom/mbridge/msdk/thrid/okhttp/Address;->certificatePinner()Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/internal/connection/RealConnection.smali	510	    invoke-virtual {v3, v0, v5}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->check(Ljava/lang/String;Ljava/util/List;)V
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/internal/connection/RealConnection.smali	1816	    invoke-virtual {p1}, Lcom/mbridge/msdk/thrid/okhttp/Address;->certificatePinner()Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/internal/connection/RealConnection.smali	1836	    invoke-virtual {p2, p1, v0}, Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;->check(Ljava/lang/String;Ljava/util/List;)V
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/internal/http/RetryAndFollowUpInterceptor.smali	60	    invoke-virtual {v2}, Lcom/mbridge/msdk/thrid/okhttp/OkHttpClient;->certificatePinner()Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/internal/http/RetryAndFollowUpInterceptor.smali	136	    invoke-direct/range {v1 .. v13}, Lcom/mbridge/msdk/thrid/okhttp/Address;-><init>(Ljava/lang/String;ILcom/mbridge/msdk/thrid/okhttp/Dns;Ljavax/net/SocketFactory;Ljavax/net/ssl/SSLSocketFactory;Ljavax/net/ssl/HostnameVerifier;Lcom/mbridge/msdk/thrid/okhttp/CertificatePinner;Lcom/mbridge/msdk/thrid/okhttp/Authenticator;Ljava/net/Proxy;Ljava/util/List;Ljava/util/List;Ljava/net/ProxySelector;)V
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/internal/platform/AndroidPlatform$AndroidCertificateChainCleaner.smali	17	.field private final checkServerTrusted:Ljava/lang/reflect/Method;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/internal/platform/AndroidPlatform$AndroidCertificateChainCleaner.smali	30	    iput-object p2, p0, Lcom/mbridge/msdk/thrid/okhttp/internal/platform/AndroidPlatform$AndroidCertificateChainCleaner;->checkServerTrusted:Ljava/lang/reflect/Method;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/internal/platform/AndroidPlatform$AndroidCertificateChainCleaner.smali	72	    iget-object v0, p0, Lcom/mbridge/msdk/thrid/okhttp/internal/platform/AndroidPlatform$AndroidCertificateChainCleaner;->checkServerTrusted:Ljava/lang/reflect/Method;
+decoded/smali_classes3/com/mbridge/msdk/thrid/okhttp/internal/platform/AndroidPlatform.smali	430	"    const-string v4, ""checkServerTrusted"""
+decoded/smali_classes3/com/mopub/common/MoPubBrowser.smali	424	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/mopub/mobileads/BaseWebView.smali	88	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes3/com/mopub/mobileads/BaseWebView.smali	100	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
+decoded/smali_classes3/com/mopub/mobileads/BaseWebView.smali	115	"            ""SetJavaScriptEnabled"""
+decoded/smali_classes3/com/mopub/mobileads/BaseWebView.smali	125	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/mopub/mraid/BaseWebView.smali	68	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes3/com/mopub/mraid/BaseWebView.smali	80	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
+decoded/smali_classes3/com/mopub/mraid/MraidBridge.smali	677	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/pgl/ssdk/t0.smali	545	    invoke-static {p1}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes3/com/pierfrancescosoffritti/youtubeplayer/YouTubePlayer.smali	191	    invoke-virtual {p1, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/pierfrancescosoffritti/youtubeplayer/YouTubePlayer.smali	227	    invoke-virtual {p0, p1, v0}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/SensorsDataAPI.smali	4174	    invoke-virtual {p3, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/SensorsDataAPI.smali	4184	    invoke-virtual {p1, p3, p2}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/SensorsDataAPI.smali	4255	"    const-string v3, ""addJavascriptInterface"""
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/SensorsDataAPI.smali	4328	"    const-string v4, ""addJavascriptInterface"""
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/SensorsDataAutoTrackHelper.smali	549	    invoke-static {p0, v0, v1}, Lcom/sensorsdata/analytics/android/sdk/util/H5Util;->addJavascriptInterface(Landroid/view/View;Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/advert/oaid/SAOaidHelper.smali	55	.field private static final mLoadLibrary:Ljava/util/List;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/advert/oaid/SAOaidHelper.smali	93	    sput-object v0, Lcom/sensorsdata/analytics/android/sdk/advert/oaid/SAOaidHelper;->mLoadLibrary:Ljava/util/List;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/advert/oaid/SAOaidHelper.smali	742	    sget-object v0, Lcom/sensorsdata/analytics/android/sdk/advert/oaid/SAOaidHelper;->mLoadLibrary:Ljava/util/List;
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/advert/oaid/SAOaidHelper.smali	762	    invoke-static {v1}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/util/H5Util.smali	14	.method public static addJavascriptInterface(Landroid/view/View;Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/util/H5Util.smali	49	"    const-string v6, ""setJavaScriptEnabled"""
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/util/H5Util.smali	74	"    const-string v4, ""addJavascriptInterface"""
+decoded/smali_classes3/com/sensorsdata/analytics/android/sdk/visual/SAVisualProtocolImpl.smali	58	    invoke-static {p1, v0, v1}, Lcom/sensorsdata/analytics/android/sdk/util/H5Util;->addJavascriptInterface(Landroid/view/View;Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes3/com/snaptube/ads/mraid/PlayableAdView.smali	241	    invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/snaptube/ads/mraid/PlayableAdView.smali	312	    invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/snaptube/ads/mraid/PlayableAdView.smali	318	    invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
+decoded/smali_classes3/com/snaptube/ads/mraid/PlayableAdView.smali	330	    invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes3/com/snaptube/ads/view/AdBanner.smali	1181	    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/snaptube/ads/view/AdBanner.smali	1185	    invoke-virtual {v0, p0, v1}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes3/com/snaptube/ads/view/AdWebView.smali	19	    invoke-virtual {p1, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/snaptube/ads/view/AdWebView.smali	169	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/snaptube/ads/view/AdWebView.smali	175	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/snaptube/ads/view/BaseAdWebView.smali	113	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes3/com/snaptube/ads/view/BaseAdWebView.smali	125	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
+decoded/smali_classes3/com/snaptube/extractor/pluginlib/youtube/potoken/PoTokenWebView.smali	96	    invoke-virtual {p1, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/com/snaptube/extractor/pluginlib/youtube/potoken/PoTokenWebView.smali	117	    invoke-virtual {v0, p0, p1}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes3/com/snaptube/plugin/PluginId$5.smali	82	    new-instance v2, Ldalvik/system/DexClassLoader;
+decoded/smali_classes3/com/snaptube/plugin/PluginId$5.smali	100	    invoke-direct {v2, p1, v0, v1, v3}, Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V
+decoded/smali_classes3/com/snaptube/plugin/extension/login/SiteLoginGuideView.smali	295	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/o/gr3.smali	1352	    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/o/gr3.smali	1382	    invoke-virtual {v0, v2, v1}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes3/o/h39.smali	605	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes3/o/h39.smali	619	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes3/o/h39.smali	655	    invoke-virtual {v1, v0, v2}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes3/o/lz5.smali	2	.super Ldalvik/system/DexClassLoader;
+decoded/smali_classes3/o/lz5.smali	15	    invoke-direct {p0, p1, p2, p3, p4}, Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V
+decoded/smali_classes3/o/lz5.smali	40	    invoke-super {p0, p1}, Ldalvik/system/DexClassLoader;->findClass(Ljava/lang/String;)Ljava/lang/Class;
+decoded/smali_classes4/com/snaptube/premium/ffmpegkit/FFmpegKitConfig.smali	35	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes4/com/snaptube/premium/fragment/BaseWebViewFragment.smali	162	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes4/com/snaptube/premium/hybrid/BuildinHybridImpl.smali	75	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes4/com/snaptube/premium/views/VideoEnabledWebView.smali	95	    invoke-virtual {p0, v0, v1}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes4/com/snaptube/premium/views/VideoEnabledWebView.smali	196	"            ""SetJavaScriptEnabled"""
+decoded/smali_classes4/com/snaptube/premium/views/VideoEnabledWebView.smali	206	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes4/com/snaptube/premium/webview/PluginForIndividualVideoSites.smali	137	    invoke-virtual {p2, p1, v0}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes4/com/snaptube/premium/webview/c.smali	313	    invoke-virtual {p2, p1, v0}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes4/com/snaptube/search/b.smali	1365	    new-instance v1, Ldalvik/system/DexClassLoader;
+decoded/smali_classes4/com/snaptube/search/b.smali	1383	    invoke-direct {v1, v4, v2, v3, v5}, Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V
+decoded/smali_classes4/com/snaptube/search/view/SearchResultListFragment.smali	913	    invoke-virtual {p2, p3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes4/com/snaptube/search/view/SearchResultListFragment.smali	935	    invoke-virtual {p1, p2, p3}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes4/com/snaptube/search/view/SearchResultListFragment.smali	1495	    invoke-virtual {p1, p2, v0}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes4/com/snaptube/search/view/SocialLoginPopupFragment.smali	1076	    invoke-virtual {p2, p3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes4/com/snaptube/taskManager/ffmpeg/FFmpegHelper.smali	61	    invoke-static {}, Lcom/snaptube/taskManager/ffmpeg/FFmpegHelper;->loadLibrary()V
+decoded/smali_classes4/com/snaptube/taskManager/ffmpeg/FFmpegHelper.smali	82	    invoke-static {}, Lcom/snaptube/taskManager/ffmpeg/FFmpegHelper;->loadLibrary()V
+decoded/smali_classes4/com/snaptube/taskManager/ffmpeg/FFmpegHelper.smali	103	    invoke-static {}, Lcom/snaptube/taskManager/ffmpeg/FFmpegHelper;->loadLibrary()V
+decoded/smali_classes4/com/snaptube/taskManager/ffmpeg/FFmpegHelper.smali	124	    invoke-static {}, Lcom/snaptube/taskManager/ffmpeg/FFmpegHelper;->loadLibrary()V
+decoded/smali_classes4/com/snaptube/taskManager/ffmpeg/FFmpegHelper.smali	162	    invoke-static {}, Lcom/snaptube/taskManager/ffmpeg/FFmpegHelper;->loadLibrary()V
+decoded/smali_classes4/com/snaptube/taskManager/ffmpeg/FFmpegHelper.smali	183	    invoke-static {}, Lcom/snaptube/taskManager/ffmpeg/FFmpegHelper;->loadLibrary()V
+decoded/smali_classes4/com/snaptube/taskManager/ffmpeg/FFmpegHelper.smali	216	    invoke-static {}, Lcom/snaptube/taskManager/ffmpeg/FFmpegHelper;->loadLibrary()V
+decoded/smali_classes4/com/snaptube/taskManager/ffmpeg/FFmpegHelper.smali	240	.method public static declared-synchronized loadLibrary()V
+decoded/smali_classes4/com/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1.smali	1	.class final Lcom/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1;
+decoded/smali_classes4/com/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1.smali	48	.field public static final INSTANCE:Lcom/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1;
+decoded/smali_classes4/com/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1.smali	55	    new-instance v0, Lcom/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1;
+decoded/smali_classes4/com/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1.smali	57	    invoke-direct {v0}, Lcom/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1;-><init>()V
+decoded/smali_classes4/com/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1.smali	59	    sput-object v0, Lcom/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1;->INSTANCE:Lcom/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1;
+decoded/smali_classes4/com/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1.smali	81	    invoke-virtual {p0, p1}, Lcom/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1;->invoke(Lo/zm6;)Ljava/lang/String;
+decoded/smali_classes4/com/snaptube/taskManager/task/video/MetaInfoHelper.smali	1768	    sget-object v0, Lcom/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1;->INSTANCE:Lcom/snaptube/taskManager/task/video/MetaInfoHelper$downloadLibraryLyric$1;
+decoded/smali_classes4/com/tencent/matrix/hook/HookManager.smali	279	    invoke-static {v1}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes4/com/tencent/matrix/hook/HookManager.smali	392	    invoke-static {v3}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes4/com/tencent/mmkv/MMKV.smali	512	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes4/com/vungle/ads/internal/ui/view/MRAIDAdWidget.smali	262	    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes4/com/vungle/ads/internal/ui/view/MRAIDAdWidget.smali	270	    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes4/com/vungle/ads/internal/ui/view/MRAIDAdWidget.smali	272	    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
+decoded/smali_classes4/o/gb0$b.smali	64	    invoke-virtual {p1, v0, v1}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes4/o/j24.smali	227	    invoke-static {p1}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes4/o/j24.smali	251	"    const-string v5, ""loadLibrarySafety normal way error """
+decoded/smali_classes4/o/j24.smali	274	"    const-string p1, ""loadLibrarySafety unpackLibrariesOnce fail lib not exist at"""
+decoded/smali_classes4/o/j24.smali	328	"    const-string v3, ""loadLibrarySafety in apk fail lib exist at:"""
+decoded/smali_classes4/o/jz5.smali	2	.super Ldalvik/system/DexClassLoader;
+decoded/smali_classes4/o/jz5.smali	15	    invoke-direct {p0, p1, p2, p3, p4}, Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V
+decoded/smali_classes4/o/jz5.smali	38	    invoke-super {p0, p1}, Ldalvik/system/DexClassLoader;->findClass(Ljava/lang/String;)Ljava/lang/Class;
+decoded/smali_classes4/o/k24.smali	227	    invoke-static {p1}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes4/o/k24.smali	251	"    const-string v5, ""loadLibrarySafety normal way error """
+decoded/smali_classes4/o/k24.smali	271	"    const-string p1, ""loadLibrarySafety unpackLibrariesOnce fail """
+decoded/smali_classes4/o/k24.smali	306	"    const-string v1, ""loadLibrarySafety in apk fail """
+decoded/smali_classes4/o/pf.smali	168	    invoke-virtual {v2, v4}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes4/o/pf9.smali	84	    invoke-virtual {p2, p1, v0}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+decoded/smali_classes4/o/rj3.smali	25	.method public checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+decoded/smali_classes4/o/uv8.smali	372	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes4/o/uv8.smali	402	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+decoded/smali_classes4/o/uv8.smali	408	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
+decoded/smali_classes5/com/google/LaunchApp.smali	600	    invoke-static {p1}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes5/net/pubnative/library/widget/PubnativeWebView.smali	96	    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+decoded/smali_classes5/o/bg5$a.smali	67	.field public v:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5$a.smali	166	    sget-object v0, Lokhttp3/CertificatePinner;->d:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5$a.smali	168	    iput-object v0, p0, Lo/bg5$a;->v:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5$a.smali	324	    invoke-virtual {p1}, Lo/bg5;->k()Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5$a.smali	328	    iput-object v0, p0, Lo/bg5$a;->v:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5$a.smali	1127	.method public final p()Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5$a.smali	1130	    iget-object v0, p0, Lo/bg5$a;->v:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	77	.field public final v:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	421	    invoke-virtual {p1}, Lo/bg5$a;->p()Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	427	    invoke-virtual {p1, v0}, Lokhttp3/CertificatePinner;->e(Lo/tj0;)Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	431	    iput-object p1, p0, Lo/bg5;->v:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	470	    invoke-virtual {p1}, Lo/bg5$a;->p()Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	476	    invoke-virtual {p1, v0}, Lokhttp3/CertificatePinner;->e(Lo/tj0;)Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	480	    iput-object p1, p0, Lo/bg5;->v:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	494	    sget-object p1, Lokhttp3/CertificatePinner;->d:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	496	    iput-object p1, p0, Lo/bg5;->v:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	745	    iget-object v0, p0, Lo/bg5;->v:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	747	    sget-object v2, Lokhttp3/CertificatePinner;->d:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	919	.method public final k()Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/bg5.smali	922	    iget-object v0, p0, Lo/bg5;->v:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/j31.smali	297	    invoke-static {v1, v0}, Lorg/conscrypt/Conscrypt;->setHostnameVerifier(Ljavax/net/ssl/TrustManager;Lorg/conscrypt/ConscryptHostnameVerifier;)V
+decoded/smali_classes5/o/jd.smali	14	.field public final e:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/jd.smali	30	.method public constructor <init>(Ljava/lang/String;ILo/dq1;Ljavax/net/SocketFactory;Ljavax/net/ssl/SSLSocketFactory;Ljavax/net/ssl/HostnameVerifier;Lokhttp3/CertificatePinner;Lo/hx;Ljava/net/Proxy;Ljava/util/List;Ljava/util/List;Ljava/net/ProxySelector;)V
+decoded/smali_classes5/o/jd.smali	71	    iput-object p7, p0, Lo/jd;->e:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/jd.smali	128	.method public final a()Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/jd.smali	131	    iget-object v0, p0, Lo/jd;->e:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/jd.smali	239	    iget-object v0, p0, Lo/jd;->e:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/jd.smali	241	    iget-object v1, p1, Lo/jd;->e:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/jd.smali	437	    iget-object v0, p0, Lo/jd;->e:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/jf6.smali	778	    invoke-virtual {v2}, Lo/bg5;->k()Lokhttp3/CertificatePinner;
+decoded/smali_classes5/o/jf6.smali	854	    invoke-direct/range {v1 .. v13}, Lo/jd;-><init>(Ljava/lang/String;ILo/dq1;Ljavax/net/SocketFactory;Ljavax/net/ssl/SSLSocketFactory;Ljavax/net/ssl/HostnameVerifier;Lokhttp3/CertificatePinner;Lo/hx;Ljava/net/Proxy;Ljava/util/List;Ljava/util/List;Ljava/net/ProxySelector;)V
+decoded/smali_classes5/o/wg.smali	88	    invoke-virtual {v0, p1, v1, p2}, Landroid/net/http/X509TrustManagerExtensions;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
+decoded/smali_classes5/okhttp3/CertificatePinner$a.smali	1	.class public final Lokhttp3/CertificatePinner$a;
+decoded/smali_classes5/okhttp3/CertificatePinner$a.smali	7	    value = Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner$a.smali	30	    iput-object v0, p0, Lokhttp3/CertificatePinner$a;->a:Ljava/util/List;
+decoded/smali_classes5/okhttp3/CertificatePinner$a.smali	37	.method public final a()Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner$a.smali	40	    new-instance v0, Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner$a.smali	42	    iget-object v1, p0, Lokhttp3/CertificatePinner$a;->a:Ljava/util/List;
+decoded/smali_classes5/okhttp3/CertificatePinner$a.smali	52	    invoke-direct {v0, v1, v2, v3, v2}, Lokhttp3/CertificatePinner;-><init>(Ljava/util/Set;Lo/tj0;ILo/pg1;)V
+decoded/smali_classes5/okhttp3/CertificatePinner$b.smali	1	.class public final Lokhttp3/CertificatePinner$b;
+decoded/smali_classes5/okhttp3/CertificatePinner$b.smali	7	    value = Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner$b.smali	28	    invoke-direct {p0}, Lokhttp3/CertificatePinner$b;-><init>()V
+decoded/smali_classes5/okhttp3/CertificatePinner$b.smali	48	    invoke-virtual {p0, p1}, Lokhttp3/CertificatePinner$b;->b(Ljava/security/cert/X509Certificate;)Lokio/ByteString;
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	1	.class final Lokhttp3/CertificatePinner$check$1;
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	10	    value = Lokhttp3/CertificatePinner;->a(Ljava/lang/String;Ljava/util/List;)V
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	58	.field final synthetic this$0:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	62	.method public constructor <init>(Lokhttp3/CertificatePinner;Ljava/util/List;Ljava/lang/String;)V
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	67	"            ""Lokhttp3/CertificatePinner;"","
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	77	    iput-object p1, p0, Lokhttp3/CertificatePinner$check$1;->this$0:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	79	    iput-object p2, p0, Lokhttp3/CertificatePinner$check$1;->$peerCertificates:Ljava/util/List;
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	81	    iput-object p3, p0, Lokhttp3/CertificatePinner$check$1;->$hostname:Ljava/lang/String;
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	95	    invoke-virtual {p0}, Lokhttp3/CertificatePinner$check$1;->invoke()Ljava/util/List;
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	116	    iget-object v0, p0, Lokhttp3/CertificatePinner$check$1;->this$0:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	118	    invoke-virtual {v0}, Lokhttp3/CertificatePinner;->d()Lo/tj0;
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	129	    iget-object v1, p0, Lokhttp3/CertificatePinner$check$1;->$peerCertificates:Ljava/util/List;
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	131	    iget-object v2, p0, Lokhttp3/CertificatePinner$check$1;->$hostname:Ljava/lang/String;
+decoded/smali_classes5/okhttp3/CertificatePinner$check$1.smali	140	    iget-object v0, p0, Lokhttp3/CertificatePinner$check$1;->$peerCertificates:Ljava/util/List;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	1	.class public final Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	8	        Lokhttp3/CertificatePinner$a;,
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	9	        Lokhttp3/CertificatePinner$b;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	15	.field public static final c:Lokhttp3/CertificatePinner$b;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	17	.field public static final d:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	30	    new-instance v0, Lokhttp3/CertificatePinner$b;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	34	    invoke-direct {v0, v1}, Lokhttp3/CertificatePinner$b;-><init>(Lo/pg1;)V
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	36	    sput-object v0, Lokhttp3/CertificatePinner;->c:Lokhttp3/CertificatePinner$b;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	38	    new-instance v0, Lokhttp3/CertificatePinner$a;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	40	    invoke-direct {v0}, Lokhttp3/CertificatePinner$a;-><init>()V
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	42	    invoke-virtual {v0}, Lokhttp3/CertificatePinner$a;->a()Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	46	    sput-object v0, Lokhttp3/CertificatePinner;->d:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	60	    iput-object p1, p0, Lokhttp3/CertificatePinner;->a:Ljava/util/Set;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	62	    iput-object p2, p0, Lokhttp3/CertificatePinner;->b:Lo/tj0;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	77	    invoke-direct {p0, p1, p2}, Lokhttp3/CertificatePinner;-><init>(Ljava/util/Set;Lo/tj0;)V
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	95	    new-instance v0, Lokhttp3/CertificatePinner$check$1;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	97	    invoke-direct {v0, p0, p2, p1}, Lokhttp3/CertificatePinner$check$1;-><init>(Lokhttp3/CertificatePinner;Ljava/util/List;Ljava/lang/String;)V
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	99	    invoke-virtual {p0, p1, v0}, Lokhttp3/CertificatePinner;->b(Ljava/lang/String;Lo/bx2;)V
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	115	    invoke-virtual {p0, p1}, Lokhttp3/CertificatePinner;->c(Ljava/lang/String;)Ljava/util/List;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	208	    sget-object v4, Lokhttp3/CertificatePinner;->c:Lokhttp3/CertificatePinner$b;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	210	    invoke-virtual {v4, v2}, Lokhttp3/CertificatePinner$b;->a(Ljava/security/cert/Certificate;)Ljava/lang/String;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	289	    iget-object p1, p0, Lokhttp3/CertificatePinner;->a:Ljava/util/Set;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	322	    iget-object v0, p0, Lokhttp3/CertificatePinner;->b:Lo/tj0;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	327	.method public final e(Lo/tj0;)Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	334	    iget-object v0, p0, Lokhttp3/CertificatePinner;->b:Lo/tj0;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	347	    new-instance v0, Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	349	    iget-object v1, p0, Lokhttp3/CertificatePinner;->a:Ljava/util/Set;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	351	    invoke-direct {v0, v1, p1}, Lokhttp3/CertificatePinner;-><init>(Ljava/util/Set;Lo/tj0;)V
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	360	    instance-of v0, p1, Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	364	    check-cast p1, Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	366	    iget-object v0, p1, Lokhttp3/CertificatePinner;->a:Ljava/util/Set;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	368	    iget-object v1, p0, Lokhttp3/CertificatePinner;->a:Ljava/util/Set;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	376	    iget-object p1, p1, Lokhttp3/CertificatePinner;->b:Lo/tj0;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	378	    iget-object v0, p0, Lokhttp3/CertificatePinner;->b:Lo/tj0;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	400	    iget-object v0, p0, Lokhttp3/CertificatePinner;->a:Ljava/util/Set;
+decoded/smali_classes5/okhttp3/CertificatePinner.smali	412	    iget-object v0, p0, Lokhttp3/CertificatePinner;->b:Lo/tj0;
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection$connectTls$1.smali	48	.field final synthetic $certificatePinner:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection$connectTls$1.smali	54	.method public constructor <init>(Lokhttp3/CertificatePinner;Lokhttp3/Handshake;Lo/jd;)V
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection$connectTls$1.smali	57	    iput-object p1, p0, Lokhttp3/internal/connection/RealConnection$connectTls$1;->$certificatePinner:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection$connectTls$1.smali	96	    iget-object v0, p0, Lokhttp3/internal/connection/RealConnection$connectTls$1;->$certificatePinner:Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection$connectTls$1.smali	98	    invoke-virtual {v0}, Lokhttp3/CertificatePinner;->d()Lo/tj0;
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection.smali	1377	    sget-object v0, Lokhttp3/CertificatePinner;->c:Lokhttp3/CertificatePinner$b;
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection.smali	1379	    invoke-virtual {v0, p1}, Lokhttp3/CertificatePinner$b;->a(Ljava/security/cert/Certificate;)Ljava/lang/String;
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection.smali	1461	    invoke-virtual {v0}, Lo/jd;->a()Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection.smali	1483	    invoke-direct {v9, v3, v4, v0}, Lokhttp3/internal/connection/RealConnection$connectTls$1;-><init>(Lokhttp3/CertificatePinner;Lokhttp3/Handshake;Lo/jd;)V
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection.smali	1501	    invoke-virtual {v3, v0, v4}, Lokhttp3/CertificatePinner;->b(Ljava/lang/String;Lo/bx2;)V
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection.smali	2348	    invoke-virtual {p1}, Lo/jd;->a()Lokhttp3/CertificatePinner;
+decoded/smali_classes5/okhttp3/internal/connection/RealConnection.smali	2372	    invoke-virtual {p2, p1, v0}, Lokhttp3/CertificatePinner;->a(Ljava/lang/String;Ljava/util/List;)V
+decoded/smali_classes5/org/chromium/net/CronetEngine$Builder$LibraryLoader.smali	27	.method public abstract loadLibrary(Ljava/lang/String;)V
+decoded/smali_classes5/org/chromium/support_lib_boundary/ServiceWorkerWebSettingsBoundaryInterface.smali	32	.method public abstract setAllowFileAccess(Z)V

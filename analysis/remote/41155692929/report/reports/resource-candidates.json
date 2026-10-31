@@ -1,0 +1,2610 @@
+{
+  "update": [
+    {
+      "type": "string",
+      "name": "check_for_updates",
+      "value": "Check for updates",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "cleaner_dialog_hint",
+      "value": "Upgrade Cleaner to get deeper cleaning",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "cleaner_dialog_tittle",
+      "value": "Upgrade Cleaner",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "cleaner_result_cleaned_hint",
+      "value": "Please upgrade Cleaner to get deeper cleaning",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "cleaner_toast_to_gp",
+      "value": "Please upgrade in Google Play Store",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "cleaner_upgrade_dialog_tip",
+      "value": "99% people upgraded already",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "common_google_play_services_update_button",
+      "value": "Update",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "common_google_play_services_update_text",
+      "value": "\"%1$s won't run unless you update Google Play services.\"",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "common_google_play_services_update_title",
+      "value": "Update Google Play services",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "common_google_play_services_wear_update_text",
+      "value": "New version of Google Play services needed. It will update itself shortly.",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "dialog_plugin_fail_tip",
+      "value": "Update download failed. Please try again.",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "dialog_plugin_has_update",
+      "value": "Download update to fix error.",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "dialog_plugin_progress",
+      "value": "Downloading new update for better experience: %1$d%%",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "dialog_plugin_succ_tip",
+      "value": "Update download succeeded.",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "download_apk_to_upgrade",
+      "value": "Download APK to upgrade",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "drawer_subtitle_upgrade",
+      "value": "New Version",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "follow_snaptube_tips2",
+      "value": "Follow Snaptube for the latest updates 👋 😘",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "force_update_subtitle",
+      "value": "Current version is no longer supported",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "force_update_title",
+      "value": "Please update to latest version %s",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "force_update_toast_download_link",
+      "value": "Please download the new version on Snaptube official page and reinstall.",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "force_upgrade_dialog_title",
+      "value": "Snaptube Needs Upgrade",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "install_webview_from_google_play",
+      "value": "\"The WebView component of your device is installed abnormally and the page can't be loaded properly.\n\nPlease check if the WebView service is available or update the WebView component.\"",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "intent_upgrade_dialog_message",
+      "value": "New version is available",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "no_wa_status_updated",
+      "value": "No new status, view in WhatsApp to update.",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "not_updates_yet",
+      "value": "Not updates yet",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "product_updates_notification",
+      "value": "Snaptube Updates",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "security_verified",
+      "value": "Security verified to update in snaptube",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "self_update_notify_install",
+      "value": "New version of Snaptube is ready",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "self_upgrade_task_title",
+      "value": "Snaptube Upgrade",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "setting_dialog_already_new_version",
+      "value": "This is the newest version",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "setting_dialog_checking_update",
+      "value": "Checking for update…",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "setting_dialog_content_update",
+      "value": "Checking for update…",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "setting_updates",
+      "value": "Snaptube updates",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "setting_updates_desc",
+      "value": "Notify me of Snaptube new version",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "srl_header_update",
+      "value": "\"'Last Update' M-d HH:mm\"",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "super_cleaner_upgrade4",
+      "value": "Upgrade Cleaner to get deeper cleaning",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "super_cleaner_upgrade5",
+      "value": "Upgrade Cleaner to get faster boost",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "super_cleaner_upgrade6",
+      "value": "Upgrade Cleaner to get super saver",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tips_refresh_failed",
+      "value": "Update failed, try again later.",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_interstitial_version",
+      "value": "The sdk version used for the new insertion style is too low. Please upgrade to version 3550 and above",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_update_version",
+      "value": "Please update to version 2310 or later",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "update",
+      "value": "Update",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "update_for_crack",
+      "value": "Please update to the latest version of Snaptube.",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "update_no_enough_storage",
+      "value": "No enough storage to update, please clean up storage first",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "update_now",
+      "value": "Update now",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "update_official",
+      "value": "Update to official version",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "update_official_tips1",
+      "value": "\"Please update Snaptube to the latest version: \nStep1：Download Official version from %1$s and find the APK \nStep2：Uninstall the current Snaptube \nStep3：Install new version with the new APK\"",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "upgrade",
+      "value": "Upgrade",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "upgrade_default_title_version_format",
+      "value": "Discover new version V%1$s",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "view_status_in_whatsapp_to_update",
+      "value": "View status in %s to update",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "wa_status_updated",
+      "value": "%s status updated",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "youtube_hint_logout_subscription",
+      "value": "Sign in to see updates from your favorite YouTube channels",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "cleaner_upgrade_dialog_tip",
+      "value": "قام 99% من المستخدمين بالتحديث",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "force_update_subtitle",
+      "value": "لم يعد الإصدار الحالي مدعوماً",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "force_update_title",
+      "value": "يرجى الترقية إلى أحدث إصدار %s",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "force_update_toast_download_link",
+      "value": "يرجى تحميل الإصدار الأحدث من موقع Snaptube الرسمي وإعادة التثبيت.",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "force_upgrade_dialog_title",
+      "value": "يحتاج Snaptube للترقية",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "intent_upgrade_dialog_message",
+      "value": "إصدار جديد متوفر",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "setting_dialog_already_new_version",
+      "value": "هذه هي النسخة الاحدث",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "cleaner_upgrade_dialog_tip",
+      "value": "99% de las personas ya se actualizaron",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "force_update_subtitle",
+      "value": "La versión actual ya no es compatible",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "force_update_title",
+      "value": "Por favor actualiza la última versión %s",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "force_update_toast_download_link",
+      "value": "Por favor descarga la nueva versión en la página oficial de Snaptube y vuelve a instalarla.",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "force_upgrade_dialog_title",
+      "value": "Snaptube actualizacion necesarias",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "intent_upgrade_dialog_message",
+      "value": "Nueva versión disponible",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "setting_dialog_already_new_version",
+      "value": "Esta es la más nueva versión",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "view_status_in_whatsapp_to_update",
+      "value": "Tingnan ang katayuan sa %s para i-update",
+      "file": "res/values-fil/strings.xml",
+      "qualifier": "values-fil"
+    },
+    {
+      "type": "string",
+      "name": "cleaner_upgrade_dialog_tip",
+      "value": "99% des gens ont déjà amélioré",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "force_update_subtitle",
+      "value": "La version actuelle n’est plus prise en charge",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "force_update_title",
+      "value": "Veuillez mettre à jour à la dernière version %s",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "force_update_toast_download_link",
+      "value": "Veuillez télécharger une nouvelle version sur la page officielle Snaptube et la réinstaller.",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "force_upgrade_dialog_title",
+      "value": "Snaptube doit être mise à jour",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "intent_upgrade_dialog_message",
+      "value": "Nouvelle version est disponible",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "setting_dialog_already_new_version",
+      "value": "\"Il s'agit de la version la plus récente\"",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "common_google_play_services_update_button",
+      "value": "Update",
+      "file": "res/values-in/strings.xml",
+      "qualifier": "values-in"
+    },
+    {
+      "type": "string",
+      "name": "common_google_play_services_update_button",
+      "value": "Updaten",
+      "file": "res/values-nl/strings.xml",
+      "qualifier": "values-nl"
+    },
+    {
+      "type": "string",
+      "name": "common_google_play_services_update_text",
+      "value": "%1$s kan niet worden uitgevoerd, tenzij je Google Play-services updatet.",
+      "file": "res/values-nl/strings.xml",
+      "qualifier": "values-nl"
+    },
+    {
+      "type": "string",
+      "name": "common_google_play_services_update_title",
+      "value": "Google Play-services updaten",
+      "file": "res/values-nl/strings.xml",
+      "qualifier": "values-nl"
+    },
+    {
+      "type": "string",
+      "name": "common_google_play_services_wear_update_text",
+      "value": "Er is een nieuwe versie van Google Play-services vereist. De update wordt binnenkort automatisch uitgevoerd.",
+      "file": "res/values-nl/strings.xml",
+      "qualifier": "values-nl"
+    },
+    {
+      "type": "string",
+      "name": "view_status_in_whatsapp_to_update",
+      "value": "Bekijk de status in %s om te updaten",
+      "file": "res/values-nl/strings.xml",
+      "qualifier": "values-nl"
+    },
+    {
+      "type": "string",
+      "name": "cleaner_upgrade_dialog_tip",
+      "value": "99% das pessoas já fizeram o upgrade",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "force_update_subtitle",
+      "value": "A versão atual não é mais usável",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "force_update_title",
+      "value": "Por favor atualize para a versão mais recente %s",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "force_update_toast_download_link",
+      "value": "Por favor, baixe a nova versão na página oficial do Snaptube e reinstale.",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "force_upgrade_dialog_title",
+      "value": "O Snaptube precisa atualizar",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "intent_upgrade_dialog_message",
+      "value": "Nova versão disponível",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "setting_dialog_already_new_version",
+      "value": "Esta é a versão mais recente",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    }
+  ],
+  "ads": [
+    {
+      "type": "string-array",
+      "name": "vip_features",
+      "value": "\n        As a great app sponsor.\n        Remove Snaptube ads forever.\n        More premium features on the way.\n     | As a great app sponsor. | Remove Snaptube ads forever. | More premium features on the way.",
+      "file": "res/values/arrays.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_close",
+      "value": "Close  %1$d",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_cta_downloads",
+      "value": "Downloads",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_all_media_title",
+      "value": "All Media",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_description_tips",
+      "value": "If there is anything you want to tell us...",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_irrelevant",
+      "value": "Irrelevant",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_misleading_scam",
+      "value": "Misleading or scam",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_repeated",
+      "value": "Repeated",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_thx_feedback",
+      "value": "Thank you for your feedback.",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_go",
+      "value": "GO!",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_loading",
+      "value": "Loading",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_skip",
+      "value": "%1$ss",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_skip_text",
+      "value": "Skip",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_tag_splash",
+      "value": "AD",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_tips",
+      "value": "You may also like",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "app_log_junk",
+      "value": "Ad junk",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "mbridge_cm_feedback_dialog_title",
+      "value": "Report Ads",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "mbridge_reward_endcard_ad",
+      "value": "AD",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "not_show_in_days",
+      "value": "this ad will not show again in %d days",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "not_show_in_hours",
+      "value": "this ad will not show again in %d hours",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "not_show_today",
+      "value": "this ad will not show again today",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "post_tip_dialog_detail",
+      "value": "\"1. Post original videos!\n2. Add hot #hashtag 🔥 when posting videos!\n3. Join latest campaigns!\n4. Do not contain watermarks or ads in the video!\n5. Do not mention other products, applications, ads, personal contact in the video title!\"",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_channel",
+      "value": "当前为渠道包，无法使用联调诊断工具",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_dialog_activate",
+      "value": "激活",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_dialog_cancel",
+      "value": "取消",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_dialog_content",
+      "value": "此模式下不需要卸载 App，点击“激活”按钮可反复触发激活",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_dialog_ok",
+      "value": "确定",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_dialog_starting",
+      "value": "即将开启联调模式",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_dialog_title",
+      "value": "成功开启调试模式",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_error_debug_fail_content",
+      "value": "\"1. 开启 App 时拒绝“电话”授权；\n + 2. 手机系统权限设置中是否关闭“电话”授权；\n + 3. 请联系研发人员确认是否“调用 trackInstallation 接口在获取“电话”授权之后。\n\n  + 排查修复后，请先卸载应用并重新安装，再扫码进行联调。\"",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_error_debug_fail_title",
+      "value": "检测到 “设备码为空”，可能原因如下，请排查：",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_error_network",
+      "value": "当前网络不可用，请检查网络！",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_error_project",
+      "value": "App 集成的项目与电脑浏览器打开的项目不同，无法使用联调诊断工具",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_error_request",
+      "value": "网络异常,请求失败!",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_error_retry",
+      "value": "无法重连，请检查是否更换了联调手机",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_error_url",
+      "value": "数据接收地址错误，无法使用联调诊断工具",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_error_whitelist",
+      "value": "添加白名单请求失败，请联系神策技术支持人员排查问题!",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_ad_listener",
+      "value": "未调用 setDeepLinkCompletion 方法设置回调函数",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "sensors_analytics_carrier1",
+      "value": "{\\\"63401\\\":\\\"ZAIN/Mobitel\\\",\\\"342050\\\":\\\"Digicel\\\",\\\"23830\\\":\\\"Telia\\\",\\\"24708\\\":\\\"SIA IZZI\\\",\\\"65204\\\":\\\"BeMOBILE\\\",\\\"26035\\\":\\\"PKP Polskie Linie Kolejowe S.A.\\\",\\\"71202\\\":\\\"ICE\\\",\\\"24209\\\":\\\"Com4 AS\\\",\\\"23807\\\":\\\"Mundio Mobile\\\",\\\"64303\\\":\\\"Movitel\\\",\\\"312230\\\":\\\"North Dakota Network Company\\\",\\\"41250\\\":\\\"Etisalat \\\",\\\"73005\\\":\\\"Nextel SA\\\",\\\"62001\\\":\\\"MTN\\\",\\\"73013\\\":\\\"Tribe Mobile SPA\\\",\\\"23823\\\":\\\"Banedanmark\\\",\\\"20468\\\":\\\"Unify Mobile\\\",\\\"63402\\\":\\\"MTN\\\",\\\"362951\\\":\\\"UTS Wireless\\\",\\\"24709\\\":\\\"SIA Camel Mobile\\\",\\\"33450\\\":\\\"AT&T/IUSACell\\\",\\\"64803\\\":\\\"Telecel\\\",\\\"54201\\\":\\\"Vodafone\\\",\\\"26036\\\":\\\"Mundio Mobile Sp. z o.o.\\\",\\\"62501\\\":\\\"CV Movel\\\",\\\"20620\\\":\\\"Base/KPN\\\",\\\"71203\\\":\\\"Claro\\\",\\\"64304\\\":\\\"Vodacom\\\",\\\"63902\\\":\\\"Safaricom Ltd.\\\",\\\"73006\\\":\\\"Blue Two Chile SA\\\",\\\"62002\\\":\\\"Vodafone\\\",\\\"63782\\\":\\\"Somtel\\\",\\\"311420\\\":\\\"Northwest Missouri Cellular Limited Partnership\\\",\\\"73014\\\":\\\"Netline Telefonica Movil Ltda\\\",\\\"20469\\\":\\\"KPN Telecom B.V.\\\",\\\"311140\\\":\\\"Cross Wireless Telephone Co.\\\",\\\"316010\\\":\\\"Sprint Spectrum\\\",\\\"61101\\\":\\\"Orange/Sonatel/Spacetel\\\",\\\"45500\\\":\\\"Smartone Mobile\\\",\\\"20605\\\":\\\"Telenet BidCo NV\\\",\\\"64804\\\":\\\"Econet\\\",\\\"54202\\\":\\\"DigiCell\\\",\\\"62502\\\":\\\"T+ Telecom\\\",\\\"71204\\\":\\\"Movistar\\\",\\\"22288\\\":\\\"WIND (Blu) -\\\",\\\"63903\\\":\\\"Airtel/Zain/Celtel Ltd.\\\",\\\"732020\\\":\\\"UNE EPM Telecomunicaciones SA ESP\\\",\\\"73007\\\":\\\"TELEFONICA\\\",\\\"62003\\\":\\\"Milicom/Tigo\\\",\\\"61601\\\":\\\"Libercom\\\",\\\"25999\\\":\\\"IDC/Unite \\\",\\\"71220\\\":\\\"Virtualis\\\",\\\"73015\\\":\\\"Cibeles Telecom SA\\\",\\\"37201\\\":\\\"Comcel\\\",\\\"45501\\\":\\\"C.T.M. TELEMOVEL+\\\",\\\"61102\\\":\\\"SotelGui\\\",\\\"20606\\\":\\\"Lycamobile Belgium\\\",\\\"310610\\\":\\\"Elkhart TelCo. / Epic Touch Co.\\\",\\\"342600\\\":\\\"LIME\\\",\\\"26038\\\":\\\"CallFreedom Sp. z o.o.\\\",\\\"310330\\\":\\\"T-Mobile\\\",\\\"29401\\\":\\\"T-Mobile/Mobimak\\\",\\\"45002\\\":\\\"KT Freetel Co. Ltd.\\\",\\\"60201\\\":\\\"Orange/Mobinil\\\",\\\"73008\\\":\\\"VTR Banda Ancha SA\\\",\\\"62004\\\":\\\"Expresso Ghana Ltd\\\",\\\"61602\\\":\\\"Etisalat/MOOV\\\",\\\"51000\\\":\\\"PT Pasifik Satelit Nusantara (PSN)\\\",\\\"37202\\\":\\\"Digicel\\\",\\\"63405\\\":\\\"Vivacell\\\",\\\"312220\\\":\\\"Missouri RSA No 5 Partnership\\\",\\\"316011\\\":\\\"Southern Communications Services Inc.\\\",\\\"61103\\\":\\\"Intercel\\\",\\\"60701\\\":\\\"Gamcel\\\",\\\"28001\\\":\\\"Vodafone/CyTa\\\",\\\"23199\\\":\\\"Zeleznice Slovenskej republiky (ZSR)\\\",\\\"36301\\\":\\\"Setar GSM\\\",\\\"51500\\\":\\\"Fix Line\\\",\\\"29402\\\":\\\"ONE/Cosmofone\\\",\\\"45003\\\":\\\"SK Telecom\\\",\\\"60202\\\":\\\"Vodafone/Mirsfone \\\",\\\"63905\\\":\\\"Econet Wireless\\\",\\\"73009\\\":\\\"Nextel SA\\\",\\\"61603\\\":\\\"MTN/Spacetel\\\",\\\"51001\\\":\\\"Indosat/Satelindo/M3\\\",\\\"37203\\\":\\\"National Telecom SA (NatCom)\\\",\\\"36801\\\":\\\"C-COM\\\",\\\"63406\\\":\\\"ZAIN/Mobitel\\\",\\\"45503\\\":\\\"Hutchison Telephone Co. Ltd\\\",\\\"61104\\\":\\\"MTN/Areeba\\\",\\\"60702\\\":\\\"Africel\\\",\\\"54720\\\":\\\"Vini/Tikiphone\\\",\\\"311410\\\":\\\"Iowa RSA No. 2 Limited Partnership\\\",\\\"36302\\\":\\\"Digicel\\\",\\\"63422\\\":\\\"MTN\\\",\\\"28010\\\":\\\"MTN/Areeba\\\",\\\"29403\\\":\\\"VIP Mobile\\\",\\\"45004\\\":\\\"KT Freetel Co. Ltd.\\\",\\\"51501\\\":\\\"Globe Telecom\\\",\\\"60203\\\":\\\"ETISALAT\\\",\\\"22299\\\":\\\"Hi3G\\\",\\\"62006\\\":\\\"Airtel/ZAIN\\\",\\\"61604\\\":\\\"Bell Benin/BBCOM\\\",\\\"242017\\\":\\\"Ventelo AS\\\",\\\"43701\\\":\\\"Beeline/Bitel\\\",\\\"23828\\\":\\\"CoolTEL ApS\\\",\\\"51010\\\":\\\"Telkomsel\\\",\\\"63407\\\":\\\"Sudani One\\\",\\\"45504\\\":\\\"C.T.M. TELEMOVEL+\\\",\\\"61105\\\":\\\"Celcom\\\",\\\"63415\\\":\\\"Sudani One\\\",\\\"60703\\\":\\\"Comium\\\",\\\"27601\\\":\\\"AMC/Cosmote\\\",\\\"310870\\\":\\\"Kaplan Telephone Company Inc.\\\",\\\"42800\\\":\\\"Skytel Co. Ltd\\\",\\\"310590\\\":\\\"Verizon Wireless\\\",\\\"51502\\\":\\\"Globe Telecom\\\",\\\"330110\\\":\\\"Puerto Rico Telephone Company Inc. (PRTC)\\\",\\\"45005\\\":\\\"SK Telecom Co. Ltd\\\",\\\"34001\\\":\\\"Orange Caribe\\\",\\\"310600\\\":\\\"New-Cell Inc.\\\",\\\"63907\\\":\\\"Orange\\\",\\\"310320\\\":\\\"Smith Bagley Inc.\\\",\\\"62007\\\":\\\"GloMobile\\\",\\\"61605\\\":\\\"GloMobile\\\",\\\"310040\\\":\\\"Matanuska Tel. Assn. Inc.\\\",\\\"73019\\\":\\\"Sociedad Falabella Movil SPA\\\",\\\"51011\\\":\\\"PT. Excelcom\\\",\\\"26201\\\":\\\"T-mobile/Telekom\\\",\\\"63408\\\":\\\"Vivacell\\\",\\\"45505\\\":\\\"Hutchison Telephone Co. Ltd\\\",\\\"60704\\\":\\\"Q-Cell\\\",\\\"27602\\\":\\\"Vodafone \\\",\\\"41280\\\":\\\"Afghan Telecom Corp. (AT)\\\",\\\"51503\\\":\\\"Smart\\\",\\\"43211\\\":\\\"MCI/TCI\\\",\\\"45006\\\":\\\"LG Telecom\\\",\\\"20498\\\":\\\"T-Mobile B.V.\\\",\\\"34002\\\":\\\"Outremer Telecom\\\",\\\"28020\\\":\\\"PrimeTel PLC\\\",\\\"36320\\\":\\\"Digicel\\\",\\\"43703\\\":\\\"AkTel LLC\\\",\\\"26202\\\":\\\"Vodafone D2\\\",\\\"41401\\\":\\\"Myanmar Post & Teleco.\\\",\\\"54715\\\":\\\"Pacific Mobile Telecom (PMT)\\\",\\\"45506\\\":\\\"Smartone Mobile\\\",\\\"26210\\\":\\\"DB Netz AG\\\",\\\"27603\\\":\\\"Eagle Mobile\\\",\\\"311670\\\":\\\"Pine Belt Cellular, Inc.\\\",\\\"34003\\\":\\\"TelCell GSM\\\",\\\"311390\\\":\\\"Verizon Wireless\\\",\\\"43220\\\":\\\"Rightel\\\",\\\"34011\\\":\\\"TelCell GSM\\\",\\\"40001\\\":\\\"Azercell Telekom B.M.\\\",\\\"311120\\\":\\\"Choice Phone LLC\\\",\\\"26203\\\":\\\"E-Plus\\\",\\\"51021\\\":\\\"Indosat/Satelindo/M3\\\",\\\"26211\\\":\\\"O2\\\",\\\"27604\\\":\\\"PLUS Communication Sh.a\\\",\\\"51505\\\":\\\"SUN/Digitel\\\",\\\"45008\\\":\\\"KT Freetel Co. Ltd.\\\",\\\"310860\\\":\\\"Texas RSA 15B2 Limited Partnership\\\",\\\"41902\\\":\\\"Zain\\\",\\\"34012\\\":\\\"UTS Caraibe\\\",\\\"40002\\\":\\\"J.V. Bakcell GSM 2000\\\",\\\"310580\\\":\\\"PCS ONE\\\",\\\"34020\\\":\\\"Bouygues/DigiCel\\\",\\\"43705\\\":\\\"MEGACOM\\\",\\\"26204\\\":\\\"Vodafone D2\\\",\\\"352050\\\":\\\"Digicel\\\",\\\"310310\\\":\\\"T-Mobile\\\",\\\"26212\\\":\\\"E-Plus\\\",\\\"26220\\\":\\\"E-Plus\\\",\\\"43214\\\":\\\"TKC/KFZO\\\",\\\"23001\\\":\\\"T-Mobile / RadioMobil\\\",\\\"312190\\\":\\\"Sprint Spectrum\\\",\\\"41903\\\":\\\"Wataniya\\\",\\\"302720\\\":\\\"Rogers AT&T Wireless\\\",\\\"51007\\\":\\\"Flexi (PT Telkom) (CDMA)\\\",\\\"40003\\\":\\\"Caspian American Telecommunications LLC (CATEL)\\\",\\\"24410\\\":\\\"TDC Oy Finland\\\",\\\"26205\\\":\\\"E-Plus\\\",\\\"26213\\\":\\\"Mobilcom\\\",\\\"356110\\\":\\\"Cable & Wireless\\\",\\\"732001\\\":\\\"TIGO/Colombia Movil\\\",\\\"23002\\\":\\\"O2\\\",\\\"44140\\\":\\\"NTT Docomo\\\",\\\"41904\\\":\\\"Viva\\\",\\\"24403\\\":\\\"DNA/Finnet\\\",\\\"40004\\\":\\\"Azerfon.\\\",\\\"51008\\\":\\\"Axis/Natrindo\\\",\\\"24411\\\":\\\"Mundio Mobile (Finland) Ltd\\\",\\\"26206\\\":\\\"T-mobile/Telekom\\\",\\\"41405\\\":\\\"Oreedoo\\\",\\\"26214\\\":\\\"Group 3G UMTS\\\",\\\"23502\\\":\\\"Everyth. Ev.wh.\\\",\\\"311110\\\":\\\"Verizon Wireless\\\",\\\"23003\\\":\\\"Vodafone\\\",\\\"22601\\\":\\\"Vodafone\\\",\\\"44141\\\":\\\"NTT Docomo\\\",\\\"24404\\\":\\\"DNA/Finnet\\\",\\\"43232\\\":\\\"Taliya\\\",\\\"51009\\\":\\\"PT Smartfren Telecom Tbk\\\",\\\"24412\\\":\\\"DNA/Finnet\\\",\\\"26207\\\":\\\"O2\\\",\\\"362630\\\":\\\"Cingular Wireless\\\",\\\"41406\\\":\\\"Telenor\\\",\\\"310850\\\":\\\"Aeris Comm. Inc.\\\",\\\"74601\\\":\\\"Telesur\\\",\\\"310570\\\":\\\"MTPCS LLC\\\",\\\"21201\\\":\\\"Monaco Telecom\\\",\\\"310290\\\":\\\"NEP Cellcorp Inc.\\\",\\\"40505\\\":\\\"Fascel Limited\\\",\\\"732002\\\":\\\"Edatel S.A.\\\",\\\"34008\\\":\\\"Dauphin Telecom SU (Guadeloupe Telecom)\\\",\\\"23004\\\":\\\"Ufone\\\",\\\"22602\\\":\\\"Romtelecom SA\\\",\\\"44142\\\":\\\"NTT Docomo\\\",\\\"310300\\\":\\\"T-Mobile\\\",\\\"310020\\\":\\\"Union Telephone Co.\\\",\\\"22610\\\":\\\"Orange\\\",\\\"24405\\\":\\\"Elisa/Saunalahti\\\",\\\"43709\\\":\\\"O!/NUR Telecom\\\",\\\"24413\\\":\\\"DNA/Finnet\\\",\\\"26208\\\":\\\"O2\\\",\\\"312180\\\":\\\"Keystone Wireless LLC\\\",\\\"302710\\\":\\\"Globalstar Canada\\\",\\\"26216\\\":\\\"Telogic/ViStream\\\",\\\"24421\\\":\\\"Elisa/Saunalahti\\\",\\\"310032\\\":\\\"IT&E OverSeas\\\",\\\"74602\\\":\\\"Telecommunicatiebedrijf Suriname (TELESUR)\\\",\\\"20800\\\":\\\"Tel/Te\\\",\\\"65401\\\":\\\"HURI - SNPT\\\",\\\"21210\\\":\\\"Monaco Telecom\\\",\\\"23005\\\":\\\"Travel Telekommunikation s.r.o.\\\",\\\"22603\\\":\\\"Cosmote\\\",\\\"44143\\\":\\\"NTT Docomo\\\",\\\"51518\\\":\\\"RED Mobile/Cure\\\",\\\"22611\\\":\\\"Enigma Systems\\\",\\\"24414\\\":\\\"Alands\\\",\\\"26209\\\":\\\"Vodafone D2\\\",\\\"51027\\\":\\\"PT Sampoerna Telekomunikasi Indonesia (STI)\\\",\\\"26217\\\":\\\"E-Plus\\\",\\\"74603\\\":\\\"Digicel\\\",\\\"64001\\\":\\\"Tri Telecomm. Ltd.\\\",\\\"41288\\\":\\\"Afghan Telecom Corp. (AT)\\\",\\\"311650\\\":\\\"United Wireless Communications Inc.\\\",\\\"20801\\\":\\\"Orange\\\",\\\"311370\\\":\\\"GCI Communication Corp.\\\",\\\"43219\\\":\\\"Mobile Telecommunications Company of Esfahan JV-PJS (MTCE)\\\",\\\"22604\\\":\\\"Telemobil/Zapp\\\",\\\"44144\\\":\\\"NTT Docomo\\\",\\\"43235\\\":\\\"MTN/IranCell\\\",\\\"23877\\\":\\\"Telenor/Sonofon\\\",\\\"64501\\\":\\\"Airtel/Zain/Celtel\\\",\\\"65902\\\":\\\"MTN South Sudan (South Sudan\\\",\\\"51028\\\":\\\"PT Smartfren Telecom Tbk\\\",\\\"310033\\\":\\\"Guam Teleph. Auth\\\",\\\"74604\\\":\\\"UNIQA\\\",\\\"64002\\\":\\\"TIGO/MIC\\\",\\\"20802\\\":\\\"Orange\\\",\\\"26098\\\":\\\"Play/P4\\\",\\\"20810\\\":\\\"S.F.R.\\\",\\\"22605\\\":\\\"RCS&RDS Digi Mobile\\\",\\\"44145\\\":\\\"NTT Docomo\\\",\\\"310560\\\":\\\"AT&T Wireless Inc.\\\",\\\"26242\\\":\\\"Vodafone D2\\\",\\\"71401\\\":\\\"Cable & W./Mas Movil\\\",\\\"310280\\\":\\\"T-Mobile\\\",\\\"64502\\\":\\\"MTN/Telecel\\\",\\\"47001\\\":\\\"GrameenPhone\\\",\\\"352030\\\":\\\"Digicel\\\",\\\"44161\\\":\\\"SoftBank Mobile Corp\\\",\\\"65903\\\":\\\"Gemtel Ltd (South Sudan\\\",\\\"55301\\\":\\\"Tuvalu Telecommunication Corporation (TTC)\\\",\\\"310010\\\":\\\"Verizon Wireless\\\",\\\"64003\\\":\\\"Zantel/Zanzibar Telecom\\\",\\\"63601\\\":\\\"ETH/MTN\\\",\\\"20803\\\":\\\"MobiquiThings\\\",\\\"64011\\\":\\\"Smile Communications Tanzania Ltd\\\",\\\"23008\\\":\\\"Compatel s.r.o.\\\",\\\"20811\\\":\\\"S.F.R.\\\",\\\"63102\\\":\\\"Unitel\\\",\\\"22606\\\":\\\"Telemobil/Zapp\\\",\\\"312170\\\":\\\"Iowa RSA No. 2 Limited Partnership\\\",\\\"26243\\\":\\\"Lycamobile\\\",\\\"71402\\\":\\\"Movistar\\\",\\\"24409\\\":\\\"Nokia Oyj\\\",\\\"64503\\\":\\\"Zamtel/Cell Z/MTS\\\",\\\"47002\\\":\\\"Robi/Aktel\\\",\\\"44162\\\":\\\"SoftBank Mobile Corp\\\",\\\"62201\\\":\\\"Airtel/ZAIN/Celtel\\\",\\\"65904\\\":\\\"Network of The World Ltd (NOW) (South Sudan\\\",\\\"44170\\\":\\\"KDDI Corporation\\\",\\\"64004\\\":\\\"Vodacom Ltd\\\",\\\"20804\\\":\\\"SISTEER\\\",\\\"346050\\\":\\\"Digicel Cayman Ltd\\\",\\\"311920\\\":\\\"Missouri RSA No 5 Partnership\\\",\\\"348770\\\":\\\"Digicel\\\",\\\"62701\\\":\\\"ORANGE/GETESA\\\",\\\"20820\\\":\\\"Bouygues Telecom\\\",\\\"71403\\\":\\\"Claro\\\",\\\"47003\\\":\\\"Orascom/Banglalink\\\",\\\"44163\\\":\\\"SoftBank Mobile Corp\\\",\\\"62202\\\":\\\"Tchad Mobile\\\",\\\"46601\\\":\\\"Far EasTone\\\",\\\"310011\\\":\\\"Northstar\\\",\\\"54901\\\":\\\"Telecom Samoa Cellular Ltd.\\\",\\\"338180\\\":\\\"Cable & Wireless\\\",\\\"24426\\\":\\\"Compatel Ltd\\\",\\\"64005\\\":\\\"Airtel/ZAIN/Celtel\\\",\\\"53001\\\":\\\"Vodafone\\\",\\\"20805\\\":\\\"GlobalStar\\\",\\\"61301\\\":\\\"TeleMob-OnaTel\\\",\\\"43270\\\":\\\"MTCE\\\",\\\"302701\\\":\\\"NB Tel Mobility\\\",\\\"20813\\\":\\\"S.F.R.\\\",\\\"63104\\\":\\\"MoviCel\\\",\\\"20821\\\":\\\"Bouygues Telecom\\\",\\\"71404\\\":\\\"Digicel\\\",\\\"60400\\\":\\\"Medi Telecom\\\",\\\"22616\\\":\\\"Lycamobile\\\",\\\"45201\\\":\\\"Mobifone\\\",\\\"47004\\\":\\\"TeleTalk\\\",\\\"44164\\\":\\\"SoftBank Mobile Corp\\\",\\\"62203\\\":\\\"Tigo/Milicom/Tchad Mobile\\\",\\\"61801\\\":\\\"Lonestar\\\",\\\"46602\\\":\\\"Far EasTone\\\",\\\"342820\\\":\\\"Sunbeach\\\",\\\"65906\\\":\\\"Zain South Sudan (South Sudan\\\",\\\"46610\\\":\\\"Global Mobile Corp.\\\",\\\"310830\\\":\\\"Caprock Cellular Ltd.\\\",\\\"64006\\\":\\\"Dovetel (T) Ltd\\\",\\\"53002\\\":\\\"Spark/NZ Telecom\\\",\\\"310270\\\":\\\"T-Mobile\\\",\\\"45701\\\":\\\"Lao Tel\\\",\\\"61302\\\":\\\"Airtel/ZAIN/CelTel\\\",\\\"20806\\\":\\\"GlobalStar\\\",\\\"20814\\\":\\\"Lliad/FREE Mobile\\\",\\\"62703\\\":\\\"HiTs-GE\\\",\\\"54411\\\":\\\"Blue Sky Communications\\\",\\\"20822\\\":\\\"Transatel SA\\\",\\\"45202\\\":\\\"Vinaphone\\\",\\\"60401\\\":\\\"IAM/Itissallat\\\",\\\"302680\\\":\\\"Sask Tel Mobility\\\",\\\"47005\\\":\\\"Citycell\\\",\\\"44165\\\":\\\"SoftBank Mobile Corp\\\",\\\"62204\\\":\\\"Salam/Sotel\\\",\\\"61802\\\":\\\"Libercell\\\",\\\"46603\\\":\\\"Far EasTone\\\",\\\"310012\\\":\\\"Verizon Wireless\\\",\\\"312160\\\":\\\"RSA 1 Limited Partnership\\\",\\\"46611\\\":\\\"Chunghwa Telecom LDM\\\",\\\"64007\\\":\\\"Tanzania Telecommunications Company Ltd (TTCL)\\\",\\\"53003\\\":\\\"Walker Wireless Ltd.\\\",\\\"45702\\\":\\\"ETL Mobile\\\",\\\"61303\\\":\\\"TeleCel\\\",\\\"20807\\\":\\\"GlobalStar\\\",\\\"28201\\\":\\\"Geocell Ltd.\\\",\\\"366110\\\":\\\"C & W\\\",\\\"302702\\\":\\\"MT&T Mobility\\\",\\\"20815\\\":\\\"Lliad/FREE Mobile\\\",\\\"60901\\\":\\\"Mattel\\\",\\\"20823\\\":\\\"Virgin Mobile/Omer\\\",\\\"45203\\\":\\\"S-Fone/Telecom\\\",\\\"60402\\\":\\\"INWI/WANA\\\",\\\"20831\\\":\\\"Mundio Mobile (France) Ltd\\\",\\\"47006\\\":\\\"Citycell\\\",\\\"36010\\\":\\\"Cingular\\\",\\\"64008\\\":\\\"Benson Informatics Ltd\\\",\\\"53004\\\":\\\"Telstra\\\",\\\"311350\\\":\\\"Sagebrush Cellular Inc.\\\",\\\"45703\\\":\\\"UNITEL/LAT\\\",\\\"40553\\\":\\\"AirTel\\\",\\\"60902\\\":\\\"Chinguitel SA\\\",\\\"28202\\\":\\\"Magti GSM Ltd.\\\",\\\"311070\\\":\\\"Wisconsin RSA #7 Limited Partnership\\\",\\\"44190\\\":\\\"NTT Docomo\\\",\\\"20816\\\":\\\"Lliad/FREE Mobile\\\",\\\"43401\\\":\\\"Buztel\\\",\\\"60910\\\":\\\"Mauritel\\\",\\\"20824\\\":\\\"MobiquiThings\\\",\\\"29475\\\":\\\"ONE/Cosmofone\\\",\\\"45204\\\":\\\"Viettel Mobile\\\",\\\"47007\\\":\\\"Airtel/Warid\\\",\\\"46605\\\":\\\"Asia Pacific Telecom Co. Ltd (APT)\\\",\\\"310013\\\":\\\"Verizon Wireless\\\",\\\"61804\\\":\\\"Comium BVI\\\",\\\"64009\\\":\\\"Halotel/Viettel Ltd\\\",\\\"53005\\\":\\\"Spark/NZ Telecom\\\",\\\"42001\\\":\\\"STC/Al Jawal\\\",\\\"20809\\\":\\\"S.F.R.\\\",\\\"61820\\\":\\\"LibTelco\\\",\\\"37412\\\":\\\"Bmobile/TSTT\\\",\\\"28203\\\":\\\"Iberiatel Ltd.\\\",\\\"27801\\\":\\\"Vodafone\\\",\\\"302703\\\":\\\"New Tel Mobility\\\",\\\"44191\\\":\\\"NTT Docomo\\\",\\\"20817\\\":\\\"Legos - Local Exchange Global Operation Services SA\\\",\\\"342810\\\":\\\"Cingular Wireless\\\",\\\"310260\\\":\\\"T-Mobile\\\",\\\"43402\\\":\\\"Uzmacom\\\",\\\"20825\\\":\\\"Lycamobile SARL\\\",\\\"45205\\\":\\\"VietnaMobile\\\",\\\"42501\\\":\\\"Orange/Partner Co. Ltd.\\\",\\\"46606\\\":\\\"Far EasTone\\\",\\\"302670\\\":\\\"CityWest Mobility\\\",\\\"28204\\\":\\\"MobiTel/Beeline\\\",\\\"44192\\\":\\\"NTT Docomo\\\",\\\"20826\\\":\\\"NRJ\\\",\\\"45206\\\":\\\"Viettel Mobile\\\",\\\"42502\\\":\\\"Cellcom ltd.\\\",\\\"46607\\\":\\\"Far EasTone\\\",\\\"25001\\\":\\\"MTS\\\",\\\"42003\\\":\\\"Etihad/Etisalat/Mobily\\\",\\\"41601\\\":\\\"ZAIN /J.M.T.S\\\",\\\"28205\\\":\\\"Silknet\\\",\\\"44193\\\":\\\"NTT Docomo\\\",\\\"43404\\\":\\\"Bee Line/Unitel\\\",\\\"25501\\\":\\\"UMC/MTS\\\",\\\"311340\\\":\\\"Illinois Valley Cellular RSA 2 Partnership\\\",\\\"20827\\\":\\\"AFONE SA\\\",\\\"365840\\\":\\\"Cable and Wireless\\\",\\\"45207\\\":\\\"Beeline\\\",\\\"42503\\\":\\\"Pelephone\\\",\\\"25002\\\":\\\"Megafon\\\",\\\"61807\\\":\\\"CELLCOM\\\",\\\"25010\\\":\\\"DTC/Don Telecom\\\",\\\"42004\\\":\\\"Zain\\\",\\\"365010\\\":\\\"Digicell / Wireless Vent. Ltd \\\",\\\"41602\\\":\\\"Xpress\\\",\\\"310003\\\":\\\"Unknown\\\",\\\"44194\\\":\\\"NTT Docomo\\\",\\\"43405\\\":\\\"Ucell/Coscom\\\",\\\"53024\\\":\\\"Two Degrees Mobile Ltd\\\",\\\"25502\\\":\\\"Beeline\\\",\\\"20828\\\":\\\"Astrium\\\",\\\"45208\\\":\\\"Viettel Mobile\\\",\\\"42891\\\":\\\"Skytel Co. Ltd\\\",\\\"46609\\\":\\\"VMAX Telecom Co. Ltd\\\",\\\"25003\\\":\\\"NCC\\\",\\\"24601\\\":\\\"Omnitel\\\",\\\"310250\\\":\\\"T-Mobile\\\",\\\"42512\\\":\\\"Pelephone\\\",\\\"310530\\\":\\\"West Virginia Wireless\\\",\\\"25011\\\":\\\"Orensot\\\",\\\"42005\\\":\\\"Virgin Mobile\\\",\\\"41603\\\":\\\"Umniah Mobile Co.\\\",\\\"45708\\\":\\\"Beeline/Tigo/Millicom\\\",\\\"25503\\\":\\\"KyivStar\\\",\\\"302660\\\":\\\"MTS Mobility\\\",\\\"20829\\\":\\\"Orange\\\",\\\"302380\\\":\\\"DMTS Mobility\\\",\\\"23201\\\":\\\"A1 MobilKom\\\",\\\"27821\\\":\\\"GO Mobile\\\",\\\"42505\\\":\\\"Jawwal\\\",\\\"25004\\\":\\\"Sibchallenge\\\",\\\"24602\\\":\\\"Bite\\\",\\\"334090\\\":\\\"NEXTEL\\\",\\\"25012\\\":\\\"Baykal Westcom\\\",\\\"24482\\\":\\\"ID-Mobile\\\",\\\"40211\\\":\\\"B-Mobile\\\",\\\"26277\\\":\\\"E-Plus\\\",\\\"42006\\\":\\\"Lebara Mobile\\\",\\\"25020\\\":\\\"Tele2/ECC/Volgogr.\\\",\\\"310004\\\":\\\"Verizon Wireless\\\",\\\"43407\\\":\\\"MTS/Uzdunrobita\\\",\\\"25504\\\":\\\"Intertelecom Ltd (IT)\\\",\\\"311880\\\":\\\"Sprint Spectrum\\\",\\\"23202\\\":\\\"A1 MobilKom\\\",\\\"42506\\\":\\\"Wataniya Mobile\\\",\\\"310016\\\":\\\"Leap Wireless International Inc.\\\",\\\"23210\\\":\\\"H3G\\\",\\\"25005\\\":\\\"Yenisey Telecom\\\",\\\"24603\\\":\\\"Tele2\\\",\\\"311610\\\":\\\"North Dakota Network Company\\\",\\\"42514\\\":\\\"Alon Cellular Ltd\\\",\\\"311330\\\":\\\"Michigan Wireless LLC\\\",\\\"25013\\\":\\\"Kuban GSM\\\",\\\"311050\\\":\\\"Thumb Cellular Limited Partnership\\\",\\\"42007\\\":\\\"Zain\\\",\\\"24491\\\":\\\"TeliaSonera\\\",\\\"54927\\\":\\\"Samoatel Mobile\\\",\\\"25505\\\":\\\"Golden Telecom\\\",\\\"23203\\\":\\\"T-Mobile/Telering\\\",\\\"22801\\\":\\\"Swisscom\\\",\\\"51588\\\":\\\"Next Mobile\\\",\\\"42507\\\":\\\"Hot Mobile/Mirs\\\",\\\"23211\\\":\\\"A1 MobilKom\\\",\\\"25521\\\":\\\"Telesystems Of Ukraine CJSC (TSU)\\\",\\\"42515\\\":\\\"Home Cellular Ltd\\\",\\\"51089\\\":\\\"H3G CP\\\",\\\"310800\\\":\\\"T-Mobile\\\",\\\"310520\\\":\\\"VeriSign\\\",\\\"74801\\\":\\\"Ancel/Antel\\\",\\\"310240\\\":\\\"T-Mobile\\\",\\\"44198\\\":\\\"NTT Docomo\\\",\\\"21401\\\":\\\"Vodafone\\\",\\\"53028\\\":\\\"2degrees\\\",\\\"25506\\\":\\\"Astelit/LIFE\\\",\\\"23204\\\":\\\"T-Mobile/Telering\\\",\\\"22802\\\":\\\"TDC Sunrise\\\",\\\"42508\\\":\\\"Golan Telekom\\\",\\\"23212\\\":\\\"3/Orange/One Connect\\\",\\\"25007\\\":\\\"ZAO SMARTS\\\",\\\"65101\\\":\\\"Vodacom Lesotho\\\",\\\"42516\\\":\\\"Rami Levy Hashikma Marketing Communications Ltd\\\",\\\"25015\\\":\\\"ZAO SMARTS\\\",\\\"302370\\\":\\\"FIDO (Rogers AT&T/ Microcell)\\\",\\\"21901\\\":\\\"T-Mobile/Cronet\\\",\\\"312130\\\":\\\"East Kentucky Network LLC\\\",\\\"73401\\\":\\\"DigiTel C.A.\\\",\\\"334080\\\":\\\"Operadora Unefon SA de CV\\\",\\\"44199\\\":\\\"NTT Docomo\\\",\\\"25507\\\":\\\"TriMob LLC\\\",\\\"74810\\\":\\\"Claro/AM Wireless\\\",\\\"42888\\\":\\\"Unitel\\\",\\\"23205\\\":\\\"3/Orange/One Connect\\\",\\\"22803\\\":\\\"Salt/Orange\\\",\\\"23213\\\":\\\"UPC Austria\\\",\\\"65102\\\":\\\"Econet/Ezi-cel\\\",\\\"64700\\\":\\\"Orange\\\",\\\"311870\\\":\\\"Sprint Spectrum\\\",\\\"25016\\\":\\\"NTC\\\",\\\"21902\\\":\\\"Tele2\\\",\\\"311590\\\":\\\"California RSA No. 3 Limited Partnership\\\",\\\"73402\\\":\\\"DigiTel C.A.\\\",\\\"31006\\\":\\\"Consolidated Telcom\\\",\\\"21910\\\":\\\"VIPnet d.o.o.\\\",\\\"51099\\\":\\\"Esia (PT Bakrie Telecom) (CDMA)\\\",\\\"64201\\\":\\\"Spacetel / Econet / Leo \\\",\\\"31014\\\":\\\"Testing\\\",\\\"74803\\\":\\\"Ancel/Antel\\\",\\\"348170\\\":\\\"LIME\\\",\\\"21403\\\":\\\"Orange\\\",\\\"21411\\\":\\\"Orange\\\",\\\"23206\\\":\\\"3/Orange/One Connect\\\",\\\"35650\\\":\\\"Digicel\\\",\\\"23214\\\":\\\"H3G\\\",\\\"22812\\\":\\\"TDC Sunrise\\\",\\\"302651\\\":\\\"Bell Mobility\\\",\\\"25017\\\":\\\"UralTel\\\",\\\"73403\\\":\\\"DigiTel C.A.\\\",\\\"64202\\\":\\\"Africel / Safaris\\\",\\\"310780\\\":\\\"Message Express Co. / Airlink PCS\\\",\\\"31015\\\":\\\"Unknown\\\",\\\"21404\\\":\\\"Yoigo\\\",\\\"31023\\\":\\\"Unknown\\\",\\\"55001\\\":\\\"FSM Telecom\\\",\\\"23207\\\":\\\"T-Mobile/Telering\\\",\\\"22805\\\":\\\"Comfone AG\\\",\\\"63301\\\":\\\"C&W\\\",\\\"310510\\\":\\\"Airtel Wireless LLC\\\",\\\"310230\\\":\\\"T-Mobile\\\",\\\"42898\\\":\\\"G-Mobile Corporation Ltd\\\",\\\"23215\\\":\\\"T-Mobile/Telering\\\",\\\"71601\\\":\\\"GlobalStar\\\",\\\"21420\\\":\\\"fonYou Wireless SL\\\",\\\"31031\\\":\\\"T-Mobile\\\",\\\"42519\\\":\\\"Telzar/AZI \\\",\\\"64702\\\":\\\"Outremer Telecom\\\",\\\"47201\\\":\\\"Dhiraagu/C&W\\\",\\\"73404\\\":\\\"Movistar/TelCel\\\",\\\"40217\\\":\\\"Bhutan Telecom Ltd (BTL)\\\",\\\"64710\\\":\\\"SFR\\\",\\\"714020\\\":\\\"Movistar\\\",\\\"55501\\\":\\\"Niue Telecom\\\",\\\"64203\\\":\\\"Onatel / Telecel \\\",\\\"63801\\\":\\\"Djibouti Telecom SA (Evatis)\\\",\\\"302640\\\":\\\"Latitude Wireless\\\",\\\"21405\\\":\\\"Movistar\\\",\\\"302360\\\":\\\"Clearnet\\\",\\\"312120\\\":\\\"East Kentucky Network LLC\\\",\\\"31024\\\":\\\"Unknown\\\",\\\"23208\\\":\\\"A1 MobilKom\\\",\\\"63302\\\":\\\"Smartcom\\\",\\\"334070\\\":\\\"Operadora Unefon SA de CV\\\",\\\"46656\\\":\\\"International Telecom Co. Ltd (FITEL)\\\",\\\"42899\\\":\\\"Mobicom\\\",\\\"21421\\\":\\\"Jazz Telecom SAU\\\",\\\"71602\\\":\\\"GlobalStar\\\",\\\"302652\\\":\\\"BC Tel Mobility\\\",\\\"20891\\\":\\\"Orange\\\",\\\"63310\\\":\\\"Airtel\\\",\\\"54101\\\":\\\"SMILE\\\",\\\"47202\\\":\\\"Ooredo/Wataniya\\\",\\\"71610\\\":\\\"Claro /Amer.Mov./TIM\\\",\\\"62401\\\":\\\"MTN\\\",\\\"25019\\\":\\\"OJSC Altaysvyaz\\\",\\\"36070\\\":\\\"Digicel\\\",\\\"311860\\\":\\\"Uintah Basin Electronics Telecommunications Inc.\\\",\\\"25035\\\":\\\"MOTIV/LLC Ekaterinburg-2000\\\",\\\"21406\\\":\\\"Vodafone Enabler Espana SL\\\",\\\"25550\\\":\\\"UMC/MTS\\\",\\\"31025\\\":\\\"Unknown\\\",\\\"54601\\\":\\\"OPT Mobilis\\\",\\\"23209\\\":\\\"A1 MobilKom\\\",\\\"708040\\\":\\\"Digicel\\\",\\\"22807\\\":\\\"TDC Sunrise\\\",\\\"62901\\\":\\\"Airtel SA\\\",\\\"21422\\\":\\\"Digi Spain Telecom SL\\\",\\\"23217\\\":\\\"Spusu/Mass Response\\\",\\\"61001\\\":\\\"Malitel\\\",\\\"45400\\\":\\\"CSL Ltd.\\\",\\\"20892\\\":\\\"Association Plate-forme Telecom\\\",\\\"311310\\\":\\\"Lamar County Cellular\\\",\\\"73406\\\":\\\"Movilnet C.A. \\\",\\\"62402\\\":\\\"Orange\\\",\\\"25028\\\":\\\"BeeLine/VimpelCom\\\",\\\"360110\\\":\\\"C & W\\\",\\\"74807\\\":\\\"MOVISTAR\\\",\\\"21407\\\":\\\"Movistar\\\",\\\"302361\\\":\\\"Clearnet\\\",\\\"61501\\\":\\\"Togo Telecom/TogoCELL\\\",\\\"31026\\\":\\\"Unknown\\\",\\\"44000\\\":\\\"Y-Mobile\\\",\\\"25044\\\":\\\"StavTelesot\\\",\\\"21415\\\":\\\"BT Espana SAU\\\",\\\"22808\\\":\\\"TDC Sunrise\\\",\\\"31034\\\":\\\"Nevada Wireless LLC\\\",\\\"62902\\\":\\\"Azur SA (ETC)\\\",\\\"310770\\\":\\\"Iowa Wireless Services LLC\\\",\\\"21423\\\":\\\"Lycamobile SL\\\",\\\"45401\\\":\\\"Citic Telecom Ltd.\\\",\\\"61002\\\":\\\"Orange/IKATEL\\\",\\\"302653\\\":\\\"Telus Mobility\\\",\\\"62910\\\":\\\"MTN/Libertis\\\",\\\"60600\\\":\\\"Libyana\\\",\\\"53701\\\":\\\"Pacific Mobile\\\",\\\"310490\\\":\\\"Triton PCS\\\",\\\"310500\\\":\\\"Public Service Cellular Inc.\\\",\\\"35670\\\":\\\"UTS Cariglobe\\\",\\\"310220\\\":\\\"T-Mobile\\\",\\\"71620\\\":\\\"Claro /Amer.Mov./TIM\\\",\\\"21408\\\":\\\"Euskaltel SA\\\",\\\"61502\\\":\\\"Telecel/MOOV\\\",\\\"344930\\\":\\\"DigiCel/Cing. Wireless\\\",\\\"44001\\\":\\\"NTT Docomo\\\",\\\"21416\\\":\\\"Telecable de Asturias SA\\\",\\\"22809\\\":\\\"Comfone AG\\\",\\\"311311\\\":\\\"Farmers\\\",\\\"302630\\\":\\\"Bell Aliant\\\",\\\"23219\\\":\\\"Tele2\\\",\\\"45402\\\":\\\"CSL Ltd.\\\",\\\"60601\\\":\\\"Al-Madar\\\",\\\"53702\\\":\\\"GreenCom PNG Ltd\\\",\\\"45410\\\":\\\"CSL/New World PCS Ltd.\\\",\\\"23099\\\":\\\"Vodafone\\\",\\\"21432\\\":\\\"ION Mobile\\\",\\\"62404\\\":\\\"Nextel\\\",\\\"334060\\\":\\\"SAI PCS\\\",\\\"366050\\\":\\\"Wireless Ventures (Dominica) Ltd (Digicel Dominica)\\\",\\\"64207\\\":\\\"Smart Mobile / LACELL \\\",\\\"29310\\\":\\\"Slovenske zeleznice d.o.o.\\\",\\\"52801\\\":\\\"Telekom Brunei Bhd (TelBru)\\\",\\\"21409\\\":\\\"Orange\\\",\\\"61503\\\":\\\"Telecel/MOOV\\\",\\\"28401\\\":\\\"MobilTel AD\\\",\\\"44002\\\":\\\"NTT Docomo\\\",\\\"21417\\\":\\\"R Cable y Telec. Galicia SA\\\",\\\"44010\\\":\\\"NTT Docomo\\\",\\\"21425\\\":\\\"Lycamobile SL\\\",\\\"302654\\\":\\\"Sask Tel Mobility\\\",\\\"71606\\\":\\\"Movistar\\\",\\\"45403\\\":\\\"H3G/Hutchinson\\\",\\\"60602\\\":\\\"Al-Madar\\\",\\\"46668\\\":\\\"ACeS Taiwan - ACeS Taiwan Telecommunications Co Ltd\\\",\\\"53703\\\":\\\"Digicel\\\",\\\"54105\\\":\\\"DigiCel\\\",\\\"708030\\\":\\\"HonduTel\\\",\\\"51401\\\":\\\"Telin/ Telkomcel\\\",\\\"311300\\\":\\\"Nexus Communications Inc.\\\",\\\"31060\\\":\\\"Consolidated Telcom\\\",\\\"64208\\\":\\\"Lumitel/Viettel\\\",\\\"27001\\\":\\\"P+T/Post LUXGSM\\\",\\\"52802\\\":\\\"b-mobile\\\",\\\"25039\\\":\\\"UralTel\\\",\\\"311020\\\":\\\"Missouri RSA No 5 Partnership\\\",\\\"46692\\\":\\\"Chunghwa Telecom LDM\\\",\\\"44003\\\":\\\"NTT Docomo\\\",\\\"21418\\\":\\\"Cableuropa SAU (ONO)\\\",\\\"43601\\\":\\\"Tcell/JC Somoncom\\\",\\\"20888\\\":\\\"Bouygues Telecom\\\",\\\"360100\\\":\\\"Cingular\\\",\\\"44011\\\":\\\"NTT Docomo\\\",\\\"21426\\\":\\\"Lleida\\\",\\\"45404\\\":\\\"H3G/Hutchinson\\\",\\\"71607\\\":\\\"Nextel\\\",\\\"60603\\\":\\\"Libyana\\\",\\\"43102\\\":\\\"Etisalat\\\",\\\"71615\\\":\\\"Viettel Mobile\\\",\\\"25539\\\":\\\"Golden Telecom\\\",\\\"51402\\\":\\\"Timor Telecom\\\",\\\"45420\\\":\\\"HKT/PCCW\\\",\\\"310760\\\":\\\"Panhandle Telephone Cooperative Inc.\\\",\\\"342750\\\":\\\"Digicel\\\",\\\"310480\\\":\\\"Choice Phone LLC\\\",\\\"46693\\\":\\\"Mobitai\\\",\\\"50501\\\":\\\"Telstra Corp. Ltd.\\\",\\\"52811\\\":\\\"Datastream (DTSCom)\\\",\\\"44004\\\":\\\"SoftBank Mobile Corp\\\",\\\"28403\\\":\\\"BTC Mobile EOOD (vivatel)\\\",\\\"21419\\\":\\\"Simyo/KPN \\\",\\\"20889\\\":\\\"Virgin Mobile/Omer\\\",\\\"22851\\\":\\\"BebbiCell AG\\\",\\\"43602\\\":\\\"CJSC Indigo Tajikistan\\\",\\\"44012\\\":\\\"NTT Docomo\\\",\\\"302655\\\":\\\"MTS Mobility\\\",\\\"45405\\\":\\\"H3G/Hutchinson\\\",\\\"21427\\\":\\\"Truphone\\\",\\\"31046\\\":\\\"SIMMETRY\\\",\\\"310210\\\":\\\"T-Mobile\\\",\\\"44020\\\":\\\"SoftBank Mobile Corp\\\",\\\"344920\\\":\\\"C & W\\\",\\\"42701\\\":\\\"Ooredoo/Qtel\\\",\\\"31038\\\":\\\"USA 3650 AT&T\\\",\\\"312090\\\":\\\"Allied Wireless Communications Corporation\\\",\\\"376350\\\":\\\"Cable & Wireless (TCI) Ltd\\\",\\\"26601\\\":\\\"Gibtel GSM\\\",\\\"42202\\\":\\\"Oman Mobile/GTO\\\",\\\"50502\\\":\\\"Singtel Optus\\\",\\\"334050\\\":\\\"AT&T/IUSACell\\\",\\\"22852\\\":\\\"Mundio Mobile AG\\\",\\\"43603\\\":\\\"MLT/TT mobile\\\",\\\"62907\\\":\\\"Warid\\\",\\\"44013\\\":\\\"NTT Docomo\\\",\\\"41301\\\":\\\"Mobitel Ltd.\\\",\\\"45406\\\":\\\"Vodafone/SmarTone\\\",\\\"44021\\\":\\\"NTT Docomo\\\",\\\"45414\\\":\\\"H3G/Hutchinson\\\",\\\"71617\\\":\\\"Nextel\\\",\\\"42702\\\":\\\"Vodafone\\\",\\\"42203\\\":\\\"Nawras\\\",\\\"311280\\\":\\\"Verizon Wireless\\\",\\\"50503\\\":\\\"Vodafone\\\",\\\"28405\\\":\\\"Telenor/Cosmo/Globul\\\",\\\"44006\\\":\\\"SoftBank Mobile Corp\\\",\\\"22853\\\":\\\"upc cablecom GmbH\\\",\\\"43604\\\":\\\"Babilon-M\\\",\\\"50511\\\":\\\"Telstra Corp. Ltd.\\\",\\\"25701\\\":\\\"Mobile Digital Communications\\\",\\\"44014\\\":\\\"NTT Docomo\\\",\\\"302656\\\":\\\"Tbay Mobility\\\",\\\"41302\\\":\\\"MTN/Dialog\\\",\\\"60606\\\":\\\"Hatef\\\",\\\"43612\\\":\\\"Tcell/JC Somoncom\\\",\\\"44022\\\":\\\"NTT Docomo\\\",\\\"338110\\\":\\\"Cable & Wireless\\\",\\\"45415\\\":\\\"Vodafone/SmarTone\\\",\\\"311010\\\":\\\"Missouri RSA No 5 Partnership\\\",\\\"44030\\\":\\\"NTT Docomo\\\",\\\"40401\\\":\\\"Aircel Digilink India\\\",\\\"46688\\\":\\\"KG Telecom\\\",\\\"50504\\\":\\\"Department of Defense\\\",\\\"28406\\\":\\\"BTC Mobile EOOD (vivatel)\\\",\\\"44007\\\":\\\"KDDI Corporation\\\",\\\"22854\\\":\\\"Lycamobile AG\\\",\\\"43605\\\":\\\"Bee Line\\\",\\\"310750\\\":\\\"East Kentucky Network LLC\\\",\\\"50512\\\":\\\"H3G Ltd.\\\",\\\"310470\\\":\\\"Docomo\\\",\\\"44015\\\":\\\"NTT Docomo\\\",\\\"25702\\\":\\\"MTS\\\",\\\"45408\\\":\\\"Truephone\\\",\\\"33011\\\":\\\"Puerto Rico Telephone Company Inc. (PRTC)\\\",\\\"41303\\\":\\\"Etisalat/Tigo\\\",\\\"310190\\\":\\\"Unknown\\\",\\\"44023\\\":\\\"NTT Docomo\\\",\\\"45416\\\":\\\"HKT/PCCW\\\",\\\"310200\\\":\\\"T-Mobile\\\",\\\"44031\\\":\\\"NTT Docomo\\\",\\\"24801\\\":\\\"EMT GSM\\\",\\\"46689\\\":\\\"T-Star/VIBO\\\",\\\"40410\\\":\\\"Bharti Airtel Limited (Delhi)\\\",\\\"311281\\\":\\\"Verizon Wireless\\\",\\\"46697\\\":\\\"Taiwan Cellular\\\",\\\"50505\\\":\\\"The Ozitel Network Pty.\\\",\\\"45440\\\":\\\"shared by private TETRA systems\\\",\\\"44008\\\":\\\"KDDI Corporation\\\",\\\"27877\\\":\\\"Melita\\\",\\\"302610\\\":\\\"Bell Mobility\\\",\\\"25567\\\":\\\"KyivStar\\\",\\\"50513\\\":\\\"Railcorp/Vodafone\\\",\\\"302657\\\":\\\"Quebectel Mobility\\\",\\\"44016\\\":\\\"NTT Docomo\\\",\\\"25703\\\":\\\"BelCel JV\\\",\\\"29340\\\":\\\"SI.Mobil\\\",\\\"23401\\\":\\\"Mapesbury C. Ltd\\\",\\\"44024\\\":\\\"NTT Docomo\\\"}",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "switch_ad_source",
+      "value": "Switch to %s ad",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "too_many_ads",
+      "value": "Too many ads",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tool_title_ads",
+      "value": "Adwords",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "Ad closed",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_data_error",
+      "value": "Response data error",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "Ads Closed",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_adslot_empty",
+      "value": "No request ad slot",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_adslot_id_error",
+      "value": "Illegal ad slot id",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_adslot_size_empty",
+      "value": "Empty ad slot size",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_banner_ad_load_image_error",
+      "value": "Banner loading failed",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_ad_able_false_msg",
+      "value": "Prohibit request ads by compliance, please check COPPA/CCPA/GDPR settings",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_ad_type",
+      "value": "Illegal ad type",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_adtype_differ",
+      "value": "Ad type error",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_code_adcount_error",
+      "value": "Incorrect number of ad",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_device_ip",
+      "value": "Please check the country of the IP of the ad requesting device in service country",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_new_register_limit",
+      "value": "New ad slot exceeded daily request limit",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_origin_ad_error",
+      "value": "Origin type error",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_splash_ad_type",
+      "value": "Splash ad type error",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_feel_hint",
+      "value": "Tell us how this ad made you feel",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_frequent_call_erroe",
+      "value": "Ad requests are too frequent",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_insert_ad_load_image_error",
+      "value": "Interstitial loading failed",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "Like this ad?",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_logo_cn",
+      "value": "AD",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_logo_en",
+      "value": "Ad",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_mediation_format_no_ad_error_msg",
+      "value": "error_ adn:%1$s no ads，please check ad network",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_mediation_format_setting_error_msg",
+      "value": "slot setting error, pangle default ads will be displayed",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "ad %1$d of %2$d",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_no_ad",
+      "value": "No ad",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_no_ad_parse",
+      "value": "Parsing data without ad",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_reder_ad_load_timeout",
+      "value": "Template loading timeout",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "Report this ad to help us improve",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "Skip after %ds",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_splash_ad_load_image_error",
+      "value": "Splash loading failed",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_suggestion_description",
+      "value": "Enter a description of the display error, and click the Submit button. The ad creative will also be sent back to Pangle to help troubleshoot the problem.",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "tt_web_title_default",
+      "value": "Advertise",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "vip_licence_message",
+      "value": "\"Congratulations for successfully applied VIP Premium. Following benefits are now available:\n\n- Permanently remove app ads\n- As a great app sponsor\"",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "vip_note",
+      "value": "Note: we cannot block the embedded ads from public websites.",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Watch ad to download",
+      "file": "res/values/strings.xml",
+      "qualifier": "values"
+    },
+    {
+      "type": "string",
+      "name": "ad_close",
+      "value": "إغلاق  %1$d",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "ad_cta_downloads",
+      "value": "التحميلات",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_all_media_title",
+      "value": "جميع الوسائط",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_description_tips",
+      "value": "إن كان هناك أي شيء تريد إخبارنا به...",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_irrelevant",
+      "value": "غير متصل بالموضوع",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_misleading_scam",
+      "value": "مضلل أو إحتيالي",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_repeated",
+      "value": "مكرر",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_thx_feedback",
+      "value": "شكراً لك على الملاحظة.",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "ad_loading",
+      "value": "يتم التحضير",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "ad_tips",
+      "value": "قد يعجبك أيضاً",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "too_many_ads",
+      "value": "إعلانات كثيرة",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "الإعلان الذي تم إغلاقه",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "االإعلانات مغلقة",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "هل أعجبك هذا الإعلان؟",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "إعلان %1$d من %2$d",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "قدِّم ملاحظاتك حول هذا الإعلان لمساعدتنا في التحسين",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "تخطي بعد s%d ثانية",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "شاهد إعلاناً للتحميل",
+      "file": "res/values-ar/strings.xml",
+      "qualifier": "values-ar"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Yükləmək üçün reklama baxın",
+      "file": "res/values-az/strings.xml",
+      "qualifier": "values-az"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Гледайте реклама за изтегляне",
+      "file": "res/values-bg/strings.xml",
+      "qualifier": "values-bg"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "ডাউনলোড করতে বিজ্ঞাপন দেখুন",
+      "file": "res/values-bn/strings.xml",
+      "qualifier": "values-bn"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Pogledajte oglas za preuzimanje",
+      "file": "res/values-bs/strings.xml",
+      "qualifier": "values-bs"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Mira l&#39;anunci per descarregar",
+      "file": "res/values-ca/strings.xml",
+      "qualifier": "values-ca"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Sledujte reklamu ke stažení",
+      "file": "res/values-cs/strings.xml",
+      "qualifier": "values-cs"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "Anzeige geschlossen",
+      "file": "res/values-de/strings.xml",
+      "qualifier": "values-de"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "Anzeigen geschlossen",
+      "file": "res/values-de/strings.xml",
+      "qualifier": "values-de"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-de/strings.xml",
+      "qualifier": "values-de"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "Gefällt dir diese Anzeige?",
+      "file": "res/values-de/strings.xml",
+      "qualifier": "values-de"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "Anzeige %1$d von %2$d",
+      "file": "res/values-de/strings.xml",
+      "qualifier": "values-de"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "Melde diese Anzeige und hilf uns, noch besser zu werden.",
+      "file": "res/values-de/strings.xml",
+      "qualifier": "values-de"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "Nach %ds Sekunden überspringen",
+      "file": "res/values-de/strings.xml",
+      "qualifier": "values-de"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Werbung zum Download ansehen",
+      "file": "res/values-de/strings.xml",
+      "qualifier": "values-de"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Δείτε τη διαφήμιση για λήψη",
+      "file": "res/values-el/strings.xml",
+      "qualifier": "values-el"
+    },
+    {
+      "type": "string",
+      "name": "ad_close",
+      "value": "Cerrar   %1$d",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "ad_cta_downloads",
+      "value": "Descargas",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_all_media_title",
+      "value": "Toda la media",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_description_tips",
+      "value": "Si hay algo que quieras contarnos...",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_irrelevant",
+      "value": "Irrelevante",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_misleading_scam",
+      "value": "Maldirigido o estafa",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_repeated",
+      "value": "Repetido",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_thx_feedback",
+      "value": "Gracias por su feedback.",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "ad_loading",
+      "value": "Cargando",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "ad_tips",
+      "value": "También podría gustarte",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "too_many_ads",
+      "value": "Demasiados anuncios",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "Anuncio cerrado",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "Anuncios cerrados",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "¿Te gusta este anuncio?",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "anuncio %1$d de %2$d",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "Informa sobre este anuncio para ayudarnos a mejorar",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "Omitir después %ds segundos",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Ver anuncio para descargar",
+      "file": "res/values-es/strings.xml",
+      "qualifier": "values-es"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "برای دانلود، آگهی را ببین",
+      "file": "res/values-fa/strings.xml",
+      "qualifier": "values-fa"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Manood ng ad upang ma-download",
+      "file": "res/values-fil/strings.xml",
+      "qualifier": "values-fil"
+    },
+    {
+      "type": "string-array",
+      "name": "vip_features",
+      "value": "\n        \"En tant que super sponsor d'applis.\"\n        Supprimer définitivement les pubs Snaptube\n        Prochainement encore plus de fonctionnalités premium.\n     | \"En tant que super sponsor d'applis.\" | Supprimer définitivement les pubs Snaptube | Prochainement encore plus de fonctionnalités premium.",
+      "file": "res/values-fr/arrays.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "ad_close",
+      "value": "Fermer   %1$d",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "ad_cta_downloads",
+      "value": "Téléchargements",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_all_media_title",
+      "value": "Tous les Médias",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_description_tips",
+      "value": "\"S'il y a quelque chose que vous voulez nous dire...\"",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_irrelevant",
+      "value": "Sans importance",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_misleading_scam",
+      "value": "Tromperie ou arnaque",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_repeated",
+      "value": "Répété",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_thx_feedback",
+      "value": "Merci de votre avis.",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "ad_loading",
+      "value": "Téléchargement en cours",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "ad_tips",
+      "value": "Tu pourrais aussi aimer",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "too_many_ads",
+      "value": "Trop de pubs",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "Publicité fermée",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "Annonces fermées",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "Vous aimez cette annonce ?",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "annonce %1$d sur %2$d",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "Envoyez-nous un commentaire sur cette annonce pour nous permettre de nous améliorer",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "Passer après %ds secondes",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "vip_licence_message",
+      "value": "\"Félicitations d'avoir bien acquis le premium VIP.\nLes avantages suivants sont maintenant disponibles :\n\n- Retirez les publicités des apps de façon permanente\n- En tant que super sponsor d'applis\"",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "\"Regarder l'annonce pour télécharger\"",
+      "file": "res/values-fr/strings.xml",
+      "qualifier": "values-fr"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "ડાઉનલોડ કરવા માટે જાહેરાત જુઓ",
+      "file": "res/values-gu/strings.xml",
+      "qualifier": "values-gu"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "विज्ञापन बंद किया गया",
+      "file": "res/values-hi/strings.xml",
+      "qualifier": "values-hi"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "विज्ञापन बंद",
+      "file": "res/values-hi/strings.xml",
+      "qualifier": "values-hi"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-hi/strings.xml",
+      "qualifier": "values-hi"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "%2$d में से विज्ञापन %1$d",
+      "file": "res/values-hi/strings.xml",
+      "qualifier": "values-hi"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "%ds सेकंड के बाद छोड़ दें",
+      "file": "res/values-hi/strings.xml",
+      "qualifier": "values-hi"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "विज्ञापन देखकर डाउनलोड करें",
+      "file": "res/values-hi/strings.xml",
+      "qualifier": "values-hi"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Pogledajte oglas za preuzimanje",
+      "file": "res/values-hr/strings.xml",
+      "qualifier": "values-hr"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Nézze meg a hirdetést a letöltéshez",
+      "file": "res/values-hu/strings.xml",
+      "qualifier": "values-hu"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "Iklan ditutup",
+      "file": "res/values-in/strings.xml",
+      "qualifier": "values-in"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-in/strings.xml",
+      "qualifier": "values-in"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "Suka iklan ini?",
+      "file": "res/values-in/strings.xml",
+      "qualifier": "values-in"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "iklan %1$d dari %2$d",
+      "file": "res/values-in/strings.xml",
+      "qualifier": "values-in"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "Berikan masukan untuk iklan ini agar kami bisa meningkatkan kualitas iklan",
+      "file": "res/values-in/strings.xml",
+      "qualifier": "values-in"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "Lewati setelah %ds detik",
+      "file": "res/values-in/strings.xml",
+      "qualifier": "values-in"
+    },
+    {
+      "type": "string",
+      "name": "vip_licence_message",
+      "value": "\"Selamat, Anda berhasil menerapkan VIP Premium. Berikut manfaat yang Akan Anda dapatkan:\n\n- Iklan dihapus selamanya.\n- Sebagai sponsor aplikasi hebat.\"",
+      "file": "res/values-in/strings.xml",
+      "qualifier": "values-in"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Tonton iklan untuk mengunduh",
+      "file": "res/values-in/strings.xml",
+      "qualifier": "values-in"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "Annuncio chiuso",
+      "file": "res/values-it/strings.xml",
+      "qualifier": "values-it"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "Annunci chiusi",
+      "file": "res/values-it/strings.xml",
+      "qualifier": "values-it"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-it/strings.xml",
+      "qualifier": "values-it"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "Ti piace questo annuncio?",
+      "file": "res/values-it/strings.xml",
+      "qualifier": "values-it"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "annuncio %1$d di %2$d",
+      "file": "res/values-it/strings.xml",
+      "qualifier": "values-it"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "Segnala questo annuncio per aiutarci a migliorare",
+      "file": "res/values-it/strings.xml",
+      "qualifier": "values-it"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "Ignora dopo %ds secondi",
+      "file": "res/values-it/strings.xml",
+      "qualifier": "values-it"
+    },
+    {
+      "type": "string",
+      "name": "vip_licence_message",
+      "value": "\"Congratulazioni per aver effettuato l'aggiornamento a VIP Premium. Ora puoi approfittare dei seguenti vantaggi:\n\n- Annunci pubblicitari eliminati per sempre\n- Come un grande sponsor dell'app\"",
+      "file": "res/values-it/strings.xml",
+      "qualifier": "values-it"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Guarda annuncio per scaricare",
+      "file": "res/values-it/strings.xml",
+      "qualifier": "values-it"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "צפו במודעה להורדה",
+      "file": "res/values-iw/strings.xml",
+      "qualifier": "values-iw"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "იხილეთ რეკლამა ჩამოსატვირთად",
+      "file": "res/values-ka/strings.xml",
+      "qualifier": "values-ka"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "មើលការផ្សាយពាណិជ្ជកម្មដើម្បីទាញយក",
+      "file": "res/values-km/strings.xml",
+      "qualifier": "values-km"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಜಾಹೀರಾತನ್ನು ವೀಕ್ಷಿಸಿ",
+      "file": "res/values-kn/strings.xml",
+      "qualifier": "values-kn"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "광고 종료",
+      "file": "res/values-ko/strings.xml",
+      "qualifier": "values-ko"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "광고 종료",
+      "file": "res/values-ko/strings.xml",
+      "qualifier": "values-ko"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-ko/strings.xml",
+      "qualifier": "values-ko"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "이 광고가 마음에 드시나요?",
+      "file": "res/values-ko/strings.xml",
+      "qualifier": "values-ko"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "%2$d의 광고 %1$d",
+      "file": "res/values-ko/strings.xml",
+      "qualifier": "values-ko"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "피드백을 주시면 이 광고를 개선하는 데 도움이 됩니다",
+      "file": "res/values-ko/strings.xml",
+      "qualifier": "values-ko"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "%ds후에 닫을 수 있다",
+      "file": "res/values-ko/strings.xml",
+      "qualifier": "values-ko"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "다운로드하려면 광고를 시청하세요.",
+      "file": "res/values-ko/strings.xml",
+      "qualifier": "values-ko"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Ji bo daxistinê reklamê temaşe bikin",
+      "file": "res/values-ku/strings.xml",
+      "qualifier": "values-ku"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "ເບິ່ງໂຄສະນາເພື່ອດາວໂຫລດ",
+      "file": "res/values-lo/strings.xml",
+      "qualifier": "values-lo"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "ഡൗൺലോഡ് ചെയ്യാൻ പരസ്യം കാണുക",
+      "file": "res/values-ml/strings.xml",
+      "qualifier": "values-ml"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Татаж авахын тулд зар үзнэ үү",
+      "file": "res/values-mn/strings.xml",
+      "qualifier": "values-mn"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "डाउनलोड करण्यासाठी जाहिरात पहा",
+      "file": "res/values-mr/strings.xml",
+      "qualifier": "values-mr"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "Suka iklan ini?",
+      "file": "res/values-ms/strings.xml",
+      "qualifier": "values-ms"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "iklan %1$d daripada %2$d",
+      "file": "res/values-ms/strings.xml",
+      "qualifier": "values-ms"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "Laporkan iklan ini untuk membantu kami membuat penambahbaikan",
+      "file": "res/values-ms/strings.xml",
+      "qualifier": "values-ms"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Tonton iklan untuk muat turun",
+      "file": "res/values-ms/strings.xml",
+      "qualifier": "values-ms"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "ဒေါင်းလုဒ်လုပ်ရန် ကြော်ငြာကိုကြည့်ပါ။",
+      "file": "res/values-my/strings.xml",
+      "qualifier": "values-my"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Bekijk de advertentie om te downloaden",
+      "file": "res/values-nl/strings.xml",
+      "qualifier": "values-nl"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਵਿਗਿਆਪਨ ਦੇਖੋ",
+      "file": "res/values-pa/strings.xml",
+      "qualifier": "values-pa"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "Podoba Ci się ta reklama?",
+      "file": "res/values-pl/strings.xml",
+      "qualifier": "values-pl"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "Reklama %1$d z %2$d",
+      "file": "res/values-pl/strings.xml",
+      "qualifier": "values-pl"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "Zgłoś tę reklamę, abyśmy mogli zmieniać się na lepsze",
+      "file": "res/values-pl/strings.xml",
+      "qualifier": "values-pl"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Obejrzyj reklamę do pobrania",
+      "file": "res/values-pl/strings.xml",
+      "qualifier": "values-pl"
+    },
+    {
+      "type": "string",
+      "name": "ad_close",
+      "value": "Fechar  %1$d",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "ad_cta_downloads",
+      "value": "Downloads",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_all_media_title",
+      "value": "Todas as mídias",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_description_tips",
+      "value": "Se tiver algo que queira nos contar...",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_irrelevant",
+      "value": "Irrelevante",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_misleading_scam",
+      "value": "Enganação ou fraude",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_repeated",
+      "value": "Repetido",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "ad_fb_thx_feedback",
+      "value": "Agradecemos seu feedback.",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "ad_loading",
+      "value": "Carregando",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "ad_tips",
+      "value": "Você talvez curta também",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "too_many_ads",
+      "value": "Muitos anúncios",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "Anúncio fechado",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "Anúncios fechados",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "Gostou deste anúncio?",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "anúncio %1$d de %2$d",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "Denuncie este anúncio para nos ajudar a melhorar",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "Pular após %ds segundos",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Assista a anúncios para baixar",
+      "file": "res/values-pt/strings.xml",
+      "qualifier": "values-pt"
+    },
+    {
+      "type": "string",
+      "name": "vip_licence_message",
+      "value": "\"Felicitări pentru că ai devenit membru VIP Premium. Acum ai următoarele beneficii:\n\n- Reclamele din cadrul aplicației au fost eliminate permanent.\n- Ca sponsor al aplicației.\"",
+      "file": "res/values-ro/strings.xml",
+      "qualifier": "values-ro"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Urmăriți anunțul pentru descărcare",
+      "file": "res/values-ro/strings.xml",
+      "qualifier": "values-ro"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "Реклама закрыта",
+      "file": "res/values-ru/strings.xml",
+      "qualifier": "values-ru"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "Объявления закрыты",
+      "file": "res/values-ru/strings.xml",
+      "qualifier": "values-ru"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "Рекламное объявление",
+      "file": "res/values-ru/strings.xml",
+      "qualifier": "values-ru"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "Понравилась эта реклама?",
+      "file": "res/values-ru/strings.xml",
+      "qualifier": "values-ru"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "Реклама %1$d из %2$d",
+      "file": "res/values-ru/strings.xml",
+      "qualifier": "values-ru"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "Вы можете отправить отзыв об этой рекламе, чтобы помочь нам стать лучше",
+      "file": "res/values-ru/strings.xml",
+      "qualifier": "values-ru"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "Можно пропустить через s %dс",
+      "file": "res/values-ru/strings.xml",
+      "qualifier": "values-ru"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Просмотрите рекламу и скачайте",
+      "file": "res/values-ru/strings.xml",
+      "qualifier": "values-ru"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Shikoni reklamën për ta shkarkuar",
+      "file": "res/values-sq/strings.xml",
+      "qualifier": "values-sq"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Погледајте оглас за преузимање",
+      "file": "res/values-sr/strings.xml",
+      "qualifier": "values-sr"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Se annons för att ladda ner",
+      "file": "res/values-sv/strings.xml",
+      "qualifier": "values-sv"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "பதிவிறக்குவதற்கு விளம்பரத்தைப் பார்க்கவும்",
+      "file": "res/values-ta/strings.xml",
+      "qualifier": "values-ta"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "డౌన్‌లోడ్ చేయడానికి ప్రకటనను చూడండి",
+      "file": "res/values-te/strings.xml",
+      "qualifier": "values-te"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "ปิดโฆษณาแล้ว",
+      "file": "res/values-th/strings.xml",
+      "qualifier": "values-th"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "ปิดโฆษณา",
+      "file": "res/values-th/strings.xml",
+      "qualifier": "values-th"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-th/strings.xml",
+      "qualifier": "values-th"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "ชอบโฆษณานี้หรือไม่",
+      "file": "res/values-th/strings.xml",
+      "qualifier": "values-th"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "โฆษณา %1$d จาก %2$d",
+      "file": "res/values-th/strings.xml",
+      "qualifier": "values-th"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "รายงานโฆษณานี้เพื่อช่วยเราปรับปรุง",
+      "file": "res/values-th/strings.xml",
+      "qualifier": "values-th"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "ข้ามหลังจาก %ds วินาที",
+      "file": "res/values-th/strings.xml",
+      "qualifier": "values-th"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "ดูโฆษณาเพื่อดาวน์โหลด",
+      "file": "res/values-th/strings.xml",
+      "qualifier": "values-th"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "Bu reklamı beğendiniz mi?",
+      "file": "res/values-tr/strings.xml",
+      "qualifier": "values-tr"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "reklam %1$d / %2$d",
+      "file": "res/values-tr/strings.xml",
+      "qualifier": "values-tr"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "İyileştirmemize yardımcı olmak için bu reklamı bildirin",
+      "file": "res/values-tr/strings.xml",
+      "qualifier": "values-tr"
+    },
+    {
+      "type": "string",
+      "name": "vip_licence_message",
+      "value": "\"Tebrikler; VIP Premium başarıyla etkinleştirildi. Aşağıdaki ayrıcalıklar şu anda etkin:\n\n- Uygulama reklamları kalıcı olarak kaldırıldı.\n- Harika bir uygulama sponsoru gibi.\"",
+      "file": "res/values-tr/strings.xml",
+      "qualifier": "values-tr"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "İndirmek için reklam izleyin",
+      "file": "res/values-tr/strings.xml",
+      "qualifier": "values-tr"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Перегляньте рекламу, щоб завантажити",
+      "file": "res/values-uk/strings.xml",
+      "qualifier": "values-uk"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "ڈاؤن لوڈ کرنے کے لیے اشتہار دیکھیں",
+      "file": "res/values-ur/strings.xml",
+      "qualifier": "values-ur"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Yuklab olish uchun reklama tomosha qiling",
+      "file": "res/values-uz/strings.xml",
+      "qualifier": "values-uz"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "Quảng cáo đã đóng",
+      "file": "res/values-vi/strings.xml",
+      "qualifier": "values-vi"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "Quảng cáo đã đóng",
+      "file": "res/values-vi/strings.xml",
+      "qualifier": "values-vi"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-vi/strings.xml",
+      "qualifier": "values-vi"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "Bạn thích quảng cáo này chứ?",
+      "file": "res/values-vi/strings.xml",
+      "qualifier": "values-vi"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "quảng cáo %1$d/%2$d",
+      "file": "res/values-vi/strings.xml",
+      "qualifier": "values-vi"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "Báo cáo quảng cáo này để giúp chúng tôi cải thiện",
+      "file": "res/values-vi/strings.xml",
+      "qualifier": "values-vi"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "Bỏ qua sau %ds giây",
+      "file": "res/values-vi/strings.xml",
+      "qualifier": "values-vi"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "Xem quảng cáo để tải xuống",
+      "file": "res/values-vi/strings.xml",
+      "qualifier": "values-vi"
+    },
+    {
+      "type": "string",
+      "name": "mbridge_reward_endcard_ad",
+      "value": "AD",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_close_text",
+      "value": "广告关闭",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_data_error",
+      "value": "返回数据缺少必要字段",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_is_closed",
+      "value": "广告已关闭",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_ad_logo_txt",
+      "value": "AD",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_banner_ad_load_image_error",
+      "value": "banner广告加载图片失败",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_ad_type",
+      "value": "广告类型不合法",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_origin_ad_error",
+      "value": "媒体请求素材是否原生与媒体平台录入不一致",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_error_splash_ad_type",
+      "value": "开屏广告类型异常",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_insert_ad_load_image_error",
+      "value": "插屏广告图片加载失败",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_like_this_ad",
+      "value": "喜欢这个广告吗？",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_multiple_ad_indicator",
+      "value": "广告 %1$d/%2$d",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_no_ad",
+      "value": "没有广告",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_no_ad_parse",
+      "value": "解析数据没有ad",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_reder_ad_load_timeout",
+      "value": "模板广告加载超时无返回",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_report_this_ad",
+      "value": "举报这个广告，以帮助我们改进",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_skip_ad_time_text",
+      "value": "%ds后可跳过",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "tt_splash_ad_load_image_error",
+      "value": "开屏广告图片加载失败",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    },
+    {
+      "type": "string",
+      "name": "watch_ad_to_download",
+      "value": "观看广告下载",
+      "file": "res/values-zh/strings.xml",
+      "qualifier": "values-zh"
+    }
+  ]
+}

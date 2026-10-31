@@ -1,0 +1,56 @@
+=== lib/arm64-v8a/libmp3cvt.so ===
+/home/runner/work/_temp/snaptube-analysis/decoded/lib/arm64-v8a/libmp3cvt.so: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=be3c2b237665477eb7122db9537ffa4c6cb48849, stripped
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           AArch64
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          693872 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         9
+  Size of section headers:           64 (bytes)
+  Number of section headers:         29
+  Section header string table index: 28
+
+Dynamic dependencies:
+
+Dynamic section at offset 0xa6710 contains 29 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [liblog.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so]
+ 0x000000000000000e (SONAME)             Library soname: [libmp3cvt.so]
+ 0x000000000000001e (FLAGS)              BIND_NOW
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW
+ 0x0000000000000007 (RELA)               0xbf20
+ 0x0000000000000008 (RELASZ)             49824 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffff9 (RELACOUNT)          1554
+ 0x0000000000000017 (JMPREL)             0x181c0
+ 0x0000000000000002 (PLTRELSZ)           8496 (bytes)
+ 0x0000000000000003 (PLTGOT)             0xaaad0
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000006 (SYMTAB)             0x2f8
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000005 (STRTAB)             0x8310
+ 0x000000000000000a (STRSZ)              15371 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x5430
+ 0x0000000000000004 (HASH)               0x6a28
+ 0x0000000000000019 (INIT_ARRAY)         0xaa700
+ 0x000000000000001b (INIT_ARRAYSZ)       16 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0xaa6f0
+ 0x000000000000001c (FINI_ARRAYSZ)       16 (bytes)
+ 0x000000006ffffff0 (VERSYM)             0x4d98
+ 0x000000006ffffffe (VERNEED)            0x53d0
+ 0x000000006fffffff (VERNEEDNUM)         3
+ 0x0000000000000000 (NULL)               0x0
