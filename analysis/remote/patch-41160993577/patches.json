@@ -1,0 +1,132 @@
+[
+  {
+    "id": "force_update_r_false",
+    "class": "com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper",
+    "header": ".method public final r(Landroid/content/Context;Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;Ljava/lang/String;)Z",
+    "reason": "Primary forced-update gate: never launch ForceUpdateActivity or finish other activities.",
+    "smali_file": "smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali",
+    "before_method_sha256": "046921e25bad3fa7ae6665a919d2e7efef1b7f68ff97f2f580ce5b7cc53e4fb5",
+    "after_method_sha256": "8b6b854c0a2e531999296c9190003d591fc2b9fb981abf4d7f48823cef185ef8",
+    "diff": "patches/force_update_r_false.diff"
+  },
+  {
+    "id": "force_update_o_false",
+    "class": "com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper",
+    "header": ".method public final o(Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;Ljava/lang/String;)Z",
+    "reason": "Backup forced-update predicate: keep o() false even if r() is bypassed.",
+    "smali_file": "smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali",
+    "before_method_sha256": "5a010bd16ec28675baa20fac275eee3a559ddae96edc05a93bb63feb370b63f4",
+    "after_method_sha256": "83f3fcfd09806139bd1f610b6825e4670db2681eb0c4838347547279f60e86f7",
+    "diff": "patches/force_update_o_false.diff"
+  },
+  {
+    "id": "splash_i1_false",
+    "class": "com/snaptube/ads/activity/SplashAdActivity",
+    "header": ".method public static i1(Landroid/content/Context;ZLjava/lang/String;Ljava/lang/String;ZLjava/util/Map;)Z",
+    "reason": "Cold/hot splash interstitial load+show gate returns not-shown.",
+    "smali_file": "smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali",
+    "before_method_sha256": "b4ff061292e28638425a4c88aaad6b9cbc72791113e5f93d7af305ec7f95ff7f",
+    "after_method_sha256": "246c559e20622600a23922842c7008b6f5f227a300981088229267580c45510d",
+    "diff": "patches/splash_i1_false.diff"
+  },
+  {
+    "id": "splash_l1_false",
+    "class": "com/snaptube/ads/activity/SplashAdActivity",
+    "header": ".method public static l1(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z",
+    "reason": "Cached-ad splash path (hybrid AdHandler.showAd) returns not-shown without launching cached interstitial.",
+    "smali_file": "smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali",
+    "before_method_sha256": "bb8fe9024ef6b69bb6e446251d25c9456dff53f864a67b7165fa6454875b5cb8",
+    "after_method_sha256": "2f067b6dd8fdc7a2b30f1509c33975b26abf056cf67b7bf90189cb58fd67e32b",
+    "diff": "patches/splash_l1_false.diff"
+  },
+  {
+    "id": "splash_m1_false",
+    "class": "com/snaptube/ads/activity/SplashAdActivity",
+    "header": ".method public static m1(Landroid/content/Context;ZLjava/lang/String;Ljava/lang/String;)Z",
+    "reason": "CleanActivity splash interstitial gate returns not-shown.",
+    "smali_file": "smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali",
+    "before_method_sha256": "a24343970d2c3ab1f0cd7d7401b3ac644fcda00a08762029e2c770ef96664d6d",
+    "after_method_sha256": "19fb00439d7333806de3fae4f928933fb0e38e69bb26a038047c9f00a9f96642",
+    "diff": "patches/splash_m1_false.diff"
+  },
+  {
+    "id": "hot_splash_e_false",
+    "class": "com/snaptube/premium/ads/splash/HotSplashAdManager",
+    "header": ".method public static final e()Z",
+    "reason": "Hot-launch splash enabled predicate returns false.",
+    "smali_file": "smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali",
+    "before_method_sha256": "82f87d6486bc8bddd9993b59b10961d06705971a19e6b1f6fb5708e58d4d6257",
+    "after_method_sha256": "d0073b085a1656a0f29de5eff8617b2a1d3faa7d59dcdd1ab5ab6fde437b48cb",
+    "diff": "patches/hot_splash_e_false.diff"
+  },
+  {
+    "id": "hot_splash_g_void",
+    "class": "com/snaptube/premium/ads/splash/HotSplashAdManager",
+    "header": ".method public static final g()V",
+    "reason": "Hot-launch splash preload/show trigger becomes a no-op.",
+    "smali_file": "smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali",
+    "before_method_sha256": "7c05becf6b08f1a3b6549540733e20770e4765214ec1feafb506fca89d47164c",
+    "after_method_sha256": "9d9e670f66811abadf3cccda10977ede552408d2f9c19c9c52fc3b5eac295116",
+    "diff": "patches/hot_splash_g_void.diff"
+  },
+  {
+    "id": "start_download_z_void",
+    "class": "com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel",
+    "header": ".method public static final z(Landroid/os/Bundle;Ljava/lang/String;)V",
+    "reason": "Post-download interstitial preload becomes a no-op.",
+    "smali_file": "smali_classes3/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel.smali",
+    "before_method_sha256": "73fe3245a76c1785960170084a5a2cd0f37926c7094774509fa6bc92cccc44fe",
+    "after_method_sha256": "94f96a6376fd8e1f7b0b30f41d8ab57b9ecf700c62a9922f954fb7567ae38775",
+    "diff": "patches/start_download_z_void.diff"
+  },
+  {
+    "id": "start_download_w_false",
+    "class": "com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel",
+    "header": ".method public final w(Landroid/os/Bundle;)Z",
+    "reason": "Post-download show gate returns false; J() short-circuits before K()/L() and callers do not depend on the boolean.",
+    "smali_file": "smali_classes3/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel.smali",
+    "before_method_sha256": "36c9d59d4906db7d0d46b19e0f1684ca54cfc2e85fe5748af080c8f2f068e4eb",
+    "after_method_sha256": "94dfa6678b4217d59f4619a44af03406a3fe9377df91d5f472932ac569ae0642",
+    "diff": "patches/start_download_w_false.diff"
+  },
+  {
+    "id": "od_v_false",
+    "class": "o/od",
+    "header": ".method public static v(Ljava/lang/String;)Z",
+    "reason": "Per-placement /<pos>/enabled ad switch returns false for all placements.",
+    "smali_file": "smali_classes3/o/od.smali",
+    "before_method_sha256": "5274c7ce747c84108902c9e9f62b2fd6b2ece228ac50ff00a95f6cc9e137b0ce",
+    "after_method_sha256": "285d4217f0facd81e3601ade72d3de00b91a264f6c9f25205b78adc84842e5ad",
+    "diff": "patches/od_v_false.diff"
+  },
+  {
+    "id": "od_c_false",
+    "class": "o/od",
+    "header": ".method public static c(Ljava/lang/String;)Z",
+    "reason": "Per-placement /preload_switch/ returns false; disables ad preloading.",
+    "smali_file": "smali_classes3/o/od.smali",
+    "before_method_sha256": "b35977a2821bb57ae4340bb9dcecb448155b7588745ecdb25085cfe6b94f0c0d",
+    "after_method_sha256": "ccd1a581dafce7189487112f52280c4c8f156ff29965144a4a7031e74bafd16e",
+    "diff": "patches/od_c_false.diff"
+  },
+  {
+    "id": "w25_h_dummy",
+    "class": "o/w25",
+    "header": ".method public h()Lo/ne3;",
+    "reason": "Native ad engine provider always returns the existing dummy w25$a (a(pos)=false, load/show no-ops). Reward loaders observe no-fill and invoke their NO_FILL callback.",
+    "smali_file": "smali_classes4/o/w25.smali",
+    "before_method_sha256": "859f9a1551ca7ee7da433a4c50e1544d8167fb23793ba5c3618b9f7e96e9f5dc",
+    "after_method_sha256": "74e2c004b2a9c303ea9fe62fde32d834d1a3ccb9c7dfb6da91fe25e960df1ded",
+    "diff": "patches/w25_h_dummy.diff"
+  },
+  {
+    "id": "config_P2_false",
+    "class": "com/snaptube/premium/configs/Config",
+    "header": ".method public static P2()Z",
+    "reason": "Global enable_ad gate returns false; sole caller o/be.h (IAdsManager.h) disables ads app-wide.",
+    "smali_file": "smali_classes4/com/snaptube/premium/configs/Config.smali",
+    "before_method_sha256": "d2f507f6cb17d8500eeddea6e425d942d7095b500a7a6979fc7c9a8f88bba519",
+    "after_method_sha256": "f1dcb9c66f213bd381065fc9849685b6c9b3bd6b85edfaefc679e3b2c69f5920",
+    "diff": "patches/config_P2_false.diff"
+  }
+]

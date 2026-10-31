@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "original": {
+    "path": "/home/runner/work/apks/apks/google_drive/SnapTube.apk",
+    "sha256": "34a8689824044252135ebecdfa432f2c07dc1d95ec91623730c36fc72dc3aff3",
+    "size_bytes": 51708137,
+    "zip_members": 3924,
+    "metadata": {
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        "android.permission.GET_PACKAGE_SIZE",
+        "android.permission.INTERNET",
+        "android.permission.KILL_BACKGROUND_PROCESSES",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.REORDER_TASKS",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "com.snaptube.premium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      ],
+      "native_code": [
+        "arm64-v8a",
+        "armeabi-v7a"
+      ],
+      "package": "com.snaptube.premium",
+      "versionCode": "75250210",
+      "versionName": "7.52.0.75250210",
+      "sdkVersion": "21",
+      "targetSdkVersion": "35"
+    }
+  },
+  "patched": {
+    "path": "/home/runner/work/_temp/snaptube-patch/outputs/SnapTube-7.52.0.75250210-adfree-noforce.apk",
+    "filename": "SnapTube-7.52.0.75250210-adfree-noforce.apk",
+    "sha256": "ccf575e5526b2b3035de26021a62e5d1e7598510a0a4716f972be201d8eb11b3",
+    "size_bytes": 51708139,
+    "zip_members": 3924,
+    "metadata": {
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        "android.permission.GET_PACKAGE_SIZE",
+        "android.permission.INTERNET",
+        "android.permission.KILL_BACKGROUND_PROCESSES",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.REORDER_TASKS",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "com.snaptube.premium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      ],
+      "native_code": [
+        "arm64-v8a",
+        "armeabi-v7a"
+      ],
+      "package": "com.snaptube.premium",
+      "versionCode": "75250210",
+      "versionName": "7.52.0.75250210",
+      "sdkVersion": "21",
+      "targetSdkVersion": "35"
+    }
+  },
+  "patched_method_count": 13,
+  "changed_smali_files": [
+    "smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali",
+    "smali_classes3/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel.smali",
+    "smali_classes3/o/od.smali",
+    "smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali",
+    "smali_classes4/com/snaptube/premium/configs/Config.smali",
+    "smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali",
+    "smali_classes4/o/w25.smali"
+  ],
+  "identity_checks": {
+    "package": true,
+    "versionCode": true,
+    "versionName": true,
+    "sdkVersion": true,
+    "targetSdkVersion": true,
+    "permissions": true,
+    "native_code": true
+  },
+  "roundtrip_checks_ok": true,
+  "signature_schemes": {
+    "v1": true,
+    "v2": true,
+    "v3": true
+  },
+  "zipalign": {
+    "four_byte": true,
+    "sixteen_kb_pages": true
+  },
+  "signing_note": "Signed with a NEW ephemeral key. Android will refuse to install this over an existing SnapTube install signed with a different key; uninstalling first would erase app data. No device install was performed.",
+  "device_testing": "NOT PERFORMED (requires separate approval)."
+}
