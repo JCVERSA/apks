@@ -1,0 +1,2 @@
+file	line	method	text
+decoded/smali_classes4/o/r24.smali	44	.method public run()V	    invoke-virtual {v1, v0}, Lcom/snaptube/premium/selfupgrade/force/AppForceUpdateHelper;->k(Landroid/app/Application;)V

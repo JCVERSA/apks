@@ -1,0 +1,4 @@
+file	line	method	text
+decoded/smali_classes4/com/snaptube/premium/dialog/PiraticalApkWarningDialogFragment.smali	349	.method public onBackPressed()Z	    invoke-virtual {v0}, Lcom/snaptube/premium/selfupgrade/force/AppForceUpdateHelper;->h()V
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali	330	.method public final m(Landroid/content/Context;Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;Ljava/lang/String;)V	    invoke-virtual {p0}, Lcom/snaptube/premium/selfupgrade/force/AppForceUpdateHelper;->i()V
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/force/ForceUpdateActivity.smali	220	.method public final b2()V	    invoke-virtual {v0}, Lcom/snaptube/premium/selfupgrade/force/AppForceUpdateHelper;->h()V

@@ -1,0 +1,2 @@
+file	line	method	text
+decoded/smali_classes4/com/snaptube/premium/utils/install/InstallParams$isSwitchNewInstall$2.smali	75	.method public final invoke()Ljava/lang/Boolean;	    invoke-static {v0}, Lcom/snaptube/premium/configs/Config;->R6(Ljava/lang/String;)Z

@@ -1,0 +1,9 @@
+[
+  "methods/com/snaptube/ads/activity/SplashAdActivity/h1_Landroid_content_Context_ZLjava_lang_String_Ljava_lang_String_Ljava_util_Map_Z.smali",
+  "methods/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel/B_Landroid_os_Bundle_Ljava_lang_String_ILjava_lang_Object_V.smali",
+  "methods/o/r24/run_V.smali",
+  "methods/o/y6/a_Z.smali",
+  "methods/o/y6/b_Z.smali",
+  "methods/o/y6/a_Z.smali",
+  "methods/o/y6/b_Z.smali"
+]

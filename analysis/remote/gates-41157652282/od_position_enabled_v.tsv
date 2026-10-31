@@ -1,0 +1,3 @@
+file	line	method	text
+decoded/smali_classes4/com/snaptube/premium/ads/SplashAdManager.smali	765	.method public final c0()Lo/ic;	    invoke-static {v3}, Lo/od;->v(Ljava/lang/String;)Z
+decoded/smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali	102	.method public static final g()V	    invoke-static {v0}, Lo/od;->v(Ljava/lang/String;)Z
