@@ -1,0 +1,9 @@
+file	line	method	text
+decoded/smali_classes2/com/dayuwuxian/clean/ui/base/BaseCleanFragment.smali	1527	.method public o3()V	    invoke-interface {v0}, Lo/ba3;->h()Z
+decoded/smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali	352	.method public static d1(Ljava/lang/String;)V	    invoke-interface {v0}, Lo/ba3;->h()Z
+decoded/smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali	476	.method public static l1(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z	    invoke-interface {v0}, Lo/ba3;->h()Z
+decoded/smali_classes3/com/snaptube/ads/view/SplashAdView.smali	3678	.method public final f2()V	    invoke-interface {v0}, Lo/ba3;->h()Z
+decoded/smali_classes3/o/m01.smali	177	.method public f(Ljava/lang/String;)Z	    invoke-interface {v0}, Lo/ba3;->h()Z
+decoded/smali_classes4/com/snaptube/premium/ads/SplashAdManager.smali	697	.method public final c0()Lo/ic;	    invoke-interface {v0}, Lo/ba3;->h()Z
+decoded/smali_classes4/com/snaptube/premium/ads/SplashAdManager.smali	1307	.method public final synthetic q0()V	    invoke-interface {v0}, Lo/ba3;->h()Z
+decoded/smali_classes4/com/snaptube/premium/app/PhoenixApplication.smali	1653	.method public n()Z	    invoke-interface {v0}, Lo/ba3;->h()Z

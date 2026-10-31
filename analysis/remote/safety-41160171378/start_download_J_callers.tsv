@@ -1,0 +1,4 @@
+file	line	method	text
+decoded/smali_classes4/com/snaptube/premium/activity/DownloadDialogWrapperActivity.smali	345	.method public final P0()V	    invoke-static {p0, v1}, Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;->J(Landroid/content/Context;Landroid/os/Bundle;)Z
+decoded/smali_classes4/com/snaptube/premium/activity/DownloadDialogWrapperActivity.smali	369	.method public final P0()V	    invoke-static {p0, v1}, Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;->J(Landroid/content/Context;Landroid/os/Bundle;)Z
+decoded/smali_classes4/com/snaptube/premium/activity/DownloadDialogWrapperActivity.smali	385	.method public final P0()V	    invoke-static {p0, v1}, Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;->J(Landroid/content/Context;Landroid/os/Bundle;)Z

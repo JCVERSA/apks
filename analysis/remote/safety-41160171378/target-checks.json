@@ -1,0 +1,106 @@
+[
+  {
+    "class": "com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper",
+    "header": ".method public final r(Landroid/content/Context;Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;Ljava/lang/String;)Z",
+    "matches": [
+      "decoded/smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper",
+    "header": ".method public final o(Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;Ljava/lang/String;)Z",
+    "matches": [
+      "decoded/smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "com/snaptube/ads/activity/SplashAdActivity",
+    "header": ".method public static i1(Landroid/content/Context;ZLjava/lang/String;Ljava/lang/String;ZLjava/util/Map;)Z",
+    "matches": [
+      "decoded/smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "com/snaptube/ads/activity/SplashAdActivity",
+    "header": ".method public static l1(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z",
+    "matches": [
+      "decoded/smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "com/snaptube/ads/activity/SplashAdActivity",
+    "header": ".method public static m1(Landroid/content/Context;ZLjava/lang/String;Ljava/lang/String;)Z",
+    "matches": [
+      "decoded/smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "com/snaptube/premium/ads/splash/HotSplashAdManager",
+    "header": ".method public static final e()Z",
+    "matches": [
+      "decoded/smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "com/snaptube/premium/ads/splash/HotSplashAdManager",
+    "header": ".method public static final g()V",
+    "matches": [
+      "decoded/smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel",
+    "header": ".method public static final z(Landroid/os/Bundle;Ljava/lang/String;)V",
+    "matches": [
+      "decoded/smali_classes3/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel",
+    "header": ".method public final w(Landroid/os/Bundle;)Z",
+    "matches": [
+      "decoded/smali_classes3/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "o/od",
+    "header": ".method public static v(Ljava/lang/String;)Z",
+    "matches": [
+      "decoded/smali_classes3/o/od.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "o/od",
+    "header": ".method public static c(Ljava/lang/String;)Z",
+    "matches": [
+      "decoded/smali_classes3/o/od.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "o/w25",
+    "header": ".method public h()Lo/ne3;",
+    "matches": [
+      "decoded/smali_classes4/o/w25.smali"
+    ],
+    "ok": true
+  },
+  {
+    "class": "com/snaptube/premium/configs/Config",
+    "header": ".method public static P2()Z",
+    "matches": [
+      "decoded/smali_classes4/com/snaptube/premium/configs/Config.smali"
+    ],
+    "ok": true
+  }
+]
