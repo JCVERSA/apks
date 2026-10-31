@@ -1,0 +1,95 @@
+{
+  "exists": true,
+  "matching_components": [
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.SimpleInterstitialAdActivity",
+      "attrs": {
+        "{http://schemas.android.com/apk/res/android}configChanges": "locale|uiMode|layoutDirection",
+        "{http://schemas.android.com/apk/res/android}launchMode": "singleTask",
+        "{http://schemas.android.com/apk/res/android}name": "com.snaptube.premium.activity.SimpleInterstitialAdActivity",
+        "{http://schemas.android.com/apk/res/android}screenOrientation": "portrait",
+        "{http://schemas.android.com/apk/res/android}theme": "@style/P4.Theme.Transparent"
+      }
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.ads.splash.RewardSplashAdActivity",
+      "attrs": {
+        "{http://schemas.android.com/apk/res/android}alwaysRetainTaskState": "false",
+        "{http://schemas.android.com/apk/res/android}configChanges": "locale|keyboardHidden|orientation|uiMode|screenSize|layoutDirection",
+        "{http://schemas.android.com/apk/res/android}excludeFromRecents": "true",
+        "{http://schemas.android.com/apk/res/android}exported": "false",
+        "{http://schemas.android.com/apk/res/android}launchMode": "singleTask",
+        "{http://schemas.android.com/apk/res/android}name": "com.snaptube.premium.ads.splash.RewardSplashAdActivity",
+        "{http://schemas.android.com/apk/res/android}screenOrientation": "portrait",
+        "{http://schemas.android.com/apk/res/android}taskAffinity": ".ChooseFormatReward",
+        "{http://schemas.android.com/apk/res/android}theme": "@style/Theme.Ad.NoAnimation"
+      }
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.premium.activity.CleanSplashAdActivity",
+      "attrs": {
+        "{http://schemas.android.com/apk/res/android}configChanges": "locale|keyboard|orientation|uiMode|screenSize|layoutDirection",
+        "{http://schemas.android.com/apk/res/android}excludeFromRecents": "true",
+        "{http://schemas.android.com/apk/res/android}name": "com.snaptube.premium.activity.CleanSplashAdActivity",
+        "{http://schemas.android.com/apk/res/android}screenOrientation": "portrait",
+        "{http://schemas.android.com/apk/res/android}taskAffinity": ".OuterScan",
+        "{http://schemas.android.com/apk/res/android}theme": "@style/P4.Theme.AdSplashTransparent"
+      }
+    },
+    {
+      "kind": "activity",
+      "name": "com.snaptube.ads.activity.SplashAdActivity",
+      "attrs": {
+        "{http://schemas.android.com/apk/res/android}configChanges": "locale|keyboardHidden|orientation|uiMode|screenSize|layoutDirection",
+        "{http://schemas.android.com/apk/res/android}exported": "false",
+        "{http://schemas.android.com/apk/res/android}launchMode": "singleTop",
+        "{http://schemas.android.com/apk/res/android}name": "com.snaptube.ads.activity.SplashAdActivity",
+        "{http://schemas.android.com/apk/res/android}screenOrientation": "portrait",
+        "{http://schemas.android.com/apk/res/android}theme": "@style/Theme.Ad.NoAnimation"
+      }
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.ads.infomobi.receiver.ReceiverDelegate",
+      "attrs": {
+        "{http://schemas.android.com/apk/res/android}exported": "true",
+        "{http://schemas.android.com/apk/res/android}name": "com.snaptube.ads.infomobi.receiver.ReceiverDelegate"
+      }
+    },
+    {
+      "kind": "receiver",
+      "name": "com.snaptube.ads.infomobi.receiver.InitReceiver",
+      "attrs": {
+        "{http://schemas.android.com/apk/res/android}exported": "false",
+        "{http://schemas.android.com/apk/res/android}name": "com.snaptube.ads.infomobi.receiver.InitReceiver"
+      }
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+      "attrs": {
+        "{http://schemas.android.com/apk/res/android}directBootAware": "false",
+        "{http://schemas.android.com/apk/res/android}enabled": "true",
+        "{http://schemas.android.com/apk/res/android}exported": "false",
+        "{http://schemas.android.com/apk/res/android}name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+      }
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+      "attrs": {
+        "{http://schemas.android.com/apk/res/android}directBootAware": "false",
+        "{http://schemas.android.com/apk/res/android}enabled": "@bool/enable_system_alarm_service_default",
+        "{http://schemas.android.com/apk/res/android}exported": "false",
+        "{http://schemas.android.com/apk/res/android}name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+      }
+    }
+  ],
+  "network_config_files": [
+    "decoded/res/xml/network_security_config_debug.xml",
+    "decoded/res/xml/network_security_config_release.xml"
+  ]
+}

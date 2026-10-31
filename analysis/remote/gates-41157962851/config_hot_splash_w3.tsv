@@ -1,0 +1,2 @@
+file	line	method	text
+decoded/smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali	77	.method public static final e()Z	    invoke-static {v0}, Lcom/snaptube/premium/configs/Config;->w3(Z)Z

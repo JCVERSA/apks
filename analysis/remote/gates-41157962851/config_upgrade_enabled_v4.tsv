@@ -1,0 +1,2 @@
+file	line	method	text
+decoded/smali_classes4/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$e.smali	47	.method public a([Ljava/lang/String;)Lrx/c;	    invoke-static {}, Lcom/snaptube/premium/configs/Config;->v4()Z

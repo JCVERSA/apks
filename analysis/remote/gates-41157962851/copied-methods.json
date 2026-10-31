@@ -1,0 +1,21 @@
+[
+  "methods/com/snaptube/ads/activity/SplashAdActivity/h1_Landroid_content_Context_ZLjava_lang_String_Ljava_lang_String_Ljava_util_Map_Z.smali",
+  "methods/com/snaptube/ads/activity/SplashAdActivity/i1_Landroid_content_Context_ZLjava_lang_String_Ljava_lang_String_ZLjava_util_Map_Z.smali",
+  "methods/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel/B_Landroid_os_Bundle_Ljava_lang_String_ILjava_lang_Object_V.smali",
+  "methods/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel/K_Landroid_content_Context_Landroid_os_Bundle_II_Z.smali",
+  "methods/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel/w_Landroid_os_Bundle_Z.smali",
+  "methods/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel/z_Landroid_os_Bundle_Ljava_lang_String_V.smali",
+  "methods/com/snaptube/premium/NavigationManager/l0_Landroid_content_Context_Lcom_snaptube_premium_selfupgrade_incremental_upgrade_UpgradeConfig_Ljava_lang_String_V.smali",
+  "methods/com/snaptube/premium/NavigationManager/l1_Landroid_content_Context_Landroid_content_Intent_Z.smali",
+  "methods/com/snaptube/premium/ads/SplashAdManager/c0_Lo_ic_.smali",
+  "methods/com/snaptube/premium/ads/SplashAdManager/u0_V.smali",
+  "methods/com/snaptube/premium/ads/splash/HotSplashAdManager/e_Z.smali",
+  "methods/com/snaptube/premium/ads/splash/HotSplashAdManager/g_V.smali",
+  "methods/com/snaptube/premium/selfupgrade/CheckSelfUpgradeManager$e/a_Ljava_lang_String_Lrx_c_.smali",
+  "methods/o/be/h_Z.smali",
+  "methods/o/r24/run_V.smali",
+  "methods/o/w25/a_Ljava_lang_String_Z.smali",
+  "methods/o/w25/h_Lo_ne3_.smali",
+  "methods/o/y6/a_Z.smali",
+  "methods/o/y6/b_Z.smali"
+]

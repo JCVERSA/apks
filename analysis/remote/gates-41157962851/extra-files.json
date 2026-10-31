@@ -1,0 +1,5 @@
+[
+  "manifest/network_security_config_debug.xml",
+  "manifest/network_security_config_release.xml",
+  "manifest/AndroidManifest.xml"
+]
