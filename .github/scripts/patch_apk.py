@@ -309,7 +309,7 @@ def main() -> None:
     sig = run([str(apksigner), "verify", "--verbose", "--print-certs", str(patched)], report / "logs/apksigner_verify.log").stdout
     (report / "signature-verify.log").write_text(sig)
     for scheme in ("v1", "v2", "v3"):
-        if not re.search(rf"Verified using {scheme} scheme: true", sig):
+        if not re.search(rf"Verified using {scheme} scheme[^:]*: true", sig):
             raise SystemExit(f"signature scheme {scheme} did not verify")
     run([str(zipalign), "-c", "-P", "16", "4", str(patched)], report / "logs/zipalign_check_patched_16k.log")
     run([str(zipalign), "-c", "4", str(patched)], report / "logs/zipalign_check_patched_4byte.log")
