@@ -2,6 +2,13 @@ name: APK static analysis
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - arena/7234f8d6-apks
+    paths:
+      - .github/workflows/apk-static-analysis.yml
+      - scripts/**
+      - google_drive/SnapTube.apk
 
 permissions:
   contents: read
