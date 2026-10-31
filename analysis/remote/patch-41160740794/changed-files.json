@@ -1,0 +1,12 @@
+{
+  "changed_smali_files": [
+    "smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali",
+    "smali_classes3/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel.smali",
+    "smali_classes3/o/od.smali",
+    "smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali",
+    "smali_classes4/com/snaptube/premium/configs/Config.smali",
+    "smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali",
+    "smali_classes4/o/w25.smali"
+  ],
+  "patched_method_count": 13
+}
