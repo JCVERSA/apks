@@ -248,9 +248,24 @@ def verify_roundtrip_method(redecoded: Path, patch: dict) -> dict:
     _, _, lines = extract_method(text, patch["header"])
     body = "\n".join(lines)
     header = patch["header"]
-    if "replacements" in patch:
-        ok = all(r["new"] in lines and r["old"] not in lines for r in patch["replacements"])
-        ok = ok and all(token in body for token in patch.get("required_tokens", []))
+    if patch["id"] == "upgrade_official_warning_branch_skip":
+        # Baksmali may renumber local labels. Verify the control-flow relationship,
+        # not the original label spelling: signature call -> goto -> K1(), with
+        # the warning construction left in the skipped linear block.
+        compact = [line.strip() for line in lines if line.strip()]
+        ok = False
+        for i, line in enumerate(compact[:-2]):
+            if re.fullmatch(r"invoke-static \{[^}]+\}, Lo/xi7;->c\(Landroid/content/Context;Z\)Z", line):
+                move, branch = compact[i + 1], compact[i + 2]
+                mm = re.fullmatch(r"move-result (\w+)", move)
+                gm = re.fullmatch(r"goto (:\S+)", branch)
+                if mm and gm:
+                    label = gm.group(1)
+                    if label in compact:
+                        j = compact.index(label)
+                        ok = j + 1 < len(compact) and "->K1()V" in compact[j + 1]
+                break
+        ok = ok and "new-instance" in body and "PiraticalApkWarningDialogFragment;-><init>()V" in body
     elif patch["id"] == "w25_h_dummy":
         ok = "Lo/w25;->d:Lo/w25$a;" in body and "Lo/w25;->b:Lo/ne3;" in body and "return-object" in body
     elif header.endswith(")V"):
@@ -259,7 +274,10 @@ def verify_roundtrip_method(redecoded: Path, patch: dict) -> dict:
         ok = "return v0" in body and "const/4 v0, 0x0" in body and "invoke-" not in body
     else:
         ok = False
-    return {"id": patch["id"], "class": patch["class"], "header": header, "ok": ok, "smali_file": str(path.relative_to(redecoded))}
+    result = {"id": patch["id"], "class": patch["class"], "header": header, "ok": ok, "smali_file": str(path.relative_to(redecoded))}
+    if "replacements" in patch:
+        result["control_flow_evidence"] = [line.strip() for line in lines if any(token in line for token in ("xi7;->c(", "goto ", ":cond", "->K1()", "PiraticalApkWarningDialogFragment;-><init>"))]
+    return result
 
 
 def main() -> None:
