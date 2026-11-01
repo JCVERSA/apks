@@ -1,0 +1,19 @@
+[
+  {
+    "t": 1793512074.982,
+    "kind": "install",
+    "rc": 0,
+    "output": "Performing Streamed Install\nSuccess\n"
+  },
+  {
+    "t": 1793512152.8,
+    "kind": "shared_capture",
+    "url_host": "www.dailymotion.com"
+  },
+  {
+    "t": 1793512272.978,
+    "kind": "plugin_apks_pulled",
+    "count": 0,
+    "files": []
+  }
+]
