@@ -208,6 +208,32 @@ dump("audit-code-hits.json", hits)
 dump("audit-code-counts.json", dict(counts))
 
 # ------------------------------------------------ 5. pending intent flags
+# Decode the final flags argument as a bit mask. A decimal substring test is
+# unsafe: 167772160 (UPDATE_CURRENT|MUTABLE) contains the decimal digits of
+# FLAG_IMMUTABLE but does not contain the FLAG_IMMUTABLE bit.
+PI_FLAG_NAMES = {
+    0x02000000: "MUTABLE", 0x04000000: "IMMUTABLE",
+    0x08000000: "UPDATE_CURRENT", 0x10000000: "CANCEL_CURRENT",
+    0x40000000: "ONE_SHOT", 0x20000000: "NO_CREATE",
+}
+
+
+def decode_pi_flags(snippet: str):
+    # The call may be followed by .getIntentSender(), .build(), or extra closing
+    # parentheses. Take the last numeric argument that directly precedes a
+    # closing paren, not the text after the final comma of the whole snippet.
+    numeric = re.findall(r",\s*(0x[0-9a-fA-F]+|\d+)\s*\)+", snippet)
+    value = None
+    if numeric:
+        tail = numeric[-1]
+        value = int(tail, 16 if tail.startswith("0x") else 10)
+    if value is not None:
+        names = [name for bit, name in PI_FLAG_NAMES.items() if value & bit]
+        return value, names, bool(value & 0x04000000), bool(value & 0x02000000)
+    names = re.findall(r"FLAG_(IMMUTABLE|MUTABLE|UPDATE_CURRENT|CANCEL_CURRENT|ONE_SHOT|NO_CREATE)", snippet)
+    return None, names, "IMMUTABLE" in names, "MUTABLE" in names
+
+
 pi_rows = []
 for jf in java_files:
     try:
@@ -217,12 +243,14 @@ for jf in java_files:
     for m in re.finditer(r"PendingIntent\.get(Activity|Service|Broadcast|ForegroundService)\((?:[^;]{0,400})\)", text, re.S):
         snippet = m.group(0)
         line = text[:m.start()].count("\n") + 1
-        immutable = "167772160" in snippet or "67108864" in snippet or "FLAG_IMMUTABLE" in snippet
-        mutable = "33554432" in snippet or "FLAG_MUTABLE" in snippet
+        value, names, immutable, mutable = decode_pi_flags(snippet)
         pi_rows.append({
             "file": str(jf.relative_to(JADX)), "line": line,
-            "kind": m.group(1), "immutable_flag_detected": immutable,
-            "mutable_flag_detected": mutable, "snippet": " ".join(snippet.split())[:300],
+            "kind": m.group(1), "flags_int": value, "flags": names,
+            "immutable_flag_detected": immutable,
+            "mutable_flag_detected": mutable,
+            "mutability_explicit": immutable or mutable,
+            "snippet": " ".join(snippet.split())[:300],
         })
 dump("audit-pending-intents.json", pi_rows)
 
@@ -273,7 +301,9 @@ summary = {
                             if c["exported"] == "true" or c["implicitly_exported"]],
     "code_pattern_counts": dict(counts),
     "pending_intents_total": len(pi_rows),
-    "pending_intents_without_immutable": sum(1 for p in pi_rows if not p["immutable_flag_detected"]),
+    "pending_intents_immutable": sum(1 for p in pi_rows if p["immutable_flag_detected"]),
+    "pending_intents_mutable": sum(1 for p in pi_rows if p["mutable_flag_detected"]),
+    "pending_intents_without_explicit_mutability": sum(1 for p in pi_rows if not p["mutability_explicit"]),
     "secret_candidates": len(secrets),
     "java_files": len(java_files),
     "runtime_execution": "NOT TESTED",

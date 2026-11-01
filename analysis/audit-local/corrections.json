@@ -1,0 +1,35 @@
+{
+  "source_run": 41288119748,
+  "raw": {
+    "a11y_issues": 43,
+    "unit_issues": 89,
+    "rtl_issues": 333,
+    "pending_intents": 8
+  },
+  "corrected": {
+    "a11y_nonzero_candidates": 7,
+    "a11y_confirmed_label_issue": 1,
+    "a11y_dimension_candidates_needing_parent_review": 6,
+    "a11y_zero_weight_false_positives_removed": 36,
+    "unit_nonzero_px_candidates": 3,
+    "unit_zero_weight_false_positives_removed": 86,
+    "rtl_attribute_hits": 333,
+    "rtl_files": 73,
+    "pending_intents_mutable": 3,
+    "pending_intents_immutable": 5,
+    "pending_intents_without_explicit_mutability": 0,
+    "empty_catch_local_multiline_regex": 259,
+    "legacy_windowInsets_present": true,
+    "modern_edge_to_edge_api_found": false,
+    "legacy_back_handling_present": true,
+    "predictive_back_callback_found": false,
+    "eink_behavior_mode_reachable": true,
+    "eink_full_white_theme_selection_found": false,
+    "dynamic_color_contrast": "UNKNOWN — device palette"
+  },
+  "notes": [
+    "Les JSON remote du run 41288119748 sont conservés comme preuves brutes historique.",
+    "Les rapports français utilisent les valeurs corrigées de ce fichier.",
+    "Les scripts ont été corrigés pour les futurs runs ; aucun nouveau run n’est nécessaire pour ces rapports."
+  ]
+}

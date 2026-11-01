@@ -1,0 +1,82 @@
+[
+  {
+    "file": "q0/a.java",
+    "line": 318,
+    "kind": "Activity",
+    "flags_int": 167772160,
+    "flags": [
+      "UPDATE_CURRENT",
+      "MUTABLE"
+    ]
+  },
+  {
+    "file": "q0/a.java",
+    "line": 465,
+    "kind": "Activity",
+    "flags_int": 167772160,
+    "flags": [
+      "UPDATE_CURRENT",
+      "MUTABLE"
+    ]
+  },
+  {
+    "file": "ru/zdevs/zarchiver/ZApp.java",
+    "line": 186,
+    "kind": "Service",
+    "flags_int": 301989888,
+    "flags": [
+      "CANCEL_CURRENT",
+      "MUTABLE"
+    ]
+  },
+  {
+    "file": "ru/zdevs/zarchiver/service/b.java",
+    "line": 76,
+    "kind": "Activity",
+    "flags_int": 201326592,
+    "flags": [
+      "UPDATE_CURRENT",
+      "IMMUTABLE"
+    ]
+  },
+  {
+    "file": "ru/zdevs/zarchiver/service/b.java",
+    "line": 95,
+    "kind": "Activity",
+    "flags_int": 201326592,
+    "flags": [
+      "UPDATE_CURRENT",
+      "IMMUTABLE"
+    ]
+  },
+  {
+    "file": "ru/zdevs/zarchiver/service/b.java",
+    "line": 132,
+    "kind": "Service",
+    "flags_int": 1140850688,
+    "flags": [
+      "ONE_SHOT",
+      "IMMUTABLE"
+    ]
+  },
+  {
+    "file": "ru/zdevs/zarchiver/service/b.java",
+    "line": 133,
+    "kind": "Activity",
+    "flags_int": 201326592,
+    "flags": [
+      "UPDATE_CURRENT",
+      "IMMUTABLE"
+    ]
+  },
+  {
+    "file": "ru/zdevs/zarchiver/service/b.java",
+    "line": 138,
+    "kind": "Activity",
+    "flags_int": 201326592,
+    "flags": [
+      "UPDATE_CURRENT",
+      "IMMUTABLE"
+    ]
+  }
+]

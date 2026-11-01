@@ -1,0 +1,218 @@
+{
+  "scope": "Liste de fichiers, fond par défaut, texte principal/secondaire/message ; hors sélection, fond personnalisé, toolbar et états désactivés.",
+  "method": "WCAG 2.x relative luminance; résolution des attributs personnalisés du renderer et chaîne de parents.",
+  "themes": [
+    {
+      "theme": "Base.v14.Dark",
+      "bg": "#ff303030",
+      "fg": "#ffffffff",
+      "sub": "#ffbbbbbb",
+      "msg": "#ffffffff",
+      "contrast_main": 13.2,
+      "contrast_sub": 6.87,
+      "contrast_msg": 13.2,
+      "raw": {
+        "backgroundColorFileList": "@color/background_holo_dark",
+        "defaultTextColorFileList": "#ffffff",
+        "defaultTextColorFileListSub": "#bbb",
+        "defaultTextColorFileListMessage": "#ffffff",
+        "colorPrimary": "@color/ui_base",
+        "colorPrimaryDark": "@color/ui_base_dark",
+        "colorAccent": "@color/ui_base_light",
+        "backgroundColorFileListItem": "#20000000"
+      },
+      "verdict": "PASS AA texte normal pour les trois rôles mesurés"
+    },
+    {
+      "theme": "Base.v14.Light",
+      "bg": "#fff3f3f3",
+      "fg": "#ff000000",
+      "sub": "#ff000000",
+      "msg": "#ff000000",
+      "contrast_main": 18.93,
+      "contrast_sub": 18.93,
+      "contrast_msg": 18.93,
+      "raw": {
+        "backgroundColorFileList": "@color/background_holo_light",
+        "defaultTextColorFileList": "#000000",
+        "defaultTextColorFileListSub": "#000000",
+        "defaultTextColorFileListMessage": "#000000",
+        "colorPrimary": "@color/ui_base",
+        "colorPrimaryDark": "@color/ui_base_dark",
+        "colorAccent": "@color/ui_base_dark",
+        "backgroundColorFileListItem": "#20ffffff"
+      },
+      "verdict": "PASS AA texte normal pour les trois rôles mesurés"
+    },
+    {
+      "theme": "AppTheme.Dark",
+      "bg": "#ff303030",
+      "fg": "#ffffffff",
+      "sub": "#ffbbbbbb",
+      "msg": "#ffffffff",
+      "contrast_main": 13.2,
+      "contrast_sub": 6.87,
+      "contrast_msg": 13.2,
+      "raw": {
+        "backgroundColorFileList": "@color/background_holo_dark",
+        "defaultTextColorFileList": "#ffffff",
+        "defaultTextColorFileListSub": "#bbb",
+        "defaultTextColorFileListMessage": "#ffffff",
+        "colorPrimary": "@color/ui_base",
+        "colorPrimaryDark": "@color/ui_base_dark",
+        "colorAccent": "@color/ui_base_light",
+        "backgroundColorFileListItem": "#20000000"
+      },
+      "verdict": "PASS AA texte normal pour les trois rôles mesurés"
+    },
+    {
+      "theme": "AppTheme.Light",
+      "bg": "#fff3f3f3",
+      "fg": "#ff000000",
+      "sub": "#ff000000",
+      "msg": "#ff000000",
+      "contrast_main": 18.93,
+      "contrast_sub": 18.93,
+      "contrast_msg": 18.93,
+      "raw": {
+        "backgroundColorFileList": "@color/background_holo_light",
+        "defaultTextColorFileList": "#000000",
+        "defaultTextColorFileListSub": "#000000",
+        "defaultTextColorFileListMessage": "#000000",
+        "colorPrimary": "@color/ui_base",
+        "colorPrimaryDark": "@color/ui_base_dark",
+        "colorAccent": "@color/ui_base_dark",
+        "backgroundColorFileListItem": "#20ffffff"
+      },
+      "verdict": "PASS AA texte normal pour les trois rôles mesurés"
+    },
+    {
+      "theme": "AppTheme.Dark.Amoled",
+      "bg": "#ff000000",
+      "fg": "#ffd8d8d8",
+      "sub": "#ff808080",
+      "msg": "#ff7a7a7a",
+      "contrast_main": 14.73,
+      "contrast_sub": 5.32,
+      "contrast_msg": 4.89,
+      "raw": {
+        "backgroundColorFileList": "@color/background_amoled",
+        "defaultTextColorFileList": "#d8d8d8",
+        "defaultTextColorFileListSub": "#808080",
+        "defaultTextColorFileListMessage": "#7a7a7a",
+        "colorPrimary": "@color/ui_base",
+        "colorPrimaryDark": "#ff202020",
+        "colorAccent": "@color/ui_base_light",
+        "backgroundColorFileListItem": "#10000000"
+      },
+      "verdict": "PASS AA texte normal pour les trois rôles mesurés"
+    },
+    {
+      "theme": "AppTheme.Light.EInk",
+      "bg": "#ffffffff",
+      "fg": "#ff000000",
+      "sub": "#ff000000",
+      "msg": "#ff000000",
+      "contrast_main": 21.0,
+      "contrast_sub": 21.0,
+      "contrast_msg": 21.0,
+      "raw": {
+        "backgroundColorFileList": "@android:color/white",
+        "defaultTextColorFileList": "#ff000000",
+        "defaultTextColorFileListSub": "#ff000000",
+        "defaultTextColorFileListMessage": "#ff000000",
+        "colorPrimary": "@color/ui_base",
+        "colorPrimaryDark": "@color/ui_base_dark",
+        "colorAccent": "@color/ui_base_dark",
+        "backgroundColorFileListItem": "#00000000"
+      },
+      "verdict": "PASS AA texte normal pour les trois rôles mesurés"
+    },
+    {
+      "theme": "AppTheme.Dynamic.Dark",
+      "bg": "#ff303030",
+      "fg": "#ffffffff",
+      "sub": "#ffbbbbbb",
+      "msg": "#ffffffff",
+      "contrast_main": null,
+      "contrast_sub": null,
+      "contrast_msg": null,
+      "raw": {
+        "backgroundColorFileList": "@color/background_holo_dark",
+        "defaultTextColorFileList": "#ffffff",
+        "defaultTextColorFileListSub": "#bbb",
+        "defaultTextColorFileListMessage": "#ffffff",
+        "colorPrimary": "@color/ui_base",
+        "colorPrimaryDark": "@color/ui_base_dark",
+        "colorAccent": "@color/ui_base_light",
+        "backgroundColorFileListItem": "#20000000"
+      },
+      "verdict": "UNKNOWN — palette système Material You dépendante du fond d’écran (API 31+)",
+      "note": "Ne pas utiliser la palette fixe héritée comme mesure du thème dynamique."
+    },
+    {
+      "theme": "AppTheme.Dynamic.Light",
+      "bg": "#fff3f3f3",
+      "fg": "#ff000000",
+      "sub": "#ff000000",
+      "msg": "#ff000000",
+      "contrast_main": null,
+      "contrast_sub": null,
+      "contrast_msg": null,
+      "raw": {
+        "backgroundColorFileList": "@color/background_holo_light",
+        "defaultTextColorFileList": "#000000",
+        "defaultTextColorFileListSub": "#000000",
+        "defaultTextColorFileListMessage": "#000000",
+        "colorPrimary": "@color/ui_base",
+        "colorPrimaryDark": "@color/ui_base_dark",
+        "colorAccent": "@color/ui_base_dark",
+        "backgroundColorFileListItem": "#20ffffff"
+      },
+      "verdict": "UNKNOWN — palette système Material You dépendante du fond d’écran (API 31+)",
+      "note": "Ne pas utiliser la palette fixe héritée comme mesure du thème dynamique."
+    },
+    {
+      "theme": "AppTheme.Dark.Material.Blue",
+      "bg": "#ff303030",
+      "fg": "#ffffffff",
+      "sub": "#ffbbbbbb",
+      "msg": "#ffffffff",
+      "contrast_main": 13.2,
+      "contrast_sub": 6.87,
+      "contrast_msg": 13.2,
+      "raw": {
+        "backgroundColorFileList": "@color/background_holo_dark",
+        "defaultTextColorFileList": "#ffffff",
+        "defaultTextColorFileListSub": "#bbb",
+        "defaultTextColorFileListMessage": "#ffffff",
+        "colorPrimary": "#1e88e5",
+        "colorPrimaryDark": "#005cb2",
+        "colorAccent": "@color/ui_base_light",
+        "backgroundColorFileListItem": "#20000000"
+      },
+      "verdict": "PASS AA texte normal pour les trois rôles mesurés"
+    },
+    {
+      "theme": "AppTheme.Light.DarkActionBar.Material.Blue",
+      "bg": "#fff3f3f3",
+      "fg": "#ff000000",
+      "sub": "#ff000000",
+      "msg": "#ff000000",
+      "contrast_main": 18.93,
+      "contrast_sub": 18.93,
+      "contrast_msg": 18.93,
+      "raw": {
+        "backgroundColorFileList": "@color/background_holo_light",
+        "defaultTextColorFileList": "#000000",
+        "defaultTextColorFileListSub": "#000000",
+        "defaultTextColorFileListMessage": "#000000",
+        "colorPrimary": "#1e88e5",
+        "colorPrimaryDark": "#005cb2",
+        "colorAccent": "@color/ui_base_dark",
+        "backgroundColorFileListItem": "#20ffffff"
+      },
+      "verdict": "PASS AA texte normal pour les trois rôles mesurés"
+    }
+  ]
+}

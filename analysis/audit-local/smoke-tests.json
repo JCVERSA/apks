@@ -1,0 +1,44 @@
+{
+  "performed_at_utc": "2026-11-01T09:00:56.610507+00:00",
+  "method": "Local Python stdlib smoke tests against copied evidence subset; no tool installation; APK not executed.",
+  "security_pending_intents": {
+    "total": 8,
+    "mutable": 3,
+    "immutable": 5,
+    "without_explicit_mutability": 0,
+    "result": "PASS"
+  },
+  "design_subset": {
+    "note": "Copied-resource subset only, not full 675-file inventory.",
+    "a11y_issues": 3,
+    "unit_issues": 1,
+    "rtl_issues": 217,
+    "edge_to_edge_files": 9,
+    "back_gesture_files": 7
+  },
+  "design_contrast": {
+    "AppTheme.Dark": [
+      13.2,
+      6.87,
+      13.2
+    ],
+    "AppTheme.Light": [
+      18.93,
+      18.93,
+      18.93
+    ],
+    "AppTheme.Dark.Amoled": [
+      14.73,
+      5.32,
+      4.89
+    ],
+    "AppTheme.Light.EInk": [
+      21.0,
+      21.0,
+      21.0
+    ],
+    "AppTheme.Dynamic.Dark": "unknown-device-palette",
+    "result": "PASS"
+  },
+  "apk_sha256": "aab078d2ea7b80e7199d2bb988772128131848c4df078ea8c55b19df7dfc16fd"
+}

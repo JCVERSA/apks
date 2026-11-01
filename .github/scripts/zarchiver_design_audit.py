@@ -132,22 +132,37 @@ FRAMEWORK_COLORS = {
 }
 
 
-def resolve_color(value: str, depth: int = 0):
-    """Return (hex_or_None, note)."""
+def qualifier_state(qual: str):
+    """Return (api, night) encoded by a values qualifier."""
+    m = re.search(r"-v(\d+)", qual)
+    return (int(m.group(1)) if m else 1), ("-night" in qual)
+
+
+def qualifier_applies(qual: str, api: int, night: bool) -> bool:
+    q_api, q_night = qualifier_state(qual)
+    return q_api <= api and q_night == night
+
+
+def resolve_color(value: str, depth: int = 0, api: int = 31, night: bool = False):
+    """Return (hex_or_None, note) for one resource configuration.
+
+    Material You system_* colors are device/wallpaper dependent and must not
+    be replaced by an arbitrary fixed palette in a contrast report.
+    """
     if value is None or depth > 8:
         return None, "unresolved"
     v = value.strip()
     if v.startswith("#"):
         h = v[1:]
-        if len(h) == 3:
-            h = "".join(c * 2 for c in h)
-        if len(h) == 4:
+        if len(h) in (3, 4):
             h = "".join(c * 2 for c in h)
         if len(h) == 6:
             h = "ff" + h
         if len(h) == 8 and re.fullmatch(r"[0-9a-fA-F]{8}", h):
             return "#" + h.lower(), "literal"
         return None, "bad-literal"
+    if v.startswith("@android:color/system_"):
+        return None, "dynamic-device-palette"
     if v.startswith("@android:color/"):
         key = v.split("/", 1)[1]
         return FRAMEWORK_COLORS.get(key), "framework" if key in FRAMEWORK_COLORS else "framework-unknown"
@@ -155,9 +170,10 @@ def resolve_color(value: str, depth: int = 0):
         key = v.split("/", 1)[1]
         entry = colors.get(key)
         if entry:
-            variants = entry["variants"]
-            pick = variants.get("(default)") or next(iter(variants.values()))
-            return resolve_color(pick, depth + 1)
+            candidates = [q for q in entry["variants"] if qualifier_applies(q, api, night)]
+            if candidates:
+                pick = max(candidates, key=lambda q: qualifier_state(q)[0])
+                return resolve_color(entry["variants"][pick], depth + 1, api, night)
         return None, "missing-color-resource"
     if v.startswith("?"):
         return None, "theme-attribute"
@@ -195,11 +211,16 @@ THEME_KEYS = [
     "android:windowLightNavigationBar", "android:isLightTheme", "isLightActionBar",
     "android:forceDarkAllowed", "android:windowTranslucentStatus",
     "android:fitsSystemWindows", "colorNMask", "android:textSize",
+    # These are the attributes actually consumed by the file-list renderer.
+    # Framework textColorPrimary often remains in an unresolved OEM parent.
+    "backgroundColorFileList", "defaultTextColorFileList",
+    "defaultTextColorFileListSub", "defaultTextColorFileListMessage",
+    "colorPrimary", "colorPrimaryDark", "colorAccent",
 ]
 
 
-def style_items(name: str, seen=None):
-    """Merge style items along the parent chain (child wins)."""
+def style_items(name: str, seen=None, api: int = 31, night: bool = False):
+    """Merge parent/style items applicable to one API/night configuration."""
     seen = seen or set()
     if name in seen or name not in styles:
         return {}
@@ -211,9 +232,10 @@ def style_items(name: str, seen=None):
     merged = {}
     if parent:
         parent_key = parent.replace("@android:style/", "").replace("@style/", "")
-        merged.update(style_items(parent_key, seen))
-    for qual, data in entry["variants"].items():
-        merged.update(data["items"])
+        merged.update(style_items(parent_key, seen, api, night))
+    candidates = [q for q in entry["variants"] if qualifier_applies(q, api, night)]
+    for qual in sorted(candidates, key=lambda q: qualifier_state(q)[0]):
+        merged.update(entry["variants"][qual]["items"])
     return merged
 
 
@@ -239,19 +261,29 @@ for name in sorted(styles):
     for k in THEME_KEYS:
         if k in items:
             raw = items[k]
-            hexv, note = resolve_color(raw)
+            hexv, note = resolve_color(raw, api=31, night=False)
             resolved[k] = {"raw": raw, "hex": hexv, "note": note}
-    fg = resolved.get("android:textColorPrimary", {}).get("hex") or resolved.get("android:textColor", {}).get("hex")
-    bg = resolved.get("android:windowBackground", {}).get("hex") or resolved.get("android:colorBackground", {}).get("hex")
+    # Contrast scope: the file-list text actually rendered from custom attrs.
+    # Do not infer this from android:textColorPrimary in an OEM parent theme.
+    bg = resolved.get("backgroundColorFileList", {}).get("hex")
+    fg = resolved.get("defaultTextColorFileList", {}).get("hex")
+    sub = resolved.get("defaultTextColorFileListSub", {}).get("hex")
+    msg = resolved.get("defaultTextColorFileListMessage", {}).get("hex")
     ratio = contrast(fg, bg) if fg and bg else None
+    dynamic = any(v.get("note") == "dynamic-device-palette" for v in resolved.values())
     theme_report.append({
         "style": name,
         "parent": styles[name].get("parent"),
         "classes": klass,
         "variant_qualifiers": sorted(styles[name]["variants"]),
         "key_items": resolved,
+        "contrast_scope": "file-list main text on backgroundColorFileList; API31 day configuration",
         "text_on_background_contrast": ratio,
+        "secondary_text_contrast": contrast(sub, bg) if sub and bg else None,
+        "message_text_contrast": contrast(msg, bg) if msg and bg else None,
+        "dynamic_device_palette": dynamic,
         "contrast_verdict": (
+            "unknown-device-palette" if dynamic else
             "unknown" if ratio is None else
             "pass-AA-normal" if ratio >= 4.5 else
             "pass-AA-large-only" if ratio >= 3 else "fail-AA"
@@ -319,9 +351,13 @@ def walk(el, depth, row, path, lfile):
     for key in ("android:layout_width", "android:layout_height"):
         v = a.get(key, "")
         m = SMALL_TARGET.match(v)
-        if m and tag in CLICKABLE and float(m.group(1)) < 48 and m.group(2) in ("dp", "dip"):
+        # 0dp with layout_weight is the standard LinearLayout idiom, not a
+        # zero-sized touch target. Keep nonzero small dimensions as candidates
+        # for manual review (the clickable area may be the parent row).
+        if m and tag in CLICKABLE and 0 < float(m.group(1)) < 48 and m.group(2) in ("dp", "dip"):
             a11y_issues.append({"file": lfile, "tag": tag, "id": a.get("android:id", ""), "issue": f"touch target {v} < 48dp ({key})"})
-        if v.endswith("px"):
+        px = re.fullmatch(r"(\d+(?:\.\d+)?)px", v)
+        if px and float(px.group(1)) != 0:
             unit_issues.append({"file": lfile, "id": a.get("android:id", ""), "attr": key, "value": v, "issue": "absolute px"})
     if a.get("android:fitsSystemWindows") == "true":
         edge_to_edge.append({"file": lfile, "tag": tag, "id": a.get("android:id", "")})
@@ -399,8 +435,8 @@ CODE_PATTERNS = {
     "theme_selection": r"R\.style\.AppTheme|iTheme|iActionbarColorN|iFolderColorN|setTheme\(",
     "config_changes": r"onConfigurationChanged|uiMode",
     "force_dark": r"forceDarkAllowed|setForceDarkAllowed",
-    "edge_to_edge": r"setDecorFitsSystemWindows|WindowInsetsController|setSystemBarsAppearance|WindowCompat|enableEdgeToEdge|LAYOUT_IN_DISPLAY_CUTOUT",
-    "back_gesture": r"OnBackInvokedDispatcher|OnBackInvokedCallback|onBackPressed|KEYCODE_BACK",
+    "edge_to_edge": r"setDecorFitsSystemWindows|WindowInsets|OnApplyWindowInsetsListener|setFitsSystemWindows|WindowInsetsController|setSystemBarsAppearance|WindowCompat|enableEdgeToEdge|LAYOUT_IN_DISPLAY_CUTOUT",
+    "back_gesture": r"OnBackInvokedDispatcher|OnBackInvokedCallback|onBackPressed|KEYCODE_BACK|dispatchKeyEvent|onKeyUp|getKeyCode\(\) == 4",
     "text_scaling": r"fontScale|Configuration\(|scaledDensity|createConfigurationContext",
     "a11y_api": r"AccessibilityManager|AccessibilityNodeInfo|contentDescription|announceForAccessibility|importantForAccessibility|TalkBack",
     "rtl_api": r"LAYOUT_DIRECTION_RTL|getLayoutDirection|isRtl|TextUtils\.getLayoutDirectionFromLocale",
@@ -463,7 +499,7 @@ if manifest_path.is_file():
 # --------------------------------------------------------------------------
 copied, copied_bytes = [], 0
 MAX_BYTES = 12 * 1024 * 1024
-PRIORITY = ("values/", "values-v", "values-night", "layout/", "xml/", "menu/", "anim", "color/", "mipmap-anydpi")
+PRIORITY = ("values/", "values-v", "values-night", "layout/", "layout-v", "layout-sw", "xml/", "xml-v", "menu/", "anim", "color/", "mipmap-anydpi")
 
 
 def want(p: Path) -> bool:
@@ -576,13 +612,17 @@ lines.append(f"- Layouts: {summary['layouts_total']}; night-qualified dirs: {nig
 lines.append(f"- Adaptive icons: {len(adaptive)}, monochrome (themed icons): {len(monochrome)}, vectors: {len(vectors)}, rasters: {len(rasters)}")
 lines.append(f"- Strings: {len(default_strings)} default, {len(locale_rows)} locales")
 lines.append(f"- A11y issues: {len(a11y_issues)}; RTL issues: {len(rtl_issues)}; unit issues: {len(unit_issues)}; hardcoded texts: {len(hardcoded_text)}")
-lines += ["", "## Theme contrast (resolved text on background)", ""]
-lines.append("| Style | Classes | FG | BG | Ratio | Verdict |")
-lines.append("|---|---|---|---|---:|---|")
+lines += ["", "## File-list contrast (custom renderer attrs; API31 day; static)", "",
+          "Dynamic system_* palettes are device-dependent and reported as unknown.", ""]
+lines.append("| Style | Classes | FG | BG | Main | Sub | Message | Verdict |")
+lines.append("|---|---|---|---|---:|---:|---:|---|")
 for t in theme_report:
-    fg = t["key_items"].get("android:textColorPrimary", {}).get("hex") or t["key_items"].get("android:textColor", {}).get("hex") or "?"
-    bg = t["key_items"].get("android:windowBackground", {}).get("hex") or t["key_items"].get("android:colorBackground", {}).get("hex") or "?"
-    lines.append(f"| `{t['style']}` | {', '.join(t['classes']) or '-'} | {fg} | {bg} | {t['text_on_background_contrast'] or '-'} | {t['contrast_verdict']} |")
+    fg = t["key_items"].get("defaultTextColorFileList", {}).get("hex") or "?"
+    bg = t["key_items"].get("backgroundColorFileList", {}).get("hex") or "?"
+    lines.append(f"| `{t['style']}` | {', '.join(t['classes']) or '-'} | {fg} | {bg} | "
+                 f"{t['text_on_background_contrast'] if t['text_on_background_contrast'] is not None else '-'} | "
+                 f"{t['secondary_text_contrast'] if t['secondary_text_contrast'] is not None else '-'} | "
+                 f"{t['message_text_contrast'] if t['message_text_contrast'] is not None else '-'} | {t['contrast_verdict']} |")
 lines += ["", "## Deepest layouts", ""]
 for r in layout_rows[:20]:
     lines.append(f"- `{r['file']}` depth={r['max_depth']} views={r['view_count']} weighted={r['weighted']}")
