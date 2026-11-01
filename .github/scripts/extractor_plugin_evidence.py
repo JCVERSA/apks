@@ -10,6 +10,10 @@ CLASSES = [
     'com/snaptube/extractor/pluginlib/sites/extract/BackgroundWebExtractProvider',
     'com/snaptube/extractor/pluginlib/utils/PluginContextUtil',
     'com/snaptube/extractor/pluginlib/ExtractorWrapper',
+    'com/snaptube/extractor/pluginlib/PluginProvider',
+    'com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a',
+    'com/snaptube/premium/activity/ExploreActivity',
+    'o/xi7', 'o/lg7',
     'com/snaptube/plugin/PluginId',
     'com/snaptube/plugin/PluginId$2',
     'com/snaptube/plugin/a',
@@ -17,7 +21,7 @@ CLASSES = [
     'com/snaptube/premium/app/PhoenixApplication',
     'o/nd2', 'o/lz5', 'o/jz5', 'o/kz5', 'o/c16', 'o/dv8', 'o/qh3',
 ]
-RX = re.compile(r'pluginChecker|site_extractor|loadPluginImpl|AvailabilityChecker;->|Lo/nd2;->|Lo/kz5;->|PhoenixApplication;->O\(|PhoenixApplication;->D\(|OfficialWarningDialog|buildForbiddenResult|FORBIDDEN|shouldDownload|tryLoadNewestVersion|ExtractorWrapper;-><init>|Lo/dv8;->D\(')
+RX = re.compile(r'pluginChecker|site_extractor|loadPluginImpl|AvailabilityChecker;->|Lo/nd2;->|Lo/kz5;->|PhoenixApplication;->O\(|PhoenixApplication;->D\(|OfficialWarningDialog|buildForbiddenResult|FORBIDDEN|shouldDownload|tryLoadNewestVersion|ExtractorWrapper;-><init>|Lo/dv8;->D\(|isUnSupportedVersion|Lo/lg7;->h\(')
 MAX = 1_500_000
 
 
