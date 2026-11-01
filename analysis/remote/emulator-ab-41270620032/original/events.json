@@ -1,0 +1,172 @@
+[
+  {
+    "t": 1793505010.919,
+    "kind": "install",
+    "rc": 0,
+    "output": "Performing Streamed Install\nSuccess\n"
+  },
+  {
+    "t": 1793505033.799,
+    "kind": "capture",
+    "stage": "launch-0",
+    "visible": [
+      "At a glance",
+      "Sun, Nov 1",
+      "Gmail",
+      "Photos",
+      "YouTube",
+      "Home",
+      "Phone",
+      "Messages",
+      "Chrome",
+      "Snaptube",
+      "Google search",
+      "Google app",
+      "Voice search",
+      "Google Lens"
+    ]
+  },
+  {
+    "t": 1793505041.213,
+    "kind": "capture",
+    "stage": "prepared",
+    "visible": [
+      "At a glance",
+      "Sun, Nov 1",
+      "Gmail",
+      "Photos",
+      "YouTube",
+      "Home",
+      "Phone",
+      "Messages",
+      "Chrome",
+      "Snaptube",
+      "Google search",
+      "Google app",
+      "Voice search",
+      "Google Lens"
+    ]
+  },
+  {
+    "t": 1793505059.362,
+    "kind": "capture",
+    "stage": "shared-0",
+    "visible": [
+      "Download video as",
+      "Music",
+      "Fast",
+      " ",
+      "Classic MP3",
+      " ",
+      "Video",
+      "Fast (360p)",
+      " ",
+      "High quality (720p)",
+      " ",
+      "More formats",
+      "All",
+      "Download"
+    ]
+  },
+  {
+    "t": 1793505059.42,
+    "kind": "tap_format",
+    "label": "Fast (360p)"
+  },
+  {
+    "t": 1793505064.817,
+    "kind": "capture",
+    "stage": "before-download-tap",
+    "visible": [
+      "Download video as",
+      "Music",
+      "Fast",
+      " ",
+      "Classic MP3",
+      " ",
+      "Video",
+      "Fast (360p)",
+      " ",
+      "High quality (720p)",
+      " ",
+      "More formats",
+      "All",
+      "Download"
+    ]
+  },
+  {
+    "t": 1793505064.934,
+    "kind": "tap_download",
+    "label": "",
+    "id": "com.snaptube.premium:id/download_button"
+  },
+  {
+    "t": 1793505087.568,
+    "kind": "capture",
+    "stage": "progress-0",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot This helps protect our community. Learn more",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505109.917,
+    "kind": "capture",
+    "stage": "progress-1",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot This helps protect our community. Learn more",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505132.276,
+    "kind": "capture",
+    "stage": "progress-2",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot This helps protect our community. Learn more",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505154.641,
+    "kind": "capture",
+    "stage": "progress-3",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot This helps protect our community. Learn more",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505176.989,
+    "kind": "capture",
+    "stage": "progress-4",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot This helps protect our community. Learn more",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505199.33,
+    "kind": "capture",
+    "stage": "progress-5",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot This helps protect our community. Learn more",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505199.443,
+    "kind": "log_lines",
+    "count": 803
+  },
+  {
+    "t": 1793505199.582,
+    "kind": "db_tables",
+    "count": 9
+  },
+  {
+    "t": 1793505199.601,
+    "kind": "media_files",
+    "count": 0
+  }
+]

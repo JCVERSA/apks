@@ -1,0 +1,10 @@
+{
+  "scope": "Temporary GitHub Actions emulator only; fresh installs; public CC test video; no accounts",
+  "test_url_host": "www.youtube.com",
+  "variants": {
+    "original": "RUNTIME_EVIDENCE_COLLECTED",
+    "revision3": "RUNTIME_EVIDENCE_COLLECTED"
+  },
+  "status": "EVIDENCE_COLLECTED_REVIEW_REQUIRED",
+  "note": "A collected run is not a pass/fail verdict; inspect UI, task DB, logs and media metadata."
+}

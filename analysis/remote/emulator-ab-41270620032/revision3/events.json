@@ -1,0 +1,197 @@
+[
+  {
+    "t": 1793505204.92,
+    "kind": "install",
+    "rc": 0,
+    "output": "Performing Streamed Install\nSuccess\n"
+  },
+  {
+    "t": 1793505220.047,
+    "kind": "capture",
+    "stage": "launch-0",
+    "visible": [
+      "Viewing full screen",
+      "To exit, swipe down from the top of your screen",
+      "Got it"
+    ]
+  },
+  {
+    "t": 1793505220.075,
+    "kind": "tap",
+    "label": "Got it"
+  },
+  {
+    "t": 1793505224.419,
+    "kind": "capture",
+    "stage": "launch-1",
+    "visible": [
+      "Downloading",
+      "Space song",
+      "5.2MB/s",
+      "77%",
+      "PAR\u00d3DIA | MALVADA - Z\u00c9 FELIPE",
+      "3.1MB/s",
+      "63%",
+      "Eu Navegarei",
+      "3.6MB/s",
+      "25%",
+      "Sendo assim / Muito estranho (Cuida bem de mim)",
+      "2.3MB/s",
+      "69%",
+      "Ready for Love",
+      "6.2MB/s",
+      "50%",
+      "DOWNLOAD",
+      "Simple and fast",
+      "Next \u2192"
+    ]
+  },
+  {
+    "t": 1793505226.765,
+    "kind": "capture",
+    "stage": "prepared",
+    "visible": [
+      "Downloading",
+      "Space song",
+      "5.2MB/s",
+      "77%",
+      "PAR\u00d3DIA | MALVADA - Z\u00c9 FELIPE",
+      "3.1MB/s",
+      "63%",
+      "Eu Navegarei",
+      "3.6MB/s",
+      "25%",
+      "Sendo assim / Muito estranho (Cuida bem de mim)",
+      "2.3MB/s",
+      "69%",
+      "Ready for Love",
+      "6.2MB/s",
+      "50%",
+      "DOWNLOAD",
+      "Simple and fast",
+      "Next \u2192"
+    ]
+  },
+  {
+    "t": 1793505244.105,
+    "kind": "capture",
+    "stage": "shared-0",
+    "visible": [
+      "Download video as",
+      "Music",
+      "Fast",
+      " ",
+      "Classic MP3",
+      " ",
+      "Video",
+      "Fast (360p)",
+      " ",
+      "High quality (720p)",
+      " ",
+      "More formats",
+      "All",
+      "Download"
+    ]
+  },
+  {
+    "t": 1793505244.132,
+    "kind": "tap_format",
+    "label": "Fast (360p)"
+  },
+  {
+    "t": 1793505248.415,
+    "kind": "capture",
+    "stage": "before-download-tap",
+    "visible": [
+      "Download video as",
+      "Music",
+      "Fast",
+      " ",
+      "Classic MP3",
+      " ",
+      "Video",
+      "Fast (360p)",
+      " ",
+      "High quality (720p)",
+      " ",
+      "More formats",
+      "All",
+      "Download"
+    ]
+  },
+  {
+    "t": 1793505248.445,
+    "kind": "tap_download",
+    "label": "",
+    "id": "com.snaptube.premium:id/download_button"
+  },
+  {
+    "t": 1793505270.731,
+    "kind": "capture",
+    "stage": "progress-0",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505293.028,
+    "kind": "capture",
+    "stage": "progress-1",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505315.443,
+    "kind": "capture",
+    "stage": "progress-2",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505337.759,
+    "kind": "capture",
+    "stage": "progress-3",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505360.049,
+    "kind": "capture",
+    "stage": "progress-4",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505382.352,
+    "kind": "capture",
+    "stage": "progress-5",
+    "visible": [
+      "Sign in to confirm you\u2019re not a bot",
+      "Sign in"
+    ]
+  },
+  {
+    "t": 1793505382.464,
+    "kind": "log_lines",
+    "count": 868
+  },
+  {
+    "t": 1793505382.644,
+    "kind": "db_tables",
+    "count": 9
+  },
+  {
+    "t": 1793505382.663,
+    "kind": "media_files",
+    "count": 0
+  }
+]
