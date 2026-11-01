@@ -1,0 +1,102 @@
+name: APK plugin warning evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths:
+      - '.github/workflows/apk-plugin-warning-evidence.yml'
+      - '.github/scripts/plugin_warning_evidence.py'
+      - '.github/scripts/plugin_warning_scan.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apk-plugin-warning-evidence-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  plugin-warning-evidence:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Download published revision 5 APK
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p "${RUNNER_TEMP}/plugin-warning-apks"
+          gh release download snaptube-patched-41275474117 --repo "$GITHUB_REPOSITORY" \
+            --pattern '*.apk' --dir "${RUNNER_TEMP}/plugin-warning-apks" --clobber
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Collect runtime window evidence and plugin APKs in API 35 emulator
+        uses: ReactiveCircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d
+        with:
+          api-level: 35
+          target: google_apis
+          arch: x86_64
+          profile: pixel_5
+          cores: 2
+          ram-size: 4096M
+          heap-size: 512M
+          disk-size: 8192M
+          force-avd-creation: true
+          emulator-boot-timeout: 900
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
+          disable-animations: true
+          script: |
+            python3 .github/scripts/plugin_warning_evidence.py \
+              --apk "${RUNNER_TEMP}/plugin-warning-apks/SnapTube-7.52.0.75250210-adfree-noforce-official-removed-r5.apk" \
+              --out "${RUNNER_TEMP}/plugin-warning-runtime" \
+              --plugin-dir "${RUNNER_TEMP}/plugin-warning-plugins"
+      - name: Decode and scan collected plugin APKs
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          TOOLS="${RUNNER_TEMP}/plugin-warning-tools"
+          mkdir -p "$TOOLS"
+          V=3.0.3
+          SHA=dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423
+          curl --fail --location --retry 3 -o "$TOOLS/apktool.jar" "https://github.com/iBotPeaches/Apktool/releases/download/v${V}/apktool_${V}.jar"
+          printf '%s  %s\n' "$SHA" "$TOOLS/apktool.jar" | sha256sum -c -
+          mkdir -p "${RUNNER_TEMP}/plugin-warning-decoded"
+          shopt -s nullglob
+          for apk in "${RUNNER_TEMP}"/plugin-warning-plugins/*.apk; do
+            name="$(basename "$apk" .apk)"
+            java -Xmx3g -jar "$TOOLS/apktool.jar" d -f -o "${RUNNER_TEMP}/plugin-warning-decoded/$name" "$apk" > "${RUNNER_TEMP}/plugin-warning-decoded/$name.decode.log" 2>&1 || true
+          done
+          python3 .github/scripts/plugin_warning_scan.py \
+            --plugin-dir "${RUNNER_TEMP}/plugin-warning-plugins" \
+            --decoded-root "${RUNNER_TEMP}/plugin-warning-decoded" \
+            --report-dir "${RUNNER_TEMP}/plugin-warning-scan"
+      - name: Publish plugin warning evidence
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/plugin-warning-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          if [ -d "${RUNNER_TEMP}/plugin-warning-runtime" ]; then cp -a "${RUNNER_TEMP}/plugin-warning-runtime/." "$dest/runtime/"; fi
+          if [ -d "${RUNNER_TEMP}/plugin-warning-scan" ]; then cp -a "${RUNNER_TEMP}/plugin-warning-scan/." "$dest/scan/"; fi
+          printf 'run_outcome=%s\nrun_id=%s\n' '${{ job.status }}' "$GITHUB_RUN_ID" > "$dest/run-status.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          if ! git diff --cached --quiet; then
+            git commit -m "Add plugin official-warning evidence (run ${GITHUB_RUN_ID}) [skip ci]"
+            git fetch origin arena/7234f8d6-apks
+            git rebase FETCH_HEAD
+            git push origin HEAD:arena/7234f8d6-apks
+          fi
