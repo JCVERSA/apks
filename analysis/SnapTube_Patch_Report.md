@@ -1,94 +1,106 @@
-# SnapTube patched APK — revision 2
+# SnapTube Patch Report — Revision 3 (official-app screen removed)
 
-**Status: build and static verification PASS. Device/runtime behavior remains unverified.**
+**Status:** built, signed, and independently verified on GitHub Actions. **No device testing was performed.**
+**Date:** 2026-10-31
+**Supersedes:** Revision 2 (`snaptube-patched-41163398772`), which did **not** remove the screen on the user's device.
 
-Revision 2 keeps the ad and forced-update changes from revision 1 and adds explicit suppression of the built-in **“Please Install the Official Snaptube” / “Update to official version”** warning paths that can interrupt video downloading.
+---
 
-## Current download
+## 1. Download
 
-- **APK:** https://github.com/JCVERSA/apks/releases/download/snaptube-patched-41163398772/SnapTube-7.52.0.75250210-adfree-noforce-no-official-popup.apk
-- **Release:** https://github.com/JCVERSA/apks/releases/tag/snaptube-patched-41163398772
-- **Filename:** `SnapTube-7.52.0.75250210-adfree-noforce-no-official-popup.apk`
-- **Size:** 51,708,139 bytes
-- **SHA-256:** `009a66c5631d6899c1286353eef9015f53edf3ae2717c89f86d4bae356da7014`
-- **Successful GitHub Actions run:** `41163398772`
+| Item | Value |
+|---|---|
+| Release | <https://github.com/JCVERSA/apks/releases/tag/snaptube-patched-41267483266> |
+| APK | `SnapTube-7.52.0.75250210-adfree-noforce-official-removed.apk` |
+| Direct link | <https://github.com/JCVERSA/apks/releases/download/snaptube-patched-41267483266/SnapTube-7.52.0.75250210-adfree-noforce-official-removed.apk> |
+| Size | 51,708,139 bytes |
+| SHA-256 | `f04a0bf6ac1af8494d7406b39cc519ddea90519afa5838c6e6feb0de7b6243ef` |
+| Package / version | `com.snaptube.premium` / `7.52.0.75250210` (code `75250210`) — unchanged |
+| Build run | `41267483266` — **PASS** |
+| Independent verification run | `41267631731` — **PASS** |
 
-GitHub's release-asset SHA-256 digest matches the build report. This release supersedes revision 1 (`snaptube-patched-41160993577`).
+> **Install warning:** this build is signed with a **new ephemeral key** (signer SHA-1 `ff717aae585f72927058b5727f030a17690f8d29`). It **cannot** install over the original app, revision 1, or revision 2. **Uninstall the existing app first** (this may erase app data), then install this APK.
 
-## What changed for the official-app screen
+---
 
-### 1. Video-extraction boundary
+## 2. Why revision 2 failed — the real root cause
 
-`ExtractorWrapper.extract(...)` calls `OfficialWarningDialog.h(Context)`. A true result sends execution to `buildForbiddenResult(...)` instead of the normal site extractor.
+Revision 2 patched 16 methods in the **outer** DEX files and verified them, yet the official-app screen still blocked video downloads. A full trace of the package explained why:
 
-Revision 2 makes `OfficialWarningDialog.h(Context)` return false. The normal `findSite(...)` / `extract(...)` path remains unchanged; `ExtractorWrapper.smali` itself was not modified.
+1. **The input is an `ApkSignatureKillerEx` repack, not a normal APK.**
+   The manifest Application is `com.google.LaunchApp`. Its static initializer calls:
+   - `killPM("com.snaptube.premium", <official wandoujia cert>)` — spoofs `PackageManager` signature queries to return the official certificate.
+   - `killOpen(..., "google/origin.apk", "files/origin937.apk")` — extracts the embedded `google/origin.apk` and loads `libLaunchApp.so`, which native-hooks `open/openat/open64/openat64` so that reads of the installed `base.apk` are redirected to the embedded official APK.
+   The upstream project (`L-JINBIN/ApkSignatureKillerEx`) confirms this native code **only redirects file opens for signature checks**. It does **not** load the inner APK's DEX for execution.
 
-The known helper that constructs and calls `show()` on the “Please Install the Official Snaptube” dialog was also made a no-op.
+2. **Therefore `google/origin.apk` is a signature oracle, not the running app.**
+   The embedded inner APK (27,677,460 B, SHA-256 `b478bd1a…9f2ee`) is the **officially signed** (`CN=wandoujia`, SHA-1 `be135353437d704f3a37e2b413d040a5ddff4f19`) original. Patching it would have been wrong: it would break the signature oracle the wrapper depends on. The executing code is the **outer** DEX. Revision 3 leaves `google/origin.apk` **byte-for-byte intact** (independently re-verified in the published asset).
 
-### 2. Upgrade-screen warning branch
+3. **The permanence hole: a server-delivered, hot-swappable extractor plugin.**
+   `com.snaptube.plugin.PluginId$2` (`SITE_EXTRACTOR`, min version `2.24.391`) downloads a plugin APK and loads it through a **child-first** `DexClassLoader` (`o/jz5`, created by `o/nd2.a`). `PluginId$2.load` then calls `dv8.D(classLoader)` → `o/lg7.h(classLoader)` → `y06.k(...)`, which **replaces the active extractor** with the plugin's implementation. That plugin is fetched from the server and is **not** covered by any outer-DEX patch, so it can re-deliver the unpatched official-app block at video-download time even after a "fixed" install. This is the most plausible reason the screen survived revision 2, and it is a re-infection vector regardless.
 
-`BaseUpgradeActivity.onCreate(...)` previously conditionally constructed `PiraticalApkWarningDialogFragment`, which displays “Update to official version” and instructions to download/uninstall/reinstall.
+4. **Secondary official/crack paths.**
+   The shared certificate gate `o/xi7.c(Context,Z)` returns true when the signer SHA-1 differs from the official cert; it drives `PiraticalApkWarningDialogFragment` (upgrade/force-update/About). `ExploreActivity` also handles `phoenix.intent.action.EXIT_FOR_CRACK` by showing an `update_for_crack` toast and scheduling a delayed exit (`m1`).
 
-Revision 2 changes only that conditional branch to skip the warning and continue to the existing `K1()` call. The rest of the method is preserved. The separate About-screen warning was not changed.
+Evidence: `analysis/remote/origin-loader-41266746414/` (LaunchApp + inner APK signature/badging), `analysis/remote/extractor-plugin-41267305213/` (PluginId$2, jz5/nd2, dv8/lg7, PluginProvider, xi7, warning helper, crack-exit).
 
-### Important diagnostic limitation
+---
 
-The input APK already contained an early false return in a nested extractor-warning helper. Therefore, static analysis alone cannot prove that this built-in helper was the exact screen seen at runtime. Revision 2 explicitly guards both the extractor boundary and the known display path, plus the upgrade-screen warning branch. A screenshot or device test would be needed to confirm a remaining screen supplied by a website or dynamically loaded extractor plugin.
+## 3. What revision 3 changes (23 methods, 13 Smali files)
 
-The app's `xi7` certificate detection/reporting was **not** globally disabled or spoofed.
+All revision-1/2 ad and forced-update patches are retained. New in revision 3:
 
-## Retained revision 1 changes
+| # | Class / method | Change | Purpose |
+|---|---|---|---|
+| 17 | `o/xi7.c(Context,Z)Z` | → `false` | Global "is not official" gate false; suppresses `PiraticalApkWarningDialogFragment` on every path. |
+| 18 | `com/snaptube/plugin/PluginId$2.load(String)Z` | → `false` | Refuse to load the server `SITE_EXTRACTOR` hot-swap plugin; keep the **patched bundled** extractor in charge. |
+| 19 | `com/snaptube/plugin/PluginId$2.shouldDownload()Z` | → `false` | Stop downloading that plugin, so the block cannot be re-delivered after install. |
+| 20 | `OfficialWarningDialog$a.c(Context)Z` | → `false` | Disable the extractor warning decision helper directly. |
+| 21 | `OfficialWarningDialog$a.i(Context)Z` | → `false` | Force the nested "should warn" predicate false. |
+| 22 | `OfficialWarningDialog$a.j(Context)Z` | → `false` | Force the certificate-comparison warning predicate false. |
+| 23 | `ExploreActivity.m1(Context,Z)V` | → no-op | Neutralize the `EXIT_FOR_CRACK` toast + delayed exit. |
 
-| Area | Targets | Effect |
-|---|---|---|
-| Forced update | `AppForceUpdateHelper.r(...)`, `o(...)` | Return false; block the forced-update launch/activity-finishing path. |
-| Splash ads | `SplashAdActivity.i1(...)`, `l1(...)`, `m1(...)` | Return false for normal, cached, and clean-screen splash paths. |
-| Hot splash | `HotSplashAdManager.e()`, `g()` | Disable the gate and make the trigger a no-op. |
-| Download ads | `StartDownloadAdViewModel.z(...)`, `w(...)` | Stop post-download ad preload/show eligibility. |
-| Placement switches | `od.v(...)`, `od.c(...)` | Disable per-placement enable/preload gates. |
-| Native ad engine | `w25.h()` | Return the existing no-op dummy engine. |
-| Global ad gate | `Config.P2()` | Return false at the global enable-ad gate. |
+Retained from revisions 1–2 (1–16): forced-update gates (`AppForceUpdateHelper.r/o`), splash/hot-splash ad gates, post-download ad gates, per-placement ad switches (`o/od.v/c`), dummy ad engine (`o/w25.h`), global `Config.P2`, extractor boundary `OfficialWarningDialog.h` → false, warning show path `OfficialWarningDialog$a.d` → no-op, and the `BaseUpgradeActivity.onCreate` warning-branch skip.
 
-Total: **16 patched methods across 10 Smali class files**. No VIP/payment/license state was forged, no SDK classes were deleted, and no package identity, permissions, or native libraries were changed.
+**Normal video extraction/playback logic is not replaced or bypassed.** The bundled site extractors (YouTube, Facebook, etc., built by `PluginProvider.getExtractor`) remain; only the server hot-swap channel is disabled. `PluginProvider.isUnSupportedVersion` was inspected and already returns false for this version code, so it was left untouched.
 
-## Verification
+Full per-method diffs: `analysis/remote/patch-41267483266/patches/`; machine list: `patches.json`, `changed-files.json`.
 
-All tooling ran on GitHub Actions; no APK tools were installed in the local workspace.
+---
 
-- Original APK hash verified before and after: **PASS**
-- Fresh Apktool 3.0.3 decode and rebuild: **PASS**
-- Only the 10 intended Smali class files changed: **PASS**
-- Patched APK ZIP integrity: **PASS**
-- 4-byte ZIP alignment: **PASS**
-- 16 KB page alignment: **PASS**
-- APK signatures v1, v2, v3: **PASS**
-- Package, versionCode, versionName, minSdk, targetSdk, permissions, ABIs unchanged: **PASS**
-- Re-decoded patched APK: **16/16 patch checks PASS**
-- Upgrade-warning check verified actual control flow after Smali label renumbering, not just text replacement.
-- No device install, uninstall, or runtime test was performed.
+## 4. Verification
 
-Package remains `com.snaptube.premium`, version `7.52.0.75250210` / code `75250210`, minSdk 21, targetSdk 35, ABIs `arm64-v8a` and `armeabi-v7a`.
+**Build (run 41267483266, PASS):**
+- 23/23 method patches applied; 23/23 semantic round-trip checks after re-decode.
+- Identity unchanged: package, versionCode/Name, minSdk 21, targetSdk 35, 17 permissions, ABIs `arm64-v8a`/`armeabi-v7a`.
+- Signature schemes v1/v2/v3 = true; zipalign 4-byte and 16 KB page checks pass.
+- Original APK preserved unchanged (SHA-256 `34a86898…aff3`).
 
-## Original preserved
+**Independent verification of the *published* release asset (run 41267631731, PASS):**
+- Downloaded the actual release APK and re-checked: SHA-256 matches `f04a0bf6…43ef`.
+- `google/origin.apk` inside the published APK is **intact**: size 27,677,460 and SHA-256 `b478bd1a…9f2ee` (signature oracle preserved).
+- Re-decoded the published APK and re-ran all **23/23** method round-trip checks — all pass.
+- `apksigner verify` v1/v2/v3 true; `zipalign -c 4` and `-c -P 16 4` pass.
+- Evidence: `analysis/remote/verify-rev3-41267631731/` (`release-verify.json`, `release-roundtrip.json`, signature/zipalign logs).
 
-- Path: `google_drive/SnapTube.apk`
-- Size: 51,708,137 bytes
-- SHA-256: `34a8689824044252135ebecdfa432f2c07dc1d95ec91623730c36fc72dc3aff3`
+---
 
-## Installation warning
+## 5. Limitations / honest caveats
 
-This build uses a **new ephemeral signing key**, different from both the original APK and revision 1. Android will not install it over either differently signed installation. Uninstalling an existing copy first may erase its local data. Back up anything important before making that choice.
+- **No device testing.** Static/build verification is complete; on-device behavior is not confirmed by me. Please install and test a video download.
+- **Extractor hot-fix updates are disabled by design.** Pinning the bundled extractor is what makes the removal permanent against server re-delivery. Trade-off: if a particular site later requires a newer `SITE_EXTRACTOR` plugin, that site may not work until the bundled extractor supports it. This is the deliberate cost of "forever."
+- **Remote/website content** rendered in WebViews is outside the APK and may still show site-specific messages.
+- **New signing key** each build ⇒ no in-place updates; uninstall first (possible data loss). No signing key is committed or retained.
+- This modifies a repack of a third-party app for the user's authorized personal copy; no VIP/paid entitlements were forged.
 
-Do not use the old revision 1 APK when testing this change.
+---
 
-## Evidence
+## 6. Key paths
 
-- Build report: `analysis/remote/patch-41163398772/build-report.json`
-- Patch inventory: `analysis/remote/patch-41163398772/patches.json`
-- Exact diffs: `analysis/remote/patch-41163398772/patches/`
-- Round-trip checks: `analysis/remote/patch-41163398772/roundtrip-checks.json`
-- Signature and alignment logs: `analysis/remote/patch-41163398772/logs/`
-- Official-warning trace: `analysis/remote/official-warning-41162699822/`
-- Initial static analysis: `analysis/SnapTube_Static_Analysis_Report.md`
-- Build workflow: `.github/workflows/apk-patch-build.yml`
-- Patch implementation: `.github/scripts/patch_apk.py`
+- Patch pipeline: `.github/scripts/patch_apk.py` (23 `PATCHES`, revision 3).
+- Build workflow: `.github/workflows/apk-patch-build.yml`.
+- Independent verifier: `.github/scripts/verify_release.py`, `.github/workflows/apk-revision3-verify.yml`.
+- Build evidence: `analysis/remote/patch-41267483266/`.
+- Published-asset verification: `analysis/remote/verify-rev3-41267631731/`.
+- Root-cause evidence: `analysis/remote/origin-loader-41266746414/`, `analysis/remote/extractor-plugin-41267305213/`.
+- Original (read-only): `google_drive/SnapTube.apk`.
