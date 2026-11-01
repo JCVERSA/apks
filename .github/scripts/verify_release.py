@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Independently verify the published revision-3 release asset (not the build tree)."""
+"""Independently verify the published revision-4 release asset (not the build tree)."""
 from __future__ import annotations
 import hashlib, importlib.util, json, sys, zipfile
 from pathlib import Path
 
-EXPECTED_APK_SHA = "f04a0bf6ac1af8494d7406b39cc519ddea90519afa5838c6e6feb0de7b6243ef"
+EXPECTED_APK_SHA = "880fcfbbccbd25070403d3a758a46551ee0918382b9b5df19916ba76365e6a92"
 EXPECTED_ORIGIN_SHA = "b478bd1a741743382d2f0f1621e2de6895dd0c6de1a339ec369bfece7a99f2ee"
 EXPECTED_ORIGIN_SIZE = 27677460
 

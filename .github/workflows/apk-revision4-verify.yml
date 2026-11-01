@@ -1,18 +1,18 @@
-name: Verify published revision 3 APK
+name: Verify published revision 4 APK
 
 on:
   workflow_dispatch:
   push:
     branches: [arena/7234f8d6-apks]
     paths:
-      - '.github/workflows/apk-revision3-verify.yml'
+      - '.github/workflows/apk-revision4-verify.yml'
       - '.github/scripts/verify_release.py'
 
 permissions:
   contents: write
 
 concurrency:
-  group: apk-rev3-verify-${{ github.ref }}
+  group: apk-rev4-verify-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -31,10 +31,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          WORK="${RUNNER_TEMP}/rev3-verify"
-          TOOLS="${RUNNER_TEMP}/rev3-tools"
+          WORK="${RUNNER_TEMP}/rev4-verify"
+          TOOLS="${RUNNER_TEMP}/rev4-tools"
           mkdir -p "$WORK" "$TOOLS"
-          gh release download snaptube-patched-41267483266 --repo "$GITHUB_REPOSITORY" \
+          gh release download snaptube-patched-41272222816 --repo "$GITHUB_REPOSITORY" \
             --pattern '*.apk' --dir "$WORK" --clobber
           V=3.0.3
           SHA=dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423
@@ -60,14 +60,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          dest="analysis/remote/verify-rev3-${GITHUB_RUN_ID}"
+          dest="analysis/remote/verify-rev4-${GITHUB_RUN_ID}"
           mkdir -p "$dest"
-          src="${RUNNER_TEMP}/rev3-verify/evidence"
+          src="${RUNNER_TEMP}/rev4-verify/evidence"
           if [ -d "$src" ]; then cp -a "$src/." "$dest/"; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -f "$dest"
           if ! git diff --cached --quiet; then
-            git commit -m "Independently verify published revision 3 APK (run ${GITHUB_RUN_ID}) [skip ci]"
+            git commit -m "Independently verify published revision 4 APK (run ${GITHUB_RUN_ID}) [skip ci]"
+            git fetch origin arena/7234f8d6-apks
+            git rebase FETCH_HEAD
             git push origin HEAD:arena/7234f8d6-apks
           fi

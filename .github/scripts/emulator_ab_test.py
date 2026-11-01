@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Isolated GitHub Actions emulator A/B test: original repack vs revision 3.
+"""Isolated GitHub Actions emulator A/B test: original repack vs revision 4.
 
 Authorized scope: temporary emulator only, fresh app installs, public test
 videos, no account login, no personal-device access. Publishes sanitized
@@ -12,7 +12,14 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 PKG = 'com.snaptube.premium'
-TEST_URL = 'https://www.youtube.com/watch?v=aqz-KE-bpKQ'  # Blender, Big Buck Bunny (CC)
+# Use public open-movie tests. YouTube datacenter-IP runs previously returned
+# LOGIN_REQUIRED / "Sign in to confirm you're not a bot" for BOTH variants, so
+# Dailymotion/Vimeo are used to exercise real extractor + transfer paths.
+TEST_CASES = [
+    {'tag': 'dailymotion-video', 'url': 'https://www.dailymotion.com/video/x80bs9c', 'prefer': 'video'},
+    {'tag': 'dailymotion-audio', 'url': 'https://www.dailymotion.com/video/x80bs9c', 'prefer': 'audio'},
+    {'tag': 'vimeo-video', 'url': 'https://vimeo.com/1084537', 'prefer': 'video'},
+]
 SAFE_TAPS = re.compile(r'^(agree|accept|allow|continue|get started|start now|next|skip|not now|later|ok|got it|close|cancel)$', re.I)
 DANGEROUS = re.compile(r'uninstall|official|update now|install now|purchase|subscribe|sign in|log in', re.I)
 
@@ -108,36 +115,60 @@ class Variant:
                 break
         self.capture('prepared')
 
-    def share_and_attempt_download(self):
-        shell(f"am start -a android.intent.action.SEND -t text/plain --es android.intent.extra.TEXT '{TEST_URL}' -p {PKG}")
-        time.sleep(15)
-        self.capture('shared-0')
-        for i in range(4):
-            if self.tap_safe():
-                self.capture(f's_shared-{i+1}')
-        # Prefer a small/low-resolution format if the chooser exposes one.
-        chosen = None
+    def choose_format(self, prefer, tag):
+        # If the chooser has a Music/Audio tab, open it before looking for MP3/M4A.
+        if prefer == 'audio':
+            for n in self.ui_nodes:
+                label = (n['text'] or n['desc']).strip()
+                if re.fullmatch(r'music|audio', label, re.I) and not DANGEROUS.search(label):
+                    if self.tap_node(n):
+                        self.event('tap_audio_tab', label=label)
+                        time.sleep(2)
+                        self.capture(f'{tag}-audio-tab')
+                    break
+        patterns = (r'classic mp3|\bmp3\b|\bm4a\b|audio only' if prefer == 'audio'
+                    else r'\b(144p|240p|360p|low|small)\b')
         for n in self.ui_nodes:
             label = (n['text'] or n['desc'])
-            if re.search(r'\b(144p|240p|360p|low|small)\b', label, re.I) and not DANGEROUS.search(label):
-                chosen = n; break
-        if chosen:
-            self.tap_node(chosen); self.event('tap_format', label=chosen['text'] or chosen['desc']); time.sleep(2)
-        self.capture('before-download-tap')
+            if re.search(patterns, label, re.I) and not DANGEROUS.search(label):
+                self.tap_node(n)
+                self.event('tap_format', label=label, prefer=prefer)
+                time.sleep(2)
+                return True
+        self.event('format_not_found', prefer=prefer)
+        return False
+
+    def share_and_attempt_download(self, case):
+        tag, url, prefer = case['tag'], case['url'], case['prefer']
+        self.event('attempt_start', tag=tag, url_host=urlsplit(url).netloc, prefer=prefer)
+        shell('input keyevent KEYCODE_HOME')
+        time.sleep(1)
+        shell(f"am start -a android.intent.action.SEND -t text/plain --es android.intent.extra.TEXT '{url}' -p {PKG}")
+        time.sleep(15)
+        self.capture(f'{tag}-shared-0')
+        for i in range(4):
+            if self.tap_safe():
+                self.capture(f'{tag}-s_shared-{i+1}')
+        self.choose_format(prefer, tag)
+        self.capture(f'{tag}-before-download-tap')
         tapped = False
         for n in self.ui_nodes:
             label = (n['text'] or n['desc']).strip()
             rid = n.get('id','')
             if (re.fullmatch(r'download|start download|download now', label, re.I) or re.search(r'download.*(button|btn)', rid, re.I)) and not DANGEROUS.search(label):
-                tapped = self.tap_node(n); self.event('tap_download', label=label, id=rid); break
+                tapped = self.tap_node(n)
+                self.event('tap_download', label=label, id=rid, tag=tag)
+                break
         if not tapped:
-            self.event('download_button_not_found')
+            self.event('download_button_not_found', tag=tag)
         for i in range(6):
             time.sleep(20)
-            self.capture(f'progress-{i}')
+            self.capture(f'{tag}-progress-{i}')
             rc, out = shell(f'pidof {PKG}')
             if rc != 0:
-                self.event('app_process_missing'); break
+                self.event('app_process_missing', tag=tag)
+                break
+        self.event('attempt_end', tag=tag)
 
     def collect_logs(self):
         rc, pid = shell(f'pidof {PKG}')
@@ -146,13 +177,12 @@ class Variant:
         if pid:
             cmd += ['--pid', pid]
         rc, raw = run(cmd, timeout=90)
-        rx = re.compile(r'download|TaskError|TaskException|http|HTTP|403|416|ffmpeg|FFmpeg|mux|combine|extract|plugin|AndroidRuntime|FATAL|Exception|Error', re.I)
+        rx = re.compile(r'download|TaskError|TaskException|http|HTTP|400|403|404|416|500|ffmpeg|FFmpeg|mux|combine|extract|plugin|AndroidRuntime|FATAL|Exception|Error', re.I)
         lines = [redact(l) for l in raw.decode('utf-8','replace').splitlines() if rx.search(l)]
-        (self.root / 'logcat-filtered.txt').write_text('\n'.join(lines[-4000:]) + '\n')
+        (self.root / 'logcat-filtered.txt').write_text('\n'.join(lines[-6000:]) + '\n')
         self.event('log_lines', count=len(lines))
 
     def collect_databases(self):
-        shell('find /data/data/' + PKG + '/databases -maxdepth 1 -type f 2>/dev/null', timeout=45)
         rc, listing = shell(f'find /data/data/{PKG}/databases -maxdepth 1 -type f 2>/dev/null')
         dbdir = self.root / 'private-db-scratch'; dbdir.mkdir(exist_ok=True)
         summaries = []
@@ -171,10 +201,10 @@ class Variant:
                     cols = [r[1] for r in con.execute(f'pragma table_info("{t}")')]
                     if not any(re.search(r'status|error|task|download', c, re.I) for c in cols):
                         continue
-                    keep = [c for c in cols if re.search(r'id|status|error|size|path|url|title|create|update|download|progress', c, re.I)]
+                    keep = [c for c in cols if re.search(r'id|status|error|size|path|url|title|create|update|download|progress|plugin|message|fail|type|format|current_bytes|total_bytes', c, re.I)]
                     if not keep:
                         continue
-                    q = 'select ' + ','.join(f'"{c}"' for c in keep) + f' from "{t}" order by rowid desc limit 25'
+                    q = 'select ' + ','.join(f'"{c}"' for c in keep) + f' from "{t}" order by rowid desc limit 40'
                     rows = []
                     for row in con.execute(q):
                         item = {}
@@ -234,11 +264,15 @@ def main():
     adb('wait-for-device', timeout=180)
     shell('svc power stayon true')
     results = {}
-    for name, apk in (('original', args.original), ('revision3', args.patched)):
+    for name, apk in (('original', args.original), ('revision4', args.patched)):
         v = Variant(name, apk, out)
         try:
             v.install_and_prepare()
-            v.share_and_attempt_download()
+            for case in TEST_CASES:
+                try:
+                    v.share_and_attempt_download(case)
+                except Exception as e:
+                    v.event('attempt_error', tag=case.get('tag'), message=str(e))
             results[name] = 'RUNTIME_EVIDENCE_COLLECTED'
         except Exception as e:
             results[name] = f'ERROR: {e}'
@@ -249,8 +283,8 @@ def main():
             except Exception as e:
                 v.event('collect_error', message=str(e))
                 (v.root / 'events.json').write_text(json.dumps(v.events, indent=2) + '\n')
-    summary = {'scope': 'Temporary GitHub Actions emulator only; fresh installs; public CC test video; no accounts',
-               'test_url_host': urlsplit(TEST_URL).netloc, 'variants': results,
+    summary = {'scope': 'Temporary GitHub Actions emulator only; fresh installs; public open-movie tests; no accounts',
+               'test_cases': TEST_CASES, 'variants': results,
                'status': 'EVIDENCE_COLLECTED_REVIEW_REQUIRED',
                'note': 'A collected run is not a pass/fail verdict; inspect UI, task DB, logs and media metadata.'}
     (out / 'summary.json').write_text(json.dumps(summary, indent=2) + '\n')
