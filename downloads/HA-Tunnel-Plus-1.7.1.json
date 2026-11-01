@@ -1,0 +1,11 @@
+{
+  "app": "HA Tunnel Plus",
+  "package": "com.hatunnel.plus",
+  "version": "1.7.1",
+  "source": "apkpure",
+  "final_url": "https://d.cdnpure.com/b/APK/com.hatunnel.plus?version=latest",
+  "sha256": "741e283ba3ee4b04b6988d5842d38491a51fa0bddfaf52d9c6bca9e6245ad051",
+  "size_bytes": 25014133,
+  "size_mb": 25.01,
+  "expected_sha256": "741e283ba3ee4b04b6988d5842d38491a51fa0bddfaf52d9c6bca9e6245ad051"
+}
