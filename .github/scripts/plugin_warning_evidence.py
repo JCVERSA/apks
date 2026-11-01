@@ -109,13 +109,46 @@ def main():
     time.sleep(20)
     capture_text(out, 'shared')
     event('shared_capture', url_host='www.dailymotion.com')
-    # Wait for the app's own plugin downloads, then pull only plugin APKs.
+    # Preserve directory/process evidence so moved or renamed plugin artifacts are visible.
+    rc, pid = shell(f'pidof {PKG}')
+    pid = pid.decode().strip().split()[0] if rc == 0 and pid.strip() else ''
+    for name, cmd in (
+        ('plugin-dir-listing', f'ls -laR /data/user/0/{PKG}/files/plugin /data/user/0/{PKG}/app_plugins /data/data/{PKG}/files/plugin /data/data/{PKG}/app_plugins 2>&1'),
+        ('plugin-file-find', f'find /data/user/0/{PKG} /data/data/{PKG} -type f 2>/dev/null'),
+    ):
+        rc, data = shell(cmd, timeout=90)
+        (out / f'{name}.txt').write_bytes(data)
+    if pid:
+        rc, maps = shell(f'cat /proc/{pid}/maps 2>/dev/null', timeout=90)
+        if rc == 0:
+            lines = [l for l in maps.decode('utf-8', 'replace').splitlines() if re.search(r'plugin|\.apk|\.dex|\.jar|app_plugins', l, re.I)]
+            (out / 'process-maps-plugin.txt').write_text('\n'.join(lines) + '\n')
+        rc, meminfo = shell(f'dumpsys meminfo --package {PKG}', timeout=90)
+        if rc == 0:
+            (out / 'meminfo.txt').write_bytes(meminfo)
+
+    # Wait for the app's own plugin downloads, then pull plugin APKs/artifacts.
     pulled = []
+    seen = set()
     for attempt in range(12):
-        rc, listing = shell(f'find /data/data/{PKG}/files/plugin -maxdepth 1 -type f -name "*.apk" 2>/dev/null')
-        files = [x.strip() for x in listing.decode('utf-8', 'replace').splitlines() if x.strip().endswith('.apk')]
-        for remote in files:
-            local = plugin_dir / Path(remote).name
+        rc, listing = shell(f'find /data/user/0/{PKG} /data/data/{PKG} -type f 2>/dev/null', timeout=90)
+        candidates = []
+        for line in listing.decode('utf-8', 'replace').splitlines():
+            remote = line.strip()
+            if not remote or remote in seen:
+                continue
+            if re.search(r'/files/plugin/|/app_plugins/|/plugins/', remote) and remote.endswith(('.apk', '.jar', '.zip', '.dex')):
+                candidates.append(remote)
+        if pid:
+            rc, maps = shell(f'cat /proc/{pid}/maps 2>/dev/null', timeout=60)
+            for line in maps.decode('utf-8', 'replace').splitlines():
+                m = re.search(r'(/data/[^\s]+\.(?:apk|jar|zip|dex))', line)
+                if m and re.search(r'plugin|app_plugins', m.group(1), re.I) and m.group(1) not in seen:
+                    candidates.append(m.group(1))
+        for remote in candidates:
+            seen.add(remote)
+            safe_name = remote.strip('/').replace('/', '__')
+            local = plugin_dir / safe_name
             if local.exists():
                 continue
             rc, _ = adb('pull', remote, str(local), timeout=120)
