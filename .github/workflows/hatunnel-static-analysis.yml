@@ -1,0 +1,97 @@
+name: HA Tunnel Plus static analysis
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths:
+      - '.github/workflows/hatunnel-static-analysis.yml'
+      - '.github/scripts/hatunnel_prepare.sh'
+      - '.github/scripts/hatunnel_inventory.py'
+      - 'downloads/HA-Tunnel-Plus-1.7.1.apk'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hatunnel-static-analysis-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  inspect:
+    name: Inspect HA Tunnel Plus APK without executing it
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      APK_PATH: downloads/HA-Tunnel-Plus-1.7.1.apk
+      EXPECTED_SHA256: 741e283ba3ee4b04b6988d5842d38491a51fa0bddfaf52d9c6bca9e6245ad051
+    steps:
+      - name: Check out analysis inputs
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: true
+
+      - name: Set up JDK on the GitHub runner only
+        uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00 # v4.7.1
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Verify input and run pinned static-analysis tools
+        shell: bash
+        env:
+          WORK_ROOT: ${{ runner.temp }}/hatunnel-analysis
+          TOOLS_ROOT: ${{ runner.temp }}/hatunnel-tools
+        run: bash .github/scripts/hatunnel_prepare.sh
+
+      - name: Build evidence inventory and candidate report
+        if: always()
+        shell: bash
+        env:
+          WORK_ROOT: ${{ runner.temp }}/hatunnel-analysis
+        run: |
+          python3 .github/scripts/hatunnel_inventory.py "$WORK_ROOT" "$APK_PATH" "$EXPECTED_SHA256"
+
+      - name: Publish bounded job summary
+        if: always()
+        shell: bash
+        env:
+          WORK_ROOT: ${{ runner.temp }}/hatunnel-analysis
+        run: |
+          if [ -f "$WORK_ROOT/reports/analysis-summary.md" ]; then
+            head -c 900000 "$WORK_ROOT/reports/analysis-summary.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Publish bounded evidence to the analysis branch
+        if: always()
+        shell: bash
+        env:
+          WORK_ROOT: ${{ runner.temp }}/hatunnel-analysis
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/hatunnel-analysis-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          if [ -d "$WORK_ROOT/reports" ]; then cp -a "$WORK_ROOT/reports" "$dest/reports"; fi
+          if [ -d "$WORK_ROOT/logs" ]; then cp -a "$WORK_ROOT/logs" "$dest/logs"; fi
+          printf 'run_outcome=%s\nrun_id=%s\n' '${{ job.status }}' "$GITHUB_RUN_ID" > "$dest/run-status.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          if ! git diff --cached --quiet; then
+            git commit -m "Add HA Tunnel Plus static analysis evidence (run ${GITHUB_RUN_ID}) [skip ci]"
+            git fetch origin arena/7234f8d6-apks
+            git rebase FETCH_HEAD
+            git push origin HEAD:arena/7234f8d6-apks
+          fi
+
+      - name: Upload reports and logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: hatunnel-static-report
+          path: |
+            ${{ runner.temp }}/hatunnel-analysis/reports/
+            ${{ runner.temp }}/hatunnel-analysis/logs/
+          if-no-files-found: warn
+          retention-days: 7
+          compression-level: 6
