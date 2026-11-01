@@ -1,0 +1,162 @@
+.method public static final z(Landroid/os/Bundle;Ljava/lang/String;)V
+    .locals 6
+
+    const-string v0, "scene"
+
+    invoke-static {p1, v0}, Lo/or3;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v0, Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;->a:Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;
+
+    invoke-virtual {v0, p0}, Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;->w(Landroid/os/Bundle;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    sget-object v1, Lcom/snaptube/ad/frequency/FrequencyControlManager;->a:Lcom/snaptube/ad/frequency/FrequencyControlManager;
+
+    sget-object v2, Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;->b:Lcom/snaptube/ads/base/AdsPos;
+
+    invoke-virtual {v2}, Lcom/snaptube/ads/base/AdsPos;->pos()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "pos(...)"
+
+    invoke-static {v3, v4}, Lo/or3;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;->m(Landroid/os/Bundle;)Landroid/os/Bundle;
+
+    move-result-object v5
+
+    invoke-virtual {v1, v3, v5}, Lcom/snaptube/ad/frequency/FrequencyControlManager;->h(Ljava/lang/String;Landroid/os/Bundle;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    const-string v3, "StartDownloadAdViewModel"
+
+    const-string v5, "\u9884\u52a0\u8f7d\u4e0b\u8f7d\u540e\u63d2\u5c4f\u5e7f\u544a\u4f4d"
+
+    invoke-static {v3, v5}, Lcom/snaptube/util/ProductionEnv;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Lcom/snaptube/ads/base/AdsPos;->pos()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3, v4}, Lo/or3;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;->m(Landroid/os/Bundle;)Landroid/os/Bundle;
+
+    move-result-object p0
+
+    invoke-virtual {v1, v3, p0}, Lcom/snaptube/ad/frequency/FrequencyControlManager;->p(Ljava/lang/String;Landroid/os/Bundle;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    invoke-virtual {v2}, Lcom/snaptube/ads/base/AdsPos;->pos()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0, v4}, Lo/or3;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v1, p0}, Lcom/snaptube/ad/frequency/FrequencyControlManager;->j(Ljava/lang/String;)I
+
+    move-result p0
+
+    const/4 v0, 0x0
+
+    invoke-static {p0, v0}, Lo/qe6;->c(II)I
+
+    move-result p0
+
+    goto :goto_0
+
+    :cond_1
+    sget-object p0, Lo/g9;->a:Lo/g9$a;
+
+    invoke-virtual {p0}, Lo/g9$a;->a()Z
+
+    move-result p0
+
+    invoke-virtual {v0, p0}, Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;->p(Z)Lo/qv4;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lo/qv4;->a()Lo/ul3;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lo/ul3;->a()I
+
+    move-result p0
+
+    invoke-static {}, Lcom/wandoujia/base/config/GlobalConfig;->getGenericSharedPrefs()Landroid/content/SharedPreferences;
+
+    move-result-object v1
+
+    const-string v3, "getGenericSharedPrefs(...)"
+
+    invoke-static {v1, v3}, Lo/or3;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lcom/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel;->k(Landroid/content/SharedPreferences;)I
+
+    move-result v0
+
+    sub-int/2addr p0, v0
+
+    :goto_0
+    invoke-static {}, Lcom/snaptube/premium/app/PhoenixApplication;->z()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lo/fc1;->a(Landroid/content/Context;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/snaptube/premium/app/a;
+
+    invoke-interface {v0}, Lo/sn;->H0()Lo/gb;
+
+    move-result-object v0
+
+    sget-object v1, Lo/jb;->e:Lo/jb$a;
+
+    invoke-virtual {v2}, Lcom/snaptube/ads/base/AdsPos;->pos()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2, v4}, Lo/or3;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v1, v2}, Lo/jb$a;->a(Ljava/lang/String;)Lo/jb;
+
+    move-result-object v1
+
+    const-string v2, "ad_request_scene"
+
+    invoke-virtual {v1, v2, p1}, Lo/jb;->f(Ljava/lang/String;Ljava/lang/Object;)Lo/jb;
+
+    move-result-object p1
+
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    const-string v1, "available_download_count"
+
+    invoke-virtual {p1, v1, p0}, Lo/jb;->f(Ljava/lang/String;Ljava/lang/Object;)Lo/jb;
+
+    move-result-object p0
+
+    invoke-interface {v0, p0}, Lo/gb;->c(Lo/jb;)V
+
+    :cond_2
+    :goto_1
+    return-void
+.end method
