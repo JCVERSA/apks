@@ -1,0 +1,4 @@
+scheme	host	path	query_redacted	first_file	first_line
+https	firebase.google.com	/docs/android/kotlin-migration	False	jadx/sources/com/google/firebase/ktx/FirebaseCommonKtxRegistrar.java	21
+http	schemas.android.com	/apk/res/android	False	decoded/AndroidManifest.xml	2
+https	youtrack.jetbrains.com	/issue/KT-67202	False	jadx/sources/kotlin/jvm/ImplicitlyActualizedByJvmDeclaration.java	16

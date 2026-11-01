@@ -1,0 +1,3150 @@
+{
+  "scope": "Comprehensive static inventory and targeted ad/billing/time/tunnel/update feasibility inspection; no APK edits or execution.",
+  "input": {
+    "original_path": "/home/runner/work/apks/apks/downloads/HA-Tunnel-Plus-1.7.1.apk",
+    "original_size_bytes": 25014133,
+    "expected_sha256": "741e283ba3ee4b04b6988d5842d38491a51fa0bddfaf52d9c6bca9e6245ad051",
+    "original_sha256": "741e283ba3ee4b04b6988d5842d38491a51fa0bddfaf52d9c6bca9e6245ad051",
+    "working_copy_sha256": "741e283ba3ee4b04b6988d5842d38491a51fa0bddfaf52d9c6bca9e6245ad051",
+    "original_matches_expected": true,
+    "working_copy_matches_original": true
+  },
+  "archive": {
+    "member_count": 1283,
+    "uncompressed_bytes": 41685833,
+    "compressed_bytes": 24731943,
+    "dex": [
+      {
+        "path": "classes.dex",
+        "size": 9031484
+      },
+      {
+        "path": "classes2.dex",
+        "size": 4368
+      },
+      {
+        "path": "classes3.dex",
+        "size": 7797536
+      },
+      {
+        "path": "classes4.dex",
+        "size": 7826752
+      },
+      {
+        "path": "classes5.dex",
+        "size": 522296
+      }
+    ],
+    "native_libraries": [
+      {
+        "path": "lib/arm64-v8a/libconscrypt_jni.so",
+        "size": 2871488
+      },
+      {
+        "path": "lib/arm64-v8a/libdexprotector.so",
+        "size": 446041
+      },
+      {
+        "path": "lib/arm64-v8a/libhev-socks5-tunnel.so",
+        "size": 343568
+      },
+      {
+        "path": "lib/armeabi-v7a/libconscrypt_jni.so",
+        "size": 1854120
+      },
+      {
+        "path": "lib/armeabi-v7a/libdexprotector.so",
+        "size": 394481
+      },
+      {
+        "path": "lib/armeabi-v7a/libhev-socks5-tunnel.so",
+        "size": 232256
+      },
+      {
+        "path": "lib/x86_64/libconscrypt_jni.so",
+        "size": 3092584
+      },
+      {
+        "path": "lib/x86_64/libdexprotector.so",
+        "size": 481079
+      },
+      {
+        "path": "lib/x86_64/libhev-socks5-tunnel.so",
+        "size": 342808
+      }
+    ],
+    "assets": [
+      {
+        "path": "assets/PublicSuffixDatabase.list",
+        "size": 42476
+      },
+      {
+        "path": "assets/assets.dat",
+        "size": 2605171
+      },
+      {
+        "path": "assets/dexopt/baseline.prof",
+        "size": 5246
+      },
+      {
+        "path": "assets/dexopt/baseline.profm",
+        "size": 573
+      },
+      {
+        "path": "assets/resources/allowed_apps.json",
+        "size": 579
+      },
+      {
+        "path": "assets/resources/customs.json",
+        "size": 192
+      },
+      {
+        "path": "assets/resources/methods.json",
+        "size": 279
+      },
+      {
+        "path": "assets/resources/servers.json",
+        "size": 434
+      },
+      {
+        "path": "assets/resources/whatsnew.json",
+        "size": 309
+      }
+    ],
+    "signature_related_members": [
+      "META-INF/versions/9/OSGI-INF/MANIFEST.MF",
+      "META-INF/ARTOFTUN.SF",
+      "META-INF/ARTOFTUN.RSA",
+      "META-INF/MANIFEST.MF"
+    ],
+    "framework_indicator_paths": []
+  },
+  "manifest": {
+    "package": "com.hatunnel.plus",
+    "version_name": null,
+    "version_code": null,
+    "compile_sdk_version": "36",
+    "compile_sdk_version_codename": "16",
+    "min_sdk": null,
+    "target_sdk": null,
+    "application": {
+      "label": "@string/app_name",
+      "name": "app.fast.ssh.ProtectedFastSSH",
+      "icon": "@mipmap/ic_launcher",
+      "roundIcon": "@mipmap/ic_launcher_round",
+      "debuggable": null,
+      "allowBackup": "false",
+      "usesCleartextTraffic": null,
+      "networkSecurityConfig": "@xml/network_security_config",
+      "extractNativeLibs": "false",
+      "appComponentFactory": null,
+      "requestLegacyExternalStorage": "true",
+      "preserveLegacyExternalStorage": null,
+      "enableOnBackInvokedCallback": null,
+      "localeConfig": null,
+      "dataExtractionRules": null,
+      "fullBackupContent": "false"
+    },
+    "resolved_default_label": "HA Tunnel Plus"
+  },
+  "permissions": [
+    {
+      "name": "android.permission.INTERNET",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.FOREGROUND_SERVICE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_NETWORK_STATE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.VIBRATE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.READ_EXTERNAL_STORAGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_MEDIA_LOCATION",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.google.android.gms.permission.AD_ID",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_ADSERVICES_AD_ID",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_ADSERVICES_TOPICS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.hatunnel.plus.permission.C2D_MESSAGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.POST_NOTIFICATIONS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.WAKE_LOCK",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.google.android.c2dm.permission.RECEIVE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.sec.android.provider.badge.permission.READ",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.sec.android.provider.badge.permission.WRITE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.htc.launcher.permission.READ_SETTINGS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.htc.launcher.permission.UPDATE_SHORTCUT",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.sonyericsson.home.permission.BROADCAST_BADGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.anddoes.launcher.permission.UPDATE_COUNT",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.majeur.launcher.permission.UPDATE_BADGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.huawei.android.launcher.permission.CHANGE_BADGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.huawei.android.launcher.permission.READ_SETTINGS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.READ_APP_BADGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.oppo.launcher.permission.READ_SETTINGS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.oppo.launcher.permission.WRITE_SETTINGS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "me.everything.badger.permission.BADGE_COUNT_READ",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "me.everything.badger.permission.BADGE_COUNT_WRITE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.android.vending.BILLING",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.hatunnel.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "max_sdk": null,
+      "node": "uses-permission"
+    }
+  ],
+  "permission_declarations": [
+    {
+      "name": "com.hatunnel.plus.permission.C2D_MESSAGE",
+      "protectionLevel": "signature"
+    },
+    {
+      "name": "com.hatunnel.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "protectionLevel": "signature"
+    }
+  ],
+  "components": [
+    {
+      "kind": "activity",
+      "name": ".jlvfyyvkjayic",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN"
+          ],
+          "categories": [
+            "android.intent.category.LAUNCHER"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": ".ncgaaFrdzEoDA",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".cnDlttaunvtad",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".nctakdClcpAxe",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.BROWSABLE",
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "*/*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}port": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*.bin"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*..*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*..*..*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*..*..*..*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*..*..*..*..*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*..*..*..*..*..*.hat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": ".AyukygCyziiq",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".ksuAizfrCakef",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".klvfmEewnwbfw",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".gpatDqxelgAwu",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".jkAsepnCgeirb",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".gpgpxsumlbzzn",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".mmcwEsxAAdjgE",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".cppxdhDpEpuxq",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".lxAaBsophBCxc",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": ".hxyekwpjxFBzr",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".cEFqdlqlfFxmo",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".kyFsoejobCghd",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".ifgvjvqkclsEt",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".exBEeyBpiqiii",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".emltmtpAucAss",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".hBAzwdxlDsEyq",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".zaFBgagzvmny",
+      "exported": "true",
+      "enabled": null,
+      "permission": "android.permission.BIND_VPN_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.net.VpnService"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "service",
+      "name": ".dgofwDzyioboA",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".hgguFhxqjtxpu",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.huawei.push.action.MESSAGING_EVENT"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "service",
+      "name": ".fCEwodFbDfofD",
+      "exported": "false",
+      "enabled": null,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".jdvvuuzaDdrEd",
+      "exported": "false",
+      "enabled": null,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".cgmFveggyhDha",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.google.firebase.MESSAGING_EVENT"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "service",
+      "name": ".jslxujEloEpij",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".dcnqaygjjfzxc",
+      "exported": "false",
+      "enabled": "@bool/APKTOOL_RENAMED_0x7f050003",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".ckcxonopbhzvo",
+      "exported": "true",
+      "enabled": "@bool/APKTOOL_RENAMED_0x7f050005",
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".nsdapracemAAb",
+      "exported": "false",
+      "enabled": "@bool/APKTOOL_RENAMED_0x7f050004",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".nqoqaceqzEzua",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".jltuywdksmlhq",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".fltvtpFqrygzB",
+      "exported": "false",
+      "enabled": null,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "receiver",
+      "name": ".hrmphChuvDoCv",
+      "exported": "true",
+      "enabled": null,
+      "permission": "com.google.android.c2dm.permission.SEND",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.google.android.c2dm.intent.RECEIVE"
+          ],
+          "categories": [
+            "com.hatunnel.plus"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".pnawclchgboBh",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "receiver",
+      "name": ".gDmDfyoDhzols",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.BOOT_COMPLETED"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".kAcmuwEdaxdww",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MY_PACKAGE_REPLACED"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".fynkiilFogCtl",
+      "exported": "true",
+      "enabled": null,
+      "permission": "com.google.android.c2dm.permission.SEND",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.google.android.c2dm.intent.RECEIVE"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".nbymqlsckcmvw",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "receiver",
+      "name": ".lbeasBpxowcnr",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.ACTION_POWER_CONNECTED",
+            "android.intent.action.ACTION_POWER_DISCONNECTED"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".cEmeyoFjfeoxj",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.BATTERY_OKAY",
+            "android.intent.action.BATTERY_LOW"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".ecdleEyEAocjh",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.DEVICE_STORAGE_LOW",
+            "android.intent.action.DEVICE_STORAGE_OK"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".dblfuqushCxaB",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.net.conn.CONNECTIVITY_CHANGE"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".hpauduiFaaBFy",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.BOOT_COMPLETED",
+            "android.intent.action.TIME_SET",
+            "android.intent.action.TIMEZONE_CHANGED"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".csuvxxgjplAnz",
+      "exported": "false",
+      "enabled": "@bool/APKTOOL_RENAMED_0x7f050003",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "androidx.work.impl.background.systemalarm.UpdateProxies"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".pwrkpmloAbmcq",
+      "exported": "true",
+      "enabled": "true",
+      "permission": "android.permission.DUMP",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".iqnpgktynfzrq",
+      "exported": "true",
+      "enabled": "true",
+      "permission": "android.permission.DUMP",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "androidx.profileinstaller.action.INSTALL_PROFILE"
+          ],
+          "categories": [],
+          "data": []
+        },
+        {
+          "actions": [
+            "androidx.profileinstaller.action.SKIP_FILE"
+          ],
+          "categories": [],
+          "data": []
+        },
+        {
+          "actions": [
+            "androidx.profileinstaller.action.SAVE_PROFILE"
+          ],
+          "categories": [],
+          "data": []
+        },
+        {
+          "actions": [
+            "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".chsxqgexoBjpn",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": ".miAvwwdbDCebn",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.hatunnel.plus",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": ".ltiohjcxlzfjk",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.hatunnel.plus.mobileadsinitprovider",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": ".kwbgkztwxCnrt",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.hatunnel.plus.androidx-startup",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": ".ctlwuhngBdFyE",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.hatunnel.plus.firebaseinitprovider",
+      "target_activity": null,
+      "intent_filters": []
+    }
+  ],
+  "application_metadata": [
+    {
+      "name": "com.google.android.gms.ads.APPLICATION_ID",
+      "value": "ca-app-pub-5640609611628446~7168947344",
+      "resource": null
+    },
+    {
+      "name": "com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "com.google.android.play.billingclient.version",
+      "value": "9.1.0",
+      "resource": null
+    },
+    {
+      "name": "com.google.android.gms.version",
+      "value": "@integer/APKTOOL_RENAMED_0x7f0a0008",
+      "resource": null
+    }
+  ],
+  "stages": [
+    {
+      "stage": "java_version",
+      "exit_code": "0",
+      "log": "logs/java_version.log"
+    },
+    {
+      "stage": "python_version",
+      "exit_code": "0",
+      "log": "logs/python_version.log"
+    },
+    {
+      "stage": "apktool_version",
+      "exit_code": "0",
+      "log": "logs/apktool_version.log"
+    },
+    {
+      "stage": "jadx_version",
+      "exit_code": "0",
+      "log": "logs/jadx_version.log"
+    },
+    {
+      "stage": "apksigner_version",
+      "exit_code": "0",
+      "log": "logs/apksigner_version.log"
+    },
+    {
+      "stage": "original_signature",
+      "exit_code": "0",
+      "log": "logs/original_signature.log"
+    },
+    {
+      "stage": "zipalign_4byte_check",
+      "exit_code": "0",
+      "log": "logs/zipalign_4byte_check.log"
+    },
+    {
+      "stage": "zipalign_16kb_page_check",
+      "exit_code": "0",
+      "log": "logs/zipalign_16kb_page_check.log"
+    },
+    {
+      "stage": "aapt_badging",
+      "exit_code": "0",
+      "log": "logs/aapt_badging.log"
+    },
+    {
+      "stage": "apkanalyzer_version",
+      "exit_code": "0",
+      "log": "logs/apkanalyzer_version.log"
+    },
+    {
+      "stage": "apkanalyzer_summary",
+      "exit_code": "0",
+      "log": "logs/apkanalyzer_summary.log"
+    },
+    {
+      "stage": "apkanalyzer_manifest",
+      "exit_code": "0",
+      "log": "logs/apkanalyzer_manifest.log"
+    },
+    {
+      "stage": "apkanalyzer_permissions",
+      "exit_code": "0",
+      "log": "logs/apkanalyzer_permissions.log"
+    },
+    {
+      "stage": "apkanalyzer_dex_packages",
+      "exit_code": "0",
+      "log": "logs/apkanalyzer_dex_packages.log"
+    },
+    {
+      "stage": "apktool_decode",
+      "exit_code": "0",
+      "log": "logs/apktool_decode.log"
+    },
+    {
+      "stage": "jadx_decompile",
+      "exit_code": "3",
+      "log": "logs/jadx_decompile.log"
+    }
+  ],
+  "coverage": {
+    "jadx_exit_code": "3",
+    "jadx_log_error_lines": 1,
+    "jadx_source_error_warning_markers": 9384,
+    "apktool_exit_code": "0",
+    "decoded_smali_files": 25408,
+    "decompiled_java_files": 17939,
+    "runtime_execution": "NOT TESTED",
+    "server_response_behavior": "UNKNOWN; no app-server requests made",
+    "native_code_semantics": "PARTIAL; ELF metadata and bounded strings only, no native disassembly",
+    "complete_source_recovery": "NOT CLAIMED; decompilation is derived and may be incomplete, especially with DexProtector"
+  },
+  "top_ad_files": [
+    [
+      "jadx/sources/app/fast/ssh/R.java",
+      24
+    ],
+    [
+      "jadx/sources/app/fast/ssh/HomeFragment.java",
+      17
+    ],
+    [
+      "jadx/sources/app/fast/ssh/MainActivity.java",
+      17
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment.smali",
+      17
+    ],
+    [
+      "decoded/smali/app/fast/ssh/MainActivity.smali",
+      17
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/MobileAds.java",
+      16
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzbym.java",
+      16
+    ],
+    [
+      "jadx/sources/app/fast/ssh/RewardedAdSyncController.java",
+      14
+    ],
+    [
+      "decoded/AndroidManifest.xml",
+      14
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment$13.smali",
+      14
+    ],
+    [
+      "decoded/smali/app/fast/ssh/RewardedAdSyncController.smali",
+      14
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/client/VersionInfoParcel.java",
+      13
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzeod.java",
+      13
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzfms.java",
+      13
+    ],
+    [
+      "jadx/sources/app/fast/ssh/dialog/AddTimeDialog.java",
+      12
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/zzs.java",
+      12
+    ],
+    [
+      "decoded/smali/app/fast/ssh/dialog/AddTimeDialog.smali",
+      12
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/internal/util/zzs.smali",
+      12
+    ],
+    [
+      "jadx/sources/app/fast/ssh/ExportActivity.java",
+      11
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/ClientApi.java",
+      11
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/client/zzay.java",
+      11
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/client/zzy.java",
+      11
+    ],
+    [
+      "decoded/smali/app/fast/ssh/ExportActivity.smali",
+      11
+    ],
+    [
+      "jadx/sources/app/fast/ssh/AppOpenAdManager.java",
+      10
+    ],
+    [
+      "jadx/sources/app/fast/ssh/FastSSH.java",
+      10
+    ],
+    [
+      "jadx/sources/app/fast/ssh/VoucherActivity.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/overlay/zzm.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzbkl.java",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/AppOpenAdManager.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/FastSSH.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/MainActivity$2.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/VoucherActivity.smali",
+      10
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/internal/overlay/zzm.smali",
+      10
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/nonagon/signalgeneration/zzj.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzbkl.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzeux.smali",
+      10
+    ],
+    [
+      "jadx/sources/androidx/core/content/ContextCompat.java",
+      9
+    ],
+    [
+      "jadx/sources/androidx/emoji2/text/EmojiCompat.java",
+      9
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/nonagon/signalgeneration/zzap.java",
+      9
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcaq.java",
+      9
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcby.java",
+      9
+    ],
+    [
+      "jadx/sources/com/google/firebase/installations/FirebaseInstallations.java",
+      9
+    ],
+    [
+      "jadx/sources/com/onesignal/debug/internal/logging/otel/android/OtelIdResolver.java",
+      9
+    ],
+    [
+      "jadx/sources/org/connectbot/simplesocks/Socks5Server.java",
+      9
+    ],
+    [
+      "decoded/smali/androidx/core/content/ContextCompat$LegacyServiceMapHolder.smali",
+      9
+    ],
+    [
+      "decoded/smali/androidx/emoji2/text/EmojiCompat.smali",
+      9
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment$15$1.smali",
+      9
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/nonagon/signalgeneration/zzap.smali",
+      9
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzcaq.smali",
+      9
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzcby.smali",
+      9
+    ],
+    [
+      "decoded/smali_classes4/com/google/firebase/installations/FirebaseInstallations.smali",
+      9
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/debug/internal/logging/otel/android/OtelIdResolver.smali",
+      9
+    ],
+    [
+      "jadx/sources/app/fast/ssh/dialog/RenewAccessDialog.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcmp.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcny.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzdcq.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzdua.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzegq.java",
+      8
+    ],
+    [
+      "decoded/smali/app/fast/ssh/dialog/RenewAccessDialog.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzcmp.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzcny.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzdcq.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzdua.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzegq.smali",
+      8
+    ],
+    [
+      "jadx/sources/androidx/webkit/internal/ApiHelperForOMR1.java",
+      7
+    ],
+    [
+      "jadx/sources/com/android/billingclient/api/zzy$$ExternalSyntheticApiModelOutline0.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/identifier/AdvertisingIdClient.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/client/zzf.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/zzcg.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/zzv.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/zzx.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/zzk.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzbav.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcfv.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcgj.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcid.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcob.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcub.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcun.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzdce.java",
+      7
+    ]
+  ],
+  "top_billing_files": [
+    [
+      "jadx/sources/app/fast/ssh/R.java",
+      24
+    ],
+    [
+      "jadx/sources/com/onesignal/core/internal/database/impl/OSDatabase.java",
+      18
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/core/internal/database/impl/OSDatabase.smali",
+      18
+    ],
+    [
+      "jadx/sources/app/fast/ssh/HomeFragment.java",
+      17
+    ],
+    [
+      "jadx/sources/app/fast/ssh/MainActivity.java",
+      17
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment.smali",
+      17
+    ],
+    [
+      "decoded/smali/app/fast/ssh/MainActivity.smali",
+      17
+    ],
+    [
+      "jadx/sources/app/fast/ssh/RewardedAdSyncController.java",
+      14
+    ],
+    [
+      "decoded/AndroidManifest.xml",
+      14
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment$13.smali",
+      14
+    ],
+    [
+      "decoded/smali/app/fast/ssh/RewardedAdSyncController.smali",
+      14
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/zzs.java",
+      12
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/internal/util/zzs.smali",
+      12
+    ],
+    [
+      "jadx/sources/com/google/android/gms/gcm/zzd.java",
+      11
+    ],
+    [
+      "jadx/sources/app/fast/ssh/AppOpenAdManager.java",
+      10
+    ],
+    [
+      "jadx/sources/app/fast/ssh/BillingManager.java",
+      10
+    ],
+    [
+      "jadx/sources/app/fast/ssh/FastSSH.java",
+      10
+    ],
+    [
+      "jadx/sources/app/fast/ssh/PrefsSubscriptionStore.java",
+      10
+    ],
+    [
+      "jadx/sources/com/android/billingclient/api/zzda.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/overlay/zzm.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/play_billing/zzdp.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/firebase/messaging/WithinAppServiceConnection.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/core/internal/database/impl/OneSignalDbContract.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/Trigger.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerController.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerTimer.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/session/internal/outcomes/impl/OutcomeEventsBackendService.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/session/internal/outcomes/impl/OutcomeEventsController.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/session/internal/outcomes/impl/OutcomeEventsRepository.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/user/internal/backend/impl/JSONConverter.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/user/internal/operations/impl/executors/UpdateUserOperationExecutor.java",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/AppOpenAdManager.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/BillingManager$SubscriptionStore.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/BillingManager.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/FastSSH.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment$15.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/MainActivity$2.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/PrefsSubscriptionStore.smali",
+      10
+    ],
+    [
+      "decoded/smali/com/android/billingclient/api/zzda.smali",
+      10
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/internal/overlay/zzm.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/play_billing/zzdp.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/google/firebase/messaging/WithinAppServiceConnection$BindRequest.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/google/firebase/messaging/WithinAppServiceConnection.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/inAppMessages/internal/Trigger$OSTriggerKind.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerController.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerTimer.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/session/internal/outcomes/impl/OutcomeEventsBackendService.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/session/internal/outcomes/impl/OutcomeEventsController.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/session/internal/outcomes/impl/OutcomeEventsRepository$saveOutcomeEvent$2.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/user/internal/backend/impl/JSONConverter.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/user/internal/operations/impl/executors/UpdateUserOperationExecutor.smali",
+      10
+    ],
+    [
+      "jadx/sources/androidx/core/content/ContextCompat.java",
+      9
+    ],
+    [
+      "jadx/sources/androidx/emoji2/text/EmojiCompat.java",
+      9
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcaq.java",
+      9
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcby.java",
+      9
+    ],
+    [
+      "jadx/sources/com/onesignal/debug/internal/logging/otel/android/OtelIdResolver.java",
+      9
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/display/impl/WebViewManager.java",
+      9
+    ],
+    [
+      "decoded/smali/androidx/core/content/ContextCompat$LegacyServiceMapHolder.smali",
+      9
+    ],
+    [
+      "decoded/smali/androidx/emoji2/text/EmojiCompat.smali",
+      9
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzcaq.smali",
+      9
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzcby.smali",
+      9
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/debug/internal/logging/otel/android/OtelIdResolver.smali",
+      9
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/inAppMessages/internal/display/impl/WebViewManager.smali",
+      9
+    ],
+    [
+      "jadx/sources/com/android/billingclient/BuildConfig.java",
+      8
+    ],
+    [
+      "jadx/sources/com/android/billingclient/api/BillingClientImpl.java",
+      8
+    ],
+    [
+      "jadx/sources/com/android/billingclient/api/ProxyBillingActivity.java",
+      8
+    ],
+    [
+      "jadx/sources/com/android/billingclient/api/zzdl.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/GoogleApiAvailability.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/GoogleApiAvailabilityLight.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/GooglePlayServicesUtil.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/GooglePlayServicesUtilLight.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/internal/BaseGmsClient.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/util/DeviceProperties.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/consent_sdk/zzp.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/play_billing/zzbd.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/play_billing/zzbe.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/play_billing/zzbf.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/play_billing/zzdf.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/play/core/appupdate/internal/zzl.java",
+      8
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerController$dynamicTriggerShouldFire$1$2.java",
+      8
+    ]
+  ],
+  "top_time_files": [
+    [
+      "jadx/sources/app/fast/ssh/R.java",
+      24
+    ],
+    [
+      "jadx/sources/app/fast/ssh/HomeFragment.java",
+      17
+    ],
+    [
+      "jadx/sources/app/fast/ssh/MainActivity.java",
+      17
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment.smali",
+      17
+    ],
+    [
+      "decoded/smali/app/fast/ssh/MainActivity.smali",
+      17
+    ],
+    [
+      "decoded/smali/app/fast/ssh/R$id.smali",
+      16
+    ],
+    [
+      "jadx/sources/app/fast/ssh/RewardedAdSyncController.java",
+      14
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment$13.smali",
+      14
+    ],
+    [
+      "decoded/smali/app/fast/ssh/RewardedAdSyncController.smali",
+      14
+    ],
+    [
+      "jadx/sources/app/fast/ssh/dialog/AddTimeDialog.java",
+      12
+    ],
+    [
+      "decoded/smali/app/fast/ssh/dialog/AddTimeDialog.smali",
+      12
+    ],
+    [
+      "jadx/sources/app/fast/ssh/ExportActivity.java",
+      11
+    ],
+    [
+      "jadx/sources/com/google/android/gms/gcm/zzd.java",
+      11
+    ],
+    [
+      "decoded/smali/app/fast/ssh/ExportActivity.smali",
+      11
+    ],
+    [
+      "jadx/sources/app/fast/ssh/BillingManager.java",
+      10
+    ],
+    [
+      "jadx/sources/app/fast/ssh/PrefsSubscriptionStore.java",
+      10
+    ],
+    [
+      "jadx/sources/app/fast/ssh/VoucherActivity.java",
+      10
+    ],
+    [
+      "jadx/sources/com/android/billingclient/api/zzda.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzbkl.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/play_billing/zzdp.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/firebase/messaging/WithinAppServiceConnection.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/core/internal/database/impl/OneSignalDbContract.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/Trigger.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerController.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerTimer.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/session/internal/outcomes/impl/OutcomeEventsBackendService.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/session/internal/outcomes/impl/OutcomeEventsController.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/session/internal/outcomes/impl/OutcomeEventsRepository.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/user/internal/backend/impl/JSONConverter.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/user/internal/operations/impl/executors/UpdateUserOperationExecutor.java",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/BillingManager$SubscriptionStore.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/BillingManager.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment$15.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/PrefsSubscriptionStore.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/VoucherActivity.smali",
+      10
+    ],
+    [
+      "decoded/smali/com/android/billingclient/api/zzda.smali",
+      10
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/nonagon/signalgeneration/zzj.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzbkl.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzeux.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/play_billing/zzdp.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/google/firebase/messaging/WithinAppServiceConnection$BindRequest.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/google/firebase/messaging/WithinAppServiceConnection.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/inAppMessages/internal/Trigger$OSTriggerKind.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerController.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerTimer.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/session/internal/outcomes/impl/OutcomeEventsBackendService.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/session/internal/outcomes/impl/OutcomeEventsController.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/session/internal/outcomes/impl/OutcomeEventsRepository$saveOutcomeEvent$2.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/user/internal/backend/impl/JSONConverter.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/user/internal/operations/impl/executors/UpdateUserOperationExecutor.smali",
+      10
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/nonagon/signalgeneration/zzap.java",
+      9
+    ],
+    [
+      "jadx/sources/com/google/firebase/installations/FirebaseInstallations.java",
+      9
+    ],
+    [
+      "jadx/sources/org/connectbot/simplesocks/Socks5Server.java",
+      9
+    ],
+    [
+      "jadx/sources/org/conscrypt/Platform.java",
+      9
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment$15$1.smali",
+      9
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/nonagon/signalgeneration/zzap.smali",
+      9
+    ],
+    [
+      "decoded/smali_classes4/com/google/firebase/installations/FirebaseInstallations.smali",
+      9
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcny.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzdcq.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzdua.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzegq.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/play_billing/zzbd.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/play_billing/zzbe.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/play_billing/zzbf.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/play_billing/zzdf.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/firebase/messaging/FirebaseMessaging.java",
+      8
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerController$dynamicTriggerShouldFire$1$2.java",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzbds.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzcny.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzdcq.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzdua.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzegq.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/play_billing/zzdf.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes4/com/google/firebase/messaging/FirebaseMessaging.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerController$WhenMappings.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerController$dynamicTriggerShouldFire$1$2.smali",
+      8
+    ],
+    [
+      "jadx/sources/androidx/work/impl/background/systemalarm/DelayMetCommandHandler.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/identifier/AdvertisingIdClient.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/zzk.java",
+      7
+    ],
+    [
+      "jadx/sources/com/google/android/gms/iid/zzr.java",
+      7
+    ]
+  ],
+  "top_tunnel_files": [
+    [
+      "jadx/sources/app/fast/ssh/R.java",
+      24
+    ],
+    [
+      "jadx/sources/com/onesignal/core/internal/database/impl/OSDatabase.java",
+      18
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/core/internal/database/impl/OSDatabase.smali",
+      18
+    ],
+    [
+      "jadx/sources/app/fast/ssh/HomeFragment.java",
+      17
+    ],
+    [
+      "jadx/sources/app/fast/ssh/MainActivity.java",
+      17
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment.smali",
+      17
+    ],
+    [
+      "decoded/smali/app/fast/ssh/MainActivity.smali",
+      17
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/MobileAds.java",
+      16
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzbym.java",
+      16
+    ],
+    [
+      "decoded/smali/app/fast/ssh/R$id.smali",
+      16
+    ],
+    [
+      "jadx/sources/androidx/sqlite/db/framework/FrameworkSQLiteDatabase.java",
+      15
+    ],
+    [
+      "jadx/sources/org/conscrypt/Conscrypt.java",
+      15
+    ],
+    [
+      "decoded/smali/androidx/sqlite/db/framework/FrameworkSQLiteDatabase.smali",
+      15
+    ],
+    [
+      "jadx/sources/androidx/room/AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$needUpgrade$1.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/room/AutoClosingRoomOpenHelper.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/room/QueryInterceptorDatabase.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/room/RoomOpenHelper.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/room/SQLiteCopyOpenHelper$createFrameworkOpenHelper$configuration$1.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/sqlite/db/SupportSQLiteDatabase.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/sqlite/db/SupportSQLiteOpenHelper.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/sqlite/db/framework/FrameworkSQLiteOpenHelper.java",
+      14
+    ],
+    [
+      "jadx/sources/app/fast/ssh/RewardedAdSyncController.java",
+      14
+    ],
+    [
+      "decoded/AndroidManifest.xml",
+      14
+    ],
+    [
+      "decoded/smali/androidx/room/AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$needUpgrade$1.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/room/AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/room/QueryInterceptorDatabase.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/room/RoomOpenHelper.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/room/SQLiteCopyOpenHelper$createFrameworkOpenHelper$configuration$1.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/sqlite/db/SupportSQLiteOpenHelper$Callback.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/sqlite/db/framework/FrameworkSQLiteOpenHelper$OpenHelper.smali",
+      14
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment$13.smali",
+      14
+    ],
+    [
+      "decoded/smali/app/fast/ssh/RewardedAdSyncController.smali",
+      14
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/client/VersionInfoParcel.java",
+      13
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzeod.java",
+      13
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzfms.java",
+      13
+    ],
+    [
+      "jadx/sources/androidx/room/InvalidationTracker$refreshRunnable$1.java",
+      12
+    ],
+    [
+      "jadx/sources/androidx/versionedparcelable/ParcelUtils.java",
+      12
+    ],
+    [
+      "jadx/sources/androidx/versionedparcelable/VersionedParcelParcel.java",
+      12
+    ],
+    [
+      "jadx/sources/androidx/versionedparcelable/VersionedParcelStream.java",
+      12
+    ],
+    [
+      "jadx/sources/androidx/window/core/Version.java",
+      12
+    ],
+    [
+      "jadx/sources/app/fast/ssh/dialog/AddTimeDialog.java",
+      12
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/zzs.java",
+      12
+    ],
+    [
+      "decoded/smali/androidx/room/InvalidationTracker$refreshRunnable$1.smali",
+      12
+    ],
+    [
+      "decoded/smali/app/fast/ssh/dialog/AddTimeDialog.smali",
+      12
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/internal/util/zzs.smali",
+      12
+    ],
+    [
+      "jadx/sources/app/fast/ssh/ExportActivity.java",
+      11
+    ],
+    [
+      "jadx/sources/com/google/android/gms/gcm/zzd.java",
+      11
+    ],
+    [
+      "decoded/smali/app/fast/ssh/ExportActivity.smali",
+      11
+    ],
+    [
+      "jadx/sources/app/fast/ssh/AppOpenAdManager.java",
+      10
+    ],
+    [
+      "jadx/sources/app/fast/ssh/BillingManager.java",
+      10
+    ],
+    [
+      "jadx/sources/app/fast/ssh/FastSSH.java",
+      10
+    ],
+    [
+      "jadx/sources/app/fast/ssh/PrefsSubscriptionStore.java",
+      10
+    ],
+    [
+      "jadx/sources/app/fast/ssh/VoucherActivity.java",
+      10
+    ],
+    [
+      "jadx/sources/com/android/billingclient/api/zzda.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/overlay/zzm.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzbkl.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/play_billing/zzdp.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/firebase/messaging/WithinAppServiceConnection.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/core/internal/database/impl/OneSignalDbContract.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/Trigger.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerController.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/triggers/impl/DynamicTriggerTimer.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/session/internal/outcomes/impl/OutcomeEventsBackendService.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/session/internal/outcomes/impl/OutcomeEventsController.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/session/internal/outcomes/impl/OutcomeEventsRepository.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/user/internal/backend/impl/JSONConverter.java",
+      10
+    ],
+    [
+      "jadx/sources/com/onesignal/user/internal/operations/impl/executors/UpdateUserOperationExecutor.java",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/AppOpenAdManager.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/BillingManager$SubscriptionStore.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/BillingManager.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/FastSSH.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment$15.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/MainActivity$2.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/PrefsSubscriptionStore.smali",
+      10
+    ],
+    [
+      "decoded/smali/app/fast/ssh/VoucherActivity.smali",
+      10
+    ],
+    [
+      "decoded/smali/com/android/billingclient/api/zzda.smali",
+      10
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/internal/overlay/zzm.smali",
+      10
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/nonagon/signalgeneration/zzj.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzbkl.smali",
+      10
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzeux.smali",
+      10
+    ]
+  ],
+  "top_update_files": [
+    [
+      "jadx/sources/app/fast/ssh/R.java",
+      24
+    ],
+    [
+      "jadx/sources/com/onesignal/core/internal/database/impl/OSDatabase.java",
+      18
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/core/internal/database/impl/OSDatabase.smali",
+      18
+    ],
+    [
+      "jadx/sources/app/fast/ssh/HomeFragment.java",
+      17
+    ],
+    [
+      "jadx/sources/app/fast/ssh/MainActivity.java",
+      17
+    ],
+    [
+      "decoded/smali/app/fast/ssh/HomeFragment.smali",
+      17
+    ],
+    [
+      "decoded/smali/app/fast/ssh/MainActivity.smali",
+      17
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/MobileAds.java",
+      16
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzbym.java",
+      16
+    ],
+    [
+      "decoded/smali/app/fast/ssh/R$id.smali",
+      16
+    ],
+    [
+      "jadx/sources/androidx/sqlite/db/framework/FrameworkSQLiteDatabase.java",
+      15
+    ],
+    [
+      "jadx/sources/org/conscrypt/Conscrypt.java",
+      15
+    ],
+    [
+      "decoded/smali/androidx/sqlite/db/framework/FrameworkSQLiteDatabase.smali",
+      15
+    ],
+    [
+      "jadx/sources/androidx/room/AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$needUpgrade$1.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/room/AutoClosingRoomOpenHelper.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/room/QueryInterceptorDatabase.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/room/RoomOpenHelper.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/room/SQLiteCopyOpenHelper$createFrameworkOpenHelper$configuration$1.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/sqlite/db/SupportSQLiteDatabase.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/sqlite/db/SupportSQLiteOpenHelper.java",
+      14
+    ],
+    [
+      "jadx/sources/androidx/sqlite/db/framework/FrameworkSQLiteOpenHelper.java",
+      14
+    ],
+    [
+      "decoded/AndroidManifest.xml",
+      14
+    ],
+    [
+      "decoded/smali/androidx/room/AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$needUpgrade$1.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/room/AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/room/QueryInterceptorDatabase.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/room/RoomOpenHelper.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/room/SQLiteCopyOpenHelper$createFrameworkOpenHelper$configuration$1.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/sqlite/db/SupportSQLiteOpenHelper$Callback.smali",
+      14
+    ],
+    [
+      "decoded/smali/androidx/sqlite/db/framework/FrameworkSQLiteOpenHelper$OpenHelper.smali",
+      14
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/client/VersionInfoParcel.java",
+      13
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzeod.java",
+      13
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzfms.java",
+      13
+    ],
+    [
+      "jadx/sources/androidx/room/InvalidationTracker$refreshRunnable$1.java",
+      12
+    ],
+    [
+      "jadx/sources/androidx/versionedparcelable/ParcelUtils.java",
+      12
+    ],
+    [
+      "jadx/sources/androidx/versionedparcelable/VersionedParcelParcel.java",
+      12
+    ],
+    [
+      "jadx/sources/androidx/versionedparcelable/VersionedParcelStream.java",
+      12
+    ],
+    [
+      "jadx/sources/androidx/window/core/Version.java",
+      12
+    ],
+    [
+      "jadx/sources/app/fast/ssh/dialog/AddTimeDialog.java",
+      12
+    ],
+    [
+      "decoded/smali/androidx/room/InvalidationTracker$refreshRunnable$1.smali",
+      12
+    ],
+    [
+      "decoded/smali/androidx/sqlite/db/SupportSQLiteDatabase.smali",
+      12
+    ],
+    [
+      "decoded/smali/app/fast/ssh/dialog/AddTimeDialog.smali",
+      12
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/ClientApi.java",
+      11
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/client/zzay.java",
+      11
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/client/zzy.java",
+      11
+    ],
+    [
+      "jadx/sources/androidx/versionedparcelable/ParcelImpl.java",
+      10
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcaq.java",
+      9
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcby.java",
+      9
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzcaq.smali",
+      9
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzcby.smali",
+      9
+    ],
+    [
+      "jadx/sources/app/fast/ssh/dialog/RenewAccessDialog.java",
+      8
+    ],
+    [
+      "jadx/sources/com/android/billingclient/BuildConfig.java",
+      8
+    ],
+    [
+      "jadx/sources/com/android/billingclient/api/BillingClientImpl.java",
+      8
+    ],
+    [
+      "jadx/sources/com/android/billingclient/api/ProxyBillingActivity.java",
+      8
+    ],
+    [
+      "jadx/sources/com/android/billingclient/api/zzdl.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/GoogleApiAvailability.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/GoogleApiAvailabilityLight.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/GooglePlayServicesUtil.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/GooglePlayServicesUtilLight.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/internal/BaseGmsClient.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/common/util/DeviceProperties.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/consent_sdk/zzp.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/android/play/core/appupdate/internal/zzl.java",
+      8
+    ],
+    [
+      "jadx/sources/com/google/firebase/messaging/FirebaseMessaging.java",
+      8
+    ],
+    [
+      "jadx/sources/com/onesignal/notifications/internal/registration/impl/GooglePlayServicesUpgradePrompt.java",
+      8
+    ],
+    [
+      "jadx/sources/com/onesignal/notifications/internal/registration/impl/PushRegistratorAbstractGoogle.java",
+      8
+    ],
+    [
+      "decoded/smali/app/fast/ssh/dialog/RenewAccessDialog.smali",
+      8
+    ],
+    [
+      "decoded/smali/com/android/billingclient/BuildConfig.smali",
+      8
+    ],
+    [
+      "decoded/smali/com/android/billingclient/api/BillingClientImpl.smali",
+      8
+    ],
+    [
+      "decoded/smali/com/android/billingclient/api/ProxyBillingActivity.smali",
+      8
+    ],
+    [
+      "decoded/smali/com/android/billingclient/api/zzdl.smali",
+      8
+    ],
+    [
+      "decoded/smali/com/google/android/gms/common/GoogleApiAvailability.smali",
+      8
+    ],
+    [
+      "decoded/smali/com/google/android/gms/common/GoogleApiAvailabilityLight.smali",
+      8
+    ],
+    [
+      "decoded/smali/com/google/android/gms/common/GooglePlayServicesUtil.smali",
+      8
+    ],
+    [
+      "decoded/smali/com/google/android/gms/common/GooglePlayServicesUtilLight.smali",
+      8
+    ],
+    [
+      "decoded/smali/com/google/android/gms/common/internal/BaseGmsClient.smali",
+      8
+    ],
+    [
+      "decoded/smali/com/google/android/gms/common/util/DeviceProperties.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/consent_sdk/zzp.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/play/core/appupdate/internal/zzl.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes4/com/google/firebase/messaging/FirebaseMessaging.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/notifications/internal/registration/impl/GooglePlayServicesUpgradePrompt$showUpdateGPSDialog$2.smali",
+      8
+    ]
+  ],
+  "top_security_files": [
+    [
+      "jadx/sources/org/conscrypt/Conscrypt.java",
+      15
+    ],
+    [
+      "decoded/AndroidManifest.xml",
+      14
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/util/zzs.java",
+      12
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/internal/util/zzs.smali",
+      12
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/nonagon/signalgeneration/zzap.java",
+      9
+    ],
+    [
+      "jadx/sources/com/onesignal/inAppMessages/internal/display/impl/WebViewManager.java",
+      9
+    ],
+    [
+      "jadx/sources/org/conscrypt/Platform.java",
+      9
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/nonagon/signalgeneration/zzap.smali",
+      9
+    ],
+    [
+      "decoded/smali_classes4/com/onesignal/inAppMessages/internal/display/impl/WebViewManager.smali",
+      9
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzcmp.java",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzbds.smali",
+      8
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzcmp.smali",
+      8
+    ],
+    [
+      "decoded/apktool.yml",
+      6
+    ],
+    [
+      "jadx/sources/app/fast/ssh/ProtectedFastSSH.java",
+      5
+    ],
+    [
+      "jadx/sources/com/google/android/gms/ads/internal/zzs.java",
+      5
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzbcg.java",
+      5
+    ],
+    [
+      "jadx/sources/org/conscrypt/ConscryptEngine.java",
+      5
+    ],
+    [
+      "jadx/sources/org/conscrypt/ConscryptEngineSocket.java",
+      5
+    ],
+    [
+      "jadx/sources/org/conscrypt/ConscryptFileDescriptorSocket.java",
+      5
+    ],
+    [
+      "decoded/smali/app/fast/ssh/ProtectedFastSSH.smali",
+      5
+    ],
+    [
+      "decoded/smali/com/google/android/gms/ads/internal/zzs.smali",
+      5
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzbcg.smali",
+      5
+    ],
+    [
+      "decoded/smali_classes5/org/conscrypt/Conscrypt.smali",
+      5
+    ],
+    [
+      "decoded/smali_classes5/org/conscrypt/ConscryptEngine.smali",
+      5
+    ],
+    [
+      "decoded/smali_classes5/org/conscrypt/ConscryptFileDescriptorSocket.smali",
+      5
+    ],
+    [
+      "decoded/smali_classes5/org/conscrypt/Platform.smali",
+      5
+    ],
+    [
+      "jadx/sources/androidx/webkit/internal/ServiceWorkerWebSettingsImpl.java",
+      4
+    ],
+    [
+      "jadx/sources/com/google/android/gms/dynamite/zzd.java",
+      4
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzgab.java",
+      4
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/ads/zzgiy.java",
+      4
+    ],
+    [
+      "jadx/sources/com/google/android/gms/internal/consent_sdk/zzbe.java",
+      4
+    ],
+    [
+      "jadx/sources/com/google/android/play/core/splitinstall/SplitInstallHelper.java",
+      4
+    ],
+    [
+      "jadx/sources/org/conscrypt/NativeCryptoJni.java",
+      4
+    ],
+    [
+      "jadx/sources/org/conscrypt/Platform$$ExternalSyntheticApiModelOutline0.java",
+      4
+    ],
+    [
+      "jadx/sources/org/conscrypt/TrustManagerImpl.java",
+      4
+    ],
+    [
+      "jadx/sources/org/lsposed/hiddenapibypass/CoreOjClassLoader.java",
+      4
+    ],
+    [
+      "decoded/smali/androidx/webkit/internal/ServiceWorkerWebSettingsImpl.smali",
+      4
+    ],
+    [
+      "decoded/smali/com/google/android/gms/dynamite/zzd.smali",
+      4
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzgab.smali",
+      4
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/ads/zzgiy.smali",
+      4
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/gms/internal/consent_sdk/zzbe.smali",
+      4
+    ],
+    [
+      "decoded/smali_classes3/com/google/android/play/core/splitinstall/SplitInstallHelper.smali",
+      4
+    ],
+    [
+      "decoded/smali_classes5/org/conscrypt/ConscryptEngineSocket$2.smali",
+      4
+    ],
+    [
+      "decoded/smali_classes5/org/conscrypt/NativeCryptoJni.smali",
+      4
+    ],
+    [
+      "decoded/smali_classes5/org/conscrypt/Platform$$ExternalSyntheticApiModelOutline0.smali",
+      4
+    ],
+    [
+      "decoded/smali_classes5/org/conscrypt/TrustManagerImpl.smali",
+      4
+    ],
+    [
+      "decoded/smali_classes5/org/lsposed/hiddenapibypass/CoreOjClassLoader.smali",
+      4
+    ],
+    [
+      "jadx/sources/androidx/transition/Transition$Impl26$$ExternalSyntheticApiModelOutline0.java",
+      2
+    ],
+    [
+      "jadx/sources/androidx/webkit/ServiceWorkerWebSettingsCompat.java",
+      2
+    ],
+    [
+      "jadx/sources/androidx/webkit/internal/ApiHelperForN.java",
+      2
+    ]
+  ],
+  "url_host_counts": [
+    [
+      "firebase.google.com",
+      1
+    ],
+    [
+      "youtrack.jetbrains.com",
+      1
+    ],
+    [
+      "schemas.android.com",
+      1
+    ]
+  ],
+  "asset_inventory": [
+    {
+      "path": "assets/PublicSuffixDatabase.list",
+      "size": 42476,
+      "sha256": "433deddf086ee0bbe30f0a8b91dce15c1e1892ca1c91c9961eea6c3a0dab0fe7",
+      "entropy_sample": 7.9552,
+      "printable_ratio_sample": 0.3811,
+      "first_bytes_hex": "db2f5b27f1f4282cbf5f23437e4c5c5481060200a0e3b8f5e6f86421d1c09833",
+      "likely_text": false
+    },
+    {
+      "path": "assets/assets.dat",
+      "size": 2605171,
+      "sha256": "ee2c1b923830b4278b91108982f475a6cdbab4999d481eff5bdbdc491233ea57",
+      "entropy_sample": 7.9507,
+      "printable_ratio_sample": 0.377,
+      "first_bytes_hex": "3ea4441632b222b781051645e20c59b811a53b5cc9118988ec5cd2ad36b557ff",
+      "likely_text": false
+    },
+    {
+      "path": "assets/dexopt/baseline.prof",
+      "size": 5246,
+      "sha256": "94dae1fe73b09c3e60dc0eb4fe0a0d538e9220a71176e23697fd55686f2e8e35",
+      "entropy_sample": 7.9054,
+      "printable_ratio_sample": 0.3657,
+      "first_bytes_hex": "70726f0030313000049ed200006d1400007801ed9d0d9055e579c7df73eed9dd",
+      "likely_text": false
+    },
+    {
+      "path": "assets/dexopt/baseline.profm",
+      "size": 573,
+      "sha256": "9df656261304055a4e30d4f7517c99973555dc28b579e475495e65e9bb9f2ce7",
+      "entropy_sample": 7.628,
+      "printable_ratio_sample": 0.3857,
+      "first_bytes_hex": "70726d00303032000400f10400002b02000078016d533b6e144110adea9e9d9d",
+      "likely_text": false
+    },
+    {
+      "path": "assets/resources/allowed_apps.json",
+      "size": 579,
+      "sha256": "03c6c163c646786871b8953f0583c871aac2bf3346c0826545a4a6e509ecdedd",
+      "entropy_sample": 7.6139,
+      "printable_ratio_sample": 0.4024,
+      "first_bytes_hex": "54ea7747747e9b40309a0f23fbc6ef38970a00004704f770eb254f3d7bdb2ea7",
+      "likely_text": false
+    },
+    {
+      "path": "assets/resources/customs.json",
+      "size": 192,
+      "sha256": "64a33644467f6596c9f0d0358faa9c5fef514bbfbb1573899089fdc12b4e0100",
+      "entropy_sample": 7.0014,
+      "printable_ratio_sample": 0.4062,
+      "first_bytes_hex": "e2c428ae7e0f992386b450caf1b7ed5b0902000062d5754782c9a4926b2089d4",
+      "likely_text": false
+    },
+    {
+      "path": "assets/resources/methods.json",
+      "size": 279,
+      "sha256": "982429da97191e834b09001307b29703455724a8f5bd9208ad2436facd86e529",
+      "entropy_sample": 7.1846,
+      "printable_ratio_sample": 0.4194,
+      "first_bytes_hex": "7d39af198d8c3c1f1949d77d02344867bc0300009909ffa57e482ee3b52cb99d",
+      "likely_text": false
+    },
+    {
+      "path": "assets/resources/servers.json",
+      "size": 434,
+      "sha256": "8068295899d9a388894295453c5bb89157883cadfc493c534f14017a3aa0cd5c",
+      "entropy_sample": 7.4502,
+      "printable_ratio_sample": 0.4009,
+      "first_bytes_hex": "d2424d56864424f5b632353209fc508de4060000a6321d2495b40f7d3473c115",
+      "likely_text": false
+    },
+    {
+      "path": "assets/resources/whatsnew.json",
+      "size": 309,
+      "sha256": "ce33ef70020da09d388d75e6ed907a34234de3f84d3ab19d9d3aa5f3cd5723f8",
+      "entropy_sample": 7.2396,
+      "printable_ratio_sample": 0.3916,
+      "first_bytes_hex": "a22f4b2632165a28c65f3342bdae2e50c00100008f2ac355c3222348efdc1bc1",
+      "likely_text": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "jadx_exit_code": "3",
+  "jadx_log_error_lines": 1,
+  "jadx_source_error_warning_markers": 9384,
+  "apktool_exit_code": "0",
+  "decoded_smali_files": 25408,
+  "decompiled_java_files": 17939,
+  "runtime_execution": "NOT TESTED",
+  "server_response_behavior": "UNKNOWN; no app-server requests made",
+  "native_code_semantics": "PARTIAL; ELF metadata and bounded strings only, no native disassembly",
+  "complete_source_recovery": "NOT CLAIMED; decompilation is derived and may be incomplete, especially with DexProtector"
+}

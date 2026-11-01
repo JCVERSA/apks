@@ -1,0 +1,42 @@
+{
+  "searched_roots": [
+    "/home/runner/work/_temp/hatunnel-analysis/jadx/sources",
+    "/home/runner/work/_temp/hatunnel-analysis/decoded"
+  ],
+  "scanned_text_files": {
+    "jadx": 17939,
+    "apktool": 25635
+  },
+  "total_matches": {
+    "tunnel_vpn": 162918,
+    "billing_license": 33717,
+    "config_crypto": 6994,
+    "ad_lifecycle": 4513,
+    "time_limit": 2804,
+    "update_general": 1938,
+    "update_strong": 107,
+    "security_config": 128,
+    "ad_sdk": 30851
+  },
+  "stored_matches": {
+    "ad_sdk": 20000,
+    "ad_lifecycle": 4513,
+    "billing_license": 20000,
+    "time_limit": 2804,
+    "tunnel_vpn": 20000,
+    "update_strong": 107,
+    "update_general": 1938,
+    "security_config": 128,
+    "config_crypto": 6994
+  },
+  "limits": {
+    "per_category": 20000,
+    "per_file_category": 200
+  },
+  "truncated_categories": [
+    "ad_sdk",
+    "billing_license",
+    "tunnel_vpn"
+  ],
+  "interpretation": "Text-search leads only; confirm control flow and resource relationships before modifying anything."
+}

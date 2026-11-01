@@ -1,0 +1,14 @@
+{
+  "ads": [],
+  "time": [
+    {
+      "type": "plurals",
+      "name": "l",
+      "value": "\n        %d njoftim i ri\n        %d njoftime të reja\n     | %d njoftim i ri | %d njoftime të reja",
+      "file": "res/values-sq/plurals.xml",
+      "qualifier": "values-sq"
+    }
+  ],
+  "billing": [],
+  "update": []
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "path": "assets/PublicSuffixDatabase.list",
+    "size": 42476,
+    "sha256": "433deddf086ee0bbe30f0a8b91dce15c1e1892ca1c91c9961eea6c3a0dab0fe7",
+    "entropy_sample": 7.9552,
+    "printable_ratio_sample": 0.3811,
+    "first_bytes_hex": "db2f5b27f1f4282cbf5f23437e4c5c5481060200a0e3b8f5e6f86421d1c09833",
+    "likely_text": false
+  },
+  {
+    "path": "assets/assets.dat",
+    "size": 2605171,
+    "sha256": "ee2c1b923830b4278b91108982f475a6cdbab4999d481eff5bdbdc491233ea57",
+    "entropy_sample": 7.9507,
+    "printable_ratio_sample": 0.377,
+    "first_bytes_hex": "3ea4441632b222b781051645e20c59b811a53b5cc9118988ec5cd2ad36b557ff",
+    "likely_text": false
+  },
+  {
+    "path": "assets/dexopt/baseline.prof",
+    "size": 5246,
+    "sha256": "94dae1fe73b09c3e60dc0eb4fe0a0d538e9220a71176e23697fd55686f2e8e35",
+    "entropy_sample": 7.9054,
+    "printable_ratio_sample": 0.3657,
+    "first_bytes_hex": "70726f0030313000049ed200006d1400007801ed9d0d9055e579c7df73eed9dd",
+    "likely_text": false
+  },
+  {
+    "path": "assets/dexopt/baseline.profm",
+    "size": 573,
+    "sha256": "9df656261304055a4e30d4f7517c99973555dc28b579e475495e65e9bb9f2ce7",
+    "entropy_sample": 7.628,
+    "printable_ratio_sample": 0.3857,
+    "first_bytes_hex": "70726d00303032000400f10400002b02000078016d533b6e144110adea9e9d9d",
+    "likely_text": false
+  },
+  {
+    "path": "assets/resources/allowed_apps.json",
+    "size": 579,
+    "sha256": "03c6c163c646786871b8953f0583c871aac2bf3346c0826545a4a6e509ecdedd",
+    "entropy_sample": 7.6139,
+    "printable_ratio_sample": 0.4024,
+    "first_bytes_hex": "54ea7747747e9b40309a0f23fbc6ef38970a00004704f770eb254f3d7bdb2ea7",
+    "likely_text": false
+  },
+  {
+    "path": "assets/resources/customs.json",
+    "size": 192,
+    "sha256": "64a33644467f6596c9f0d0358faa9c5fef514bbfbb1573899089fdc12b4e0100",
+    "entropy_sample": 7.0014,
+    "printable_ratio_sample": 0.4062,
+    "first_bytes_hex": "e2c428ae7e0f992386b450caf1b7ed5b0902000062d5754782c9a4926b2089d4",
+    "likely_text": false
+  },
+  {
+    "path": "assets/resources/methods.json",
+    "size": 279,
+    "sha256": "982429da97191e834b09001307b29703455724a8f5bd9208ad2436facd86e529",
+    "entropy_sample": 7.1846,
+    "printable_ratio_sample": 0.4194,
+    "first_bytes_hex": "7d39af198d8c3c1f1949d77d02344867bc0300009909ffa57e482ee3b52cb99d",
+    "likely_text": false
+  },
+  {
+    "path": "assets/resources/servers.json",
+    "size": 434,
+    "sha256": "8068295899d9a388894295453c5bb89157883cadfc493c534f14017a3aa0cd5c",
+    "entropy_sample": 7.4502,
+    "printable_ratio_sample": 0.4009,
+    "first_bytes_hex": "d2424d56864424f5b632353209fc508de4060000a6321d2495b40f7d3473c115",
+    "likely_text": false
+  },
+  {
+    "path": "assets/resources/whatsnew.json",
+    "size": 309,
+    "sha256": "ce33ef70020da09d388d75e6ed907a34234de3f84d3ab19d9d3aa5f3cd5723f8",
+    "entropy_sample": 7.2396,
+    "printable_ratio_sample": 0.3916,
+    "first_bytes_hex": "a22f4b2632165a28c65f3342bdae2e50c00100008f2ac355c3222348efdc1bc1",
+    "likely_text": false
+  }
+]

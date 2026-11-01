@@ -1,0 +1,9 @@
+{
+  "original_path": "/home/runner/work/apks/apks/downloads/HA-Tunnel-Plus-1.7.1.apk",
+  "original_size_bytes": 25014133,
+  "expected_sha256": "741e283ba3ee4b04b6988d5842d38491a51fa0bddfaf52d9c6bca9e6245ad051",
+  "original_sha256": "741e283ba3ee4b04b6988d5842d38491a51fa0bddfaf52d9c6bca9e6245ad051",
+  "working_copy_sha256": "741e283ba3ee4b04b6988d5842d38491a51fa0bddfaf52d9c6bca9e6245ad051",
+  "original_matches_expected": true,
+  "working_copy_matches_original": true
+}

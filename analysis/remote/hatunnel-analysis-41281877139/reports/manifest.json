@@ -1,0 +1,1026 @@
+{
+  "summary": {
+    "package": "com.hatunnel.plus",
+    "version_name": null,
+    "version_code": null,
+    "compile_sdk_version": "36",
+    "compile_sdk_version_codename": "16",
+    "min_sdk": null,
+    "target_sdk": null,
+    "application": {
+      "label": "@string/app_name",
+      "name": "app.fast.ssh.ProtectedFastSSH",
+      "icon": "@mipmap/ic_launcher",
+      "roundIcon": "@mipmap/ic_launcher_round",
+      "debuggable": null,
+      "allowBackup": "false",
+      "usesCleartextTraffic": null,
+      "networkSecurityConfig": "@xml/network_security_config",
+      "extractNativeLibs": "false",
+      "appComponentFactory": null,
+      "requestLegacyExternalStorage": "true",
+      "preserveLegacyExternalStorage": null,
+      "enableOnBackInvokedCallback": null,
+      "localeConfig": null,
+      "dataExtractionRules": null,
+      "fullBackupContent": "false"
+    }
+  },
+  "permissions": [
+    {
+      "name": "android.permission.INTERNET",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.FOREGROUND_SERVICE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_NETWORK_STATE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.VIBRATE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.READ_EXTERNAL_STORAGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_MEDIA_LOCATION",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.google.android.gms.permission.AD_ID",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_ADSERVICES_AD_ID",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_ADSERVICES_TOPICS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.hatunnel.plus.permission.C2D_MESSAGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.POST_NOTIFICATIONS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.WAKE_LOCK",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.google.android.c2dm.permission.RECEIVE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.sec.android.provider.badge.permission.READ",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.sec.android.provider.badge.permission.WRITE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.htc.launcher.permission.READ_SETTINGS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.htc.launcher.permission.UPDATE_SHORTCUT",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.sonyericsson.home.permission.BROADCAST_BADGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.anddoes.launcher.permission.UPDATE_COUNT",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.majeur.launcher.permission.UPDATE_BADGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.huawei.android.launcher.permission.CHANGE_BADGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.huawei.android.launcher.permission.READ_SETTINGS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.READ_APP_BADGE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.oppo.launcher.permission.READ_SETTINGS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.oppo.launcher.permission.WRITE_SETTINGS",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "me.everything.badger.permission.BADGE_COUNT_READ",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "me.everything.badger.permission.BADGE_COUNT_WRITE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.android.vending.BILLING",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "com.hatunnel.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "max_sdk": null,
+      "node": "uses-permission"
+    }
+  ],
+  "permission_declarations": [
+    {
+      "name": "com.hatunnel.plus.permission.C2D_MESSAGE",
+      "protectionLevel": "signature"
+    },
+    {
+      "name": "com.hatunnel.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "protectionLevel": "signature"
+    }
+  ],
+  "metadata": [
+    {
+      "name": "com.google.android.gms.ads.APPLICATION_ID",
+      "value": "ca-app-pub-5640609611628446~7168947344",
+      "resource": null
+    },
+    {
+      "name": "com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION",
+      "value": "true",
+      "resource": null
+    },
+    {
+      "name": "com.google.android.play.billingclient.version",
+      "value": "9.1.0",
+      "resource": null
+    },
+    {
+      "name": "com.google.android.gms.version",
+      "value": "@integer/APKTOOL_RENAMED_0x7f0a0008",
+      "resource": null
+    }
+  ],
+  "components": [
+    {
+      "kind": "activity",
+      "name": ".jlvfyyvkjayic",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN"
+          ],
+          "categories": [
+            "android.intent.category.LAUNCHER"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": ".ncgaaFrdzEoDA",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".cnDlttaunvtad",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".nctakdClcpAxe",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.BROWSABLE",
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "*/*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}host": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}port": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*.bin"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*..*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*..*..*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*..*..*..*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*..*..*..*..*.hat"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*..*..*..*..*..*..*.hat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": ".AyukygCyziiq",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".ksuAizfrCakef",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".klvfmEewnwbfw",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".gpatDqxelgAwu",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".jkAsepnCgeirb",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".gpgpxsumlbzzn",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".mmcwEsxAAdjgE",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".cppxdhDpEpuxq",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".lxAaBsophBCxc",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": ".hxyekwpjxFBzr",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".cEFqdlqlfFxmo",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".kyFsoejobCghd",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".ifgvjvqkclsEt",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".exBEeyBpiqiii",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".emltmtpAucAss",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": ".hBAzwdxlDsEyq",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".zaFBgagzvmny",
+      "exported": "true",
+      "enabled": null,
+      "permission": "android.permission.BIND_VPN_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.net.VpnService"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "service",
+      "name": ".dgofwDzyioboA",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".hgguFhxqjtxpu",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.huawei.push.action.MESSAGING_EVENT"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "service",
+      "name": ".fCEwodFbDfofD",
+      "exported": "false",
+      "enabled": null,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".jdvvuuzaDdrEd",
+      "exported": "false",
+      "enabled": null,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".cgmFveggyhDha",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.google.firebase.MESSAGING_EVENT"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "service",
+      "name": ".jslxujEloEpij",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".dcnqaygjjfzxc",
+      "exported": "false",
+      "enabled": "@bool/APKTOOL_RENAMED_0x7f050003",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".ckcxonopbhzvo",
+      "exported": "true",
+      "enabled": "@bool/APKTOOL_RENAMED_0x7f050005",
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".nsdapracemAAb",
+      "exported": "false",
+      "enabled": "@bool/APKTOOL_RENAMED_0x7f050004",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".nqoqaceqzEzua",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".jltuywdksmlhq",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": ".fltvtpFqrygzB",
+      "exported": "false",
+      "enabled": null,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "receiver",
+      "name": ".hrmphChuvDoCv",
+      "exported": "true",
+      "enabled": null,
+      "permission": "com.google.android.c2dm.permission.SEND",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.google.android.c2dm.intent.RECEIVE"
+          ],
+          "categories": [
+            "com.hatunnel.plus"
+          ],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".pnawclchgboBh",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "receiver",
+      "name": ".gDmDfyoDhzols",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.BOOT_COMPLETED"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".kAcmuwEdaxdww",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MY_PACKAGE_REPLACED"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".fynkiilFogCtl",
+      "exported": "true",
+      "enabled": null,
+      "permission": "com.google.android.c2dm.permission.SEND",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.google.android.c2dm.intent.RECEIVE"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".nbymqlsckcmvw",
+      "exported": "false",
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "receiver",
+      "name": ".lbeasBpxowcnr",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.ACTION_POWER_CONNECTED",
+            "android.intent.action.ACTION_POWER_DISCONNECTED"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".cEmeyoFjfeoxj",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.BATTERY_OKAY",
+            "android.intent.action.BATTERY_LOW"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".ecdleEyEAocjh",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.DEVICE_STORAGE_LOW",
+            "android.intent.action.DEVICE_STORAGE_OK"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".dblfuqushCxaB",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.net.conn.CONNECTIVITY_CHANGE"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".hpauduiFaaBFy",
+      "exported": "false",
+      "enabled": "false",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.BOOT_COMPLETED",
+            "android.intent.action.TIME_SET",
+            "android.intent.action.TIMEZONE_CHANGED"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".csuvxxgjplAnz",
+      "exported": "false",
+      "enabled": "@bool/APKTOOL_RENAMED_0x7f050003",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "androidx.work.impl.background.systemalarm.UpdateProxies"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".pwrkpmloAbmcq",
+      "exported": "true",
+      "enabled": "true",
+      "permission": "android.permission.DUMP",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".iqnpgktynfzrq",
+      "exported": "true",
+      "enabled": "true",
+      "permission": "android.permission.DUMP",
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "androidx.profileinstaller.action.INSTALL_PROFILE"
+          ],
+          "categories": [],
+          "data": []
+        },
+        {
+          "actions": [
+            "androidx.profileinstaller.action.SKIP_FILE"
+          ],
+          "categories": [],
+          "data": []
+        },
+        {
+          "actions": [
+            "androidx.profileinstaller.action.SAVE_PROFILE"
+          ],
+          "categories": [],
+          "data": []
+        },
+        {
+          "actions": [
+            "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ]
+    },
+    {
+      "kind": "receiver",
+      "name": ".chsxqgexoBjpn",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": ".miAvwwdbDCebn",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.hatunnel.plus",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": ".ltiohjcxlzfjk",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.hatunnel.plus.mobileadsinitprovider",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": ".kwbgkztwxCnrt",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.hatunnel.plus.androidx-startup",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": ".ctlwuhngBdFyE",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "com.hatunnel.plus.firebaseinitprovider",
+      "target_activity": null,
+      "intent_filters": []
+    }
+  ]
+}

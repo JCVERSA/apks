@@ -1,0 +1,1288 @@
+10909125
+__cxa_finalize
+__cxa_atexit
+__register_atfork
+hev_rbtree_node_prev
+hev_rbtree_node_next
+hev_rbtree_first
+hev_rbtree_last
+hev_rbtree_insert_color
+hev_rbtree_replace
+hev_rbtree_erase
+hev_socks5_authenticator_new
+hev_object_atomic_construct
+hev_socks5_logger_log
+hev_object_atomic_class
+hev_socks5_authenticator_construct
+hev_socks5_authenticator_add
+hev_socks5_authenticator_del
+hev_socks5_authenticator_get
+hev_socks5_authenticator_clear
+hev_socks5_authenticator_class
+hev_socks5_get_timeout
+hev_socks5_set_timeout
+hev_socks5_get_addr_family
+hev_socks5_set_addr_family
+hev_socks5_construct
+hev_object_construct
+hev_object_class
+hev_socks5_class
+hev_task_self
+hev_task_del_fd
+hev_free
+hev_socks5_client_connect
+hev_socks5_get_connect_timeout
+hev_socks5_name_into_sockaddr6
+hev_socks5_socket
+hev_task_io_socket_connect
+__stack_chk_fail
+__stack_chk_guard
+hev_socks5_task_io_yielder
+hev_socks5_client_handshake
+hev_socks5_get_tcp_timeout
+hev_task_io_socket_send
+hev_task_io_socket_recv
+hev_socks5_get_udp_timeout
+hev_socks5_client_set_auth
+hev_socks5_client_construct
+hev_socks5_client_class
+hev_task_io_socket_sendmsg
+hev_socks5_client_tcp_new_name
+hev_malloc0
+hev_socks5_addr_from_name
+hev_socks5_client_tcp_construct
+hev_socks5_tcp_iface
+hev_socks5_addr_len
+hev_malloc
+__aeabi_memcpy
+hev_socks5_logger_enabled
+hev_socks5_addr_into_str
+hev_socks5_client_tcp_new_ipv4
+hev_socks5_addr_from_ipv4
+hev_socks5_client_tcp_new_ipv6
+hev_socks5_addr_from_ipv6
+hev_socks5_client_tcp_class
+hev_socks5_client_udp_new
+hev_socks5_udp_iface
+hev_socks5_client_udp_construct
+hev_socks5_client_udp_class
+hev_socks5_addr_into_sockaddr6
+hev_socks5_logger_init
+hev_socks5_logger_fini
+localtime
+__vsnprintf_chk
+hev_task_yield
+hev_task_sleep
+hev_task_io_socket_socket
+setsockopt
+hev_task_add_fd
+hev_task_mod_fd
+inet_ntop
+__memcpy_chk
+hev_socks5_addr_from_sockaddr6
+inet_pton
+hev_task_dns_getaddrinfo
+freeaddrinfo
+hev_socks5_set_connect_timeout
+hev_socks5_set_tcp_timeout
+hev_socks5_set_udp_timeout
+hev_socks5_set_task_stack_size
+hev_socks5_get_task_stack_size
+hev_socks5_set_udp_recv_buffer_size
+hev_socks5_set_udp_copy_buffer_nums
+hev_socks5_get_udp_copy_buffer_nums
+hev_socks5_server_new
+hev_socks5_server_construct
+hev_socks5_server_set_auth
+hev_socks5_server_run
+hev_socks5_user_check
+hev_socks5_udp_splice
+hev_socks5_tcp_splice
+hev_socks5_server_class
+getsockname
+hev_task_io_splice
+hev_socks5_udp_get_fd
+hev_socks5_udp_sendmmsg
+hev_task_io_socket_sendmmsg
+hev_socks5_udp_recvmmsg
+hev_task_io_socket_recvmsg
+hev_task_io_socket_recvmmsg
+recvfrom
+hev_socks5_user_new
+hev_socks5_user_construct
+hev_socks5_user_class
+hev_config_init_from_file
+yaml_parser_initialize
+yaml_parser_set_input_file
+yaml_parser_load
+yaml_document_delete
+yaml_parser_delete
+yaml_document_get_root_node
+yaml_document_get_node
+strcasecmp
+hev_config_init_from_str
+yaml_parser_set_input_string
+hev_config_fini
+hev_config_get_tunnel_name
+hev_config_get_tunnel_mtu
+hev_config_get_tunnel_multi_queue
+hev_config_get_tunnel_ipv4_address
+hev_config_get_tunnel_ipv6_address
+hev_config_get_tunnel_post_up_script
+hev_config_get_tunnel_pre_down_script
+hev_config_get_socks5_server
+hev_config_get_mapdns_address
+hev_config_get_mapdns_port
+hev_config_get_mapdns_network
+hev_config_get_mapdns_netmask
+hev_config_get_mapdns_cache_size
+hev_config_get_misc_task_stack_size
+hev_config_get_misc_tcp_buffer_size
+hev_config_get_misc_udp_recv_buffer_size
+hev_config_get_misc_udp_copy_buffer_nums
+hev_config_get_misc_max_session_count
+hev_config_get_misc_connect_timeout
+hev_config_get_misc_tcp_read_write_timeout
+hev_config_get_misc_udp_read_write_timeout
+hev_config_get_misc_limit_nofile
+hev_config_get_misc_pid_file
+hev_config_get_misc_log_file
+hev_config_get_misc_log_level
+JNI_OnLoad
+pthread_key_create
+pthread_mutex_init
+pthread_mutex_lock
+pthread_create
+pthread_mutex_unlock
+hev_socks5_tunnel_quit
+pthread_join
+hev_socks5_tunnel_stats
+hev_socks5_tunnel_main
+hev_socks5_tunnel_main_from_file
+hev_logger_init
+set_limit_nofile
+hev_logger_log
+run_as_daemon
+hev_task_system_init
+lwip_init
+hev_socks5_tunnel_init
+hev_socks5_tunnel_run
+hev_socks5_tunnel_fini
+hev_logger_fini
+hev_task_system_fini
+hev_socks5_tunnel_main_from_str
+hev_socks5_tunnel_stop
+hev_mapped_dns_new
+hev_mapped_dns_construct
+hev_mapped_dns_get
+hev_mapped_dns_put
+hev_mapped_dns_handle
+hev_list_add_tail
+hev_list_del
+hev_mapped_dns_lookup
+hev_mapped_dns_class
+hev_socks5_session_run
+hev_socks5_session_iface
+hev_socks5_session_terminate
+hev_task_wakeup
+hev_socks5_session_set_task
+hev_socks5_session_get_node
+hev_socks5_session_tcp_new
+hev_socks5_session_tcp_construct
+hev_socks5_addr_from_lwip
+tcp_recv
+tcp_sent
+hev_socks5_session_tcp_destruct
+hev_socks5_session_tcp_class
+pbuf_cat
+hev_ring_buffer_read_release
+hev_task_mutex_lock
+tcp_abort
+pbuf_free
+hev_task_mutex_unlock
+set_sock_mark
+hev_socks5_tunnel_update_session
+pbuf_free_header
+tcp_recved
+shutdown
+hev_ring_buffer_writing
+hev_ring_buffer_write_finish
+hev_ring_buffer_reading
+tcp_write
+tcp_shutdown
+hev_ring_buffer_read_finish
+tcp_output
+hev_ring_buffer_get_use_size
+hev_socks5_session_udp_new
+hev_socks5_session_udp_construct
+udp_recv
+hev_socks5_session_udp_destruct
+hev_socks5_session_udp_class
+udp_remove
+hev_socks5_addr_into_lwip
+pbuf_alloc_reference
+udp_sendfrom
+netif_add_noaddr
+netif_set_addr
+netif_add_ip6_address
+netif_set_up
+netif_set_link_up
+netif_set_default
+tcp_new_ip_type
+tcp_bind_netif
+tcp_bind
+tcp_listen_with_backlog
+tcp_accept
+udp_new_ip_type
+udp_bind_netif
+udp_bind
+socketpair
+hev_task_new
+hev_task_set_priority
+hev_task_mutex_init
+hev_tunnel_open
+hev_tunnel_set_mtu
+hev_tunnel_set_ipv4
+hev_tunnel_set_ipv6
+hev_tunnel_set_state
+hev_tunnel_get_name
+hev_tunnel_get_index
+hev_exec_run
+strerror
+ip_input
+hev_task_unref
+tcp_close
+netif_remove
+hev_tunnel_close
+hev_task_ref
+hev_task_run
+hev_task_system_run
+hev_task_io_read
+hev_task_join
+hev_tunnel_add_task
+pbuf_alloc
+hev_tunnel_del_task
+ip_reass_tmr
+ip6_reass_tmr
+__write_chk
+hev_task_io_open
+if_nametoindex
+hev_logger_enabled
+hev_ring_buffer_get_max_size
+getrlimit
+setrlimit
+yaml_get_version_string
+yaml_get_version
+yaml_malloc
+yaml_realloc
+yaml_free
+yaml_strdup
+yaml_string_extend
+yaml_string_join
+yaml_stack_extend
+yaml_queue_extend
+__aeabi_memclr
+__aeabi_memmove
+yaml_token_delete
+yaml_parser_set_input
+yaml_parser_set_encoding
+yaml_emitter_initialize
+yaml_emitter_delete
+yaml_event_delete
+yaml_emitter_set_output_string
+yaml_emitter_set_output_file
+yaml_emitter_set_output
+yaml_emitter_set_encoding
+yaml_emitter_set_canonical
+yaml_emitter_set_indent
+yaml_emitter_set_width
+yaml_emitter_set_unicode
+yaml_emitter_set_break
+yaml_stream_start_event_initialize
+yaml_stream_end_event_initialize
+yaml_document_start_event_initialize
+yaml_document_end_event_initialize
+yaml_alias_event_initialize
+yaml_scalar_event_initialize
+yaml_sequence_start_event_initialize
+yaml_sequence_end_event_initialize
+yaml_mapping_start_event_initialize
+yaml_mapping_end_event_initialize
+yaml_document_initialize
+yaml_document_add_scalar
+yaml_document_add_sequence
+yaml_document_add_mapping
+yaml_document_append_sequence_item
+yaml_document_append_mapping_pair
+yaml_parser_parse
+yaml_parser_fetch_more_tokens
+yaml_parser_update_buffer
+yaml_parser_scan
+lwip_htons
+lwip_htonl
+lwip_strnstr
+lwip_strnistr
+lwip_strnicmp
+lwip_stricmp
+lwip_itoa
+lwip_memcmp_consttime
+lwip_standard_chksum
+inet_chksum_pseudo
+ip6_chksum_pseudo
+ip_chksum_pseudo
+inet_chksum_pseudo_partial
+ip6_chksum_pseudo_partial
+ip_chksum_pseudo_partial
+inet_chksum
+inet_chksum_pbuf
+lwip_chksum_copy
+mem_init
+memp_init
+netif_init
+udp_init
+tcp_init
+ipaddr_ntoa
+ipaddr_ntoa_r
+ipaddr_aton
+ip6addr_ntoa
+ip4addr_ntoa
+ip6addr_ntoa_r
+ip4addr_ntoa_r
+ip4addr_aton
+ip6addr_aton
+ip6_input
+ip4_input
+ip_addr_any_type
+icmp_input
+icmp_dest_unreach
+icmp_time_exceeded
+ip4_addr_isbroadcast_u32
+ip4_addr_netmask_valid
+ipaddr_addr
+ip_addr_any
+ip_addr_broadcast
+ip4_set_default_multicast_netif
+ip4_route
+netif_list
+netif_default
+pbuf_realloc
+ip4_reass
+pbuf_remove_header
+udp_input
+tcp_input
+pbuf_header_force
+ip4_output_if
+ip4_output_if_src
+pbuf_add_header
+ip4_frag
+ip4_output
+pbuf_copy
+pbuf_copy_partial_pbuf
+pbuf_clen
+memp_free
+memp_malloc
+pbuf_alloced_custom
+pbuf_ref
+icmp6_input
+icmp6_dest_unreach
+icmp6_packet_too_big
+icmp6_time_exceeded
+icmp6_time_exceeded_with_addrs
+icmp6_param_problem
+netif_find
+ip6_addr_any
+ip6_route
+ip6_select_source_address
+nd6_find_route
+mld6_lookfor_group
+ip6_reass
+pbuf_add_header_force
+ip6_output_if
+ip6_output_if_src
+nd6_get_destination_mtu
+ip6_frag
+ip6_output
+ip6_options_add_hbh_ra
+mld6_input
+nd6_input
+mld6_stop
+mld6_report_groups
+lwip_port_rand
+mld6_joingroup
+netif_get_ip6_addr_match
+mld6_joingroup_netif
+mld6_leavegroup
+mld6_leavegroup_netif
+mld6_tmr
+destination_cache
+neighbor_cache
+pbuf_try_get_at
+pbuf_get_at
+pbuf_copy_partial
+reachable_time
+default_router_list
+retrans_timer
+prefix_list
+netif_ip6_addr_set_state
+nd6_clear_destination_cache
+nd6_get_next_hop_addr_or_queue
+pbuf_clone
+nd6_reachability_hint
+nd6_cleanup_netif
+nd6_adjust_mld_membership
+nd6_restart_netif
+mem_trim
+mem_malloc
+mem_free
+mem_calloc
+hev_calloc
+memp_init_pool
+memp_memory_UDP_PCB_base
+memp_memory_TCP_PCB_base
+memp_memory_TCP_PCB_LISTEN_base
+memp_memory_TCP_SEG_base
+memp_memory_REASSDATA_base
+memp_memory_MLD6_GROUP_base
+memp_memory_PBUF_base
+memp_memory_IP6_REASSDATA_base
+memp_memory_FRAG_PBUF_base
+memp_memory_ND6_QUEUE_base
+memp_memory_PBUF_POOL_base
+memp_malloc_pool
+memp_pools
+memp_free_pool
+memp_UDP_PCB
+memp_TCP_PCB
+memp_TCP_PCB_LISTEN
+memp_TCP_SEG
+memp_REASSDATA
+memp_FRAG_PBUF
+memp_ND6_QUEUE
+memp_IP6_REASSDATA
+memp_MLD6_GROUP
+memp_PBUF
+memp_PBUF_POOL
+netif_input
+netif_add
+tcp_netif_ip_addr_changed
+udp_netif_ip_addr_changed
+netif_set_ipaddr
+netif_set_netmask
+netif_set_gw
+netif_set_down
+netif_set_link_down
+netif_ip6_addr_set
+netif_ip6_addr_set_parts
+netif_create_ip6_linklocal_address
+netif_name_to_index
+netif_index_to_name
+netif_get_by_index
+pbuf_free_ooseq
+pbuf_free_ooseq_pending
+tcp_free_ooseq
+tcp_active_pcbs
+pbuf_header
+pbuf_chain
+pbuf_dechain
+pbuf_get_contiguous
+pbuf_skip
+pbuf_take
+pbuf_take_at
+pbuf_coalesce
+pbuf_fill_chksum
+pbuf_put_at
+pbuf_memcmp
+pbuf_memfind
+pbuf_strstr
+tcp_free
+tcp_fasttmr
+tcp_slowtmr
+tcp_send_fin
+tcp_active_pcbs_changed
+tcp_rexmit_rto_prepare
+tcp_rexmit_rto_commit
+tcp_keepalive
+tcp_pcb_purge
+tcp_split_unsent_seg
+tcp_ticks
+tcp_zero_window_probe
+tcp_tw_pcbs
+tcp_trigger_input_pcb_close
+tcp_pcb_remove
+tcp_input_pcb
+tcp_bound_pcbs
+tcp_listen_pcbs
+tcp_abandon
+tcp_segs_free
+tcp_timer_needed
+tcp_pcb_lists
+tcp_listen_with_backlog_and_err
+tcp_update_rcv_ann_wnd
+tcp_connect
+tcp_enqueue_flags
+tcp_next_iss
+tcp_eff_send_mss_netif
+tcp_process_refused_data
+tcp_txnow
+tcp_recv_null
+tcp_seg_free
+tcp_setprio
+tcp_seg_copy
+tcp_alloc
+tcp_poll
+tcp_debug_state_str
+tcp_tcp_get_tcp_addrinfo
+tcp_rst_netif
+tcp_send_empty_ack
+tcp_rexmit_rto
+tcp_rexmit
+tcp_rexmit_fast
+lwip_cyclic_timers
+lwip_num_cyclic_timers
+udp_pcbs
+udp_send
+udp_sendto_chksum
+udp_sendto
+udp_send_chksum
+udp_sendto_if_chksum
+udp_sendto_if_src_chksum
+udp_sendto_if
+udp_sendto_if_src
+udp_connect
+udp_disconnect
+clock_gettime
+sys_jiffies
+sys_init
+pthread_getspecific
+hev_memory_allocator_set_default
+hev_memory_allocator_unref
+pthread_once
+pthread_setspecific
+_longjmp
+hev_task_execute
+epoll_wait
+epoll_create
+epoll_ctl
+hev_task_mutex_trylock
+hev_task_get_state
+hev_task_get_priority
+hev_task_add_whandle
+hev_task_del_whandle
+hev_task_exit
+hev_task_get_data
+getpagesize
+mprotect
+hev_task_dns_getnameinfo
+hev_task_io_socket_socketpair
+getaddrinfo
+getnameinfo
+__open_2
+hev_task_io_creat
+hev_task_io_openat
+__openat_2
+hev_task_io_dup
+hev_task_io_dup2
+__read_chk
+hev_task_io_readv
+hev_task_io_write
+hev_task_io_writev
+hev_task_io_socket_accept
+hev_task_io_socket_recvfrom
+hev_task_io_socket_sendto
+recvmmsg
+sendmmsg
+sigemptyset
+sigaltstack
+sigaction
+hev_memory_allocator_default
+hev_memory_allocator_alloc
+hev_realloc
+hev_memory_allocator_realloc
+hev_memory_allocator_free
+hev_memory_allocator_ref
+__aeabi_memclr4
+libdl.so
+libhev-socks5-tunnel.so
+%p socks5 authenticator destruct
+%p socks5 client read auth creds
+%p socks5 client read response
+%p socks5 client udp connect
+%p socks5 server %s %s
+Parse %s failed!
+cache-size
+task-stack-size
+limit-nofile
+%p socks5 session connect
+netif_ip6_addr_set: invalid addr6
+PBUF_POOL_BUFSIZE must be bigger than MEM_ALIGNMENT
+mem_trim returned r == NULL
+invalid pbuf type
+unsent segments leaking
+%p socks5 client res.rep %u
+%p socks5 client tcp new name
+pid-file
+%p socks5 session udp bind
+exec %s %s %s
+did not find expected '!'
+did not find expected tag URI
+IPv6 fragment header does not fit in first pbuf
+selected router must have a neighbor entry
+pc->custom_free_function != NULL
+did not copy all data
+pcb->listener->accept != NULL
+%p socks5 authenticator new
+HevSocks5Authenticator
+%p socks5 construct
+%p socks5 client auth done
+%p socks5 server udp socket name
+pipeline
+connect-timeout
+%p socks5 session tcp new
+%p socks5 session udp fwd b addr
+socks5 tunnel open (%s)
+found duplicate anchor; first occurrence
+while scanning a block scalar
+tcp_slowtimr: persist ticking with in-flight data
+tcp_pcb_remove: invalid pcblist
+CLOSE_WAIT
+tcp_rexmit_fast: invalid pcb
+HevSocks5
+%p socks5 client auth.ver %u
+%p socks5 server tcp socket name
+%p socks5 user destruct
+socks5 tunnel lwip task run
+while parsing a flow mapping
+incomplete UTF-8 octet sequence
+ip6_reass: moving p->payload to ip6 header failed
+offset_to <= p_to->len
+don't call tcp_abort/tcp_abandon for listen-pcbs
+tcp_update_rcv_ann_wnd: invalid pcb
+tcp_slowtmr: active pcb->state != TIME-WAIT
+invalid socket state for sent callback
+unsent_oversize mismatch (pcb->unsent is NULL)
+tcp_enqueue_flags: invalid segment length
+%p socks5 client res.atype %u
+%p socks5 client udp new
+%p socks5 client udp destruct
+%p socks5 udp read udp head
+%p socks5 session udp splice
+found unknown escape character
+invalid trailing UTF-8 octet
+r->p != NULL
+netif != NULL
+FIN_WAIT_2
+========== Oops! Stack overflow! ==========
+HevObject
+%p socks5 client res.ver %u
+%p socks5 client tcp construct
+%p io timeout
+%p socks5 session udp destruct
+%p mapped dns handle
+second occurrence
+while parsing a block collection
+did not find expected whitespace or line break
+did not find expected hexdecimal number
+invalid leading UTF-8 octet
+unhandled
+check that first pbuf can hold icmp message
+jni/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/ip4_frag.c
+tcp_slowtimr: persist ticking with empty send buffer
+tcp_enqueue_flags: check that first pbuf can hold optlen
+pbuf_remove_header failed
+check that first pbuf can hold struct udp_hdr
+%p socks5 client connect
+%p socks5 client construct
+%p socks5 client auth.res.ver %u
+%p socks5 client set upstream addr
+%p socks5 client tcp new ipv6
+HevSocks5ClientTCP
+%p socks5 server run
+multi-queue
+udp-address
+udp-recv-buffer-size
+did not find expected '-' indicator
+while scanning a simple key
+could not find expected ':'
+while scanning an anchor
+while scanning an alias
+netif already added
+pbuf_copy failed
+tcp_input: pcb->state != CLOSED
+insane offset!
+jni/hev-socks5-tunnel/third-part/lwip/src/core/tcp_out.c
+RST not expected here!
+%p socks5 client connect [%s]:%d
+%p socks5 client socket
+%p socks5 client req.atype %u
+%p socks5 user checker
+post-up-script
+password
+TProxyStartService
+tag:yaml.org,2002:
+while scanning a %YAML directive
+while scanning a tag directive
+input error
+target address is required
+invalid pool desc
+pbuf_free: p->ref > 0
+pbuf ref overflow
+jni/hev-socks5-tunnel/third-part/lwip/src/core/tcp.c
+tcp_pcb_remove: invalid pcb
+jni/hev-socks5-tunnel/third-part/lwip/src/core/tcp_in.c
+tcp_receive: wrong state
+oversize == 0
+%p socks5 client set auth
+%p socks5 server auth user.ver %u
+%p socks5 server auth user.plen %u
+HevSocks5SessionUDP
+socks5 tunnel run
+did not find expected alphabetic or numeric character
+unexpected low surrogate area
+icmp_input: moving r->payload to icmp header failed
+this needs a pbuf in one piece!
+malloc() must return aligned memory
+tcp_slowtmr: active pcb->state != CLOSED
+tcp_rst: invalid remote_ip
+%p socks5 server socket stream
+%p socks5 server write response
+%p socks5 udp invalid
+%p socks5 user new
+read-write-timeout
+set limit nofile
+%p mapped dns destruct
+%p socks5 session tcp destruct
+found incompatible YAML document
+did not find expected ',' or '}'
+did not find expected version number
+while parsing a tag directive
+jni/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/ip4_addr.c
+check that first pbuf can hold struct ip_hdr
+ip_reass_pbufcount >= pbufs_freed
+q->p != NULL
+p->len == 0
+tcp_enqueue_flags: invalid queue length
+tcp_rexmit_rto_commit: invalid pcb
+%p socks5 client connect server fd %d
+HevSocks5ClientUDP
+%p socks5 server read auth user.pass
+%p socks5 udp read udp
+%p socks5 session tcp splice
+%p socks5 session udp fwd b buf
+found unexpected end of stream
+pcr != NULL
+check fragments don't overlap
+tcp_receive: segment not trimmed correctly to ooseq queue
+tcp_split_unsent_seg: invalid pcb
+tcp_rst: invalid local_ip
+  Bad addr: %p
+%p socks5 server req.ver %u
+tcp-read-write-timeout
+udp-read-write-timeout
+log-file
+%p socks5 session udp new
+socks5 tunnel mtu
+must provide both source and destination
+rmem != NULL
+netif_input: invalid pbuf
+Creating an infinite loop
+Can't split segment into length 0
+split <= mss
+options not filled
+data included but not checksummed
+%p socks5 client auth method %d
+%p socks5 client write request
+%p socks5 server resolve addr
+%p socks5 tcp splicer
+pre-down-script
+socks5 tunnel stop
+while parsing a block node
+while scanning a directive
+pcb->snd_queuelen >= pbuf_clen(next->p)
+HevSocks5Client
+%p socks5 server read auth user
+%p socks5 server read auth user.name
+%p socks5 server bind
+%p socks5 server destruct
+%p socks5 udp write tcp
+tcp-buffer-size
+max-session-count
+socks5 tunnel task timer
+while parsing a node
+did not find expected digit or '.' character
+found a tab character that violates indentation
+jni/hev-socks5-tunnel/third-part/lwip/src/core/netif.c
+p->tot_len == p->len + q->tot_len
+chksum != NULL
+len != 0
+tcp_slowtmr: middle tcp != tcp_tw_pcbs
+tcp_slowtmr: first pcb == tcp_tw_pcbs
+FIN_WAIT_1
+don't call tcp_output for listen-pcbs
+%p socks5 client read addr
+%p socks5 udp addr
+%p socks5 udp splicer
+socks5 tunnel event task run
+open pid file %s
+invalid length of a UTF-8 sequence
+invalid Unicode character
+too many netifs, max. supported number is 255
+netif_get_ip6_addr_match: invalid ip6addr
+netif_add_ip6_address: invalid ip6addr
+invalid socket state for poll
+ESTABLISHED
+tcp_receive: valid queue length
+tcp_write: pbufs on queue => at least one queue non-empty
+%p socks5 client write auth creds
+%p socks5 udp data len
+log-level
+did not find expected <document start>
+while parsing a flow sequence
+while scanning for the next token
+incomplete UTF-16 character
+jni/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/icmp.c
+prev->next == ipr
+offset_from <= p_from->len
+pcb->flags & TF_RXCLOSED
+LAST_ACK
+tcp_input: invalid pbuf
+pcb->refused_data == NULL
+%p socks5 client tcp -> %s
+%p socks5 server read auth user.ver
+%p socks5 server socket bind
+TProxyStopService
+%p socks5 client auth %s:%s
+%p socks5 session tcp construct
+%p socks5 session udp construct
+%p socks5 session udp fwd b send
+socks5 tunnel init
+socks5 tunnel non-blocking
+socks5 tunnel timer task run
+tag:yaml.org,2002:seq
+while parsing a block mapping
+input is too long
+new_rcv_ann_wnd <= 0xffff
+SYN_SENT
+Found start of payload pbuf
+HevSocks5SessionTCP
+tag:yaml.org,2002:str
+did not find expected ',' or ']'
+found an incorrect trailing UTF-8 octet
+while scanning a plain scalar
+netif_input: invalid netif
+p->next != NULL
+mss_local is too small
+inconsistent oversize vs. len
+tcp_write: extension of reference requires reference
+tcp_create_segment: invalid pbuf
+invalid optflags passed: TF_SEG_DATA_CHECKSUMMED
+%p socks5 destruct
+%p socks5 client destruct
+%p socks5 client udp construct
+%p socks5 server auth.ver %u
+%p socks5 server read auth methods
+%p socks5 server auth user: %s pass: %s
+Failed to parse config.
+username
+Can't found socks5.address!
+TProxyGetStats
+%p mapped dns construct
+/dev/net/tun
+did not find URI escaped octet
+found an incorrect leading UTF-8 octet
+while parsing a quoted scalar
+p->len >= poff
+not a valid pbuf (ip6_input check missing?)
+netif_create_ip6_linklocal_address: invalid netif
+invalid pbuf_type
+mem_trim returned r != q
+tcp_seg_copy: invalid seg
+tcp_receive: segment not trimmed correctly to rcv_wnd
+tcp_write: valid queue length
+p->tot_len >= optlen
+%p socks5 client udp socket
+%p socks5 server construct
+%p socks5 server socket dgram
+Open %s failed!
+socks5 tunnel ipv4
+socks5 tunnel event nonblock
+found unknown directive name
+could not find expected directive name
+rmem == MEM_ALIGN(rmem)
+invalid index
+invalid socket state for recv callback
+tcp_input: TIME-WAIT pcb->state == TIME-WAIT
+tcp_write: cannot concatenate when pcb->unsent is empty
+%p socks5 client write auth methods
+%p socks5 client tcp new ipv4
+%p socks5 udp sockaddr
+socks5 tunnel fini
+found duplicate %TAG directive
+found a tab character where an indentation space is expected
+jni/hev-socks5-tunnel/third-part/lwip/src/core/mem.c
+memp_malloc: memp properly aligned
+netif_get_ip6_addr_match: invalid netif
+pbuf_take: invalid pbuf
+dataptr != NULL
+tcp_rexmit_rto: invalid pcb
+%p socks5 client handshake standard
+[%04u-%02u-%02u %02u:%02u:%02u] 
+HevSocks5Server
+%p socks5 server connect
+%p socks5 udp write udp
+found duplicate %YAML directive
+found character that cannot start any token
+while scanning a tag
+pbufs_freed + clen <= 0xffff
+sanity check linked list
+ip6_reass_free: moving p->payload to ip6 header failed
+p->tot_len == p->len
+invalid socket state for err callback
+tcp_eff_send_mss_netif: invalid dst_ip
+tcp_accept_null: invalid pcb
+tcp_input: active pcb->state != LISTEN
+prev_seg != NULL
+tcp_output: invalid pcb
+need unchained pbuf
+%p socks5 udp fwd b recv send
+HevMappedDNS
+mapping keys are not allowed in this context
+prev != ipr
+jni/hev-socks5-tunnel/third-part/lwip/src/core/memp.c
+memp_free: mem properly aligned
+netif_add_ip6_address: invalid netif
+pbuf_realloc: q != NULL
+p->tot_len == p->len (of last pbuf in chain)
+tcp_slowtmr: middle tcp != tcp_active_pcbs
+tcp_receive: ooseq tcplen > rcv_wnd
+%p socks5 client read auth
+%p socks5 client udp addr
+%p socks5 server handshake
+%p socks5 server udp bind
+udp-copy-buffer-nums
+%p socks5 session handshake
+socks5 tunnel write
+tag:yaml.org,2002:map
+found invalid Unicode character escape code
+check that first pbuf can hold icmp6 header
+tcp_next_iss: invalid pcb
+p->tot_len == p->next->tot_len
+no segment to free
+pbuf too short!
+inconsistent oversize vs. space
+tcp_pbuf_prealloc: invalid oversize
+Task: %p
+  Stack   : %p - %p
+%p socks5 server write auth user
+%p socks5 server service
+%p socks5 udp head len
+%p socks5 udp read udp data
+(Ljava/lang/String;I)V
+while parsing a tag
+while scanning a quoted scalar
+type overflow
+jni/hev-socks5-tunnel/third-part/lwip/src/core/pbuf.c
+ooseq segments leaking
+tcp_input: pcb->next != pcb (after cache)
+tcp_enqueue_flags: invalid pcb
+seg->tcphdr not aligned
+%p socks5 client read auth method
+%p socks5 server socket reuse
+%p socks5 udp fwd f recv send
+%p mapped dns new
+found undefined tag handle
+did not find expected key
+did not find expected comment or line break
+delete me
+jni/hev-socks5-tunnel/third-part/lwip/src/core/inet_chksum.c
+ip_reass_pbufcount >= clen
+ip6_reass_pbufcount >= clen
+jni/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/nd6.c
+tcp_free: LISTEN
+tcp_slowtmr: active pcb->state != LISTEN
+inseg.p != NULL
+tcp_write: no pbufs on queue => both queues empty
+check that first pbuf can hold struct tcp_hdr
+udp_input: invalid pbuf
+%p socks5 client auth.res.rep %u
+%p socks5 server read auth method
+HevSocks5User
+Must be set both socks5 username and password!
+com/hevsocks/tunnel/TProxyService
+socks5 tunnel state
+socks5 tunnel task lwip
+exec fork
+did not find the expected '>'
+control characters are not allowed
+p->ref == 1
+jni/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/ip6_frag.c
+netif_ip6_addr_set: invalid netif
+pbuf_realloc: p != NULL
+tcp_free_listen: !LISTEN
+SYN_RCVD
+tcp_write: check that first pbuf can hold the complete seglen
+tcp_rexmit_rto_prepare: invalid pcb
+tcp_rexmit: invalid pcb
+jni/hev-socks5-tunnel/third-part/lwip/src/core/udp.c
+HevObjectAtomic
+%p socks5 server read addr
+%p socks5 session run
+%p socks5 session udp fwd b recv
+did not find expected <stream-start>
+did not find expected node content
+found unexpected non-alphabetical character
+block sequence entries are not allowed in this context
+mapping values are not allowed in this context
+jni/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/ip6.c
+pbuf_alloc: erroneous type
+don't call tcp_recved for listen-pcbs
+unacked segments leaking
+TIME_WAIT
+tcp_send_empty_ack: invalid pcb
+tcp_keepalive: invalid pcb
+%p socks5 client tcp destruct
+%p socks5 client udp bind
+%p socks5 server write auth method
+%p socks5 server auth user.nlen %u
+Can't found socks5.port!
+socks5 tunnel stats
+found extremely long version number
+while scanning a %TAG directive
+while parsing a %TAG directive
+sanity check
+p->tot_len >= IP6_HLEN
+sane cache index
+tcp_slowtmr: first pcb == tcp_active_pcbs
+tcp_slowtmr: TIME-WAIT pcb->state == TIME-WAIT
+tcp_input: active pcb->state != CLOSED
+pcb->snd_queuelen > 0
+===========================================
+%p socks5 server new
+%p socks5 server req.atype %u
+%p socks5 session terminate
+%p socks5 session udp fwd f send
+socks5 tunnel event
+found unexpected ':'
+expected low surrogate area
+check that first pbuf can hold struct ip6_hdr
+tcp_input: active pcb->state != TIME-WAIT
+tcp_input: pcb->next != pcb (before cache)
+tcp_receive: tcplen > rcv_wnd
+tcp_write: ROM pbufs cannot be oversized
+tcp_write: concat checksum needs concatenated data
+%p socks5 authenticator construct
+%p socks5 client bind
+%p socks5 client handshake pipeline
+%p socks5 udp bind
+%p socks5 user construct
+%p socks5 session tcp bind
+socks5 tunnel task event
+found unexpected document indicator
+Assertion "%s" failed at line %d in %s
+icmp_input: restoring original p->payload failed
+jni/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/icmp6.c
+p != NULL
+tcp_send_fin: invalid pcb
+tcp_enqueue_flags: need either TCP_SYN or TCP_FIN in flags (programmer violates API)
+tcp_zero_window_probe: invalid pcb
+udp_input: invalid netif
+%p socks5 client resolve [%s]:%d
+%p socks5 server read request
+socks5 tunnel ipv6
+found undefined alias
+while parsing a flow node
+did not find expected whitespace
+found an indentation indicator equal to 0
+incomplete UTF-16 surrogate pair
+jni/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/ip4.c
+not firstalthough just enqueued
+icmpv6 packet not a direct response
+ "F%`yD'
+'IyD	h	h
+F$H"FyDxD
+F6H"FyDxD
+F@F1F*F&
+yD'KzD'H{DxD
+F@F1F*F&
+F@F1F*F&
+ yD"F%`&
+F2IxDyD	h	hG
+FyD	h	hC
+s)FHF2F&
+FyD	h	hA
+s!FHF2F&
+#IyD	h	h
+HzDqa1FA
+HzDqa1FA
+MzDaa!FA
+.IyD	h	h
+ FQF*F3F
+HLIFBF F%
+0<HF!FBF
+ 0`)HxDm
+HxD,0)F?"$
+HxD@hpGz
+HxD@ipGJ
+HxD@hpG^
+HxD@ipG"
+*yDzD*H+K
+F(J)IzDyD
+HJFyDnFxD
+	IyD	h	h
+F IxD J{DyDzD
+I0F*F,`yD#
+N!F~Dpb"
++L+H|DxD
+I(F"FyD"
+I(F"FyD"
+h*IyD	h	hG
+xDyD	h	h	
+	IyD	h	h
+"yD	h	h	
+F2IxDyD	h	hG
+D1`)h"hQ
+;IyD	h	h
+ IyD	h	h
+	IyD	h	h
+nnnnnnnn
+nnnnnnnnnnnnnnnnnn
+TTTTTTTT
+TTTTTTTTTTTTTTTTTT
+________
+__________________
+GGGGGGGG
+GGGGGGGGGGGGGGGGGG
+mHmIxDyD
+fIyD	h	h
+PHQIxDyD
+MHNIxDyD
+CHxDCIyD
+4H5IxDyD
+	I	KxDyD{D
+"0I1KxDyD{D
+"#I$KxDyD{D
+1F(F+h.F
+ I KxDyD{D
+FphQFA" D
+I	KxDyD{D
+'r>I>KxDyD{D
+/I/KxDyD{D
+r*I+KxDyD{D
+&I&KxDyD{D
+r!I"KxDyD{D
+" I KxDyD{D
+"	I	KxDyD{D
+hI,"yD	h
+<P|D$hbi
+ "\MPF3F}D)F
+ pPH,!xD
+0I	(yD	h	h
+-I,"yD	h
+	IyD	h	h
+R	I	KxDyD{D
+NIOJyDzD
+B	I	KxDyD{D
+FIyD	hLi
+I	KxDyD{D
+IyD	hJiRE	
+I	KxDyD{D
+.>IxD:iyD
+F F1FJFCF
+"#I#KxDyD{D
++I+KxDyD{D
+THTNxD~D
+B^I^KxDyD{D
+BSITKxDyD{D
+BIIIKxDyD{D
+R\I]KxDyD{D
+"^I_KxDyD{D
+"KILKxDyD{D
+RJIJKxDyD{D
+R6I7KxDyD{D
+R>I>KxDyD{D
+B!I"KxDyD{D
+"kIxDbcyD
+"rIrKxDyD{D
+"OIOKxDyD{D
+"ZIZKxDyD{D
+$I%KxDyD{D
+b I KxDyD{D
+~1I1J|D1KyDzD1H{D
+I	KxDyD{D	
+KxDyD{D	
+KxDyD{D	
+j0xD3hyD
+KxDyD{D	
+KxDyD{D	
+KxDyD{D	
+KxDyD{D	
+KxDyD{D	
+"wIwKxDyD{D
+"cIdKxDyD{D
+"_I`KxDyD{D
+"QIRKxDyD{D
+cIcKxDyD{D
+"4I5KxDyD{D
+"0I1KxDyD{D
+,I,KxDyD{D
+r#I#KxDyD{D
+A2$I%KxDyD{D
+}2 I KxDyD{D
+BAIAKxDyD{D
+bNIOKxDyD{D
+b5I5KxDyD{D
+R-I-KxDyD{D
+R(I)KxDyD{D
+b*I*KxDyD{D
++2[I\KxDyD{D
+rYIZKxDyD{D
+j"OIOKxDyD{D
+>I?KxDyD{D
+:I:KxDyD{D
+N"5I6KxDyD{D
+9r7I7KxDyD{D
+"2I3KxDyD{D
+2.I.KxDyD{D
+2LILKxDyD{D
+B/I/KxDyD{D
+B*I+KxDyD{D
+>B&I&KxDyD{D
+FB!I"KxDyD{D
+$0iq{kh*
+;R*I+KxDyD{D
+0} u0}1h
+	IyD	h	h
+!IyD	h	h
+	|D hAFO
+LbyD	h	h
+0FAFJF#F
+0FYFBFKF
+0FYFBFKF
+ FYF2FSF
+(FYF2FSF
+0FYFBFKF
+0FYFBFKF
+XF1FJF+F
+XF1FJF+F
+XF1FJF+F
+XF1FJF+F
+XF+F1FRF
+XF+FQF"F
+XF1FJF+F
+F	I}DyD(F
+Linker: LLD 17.0.2
+Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+.fini_array
+.ARM.exidx
+.comment
+.note.android.ident
+.got.plt
+.rel.plt
+.ARM.attributes
+.gnu.version_r
+.data.rel.ro
+.rel.dyn
+.gnu.version
+.gnu.hash
+.dynamic
+.ARM.extab
+.shstrtab

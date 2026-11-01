@@ -1,0 +1,125 @@
+JNI_OnLoad
+libdexprotector.so
+,/37;?BLW]`bouw
+xY@9p@xP@8q
+!~D"FSF4F
+qFHF2FcF
+ FAFRFKF
+MMMMMMMMMMMMMMMMM
+*F8F3FQF
+%`>,@D%F
+Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+Linker: LLD 17.0.2
+.init_array
+.ARM.exidx
+.comment
+.ARM.attributes
+.rel.dyn
+.note.gnu.build-id
+.dynamic
+.shstrtab
+uyzQ'W=\
+|$*g{*q*
+Zku$Eb]&O8ONU
+RCZHCn{D
+|;VGIoL&N
+%e,:DcZtb
+u48J$=Fk
+gkQO.Y~n
+98VQkb]c
+'C<5zObo
+FVqi3)aN
+T^S8IV:lN
+aeZy%5j	
+zqH	'^0S
+/X@mEZ[>
+1gP'~%ER
+uB"L} 4r
+Z I:xXV; v
+H'5JTDJtE
+BF)$,q`E`
+:5 KrODr' 4Y
+(_=v^C?0QpT
+A,d|p%&\wn:
+T9:s^e.H
+LF1/i6l8
+4^Hc>52fa&
+>fGQf+][
+nM/&8\V!H
+`:7e/gN%
+l{1'MB:s+
+f+(:E=Nm#
+;7A*x/D}
+b^R&^woH
+'~sq@1ta
+~H(#(jfb
+~\qu_v	T
+uxCQjtOUK! 
+\e|2tFk>
+A4,YDZmu(
+r>+H)lij
+NP0.~,Z`
+*Z=X'DT[E
+.poqE3uJ
+hwOtjA@M
+p|Y"9WtY
+l?m/]WLn
+,%@($lKJ	
+"@H<0&Eau
+_nrlocUy 
+=nAkP$();
+yytEB%/Pi
+*5w$!^\\`A
+/nlVbq" 
+&oiV^f ^
+v>#E\T0XAe
+s`Fen/zZ
+)1	}tW|!9W
+az^q;Wlk
+(p"7*kS?R
+it!ye4N5CCi
+C*NfK3aA
+Ry"`[hrz
+tiZ>cGn >
+(jUfogRx,
+FJTQ4DN|
+pZ{0-+t.
+E1-HDVe3
+YuD$'^]t
+dT_Fq[Y[
+'Gy<YB@P
+wpg(Vdb	q
+H#Z{q`Yf
+dV`E;DK~[*
+GBuA%j}3
+HiXWL1dSU.
+Hf5&^jjcC
+`x""tJFkI
+{*S(+:Yu
+f\K/mwnB
+%LJFlhIK
+Jl]=B/^t
+n]p<vb+v'
+4_nA A[S
+hFNs^!"	7r
+x</'^uTS\FL
+T<\w4OqM
+>	Sl&QW^
+J7)?7J*{;F
+1e?pE=;f$
+uR\6%{_&jI<
+HlQz Ilr
+H"Zc`4n"
+/D&G!	0W
+!	ey\V-m
+]rElP[R6g
+(WL@}]lMQ0
+ alXj<0(
+sRV d+E([
+Nx:xl0j:6
+t~diD>XelP
+BAD?JEau
+F@>1i8|1
+O=_`n6"a
+yY;9+/G\
+AsQ*yc[7
