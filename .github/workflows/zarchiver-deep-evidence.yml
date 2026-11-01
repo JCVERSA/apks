@@ -1,0 +1,90 @@
+name: ZArchiver deep evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths:
+      - '.github/workflows/zarchiver-deep-evidence.yml'
+      - '.github/scripts/zarchiver_deep_evidence.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: zarchiver-deep-evidence-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  deep:
+    name: Collect bounded full JADX evidence without executing the APK
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      APK_PATH: base.apk
+      EXPECTED_SHA256: aab078d2ea7b80e7199d2bb988772128131848c4df078ea8c55b19df7dfc16fd
+    steps:
+      - name: Check out analysis inputs
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: true
+
+      - name: Set up JDK on the GitHub runner only
+        uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00 # v4.7.1
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Verify input and run pinned static-analysis tools
+        shell: bash
+        env:
+          WORK_ROOT: ${{ runner.temp }}/zarchiver-deep
+          TOOLS_ROOT: ${{ runner.temp }}/zarchiver-tools
+        run: bash .github/scripts/zarchiver_prepare.sh
+
+      - name: Copy bounded full JADX sources and key resources
+        if: always()
+        shell: bash
+        env:
+          WORK_ROOT: ${{ runner.temp }}/zarchiver-deep
+          REPORT_DIR: ${{ runner.temp }}/zarchiver-deep/deep-reports
+        run: |
+          if [ -d "$WORK_ROOT/jadx/sources" ]; then
+            python3 .github/scripts/zarchiver_deep_evidence.py
+          else
+            echo 'JADX sources missing; skipping deep copy.' >&2
+          fi
+
+      - name: Publish bounded deep evidence to the analysis branch
+        if: always()
+        shell: bash
+        env:
+          WORK_ROOT: ${{ runner.temp }}/zarchiver-deep
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/zarchiver-deep-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          if [ -d "$WORK_ROOT/deep-reports" ]; then cp -a "$WORK_ROOT/deep-reports" "$dest/reports"; fi
+          if [ -d "$WORK_ROOT/logs" ]; then cp -a "$WORK_ROOT/logs" "$dest/logs"; fi
+          printf 'run_outcome=%s\nrun_id=%s\n' '${{ job.status }}' "$GITHUB_RUN_ID" > "$dest/run-status.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          if ! git diff --cached --quiet; then
+            git commit -m "Add ZArchiver deep evidence (run ${GITHUB_RUN_ID}) [skip ci]"
+            git fetch origin arena/7234f8d6-apks
+            git rebase FETCH_HEAD
+            git push origin HEAD:arena/7234f8d6-apks
+          fi
+
+      - name: Upload deep evidence artifact
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: zarchiver-deep-evidence
+          path: |
+            ${{ runner.temp }}/zarchiver-deep/deep-reports/
+            ${{ runner.temp }}/zarchiver-deep/logs/
+          if-no-files-found: warn
+          retention-days: 7
+          compression-level: 6
