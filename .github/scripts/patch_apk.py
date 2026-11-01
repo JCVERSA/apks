@@ -150,7 +150,56 @@ PATCHES = [
             {"old": "    if-eqz p1, :cond_3", "new": "    goto :cond_3", "count": 1}
         ],
         "required_tokens": ["goto :cond_3", ":cond_3", "->K1()V"],
-        "reason": "Skip only the PiraticalApkWarningDialogFragment branch in the upgrade screen; preserve the rest of onCreate, including K1(). Do not globally alter xi7 signature detection or the About-screen warning.",
+        "reason": "Skip the PiraticalApkWarningDialogFragment branch in the upgrade screen; preserve the rest of onCreate, including K1(). Complemented by the global xi7 gate below.",
+    },
+    {
+        "id": "official_signature_gate_false",
+        "class": "o/xi7",
+        "header": ".method public static c(Landroid/content/Context;Z)Z",
+        "body": FALSE_BODY,
+        "reason": "Global 'is not an official version' predicate returns false. This is the shared gate behind PiraticalApkWarningDialogFragment (upgrade/force-update/About) and crack telemetry, so the official-app upgrade screen cannot be triggered by certificate mismatch on any path.",
+    },
+    {
+        "id": "site_extractor_plugin_load_false",
+        "class": "com/snaptube/plugin/PluginId$2",
+        "header": ".method public load(Ljava/lang/String;)Z",
+        "body": FALSE_BODY,
+        "reason": "Pin video extraction to the bundled, patched extractor. The SITE_EXTRACTOR hot-swap plugin is loaded through a child-first DexClassLoader (o/jz5) and replaces the extractor via o/lg7.h; a server-downloaded plugin would reintroduce unpatched official-app blocking. Refusing to load it keeps the patched bundled ExtractorWrapper in charge.",
+    },
+    {
+        "id": "site_extractor_plugin_download_false",
+        "class": "com/snaptube/plugin/PluginId$2",
+        "header": ".method public shouldDownload()Z",
+        "body": FALSE_BODY,
+        "reason": "Stop downloading the SITE_EXTRACTOR hot-swap plugin so the official-app block cannot be re-delivered from the server after install. Bundled site extractors remain available.",
+    },
+    {
+        "id": "extractor_warning_helper_c_false",
+        "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+        "header": ".method public final c(Landroid/content/Context;)Z",
+        "body": FALSE_BODY,
+        "reason": "Disable the extractor official-warning decision helper directly, independent of the h() boundary and of the signature oracle, so no caller can schedule the 'Please Install the Official' dialog.",
+    },
+    {
+        "id": "extractor_warning_helper_i_false",
+        "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+        "header": ".method public final i(Landroid/content/Context;)Z",
+        "body": FALSE_BODY,
+        "reason": "Force the nested 'should warn' predicate false so the extractor warning helper cannot be re-enabled by certificate/state checks.",
+    },
+    {
+        "id": "extractor_warning_helper_j_false",
+        "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+        "header": ".method public final j(Landroid/content/Context;)Z",
+        "body": FALSE_BODY,
+        "reason": "Force the certificate-comparison warning predicate false (it compares the APK signer SHA-1 to the official wandoujia cert), removing the last input that could raise the extractor official-app warning.",
+    },
+    {
+        "id": "crack_exit_toast_void",
+        "class": "com/snaptube/premium/activity/ExploreActivity",
+        "header": ".method public final m1(Landroid/content/Context;Z)V",
+        "body": VOID_BODY,
+        "reason": "Neutralize the EXIT_FOR_CRACK handler: it only shows the update_for_crack/debug_not_allowed toast and schedules a delayed process exit. Making it a no-op prevents the crack/official exit path from interrupting downloads.",
     },
 ]
 
@@ -288,7 +337,7 @@ def main() -> None:
     bt = Path(os.environ["BUILD_TOOLS_BIN"]).resolve()
     out_dir = Path(os.environ.get("OUTPUT_DIR", work / "outputs")).resolve()
     report = Path(os.environ.get("REPORT_DIR", work / "patch-report")).resolve()
-    label = os.environ.get("PATCH_LABEL", "adfree-noforce-no-official-popup")
+    label = os.environ.get("PATCH_LABEL", "adfree-noforce-official-removed")
     for p in (work, out_dir, report, report / "logs", report / "patches"):
         p.mkdir(parents=True, exist_ok=True)
 
@@ -419,9 +468,9 @@ def main() -> None:
         "original": {"path": str(apk), "sha256": original_hash, "size_bytes": apk.stat().st_size, "zip_members": original_members, "metadata": orig_meta},
         "patched": {"path": str(patched), "filename": patched.name, "sha256": patched_hash, "size_bytes": patched.stat().st_size, "zip_members": patched_members, "metadata": patched_meta},
         "patched_method_count": len(PATCHES),
-        "revision": 2,
-        "scope": ["disable app ad gates", "block forced update", "suppress official-app warning at video extraction and upgrade dialog"],
-        "official_warning_note": "The original extractor helper already contained an early false return. Revision 2 explicitly disables the extractor boundary and known dialog show path, and skips the upgrade-screen warning branch. Runtime cause is not device-confirmed; xi7 certificate detection/reporting is unchanged.",
+        "revision": 3,
+        "scope": ["disable app ad gates", "block forced update", "remove official-app warning at video extraction and upgrade/crack paths", "pin bundled extractor by disabling the server-delivered SITE_EXTRACTOR hot-swap plugin"],
+        "official_warning_note": "Root cause: the input is an ApkSignatureKillerEx repack whose embedded google/origin.apk is only a signature oracle (native open() redirect + PackageManager spoof), not executed code. The permanence hole was the hot-swappable SITE_EXTRACTOR plugin, loaded child-first and able to re-deliver unpatched official-app blocking from the server. Revision 3 keeps the revision-1/2 ad/force-update/warning patches, forces the shared xi7 official-check false, disables SITE_EXTRACTOR download+load so the patched bundled extractor stays in charge, fully disables the extractor warning helper (c/i/j), and neutralizes the EXIT_FOR_CRACK toast/exit. The embedded origin.apk is intentionally left byte-for-byte intact to preserve the signature oracle. No device testing performed.",
         "changed_smali_files": actually_changed,
         "identity_checks": identity_checks,
         "roundtrip_checks_ok": all(r["ok"] for r in roundtrip),

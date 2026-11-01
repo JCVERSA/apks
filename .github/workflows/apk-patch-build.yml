@@ -78,7 +78,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: snaptube-patched-apk-no-official-popup
+          name: snaptube-patched-apk-official-removed
           path: |
             ${{ env.OUTPUT_DIR }}/*.apk
             ${{ env.REPORT_DIR }}
@@ -95,9 +95,9 @@ jobs:
           test -n "$apk"
           tag="snaptube-patched-${GITHUB_RUN_ID}"
           sha="$(sha256sum "$apk" | awk '{print $1}')"
-          notes="$(printf 'Minimally patched SnapTube %s — revision 2.\n\nChanges: retain app-ad and forced-update suppression; explicitly suppress the official-app warning at the video-extraction boundary and its known show path; skip the official-version warning branch in the upgrade screen. Normal video extraction is not replaced or bypassed.\nOriginal APK preserved unchanged. Certificate detection/reporting (xi7) is unchanged.\nSHA-256: %s\n\nWARNING: signed with a NEW ephemeral key, different from both the original app and the previous patched release. It cannot install over either. Uninstalling first may erase app data. No device testing was performed; website/remote-plugin screens may differ.\n\nEvidence: analysis/remote/patch-%s in the repository.\n' '7.52.0.75250210' "$sha" "$GITHUB_RUN_ID")"
+          notes="$(printf 'Patched SnapTube %s — revision 3 (official-app screen removed).\n\nChanges: retain all revision-1/2 ad and forced-update suppression and official-warning patches; force the shared xi7 official-version check false; disable download+load of the server-delivered SITE_EXTRACTOR hot-swap plugin so the patched bundled extractor stays in charge (this was the permanence hole); fully disable the extractor official-warning helper (c/i/j); neutralize the EXIT_FOR_CRACK toast/exit path. The embedded google/origin.apk signature oracle is left byte-for-byte intact. Normal video extraction logic is preserved.\nOriginal APK preserved unchanged.\nSHA-256: %s\n\nWARNING: signed with a NEW ephemeral key, different from the original app and every previous patched release. It cannot install over them. Uninstall first (may erase app data). No device testing was performed.\n\nEvidence: analysis/remote/patch-%s in the repository.\n' '7.52.0.75250210' "$sha" "$GITHUB_RUN_ID")"
           gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
-            --title "SnapTube revision 2 — no official-app download popup — run ${GITHUB_RUN_ID}" \
+            --title "SnapTube revision 3 — official-app screen removed — run ${GITHUB_RUN_ID}" \
             --notes "$notes" "$apk" "$REPORT_DIR/build-report.json"
           url="https://github.com/${GITHUB_REPOSITORY}/releases/download/${tag}/$(basename "$apk")"
           echo "RELEASE_APK_URL=$url" >> "$GITHUB_ENV"
