@@ -1,0 +1,132 @@
+--- a/smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali
++++ b/smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali
+@@ -1,127 +1,8 @@
+ .method public static l1(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z
+-    .locals 5
++    .locals 1
+ 
+-    const-string v0, "IAdsManager"
+ 
+-    invoke-static {v0}, Lo/zh4;->b(Ljava/lang/String;)Lo/vd3;
++    const/4 v0, 0x0
+ 
+-    move-result-object v0
+-
+-    check-cast v0, Lo/ba3;
+-
+-    const/4 v1, 0x0
+-
+-    if-eqz p0, :cond_4
+-
+-    invoke-interface {v0}, Lo/ba3;->h()Z
+-
+-    move-result v2
+-
+-    if-nez v2, :cond_0
+-
+-    goto :goto_2
+-
+-    :cond_0
+-    invoke-interface {v0}, Lo/ba3;->b()Lo/ne3;
+-
+-    move-result-object v0
+-
+-    invoke-interface {v0, p2}, Lo/x93;->a(Ljava/lang/String;)Z
+-
+-    move-result v0
+-
+-    if-eqz v0, :cond_4
+-
+-    const/4 v0, 0x1
+-
+-    :try_start_0
+-    invoke-static {p0}, Lo/c7;->a(Landroid/content/Context;)Lo/b7;
+-
+-    move-result-object v1
+-
+-    invoke-virtual {v1, p2}, Lo/b7;->a(Ljava/lang/String;)Lo/h9;
+-
+-    move-result-object v1
+-
+-    if-eqz v1, :cond_1
+-
+-    iget-object v1, v1, Lo/h9;->c:Lnet/pubnative/mediation/request/model/PubnativeAdModel;
+-
+-    goto :goto_0
+-
+-    :cond_1
+-    const/4 v1, 0x0
+-
+-    :goto_0
+-    if-eqz v1, :cond_3
+-
+-    sget-object v2, Lcom/snaptube/ads/activity/SplashAdActivity;->n:Ljava/util/List;
+-
+-    invoke-virtual {v1}, Lnet/pubnative/mediation/request/model/PubnativeAdModel;->getAdForm()Lcom/snaptube/ads_log_v2/AdForm;
+-
+-    move-result-object v3
+-
+-    invoke-interface {v2, v3}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+-
+-    move-result v2
+-
+-    if-eqz v2, :cond_3
+-
+-    const-string v2, "trigger_tag"
+-
+-    invoke-virtual {v1, v2, p1}, Lnet/pubnative/mediation/request/model/PubnativeAdModel;->putExtras(Ljava/lang/String;Ljava/lang/Object;)V
+-
+-    if-eqz p3, :cond_2
+-
+-    invoke-interface {p3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+-
+-    move-result-object v2
+-
+-    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+-
+-    move-result-object v2
+-
+-    :goto_1
+-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+-
+-    move-result v3
+-
+-    if-eqz v3, :cond_2
+-
+-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+-
+-    move-result-object v3
+-
+-    check-cast v3, Ljava/util/Map$Entry;
+-
+-    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+-
+-    move-result-object v4
+-
+-    check-cast v4, Ljava/lang/String;
+-
+-    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+-
+-    move-result-object v3
+-
+-    invoke-virtual {v1, v4, v3}, Lnet/pubnative/mediation/request/model/PubnativeAdModel;->putExtras(Ljava/lang/String;Ljava/lang/Object;)V
+-    :try_end_0
+-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+-
+-    goto :goto_1
+-
+-    :cond_2
+     return v0
+-
+-    :catch_0
+-    :cond_3
+-    invoke-static {p0, v0, p1, p2, p3}, Lcom/snaptube/ads/activity/SplashAdActivity;->h1(Landroid/content/Context;ZLjava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z
+-
+-    move-result p0
+-
+-    return p0
+-
+-    :cond_4
+-    :goto_2
+-    return v1
+ .end method

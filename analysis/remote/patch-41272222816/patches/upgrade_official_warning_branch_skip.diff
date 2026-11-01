@@ -1,0 +1,11 @@
+--- a/smali_classes4/com/snaptube/premium/selfupgrade/BaseUpgradeActivity.smali
++++ b/smali_classes4/com/snaptube/premium/selfupgrade/BaseUpgradeActivity.smali
+@@ -107,7 +107,7 @@
+ 
+     move-result p1
+ 
+-    if-eqz p1, :cond_3
++    goto :cond_3
+ 
+     new-instance p1, Lcom/snaptube/premium/dialog/PiraticalApkWarningDialogFragment;
+ 
