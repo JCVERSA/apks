@@ -1,0 +1,41 @@
+analysis_utc=2026-11-01T07:47:02Z
+repo_root=/home/runner/work/apks/apks
+work_root=/home/runner/work/_temp/zarchiver-analysis
+tools_root=/home/runner/work/_temp/zarchiver-tools
+Linux runnervm48cm3 7.0.0-1017-azure #17~24.04.1-Ubuntu SMP PREEMPT Thu Sep 24 18:46:57 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+CPU/memory/disk:
+4
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       1.1Gi        13Gi        42Mi       1.2Gi        14Gi
+Swap:          3.0Gi          0B       3.0Gi
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       145G   59G   86G  41% /
+
+Resolved base tools:
+/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64/bin/java
+/usr/bin/python3
+/usr/bin/curl
+/usr/bin/unzip
+/usr/bin/file
+/usr/bin/readelf
+/usr/bin/strings
+zipalign: not found
+apktool_jar=/home/runner/work/_temp/zarchiver-tools/apktool_3.0.3.jar
+jadx_cli=/home/runner/work/_temp/zarchiver-tools/jadx-1.5.6/bin/jadx
+sdk_root=/usr/local/lib/android/sdk
+build_tools_dir=/usr/local/lib/android/sdk/build-tools/37.0.0
+apkanalyzer=/usr/local/lib/android/sdk/cmdline-tools/latest/bin/apkanalyzer

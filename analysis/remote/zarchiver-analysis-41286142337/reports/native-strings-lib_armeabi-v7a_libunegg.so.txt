@@ -1,0 +1,707 @@
+__cxa_finalize
+libunegg.so
+__cxa_atexit
+__stack_chk_fail
+__stack_chk_guard
+__aeabi_memcpy
+__aeabi_memmove4
+_ZNSt6vectorIjSaIjEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPjS1_EEjRKj
+_ZNSt6vectorIjSaIjEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPjS1_EERKj
+__cxa_begin_catch
+_ZSt9terminatev
+__aeabi_memclr4
+_ZNSt11_Deque_baseIiSaIiEED2Ev
+_ZNSt11_Deque_baseIiSaIiEE17_M_initialize_mapEj
+_ZNSt11_Deque_baseIiSaIiEE15_M_create_nodesEPPiS3_
+__cxa_rethrow
+__cxa_end_catch
+_ZNSt11_Deque_baseIiSaIiEE16_M_destroy_nodesEPPiS3_
+_ZStmiIiRiPiENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKS6_S9_
+_ZSt22__uninitialized_copy_aISt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEiET0_T_S9_S8_RSaIT1_E
+_ZSt18uninitialized_copyISt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET0_T_S9_S8_
+_ZSt4copyISt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET0_T_S9_S8_
+_ZSt14__copy_move_a2ILb0ESt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET1_T0_S9_S8_
+_ZSt13__copy_move_aILb0ESt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET1_T0_S9_S8_
+_ZNSt5dequeIiSaIiEE16_M_push_back_auxERKi
+_ZNSt5dequeIiSaIiEE17_M_reallocate_mapEjb
+_ZNSt5dequeIiSaIiEE15_M_pop_back_auxEv
+_ZNSt6vectorIySaIyEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPyS1_EERKy
+__aeabi_memmove8
+__cxa_pure_virtual
+__aeabi_memclr8
+snprintf
+inflateInit2_
+inflateEnd
+_ZN3AZO9Allocator9freeFunc_E
+_ZN3AZO9Allocator10allocFunc_E
+_ZN3AZO9Allocator7opaque_E
+_ZnajRKSt9nothrow_t
+_ZSt7nothrow
+__aeabi_memcpy4
+__aeabi_memmove
+__aeabi_memclr
+iswctype
+towlower
+towupper
+__aeabi_memcpy8
+_Z7za_openPKci
+_Z8za_closeP6ZAFILE
+_Z8za_lseekP6ZAFILExi
+_Z7za_readP6ZAFILEPvj
+_Z7za_sizeP6ZAFILE
+_Z15android_io_openPKci
+__android_log_print
+jGetStatus
+jSetProcessText
+jGetTaskFlags
+jFileExtracted
+jShowMessage
+_Z16android_io_mkdirPKc
+jAskOverwrite
+_Z15android_io_statPKcP4stat
+jGetPassword
+jSetProcessPercent
+jSetComment
+_Z11al_add_filePKcixii
+jArchiveInfo
+egg_main
+_ZTISt9bad_alloc
+_ZTSSt9bad_alloc
+_ZTSSt9exception
+_ZTISt9exception
+_ZTVN10__cxxabiv117__class_type_infoE
+_ZTVN10__cxxabiv120__si_class_type_infoE
+archive_open
+sem_init
+archive_cancel
+archive_close
+archive_stream_get
+strerror
+pthread_create
+sem_wait
+sem_post
+pthread_join
+bsd_signal
+clock_gettime
+sem_timedwait
+pthread_exit
+archive_item_get_index
+archive_item_get_count
+archive_item_get
+archive_item_delete
+archive_item_add
+archive_item_rename
+archive_comment_set
+sem_destroy
+_ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PPv
+_ZNK10__cxxabiv117__class_type_info20__do_find_public_srcEiPKvPKS0_S2_
+_ZN10__cxxabiv117__class_type_infoD2Ev
+_ZN10__cxxabiv117__class_type_infoD1Ev
+_ZN10__cxxabiv117__class_type_infoD0Ev
+_ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PKvRNS0_15__upcast_resultE
+_ZNK10__cxxabiv117__class_type_info10__do_catchEPKSt9type_infoPPvj
+_ZNK10__cxxabiv117__class_type_info12__do_dyncastEiNS0_10__sub_kindEPKS0_PKvS3_S5_RNS0_16__dyncast_resultE
+_ZTSN10__cxxabiv117__class_type_infoE
+_ZTIN10__cxxabiv117__class_type_infoE
+__cxa_get_exception_ptr
+__cxa_get_globals
+__cxa_end_cleanup
+__cxa_call_unexpected
+__cxa_get_globals_fast
+_ZSt18uncaught_exceptionv
+pthread_key_delete
+pthread_key_create
+pthread_setspecific
+pthread_getspecific
+__cxa_begin_cleanup
+_ZSt10unexpectedv
+__cxa_type_match
+_ZN10__cxxabiv111__terminateEPFvvE
+_ZSt13set_terminatePFvvE
+_ZN10__cxxabiv119__terminate_handlerE
+_ZSt13get_terminatev
+_ZN10__cxxabiv112__unexpectedEPFvvE
+_ZSt14set_unexpectedPFvvE
+_ZN10__cxxabiv120__unexpected_handlerE
+_ZSt14get_unexpectedv
+__cxa_free_exception
+__cxa_throw
+_ZSt15set_new_handlerPFvvE
+_ZSt15get_new_handlerv
+__cxa_allocate_exception
+_ZTVSt9bad_alloc
+_ZNSt9bad_allocD1Ev
+_ZnwjRKSt9nothrow_t
+__cxa_deleted_virtual
+_ZN10__cxxabiv120__si_class_type_infoD2Ev
+_ZN10__cxxabiv120__si_class_type_infoD1Ev
+_ZN10__cxxabiv120__si_class_type_infoD0Ev
+_ZNK10__cxxabiv120__si_class_type_info20__do_find_public_srcEiPKvPKNS_17__class_type_infoES2_
+_ZNK10__cxxabiv120__si_class_type_info12__do_dyncastEiNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
+_ZNK10__cxxabiv120__si_class_type_info11__do_upcastEPKNS_17__class_type_infoEPKvRNS1_15__upcast_resultE
+_ZTSN10__cxxabiv120__si_class_type_infoE
+_ZTIN10__cxxabiv120__si_class_type_infoE
+_ZTIN10__cxxabiv115__forced_unwindE
+_ZTVN10__cxxabiv121__vmi_class_type_infoE
+setlocale
+vsprintf
+wmemmove
+__dynamic_cast
+__cxa_bad_cast
+strftime
+wcsftime
+_ZSt14__convert_to_vIeEvPKcRT_RSt12_Ios_IostateRKPi
+_ZSt14__convert_to_vIfEvPKcRT_RSt12_Ios_IostateRKPi
+_ZSt14__convert_to_vIdEvPKcRT_RSt12_Ios_IostateRKPi
+_ZNSt9exceptionD2Ev
+__cxa_guard_acquire
+__cxa_guard_release
+pthread_mutex_unlock
+pthread_mutex_lock
+pthread_once
+_ZTVSt13bad_exception
+_ZTISt13bad_exception
+_ZNSt13bad_exceptionD1Ev
+_ZTVSt8bad_cast
+_ZTISt8bad_cast
+_ZNSt8bad_castD1Ev
+_ZTVSt10bad_typeid
+_ZTISt10bad_typeid
+_ZNSt10bad_typeidD1Ev
+_ZNSt15__exception_ptr13exception_ptrC1Ev
+_ZNSt15__exception_ptr13exception_ptrD1Ev
+_ZNKSt9bad_alloc4whatEv
+_ZNSt9bad_allocD2Ev
+_ZNSt9bad_allocD0Ev
+_ZNKSt8bad_cast4whatEv
+_ZNSt8bad_castD2Ev
+_ZNSt8bad_castD0Ev
+_ZTSSt8bad_cast
+_ZNKSt10bad_typeid4whatEv
+_ZNSt10bad_typeidD2Ev
+_ZNSt10bad_typeidD0Ev
+_ZTSSt10bad_typeid
+__cxa_allocate_dependent_exception
+__cxa_free_dependent_exception
+__gnu_end_cleanup
+_ZTIN10__cxxabiv119__foreign_exceptionE
+__cxa_bad_typeid
+__cxa_throw_bad_array_new_length
+_ZTVSt20bad_array_new_length
+_ZTISt20bad_array_new_length
+_ZNSt20bad_array_new_lengthD1Ev
+__cxa_throw_bad_array_length
+_ZTVSt16bad_array_length
+_ZTISt16bad_array_length
+_ZNSt16bad_array_lengthD1Ev
+_ZNSt9exceptionD1Ev
+_ZNSt13bad_exceptionD2Ev
+_ZNKSt9exception4whatEv
+_ZNKSt13bad_exception4whatEv
+_ZNSt9exceptionD0Ev
+_ZNSt13bad_exceptionD0Ev
+_ZN10__cxxabiv115__forced_unwindD2Ev
+_ZN10__cxxabiv115__forced_unwindD1Ev
+_ZN10__cxxabiv115__forced_unwindD0Ev
+_ZN10__cxxabiv119__foreign_exceptionD2Ev
+_ZN10__cxxabiv119__foreign_exceptionD1Ev
+_ZN10__cxxabiv119__foreign_exceptionD0Ev
+_ZTSSt13bad_exception
+_ZTSN10__cxxabiv115__forced_unwindE
+_ZTSN10__cxxabiv119__foreign_exceptionE
+_ZTVSt9exception
+_ZTVN10__cxxabiv115__forced_unwindE
+_ZTVN10__cxxabiv119__foreign_exceptionE
+_ZNSt15__exception_ptr13exception_ptr18_M_safe_bool_dummyEv
+_ZNSt15__exception_ptr13exception_ptrC2Ev
+_ZNSt15__exception_ptr13exception_ptrC2EMS0_FvvE
+_ZNSt15__exception_ptr13exception_ptrC1EMS0_FvvE
+_ZNSt15__exception_ptr13exception_ptr9_M_addrefEv
+_ZNSt15__exception_ptr13exception_ptrC2EPv
+_ZNSt15__exception_ptr13exception_ptrC1EPv
+_ZNSt15__exception_ptr13exception_ptrC2ERKS0_
+_ZNSt15__exception_ptr13exception_ptrC1ERKS0_
+_ZNSt15__exception_ptr13exception_ptr10_M_releaseEv
+_ZNSt15__exception_ptr13exception_ptrD2Ev
+_ZNKSt15__exception_ptr13exception_ptr6_M_getEv
+_ZNSt15__exception_ptr13exception_ptr4swapERS0_
+_ZNSt15__exception_ptr13exception_ptraSERKS0_
+_ZNKSt15__exception_ptr13exception_ptrntEv
+_ZNKSt15__exception_ptr13exception_ptrcvMS0_FvvEEv
+_ZNKSt15__exception_ptr13exception_ptr20__cxa_exception_typeEv
+_ZNSt15__exception_ptreqERKNS_13exception_ptrES2_
+_ZNSt15__exception_ptrneERKNS_13exception_ptrES2_
+_ZSt17current_exceptionv
+_ZSt17rethrow_exceptionNSt15__exception_ptr13exception_ptrE
+_ZN9__gnu_cxx27__verbose_terminate_handlerEv
+__google_potentially_blocking_region_begin
+__google_potentially_blocking_region_end
+_ZTVN9__gnu_cxx20recursive_init_errorE
+_ZTIN9__gnu_cxx20recursive_init_errorE
+_ZN9__gnu_cxx20recursive_init_errorD1Ev
+__cxa_guard_abort
+_ZN9__gnu_cxx20recursive_init_errorD2Ev
+_ZN9__gnu_cxx20recursive_init_errorD0Ev
+_ZTSN9__gnu_cxx20recursive_init_errorE
+_ZN10__cxxabiv121__vmi_class_type_infoD2Ev
+_ZN10__cxxabiv121__vmi_class_type_infoD1Ev
+_ZN10__cxxabiv121__vmi_class_type_infoD0Ev
+_ZNK10__cxxabiv121__vmi_class_type_info20__do_find_public_srcEiPKvPKNS_17__class_type_infoES2_
+_ZNK10__cxxabiv121__vmi_class_type_info12__do_dyncastEiNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
+_ZNK10__cxxabiv121__vmi_class_type_info11__do_upcastEPKNS_17__class_type_infoEPKvRNS1_15__upcast_resultE
+_ZTSN10__cxxabiv121__vmi_class_type_infoE
+_ZTIN10__cxxabiv121__vmi_class_type_infoE
+__cxa_current_exception_type
+__cxa_demangle
+_ZNKSt16bad_array_length4whatEv
+_ZNSt16bad_array_lengthD2Ev
+_ZNSt16bad_array_lengthD0Ev
+_ZTSSt16bad_array_length
+_ZNKSt20bad_array_new_length4whatEv
+_ZNSt20bad_array_new_lengthD2Ev
+_ZNSt20bad_array_new_lengthD0Ev
+_ZTSSt20bad_array_new_length
+__gcclibcxx_demangle_callback
+__bss_start
+__gnu_Unwind_Find_exidx
+libhandler.so
+libiconv.so
+liblog.so
+libdl.so
+libstdc++.so
+	H!F	JxDzD
+	H!F	JxDzD
+	L	H|D	IxD"FyD'
+F!IyD	h	h
+!)T F)F&
+vector::_M_fill_insert
+F5H6I%FxDyD
+ hCj F1F*F
+vector::_M_insert_aux
+m(FYF2F;F
+tjAFRF F
+	Dm(FYF2F;F
+%s.vol%zu.egg
+vector::_M_insert_aux
+	"QFCj0F
+F0hAF:FCj0F
+0F3j!FBF
+3j0F!FBF
+ {0x%08x, 0x%08x}
+    combined CRCs: stored = 0x%08x, computed = 0x%08x
+    [%d: huff+mtf 
+%P{@k@C@
+#0n@s@WbK@
+"yD	h	hV
+hw@{@k@O
+1\:\Q@9T
+&ii.a Fbh
+nF F1F*F
+EGG argc %d, %d
+EGG argv %s
+Invalid request
+Not ready
+Writing I/O error
+Reading I/O error
+I/O error
+Undefined error
+%s(%u)%s
+0F!FBFKF
+Internal error
+open: fail to open %s archive %d %d
+open: fail to get info
+f`f f Fp
+get_stream: could not create pipe (%s)
+get_stream: failed to start stream. Error %d
+get_stream: extract stream don't start out (%d)
+unegg_thread: start
+unegg_thread: cancel of return stream
+unegg_thread: exit
+item_get: fail to get file info
++h9F2F(F
+G"N#*pU"kpC#
+pO#*qR"kq
+F+`!F:FO
+HF9F"F3F
+F"FHF9F3F
+1F.hZFSF(F
+,h9FRF3F(F
+`{i:isa2a;
+%h F1FZFSF
+%h F1FZFSF
++hAF(F:F
+$0F5`4q&
++hQF(F2F
++haF(FBF
++haF(FBF
++haF(FBF
++hQF(F2F
+`;m{a{m;a
+pIFZFCFPF
+*h(FAFCFR
+;F:F0F'a}D
+F_`~D(Xw`
+#h-H+`xD
+:J.#kt,&
+:J.#kt,&
+$H"FyD	h
+%xD.'	h,&
+D~K~D~H}D~I{D~JxD
+DnM~DnH{DnI}D
+D`H~D`I}D`JxD
+D~K~D~H}D~I{D~JxD
+DnM~DnH{DnI}D
+D`H~D`I}D`JxD
+F;`!F2FO
+( HF1F"F+F
+F"FHF1F+F
++hAF(F2F
+G>i(F.!2F
+*h(FAFCFR
+FNFx` F)F
+1F;F@F$j
+|D$h#h F
+*I@F*FyD
+;h8F"hAF%F
+;h8F"hAF%F
+u0ba#g#ap
+x0ba#g#ap
+4cDDa\B\AHBHA C
+.IyD81Ni
+.;ZBZAcF
+jBjAsBsA`D
+_FVFMFDF
+;vIcD#c8
+F;!JFCF 
+;cD#c@FyD
+hMFDF_FVF
+;SIcD#c8
+V9r;NBNAYBYA
+FcDk`#k	3#c>
+#fkccCxL+
+KFcaCF%c
+;nIcD#c8
+G#h`+`bj#j
+U;YBYAcF
+E:WBWAKBKA;C$
+DF_FVFMF
+;cD#c@FyD
+`ekccKxL+
+;cD#cHFyD
+;qIcD#c8
+F8!RFKF 
+;MIcD#c8
+FcD#c@FyD
+FcD#c@FyD
+VFMFDF_F
+jhvKQh{D
+x ?yByAW
+PF XJh`DB`8`	h
+P-##pi#cpn'
+P[#a"#pbp
+P_##pF#cpr%
+P{##pp#cpa&
+Pt##ph#cpi&
+P_##pA#cpc%
+P_##pS#cpa'
+!PZFPFB`
+hVFMFDF_F
+MF_FDFVF
+P}#:"+pjp
+_FVFMFDF
+VF_FMFDF
+vector::_M_insert_aux
+bzip2/libbzip2: internal error number %d.
+This is a bug in bzip2/libbzip2, %s.
+Please report it to me at: jseward@bzip.org.  If this happened
+when you were using some program which uses libbzip2 as a
+component, you should also report this bug to the author(s)
+of that program.  Please make an effort to report this bug;
+timely and accurate bug reports eventually lead to higher
+quality software.  Thanks.  Julian Seward, 10 December 2007.
+*** A special note about internal error number 1007 ***
+Experience suggests that a common cause of i.e. 1007
+is unreliable memory or other hardware.  The 1007 assertion
+just happens to cross-check the results of huge numbers of
+memory reads/writes, and so acts (unintendedly) as a stress
+test of your memory system.
+I suggest the following: try compressing the file again,
+possibly monitoring progress in detail with the -vv flag.
+* If the error cannot be reproduced, and/or happens at different
+  points in compression, you may have a flaky memory system.
+  Try a memory-test program.  I have used Memtest86
+  (www.memtest86.com).  At the time of writing it is free (GPLd).
+  Memtest86 tests memory much more thorougly than your BIOSs
+  power-on test, and may find failures that the BIOS doesn't.
+* If the error can be repeatably reproduced, this is a bug in
+  bzip2, and I would very much like to hear about it.  Please
+  let me know, and, ideally, save a copy of the file causing the
+  problem -- without which I will be unable to investigate it.
+1.0.6, 6-Sept-2010
+SEQUENCE_ERROR
+PARAM_ERROR
+MEM_ERROR
+DATA_ERROR
+DATA_ERROR_MAGIC
+IO_ERROR
+UNEXPECTED_EOF
+OUTBUFF_FULL
+CONFIG_ERROR
+%s / %d.%d
+get_stream: open stream %d
+L&&jl66Z~??A
+D""fT**~;
+;d22Vt::N
+J%%o\..r8
+jL&&Zl66A~??
+fD""~T**
+Vd22Nt::
+xxoJ%%r\..$8
+&jL&6Zl6?A~?
+"fD"*~T*
+2Vd2:Nt:
+x%oJ%.r\.
+=&&jL66Zl??A~
+""fD**~T
+22Vd::Nt
+%%oJ..r\
+8$4,6-9'$6.:*?#1pHhX~AeSlZrNbS
+EHl\tFeQ
+T~FbZwKi
+,8$4'6-9:$6.1*?#XpHhS~AeNlZrEbS
+FeQbT~FiZwK
+4,8$9'6-.:$6#1*?hXpHeS~ArNlZ
+EbS\tHlQ
+FeFbT~KiZw
+$4,8-9'66.:$?#1*HhXpAeS~ZrNlS
+Ebl\tHeQ
+F~FbTwKiZ
+St9bad_alloc
+St9exception
+N10__cxxabiv117__class_type_infoE
+pure virtual method called
+deleted virtual method called
+%s: __pos (which is %zu) > this->size() (which is %zu)
+basic_string::erase
+%m/%d/%y
+%H:%M:%S
+__gnu_cxx::__concurrence_lock_error
+__gnu_cxx::__concurrence_unlock_error
+locale::_S_normalize_category category not found
+locale::_Impl::_M_replace_facet
+-+xX0123456789abcdef0123456789ABCDEF
+-+xX0123456789abcdefABCDEF
+-0123456789
+Wednesday
+Thursday
+Saturday
+February
+September
+November
+December
+not enough space for format expansion (Please submit full bug report at http://gcc.gnu.org/bugs.html):
+basic_string::_S_create
+basic_string::append
+basic_string::at: __n (which is %zu) >= this->size() (which is %zu)
+basic_string::copy
+basic_string::compare
+basic_string::_M_replace_aux
+basic_string::assign
+basic_string::insert
+basic_string::resize
+basic_string::replace
+basic_string::_S_construct null not valid
+basic_string::basic_string
+basic_string::substr
+std::bad_alloc
+std::bad_cast
+std::bad_typeid
+std::exception
+std::bad_exception
+terminate called recursively
+terminate called after throwing an instance of '
+terminate called without an active exception
+  what():  
+locale::facet::_S_create_c_locale name not valid
+LC_CTYPE
+LC_NUMERIC
+LC_COLLATE
+LC_MONETARY
+LC_MESSAGES
+basic_ios::clear
+std::bad_array_length
+std::bad_array_new_length
+_GLOBAL_
+(anonymous namespace)
+string literal
+{default arg#
+vtable for 
+VTT for 
+construction vtable for 
+typeinfo for 
+typeinfo name for 
+typeinfo fn for 
+non-virtual thunk to 
+virtual thunk to 
+covariant return thunk to 
+java Class for 
+guard variable for 
+TLS init function for 
+TLS wrapper function for 
+reference temporary #
+hidden alias for 
+transaction clone for 
+non-transaction clone for 
+operator
+operator 
+java resource 
+decltype (
+global constructors keyed to 
+global destructors keyed to 
+{lambda(
+{unnamed type#
+ [clone 
+ restrict
+ volatile
+complex 
+imaginary 
+ __vector(
+std::allocator
+allocator
+std::basic_string
+basic_string
+std::string
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >
+std::istream
+std::basic_istream<char, std::char_traits<char> >
+basic_istream
+std::ostream
+std::basic_ostream<char, std::char_traits<char> >
+basic_ostream
+std::iostream
+std::basic_iostream<char, std::char_traits<char> >
+basic_iostream
+alignof 
+const_cast
+delete[] 
+dynamic_cast
+operator"" 
+reinterpret_cast
+static_cast
+signed char
+long double
+__float128
+unsigned char
+unsigned int
+unsigned
+unsigned long
+__int128
+unsigned __int128
+unsigned short
+long long
+unsigned long long
+decimal32
+decimal64
+decimal128
+char16_t
+char32_t
+decltype(nullptr)
+N10__cxxabiv120__si_class_type_infoE
+St9type_info
+St13basic_istreamIwSt11char_traitsIwEE
+St9time_base
+St10ctype_base
+St10money_base
+St13messages_base
+St12codecvt_base
+St7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE
+St9money_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE
+St16__numpunct_cacheIcE
+St11__timepunctIcE
+St9money_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE
+St18__moneypunct_cacheIcLb1EE
+St7num_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE
+St8time_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE
+St8messagesIcE
+St8numpunctIcE
+St10moneypunctIcLb0EE
+St8time_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE
+St7collateIcE
+St10moneypunctIcLb1EE
+St18__moneypunct_cacheIcLb0EE
+St17__timepunct_cacheIcE
+St23__codecvt_abstract_baseIcc9mbstate_tE
+N9__gnu_cxx24__concurrence_lock_errorE
+N9__gnu_cxx26__concurrence_unlock_errorE
+NSt6locale5facetE
+N9__gnu_cxx18stdio_sync_filebufIwSt11char_traitsIwEEE
+N9__gnu_cxx18stdio_sync_filebufIcSt11char_traitsIcEEE
+St13basic_ostreamIwSt11char_traitsIwEE
+St15basic_streambufIwSt11char_traitsIwEE
+St15basic_streambufIcSt11char_traitsIcEE
+St10moneypunctIwLb0EE
+St10moneypunctIwLb1EE
+St18__moneypunct_cacheIwLb0EE
+St9money_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE
+St7num_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE
+St7collateIwE
+St17__timepunct_cacheIwE
+St7num_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE
+St18__moneypunct_cacheIwLb1EE
+St23__codecvt_abstract_baseIwc9mbstate_tE
+St8messagesIwE
+St16__numpunct_cacheIwE
+St21__ctype_abstract_baseIwE
+St11__timepunctIwE
+St8time_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE
+St9money_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE
+St8numpunctIwE
+St8time_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE
+*N12_GLOBAL__N_121system_error_categoryE
+St14error_category
+*N12_GLOBAL__N_122generic_error_categoryE
+St9bad_alloc
+St8bad_cast
+St10bad_typeid
+N10__cxxabiv115__forced_unwindE
+N10__cxxabiv119__foreign_exceptionE
+St9exception
+St13bad_exception
+N9__gnu_cxx20recursive_init_errorE
+N10__cxxabiv121__vmi_class_type_infoE
+St7codecvtIwc9mbstate_tE
+St7codecvtIcc9mbstate_tE
+St5ctypeIcE
+St5ctypeIwE
+St9basic_iosIwSt11char_traitsIwEE
+St9basic_iosIcSt11char_traitsIcEE
+St8ios_base
+NSt8ios_base7failureE
+St13runtime_error
+St12out_of_range
+St11logic_error
+St12length_error
+St16bad_array_length
+St20bad_array_new_length
+GCC: (GNU) 4.9.x 20150123 (prerelease)
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
+gold 1.12
+cortex-a8
+.init_array
+.fini_array
+.ARM.exidx
+.comment
+.note.android.ident
+.rel.plt
+.ARM.attributes
+.gnu.version_r
+.data.rel.ro
+.rel.dyn
+.gnu.version
+.note.gnu.gold-version
+.data.rel.ro.local
+.note.gnu.build-id
+.gnu.version_d
+.dynamic
+.ARM.extab
+.shstrtab

@@ -1,0 +1,100 @@
+/system/bin/linker
+__libc_init
+__cxa_atexit
+__stack_chk_fail
+__stack_chk_guard
+vfprintf
+snprintf
+closedir
+readlink
+strerror
+__bss_start
+__gnu_Unwind_Find_exidx
+__cxa_begin_cleanup
+__cxa_type_match
+__cxa_call_unexpected
+liblog.so
+libstdc++.so
+libdl.so
+-H.MxD}D
+~	AO	%ld	%d	%ld	%d	%s
+coreutils %s!
+unable to stat `%s'
+06JyDzD	hP`
+FHHxD@h D
+unable to rename `%s'
+cannot overwrite non-directory with directory
+cannot remove `%s'
+cannot overwrite directory with non-directory
+unable to readlink `%s'
+cannot remove `.' or `..'
+zH !xDA`
+xDF`UHxD
+1AaCdgilnsxRcetuLk
+unable to lstat `%s'
+unable to stat `%s'
+unable to open directory `%s'
+8`(F!F2F
+unable to stat `%s'
+^ZA_EOF#
+-maxdepth
+H2ixD@h9
+~	%s	%lld	%ld	%u	%u
+unable to remove `%s'
+unable to close `%s'
+unable to open `%s'
+%s: is a directory
+unable to stat `%s'
+cannot remove `%s'
+0pcCd?bB-?l?s???
+---------
+rwxrwxrwx
+..S..S..T
+..s..s..t
+unable to process `%s'
+unable to open directory `%s'
+unable to stat `%s'
+%s(%u)%s
+`%s' and `%s' are the same file
+unable to stat `%s'
+cannot create symlink `%s'
+cannot create fifo `%s'
+unable to create `%s'
+unable to open `%s'
+read error
+write error
+Unable to write all data
+unable to stat `%s'
+%ld	%ld	%s
+%s: omitting directory
+`%s' is not a directory
+cannot create directory `%s'
+unable to open directory `%s'
+unable to close directory `%s'
+unable to change permissions of `%s'
+unable to remove `%s'
+unable to close `%s'
+internal error: unrecognized file type
+unable to preserve times of `%s'
+unable to preserve ownership of `%s'
+unable to preserve permissions of `%s'
+GCC: (GNU) 4.9.x 20150123 (prerelease)
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
+gold 1.12
+cortex-a8
+.preinit_array
+.init_array
+.fini_array
+.ARM.exidx
+.comment
+.note.android.ident
+.rel.plt
+.ARM.attributes
+.gnu.version_r
+.rel.dyn
+.gnu.version
+.note.gnu.gold-version
+.note.gnu.build-id
+.dynamic
+.ARM.extab
+.shstrtab

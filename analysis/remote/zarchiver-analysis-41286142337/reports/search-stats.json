@@ -1,0 +1,38 @@
+{
+  "searched_roots": [
+    "/home/runner/work/_temp/zarchiver-analysis/jadx/sources",
+    "/home/runner/work/_temp/zarchiver-analysis/decoded"
+  ],
+  "scanned_text_files": {
+    "jadx": 472,
+    "apktool": 926
+  },
+  "total_matches": {
+    "archive_native": 1986,
+    "root_shizuku": 216,
+    "network": 66,
+    "apk_install": 219,
+    "update": 151,
+    "storage_saf": 524,
+    "ads_billing_license": 226,
+    "plugin_system": 226,
+    "security_config": 24
+  },
+  "stored_matches": {
+    "storage_saf": 524,
+    "root_shizuku": 216,
+    "archive_native": 1986,
+    "plugin_system": 226,
+    "apk_install": 219,
+    "network": 66,
+    "ads_billing_license": 226,
+    "update": 151,
+    "security_config": 24
+  },
+  "limits": {
+    "per_category": 20000,
+    "per_file_category": 250
+  },
+  "truncated_categories": [],
+  "interpretation": "Text-search leads only; confirm control flow and resource relationships before modifying anything."
+}

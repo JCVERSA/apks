@@ -1,0 +1,217 @@
+file	line	text
+jadx/sources/a0/c.java	1285	"            Process processExec = Runtime.getRuntime().exec(""pm list packages"");"
+jadx/sources/j0/c.java	238	                    ZApp.i(R.string.MES_SHIZUKU_IS_NOT_RUNNING);
+jadx/sources/k/a.java	28	"                    parcelObtain.writeInterfaceToken(""moe.shizuku.server.IRemoteProcess"");"
+jadx/sources/k/a.java	48	"                    parcelObtain.writeInterfaceToken(""moe.shizuku.server.IRemoteProcess"");"
+jadx/sources/k/a.java	63	"                    parcelObtain.writeInterfaceToken(""moe.shizuku.server.IRemoteProcess"");"
+jadx/sources/k/a.java	78	"                    parcelObtain.writeInterfaceToken(""moe.shizuku.server.IRemoteProcess"");"
+jadx/sources/k/a.java	92	"                    parcelObtain.writeInterfaceToken(""moe.shizuku.server.IRemoteProcess"");"
+jadx/sources/k/a.java	107	"                    parcelObtain.writeInterfaceToken(""moe.shizuku.server.IRemoteProcess"");"
+jadx/sources/k/b.java	11	"        attachInterface(this, ""moe.shizuku.server.IShizukuApplication"");"
+jadx/sources/k/b.java	22	"            parcel.enforceInterface(""moe.shizuku.server.IShizukuApplication"");"
+jadx/sources/k/b.java	25	"            parcel2.writeString(""moe.shizuku.server.IShizukuApplication"");"
+jadx/sources/k/b.java	30	"            bundle.getInt(""shizuku:attach-reply-uid"", -1);"
+jadx/sources/k/b.java	32	"            bundle.getInt(""shizuku:attach-reply-version"", -1);"
+jadx/sources/k/b.java	33	"            bundle.getInt(""shizuku:attach-reply-patch-version"", -1);"
+jadx/sources/k/b.java	34	"            bundle.getString(""shizuku:attach-reply-secontext"");"
+jadx/sources/k/b.java	35	"            z.a.f2310c = bundle.getBoolean(""shizuku:attach-reply-permission-granted"", false);"
+jadx/sources/k/b.java	36	"            bundle.getBoolean(""shizuku:attach-reply-should-show-request-permission-rationale"", false);"
+jadx/sources/k/b.java	40	"            ((Bundle) (parcel.readInt() != 0 ? Bundle.CREATOR.createFromParcel(parcel) : null)).getBoolean(""shizuku:request-permission-reply-allowed"", false);"
+jadx/sources/k/c.java	32	"                    parcelObtain.writeInterfaceToken(""moe.shizuku.server.IShizukuService"");"
+jadx/sources/k/c.java	47	"                    parcelObtain.writeInterfaceToken(""moe.shizuku.server.IShizukuService"");"
+jadx/sources/k/c.java	62	"                    parcelObtain.writeInterfaceToken(""moe.shizuku.server.IShizukuService"");"
+jadx/sources/k/c.java	72	"                        IInterface iInterfaceQueryLocalInterface = strongBinder.queryLocalInterface(""moe.shizuku.server.IRemoteProcess"");"
+jadx/sources/moe/shizuku/api/BinderContainer.java	1	package moe.shizuku.api;
+jadx/sources/n0/f.java	38	        return zApp.getString(R.string.MES_SHIZUKU_IS_NOT_RUNNING);
+jadx/sources/o0/a.java	51	"                if (bVar.f() && bVar.a(5, ""su -v"")) {"
+jadx/sources/o0/a.java	84	"                        packageInfo = contextC.getPackageManager().getPackageInfo(""moe.shizuku.privileged.api"", 0);"
+jadx/sources/o0/b.java	6	"            e(new ProcessBuilder(new String[0]).command(""sh"").start());"
+jadx/sources/o0/f.java	13	"            e(new ProcessBuilder(new String[0]).command(""su"").start());"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	1	package rikka.shizuku;
+jadx/sources/rikka/shizuku/ShizukuProvider.java	17	import moe.shizuku.api.BinderContainer;
+jadx/sources/rikka/shizuku/ShizukuProvider.java	19	public class ShizukuProvider extends ContentProvider {
+jadx/sources/rikka/shizuku/ShizukuProvider.java	29	"            BinderContainer binderContainer = (BinderContainer) intent.getParcelableExtra(""moe.shizuku.privileged.api.intent.extra.BINDER"");"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	33	"            Log.i(""ShizukuProvider"", ""binder received from broadcast"");"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	43	"        Log.d(""ShizukuProvider"", ""request binder in non-provider process"");"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	46	"            context.registerReceiver(aVar, new IntentFilter(""moe.shizuku.api.action.BINDER_RECEIVED""), 4);"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	48	"            context.registerReceiver(aVar, new IntentFilter(""moe.shizuku.api.action.BINDER_RECEIVED""));"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	52	"            bundleCall = context.getContentResolver().call(Uri.parse(""content://"" + context.getPackageName() + "".shizuku""), ""getBinder"", (String) null, new Bundle());"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	57	"            BinderContainer binderContainer = (BinderContainer) bundleCall.getParcelable(""moe.shizuku.privileged.api.intent.extra.BINDER"");"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	61	"            Log.i(""ShizukuProvider"", ""Binder received from other process"");"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	91	"                Log.d(""ShizukuProvider"", ""sendBinder is called when already a living binder"");"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	93	"                BinderContainer binderContainer = (BinderContainer) bundle.getParcelable(""moe.shizuku.privileged.api.intent.extra.BINDER"");"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	95	"                    Log.d(""ShizukuProvider"", ""binder received"");"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	98	"                        Log.d(""ShizukuProvider"", ""broadcast binder"");"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	99	"                        getContext().sendBroadcast(new Intent(""moe.shizuku.api.action.BINDER_RECEIVED"").putExtra(""moe.shizuku.privileged.api.intent.extra.BINDER"", binderContainer).setPackage(getContext().getPackageName()));"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	108	"                bundle2.putParcelable(""moe.shizuku.privileged.api.intent.extra.BINDER"", new BinderContainer(iBinder3));"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	137	"        Log.d(""ShizukuProvider"", ""Initialize Sui: "" + c.F(getContext().getPackageName()));"
+jadx/sources/ru/zdevs/zarchiver/R.java	1109	        public static final int MES_SHIZUKU_IS_NOT_RUNNING = 0x7f0c00ff;
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	15	import rikka.shizuku.ShizukuProvider;
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	84	            boolean z3 = ShizukuProvider.f1431a;
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	88	"            Log.d(""ShizukuProvider"", sb.toString());"
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	89	            ShizukuProvider.f1432b = z2;
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	90	            ShizukuProvider.f1431a = true;
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	206	            ShizukuProvider.a(this);
+jadx/sources/ru/zdevs/zarchiver/activity/SettingsDlg.java	408	"                    ZApp.j(""Shizuku v11+ / SUI not found!"");"
+jadx/sources/z/a.java	112	"            parcelObtain.writeInterfaceToken(""moe.shizuku.server.IShizukuService"");"
+jadx/sources/z/a.java	128	"        bundle.putInt(""shizuku:attach-api-version"", 13);"
+jadx/sources/z/a.java	129	"        bundle.putString(""shizuku:attach-package-name"", str);"
+jadx/sources/z/a.java	133	"            parcelObtain.writeInterfaceToken(""moe.shizuku.server.IShizukuService"");"
+jadx/sources/z/a.java	172	"        IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(""moe.shizuku.server.IShizukuService"");"
+jadx/sources/z/a.java	177	"            Log.i(""ShizukuApplication"", ""attachApplication"");"
+jadx/sources/z/a.java	183	"            Log.i(""ShizukuApplication"", ""attachApplication"");"
+jadx/sources/z/a.java	185	"            Log.w(""ShizukuApplication"", Log.getStackTraceString(th));"
+jadx/sources/z/c.java	23	"            Log.e(""ShizukuRemoteProcess"", ""linkToDeath"", e2);"
+jadx/sources/z/c.java	30	"        Log.v(""ShizukuRemoteProcess"", ""remote process is dead"");"
+decoded/AndroidManifest.xml	24	"    <uses-permission android:name=""android.permission.ACCESS_SUPERUSER""/>"
+decoded/AndroidManifest.xml	36	"    <uses-permission android:name=""moe.shizuku.manager.permission.API_V23""/>"
+decoded/AndroidManifest.xml	730	"        <provider android:authorities=""ru.zdevs.zarchiver.shizuku"" android:enabled=""true"" android:exported=""true"" android:multiprocess=""false"" android:name=""rikka.shizuku.ShizukuProvider"" android:permission=""android.permission.INTERACT_ACROSS_USERS_FULL""/>"
+decoded/AndroidManifest.xml	731	"        <meta-data android:name=""moe.shizuku.client.V3_SUPPORT"" android:value=""true""/>"
+decoded/res/values/arrays.xml	323	        <item>SU</item>
+decoded/res/values/arrays.xml	324	        <item>Shizuku / SUI</item>
+decoded/res/values/public.xml	1072	"    <public type=""string"" name=""MES_SHIZUKU_IS_NOT_RUNNING"" id=""0x7f0c00ff"" />"
+decoded/res/values/strings.xml	223	"    <string name=""FSD_USE_ROOT"">You may use root access or Shizuku.</string>"
+decoded/res/values/strings.xml	349	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku is not running</string>"
+decoded/res/values-ar/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">شيزوكو لا يعمل</string>"
+decoded/res/values-az/strings.xml	113	"    <string name=""FSD_USE_ROOT"">Root girişi və ya Shizuku istifadə edə bilərsiniz.</string>"
+decoded/res/values-az/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku işləmir</string>"
+decoded/res/values-cs/strings.xml	113	"    <string name=""FSD_USE_ROOT"">Můžete použít root přístup nebo Shizuku.</string>"
+decoded/res/values-cs/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Šizuku není spuštěno</string>"
+decoded/res/values-de/strings.xml	113	"    <string name=""FSD_USE_ROOT"">Sie können Root-Zugriff oder Shizuku verwenden.</string>"
+decoded/res/values-es/strings.xml	111	"    <string name=""FSD_SELECT_PATH_TO_EXT_SD"">Para escribir en una %1 debe seleccionar la ruta a su directorio.</string>"
+decoded/res/values-es/strings.xml	113	"    <string name=""FSD_USE_ROOT"">Puede usar acceso root o Shizuku.</string>"
+decoded/res/values-es/strings.xml	126	"    <string name=""HELP_GET_PASSWORD"">Las contraseñas para los archivos son definidas por sus autores. Busque contraseñas en el mismo lugar que el enlace al archivo, si no es su autor. Desafortunadamente, el desarrollador de ZA no puede ayudarte a recuperar la contraseña del archivo.</string>"
+decoded/res/values-es/strings.xml	215	 * Para seleccionar/deseleccionar ficheros o carpetas pulse en su icono;
+decoded/res/values-es/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku no está ejecutándose</string>"
+decoded/res/values-es/strings.xml	380	"    <string name=""PWD_ENTER_PASSWORD"">Este archivo está cifrado. Introduzca la contraseña para acceder a su contenido:</string>"
+decoded/res/values-hi/strings.xml	238	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">शिज़ुकु नहीं चल रहा है</string>"
+decoded/res/values-hr/strings.xml	113	"    <string name=""FSD_USE_ROOT"">Možete koristiti root ili Shizuku.</string>"
+decoded/res/values-hr/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku nije pokrenut</string>"
+decoded/res/values-hr/strings.xml	348	"    <string name=""OPT_ROOT_ANDROID_DIR_SETUP"">Operacije su brže nego SAF dopuštenje</string>"
+decoded/res/values-hu/strings.xml	113	"    <string name=""FSD_USE_ROOT"">Használhatja a root hozzáférést vagy a Shizuku-t.</string>"
+decoded/res/values-hu/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">A shizuku nem fut</string>"
+decoded/res/values-in/strings.xml	113	"    <string name=""FSD_USE_ROOT"">Anda dapat menggunakan akses root atau Shizuku.</string>"
+decoded/res/values-in/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku tidak berjalan</string>"
+decoded/res/values-it/strings.xml	113	"    <string name=""FSD_USE_ROOT"">""Puoi utilizzare l'accesso di root o Shizuku.""</string>"
+decoded/res/values-it/strings.xml	159	"    <string name=""MENU_MOVE_UP"">Sposta su</string>"
+decoded/res/values-it/strings.xml	216	 * Una pressione prolungata su un file permette di accedere a funzioni aggiuntive;
+decoded/res/values-it/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku non è in esecuzione</string>"
+decoded/res/values-it/strings.xml	343	"    <string name=""OPT_PDF_THUMB_SETUP"">Mostra anteprima dei PDF (potrebbe generare errori su alcuni dispositivi!)</string>"
+decoded/res/values-ja/strings.xml	235	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizukuは停止中です</string>"
+decoded/res/values-ka-rGE/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">„შიზუკუ“ არაა გაშვებული</string>"
+decoded/res/values-ko/strings.xml	113	"    <string name=""FSD_USE_ROOT"">루트 액세스 또는 시즈쿠(Shizuku)를 사용할 수 있습니다.</string>"
+decoded/res/values-ko/strings.xml	233	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku가 실행되지 않습니다</string>"
+decoded/res/values-lt/arrays.xml	29	        <item>Rodyti meniu su galimais veiksmais</item>
+decoded/res/values-lt/arrays.xml	30	        <item>Rodyti meniu su galimais veiksmais ir išeiti pabaigus</item>
+decoded/res/values-lt/arrays.xml	34	        <item>Rodyti meniu su galimais veiksmais</item>
+decoded/res/values-lt/arrays.xml	38	        <item>Rodyti meniu su galimais veiksmais</item>
+decoded/res/values-lt/strings.xml	120	"&lt;name.ext> - failo pavadinimas su plėtiniu""</string>"
+decoded/res/values-lt/strings.xml	198	"    <string name=""MES_END_WITH_ERROR"">Veiksmas baigtas su klaidomis</string>"
+decoded/res/values-lt/strings.xml	296	"    <string name=""OPT_HIDE_FILE_SETUP"">Rodyti failus ir aplankus, kurių pavadinimai prasideda su \"".\""</string>"
+decoded/res/values-lt/strings.xml	340	"    <string name=""OPT_TWO_TAB_SETUP"">Vartotojo sąsaja su dviejų failų sąrašu</string>"
+decoded/res/values-pl/strings.xml	113	"    <string name=""FSD_USE_ROOT"">Możesz użyć dostępu roota lub Shizuku.</string>"
+decoded/res/values-pl/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku jest wyłączone</string>"
+decoded/res/values-pt-rBR/strings.xml	112	"    <string name=""FSD_USE_ROOT"">Você deve utilizar acesso root ou Shizuku.</string>"
+decoded/res/values-pt-rBR/strings.xml	238	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku não está sendo executado</string>"
+decoded/res/values-ru/strings.xml	114	"    <string name=""FSD_USE_ROOT"">Вы можете использовать root-доступ или Shizuku.</string>"
+decoded/res/values-ru/strings.xml	240	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku не запущен</string>"
+decoded/res/values-sk/strings.xml	113	"    <string name=""FSD_USE_ROOT"">Môžete použiť root prístup alebo Shizuku.</string>"
+decoded/res/values-sk/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku nie je spustené</string>"
+decoded/res/values-sr/strings.xml	208	"    <string name=""MES_SUCESSFUL_ADD_FILE"">Fajlovi su uspešno dodani u arhivu</string>"
+decoded/res/values-sr/strings.xml	211	"    <string name=""MES_SUCESSFUL_DEL_FILE"">Fajlovi su uspešno izbrisani iz arhive</string>"
+decoded/res/values-th-rTH/strings.xml	112	"    <string name=""FSD_USE_ROOT"">คุณอาจจะต้องใช้การเข้าถึงรูทหรือ Shizuku</string>"
+decoded/res/values-th-rTH/strings.xml	237	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">ชิซึกุไม่ได้ทำงานอยู่</string>"
+decoded/res/values-tr/strings.xml	113	"    <string name=""FSD_USE_ROOT"">Root erişimi ya da Shizuku kullanabilirsiniz.</string>"
+decoded/res/values-tr/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku çalışmıyor</string>"
+decoded/res/values-vi/strings.xml	113	"    <string name=""FSD_USE_ROOT"">Bạn có thể sử dụng quyền truy cập root hoặc Shizuku.</string>"
+decoded/res/values-vi/strings.xml	237	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku không chạy</string>"
+decoded/res/values-zh-rCN/strings.xml	113	"    <string name=""FSD_USE_ROOT"">您可以使用 root 权限或 Shizuku。</string>"
+decoded/res/values-zh-rCN/strings.xml	239	"    <string name=""MES_SHIZUKU_IS_NOT_RUNNING"">Shizuku 未运行</string>"
+decoded/smali/k/a$a$a.smali	64	"    const-string v2, ""moe.shizuku.server.IRemoteProcess"""
+decoded/smali/k/a$a$a.smali	190	"    const-string v2, ""moe.shizuku.server.IRemoteProcess"""
+decoded/smali/k/a$a$a.smali	308	"    const-string v2, ""moe.shizuku.server.IRemoteProcess"""
+decoded/smali/k/a$a$a.smali	426	"    const-string v2, ""moe.shizuku.server.IRemoteProcess"""
+decoded/smali/k/a$a$a.smali	508	"    const-string v2, ""moe.shizuku.server.IRemoteProcess"""
+decoded/smali/k/a$a$a.smali	598	"    const-string v2, ""moe.shizuku.server.IRemoteProcess"""
+decoded/smali/k/b.smali	19	"    const-string v0, ""moe.shizuku.server.IShizukuApplication"""
+decoded/smali/k/b.smali	43	"    const-string v0, ""moe.shizuku.server.IShizukuApplication"""
+decoded/smali/k/b.smali	181	"    const-string p1, ""shizuku:request-permission-reply-allowed"""
+decoded/smali/k/b.smali	227	"    const-string p1, ""shizuku:attach-reply-uid"""
+decoded/smali/k/b.smali	243	"    const-string p1, ""shizuku:attach-reply-version"""
+decoded/smali/k/b.smali	252	"    const-string p1, ""shizuku:attach-reply-patch-version"""
+decoded/smali/k/b.smali	261	"    const-string p1, ""shizuku:attach-reply-secontext"""
+decoded/smali/k/b.smali	270	"    const-string p1, ""shizuku:attach-reply-permission-granted"""
+decoded/smali/k/b.smali	286	"    const-string p1, ""shizuku:attach-reply-should-show-request-permission-rationale"""
+decoded/smali/k/c$a$a.smali	72	"    const-string v2, ""moe.shizuku.server.IShizukuService"""
+decoded/smali/k/c$a$a.smali	163	"    const-string v2, ""moe.shizuku.server.IShizukuService"""
+decoded/smali/k/c$a$a.smali	262	"    const-string v2, ""moe.shizuku.server.IShizukuService"""
+decoded/smali/k/c$a$a.smali	330	"    const-string p1, ""moe.shizuku.server.IRemoteProcess"""
+decoded/smali/moe/shizuku/api/BinderContainer$a.smali	1	.class public final Lmoe/shizuku/api/BinderContainer$a;
+decoded/smali/moe/shizuku/api/BinderContainer$a.smali	11	    value = Lmoe/shizuku/api/BinderContainer;
+decoded/smali/moe/shizuku/api/BinderContainer$a.smali	23	"        ""Lmoe/shizuku/api/BinderContainer;"","
+decoded/smali/moe/shizuku/api/BinderContainer$a.smali	43	    new-instance v0, Lmoe/shizuku/api/BinderContainer;
+decoded/smali/moe/shizuku/api/BinderContainer$a.smali	45	    invoke-direct {v0, p1}, Lmoe/shizuku/api/BinderContainer;-><init>(Landroid/os/Parcel;)V
+decoded/smali/moe/shizuku/api/BinderContainer$a.smali	53	    new-array p1, p1, [Lmoe/shizuku/api/BinderContainer;
+decoded/smali/moe/shizuku/api/BinderContainer.smali	1	.class public Lmoe/shizuku/api/BinderContainer;
+decoded/smali/moe/shizuku/api/BinderContainer.smali	14	"            ""Lmoe/shizuku/api/BinderContainer;"","
+decoded/smali/moe/shizuku/api/BinderContainer.smali	29	    new-instance v0, Lmoe/shizuku/api/BinderContainer$a;
+decoded/smali/moe/shizuku/api/BinderContainer.smali	31	    invoke-direct {v0}, Lmoe/shizuku/api/BinderContainer$a;-><init>()V
+decoded/smali/moe/shizuku/api/BinderContainer.smali	33	    sput-object v0, Lmoe/shizuku/api/BinderContainer;->CREATOR:Landroid/os/Parcelable$Creator;
+decoded/smali/moe/shizuku/api/BinderContainer.smali	45	    iput-object p1, p0, Lmoe/shizuku/api/BinderContainer;->a:Landroid/os/IBinder;
+decoded/smali/moe/shizuku/api/BinderContainer.smali	61	    iput-object p1, p0, Lmoe/shizuku/api/BinderContainer;->a:Landroid/os/IBinder;
+decoded/smali/moe/shizuku/api/BinderContainer.smali	79	    iget-object p2, p0, Lmoe/shizuku/api/BinderContainer;->a:Landroid/os/IBinder;
+decoded/smali/o0/a.smali	209	"    const-string p0, ""moe.shizuku.privileged.api"""
+decoded/smali/o0/a.smali	353	"    const-string v3, ""su -v"""
+decoded/smali/o0/b.smali	17	    new-instance v0, Ljava/lang/ProcessBuilder;
+decoded/smali/o0/b.smali	28	    invoke-direct {v0, v2}, Ljava/lang/ProcessBuilder;-><init>([Ljava/lang/String;)V
+decoded/smali/o0/b.smali	48	    invoke-virtual {v0, v2}, Ljava/lang/ProcessBuilder;->command([Ljava/lang/String;)Ljava/lang/ProcessBuilder;
+decoded/smali/o0/b.smali	56	    invoke-virtual {v0}, Ljava/lang/ProcessBuilder;->start()Ljava/lang/Process;
+decoded/smali/o0/f.smali	23	    new-instance v0, Ljava/lang/ProcessBuilder;
+decoded/smali/o0/f.smali	34	    invoke-direct {v0, v2}, Ljava/lang/ProcessBuilder;-><init>([Ljava/lang/String;)V
+decoded/smali/o0/f.smali	46	"    const-string v4, ""su"""
+decoded/smali/o0/f.smali	54	    invoke-virtual {v0, v3}, Ljava/lang/ProcessBuilder;->command([Ljava/lang/String;)Ljava/lang/ProcessBuilder;
+decoded/smali/o0/f.smali	62	    invoke-virtual {v0}, Ljava/lang/ProcessBuilder;->start()Ljava/lang/Process;
+decoded/smali/rikka/shizuku/ShizukuProvider$a.smali	1	.class public final Lrikka/shizuku/ShizukuProvider$a;
+decoded/smali/rikka/shizuku/ShizukuProvider$a.smali	8	    value = Lrikka/shizuku/ShizukuProvider;->a(Landroid/content/Context;)V
+decoded/smali/rikka/shizuku/ShizukuProvider$a.smali	32	"    const-string v0, ""moe.shizuku.privileged.api.intent.extra.BINDER"""
+decoded/smali/rikka/shizuku/ShizukuProvider$a.smali	44	    check-cast p2, Lmoe/shizuku/api/BinderContainer;
+decoded/smali/rikka/shizuku/ShizukuProvider$a.smali	52	    iget-object p2, p2, Lmoe/shizuku/api/BinderContainer;->a:Landroid/os/IBinder;
+decoded/smali/rikka/shizuku/ShizukuProvider$a.smali	60	"    const-string v0, ""ShizukuProvider"""
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	1	.class public Lrikka/shizuku/ShizukuProvider;
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	29	    sget-boolean v1, Lrikka/shizuku/ShizukuProvider;->b:Z
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	45	"    const-string v2, ""ShizukuProvider"""
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	54	    new-instance v1, Lrikka/shizuku/ShizukuProvider$a;
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	58	    invoke-direct {v1}, Lrikka/shizuku/ShizukuProvider$a;-><init>()V
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	71	"    const-string v5, ""moe.shizuku.api.action.BINDER_RECEIVED"""
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	149	"    const-string v0, "".shizuku"""
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	209	    const-class v0, Lmoe/shizuku/api/BinderContainer;
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	226	"    const-string v0, ""moe.shizuku.privileged.api.intent.extra.BINDER"""
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	238	    check-cast v0, Lmoe/shizuku/api/BinderContainer;
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	246	    iget-object v0, v0, Lmoe/shizuku/api/BinderContainer;->a:Landroid/os/IBinder;
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	310	    sput-boolean p1, Lrikka/shizuku/ShizukuProvider;->b:Z
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	366	    const-class v0, Lmoe/shizuku/api/BinderContainer;
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	409	"    const-string v2, ""moe.shizuku.privileged.api.intent.extra.BINDER"""
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	468	    new-instance p3, Lmoe/shizuku/api/BinderContainer;
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	472	    invoke-direct {p3, p1}, Lmoe/shizuku/api/BinderContainer;-><init>(Landroid/os/IBinder;)V
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	527	"    const-string p1, ""ShizukuProvider"""
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	556	    check-cast p2, Lmoe/shizuku/api/BinderContainer;
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	564	    iget-object p3, p2, Lmoe/shizuku/api/BinderContainer;->a:Landroid/os/IBinder;
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	602	    sget-boolean p3, Lrikka/shizuku/ShizukuProvider;->a:Z
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	623	"    const-string p3, ""moe.shizuku.api.action.BINDER_RECEIVED"""
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	768	"    const-string v1, ""ShizukuProvider"""
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	124	    sget-boolean v2, Lrikka/shizuku/ShizukuProvider;->a:Z
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	180	"    const-string v3, ""ShizukuProvider"""
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	189	    sput-boolean v0, Lrikka/shizuku/ShizukuProvider;->b:Z
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	193	    sput-boolean v1, Lrikka/shizuku/ShizukuProvider;->a:Z
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	914	    invoke-static {p0}, Lrikka/shizuku/ShizukuProvider;->a(Landroid/content/Context;)V
+decoded/smali/ru/zdevs/zarchiver/activity/SettingsDlg.smali	903	"    const-string v1, ""Shizuku v11+ / SUI not found!"""
+decoded/smali/z/a.smali	202	"    const-string v2, ""moe.shizuku.server.IShizukuService"""
+decoded/smali/z/a.smali	295	"    const-string v1, ""shizuku:attach-api-version"""
+decoded/smali/z/a.smali	308	"    const-string v1, ""shizuku:attach-package-name"""
+decoded/smali/z/a.smali	334	"    const-string v2, ""moe.shizuku.server.IShizukuService"""
+decoded/smali/z/a.smali	601	"    const-string v0, ""moe.shizuku.server.IShizukuService"""
+decoded/smali/z/a.smali	667	"    const-string p0, ""ShizukuApplication"""
+decoded/smali/z/a.smali	722	"    const-string p0, ""ShizukuApplication"""
+decoded/smali/z/a.smali	744	"    const-string p1, ""ShizukuApplication"""
+decoded/smali/z/c.smali	57	"    const-string v0, ""ShizukuRemoteProcess"""
+decoded/smali/z/c.smali	87	"    const-string v0, ""ShizukuRemoteProcess"""

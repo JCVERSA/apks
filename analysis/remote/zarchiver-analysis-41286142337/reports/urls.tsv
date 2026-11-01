@@ -1,0 +1,24 @@
+scheme	host	path	query_redacted	first_file	first_line
+http	7-zip.org		False	decoded/res/values/strings.xml	15
+http	7-zip.org	/license.txt	False	decoded/res/values/strings.xml	16
+https	busybox.net		False	decoded/res/values/strings.xml	24
+https	crowdin.com	/project/zarchiverfree	False	decoded/res/values/strings.xml	154
+https	freebsd.org		False	decoded/res/values/strings.xml	27
+https	github.com	/PureWriter/ToastCompat	False	decoded/res/values/strings.xml	52
+https	github.com	/davemorrissey/subsampling-scale-image-view	False	decoded/res/values/strings.xml	49
+https	github.com	/hsiafan/apk-parser	False	decoded/res/values/strings.xml	21
+https	github.com	/moldedbits/r2d2	False	decoded/res/values/strings.xml	46
+http	numixproject.org		False	decoded/res/values/strings.xml	41
+https	play.google.com	/store/apps/details	True	jadx/sources/ru/zdevs/zarchiver/activity/AboutDlg.java	143
+https	play.google.com	/store/apps/search	True	jadx/sources/l0/b.java	16
+http	rarlab.com		False	decoded/res/values/strings.xml	59
+http	schemas.android.com	/apk/res/android	False	decoded/AndroidManifest.xml	2
+https	source.android.com		False	decoded/res/values/strings.xml	18
+http	www.estsoft.com		False	decoded/res/values/strings.xml	55
+http	www.gnu.org	/software/libiconv	False	decoded/res/values/strings.xml	34
+http	xmlpull.org	/v1/doc/features.html	False	jadx/sources/b/c.java	86
+https	yadi.sk	/d/NTCnBMmK3SHmt2	False	decoded/res/values/strings.xml	155
+http	zdevs.ru		False	decoded/res/values/strings.xml	3
+http	zdevs.ru	/za/	False	jadx/sources/g0/r.java	50
+http	zdevs.ru	/za/errors_desc.html	False	jadx/sources/g0/n.java	34
+http	zdevs.ru	/za_privacy_policy.txt	False	decoded/res/values/strings.xml	65

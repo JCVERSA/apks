@@ -1,0 +1,112 @@
+__cxa_finalize
+libcontrol.so
+__cxa_atexit
+strncasecmp
+pthread_join
+strcasecmp
+__stack_chk_fail
+__stack_chk_guard
+libdl.so
+__aeabi_memmove
+Java_ru_zdevs_zarchiver_archiver_C2JBridge_cExtract
+jSetStatus
+jSetTaskFlags
+_Z17android_api_levelv
+_Z8za_chdirPKc
+_Z15android_io_statPKcP4stat
+_Z16android_io_mkdirPKc
+jSetTaskCompleted
+_Z17android_io_removePKc
+Java_ru_zdevs_zarchiver_archiver_C2JBridge_cTest
+Java_ru_zdevs_zarchiver_archiver_C2JBridge_cAddFiles
+Java_ru_zdevs_zarchiver_archiver_C2JBridge_cDelFiles
+Java_ru_zdevs_zarchiver_archiver_C2JBridge_cCompress
+Java_ru_zdevs_zarchiver_archiver_C2JBridge_cList
+Java_ru_zdevs_zarchiver_archiver_C2JBridge_cRename
+Java_ru_zdevs_zarchiver_archiver_C2JBridge_cSetOption
+jSetOemCodec
+Java_ru_zdevs_zarchiver_archiver_C2JBridge_cSetMTime
+Java_ru_zdevs_zarchiver_archiver_C2JBridge_cIsExist
+Java_ru_zdevs_zarchiver_archiver_C2JBridge_cSetStatus
+JNI_OnLoad
+__android_log_print
+jGetNativePath
+Java_ru_zdevs_zarchiver_archiver_NArc_cArchiveOpen
+Java_ru_zdevs_zarchiver_archiver_NArc_cClose
+Java_ru_zdevs_zarchiver_archiver_NArc_cGetStream
+Java_ru_zdevs_zarchiver_archiver_NArc_cWaitEndStream
+Java_ru_zdevs_zarchiver_archiver_NArc_cGetItem
+Java_ru_zdevs_zarchiver_archiver_NArc_cGetItemCount
+Java_ru_zdevs_zarchiver_archiver_NArc_cCancel
+Java_ru_zdevs_zarchiver_archiver_NArc_cSetComment
+Java_ru_zdevs_zarchiver_archiver_NArc_cUpdateFile
+__bss_start
+__gnu_Unwind_Find_exidx
+__cxa_begin_cleanup
+__cxa_type_match
+__cxa_call_unexpected
+libhandler.so
+liblog.so
+libstdc++.so
+EGGA.rar
+HF)FZFSF
+HF)FZFSF
+HF)FZFSF
+HF9FRF3F
+HF9FRF3F
+FHF9FRF3F
+FXF9FBF3F
+Load control library!
+/!1R0F!F
+[control] %s
+[control] native path is NULL
+p7za_main
+p7za_pipe
+I(DyD	xQ
+libunrar.so
+rar_main
+libunegg.so
+egg_main
+ PJCFyDzD
+ BJCFyDzD
+libunegg.so
+libp7zip.so
+archive_close
+archive_stream_get
+archive_item_get_count
+archive_item_get
+archive_cancel
+archive_comment_set
+archive_item_add
+ru/zdevs/zarchiver/archiver/NArc$NArcPasswordException
+ru/zdevs/zarchiver/archiver/NArc$NArcStreamOutsidePipePosition
+ru/zdevs/zarchiver/archiver/NArc$NArcItem
+(Ljava/lang/String;JJ)V
+libp7zip.so
+cArchiveOpen: failed to get lib
+cArchiveOpen: no mem
+archive_lib_init: library '%s' not found
+archive_lib_init: no mem
+archive_open
+archive_item_get_index
+archive_lib_init: failed to open '%s'
+GCC: (GNU) 4.9.x 20150123 (prerelease)
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
+gold 1.12
+cortex-a8
+.init_array
+.fini_array
+.ARM.exidx
+.comment
+.note.android.ident
+.rel.plt
+.ARM.attributes
+.gnu.version_r
+.rel.dyn
+.gnu.version
+.note.gnu.gold-version
+.note.gnu.build-id
+.gnu.version_d
+.dynamic
+.ARM.extab
+.shstrtab

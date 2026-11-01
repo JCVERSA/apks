@@ -1,0 +1,45 @@
+__cxa_finalize
+libmime.so
+__cxa_atexit
+__stack_chk_fail
+__stack_chk_guard
+mimetype_get_type
+mimetype_get_name
+Java_ru_zdevs_zarchiver_media_MimeLib_cGetType
+JNI_OnLoad
+JNI_OnUnload
+__bss_start
+__gnu_Unwind_Find_exidx
+__cxa_begin_cleanup
+__cxa_type_match
+__cxa_call_unexpected
+liblog.so
+libstdc++.so
+libdl.so
+070701000002D100
+BZh91AY&SY
+EFI PART
+NTFS    
+squashfs
+Compressed ROMFS
+GCC: (GNU) 4.9.x 20150123 (prerelease)
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
+gold 1.12
+cortex-a8
+.init_array
+.fini_array
+.ARM.exidx
+.comment
+.note.android.ident
+.rel.plt
+.ARM.attributes
+.gnu.version_r
+.data.rel.ro
+.rel.dyn
+.gnu.version
+.note.gnu.gold-version
+.note.gnu.build-id
+.gnu.version_d
+.dynamic
+.ARM.extab
+.shstrtab

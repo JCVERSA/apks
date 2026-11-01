@@ -1,0 +1,152 @@
+file	line	text
+jadx/sources/c1/c.java	5	public final class c implements ValueAnimator.AnimatorUpdateListener {
+jadx/sources/c1/c.java	14	    public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+jadx/sources/c1/d.java	34	        valueAnimatorOfFloat.addUpdateListener(new c(this));
+jadx/sources/c1/d.java	63	        this.f449a.update();
+jadx/sources/g0/o.java	422	                            messageDigest.update(bArr, 0, i2);
+jadx/sources/g0/s.java	73	                    sb.append(context.getString(z3 ? R.string.FSD_REMOVE_FILES_UPDATE : R.string.FSD_USE_ROOT));
+jadx/sources/m/a.java	32	"        return ""packageName: \t"" + this.f1205a + ""\nlabel: \t"" + this.f1206b + ""\nicon: \t"" + this.f1207c + ""\nversionName: \t"" + this.f1208d + ""\nversionCode: \t"" + this.f1209e + ""\nminSdkVersion: \t"" + this.f1211g + ""\ntargetSdkVersion: \t"" + this.f1212h + ""\nmaxSdkVersion: \t"" + this.f1213i;"
+jadx/sources/o/c.java	86	"                aVar2.f1208d = cVar.i(""versionName"");"
+jadx/sources/o/c.java	93	"                Long lH = cVar.h(""versionCodeMajor"");"
+jadx/sources/o/c.java	94	"                Long lH2 = cVar.h(""versionCode"");"
+jadx/sources/o/c.java	104	"                cVar.i(""compileSdkVersionCodename"");"
+jadx/sources/o/c.java	105	"                cVar.i(""platformBuildVersionCode"");"
+jadx/sources/o/c.java	106	"                cVar.i(""platformBuildVersionName"");"
+jadx/sources/o/e.java	23	"            cVar.i(""versionName"");"
+jadx/sources/o/e.java	26	"            Long lH = cVar.h(""versionCodeMajor"");"
+jadx/sources/o/e.java	27	"            Long lH2 = cVar.h(""versionCode"");"
+jadx/sources/o0/a.java	88	                if (packageInfo == null || packageInfo.versionCode < 502) {
+jadx/sources/q0/e.java	1058	                                                    strArr2[1] = packageArchiveInfo.versionName;
+jadx/sources/q0/e.java	1059	"                                                    strArr2[2] = """" + packageArchiveInfo.versionCode;"
+jadx/sources/q0/e.java	1066	                                                    strArr2[0] = packageArchiveInfo.versionName;
+jadx/sources/rikka/shizuku/ShizukuProvider.java	147	    public final int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
+jadx/sources/ru/zdevs/zarchiver/R.java	984	        public static final int FSD_REMOVE_FILES_UPDATE = 0x7f0c0082;
+jadx/sources/ru/zdevs/zarchiver/R.java	1120	        public static final int MOD_UPDATE_FILE = 0x7f0c010a;
+jadx/sources/ru/zdevs/zarchiver/ZArchiver.java	1955	"                        w wVar = new w(1, this, getString(R.string.MOD_UPDATE_FILE).replace(""%1"", file.getName()), dVar);"
+jadx/sources/ru/zdevs/zarchiver/activity/AboutDlg.java	44	"            i2 = getPackageManager().getPackageInfo(""ru.zdevs.zarchiver"", 0).versionCode;"
+jadx/sources/ru/zdevs/zarchiver/activity/AboutDlg.java	109	"            intentCreateChooser.setData(Uri.parse(""market://details?id=ru.zdevs.zarchiver""));"
+jadx/sources/ru/zdevs/zarchiver/activity/AboutDlg.java	143	"            intent2.putExtra(""android.intent.extra.TEXT"", ""ZArchiver is fast and simple archive and file manager. Get it on https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver"");"
+jadx/sources/ru/zdevs/zarchiver/activity/OpenAsDlg.java	94	"                    if (readableDatabase.update(""FA"", contentValues, ""EXT = ? AND TYPE = ?"", new String[]{bVar.f2174a, String.valueOf(bVar.f2178e)}) == 0) {"
+jadx/sources/ru/zdevs/zarchiver/provider/ArchiveFileProvider.java	169	"        throw new UnsupportedOperationException(""No support updates"");"
+jadx/sources/ru/zdevs/zarchiver/provider/ArchiveFileProvider.java	309	    public final int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
+jadx/sources/ru/zdevs/zarchiver/provider/ArchiveFileProvider.java	310	"        throw new UnsupportedOperationException(""No support updates"");"
+jadx/sources/ru/zdevs/zarchiver/provider/FileProvider.java	271	    public final int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
+jadx/sources/ru/zdevs/zarchiver/provider/FileProvider.java	272	"        throw new UnsupportedOperationException(""No support updates"");"
+jadx/sources/ru/zdevs/zarchiver/provider/PluginFileProvider.java	28	"        throw new UnsupportedOperationException(""No support updates"");"
+jadx/sources/ru/zdevs/zarchiver/provider/PluginFileProvider.java	184	    public final int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
+jadx/sources/ru/zdevs/zarchiver/provider/PluginFileProvider.java	185	"        throw new UnsupportedOperationException(""No support updates"");"
+jadx/sources/ru/zdevs/zarchiver/ui/editor/EditableView.java	1145	            this.f1821j.updateSelection(this, spanStart, spanStart2, BaseInputConnection.getComposingSpanStart(this.f1816e), BaseInputConnection.getComposingSpanEnd(this.f1816e));
+jadx/sources/ru/zdevs/zarchiver/ui/editor/d.java	11	public final class d implements ValueAnimator.AnimatorUpdateListener {
+jadx/sources/ru/zdevs/zarchiver/ui/editor/d.java	97	        valueAnimatorOfInt.addUpdateListener(this);
+jadx/sources/ru/zdevs/zarchiver/ui/editor/d.java	121	    public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+jadx/sources/u0/a.java	22	    public final void onUpgrade(SQLiteDatabase sQLiteDatabase, int i2, int i3) {
+jadx/sources/x0/h.java	20	"        return ""Files: SDK "" + packageInfoB.applicationInfo.targetSdkVersion + "" V "" + packageInfoB.getLongVersionCode();"
+jadx/sources/x0/h.java	63	        long longVersionCode = packageInfo.getLongVersionCode();
+jadx/sources/x0/h.java	64	        if (longVersionCode <= 340819010 || longVersionCode == 990090000) {
+jadx/sources/y0/b.java	74	        public final void updateViewLayout(View view, ViewGroup.LayoutParams layoutParams) {
+jadx/sources/y0/b.java	75	            this.f2304a.updateViewLayout(view, layoutParams);
+jadx/sources/z0/e.java	252	        resources.updateConfiguration(configuration, resources.getDisplayMetrics());
+decoded/AndroidManifest.xml	2	"<manifest xmlns:android=""http://schemas.android.com/apk/res/android"" android:compileSdkVersion=""34"" android:compileSdkVersionCodename=""14"" android:installLocation=""auto"" package=""ru.zdevs.zarchiver"" platformBuildVersionCode=""34"" platformBuildVersionName=""14"">"
+decoded/apktool.yml	10	  versionCode: 101033
+decoded/apktool.yml	11	  versionName: 1.0.10
+decoded/res/values/public.xml	947	"    <public type=""string"" name=""FSD_REMOVE_FILES_UPDATE"" id=""0x7f0c0082"" />"
+decoded/res/values/public.xml	1083	"    <public type=""string"" name=""MOD_UPDATE_FILE"" id=""0x7f0c010a"" />"
+decoded/res/values/strings.xml	220	"    <string name=""FSD_REMOVE_FILES_UPDATE"">You may to uninstall this update.</string>"
+decoded/res/values/strings.xml	360	"    <string name=""MOD_UPDATE_FILE"">""File %1 was modified."
+decoded/res/values/strings.xml	361	"Do you want to update it in the archive?""</string>"
+decoded/res/values-ar/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">يمكنك إلغاء تثبيت هذا التحديث.</string>"
+decoded/res/values-ar/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">""تم تعديل الملف %1 ."
+decoded/res/values-az/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Siz bu yeniləməni silə bilərsiniz.</string>"
+decoded/res/values-az/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">%1 faylı dəyişdirildi. Arxivdə yeniləmə istəyirsinizmi?</string>"
+decoded/res/values-bg/strings.xml	236	"    <string name=""MOD_UPDATE_FILE"">""Файла %1 е модифициран."
+decoded/res/values-cs/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Tuto aktualizaci můžete odinstalovat.</string>"
+decoded/res/values-cs/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">""Soubor %1 byl upraven."
+decoded/res/values-da/strings.xml	231	"    <string name=""MOD_UPDATE_FILE"">""Filen %1 er ændret."
+decoded/res/values-de/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Sie können dieses Update deinstallieren.</string>"
+decoded/res/values-de/strings.xml	249	"    <string name=""MOD_UPDATE_FILE"">""Die Datei %1 wurde geändert."
+decoded/res/values-el/strings.xml	232	"    <string name=""MOD_UPDATE_FILE"">""Το αρχείο %1 έχει τροποποιηθεί."
+decoded/res/values-es/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Es posible que desinstale esta actualización.</string>"
+decoded/res/values-es/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">""El fichero %1 fue modificado."
+decoded/res/values-fa/strings.xml	219	"    <string name=""MOD_UPDATE_FILE"">%1فایل تغییر یافت. آیا می خواهید در آرشیو بروزرسانی گردد؟</string>"
+decoded/res/values-fr/strings.xml	225	"    <string name=""MOD_UPDATE_FILE"">""Le fichier %1 a été modifié."
+decoded/res/values-hi/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">आपको इस अपडेट को अनइंस्टॉल करना पड़ सकता है |</string>"
+decoded/res/values-hi/strings.xml	249	"    <string name=""MOD_UPDATE_FILE"">""फाइल %1 मे सुधार किया गया है."
+decoded/res/values-hr/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Možete deinstalirati ovo ažuriranje.</string>"
+decoded/res/values-hr/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">""Datoteka %1 je izmjenjena."
+decoded/res/values-hu/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Eltávolíthatja ezt a frissítést.</string>"
+decoded/res/values-hu/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">""A(z) %1 fájl módosítva lett."
+decoded/res/values-in/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Anda dapat menghapus instalasi pembaruan ini.</string>"
+decoded/res/values-in/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">""Berkas %1 telah dimodifikasi."
+decoded/res/values-it/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Puoi disinstallare questo aggiornamento.</string>"
+decoded/res/values-it/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">""Il file %1 и stato modificato."
+decoded/res/values-ja/strings.xml	246	"    <string name=""MOD_UPDATE_FILE"">""ファイル %1 は変更されました"
+decoded/res/values-ka-rGE/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">თქვენ უნდა წაშალოთ ეს განახლება.</string>"
+decoded/res/values-ka-rGE/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">""ეს ფაილი (%1) შეცვლილია."
+decoded/res/values-ko/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">이 업데이트를 제거할 수 있습니다.</string>"
+decoded/res/values-ko/strings.xml	244	"    <string name=""MOD_UPDATE_FILE"">""파일 %1 가 수정되었습니다."
+decoded/res/values-ky/strings.xml	189	"    <string name=""MOD_UPDATE_FILE"">""ۅجۅت %1 ۅزكۅرتۉلگۅن。"
+decoded/res/values-lt/strings.xml	231	"    <string name=""MOD_UPDATE_FILE"">""Failas %1 buvo redaguotas."
+decoded/res/values-pl/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Możesz odinstalować tę aktualizację.</string>"
+decoded/res/values-pl/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">""Plik %1 został zmieniony."
+decoded/res/values-pt-rBR/strings.xml	109	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Você pode desinstalar esta atualização.</string>"
+decoded/res/values-pt-rBR/strings.xml	249	"    <string name=""MOD_UPDATE_FILE"">Arquivo %1 foi modificado. Deseja atualizá-lo no arquivo compactado?</string>"
+decoded/res/values-ru/strings.xml	111	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Необходимо удалить обновление этого приложения.</string>"
+decoded/res/values-ru/strings.xml	251	"    <string name=""MOD_UPDATE_FILE"">""Файл %1 был изменён."
+decoded/res/values-sk/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Túto aktualizáciu môžete odinštalovať.</string>"
+decoded/res/values-sk/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">""Súbor %1 bol upravený."
+decoded/res/values-sr/strings.xml	218	"    <string name=""MOD_UPDATE_FILE"">""Fajl %1 je modifikovan."
+decoded/res/values-th-rTH/strings.xml	109	"    <string name=""FSD_REMOVE_FILES_UPDATE"">คุณอาจถอนการติดตั้งโปรแกรมปรับปรุงนี้</string>"
+decoded/res/values-th-rTH/strings.xml	248	"    <string name=""MOD_UPDATE_FILE"">""ไฟล์ %1 ถูกแก้ไข"
+decoded/res/values-tr/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Bu güncellemeyi kaldırmanız gerekebilir.</string>"
+decoded/res/values-tr/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">%1 dosyası değiştirildi. Arşivde güncellemek ister misiniz?</string>"
+decoded/res/values-ug/strings.xml	184	"    <string name=""MOD_UPDATE_FILE"">بۇ %1 ھۆججىتى مەۋجۇت ئىكەن پرېس ھۆججىتىنى يېڭىلامسىز؟</string>"
+decoded/res/values-uk/strings.xml	243	"    <string name=""MOD_UPDATE_FILE"">""Файл %1 було змінено."
+decoded/res/values-uz/strings.xml	243	"    <string name=""MOD_UPDATE_FILE"">""%1 fayli oʻzgartirildi."
+decoded/res/values-vi/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">Bạn có thể gỡ cài đặt bản cập nhật này.</string>"
+decoded/res/values-vi/strings.xml	248	"    <string name=""MOD_UPDATE_FILE"">""Tệp %1 đã bị sửa."
+decoded/res/values-zh-rCN/strings.xml	110	"    <string name=""FSD_REMOVE_FILES_UPDATE"">您可以卸载此更新。</string>"
+decoded/res/values-zh-rCN/strings.xml	250	"    <string name=""MOD_UPDATE_FILE"">""文件 %1 已修改。"
+decoded/res/values-zh-rTW/strings.xml	242	"    <string name=""MOD_UPDATE_FILE"">""檔案 %1 已被修改."
+decoded/smali/c1/c.smali	6	.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+decoded/smali/c1/c.smali	26	.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+decoded/smali/c1/d.smali	214	    invoke-virtual {p1, p2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+decoded/smali/c1/d.smali	381	    invoke-virtual {v0}, Landroid/widget/Magnifier;->update()V
+decoded/smali/g0/o$j.smali	141	    invoke-virtual {v0, v5, v3, v6}, Ljava/security/MessageDigest;->update([BII)V
+decoded/smali/m/a.smali	139	"    const-string v1, ""\nversionName: \t"""
+decoded/smali/m/a.smali	147	"    const-string v1, ""\nversionCode: \t"""
+decoded/smali/o/c.smali	788	"    const-string p1, ""versionName"""
+decoded/smali/o/c.smali	865	"    const-string p1, ""versionCodeMajor"""
+decoded/smali/o/c.smali	877	"    const-string v1, ""versionCode"""
+decoded/smali/o/c.smali	970	"    const-string p1, ""compileSdkVersionCodename"""
+decoded/smali/o/c.smali	979	"    const-string p1, ""platformBuildVersionCode"""
+decoded/smali/o/c.smali	988	"    const-string p1, ""platformBuildVersionName"""
+decoded/smali/o/e.smali	124	"    const-string p1, ""versionName"""
+decoded/smali/o/e.smali	158	"    const-string p1, ""versionCodeMajor"""
+decoded/smali/o/e.smali	170	"    const-string v1, ""versionCode"""
+decoded/smali/o0/a.smali	263	    iget p0, v3, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali/q0/e.smali	4383	    iget-object v2, v11, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali/q0/e.smali	4403	    iget v8, v11, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali/q0/e.smali	4508	    iget-object v2, v11, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	792	.method public final update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+decoded/smali/ru/zdevs/zarchiver/activity/AboutDlg.smali	151	    iget v1, v1, Landroid/content/pm/PackageInfo;->versionCode:I
+decoded/smali/ru/zdevs/zarchiver/activity/AboutDlg.smali	631	"    const-string v1, ""market://details?id=ru.zdevs.zarchiver"""
+decoded/smali/ru/zdevs/zarchiver/activity/AboutDlg.smali	1099	"    const-string v3, ""ZArchiver is fast and simple archive and file manager. Get it on https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver"""
+decoded/smali/ru/zdevs/zarchiver/activity/OpenAsDlg$b$a.smali	241	    invoke-virtual {v3, v1, v4, v5, v7}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	914	"    const-string p2, ""No support updates"""
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1931	.method public final update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1936	"    const-string p2, ""No support updates"""
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	2054	.method public final update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	2059	"    const-string p2, ""No support updates"""
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	96	"    const-string p2, ""No support updates"""
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	1021	.method public final update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	1026	"    const-string p2, ""No support updates"""
+decoded/smali/ru/zdevs/zarchiver/ui/editor/EditableView.smali	4393	    invoke-virtual/range {v5 .. v10}, Landroid/view/inputmethod/InputMethodManager;->updateSelection(Landroid/view/View;IIII)V
+decoded/smali/ru/zdevs/zarchiver/ui/editor/d.smali	6	.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+decoded/smali/ru/zdevs/zarchiver/ui/editor/d.smali	285	    invoke-virtual {v1, p0}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+decoded/smali/ru/zdevs/zarchiver/ui/editor/d.smali	385	.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+decoded/smali/u0/a.smali	53	.method public final onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
+decoded/smali/x0/h.smali	58	    invoke-virtual {p0}, Landroid/content/pm/PackageInfo;->getLongVersionCode()J
+decoded/smali/x0/h.smali	393	    invoke-virtual {p0}, Landroid/content/pm/PackageInfo;->getLongVersionCode()J
+decoded/smali/y0/b$b.smali	173	.method public final updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+decoded/smali/y0/b$b.smali	178	    invoke-interface {v0, p1, p2}, Landroid/view/ViewManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+decoded/smali/z0/e.smali	1610	    invoke-virtual {p0, p1, v0}, Landroid/content/res/Resources;->updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V

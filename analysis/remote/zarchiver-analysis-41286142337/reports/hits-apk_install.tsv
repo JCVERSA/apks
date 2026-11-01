@@ -1,0 +1,220 @@
+file	line	text
+jadx/sources/b0/d.java	4	import ru.zdevs.zarchiver.activity.InstallApksDlg;
+jadx/sources/b0/d.java	13	    public final InstallApksDlg f278c;
+jadx/sources/b0/d.java	15	    public d(InstallApksDlg installApksDlg, ru.zdevs.zarchiver.c cVar, h0.h hVar) {
+jadx/sources/b0/d.java	16	        this.f278c = installApksDlg;
+jadx/sources/b0/d.java	24	        InstallApksDlg installApksDlg = this.f278c;
+jadx/sources/b0/d.java	27	                installApksDlg.f1579d = hVar;
+jadx/sources/b0/d.java	28	                installApksDlg.f1576a = h1.h.f(installApksDlg, new Intent(installApksDlg, (Class<?>) ZArchiverService.class), installApksDlg.f1580e);
+jadx/sources/b0/d.java	30	                int i2 = InstallApksDlg.f1575f;
+jadx/sources/b0/d.java	31	                installApksDlg.a(null, true);
+jadx/sources/b0/d.java	35	            int i3 = InstallApksDlg.f1575f;
+jadx/sources/b0/d.java	36	            installApksDlg.a(message, false);
+jadx/sources/q0/a.java	6	import android.content.pm.PackageInstaller;
+jadx/sources/q0/a.java	40	import ru.zdevs.zarchiver.activity.InstallApkDlg;
+jadx/sources/q0/a.java	63	            PackageInstaller packageInstaller = context.getPackageManager().getPackageInstaller();
+jadx/sources/q0/a.java	64	            Iterator<PackageInstaller.SessionInfo> it = packageInstaller.getMySessions().iterator();
+jadx/sources/q0/a.java	66	                packageInstaller.abandonSession(it.next().getSessionId());
+jadx/sources/q0/a.java	250	        Intent intent = new Intent(ZApp.f1434c, (Class<?>) InstallApkDlg.class);
+jadx/sources/q0/a.java	258	        PackageInstaller packageInstaller;
+jadx/sources/q0/a.java	260	        PackageInstaller.Session sessionOpenSession = null;
+jadx/sources/q0/a.java	263	            packageInstaller = zAppE.getPackageManager().getPackageInstaller();
+jadx/sources/q0/a.java	265	                PackageInstaller.SessionParams sessionParams = new PackageInstaller.SessionParams(1);
+jadx/sources/q0/a.java	284	                iCreateSession = packageInstaller.createSession(sessionParams);
+jadx/sources/q0/a.java	286	                    sessionOpenSession = packageInstaller.openSession(iCreateSession);
+jadx/sources/q0/a.java	304	                        OutputStream outputStreamOpenWrite = sessionOpenSession.openWrite(hVar3.e(), 0L, j4);
+jadx/sources/q0/a.java	318	"                    sessionOpenSession.commit(PendingIntent.getActivity(zAppE, 0, new Intent(""ru.zdevs.zarchiver.APP_INSTALL_RESULT"", hVar.s(), zAppE, ZArchiver.class), 167772160).getIntentSender());"
+jadx/sources/q0/a.java	334	                    if (packageInstaller != null) {
+jadx/sources/q0/a.java	336	                            packageInstaller.abandonSession(iCreateSession);
+jadx/sources/q0/a.java	347	                if (packageInstaller != null && iCreateSession != 0) {
+jadx/sources/q0/a.java	348	                    packageInstaller.abandonSession(iCreateSession);
+jadx/sources/q0/a.java	353	            packageInstaller = null;
+jadx/sources/q0/a.java	362	            Intent intent = new Intent(ZApp.f1434c, (Class<?>) InstallApkDlg.class);
+jadx/sources/q0/a.java	388	        PackageInstaller packageInstaller;
+jadx/sources/q0/a.java	390	        PackageInstaller.Session session;
+jadx/sources/q0/a.java	395	            Intent intent = new Intent(ZApp.d(), (Class<?>) InstallApkDlg.class);
+jadx/sources/q0/a.java	401	            packageInstaller = zAppE.getPackageManager().getPackageInstaller();
+jadx/sources/q0/a.java	403	                PackageInstaller.SessionParams sessionParams = new PackageInstaller.SessionParams(1);
+jadx/sources/q0/a.java	433	                    int iCreateSession = packageInstaller.createSession(sessionParams);
+jadx/sources/q0/a.java	435	                        PackageInstaller.Session sessionOpenSession = packageInstaller.openSession(iCreateSession);
+jadx/sources/q0/a.java	450	                                    OutputStream outputStreamOpenWrite = sessionOpenSession.openWrite(path, 0L, size2);
+jadx/sources/q0/a.java	465	"                            sessionOpenSession.commit(PendingIntent.getActivity(zAppE, 0, new Intent(""ru.zdevs.zarchiver.APP_INSTALL_RESULT"", hVar.s(), zAppE, cls), 167772160).getIntentSender());"
+jadx/sources/q0/a.java	487	                            if (packageInstaller != null) {
+jadx/sources/q0/a.java	489	                                    packageInstaller.abandonSession(i2);
+jadx/sources/q0/a.java	501	                        if (packageInstaller != null) {
+jadx/sources/q0/a.java	502	                            packageInstaller.abandonSession(i2);
+jadx/sources/q0/a.java	512	                    if (packageInstaller != null && i2 != 0) {
+jadx/sources/q0/a.java	513	                        packageInstaller.abandonSession(i2);
+jadx/sources/q0/a.java	522	            packageInstaller = null;
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	201	"            a0.c.h(this, "".activity.InstallApksDlg"", z2);"
+jadx/sources/ru/zdevs/zarchiver/a.java	464	"                intent.setDataAndType(n0.a.f1232a ? KitKatExtSD.c(hVar) : SAF.h(zArchiver, hVar, false), ""application/vnd.android.package-archive"");"
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApkDlg.java	10	public class InstallApkDlg extends Activity {
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	20	public class InstallApksDlg extends Activity {
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	45	            InstallApksDlg installApksDlg = InstallApksDlg.this;
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	46	            String strF = f.f(installApksDlg, data);
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	48	                int i2 = InstallApksDlg.f1575f;
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	49	"                installApksDlg.a(""Failed to get path to the APKS/XAPK file"", false);"
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	52	            t0.b.m(installApksDlg, false, null);
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	54	                if (q0.a.j(new h(strF), InstallApksDlg.class)) {
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	57	                int i3 = InstallApksDlg.f1575f;
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	58	                installApksDlg.a(null, false);
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	60	                installApksDlg.startActivityForResult(e2.f1373a, 1203);
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	75	            InstallApksDlg installApksDlg = InstallApksDlg.this;
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	76	            q0.a.a(installApksDlg);
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	77	            int i2 = InstallApksDlg.f1575f;
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	78	            installApksDlg.a(this.f1583a, false);
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	93	                q0.a.j(this.f1585a, InstallApksDlg.class);
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	95	                int i2 = InstallApksDlg.f1575f;
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	96	                InstallApksDlg.this.a(null, false);
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	114	            InstallApksDlg installApksDlg = InstallApksDlg.this;
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	117	                string = installApksDlg.getString(this.f1588b ? R.string.MES_INSTALL_APP_DONE : R.string.MES_INSTALL_APP_FAILED);
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	120	                Toast.makeText(installApksDlg, string, 1).show();
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	122	            installApksDlg.finishAndRemoveTask();
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	132	            InstallApksDlg installApksDlg = InstallApksDlg.this;
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	133	            installApksDlg.f1578c = true;
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	134	            installApksDlg.f1576a = null;
+jadx/sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java	142	            w0.c.f2212d.execute(new b0.d(installApksDlg, cVar, installApksDlg.f1579d));
+jadx/sources/ru/zdevs/zarchiver/activity/SettingsDlg.java	243	                                i2 = !editorEdit.commit() ? 1 : 0;
+decoded/AndroidManifest.xml	27	"    <uses-permission-sdk-23 android:name=""android.permission.REQUEST_INSTALL_PACKAGES""/>"
+decoded/AndroidManifest.xml	604	"        <activity android:configChanges=""orientation|screenLayout|screenSize|smallestScreenSize"" android:name=""ru.zdevs.zarchiver.activity.InstallApkDlg"" android:resizeableActivity=""true"" android:theme=""@style/AppTheme.Dark""/>"
+decoded/AndroidManifest.xml	669	"        <activity android:configChanges=""orientation|screenLayout|screenSize|smallestScreenSize"" android:exported=""true"" android:label=""@string/MENU_INSTALL"" android:launchMode=""singleTask"" android:name=""ru.zdevs.zarchiver.activity.InstallApksDlg"" android:resizeableActivity=""true"" android:theme=""@style/Theme.Transparent"">"
+decoded/smali/b0/d.smali	14	.field public final synthetic c:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/b0/d.smali	18	.method public constructor <init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;Lru/zdevs/zarchiver/c;Lh0/h;)V
+decoded/smali/b0/d.smali	26	    iput-object p1, p0, Lb0/d;->c:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/b0/d.smali	47	    iget-object v1, p0, Lb0/d;->c:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/b0/d.smali	71	    iput-object v0, v1, Lru/zdevs/zarchiver/activity/InstallApksDlg;->d:Lh0/h;
+decoded/smali/b0/d.smali	88	    iget-object v2, v1, Lru/zdevs/zarchiver/activity/InstallApksDlg;->e:Lru/zdevs/zarchiver/activity/InstallApksDlg$e;
+decoded/smali/b0/d.smali	100	    iput-object v0, v1, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a:Landroid/os/Handler;
+decoded/smali/b0/d.smali	108	    sget v0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->f:I
+decoded/smali/b0/d.smali	118	    invoke-virtual {v1, v0, v2}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/b0/d.smali	140	    sget v2, Lru/zdevs/zarchiver/activity/InstallApksDlg;->f:I
+decoded/smali/b0/d.smali	147	    invoke-virtual {v1, v0, v2}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/q0/a.smali	29	    invoke-virtual {p0}, Landroid/content/pm/PackageManager;->getPackageInstaller()Landroid/content/pm/PackageInstaller;
+decoded/smali/q0/a.smali	37	    invoke-virtual {p0}, Landroid/content/pm/PackageInstaller;->getMySessions()Ljava/util/List;
+decoded/smali/q0/a.smali	74	    check-cast v1, Landroid/content/pm/PackageInstaller$SessionInfo;
+decoded/smali/q0/a.smali	78	    invoke-virtual {v1}, Landroid/content/pm/PackageInstaller$SessionInfo;->getSessionId()I
+decoded/smali/q0/a.smali	86	    invoke-virtual {p0, v1}, Landroid/content/pm/PackageInstaller;->abandonSession(I)V
+decoded/smali/q0/a.smali	1183	    const-class v2, Lru/zdevs/zarchiver/activity/InstallApkDlg;
+decoded/smali/q0/a.smali	1271	    invoke-virtual {v4}, Landroid/content/pm/PackageManager;->getPackageInstaller()Landroid/content/pm/PackageInstaller;
+decoded/smali/q0/a.smali	1282	    new-instance v5, Landroid/content/pm/PackageInstaller$SessionParams;
+decoded/smali/q0/a.smali	1289	    invoke-direct {v5, v6}, Landroid/content/pm/PackageInstaller$SessionParams;-><init>(I)V
+decoded/smali/q0/a.smali	1309	    invoke-virtual {v5, v8}, Landroid/content/pm/PackageInstaller$SessionParams;->setInstallReason(I)V
+decoded/smali/q0/a.smali	1326	    invoke-virtual {v5, v7}, Landroid/content/pm/PackageInstaller$SessionParams;->setPackageSource(I)V
+decoded/smali/q0/a.smali	1332	    invoke-virtual {v5, v1}, Landroid/content/pm/PackageInstaller$SessionParams;->setInstallLocation(I)V
+decoded/smali/q0/a.smali	1395	    invoke-virtual {v5, v11, v12}, Landroid/content/pm/PackageInstaller$SessionParams;->setSize(J)V
+decoded/smali/q0/a.smali	1408	    invoke-virtual {v4, v5}, Landroid/content/pm/PackageInstaller;->createSession(Landroid/content/pm/PackageInstaller$SessionParams;)I
+decoded/smali/q0/a.smali	1419	    invoke-virtual {v4, v5}, Landroid/content/pm/PackageInstaller;->openSession(I)Landroid/content/pm/PackageInstaller$Session;
+decoded/smali/q0/a.smali	1534	    invoke-virtual/range {v10 .. v15}, Landroid/content/pm/PackageInstaller$Session;->openWrite(Ljava/lang/String;JJ)Ljava/io/OutputStream;
+decoded/smali/q0/a.smali	1564	    invoke-virtual {v2, v10}, Landroid/content/pm/PackageInstaller$Session;->fsync(Ljava/io/OutputStream;)V
+decoded/smali/q0/a.smali	1639	    invoke-virtual {v2, v0}, Landroid/content/pm/PackageInstaller$Session;->commit(Landroid/content/IntentSender;)V
+decoded/smali/q0/a.smali	1646	    invoke-virtual {v2}, Landroid/content/pm/PackageInstaller$Session;->close()V
+decoded/smali/q0/a.smali	1668	    invoke-virtual {v2}, Landroid/content/pm/PackageInstaller$Session;->abandon()V
+decoded/smali/q0/a.smali	1701	    invoke-virtual {v4, v5}, Landroid/content/pm/PackageInstaller;->abandonSession(I)V
+decoded/smali/q0/a.smali	1717	    invoke-virtual {v2}, Landroid/content/pm/PackageInstaller$Session;->close()V
+decoded/smali/q0/a.smali	1736	    invoke-virtual {v2}, Landroid/content/pm/PackageInstaller$Session;->close()V
+decoded/smali/q0/a.smali	1796	    const-class v2, Lru/zdevs/zarchiver/activity/InstallApkDlg;
+decoded/smali/q0/a.smali	2028	    const-class v2, Lru/zdevs/zarchiver/activity/InstallApkDlg;
+decoded/smali/q0/a.smali	2088	    invoke-virtual {v6}, Landroid/content/pm/PackageManager;->getPackageInstaller()Landroid/content/pm/PackageInstaller;
+decoded/smali/q0/a.smali	2099	    new-instance v7, Landroid/content/pm/PackageInstaller$SessionParams;
+decoded/smali/q0/a.smali	2106	    invoke-direct {v7, v8}, Landroid/content/pm/PackageInstaller$SessionParams;-><init>(I)V
+decoded/smali/q0/a.smali	2118	    invoke-virtual {v7, v1}, Landroid/content/pm/PackageInstaller$SessionParams;->setInstallReason(I)V
+decoded/smali/q0/a.smali	2135	    invoke-virtual {v7, v0}, Landroid/content/pm/PackageInstaller$SessionParams;->setPackageSource(I)V
+decoded/smali/q0/a.smali	2156	    invoke-virtual {v7, v3}, Landroid/content/pm/PackageInstaller$SessionParams;->setInstallLocation(I)V
+decoded/smali/q0/a.smali	2317	    invoke-virtual {v7, v13, v14}, Landroid/content/pm/PackageInstaller$SessionParams;->setSize(J)V
+decoded/smali/q0/a.smali	2322	    invoke-virtual {v6, v7}, Landroid/content/pm/PackageInstaller;->createSession(Landroid/content/pm/PackageInstaller$SessionParams;)I
+decoded/smali/q0/a.smali	2333	    invoke-virtual {v6, v4}, Landroid/content/pm/PackageInstaller;->openSession(I)Landroid/content/pm/PackageInstaller$Session;
+decoded/smali/q0/a.smali	2459	    invoke-virtual/range {v18 .. v23}, Landroid/content/pm/PackageInstaller$Session;->openWrite(Ljava/lang/String;JJ)Ljava/io/OutputStream;
+decoded/smali/q0/a.smali	2489	    invoke-virtual {v7, v14}, Landroid/content/pm/PackageInstaller$Session;->fsync(Ljava/io/OutputStream;)V
+decoded/smali/q0/a.smali	2563	    invoke-virtual {v7, v0}, Landroid/content/pm/PackageInstaller$Session;->commit(Landroid/content/IntentSender;)V
+decoded/smali/q0/a.smali	2575	    invoke-virtual {v7}, Landroid/content/pm/PackageInstaller$Session;->close()V
+decoded/smali/q0/a.smali	2630	    invoke-virtual {v4}, Landroid/content/pm/PackageInstaller$Session;->abandon()V
+decoded/smali/q0/a.smali	2663	    invoke-virtual {v6, v0}, Landroid/content/pm/PackageInstaller;->abandonSession(I)V
+decoded/smali/q0/a.smali	2689	    invoke-virtual {v4}, Landroid/content/pm/PackageInstaller$Session;->close()V
+decoded/smali/q0/a.smali	2718	    invoke-virtual {v4}, Landroid/content/pm/PackageInstaller$Session;->close()V
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	867	"    const-string v1, "".activity.InstallApksDlg"""
+decoded/smali/ru/zdevs/zarchiver/a.smali	174	"    const-string v3, ""application/vnd.android.package-archive"""
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApkDlg.smali	1	.class public Lru/zdevs/zarchiver/activity/InstallApkDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApkDlg.smali	170	    invoke-virtual {p0}, Lru/zdevs/zarchiver/activity/InstallApkDlg;->finishAndRemoveTask()V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	1	.class public final Lru/zdevs/zarchiver/activity/InstallApksDlg$a;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	11	    value = Lru/zdevs/zarchiver/activity/InstallApksDlg;->onCreate(Landroid/os/Bundle;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	23	.field public final synthetic b:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	27	.method public constructor <init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;Landroid/content/Intent;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	35	    iput-object p1, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$a;->b:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	37	    iput-object p2, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$a;->a:Landroid/content/Intent;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	50	    iget-object v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$a;->a:Landroid/content/Intent;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	62	    iget-object v1, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$a;->b:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	99	    const-class v0, Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	115	    sget v0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->f:I
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	119	    invoke-virtual {v1, v3, v2}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	150	    sget v0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->f:I
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$a.smali	158	    invoke-virtual {v1, v0, v2}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$b.smali	1	.class public final Lru/zdevs/zarchiver/activity/InstallApksDlg$b;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$b.smali	11	    value = Lru/zdevs/zarchiver/activity/InstallApksDlg;->onNewIntent(Landroid/content/Intent;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$b.smali	23	.field public final synthetic b:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$b.smali	27	.method public constructor <init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;Ljava/lang/String;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$b.smali	35	    iput-object p1, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$b;->b:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$b.smali	37	    iput-object p2, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$b;->a:Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$b.smali	50	    iget-object v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$b;->b:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$b.smali	59	    sget v1, Lru/zdevs/zarchiver/activity/InstallApksDlg;->f:I
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$b.smali	63	    iget-object v1, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$b;->a:Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$b.smali	70	    invoke-virtual {v0, v1, v2}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$c.smali	1	.class public final Lru/zdevs/zarchiver/activity/InstallApksDlg$c;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$c.smali	11	    value = Lru/zdevs/zarchiver/activity/InstallApksDlg;->onActivityResult(IILandroid/content/Intent;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$c.smali	23	.field public final synthetic b:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$c.smali	27	.method public constructor <init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;Lh0/h;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$c.smali	35	    iput-object p1, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$c;->b:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$c.smali	37	    iput-object p2, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$c;->a:Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$c.smali	51	    iget-object v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$c;->a:Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$c.smali	55	    const-class v1, Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$c.smali	70	    sget v0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->f:I
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$c.smali	74	    iget-object v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$c;->b:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$c.smali	84	    invoke-virtual {v0, v1, v2}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$d.smali	1	.class public final Lru/zdevs/zarchiver/activity/InstallApksDlg$d;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$d.smali	11	    value = Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$d.smali	25	.field public final synthetic c:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$d.smali	29	.method public constructor <init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$d.smali	37	    iput-object p1, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$d;->c:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$d.smali	39	    iput-object p2, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$d;->a:Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$d.smali	41	    iput-boolean p3, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$d;->b:Z
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$d.smali	54	    iget-object v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$d;->c:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$d.smali	58	    iget-object v1, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$d;->a:Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$d.smali	66	    iget-boolean v1, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$d;->b:Z
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$d.smali	119	    invoke-virtual {v0}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->finishAndRemoveTask()V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$e.smali	1	.class public final Lru/zdevs/zarchiver/activity/InstallApksDlg$e;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$e.smali	11	    value = Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$e.smali	21	.field public final synthetic a:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$e.smali	25	.method public constructor <init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$e.smali	28	    iput-object p1, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$e;->a:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$e.smali	44	    iget-object v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg$e;->a:Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$e.smali	48	    iput-boolean p1, v0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->c:Z
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$e.smali	55	    iput-object p1, v0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a:Landroid/os/Handler;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$e.smali	114	    iget-object p1, v0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->d:Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg$e.smali	126	    invoke-direct {v2, v0, p2, p1}, Lb0/d;-><init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;Lru/zdevs/zarchiver/c;Lh0/h;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	1	.class public Lru/zdevs/zarchiver/activity/InstallApksDlg;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	19	.field public final e:Lru/zdevs/zarchiver/activity/InstallApksDlg$e;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	32	    new-instance v0, Lru/zdevs/zarchiver/activity/InstallApksDlg$e;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	36	    invoke-direct {v0, p0}, Lru/zdevs/zarchiver/activity/InstallApksDlg$e;-><init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	41	    iput-object v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->e:Lru/zdevs/zarchiver/activity/InstallApksDlg$e;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	53	    new-instance v0, Lru/zdevs/zarchiver/activity/InstallApksDlg$d;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	55	    invoke-direct {v0, p0, p1, p2}, Lru/zdevs/zarchiver/activity/InstallApksDlg$d;-><init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	66	    iget-object v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->b:Lg0/y;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	161	    new-instance p3, Lru/zdevs/zarchiver/activity/InstallApksDlg$c;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	165	    invoke-direct {p3, p0, p1}, Lru/zdevs/zarchiver/activity/InstallApksDlg$c;-><init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;Lh0/h;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	186	    invoke-virtual {p0, p1, p2}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	217	    invoke-virtual {p0}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->finishAndRemoveTask()V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	246	    iput-object v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->b:Lg0/y;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	259	    new-instance v1, Lru/zdevs/zarchiver/activity/InstallApksDlg$a;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	263	    invoke-direct {v1, p0, p1}, Lru/zdevs/zarchiver/activity/InstallApksDlg$a;-><init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;Landroid/content/Intent;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	469	    invoke-direct {v0, p0, v4, v5}, Lb0/d;-><init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;Lru/zdevs/zarchiver/c;Lh0/h;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	487	    iget-object v5, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->b:Lg0/y;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	516	    new-instance p1, Lru/zdevs/zarchiver/activity/InstallApksDlg$b;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	520	    invoke-direct {p1, p0, v3}, Lru/zdevs/zarchiver/activity/InstallApksDlg$b;-><init>(Lru/zdevs/zarchiver/activity/InstallApksDlg;Ljava/lang/String;)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	534	    invoke-virtual {p0, v4, p1}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	543	    invoke-virtual {p0, v4, v6}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	645	    invoke-virtual {p0, v2, p1}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	674	    invoke-virtual {p0, v2, p1}, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a(Ljava/lang/String;Z)V
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	715	    iget-object v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a:Landroid/os/Handler;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	731	    iput-object v1, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->a:Landroid/os/Handler;
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	737	    iget-boolean v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->c:Z
+decoded/smali/ru/zdevs/zarchiver/activity/InstallApksDlg.smali	745	    iget-object v0, p0, Lru/zdevs/zarchiver/activity/InstallApksDlg;->e:Lru/zdevs/zarchiver/activity/InstallApksDlg$e;
+decoded/smali/ru/zdevs/zarchiver/activity/SettingsDlg$c.smali	374	    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z

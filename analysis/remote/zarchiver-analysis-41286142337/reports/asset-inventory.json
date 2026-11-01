@@ -1,0 +1,11 @@
+[
+  {
+    "path": "assets/tree",
+    "size": 3469,
+    "sha256": "2003eca37a6db78c07fcb29e81ae64b5cf804a5dbd3ba9297545284e47b362d8",
+    "entropy_sample": 4.2785,
+    "printable_ratio_sample": 1.0,
+    "first_bytes_hex": "2f616363742f0a2f617065782f0a2f62696e2f0a2f63616368652f0a2f636f6e",
+    "likely_text": true
+  }
+]

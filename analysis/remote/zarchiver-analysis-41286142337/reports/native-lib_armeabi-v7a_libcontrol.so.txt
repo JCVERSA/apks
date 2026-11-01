@@ -1,0 +1,134 @@
+=== lib/armeabi-v7a/libcontrol.so ===
+/home/runner/work/_temp/zarchiver-analysis/decoded/lib/armeabi-v7a/libcontrol.so: ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, BuildID[sha1]=75c4ba5037fe3c33a934cb8d68ce3b5dc84a2419, stripped
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          33232 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         8
+  Size of section headers:           40 (bytes)
+  Number of section headers:         26
+  Section header string table index: 25
+
+Dynamic dependencies:
+
+Dynamic section at offset 0x7dfc contains 32 entries:
+  Tag        Type                         Name/Value
+ 0x00000003 (PLTGOT)                     0xbf4c
+ 0x00000002 (PLTRELSZ)                   336 (bytes)
+ 0x00000017 (JMPREL)                     0x1054
+ 0x00000014 (PLTREL)                     REL
+ 0x00000011 (REL)                        0xffc
+ 0x00000012 (RELSZ)                      88 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffa (RELCOUNT)                   7
+ 0x00000006 (SYMTAB)                     0x1f0
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000005 (STRTAB)                     0x650
+ 0x0000000a (STRSZ)                      1685 (bytes)
+ 0x00000004 (HASH)                       0xce8
+ 0x00000001 (NEEDED)                     Shared library: [libhandler.so]
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libstdc++.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x0000000e (SONAME)                     Library soname: [libcontrol.so]
+ 0x0000001a (FINI_ARRAY)                 0xbdf0
+ 0x0000001c (FINI_ARRAYSZ)               8 (bytes)
+ 0x00000019 (INIT_ARRAY)                 0xbdf8
+ 0x0000001b (INIT_ARRAYSZ)               4 (bytes)
+ 0x0000001e (FLAGS)                      BIND_NOW
+ 0x6ffffffb (FLAGS_1)                    Flags: NOW
+ 0x6ffffff0 (VERSYM)                     0xf14
+ 0x6ffffffc (VERDEF)                     0xfa0
+ 0x6ffffffd (VERDEFNUM)                  1
+ 0x6ffffffe (VERNEED)                    0xfbc
+ 0x6fffffff (VERNEEDNUM)                 2
+ 0x00000000 (NULL)                       0x0
+
+Exported symbols (bounded):
+
+Symbol table '.dynsym' contains 70 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncasecmp@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncmp@LIBC (2)
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND open@LIBC (2)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_join@LIBC (2)
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND read@LIBC (2)
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND close@LIBC (2)
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen@LIBC (2)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcasecmp@LIBC (2)
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+    12: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlclose@LIBC (3)
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND calloc@LIBC (2)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memmove
+    16: 00001635   384 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_C2JBridge_cExtract
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND jSetStatus
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND jSetTaskFlags
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND chdir@LIBC (2)
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlopen@LIBC (3)
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND mkdir@LIBC (2)
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcpy@LIBC (2)
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z17android_api_levelv
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND malloc@LIBC (2)
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z8za_chdirPKc
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlerror@LIBC (3)
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z15android_io_statPKcP4stat
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcat@LIBC (2)
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z16android_io_mkdirPKc
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlsym@LIBC (3)
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND jSetTaskCompleted
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND rmdir@LIBC (2)
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z17android_io_removePKc
+    35: 00000000     0 FUNC    GLOBAL DEFAULT  UND strdup@LIBC (2)
+    36: 000017f1   150 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_C2JBridge_cTest
+    37: 00001889   200 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_C2JBridge_cAddFiles
+    38: 00001951   200 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_C2JBridge_cDelFiles
+    39: 00001a19   192 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_C2JBridge_cCompress
+    40: 00001ad9   150 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_C2JBridge_cList
+    41: 00001b6f   200 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_C2JBridge_cRename
+    42: 00001c39    36 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_C2JBridge_cSetOption
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND jSetOemCodec
+    44: 00001c5d    76 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_C2JBridge_cSetMTime
+    45: 00000000     0 FUNC    GLOBAL DEFAULT  UND syscall@LIBC (2)
+    46: 00001ca9   102 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_C2JBridge_cIsExist
+    47: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno@LIBC (2)
+    48: 00001d0f     8 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_C2JBridge_cSetStatus
+    49: 00001d19    64 FUNC    GLOBAL DEFAULT   12 JNI_OnLoad
+    50: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+    51: 00000000     0 FUNC    GLOBAL DEFAULT  UND jGetNativePath
+    52: 000025dd   752 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_NArc_cArchiveOpen
+    53: 000028e3    46 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_NArc_cClose
+    54: 00002911   428 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_NArc_cGetStream
+    55: 00002abd    22 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_NArc_cWaitEndStream
+    56: 00002ad5   400 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_NArc_cGetItem
+    57: 00002cad    20 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_NArc_cGetItemCount
+    58: 00002cc1    16 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_NArc_cCancel
+    59: 00002cd1    84 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_NArc_cSetComment
+    60: 00002d25    98 FUNC    GLOBAL DEFAULT   12 Java_ru_zdevs_zarchiver_archiver_NArc_cUpdateFile
+    61: 0000c004     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+    62: 0000c005     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+    63: 0000c004     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+    64: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    65: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@LIBC (2)
+    66: 00000000     0 FUNC    WEAK   DEFAULT  UND __gnu_Unwind_Find_exidx
+    67: 00000000     0 NOTYPE  WEAK   DEFAULT  UND __cxa_begin_cleanup
+    68: 00000000     0 NOTYPE  WEAK   DEFAULT  UND __cxa_type_match
+    69: 00000000     0 NOTYPE  WEAK   DEFAULT  UND __cxa_call_unexpected

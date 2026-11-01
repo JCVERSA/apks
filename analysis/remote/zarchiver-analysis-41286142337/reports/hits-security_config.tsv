@@ -1,0 +1,25 @@
+file	line	text
+jadx/sources/o/c.java	67	"                cVar.i(""android:protectionLevel"");"
+jadx/sources/rikka/shizuku/ShizukuProvider.java	73	"            throw new IllegalStateException(""android:exported must be true"");"
+jadx/sources/ru/zdevs/zarchiver/archiver/C2JBridge.java	137	"            System.loadLibrary(""handler"");"
+jadx/sources/ru/zdevs/zarchiver/archiver/C2JBridge.java	138	"            System.loadLibrary(""mime"");"
+jadx/sources/ru/zdevs/zarchiver/archiver/C2JBridge.java	139	"            System.loadLibrary(""control"");"
+jadx/sources/ru/zdevs/zarchiver/archiver/C2JBridge.java	140	"            System.loadLibrary(""iconv"");"
+jadx/sources/ru/zdevs/zarchiver/media/MimeLib.java	6	"            System.loadLibrary(""mime"");"
+decoded/AndroidManifest.xml	38	"        <activity android:configChanges=""orientation|screenLayout|screenSize|smallestScreenSize"" android:exported=""true"" android:launchMode=""singleTask"" android:name=""ru.zdevs.zarchiver.ZArchiver"" android:resizeableActivity=""true"" android:theme=""@style/AppTheme.Dark"" android:windowSoftInputMode=""adjustPan"">"
+decoded/AndroidManifest.xml	605	"        <activity android:configChanges=""orientation|screenLayout|screenSize|smallestScreenSize"" android:excludeFromRecents=""true"" android:exported=""true"" android:launchMode=""singleTop"" android:name=""ru.zdevs.zarchiver.ZSelectFile"" android:theme=""@style/AppTheme.Dark"" android:windowSoftInputMode=""adjustPan"">"
+decoded/AndroidManifest.xml	619	"        <activity android:configChanges=""orientation|screenLayout|screenSize|smallestScreenSize"" android:exported=""true"" android:label=""@string/MENU_EXTRACT_TO_DIR"" android:launchMode=""singleTask"" android:name=""ru.zdevs.zarchiver.activity.ExtractDlg"" android:resizeableActivity=""true"" android:theme=""@style/Theme.Transparent"">"
+decoded/AndroidManifest.xml	669	"        <activity android:configChanges=""orientation|screenLayout|screenSize|smallestScreenSize"" android:exported=""true"" android:label=""@string/MENU_INSTALL"" android:launchMode=""singleTask"" android:name=""ru.zdevs.zarchiver.activity.InstallApksDlg"" android:resizeableActivity=""true"" android:theme=""@style/Theme.Transparent"">"
+decoded/AndroidManifest.xml	700	"        <activity android:configChanges=""orientation|screenLayout|screenSize|smallestScreenSize"" android:exported=""true"" android:icon=""@mipmap/ic_launcher_image"" android:label=""@string/app_image_viewer_name"" android:launchMode=""singleTask"" android:name=""ru.zdevs.zarchiver.ZImageViewer"">"
+decoded/AndroidManifest.xml	711	"        <activity android:configChanges=""orientation|screenLayout|screenSize|smallestScreenSize"" android:exported=""true"" android:icon=""@mipmap/ic_launcher_text"" android:label=""@string/app_text_editor_name"" android:name=""ru.zdevs.zarchiver.ZTextEditor"" android:process="":text"" android:windowSoftInputMode=""stateHidden|adjustResize"">"
+decoded/AndroidManifest.xml	727	"        <provider android:authorities=""ru.zdevs.zarchiver.external"" android:exported=""false"" android:grantUriPermissions=""true"" android:name=""ru.zdevs.zarchiver.provider.FileProvider""/>"
+decoded/AndroidManifest.xml	728	"        <provider android:authorities=""ru.zdevs.zarchiver.archive"" android:exported=""false"" android:grantUriPermissions=""true"" android:name=""ru.zdevs.zarchiver.provider.ArchiveFileProvider"" android:process="":archive""/>"
+decoded/AndroidManifest.xml	729	"        <provider android:authorities=""ru.zdevs.zarchiver.plugin"" android:exported=""false"" android:grantUriPermissions=""true"" android:name=""ru.zdevs.zarchiver.provider.PluginFileProvider"" android:process="":plugin""/>"
+decoded/AndroidManifest.xml	730	"        <provider android:authorities=""ru.zdevs.zarchiver.shizuku"" android:enabled=""true"" android:exported=""true"" android:multiprocess=""false"" android:name=""rikka.shizuku.ShizukuProvider"" android:permission=""android.permission.INTERACT_ACROSS_USERS_FULL""/>"
+decoded/smali/o/c.smali	1104	"    const-string v1, ""android:protectionLevel"""
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	322	"    const-string p2, ""android:exported must be true"""
+decoded/smali/ru/zdevs/zarchiver/archiver/C2JBridge.smali	479	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali/ru/zdevs/zarchiver/archiver/C2JBridge.smali	488	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali/ru/zdevs/zarchiver/archiver/C2JBridge.smali	497	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali/ru/zdevs/zarchiver/archiver/C2JBridge.smali	506	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+decoded/smali/ru/zdevs/zarchiver/media/MimeLib.smali	16	    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V

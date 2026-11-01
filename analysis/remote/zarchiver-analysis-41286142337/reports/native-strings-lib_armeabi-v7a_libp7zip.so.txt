@@ -1,0 +1,2037 @@
+__cxa_finalize
+libp7zip.so
+__cxa_atexit
+__stack_chk_fail
+__stack_chk_guard
+__cxa_begin_catch
+_ZSt9terminatev
+__aeabi_memclr
+__cxa_allocate_exception
+__cxa_throw
+__aeabi_memclr4
+__aeabi_memcpy
+__aeabi_memcpy4
+__cxa_end_catch
+__cxa_call_unexpected
+__cxa_pure_virtual
+__aeabi_memmove
+__aeabi_memclr8
+__aeabi_memcpy8
+__aeabi_memmove4
+__cxa_rethrow
+__aeabi_memset
+__aeabi_memmove8
+_ZTVN10__cxxabiv117__class_type_infoE
+_ZTVN10__cxxabiv120__si_class_type_infoE
+__aeabi_memset4
+_ZSt7nothrow
+pthread_mutex_lock
+pthread_cond_broadcast
+pthread_mutex_unlock
+pthread_mutex_destroy
+pthread_cond_destroy
+pthread_cond_timedwait
+ftruncate64
+sem_post
+sem_destroy
+sem_wait
+pthread_exit
+sem_init
+strncasecmp
+utimensat
+closedir
+pthread_self
+pthread_setname_np
+libdl.so
+pthread_once
+pthread_getspecific
+pthread_setspecific
+pthread_key_create
+pthread_key_delete
+towupper
+__aeabi_memset8
+localtime
+pthread_cond_wait
+readlink
+strerror
+memalign
+pthread_join
+pthread_detach
+pthread_attr_destroy
+pthread_create
+pthread_attr_setdetachstate
+pthread_attr_init
+pthread_cond_signal
+pthread_mutex_init
+pthread_cond_init
+gettimeofday
+__cxa_free_exception
+jGetTaskFlags
+android_getCpuCount
+LZ4F_isError
+LZ4F_getErrorName
+LZ4F_getVersion
+LZ4F_compressionLevel_max
+LZ4F_compressFrameBound
+LZ4F_compressUpdate
+LZ4F_flush
+LZ4F_compressEnd
+LZ4F_compressFrame
+LZ4F_createCompressionContext
+LZ4F_freeCompressionContext
+LZ4F_compressBegin
+LZ4F_compressBound
+LZ4F_createDecompressionContext
+LZ4F_freeDecompressionContext
+LZ4F_resetDecompressionContext
+LZ4F_getFrameInfo
+LZ4F_decompress
+ZSTD_trace_compress_begin
+ZSTD_trace_compress_end
+ZSTD_trace_decompress_end
+ZSTD_trace_decompress_begin
+jGetStatus
+jSetProcessPercent
+jAskOverwrite
+jSetProcessText
+jShowMessage
+jFileExtracted
+__android_log_print
+jArchiveInfo
+jGetPassword
+mimetype_get_name
+jSetComment
+_Z11al_add_filePKcixii
+jGetOemCodec
+_Z11SetOEMCodeci
+_ZTISt9bad_alloc
+_ZTSSt9bad_alloc
+_ZTSSt9exception
+_ZTISt9exception
+_ZTVN10__cxxabiv116__enum_type_infoE
+p7za_pipe
+p7za_main
+get_mbtowc
+get_wctomb
+utf8_naive_is_correct
+_Z8za_closeP6ZAFILE
+_Z7za_openPKci
+_Z7za_readP6ZAFILEPvj
+_Z8za_lseekP6ZAFILExi
+_Z7za_sizeP6ZAFILE
+_Z9za_get_fdP6ZAFILE
+_Z15android_io_openPKci
+_Z16android_io_mkdirPKc
+_Z17android_io_mkdirsPKci
+_Z17android_io_renamePKcS0_
+_Z17android_io_removePKc
+_Z18android_io_opendirPKc
+_Z19android_io_closedirP14ANDROID_IO_DIR
+_Z18android_io_readdirP14ANDROID_IO_DIR
+_Z15android_io_statPKcP4stat
+archive_open
+bsd_signal
+archive_cancel
+archive_close
+archive_stream_get
+archive_item_get_index
+archive_item_get_count
+archive_item_get
+archive_item_delete
+archive_item_add
+archive_item_rename
+archive_comment_set
+android_getCpuFamily
+android_getCpuFeatures
+android_setCpu
+android_getCpuIdArm
+android_setCpuArm
+_ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PPv
+_ZNK10__cxxabiv117__class_type_info20__do_find_public_srcEiPKvPKS0_S2_
+_ZN10__cxxabiv117__class_type_infoD2Ev
+_ZN10__cxxabiv117__class_type_infoD1Ev
+_ZN10__cxxabiv117__class_type_infoD0Ev
+_ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PKvRNS0_15__upcast_resultE
+_ZNK10__cxxabiv117__class_type_info10__do_catchEPKSt9type_infoPPvj
+_ZNK10__cxxabiv117__class_type_info12__do_dyncastEiNS0_10__sub_kindEPKS0_PKvS3_S5_RNS0_16__dyncast_resultE
+_ZTSN10__cxxabiv117__class_type_infoE
+_ZTIN10__cxxabiv117__class_type_infoE
+_ZNSt9exceptionD2Ev
+__cxa_end_cleanup
+__cxa_allocate_dependent_exception
+__cxa_free_dependent_exception
+__gnu_end_cleanup
+__cxa_type_match
+_ZTIN10__cxxabiv119__foreign_exceptionE
+_ZTIN10__cxxabiv115__forced_unwindE
+__cxa_begin_cleanup
+__cxa_get_globals
+_ZN10__cxxabiv111__terminateEPFvvE
+_ZN10__cxxabiv112__unexpectedEPFvvE
+_ZSt10unexpectedv
+__cxa_get_globals_fast
+_ZTISt13bad_exception
+_ZTVSt13bad_exception
+_ZNSt13bad_exceptionD1Ev
+__cxa_get_exception_ptr
+_ZSt18uncaught_exceptionv
+_ZNSt9exceptionD1Ev
+_ZNSt13bad_exceptionD2Ev
+_ZNKSt9exception4whatEv
+_ZNKSt13bad_exception4whatEv
+_ZNSt9exceptionD0Ev
+_ZNSt13bad_exceptionD0Ev
+_ZN10__cxxabiv115__forced_unwindD2Ev
+_ZN10__cxxabiv115__forced_unwindD1Ev
+_ZN10__cxxabiv115__forced_unwindD0Ev
+_ZN10__cxxabiv119__foreign_exceptionD2Ev
+_ZN10__cxxabiv119__foreign_exceptionD1Ev
+_ZN10__cxxabiv119__foreign_exceptionD0Ev
+_ZTSSt13bad_exception
+_ZTSN10__cxxabiv115__forced_unwindE
+_ZTSN10__cxxabiv119__foreign_exceptionE
+_ZTVSt9exception
+_ZTVN10__cxxabiv115__forced_unwindE
+_ZTVN10__cxxabiv119__foreign_exceptionE
+_ZSt13set_terminatePFvvE
+_ZN10__cxxabiv119__terminate_handlerE
+_ZSt13get_terminatev
+_ZSt14set_unexpectedPFvvE
+_ZN10__cxxabiv120__unexpected_handlerE
+_ZSt14get_unexpectedv
+_ZN10__cxxabiv116__enum_type_infoD2Ev
+_ZN10__cxxabiv116__enum_type_infoD1Ev
+_ZN10__cxxabiv116__enum_type_infoD0Ev
+_ZTSN10__cxxabiv116__enum_type_infoE
+_ZTIN10__cxxabiv116__enum_type_infoE
+_ZN10__cxxabiv123__fundamental_type_infoD2Ev
+_ZTVN10__cxxabiv123__fundamental_type_infoE
+_ZN10__cxxabiv123__fundamental_type_infoD1Ev
+_ZN10__cxxabiv123__fundamental_type_infoD0Ev
+_ZTSN10__cxxabiv123__fundamental_type_infoE
+_ZTIN10__cxxabiv123__fundamental_type_infoE
+_ZTSPKDs
+_ZTSPKDi
+_ZTSPKDf
+_ZTSPKDd
+_ZTSPKDe
+_ZTSPKDn
+_ZTIPKDn
+_ZTVN10__cxxabiv119__pointer_type_infoE
+_ZTIPKDe
+_ZTIPKDd
+_ZTIPKDf
+_ZTIPKDi
+_ZTIPKDs
+_ZSt15get_new_handlerv
+_ZTVSt9bad_alloc
+_ZNSt9bad_allocD1Ev
+_ZNK10__cxxabiv119__pointer_type_info14__is_pointer_pEv
+_ZN10__cxxabiv119__pointer_type_infoD2Ev
+_ZN10__cxxabiv117__pbase_type_infoD2Ev
+_ZN10__cxxabiv119__pointer_type_infoD1Ev
+_ZN10__cxxabiv119__pointer_type_infoD0Ev
+_ZNK10__cxxabiv119__pointer_type_info15__pointer_catchEPKNS_17__pbase_type_infoEPPvj
+_ZTSN10__cxxabiv119__pointer_type_infoE
+_ZTIN10__cxxabiv119__pointer_type_infoE
+_ZTIN10__cxxabiv117__pbase_type_infoE
+_ZNK10__cxxabiv117__pbase_type_info10__do_catchEPKSt9type_infoPPvj
+__cxa_deleted_virtual
+_ZN10__cxxabiv120__si_class_type_infoD2Ev
+_ZN10__cxxabiv120__si_class_type_infoD1Ev
+_ZN10__cxxabiv120__si_class_type_infoD0Ev
+_ZNK10__cxxabiv120__si_class_type_info20__do_find_public_srcEiPKvPKNS_17__class_type_infoES2_
+_ZNK10__cxxabiv120__si_class_type_info12__do_dyncastEiNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
+_ZNK10__cxxabiv120__si_class_type_info11__do_upcastEPKNS_17__class_type_infoEPKvRNS1_15__upcast_resultE
+_ZTSN10__cxxabiv120__si_class_type_infoE
+_ZTIN10__cxxabiv120__si_class_type_infoE
+_ZNKSt9bad_alloc4whatEv
+_ZNSt9bad_allocD2Ev
+_ZNSt9bad_allocD0Ev
+_ZN9__gnu_cxx27__verbose_terminate_handlerEv
+_ZSt15set_new_handlerPFvvE
+_ZTVN10__cxxabiv117__pbase_type_infoE
+_ZN10__cxxabiv117__pbase_type_infoD1Ev
+_ZN10__cxxabiv117__pbase_type_infoD0Ev
+__cxa_bad_typeid
+_ZTSN10__cxxabiv117__pbase_type_infoE
+__cxa_current_exception_type
+__cxa_demangle
+__gcclibcxx_demangle_callback
+__cxa_bad_cast
+_ZTVSt8bad_cast
+_ZTISt8bad_cast
+_ZNSt8bad_castD1Ev
+_ZTVSt10bad_typeid
+_ZTISt10bad_typeid
+_ZNSt10bad_typeidD1Ev
+__cxa_throw_bad_array_new_length
+_ZTVSt20bad_array_new_length
+_ZTISt20bad_array_new_length
+_ZNSt20bad_array_new_lengthD1Ev
+__cxa_throw_bad_array_length
+_ZTVSt16bad_array_length
+_ZTISt16bad_array_length
+_ZNSt16bad_array_lengthD1Ev
+_ZNKSt16bad_array_length4whatEv
+_ZNSt16bad_array_lengthD2Ev
+_ZNSt16bad_array_lengthD0Ev
+_ZTSSt16bad_array_length
+_ZNKSt20bad_array_new_length4whatEv
+_ZNSt20bad_array_new_lengthD2Ev
+_ZNSt20bad_array_new_lengthD0Ev
+_ZTSSt20bad_array_new_length
+_ZNKSt8bad_cast4whatEv
+_ZNSt8bad_castD2Ev
+_ZNSt8bad_castD0Ev
+_ZTSSt8bad_cast
+_ZNKSt10bad_typeid4whatEv
+_ZNSt10bad_typeidD2Ev
+_ZNSt10bad_typeidD0Ev
+_ZTSSt10bad_typeid
+__bss_start
+__gnu_Unwind_Find_exidx
+libmime.so
+libiconv.so
+libhandler.so
+liblog.so
+libstdc++.so
+!(*-<IPU_i
+N}D~D(F2F
+KyDzD$h{D
+8D@xHE0F
+>e0hAh0F
+*P8hAh8F
+.`0hAh0F
+F1I1JyDzD	h	h
+F8h9y1q0`
+	pHDFhXF
+!BBB#B%BBBBBB'
+F8y9h0q1`
+BY(DChPF
+/]]25]]]]]8R;>AD]]G]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]JMPO
+FCIyD	h	h
+Can't open volume: 
+!FCFGiXF
+!FCFGiXF
+[ERROR-LONG-PATH]
+/I0F"FyD
+PAX_ITEM
+linkpath
+PAX_GLOBAL_ERROR
+UTF8-ERROR
+non-UTF8
+ZeroChar
+SingleSurrogate
+Truncated
+MaxUnicode=
+a yD	hIx
+d yD	h	y
+e yD	hIy
+SignedChecksum
+bin_mtime
+bin_psize
+bin_size
+pax_path
+pax_linkpath
+pax_size
+PAX_error
+PAX_unsupported_line
+PAX_overflow
+F%IyD	h	h	
+ 0d"x`8`
+linkpath
+%'FyD	h	h
+a yD	hIx
+d yD	h	y
+e yD	hIy
+XIyD	h	x
+` yD	h	x
+a yD	hIx
+d yD	h	y
+e yD	hIy
+linkpath
+devmajor
+devminor
+PaxHeader/@PaxHeader
+@PathCut/_pc_
+%a(hAh(F
+.HyD/JxD	hzD
+Missing volume : 
+32-bit overflow in headers
+16-bit overflow for number of files in headers
+Unsorted_CD
+Minor_Extra_ERROR
+"AAAAA(AAAA$&*
+Descriptor_ERROR
+ZipCrypto
+$kF(F9F2F
+@F)FRFKF
+%a(hAh(F
+AF8h	"#F
+ZipCrypto
+f(FAF2FKF
+7CQ@)C9CO
+APK Sig Block 42
+Vw@i@9CI
+Extra_ERROR
+Minor_Extra_ERROR
+FUIyD	h	h
+Missing volume : 
+8F1F*F#F
+@F9F*F#F
+4P(hAh(F
+Missing volume : 
+8F1F*F#F
+8`8FAFRF#F
+ h3FGi F
+::DataSpace/NameList
+::DataSpace/Storage/
+Transform/
+ControlData
+SpanInfo
+/InstanceData/ResetTable
+VolumeSet
+Publisher
+Preparer
+Application
+Copyright
+Abstract
+Incorrect big-endian headers
+Self-linked directory
+x%yD	h	h
+Uninstall
+(Uninstall)
+FkIyD	h	h
+$INSTDIR\
+`h!h$"=.
+ProgramFilesDir
+CommonFilesDir
+$COMMONFILES
+$PROGRAMFILES
+$_ERROR_UNSUPPORTED_VALUE_REGISTRY_
+_ERROR_UNSUPPORTED_SHELL_
+ p`cqx0x@
+$INSTDIR
+ooHA[oRj;oooooooooooooooooooooooo5
+(p(h9FFi(F
+[unknown]
+$8nYFSFP
+%b\!D@]Kx
+F@F!F*F;F
+*UDF Metadata Partition
+Primary Volumes:
+PrimaryVolumeDescriptorNumber
+VolumeSequenceNumber
+MaximumVolumeSequenceNumber
+VolumeId
+VolumeSetId
+ApplicationId
+Partitions:
+ImplementationId
+DomainId
+File Set 
+IhF	"3FyD
+XML error
+Some files have incorrect reference count
+[DELETED]
+[DELETED]/
+h@h``"`(h s
+TOTALBYTES
+DIRCOUNT
+FILECOUNT
+CREATIONTIME
+LASTMODIFICATIONTIME
+"@AF2F s(F
+HIGHPART
+ ci0hLY)D
+[LongPath]
+"yD	h	h5
+mIyD	h	h$
+!I(F"FyD
+CREATIONTIME
+LASTMODIFICATIONTIME
+DIRCOUNT
+FILECOUNT
+HIGHPART
+ENCRYPTED
+(hihp@Q@`
+hF1F:F	#
+hF)F:F	#
+fs_index
+volume_name
+vol_uuid
+incompatible_features
+im_flags
+im_hash_type
+num_snapshots
+total_blocks_freed
+unmounted
+last_modified
+formatted_by
+timestamp
+last_xid
+& F1F*F_
+com.apple.fs.symlink
+com.apple.decmpfs
+com.apple.ResourceFork
+block_size
+[LONG_PATH]
+#whQ@{@'F
+Apple_Free
+Apple_partition_map
+Apple_HFS
+$HF!FRF[
+$@F!FJF[
+__.SYMDEF
+__.SYMDEF SORTED
+Long file names parsing error
+debian-binary
+Library symbols information error
+:ZZZZZZZZZZZZZZZZZZZZZZZZZZ@ZEZZZZZZZ
+p`2F0r(F
+@ %HxDkF
+Extended:
+:CRC_ERROR
+F1J&9zD()
+@@@@@@@@@@@@@@@@@@@@@@@@@@!@@2@@@8
+WordDocument
+PowerPoint Document
+Workbook
+:	*yD	h	h	
+MMMMMMMMM*MMMMM"MMM<MB(M0MMMMMMMMMM8aMMMMMMMMMMMD4I
+5%[cdghef.6\$
+FDJ,9zD/)
+MMMMMMMMMMMMMMMMMMMMMMMMMM.
+MMMMMMMM:MMMMMMMMMC
+TRAILER!!!
+Master CRC error
+F0F9FBFO
+<?xml version
+resource-fork
+<P(hAh(F
+,P(hAh(F
+DP(hAh(F
+!`a1C!a)i
+BhbHxDkF
+BXRHxDkF
+Bh#HxDkF
+	 FIF:FK
+! c(k`c(l
+GG G   G       G               G                               G
+n*okocf"f
+[UNKNOWN]
+!F(hGi(F
+1! (   *       ,               .                               0
+.          
+..         
+	 mIF:FE
+:/*yD	h	h
+*TKxDIx{D
+video.flv
+audio.flv
+0h.aAh0F
+ `a FIFBF
+H' F:FKF
+KYYYYYYYYYYYYYYYYYYYYYYYYY7YYQYYY1
+FyD	h	h	
+]]]-9]]]F]]]]]]W]]]%]]]]]]]]]]]]]]]]4
+HFS+ Private Data
+[HFS+ Private Data]
+com.apple.decmpfs
+maximum_size
+first_logical_sector
+alignment
+alignment_offset
+F(h " `iy(y@
+(m chm`c
+c(n dhn`d
+d(o eho`e
+metadata_slot_count: 
+metadata_max_size: 
+BlockDevices:
+F1J,9zD")
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+G,b hAh F
+IF"FsFgF
+UF hAh F
+LLLLLLLLLLLLLLLLLLLLLLLLLL
+Gtb hAh F
+64-bit-lib
+sect_type:
+sect_flags:
+seg_flags:
+max_prot:
+init_prot:
+JF8FYF+F
+NTFS    
+EXFAT   
+```````````````K```````````Z
+				#		)
+ hv(u hAh F
+UFNFpFtF
+[TOO-LONG]
+p`@o@8Cg
+b	%[&K?2A
+There are lost files
+59}EE1u0a
+59}ME1u0a
+h(a iha`i
+Checksum error
+version.txt
+string.txt
+VS_VERSION_INFO
+StringFileInfo
+CERTIFICATE
+COFF_SYMBOLS
+_winzip_
+OriginalFilename
+FileDescription
+FileVersion
+aaaaaaaaaaaaaaaaaaaaaaaaaaa/aaaaaaaaaaV)
+$0F!F*F'
+FyD	h	h	
+55'5555555552
+\\\\\\\\\\S\\\\\\\\\\J\\\\\\\\\\\\\V\\\\\\\\\\\\8
+BGZZZZZZZZZZZZZZZZZZLQ
+OOOOOOOOOOOOOOOGOOOOO>OOOOOOOOOOOOOIOOOOOOOOOOOO&
+ha0hAh0F
+LZMA Spec
+LZMA ZLIB
+H2hxDkF\!o
+UU,2UUUUUUUUUUUUUU;UUUUUUUUUUUUUUUUUUUUUUUUF
+";FyD Fm
+Revision
+Short Description
+Long Description
+`(k ahk`a
+a(l bhl`b
+zz0zzzzzzzzzzzzzzzzzXzzzzz`zzzzzzzzzzzzzzzmv
+cxsparse
+Can't find footer
+Missing volume : 
+Can't open parent VHD file : 
+FyD	h	h	
+parentCID
+createType
+Missing volume : 
+# Disk DescriptorFile
+`.`h` hO
+ F:F	i3F
+PackageInfo
+directory
+extracted-checksum
+encoding
+application/
+[TOC].xml
+(F1F:FCF
+01OyDzD{D
+BlockPackSize
+BlockUnpackSize
+`W(hAh(F
+/												
+G.` hAh F
+zero size last volume
+Dh(F:F#F
+&`0hAh0F
+F`k0``kp
+8FIF2F#F
+ %a `(FW
+ j0D b`iX
+ j0D b`i`
+	@F1F:FKF
+ (08@P`p
+ (08@P`p
+,ZnZ*R"FoR
+NHNJxDzDP
+%0FXE:F4
+.F9FBF3FK
+* XD a!b
+xxxxxxxx
+8F1FJFCF
+mBBl*DBd	
+($yD	h	h
+ (08@P`p
+XP DyD	hA
+H PF1F#F
+FFXF!F2F
+=H>IxDyD
+1*yD	h	h9`
+:hyD	h	h
+|D(D D`DpD
+D(D D`DpD
+'-'-5-----------------------'-5---------------------
+F#IyD	h	h	
+FHHJxDFIzD
+FHGJxDEIzD
+mF@F)F@"8
+5!F "(F8
+H	JxDajzD
+0	 &@FQF2F
+/dev/urandom
+ 1\*\Q@)T
+ 1\*\Q@)T
+ 1\*\Q@)T
+ "yD	h	hM
+ImF "yD	h	hC
+	H	JxDajzD
+ImFyD	h	h
+~I(F~JyDzD	
+QIQJyDzD(F	
+1I(F1JyDzD	
+Unsupported switch postfix -bb
+Unsupported switch postfix for -slp
+Set process affinity mask: 
+Unsupported switch postfix -stm
+ : ERROR : 
+8$yDzD(F
+p$yDzD(F
+audtexlbih
+|I(F|JyDzD
+yIyJyDzD0F
+Unsupported command:
+Cannot find eliminate path
+Unsupported -spf:
+Unsupported -spm:
+Unsupported rename command:
+Unsupported charset:
+ I0F JyDzD
+Too short switch
+inorrect switch
+Incorrect wildcard type marker
+(@JF8FSF!F
+FxD5FkF["
+']]]]]]]]]]]]]]]]
+++++++++++++++++
+Cannot delete output file
+Cannot delete output folder
+Cannot create file with auto name
+Cannot open output file
+FQJzD FCF
+Dangerous link path was ignored
+Incorrect path
+Dangerous symbolic link path was ignored
+Cannot create symbolic link
+Empty link
+Incorrect reparse stream
+Unknown reparse stream
+can't delete file
+k1JkPY(>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkG
+(F1F"FSF
+Cannot find archive file
+The item is a directory
+Cannot create output directory
+@@@@@@@@@@@@@@@
+(h,bAh(F
+@@@@@@@@@@@@@@@
+Updating for multivolume archives is not implemented
+can't find archive
+Updating for multivolume archives is not implemented
+There is some data block after the end of the archive
+Duplicate filename in archive:
+Internal file name collision (file on disk, file in archive):
+Duplicate filename on disk:
+Internal collision in update action set
+Multiple instances for switch:
+Incorrect switch postfix:
+Too long switch:
+Too short switch:
+Unknown switch:
+ pp F5pp
+`h(D`` Fp
+")DBTa`p
+/h8F1F"F
+'h8F1F*F
+ h1F*F8D
+ h*F9h0D
+@F)F2Fg`
+f`8F)hBF
+/h8F1F"F
+n`8F!FBF
+<!DOCTYPE
+!`8F!F5`
+'0h)F"FP
+&(h9F"FP
+Empty file path
+E_NOTIMPL : Not implemented
+E_INVALIDARG : One or more arguments are invalid
+E_OUTOFMEMORY : Can't allocate required memory
++h#`iy(y@
+!!!!!!!!33!!3333!!!!!!!!3333333333333333333333333333333333333333!
+6!!!!!!!99!!9999!!!!!!!!9999999999999999999999999999999999999999!
+B!!!!!!!EE!!EEEE!!!!!!!!EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE!
+B!!!!!!!EE!!EEEE!!!!!!!!EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE!
+1!!!!!!!44!-4444!!!!!!!!4444444444444444444444444444444444444444!
++!!!!!!!AA!!AAAA!!!!!!!!AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+1!!-!!!!44!!4444!!!!!!!!4444444444444444444444444444444444444444!
+2!!!!!!!55!!5555!-!!!!!!5555555555555555555555555555555555555555!
+2!!!!!!!55!!5555!!!-!!!!5555555555555555555555555555555555555555!
+3!!!!!!!66!!6666!!!!!-!!6666666666666666666666666666666666666666!
+5!!!!!!!88!!8888!!!!!!!!8888888888888888888888888888888888888888-
+!!!!!!!!##!!####!!!!!!!!########################################!
+!!!!!!!!--!!----!!!!!!!!----------------------------------------!
+-!!!!!!!11!!1111!!!!!!!!1111111111111111111111111111111111111111!
++!!!!!!!11!!1111!!!!!!!!1111111111111111111111111111111111111111!
+0F3h)FBF
+/hx@0`hhH@p`
+"yD	h	h4
+YiD@b@Z`
+XF:F3FtF
+&iknb Fbh
+bCj7xvxG
+ pG	 pGBy
+HFQF:F3F
+G`o!F%gBh
+F<HmFH"xD
+SIyD	h	h
+1"hIE(DD
+2eaeD%bB
+h hbjKx"bB
+F~`>F:h}
+pIyD	h	h
+2eaeD%bB
+h hbjKx"bB
+ ~xSB*xox
+0D)F@0"F 
+@	)FHD:F
+0D)F@0"F 
+@	)FHD:F
+iF F:F+F
+/D(D `0h(D0`
+4FYF"FeF
+!N@W@7CO
+" cyDac^IyD
+cZIyD!dbd
+"%cxD`cCHxD
+c=HxD d=HxD`d<HxD(a
+8F)F2F#F
+  `8h1F4h@iBh
+	yD	h	h4
+hVhn`,`G
+Unspecified error code
+xl!F2F@D
+xl!F2F@D
+8F1F*FCF
+8F1F*FCF
+8F1F*F#F
+8F1F*F#F
+$0Y9YH@L
+$0Y:YP@U
+$*Y3YZ@J
+F%HlF(!xD
+ F)F2F;F
+HFQF:F#F
+HF9F2F#F
+HF9F2F#F
+@ 9FRFCF
+(FYFJFCF
+0FYFJFCF
+(F1F:FCF
+8FQFJFCF
+0FQFJFCF
+DPD@D 0	
+ F9FJFCF
+0F9FJFCF
+(F9FJFCF
+ F9FJFCF
+IyD	h	h,
+BDZD2D"D
+0F9FBFSF
+ FAFRFKF
+@ D1C)` 
+ 'X+F h2F9F
+ F9F2F+F
+Y@F:F+FX
+;Fh{D2D'
+#xQJ+pcxzDPOkp
+!hbhj`)`
+awa1a 6VE
+Q&PRFCF`YfP9F
+(F9FRFCF
+ F9FRFCF
+`PDrX;hsQpP
+hMhr@l@"C
+hNhj@t@"C
+*hkhP@Y@
+a{a9a 7wE
+a{a9a 7wE
+ara*F1aK
+aua1a 6vE
+a~a9a 7gE
+`t`5`9hzh
+a\Fra1a 6
+`t`5`:h{h
+`t`5`:h{h
+`t`5`8hyh
+`t`5`8hyh
+`t`5`8hyh
+`g`"`*hkh
+aca"a 4DE
+`s`2`"hch
+asa2a 6FE
+`t`5`8hyh
+`t`5`8hyh
+`l`(`0hrh
+aja(a 5EE
+`z`8`(hjh
+aza8a 7GE
+`t`5`9hzh
+adFra1a 6
+`t`5`9hzh
+`g`&`)hkh
+aca!a 4LE
+`t`5`8hyh
+`t`5`8hyh
+ h,F.hp@
+`e`!`1hsh
+aca!a 4DE
+`{`9`!hch
+a{a9a 7GE
+aeFwa3aI
+`t`5`8hyh
+`t`5`8hyh
+`i`(`0hqh
+aia(a 5EE
+`y`8`(hih
+aya8a 7GE
+`t`5`8hyh
+F0h	hH@h
+`t`5`8hyh
+`t`5`8hyh
+`l`+`1hsh
+aka)a 5EE
+ata3a 6FE
+`t`5`8hyh
+`t`5`8hyh
+FRIyD	h	h
+YF2FHFSF
+(FYF2FSF
+j8FYF2FSF
+`HFYF2FSF
+(FYF2FSF
+(FAFJF;F
+@F1F*F;F
+HFAFZFSF
+ F9F2FCF
+ FYFRFCF
+F8h	hH@?
+XFIFeFtFn
+!hchs`1`
+@x DYq (
+I*hyD	h	h
+@!yD	h	h
+pmx.DN`Gp
+$h`vE?h/`)
+oh8Dh`Ix
+$h`vE?h/`?
+9FRF FeFi
+@!yD	h	h
+`l1F DT0f
+@!yD	h	h
+`8F1F*F#F
+ D1FT0ZFa
+l1F DT0a
+9D"F(FfF`
+`8F1F*F#F
+	9D*FHF]
+`8F1F*F#F
+gH9ygJxD
+0@9FPD2F
+0@AF D:F
+X@9F D*F
+$ABP#b `
+!#%')+-/1
+mpG@kpG@mpG
+I:hyD	h	h
+@WD$	<]%D
+@WD$	<]%D
+PFAF:F+FO
+!@0F)F"F
+!@0F)F"F
+Internal error
+Internal error %d
+p7zip_extract_pipe: fail to create pipe thread
+p7zip_extract_pipe: failed to join (%d)
+p7zip_extract_pipe: fail to create pipe
+p7zip_compress_pipe: fail to create pipe thread
+p7zip_compress_pipe: failed to join (%d)
+p7zip_compress_pipe: fail to create pipe
+1HxDAh8FJ
+	I	JyDzD	h
+JyDC`zD	h
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"
+JyDC`zD	h
+/sdcard/Android/data/ru.zdevs.zarchiver/files
+/sdcard/Android/data/ru.zdevs.zarchiver/files/tmp_00000000.dat
+/sdcard/Android/data/ru.zdevs.zarchiver/files/tmp_
+F HmFh!xD
+F HlFh!xD
+open_stream: fail to load codec
+open_stream: fail to create pipe thread
+open_stream: fail to start pipe thread
+p7z_thread_pipe
+p7z_thread_pipe: start (fd %d)
+p7z_thread_pipe: fail to open file
+p7z_thread_pipe: fail to open archive
+close: OK
+get_stream: file [%d], could not create pipe (%s)
+get_stream: file [%d], failed to start stream. Error %d
+p7z_wait_data: start
+p7z_thread: start tid %d
+p7z_thread
+p7z_thread: file [%d] tid %d
+p7z_thread: cancel of return stream (return code 0x%08X / %d)
+get_stream: found file 0
+get_stream: found file %d
+item_get: index out of range
+Archive format is RO
+p7z_update: fail to get count of item
+COpenCallback::GetStream(%s)
+/proc/cpuinfo
+/sys/devices/system/cpu/present
+/sys/devices/system/cpu/possible
+CPU architecture
+Processor
+Features
+ F}DyD0``F
+F FAF2F+FB
+getauxval
++h9F2F(F
+|D$h#h F
+G"N#*pU"kpC#
+pO#*qR"kq
+4cDDa\B\AHBHA C
+.IyD81Ni
+.;ZBZAcF
+jBjAsBsA`D
+_FVFMFDF
+;vIcD#c8
+F;!JFCF 
+;cD#c@FyD?
+IcD#cyD?
+hMFDF_FVF
+;SIcD#c8
+V9r;NBNAYBYA
+FcDk`#k	3#c>
+#fkccCxL+
+KFcaCF%c
+;nIcD#c8
+G#h`+`bj#j
+U;YBYAcF
+E:WBWAKBKA;C$
+DF_FVFMF
+;cD#c@FyD=
+`ekccKxL+
+;cD#cHFyD<
+;qIcD#c8
+F8!RFKF 
+;MIcD#c8
+FcD#c@FyD;
+FcD#c@FyD;
+VFMFDF_F
+jhvKQh{D
+x ?yByAW
+PF XJh`DB`8`	h
+P-##pi#cpn'
+P[#a"#pbp
+P_##pF#cpr%
+P{##pp#cpa&
+Pt##ph#cpi&
+P_##pA#cpc%
+P_##pS#cpa'
+!PZFPFB`
+hVFMFDF_F
+MF_FDFVF
+P}#:"+pjp
+_FVFMFDF
+VF_FMFDF
+N8NArchive3N7z28CUnsupportedFeatureExceptionE
+N8NArchive3N7z19CInArchiveExceptionE
+ 7z xz lzma ace arc arj bz tbz bz2 tbz2 cab deb gz tgz ha lha lz tlz lzh lzo lzx pak rar rpm sit zoo zip jar ear war msi 3gp avi mov mpeg mpg mpe wmv aac ape fla flac la mp3 m4a mp4 ofr ogg pac ra rm rka shn swa tta wv wma wav swf chm hxi hxs gif jpeg jpg jp2 png tiff  bmp ico psd psp awg ps eps cgm dxf svg vrml wmf emf ai md cad dwg pps key sxi max 3ds iso bin nrg mdf img pdi tar cpio xpi vfd vhd vud vmc vsv vmdk dsk nvram vmem vmsd vmsn vmss vmtm inl inc idl acf asa h hpp hxx c cpp cxx m mm go swift rc java cs rs pas bas vb cls ctl frm dlg def f77 f f90 f95 asm s sql manifest dep mak clw csproj vcproj sln dsp dsw class bat cmd bash sh xml xsd xsl xslt hxk hxc htm html xhtml xht mht mhtml htw asp aspx css cgi jsp shtml awk sed hta js json php php3 php4 php5 phptml pl pm py pyo rb tcl ts vbs text txt tex ans asc srt reg ini doc docx mcw dot rtf hlp xls xlr xlt xlw ppt pdf sxc sxd sxi sxg sxw stc sti stw stm odt ott odg otg odp otp ods ots odf abw afp cwk lwp wpd wps wpt wrf wri abf afm bdf fon mgf otf pcf pfa snf ttf dbf mdb nsf ntf wdb db fdb gdb exe dll ocx vbx sfx sys tlb awx com obj lib out o so pdb pch idb ncb opt
+LongName
+LongLink
+././@LongLink
+@LongLink
+Deflate64
+PKImploding
+StrongCrypto
+3DES-168
+3DES-112
+pkAES-128
+pkAES-192
+pkAES-256
+Blowfish
+Descriptor
+Macintosh
+Z-System
+SMS/QDOS
+ApkAlign
+zip z01 zipx jar xpi odt ods docx xlsx epub ipa apk appx
+UnixOwner
+UnixSymLink
+WinSymLink
+WinJunction
+HardLink
+FileCopy
+VolumeField
+Recovery
+UnixTime
+UnknownSize
+BLAKE2sp
+NewVolName
+Authenticity
+BlockEncryption
+FirstVolume
+EncryptVer
+chm chi chq chw
+hxs hxi hxr hxq hxw lit
+Too deep directory levels
+HardDisk
+$_ERROR_STR_
+LANGUAGE
+PLUGINSDIR
+HWNDPARENT
+INTERNET
+SMPROGRAMS
+CONTROLS
+PRINTERS
+DOCUMENTS
+FAVORITES
+SMSTARTUP
+BITBUCKET
+STARTMENU
+TEMPLATES
+PRINTHOOD
+LOCALAPPDATA
+ALTSTARTUP
+INTERNET_CACHE
+PROGRAM_FILES
+PICTURES
+SYSTEMX86
+PROGRAM_FILESX86
+PROGRAM_FILES_COMMON
+PROGRAM_FILES_COMMONX8
+ADMINTOOLS
+CONNECTIONS
+RESOURCES
+RESOURCES_LOCALIZED
+COMMON_OEM_LINKS
+CDBURN_AREA
+COMPUTERSNEARME
+udf iso img
+PartitionIndex
+PartitionNumber
+IsMetadata
+ContentsId
+AccessType
+Logical Volumes:
+BlockSize
+  Partition Maps:
+PartitionMap
+MetadataFileLocation
+PartitionTypeId
+  File Sets:
+FileSetNumber
+FileSetDescNumber
+LogicalVolumeId
+CopyrightId
+AbstractId
+Macintosh OS
+Windows 9x
+Windows NT
+Windows CE
+SUN OS / Solaris
+Silicon Graphics Irix
+Pseudo-Overwritable
+Read-Only
+Write-Once
+Rewritable
+Overwritable
+Boot Image
+wim swm esd ppkg
+fs_alloc_count
+num_files
+num_directories
+num_symlinks
+num_other_fsobjects
+Num_Attr_Streams
+total_blocks_alloced
+modified_by[
+CASE_INSENSITIVE
+DATALESS_SNAPS
+ENC_ROLLED
+NORMALIZATION_INSENSITIVE
+INCOMPLETE_RESTORE
+SEALED_VOLUME
+SHA512_256
+Added Time
+Parent iNode
+Primary Name
+Generation
+Written Size
+Read Size
+BSD Flags
+IS_APFS_PRIVATE
+MAINTAIN_DIR_STATS
+DIR_STATS_ORIGIN
+PROT_CLASS_EXPLICIT
+WAS_CLONED
+FLAG_UNUSED
+HAS_SECURITY_EA
+BEING_TRUNCATED
+HAS_FINDER_INFO
+IS_SPARSE
+WAS_EVER_CLONED
+ACTIVE_FILE_TRIMMED
+PINNED_TO_MAIN
+PINNED_TO_TIER2
+HAS_RSRC_FORK
+NO_RSRC_FORK
+ALLOCATION_SPILLEDOVER
+FAST_PROMOTE
+HAS_UNCOMPRESSED_SIZE
+IS_PURGEABLE
+WANTS_TO_BE_PURGEABLE
+IS_SYNC_ROOT
+SNAPSHOT_COW_EXEMPTION
+UF_NODUMP
+UF_IMMUTABLE
+UF_APPEND
+UF_OPAQUE
+UF_NOUNLINK
+UF_COMPRESSED
+UF_TRACKED
+UF_DATAVAULT
+UF_HIDDEN
+SF_ARCHIVE
+SF_IMMUTABLE
+SF_APPEND
+SF_RESTRICTED
+SF_NOUNLINK
+SF_SNAPSHOT
+apfs img
+ar a deb udeb lib
+APPLE GS
+ATARI ST
+bz2 bzip2 tbz2 tbz
+* * .tar .tar
+0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz._
+compound
+Compound
+msi msp doc xls ppt
+SortedDirs
+WrongSignature
+ShiftedRootOffset
+Binary LE
+Binary BE
+Portable ASCII
+New ASCII
+Apple_HFS
+Apple_HFSX
+Apple_UFS
+Apple_APFS
+C12A7328-F81F-11D2-BA4B-00A0C93EC93B
+Apple_Free
+Apple_partition_map
+Link Section
+Info Section
+AT&T WE 32100
+Intel 386
+Motorola 68000
+Motorola 88000
+Intel 486
+Intel i860
+IBM S/370
+MIPS RS3000 LE
+Fujitsu VPP500
+SPARC 32+
+Intel i960
+PowerPC 64-bit
+IBM S/390
+NEX v800
+Fujitsu FR20
+TRW RH-32
+Motorola RCE
+Hitachi SH
+SPARC-V9
+Siemens Tricore
+Stanford MIPS-X
+Motorola ColdFire
+Fujitsu MMA
+Siemens PCP
+Sony nCPU
+Denso NDR1
+Motorola StarCore
+Toyota ME16
+Advanced Logic TinyJ
+Sony DSP
+Siemens FX66
+MC68HC16
+MC68HC11
+MC68HC08
+MC68HC05
+Silicon Graphics SVx
+Digital VAX
+Axis CRIS
+Infineon JAVELIN
+Element 14 FirePath
+SiTera Prism
+Atmel AVR
+Fujitsu FR30
+Mitsubishi D10V
+Mitsubishi D30V
+NEC v850
+Mitsubishi M32R
+Matsushita MN10300
+Matsushita MN10200
+picoJava
+OpenRISC
+ARC Tangent-A5
+Tensilica Xtensa
+Alphamosaic VideoCore
+Thompson MM GPP
+National Semiconductor 32K
+Tenor Network TPC
+Trebia SNP 1000
+Ubicom IP2xxx
+NS CompactRISC
+Fujitsu F2MC16
+TI msp430
+Blackfin (DSP)
+SE S1C33
+Sharp embedded
+Arca RISC
+Altera Nios II
+Motorola XGATE
+Infineon C16x/XC16x
+Renesas M16C
+Microchip Technology dsPIC30F
+Freescale CE
+Renesas M32C
+Altium TSK3000
+Freescale RS08
+Analog Devices SHARC
+Cyan Technology eCOG2
+Sunplus S+core7 RISC
+NJR 24-bit DSP
+Broadcom VideoCore III
+Lattice FPGA
+TI TMS320C6000
+TI TMS320C2000
+TI TMS320C55x
+STM 64bit VLIW Data Signal
+Cypress M8C
+Renesas R32C
+NXP TriMedia
+Qualcomm Hexagon
+Intel 8051
+STMicroelectronics STxP7x
+Cyan Technology eCOG1X
+Dallas Semiconductor MAXQ30
+NJR 16-bit DSP
+Cray NV2
+Renesas RX
+Imagination Technologies META
+MCST Elbrus
+Cyan Technology eCOG16
+National Semiconductor CR16
+Freescale ETPUnit
+Infineon SLE9X
+Intel L10M
+Intel K10M
+Atmel AVR32
+Tilera TILE64
+Tilera TILEPro
+Xilinx MicroBlaze
+NVIDIA CUDA
+Tilera TILE-Gx
+CloudShield
+KIPO-KAIST Core-A 1st
+KIPO-KAIST Core-A 2nd
+Synopsys ARCompact V2
+Renesas RL78
+Broadcom VideoCore V
+Renesas 78KOR
+Freescale 56800EX
+HasEntry
+NOREORDER
+64BIT_WHIRL
+ABI_ON32
+MicroMIPS
+Novell Modesto
+Bare-metal TMS320C6000
+Linux TMS320C6000
+Standalone
+Relocatable file
+Executable file
+Shared object file
+Core file
+Loadable segment
+Dynamic linking tables
+Program interpreter path name
+Note section
+Program header table
+GNU_EH_FRAME
+GNU_STACK
+GNU_RELRO
+PROGBITS
+UNKNOWN12
+UNKNOWN13
+INIT_ARRAY
+FINI_ARRAY
+PREINIT_ARRAY
+SYMTAB_SHNDX
+GNU_ATTRIBUTES
+GNU_HASH
+GNU_verdef
+GNU_verneed
+GNU_versym
+ARM_EXIDX
+ARM_PREEMPTMAP
+ARM_ATTRIBUTES
+ARM_DEBUGOVERLAY
+ARM_OVERLAYSECTION
+EXECINSTR
+INFO_LINK
+LINK_ORDER
+OS_NONCONFORMING
+CP_SECTION
+DP_SECTION
+XCORE_SHF_CP_SECTION
+64_LARGE
+UserQuota
+GroupQuota
+BootLoader
+Undelete
+Mount Time
+Last Check Time
+Revision
+inode Size
+Last Mounted
+Incompatible Features
+Readonly-compatible Features
+Written KiB
+DIR_PREALLOC
+IMAGIC_INODES
+HAS_JOURNAL
+EXT_ATTR
+RESIZE_INODE
+DIR_INDEX
+SPARSE_SUPER2
+COMPRESSION
+FILETYPE
+JOURNAL_DEV
+EA_INODE
+BG_USE_META_CSUM
+LARGEDIR
+INLINE_DATA
+SPARSE_SUPER
+LARGE_FILE
+BTREE_DIR
+HUGE_FILE
+GDT_CSUM
+DIR_NLINK
+EXTRA_ISIZE
+HAS_SNAPSHOT
+BIGALLOC
+METADATA_CSUM
+READONLY
+IMMUTABLE
+COMPRBLK
+JOURNAL_DATA
+EOFBLOCKS
+ext ext2 ext3 ext4 img
+nellymoser16
+nellymoser8
+nellymoser
+vp6alpha
+BIOS Boot
+EFI System
+Windows MSR
+Windows BDP
+Windows LDM Metadata
+Windows LDM Data
+Windows Recovery
+Linux Data
+Linux Swap
+FreeBSD Boot
+FreeBSD Data
+FreeBSD Swap
+FreeBSD UFS
+FreeBSD Vinum
+FreeBSD ZFS
+Win-Read-only
+Win-Hidden
+Win-Not-Automount
+gz gzip tgz tpz
+ZLIB-attr
+ZLIB-rsrc
+LZVN-attr
+LZVN-rsrc
+COPY-attr
+COPY-rsrc
+LZFSE-attr
+LZFSE-rsrc
+ZBM-rsrc
+hfs hfsx
+VIRTUAL_AB
+SLOT_SUFFIXED
+DISABLED
+lpimg img
+Windows 95
+DYLINKER
+DYLIB_STUB
+NOUNDEFS
+INCRLINK
+DYLDLINK
+BINDATLOAD
+PREBOUND
+SPLIT_SEGS
+LAZY_INIT
+TWOLEVEL
+FORCE_FLAT
+NOMULTIDEFS
+NOFIXPREBINDING
+PREBINDABLE
+ALLMODSBOUND
+SUBSECTIONS_VIA_SYMBOLS
+CANONICAL
+WEAK_DEFINES
+BINDS_TO_WEAK
+ALLOW_STACK_EXECUTION
+ROOT_SAFE
+SETUID_SAFE
+NO_REEXPORTED_DYLIBS
+DEAD_STRIPPABLE_DYLIB
+HAS_TLV_DESCRIPTORS
+NO_HEAP_EXECUTION
+ZEROFILL
+CSTRINGS
+4BYTE_LITERALS
+8BYTE_LITERALS
+LITERAL_POINTERS
+NON_LAZY_SYMBOL_POINTERS
+LAZY_SYMBOL_POINTERS
+SYMBOL_STUBS
+MOD_INIT_FUNC_POINTERS
+MOD_TERM_FUNC_POINTERS
+COALESCED
+GB_ZEROFILL
+INTERPOSING
+16BYTE_LITERALS
+DTRACE_DOF
+LAZY_DYLIB_SYMBOL_POINTERS
+THREAD_LOCAL_REGULAR
+THREAD_LOCAL_ZEROFILL
+THREAD_LOCAL_VARIABLES
+THREAD_LOCAL_VARIABLE_POINTERS
+THREAD_LOCAL_INIT_FUNCTION_POINTERS
+PURE_INSTRUCTIONS
+STRIP_STATIC_SYMS
+NO_DEAD_STRIP
+LIVE_SUPPORT
+SELF_MODIFYING_CODE
+SOME_INSTRUCTIONS
+EXT_RELOC
+LOC_RELOC
+SG_HIGHVM
+SG_FVMLIB
+SG_NORELOC
+SG_PROTECTED_VERSION_1
+SG_READ_ONLY
+Begin CHS
+FAT16 DOS 3.0+
+Extended
+FAT16 DOS 3.31+
+FAT32-LBA
+FAT16-LBA
+Extended-LBA
+FAT12-Hidden
+FAT16-Hidden < 32 MB
+FAT16-Hidden >= 32 MB
+FAT32-Hidden
+FAT32-LBA-Hidden
+FAT16-LBA-WIN95-Hidden
+NTFS-WinRE
+Solaris x86 / Linux swap
+Linux LVM
+BSD slice
+Solaris 8 boot
+New Solaris x86
+Linux-Hidden
+Linux swap-Hidden
+Record Size
+ntfs img
+Image Size
+Section Alignment
+File Alignment
+Code Size
+Initialized Data Size
+Uninitialized Data Size
+Linker Version
+OS Version
+Image Version
+Subsystem Version
+Subsystem
+DLL Characteristics
+Stack Reserve
+Stack Commit
+Heap Reserve
+Heap Commit
+Image Base
+MIPS-R3000
+MIPS-R4000
+MIPS-R10000
+ARM-Thumb
+Alpha-64
+MIPS-FPU
+MIPS-FPU16
+Executable
+LargeAddress
+NoRelocs
+NoLineNums
+NoLocalSyms
+AggressiveWsTrim
+NoDebugInfo
+RemovableRun
+Little-Endian
+Big-Endian
+Windows GUI
+Windows CUI
+EFI Boot
+EFI Runtime
+Windows Boot
+XBOX Catalog
+HighEntropyVA
+Relocated
+Integrity
+NX-Compatible
+NoIsolation
+AppContainer
+TerminalServerAware
+ACCELERATOR
+MESSAGETABLE
+GROUP_CURSOR
+GROUP_ICON
+DLGINCLUDE
+PLUGPLAY
+ANICURSOR
+MANIFEST
+InitializedData
+UninitializedData
+Comments
+NO_DEFER_SPEC_EXC
+PURGEABLE
+ExtendedRelocations
+Discardable
+NotCached
+NotPaged
+PRERELEASE
+PRIVATEBUILD
+INFOINFERRED
+SPECIALBUILD
+VOS_DOS_WINDOWS16
+VOS_DOS_WINDOWS32
+VOS_OS216_PM16
+VOS_OS232_PM32
+VOS_NT_WINDOWS32
+VOS_UNKNOWN
+VOS_OS216
+VOS_OS232
+VOS_WINCE
+VOS__BASE
+VOS__WINDOWS16
+VOS__PM16
+VOS__PM32
+VOS__WINDOWS32
+VFT_UNKNOWN
+VFT_FONT
+VFT_STATIC_LIB
+KEYBOARD
+INSTALLABLE
+INPUTMETHOD
+VERSIONED_PRINTER
+VFT2_FONT_RASTER
+VFT2_FONT_VECTOR
+VFT2_FONT_TRUETYPE
+exe dll sys
+qcow qcow2 qcow2c
+m68kmint
+NextStep
+cygwin32-NT
+cygwin32-95
+Linux/390
+simg img
+SquashFS
+UNCOMPRESSED_INODES
+UNCOMPRESSED_DATA
+UNCOMPRESSED_FRAGMENTS
+NO_FRAGMENTS
+ALWAYS_FRAGMENTS
+DUPLICATES_REMOVED
+EXPORTABLE
+UNCOMPRESSED_XATTRS
+NO_XATTRS
+COMPRESSOR_OPTIONS
+UNCOMPRESSED_IDS
+squashfs
+ShowFrame
+DefineShape
+PlaceObject
+RemoveObject
+DefineBits
+DefineButton
+JPEGTables
+SetBackgroundColor
+DefineFont
+DefineText
+DoAction
+DefineFontInfo
+DefineSound
+StartSound
+DefineButtonSound
+SoundStreamHead
+SoundStreamBlock
+DefineBitsLossless
+DefineBitsJPEG2
+DefineShape2
+DefineButtonCxform
+PlaceObject2
+RemoveObject2
+DefineShape3
+DefineText2
+DefineButton2
+DefineBitsJPEG3
+DefineBitsLossless2
+DefineEditText
+DefineSprite
+FrameLabel
+SoundStreamHead2
+DefineMorphShape
+DefineFont2
+ExportAssets
+ImportAssets
+EnableDebugger
+DoInitAction
+DefineVideoStream
+VideoFrame
+DefineFontInfo2
+EnableDebugger2
+ScriptLimits
+SetTabIndex
+FileAttributes
+PlaceObject3
+ImportAssets2
+DefineFontAlignZones
+CSMTextSettings
+DefineFont3
+SymbolClass
+Metadata
+DefineScalingGrid
+DefineShape4
+DefineMorphShape2
+DefineSceneAndFrameLabelData
+DefineBinaryData
+DefineFontName
+StartSound2
+DefineBitsJPEG4
+DefineFont4
+VolumeTopFile
+Intel32c
+Intel64c
+MacVolume
+MacUpdate.txt
+DXE_DEPEX
+USER_INTERFACE
+COMPATIBILITY16
+FREEFORM_SUBTYPE_GUID
+PEI_DEPEX
+PROCESSING_REQUIRED
+FREEFORM
+SECURITY_CORE
+PEI_CORE
+DXE_CORE
+COMBINED_PEIM_DRIVER
+APPLICATION
+RECOVERY
+Differencing
+Saved State
+ffffffff
+octet-stream
+xar pkg xip
+zst zstd tzstd
+AES256CBC
+The command must be specified
+Cannot find archive name
+Archive name cannot by empty
+Unsupported -snz:
+Cannot use absolute pathnames for this command
+I won't write data and program's messages to same stream
+-ai switch is not supported for this command
+Only one archive can be created with rename command
+Incorrect number of benchmark iterations
+utf-16le
+utf-16be
+Empty file path
+There is no second file name for rename pair:
+Incorrect volume size:
+zero size last volume is not allowed
+incorrect update switch command
+Cannot create folder
+Cannot create hard link
+type of archive is not specified
+There is a folder with the name of archive
+The file is read-only
+Scanning error
+It is not allowed to include archive to itself
+The file already exists
+cannot delete the file
+cannot move the file
+update operations are not supported for this archive
+Can't create output archive
+There are unclosed input file:
+Internal Error: The failure in hardware (RAM or CPU), OS or program
+E_NOINTERFACE : No such interface supported
+E_ABORT : Operation aborted
+E_FAIL : Unspecified error
+STG_E_INVALIDFUNCTION
+CLASS_E_CLASSNOTAVAILABLE
+out of memory
+OK_NoError
+ERROR_GENERIC
+ERROR_maxBlockSize_invalid
+ERROR_blockMode_invalid
+ERROR_contentChecksumFlag_invalid
+ERROR_compressionLevel_invalid
+ERROR_headerVersion_wrong
+ERROR_blockChecksum_invalid
+ERROR_reservedFlag_set
+ERROR_allocation_failed
+ERROR_srcSize_tooLarge
+ERROR_dstMaxSize_tooSmall
+ERROR_frameHeader_incomplete
+ERROR_frameType_unknown
+ERROR_frameSize_wrong
+ERROR_srcPtr_wrong
+ERROR_decompressionFailed
+ERROR_headerChecksum_invalid
+ERROR_contentChecksum_invalid
+ERROR_frameDecoding_alreadyStarted
+ERROR_maxCode
+lz4 tlz4
+Unprocessed error flags 0x%08X
+Headers Error
+Headers Error in encrypted archive. Wrong password?
+Unavailable start of archive
+Unconfirmed start of archive
+There are data after the end of archive
+Unsupported feature
+.tar.bz2
+.tar.bzip2
+.tar.lz4
+.tar.lzma
+.tar.zstd
+.tar.zst
+open_stream: fail to find type
+open_stream: try to detect type
+open_stream: use type '%ls'
+open_stream: fail to open file %s
+open_stream: fail to create %d aux archive
+open_stream: fail to open aux archive
+open_stream: unsupported aux
+open_stream: fail to get sequential subarchive stream
+open_stream: use sequential subarchive stream
+open_stream: fail to create %d archive
+open_stream: open type '%ls'
+open_stream: fail to open archive
+get_stream: file [%d], open stream %d
+get_stream: file [%d], extract stream don't start out, code %d
+get_stream: fail to get count of item
+p7z_thread_pipe: fail to find type by name
+p7z_thread_pipe: fail to create %d archive
+p7z_thread_pipe: cancel of return stream (return code 0x%08X) (fd %d)
+p7z_thread_pipe: is end
+p7z_thread: file [%d], end
+p7z_thread: exit tid %d
+p7z_wait_data: size: %d, time %d ms
+Failed to set comment
+p7z_update: fail to create out file
+CPU implementer
+CPU variant
+CPU part
+CPU revision
+Hardware
+Goldfish
+vfpv3d16
+N8NArchive4NCab23CUnexpectedEndExceptionE
+18CInBufferException
+16CSystemException
+00ustar  
+N8NArchive4NZip12CUnexpectEndE
+PK00PKRar!
+ITOLITLS
+N8NArchive4NChm23CEnexpectedEndExceptionE
+N8NArchive4NChm21CHeaderErrorExceptionE
+EL TORITO SPECIFICATION
+N8NArchive4NIso23CUnexpectedEndExceptionE
+N8NArchive4NIso21CHeaderErrorExceptionE
+N8NArchive4NIso21CEndianErrorExceptionE
+NullsoftInst
+CD001MSWIM
+ER!<arch>
+19COutBufferException
+BMMMMMMMMAAMMAMMMMMMMMMMMMMMMMMMAMMMMMMMMMM>MMM?456789:;<=MMM@MMM
+ !"#$%&'()*+,-./0123MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMAMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMBZh
+B7A'A7ACompressed ROMFS
+EFI PART
+NTFS    
+NTFS    
+conectix
+KDMVxar!
+EFI PART0xFD2FB522..28
+ (08@P`p
+ (08@P`p
+upT21CMessagePathException
+7UString
+0x184D2204
+  !!""##$$$$%%%%&&&&&&&&''''''''(((((((((((((((())))))))))))))))********************************
+)n/h%fPn
+  !!""##$$$$%%%%&&&&&&&&''''''''(((((((((((((((())))))))))))))))********************************
+								
+St9bad_alloc
+St9exception
+N9NExitCode5EEnumE
+7AString
+/proc/self/auxv
+N10__cxxabiv117__class_type_infoE
+N9__gnu_cxx24__concurrence_lock_errorE
+N9__gnu_cxx26__concurrence_unlock_errorE
+__gnu_cxx::__concurrence_lock_error
+__gnu_cxx::__concurrence_unlock_error
+std::exception
+std::bad_exception
+pure virtual method called
+deleted virtual method called
+std::bad_alloc
+terminate called recursively
+terminate called after throwing an instance of '
+terminate called without an active exception
+  what():  
+_GLOBAL_
+(anonymous namespace)
+string literal
+{default arg#
+vtable for 
+VTT for 
+construction vtable for 
+typeinfo for 
+typeinfo name for 
+typeinfo fn for 
+non-virtual thunk to 
+virtual thunk to 
+covariant return thunk to 
+java Class for 
+guard variable for 
+TLS init function for 
+TLS wrapper function for 
+reference temporary #
+hidden alias for 
+transaction clone for 
+non-transaction clone for 
+operator
+operator 
+java resource 
+decltype (
+global constructors keyed to 
+global destructors keyed to 
+{lambda(
+{unnamed type#
+ [clone 
+ restrict
+ volatile
+complex 
+imaginary 
+ __vector(
+std::allocator
+allocator
+std::basic_string
+basic_string
+std::string
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >
+std::istream
+std::basic_istream<char, std::char_traits<char> >
+basic_istream
+std::ostream
+std::basic_ostream<char, std::char_traits<char> >
+basic_ostream
+std::iostream
+std::basic_iostream<char, std::char_traits<char> >
+basic_iostream
+alignof 
+const_cast
+delete[] 
+dynamic_cast
+operator"" 
+reinterpret_cast
+static_cast
+signed char
+long double
+__float128
+unsigned char
+unsigned int
+unsigned
+unsigned long
+__int128
+unsigned __int128
+unsigned short
+long long
+unsigned long long
+decimal32
+decimal64
+decimal128
+char16_t
+char32_t
+decltype(nullptr)
+std::bad_array_length
+std::bad_array_new_length
+std::bad_cast
+std::bad_typeid
+N10__cxxabiv115__forced_unwindE
+N10__cxxabiv119__foreign_exceptionE
+St9exception
+St13bad_exception
+N10__cxxabiv116__enum_type_infoE
+N10__cxxabiv123__fundamental_type_infoE
+N10__cxxabiv119__pointer_type_infoE
+N10__cxxabiv120__si_class_type_infoE
+St9type_info
+St9bad_alloc
+N10__cxxabiv117__pbase_type_infoE
+St16bad_array_length
+St20bad_array_new_length
+St8bad_cast
+St10bad_typeid
+}xsokgda^[YVTRPNLJHGECB@?=<;987654210/.-,+**)('&%$$#"!! 
+ !!"#$$%&'())*+,-./012356789;<=?@BCEFHJLNPRTVY[^adgkosw}
+GCC: (GNU) 4.9.x 20150123 (prerelease)
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
+gold 1.12
+cortex-a8
+.init_array
+.fini_array
+.ARM.exidx
+.comment
+.note.android.ident
+.rel.plt
+.ARM.attributes
+.gnu.version_r
+.data.rel.ro
+.rel.dyn
+.gnu.version
+.note.gnu.gold-version
+.data.rel.ro.local
+.note.gnu.build-id
+.gnu.version_d
+.dynamic
+.ARM.extab
+.shstrtab

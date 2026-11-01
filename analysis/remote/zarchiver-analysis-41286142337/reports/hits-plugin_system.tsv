@@ -1,0 +1,227 @@
+file	line	text
+jadx/sources/h0/h.java	200	"        return ""plugin"".equals(this.f1106a) || ""plglocal"".equals(this.f1106a);"
+jadx/sources/k0/a.java	145	"            hVar.q(""plugin"");"
+jadx/sources/l0/b.java	13	"                preference.getContext().startActivity(new Intent(""android.intent.action.VIEW"", Uri.parse(""market://search?q=ZArchiver plugin"")));"
+jadx/sources/l0/b.java	16	"                preference.getContext().startActivity(new Intent(""android.intent.action.VIEW"", Uri.parse(""https://play.google.com/store/apps/search?q=ZArchiver plugin"")));"
+jadx/sources/l0/c.java	221	"        List<ResolveInfo> listQueryIntentActivities = context.getPackageManager().queryIntentActivities(new Intent(""ru.zdevs.zarchiver.plugin.PLUGIN_APPLICATION""), 0);"
+jadx/sources/ru/zdevs/zarchiver/R.java	254	        public static final int folder_cloud = 0x7f060019;
+jadx/sources/ru/zdevs/zarchiver/R.java	267	        public static final int folder_usb = 0x7f060026;
+jadx/sources/ru/zdevs/zarchiver/R.java	270	        public static final int folderm_cloud = 0x7f060029;
+jadx/sources/ru/zdevs/zarchiver/R.java	281	        public static final int folderm_usb = 0x7f060034;
+jadx/sources/ru/zdevs/zarchiver/R.java	284	        public static final int foldern_cloud = 0x7f060037;
+jadx/sources/ru/zdevs/zarchiver/R.java	296	        public static final int foldern_usb = 0x7f060043;
+jadx/sources/ru/zdevs/zarchiver/R.java	994	        public static final int FVR_EXTERNAL_USB = 0x7f0c008c;
+jadx/sources/ru/zdevs/zarchiver/R.java	1213	        public static final int OPT_PLUGINS_SEARCH = 0x7f0c0167;
+jadx/sources/ru/zdevs/zarchiver/R.java	1227	        public static final int OPT_SECTION_PLUGINS = 0x7f0c0175;
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	202	"            a0.c.h(this, "".provider.PluginFileProvider"", z2);"
+jadx/sources/ru/zdevs/zarchiver/ZImageViewer.java	449	                window.setStatusBarColor(1073741824);
+jadx/sources/ru/zdevs/zarchiver/a.java	1988	"            if (!str.startsWith(""/storage/usb"") && !str.startsWith(""/storage/sdcard"") && !str.startsWith(""/storage/ExtSd"") && !str.startsWith(""/sdcard"") && !str.startsWith(""/mnt/sdcard"") && !str.startsWith(""/mnt/media_rw"") && !g.e(str)) {"
+jadx/sources/ru/zdevs/zarchiver/activity/OpenAsDlg.java	324	        window.setStatusBarColor(0);
+jadx/sources/ru/zdevs/zarchiver/activity/SettingsDlg.java	44	    public static class PluginFragment extends PreferenceFragment {
+jadx/sources/ru/zdevs/zarchiver/activity/SettingsDlg.java	54	"            Intent intent = new Intent(""ru.zdevs.zarchiver.plugin.PLUGIN_APPLICATION"");"
+jadx/sources/ru/zdevs/zarchiver/activity/SettingsDlg.java	69	            preference2.setTitle(R.string.OPT_PLUGINS_SEARCH);
+jadx/sources/ru/zdevs/zarchiver/c.java	183	                    cVar.PluginOpenFile(hVar, i2);
+jadx/sources/ru/zdevs/zarchiver/provider/FileProvider.java	37	"        return new h(""plugin"", strSubstring.substring(iIndexOf2), strSubstring.substring(i2, iIndexOf2), strSubstring2);"
+jadx/sources/ru/zdevs/zarchiver/provider/PluginFileProvider.java	18	public class PluginFileProvider extends ContentProvider {
+jadx/sources/ru/zdevs/zarchiver/service/ZArchiverService.java	539	        public void PluginOpenFile(h hVar, int i2) {
+jadx/sources/ru/zdevs/zarchiver/service/c.java	388	            public final void PluginOpenFile(h hVar, int i2) {
+jadx/sources/ru/zdevs/zarchiver/service/c.java	617	                    PluginOpenFile((h) b.a(parcel, h.CREATOR), parcel.readInt());
+jadx/sources/ru/zdevs/zarchiver/service/c.java	735	    void PluginOpenFile(h hVar, int i2);
+jadx/sources/t0/a.java	123	"                            strReplace = resources.getString(R.string.FVR_EXTERNAL_USB).replace(""%1"", i7 > 1 ? """" + i9 : """");"
+jadx/sources/t0/a.java	203	"            e eVar2 = new e(i2, 8, c0023c.f1193a, new h(""plugin"", ""/"", c0023c.f1195c, c0023c.f1194b));"
+jadx/sources/v0/e.java	26	import ru.zdevs.zarchiver.provider.PluginFileProvider;
+jadx/sources/v0/e.java	90	                String[] strArr = PluginFileProvider.f1711a;
+jadx/sources/v0/e.java	91	"                return new Uri.Builder().scheme(""content"").authority(""ru.zdevs.zarchiver.plugin"").path(hVar.toString()).fragment(strE).build();"
+jadx/sources/x0/d.java	207	"                    b2 = (strI.contains(""usb"") || strI.contains(""udisk"")) ? (byte) 4 : (byte) 2;"
+jadx/sources/x0/d.java	503	"            Method methodW2 = a0.c.w(cls, ""isUsb"", new Class[0]);"
+jadx/sources/z0/b.java	59	                    return R.drawable.folderm_usb;
+jadx/sources/z0/b.java	79	                    return R.drawable.folderm_cloud;
+jadx/sources/z0/b.java	95	                    return R.drawable.folder_usb;
+jadx/sources/z0/b.java	115	                    return R.drawable.folder_cloud;
+jadx/sources/z0/b.java	130	                return R.drawable.foldern_usb;
+jadx/sources/z0/b.java	150	                return R.drawable.foldern_cloud;
+jadx/sources/z0/e.java	176	                activity.getWindow().setStatusBarColor(color);
+decoded/AndroidManifest.xml	5	"            <action android:name=""ru.zdevs.zarchiver.plugin.PLUGIN_APPLICATION""/>"
+decoded/AndroidManifest.xml	30	"    <uses-permission android:name=""ru.zdevs.zarchiver.permission.PLUGIN.CLOUD""/>"
+decoded/AndroidManifest.xml	31	"    <uses-permission android:name=""ru.zdevs.zarchiver.permission.PLUGIN.USB""/>"
+decoded/AndroidManifest.xml	729	"        <provider android:authorities=""ru.zdevs.zarchiver.plugin"" android:exported=""false"" android:grantUriPermissions=""true"" android:name=""ru.zdevs.zarchiver.provider.PluginFileProvider"" android:process="":plugin""/>"
+decoded/res/values/public.xml	236	"    <public type=""drawable"" name=""folder_cloud"" id=""0x7f060019"" />"
+decoded/res/values/public.xml	249	"    <public type=""drawable"" name=""folder_usb"" id=""0x7f060026"" />"
+decoded/res/values/public.xml	252	"    <public type=""drawable"" name=""folderm_cloud"" id=""0x7f060029"" />"
+decoded/res/values/public.xml	263	"    <public type=""drawable"" name=""folderm_usb"" id=""0x7f060034"" />"
+decoded/res/values/public.xml	266	"    <public type=""drawable"" name=""foldern_cloud"" id=""0x7f060037"" />"
+decoded/res/values/public.xml	278	"    <public type=""drawable"" name=""foldern_usb"" id=""0x7f060043"" />"
+decoded/res/values/public.xml	957	"    <public type=""string"" name=""FVR_EXTERNAL_USB"" id=""0x7f0c008c"" />"
+decoded/res/values/public.xml	1176	"    <public type=""string"" name=""OPT_PLUGINS_SEARCH"" id=""0x7f0c0167"" />"
+decoded/res/values/public.xml	1190	"    <public type=""string"" name=""OPT_SECTION_PLUGINS"" id=""0x7f0c0175"" />"
+decoded/res/values/strings.xml	224	"    <string name=""FSD_WARNING_TEXT"">Android OS restricts write access of third-party apps (not preinstalled on the device) to external USB flash drives and SD cards.</string>"
+decoded/res/values/strings.xml	230	"    <string name=""FVR_EXTERNAL_USB"">USB Flash %1</string>"
+decoded/res/values/strings.xml	454	"    <string name=""OPT_PLUGINS_SEARCH"">Search for plugins in Store</string>"
+decoded/res/values/strings.xml	468	"    <string name=""OPT_SECTION_PLUGINS"">Plugins</string>"
+decoded/res/values-ar/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">الذاكرة الفلاشية %1</string>"
+decoded/res/values-ar/strings.xml	344	"    <string name=""OPT_PLUGINS_SEARCH"">بحث في الإضافات</string>"
+decoded/res/values-ar/strings.xml	358	"    <string name=""OPT_SECTION_PLUGINS"">الإضافات</string>"
+decoded/res/values-az/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">Android sistemi yazma funksiyasına xarici USB yaddaşa və ya SD karta daxil olmaq üçün 3-cü tərəf proqramlarını (cihazda öncədən quraşdırılmış) məhdudlaşdırır.</string>"
+decoded/res/values-az/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">USB Flash %1</string>"
+decoded/res/values-az/strings.xml	343	"    <string name=""OPT_PLUGINS_SEARCH"">Əlavələr üçün axtar</string>"
+decoded/res/values-az/strings.xml	357	"    <string name=""OPT_SECTION_PLUGINS"">Əlavələr</string>"
+decoded/res/values-bg/strings.xml	110	"    <string name=""FSD_WARNING_TEXT"">Операционната система Android ограничава външни приложения (не фабрични с телефона) да записват данни на външни USB- и SD-карти.</string>"
+decoded/res/values-bg/strings.xml	116	"    <string name=""FVR_EXTERNAL_USB"">USB-памет %1</string>"
+decoded/res/values-bg/strings.xml	326	"    <string name=""OPT_PLUGINS_SEARCH"">Намери допълнения</string>"
+decoded/res/values-bg/strings.xml	336	"    <string name=""OPT_SECTION_PLUGINS"">Допълнения</string>"
+decoded/res/values-cs/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">OS Android omezuje aplikacím třetích stran (které nejsou v zařízení nainstalovány) přístup k externímu USB flash disku nebo k zapisování na SD karty.</string>"
+decoded/res/values-cs/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">USB Flash disk %1</string>"
+decoded/res/values-cs/strings.xml	344	"    <string name=""OPT_PLUGINS_SEARCH"">Hledat pluginy</string>"
+decoded/res/values-cs/strings.xml	357	"    <string name=""OPT_SECTION_PLUGINS"">Pluginy</string>"
+decoded/res/values-da/strings.xml	110	"    <string name=""FSD_WARNING_TEXT"">Android OS begrænser skriveadgang til tredjeparts-apps (ikke forudinstalleret på enheden) til eksterne USB-flashdrev og SD-kort.</string>"
+decoded/res/values-da/strings.xml	116	"    <string name=""FVR_EXTERNAL_USB"">USB-flash %1</string>"
+decoded/res/values-da/strings.xml	323	"    <string name=""OPT_PLUGINS_SEARCH"">Søg efter plugins</string>"
+decoded/res/values-da/strings.xml	335	"    <string name=""OPT_SECTION_PLUGINS"">Plugins</string>"
+decoded/res/values-de/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">Android begrenzt die Anwendungen von Drittanbietern (nicht auf jedem Gerat vorinstalliert) den Zugriff auf die Schreibfunktion vom externen USB-Stick oder SD-Karte.</string>"
+decoded/res/values-de/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">USB-Flash %1</string>"
+decoded/res/values-de/strings.xml	343	"    <string name=""OPT_PLUGINS_SEARCH"">Finden Ergänzungen</string>"
+decoded/res/values-de/strings.xml	357	"    <string name=""OPT_SECTION_PLUGINS"">Ergänzungen</string>"
+decoded/res/values-el/strings.xml	108	"    <string name=""FSD_WARNING_TEXT"">Το Android περιορίζει τρίτες εφαρμογές (μη προεγκατεστημένες στη συσκευή) από το να έχουν δικαιώματα εγγραφής σε εξωτερικά USB μνήμες ή SD κάρτες.</string>"
+decoded/res/values-el/strings.xml	114	"    <string name=""FVR_EXTERNAL_USB"">Μνήμη USB %1</string>"
+decoded/res/values-el/strings.xml	322	"    <string name=""OPT_PLUGINS_SEARCH"">Αναζήτηση πρόσθετων</string>"
+decoded/res/values-el/strings.xml	330	"    <string name=""OPT_SECTION_PLUGINS"">Πρόσθετα</string>"
+decoded/res/values-es/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">In la versión de Android 4.4+ el sistema operativo limita el acceso, a los discos USB externos o a la escritura de tarjetas SD, a las aplicaciones de terceros (las no pre-instaladas en el dispositivo) .</string>"
+decoded/res/values-es/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">Disco USB %1</string>"
+decoded/res/values-es/strings.xml	344	"    <string name=""OPT_PLUGINS_SEARCH"">Complementos de búsqueda</string>"
+decoded/res/values-es/strings.xml	358	"    <string name=""OPT_SECTION_PLUGINS"">Complementos</string>"
+decoded/res/values-fa/strings.xml	104	"    <string name=""FSD_WARNING_TEXT"">سیستم عامل اندروید دسترسی نوشتن برنامه های شحص ثالث را (از قبل روی دستگاه نصب نشده اند) روی USB و SD card خارجی محدود میکند.</string>"
+decoded/res/values-fa/strings.xml	110	"    <string name=""FVR_EXTERNAL_USB"">فلش یو اس بی %1</string>"
+decoded/res/values-fa/strings.xml	311	"    <string name=""OPT_PLUGINS_SEARCH"">جستجو برای پلاگین در فروشگاه</string>"
+decoded/res/values-fa/strings.xml	323	"    <string name=""OPT_SECTION_PLUGINS"">پلاگین ها</string>"
+decoded/res/values-fr/strings.xml	100	"    <string name=""FSD_WARNING_TEXT"">""Android OS limite les applications 3rd party (non pré-installé sur l'appareil) pour accéder a la mémoire flash USB externe ou en fonction de l'écriture de la carte SD.""</string>"
+decoded/res/values-fr/strings.xml	104	"    <string name=""FVR_EXTERNAL_USB"">Clé USB %1</string>"
+decoded/res/values-fr/strings.xml	317	"    <string name=""OPT_PLUGINS_SEARCH"">Rechercher des plugins</string>"
+decoded/res/values-hi/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">यूएसबी फ्लैश %1</string>"
+decoded/res/values-hi/strings.xml	343	"    <string name=""OPT_PLUGINS_SEARCH"">plugins खोजे</string>"
+decoded/res/values-hi/strings.xml	357	"    <string name=""OPT_SECTION_PLUGINS"">प्लगइन्स</string>"
+decoded/res/values-hr/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">Operativni sustav Android ograničava aplikacijama trećih strana (koje nisu predinstalirane na uređaju) pristup funkciji pisanja na vanjsku USB memoriju ili SD karticu.</string>"
+decoded/res/values-hr/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">USB memorija %1</string>"
+decoded/res/values-hr/strings.xml	344	"    <string name=""OPT_PLUGINS_SEARCH"">Traži dodatke</string>"
+decoded/res/values-hr/strings.xml	358	"    <string name=""OPT_SECTION_PLUGINS"">Dodaci</string>"
+decoded/res/values-hu/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">Az Android operációs rendszere korlátozza a 3. féltől származó (nem előtelepített) alkalmazások hozzáférését a külső USB flash vagy SD-kártya írási funkciójához.</string>"
+decoded/res/values-hu/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">%1 USB Flash</string>"
+decoded/res/values-hu/strings.xml	344	"    <string name=""OPT_PLUGINS_SEARCH"">Bővítmények keresése</string>"
+decoded/res/values-hu/strings.xml	358	"    <string name=""OPT_SECTION_PLUGINS"">Bővítmények</string>"
+decoded/res/values-in/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">Diska lepas %1</string>"
+decoded/res/values-in/strings.xml	344	"    <string name=""OPT_PLUGINS_SEARCH"">Cari plugin</string>"
+decoded/res/values-in/strings.xml	358	"    <string name=""OPT_SECTION_PLUGINS"">Plugin</string>"
+decoded/res/values-it/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">""Nelle versioni più recenti di Android (4.4+), il sistema operativo limita le app di terze parti (non preinstallate sul dispositivo) all'accesso in scrittura alla memoria flash USB e alle memorie SD.""</string>"
+decoded/res/values-it/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">Memoria USB %1</string>"
+decoded/res/values-it/strings.xml	344	"    <string name=""OPT_PLUGINS_SEARCH"">Cerca plugin</string>"
+decoded/res/values-it/strings.xml	358	"    <string name=""OPT_SECTION_PLUGINS"">Plugin</string>"
+decoded/res/values-ja/strings.xml	117	"    <string name=""FVR_EXTERNAL_USB"">USB メモリ %1</string>"
+decoded/res/values-ja/strings.xml	340	"    <string name=""OPT_PLUGINS_SEARCH"">プラグインの検索</string>"
+decoded/res/values-ja/strings.xml	353	"    <string name=""OPT_SECTION_PLUGINS"">プラグイン</string>"
+decoded/res/values-ka-rGE/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">USB ფლეშ ბარათი %1</string>"
+decoded/res/values-ka-rGE/strings.xml	344	"    <string name=""OPT_PLUGINS_SEARCH"">დანამატების ძიება</string>"
+decoded/res/values-ka-rGE/strings.xml	358	"    <string name=""OPT_SECTION_PLUGINS"">ფლაგინები</string>"
+decoded/res/values-ko/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">최신 안드로이드 (4.4+)에서는 OS가 서드파티 앱 (기기에 사전 설치되지 않은 앱) 들이 외장 USB나 SD 카드의 쓰기 기능에 접근하는 것을 제한합니다.</string>"
+decoded/res/values-ko/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">USB %1</string>"
+decoded/res/values-ko/strings.xml	338	"    <string name=""OPT_PLUGINS_SEARCH"">스토어에서 플러그인 검색</string>"
+decoded/res/values-ko/strings.xml	352	"    <string name=""OPT_SECTION_PLUGINS"">플러그인</string>"
+decoded/res/values-ky/strings.xml	100	"    <string name=""FVR_EXTERNAL_USB"">USBساقتاعىچ %1</string>"
+decoded/res/values-lt/strings.xml	109	"    <string name=""FSD_WARNING_TEXT"">Android OS riboja trečiosios šalies programėlėms (ne iš anksto įdiegtoms) prieiti prie USB Atmintinės arba SD kortelės įrašymo funkcijos.</string>"
+decoded/res/values-lt/strings.xml	115	"    <string name=""FVR_EXTERNAL_USB"">USB Atmintinė %1</string>"
+decoded/res/values-lt/strings.xml	321	"    <string name=""OPT_PLUGINS_SEARCH"">Ieškoti plėtinių</string>"
+decoded/res/values-lt/strings.xml	331	"    <string name=""OPT_SECTION_PLUGINS"">Plėtiniai</string>"
+decoded/res/values-pl/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">System operacyjny Android ogranicza dostęp aplikacji firm trzecich (niezainstalowanych fabrycznie na urządzeniu) do zapisu na zewnętrznych dyskach flash USB i kartach SD.</string>"
+decoded/res/values-pl/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">Nośnik USB Flash %1</string>"
+decoded/res/values-pl/strings.xml	344	"    <string name=""OPT_PLUGINS_SEARCH"">Wyszukaj wtyczki</string>"
+decoded/res/values-pl/strings.xml	358	"    <string name=""OPT_SECTION_PLUGINS"">Wtyczki</string>"
+decoded/res/values-pt-rBR/strings.xml	113	"    <string name=""FSD_WARNING_TEXT"">Android OS limites de aplicações 3rd party (não pré-instalado no dispositivo) para acesso externo, unidade USB ou um cartão SD escrever a função.</string>"
+decoded/res/values-pt-rBR/strings.xml	119	"    <string name=""FVR_EXTERNAL_USB"">USB %1</string>"
+decoded/res/values-pt-rBR/strings.xml	342	"    <string name=""OPT_PLUGINS_SEARCH"">Pesquisar plugins</string>"
+decoded/res/values-pt-rBR/strings.xml	356	"    <string name=""OPT_SECTION_PLUGINS"">Plugins</string>"
+decoded/res/values-ru/strings.xml	115	"    <string name=""FSD_WARNING_TEXT"">Операционная система Android ограничивает сторонние приложения (те приложения, которые не были установлены производителем) в записи данных на внешние USB- и SD-карты.</string>"
+decoded/res/values-ru/strings.xml	121	"    <string name=""FVR_EXTERNAL_USB"">USB-накопитель %1</string>"
+decoded/res/values-ru/strings.xml	345	"    <string name=""OPT_PLUGINS_SEARCH"">Найти дополнения</string>"
+decoded/res/values-ru/strings.xml	359	"    <string name=""OPT_SECTION_PLUGINS"">Дополнения</string>"
+decoded/res/values-sk/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">Android obmedzuje prístup aplikáciám tretích strán (aplikácie, ktoré nie sú predinštalované v zariadení) k externým USB diskom alebo funkciu pre zápis na kartu SD.</string>"
+decoded/res/values-sk/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">USB disk %1</string>"
+decoded/res/values-sk/strings.xml	344	"    <string name=""OPT_PLUGINS_SEARCH"">Hľadať pluginy</string>"
+decoded/res/values-sk/strings.xml	358	"    <string name=""OPT_SECTION_PLUGINS"">Pluginy</string>"
+decoded/res/values-sr/strings.xml	107	"    <string name=""FSD_WARNING_TEXT"">Operativni sistem Android organičava aplikacije trećih kompanija (one koje nisu došle uz uređaj) da pristupaju funkcijama za upis na eksterne USB diskove ili SD kartice.</string>"
+decoded/res/values-sr/strings.xml	111	"    <string name=""FVR_EXTERNAL_USB"">USB disk %1</string>"
+decoded/res/values-sr/strings.xml	308	"    <string name=""OPT_PLUGINS_SEARCH"">Pretraži dodatke</string>"
+decoded/res/values-sr/strings.xml	318	"    <string name=""OPT_SECTION_PLUGINS"">Dodaci</string>"
+decoded/res/values-th-rTH/strings.xml	113	"    <string name=""FSD_WARNING_TEXT"">ระบบปฏิบัติการ Android จำกัดการเข้าถึงการเขียนของแอพของบุคคลที่สาม (ไม่ได้ติดตั้งไว้ล่วงหน้าในอุปกรณ์) ไปยังแฟลชไดรฟ์ USB ภายนอกและการ์ด SD</string>"
+decoded/res/values-th-rTH/strings.xml	119	"    <string name=""FVR_EXTERNAL_USB"">USB Flash %1</string>"
+decoded/res/values-th-rTH/strings.xml	342	"    <string name=""OPT_PLUGINS_SEARCH"">ค้นหาปลั๊กอิน</string>"
+decoded/res/values-th-rTH/strings.xml	356	"    <string name=""OPT_SECTION_PLUGINS"">ปลั๊กอิน</string>"
+decoded/res/values-tr/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">Android sistemi, harici USB belleğe veya SD karta yazma işlevine erişmek için 3. taraf uygulamalarını (cihazda önceden kurulu olmayan) sınırlar.</string>"
+decoded/res/values-tr/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">USB Flaş %1</string>"
+decoded/res/values-tr/strings.xml	343	"    <string name=""OPT_PLUGINS_SEARCH"">Eklenti ara</string>"
+decoded/res/values-tr/strings.xml	357	"    <string name=""OPT_SECTION_PLUGINS"">Eklentiler</string>"
+decoded/res/values-ug/strings.xml	92	"    <string name=""FSD_WARNING_TEXT"">‏Android 4.4+，سىستېمىلىرى 3- تەرەپ ئەپ قاچىلاشنى چەكلىگەن (ئۈسكۈنىگە قاچىلانمايدۇ) تاشقى USB ساقلىغۇچقا ياكى SD كارتىغا يېزىڭ</string>"
+decoded/res/values-ug/strings.xml	98	"    <string name=""FVR_EXTERNAL_USB"">‏USB ساقلىغۇچ %1</string>"
+decoded/res/values-uk/strings.xml	111	"    <string name=""FSD_WARNING_TEXT"">Операційна система Android обмежує сторонні додатки (ті додатки, які не були встановлені виробником) в записі даних на зовнішні USB- та SD-карти.</string>"
+decoded/res/values-uk/strings.xml	117	"    <string name=""FVR_EXTERNAL_USB"">USB-накопичувач %1</string>"
+decoded/res/values-uk/strings.xml	337	"    <string name=""OPT_PLUGINS_SEARCH"">Знайти доповнення</string>"
+decoded/res/values-uk/strings.xml	351	"    <string name=""OPT_SECTION_PLUGINS"">Доповнення</string>"
+decoded/res/values-uz/strings.xml	111	"    <string name=""FSD_WARNING_TEXT"">Android operatsion tizimi nostandart ilovalar (yaʼni zavod tomonidan oʻrnatilmagan)ga maʼlumotlarni USB va SD kartalarga yozishni taqiqlab qoʻygan.</string>"
+decoded/res/values-uz/strings.xml	117	"    <string name=""FVR_EXTERNAL_USB"">%1 USB qurilmasi</string>"
+decoded/res/values-uz/strings.xml	337	"    <string name=""OPT_PLUGINS_SEARCH"">Qoʻshimcha ilovalarni izlamoq</string>"
+decoded/res/values-uz/strings.xml	350	"    <string name=""OPT_SECTION_PLUGINS"">Qoʻshimcha</string>"
+decoded/res/values-v21/styles.xml	82	"        <item name=""android:statusBarColor"">?colorPrimary</item>"
+decoded/res/values-v21/styles.xml	207	"        <item name=""android:statusBarColor"">?colorPrimary</item>"
+decoded/res/values-v21/styles.xml	236	"        <item name=""android:statusBarColor"">?colorPrimary</item>"
+decoded/res/values-v21/styles.xml	310	"        <item name=""android:statusBarColor"">@android:color/transparent</item>"
+decoded/res/values-v21/styles.xml	337	"        <item name=""android:statusBarColor"">@android:color/transparent</item>"
+decoded/res/values-v21/styles.xml	363	"        <item name=""android:statusBarColor"">@color/status_bar_dark_color</item>"
+decoded/res/values-v21/styles.xml	382	"        <item name=""android:statusBarColor"">@color/ab_background_material_dark_amoled</item>"
+decoded/res/values-v21/styles.xml	405	"        <item name=""android:statusBarColor"">@color/ab_background_material_dark_amoled</item>"
+decoded/res/values-v21/styles.xml	426	"        <item name=""android:statusBarColor"">@color/status_bar_light_color</item>"
+decoded/res/values-v21/styles.xml	445	"        <item name=""android:statusBarColor"">@color/status_bar_dark_color</item>"
+decoded/res/values-v21/styles.xml	469	"        <item name=""android:statusBarColor"">#ffffffff</item>"
+decoded/res/values-v21/styles.xml	498	"        <item name=""android:statusBarColor"">#ffffffff</item>"
+decoded/res/values-v23/styles.xml	31	"        <item name=""android:windowLightStatusBar"">true</item>"
+decoded/res/values-v31/styles.xml	180	"        <item name=""android:statusBarColor"">?colorPrimaryDark</item>"
+decoded/res/values-v31/styles.xml	199	"        <item name=""android:statusBarColor"">?colorPrimaryLight</item>"
+decoded/res/values-v31/styles.xml	213	"        <item name=""android:statusBarColor"">@android:color/system_accent2_800</item>"
+decoded/res/values-vi/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">Android OS giới hạn ứng dụng bên thứ 3rd (không cài đặt trước trên thiết bị) để truy cập vào USB flash hoặc thẻ SD viết hàm.</string>"
+decoded/res/values-vi/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">USD Flash %1</string>"
+decoded/res/values-vi/strings.xml	342	"    <string name=""OPT_PLUGINS_SEARCH"">Tìm kiếm plugins</string>"
+decoded/res/values-vi/strings.xml	356	"    <string name=""OPT_SECTION_PLUGINS"">Phần mở rộng</string>"
+decoded/res/values-zh-rCN/strings.xml	114	"    <string name=""FSD_WARNING_TEXT"">Android 4.4+，系统限制第三方应用 (非预置应用) 对外部USB存储或SD卡写操作</string>"
+decoded/res/values-zh-rCN/strings.xml	120	"    <string name=""FVR_EXTERNAL_USB"">USB存储 %1</string>"
+decoded/res/values-zh-rCN/strings.xml	344	"    <string name=""OPT_PLUGINS_SEARCH"">搜索插件</string>"
+decoded/res/values-zh-rCN/strings.xml	358	"    <string name=""OPT_SECTION_PLUGINS"">插件</string>"
+decoded/res/values-zh-rTW/strings.xml	110	"    <string name=""FSD_WARNING_TEXT"">安卓系統限制存取USB 或 SD 儲存設備(無存取權限)</string>"
+decoded/res/values-zh-rTW/strings.xml	116	"    <string name=""FVR_EXTERNAL_USB"">USB 儲存設備 %1</string>"
+decoded/res/values-zh-rTW/strings.xml	336	"    <string name=""OPT_PLUGINS_SEARCH"">搜尋套件</string>"
+decoded/res/values-zh-rTW/strings.xml	349	"    <string name=""OPT_SECTION_PLUGINS"">套件</string>"
+decoded/smali/h0/h.smali	1712	"    const-string v0, ""plugin"""
+decoded/smali/k0/a.smali	936	"    const-string v2, ""plugin"""
+decoded/smali/l0/b.smali	41	"    const-string v3, ""market://search?q=ZArchiver plugin"""
+decoded/smali/l0/b.smali	82	"    const-string v2, ""https://play.google.com/store/apps/search?q=ZArchiver plugin"""
+decoded/smali/l0/c.smali	1279	"    const-string v1, ""ru.zdevs.zarchiver.plugin.PLUGIN_APPLICATION"""
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	876	"    const-string v1, "".provider.PluginFileProvider"""
+decoded/smali/ru/zdevs/zarchiver/ZImageViewer.smali	711	    invoke-virtual {v2, v4}, Landroid/view/Window;->setStatusBarColor(I)V
+decoded/smali/ru/zdevs/zarchiver/a.smali	11209	"    const-string v3, ""/storage/usb"""
+decoded/smali/ru/zdevs/zarchiver/activity/OpenAsDlg.smali	653	    invoke-virtual {v2, v0}, Landroid/view/Window;->setStatusBarColor(I)V
+decoded/smali/ru/zdevs/zarchiver/activity/SettingsDlg$PluginFragment.smali	1	.class public Lru/zdevs/zarchiver/activity/SettingsDlg$PluginFragment;
+decoded/smali/ru/zdevs/zarchiver/activity/SettingsDlg$PluginFragment.smali	13	"    name = ""PluginFragment"""
+decoded/smali/ru/zdevs/zarchiver/activity/SettingsDlg$PluginFragment.smali	78	"    const-string v2, ""ru.zdevs.zarchiver.plugin.PLUGIN_APPLICATION"""
+decoded/smali/ru/zdevs/zarchiver/activity/SettingsDlg.smali	15	        Lru/zdevs/zarchiver/activity/SettingsDlg$PluginFragment;,
+decoded/smali/ru/zdevs/zarchiver/c.smali	1489	    invoke-interface {v1, p1, p2}, Lru/zdevs/zarchiver/service/c;->PluginOpenFile(Lh0/h;I)V
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	148	"    const-string v3, ""plugin"""
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	1	.class public Lru/zdevs/zarchiver/provider/PluginFileProvider;
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	44	    sput-object v0, Lru/zdevs/zarchiver/provider/PluginFileProvider;->a:[Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	266	    invoke-static {p1}, Lru/zdevs/zarchiver/provider/PluginFileProvider;->a(Landroid/net/Uri;)Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	765	    invoke-static/range {p1 .. p1}, Lru/zdevs/zarchiver/provider/PluginFileProvider;->a(Landroid/net/Uri;)Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	777	    sget-object v3, Lru/zdevs/zarchiver/provider/PluginFileProvider;->a:[Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/service/ZArchiverService$2.smali	2427	.method public PluginOpenFile(Lh0/h;I)V
+decoded/smali/ru/zdevs/zarchiver/service/c$a$a.smali	2310	.method public final PluginOpenFile(Lh0/h;I)V
+decoded/smali/ru/zdevs/zarchiver/service/c$a.smali	489	    invoke-interface {p0, v0, v1}, Lru/zdevs/zarchiver/service/c;->PluginOpenFile(Lh0/h;I)V
+decoded/smali/ru/zdevs/zarchiver/service/c.smali	174	.method public abstract PluginOpenFile(Lh0/h;I)V
+decoded/smali/t0/a.smali	1636	"    const-string v11, ""plugin"""
+decoded/smali/v0/e.smali	465	    sget-object p2, Lru/zdevs/zarchiver/provider/PluginFileProvider;->a:[Ljava/lang/String;
+decoded/smali/v0/e.smali	486	"    const-string p3, ""ru.zdevs.zarchiver.plugin"""
+decoded/smali/x0/d.smali	573	"    const-string v7, ""usb"""
+decoded/smali/x0/d.smali	3092	"    const-string v4, ""isUsb"""
+decoded/smali/z0/e.smali	886	    invoke-virtual {v7, v3}, Landroid/view/Window;->setStatusBarColor(I)V

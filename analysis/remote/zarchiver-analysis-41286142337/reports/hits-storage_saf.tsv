@@ -1,0 +1,525 @@
+file	line	text
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/SkiaImageDecoder.java	45	                    InputStream inputStreamOpenInputStream = context.getContentResolver().openInputStream(aVar.f798a);
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/SkiaImageRegionDecoder.java	91	                InputStream inputStreamOpenInputStream = context.getContentResolver().openInputStream(aVar.f798a);
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.java	4	import android.content.ContentResolver;
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.java	215	                ContentResolver contentResolver = this.f473d.getContentResolver();
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.java	216	                inputStreamOpenInputStream = contentResolver.openInputStream(this.f474e.f798a);
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.java	219	"                    AssetFileDescriptor assetFileDescriptorOpenAssetFileDescriptor = contentResolver.openAssetFileDescriptor(this.f474e.f798a, ""r"");"
+jadx/sources/g/d.java	679	"                cursorQuery = context.getContentResolver().query(aVar.f798a, new String[]{""orientation""}, null, null, null);"
+jadx/sources/g0/s.java	12	import android.os.storage.StorageVolume;
+jadx/sources/g0/s.java	39	    public StorageVolume f1043m;
+jadx/sources/g0/s.java	91	                            if (obj instanceof StorageVolume) {
+jadx/sources/g0/s.java	92	                                this.f1043m = (StorageVolume) obj;
+jadx/sources/g0/s.java	199	                        StorageVolume storageVolume = this.f1043m;
+jadx/sources/g0/s.java	200	                        if (storageVolume == null) {
+jadx/sources/g0/s.java	203	                            x0.h.e(zArchiverZ, storageVolume, this.f1042l);
+jadx/sources/g0/s.java	205	                            x0.h.i(zArchiverZ, storageVolume, this.f1042l);
+jadx/sources/h1/h.java	56	"            return (context.checkSelfPermission(""android.permission.READ_EXTERNAL_STORAGE"") == -1 || context.checkSelfPermission(""android.permission.WRITE_EXTERNAL_STORAGE"") == -1) ? false : true;"
+jadx/sources/h1/h.java	58	        return Environment.isExternalStorageManager();
+jadx/sources/i0/b.java	11	import ru.zdevs.zarchiver.provider.ArchiveFileProvider;
+jadx/sources/i0/b.java	23	    public final ArchiveFileProvider.a f1138e;
+jadx/sources/i0/b.java	25	    public b(NArc nArc, ArrayList<d> arrayList, int i2, String str, ArchiveFileProvider.a aVar) {
+jadx/sources/i0/b.java	40	        ArchiveFileProvider.a aVar = this.f1138e;
+jadx/sources/i0/b.java	44	        return ArchiveFileProvider.d(context, hVar, hVar.f1107b, -2L, aVar.f1707b, aVar.f1708c);
+jadx/sources/j0/b.java	314	            if (z7 && (((i3 = Build.VERSION.SDK_INT) >= 33 || (i3 >= 30 && !z0.e.d(ZApp.f1434c))) && !Environment.isExternalStorageManager())) {
+jadx/sources/j0/e.java	7	import ru.zdevs.zarchiver.provider.FileProvider;
+jadx/sources/j0/e.java	30	        return FileProvider.c(a0.c.i(this.f1159c, this.f1157a.get(i2)));
+jadx/sources/l0/c.java	4	import android.content.ContentResolver;
+jadx/sources/l0/c.java	76	    public static boolean a(ContentResolver contentResolver, String str) {
+jadx/sources/l0/c.java	79	            ContentProviderClient contentProviderClientAcquireContentProviderClient = contentResolver.acquireContentProviderClient(str);
+jadx/sources/l0/c.java	169	        return zApp.getContentResolver().acquireUnstableContentProviderClient(str);
+jadx/sources/l0/c.java	222	        ContentResolver contentResolver = context.getContentResolver();
+jadx/sources/l0/c.java	229	            if (a(contentResolver, resolveInfo.activityInfo.packageName)) {
+jadx/sources/l0/c.java	268	        ContentResolver contentResolver = zApp.getContentResolver();
+jadx/sources/l0/c.java	271	            a(contentResolver, it.next());
+jadx/sources/m0/d.java	10	import ru.zdevs.zarchiver.provider.FileProvider;
+jadx/sources/m0/d.java	117	        return FileProvider.c(a0.c.i(this.f1229d, arrayList.get(i2)));
+jadx/sources/n0/b.java	3	import android.content.ContentResolver;
+jadx/sources/n0/b.java	44	            ContentResolver contentResolverA = ZApp.a();
+jadx/sources/n0/b.java	48	                        DocumentsContract.deleteDocument(contentResolverA, SAF.k(0, this.f1236d + '/' + a0.c.y(this.f1234b.getPath())));
+jadx/sources/n0/b.java	50	                    DocumentsContract.moveDocument(contentResolverA, this.f1234b, this.f1235c, uriK);
+jadx/sources/n0/b.java	56	                    DocumentsContract.deleteDocument(contentResolverA, SAF.k(0, this.f1236d + '/' + a0.c.y(this.f1234b.getPath())));
+jadx/sources/n0/b.java	57	                    DocumentsContract.moveDocument(contentResolverA, this.f1234b, this.f1235c, uriK);
+jadx/sources/q0/f.java	4	import android.content.ContentResolver;
+jadx/sources/q0/f.java	12	import android.provider.MediaStore;
+jadx/sources/q0/f.java	114	        public final ContentResolver f1387a = ZApp.e().getContentResolver();
+jadx/sources/q0/f.java	130	                ContentResolver contentResolver = ZApp.e().getContentResolver();
+jadx/sources/q0/f.java	131	"                Uri contentUri = MediaStore.Files.getContentUri(""external"");"
+jadx/sources/q0/f.java	136	                contentResolver.insert(contentUri, contentValues);
+jadx/sources/q0/f.java	148	"                    contentProviderClientAcquireContentProviderClient = ZApp.e().getContentResolver().acquireContentProviderClient(""media"");"
+jadx/sources/q0/f.java	164	        public final ContentResolver f1389a = ZApp.e().getContentResolver();
+jadx/sources/q0/f.java	188	"        public final ContentProviderClient f1391a = ZApp.e().getContentResolver().acquireContentProviderClient(""media"");"
+jadx/sources/q0/f.java	265	            ContentResolver contentResolver = ZApp.e().getContentResolver();
+jadx/sources/q0/f.java	266	"            Uri uriBuild = MediaStore.Files.getContentUri(""external"").buildUpon().appendQueryParameter(""includePending"", ""1"").appendQueryParameter(""deletedata"", ""false"").build();"
+jadx/sources/q0/f.java	275	                contentResolver.delete(uriBuild, str2, strArr);
+jadx/sources/q0/f.java	281	"                cursorQuery = contentResolver.query(uriBuild, f1383a, ""_data >= ? AND _data < ?"", new String[]{str + ""/"", str + ""0""}, null);"
+jadx/sources/q0/f.java	286	"                        contentResolver.delete(uriBuild, ""_data = ?"", strArr2);"
+jadx/sources/r0/b.java	7	import android.os.storage.StorageManager;
+jadx/sources/r0/b.java	278	                StorageManager storageManager = (StorageManager) ((g) aVar).f2018a.getSystemService(StorageManager.class);
+jadx/sources/r0/b.java	281	                    if (storageManager.isAllocationSupported(fd)) {
+jadx/sources/r0/b.java	282	                        storageManager.allocateBytes(fd, j2);
+jadx/sources/rikka/shizuku/ShizukuProvider.java	52	"            bundleCall = context.getContentResolver().call(Uri.parse(""content://"" + context.getPackageName() + "".shizuku""), ""getBinder"", (String) null, new Bundle());"
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	6	import android.content.ContentResolver;
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	27	    public static ContentResolver f1437f;
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	94	    public static ContentResolver a() {
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	95	        ContentResolver contentResolver = f1437f;
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	96	        if (contentResolver != null) {
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	97	            return contentResolver;
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	99	"        throw new RuntimeException(""ContentResolver is NULL"");"
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	102	    public static ContentResolver b(Context context) {
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	104	            f1437f = context.getApplicationContext().getContentResolver();
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	197	        f1437f = getContentResolver();
+jadx/sources/ru/zdevs/zarchiver/ZApp.java	202	"            a0.c.h(this, "".provider.PluginFileProvider"", z2);"
+jadx/sources/ru/zdevs/zarchiver/ZArchiver.java	2379	                    getApplicationContext().getContentResolver().takePersistableUriPermission(data, 3);
+jadx/sources/ru/zdevs/zarchiver/ZArchiver.java	2388	                new ru.zdevs.zarchiver.e(getContentResolver(), (ru.zdevs.zarchiver.a.b) dVar.f1683c.f1553f, i2, dVar.f1685e).g(null, this.f270c);
+jadx/sources/ru/zdevs/zarchiver/ZArchiver.java	3654	"            requestPermissions(new String[]{""android.permission.READ_EXTERNAL_STORAGE"", ""android.permission.WRITE_EXTERNAL_STORAGE""}, 0);"
+jadx/sources/ru/zdevs/zarchiver/ZImageViewer.java	32	import ru.zdevs.zarchiver.provider.ArchiveFileProvider;
+jadx/sources/ru/zdevs/zarchiver/ZImageViewer.java	125	                    ArchiveFileProvider.a aVarB = ArchiveFileProvider.b(ZApp.f1434c, data);
+jadx/sources/ru/zdevs/zarchiver/a.java	24	import android.os.storage.StorageVolume;
+jadx/sources/ru/zdevs/zarchiver/a.java	1472	    public final void c(StorageVolume storageVolume, boolean z2) {
+jadx/sources/ru/zdevs/zarchiver/a.java	1475	        boolean z4 = storageVolume == null;
+jadx/sources/ru/zdevs/zarchiver/a.java	1476	        if (storageVolume == null || Build.VERSION.SDK_INT < 24) {
+jadx/sources/ru/zdevs/zarchiver/a.java	1480	                x0.d.a aVarW = x0.d.w(storageVolume);
+jadx/sources/ru/zdevs/zarchiver/a.java	1504	                x0.d.d(storageVolume);
+jadx/sources/ru/zdevs/zarchiver/activity/SettingsDlg.java	310	                new b(getContentResolver().openOutputStream(data)).g(null, null);
+jadx/sources/ru/zdevs/zarchiver/activity/SettingsDlg.java	316	                new c(getContentResolver().openInputStream(data)).g(null, null);
+jadx/sources/ru/zdevs/zarchiver/archiver/NArc.java	6	import android.os.storage.StorageManager;
+jadx/sources/ru/zdevs/zarchiver/archiver/NArc.java	173	    /* JADX WARN: Type inference failed for: r2v5, types: [android.os.storage.StorageManager] */
+jadx/sources/ru/zdevs/zarchiver/archiver/NArc.java	205	"        g gVar = new g(this, aVar, ((StorageManager) context.getSystemService(""storage"")).openProxyFileDescriptor(268435456, aVar, aVar.getHandler()));"
+jadx/sources/ru/zdevs/zarchiver/e.java	5	import android.content.ContentResolver;
+jadx/sources/ru/zdevs/zarchiver/e.java	11	    public final ContentResolver f1688e;
+jadx/sources/ru/zdevs/zarchiver/e.java	19	    public e(ContentResolver contentResolver, a.b bVar, int i2, int i3) {
+jadx/sources/ru/zdevs/zarchiver/e.java	20	        this.f1688e = contentResolver;
+jadx/sources/ru/zdevs/zarchiver/e.java	28	        ContentResolver contentResolver = this.f1688e;
+jadx/sources/ru/zdevs/zarchiver/e.java	33	                DocumentsContract.deleteDocument(contentResolver, bVar.f1559c);
+jadx/sources/ru/zdevs/zarchiver/e.java	35	                DocumentsContract.renameDocument(contentResolver, bVar.f1559c, bVar.f1558b);
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	3	import android.content.ContentResolver;
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	8	import android.provider.MediaStore;
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	24	            ContentResolver contentResolverA = ZApp.a();
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	25	"            Uri contentUri = MediaStore.Files.getContentUri(""external"");"
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	26	"            contentResolverA.delete(contentUri, ""_data=?"", new String[]{file.getAbsolutePath()});"
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	30	            return contentResolverA.insert(contentUri, contentValues);
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	42	"            Cursor cursorQuery = ZApp.a().query(MediaStore.Files.getContentUri(""external""), new String[]{""_id""}, ""_data=?"", new String[]{file.getAbsolutePath()}, ""_id"");"
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	50	"                    return MediaStore.Files.getContentUri(""external"", cursorQuery.getLong(columnIndex));"
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	115	"        Uri contentUri = MediaStore.Files.getContentUri(""external"");"
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	116	        ContentResolver contentResolverA = ZApp.a();
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	118	"            contentResolverA.delete(contentUri, ""_data=?"", strArr);"
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	125	                contentResolverA.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
+jadx/sources/ru/zdevs/zarchiver/io/KitKatExtSD.java	126	"                contentResolverA.delete(contentUri, ""_data=?"", strArr);"
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	4	import android.content.ContentResolver;
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	11	import android.provider.MediaStore;
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	22	import ru.zdevs.zarchiver.provider.FileProvider;
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	259	            return (!z2 || n0.e.l(strR) || !b.h() || (uriJ = j(context, strR)) == null) ? FileProvider.c(strR) : uriJ;
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	279	                contentUri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	281	                contentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	283	"                contentUri = bE == 9 ? MediaStore.Images.Media.EXTERNAL_CONTENT_URI : MediaStore.Files.getContentUri(""external"");"
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	285	"            cursorQuery = context.getContentResolver().query(contentUri, new String[]{""_id""}, ""_data=? "", new String[]{str}, null);"
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	377	"        return DocumentsContract.createDocument(ZApp.a(), a(strConcat, c.A(str2), 0), i2 == 3 ? ""vnd.android.document/directory"" : """", c.y(str2));"
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	471	"                    uriL = DocumentsContract.createDocument(ZApp.a(), uriL, ""vnd.android.document/directory"", strArrH[i4]);"
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	509	            ContentResolver contentResolverA = ZApp.a();
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	510	            synchronized (contentResolverA) {
+jadx/sources/ru/zdevs/zarchiver/io/SAF.java	511	                ParcelFileDescriptor parcelFileDescriptorOpenFileDescriptor = contentResolverA.openFileDescriptor(uriK, ZAIO.d(i2));
+jadx/sources/ru/zdevs/zarchiver/io/ZAIO.java	4	import android.content.ContentResolver;
+jadx/sources/ru/zdevs/zarchiver/io/ZAIO.java	138	        ContentResolver contentResolverA = ZApp.a();
+jadx/sources/ru/zdevs/zarchiver/io/ZAIO.java	140	            return contentResolverA.openFileDescriptor(uri, str);
+jadx/sources/ru/zdevs/zarchiver/io/ZAIO.java	143	                AssetFileDescriptor assetFileDescriptorOpenAssetFileDescriptor = contentResolverA.openAssetFileDescriptor(uri, str);
+jadx/sources/ru/zdevs/zarchiver/provider/ArchiveFileProvider.java	25	public class ArchiveFileProvider extends ContentProvider {
+jadx/sources/ru/zdevs/zarchiver/provider/FileProvider.java	12	import android.os.storage.StorageManager;
+jadx/sources/ru/zdevs/zarchiver/provider/FileProvider.java	27	public final class FileProvider extends ContentProvider {
+jadx/sources/ru/zdevs/zarchiver/provider/FileProvider.java	75	"            StorageManager storageManager = (StorageManager) getContext().getSystemService(""storage"");"
+jadx/sources/ru/zdevs/zarchiver/provider/FileProvider.java	82	            return storageManager.openProxyFileDescriptor(i4, cVar, new Handler(cVar.f1303g.getLooper()));
+jadx/sources/ru/zdevs/zarchiver/provider/PluginFileProvider.java	18	public class PluginFileProvider extends ContentProvider {
+jadx/sources/t0/a.java	31	"    public static final String[] f2077e = {Environment.DIRECTORY_DOWNLOADS, Environment.DIRECTORY_MUSIC, ""Documents""};"
+jadx/sources/t0/a.java	173	                    File externalStoragePublicDirectory = Environment.getExternalStoragePublicDirectory(strArr2[i11]);
+jadx/sources/v0/e.java	24	import ru.zdevs.zarchiver.provider.ArchiveFileProvider;
+jadx/sources/v0/e.java	25	import ru.zdevs.zarchiver.provider.FileProvider;
+jadx/sources/v0/e.java	26	import ru.zdevs.zarchiver.provider.PluginFileProvider;
+jadx/sources/v0/e.java	82	            return ArchiveFileProvider.d(context, hVar, strI, j2, str2, i2);
+jadx/sources/v0/e.java	90	                String[] strArr = PluginFileProvider.f1711a;
+jadx/sources/v0/e.java	93	            String[] strArr2 = FileProvider.f1710a;
+jadx/sources/v0/e.java	104	            return FileProvider.c(hVar.r());
+jadx/sources/v0/e.java	111	        String[] strArr3 = FileProvider.f1710a;
+jadx/sources/v0/f.java	12	import android.provider.MediaStore;
+jadx/sources/v0/f.java	32	"            cursorQuery = ZApp.e().getContentResolver().query(uri, new String[]{""_data""}, str, strArr, null);"
+jadx/sources/v0/f.java	72	            Cursor cursorQuery = contextC.getContentResolver().query(uri, null, null, null, null);
+jadx/sources/v0/f.java	106	"            parcelFileDescriptorOpenFileDescriptor = context.getContentResolver().openFileDescriptor(uri, ""r"");"
+jadx/sources/v0/f.java	138	"                    return Environment.getExternalStorageDirectory() + ""/"" + strArrSplit[1];"
+jadx/sources/v0/f.java	141	"                    return Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS) + ""/"" + strArrSplit[1];"
+jadx/sources/v0/f.java	155	                        uri2 = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
+jadx/sources/v0/f.java	157	                        uri2 = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
+jadx/sources/v0/f.java	159	                        uri2 = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+jadx/sources/x0/d.java	12	import android.os.storage.StorageManager;
+jadx/sources/x0/d.java	13	import android.os.storage.StorageVolume;
+jadx/sources/x0/d.java	144	        public abstract void c(StorageVolume storageVolume, boolean z2);
+jadx/sources/x0/d.java	187	            canonicalPath = Environment.getExternalStorageDirectory().getCanonicalPath();
+jadx/sources/x0/d.java	203	                    b2 = (!Environment.isExternalStorageRemovable() || Environment.isExternalStorageEmulated()) ? (byte) 1 : (byte) 2;
+jadx/sources/x0/d.java	221	    public static synchronized void d(StorageVolume storageVolume) {
+jadx/sources/x0/d.java	226	            File directory = storageVolume.getDirectory();
+jadx/sources/x0/d.java	234	"            a aVar = new a(absolutePath, absolutePath.startsWith(""/mnt/media_rw"") ? (byte) 4 : (byte) 2, storageVolume.getUuid());"
+jadx/sources/x0/d.java	235	            if (storageVolume.isRemovable()) {
+jadx/sources/x0/d.java	239	"            Method methodW = a0.c.w(StorageVolume.class, ""getUserLabel"", new Class[0]);"
+jadx/sources/x0/d.java	241	                aVar.f2254a = (String) methodW.invoke(storageVolume, new Object[0]);
+jadx/sources/x0/d.java	458	"        return new a(Environment.getExternalStorageDirectory().getPath(), (byte) 0, ""primary"");"
+jadx/sources/x0/d.java	496	"            StorageManager storageManager = (StorageManager) context.getSystemService(""storage"");"
+jadx/sources/x0/d.java	497	            if (storageManager == null) {
+jadx/sources/x0/d.java	501	"            Method method = storageManager.getClass().getMethod(""getDisks"", new Class[0]);"
+jadx/sources/x0/d.java	505	            if (methodW == null || methodW2 == null || (list = (List) method.invoke(storageManager, new Object[0])) == null) {
+jadx/sources/x0/d.java	545	            canonicalPath = Environment.getExternalStorageDirectory().getCanonicalPath();
+jadx/sources/x0/d.java	567	                            if (!Environment.isExternalStorageRemovable(new File(absolutePath))) {
+jadx/sources/x0/d.java	575	                        aVar.f2257d = (!Environment.isExternalStorageRemovable() || Environment.isExternalStorageEmulated()) ? (byte) 1 : (byte) 2;
+jadx/sources/x0/d.java	618	"            StorageManager storageManager = (StorageManager) context.getSystemService(""storage"");"
+jadx/sources/x0/d.java	619	            if (storageManager == null) {
+jadx/sources/x0/d.java	623	"                cls = Class.forName(""android.os.storage.StorageVolume"");"
+jadx/sources/x0/d.java	630	"            Method methodW = a0.c.w(storageManager.getClass(), ""getVolumeList"", new Class[0]);"
+jadx/sources/x0/d.java	637	            if (methodW == null || methodW2 == null || (objInvoke = methodW.invoke(storageManager, new Object[0])) == null) {
+jadx/sources/x0/d.java	713	"                methodW = a0.c.w(StorageVolume.class, ""getPath"", new Class[0]);"
+jadx/sources/x0/d.java	720	"            StorageManager storageManager = (StorageManager) context.getSystemService(""storage"");"
+jadx/sources/x0/d.java	721	            if (storageManager == null) {
+jadx/sources/x0/d.java	724	            for (StorageVolume storageVolume : storageManager.getStorageVolumes()) {
+jadx/sources/x0/d.java	725	"                if (storageVolume != null && ((state = storageVolume.getState()) == null || ""mounted"".equals(state) || ""mounted_ro"".equals(state))) {"
+jadx/sources/x0/d.java	728	                        File directory = storageVolume.getDirectory();
+jadx/sources/x0/d.java	733	                        absolutePath = (String) methodW.invoke(storageVolume, new Object[0]);
+jadx/sources/x0/d.java	737	                            String description = storageVolume.getDescription(context);
+jadx/sources/x0/d.java	741	"                                absolutePath = ""/SAF/"" + storageVolume.getUuid();"
+jadx/sources/x0/d.java	746	                                aVarK = new a(absolutePath, b2, storageVolume.getUuid());
+jadx/sources/x0/d.java	752	                                    aVarK.f2256c = storageVolume.getUuid();
+jadx/sources/x0/d.java	755	                            if (storageVolume.isRemovable()) {
+jadx/sources/x0/d.java	758	                            aVarK.f2258e = storageVolume;
+jadx/sources/x0/d.java	759	                            aVarK.f2254a = storageVolume.getDescription(context);
+jadx/sources/x0/d.java	760	                            if (storageVolume.isPrimary()) {
+jadx/sources/x0/d.java	778	                            b2 = storageVolume.isRemovable() ? (byte) 2 : (byte) 1;
+jadx/sources/x0/d.java	784	                            aVarK = new a(absolutePath, b2, storageVolume.getUuid());
+jadx/sources/x0/d.java	790	                                aVarK.f2256c = storageVolume.getUuid();
+jadx/sources/x0/d.java	793	                        if (storageVolume.isRemovable()) {
+jadx/sources/x0/d.java	796	                        aVarK.f2258e = storageVolume;
+jadx/sources/x0/d.java	797	                        aVarK.f2254a = storageVolume.getDescription(context);
+jadx/sources/x0/d.java	798	                        if (storageVolume.isPrimary()) {
+jadx/sources/x0/d.java	857	"                    context.getContentResolver().registerContentObserver(DocumentsContract.buildRootsUri(""com.android.externalstorage.documents""), false, (ContentObserver) aVar.f2260a);"
+jadx/sources/x0/d.java	877	    public static synchronized a w(StorageVolume storageVolume) {
+jadx/sources/x0/d.java	878	        a aVarJ = j(storageVolume.getUuid());
+jadx/sources/x0/d.java	892	"            ((StorageManager) context.getSystemService(""storage"")).unregisterStorageVolumeCallback((StorageManager.StorageVolumeCallback) aVar.f2260a);"
+jadx/sources/x0/d.java	894	            context.getContentResolver().unregisterContentObserver((ContentObserver) aVar.f2260a);
+jadx/sources/x0/d.java	906	        List<UriPermission> persistedUriPermissions = context.getContentResolver().getPersistedUriPermissions();
+jadx/sources/x0/e.java	3	import android.os.storage.StorageManager;
+jadx/sources/x0/e.java	4	import android.os.storage.StorageVolume;
+jadx/sources/x0/e.java	6	public final class e extends StorageManager.StorageVolumeCallback {
+jadx/sources/x0/e.java	15	    public final void onStateChanged(StorageVolume storageVolume) {
+jadx/sources/x0/e.java	16	        String state = storageVolume.getState();
+jadx/sources/x0/e.java	18	            this.f2261a.c(storageVolume, true);
+jadx/sources/x0/e.java	20	            this.f2261a.c(storageVolume, false);
+jadx/sources/x0/f.java	5	import android.os.storage.StorageManager;
+jadx/sources/x0/f.java	10	"        ((StorageManager) context.getSystemService(""storage"")).registerStorageVolumeCallback(AsyncTask.THREAD_POOL_EXECUTOR, (StorageManager.StorageVolumeCallback) aVar.f2260a);"
+jadx/sources/x0/h.java	9	import android.os.storage.StorageVolume;
+jadx/sources/x0/h.java	73	    public static void e(ZArchiver zArchiver, StorageVolume storageVolume, int i2) {
+jadx/sources/x0/h.java	74	        Intent intentCreateAccessIntent = storageVolume.createAccessIntent(null);
+jadx/sources/x0/h.java	131	    public static void i(ZArchiver zArchiver, StorageVolume storageVolume, int i2) {
+jadx/sources/x0/h.java	133	            j(zArchiver, storageVolume.createOpenDocumentTreeIntent(), i2);
+decoded/AndroidManifest.xml	20	"    <uses-permission android:maxSdkVersion=""32"" android:name=""android.permission.READ_EXTERNAL_STORAGE""/>"
+decoded/AndroidManifest.xml	21	"    <uses-permission android:maxSdkVersion=""29"" android:name=""android.permission.WRITE_EXTERNAL_STORAGE""/>"
+decoded/AndroidManifest.xml	28	"    <uses-permission-sdk-23 android:minSdkVersion=""30"" android:name=""android.permission.MANAGE_EXTERNAL_STORAGE""/>"
+decoded/AndroidManifest.xml	727	"        <provider android:authorities=""ru.zdevs.zarchiver.external"" android:exported=""false"" android:grantUriPermissions=""true"" android:name=""ru.zdevs.zarchiver.provider.FileProvider""/>"
+decoded/AndroidManifest.xml	728	"        <provider android:authorities=""ru.zdevs.zarchiver.archive"" android:exported=""false"" android:grantUriPermissions=""true"" android:name=""ru.zdevs.zarchiver.provider.ArchiveFileProvider"" android:process="":archive""/>"
+decoded/AndroidManifest.xml	729	"        <provider android:authorities=""ru.zdevs.zarchiver.plugin"" android:exported=""false"" android:grantUriPermissions=""true"" android:name=""ru.zdevs.zarchiver.provider.PluginFileProvider"" android:process="":plugin""/>"
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaImageDecoder.smali	171	    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaImageDecoder.smali	183	    invoke-virtual {p1, p2}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaImageRegionDecoder.smali	501	    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaImageRegionDecoder.smali	513	    invoke-virtual {p1, p2}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	835	    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	851	    invoke-virtual {v1, v5}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	882	    invoke-virtual {v1, v5, v6}, Landroid/content/ContentResolver;->openAssetFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
+decoded/smali/g/d.smali	838	    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/g/d.smali	859	    invoke-virtual/range {v2 .. v7}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+decoded/smali/g0/s.smali	22	.field public m:Landroid/os/storage/StorageVolume;
+decoded/smali/g0/s.smali	81	    iput-object v5, v0, Lg0/s;->m:Landroid/os/storage/StorageVolume;
+decoded/smali/g0/s.smali	211	    instance-of v8, v5, Landroid/os/storage/StorageVolume;
+decoded/smali/g0/s.smali	216	    check-cast v5, Landroid/os/storage/StorageVolume;
+decoded/smali/g0/s.smali	218	    iput-object v5, v0, Lg0/s;->m:Landroid/os/storage/StorageVolume;
+decoded/smali/g0/s.smali	251	    iget-object v5, v0, Lg0/s;->m:Landroid/os/storage/StorageVolume;
+decoded/smali/g0/s.smali	1119	    iget-object p2, p0, Lg0/s;->m:Landroid/os/storage/StorageVolume;
+decoded/smali/g0/s.smali	1139	    invoke-static {p1, p2, v1}, Lx0/h;->e(Lru/zdevs/zarchiver/ZArchiver;Landroid/os/storage/StorageVolume;I)V
+decoded/smali/g0/s.smali	1152	    invoke-static {p1, p2, v1}, Lx0/h;->i(Lru/zdevs/zarchiver/ZArchiver;Landroid/os/storage/StorageVolume;I)V
+decoded/smali/h1/h.smali	87	    invoke-static {}, Landroid/os/Environment;->isExternalStorageManager()Z
+decoded/smali/h1/h.smali	100	"    const-string v0, ""android.permission.READ_EXTERNAL_STORAGE"""
+decoded/smali/h1/h.smali	119	"    const-string v0, ""android.permission.WRITE_EXTERNAL_STORAGE"""
+decoded/smali/i0/b.smali	26	.field public final e:Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/i0/b.smali	30	.method public constructor <init>(Lru/zdevs/zarchiver/archiver/NArc;Ljava/util/ArrayList;ILjava/lang/String;Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;)V
+decoded/smali/i0/b.smali	40	"            ""Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;"","
+decoded/smali/i0/b.smali	67	    iput-object p5, p0, Li0/b;->e:Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/i0/b.smali	92	    iget-object v0, p0, Li0/b;->e:Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/i0/b.smali	96	    iget-object v2, v0, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->a:Lh0/h;
+decoded/smali/i0/b.smali	131	    iget-object v5, v0, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->b:Ljava/lang/String;
+decoded/smali/i0/b.smali	135	    iget v6, v0, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->c:I
+decoded/smali/i0/b.smali	142	    invoke-static/range {v0 .. v6}, Lru/zdevs/zarchiver/provider/ArchiveFileProvider;->d(Landroid/content/Context;Lh0/h;Ljava/lang/String;JLjava/lang/String;I)Landroid/net/Uri;
+decoded/smali/i0/b.smali	324	    iget-object v1, p0, Li0/b;->e:Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/i0/b.smali	328	    iget-object v1, v1, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->a:Lh0/h;
+decoded/smali/j0/b.smali	1653	    invoke-static {}, Landroid/os/Environment;->isExternalStorageManager()Z
+decoded/smali/j0/e.smali	87	    invoke-static {p1}, Lru/zdevs/zarchiver/provider/FileProvider;->c(Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/l0/c.smali	191	.method public static a(Landroid/content/ContentResolver;Ljava/lang/String;)Z
+decoded/smali/l0/c.smali	199	    invoke-virtual {p0, p1}, Landroid/content/ContentResolver;->acquireContentProviderClient(Ljava/lang/String;)Landroid/content/ContentProviderClient;
+decoded/smali/l0/c.smali	856	    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/l0/c.smali	864	    invoke-virtual {v0, p0}, Landroid/content/ContentResolver;->acquireUnstableContentProviderClient(Ljava/lang/String;)Landroid/content/ContentProviderClient;
+decoded/smali/l0/c.smali	1307	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/l0/c.smali	1392	    invoke-static {p0, v3}, Ll0/c;->a(Landroid/content/ContentResolver;Ljava/lang/String;)Z
+decoded/smali/l0/c.smali	1704	    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/l0/c.smali	1749	    invoke-static {v0, v4}, Ll0/c;->a(Landroid/content/ContentResolver;Ljava/lang/String;)Z
+decoded/smali/m0/a.smali	1398	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/m0/a.smali	1410	    invoke-virtual {v0, p1, v1}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
+decoded/smali/m0/b.smali	1086	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/m0/b.smali	1111	    invoke-virtual {v2, v1, p1}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
+decoded/smali/m0/b.smali	1199	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/m0/b.smali	1211	    invoke-virtual {v0, v1, v4}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
+decoded/smali/m0/b.smali	1404	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/m0/b.smali	1416	    invoke-virtual {p2, p1}, Landroid/content/ContentResolver;->openOutputStream(Landroid/net/Uri;)Ljava/io/OutputStream;
+decoded/smali/m0/d.smali	530	    invoke-static {p1}, Lru/zdevs/zarchiver/provider/FileProvider;->c(Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/n0/a.smali	37	    invoke-static {p0}, Lru/zdevs/zarchiver/ZApp;->b(Landroid/content/Context;)Landroid/content/ContentResolver;
+decoded/smali/n0/b.smali	140	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/n0/b.smali	225	    invoke-static {v2, v4}, Landroid/provider/DocumentsContract;->deleteDocument(Landroid/content/ContentResolver;Landroid/net/Uri;)Z
+decoded/smali/n0/b.smali	239	    invoke-static {v2, v4, v5, v0}, Landroid/provider/DocumentsContract;->moveDocument(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/net/Uri;Landroid/net/Uri;)Landroid/net/Uri;
+decoded/smali/n0/b.smali	347	    invoke-static {v2, v1}, Landroid/provider/DocumentsContract;->deleteDocument(Landroid/content/ContentResolver;Landroid/net/Uri;)Z
+decoded/smali/n0/b.smali	360	    invoke-static {v2, v1, v3, v0}, Landroid/provider/DocumentsContract;->moveDocument(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/net/Uri;Landroid/net/Uri;)Landroid/net/Uri;
+decoded/smali/q0/f$b.smali	21	.field public final a:Landroid/content/ContentResolver;
+decoded/smali/q0/f$b.smali	44	    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/q0/f$b.smali	52	    iput-object v0, p0, Lq0/f$b;->a:Landroid/content/ContentResolver;
+decoded/smali/q0/f$b.smali	73	    iget-object v1, p0, Lq0/f$b;->a:Landroid/content/ContentResolver;
+decoded/smali/q0/f$b.smali	94	    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/q0/f$b.smali	106	    invoke-static {v2}, Landroid/provider/MediaStore$Files;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/q0/f$b.smali	164	    invoke-virtual {v1, v2, v4}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+decoded/smali/q0/f$b.smali	229	    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/q0/f$b.smali	241	    invoke-virtual {v2, v3}, Landroid/content/ContentResolver;->acquireContentProviderClient(Ljava/lang/String;)Landroid/content/ContentProviderClient;
+decoded/smali/q0/f$c.smali	21	.field public final a:Landroid/content/ContentResolver;
+decoded/smali/q0/f$c.smali	52	    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/q0/f$c.smali	60	    iput-object v0, p0, Lq0/f$c;->a:Landroid/content/ContentResolver;
+decoded/smali/q0/f$c.smali	77	    iget-object v0, p0, Lq0/f$c;->a:Landroid/content/ContentResolver;
+decoded/smali/q0/f$d.smali	44	    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/q0/f$d.smali	56	    invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->acquireContentProviderClient(Ljava/lang/String;)Landroid/content/ContentProviderClient;
+decoded/smali/q0/f.smali	334	    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/q0/f.smali	346	    invoke-static {v1}, Landroid/provider/MediaStore$Files;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/q0/f.smali	516	    invoke-virtual/range {v1 .. v6}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+decoded/smali/q0/f.smali	566	    invoke-virtual {v0, v7, p0, p2}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+decoded/smali/q0/f.smali	667	    invoke-virtual {v0, v7, p1, p2}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+decoded/smali/r0/b.smali	1375	    const-class v3, Landroid/os/storage/StorageManager;
+decoded/smali/r0/b.smali	1387	    check-cast v1, Landroid/os/storage/StorageManager;
+decoded/smali/r0/b.smali	1409	    invoke-virtual {v1, v3}, Landroid/os/storage/StorageManager;->isAllocationSupported(Ljava/io/FileDescriptor;)Z
+decoded/smali/r0/b.smali	1421	    invoke-virtual {v1, v3, p2, p3}, Landroid/os/storage/StorageManager;->allocateBytes(Ljava/io/FileDescriptor;J)V
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	119	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/rikka/shizuku/ShizukuProvider.smali	187	    invoke-virtual {v3, v0, v4, v1, v5}, Landroid/content/ContentResolver;->call(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	13	.field public static f:Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	209	.method public static a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	213	    sget-object v0, Lru/zdevs/zarchiver/ZApp;->f:Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	229	"    const-string v1, ""ContentResolver is NULL"""
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	241	.method public static b(Landroid/content/Context;)Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	245	    sget-object v0, Lru/zdevs/zarchiver/ZApp;->f:Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	261	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	269	    sput-object p0, Lru/zdevs/zarchiver/ZApp;->f:Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	274	    sget-object p0, Lru/zdevs/zarchiver/ZApp;->f:Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	797	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	805	    sput-object v0, Lru/zdevs/zarchiver/ZApp;->f:Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZApp.smali	876	"    const-string v1, "".provider.PluginFileProvider"""
+decoded/smali/ru/zdevs/zarchiver/ZArchiver.smali	15474	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZArchiver.smali	15498	    invoke-direct {v0, v1, v3, p1, v4}, Lru/zdevs/zarchiver/e;-><init>(Landroid/content/ContentResolver;Lru/zdevs/zarchiver/a$b;II)V
+decoded/smali/ru/zdevs/zarchiver/ZArchiver.smali	15853	    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZArchiver.smali	15864	    invoke-virtual {v1, v0, v2}, Landroid/content/ContentResolver;->takePersistableUriPermission(Landroid/net/Uri;I)V
+decoded/smali/ru/zdevs/zarchiver/ZArchiver.smali	25616	"    const-string v3, ""android.permission.READ_EXTERNAL_STORAGE"""
+decoded/smali/ru/zdevs/zarchiver/ZArchiver.smali	25624	"    const-string v3, ""android.permission.WRITE_EXTERNAL_STORAGE"""
+decoded/smali/ru/zdevs/zarchiver/ZImageViewer$c.smali	133	    invoke-static {v5, v0}, Lru/zdevs/zarchiver/provider/ArchiveFileProvider;->b(Landroid/content/Context;Landroid/net/Uri;)Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/ru/zdevs/zarchiver/ZImageViewer$c.smali	145	    iget-object v8, v13, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->a:Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/ZImageViewer$c.smali	159	    iget-object v8, v13, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->b:Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/ZImageViewer$c.smali	520	    iget-object v8, v13, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->a:Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/ZImageViewer$c.smali	630	    iget-object v8, v13, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->a:Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/ZImageViewer$c.smali	642	    iget-object v12, v13, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->b:Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/ZImageViewer$c.smali	673	    invoke-direct/range {v8 .. v13}, Li0/b;-><init>(Lru/zdevs/zarchiver/archiver/NArc;Ljava/util/ArrayList;ILjava/lang/String;Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;)V
+decoded/smali/ru/zdevs/zarchiver/ZImageViewer.smali	1588	    invoke-static {p0}, Lru/zdevs/zarchiver/ZApp;->b(Landroid/content/Context;)Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZTextEditor$q.smali	314	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZTextEditor$q.smali	322	    invoke-virtual {v4, v1}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
+decoded/smali/ru/zdevs/zarchiver/ZTextEditor$s.smali	224	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/ZTextEditor$s.smali	232	    invoke-virtual {v6, v0}, Landroid/content/ContentResolver;->openOutputStream(Landroid/net/Uri;)Ljava/io/OutputStream;
+decoded/smali/ru/zdevs/zarchiver/a.smali	7378	.method public final c(Landroid/os/storage/StorageVolume;Z)V
+decoded/smali/ru/zdevs/zarchiver/a.smali	7423	    invoke-static {p1}, Lx0/d;->w(Landroid/os/storage/StorageVolume;)Lx0/d$a;
+decoded/smali/ru/zdevs/zarchiver/a.smali	7591	    invoke-static {p1}, Lx0/d;->d(Landroid/os/storage/StorageVolume;)V
+decoded/smali/ru/zdevs/zarchiver/activity/SettingsDlg.smali	178	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/activity/SettingsDlg.smali	186	    invoke-virtual {v0, p3}, Landroid/content/ContentResolver;->openOutputStream(Landroid/net/Uri;)Ljava/io/OutputStream;
+decoded/smali/ru/zdevs/zarchiver/activity/SettingsDlg.smali	229	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/activity/SettingsDlg.smali	237	    invoke-virtual {v0, p3}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
+decoded/smali/ru/zdevs/zarchiver/archiver/NArc.smali	763	    check-cast v2, Landroid/os/storage/StorageManager;
+decoded/smali/ru/zdevs/zarchiver/archiver/NArc.smali	779	    invoke-virtual {v2, v4, v0, v3}, Landroid/os/storage/StorageManager;->openProxyFileDescriptor(ILandroid/os/ProxyFileDescriptorCallback;Landroid/os/Handler;)Landroid/os/ParcelFileDescriptor;
+decoded/smali/ru/zdevs/zarchiver/e.smali	7	.field public final e:Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/e.smali	17	.method public constructor <init>(Landroid/content/ContentResolver;Lru/zdevs/zarchiver/a$b;II)V
+decoded/smali/ru/zdevs/zarchiver/e.smali	26	    iput-object p1, p0, Lru/zdevs/zarchiver/e;->e:Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/e.smali	51	    iget-object v0, p0, Lru/zdevs/zarchiver/e;->e:Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/e.smali	76	    invoke-static {v0, v4}, Landroid/provider/DocumentsContract;->deleteDocument(Landroid/content/ContentResolver;Landroid/net/Uri;)Z
+decoded/smali/ru/zdevs/zarchiver/e.smali	93	    invoke-static {v0, v4, v5}, Landroid/provider/DocumentsContract;->renameDocument(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	55	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	67	    invoke-static {v2}, Landroid/provider/MediaStore$Files;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	101	    invoke-virtual {v0, v2, v5, v4}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	149	    invoke-virtual {v0, v2, v4}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	241	    invoke-static {v1}, Landroid/provider/MediaStore$Files;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	257	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	273	    invoke-virtual/range {v4 .. v9}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	325	    invoke-static {v1, v4, v5}, Landroid/provider/MediaStore$Files;->getContentUri(Ljava/lang/String;J)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	540	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	548	    invoke-virtual {v1, p0}, Landroid/content/ContentResolver;->openOutputStream(Landroid/net/Uri;)Ljava/io/OutputStream;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	691	    invoke-static {v3}, Landroid/provider/MediaStore$Files;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	699	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	708	    invoke-virtual {v4, v3, v0, v2}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	762	    sget-object v6, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	766	    invoke-virtual {v4, v6, v5}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	771	    invoke-virtual {v4, v3, v0, v2}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	989	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/KitKatExtSD.smali	1005	    invoke-virtual {p0, v0, p1}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	1918	    invoke-static {v0}, Lru/zdevs/zarchiver/provider/FileProvider;->c(Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	2027	    sget-object v1, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	2042	    sget-object v1, Landroid/provider/MediaStore$Audio$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	2058	    sget-object v1, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	2070	    invoke-static {v1}, Landroid/provider/MediaStore$Files;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	2079	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	2123	    invoke-virtual/range {v2 .. v7}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	2626	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	2651	    invoke-static {v0, p1, v1, p0}, Landroid/provider/DocumentsContract;->createDocument(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	3462	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	3478	    invoke-static {v0, p1, v3, v4}, Landroid/provider/DocumentsContract;->createDocument(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	3785	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	3807	    invoke-virtual {v0, p0, p1}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	4162	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	4186	    invoke-virtual/range {v2 .. v7}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	4630	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	4638	    invoke-static {v1, p0}, Landroid/provider/DocumentsContract;->deleteDocument(Landroid/content/ContentResolver;Landroid/net/Uri;)Z
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	4864	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	4887	    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	4959	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	4983	    invoke-virtual/range {v2 .. v7}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	5367	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	5375	    invoke-static {v0, p1, p0, p2}, Landroid/provider/DocumentsContract;->moveDocument(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/net/Uri;Landroid/net/Uri;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	5553	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	5561	    invoke-virtual {v0, v7}, Landroid/content/ContentResolver;->openOutputStream(Landroid/net/Uri;)Ljava/io/OutputStream;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	5612	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	5620	    invoke-virtual {p1, p0}, Landroid/content/ContentResolver;->openOutputStream(Landroid/net/Uri;)Ljava/io/OutputStream;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	5651	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	5659	    invoke-static {v0, p0}, Landroid/provider/DocumentsContract;->deleteDocument(Landroid/content/ContentResolver;Landroid/net/Uri;)Z
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	5729	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/SAF.smali	5737	    invoke-static {v2, p1, p2}, Landroid/provider/DocumentsContract;->renameDocument(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/ru/zdevs/zarchiver/io/ZAIO.smali	305	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/ZAIO.smali	325	    invoke-virtual/range {v5 .. v10}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+decoded/smali/ru/zdevs/zarchiver/io/ZAIO.smali	727	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/ZAIO.smali	736	    invoke-virtual {v0, p0, p1}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
+decoded/smali/ru/zdevs/zarchiver/io/ZAIO.smali	754	    invoke-virtual {v0, p0, p1}, Landroid/content/ContentResolver;->openAssetFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
+decoded/smali/ru/zdevs/zarchiver/io/ZAIO.smali	808	    invoke-static {}, Lru/zdevs/zarchiver/ZApp;->a()Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/io/ZAIO.smali	816	    invoke-virtual {p1, p0}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider$a.smali	1	.class public final Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider$a.smali	8	    value = Lru/zdevs/zarchiver/provider/ArchiveFileProvider;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider$a.smali	37	    iput-object p1, p0, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->a:Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider$a.smali	41	    iput-object p2, p0, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->b:Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider$a.smali	45	    iput p3, p0, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->c:I
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider$a.smali	49	    iput-wide p4, p0, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->d:J
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1	.class public Lru/zdevs/zarchiver/provider/ArchiveFileProvider;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	9	        Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	52	    sput-object v0, Lru/zdevs/zarchiver/provider/ArchiveFileProvider;->a:[Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	67	.method public static b(Landroid/content/Context;Landroid/net/Uri;)Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	437	    new-instance p0, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	444	    invoke-direct/range {v6 .. v11}, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;-><init>(Lh0/h;Ljava/lang/String;IJ)V
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	865	.method public final c(Landroid/net/Uri;)Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	881	    invoke-static {v0, p1}, Lru/zdevs/zarchiver/provider/ArchiveFileProvider;->b(Landroid/content/Context;Landroid/net/Uri;)Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	925	    invoke-virtual {p0, p1}, Lru/zdevs/zarchiver/provider/ArchiveFileProvider;->c(Landroid/net/Uri;)Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	933	    iget-object p1, p1, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->a:Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1008	    invoke-virtual {p0}, Lru/zdevs/zarchiver/provider/ArchiveFileProvider;->a()Landroid/content/Context;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1041	    invoke-virtual {p0, p1}, Lru/zdevs/zarchiver/provider/ArchiveFileProvider;->c(Landroid/net/Uri;)Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1049	    iget-object v0, p1, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->a:Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1121	    invoke-static {v3}, Lru/zdevs/zarchiver/ZApp;->b(Landroid/content/Context;)Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1151	    iget v3, p1, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->c:I
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1240	    iget-object p1, p1, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->b:Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1273	    invoke-virtual {p0}, Lru/zdevs/zarchiver/provider/ArchiveFileProvider;->a()Landroid/content/Context;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1654	    invoke-virtual/range {p0 .. p1}, Lru/zdevs/zarchiver/provider/ArchiveFileProvider;->c(Landroid/net/Uri;)Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1666	    sget-object v1, Lru/zdevs/zarchiver/provider/ArchiveFileProvider;->a:[Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1679	    iget-object v2, v0, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->a:Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/provider/ArchiveFileProvider.smali	1786	    iget-wide v14, v0, Lru/zdevs/zarchiver/provider/ArchiveFileProvider$a;->d:J
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	1	.class public final Lru/zdevs/zarchiver/provider/FileProvider;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	55	    sput-object v0, Lru/zdevs/zarchiver/provider/FileProvider;->a:[Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	344	    invoke-static {p1}, Lru/zdevs/zarchiver/provider/FileProvider;->d(Landroid/net/Uri;)Z
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	363	    invoke-virtual {p0, p1}, Lru/zdevs/zarchiver/provider/FileProvider;->a(Landroid/net/Uri;)Ljava/io/File;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	453	    check-cast p2, Landroid/os/storage/StorageManager;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	513	    invoke-virtual {p2, v7, v6, p1}, Landroid/os/storage/StorageManager;->openProxyFileDescriptor(ILandroid/os/ProxyFileDescriptorCallback;Landroid/os/Handler;)Landroid/os/ParcelFileDescriptor;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	554	    invoke-virtual {p0, p1}, Lru/zdevs/zarchiver/provider/FileProvider;->a(Landroid/net/Uri;)Ljava/io/File;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	653	    invoke-static {p1}, Lru/zdevs/zarchiver/provider/FileProvider;->d(Landroid/net/Uri;)Z
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	665	    invoke-static {p1}, Lru/zdevs/zarchiver/provider/FileProvider;->b(Landroid/net/Uri;)Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	693	    invoke-virtual {p0, p1}, Lru/zdevs/zarchiver/provider/FileProvider;->a(Landroid/net/Uri;)Ljava/io/File;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	951	    invoke-virtual/range {v0 .. v5}, Lru/zdevs/zarchiver/provider/FileProvider;->e(ILjava/lang/String;JI)Landroid/os/ParcelFileDescriptor;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	1021	    invoke-static {p1}, Lru/zdevs/zarchiver/ZApp;->b(Landroid/content/Context;)Landroid/content/ContentResolver;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	1040	    invoke-virtual {p1, v0, p2}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	1131	    invoke-virtual/range {v0 .. v5}, Lru/zdevs/zarchiver/provider/FileProvider;->e(ILjava/lang/String;JI)Landroid/os/ParcelFileDescriptor;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	1162	    sget-object v0, Lru/zdevs/zarchiver/provider/FileProvider;->a:[Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	1189	    invoke-static/range {p1 .. p1}, Lru/zdevs/zarchiver/provider/FileProvider;->d(Landroid/net/Uri;)Z
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	1301	    invoke-static/range {p1 .. p1}, Lru/zdevs/zarchiver/provider/FileProvider;->b(Landroid/net/Uri;)Lh0/h;
+decoded/smali/ru/zdevs/zarchiver/provider/FileProvider.smali	1452	    invoke-virtual/range {p0 .. p1}, Lru/zdevs/zarchiver/provider/FileProvider;->a(Landroid/net/Uri;)Ljava/io/File;
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	1	.class public Lru/zdevs/zarchiver/provider/PluginFileProvider;
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	44	    sput-object v0, Lru/zdevs/zarchiver/provider/PluginFileProvider;->a:[Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	266	    invoke-static {p1}, Lru/zdevs/zarchiver/provider/PluginFileProvider;->a(Landroid/net/Uri;)Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	765	    invoke-static/range {p1 .. p1}, Lru/zdevs/zarchiver/provider/PluginFileProvider;->a(Landroid/net/Uri;)Ljava/lang/String;
+decoded/smali/ru/zdevs/zarchiver/provider/PluginFileProvider.smali	777	    sget-object v3, Lru/zdevs/zarchiver/provider/PluginFileProvider;->a:[Ljava/lang/String;
+decoded/smali/t0/a.smali	1361	    invoke-static {v11}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
+decoded/smali/v0/e.smali	393	    invoke-static/range {v4 .. v10}, Lru/zdevs/zarchiver/provider/ArchiveFileProvider;->d(Landroid/content/Context;Lh0/h;Ljava/lang/String;JLjava/lang/String;I)Landroid/net/Uri;
+decoded/smali/v0/e.smali	465	    sget-object p2, Lru/zdevs/zarchiver/provider/PluginFileProvider;->a:[Ljava/lang/String;
+decoded/smali/v0/e.smali	534	    sget-object p0, Lru/zdevs/zarchiver/provider/FileProvider;->a:[Ljava/lang/String;
+decoded/smali/v0/e.smali	748	    sget-object v1, Lru/zdevs/zarchiver/provider/FileProvider;->a:[Ljava/lang/String;
+decoded/smali/v0/e.smali	866	    invoke-static {p0}, Lru/zdevs/zarchiver/provider/FileProvider;->c(Ljava/lang/String;)Landroid/net/Uri;
+decoded/smali/v0/f.smali	111	    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/v0/f.smali	131	    invoke-virtual/range {v1 .. v6}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+decoded/smali/v0/f.smali	283	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/v0/f.smali	306	    invoke-virtual/range {v1 .. v6}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+decoded/smali/v0/f.smali	435	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/v0/f.smali	448	    invoke-virtual {p0, p1, v1}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
+decoded/smali/v0/f.smali	690	    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+decoded/smali/v0/f.smali	758	    invoke-static {v0}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
+decoded/smali/v0/f.smali	985	    sget-object v1, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+decoded/smali/v0/f.smali	1009	    sget-object v1, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+decoded/smali/v0/f.smali	1033	    sget-object v1, Landroid/provider/MediaStore$Audio$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+decoded/smali/x0/b.smali	32	    invoke-virtual {v1, p1, v0}, Lx0/d$b;->c(Landroid/os/storage/StorageVolume;Z)V
+decoded/smali/x0/c.smali	73	    invoke-virtual {p2, v0, p1}, Lx0/d$b;->c(Landroid/os/storage/StorageVolume;Z)V
+decoded/smali/x0/d$b.smali	32	.method public abstract c(Landroid/os/storage/StorageVolume;Z)V
+decoded/smali/x0/d.smali	401	    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+decoded/smali/x0/d.smali	694	.method public static declared-synchronized d(Landroid/os/storage/StorageVolume;)V
+decoded/smali/x0/d.smali	728	    invoke-virtual {p0}, Landroid/os/storage/StorageVolume;->getDirectory()Ljava/io/File;
+decoded/smali/x0/d.smali	818	    invoke-virtual {p0}, Landroid/os/storage/StorageVolume;->getUuid()Ljava/lang/String;
+decoded/smali/x0/d.smali	831	    invoke-virtual {p0}, Landroid/os/storage/StorageVolume;->isRemovable()Z
+decoded/smali/x0/d.smali	864	    const-class v1, Landroid/os/storage/StorageVolume;
+decoded/smali/x0/d.smali	2678	    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+decoded/smali/x0/d.smali	3025	    check-cast p0, Landroid/os/storage/StorageManager;
+decoded/smali/x0/d.smali	3570	    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+decoded/smali/x0/d.smali	4141	    check-cast v0, Landroid/os/storage/StorageManager;
+decoded/smali/x0/d.smali	4153	"    const-string v1, ""android.os.storage.StorageVolume"""
+decoded/smali/x0/d.smali	4819	    const-class v0, Landroid/os/storage/StorageVolume;
+decoded/smali/x0/d.smali	4863	    check-cast v3, Landroid/os/storage/StorageManager;
+decoded/smali/x0/d.smali	4875	    invoke-virtual {v3}, Landroid/os/storage/StorageManager;->getStorageVolumes()Ljava/util/List;
+decoded/smali/x0/d.smali	4913	    check-cast v4, Landroid/os/storage/StorageVolume;
+decoded/smali/x0/d.smali	4925	    invoke-virtual {v4}, Landroid/os/storage/StorageVolume;->getState()Ljava/lang/String;
+decoded/smali/x0/d.smali	4981	    invoke-virtual {v4}, Landroid/os/storage/StorageVolume;->getDirectory()Ljava/io/File;
+decoded/smali/x0/d.smali	5056	    invoke-virtual {v4, p0}, Landroid/os/storage/StorageVolume;->getDescription(Landroid/content/Context;)Ljava/lang/String;
+decoded/smali/x0/d.smali	5140	    invoke-virtual {v4}, Landroid/os/storage/StorageVolume;->getUuid()Ljava/lang/String;
+decoded/smali/x0/d.smali	5165	    invoke-virtual {v4}, Landroid/os/storage/StorageVolume;->isRemovable()Z
+decoded/smali/x0/d.smali	5215	    invoke-virtual {v4}, Landroid/os/storage/StorageVolume;->getUuid()Ljava/lang/String;
+decoded/smali/x0/d.smali	5273	    invoke-virtual {v4}, Landroid/os/storage/StorageVolume;->getUuid()Ljava/lang/String;
+decoded/smali/x0/d.smali	5286	    invoke-virtual {v4}, Landroid/os/storage/StorageVolume;->isRemovable()Z
+decoded/smali/x0/d.smali	5314	    invoke-virtual {v4, p0}, Landroid/os/storage/StorageVolume;->getDescription(Landroid/content/Context;)Ljava/lang/String;
+decoded/smali/x0/d.smali	5326	    invoke-virtual {v4}, Landroid/os/storage/StorageVolume;->isPrimary()Z
+decoded/smali/x0/d.smali	5740	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/x0/d.smali	5759	    invoke-virtual {p0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+decoded/smali/x0/d.smali	5883	.method public static declared-synchronized w(Landroid/os/storage/StorageVolume;)Lx0/d$a;
+decoded/smali/x0/d.smali	5895	    invoke-virtual {p0}, Landroid/os/storage/StorageVolume;->getUuid()Ljava/lang/String;
+decoded/smali/x0/d.smali	5999	    check-cast p0, Landroid/os/storage/StorageManager;
+decoded/smali/x0/d.smali	6007	    check-cast v0, Landroid/os/storage/StorageManager$StorageVolumeCallback;
+decoded/smali/x0/d.smali	6011	    invoke-virtual {p0, v0}, Landroid/os/storage/StorageManager;->unregisterStorageVolumeCallback(Landroid/os/storage/StorageManager$StorageVolumeCallback;)V
+decoded/smali/x0/d.smali	6028	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/x0/d.smali	6044	    invoke-virtual {p0, v0}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
+decoded/smali/x0/d.smali	6123	    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+decoded/smali/x0/d.smali	6131	    invoke-virtual {p0}, Landroid/content/ContentResolver;->getPersistedUriPermissions()Ljava/util/List;
+decoded/smali/x0/e.smali	2	.super Landroid/os/storage/StorageManager$StorageVolumeCallback;
+decoded/smali/x0/e.smali	16	    invoke-direct {p0}, Landroid/os/storage/StorageManager$StorageVolumeCallback;-><init>()V
+decoded/smali/x0/e.smali	23	.method public final onStateChanged(Landroid/os/storage/StorageVolume;)V
+decoded/smali/x0/e.smali	27	    invoke-virtual {p1}, Landroid/os/storage/StorageVolume;->getState()Ljava/lang/String;
+decoded/smali/x0/e.smali	58	    invoke-virtual {v0, p1, v1}, Lx0/d$b;->c(Landroid/os/storage/StorageVolume;Z)V
+decoded/smali/x0/e.smali	90	    invoke-virtual {v0, p1, v1}, Lx0/d$b;->c(Landroid/os/storage/StorageVolume;Z)V
+decoded/smali/x0/f.smali	36	    check-cast p0, Landroid/os/storage/StorageManager;
+decoded/smali/x0/f.smali	48	    check-cast p1, Landroid/os/storage/StorageManager$StorageVolumeCallback;
+decoded/smali/x0/f.smali	52	    invoke-virtual {p0, v0, p1}, Landroid/os/storage/StorageManager;->registerStorageVolumeCallback(Ljava/util/concurrent/Executor;Landroid/os/storage/StorageManager$StorageVolumeCallback;)V
+decoded/smali/x0/h.smali	498	.method public static e(Lru/zdevs/zarchiver/ZArchiver;Landroid/os/storage/StorageVolume;I)V
+decoded/smali/x0/h.smali	505	    invoke-virtual {p1, v0}, Landroid/os/storage/StorageVolume;->createAccessIntent(Ljava/lang/String;)Landroid/content/Intent;
+decoded/smali/x0/h.smali	855	.method public static i(Lru/zdevs/zarchiver/ZArchiver;Landroid/os/storage/StorageVolume;I)V
+decoded/smali/x0/h.smali	860	    invoke-virtual {p1}, Landroid/os/storage/StorageVolume;->createOpenDocumentTreeIntent()Landroid/content/Intent;

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "/home/runner/work/_temp/zarchiver-analysis/jadx/sources/ru/zdevs/zarchiver",
+    "destination": "/home/runner/work/_temp/zarchiver-analysis/reports/app-sources/jadx/ru/zdevs/zarchiver",
+    "files": 58,
+    "bytes": 1019209,
+    "skipped": []
+  },
+  {
+    "source": "/home/runner/work/_temp/zarchiver-analysis/decoded/smali/ru/zdevs/zarchiver",
+    "destination": "/home/runner/work/_temp/zarchiver-analysis/reports/app-sources/smali/smali/ru/zdevs/zarchiver",
+    "files": 190,
+    "bytes": 2869532,
+    "skipped": []
+  }
+]

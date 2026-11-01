@@ -1,0 +1,183 @@
+__cxa_finalize
+libhandler.so
+__cxa_atexit
+JNI_OnLoad
+__android_log_print
+__stack_chk_fail
+__stack_chk_guard
+JNI_OnUnload
+_Z8getEnvExPb
+jSetProcessPercent
+jSetProcessText
+jShowMessage
+jSetTaskCompleted
+pthread_mutex_lock
+jAskOverwrite
+pthread_mutex_unlock
+jGetPassword
+jSetComment
+jGetStatus
+ftruncate64
+jGetStatusNoLock
+jSetStatus
+jSetOemCodec
+jGetOemCodec
+pthread_key_create
+jSetTaskFlags
+pthread_setspecific
+jGetTaskFlags
+pthread_mutex_init
+jFileExtracted
+jArchiveInfo
+jGetNativePath
+_Z17android_api_levelv
+_Z15android_io_openPKci
+_Z9za_getcwdv
+_Z16android_io_closei
+pthread_getspecific
+_Z17android_io_removePKc
+_Z16android_io_mkdirPKc
+_Z17android_io_mkdirsPKci
+_Z17android_io_renamePKcS0_
+_Z18android_io_opendirPKc
+_Z19android_io_closedirP14ANDROID_IO_DIR
+_Z18android_io_readdirP14ANDROID_IO_DIR
+_Z15android_io_statPKcP4stat
+__aeabi_memclr8
+_Z7za_openPKci
+_Z8za_closeP6ZAFILE
+_Z8za_lseekP6ZAFILExi
+_Z7za_sizeP6ZAFILE
+_Z7za_readP6ZAFILEPvj
+_Z9za_get_fdP6ZAFILE
+_Z12za_ftruncateP6ZAFILEx
+_Z8za_writeP6ZAFILEPKvj
+_Z8za_chdirPKc
+_Z11al_add_filePKcixii
+Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cIsArchive
+Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cListStart
+Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cClear
+Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cGetItemCount
+Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cGetList
+Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cGetInfo
+__bss_start
+__gnu_Unwind_Find_exidx
+__cxa_begin_cleanup
+__cxa_type_match
+__cxa_call_unexpected
+liblog.so
+libstdc++.so
+libdl.so
+h|DxKzDah
+h|DsKzDah
+h|DoKzDah
+h|DjKzDah
+h|DfKzDah
+h|DaKzDah
+Load Bridge Handler library!
+Failed to get the environment using GetEnv()
+ru/zdevs/zarchiver/archiver/C2JBridge
+xDAhBj(F
+/data/data/ru.zdevs.zarchiver/lib
+F h)FBm F
+F h)FBm F
+GfM h}DfJfK
+qzDih{D F
+F h)FBm F
+G]N)F~D0d h
+Gpd+F hTJ1l
+(Ljava/lang/String;)I
+(Ljava/lang/String;I)I
+(Ljava/lang/String;Ljava/lang/String;)I
+/!)R(F!F
+H3FxDAhBi8F
+F}H~IxDyD
+FnH;FxDAhBj F
+G<N9F h~D
+F5H#FxDAh
+-L)F8h|D
+p0a8h)Fbl
+F8H9JxD9IzD
+GAIBJyDzD
+G;I<JyDzD
+Init ZA IO
+ru/zdevs/zarchiver/io/ZAIO
+(Ljava/lang/String;I)I
+(Ljava/lang/String;)J
+Couldn't find getSize of ru_zdevs_zaio
+JyDzD	h	h
+[ZAIO] Failed to reopen file: %s
+[ZAIO] Preserv file size: %ld
+%3AAndroid
+[ZAIO] Failed to open file: %s, flags: 0x%X
+Get current dir '%s'
+Set current dir '%s'
+ h1FBm F
+ru/zdevs/zarchiver/archiver/content/ContentNative
+(Ljava/lang/String;IJII)V
+jSetFileInfo
+Failed to find 'jSetFileInfo'!
+7h)F"F8F
+8a!F(h2F
+jSetProcessPercent
+Failed to find 'jMetodSetProcessPercent'!
+jSetProcessText
+(ILjava/lang/String;)V
+Failed to find 'jMetodSetProcessText'!
+jShowMessage
+(IILjava/lang/String;)V
+Failed to find 'jShowMessage'!
+jSetTaskCompleted
+Failed to find 'jSetTaskCompleted'!
+jAskOverwrite
+(ILjava/lang/String;JILjava/lang/String;JI)I
+Failed to find 'jAskOverwrite'!
+jGetPassword
+(I)Ljava/lang/String;
+Failed to find 'jGetPassword'!
+jSetComment
+Failed to find 'jSetComment'!
+jFileExtracted
+Failed to find 'jFileExtracted'!
+jArchiveInfo
+(ILjava/lang/String;Ljava/lang/String;IJI)V
+Failed to find 'jArchiveInfo'!
+jGetNativePath
+()Ljava/lang/String;
+Failed to find 'jGetNativePath'!
+Failed to load extsd fix!
+android/os/Build$VERSION
+Use android API level: %d
+ru/zdevs/zarchiver/io/SAF
+ru/zdevs/zarchiver/io/KitKatExtSD
+(Ljava/lang/String;)[Lru/zdevs/zarchiver/io/SAF$DIR;
+ru/zdevs/zarchiver/io/SAF$DIR
+Ljava/lang/String;
+Failed to init opendir
+(Ljava/lang/String;)Lru/zdevs/zarchiver/io/SAF$STAT;
+ru/zdevs/zarchiver/io/SAF$STAT
+Failed to init stat
+Couldn't find ru/zdevs/zarchiver/io/ZAIO
+Couldn't find openFd of ru_zdevs_zaio
+Failed to init ZA IO
+Failed to find 'jAdd'!
+GCC: (GNU) 4.9.x 20150123 (prerelease)
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
+gold 1.12
+cortex-a8
+.init_array
+.fini_array
+.ARM.exidx
+.comment
+.note.android.ident
+.rel.plt
+.ARM.attributes
+.gnu.version_r
+.rel.dyn
+.gnu.version
+.note.gnu.gold-version
+.note.gnu.build-id
+.gnu.version_d
+.dynamic
+.ARM.extab
+.shstrtab

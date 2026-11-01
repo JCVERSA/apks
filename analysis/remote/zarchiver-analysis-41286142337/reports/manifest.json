@@ -1,0 +1,2261 @@
+{
+  "summary": {
+    "package": "ru.zdevs.zarchiver",
+    "version_name": null,
+    "version_code": null,
+    "compile_sdk_version": "34",
+    "compile_sdk_version_codename": "14",
+    "min_sdk": null,
+    "target_sdk": null,
+    "application": {
+      "label": "@string/app_name",
+      "name": "ru.zdevs.zarchiver.ZApp",
+      "icon": "@mipmap/ic_launcher",
+      "roundIcon": "@mipmap/ic_launcher_round",
+      "debuggable": null,
+      "allowBackup": "true",
+      "usesCleartextTraffic": null,
+      "networkSecurityConfig": null,
+      "extractNativeLibs": "true",
+      "appComponentFactory": null,
+      "requestLegacyExternalStorage": "true",
+      "preserveLegacyExternalStorage": null,
+      "enableOnBackInvokedCallback": null,
+      "localeConfig": "@xml/locales_config",
+      "dataExtractionRules": null,
+      "fullBackupContent": null
+    }
+  },
+  "permissions": [
+    {
+      "name": "android.permission.READ_EXTERNAL_STORAGE",
+      "max_sdk": "32",
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "max_sdk": "29",
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.WRITE_MEDIA_STORAGE",
+      "max_sdk": "29",
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.WAKE_LOCK",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.ACCESS_SUPERUSER",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.FOREGROUND_SERVICE",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "ru.zdevs.zarchiver.permission.PLUGIN.CLOUD",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "ru.zdevs.zarchiver.permission.PLUGIN.USB",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "moe.shizuku.manager.permission.API_V23",
+      "max_sdk": null,
+      "node": "uses-permission"
+    },
+    {
+      "name": "android.permission.REQUEST_INSTALL_PACKAGES",
+      "max_sdk": null,
+      "node": "uses-permission-sdk-23"
+    },
+    {
+      "name": "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "max_sdk": null,
+      "node": "uses-permission-sdk-23"
+    },
+    {
+      "name": "android.permission.POST_NOTIFICATIONS",
+      "max_sdk": null,
+      "node": "uses-permission-sdk-23"
+    }
+  ],
+  "permission_declarations": [],
+  "metadata": [
+    {
+      "name": "moe.shizuku.client.V3_SUPPORT",
+      "value": "true",
+      "resource": null
+    }
+  ],
+  "components": [
+    {
+      "kind": "activity",
+      "name": "ru.zdevs.zarchiver.ZArchiver",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN"
+          ],
+          "categories": [
+            "android.intent.category.LAUNCHER"
+          ],
+          "data": []
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/octet-stream"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "resource/folder"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/zstd"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/vnd.ms-cab-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/vnd.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-cpio"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-debian-package"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-gtar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-iso9660-image"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-lha"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-lzx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-apple-diskimage"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-ustar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-gtar-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-zip-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/gnutar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-7z-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-lz4"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-ace-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-bzip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-gzip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-xz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/vnd.ms-cab-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/java-archive"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-rar-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-compress"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-rpm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/gzip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/xz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/lzx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/lzma"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "*/*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.zip\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tgz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ecm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.wim"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.wim"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.wim"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.wim"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.wim"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.lz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.lz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.lz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.lz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.lzo"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.lzo"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.lzo"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.lzo"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.lzo"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.tbz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.tbz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.tbz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.tbz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.tbz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.xz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.xz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.xz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.xz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.xz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.rar\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.rar\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.rar\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.rar\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.zst"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.zst"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.zst"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.zst"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "*/*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ZIP"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.RAR"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.7Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.ISO"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Iso"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*7Z\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*ZIP\\\\.001"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.LZH"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\..*\\\\.Z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\.ZST"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\.ZST"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\.ZST"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*\\\\..*\\\\..*\\\\..*\\\\.ZST"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "ru.zdevs.zarchiver.action.EXTERNAL"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "ru.zdevs.zarchiver.category.OPEN"
+          ],
+          "data": []
+        },
+        {
+          "actions": [
+            "android.intent.action.SEND"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "*/*"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.SEND_MULTIPLE"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "*/*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "ru.zdevs.zarchiver.activity.SettingsDlg",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "ru.zdevs.zarchiver.activity.AboutDlg",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "ru.zdevs.zarchiver.activity.OpenAsDlg",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "ru.zdevs.zarchiver.activity.InstallApkDlg",
+      "exported": null,
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "activity",
+      "name": "ru.zdevs.zarchiver.ZSelectFile",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.GET_CONTENT"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.OPENABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "*/*"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.OPEN_DOCUMENT"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.OPENABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "*/*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "ru.zdevs.zarchiver.activity.ExtractDlg",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/zstd"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/rar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/zip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-cpio"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-debian-package"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-gtar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-iso9660-image"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-lha"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-lzh"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-lzx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-tar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-apple-diskimage"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-ustar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-gtar-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-zip-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/gnutar"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-7z-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-lz4"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-ace-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-bzip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-bzip2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-gzip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-xz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/vnd.ms-cab-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-lzma"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/java-archive"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-rar-compressed"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-compress"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-rpm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/gzip"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/7z"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/gz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/bz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/bz2"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/xz"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/zipx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/lza"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/lzx"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/lzma"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "ru.zdevs.zarchiver.activity.InstallApksDlg",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/apks"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/xapk"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/apkm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-apks"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-xapk"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/x-apkm"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "*/*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*apks"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*xapk"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*apkm"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*APKS"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*XAPK"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}pathPattern": ".*APKM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "ru.zdevs.zarchiver.ZImageViewer",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "image/*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "activity",
+      "name": "ru.zdevs.zarchiver.ZTextEditor",
+      "exported": "true",
+      "enabled": null,
+      "permission": null,
+      "process": ":text",
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "{http://schemas.android.com/apk/res/android}host": "*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "file"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}scheme": "content"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "text/*"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/octet-stream"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/json"
+            },
+            {
+              "{http://schemas.android.com/apk/res/android}mimeType": "application/javascript"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "service",
+      "name": "ru.zdevs.zarchiver.service.ZArchiverService",
+      "exported": null,
+      "enabled": "true",
+      "permission": null,
+      "process": ":service",
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "service",
+      "name": "ru.zdevs.zarchiver.service.ZArchiverClearTemp",
+      "exported": null,
+      "enabled": "true",
+      "permission": null,
+      "process": null,
+      "authorities": null,
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": "ru.zdevs.zarchiver.provider.FileProvider",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": null,
+      "authorities": "ru.zdevs.zarchiver.external",
+      "grant_uri_permissions": "true",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": "ru.zdevs.zarchiver.provider.ArchiveFileProvider",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": ":archive",
+      "authorities": "ru.zdevs.zarchiver.archive",
+      "grant_uri_permissions": "true",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": "ru.zdevs.zarchiver.provider.PluginFileProvider",
+      "exported": "false",
+      "enabled": null,
+      "permission": null,
+      "process": ":plugin",
+      "authorities": "ru.zdevs.zarchiver.plugin",
+      "grant_uri_permissions": "true",
+      "target_activity": null,
+      "intent_filters": []
+    },
+    {
+      "kind": "provider",
+      "name": "rikka.shizuku.ShizukuProvider",
+      "exported": "true",
+      "enabled": "true",
+      "permission": "android.permission.INTERACT_ACROSS_USERS_FULL",
+      "process": null,
+      "authorities": "ru.zdevs.zarchiver.shizuku",
+      "grant_uri_permissions": null,
+      "target_activity": null,
+      "intent_filters": []
+    }
+  ]
+}

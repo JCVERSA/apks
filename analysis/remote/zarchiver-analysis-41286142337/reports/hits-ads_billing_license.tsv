@@ -1,0 +1,227 @@
+file	line	text
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.java	27	public class SkiaPooledImageRegionDecoder implements d {
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.java	107	    public SkiaPooledImageRegionDecoder() {
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/a.java	7	    public final SkiaPooledImageRegionDecoder f480a;
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/a.java	9	    public a(SkiaPooledImageRegionDecoder skiaPooledImageRegionDecoder) {
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/a.java	10	        this.f480a = skiaPooledImageRegionDecoder;
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/a.java	20	            SkiaPooledImageRegionDecoder skiaPooledImageRegionDecoder = this.f480a;
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/a.java	21	            SkiaPooledImageRegionDecoder.a aVar = skiaPooledImageRegionDecoder.f470a;
+jadx/sources/com/davemorrissey/labs/subscaleview/decoder/a.java	37	"                        ActivityManager activityManager = (ActivityManager) skiaPooledImageRegionDecoder.f473d.getSystemService(""activity"");"
+jadx/sources/ru/zdevs/zarchiver/R.java	746	        public static final int tv_donate = 0x7f0700e9;
+jadx/sources/ru/zdevs/zarchiver/R.java	856	        public static final int ABT_DONATE = 0x7f0c0002;
+jadx/sources/ru/zdevs/zarchiver/R.java	857	        public static final int ABT_DONATE_GENERAL = 0x7f0c0003;
+jadx/sources/ru/zdevs/zarchiver/R.java	858	        public static final int ABT_DONATE_PAY = 0x7f0c0004;
+jadx/sources/ru/zdevs/zarchiver/activity/AboutDlg.java	59	        TextView textView2 = (TextView) findViewById(R.id.tv_donate);
+jadx/sources/ru/zdevs/zarchiver/activity/AboutDlg.java	61	"            textView2.setText(getString(R.string.ABT_DONATE_GENERAL, getString(R.string.DNT_TRANSLATE_SERVICE_URL) + "", "" + getString(R.string.DNT_TRANSLATE_URL)));"
+jadx/sources/s0/g.java	301	"                        str = ""android.media.MediaPlayer"";"
+jadx/sources/t0/b.java	515	"            i6 = defaultSharedPreferences.getInt(""iAppVersion"", 0);"
+jadx/sources/t0/b.java	568	"                editorEdit.putInt(""iAppVersion"", 101036);"
+jadx/sources/t0/b.java	859	"        i6 = defaultSharedPreferences.getInt(""iAppVersion"", 0);"
+jadx/sources/t0/b.java	907	"            editorEdit.putInt(""iAppVersion"", 101036);"
+decoded/res/values/ids.xml	236	"    <id name=""tv_donate"" />"
+decoded/res/values/public.xml	724	"    <public type=""id"" name=""tv_donate"" id=""0x7f0700e9"" />"
+decoded/res/values/public.xml	819	"    <public type=""string"" name=""ABT_DONATE"" id=""0x7f0c0002"" />"
+decoded/res/values/public.xml	820	"    <public type=""string"" name=""ABT_DONATE_GENERAL"" id=""0x7f0c0003"" />"
+decoded/res/values/public.xml	821	"    <public type=""string"" name=""ABT_DONATE_PAY"" id=""0x7f0c0004"" />"
+decoded/res/values/strings.xml	5	"    <string name=""ABT_DONATE"">Donate</string>"
+decoded/res/values/strings.xml	6	"    <string name=""ABT_DONATE_GENERAL"">""You can help in various ways:"
+decoded/res/values/strings.xml	8	 2. Buy the Donate/Pro version;
+decoded/res/values/strings.xml	11	"    <string name=""ABT_DONATE_PAY"">YooMoney: 41001641043147</string>"
+decoded/res/values/strings.xml	14	7-Zip is licensed under the GNU LGPL (version 2.1) and unRAR restriction.
+decoded/res/values/strings.xml	16	"License:\thttp://7-zip.org/license.txt""</string>"
+decoded/res/values/strings.xml	19	"License:\tApache 2.0""</string>"
+decoded/res/values/strings.xml	22	"License:\tBSD""</string>"
+decoded/res/values/strings.xml	25	"License:\tGNU GPL""</string>"
+decoded/res/values/strings.xml	28	"License:\tBSD""</string>"
+decoded/res/values/strings.xml	31	"License:\tBSD""</string>"
+decoded/res/values/strings.xml	33	License:\tGNU LGPL
+decoded/res/values/strings.xml	37	"License:\tGNU LGPL""</string>"
+decoded/res/values/strings.xml	40	License:\tGNU GPL
+decoded/res/values/strings.xml	44	"License:\tBSD""</string>"
+decoded/res/values/strings.xml	47	"License:\tApache 2.0""</string>"
+decoded/res/values/strings.xml	50	"License:Apache 2.0""</string>"
+decoded/res/values/strings.xml	53	"License:\tApache 2.0""</string>"
+decoded/res/values/strings.xml	56	"License:\tUnEgg license""</string>"
+decoded/res/values/strings.xml	60	"License:\tUnRAR license""</string>"
+decoded/res/values/strings.xml	63	"License:\tBSD""</string>"
+decoded/res/values/strings.xml	213	"    <string name=""FREE_LIMIT_HELP"">For Donate/Pro version users only</string>"
+decoded/res/values-ar/strings.xml	4	"    <string name=""ABT_DONATE"">تبرع</string>"
+decoded/res/values-ar/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""يمكنك المساعدة بطرق مختلفة:"
+decoded/res/values-az/strings.xml	4	"    <string name=""ABT_DONATE"">İanə et</string>"
+decoded/res/values-az/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Müxtəlif yollarla kömək edə bilərsiniz:"
+decoded/res/values-az/strings.xml	7	 2. Donate/Pro versiyasını nəğd alın;
+decoded/res/values-az/strings.xml	103	"    <string name=""FREE_LIMIT_HELP"">Yalnız Donate/Pro istifadəçiləri üçün</string>"
+decoded/res/values-bg/strings.xml	4	"    <string name=""ABT_DONATE"">Допринасяне</string>"
+decoded/res/values-bg/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Можете да помогнете различно:"
+decoded/res/values-bg/strings.xml	7	 2. Купете Donate/Pro версията;
+decoded/res/values-bg/strings.xml	102	"    <string name=""FREE_LIMIT_HELP"">Само за Donate/Pro-версии</string>"
+decoded/res/values-cs/strings.xml	4	"    <string name=""ABT_DONATE"">Přispět</string>"
+decoded/res/values-cs/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Můžete pomoci různymi způsoby:"
+decoded/res/values-cs/strings.xml	7	 2. Zakupte si Donate/Pro verzi;
+decoded/res/values-cs/strings.xml	103	"    <string name=""FREE_LIMIT_HELP"">Pouze pro uživatele Donate/Pro verze</string>"
+decoded/res/values-da/strings.xml	4	"    <string name=""ABT_DONATE"">Donér</string>"
+decoded/res/values-da/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Man kan hjælpe på forskellig vis:"
+decoded/res/values-de/strings.xml	4	"    <string name=""ABT_DONATE"">Mithelfen</string>"
+decoded/res/values-de/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Sie können dabei mithelfen:"
+decoded/res/values-el/strings.xml	4	"    <string name=""ABT_DONATE"">Δωρεά</string>"
+decoded/res/values-el/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Μπορείτε να βοηθήσετε με διάφορους τρόπους:"
+decoded/res/values-el/strings.xml	7	 2. Αγοράστε την Donate/Pro έκδοση;
+decoded/res/values-el/strings.xml	100	"    <string name=""FREE_LIMIT_HELP"">Για τους χρήστες της Donate/Pro έκδοσης μόνο</string>"
+decoded/res/values-es/strings.xml	4	"    <string name=""ABT_DONATE"">Donar</string>"
+decoded/res/values-es/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Puede ayudar de varias maneras:"
+decoded/res/values-fa/strings.xml	4	"    <string name=""ABT_DONATE"">اهدا</string>"
+decoded/res/values-fa/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""شما از طریق راه های زیر می توانید کمک نمایید:"
+decoded/res/values-fr/strings.xml	4	"    <string name=""ABT_DONATE"">Faire un don</string>"
+decoded/res/values-fr/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Vous pouvez y contribuer de différentes manières :"
+decoded/res/values-fr/strings.xml	7	 2. Acheter la version Donate/Pro;
+decoded/res/values-fr/strings.xml	92	"    <string name=""FREE_LIMIT_HELP"">Pour les utilisateurs de la version Donate/Pro uniquement</string>"
+decoded/res/values-hi/strings.xml	4	"    <string name=""ABT_DONATE"">दान या सहयोग करे</string>"
+decoded/res/values-hi/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""आप कई तरह से मदद कर सकते हैं:"
+decoded/res/values-hr/strings.xml	4	"    <string name=""ABT_DONATE"">Donirajte</string>"
+decoded/res/values-hr/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Možete pomoći na razne načine:"
+decoded/res/values-hr/strings.xml	7	 2. Kupite Donate/Pro verziju;
+decoded/res/values-hr/strings.xml	103	"    <string name=""FREE_LIMIT_HELP"">Samo za korisnike Donate/Pro verzije</string>"
+decoded/res/values-hu/strings.xml	4	"    <string name=""ABT_DONATE"">Adomány</string>"
+decoded/res/values-hu/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Különböző módokon segíthet:"
+decoded/res/values-hu/strings.xml	7	 2. Vásárolja meg a Donate/Pro verziót;
+decoded/res/values-hu/strings.xml	103	"    <string name=""FREE_LIMIT_HELP"">Csak a Donate/Pro verzió felhasználói számára</string>"
+decoded/res/values-in/strings.xml	4	"    <string name=""ABT_DONATE"">Donasi</string>"
+decoded/res/values-in/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Anda bisa membantu dengan berbagai cara:"
+decoded/res/values-in/strings.xml	249	"    <string name=""MES_WHITE_START_SERVICE"">Mempersiapkan untuk membuka arsip</string>"
+decoded/res/values-it/strings.xml	4	"    <string name=""ABT_DONATE"">Dona</string>"
+decoded/res/values-it/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Puoi supportarlo:"
+decoded/res/values-it/strings.xml	7	 2. Acquistando la versione Donate/Pro;
+decoded/res/values-it/strings.xml	103	"    <string name=""FREE_LIMIT_HELP"">Solo per utenti della versione Donate/Pro</string>"
+decoded/res/values-ja/strings.xml	4	"    <string name=""ABT_DONATE"">貢献</string>"
+decoded/res/values-ja/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""様々な方法で貢献できます:"
+decoded/res/values-ka-rGE/strings.xml	4	"    <string name=""ABT_DONATE"">მხარდაჭერა</string>"
+decoded/res/values-ka-rGE/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""თქვენ ჩვენი დახმარება შეგიძლიათ:"
+decoded/res/values-ko/strings.xml	4	"    <string name=""ABT_DONATE"">기부</string>"
+decoded/res/values-ko/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""당신은 몇 가지 방법으로 도울 수 있습니다:"
+decoded/res/values-ky/strings.xml	4	"    <string name=""ABT_DONATE"">جاسووچۇ</string>"
+decoded/res/values-ky/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""سىز تۅمۅندۅكۉدۅي جاردام بەرەسىز："
+decoded/res/values-lt/strings.xml	4	"    <string name=""ABT_DONATE"">Paremti</string>"
+decoded/res/values-lt/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Jūs galite padėti įvairiais būdais:"
+decoded/res/values-pl/strings.xml	4	"    <string name=""ABT_DONATE"">Przekaż darowiznę</string>"
+decoded/res/values-pl/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Możesz pomóc poprzez:"
+decoded/res/values-pl/strings.xml	7	 2. Kupienie wersji Donate/Pro;
+decoded/res/values-pl/strings.xml	103	"    <string name=""FREE_LIMIT_HELP"">Tylko dla użytkowników wersji Donate/Pro</string>"
+decoded/res/values-pt-rBR/strings.xml	4	"    <string name=""ABT_DONATE"">Doação</string>"
+decoded/res/values-pt-rBR/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Veja como você pode ajudar:"
+decoded/res/values-ru/strings.xml	4	"    <string name=""ABT_DONATE"">Помочь проекту</string>"
+decoded/res/values-ru/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Помочь проекту можно различными способами:"
+decoded/res/values-ru/strings.xml	7	 2. Купить Donate/Pro-версию;
+decoded/res/values-ru/strings.xml	10	"    <string name=""ABT_DONATE_PAY"">ЮMoney: 41001641043147</string>"
+decoded/res/values-ru/strings.xml	104	"    <string name=""FREE_LIMIT_HELP"">Только для пользователей Donate/Pro-версии</string>"
+decoded/res/values-sk/strings.xml	4	"    <string name=""ABT_DONATE"">Prispieť</string>"
+decoded/res/values-sk/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Môžete pomôcť rôznymi spôsobmi:"
+decoded/res/values-sr/strings.xml	4	"    <string name=""ABT_DONATE"">Donirajte</string>"
+decoded/res/values-sr/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Možete doprineti razvoju tako što ćete:"
+decoded/res/values-sr/strings.xml	7	 2. Kupovina Donate/Pro verzije;
+decoded/res/values-sr/strings.xml	99	"    <string name=""FREE_LIMIT_HELP"">Samo za korisnike Donate/Pro verzije</string>"
+decoded/res/values-th-rTH/strings.xml	4	"    <string name=""ABT_DONATE"">บริจาคเพื่อพัฒนา</string>"
+decoded/res/values-th-rTH/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""คุณสนับสนุนสิ่งดีๆได้อีก"
+decoded/res/values-tr/strings.xml	4	"    <string name=""ABT_DONATE"">Bağış yap</string>"
+decoded/res/values-tr/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Çeşitli şekillerde yardımcı olabilirsiniz:"
+decoded/res/values-ug/strings.xml	4	"    <string name=""ABT_DONATE"">تەقدىم قىلىش</string>"
+decoded/res/values-ug/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""سىز ھەرخىل ھازىرلىقلارغا ياردەملىشىڭ :"
+decoded/res/values-uk/strings.xml	4	"    <string name=""ABT_DONATE"">Допомогти проекту</string>"
+decoded/res/values-uk/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Допомогти проекту можна різними способами:"
+decoded/res/values-uk/strings.xml	7	 2. Купити Donate/Pro версію;
+decoded/res/values-uk/strings.xml	103	"    <string name=""FREE_LIMIT_HELP"">Тільки для користувачів Donate/Pro версії</string>"
+decoded/res/values-uz/strings.xml	4	"    <string name=""ABT_DONATE"">Hissa qoʻshmoq</string>"
+decoded/res/values-uz/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Ilovani rivojiga quyidagicha yordam koʻrsatish mumkin:"
+decoded/res/values-uz/strings.xml	7	 2. Donate/Pro-versiyani xarid qilish;
+decoded/res/values-vi/strings.xml	4	"    <string name=""ABT_DONATE"">Ủng hộ</string>"
+decoded/res/values-vi/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""Bạn có thể giúp bằng nhiều cách khác nhau:"
+decoded/res/values-vi/strings.xml	103	"    <string name=""FREE_LIMIT_HELP"">Dành cho người dùng phiên bản Donate/Pro</string>"
+decoded/res/values-zh-rCN/strings.xml	4	"    <string name=""ABT_DONATE"">捐赠</string>"
+decoded/res/values-zh-rCN/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""你可提供各种帮助："
+decoded/res/values-zh-rTW/strings.xml	4	"    <string name=""ABT_DONATE"">捐赠</string>"
+decoded/res/values-zh-rTW/strings.xml	5	"    <string name=""ABT_DONATE_GENERAL"">""你可以用以下方式提供幫助:"
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	1	.class public final Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	8	    value = Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	48	    iput-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->a:Ljava/util/concurrent/Semaphore;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	61	    iput-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->b:Ljava/util/concurrent/ConcurrentHashMap;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	68	.method public static a(Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;)V
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	77	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->b:Ljava/util/concurrent/ConcurrentHashMap;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	93	    invoke-virtual {p0}, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->d()Landroid/graphics/BitmapRegionDecoder;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	106	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->b:Ljava/util/concurrent/ConcurrentHashMap;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	145	.method public static b(Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;Landroid/graphics/BitmapRegionDecoder;)V
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	153	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->b:Ljava/util/concurrent/ConcurrentHashMap;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	274	    iget-object p0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->a:Ljava/util/concurrent/Semaphore;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	305	.method public static c(Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;)Z
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	313	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->b:Ljava/util/concurrent/ConcurrentHashMap;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	349	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->a:Ljava/util/concurrent/Semaphore;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a.smali	362	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->b:Ljava/util/concurrent/ConcurrentHashMap;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	1	.class public Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	12	        Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	18	.field public a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	45	    new-instance v0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	49	    invoke-direct {v0}, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;-><init>()V
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	54	    iput-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	70	    iput-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->b:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	81	    iput-wide v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->f:J
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	97	    iput-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->g:Landroid/graphics/Point;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	110	    iput-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	126	    iput-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->c:Landroid/graphics/Bitmap$Config;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	138	    iput-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->c:Landroid/graphics/Bitmap$Config;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	156	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->b:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	176	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	184	    invoke-static {v0}, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->a(Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;)V
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	192	    iput-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	196	    iput-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->d:Landroid/content/Context;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	200	    iput-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->e:Lg/a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	208	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->b:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	238	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->b:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	278	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	286	    invoke-static {v0}, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->c(Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;)Z
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	357	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->g:Landroid/graphics/Point;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	386	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	408	    iget-wide v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->f:J
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	431	    invoke-direct {v0, p0}, Lcom/davemorrissey/labs/subscaleview/decoder/a;-><init>(Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;)V
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	442	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->b:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	460	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	468	    invoke-virtual {v1}, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->d()Landroid/graphics/BitmapRegionDecoder;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	508	    iget-object p1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->c:Landroid/graphics/Bitmap$Config;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	531	    iget-object p2, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	535	    invoke-static {p2, v1}, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->b(Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;Landroid/graphics/BitmapRegionDecoder;)V
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	583	    iget-object p2, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	587	    invoke-static {p2, v1}, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->b(Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;Landroid/graphics/BitmapRegionDecoder;)V
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	600	    iget-object p1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	604	    invoke-static {p1, v1}, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->b(Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;Landroid/graphics/BitmapRegionDecoder;)V
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	652	    iput-object p1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->d:Landroid/content/Context;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	656	    iput-object p2, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->e:Lg/a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	660	    invoke-virtual {p0}, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->e()V
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	665	    iget-object p1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->g:Landroid/graphics/Point;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	676	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->e:Lg/a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	719	    iget-object v2, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->e:Lg/a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	815	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->e:Lg/a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	831	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->d:Landroid/content/Context;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	843	    iget-object v5, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->e:Lg/a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	870	    iget-object v5, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->e:Lg/a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	935	    iput-wide v3, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->f:J
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	939	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->g:Landroid/graphics/Point;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	964	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->b:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	982	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	996	    iget-object v2, v1, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->b:Ljava/util/concurrent/ConcurrentHashMap;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	1009	    iget-object v0, v1, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->a:Ljava/util/concurrent/Semaphore;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	1041	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->b:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	1065	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->b:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder.smali	1107	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->e:Lg/a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	7	.field public final synthetic a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	11	.method public constructor <init>(Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;)V
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	14	    iput-object p1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/a;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	29	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/a;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	33	    iget-object v1, v0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	45	    iget-object v2, v1, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;->b:Ljava/util/concurrent/ConcurrentHashMap;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	62	    iget-object v1, p0, Lcom/davemorrissey/labs/subscaleview/decoder/a;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	66	    iget-wide v3, v1, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->f:J
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	142	    iget-object v0, v0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->d:Landroid/content/Context;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	221	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/a;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	225	    iget-object v0, v0, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder$a;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	238	    iget-object v0, p0, Lcom/davemorrissey/labs/subscaleview/decoder/a;->a:Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;
+decoded/smali/com/davemorrissey/labs/subscaleview/decoder/a.smali	242	    invoke-virtual {v0}, Lcom/davemorrissey/labs/subscaleview/decoder/SkiaPooledImageRegionDecoder;->e()V
+decoded/smali/s0/g.smali	1884	"    const-string v4, ""android.media.MediaPlayer"""
+decoded/smali/t0/b.smali	2196	"    const-string v0, ""iAppVersion"""
+decoded/smali/t0/b.smali	2466	"    const-string v0, ""iAppVersion"""

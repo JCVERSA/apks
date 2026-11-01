@@ -1,0 +1,914 @@
+/system/bin/linker
+__libc_init
+__cxa_atexit
+__stack_chk_fail
+__stack_chk_guard
+__aeabi_memclr4
+pthread_once
+libdl.so
+__aeabi_memcpy4
+__aeabi_memcpy
+__cxa_pure_virtual
+__aeabi_memmove
+__aeabi_memclr8
+__aeabi_memclr
+pthread_getspecific
+pthread_key_delete
+pthread_key_create
+pthread_setspecific
+__aeabi_memcpy8
+__aeabi_memmove4
+__aeabi_memset4
+sem_destroy
+sem_post
+sem_init
+sem_wait
+pthread_exit
+strncasecmp
+__aeabi_memmove8
+_ZSt7nothrow
+pthread_mutex_destroy
+pthread_cond_destroy
+pthread_mutex_lock
+pthread_cond_broadcast
+pthread_mutex_unlock
+gettimeofday
+getpwuid
+getgrgid
+pthread_cond_signal
+pthread_mutex_init
+pthread_cond_init
+__aeabi_memset
+utimensat
+closedir
+ftruncate64
+readlink
+mbstowcs
+wcstombs
+setlocale
+strerror
+pthread_attr_setdetachstate
+pthread_create
+pthread_attr_destroy
+pthread_detach
+pthread_attr_init
+pthread_join
+pthread_cond_wait
+memalign
+towupper
+localtime
+__aeabi_memset8
+ZSTD_trace_compress_begin
+ZSTD_trace_compress_end
+ZSTD_trace_decompress_end
+ZSTD_trace_decompress_begin
+__android_log_print
+__bss_start
+__gnu_Unwind_Find_exidx
+liblog.so
+libstdc++.so
+N)F	H~DxD2F
+N}D~D(F2F
+$e@Z@3F*C:F
+F.I/JyDzD	h	h
+F0y1h(q)`
+p@DDh0Fs
+F&IyD	h	h	
+0F)F"F>`
+@F!F2F[F
+RIFFWAVEfmt data
+0F9FBF+F
+"IyD	h	h
+XF!FBFKF
+PAX_ITEM
+linkpath
+PAX_GLOBAL_ERROR
+UTF8-ERROR
+non-UTF8
+ZeroChar
+SingleSurrogate
+Truncated
+MaxUnicode=
+SignedChecksum
+bin_mtime
+bin_psize
+bin_size
+pax_path
+pax_linkpath
+pax_size
+PAX_error
+PAX_unsupported_line
+PAX_overflow
+8F!F2FKF
+FjFyD	h	h
+#M}D-h-h
+(FAFJF#F
+linkpath
+%'FyD	h	h
+b%be`%cA
+linkpath
+devmajor
+devminor
+PaxHeader/@PaxHeader
+@PathCut/_pc_
+VolumeSet
+Publisher
+Preparer
+Application
+Copyright
+Abstract
+Incorrect big-endian headers
+Self-linked directory
+$=F(F1FRFKF
+]8F1FRFKF
+(p F~D "
+&bk#l hR
+.j(F"F1F
+p%yD	h	h
+Missing volume : 
+32-bit overflow in headers
+16-bit overflow for number of files in headers
+Unsorted_CD
+Minor_Extra_ERROR
+Descriptor_ERROR
+ZipCrypto
+HF1F*FCF
+ZipCrypto
+k@1CW@;C
+APK Sig Block 42
+Extra_ERROR
+Minor_Extra_ERROR
+G7FEN F,"~D
+F`iAF2FXD
+pk)FZF8D
+pk!FZF(D
+hk1F"F@D
+8\ t(x!"
+F*IyD	h	h
+IjFyD	h	h
+Missing volume : 
+8F1F*F#F
+HFAF*F#F
+Missing volume : 
+8F1F*F#F
+XML error
+Some files have incorrect reference count
+[DELETED]
+[DELETED]/
+(yD	h	h	
+)F"F&FGi
+8HFYF2FCF
+ 8s8FYFI
+TOTALBYTES
+DIRCOUNT
+FILECOUNT
+CREATIONTIME
+LASTMODIFICATIONTIME
+ oF0s(F!F:FH
+HIGHPART
+ (s(F!FH
+[LongPath]
+"yD	h	h5
+ F)F2FKF
+CREATIONTIME
+LASTMODIFICATIONTIME
+DIRCOUNT
+FILECOUNT
+HIGHPART
+ENCRYPTED
+`@hH`pGp
+WordDocument
+PowerPoint Document
+Workbook
+:	*yD	h	h	
+<<9"/hF1FJF
+! c(k`c(l
+[UNKNOWN]
+")T@F)F?
+.          
+..         
+RRaArrAa
+?ttt7tt<ttttPH&
+	-yD	h	h
+oo.(<6R"
+FyD	h	h	
+FFF!-FFF'
+HFS+ Private Data
+[HFS+ Private Data]
+com.apple.decmpfs
+bb<O:bbbDhF)F
+n`0hAh0F
+FyD	h	h	
+(haFJF[FQ
+hsqsshsqqshssqshp
+LZMA Spec
+LZMA ZLIB
+0!MyDzD{D}D
+BlockPackSize
+BlockUnpackSize
+HFQF2F#F
+D'D D0`0F
+$=F(FAF,
+lF1F F*F
+zero size last volume
+Dh(F:F#F
+HFAF2F#F
+!FGh(FJF;F
+F(h `hh``
+ j8D bbi
+	@F1F:FKF
+0 MyD NzD O{D}D~D
+ (08@P`p
+ (08@P`p
+(F9F2FCF
+.F9FBF3F-
+!(*-<IPU_i
+* @D(a)b
+`! XaXX@Q@
+FFXF!F2F
+:H;IxDyD
+2hyD	h	h
+>FGFJF8h
+5!F "(F*
+H	JxDajzD
+0	 &@FQF2F
+/dev/urandom
+ 0pmHxD*
+)\2\Q@1T
+ "yD	h	hO
+ImF "yD	h	hC
+h:I;J;K<L 
+ImFyD	h	h
+nF(F6!2F
+)\2\Q@1T
+sI(FsJyDzD}
+QIRJyDzD(F}
+ I(F JyDzD}
+Unsupported switch postfix -bb
+Unsupported switch postfix for -slp
+Set process affinity mask: 
+ : ERROR : 
+Unsupported switch postfix -stm
+$yDzD(F|
+#yDzD(F|
+JyDzD0F|
+audtexlbih
+xIyJyDzD(F|
+[I(F[JyDzD|
+Cannot find eliminate path
+Unsupported -spf:
+Unsupported -spm:
+There is no second file name for rename pair:
+JyDzD F{
+Unsupported charset:
+Too short switch
+inorrect switch
+Incorrect wildcard type marker
+FxD.FkF["
+Cannot create folder
+Cannot delete output file
+Cannot delete output folder
+Cannot create file with auto name
+Cannot open output file
+Cannot set owner
+Cannot set file attribute
+FQJzD FCF
+Dangerous link path was ignored
+Incorrect path
+Dangerous symbolic link path was ignored
+Cannot create symbolic link
+Empty link
+Incorrect reparse stream
+Unknown reparse stream
+can't delete file
+F0y1h(q)`
+Cannot create output directory
+Cannot find archive file
+The item is a directory
+ h)F?"[F
+FjFyD	h	h
+0F!F*FKF
+Updating for multivolume archives is not implemented
+&@8FQF2F
+l$yDzD(Fn
+can't find archive
+Updating for multivolume archives is not implemented
+There is some data block after the end of the archive
+Duplicate filename in archive:
+Internal file name collision (file on disk, file in archive):
+Duplicate filename on disk:
+	I	JyDzD Fl
+Internal collision in update action set
+Multiple instances for switch:
+Incorrect switch postfix:
+Too long switch:
+Too short switch:
+Unknown switch:
+yDoF	h	h
+<h1F*F F
+ pp F5pp
+`h(D`` Fp
+")DBTa`p
+/h8F1F"F
+ h)F2F8D
+ h*F9h0D
+<h1F*F F
+@F)F2Fg`
+f`8F)hBF
+/h8F1F"F
+n`8F!FBF
+`h(D`` Fp
+	N F<!~D
+<!DOCTYPE
+ F9F2F+F
+ F1F*F_#
+?h8F1F*F#F
+0hjF)FCF
+Empty file path
+E_NOTIMPL : Not implemented
+E_INVALIDARG : One or more arguments are invalid
+E_OUTOFMEMORY : Can't allocate required memory
+@F1F*F[F
+F `8F1F*F
+F `8F1F*F
++h#`iy(y@
+fIyD	h	heK
+0F3h)FBF
+/hx@0`hhH@p`
+"yD	h	h4
+tFEh%@E`
+ (CX`7DOE<
+^hpF-M0@X`
+	HF:F3FdF
+F)F@F"F|
+&iknb Fbh
+bCj7xvxG
+#yD	h	ha
+t0F	!	%j
+FHFQF:F3Fj
+5!F`"(Fx
+G'a(F*h1F
+F@H@I X@O
+F<HmFH"xD
+;IyD	h	h
+G e8F:h)F
+*D D2D8D
+zIyD	h	h
+2eaeD%bB
+h hbjKx"bB
+FmIyD	h	h
+nIyD	h	h
+2eaeD%bB
+h hbjKx"bB
+`IB*xoxbE
+rNor@j@O
+q|O5C]D9D
+0D)F@0"F
+@	)FHD:Fn
+FyD	h	hN
+0D)F@0"F
+@	)FHD:Fn
+iF F:F+Fn
+vhmh@hn@p@
+/D(D `0h(D0`+
+x@OF0CpF
+0F)F"F;F\
+yDmFzD	h
+kF F)F2F
+#h FAF*F
+ `8F;h1F*F
+v;H{D<J$
+T yD	h	h
+7F(F9F8"f
+0D	!yb\F
+`l1F*F@De
+d8D1F*Fe
+8F1F*FCF
+8F1F*FCF
+8F1F*F#F
+8F1F*F#F
+p9F"F(Fc
+0FdEIF%F
+	0FbFeFIF
+9F(FCFWF
+8F1F*F#F
+8F1F*F#F
+@ 9FRFCF
+!"F+F0D\
+8F1F*F#F
+D0D@DPD 0
+:FSF0F)F
+ )F:FSFO
+ F9F2FCF
+8F1F*F#F
+IF:FCFXF
+0F9FBFSF
+ FAFRFKF
+ 'X+F h2F9F
+ F9F2F+F
+Y F*F3FT
+!hbhj`)`
+U9F`Y2FCF
+(F9F2FCF
+ F9F2FCF
+HFAF:FSF)
+HFAF:FSF*
+HFAF:FSF,
+HFAF:FSF-
+HIF2FPDT
+nHIF2FPDT
+;h|hX@b@
+:h{hP@Y@
+!hbh3hwh
+ hbhih+hQ@X@
+:h{hP@Y@
+ F1F:F[F
+@F)F"F3F
+@F)F"F3F
+@F)F"F3F
+`(F9F2FCF
+`(F9F2FCF
+0F)FJFCF
+0F9FBF+F
+FAFPF2F+F
+-!F8h(D8`
+8FYFJFCF
+0F9F*FCF
+ F9F2FCF
+0F9F*FKF
+cJ3hwh`N
+xXFAFeF+
+pFYFJFuF+
+QFZFuFdF+
+I*hyD	h	h
+D!yD	h	h
+HF5F:FCF
+IFZF3F F
+8F)FZF3F
+8p0F!FBF
+8F!F*FKF
+D!F*FKF8F
+8F!F*FKF
+8F!F*FKF
+ F)FRFKF
+D)FRFKF F
+ F)FRFKF
+ F)FRFKF
+D!yD	h	h
+HF5F:FCF
+8p0F!FBF
+8F!F*FKF
+D!F*FKF8F
+8F!F*FKF
+8F!F*FKF
+(F!F2FCF
+(`,e,F F
+! eRF`lad c
+!!e@D dRF
+D!yD	h	h
+HF5F:FCF
+8p0F!FBF
+8F!F*FKF
+D!F*FKF8F
+8F!F*FKF
+8F!F*FKF
+I2hyD	h	h
+8p0F!FBF
+8F!F*FKF
+D!F*FKF8F
+8F!F*FKF
+8F!F*FKF
++yD	h	h 
+HF&F:F+F
+ F:FIF+F
+8F1F*F#F
+ F)F2FCF
+(`,e,F F
+I2hyD	h	h
+8p0F!FBF
+8F!F*FKF
+D!F*FKF8F
+8F!F*FKF
+8F!F*FKF
++yD	h	h 
+HF&F:F+F
+ F:FIF+F
+8F1F*F#F
+ FIF:FCF
+I2hyD	h	h
+\F9IPFyD
+8F1F*F#F
+8F1F*F#F
+9D*F@FdF
+ FAF*FfF
+8F1F*F#F
+(FYF2FCF
+X@YF(D"F
+8p0F!FBF
+8F!F*FKF
+D!F*FKF8F
+8F!F*FKF
+8F!F*FKF
+AFHF:F+F
+Unprocessed error flags 0x%08X
+ 0`(l!F+
+9F(hZFSF
+Internal error
+Internal error %d
+p7zip_extract_pipe: fail to create pipe thread
+p7zip_extract_pipe: failed to join (%d)
+p7zip_extract_pipe: fail to create pipe
+p7zip_compress_pipe: fail to create pipe thread
+p7zip_compress_pipe: failed to join (%d)
+p7zip_compress_pipe: fail to create pipe
+0F)F:FCF
+~	M	%d	%s
+~	AF	%lld	%d	%d	%s
+~	AO	%lld	%d	%lld	%d	%s
+I	HyDxD	h
++h9F2F(F
+|D$h#h F
+G"N#*pU"kpC#
+pO#*qR"kq
+4cDDa\B\AHBHA C
+.IyD81Ni
+.;ZBZAcF
+jBjAsBsA`D
+_FVFMFDF
+;vIcD#c8
+F;!JFCF 
+;cD#c@FyD
+hMFDF_FVF
+;SIcD#c8
+V9r;NBNAYBYA
+FcDk`#k	3#c>
+#fkccCxL+
+KFcaCF%c
+;nIcD#c8
+G#h`+`bj#j
+U;YBYAcF
+E:WBWAKBKA;C$
+DF_FVFMF
+;cD#c@FyD
+`ekccKxL+
+;cD#cHFyD
+;qIcD#c8
+F8!RFKF 
+;MIcD#c8
+FcD#c@FyD
+FcD#c@FyD
+VFMFDF_F
+jhvKQh{D
+x ?yByAW
+PF XJh`DB`8`	h
+P-##pi#cpn'
+P[#a"#pbp
+P_##pF#cpr%
+P{##pp#cpa&
+Pt##ph#cpi&
+P_##pA#cpc%
+P_##pS#cpa'
+!PZFPFB`
+hVFMFDF_F
+MF_FDFVF
+P}#:"+pjp
+_FVFMFDF
+VF_FMFDF
+/proc/cpuinfo
+/sys/devices/system/cpu/present
+/sys/devices/system/cpu/possible
+CPU architecture
+Processor
+Features
+F FAF2F+F
+getauxval
+N8NArchive3N7z28CUnsupportedFeatureExceptionE
+N8NArchive3N7z19CInArchiveExceptionE
+ 7z xz lzma ace arc arj bz tbz bz2 tbz2 cab deb gz tgz ha lha lz tlz lzh lzo lzx pak rar rpm sit zoo zip jar ear war msi 3gp avi mov mpeg mpg mpe wmv aac ape fla flac la mp3 m4a mp4 ofr ogg pac ra rm rka shn swa tta wv wma wav swf chm hxi hxs gif jpeg jpg jp2 png tiff  bmp ico psd psp awg ps eps cgm dxf svg vrml wmf emf ai md cad dwg pps key sxi max 3ds iso bin nrg mdf img pdi tar cpio xpi vfd vhd vud vmc vsv vmdk dsk nvram vmem vmsd vmsn vmss vmtm inl inc idl acf asa h hpp hxx c cpp cxx m mm go swift rc java cs rs pas bas vb cls ctl frm dlg def f77 f f90 f95 asm s sql manifest dep mak clw csproj vcproj sln dsp dsw class bat cmd bash sh xml xsd xsl xslt hxk hxc htm html xhtml xht mht mhtml htw asp aspx css cgi jsp shtml awk sed hta js json php php3 php4 php5 phptml pl pm py pyo rb tcl ts vbs text txt tex ans asc srt reg ini doc docx mcw dot rtf hlp xls xlr xlt xlw ppt pdf sxc sxd sxi sxg sxw stc sti stw stm odt ott odg otg odp otp ods ots odf abw afp cwk lwp wpd wps wpt wrf wri abf afm bdf fon mgf otf pcf pfa snf ttf dbf mdb nsf ntf wdb db fdb gdb exe dll ocx vbx sfx sys tlb awx com obj lib out o so pdb pch idb ncb opt
+LongName
+LongLink
+././@LongLink
+@LongLink
+Too deep directory levels
+HardDisk
+Deflate64
+PKImploding
+StrongCrypto
+3DES-168
+3DES-112
+pkAES-128
+pkAES-192
+pkAES-256
+Blowfish
+Descriptor
+Macintosh
+Z-System
+SMS/QDOS
+ApkAlign
+zip z01 zipx jar xpi odt ods docx xlsx epub ipa apk appx
+UnixOwner
+UnixSymLink
+WinSymLink
+WinJunction
+HardLink
+FileCopy
+VolumeField
+Recovery
+UnixTime
+UnknownSize
+BLAKE2sp
+NewVolName
+Authenticity
+BlockEncryption
+FirstVolume
+EncryptVer
+Boot Image
+wim swm esd ppkg
+bz2 bzip2 tbz2 tbz
+* * .tar .tar
+0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz._
+compound
+Compound
+msi msp doc xls ppt
+SortedDirs
+WrongSignature
+ShiftedRootOffset
+UserQuota
+GroupQuota
+BootLoader
+Undelete
+Mount Time
+Last Check Time
+Revision
+inode Size
+Last Mounted
+Incompatible Features
+Readonly-compatible Features
+Written KiB
+DIR_PREALLOC
+IMAGIC_INODES
+HAS_JOURNAL
+EXT_ATTR
+RESIZE_INODE
+DIR_INDEX
+SPARSE_SUPER2
+COMPRESSION
+FILETYPE
+JOURNAL_DEV
+EA_INODE
+BG_USE_META_CSUM
+LARGEDIR
+INLINE_DATA
+SPARSE_SUPER
+LARGE_FILE
+BTREE_DIR
+HUGE_FILE
+GDT_CSUM
+DIR_NLINK
+EXTRA_ISIZE
+HAS_SNAPSHOT
+BIGALLOC
+METADATA_CSUM
+READONLY
+IMMUTABLE
+COMPRBLK
+JOURNAL_DATA
+EOFBLOCKS
+ext ext2 ext3 ext4 img
+gz gzip tgz tpz
+ZLIB-attr
+ZLIB-rsrc
+LZVN-attr
+LZVN-rsrc
+COPY-attr
+COPY-rsrc
+LZFSE-attr
+LZFSE-rsrc
+ZBM-rsrc
+hfs hfsx
+Windows 95
+Windows NT
+SquashFS
+UNCOMPRESSED_INODES
+UNCOMPRESSED_DATA
+UNCOMPRESSED_FRAGMENTS
+NO_FRAGMENTS
+ALWAYS_FRAGMENTS
+DUPLICATES_REMOVED
+EXPORTABLE
+UNCOMPRESSED_XATTRS
+NO_XATTRS
+COMPRESSOR_OPTIONS
+UNCOMPRESSED_IDS
+squashfs
+zst zstd tzstd
+AES256CBC
+The command must be specified
+Unsupported command:
+Cannot find archive name
+Archive name cannot by empty
+Unsupported -snz:
+Cannot use absolute pathnames for this command
+I won't write data and program's messages to same stream
+-ai switch is not supported for this command
+Only one archive can be created with rename command
+Incorrect number of benchmark iterations
+utf-16le
+utf-16be
+Empty file path
+Unsupported rename command:
+Incorrect volume size:
+zero size last volume is not allowed
+incorrect update switch command
+Cannot create hard link
+type of archive is not specified
+There is a folder with the name of archive
+The file is read-only
+Scanning error
+It is not allowed to include archive to itself
+The file already exists
+cannot delete the file
+cannot move the file
+update operations are not supported for this archive
+Can't create output archive
+There are unclosed input file:
+Internal Error: The failure in hardware (RAM or CPU), OS or program
+E_NOINTERFACE : No such interface supported
+E_ABORT : Operation aborted
+E_FAIL : Unspecified error
+STG_E_INVALIDFUNCTION
+CLASS_E_CLASSNOTAVAILABLE
+out of memory
+lz4 tlz4
+Headers Error
+Headers Error in encrypted archive. Wrong password?
+Unavailable start of archive
+Unconfirmed start of archive
+There are data after the end of archive
+Unsupported feature
+.tar.bz2
+.tar.bzip2
+.tar.lz4
+.tar.lzma
+.tar.zstd
+.tar.zst
+070701000002D100
+BZh91AY&SY
+EFI PART
+NTFS    
+Compressed ROMFS
+CPU implementer
+CPU variant
+CPU part
+CPU revision
+Hardware
+Goldfish
+vfpv3d16
+00ustar  
+ustarEL TORITO SPECIFICATION
+16CSystemException
+N8NArchive4NIso23CUnexpectedEndExceptionE
+N8NArchive4NIso21CHeaderErrorExceptionE
+N8NArchive4NIso21CEndianErrorExceptionE
+CD001CD001
+N8NArchive4NZip12CUnexpectEndE
+PK00PKRar!
+B7A'A7ACompressed ROMFSS
+18CInBufferException
+0xFD2FB522..28
+19COutBufferException
+ (08@P`p
+ (08@P`p
+upT21CMessagePathException
+7UString
+0x184D2204
+  !!""##$$$$%%%%&&&&&&&&''''''''(((((((((((((((())))))))))))))))********************************
+)n/h%fPn
+  !!""##$$$$%%%%&&&&&&&&''''''''(((((((((((((((())))))))))))))))********************************
+N9NExitCode5EEnumE
+7AString
+N10__cxxabiv117__class_type_infoE
+N9__gnu_cxx24__concurrence_lock_errorE
+N9__gnu_cxx26__concurrence_unlock_errorE
+__gnu_cxx::__concurrence_lock_error
+__gnu_cxx::__concurrence_unlock_error
+std::exception
+std::bad_exception
+pure virtual method called
+deleted virtual method called
+std::bad_alloc
+terminate called recursively
+terminate called after throwing an instance of '
+terminate called without an active exception
+  what():  
+_GLOBAL_
+(anonymous namespace)
+string literal
+{default arg#
+vtable for 
+VTT for 
+construction vtable for 
+typeinfo for 
+typeinfo name for 
+typeinfo fn for 
+non-virtual thunk to 
+virtual thunk to 
+covariant return thunk to 
+java Class for 
+guard variable for 
+TLS init function for 
+TLS wrapper function for 
+reference temporary #
+hidden alias for 
+transaction clone for 
+non-transaction clone for 
+operator
+operator 
+java resource 
+decltype (
+global constructors keyed to 
+global destructors keyed to 
+{lambda(
+{unnamed type#
+ [clone 
+ restrict
+ volatile
+complex 
+imaginary 
+ __vector(
+std::allocator
+allocator
+std::basic_string
+basic_string
+std::string
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >
+std::istream
+std::basic_istream<char, std::char_traits<char> >
+basic_istream
+std::ostream
+std::basic_ostream<char, std::char_traits<char> >
+basic_ostream
+std::iostream
+std::basic_iostream<char, std::char_traits<char> >
+basic_iostream
+alignof 
+const_cast
+delete[] 
+dynamic_cast
+operator"" 
+reinterpret_cast
+static_cast
+signed char
+long double
+__float128
+unsigned char
+unsigned int
+unsigned
+unsigned long
+__int128
+unsigned __int128
+unsigned short
+long long
+unsigned long long
+decimal32
+decimal64
+decimal128
+char16_t
+char32_t
+decltype(nullptr)
+std::bad_typeid
+N10__cxxabiv115__forced_unwindE
+N10__cxxabiv119__foreign_exceptionE
+St9exception
+St13bad_exception
+N10__cxxabiv116__enum_type_infoE
+N10__cxxabiv123__fundamental_type_infoE
+N10__cxxabiv119__pointer_type_infoE
+N10__cxxabiv120__si_class_type_infoE
+St9type_info
+St9bad_alloc
+N10__cxxabiv117__pbase_type_infoE
+St10bad_typeid
+/proc/self/auxv
+GCC: (GNU) 4.9.x 20150123 (prerelease)
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
+gold 1.12
+cortex-a8
+.preinit_array
+.init_array
+.fini_array
+.ARM.exidx
+.comment
+.note.android.ident
+.rel.plt
+.ARM.attributes
+.gnu.version_r
+.data.rel.ro
+.rel.dyn
+.gnu.version
+.note.gnu.gold-version
+.data.rel.ro.local
+.note.gnu.build-id
+.dynamic
+.ARM.extab
+.shstrtab

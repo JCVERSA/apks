@@ -1,0 +1,463 @@
+=== lib/armeabi-v7a/libp7zip.so ===
+/home/runner/work/_temp/zarchiver-analysis/decoded/lib/armeabi-v7a/libp7zip.so: ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, BuildID[sha1]=5843e95ac7904d2d20a31df1d42c909402585156, stripped
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          2261888 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         8
+  Size of section headers:           40 (bytes)
+  Number of section headers:         28
+  Section header string table index: 27
+
+Dynamic dependencies:
+
+Dynamic section at offset 0x227720 contains 34 entries:
+  Tag        Type                         Name/Value
+ 0x00000003 (PLTGOT)                     0x22bc18
+ 0x00000002 (PLTRELSZ)                   1976 (bytes)
+ 0x00000017 (JMPREL)                     0x11a78
+ 0x00000014 (PLTREL)                     REL
+ 0x00000011 (REL)                        0x53e0
+ 0x00000012 (RELSZ)                      50840 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffa (RELCOUNT)                   5893
+ 0x00000006 (SYMTAB)                     0x1f0
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000005 (STRTAB)                     0x20f0
+ 0x0000000a (STRSZ)                      8911 (bytes)
+ 0x00000004 (HASH)                       0x43c0
+ 0x00000001 (NEEDED)                     Shared library: [libmime.so]
+ 0x00000001 (NEEDED)                     Shared library: [libiconv.so]
+ 0x00000001 (NEEDED)                     Shared library: [libhandler.so]
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libstdc++.so]
+ 0x0000000e (SONAME)                     Library soname: [libp7zip.so]
+ 0x0000001a (FINI_ARRAY)                 0x2230f8
+ 0x0000001c (FINI_ARRAYSZ)               8 (bytes)
+ 0x00000019 (INIT_ARRAY)                 0x22b594
+ 0x0000001b (INIT_ARRAYSZ)               396 (bytes)
+ 0x0000001e (FLAGS)                      BIND_NOW
+ 0x6ffffffb (FLAGS_1)                    Flags: NOW
+ 0x6ffffff0 (VERSYM)                     0x4fa4
+ 0x6ffffffc (VERDEF)                     0x5384
+ 0x6ffffffd (VERDEFNUM)                  1
+ 0x6ffffffe (VERNEED)                    0x53a0
+ 0x6fffffff (VERNEEDNUM)                 2
+ 0x00000000 (NULL)                       0x0
+
+Exported symbols (bounded):
+
+Symbol table '.dynsym' contains 496 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+     4: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+     5: 001d06b9   142 FUNC    GLOBAL DEFAULT   12 __cxa_begin_catch
+     6: 001d0f99    12 FUNC    GLOBAL DEFAULT   12 _ZSt9terminatev
+     7: 001d005d     4 FUNC    GLOBAL DEFAULT   12 _ZdaPv
+     8: 001d11f5    20 FUNC    GLOBAL DEFAULT   12 _Znaj
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr
+    10: 001d0139   168 FUNC    GLOBAL DEFAULT   12 __cxa_allocate_exception
+    11: 001d104d   128 FUNC    GLOBAL DEFAULT   12 __cxa_throw
+    12: 0022b264     8 OBJECT  WEAK   DEFAULT   18 _ZTIi
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND raise@LIBC (2)
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@LIBC (2)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND fputc@LIBC (2)
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND fputs@LIBC (2)
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr4
+    18: 001d0059     4 FUNC    GLOBAL DEFAULT   12 _ZdlPv
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND fwrite@LIBC (2)
+    20: 001d11a1    84 FUNC    GLOBAL DEFAULT   12 _Znwj
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy4
+    23: 001d0749   140 FUNC    GLOBAL DEFAULT   12 __cxa_end_catch
+    24: 001d05b5   256 FUNC    GLOBAL DEFAULT   12 __cxa_call_unexpected
+    25: 001d128d    24 FUNC    GLOBAL DEFAULT   12 __cxa_pure_virtual
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcmp@LIBC (2)
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memmove
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memclr8
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memcpy8
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memmove4
+    31: 001d10cd   114 FUNC    GLOBAL DEFAULT   12 __cxa_rethrow
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memset
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memmove8
+    34: 0022af58    44 OBJECT  GLOBAL DEFAULT   18 _ZTVN10__cxxabiv117__class_type_infoE
+    35: 0022b460    44 OBJECT  GLOBAL DEFAULT   18 _ZTVN10__cxxabiv120__si_class_type_infoE
+    36: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memset4
+    37: 00000000     0 FUNC    GLOBAL DEFAULT  UND wcscmp@LIBC (2)
+    38: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcmp@LIBC (2)
+    39: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen@LIBC (2)
+    40: 0021a6f8     1 OBJECT  GLOBAL DEFAULT   15 _ZSt7nothrow
+    41: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@LIBC (2)
+    42: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_broadcast@LIBC (2)
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@LIBC (2)
+    44: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_destroy@LIBC (2)
+    45: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_destroy@LIBC (2)
+    46: 00000000     0 FUNC    GLOBAL DEFAULT  UND printf@LIBC (2)
+    47: 00000000     0 FUNC    GLOBAL DEFAULT  UND clock@LIBC (2)
+    48: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_timedwait@LIBC (2)
+    49: 00000000     0 FUNC    GLOBAL DEFAULT  UND sprintf@LIBC (2)
+    50: 00000000     0 FUNC    GLOBAL DEFAULT  UND fstat@LIBC (2)
+    51: 00000000     0 FUNC    GLOBAL DEFAULT  UND lseek64@LIBC (2)
+    52: 00000000     0 FUNC    GLOBAL DEFAULT  UND write@LIBC (2)
+    53: 00000000     0 FUNC    GLOBAL DEFAULT  UND syscall@LIBC (2)
+    54: 00000000     0 FUNC    GLOBAL DEFAULT  UND ftruncate64@LIBC (2)
+    55: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_post@LIBC (2)
+    56: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_destroy@LIBC (2)
+    57: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncmp@LIBC (2)
+    58: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_wait@LIBC (2)
+    59: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_exit@LIBC (2)
+    60: 00000000     0 FUNC    GLOBAL DEFAULT  UND fsync@LIBC (2)
+    61: 00000000     0 FUNC    GLOBAL DEFAULT  UND pipe@LIBC (2)
+    62: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_init@LIBC (2)
+    63: 00000000     0 FUNC    GLOBAL DEFAULT  UND __mmap2@LIBC (2)
+    64: 00000000     0 FUNC    GLOBAL DEFAULT  UND strncasecmp@LIBC (2)
+    65: 00000000     0 FUNC    GLOBAL DEFAULT  UND unlink@LIBC (2)
+    66: 00000000     0 FUNC    GLOBAL DEFAULT  UND stat@LIBC (2)
+    67: 00000000     0 FUNC    GLOBAL DEFAULT  UND chown@LIBC (2)
+    68: 00000000     0 FUNC    GLOBAL DEFAULT  UND utimensat@LIBC (2)
+    69: 00000000     0 FUNC    GLOBAL DEFAULT  UND getcwd@LIBC (2)
+    70: 00000000     0 FUNC    GLOBAL DEFAULT  UND mkdir@LIBC (2)
+    71: 00000000     0 FUNC    GLOBAL DEFAULT  UND remove@LIBC (2)
+    72: 00000000     0 FUNC    GLOBAL DEFAULT  UND rename@LIBC (2)
+    73: 00000000     0 FUNC    GLOBAL DEFAULT  UND rmdir@LIBC (2)
+    74: 00000000     0 FUNC    GLOBAL DEFAULT  UND closedir@LIBC (2)
+    75: 00000000     0 FUNC    GLOBAL DEFAULT  UND readdir@LIBC (2)
+    76: 00000000     0 FUNC    GLOBAL DEFAULT  UND link@LIBC (2)
+    77: 00000000     0 FUNC    GLOBAL DEFAULT  UND chmod@LIBC (2)
+    78: 00000000     0 FUNC    GLOBAL DEFAULT  UND lstat@LIBC (2)
+    79: 00000000     0 FUNC    GLOBAL DEFAULT  UND opendir@LIBC (2)
+    80: 00000000     0 FUNC    GLOBAL DEFAULT  UND strdup@LIBC (2)
+    81: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_self@LIBC (2)
+    82: 00000000     0 FUNC    GLOBAL DEFAULT  UND fstatat@LIBC (2)
+    83: 00000000     0 FUNC    GLOBAL DEFAULT  UND dirfd@LIBC (2)
+    84: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_setname_np@LIBC (2)
+    85: 00000000     0 FUNC    GLOBAL DEFAULT  UND gettid@LIBC (2)
+    86: 00000000     0 FUNC    GLOBAL DEFAULT  UND usleep@LIBC (2)
+    87: 00000000     0 FUNC    GLOBAL DEFAULT  UND ioctl@LIBC (2)
+    88: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlclose@LIBC (3)
+    89: 00000000     0 FUNC    GLOBAL DEFAULT  UND memmem@LIBC (2)
+    90: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlsym@LIBC (3)
+    91: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlopen@LIBC (3)
+    92: 00000000     0 FUNC    GLOBAL DEFAULT  UND dlerror@LIBC (3)
+    93: 00000000     0 FUNC    GLOBAL DEFAULT  UND memchr@LIBC (2)
+    94: 00000000     0 FUNC    GLOBAL DEFAULT  UND strtol@LIBC (2)
+    95: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_once@LIBC (2)
+    96: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    97: 00000000     0 FUNC    WEAK   DEFAULT  UND pthread_getspecific@LIBC (2)
+    98: 00000000     0 FUNC    WEAK   DEFAULT  UND pthread_setspecific@LIBC (2)
+    99: 00000000     0 FUNC    WEAK   DEFAULT  UND pthread_key_create@LIBC (2)
+   100: 00000000     0 FUNC    WEAK   DEFAULT  UND pthread_key_delete@LIBC (2)
+   101: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset@LIBC (2)
+   102: 00000000     0 FUNC    GLOBAL DEFAULT  UND strstr@LIBC (2)
+   103: 00000000     0 FUNC    GLOBAL DEFAULT  UND towupper@LIBC (2)
+   104: 00000000     0 FUNC    GLOBAL DEFAULT  UND wcsstr@LIBC (2)
+   105: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_memset8
+   106: 00000000     0 FUNC    GLOBAL DEFAULT  UND malloc@LIBC (2)
+   107: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+   108: 00000000     0 FUNC    GLOBAL DEFAULT  UND gmtime@LIBC (2)
+   109: 00000000     0 FUNC    GLOBAL DEFAULT  UND localtime@LIBC (2)
+   110: 00000000     0 FUNC    GLOBAL DEFAULT  UND mktime@LIBC (2)
+   111: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_wait@LIBC (2)
+   112: 00000000     0 FUNC    GLOBAL DEFAULT  UND symlink@LIBC (2)
+   113: 00000000     0 FUNC    GLOBAL DEFAULT  UND readlink@LIBC (2)
+   114: 00000000     0 FUNC    GLOBAL DEFAULT  UND strerror@LIBC (2)
+   115: 00000000     0 FUNC    GLOBAL DEFAULT  UND exit@LIBC (2)
+   116: 00000000     0 FUNC    GLOBAL DEFAULT  UND sysinfo@LIBC (2)
+   117: 00000000     0 FUNC    GLOBAL DEFAULT  UND sysconf@LIBC (2)
+   118: 00000000     0 FUNC    GLOBAL DEFAULT  UND memalign@LIBC (2)
+   119: 00000000     0 FUNC    GLOBAL DEFAULT  UND realloc@LIBC (2)
+   120: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_join@LIBC (2)
+   121: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_detach@LIBC (2)
+   122: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_attr_destroy@LIBC (2)
+   123: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_create@LIBC (2)
+   124: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_attr_setdetachstate@LIBC (2)
+   125: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_attr_init@LIBC (2)
+   126: 00000000     0 FUNC    GLOBAL DEFAULT  UND calloc@LIBC (2)
+   127: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_signal@LIBC (2)
+   128: 00000000     0 FUNC    GLOBAL DEFAULT  UND strchr@LIBC (2)
+   129: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init@LIBC (2)
+   130: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_init@LIBC (2)
+   131: 0022b30c    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKc
+   132: 00000000     0 FUNC    GLOBAL DEFAULT  UND time@LIBC (2)
+   133: 00000000     0 FUNC    GLOBAL DEFAULT  UND gettimeofday@LIBC (2)
+   134: 00000000     0 FUNC    GLOBAL DEFAULT  UND getpid@LIBC (2)
+   135: 00000000     0 FUNC    GLOBAL DEFAULT  UND close@LIBC (2)
+   136: 00000000     0 FUNC    GLOBAL DEFAULT  UND read@LIBC (2)
+   137: 00000000     0 FUNC    GLOBAL DEFAULT  UND open@LIBC (2)
+   138: 00000000     0 FUNC    GLOBAL DEFAULT  UND getppid@LIBC (2)
+   139: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno@LIBC (2)
+   140: 00000000     0 FUNC    GLOBAL DEFAULT  UND isatty@LIBC (2)
+   141: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __sF@LIBC (2)
+   142: 00000000     0 FUNC    GLOBAL DEFAULT  UND fileno@LIBC (2)
+   143: 00000000     0 FUNC    GLOBAL DEFAULT  UND wmemcpy@LIBC (2)
+   144: 001d01e1   156 FUNC    GLOBAL DEFAULT   12 __cxa_free_exception
+   145: 00000000     0 FUNC    GLOBAL DEFAULT  UND jGetTaskFlags
+   146: 001cfb65    36 FUNC    GLOBAL DEFAULT   12 android_getCpuCount
+   147: 00146a75    14 FUNC    GLOBAL DEFAULT   12 LZ4F_isError
+   148: 00146a85    52 FUNC    GLOBAL DEFAULT   12 LZ4F_getErrorName
+   149: 00146ab9     4 FUNC    GLOBAL DEFAULT   12 LZ4F_getVersion
+   150: 00146abd     4 FUNC    GLOBAL DEFAULT   12 LZ4F_compressionLevel_max
+   151: 00146ac1   116 FUNC    GLOBAL DEFAULT   12 LZ4F_compressFrameBound
+   152: 00146fad  1128 FUNC    GLOBAL DEFAULT   12 LZ4F_compressUpdate
+   153: 00147591   304 FUNC    GLOBAL DEFAULT   12 LZ4F_flush
+   154: 00147415    98 FUNC    GLOBAL DEFAULT   12 LZ4F_compressEnd
+   155: 00147477    24 FUNC    GLOBAL DEFAULT   12 LZ4F_compressFrame
+   156: 0014748f    30 FUNC    GLOBAL DEFAULT   12 LZ4F_createCompressionContext
+   157: 001474ad    30 FUNC    GLOBAL DEFAULT   12 LZ4F_freeCompressionContext
+   158: 001474cb    16 FUNC    GLOBAL DEFAULT   12 LZ4F_compressBegin
+   159: 001474dd   180 FUNC    GLOBAL DEFAULT   12 LZ4F_compressBound
+   160: 001476c1    30 FUNC    GLOBAL DEFAULT   12 LZ4F_createDecompressionContext
+   161: 001476df    36 FUNC    GLOBAL DEFAULT   12 LZ4F_freeDecompressionContext
+   162: 00147703    10 FUNC    GLOBAL DEFAULT   12 LZ4F_resetDecompressionContext
+   163: 0014770d   240 FUNC    GLOBAL DEFAULT   12 LZ4F_getFrameInfo
+   164: 001477fd  2188 FUNC    GLOBAL DEFAULT   12 LZ4F_decompress
+   165: 00000000     0 NOTYPE  WEAK   DEFAULT  UND ZSTD_trace_compress_begin
+   166: 00000000     0 NOTYPE  WEAK   DEFAULT  UND ZSTD_trace_compress_end
+   167: 00000000     0 NOTYPE  WEAK   DEFAULT  UND ZSTD_trace_decompress_end
+   168: 00000000     0 NOTYPE  WEAK   DEFAULT  UND ZSTD_trace_decompress_begin
+   169: 00000000     0 FUNC    GLOBAL DEFAULT  UND jGetStatus
+   170: 00000000     0 FUNC    GLOBAL DEFAULT  UND jSetProcessPercent
+   171: 00000000     0 FUNC    GLOBAL DEFAULT  UND jAskOverwrite
+   172: 00000000     0 FUNC    GLOBAL DEFAULT  UND jSetProcessText
+   173: 00000000     0 FUNC    GLOBAL DEFAULT  UND jShowMessage
+   174: 00000000     0 FUNC    GLOBAL DEFAULT  UND jFileExtracted
+   175: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+   176: 00000000     0 FUNC    GLOBAL DEFAULT  UND jArchiveInfo
+   177: 00000000     0 FUNC    GLOBAL DEFAULT  UND jGetPassword
+   178: 00000000     0 FUNC    GLOBAL DEFAULT  UND mimetype_get_name
+   179: 00000000     0 FUNC    GLOBAL DEFAULT  UND jSetComment
+   180: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z11al_add_filePKcixii
+   181: 00000000     0 FUNC    GLOBAL DEFAULT  UND jGetOemCodec
+   182: 001c809d   148 FUNC    GLOBAL DEFAULT   12 _Z11SetOEMCodeci
+   183: 0022b4a4    12 OBJECT  GLOBAL DEFAULT   18 _ZTISt9bad_alloc
+   184: 0021a6e8    13 OBJECT  GLOBAL DEFAULT   15 _ZTSSt9bad_alloc
+   185: 0021a4f0    13 OBJECT  GLOBAL DEFAULT   15 _ZTSSt9exception
+   186: 0022afb4     8 OBJECT  GLOBAL DEFAULT   18 _ZTISt9exception
+   187: 0022b038    32 OBJECT  GLOBAL DEFAULT   18 _ZTVN10__cxxabiv116__enum_type_infoE
+   188: 001c7cfd   416 FUNC    GLOBAL DEFAULT   12 p7za_pipe
+   189: 001c7e9d    24 FUNC    GLOBAL DEFAULT   12 p7za_main
+   190: 00000000     0 FUNC    GLOBAL DEFAULT  UND get_mbtowc
+   191: 00000000     0 FUNC    GLOBAL DEFAULT  UND get_wctomb
+   192: 001cf341   276 FUNC    GLOBAL DEFAULT   12 utf8_naive_is_correct
+   193: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z8za_closeP6ZAFILE
+   194: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z7za_openPKci
+   195: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z7za_readP6ZAFILEPvj
+   196: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z8za_lseekP6ZAFILExi
+   197: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z7za_sizeP6ZAFILE
+   198: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z9za_get_fdP6ZAFILE
+   199: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z15android_io_openPKci
+   200: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z16android_io_mkdirPKc
+   201: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z17android_io_mkdirsPKci
+   202: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z17android_io_renamePKcS0_
+   203: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z17android_io_removePKc
+   204: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z18android_io_opendirPKc
+   205: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z19android_io_closedirP14ANDROID_IO_DIR
+   206: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z18android_io_readdirP14ANDROID_IO_DIR
+   207: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Z15android_io_statPKcP4stat
+   208: 001cb10d  3108 FUNC    GLOBAL DEFAULT   12 archive_open
+   209: 00000000     0 FUNC    GLOBAL DEFAULT  UND bsd_signal
+   210: 001cc1f3    10 FUNC    GLOBAL DEFAULT   12 archive_cancel
+   211: 001cc1fd    72 FUNC    GLOBAL DEFAULT   12 archive_close
+   212: 001cc245   836 FUNC    GLOBAL DEFAULT   12 archive_stream_get
+   213: 001cc75d   424 FUNC    GLOBAL DEFAULT   12 archive_item_get_index
+   214: 001cca35    96 FUNC    GLOBAL DEFAULT   12 archive_item_get_count
+   215: 001cca95   400 FUNC    GLOBAL DEFAULT   12 archive_item_get
+   216: 001ccc25    80 FUNC    GLOBAL DEFAULT   12 archive_item_delete
+   217: 001cd009    92 FUNC    GLOBAL DEFAULT   12 archive_item_add
+   218: 001cd065    92 FUNC    GLOBAL DEFAULT   12 archive_item_rename
+   219: 001cd0c1    44 FUNC    GLOBAL DEFAULT   12 archive_comment_set
+   220: 001cf455    36 FUNC    GLOBAL DEFAULT   12 android_getCpuFamily
+   221: 001cfb3d    40 FUNC    GLOBAL DEFAULT   12 android_getCpuFeatures
+   222: 001cfb89    96 FUNC    GLOBAL DEFAULT   12 android_setCpu
+   223: 001cfbf9    36 FUNC    GLOBAL DEFAULT   12 android_getCpuIdArm
+   224: 001cfc1d   116 FUNC    GLOBAL DEFAULT   12 android_setCpuArm
+   225: 001cff65    50 FUNC    GLOBAL DEFAULT   12 _ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PPv
+   226: 001cff99    12 FUNC    GLOBAL DEFAULT   12 _ZNK10__cxxabiv117__class_type_info20__do_find_public_srcEiPKvPKS0_S2_
+   227: 001cffa5    28 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv117__class_type_infoD2Ev
+   228: 001cffa5    28 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv117__class_type_infoD1Ev
+   229: 001cffc1    18 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv117__class_type_infoD0Ev
+   230: 001cffd5    24 FUNC    GLOBAL DEFAULT   12 _ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PKvRNS0_15__upcast_resultE
+   231: 001cffed    42 FUNC    GLOBAL DEFAULT   12 _ZNK10__cxxabiv117__class_type_info10__do_catchEPKSt9type_infoPPvj
+   232: 001d0019    64 FUNC    GLOBAL DEFAULT   12 _ZNK10__cxxabiv117__class_type_info12__do_dyncastEiNS0_10__sub_kindEPKS0_PKvS3_S5_RNS0_16__dyncast_resultE
+   233: 00219a9c    34 OBJECT  GLOBAL DEFAULT   15 _ZTSN10__cxxabiv117__class_type_infoE
+   234: 0022af88    12 OBJECT  GLOBAL DEFAULT   18 _ZTIN10__cxxabiv117__class_type_infoE
+   235: 001d07e5     2 FUNC    GLOBAL DEFAULT   12 _ZNSt9exceptionD2Ev
+   236: 001d03bd     0 FUNC    GLOBAL DEFAULT   12 __cxa_end_cleanup
+   237: 001d027d   160 FUNC    GLOBAL DEFAULT   12 __cxa_allocate_dependent_exception
+   238: 001d031d   160 FUNC    GLOBAL DEFAULT   12 __cxa_free_dependent_exception
+   239: 001d04e9   112 FUNC    GLOBAL DEFAULT   12 __gnu_end_cleanup
+   240: 001d03c9   188 FUNC    GLOBAL DEFAULT   12 __cxa_type_match
+   241: 0022afe4     8 OBJECT  GLOBAL DEFAULT   18 _ZTIN10__cxxabiv119__foreign_exceptionE
+   242: 0022afac     8 OBJECT  GLOBAL DEFAULT   18 _ZTIN10__cxxabiv115__forced_unwindE
+   243: 001d0485   100 FUNC    GLOBAL DEFAULT   12 __cxa_begin_cleanup
+   244: 001d08d5    92 FUNC    GLOBAL DEFAULT   12 __cxa_get_globals
+   245: 001d0f29    40 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv111__terminateEPFvvE
+   246: 001d0fa5    10 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv112__unexpectedEPFvvE
+   247: 001d0ff9    12 FUNC    GLOBAL DEFAULT   12 _ZSt10unexpectedv
+   248: 001d08a9    44 FUNC    GLOBAL DEFAULT   12 __cxa_get_globals_fast
+   249: 0022afd8    12 OBJECT  GLOBAL DEFAULT   18 _ZTISt13bad_exception
+   250: 0022afc0    20 OBJECT  GLOBAL DEFAULT   18 _ZTVSt13bad_exception
+   251: 001d07e9    28 FUNC    GLOBAL DEFAULT   12 _ZNSt13bad_exceptionD1Ev
+   252: 001d06b5     4 FUNC    GLOBAL DEFAULT   12 __cxa_get_exception_ptr
+   253: 001d07d5    16 FUNC    GLOBAL DEFAULT   12 _ZSt18uncaught_exceptionv
+   254: 001d07e5     2 FUNC    GLOBAL DEFAULT   12 _ZNSt9exceptionD1Ev
+   255: 001d07e9    28 FUNC    GLOBAL DEFAULT   12 _ZNSt13bad_exceptionD2Ev
+   256: 001d0805    12 FUNC    GLOBAL DEFAULT   12 _ZNKSt9exception4whatEv
+   257: 001d0811    12 FUNC    GLOBAL DEFAULT   12 _ZNKSt13bad_exception4whatEv
+   258: 001d081d    18 FUNC    GLOBAL DEFAULT   12 _ZNSt9exceptionD0Ev
+   259: 001d0831    18 FUNC    GLOBAL DEFAULT   12 _ZNSt13bad_exceptionD0Ev
+   260: 001d07e5     2 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv115__forced_unwindD2Ev
+   261: 001d07e5     2 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv115__forced_unwindD1Ev
+   262: 001d0845    18 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv115__forced_unwindD0Ev
+   263: 001d07e5     2 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv119__foreign_exceptionD2Ev
+   264: 001d07e5     2 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv119__foreign_exceptionD1Ev
+   265: 001d0859    18 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv119__foreign_exceptionD0Ev
+   266: 0021a500    18 OBJECT  GLOBAL DEFAULT   15 _ZTSSt13bad_exception
+   267: 0021a4ac    32 OBJECT  GLOBAL DEFAULT   15 _ZTSN10__cxxabiv115__forced_unwindE
+   268: 0021a4cc    36 OBJECT  GLOBAL DEFAULT   15 _ZTSN10__cxxabiv119__foreign_exceptionE
+   269: 0022b020    20 OBJECT  GLOBAL DEFAULT   18 _ZTVSt9exception
+   270: 0022aff0    20 OBJECT  GLOBAL DEFAULT   18 _ZTVN10__cxxabiv115__forced_unwindE
+   271: 0022b008    20 OBJECT  GLOBAL DEFAULT   18 _ZTVN10__cxxabiv119__foreign_exceptionE
+   272: 001d0f51    44 FUNC    GLOBAL DEFAULT   12 _ZSt13set_terminatePFvvE
+   273: 0022c190     4 OBJECT  GLOBAL DEFAULT   22 _ZN10__cxxabiv119__terminate_handlerE
+   274: 001d0f7d    28 FUNC    GLOBAL DEFAULT   12 _ZSt13get_terminatev
+   275: 001d0fb1    44 FUNC    GLOBAL DEFAULT   12 _ZSt14set_unexpectedPFvvE
+   276: 0022c18c     4 OBJECT  GLOBAL DEFAULT   22 _ZN10__cxxabiv120__unexpected_handlerE
+   277: 001d0fdd    28 FUNC    GLOBAL DEFAULT   12 _ZSt14get_unexpectedv
+   278: 001d1141    28 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv116__enum_type_infoD2Ev
+   279: 001d1141    28 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv116__enum_type_infoD1Ev
+   280: 001d115d    18 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv116__enum_type_infoD0Ev
+   281: 0021a514    33 OBJECT  GLOBAL DEFAULT   15 _ZTSN10__cxxabiv116__enum_type_infoE
+   282: 0022b058    12 OBJECT  GLOBAL DEFAULT   18 _ZTIN10__cxxabiv116__enum_type_infoE
+   283: 001d1171    28 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv123__fundamental_type_infoD2Ev
+   284: 0022b400    32 OBJECT  GLOBAL DEFAULT   18 _ZTVN10__cxxabiv123__fundamental_type_infoE
+   285: 001d1171    28 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv123__fundamental_type_infoD1Ev
+   286: 001d118d    18 FUNC    GLOBAL DEFAULT   12 _ZN10__cxxabiv123__fundamental_type_infoD0Ev
+   287: 0021a664    40 OBJECT  GLOBAL DEFAULT   15 _ZTSN10__cxxabiv123__fundamental_type_infoE
+   288: 0022b420    12 OBJECT  GLOBAL DEFAULT   18 _ZTIN10__cxxabiv123__fundamental_type_infoE
+   289: 0021a538     2 OBJECT  WEAK   DEFAULT   15 _ZTSv
+   290: 0021a53c     3 OBJECT  WEAK   DEFAULT   15 _ZTSPv
+   291: 0021a540     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKv
+   292: 0021a544     2 OBJECT  WEAK   DEFAULT   15 _ZTSb
+   293: 0021a548     3 OBJECT  WEAK   DEFAULT   15 _ZTSPb
+   294: 0021a54c     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKb
+   295: 0021a550     2 OBJECT  WEAK   DEFAULT   15 _ZTSw
+   296: 0021a554     3 OBJECT  WEAK   DEFAULT   15 _ZTSPw
+   297: 0021a558     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKw
+   298: 0021a55c     3 OBJECT  WEAK   DEFAULT   15 _ZTSDs
+   299: 0021a560     4 OBJECT  WEAK   DEFAULT   15 _ZTSPDs
+   300: 0021a564     5 OBJECT  WEAK   DEFAULT   15 _ZTSPKDs
+   301: 0021a56c     3 OBJECT  WEAK   DEFAULT   15 _ZTSDi
+   302: 0021a570     4 OBJECT  WEAK   DEFAULT   15 _ZTSPDi
+   303: 0021a574     5 OBJECT  WEAK   DEFAULT   15 _ZTSPKDi
+   304: 0021a57c     2 OBJECT  WEAK   DEFAULT   15 _ZTSc
+   305: 0021a580     3 OBJECT  WEAK   DEFAULT   15 _ZTSPc
+   306: 0021a584     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKc
+   307: 0021a588     2 OBJECT  WEAK   DEFAULT   15 _ZTSa
+   308: 0021a58c     3 OBJECT  WEAK   DEFAULT   15 _ZTSPa
+   309: 0021a590     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKa
+   310: 0021a594     2 OBJECT  WEAK   DEFAULT   15 _ZTSh
+   311: 0021a598     3 OBJECT  WEAK   DEFAULT   15 _ZTSPh
+   312: 0021a59c     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKh
+   313: 0021a5a0     2 OBJECT  WEAK   DEFAULT   15 _ZTSs
+   314: 0021a5a4     3 OBJECT  WEAK   DEFAULT   15 _ZTSPs
+   315: 0021a5a8     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKs
+   316: 0021a5ac     2 OBJECT  WEAK   DEFAULT   15 _ZTSt
+   317: 0021a5b0     3 OBJECT  WEAK   DEFAULT   15 _ZTSPt
+   318: 0021a5b4     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKt
+   319: 0021a5b8     2 OBJECT  WEAK   DEFAULT   15 _ZTSi
+   320: 0021a5bc     3 OBJECT  WEAK   DEFAULT   15 _ZTSPi
+   321: 0021a5c0     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKi
+   322: 0021a5c4     2 OBJECT  WEAK   DEFAULT   15 _ZTSj
+   323: 0021a5c8     3 OBJECT  WEAK   DEFAULT   15 _ZTSPj
+   324: 0021a5cc     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKj
+   325: 0021a5d0     2 OBJECT  WEAK   DEFAULT   15 _ZTSl
+   326: 0021a5d4     3 OBJECT  WEAK   DEFAULT   15 _ZTSPl
+   327: 0021a5d8     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKl
+   328: 0021a5dc     2 OBJECT  WEAK   DEFAULT   15 _ZTSm
+   329: 0021a5e0     3 OBJECT  WEAK   DEFAULT   15 _ZTSPm
+   330: 0021a5e4     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKm
+   331: 0021a5e8     2 OBJECT  WEAK   DEFAULT   15 _ZTSx
+   332: 0021a5ec     3 OBJECT  WEAK   DEFAULT   15 _ZTSPx
+   333: 0021a5f0     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKx
+   334: 0021a5f4     2 OBJECT  WEAK   DEFAULT   15 _ZTSy
+   335: 0021a5f8     3 OBJECT  WEAK   DEFAULT   15 _ZTSPy
+   336: 0021a5fc     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKy
+   337: 0021a600     2 OBJECT  WEAK   DEFAULT   15 _ZTSf
+   338: 0021a604     3 OBJECT  WEAK   DEFAULT   15 _ZTSPf
+   339: 0021a608     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKf
+   340: 0021a60c     2 OBJECT  WEAK   DEFAULT   15 _ZTSd
+   341: 0021a610     3 OBJECT  WEAK   DEFAULT   15 _ZTSPd
+   342: 0021a614     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKd
+   343: 0021a618     2 OBJECT  WEAK   DEFAULT   15 _ZTSe
+   344: 0021a61c     3 OBJECT  WEAK   DEFAULT   15 _ZTSPe
+   345: 0021a620     4 OBJECT  WEAK   DEFAULT   15 _ZTSPKe
+   346: 0021a624     3 OBJECT  WEAK   DEFAULT   15 _ZTSDf
+   347: 0021a628     4 OBJECT  WEAK   DEFAULT   15 _ZTSPDf
+   348: 0021a62c     5 OBJECT  WEAK   DEFAULT   15 _ZTSPKDf
+   349: 0021a634     3 OBJECT  WEAK   DEFAULT   15 _ZTSDd
+   350: 0021a638     4 OBJECT  WEAK   DEFAULT   15 _ZTSPDd
+   351: 0021a63c     5 OBJECT  WEAK   DEFAULT   15 _ZTSPKDd
+   352: 0021a644     3 OBJECT  WEAK   DEFAULT   15 _ZTSDe
+   353: 0021a648     4 OBJECT  WEAK   DEFAULT   15 _ZTSPDe
+   354: 0021a64c     5 OBJECT  WEAK   DEFAULT   15 _ZTSPKDe
+   355: 0021a654     3 OBJECT  WEAK   DEFAULT   15 _ZTSDn
+   356: 0021a658     4 OBJECT  WEAK   DEFAULT   15 _ZTSPDn
+   357: 0021a65c     5 OBJECT  WEAK   DEFAULT   15 _ZTSPKDn
+   358: 0022b064    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKDn
+   359: 0022b438    36 OBJECT  GLOBAL DEFAULT   18 _ZTVN10__cxxabiv119__pointer_type_infoE
+   360: 0022b084     8 OBJECT  WEAK   DEFAULT   18 _ZTIDn
+   361: 0022b074    16 OBJECT  WEAK   DEFAULT   18 _ZTIPDn
+   362: 0022b08c    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKDe
+   363: 0022b0ac     8 OBJECT  WEAK   DEFAULT   18 _ZTIDe
+   364: 0022b09c    16 OBJECT  WEAK   DEFAULT   18 _ZTIPDe
+   365: 0022b0b4    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKDd
+   366: 0022b0d4     8 OBJECT  WEAK   DEFAULT   18 _ZTIDd
+   367: 0022b0c4    16 OBJECT  WEAK   DEFAULT   18 _ZTIPDd
+   368: 0022b0dc    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKDf
+   369: 0022b0fc     8 OBJECT  WEAK   DEFAULT   18 _ZTIDf
+   370: 0022b0ec    16 OBJECT  WEAK   DEFAULT   18 _ZTIPDf
+   371: 0022b104    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKe
+   372: 0022b124     8 OBJECT  WEAK   DEFAULT   18 _ZTIe
+   373: 0022b114    16 OBJECT  WEAK   DEFAULT   18 _ZTIPe
+   374: 0022b12c    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKd
+   375: 0022b14c     8 OBJECT  WEAK   DEFAULT   18 _ZTId
+   376: 0022b13c    16 OBJECT  WEAK   DEFAULT   18 _ZTIPd
+   377: 0022b154    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKf
+   378: 0022b174     8 OBJECT  WEAK   DEFAULT   18 _ZTIf
+   379: 0022b164    16 OBJECT  WEAK   DEFAULT   18 _ZTIPf
+   380: 0022b17c    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKy
+   381: 0022b19c     8 OBJECT  WEAK   DEFAULT   18 _ZTIy
+   382: 0022b18c    16 OBJECT  WEAK   DEFAULT   18 _ZTIPy
+   383: 0022b1a4    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKx
+   384: 0022b1c4     8 OBJECT  WEAK   DEFAULT   18 _ZTIx
+   385: 0022b1b4    16 OBJECT  WEAK   DEFAULT   18 _ZTIPx
+   386: 0022b1cc    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKm
+   387: 0022b1ec     8 OBJECT  WEAK   DEFAULT   18 _ZTIm
+   388: 0022b1dc    16 OBJECT  WEAK   DEFAULT   18 _ZTIPm
+   389: 0022b1f4    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKl
+   390: 0022b214     8 OBJECT  WEAK   DEFAULT   18 _ZTIl
+   391: 0022b204    16 OBJECT  WEAK   DEFAULT   18 _ZTIPl
+   392: 0022b21c    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKj
+   393: 0022b23c     8 OBJECT  WEAK   DEFAULT   18 _ZTIj
+   394: 0022b22c    16 OBJECT  WEAK   DEFAULT   18 _ZTIPj
+   395: 0022b244    16 OBJECT  WEAK   DEFAULT   18 _ZTIPKi
+   396: 0022b254    16 OBJECT  WEAK   DEFAULT   18 _ZTIPi

@@ -1,0 +1,8 @@
+Verb must be one of: 
+
+Usage:
+apkanalyzer [global options] <subject> <verb> [options] <apk> [<apk2>]
+
+Option            Description                         
+------            -----------                         
+--human-readable  Print sizes in human readable format
