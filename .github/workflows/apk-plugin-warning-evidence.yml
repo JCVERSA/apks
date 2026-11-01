@@ -55,9 +55,7 @@ jobs:
           emulator-boot-timeout: 900
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
           disable-animations: true
-          script: |
-            bash .github/scripts/run_plugin_warning_evidence.sh \
-              "${RUNNER_TEMP}/plugin-warning-apks/SnapTube-7.52.0.75250210-adfree-noforce-official-removed-r5.apk"
+          script: bash .github/scripts/run_plugin_warning_evidence.sh "${RUNNER_TEMP}/plugin-warning-apks/SnapTube-7.52.0.75250210-adfree-noforce-official-removed-r5.apk"
       - name: Decode and scan collected plugin APKs
         if: always()
         shell: bash
