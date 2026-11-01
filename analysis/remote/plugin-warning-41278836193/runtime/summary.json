@@ -1,0 +1,45 @@
+{
+  "status": "EVIDENCE_COLLECTED",
+  "plugin_apks": [
+    {
+      "remote": "/data/user/0/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/video_search_engine_1.4.70.apk",
+      "local": "/home/runner/work/_temp/plugin-warning-plugins/data__user__0__com.snaptube.premium__app_plugins__video_search_engine_1.4.70__video_search_engine_1.4.70.apk",
+      "size_bytes": 229782
+    },
+    {
+      "remote": "/data/user/0/com.snaptube.premium/app_plugins/site_extractor_2.24.505/site_extractor_2.24.505.apk",
+      "local": "/home/runner/work/_temp/plugin-warning-plugins/data__user__0__com.snaptube.premium__app_plugins__site_extractor_2.24.505__site_extractor_2.24.505.apk",
+      "size_bytes": 859748
+    },
+    {
+      "remote": "/data/user/0/com.snaptube.premium/app_plugins/ffmpeg_6.0.12/ffmpeg_6.0.12.apk",
+      "local": "/home/runner/work/_temp/plugin-warning-plugins/data__user__0__com.snaptube.premium__app_plugins__ffmpeg_6.0.12__ffmpeg_6.0.12.apk",
+      "size_bytes": 2677636
+    },
+    {
+      "remote": "/data/user/0/com.snaptube.premium/app_plugins/youtube-data-adapter_1.1.101/youtube-data-adapter_1.1.101.apk",
+      "local": "/home/runner/work/_temp/plugin-warning-plugins/data__user__0__com.snaptube.premium__app_plugins__youtube-data-adapter_1.1.101__youtube-data-adapter_1.1.101.apk",
+      "size_bytes": 466209
+    },
+    {
+      "remote": "/data/data/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/video_search_engine_1.4.70.apk",
+      "local": "/home/runner/work/_temp/plugin-warning-plugins/data__data__com.snaptube.premium__app_plugins__video_search_engine_1.4.70__video_search_engine_1.4.70.apk",
+      "size_bytes": 229782
+    },
+    {
+      "remote": "/data/data/com.snaptube.premium/app_plugins/site_extractor_2.24.505/site_extractor_2.24.505.apk",
+      "local": "/home/runner/work/_temp/plugin-warning-plugins/data__data__com.snaptube.premium__app_plugins__site_extractor_2.24.505__site_extractor_2.24.505.apk",
+      "size_bytes": 859748
+    },
+    {
+      "remote": "/data/data/com.snaptube.premium/app_plugins/ffmpeg_6.0.12/ffmpeg_6.0.12.apk",
+      "local": "/home/runner/work/_temp/plugin-warning-plugins/data__data__com.snaptube.premium__app_plugins__ffmpeg_6.0.12__ffmpeg_6.0.12.apk",
+      "size_bytes": 2677636
+    },
+    {
+      "remote": "/data/data/com.snaptube.premium/app_plugins/youtube-data-adapter_1.1.101/youtube-data-adapter_1.1.101.apk",
+      "local": "/home/runner/work/_temp/plugin-warning-plugins/data__data__com.snaptube.premium__app_plugins__youtube-data-adapter_1.1.101__youtube-data-adapter_1.1.101.apk",
+      "size_bytes": 466209
+    }
+  ]
+}

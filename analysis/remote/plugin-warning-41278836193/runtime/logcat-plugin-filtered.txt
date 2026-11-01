@@ -1,0 +1,94 @@
+11-01 05:58:37.075   426   426 I WVCdm-DrmFactory: [app][com.google.android.rkpdapp] calling virtual ::ndk::ScopedAStatus wvdrm::hardware::drm::widevine::WVDrmFactory::createDrmPlugin(const Uuid &, const string &, std::shared_ptr< ::aidl::android::hardware::drm::IDrmPlugin> *)
+11-01 05:58:37.795  3154  3256 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x6c], /data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM
+11-01 05:58:37.796  3154  3256 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x79c7c847f000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM]
+11-01 05:58:37.796  3154  3256 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x6d], /data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM.crc
+11-01 05:58:37.796  3154  3256 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x79c7c8429000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM.crc]
+11-01 05:58:37.843  3154  3247 D LaunchStart-doInitQueue: run PluginIdInitTask
+11-01 05:58:40.183  3154  3154 D PluginGlobalConfig: reflectAppContext: invoke=com.snaptube.premium.app.PhoenixApplication@f70eacb
+11-01 05:58:43.034  1501  1749 D StrictMode: 	at com.google.android.apps.gsa.staticplugins.actions.b.b.a(PG:208)
+11-01 05:58:43.035  1501  1749 D StrictMode: 	at com.google.android.apps.gsa.staticplugins.actions.b.b.a(PG:208)
+11-01 05:58:43.041  1501  1749 D StrictMode: 	at com.google.android.apps.gsa.staticplugins.actions.b.b.a(PG:208)
+11-01 05:58:45.532   558   687 W system_server: Long monitor contention with owner android.bg (592) at void android.app.ResourcesManager.registerAllResourcesReference(android.content.res.Resources)(ResourcesManager.java:1965) waiters=0 in android.content.res.Resources android.app.ResourcesManager.createResources(android.content.res.ResourcesKey, java.lang.ClassLoader, android.app.ResourcesManager$ApkAssetsSupplier) for 125ms
+11-01 05:58:46.499  1431  1751 W ModernMediaScanner: Failed to visit /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.video_search_engine_1.4.70.apk: java.nio.file.NoSuchFileException: /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.video_search_engine_1.4.70.apk
+11-01 05:58:46.517  3154  3404 W ziparchive: Unable to open '/data/user/0/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/video_search_engine_1.4.70.dm': No such file or directory
+11-01 05:58:46.605  3154  3920 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.video_search_engine_1.4.70.apk to null
+11-01 05:58:47.316  1431  1751 W ModernMediaScanner: Failed to visit /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.site_extractor_2.24.505.apk: java.nio.file.NoSuchFileException: /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.site_extractor_2.24.505.apk
+11-01 05:58:47.317  3154  3920 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.site_extractor_2.24.505.apk to null
+11-01 05:58:48.696  1431  1751 W ModernMediaScanner: Failed to visit /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.ffmpeg_6.0.12.apk: java.nio.file.NoSuchFileException: /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.ffmpeg_6.0.12.apk
+11-01 05:58:48.772  3154  3920 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.ffmpeg_6.0.12.apk to null
+11-01 05:58:49.237  1431  1751 W ModernMediaScanner: Failed to visit /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.youtube-data-adapter_1.1.101.apk: java.nio.file.NoSuchFileException: /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.youtube-data-adapter_1.1.101.apk
+11-01 05:58:49.327  3154  4011 D PluginGlobalConfig: reflectAppContext: invoke=com.snaptube.premium.app.PhoenixApplication@f70eacb
+11-01 05:58:49.390  3154  3920 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.youtube-data-adapter_1.1.101.apk to null
+11-01 05:58:50.574  3154  3439 W System.err: 	at com.snaptube.dataadapter.plugin.i.b(SourceFile:9)
+11-01 05:58:50.574  3154  3439 W System.err: 	at com.snaptube.dataadapter.plugin.i.a(SourceFile:54)
+11-01 05:58:50.574  3154  3439 W System.err: 	at com.snaptube.dataadapter.plugin.g.invoke(SourceFile:37)
+11-01 05:58:50.574  3154  3439 W System.err: 	at com.snaptube.dataadapter.plugin.c.e(SourceFile:5)
+11-01 05:58:50.574  3154  3439 W System.err: 	at com.snaptube.dataadapter.plugin.f.invoke(SourceFile:44)
+11-01 05:58:50.621  1501  1501 E A       : 	at com.google.android.apps.gsa.staticplugins.bp.a.f.a(PG:23)
+11-01 05:58:51.260  4027  4027 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-01 05:58:51.276  4027  4027 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-01 05:58:53.924   558   558 W System  : ClassLoader referenced unknown path: 
+11-01 05:58:55.081  1501  1729 E ApplicationPropertiesBu: 	at com.google.android.apps.gsa.staticplugins.t.c.b(PG:23)
+11-01 05:58:55.081  1501  1729 E ApplicationPropertiesBu: 	at com.google.android.apps.gsa.staticplugins.t.c.e(PG:10)
+11-01 05:58:55.081  1501  1729 E ApplicationPropertiesBu: 	at com.google.android.apps.gsa.staticplugins.t.c.a(PG:1036)
+11-01 05:58:55.081  1501  1729 E ApplicationPropertiesBu: 	at com.google.android.apps.gsa.staticplugins.t.i.a(PG:11)
+11-01 05:58:55.132  1501  1729 W A       : 	at com.google.android.apps.gsa.staticplugins.t.c.a(PG:1276)
+11-01 05:58:55.132  1501  1729 W A       : 	at com.google.android.apps.gsa.staticplugins.t.i.a(PG:11)
+11-01 05:58:55.135  1501  1729 W A       : 	at com.google.android.apps.gsa.staticplugins.t.c.a(PG:1276)
+11-01 05:58:55.135  1501  1729 W A       : 	at com.google.android.apps.gsa.staticplugins.t.i.a(PG:11)
+11-01 05:58:55.808  4219  4219 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-01 05:58:55.809  4219  4219 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-01 05:59:00.230  4343  4343 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-01 05:59:00.231  4343  4343 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-01 05:59:00.955  3708  3881 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+11-01 05:59:00.955  3708  3881 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+11-01 05:59:00.955  3708  3881 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+11-01 05:59:00.955  3708  3881 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+11-01 05:59:00.955  3708  3881 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+11-01 05:59:00.955  3708  3881 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+11-01 05:59:00.955  3708  3881 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+11-01 05:59:00.955  3708  3881 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+11-01 05:59:00.955  3708  3881 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+11-01 05:59:00.955  3708  3881 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+11-01 05:59:00.956  3708  3881 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+11-01 05:59:00.956  3708  3881 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+11-01 05:59:00.956  3708  3881 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+11-01 05:59:00.956  3708  3881 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+11-01 05:59:00.956  3708  3881 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+11-01 05:59:00.957  3708  3881 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+11-01 05:59:00.957  3708  3881 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+11-01 05:59:00.957  3708  3881 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+11-01 05:59:00.957  3708  3881 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+11-01 05:59:00.957  3708  3881 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+11-01 05:59:00.957  3708  3881 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+11-01 05:59:00.957  3708  3881 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+11-01 05:59:00.957  3708  3881 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+11-01 05:59:00.957  3708  3881 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+11-01 05:59:00.957  3708  3881 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+11-01 05:59:03.419  1431  1848 W ModernMediaScanner: Failed to visit /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.video_search_engine_1.4.70.apk: java.nio.file.NoSuchFileException: /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.video_search_engine_1.4.70.apk
+11-01 05:59:03.438  1431  1848 W ModernMediaScanner: Failed to visit /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.site_extractor_2.24.505.apk: java.nio.file.NoSuchFileException: /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.site_extractor_2.24.505.apk
+11-01 05:59:03.459  1431  1848 W ModernMediaScanner: Failed to visit /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.ffmpeg_6.0.12.apk: java.nio.file.NoSuchFileException: /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.ffmpeg_6.0.12.apk
+11-01 05:59:03.474  1431  1848 W ModernMediaScanner: Failed to visit /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.youtube-data-adapter_1.1.101.apk: java.nio.file.NoSuchFileException: /data/data/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.youtube-data-adapter_1.1.101.apk
+11-01 05:59:04.775  4447  4447 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-01 05:59:04.778  4447  4447 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-01 05:59:10.218  4560  4560 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-01 05:59:10.219  4560  4560 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-01 05:59:14.899  4672  4672 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-01 05:59:14.902  4672  4672 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-01 05:59:19.718  4774  4774 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-01 05:59:19.721  4774  4774 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-01 05:59:21.417  1501  1501 E A       : 	at com.google.android.apps.gsa.staticplugins.bp.a.f.a(PG:23)
+11-01 05:59:24.235  4837  4837 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-01 05:59:24.236  4837  4837 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-01 05:59:28.414  4884  4884 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-01 05:59:28.415  4884  4884 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-01 05:59:30.396  1201  1893 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=i1{delegate=f{logId=9, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=l2.Z@949acf5
+11-01 05:59:31.492  3154  3154 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment$special$$inlined$viewBinding$1.invoke(Unknown Source:27)
+11-01 05:59:31.492  3154  3154 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment$special$$inlined$viewBinding$1.invoke(Unknown Source:0)
+11-01 05:59:31.492  3154  3154 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment.p3(Unknown Source:2)
+11-01 05:59:31.499  3154  3154 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment.onCreateView(Unknown Source:5)
+11-01 05:59:33.751  1501  4963 I ZipLPPopulator: 	at com.google.android.apps.gsa.staticplugins.at.a.a(PG:9)
+11-01 05:59:33.912  1501  4970 I ZipLPPopulator: 	at com.google.android.apps.gsa.staticplugins.at.a.a(PG:9)
+11-01 05:59:34.026  1501  2438 I ZipLPPopulator: 	at com.google.android.apps.gsa.staticplugins.at.a.a(PG:9)
+11-01 05:59:51.574  5019  5019 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-01 05:59:51.574  5019  5019 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])

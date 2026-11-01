@@ -1,0 +1,217 @@
+/data/data/com.snaptube.premium/app_plugins:
+total 48
+drwxrwx--x  6 u0_a209 u0_a209       4096 2026-11-01 05:58 .
+drwx------ 11 u0_a209 u0_a209       4096 2026-11-01 05:58 ..
+drwx--S---  3 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ffmpeg_6.0.12
+drwx--S---  5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 site_extractor_2.24.505
+drwx--S---  5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 video_search_engine_1.4.70
+drwx--S---  5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 youtube-data-adapter_1.1.101
+
+/data/data/com.snaptube.premium/app_plugins/ffmpeg_6.0.12:
+total 2644
+drwx--S--- 3 u0_a209 u0_a209_cache    4096 2026-11-01 05:58 .
+drwxrwx--x 6 u0_a209 u0_a209          4096 2026-11-01 05:58 ..
+-rw------- 1 u0_a209 u0_a209_cache 2677636 2026-11-01 05:58 ffmpeg_6.0.12.apk
+drwx--S--- 2 u0_a209 u0_a209_cache    4096 2026-11-01 05:58 lib
+
+/data/data/com.snaptube.premium/app_plugins/ffmpeg_6.0.12/lib:
+total 5536
+drwx--S--- 2 u0_a209 u0_a209_cache    4096 2026-11-01 05:58 .
+drwx--S--- 3 u0_a209 u0_a209_cache    4096 2026-11-01 05:58 ..
+-rwx--x--x 1 u0_a209 u0_a209_cache 5645168 2026-11-01 05:58 libffmpeg.so
+
+/data/data/com.snaptube.premium/app_plugins/site_extractor_2.24.505:
+total 884
+drwx--S--- 5 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 .
+drwxrwx--x 6 u0_a209 u0_a209         4096 2026-11-01 05:58 ..
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 dex
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 lib
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 oat
+-r-------- 1 u0_a209 u0_a209_cache 859748 2026-11-01 05:58 site_extractor_2.24.505.apk
+
+/data/data/com.snaptube.premium/app_plugins/site_extractor_2.24.505/dex:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/data/com.snaptube.premium/app_plugins/site_extractor_2.24.505/lib:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/data/com.snaptube.premium/app_plugins/site_extractor_2.24.505/oat:
+total 20
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+-rw------- 1 u0_a209 u0_a209_cache    0 2026-11-01 05:58 site_extractor_2.24.505.apk.cur.prof
+
+/data/data/com.snaptube.premium/app_plugins/video_search_engine_1.4.70:
+total 272
+drwx--S--- 5 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 .
+drwxrwx--x 6 u0_a209 u0_a209         4096 2026-11-01 05:58 ..
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 dex
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 lib
+drwx--S--- 3 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 oat
+-r-------- 1 u0_a209 u0_a209_cache 229782 2026-11-01 05:58 video_search_engine_1.4.70.apk
+
+/data/data/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/dex:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/data/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/lib:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/data/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/oat:
+total 28
+drwx--S--- 3 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+-rw------- 1 u0_a209 u0_a209_cache    0 2026-11-01 05:58 video_search_engine_1.4.70.apk.cur.prof
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 x86_64
+
+/data/data/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/oat/x86_64:
+total 36
+drwx--S--- 2 u0_a209 u0_a209_cache  4096 2026-11-01 05:58 .
+drwx--S--- 3 u0_a209 u0_a209_cache  4096 2026-11-01 05:58 ..
+-rw------- 1 u0_a209 u0_a209_cache 13548 2026-11-01 05:58 video_search_engine_1.4.70.vdex
+
+/data/data/com.snaptube.premium/app_plugins/youtube-data-adapter_1.1.101:
+total 500
+drwx--S--- 5 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 .
+drwxrwx--x 6 u0_a209 u0_a209         4096 2026-11-01 05:58 ..
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 dex
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 lib
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:59 oat
+-r-------- 1 u0_a209 u0_a209_cache 466209 2026-11-01 05:58 youtube-data-adapter_1.1.101.apk
+
+/data/data/com.snaptube.premium/app_plugins/youtube-data-adapter_1.1.101/dex:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/data/com.snaptube.premium/app_plugins/youtube-data-adapter_1.1.101/lib:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/data/com.snaptube.premium/app_plugins/youtube-data-adapter_1.1.101/oat:
+total 24
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:59 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+-rw------- 1 u0_a209 u0_a209_cache  832 2026-11-01 05:59 youtube-data-adapter_1.1.101.apk.cur.prof
+
+/data/data/com.snaptube.premium/files/plugin:
+total 16
+drwx------ 2 u0_a209 u0_a209 4096 2026-11-01 05:58 .
+drwx------ 6 u0_a209 u0_a209 4096 2026-11-01 05:59 ..
+
+/data/user/0/com.snaptube.premium/app_plugins:
+total 48
+drwxrwx--x  6 u0_a209 u0_a209       4096 2026-11-01 05:58 .
+drwx------ 11 u0_a209 u0_a209       4096 2026-11-01 05:58 ..
+drwx--S---  3 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ffmpeg_6.0.12
+drwx--S---  5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 site_extractor_2.24.505
+drwx--S---  5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 video_search_engine_1.4.70
+drwx--S---  5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 youtube-data-adapter_1.1.101
+
+/data/user/0/com.snaptube.premium/app_plugins/ffmpeg_6.0.12:
+total 2644
+drwx--S--- 3 u0_a209 u0_a209_cache    4096 2026-11-01 05:58 .
+drwxrwx--x 6 u0_a209 u0_a209          4096 2026-11-01 05:58 ..
+-rw------- 1 u0_a209 u0_a209_cache 2677636 2026-11-01 05:58 ffmpeg_6.0.12.apk
+drwx--S--- 2 u0_a209 u0_a209_cache    4096 2026-11-01 05:58 lib
+
+/data/user/0/com.snaptube.premium/app_plugins/ffmpeg_6.0.12/lib:
+total 5536
+drwx--S--- 2 u0_a209 u0_a209_cache    4096 2026-11-01 05:58 .
+drwx--S--- 3 u0_a209 u0_a209_cache    4096 2026-11-01 05:58 ..
+-rwx--x--x 1 u0_a209 u0_a209_cache 5645168 2026-11-01 05:58 libffmpeg.so
+
+/data/user/0/com.snaptube.premium/app_plugins/site_extractor_2.24.505:
+total 884
+drwx--S--- 5 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 .
+drwxrwx--x 6 u0_a209 u0_a209         4096 2026-11-01 05:58 ..
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 dex
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 lib
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 oat
+-r-------- 1 u0_a209 u0_a209_cache 859748 2026-11-01 05:58 site_extractor_2.24.505.apk
+
+/data/user/0/com.snaptube.premium/app_plugins/site_extractor_2.24.505/dex:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/user/0/com.snaptube.premium/app_plugins/site_extractor_2.24.505/lib:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/user/0/com.snaptube.premium/app_plugins/site_extractor_2.24.505/oat:
+total 20
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+-rw------- 1 u0_a209 u0_a209_cache    0 2026-11-01 05:58 site_extractor_2.24.505.apk.cur.prof
+
+/data/user/0/com.snaptube.premium/app_plugins/video_search_engine_1.4.70:
+total 272
+drwx--S--- 5 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 .
+drwxrwx--x 6 u0_a209 u0_a209         4096 2026-11-01 05:58 ..
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 dex
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 lib
+drwx--S--- 3 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 oat
+-r-------- 1 u0_a209 u0_a209_cache 229782 2026-11-01 05:58 video_search_engine_1.4.70.apk
+
+/data/user/0/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/dex:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/user/0/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/lib:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/user/0/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/oat:
+total 28
+drwx--S--- 3 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+-rw------- 1 u0_a209 u0_a209_cache    0 2026-11-01 05:58 video_search_engine_1.4.70.apk.cur.prof
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 x86_64
+
+/data/user/0/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/oat/x86_64:
+total 36
+drwx--S--- 2 u0_a209 u0_a209_cache  4096 2026-11-01 05:58 .
+drwx--S--- 3 u0_a209 u0_a209_cache  4096 2026-11-01 05:58 ..
+-rw------- 1 u0_a209 u0_a209_cache 13548 2026-11-01 05:58 video_search_engine_1.4.70.vdex
+
+/data/user/0/com.snaptube.premium/app_plugins/youtube-data-adapter_1.1.101:
+total 500
+drwx--S--- 5 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 .
+drwxrwx--x 6 u0_a209 u0_a209         4096 2026-11-01 05:58 ..
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 dex
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:58 lib
+drwx--S--- 2 u0_a209 u0_a209_cache   4096 2026-11-01 05:59 oat
+-r-------- 1 u0_a209 u0_a209_cache 466209 2026-11-01 05:58 youtube-data-adapter_1.1.101.apk
+
+/data/user/0/com.snaptube.premium/app_plugins/youtube-data-adapter_1.1.101/dex:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/user/0/com.snaptube.premium/app_plugins/youtube-data-adapter_1.1.101/lib:
+total 16
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+
+/data/user/0/com.snaptube.premium/app_plugins/youtube-data-adapter_1.1.101/oat:
+total 24
+drwx--S--- 2 u0_a209 u0_a209_cache 4096 2026-11-01 05:59 .
+drwx--S--- 5 u0_a209 u0_a209_cache 4096 2026-11-01 05:58 ..
+-rw------- 1 u0_a209 u0_a209_cache  832 2026-11-01 05:59 youtube-data-adapter_1.1.101.apk.cur.prof
+
+/data/user/0/com.snaptube.premium/files/plugin:
+total 16
+drwx------ 2 u0_a209 u0_a209 4096 2026-11-01 05:58 .
+drwx------ 6 u0_a209 u0_a209 4096 2026-11-01 05:59 ..

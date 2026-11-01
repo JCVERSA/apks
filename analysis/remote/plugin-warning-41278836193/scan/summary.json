@@ -1,0 +1,806 @@
+{
+  "status": "EVIDENCE_COLLECTED",
+  "plugin_count": 8,
+  "plugins": [
+    {
+      "apk": "data__data__com.snaptube.premium__app_plugins__ffmpeg_6.0.12__ffmpeg_6.0.12.apk",
+      "size_bytes": 2677636,
+      "sha256": "3dd069d0450948dc1029e3b326971e5ec7bb8d32ff7d7e76988600ef1c23f64e",
+      "decoded": "/home/runner/work/_temp/plugin-warning-decoded/data__data__com.snaptube.premium__app_plugins__ffmpeg_6.0.12__ffmpeg_6.0.12",
+      "hits": {
+        "official_warning_class": 0,
+        "piratical_package": 0,
+        "official_ui_strings": 0,
+        "plugin_context_warning": 0,
+        "classloader": 0,
+        "signature_hash": 0
+      },
+      "files": []
+    },
+    {
+      "apk": "data__data__com.snaptube.premium__app_plugins__site_extractor_2.24.505__site_extractor_2.24.505.apk",
+      "size_bytes": 859748,
+      "sha256": "42ef0ad72fe5d7b22f3f0c0dd8aa40276e16ec336c63b6317c5460a71efe7059",
+      "decoded": "/home/runner/work/_temp/plugin-warning-decoded/data__data__com.snaptube.premium__app_plugins__site_extractor_2.24.505__site_extractor_2.24.505",
+      "hits": {
+        "official_warning_class": 0,
+        "piratical_package": 0,
+        "official_ui_strings": 1,
+        "plugin_context_warning": 13,
+        "classloader": 21,
+        "signature_hash": 8
+      },
+      "files": [
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/PluginProvider.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/common/AvailabilityChecker$b.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/common/AvailabilityChecker.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/common/QuickDownloadConfigProvider.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/common/d.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/models/VideoInfo.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/sites/extract/BackgroundWebExtractProvider.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/ClientConfigHelper$a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$b.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/a.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/y.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/z.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/youtube/Parser.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/youtube/m.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/i0/n.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/i0/o.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/i0/q.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/i0/r.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/k0/e.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/l/b.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/c.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/l/d.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/l/e.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/f.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/g.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/h.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/m/a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/n/c.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/o/g.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/o/l.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/o/m.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/y/h$a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/y/h.smali",
+          "patterns": [
+            "official_ui_strings"
+          ]
+        },
+        {
+          "file": "smali/y/o.smali",
+          "patterns": [
+            "classloader",
+            "signature_hash"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "data__data__com.snaptube.premium__app_plugins__video_search_engine_1.4.70__video_search_engine_1.4.70.apk",
+      "size_bytes": 229782,
+      "sha256": "a4c7f80e5ad1b1936c21f6197b80d64809b945a0c12db735594f0e65d7e3f93f",
+      "decoded": "/home/runner/work/_temp/plugin-warning-decoded/data__data__com.snaptube.premium__app_plugins__video_search_engine_1.4.70__video_search_engine_1.4.70",
+      "hits": {
+        "official_warning_class": 0,
+        "piratical_package": 0,
+        "official_ui_strings": 0,
+        "plugin_context_warning": 0,
+        "classloader": 5,
+        "signature_hash": 0
+      },
+      "files": [
+        {
+          "file": "smali/f/d.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/c.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/d.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/e.smali",
+          "patterns": [
+            "classloader"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "data__data__com.snaptube.premium__app_plugins__youtube-data-adapter_1.1.101__youtube-data-adapter_1.1.101.apk",
+      "size_bytes": 466209,
+      "sha256": "00a22c1074259faae85ee4a535ce992dd3bc490420942d6aac0a973701debb6d",
+      "decoded": "/home/runner/work/_temp/plugin-warning-decoded/data__data__com.snaptube.premium__app_plugins__youtube-data-adapter_1.1.101__youtube-data-adapter_1.1.101",
+      "hits": {
+        "official_warning_class": 0,
+        "piratical_package": 0,
+        "official_ui_strings": 0,
+        "plugin_context_warning": 0,
+        "classloader": 8,
+        "signature_hash": 6
+      },
+      "files": [
+        {
+          "file": "smali/a/b.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/dataadapter/plugin/f$a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/plugin/util/SLoggerHelper.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/i/b.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/j.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/okhttp3/CertificatePinner$Pin.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/okhttp3/CertificatePinner.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/okhttp3/internal/platform/AndroidPlatform.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/okhttp3/internal/platform/JdkWithJettyBootPlatform.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/t/n.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/t/o.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/t/q.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/t/r.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "data__user__0__com.snaptube.premium__app_plugins__ffmpeg_6.0.12__ffmpeg_6.0.12.apk",
+      "size_bytes": 2677636,
+      "sha256": "3dd069d0450948dc1029e3b326971e5ec7bb8d32ff7d7e76988600ef1c23f64e",
+      "decoded": "/home/runner/work/_temp/plugin-warning-decoded/data__user__0__com.snaptube.premium__app_plugins__ffmpeg_6.0.12__ffmpeg_6.0.12",
+      "hits": {
+        "official_warning_class": 0,
+        "piratical_package": 0,
+        "official_ui_strings": 0,
+        "plugin_context_warning": 0,
+        "classloader": 0,
+        "signature_hash": 0
+      },
+      "files": []
+    },
+    {
+      "apk": "data__user__0__com.snaptube.premium__app_plugins__site_extractor_2.24.505__site_extractor_2.24.505.apk",
+      "size_bytes": 859748,
+      "sha256": "42ef0ad72fe5d7b22f3f0c0dd8aa40276e16ec336c63b6317c5460a71efe7059",
+      "decoded": "/home/runner/work/_temp/plugin-warning-decoded/data__user__0__com.snaptube.premium__app_plugins__site_extractor_2.24.505__site_extractor_2.24.505",
+      "hits": {
+        "official_warning_class": 0,
+        "piratical_package": 0,
+        "official_ui_strings": 1,
+        "plugin_context_warning": 13,
+        "classloader": 21,
+        "signature_hash": 8
+      },
+      "files": [
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/PluginProvider.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/common/AvailabilityChecker$b.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/common/AvailabilityChecker.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/common/QuickDownloadConfigProvider.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/common/d.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/models/VideoInfo.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/sites/extract/BackgroundWebExtractProvider.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/ClientConfigHelper$a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$b.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/a.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/y.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/utils/z.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/youtube/Parser.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/extractor/pluginlib/youtube/m.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/i0/n.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/i0/o.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/i0/q.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/i0/r.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/k0/e.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/l/b.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/c.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/l/d.smali",
+          "patterns": [
+            "plugin_context_warning"
+          ]
+        },
+        {
+          "file": "smali/l/e.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/f.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/g.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/h.smali",
+          "patterns": [
+            "plugin_context_warning",
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/m/a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/n/c.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/o/g.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/o/l.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/o/m.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/y/h$a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/y/h.smali",
+          "patterns": [
+            "official_ui_strings"
+          ]
+        },
+        {
+          "file": "smali/y/o.smali",
+          "patterns": [
+            "classloader",
+            "signature_hash"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "data__user__0__com.snaptube.premium__app_plugins__video_search_engine_1.4.70__video_search_engine_1.4.70.apk",
+      "size_bytes": 229782,
+      "sha256": "a4c7f80e5ad1b1936c21f6197b80d64809b945a0c12db735594f0e65d7e3f93f",
+      "decoded": "/home/runner/work/_temp/plugin-warning-decoded/data__user__0__com.snaptube.premium__app_plugins__video_search_engine_1.4.70__video_search_engine_1.4.70",
+      "hits": {
+        "official_warning_class": 0,
+        "piratical_package": 0,
+        "official_ui_strings": 0,
+        "plugin_context_warning": 0,
+        "classloader": 5,
+        "signature_hash": 0
+      },
+      "files": [
+        {
+          "file": "smali/f/d.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/c.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/d.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/e.smali",
+          "patterns": [
+            "classloader"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "data__user__0__com.snaptube.premium__app_plugins__youtube-data-adapter_1.1.101__youtube-data-adapter_1.1.101.apk",
+      "size_bytes": 466209,
+      "sha256": "00a22c1074259faae85ee4a535ce992dd3bc490420942d6aac0a973701debb6d",
+      "decoded": "/home/runner/work/_temp/plugin-warning-decoded/data__user__0__com.snaptube.premium__app_plugins__youtube-data-adapter_1.1.101__youtube-data-adapter_1.1.101",
+      "hits": {
+        "official_warning_class": 0,
+        "piratical_package": 0,
+        "official_ui_strings": 0,
+        "plugin_context_warning": 0,
+        "classloader": 8,
+        "signature_hash": 6
+      },
+      "files": [
+        {
+          "file": "smali/a/b.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/dataadapter/plugin/f$a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/com/snaptube/plugin/util/SLoggerHelper.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/i/b.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/a.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/l/j.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/okhttp3/CertificatePinner$Pin.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/okhttp3/CertificatePinner.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/okhttp3/internal/platform/AndroidPlatform.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/okhttp3/internal/platform/JdkWithJettyBootPlatform.smali",
+          "patterns": [
+            "classloader"
+          ]
+        },
+        {
+          "file": "smali/t/n.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/t/o.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/t/q.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        },
+        {
+          "file": "smali/t/r.smali",
+          "patterns": [
+            "signature_hash"
+          ]
+        }
+      ]
+    }
+  ]
+}

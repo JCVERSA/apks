@@ -1,0 +1,141 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 136331 Realtime: 136331
+
+** MEMINFO in pid 3423 [com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0] **
+                   Pss  Private  Private     Swap      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap     1460     1376        0        0     5960    12648     5281     2461
+  Dalvik Heap      384      228        0        0     8156     3998     1999     1999
+ Dalvik Other      519      476        0        0     1484                           
+        Stack      176      172        0        0      192                           
+       Ashmem        8        0        0        0      544                           
+    Other dev        8        0        8        0      184                           
+     .so mmap      271       76        0        0    19764                           
+    .jar mmap      357        0        0        0    23408                           
+    .apk mmap      500        0        0        0     2732                           
+    .dex mmap       20        0        0        0      980                           
+    .oat mmap      134        0        0        0     8572                           
+    .art mmap      726      256        0        0    29516                           
+   Other mmap        9        4        0        0      828                           
+      Unknown      353      304        0        0     1376                           
+        TOTAL     4925     2892        8        0   103696    16646     7280     4460
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:      484                          37672
+         Native Heap:     1376                           5960
+                Code:       92                          55480
+               Stack:      172                            192
+            Graphics:        0                              0
+       Private Other:      776
+              System:     2025
+             Unknown:                                    4392
+ 
+           TOTAL PSS:     4925            TOTAL RSS:   103696      TOTAL SWAP (KB):        0
+ 
+ Objects
+               Views:        0         ViewRootImpl:        0
+         AppContexts:        3           Activities:        0
+              Assets:       21        AssetManagers:        0
+       Local Binders:        2        Proxy Binders:        6
+       Parcel memory:        2         Parcel count:       10
+    Death Recipients:        0             WebViews:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 
+
+** MEMINFO in pid 3154 [com.snaptube.premium] **
+                   Pss  Private  Private     Swap      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap    37369    37324        0        0    41328    52504    41708     6889
+  Dalvik Heap    26860    26756        0        0    34168    51049    26473    24576
+ Dalvik Other     9490     7960        0        0    11612                           
+        Stack     5640     5640        0        0     5648                           
+       Ashmem      162      152        0        0      748                           
+    Other dev       59        0       56        0      440                           
+     .so mmap     5905     1348      804        0    47084                           
+    .jar mmap     2015        0       68        0    45056                           
+    .apk mmap    21038      584     1624        0    72580                           
+    .ttf mmap      410        0       84        0     1476                           
+    .dex mmap    34970       12    34840        0    36180                           
+    .oat mmap      461        0        0        0    13156                           
+    .art mmap     1524     1100        0        0    29540                           
+   Other mmap    17626     9212     1824        0    27088                           
+      Unknown    10031    10028        0        0    10832                           
+        TOTAL   173560   100116    39300        0   376936   103553    68181    31465
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:    27856                          63708
+         Native Heap:    37324                          41328
+                Code:    39376                         218604
+               Stack:     5640                           5648
+            Graphics:        0                              0
+       Private Other:    29220
+              System:    34144
+             Unknown:                                   47648
+ 
+           TOTAL PSS:   173560            TOTAL RSS:   376936      TOTAL SWAP (KB):        0
+ 
+ Objects
+               Views:      254         ViewRootImpl:        3
+         AppContexts:       20           Activities:        2
+              Assets:       25        AssetManagers:        0
+       Local Binders:       81        Proxy Binders:       93
+       Parcel memory:       50         Parcel count:      202
+    Death Recipients:        6             WebViews:        0
+ 
+ SQL
+         MEMORY_USED:     2825
+  PAGECACHE_OVERFLOW:     1311          MALLOC_SIZE:       46
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b) cache hits cache misses cache size  Dbname
+PER CONNECTION STATS
+         4       16             92    16    54     9  /data/user/0/com.snaptube.premium/databases/track_manager_mtg_sdk.db
+         4       76             80    19    59     6  /data/user/0/com.snaptube.premium/databases/media.db
+         4       84             92    27    49    10  /data/user/0/com.snaptube.premium/databases/ttopensdk.db
+         4       56             46     2    63     5  /data/user/0/com.snaptube.premium/databases/com.google.android.datatransport.events
+         4       16             87    14    52     9  /data/user/0/com.snaptube.premium/databases/track_manager_metrics_sdk.db
+         4       96             68   130   161    25  /data/user/0/com.snaptube.premium/no_backup/androidx.work.workdb
+         4        8                    0     0     0    (attached) temp
+         4       96             60     9    18     6  /data/user/0/com.snaptube.premium/no_backup/androidx.work.workdb (3)
+         4       24             61     5    43     8  /data/user/0/com.snaptube.premium/databases/locker
+         4        8                    0     0     0    (attached) temp
+         4       36             41     4    41     6  /data/user/0/com.snaptube.premium/databases/clean.db
+         4        8                    0     0     0    (attached) temp
+         4       36             28     1    14     2  /data/user/0/com.snaptube.premium/databases/clean.db (3)
+         4       24             41     4    37     6  /data/user/0/com.snaptube.premium/databases/ad_guide.db
+         4        8                    0     0     0    (attached) temp
+         4       24             26     1    14     2  /data/user/0/com.snaptube.premium/databases/ad_guide.db (3)
+         4       20            123   165    45    20  /data/user/0/com.snaptube.premium/databases/snaptube.db
+         4      356             43   346    32     5  /data/user/0/com.snaptube.premium/databases/sensorsdata
+         4       32             58    22    34     7  /data/user/0/com.snaptube.premium/databases/pagmesdk.db
+         4       20            120   103    61    12  /data/user/0/com.snaptube.premium/databases/downloads.db
+         4       16             92    20    54     9  /data/user/0/com.snaptube.premium/databases/track_manager_monitor.db
+         4       96             67     6    66     9  /data/user/0/com.snaptube.premium/databases/mbridge.msdk.db
+         4       28             42     1    37     4  /data/user/0/com.snaptube.premium/databases/slog.db
+POOL STATS
+     cache hits  cache misses    cache size  Dbname
+             16            55            71  /data/user/0/com.snaptube.premium/databases/track_manager_mtg_sdk.db
+             19            60            79  /data/user/0/com.snaptube.premium/databases/media.db
+             27            50            77  /data/user/0/com.snaptube.premium/databases/ttopensdk.db
+              2            64            66  /data/user/0/com.snaptube.premium/databases/com.google.android.datatransport.events
+             14            53            67  /data/user/0/com.snaptube.premium/databases/track_manager_metrics_sdk.db
+            140           212           352  /data/user/0/com.snaptube.premium/no_backup/androidx.work.workdb
+              6            74            80  /data/user/0/com.snaptube.premium/databases/locker
+              6            87            93  /data/user/0/com.snaptube.premium/databases/clean.db
+              6            83            89  /data/user/0/com.snaptube.premium/databases/ad_guide.db
+            165            46           211  /data/user/0/com.snaptube.premium/databases/snaptube.db
+            346            33           379  /data/user/0/com.snaptube.premium/databases/sensorsdata
+             22            35            57  /data/user/0/com.snaptube.premium/databases/pagmesdk.db
+            103            62           165  /data/user/0/com.snaptube.premium/databases/downloads.db
+             20            55            75  /data/user/0/com.snaptube.premium/databases/track_manager_monitor.db
+              6            67            73  /data/user/0/com.snaptube.premium/databases/mbridge.msdk.db
+              1            38            39  /data/user/0/com.snaptube.premium/databases/slog.db
