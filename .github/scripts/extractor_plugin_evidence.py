@@ -15,9 +15,9 @@ CLASSES = [
     'com/snaptube/plugin/a',
     'com/snaptube/plugin/c16',
     'com/snaptube/premium/app/PhoenixApplication',
-    'o/nd2', 'o/lz5', 'o/jz5', 'o/kz5', 'o/c16',
+    'o/nd2', 'o/lz5', 'o/jz5', 'o/kz5', 'o/c16', 'o/dv8', 'o/qh3',
 ]
-RX = re.compile(r'pluginChecker|site_extractor|loadPluginImpl|AvailabilityChecker;->|Lo/nd2;->|Lo/kz5;->|PhoenixApplication;->O\(|PhoenixApplication;->D\(|OfficialWarningDialog|buildForbiddenResult|FORBIDDEN|shouldDownload|tryLoadNewestVersion')
+RX = re.compile(r'pluginChecker|site_extractor|loadPluginImpl|AvailabilityChecker;->|Lo/nd2;->|Lo/kz5;->|PhoenixApplication;->O\(|PhoenixApplication;->D\(|OfficialWarningDialog|buildForbiddenResult|FORBIDDEN|shouldDownload|tryLoadNewestVersion|ExtractorWrapper;-><init>|Lo/dv8;->D\(')
 MAX = 1_500_000
 
 
