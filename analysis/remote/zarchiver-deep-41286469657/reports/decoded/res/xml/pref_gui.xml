@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/OPT_SECTION_GUI"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:title="@string/OPT_TWO_TAB" android:key="iTwoTab" android:summary="@string/OPT_TWO_TAB_SETUP" android:defaultValue="false" />
+    <ListPreference android:entries="@array/OPT_LIST_LANGUAGE" android:title="@string/OPT_LANGUAGE" android:key="iLanguage" android:summary="%s" android:defaultValue="" android:dialogTitle="@string/OPT_LANGUAGE" android:entryValues="@array/OPT_LIST_LANGUAGE_VALUE" />
+    <ListPreference android:enabled="false" android:entries="@array/OPT_LIST_THEME" android:title="@string/OPT_THEME" android:key="iTheme" android:summary="@string/FREE_LIMIT_HELP" android:defaultValue="0" android:entryValues="@array/OPT_LIST_FILE_SORT_VALUE" />
+    <ru.zdevs.zarchiver.ui.preference.ColorPreference android:title="@string/OPT_ACTIONBAR_COLOR" android:key="iActionbarColorN" android:defaultValue="0" android:dialogTitle="@string/OPT_ACTIONBAR_COLOR" />
+    <ListPreference android:entries="@array/OPT_FS_LIST_ICON_THEME" android:title="@string/OPT_FS_ICON_THEME" android:key="iFSIconTheme" android:summary="%s" android:defaultValue="1" android:dialogTitle="@string/OPT_FS_ICON_THEME" android:entryValues="@array/OPT_LIST_FILE_SORT_VALUE" />
+    <CheckBoxPreference android:title="@string/OPT_SPLIT_ACTIONBAR" android:key="iSplitToolbar" android:summary="@string/OPT_SPLIT_ACTIONBAR_SETUP" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/OPT_FLOAT_BUTTON" android:key="iFloatButon" android:summary="@string/OPT_FLOAT_BUTTON_SETUP" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/OPT_TRANSPARENT_FAB" android:key="iTransparentFAB" android:summary="@string/OPT_TRANSPARENT_FAB_SETUP" android:dependency="iFloatButon" android:defaultValue="false" />
+    <ru.zdevs.zarchiver.ui.preference.SeekBarPreference android:persistent="true" android:title="@string/OPT_ITEM_SIZE" android:key="iFMItemSize2" android:summary="@string/OPT_ITEM_SIZE_SETUP" android:defaultValue="@dimen/list_item_size" android:dialogTitle="@string/OPT_ITEM_SIZE" app:maxValue="@dimen/list_item_size_max" app:minValue="@dimen/list_item_size_min" />
+    <ru.zdevs.zarchiver.ui.preference.SeekBarPreference android:persistent="true" android:title="@string/OPT_ITEM_FONT_SIZE" android:key="iFMItemFontSize" android:summary="@string/OPT_ITEM_FONT_SIZE_SETUP" android:defaultValue="@dimen/list_item_text_size" android:dialogTitle="@string/OPT_ITEM_FONT_SIZE" app:maxValue="@dimen/list_item_text_size_max" app:minValue="@dimen/list_item_text_size_min" />
+    <CheckBoxPreference android:title="@string/OPT_FAVOBAR" android:key="iFavoBar" android:summary="@string/OPT_FAVOBAR_SETUP" android:defaultValue="true" />
+    <ListPreference android:entries="@array/OPT_LIST_BACKGROUND" android:title="@string/OPT_BACKGROUND" android:key="iGUIBackground" android:summary="%s" android:defaultValue="3" android:dialogTitle="@string/OPT_BACKGROUND" android:entryValues="@array/OPT_LIST_BACKGROUND_VALUE" />
+    <ru.zdevs.zarchiver.ui.preference.FileSelectPreference android:title="@string/OPT_CUSTOM_BG" android:key="iGUICustomBGPath" android:summary="@string/OPT_CUSTOM_BG_SETUP" android:dialogTitle="@string/OPT_CUSTOM_BG" app:folderSelect="0" />
+    <CheckBoxPreference android:title="@string/OPT_ANIMATION" android:key="iGUIAnimation" android:summary="@string/OPT_ANIMATION_SETUP" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/OPT_FAST_SCROLL" android:key="iGUIFastScroll" android:summary="@string/OPT_FAST_SCROLL_SETUP" android:defaultValue="true" />
+</PreferenceScreen>

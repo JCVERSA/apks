@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ABT_APP_WEBSITE">Homepage: http://zdevs.ru</string>
+    <string name="ABT_AUTHOR">© 2011–2024 Ant-ON, &lt;support@zdevs.ru></string>
+    <string name="ABT_DONATE">Donate</string>
+    <string name="ABT_DONATE_GENERAL">"You can help in various ways:
+ 1. Translate the program to another language or fix existing translations. Localization files: %1$s;
+ 2. Buy the Donate/Pro version;
+ 3. Share your ideas or report problems;
+ 4. Show your gratitude to the author by making a donation:"</string>
+    <string name="ABT_DONATE_PAY">YooMoney: 41001641043147</string>
+    <string name="ABT_OPEN_SOURCE">Open Source</string>
+    <string name="ABT_OPEN_SOURCE_7ZIP">"&lt;7-Zip>
+7-Zip is licensed under the GNU LGPL (version 2.1) and unRAR restriction.
+Site:\t\thttp://7-zip.org
+License:\thttp://7-zip.org/license.txt"</string>
+    <string name="ABT_OPEN_SOURCE_AOSP">"&lt;AOSP>
+Site:\thttps://source.android.com
+License:\tApache 2.0"</string>
+    <string name="ABT_OPEN_SOURCE_APKPARSER">"&lt;APK Parser Lib>
+Site:\thttps://github.com/hsiafan/apk-parser
+License:\tBSD"</string>
+    <string name="ABT_OPEN_SOURCE_BUSYBOX">"&lt;BusyBox>
+Site:\thttps://busybox.net
+License:\tGNU GPL"</string>
+    <string name="ABT_OPEN_SOURCE_FREEBSD">"&lt;FreeBSD>
+Site:\thttps://freebsd.org
+License:\tBSD"</string>
+    <string name="ABT_OPEN_SOURCE_FREELZMA2">"&lt;Fast LZMA2 Library>
+Author:\tConor McCarthy
+License:\tBSD"</string>
+    <string name="ABT_OPEN_SOURCE_ICONV">"&lt;libiconv>
+License:\tGNU LGPL
+Site:\t\thttp://www.gnu.org/software/libiconv"</string>
+    <string name="ABT_OPEN_SOURCE_ICON_1">"&lt;Human-O2 Icons>
+Author:\tOliver Scholtz (and others)
+License:\tGNU LGPL"</string>
+    <string name="ABT_OPEN_SOURCE_ICON_5">"&lt;Numix icon theme>
+Author:\tNumix Project
+License:\tGNU GPL
+Site:\t\thttp://numixproject.org"</string>
+    <string name="ABT_OPEN_SOURCE_LZ4">"&lt;LZ4 Library>
+Author:\tYann Collet
+License:\tBSD"</string>
+    <string name="ABT_OPEN_SOURCE_R2D2">"&lt;r2d2>
+Site:\thttps://github.com/moldedbits/r2d2
+License:\tApache 2.0"</string>
+    <string name="ABT_OPEN_SOURCE_SUBSAMPLING_IV">"&lt;Subsampling Scale Image View>
+Site:\thttps://github.com/davemorrissey/subsampling-scale-image-view
+License:Apache 2.0"</string>
+    <string name="ABT_OPEN_SOURCE_TOASTCOMPAT">"&lt;ToastCompat>
+Site:\thttps://github.com/PureWriter/ToastCompat
+License:\tApache 2.0"</string>
+    <string name="ABT_OPEN_SOURCE_UNEGG">"&lt;UnEgg>
+Site:\t\thttp://www.estsoft.com
+License:\tUnEgg license"</string>
+    <string name="ABT_OPEN_SOURCE_UNRAR">"&lt;UnRAR>
+Author:\tAlexander Roshal
+Site:\t\thttp://rarlab.com
+License:\tUnRAR license"</string>
+    <string name="ABT_OPEN_SOURCE_ZSTD">"&lt;ZSTD Library>
+Author:\tYann Collet
+License:\tBSD"</string>
+    <string name="ABT_PRIVACY_POLICY">Privacy policy</string>
+    <string name="ABT_PRIVATE_POLICY_URL">http://zdevs.ru/za_privacy_policy.txt</string>
+    <string name="ABT_TERM_OF_SERVICE">Terms of service</string>
+    <string name="ABT_THANKS">Thanks</string>
+    <string name="ABT_TRANSLATORS">"ajibayi（اجىباي） - Kirghiz (Arabic) localization
+andrii - Перевод на Украинский (с 22.10.2017)
+Axii - Lokalizacja Polska
+cadixu - 繁中翻譯
+Chanson Yu - 简体中文翻译
+Dado Dehrimon - Translation into Croatian
+Donatas Ikanevičius - Lietuviškas vertimas
+Drake Strike - Translate to Vietnamese
+ekberjan - Uighur localization
+Fatih Fırıncı - Türkçe Çeviri (since 11.01.2018)
+fprietog - Traducción al español
+Hairo - Traducción al español
+Hazem Hamdi - Arabic localization
+Ivan Kalev - Bulgarian localization
+Junbeom Seo - Translation into Korean
+Kai Budell - Übersetzung ins Deutsche
+Mariya Zhulyakova - Fix translations
+Mehrab Poladov - Translation into Azerbaijan
+MoskriETF - Prevod na srpski
+Muhammad Bintang Proklamasi - Translation into Indonesia
+Mustafa Bozkurt - Türkçe Çeviri
+Netbew - Traduction Française
+Nikolaj Schneider - German translation
+Paulo Oliveira - Tradução Português (Brasil)
+Petros Kyladitis - Για την Ελληνική γλώσσα
+pyler - Slovenský preklad
+Radosław Słowik - Lokalizacja Polska
+Renek - Translation into Czech
+Robin Kluth - Übersetzung ins Deutsche
+Roni Andria - Bahasa Indonesia
+Scott Chang - 繁中翻譯 (since 01.06.2017)
+Saeid Rastegar - Persian localization
+stigr - Перевод на Украинский
+SVM - English localization
+Taka - Japanese localization (since 01.01.2016)
+Tasuku Tabuchi - Japanese localization
+TJL73 - Traduzione italiana
+umarhoj - Arabic localization
+Vladislav Fox - help with everything, fresh ideas and translate
+Wanderson XM7 - Tradução Português (Brasil) (since 13.11.2017)
+Xia Bui - Translate to Vietnamese
+Zafar Shamsiddinov - Translate to Uzbek
+ZityiSoft - Magyar fordítás
+Zorge.R - Useful ideas
+Живко Жеков aka jekovcar - Bulgarian localization
+吴天豪 - Simplified Chinese localization
+刁海 - 中文简体翻译 (更新于 2014.12.30)"</string>
+    <string name="ABT_TTL_ABOUT">About</string>
+    <string name="ADDF_ENTER_FAVORITE_NAME">Enter bookmark name for %1:</string>
+    <string name="ADDF_FAVORITE_ICON">Icon:</string>
+    <string name="ADDF_TTL_ADD_FAVORITE">Add to favorites</string>
+    <string name="ADD_ENCRYPT_FILES">Password-protect files</string>
+    <string name="ADD_SELECTED_FILES">Selected files: %1</string>
+    <string name="ADD_TTL_FILE">Add file</string>
+    <string name="ADD_TTL_FOLDER">Add folder</string>
+    <string name="BTN_ADD">Add</string>
+    <string name="BTN_AGREE">Agree</string>
+    <string name="BTN_CANCEL">Cancel</string>
+    <string name="BTN_COPY">Copy</string>
+    <string name="BTN_HIDE">Hide</string>
+    <string name="BTN_NO">No</string>
+    <string name="BTN_OK">OK</string>
+    <string name="BTN_REPLACE">Replace</string>
+    <string name="BTN_SKIP">Skip</string>
+    <string name="BTN_USE_ALWAYS">Always</string>
+    <string name="BTN_USE_ONCE">Just once</string>
+    <string name="BTN_YES">Yes</string>
+    <string name="CMP_DELETE_FILE">Delete source files after compression</string>
+    <string name="CMP_ENCRYPT">Encryption:</string>
+    <string name="CMP_ENCRYPT_AES128">Data (AES-128)</string>
+    <string name="CMP_ENCRYPT_AES192">Data (AES-192)</string>
+    <string name="CMP_ENCRYPT_AES256">Data (AES-256)</string>
+    <string name="CMP_ENCRYPT_AES256_WITH_NAME">Data and filenames (AES-256)</string>
+    <string name="CMP_ENCRYPT_ZIPCRYPT">Data (ZipCrypto)</string>
+    <string name="CMP_ENTER_PASSWORD">Enter password</string>
+    <string name="CMP_FORMAT">Archive format:</string>
+    <string name="CMP_LEVEL">Compression level:</string>
+    <string name="CMP_NAME">Archive:</string>
+    <string name="CMP_PART_SIZE">Volume size:</string>
+    <string name="CMP_PASSWORD">Password:</string>
+    <string name="CMP_SEPARATE_ARCHIVE">Create separate archive</string>
+    <string name="CMP_SPLIT">Split into volumes:</string>
+    <string name="CMP_SPLIT_NO">No</string>
+    <string name="CMP_SPLIT_OVER_SIZE">Other size…</string>
+    <string name="CMP_TTL_COMPRESS">Create archive</string>
+    <string name="CMT_ARCHIVE_COOMENT">Archive comment:</string>
+    <string name="DNT_TRANSLATE_SERVICE_URL">https://crowdin.com/project/zarchiverfree</string>
+    <string name="DNT_TRANSLATE_URL">https://yadi.sk/d/NTCnBMmK3SHmt2</string>
+    <string name="ERROR_7Z_LIB">"Error load the p7zip library!
+Not found library for architecture of your phone.
+Try download ZArchiver application from Google Play / AppGallery!"</string>
+    <string name="ERROR_CRC_ERROR">Corrupt archive (CRC error)</string>
+    <string name="ERROR_DATA_ERROR">Data error</string>
+    <string name="ERROR_IS_NOT_ARCHIVE">Cannot open file as archive</string>
+    <string name="ERROR_NOT_ENOUGH_DISK_SPACE">Not enough disk space</string>
+    <string name="ERROR_OUT_OF_MEMORY">Not enough RAM</string>
+    <string name="ERROR_UNEXPECTED_END">Unexpected end of archive</string>
+    <string name="ERROR_UNKNOWN_FORMAT">Unknown archive format</string>
+    <string name="ERROR_UNSUPORTED_METOD">Method not supported</string>
+    <string name="ERROR_WRONG_PASSWORD">Invalid password</string>
+    <string name="FINFO_APK_INFO">Android Package properties</string>
+    <string name="FINFO_APK_NAME">Name:</string>
+    <string name="FINFO_APK_SDK">SDK:</string>
+    <string name="FINFO_APK_VERSION">Version:</string>
+    <string name="FINFO_APK_VERSION_CODE">Version code:</string>
+    <string name="FINFO_ARCHIVE">Archive:</string>
+    <string name="FINFO_ARCHIVE_FILE_COUNT">File count:</string>
+    <string name="FINFO_ARCHIVE_INFO">Archive properties</string>
+    <string name="FINFO_ARCHIVE_SIZE">Content size:</string>
+    <string name="FINFO_ARCHIVE_SOLID">Solid:</string>
+    <string name="FINFO_ARCHIVE_TYPE">Type:</string>
+    <string name="FINFO_AUDIO_INFO">Audio properties</string>
+    <string name="FINFO_BOOK_AUTOR">Author:</string>
+    <string name="FINFO_BOOK_INFO">Book properties</string>
+    <string name="FINFO_BOOK_PAGES">Pages:</string>
+    <string name="FINFO_BOOK_TITLE">Title:</string>
+    <string name="FINFO_COMPRESSION_RATIO">Compression ratio:</string>
+    <string name="FINFO_DOCUMENT_INFO">Document properties</string>
+    <string name="FINFO_FREE_SPACE">Free:</string>
+    <string name="FINFO_FS_PATH">FS path:</string>
+    <string name="FINFO_FS_TYPE">FS type:</string>
+    <string name="FINFO_FS_TYPE_ARCHIVE">Archive</string>
+    <string name="FINFO_GENERAL_INFO">General information</string>
+    <string name="FINFO_IMAGE_CAMERA_MAKE">Camera Maker:</string>
+    <string name="FINFO_IMAGE_CAMERA_MODEL">Camera Model:</string>
+    <string name="FINFO_IMAGE_INFO">Image properties</string>
+    <string name="FINFO_IMAGE_SIZE">Resolution:</string>
+    <string name="FINFO_LAST_MOD">Last modification:</string>
+    <string name="FINFO_LINK_TO">Link to:</string>
+    <string name="FINFO_MD5">MD5:</string>
+    <string name="FINFO_MEDIA_ARTIST">Artist:</string>
+    <string name="FINFO_MEDIA_BITRATE">Bitrate:</string>
+    <string name="FINFO_MEDIA_DURATION">Duration:</string>
+    <string name="FINFO_MEDIA_GENRE">Genre:</string>
+    <string name="FINFO_MEDIA_TITLE">Title:</string>
+    <string name="FINFO_NOMEDIA">Disable media scanning</string>
+    <string name="FINFO_PERMISSIONS">Permissions:</string>
+    <string name="FINFO_SIZE">Size:</string>
+    <string name="FINFO_TTL_FILE_INFO">File information</string>
+    <string name="FINFO_TYPE">Type:</string>
+    <string name="FINFO_TYPE_FILE_GROUP">Group</string>
+    <string name="FINFO_TYPE_FOLDER">Folder</string>
+    <string name="FINFO_TYPE_LINK">Link</string>
+    <string name="FINFO_USER_GROUP">UID/GID:</string>
+    <string name="FINFO_VIDEO_INFO">Video properties</string>
+    <string name="FREE_LIMIT_HELP">For Donate/Pro version users only</string>
+    <string name="FSD_ACCESS_FILES_DENIED">The File app version does not support grant access to folders.</string>
+    <string name="FSD_ACCESS_TO_ALL_STORAGE">"ZArchiver needs permission to read, modify, and delete files to access your phone's files."</string>
+    <string name="FSD_ACCESS_TO_OBB_FOLDER">ZArchiver needs permission to install packages to access the Android/OBB folder.</string>
+    <string name="FSD_ALLOW_ACCESS_TO_EXT_SD">To write data to the external SD card %1, you must allow access to it.</string>
+    <string name="FSD_DONT_SHOW">Do not show again</string>
+    <string name="FSD_INCORRECT_PATH">Wrong path to %1 was selected!</string>
+    <string name="FSD_REMOVE_FILES_UPDATE">You may to uninstall this update.</string>
+    <string name="FSD_SELECT_PATH_TO_EXT_SD">You must choose a path to %1 to write to it.</string>
+    <string name="FSD_TTL_FIX_SD">Warning!</string>
+    <string name="FSD_USE_ROOT">You may use root access or Shizuku.</string>
+    <string name="FSD_WARNING_TEXT">Android OS restricts write access of third-party apps (not preinstalled on the device) to external USB flash drives and SD cards.</string>
+    <string name="FVR_ARCHIVE">Archives</string>
+    <string name="FVR_DEVICE">Disk %1</string>
+    <string name="FVR_DOCUMENTS">Documents</string>
+    <string name="FVR_DOWNLOAD">Download</string>
+    <string name="FVR_EXTERNAL">SD Card %1</string>
+    <string name="FVR_EXTERNAL_USB">USB Flash %1</string>
+    <string name="FVR_HOME">Home folder</string>
+    <string name="FVR_INTERNAL">Device storage</string>
+    <string name="FVR_MUSIC">Music</string>
+    <string name="HELP_ARCHIVE_NAME">"&lt;name> - name of file without extension
+&lt;name.ext> - name of file with extension"</string>
+    <string name="HELP_GET_PASSWORD">"Passwords for archives are set by their authors. Look for passwords in the same place as the link to the archive, if you are not its author. Unfortunately, ZA's developer isn't able to help you recover password of the archive."</string>
+    <string name="INFO_B">B</string>
+    <string name="INFO_GB">GB</string>
+    <string name="INFO_KB">KB</string>
+    <string name="INFO_KB_S">KB/s</string>
+    <string name="INFO_MB">MB</string>
+    <string name="INFO_MB_S">MB/s</string>
+    <string name="MENU_ABOUT">About</string>
+    <string name="MENU_ADD">Add</string>
+    <string name="MENU_ADD_FILES">Add file</string>
+    <string name="MENU_ADD_FOLDER">Add folder</string>
+    <string name="MENU_ALL_SELECT">Select all</string>
+    <string name="MENU_BACKUP">Backup</string>
+    <string name="MENU_CHARSET">Charset</string>
+    <string name="MENU_CLEAR_SELECT">Deselect all</string>
+    <string name="MENU_COMMENT">Comment</string>
+    <string name="MENU_COMPRESS_AS">Compress to</string>
+    <string name="MENU_COMPRESS_TO">Compress…</string>
+    <string name="MENU_COPY">Copy</string>
+    <string name="MENU_CUT">Cut</string>
+    <string name="MENU_DELETE">Delete</string>
+    <string name="MENU_EXIT">Exit</string>
+    <string name="MENU_EXTRACT_TO">Extract…</string>
+    <string name="MENU_EXTRACT_TO_CURRENT_DIR">Extract here</string>
+    <string name="MENU_EXTRACT_TO_DIR">Extract to ./&lt;Archive name>/</string>
+    <string name="MENU_FAVORITE_ADD">Add to Favorites</string>
+    <string name="MENU_FEEDBACK">Send feedback</string>
+    <string name="MENU_FONT">Font</string>
+    <string name="MENU_FONT_SIZE">Font size</string>
+    <string name="MENU_INFO">Information</string>
+    <string name="MENU_INSTALL">Install</string>
+    <string name="MENU_INVERT_SELECT">Invert selection</string>
+    <string name="MENU_LINE_NUMBER">Line number</string>
+    <string name="MENU_MOVE_UP">Move Up</string>
+    <string name="MENU_MULTISELECT">Multi-select</string>
+    <string name="MENU_NEW">Create</string>
+    <string name="MENU_NEW_ARCHIVE">New archive</string>
+    <string name="MENU_NEW_FILE">New file</string>
+    <string name="MENU_NEW_FOLDER">New folder</string>
+    <string name="MENU_OPEN">Open</string>
+    <string name="MENU_OPEN_AS_ARC">Open as archive</string>
+    <string name="MENU_PAST">Paste</string>
+    <string name="MENU_PERMISSIONS">Permissions</string>
+    <string name="MENU_RATE">Rate</string>
+    <string name="MENU_REMOUNT_RO">Remount to RO</string>
+    <string name="MENU_REMOUNT_RW">Remount to RW</string>
+    <string name="MENU_RENAME">Rename</string>
+    <string name="MENU_RESTORE">Restore</string>
+    <string name="MENU_SAVE">Save</string>
+    <string name="MENU_SEARCH">Search</string>
+    <string name="MENU_SELECT">Select</string>
+    <string name="MENU_SELECTED_FILES">Selected files</string>
+    <string name="MENU_SETTINGS">Settings</string>
+    <string name="MENU_SHARE">Share</string>
+    <string name="MENU_SHARE_APP">Share this app</string>
+    <string name="MENU_SORT_BY_DATE">Date</string>
+    <string name="MENU_SORT_BY_NAME">Name</string>
+    <string name="MENU_SORT_BY_SIZE">Size</string>
+    <string name="MENU_SORT_BY_TYPE">Type</string>
+    <string name="MENU_SORT_DESC">Desc</string>
+    <string name="MENU_SORT_MODE">Sort</string>
+    <string name="MENU_SYNTAX">Syntax</string>
+    <string name="MENU_TEST">Test</string>
+    <string name="MENU_VIEW">View</string>
+    <string name="MENU_VIEW_COMPACT">Compact</string>
+    <string name="MENU_VIEW_DETAIL">Detailed</string>
+    <string name="MENU_VIEW_GRID">Grid</string>
+    <string name="MENU_VIEW_HIDDEN">Hidden</string>
+    <string name="MENU_VIEW_MODE">View</string>
+    <string name="MENU_WORD_WRAP">Word wrap</string>
+    <string name="MES_ACCESS_DENIED">Access is denied</string>
+    <string name="MES_ADD_TO_ARCHIVE">Adding file:</string>
+    <string name="MES_AGREE_WITH">By continuing, you agree with %s.</string>
+    <string name="MES_BACKGROUND_ARCHIVE_LOCKED">Background operation %s is already using this archive</string>
+    <string name="MES_BACKGROUND_FS_LOCKED">Background operation %1$s is already using the path: %2$s</string>
+    <string name="MES_CANCEL_PROCES">Operation cancelled by user</string>
+    <string name="MES_COMPRESS_FILE_PROCESS">Compressing:</string>
+    <string name="MES_CONFIRM_CANCEL">Are you sure you want to cancel?</string>
+    <string name="MES_COPIED">Copied</string>
+    <string name="MES_COPY_FILE">Copying files</string>
+    <string name="MES_CORRUP_ARCHICHE">Archive is corrupt or unsupported</string>
+    <string name="MES_DECOMPRESS_FILE_PROCESS">Extracting:</string>
+    <string name="MES_DEL_FROM_ARCHIVE">Deleting file:</string>
+    <string name="MES_DONT_SUPPORT_EDIT">Action not supported by the specified archive format!</string>
+    <string name="MES_EMPTY">Empty</string>
+    <string name="MES_EMPTY_FOLDER">Folder is empty</string>
+    <string name="MES_END_WITH_ERROR">Operation completed with errors</string>
+    <string name="MES_ERROR_ON_REMOUNT">Failed to remount %1</string>
+    <string name="MES_FEATURES">"Useful tips:
+ * Tap file/folder icons to select or deselect them.
+ * Long-press files to access extra options.
+ * To navigate through folders, you must deselect all files first."</string>
+    <string name="MES_FILE_EXISTS">A file with this name already exists</string>
+    <string name="MES_FILE_NOT_FOUND">No files found</string>
+    <string name="MES_FILE_SAVED">File saved</string>
+    <string name="MES_GET_FILE_LIST_PROCESS">Getting file list…</string>
+    <string name="MES_INSTALL_APP_DONE">App installed</string>
+    <string name="MES_INSTALL_APP_FAILED">App not installed</string>
+    <string name="MES_MOVE_FILE">Moving files</string>
+    <string name="MES_NEED_REMOUNT">Operation requires remounting of FS as RW</string>
+    <string name="MES_OVERWRITE_ARCHIVE">Archive %1 already exists. Overwrite it?</string>
+    <string name="MES_PATH_HAS_RESTRICTION">This folder has an Android access restriction</string>
+    <string name="MES_PATH_READ_ONLY">This folder is read-only</string>
+    <string name="MES_PRESS_BACK_FOR_EXIT">Tap Back again to exit.</string>
+    <string name="MES_QUESTION_REMOVE">Do you really want to delete %1?</string>
+    <string name="MES_QUESTION_SAVE">Do you want to save the changes?</string>
+    <string name="MES_REMOTHE_AFTER_COMPRESS">Delete source files after compression?</string>
+    <string name="MES_REMOUNT_SUCESSFUL" formatted="false">%1 remounted to %2 successfully</string>
+    <string name="MES_REMOVE_FILE">Deleting files</string>
+    <string name="MES_RENAME_FILE_PROCESS">Renaming files:</string>
+    <string name="MES_SELECT_DESTINATION">Select a destination folder</string>
+    <string name="MES_SELECT_FILES">Select files to archive</string>
+    <string name="MES_SELECT_HELP">Multi-select mode enabled</string>
+    <string name="MES_SHIZUKU_IS_NOT_RUNNING">Shizuku is not running</string>
+    <string name="MES_SUCESSFUL_ADD_FILE">Files successfully added to archive</string>
+    <string name="MES_SUCESSFUL_COMPRESS">Archive successfully created</string>
+    <string name="MES_SUCESSFUL_DECOMPRESS">Archive successfully decompressed</string>
+    <string name="MES_SUCESSFUL_DEL_FILE">Files successfully deleted from archive</string>
+    <string name="MES_SUCESSFUL_END">Operation completed successfully</string>
+    <string name="MES_SUCESSFUL_TEST">Archive contains no errors</string>
+    <string name="MES_SUCESSFUL_TESTS">Archives contain no errors</string>
+    <string name="MES_SUPPORT_ONLY_ASCII_PWD">ZipCrypto supports passwords consisting only of Latin characters!</string>
+    <string name="MES_TEST_FILE_PROCESS">Testing:</string>
+    <string name="MES_WHITE_START_SERVICE">Preparing to open archive</string>
+    <string name="MOD_UPDATE_FILE">"File %1 was modified.
+Do you want to update it in the archive?"</string>
+    <string name="NF_ENTER_FILE_NAME">New file name:</string>
+    <string name="NF_ENTER_FOLDER_NAME">New folder name:</string>
+    <string name="NF_TTL_NEW_FILE">New file</string>
+    <string name="NF_TTL_NEW_FOLDER">New folder</string>
+    <string name="NTF_ADD_FILES_TO_ARC">Adding files to archive %1</string>
+    <string name="NTF_COMPRESS">Creating archive: %1</string>
+    <string name="NTF_COPY_FILE">Copying files</string>
+    <string name="NTF_DEL_FILES_FROM_ARC">Deleting files from archive %1</string>
+    <string name="NTF_EXTRACT">Extracting: %1</string>
+    <string name="NTF_MOVE_FILE">Moving files</string>
+    <string name="NTF_OPEN_FILE_FROM_ARCHIVE">Opening file: %1</string>
+    <string name="NTF_REMOVE_FILE">Deleting file: %1</string>
+    <string name="NTF_REMOVE_FILES">Deleting files from %1</string>
+    <string name="NTF_REQUEST_OVERWRITE">User interaction required</string>
+    <string name="NTF_REQUEST_PASSWORD">Password required</string>
+    <string name="NTF_TEST">Testing: %1</string>
+    <string name="OPT_7Z_COMPRESSION_METHOD">7z archive compression method</string>
+    <string name="OPT_7Z_COMPRESSION_METHOD_SETUP">Set LZMA/LZMA2 method</string>
+    <string name="OPT_7Z_DIRECT_OPEN">Direct open files from archives</string>
+    <string name="OPT_7Z_DIRECT_OPEN_SETUP">"Don't extract small files to open them"</string>
+    <string name="OPT_7Z_SOLID_MODE">7z archive solid mode</string>
+    <string name="OPT_7Z_SOLID_MODE_SETUP">Use solid mode to create 7z archives</string>
+    <string name="OPT_7Z_USE_PIPE">Combine operations by pipe</string>
+    <string name="OPT_7Z_USE_PIPE_SETUP">Extract/list tar and gz (.tar.gz) archive together</string>
+    <string name="OPT_ACTIONBAR_COLOR">Toolbar color</string>
+    <string name="OPT_ANIMATION">Animations</string>
+    <string name="OPT_ANIMATION_SETUP">Use animated transitions</string>
+    <string name="OPT_APK_ICON">APK file icons</string>
+    <string name="OPT_APK_ICON_SETUP">Show APK file icons</string>
+    <string name="OPT_ARCHIVE_IMG_THUMB">Thumbnails in archives</string>
+    <string name="OPT_ARCHIVE_IMG_THUMB_SETUP">Show thumbnails for files inside archives</string>
+    <string name="OPT_ARHIVE_DIR">Store new archives in</string>
+    <string name="OPT_AUDIO_THUMB">Album Art</string>
+    <string name="OPT_AUDIO_THUMB_SETUP">Show album cover art of music files</string>
+    <string name="OPT_BACKGROUND">Background</string>
+    <string name="OPT_BACK_BUTTON_ACTION">Back button action</string>
+    <string name="OPT_COLOR_DEFAULT">Default</string>
+    <string name="OPT_COLOR_DYNAMIC">Dynamic color</string>
+    <string name="OPT_COMPRESSION">Compression</string>
+    <string name="OPT_CONFIRM_CANCEL">Abort confirmation</string>
+    <string name="OPT_CONFIRM_CANCEL_SETUP">Ask for confirmation before aborting a running process</string>
+    <string name="OPT_CONFIRM_REWRITE">Overwrite confirmation</string>
+    <string name="OPT_CONFIRM_REWRITE_SETUP">Ask for confirmation before overwriting files</string>
+    <string name="OPT_CORE_N">Parallelism</string>
+    <string name="OPT_CORE_N_AUTO">Automatic</string>
+    <string name="OPT_CORE_N_SETUP">Specify the number of CPU cores on your device</string>
+    <string name="OPT_CUSTOM_BG">Custom background</string>
+    <string name="OPT_CUSTOM_BG_SETUP">Select custom background image</string>
+    <string name="OPT_EXTERNAL_OPEN_ARCHIVE">External archive opening action</string>
+    <string name="OPT_FAST_SCROLL">Fast scrolling</string>
+    <string name="OPT_FAST_SCROLL_SETUP">Use a scroll thumb for fast scrolling</string>
+    <string name="OPT_FAVOBAR">Favorites panel</string>
+    <string name="OPT_FAVOBAR_SETUP">Show the Favorites panel in landscape view</string>
+    <string name="OPT_FILE_LAST_MOD">Show date</string>
+    <string name="OPT_FILE_LAST_MOD_SETUP">Show file last modification date</string>
+    <string name="OPT_FILE_LAST_MOD_TIME">Show time</string>
+    <string name="OPT_FILE_LAST_MOD_TIME_SETUP">Show file last modification time</string>
+    <string name="OPT_FILE_SIZE">Show size</string>
+    <string name="OPT_FILE_SIZE_SETUP">Show file size</string>
+    <string name="OPT_FILE_SORT">Sort files by</string>
+    <string name="OPT_FILE_SORT_DESC">Sort order</string>
+    <string name="OPT_FILE_SORT_DESC_SETUP">Sort in descending order</string>
+    <string name="OPT_FLOAT_BUTTON">Floating action button</string>
+    <string name="OPT_FLOAT_BUTTON_SETUP">Show floating action button</string>
+    <string name="OPT_FOLDER_COLOR">Folder icon color</string>
+    <string name="OPT_FS_ICON_THEME">Filesystem icon theme</string>
+    <string name="OPT_HIDE_FILE">Show hidden files</string>
+    <string name="OPT_HIDE_FILE_SETUP">Show files and folders whose names start with \".\"</string>
+    <string name="OPT_HOME_DIR">Home folder</string>
+    <string name="OPT_HOME_SAME">Use the same folder for all tabs</string>
+    <string name="OPT_IGNORE_LIMIT_LEVEL">Force allow all compression levels</string>
+    <string name="OPT_IGNORE_LIMIT_LEVEL_SETUP">Warning! Enabling this option may affect stability</string>
+    <string name="OPT_IMG_THUMB">Thumbnails</string>
+    <string name="OPT_IMG_THUMB_SETUP">Show image thumbnails</string>
+    <string name="OPT_INTERECTIVE_PAST">Interactive paste</string>
+    <string name="OPT_INTERECTIVE_PAST_SETUP">Use interactive paste mode</string>
+    <string name="OPT_ITEM_FONT_SIZE">Font size</string>
+    <string name="OPT_ITEM_FONT_SIZE_SETUP">Font size of list items</string>
+    <string name="OPT_ITEM_SIZE">List item size</string>
+    <string name="OPT_ITEM_SIZE_SETUP">Size of list items</string>
+    <string name="OPT_LANGUAGE">Language</string>
+    <string name="OPT_LAVEL_7Z">7z compression level</string>
+    <string name="OPT_LAVEL_7Z_SETUP">Default 7z compression level</string>
+    <string name="OPT_LAVEL_ZIP">ZIP compression level</string>
+    <string name="OPT_LAVEL_ZIP_SETUP">Default ZIP compression level</string>
+    <string name="OPT_LIST_MODE">List mode</string>
+    <string name="OPT_OEM_CP">Default character encoding</string>
+    <string name="OPT_OEM_CP_SETUP">Character encoding for non-unicode ZIP archives</string>
+    <string name="OPT_OPEN_ARCHIVE">Archive opening action</string>
+    <string name="OPT_OPEN_FILE">File opening action</string>
+    <string name="OPT_PDF_THUMB">PDF Thumbnails</string>
+    <string name="OPT_PDF_THUMB_SETUP">Show thumbnails of PDF documents (may causes errors on some devices!)</string>
+    <string name="OPT_PLUGINS_SEARCH">Search for plugins in Store</string>
+    <string name="OPT_REMOVE_AFTER_COMPRESS">Delete after compression</string>
+    <string name="OPT_REMOVE_AFTER_COMPRESS_SETUP">Offer to delete source files after compression</string>
+    <string name="OPT_ROOT_ANDROID_DIR">Use for Android/[data|obb]</string>
+    <string name="OPT_ROOT_ANDROID_DIR_SETUP">Operations are faster compared to SAF access</string>
+    <string name="OPT_ROOT_FM">File operations</string>
+    <string name="OPT_ROOT_FM_SETUP">Support file operations as the root user</string>
+    <string name="OPT_ROOT_NOT_FOUND">Root support was not found on the device</string>
+    <string name="OPT_ROOT_RESTORE_CONTEXT">Fix SELinux context</string>
+    <string name="OPT_ROOT_RESTORE_CONTEXT_SETUP">Restore default SELinux context after copying to /data, /system or /sys</string>
+    <string name="OPT_ROOT_TYPE">Type of root access</string>
+    <string name="OPT_SECTION_FM">File list</string>
+    <string name="OPT_SECTION_GENERAL">General</string>
+    <string name="OPT_SECTION_GUI">Interface</string>
+    <string name="OPT_SECTION_PLUGINS">Plugins</string>
+    <string name="OPT_SECTION_ROOT">ROOT</string>
+    <string name="OPT_SPLIT_ACTIONBAR">Split toolbar</string>
+    <string name="OPT_SPLIT_ACTIONBAR_SETUP">Split toolbar if necessary</string>
+    <string name="OPT_SQUARE_THUMB">Square thumbnails</string>
+    <string name="OPT_THEME">Color theme</string>
+    <string name="OPT_TRANSPARENT_FAB">Semi-transparent FAB</string>
+    <string name="OPT_TRANSPARENT_FAB_SETUP">Semi-transparent floating action button</string>
+    <string name="OPT_TTL_SETTINGS">Settings</string>
+    <string name="OPT_TWO_TAB">Two tabs</string>
+    <string name="OPT_TWO_TAB_SETUP">User interface with two file lists</string>
+    <string name="OPT_UP_FOLDER_ITEM">Show \"..\"</string>
+    <string name="OPT_UP_FOLDER_ITEM_SETUP">Click \"..\" to navigate up in the directory tree</string>
+    <string name="OPT_USE_ARC_FOLDER">Use a folder to store archives</string>
+    <string name="OPT_USE_ARC_FOLDER_SETUP">New archives will be created in the specified folder</string>
+    <string name="OPT_VIDEO_THUMB">Video Thumbnails</string>
+    <string name="OPT_VIDEO_THUMB_SETUP">Show thumbnails of video files</string>
+    <string name="OVERW_DEST_FILE">Replace with</string>
+    <string name="OVERW_SCR_FILE">Source file</string>
+    <string name="OVERW_TEXT">File %1 already exists.</string>
+    <string name="OVERW_TO_ALL_FILE">Apply to all files</string>
+    <string name="OVERW_TTL_ASK_OVERWRITE">Overwrite file?</string>
+    <string name="PD_KEEP_SCREEN_ON">Keep the screen from turning off</string>
+    <string name="PWD_ENTER_PASSWORD">This archive is encrypted. Enter password to access its contents:</string>
+    <string name="PWD_PASSWORD">Password:</string>
+    <string name="PWD_PASSWORD_LABEL">Label:</string>
+    <string name="PWD_REMOVE_PASSWORD">"Remove password '%1'?"</string>
+    <string name="PWD_TTL_ADD_PASSWORD">Add password</string>
+    <string name="PWD_TTL_PASSWORD">Password required</string>
+    <string name="PWD_TTL_SAVED_PASSWORD">Saved passwords</string>
+    <string name="REN_ENTER_NEW_NAME">Enter new name:</string>
+    <string name="RTW_TTL_WARNING">Root operations</string>
+    <string name="RTW_WARNING">You are about to perform operations as the root user. Making modifications may cause the device to become unstable or entirely nonfunctional.</string>
+    <string name="SC_APK">APK</string>
+    <string name="SC_ARCHIVE">Archive</string>
+    <string name="SC_AUDIO">Audio</string>
+    <string name="SC_DOCUMENT">Document</string>
+    <string name="SC_IMAGE">Image</string>
+    <string name="SC_VIDEO">Video</string>
+    <string name="SELECT_PWD">...</string>
+    <string name="SPD_GROUP">Group</string>
+    <string name="SPD_OTHER">Other</string>
+    <string name="SPD_OWNER">Owner</string>
+    <string name="SPD_PERMISSION">Permission</string>
+    <string name="SPD_TTL_PERMISSIONS">Permissions</string>
+    <string name="SPD_USER">User</string>
+    <string name="app_image_viewer_name">ZArchiver Image</string>
+    <string name="app_name">ZArchiver</string>
+    <string name="app_text_editor_name">ZArchiver Text</string>
+</resources>

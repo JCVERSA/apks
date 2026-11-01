@@ -1,0 +1,56 @@
+{
+  "jadx_java_files_total": 472,
+  "copied_java_files": 472,
+  "copied_java_bytes": 3466339,
+  "skipped_java_files": [],
+  "resources_copied": [
+    "decoded/AndroidManifest.xml",
+    "decoded/apktool.yml",
+    "decoded/res/values/strings.xml",
+    "decoded/res/values/arrays.xml",
+    "decoded/res/values/public.xml",
+    "decoded/res/xml/locales_config.xml",
+    "decoded/res/xml/pref_compression.xml",
+    "decoded/res/xml/pref_fm.xml",
+    "decoded/res/xml/pref_general.xml",
+    "decoded/res/xml/pref_gui.xml",
+    "decoded/res/xml/pref_header.xml",
+    "decoded/res/xml/pref_root.xml",
+    "decoded/res/xml/time_zones_by_country.xml"
+  ],
+  "key_class_presence": {
+    "ru/zdevs/zarchiver/ZApp.java": true,
+    "ru/zdevs/zarchiver/ZArchiver.java": true,
+    "ru/zdevs/zarchiver/service/ZArchiverService.java": true,
+    "ru/zdevs/zarchiver/io/SAF.java": true,
+    "ru/zdevs/zarchiver/provider/FileProvider.java": true,
+    "ru/zdevs/zarchiver/provider/ArchiveFileProvider.java": true,
+    "ru/zdevs/zarchiver/provider/PluginFileProvider.java": true,
+    "ru/zdevs/zarchiver/activity/InstallApksDlg.java": true,
+    "a0/c.java": true,
+    "o0/a.java": true,
+    "t0/b.java": true,
+    "e0/h.java": true,
+    "f0/a.java": true,
+    "h1/c.java": true,
+    "l0/b.java": true,
+    "g0/r.java": true,
+    "g0/n.java": true,
+    "rikka/shizuku/ShizukuProvider.java": true
+  },
+  "pattern_hit_files": {
+    "root_shizuku": 26,
+    "plugin_ipc": 34,
+    "apk_install": 6,
+    "network_update": 6,
+    "storage_saf": 7,
+    "dynamic_code": 2,
+    "crypto_backup": 13,
+    "webview_js": 0
+  },
+  "limits": {
+    "max_total_bytes": 31457280,
+    "max_file_bytes": 2097152
+  },
+  "runtime_execution": "NOT TESTED"
+}

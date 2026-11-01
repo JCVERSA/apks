@@ -1,0 +1,2001 @@
+{
+  "root_shizuku": [
+    {
+      "file": "jadx-sources/rikka/shizuku/ShizukuProvider.java",
+      "count": 11,
+      "first": [
+        {
+          "line": 1,
+          "text": "package rikka.shizuku;"
+        },
+        {
+          "line": 17,
+          "text": "import moe.shizuku.api.BinderContainer;"
+        },
+        {
+          "line": 29,
+          "text": "BinderContainer binderContainer = (BinderContainer) intent.getParcelableExtra(\"moe.shizuku.privileged.api.intent.extra.BINDER\");"
+        },
+        {
+          "line": 46,
+          "text": "context.registerReceiver(aVar, new IntentFilter(\"moe.shizuku.api.action.BINDER_RECEIVED\"), 4);"
+        },
+        {
+          "line": 48,
+          "text": "context.registerReceiver(aVar, new IntentFilter(\"moe.shizuku.api.action.BINDER_RECEIVED\"));"
+        },
+        {
+          "line": 52,
+          "text": "bundleCall = context.getContentResolver().call(Uri.parse(\"content://\" + context.getPackageName() + \".shizuku\"), \"getBinder\", (String) null, new Bundle());"
+        },
+        {
+          "line": 57,
+          "text": "BinderContainer binderContainer = (BinderContainer) bundleCall.getParcelable(\"moe.shizuku.privileged.api.intent.extra.BINDER\");"
+        },
+        {
+          "line": 93,
+          "text": "BinderContainer binderContainer = (BinderContainer) bundle.getParcelable(\"moe.shizuku.privileged.api.intent.extra.BINDER\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/k/b.java",
+      "count": 10,
+      "first": [
+        {
+          "line": 11,
+          "text": "attachInterface(this, \"moe.shizuku.server.IShizukuApplication\");"
+        },
+        {
+          "line": 22,
+          "text": "parcel.enforceInterface(\"moe.shizuku.server.IShizukuApplication\");"
+        },
+        {
+          "line": 25,
+          "text": "parcel2.writeString(\"moe.shizuku.server.IShizukuApplication\");"
+        },
+        {
+          "line": 30,
+          "text": "bundle.getInt(\"shizuku:attach-reply-uid\", -1);"
+        },
+        {
+          "line": 32,
+          "text": "bundle.getInt(\"shizuku:attach-reply-version\", -1);"
+        },
+        {
+          "line": 33,
+          "text": "bundle.getInt(\"shizuku:attach-reply-patch-version\", -1);"
+        },
+        {
+          "line": 34,
+          "text": "bundle.getString(\"shizuku:attach-reply-secontext\");"
+        },
+        {
+          "line": 35,
+          "text": "z.a.f2310c = bundle.getBoolean(\"shizuku:attach-reply-permission-granted\", false);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/k/a.java",
+      "count": 6,
+      "first": [
+        {
+          "line": 28,
+          "text": "parcelObtain.writeInterfaceToken(\"moe.shizuku.server.IRemoteProcess\");"
+        },
+        {
+          "line": 48,
+          "text": "parcelObtain.writeInterfaceToken(\"moe.shizuku.server.IRemoteProcess\");"
+        },
+        {
+          "line": 63,
+          "text": "parcelObtain.writeInterfaceToken(\"moe.shizuku.server.IRemoteProcess\");"
+        },
+        {
+          "line": 78,
+          "text": "parcelObtain.writeInterfaceToken(\"moe.shizuku.server.IRemoteProcess\");"
+        },
+        {
+          "line": 92,
+          "text": "parcelObtain.writeInterfaceToken(\"moe.shizuku.server.IRemoteProcess\");"
+        },
+        {
+          "line": 107,
+          "text": "parcelObtain.writeInterfaceToken(\"moe.shizuku.server.IRemoteProcess\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/j0/c.java",
+      "count": 5,
+      "first": [
+        {
+          "line": 101,
+          "text": "iVar2.i(new d0.f(new h(\"root\", a0.c.A(aVar2.f1323a)), a0.c.y(aVar2.f1323a), null, aVar2.f1329g ? (byte) 4 : (byte) -1, aVar2.f1330h ? -2L : aVar2.f1324b, aVar2.f1325c));"
+        },
+        {
+          "line": 172,
+          "text": "hVar2 = new h(\"root\", strD);"
+        },
+        {
+          "line": 174,
+          "text": "hVar2 = new h(\"root\", strD + strArrH[1].substring(0, iLastIndexOf));"
+        },
+        {
+          "line": 352,
+          "text": "hVar.q(\"root\");"
+        },
+        {
+          "line": 366,
+          "text": "hVar.q(\"root\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/z/a.java",
+      "count": 5,
+      "first": [
+        {
+          "line": 112,
+          "text": "parcelObtain.writeInterfaceToken(\"moe.shizuku.server.IShizukuService\");"
+        },
+        {
+          "line": 128,
+          "text": "bundle.putInt(\"shizuku:attach-api-version\", 13);"
+        },
+        {
+          "line": 129,
+          "text": "bundle.putString(\"shizuku:attach-package-name\", str);"
+        },
+        {
+          "line": 133,
+          "text": "parcelObtain.writeInterfaceToken(\"moe.shizuku.server.IShizukuService\");"
+        },
+        {
+          "line": 172,
+          "text": "IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(\"moe.shizuku.server.IShizukuService\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/k/c.java",
+      "count": 4,
+      "first": [
+        {
+          "line": 32,
+          "text": "parcelObtain.writeInterfaceToken(\"moe.shizuku.server.IShizukuService\");"
+        },
+        {
+          "line": 47,
+          "text": "parcelObtain.writeInterfaceToken(\"moe.shizuku.server.IShizukuService\");"
+        },
+        {
+          "line": 62,
+          "text": "parcelObtain.writeInterfaceToken(\"moe.shizuku.server.IShizukuService\");"
+        },
+        {
+          "line": 72,
+          "text": "IInterface iInterfaceQueryLocalInterface = strongBinder.queryLocalInterface(\"moe.shizuku.server.IRemoteProcess\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/activity/SettingsDlg.java",
+      "count": 4,
+      "first": [
+        {
+          "line": 106,
+          "text": "} else if (\"root\".equals(string)) {"
+        },
+        {
+          "line": 408,
+          "text": "ZApp.j(\"Shizuku v11+ / SUI not found!\");"
+        },
+        {
+          "line": 415,
+          "text": "bundle.putString(\"settings\", \"root\");"
+        },
+        {
+          "line": 423,
+          "text": "bundle2.putString(\"settings\", \"root\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/h0/h.java",
+      "count": 3,
+      "first": [
+        {
+          "line": 196,
+          "text": "return \"file\".equals(this.f1106a) || \"root\".equals(this.f1106a);"
+        },
+        {
+          "line": 204,
+          "text": "return \"root\".equals(this.f1106a);"
+        },
+        {
+          "line": 216,
+          "text": "return \"file\".equals(this.f1106a) || \"root\".equals(this.f1106a) || \"saf\".equals(this.f1106a);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/a0/c.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 1285,
+          "text": "Process processExec = Runtime.getRuntime().exec(\"pm list packages\");"
+        },
+        {
+          "line": 1354,
+          "text": "return new h0.h(hVar.h() ? \"root\" : \"file\", hVar.f1108c);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/o0/a.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 51,
+          "text": "if (bVar.f() && bVar.a(5, \"su -v\")) {"
+        },
+        {
+          "line": 84,
+          "text": "packageInfo = contextC.getPackageManager().getPackageInfo(\"moe.shizuku.privileged.api\", 0);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/ZArchiver.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 2229,
+          "text": "arrayList.add(new e0.a.C0007a(0, \"Root is required to XAPK expansions\"));"
+        },
+        {
+          "line": 2819,
+          "text": "hVar = new h0.h(\"root\".equals(str5) ? \"rarch\" : \"arch\", strI, \"/\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/a0/n0.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 67,
+          "text": "hVar.q(\"root\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/g0/s.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 195,
+          "text": "intent2.putExtra(\"settings\", \"root\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/j0/a.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 147,
+          "text": "f1150b.b(\"root\", (byte) 16);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/m0/a.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 155,
+          "text": "hVar.q(\"root\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/moe/shizuku/api/BinderContainer.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 1,
+          "text": "package moe.shizuku.api;"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/n0/f.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 36,
+          "text": "return (!aVar.f() || (str = aVar.f1289c) == null) ? \"Failed to get root shell\" : str;"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/o0/b.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 6,
+          "text": "e(new ProcessBuilder(new String[0]).command(\"sh\").start());"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/o0/f.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 13,
+          "text": "e(new ProcessBuilder(new String[0]).command(\"su\").start());"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/q0/f.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 76,
+          "text": "lowerCase = strGroup.toLowerCase(Locale.ROOT);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/R.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 667,
+          "text": "public static final int root = 0x7f07009a;"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/ZApp.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 15,
+          "text": "import rikka.shizuku.ShizukuProvider;"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/a.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 2143,
+          "text": "strE = \"root\";"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/ui/FSSelect.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 310,
+          "text": "hVar.q(\"root\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/s0/g.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 330,
+          "text": "this.f2018a.f(this.f2020c, 0, \"Can't get root access\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/t0/a.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 75,
+          "text": "arrayList.add(new e(-2, 1, \"ROOT\", new h(\"/\")));"
+        }
+      ]
+    }
+  ],
+  "plugin_ipc": [
+    {
+      "file": "jadx-sources/l0/c.java",
+      "count": 35,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.content.ContentProviderClient;"
+        },
+        {
+          "line": 79,
+          "text": "ContentProviderClient contentProviderClientAcquireContentProviderClient = contentResolver.acquireContentProviderClient(str);"
+        },
+        {
+          "line": 80,
+          "text": "if (contentProviderClientAcquireContentProviderClient == null) {"
+        },
+        {
+          "line": 84,
+          "text": "Cursor cursorQuery = contentProviderClientAcquireContentProviderClient.query(new Uri.Builder().authority(str).build(), new String[]{\"_name\", \"_id\", \"_flags\"}, \"get=accounts\", null, null);"
+        },
+        {
+          "line": 114,
+          "text": "b(contentProviderClientAcquireContentProviderClient);"
+        },
+        {
+          "line": 122,
+          "text": "public static void b(ContentProviderClient contentProviderClient) {"
+        },
+        {
+          "line": 124,
+          "text": "contentProviderClient.close();"
+        },
+        {
+          "line": 126,
+          "text": "contentProviderClient.release();"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/rikka/shizuku/ShizukuProvider.java",
+      "count": 35,
+      "first": [
+        {
+          "line": 5,
+          "text": "import android.content.ContentProvider;"
+        },
+        {
+          "line": 15,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 17,
+          "text": "import moe.shizuku.api.BinderContainer;"
+        },
+        {
+          "line": 19,
+          "text": "public class ShizukuProvider extends ContentProvider {"
+        },
+        {
+          "line": 28,
+          "text": "IBinder iBinder;"
+        },
+        {
+          "line": 29,
+          "text": "BinderContainer binderContainer = (BinderContainer) intent.getParcelableExtra(\"moe.shizuku.privileged.api.intent.extra.BINDER\");"
+        },
+        {
+          "line": 30,
+          "text": "if (binderContainer == null || (iBinder = binderContainer.f1231a) == null) {"
+        },
+        {
+          "line": 33,
+          "text": "Log.i(\"ShizukuProvider\", \"binder received from broadcast\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/k0/b.java",
+      "count": 33,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.content.ContentProviderClient;"
+        },
+        {
+          "line": 30,
+          "text": "ContentProviderClient contentProviderClientE = c.e(hVar);"
+        },
+        {
+          "line": 32,
+          "text": "if (contentProviderClientE != null) {"
+        },
+        {
+          "line": 34,
+          "text": "Cursor cursorQuery = contentProviderClientE.query(c.h(hVar), c.f1180a, \"get=file\", null, null);"
+        },
+        {
+          "line": 51,
+          "text": "c.b(contentProviderClientE);"
+        },
+        {
+          "line": 130,
+          "text": "ContentProviderClient contentProviderClientE = c.e(hVar);"
+        },
+        {
+          "line": 133,
+          "text": "if (contentProviderClientE != null) {"
+        },
+        {
+          "line": 136,
+          "text": "Cursor cursorQuery = contentProviderClientE.query(c.h(hVar), c.f1180a, \"get=list\", null, null);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/z/a.java",
+      "count": 25,
+      "first": [
+        {
+          "line": 5,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 15,
+          "text": "public static IBinder f2308a = null;"
+        },
+        {
+          "line": 23,
+          "text": "public static final BinderC0043a f2312e = new BinderC0043a();"
+        },
+        {
+          "line": 35,
+          "text": "public class BinderC0043a extends k.b {"
+        },
+        {
+          "line": 38,
+          "text": "public class b implements IBinder.DeathRecipient {"
+        },
+        {
+          "line": 40,
+          "text": "public final void binderDied() {"
+        },
+        {
+          "line": 108,
+          "text": "public static boolean b(IBinder iBinder, String str) {"
+        },
+        {
+          "line": 113,
+          "text": "BinderC0043a binderC0043a = f2312e;"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/service/c.java",
+      "count": 15,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.os.Binder;"
+        },
+        {
+          "line": 4,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 14,
+          "text": "public static abstract class a extends Binder implements c {"
+        },
+        {
+          "line": 18,
+          "text": "public final IBinder f1733a;"
+        },
+        {
+          "line": 20,
+          "text": "public C0035a(IBinder iBinder) {"
+        },
+        {
+          "line": 21,
+          "text": "this.f1733a = iBinder;"
+        },
+        {
+          "line": 388,
+          "text": "public final void PluginOpenFile(h hVar, int i2) {"
+        },
+        {
+          "line": 502,
+          "text": "public final IBinder asBinder() {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/moe/shizuku/api/BinderContainer.java",
+      "count": 14,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 7,
+          "text": "public class BinderContainer implements Parcelable {"
+        },
+        {
+          "line": 8,
+          "text": "public static final Parcelable.Creator<BinderContainer> CREATOR = new a();"
+        },
+        {
+          "line": 10,
+          "text": "public final IBinder f1231a;"
+        },
+        {
+          "line": 12,
+          "text": "public class a implements Parcelable.Creator<BinderContainer> {"
+        },
+        {
+          "line": 14,
+          "text": "public final BinderContainer createFromParcel(Parcel parcel) {"
+        },
+        {
+          "line": 15,
+          "text": "return new BinderContainer(parcel);"
+        },
+        {
+          "line": 19,
+          "text": "public final BinderContainer[] newArray(int i2) {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/q0/f.java",
+      "count": 14,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.content.ContentProviderClient;"
+        },
+        {
+          "line": 124,
+          "text": "ContentProviderClient contentProviderClientAcquireContentProviderClient;"
+        },
+        {
+          "line": 146,
+          "text": "ContentProviderClient contentProviderClient = null;"
+        },
+        {
+          "line": 148,
+          "text": "contentProviderClientAcquireContentProviderClient = ZApp.e().getContentResolver().acquireContentProviderClient(\"media\");"
+        },
+        {
+          "line": 150,
+          "text": "contentProviderClientAcquireContentProviderClient.call(\"scan_file\", a0.c.A(str), null);"
+        },
+        {
+          "line": 152,
+          "text": "contentProviderClient = contentProviderClientAcquireContentProviderClient;"
+        },
+        {
+          "line": 153,
+          "text": "contentProviderClientAcquireContentProviderClient = contentProviderClient;"
+        },
+        {
+          "line": 157,
+          "text": "n0.e.e(contentProviderClientAcquireContentProviderClient);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/a0/c.java",
+      "count": 13,
+      "first": [
+        {
+          "line": 11,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 127,
+          "text": "IBinder iBinder = (IBinder) map.get(\"activity\");"
+        },
+        {
+          "line": 128,
+          "text": "IBinder iBinder2 = null;"
+        },
+        {
+          "line": 129,
+          "text": "if (iBinder == null) {"
+        },
+        {
+          "line": 131,
+          "text": "iBinder = (IBinder) z.d.f2326b.invoke(null, \"activity\");"
+        },
+        {
+          "line": 135,
+          "text": "map.put(\"activity\", iBinder);"
+        },
+        {
+          "line": 137,
+          "text": "if (iBinder != null) {"
+        },
+        {
+          "line": 143,
+          "text": "iBinder.transact(1599296841, parcelObtain, parcelObtain2, 0);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/k/c.java",
+      "count": 12,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.os.Binder;"
+        },
+        {
+          "line": 4,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 10,
+          "text": "public static abstract class a extends Binder implements c {"
+        },
+        {
+          "line": 16,
+          "text": "public final IBinder f1164a;"
+        },
+        {
+          "line": 18,
+          "text": "public C0022a(IBinder iBinder) {"
+        },
+        {
+          "line": 19,
+          "text": "this.f1164a = iBinder;"
+        },
+        {
+          "line": 23,
+          "text": "public final IBinder asBinder() {"
+        },
+        {
+          "line": 69,
+          "text": "IBinder strongBinder = parcelObtain2.readStrongBinder();"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/k0/a.java",
+      "count": 10,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.content.ContentProviderClient;"
+        },
+        {
+          "line": 47,
+          "text": "ContentProviderClient contentProviderClientE = c.e(hVar);"
+        },
+        {
+          "line": 48,
+          "text": "if (contentProviderClientE == null) {"
+        },
+        {
+          "line": 52,
+          "text": "cursorQuery = contentProviderClientE.query(c.h(hVar), c.f1181b, \"get=search\", new String[]{str}, null);"
+        },
+        {
+          "line": 53,
+          "text": "c.b(contentProviderClientE);"
+        },
+        {
+          "line": 116,
+          "text": "ContentProviderClient contentProviderClientE = c.e(hVar);"
+        },
+        {
+          "line": 117,
+          "text": "if (contentProviderClientE == null) {"
+        },
+        {
+          "line": 121,
+          "text": "cursorQuery = contentProviderClientE.query(c.h(hVar), c.f1180a, \"get=list\", new String[]{String.valueOf(i3)}, null);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/h1/h.java",
+      "count": 8,
+      "first": [
+        {
+          "line": 6,
+          "text": "import android.content.ServiceConnection;"
+        },
+        {
+          "line": 21,
+          "text": "public final ServiceConnection f1129c;"
+        },
+        {
+          "line": 23,
+          "text": "public a(Context context, Intent intent, ServiceConnection serviceConnection) {"
+        },
+        {
+          "line": 26,
+          "text": "this.f1129c = serviceConnection;"
+        },
+        {
+          "line": 35,
+          "text": "context.bindService(intent, this.f1129c, 72);"
+        },
+        {
+          "line": 86,
+          "text": "public static Handler f(Context context, Intent intent, ServiceConnection serviceConnection) {"
+        },
+        {
+          "line": 89,
+          "text": "context.bindService(intent, serviceConnection, 72);"
+        },
+        {
+          "line": 93,
+          "text": "handler.postDelayed(new a(context, intent, serviceConnection), 700L);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/l0/e.java",
+      "count": 8,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.content.ContentProviderClient;"
+        },
+        {
+          "line": 13,
+          "text": "public final ContentProviderClient f1202a;"
+        },
+        {
+          "line": 19,
+          "text": "public e(ContentProviderClient contentProviderClient, h hVar, ParcelFileDescriptor parcelFileDescriptor) {"
+        },
+        {
+          "line": 21,
+          "text": "this.f1202a = contentProviderClient;"
+        },
+        {
+          "line": 28,
+          "text": "ContentProviderClient contentProviderClient = this.f1202a;"
+        },
+        {
+          "line": 36,
+          "text": "Bundle bundleCall = contentProviderClient.call(\"flush\", null, bundle);"
+        },
+        {
+          "line": 45,
+          "text": "contentProviderClient.close();"
+        },
+        {
+          "line": 47,
+          "text": "contentProviderClient.release();"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/k/a.java",
+      "count": 7,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.os.Binder;"
+        },
+        {
+          "line": 4,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 11,
+          "text": "public static abstract class AbstractBinderC0020a extends Binder implements a {"
+        },
+        {
+          "line": 17,
+          "text": "public final IBinder f1162a;"
+        },
+        {
+          "line": 19,
+          "text": "public C0021a(IBinder iBinder) {"
+        },
+        {
+          "line": 20,
+          "text": "this.f1162a = iBinder;"
+        },
+        {
+          "line": 39,
+          "text": "public final IBinder asBinder() {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/l0/d.java",
+      "count": 7,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.content.ContentProviderClient;"
+        },
+        {
+          "line": 12,
+          "text": "public final ContentProviderClient f1197a;"
+        },
+        {
+          "line": 22,
+          "text": "public d(ContentProviderClient contentProviderClient, h hVar, ParcelFileDescriptor parcelFileDescriptor, long j2) {"
+        },
+        {
+          "line": 24,
+          "text": "this.f1197a = contentProviderClient;"
+        },
+        {
+          "line": 46,
+          "text": "ContentProviderClient contentProviderClient = this.f1197a;"
+        },
+        {
+          "line": 53,
+          "text": "contentProviderClient.close();"
+        },
+        {
+          "line": 55,
+          "text": "contentProviderClient.release();"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/k/b.java",
+      "count": 6,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.os.Binder;"
+        },
+        {
+          "line": 5,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 9,
+          "text": "public abstract class b extends Binder implements IInterface {"
+        },
+        {
+          "line": 15,
+          "text": "public final IBinder asBinder() {"
+        },
+        {
+          "line": 31,
+          "text": "IBinder iBinder = z.a.f2308a;"
+        },
+        {
+          "line": 41,
+          "text": "IBinder iBinder2 = z.a.f2308a;"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/ZArchiver.java",
+      "count": 6,
+      "first": [
+        {
+          "line": 41,
+          "text": "import android.content.ServiceConnection;"
+        },
+        {
+          "line": 52,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 123,
+          "text": "public class a implements ServiceConnection {"
+        },
+        {
+          "line": 128,
+          "text": "public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {"
+        },
+        {
+          "line": 131,
+          "text": "zArchiver.f1443f = ru.zdevs.zarchiver.service.c.a.asInterface(iBinder);"
+        },
+        {
+          "line": 3618,
+          "text": "unbindService(this.f1454q);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/activity/ExtractDlg.java",
+      "count": 6,
+      "first": [
+        {
+          "line": 6,
+          "text": "import android.content.ServiceConnection;"
+        },
+        {
+          "line": 11,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 73,
+          "text": "public class b implements ServiceConnection {"
+        },
+        {
+          "line": 125,
+          "text": "public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {"
+        },
+        {
+          "line": 127,
+          "text": "c cVarAsInterface = c.a.asInterface(iBinder);"
+        },
+        {
+          "line": 169,
+          "text": "unbindService(this.f1566c);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java",
+      "count": 6,
+      "first": [
+        {
+          "line": 6,
+          "text": "import android.content.ServiceConnection;"
+        },
+        {
+          "line": 11,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 126,
+          "text": "public class e implements ServiceConnection {"
+        },
+        {
+          "line": 131,
+          "text": "public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {"
+        },
+        {
+          "line": 135,
+          "text": "ru.zdevs.zarchiver.service.c cVarAsInterface = ru.zdevs.zarchiver.service.c.a.asInterface(iBinder);"
+        },
+        {
+          "line": 247,
+          "text": "unbindService(this.f1580e);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/o0/e.java",
+      "count": 4,
+      "first": [
+        {
+          "line": 28,
+          "text": "throw new IllegalStateException(\"binder haven't been received\");"
+        },
+        {
+          "line": 49,
+          "text": "throw new IllegalStateException(\"binder haven't been received\");"
+        },
+        {
+          "line": 71,
+          "text": "throw new IllegalStateException(\"binder haven't been received\");"
+        },
+        {
+          "line": 90,
+          "text": "throw new IllegalStateException(\"binder haven't been received\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/z/c.java",
+      "count": 4,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 10,
+          "text": "public final class c extends Process implements IBinder.DeathRecipient {"
+        },
+        {
+          "line": 21,
+          "text": "aVar.asBinder().linkToDeath(this, 0);"
+        },
+        {
+          "line": 28,
+          "text": "public final void binderDied() {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/activity/SettingsDlg.java",
+      "count": 3,
+      "first": [
+        {
+          "line": 44,
+          "text": "public static class PluginFragment extends PreferenceFragment {"
+        },
+        {
+          "line": 54,
+          "text": "Intent intent = new Intent(\"ru.zdevs.zarchiver.plugin.PLUGIN_APPLICATION\");"
+        },
+        {
+          "line": 69,
+          "text": "preference2.setTitle(R.string.OPT_PLUGINS_SEARCH);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/provider/FileProvider.java",
+      "count": 3,
+      "first": [
+        {
+          "line": 3,
+          "text": "import android.content.ContentProvider;"
+        },
+        {
+          "line": 27,
+          "text": "public final class FileProvider extends ContentProvider {"
+        },
+        {
+          "line": 37,
+          "text": "return new h(\"plugin\", strSubstring.substring(iIndexOf2), strSubstring.substring(i2, iIndexOf2), strSubstring2);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/service/ZArchiverService.java",
+      "count": 3,
+      "first": [
+        {
+          "line": 10,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 539,
+          "text": "public void PluginOpenFile(h hVar, int i2) {"
+        },
+        {
+          "line": 876,
+          "text": "public final IBinder onBind(Intent intent) {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/v0/b.java",
+      "count": 3,
+      "first": [
+        {
+          "line": 7,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 75,
+          "text": "IBinder iBinder = (IBinder) cls.getMethod(\"getService\", String.class).invoke(cls, \"window\");"
+        },
+        {
+          "line": 77,
+          "text": "Object objInvoke = cls2.getMethod(\"asInterface\", IBinder.class).invoke(cls2, iBinder);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/v0/e.java",
+      "count": 3,
+      "first": [
+        {
+          "line": 26,
+          "text": "import ru.zdevs.zarchiver.provider.PluginFileProvider;"
+        },
+        {
+          "line": 90,
+          "text": "String[] strArr = PluginFileProvider.f1711a;"
+        },
+        {
+          "line": 91,
+          "text": "return new Uri.Builder().scheme(\"content\").authority(\"ru.zdevs.zarchiver.plugin\").path(hVar.toString()).fragment(strE).build();"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/l0/b.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 13,
+          "text": "preference.getContext().startActivity(new Intent(\"android.intent.action.VIEW\", Uri.parse(\"market://search?q=ZArchiver plugin\")));"
+        },
+        {
+          "line": 16,
+          "text": "preference.getContext().startActivity(new Intent(\"android.intent.action.VIEW\", Uri.parse(\"https://play.google.com/store/apps/search?q=ZArchiver plugin\")));"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/R.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 1213,
+          "text": "public static final int OPT_PLUGINS_SEARCH = 0x7f0c0167;"
+        },
+        {
+          "line": 1227,
+          "text": "public static final int OPT_SECTION_PLUGINS = 0x7f0c0175;"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/provider/ArchiveFileProvider.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 4,
+          "text": "import android.content.ContentProvider;"
+        },
+        {
+          "line": 25,
+          "text": "public class ArchiveFileProvider extends ContentProvider {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/provider/PluginFileProvider.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 4,
+          "text": "import android.content.ContentProvider;"
+        },
+        {
+          "line": 18,
+          "text": "public class PluginFileProvider extends ContentProvider {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/service/ZArchiverClearTemp.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 6,
+          "text": "import android.os.IBinder;"
+        },
+        {
+          "line": 11,
+          "text": "public final IBinder onBind(Intent intent) {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/h0/h.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 200,
+          "text": "return \"plugin\".equals(this.f1106a) || \"plglocal\".equals(this.f1106a);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/ZApp.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 202,
+          "text": "a0.c.h(this, \".provider.PluginFileProvider\", z2);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/c.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 183,
+          "text": "cVar.PluginOpenFile(hVar, i2);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/t0/a.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 203,
+          "text": "e eVar2 = new e(i2, 8, c0023c.f1193a, new h(\"plugin\", \"/\", c0023c.f1195c, c0023c.f1194b));"
+        }
+      ]
+    }
+  ],
+  "apk_install": [
+    {
+      "file": "jadx-sources/q0/a.java",
+      "count": 28,
+      "first": [
+        {
+          "line": 6,
+          "text": "import android.content.pm.PackageInstaller;"
+        },
+        {
+          "line": 63,
+          "text": "PackageInstaller packageInstaller = context.getPackageManager().getPackageInstaller();"
+        },
+        {
+          "line": 64,
+          "text": "Iterator<PackageInstaller.SessionInfo> it = packageInstaller.getMySessions().iterator();"
+        },
+        {
+          "line": 66,
+          "text": "packageInstaller.abandonSession(it.next().getSessionId());"
+        },
+        {
+          "line": 258,
+          "text": "PackageInstaller packageInstaller;"
+        },
+        {
+          "line": 260,
+          "text": "PackageInstaller.Session sessionOpenSession = null;"
+        },
+        {
+          "line": 263,
+          "text": "packageInstaller = zAppE.getPackageManager().getPackageInstaller();"
+        },
+        {
+          "line": 265,
+          "text": "PackageInstaller.SessionParams sessionParams = new PackageInstaller.SessionParams(1);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/g0/s.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 209,
+          "text": "w0.c.h(new h1.g(zArchiverZ, new Intent(\"android.settings.MANAGE_UNKNOWN_APP_SOURCES\", Uri.fromParts(\"package\", \"ru.zdevs.zarchiver\", null)), 111, null));"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/ZArchiver.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 3352,
+          "text": "boolean z2 = hVar != null && hVar.f1108c.toLowerCase().endsWith(\".xapk\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/a.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 464,
+          "text": "intent.setDataAndType(n0.a.f1232a ? KitKatExtSD.c(hVar) : SAF.h(zArchiver, hVar, false), \"application/vnd.android.package-archive\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/activity/InstallApkDlg.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 34,
+          "text": "intent.setAction(\"android.settings.MANAGE_UNKNOWN_APP_SOURCES\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/activity/InstallApksDlg.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 203,
+          "text": "if ((hVar != null && hVar.f1108c.toLowerCase().endsWith(\".xapk\")) && i2 == 0) {"
+        }
+      ]
+    }
+  ],
+  "network_update": [
+    {
+      "file": "jadx-sources/b/c.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 86,
+          "text": "xmlPullParserNewPullParser.setFeature(\"http://xmlpull.org/v1/doc/features.html#process-namespaces\", false);"
+        },
+        {
+          "line": 234,
+          "text": "xmlPullParserNewPullParser2.setFeature(\"http://xmlpull.org/v1/doc/features.html#process-namespaces\", true);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/l0/b.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 13,
+          "text": "preference.getContext().startActivity(new Intent(\"android.intent.action.VIEW\", Uri.parse(\"market://search?q=ZArchiver plugin\")));"
+        },
+        {
+          "line": 16,
+          "text": "preference.getContext().startActivity(new Intent(\"android.intent.action.VIEW\", Uri.parse(\"https://play.google.com/store/apps/search?q=ZArchiver plugin\")));"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/q0/c.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 56,
+          "text": "xmlPullParserNewPullParser.setFeature(\"http://xmlpull.org/v1/doc/features.html#process-namespaces\", true);"
+        },
+        {
+          "line": 96,
+          "text": "xmlPullParserNewPullParser.setFeature(\"http://xmlpull.org/v1/doc/features.html#process-namespaces\", true);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/activity/AboutDlg.java",
+      "count": 2,
+      "first": [
+        {
+          "line": 109,
+          "text": "intentCreateChooser.setData(Uri.parse(\"market://details?id=ru.zdevs.zarchiver\"));"
+        },
+        {
+          "line": 143,
+          "text": "intent2.putExtra(\"android.intent.extra.TEXT\", \"ZArchiver is fast and simple archive and file manager. Get it on https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/g0/n.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 34,
+          "text": "h1.h.e(zArchiverZ, new Intent(\"android.intent.action.VIEW\", Uri.parse(\"http://zdevs.ru/za/errors_desc.html\")));"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/g0/r.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 50,
+          "text": "h1.h.e(zArchiverZ, new Intent(\"android.intent.action.VIEW\", Uri.parse(\"http://zdevs.ru/za/\" + str2 + str)));"
+        }
+      ]
+    }
+  ],
+  "storage_saf": [
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/io/SAF.java",
+      "count": 12,
+      "first": [
+        {
+          "line": 10,
+          "text": "import android.provider.DocumentsContract;"
+        },
+        {
+          "line": 86,
+          "text": "if (i2 <= 30 && (cursorS = s(DocumentsContract.buildChildDocumentsUriUsingTree(uri, DocumentsContract.getDocumentId(uri)), strArr)) != null) {"
+        },
+        {
+          "line": 92,
+          "text": "b(DocumentsContract.buildDocumentUriUsingTree(uri, cursorS.getString(2)), strArr, bVar, dVar, 1 + i2);"
+        },
+        {
+          "line": 190,
+          "text": "aVar.f1702e = DocumentsContract.buildDocumentUriUsingTree(uriL, string);"
+        },
+        {
+          "line": 377,
+          "text": "return DocumentsContract.createDocument(ZApp.a(), a(strConcat, c.A(str2), 0), i2 == 3 ? \"vnd.android.document/directory\" : \"\", c.y(str2));"
+        },
+        {
+          "line": 471,
+          "text": "uriL = DocumentsContract.createDocument(ZApp.a(), uriL, \"vnd.android.document/directory\", strArrH[i4]);"
+        },
+        {
+          "line": 595,
+          "text": "if (uri == null || (cursorS = s((uriBuildChildDocumentsUriUsingTree = DocumentsContract.buildChildDocumentsUriUsingTree(uri, DocumentsContract.getDocumentId(uri))), f1694b)) == null) {"
+        },
+        {
+          "line": 605,
+          "text": "aVar.f1702e = DocumentsContract.buildDocumentUriUsingTree(uriBuildChildDocumentsUriUsingTree, cursorS.getString(4));"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/v0/f.java",
+      "count": 7,
+      "first": [
+        {
+          "line": 11,
+          "text": "import android.provider.DocumentsContract;"
+        },
+        {
+          "line": 133,
+          "text": "if ((Build.VERSION.SDK_INT >= 19) && DocumentsContract.isDocumentUri(context, uri)) {"
+        },
+        {
+          "line": 135,
+          "text": "String[] strArrSplit = DocumentsContract.getDocumentId(uri).split(\":\");"
+        },
+        {
+          "line": 138,
+          "text": "return Environment.getExternalStorageDirectory() + \"/\" + strArrSplit[1];"
+        },
+        {
+          "line": 141,
+          "text": "return Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS) + \"/\" + strArrSplit[1];"
+        },
+        {
+          "line": 149,
+          "text": "return b(ContentUris.withAppendedId(Uri.parse(\"content://downloads/public_downloads\"), Long.parseLong(DocumentsContract.getDocumentId(uri))), null, null);"
+        },
+        {
+          "line": 152,
+          "text": "String[] strArrSplit2 = DocumentsContract.getDocumentId(uri).split(\":\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/x0/d.java",
+      "count": 6,
+      "first": [
+        {
+          "line": 14,
+          "text": "import android.provider.DocumentsContract;"
+        },
+        {
+          "line": 173,
+          "text": "String[] strArrH = v0.h.h(DocumentsContract.getTreeDocumentId(uri), ':');"
+        },
+        {
+          "line": 187,
+          "text": "canonicalPath = Environment.getExternalStorageDirectory().getCanonicalPath();"
+        },
+        {
+          "line": 458,
+          "text": "return new a(Environment.getExternalStorageDirectory().getPath(), (byte) 0, \"primary\");"
+        },
+        {
+          "line": 545,
+          "text": "canonicalPath = Environment.getExternalStorageDirectory().getCanonicalPath();"
+        },
+        {
+          "line": 857,
+          "text": "context.getContentResolver().registerContentObserver(DocumentsContract.buildRootsUri(\"com.android.externalstorage.documents\"), false, (ContentObserver) aVar.f2260a);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/n0/b.java",
+      "count": 5,
+      "first": [
+        {
+          "line": 5,
+          "text": "import android.provider.DocumentsContract;"
+        },
+        {
+          "line": 48,
+          "text": "DocumentsContract.deleteDocument(contentResolverA, SAF.k(0, this.f1236d + '/' + a0.c.y(this.f1234b.getPath())));"
+        },
+        {
+          "line": 50,
+          "text": "DocumentsContract.moveDocument(contentResolverA, this.f1234b, this.f1235c, uriK);"
+        },
+        {
+          "line": 56,
+          "text": "DocumentsContract.deleteDocument(contentResolverA, SAF.k(0, this.f1236d + '/' + a0.c.y(this.f1234b.getPath())));"
+        },
+        {
+          "line": 57,
+          "text": "DocumentsContract.moveDocument(contentResolverA, this.f1234b, this.f1235c, uriK);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/e.java",
+      "count": 3,
+      "first": [
+        {
+          "line": 6,
+          "text": "import android.provider.DocumentsContract;"
+        },
+        {
+          "line": 33,
+          "text": "DocumentsContract.deleteDocument(contentResolver, bVar.f1559c);"
+        },
+        {
+          "line": 35,
+          "text": "DocumentsContract.renameDocument(contentResolver, bVar.f1559c, bVar.f1558b);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/ZArchiver.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 2379,
+          "text": "getApplicationContext().getContentResolver().takePersistableUriPermission(data, 3);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/t0/a.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 173,
+          "text": "File externalStoragePublicDirectory = Environment.getExternalStoragePublicDirectory(strArr2[i11]);"
+        }
+      ]
+    }
+  ],
+  "dynamic_code": [
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/archiver/C2JBridge.java",
+      "count": 4,
+      "first": [
+        {
+          "line": 137,
+          "text": "System.loadLibrary(\"handler\");"
+        },
+        {
+          "line": 138,
+          "text": "System.loadLibrary(\"mime\");"
+        },
+        {
+          "line": 139,
+          "text": "System.loadLibrary(\"control\");"
+        },
+        {
+          "line": 140,
+          "text": "System.loadLibrary(\"iconv\");"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/media/MimeLib.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 6,
+          "text": "System.loadLibrary(\"mime\");"
+        }
+      ]
+    }
+  ],
+  "crypto_backup": [
+    {
+      "file": "jadx-sources/t0/b.java",
+      "count": 133,
+      "first": [
+        {
+          "line": 5,
+          "text": "import android.content.SharedPreferences;"
+        },
+        {
+          "line": 213,
+          "text": "SharedPreferences defaultSharedPreferences;"
+        },
+        {
+          "line": 228,
+          "text": "SharedPreferences.Editor editorEdit;"
+        },
+        {
+          "line": 240,
+          "text": "defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);"
+        },
+        {
+          "line": 241,
+          "text": "string = defaultSharedPreferences.getString(\"iHomePath\", null);"
+        },
+        {
+          "line": 263,
+          "text": "if (defaultSharedPreferences.getBoolean(\"iUseArcPath\", false)) {"
+        },
+        {
+          "line": 264,
+          "text": "string3 = defaultSharedPreferences.getString(\"iArcPath\", null);"
+        },
+        {
+          "line": 281,
+          "text": "if (defaultSharedPreferences.getBoolean(\"iFavoBar\", true)) {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/i/a.java",
+      "count": 49,
+      "first": [
+        {
+          "line": 6,
+          "text": "import android.security.keystore.KeyGenParameterSpec;"
+        },
+        {
+          "line": 16,
+          "text": "import java.security.KeyStore;"
+        },
+        {
+          "line": 17,
+          "text": "import java.security.KeyStoreException;"
+        },
+        {
+          "line": 18,
+          "text": "import java.security.MessageDigest;"
+        },
+        {
+          "line": 30,
+          "text": "import javax.crypto.Cipher;"
+        },
+        {
+          "line": 31,
+          "text": "import javax.crypto.CipherInputStream;"
+        },
+        {
+          "line": 32,
+          "text": "import javax.crypto.CipherOutputStream;"
+        },
+        {
+          "line": 36,
+          "text": "import javax.crypto.SecretKey;"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/t0/a.java",
+      "count": 14,
+      "first": [
+        {
+          "line": 4,
+          "text": "import android.content.SharedPreferences;"
+        },
+        {
+          "line": 40,
+          "text": "SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(zArchiver);"
+        },
+        {
+          "line": 41,
+          "text": "String str3 = defaultSharedPreferences.getString(\"sFavorite\", \"\") + eVar + \"|\";"
+        },
+        {
+          "line": 42,
+          "text": "SharedPreferences.Editor editorEdit = defaultSharedPreferences.edit();"
+        },
+        {
+          "line": 64,
+          "text": "SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(contextC);"
+        },
+        {
+          "line": 78,
+          "text": "String string = defaultSharedPreferences.getString(\"sFavoriteCustomName\", null);"
+        },
+        {
+          "line": 156,
+          "text": "String string2 = defaultSharedPreferences.getString(\"sFavorite\", null);"
+        },
+        {
+          "line": 164,
+          "text": "} else if (!defaultSharedPreferences.getBoolean(\"sFavoGenerated\", false)) {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/activity/SettingsDlg.java",
+      "count": 12,
+      "first": [
+        {
+          "line": 7,
+          "text": "import android.content.SharedPreferences;"
+        },
+        {
+          "line": 40,
+          "text": "public class SettingsDlg extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {"
+        },
+        {
+          "line": 42,
+          "text": "public SharedPreferences f1605a;"
+        },
+        {
+          "line": 175,
+          "text": "SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(ZApp.f1434c);"
+        },
+        {
+          "line": 181,
+          "text": "objectOutputStream.writeObject(defaultSharedPreferences.getAll());"
+        },
+        {
+          "line": 232,
+          "text": "SharedPreferences.Editor editorEdit = PreferenceManager.getDefaultSharedPreferences(ZApp.f1434c).edit();"
+        },
+        {
+          "line": 338,
+          "text": "this.f1605a = PreferenceManager.getDefaultSharedPreferences(this);"
+        },
+        {
+          "line": 398,
+          "text": "public final void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String str) {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/a.java",
+      "count": 7,
+      "first": [
+        {
+          "line": 15,
+          "text": "import android.content.SharedPreferences;"
+        },
+        {
+          "line": 2310,
+          "text": "SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(zArchiver);"
+        },
+        {
+          "line": 2311,
+          "text": "String string = defaultSharedPreferences.getString(\"sFavorite\", null);"
+        },
+        {
+          "line": 2326,
+          "text": "SharedPreferences.Editor editorEdit = defaultSharedPreferences.edit();"
+        },
+        {
+          "line": 2358,
+          "text": "SharedPreferences defaultSharedPreferences2 = PreferenceManager.getDefaultSharedPreferences(zArchiver);"
+        },
+        {
+          "line": 2359,
+          "text": "String string2 = defaultSharedPreferences2.getString(\"sFavorite\", null);"
+        },
+        {
+          "line": 2387,
+          "text": "SharedPreferences.Editor editorEdit2 = defaultSharedPreferences2.edit();"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/g0/h.java",
+      "count": 6,
+      "first": [
+        {
+          "line": 6,
+          "text": "import android.content.SharedPreferences;"
+        },
+        {
+          "line": 137,
+          "text": "SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);"
+        },
+        {
+          "line": 138,
+          "text": "String string = defaultSharedPreferences.getString(\"sCompressDefType\", \"7z\");"
+        },
+        {
+          "line": 139,
+          "text": "int i3 = defaultSharedPreferences.getInt(\"iCompressDefLevel\", 3);"
+        },
+        {
+          "line": 140,
+          "text": "int i4 = defaultSharedPreferences.getInt(\"iCompressDefEncrypt\", 0);"
+        },
+        {
+          "line": 455,
+          "text": "SharedPreferences.Editor editorEdit = PreferenceManager.getDefaultSharedPreferences(this.f943g.getContext()).edit();"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/g0/s.java",
+      "count": 5,
+      "first": [
+        {
+          "line": 8,
+          "text": "import android.content.SharedPreferences;"
+        },
+        {
+          "line": 223,
+          "text": "SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(ZApp.f1434c);"
+        },
+        {
+          "line": 224,
+          "text": "String string = defaultSharedPreferences.getString(\"sNonRequestPermission\", null);"
+        },
+        {
+          "line": 227,
+          "text": "SharedPreferences.Editor editorEdit = defaultSharedPreferences.edit();"
+        },
+        {
+          "line": 239,
+          "text": "SharedPreferences.Editor editorEdit2 = defaultSharedPreferences.edit();"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/g0/o.java",
+      "count": 4,
+      "first": [
+        {
+          "line": 25,
+          "text": "import java.security.MessageDigest;"
+        },
+        {
+          "line": 408,
+          "text": "MessageDigest messageDigest = MessageDigest.getInstance(\"MD5\");"
+        },
+        {
+          "line": 413,
+          "text": "BigInteger bigInteger = new BigInteger(1, messageDigest.digest());"
+        },
+        {
+          "line": 422,
+          "text": "messageDigest.update(bArr, 0, i2);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/ui/preference/Compression7zLevelPreference.java",
+      "count": 3,
+      "first": [
+        {
+          "line": 5,
+          "text": "import android.content.SharedPreferences;"
+        },
+        {
+          "line": 28,
+          "text": "SharedPreferences sharedPreferences = getSharedPreferences();"
+        },
+        {
+          "line": 29,
+          "text": "if (sharedPreferences == null || !sharedPreferences.getBoolean(\"iExtIgnoreRAMLimit\", false)) {"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/a0/j0.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 79,
+          "text": "String string = PreferenceManager.getDefaultSharedPreferences(ZApp.f1434c).getString(\"sNonRequestPermission\", null);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/ZArchiver.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 1195,
+          "text": "String string = PreferenceManager.getDefaultSharedPreferences(this).getString(\"iGUICustomBGPath\", null);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/ZSelectFile.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 742,
+          "text": "String string = PreferenceManager.getDefaultSharedPreferences(this).getString(\"iGUICustomBGPath\", null);"
+        }
+      ]
+    },
+    {
+      "file": "jadx-sources/ru/zdevs/zarchiver/ui/preference/FileSelectPreference.java",
+      "count": 1,
+      "first": [
+        {
+          "line": 178,
+          "text": "if (this.f1949a == 2 && getSharedPreferences().getBoolean(\"iTwoTab\", false)) {"
+        }
+      ]
+    }
+  ],
+  "webview_js": []
+}

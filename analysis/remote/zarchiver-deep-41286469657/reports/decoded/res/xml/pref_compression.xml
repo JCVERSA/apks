@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/OPT_COMPRESSION"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.zdevs.zarchiver.ui.preference.Compression7zLevelPreference android:entries="@array/CMP_LIST_LEVELS" android:title="@string/OPT_LAVEL_7Z" android:key="iLavel7z" android:summary="@string/OPT_LAVEL_7Z_SETUP" android:defaultValue="3" android:dialogTitle="@string/OPT_LAVEL_7Z" android:entryValues="@array/OPT_LIST_LEVELS_VALUE" />
+    <ListPreference android:entries="@array/CMP_LIST_LEVELS" android:title="@string/OPT_LAVEL_ZIP" android:key="iLavelZIP" android:summary="@string/OPT_LAVEL_ZIP_SETUP" android:defaultValue="3" android:dialogTitle="@string/OPT_LAVEL_ZIP" android:entryValues="@array/OPT_LIST_LEVELS_VALUE" />
+    <ListPreference android:entries="@array/OPT_LIST_OEMCP" android:title="@string/OPT_OEM_CP" android:key="iOEMCP" android:summary="@string/OPT_OEM_CP_SETUP" android:defaultValue="0" android:dialogTitle="@string/OPT_OEM_CP" android:entryValues="@array/OPT_LIST_OEMCP_VALUE" />
+    <ListPreference android:entries="@array/OPT_LIST_CORE_N" android:title="@string/OPT_CORE_N" android:key="iCPUCoreN" android:summary="@string/OPT_CORE_N_SETUP" android:defaultValue="" android:dialogTitle="@string/OPT_CORE_N" android:entryValues="@array/OPT_LIST_CORE_N_VALUE" />
+    <CheckBoxPreference android:title="@string/OPT_IGNORE_LIMIT_LEVEL" android:key="iExtIgnoreRAMLimit" android:summary="@string/OPT_IGNORE_LIMIT_LEVEL_SETUP" android:defaultValue="false" />
+    <ListPreference android:entries="@array/OPT_7Z_COMPRESSION_METHOD" android:title="@string/OPT_7Z_COMPRESSION_METHOD" android:key="i7ZCompressionMethod" android:summary="@string/OPT_7Z_COMPRESSION_METHOD_SETUP" android:defaultValue="2" android:dialogTitle="@string/OPT_7Z_COMPRESSION_METHOD" android:entryValues="@array/OPT_LIST_LEVELS_VALUE" />
+    <CheckBoxPreference android:title="@string/OPT_7Z_SOLID_MODE" android:key="i7ZUseSolidMode" android:summary="@string/OPT_7Z_SOLID_MODE_SETUP" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/OPT_7Z_USE_PIPE" android:key="i7ZUsePipe" android:summary="@string/OPT_7Z_USE_PIPE_SETUP" android:defaultValue="true" />
+</PreferenceScreen>

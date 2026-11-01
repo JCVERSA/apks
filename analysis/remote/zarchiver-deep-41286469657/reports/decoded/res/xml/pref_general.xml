@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/OPT_SECTION_GENERAL"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.zdevs.zarchiver.ui.preference.FileSelectPreference android:title="@string/OPT_HOME_DIR" android:key="iHomePath" android:defaultValue="$SD$" android:dialogTitle="@string/OPT_HOME_DIR" app:folderSelect="2" />
+    <ListPreference android:entries="@array/OPT_LIST_EXTERNAL_OPEN_ARCHIVE" android:title="@string/OPT_EXTERNAL_OPEN_ARCHIVE" android:key="iActionOpenArc" android:summary="%s" android:defaultValue="0" android:dialogTitle="@string/OPT_EXTERNAL_OPEN_ARCHIVE" android:entryValues="@array/OPT_LIST_OPEN_ARCHIVE_VALUE" />
+    <ListPreference android:entries="@array/OPT_LIST_OPEN_ARCHIVE" android:title="@string/OPT_OPEN_ARCHIVE" android:key="iOpenArchive" android:summary="%s" android:defaultValue="1" android:dialogTitle="@string/OPT_OPEN_ARCHIVE" android:entryValues="@array/OPT_LIST_OPEN_ARCHIVE_VALUE" />
+    <ListPreference android:entries="@array/OPT_LIST_OPEN_FILE" android:title="@string/OPT_OPEN_FILE" android:key="iOpenFile" android:summary="%s" android:defaultValue="1" android:dialogTitle="@string/OPT_OPEN_FILE" android:entryValues="@array/OPT_LIST_FILE_SORT_VALUE" />
+    <CheckBoxPreference android:title="@string/OPT_CONFIRM_CANCEL" android:key="iGUIConfirmCancel" android:summary="@string/OPT_CONFIRM_CANCEL_SETUP" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/OPT_CONFIRM_REWRITE" android:key="iGUIConfirmRewrite" android:summary="@string/OPT_CONFIRM_REWRITE_SETUP" android:defaultValue="true" />
+    <ListPreference android:entries="@array/OPT_LIST_BACK_BUTTON_ACTION" android:title="@string/OPT_BACK_BUTTON_ACTION" android:key="iBackType" android:summary="%s" android:defaultValue="2" android:dialogTitle="@string/OPT_BACK_BUTTON_ACTION" android:entryValues="@array/OPT_LIST_BACK_BUTTON_ACTION_VALUE" />
+    <CheckBoxPreference android:title="@string/OPT_REMOVE_AFTER_COMPRESS" android:key="iGUIRemoveAfterCompress" android:summary="@string/OPT_REMOVE_AFTER_COMPRESS_SETUP" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/OPT_INTERECTIVE_PAST" android:key="iGUIInterectivPast" android:summary="@string/OPT_INTERECTIVE_PAST_SETUP" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/OPT_USE_ARC_FOLDER" android:key="iUseArcPath" android:summary="@string/OPT_USE_ARC_FOLDER_SETUP" android:defaultValue="false" />
+    <ru.zdevs.zarchiver.ui.preference.FileSelectPreference android:title="@string/OPT_ARHIVE_DIR" android:key="iArcPath" android:dependency="iUseArcPath" android:defaultValue="$SD$/archives" android:dialogTitle="@string/OPT_ARHIVE_DIR" app:folderSelect="1" />
+</PreferenceScreen>
