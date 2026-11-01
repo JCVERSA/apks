@@ -56,10 +56,8 @@ jobs:
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
           disable-animations: true
           script: |
-            python3 .github/scripts/plugin_warning_evidence.py \
-              --apk "${RUNNER_TEMP}/plugin-warning-apks/SnapTube-7.52.0.75250210-adfree-noforce-official-removed-r5.apk" \
-              --out "${RUNNER_TEMP}/plugin-warning-runtime" \
-              --plugin-dir "${RUNNER_TEMP}/plugin-warning-plugins"
+            bash .github/scripts/run_plugin_warning_evidence.sh \
+              "${RUNNER_TEMP}/plugin-warning-apks/SnapTube-7.52.0.75250210-adfree-noforce-official-removed-r5.apk"
       - name: Decode and scan collected plugin APKs
         if: always()
         shell: bash
