@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Isolated GitHub Actions emulator A/B test: original repack vs revision 4.
+"""Isolated GitHub Actions emulator A/B test: original repack vs revision 5.
 
 Authorized scope: temporary emulator only, fresh app installs, public test
 videos, no account login, no personal-device access. Publishes sanitized
@@ -20,7 +20,7 @@ TEST_CASES = [
     {'tag': 'dailymotion-audio', 'url': 'https://www.dailymotion.com/video/x80bs9c', 'prefer': 'audio'},
     {'tag': 'vimeo-video', 'url': 'https://vimeo.com/1084537', 'prefer': 'video'},
 ]
-SAFE_TAPS = re.compile(r'^(agree|accept|allow|continue|get started|start now|next|skip|not now|later|ok|got it|close|cancel)$', re.I)
+SAFE_TAPS = re.compile(r'^(agree|accept|allow|continue|get started|start now|start|next|skip|not now|later|ok|got it|close|cancel|wait)(?:\s*[→›»])?$', re.I)
 DANGEROUS = re.compile(r'uninstall|official|update now|install now|purchase|subscribe|sign in|log in', re.I)
 
 
@@ -84,9 +84,27 @@ class Variant:
         shell(f'input tap {(x1+x2)//2} {(y1+y2)//2}')
         return True
 
+    def official_warning_visible(self):
+        return any(re.search(r'official snaptube|go to uninstall|please install the', (n['text'] or n['desc']), re.I) for n in self.ui_nodes)
+
     def tap_safe(self, allow_dismiss=False):
+        # Prefer known system/onboarding resource-ids so launcher ANRs, immersive
+        # mode clings, and the SnapTube carousel do not contaminate the A/B run.
         for n in self.ui_nodes:
+            rid = n.get('id','')
             label = (n['text'] or n['desc']).strip()
+            if rid in ('android:id/aerr_wait', 'android:id/ok'):
+                if self.tap_node(n):
+                    self.event('tap_system_dismiss', label=label, id=rid)
+                    time.sleep(2)
+                    return True
+            if rid == 'com.snaptube.premium:id/tv_action_btn' and not DANGEROUS.search(label):
+                if self.tap_node(n):
+                    self.event('tap_onboarding_action', label=label, id=rid)
+                    time.sleep(2)
+                    return True
+        for n in self.ui_nodes:
+            label = re.sub(r'\s+', ' ', (n['text'] or n['desc'])).strip()
             if not allow_dismiss and re.fullmatch(r'close|cancel', label, re.I):
                 continue
             if label and SAFE_TAPS.fullmatch(label) and not DANGEROUS.search(label):
@@ -108,11 +126,19 @@ class Variant:
             shell(f'appops set {PKG} {op} allow >/dev/null 2>&1')
         shell('logcat -c')
         shell(f'am start -n {PKG}/.activity.ExploreActivity')
-        time.sleep(12)
-        for i in range(8):
+        time.sleep(15)
+        no_tap = 0
+        for i in range(20):
             self.capture(f'launch-{i}')
-            if not self.tap_safe(allow_dismiss=True):
+            if self.official_warning_visible():
+                self.event('official_warning_visible', stage=f'launch-{i}')
+            if self.tap_safe(allow_dismiss=True):
+                no_tap = 0
+                continue
+            no_tap += 1
+            if no_tap >= 3:
                 break
+            time.sleep(2)
         self.capture('prepared')
 
     def choose_format(self, prefer, tag):
@@ -146,9 +172,13 @@ class Variant:
         shell(f"am start -a android.intent.action.SEND -t text/plain --es android.intent.extra.TEXT '{url}' -p {PKG}")
         time.sleep(15)
         self.capture(f'{tag}-shared-0')
+        if self.official_warning_visible():
+            self.event('official_warning_visible', tag=tag, stage='shared-0')
         for i in range(4):
             if self.tap_safe():
                 self.capture(f'{tag}-s_shared-{i+1}')
+        if self.official_warning_visible():
+            self.event('official_warning_visible', tag=tag, stage='before-format')
         self.choose_format(prefer, tag)
         self.capture(f'{tag}-before-download-tap')
         tapped = False
@@ -177,7 +207,7 @@ class Variant:
         if pid:
             cmd += ['--pid', pid]
         rc, raw = run(cmd, timeout=90)
-        rx = re.compile(r'download|TaskError|TaskException|http|HTTP|400|403|404|416|500|ffmpeg|FFmpeg|mux|combine|extract|plugin|AndroidRuntime|FATAL|Exception|Error', re.I)
+        rx = re.compile(r'download|TaskError|TaskException|http|HTTP|400|403|404|416|500|ffmpeg|FFmpeg|mux|combine|extract|plugin|AndroidRuntime|FATAL|Exception|Error|OfficialWarning|PluginContext|piratical|jz5|lz5|nd2|ClassLoader|xi7|xl\.', re.I)
         lines = [redact(l) for l in raw.decode('utf-8','replace').splitlines() if rx.search(l)]
         (self.root / 'logcat-filtered.txt').write_text('\n'.join(lines[-6000:]) + '\n')
         self.event('log_lines', count=len(lines))
@@ -264,7 +294,7 @@ def main():
     adb('wait-for-device', timeout=180)
     shell('svc power stayon true')
     results = {}
-    for name, apk in (('original', args.original), ('revision4', args.patched)):
+    for name, apk in (('original', args.original), ('revision5', args.patched)):
         v = Variant(name, apk, out)
         try:
             v.install_and_prepare()
