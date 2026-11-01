@@ -1,0 +1,58 @@
+name: Fetch HA Tunnel Plus APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths:
+      - '.github/workflows/fetch-hatunnel.yml'
+      - '.github/scripts/fetch_hatunnel.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-hatunnel-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Download and verify HA Tunnel Plus APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 .github/scripts/fetch_hatunnel.py --out downloads 2>&1 | tee downloads-fetch.log
+          mkdir -p analysis/remote/hatunnel-fetch-${GITHUB_RUN_ID}
+          cp downloads-fetch.log analysis/remote/hatunnel-fetch-${GITHUB_RUN_ID}/fetch.log
+          cp downloads/HA-Tunnel-Plus-1.7.1.json analysis/remote/hatunnel-fetch-${GITHUB_RUN_ID}/metadata.json
+
+      - name: Upload APK artifact
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ha-tunnel-plus-1.7.1
+          path: |
+            downloads/HA-Tunnel-Plus-1.7.1.apk
+            downloads/HA-Tunnel-Plus-1.7.1.json
+            downloads-fetch.log
+          if-no-files-found: warn
+
+      - name: Publish verified APK to branch
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f downloads/HA-Tunnel-Plus-1.7.1.apk downloads/HA-Tunnel-Plus-1.7.1.json analysis/remote/hatunnel-fetch-${GITHUB_RUN_ID}
+          if ! git diff --cached --quiet; then
+            git commit -m "Add verified HA Tunnel Plus 1.7.1 APK (run ${GITHUB_RUN_ID}) [skip ci]"
+            git fetch origin arena/7234f8d6-apks
+            git rebase FETCH_HEAD
+            git push origin HEAD:arena/7234f8d6-apks
+          fi
