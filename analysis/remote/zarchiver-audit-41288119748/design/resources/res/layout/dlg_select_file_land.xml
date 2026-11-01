@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/padding_tiny" android:paddingRight="@dimen/padding_tiny" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="0.6">
+        <RelativeLayout android:id="@id/rlNavigation" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="match_parent" android:layout_height="?android:actionBarSize" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_path" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_view_mode" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title" android:textColor="?android:textColorPrimary" android:gravity="start|center" android:id="@id/nTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:textIsSelectable="false" />
+                <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle" android:textColor="?android:textColorPrimary" android:ellipsize="start" android:gravity="start|center" android:id="@id/nSubtitle" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:textIsSelectable="false" />
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?iconNavigationDown" android:layout_alignRight="@id/ll_path" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+            <ImageView android:id="@id/iv_view_mode" android:src="?menuIconViewMode" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" style="@style/InlineButton" />
+        </RelativeLayout>
+        <ru.zdevs.zarchiver.ui.FSSelect android:id="@id/fss_file_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/tv_info" android:layout_below="@id/rlNavigation" />
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="?defaultTextColorFileListMessage" android:gravity="center" android:id="@id/tv_empty_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/fss_file_list" android:layout_alignTop="@id/fss_file_list" android:layout_alignRight="@id/fss_file_list" android:layout_alignBottom="@id/fss_file_list" />
+        <TextView android:id="@id/tv_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/sv_bar" android:visibility="gone" android:layout_width="0.0px" android:layout_height="match_parent" android:layout_weight="0.4">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:gravity="start|center" android:id="@id/cb_encrypt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ADD_ENCRYPT_FILES" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/rl_pwd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center" android:id="@id/tv_enc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/CMP_ENCRYPT" />
+                <Spinner android:entries="@array/CMP_LIST_ENCRYPT_ZIP" android:id="@id/spn_encrypt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_enc" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center" android:id="@id/tv_pwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/CMP_PASSWORD" android:layout_below="@id/spn_encrypt" />
+                <ru.zdevs.zarchiver.ui.text.EditPassword android:gravity="start|center" android:id="@id/edt_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+            </RelativeLayout>
+            <CheckBox android:gravity="start|center" android:id="@id/cb_level" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/CMP_LEVEL" />
+            <Spinner android:entries="@array/CMP_LIST_LEVELS" android:id="@id/spn_level" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

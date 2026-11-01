@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="?menuIconTo" android:id="@id/bSelectPath" android:title="@string/MENU_EXTRACT_TO_CURRENT_DIR" android:showAsAction="always" />
+    <item android:icon="?menuIconPast" android:id="@id/bPast" android:title="@string/MENU_PAST" android:showAsAction="always" />
+</menu>

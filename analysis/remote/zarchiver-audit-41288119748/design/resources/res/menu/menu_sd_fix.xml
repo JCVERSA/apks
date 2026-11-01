@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/bForceSelect" android:title="Force try to select SAF" android:showAsAction="never" />
+    <item android:id="@id/bCopyVersion" android:title="Copy Files app version" android:showAsAction="never" />
+</menu>

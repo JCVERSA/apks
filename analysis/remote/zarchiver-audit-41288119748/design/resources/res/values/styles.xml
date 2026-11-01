@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Dark" parent="@style/Base.Dark">
+        <item name="iconNavigationDown">@drawable/ic_down</item>
+        <item name="menuIconAddFile">@drawable/ic_menu_add_file</item>
+        <item name="menuIconAddToFavorite">@drawable/ic_menu_star</item>
+        <item name="menuIconCancel">@drawable/ic_menu_close_clear_cancel</item>
+        <item name="menuIconClose">@drawable/ic_menu_close_clear_cancel</item>
+        <item name="menuIconComment">@drawable/ic_menu_coment</item>
+        <item name="menuIconCompress">@drawable/ic_menu_load</item>
+        <item name="menuIconCopy">@drawable/ic_menu_copy</item>
+        <item name="menuIconCut">@drawable/ic_menu_cut</item>
+        <item name="menuIconDelete">@drawable/ic_menu_delete</item>
+        <item name="menuIconExtend">@drawable/l_extend</item>
+        <item name="menuIconExtract">@drawable/ic_menu_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/ic_menu_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/ic_menu_info_details</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/content_new_email</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/content_select_all_dark</item>
+        <item name="menuIconNew">@drawable/ic_menu_add</item>
+        <item name="menuIconOk">@drawable/navigation_accept</item>
+        <item name="menuIconOpen">@drawable/ic_menu_set_as</item>
+        <item name="menuIconPast">@drawable/ic_menu_paste</item>
+        <item name="menuIconPermission">@drawable/ic_permission</item>
+        <item name="menuIconRating">@drawable/rating_good</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/ic_menu_edit</item>
+        <item name="menuIconSearch">@drawable/ic_menu_search</item>
+        <item name="menuIconSelect">@drawable/ic_menu_mark</item>
+        <item name="menuIconSelectAll">@drawable/content_select_all_dark</item>
+        <item name="menuIconSelectClear">@drawable/content_select_clear_dark</item>
+        <item name="menuIconSelectInvert">@drawable/content_select_invert_dark</item>
+        <item name="menuIconSend">@drawable/ic_menu_send</item>
+        <item name="menuIconSettings">@drawable/action_settings</item>
+        <item name="menuIconShare">@drawable/social_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/navigation_accept</item>
+        <item name="menuIconTo">@drawable/ic_menu_goto</item>
+        <item name="menuIconTool">@drawable/ic_menu_preferences</item>
+        <item name="menuIconView">@drawable/ic_menu_view</item>
+        <item name="menuIconViewMode">@drawable/ic_menu_sort</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled" parent="@style/AppTheme.Dark">
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="backgroundColorFileList">@color/background_amoled</item>
+        <item name="backgroundColorFileListItem">#10000000</item>
+        <item name="bottomSheetStyle">@style/Base.Amoled.Dialog.BottomSheet</item>
+        <item name="colorPrimaryDark">#ff202020</item>
+        <item name="defaultTextColorFileList">#d8d8d8</item>
+        <item name="defaultTextColorFileListMessage">#7a7a7a</item>
+        <item name="defaultTextColorFileListSub">#808080</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Amber" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#ffb300</item>
+        <item name="colorPrimaryLight">#ffe54c</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Blue" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#1e88e5</item>
+        <item name="colorPrimaryLight">#6ab7ff</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.BlueGrey" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#546e7a</item>
+        <item name="colorPrimaryLight">#819ca9</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Brown" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#6d4c41</item>
+        <item name="colorPrimaryLight">#9c786c</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Color" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="backgroundColorFileList">@color/background_amoled</item>
+        <item name="backgroundColorFileListItem">#10000000</item>
+        <item name="bottomSheetStyle">@style/Base.Amoled.Dialog.BottomSheet</item>
+        <item name="colorPrimaryDark">#ff202020</item>
+        <item name="defaultTextColorFileList">#ffd8d8d8</item>
+        <item name="defaultTextColorFileListMessage">#ff7a7a7a</item>
+        <item name="defaultTextColorFileListSub">#ff808080</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Cyan" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#00acc1</item>
+        <item name="colorPrimaryLight">#5ddef4</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.DarkGrey" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#424242</item>
+        <item name="colorPrimaryLight">#8e8e8e</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.DeepOrange" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#c25e00</item>
+        <item name="colorPrimaryLight">#ff844c</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.DeepPurple" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#5e35b1</item>
+        <item name="colorPrimaryLight">#9162e4</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Green" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#43a047</item>
+        <item name="colorPrimaryLight">#76d275</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Grey" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#757575</item>
+        <item name="colorPrimaryLight">#a4a4a4</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Indigo" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#3949ab</item>
+        <item name="colorPrimaryLight">#6f74dd</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.LightBlue" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#039be5</item>
+        <item name="colorPrimaryLight">#63ccff</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.LightGreen" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#7cb342</item>
+        <item name="colorPrimaryLight">#aee571</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Lime" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#c0ca33</item>
+        <item name="colorPrimaryLight">#f5fd67</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Orange" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#fb8c00</item>
+        <item name="colorPrimaryLight">#ffbd45</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Pink" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#d81b60</item>
+        <item name="colorPrimaryLight">#ff5c8d</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Purple" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#8e24aa</item>
+        <item name="colorPrimaryLight">#c158dc</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Teal" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#00897b</item>
+        <item name="colorPrimaryLight">#4ebaaa</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled.Material.Yellow" parent="@style/AppTheme.Dark.Amoled.Material.Color">
+        <item name="colorPrimary">#fdd835</item>
+        <item name="colorPrimaryLight">#ffff6b</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Amber" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#ffb300</item>
+        <item name="colorPrimaryDark">#c68400</item>
+        <item name="colorPrimaryLight">#ffe54c</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Blue" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#1e88e5</item>
+        <item name="colorPrimaryDark">#005cb2</item>
+        <item name="colorPrimaryLight">#6ab7ff</item>
+    </style>
+    <style name="AppTheme.Dark.Material.BlueGrey" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#546e7a</item>
+        <item name="colorPrimaryDark">#29434e</item>
+        <item name="colorPrimaryLight">#819ca9</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Brown" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#6d4c41</item>
+        <item name="colorPrimaryDark">#40241a</item>
+        <item name="colorPrimaryLight">#9c786c</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Color" parent="@style/AppTheme.Dark">
+        <item name="android:alertDialogStyle">@style/AppTheme.Dark.Material.Color.Dialog</item>
+        <item name="android:actionBarStyle">@style/AppTheme.Dark.Material.Color.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Dark.Material.Color.OverFlow</item>
+        <item name="android:actionModeStyle">@style/AppTheme.Dark.Material.Color.ActionMode</item>
+        <item name="iconNavigationDown">@drawable/l_down_blk</item>
+        <item name="menuIconAddFile">@drawable/l_add</item>
+        <item name="menuIconAddToFavorite">@drawable/l_add_bookmark</item>
+        <item name="menuIconCancel">@drawable/l_close</item>
+        <item name="menuIconClose">@drawable/l_exit</item>
+        <item name="menuIconComment">@drawable/l_message</item>
+        <item name="menuIconCompress">@drawable/l_download</item>
+        <item name="menuIconCopy">@drawable/l_copy</item>
+        <item name="menuIconCut">@drawable/l_cut</item>
+        <item name="menuIconDelete">@drawable/l_delete</item>
+        <item name="menuIconExtract">@drawable/l_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/l_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/l_info</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/l_mail</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/l_all</item>
+        <item name="menuIconNew">@drawable/l_add_circles</item>
+        <item name="menuIconOk">@drawable/l_done</item>
+        <item name="menuIconOpen">@drawable/l_launch</item>
+        <item name="menuIconPast">@drawable/l_paste</item>
+        <item name="menuIconPermission">@drawable/l_permission</item>
+        <item name="menuIconRating">@drawable/l_thumbup</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/l_create</item>
+        <item name="menuIconSearch">@drawable/l_search</item>
+        <item name="menuIconSelect">@drawable/l_all</item>
+        <item name="menuIconSelectAll">@drawable/l_check_all</item>
+        <item name="menuIconSelectClear">@drawable/l_check_clear</item>
+        <item name="menuIconSelectInvert">@drawable/l_check_inv</item>
+        <item name="menuIconSend">@drawable/l_send</item>
+        <item name="menuIconSettings">@drawable/l_settings</item>
+        <item name="menuIconShare">@drawable/l_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/l_checkbox</item>
+        <item name="menuIconTo">@drawable/l_to</item>
+        <item name="menuIconTool">@drawable/l_apps</item>
+        <item name="menuIconView">@drawable/l_visibility</item>
+        <item name="menuIconViewMode">@drawable/l_view_list</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Color.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:backgroundSplit">?colorPrimary</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Color.ActionMode" parent="@android:style/Widget.Holo.ActionMode">
+        <item name="android:background">@drawable/bg_actionbar_action_dark</item>
+        <item name="android:backgroundSplit">@color/ab_background_material_dark</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Color.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:fullDark">@color/ab_background_material_dark</item>
+        <item name="android:topDark">@color/ab_background_material_dark</item>
+        <item name="android:centerDark">@color/ab_background_material_dark</item>
+        <item name="android:bottomDark">@color/ab_background_material_dark</item>
+        <item name="android:fullBright">@color/ab_background_material_dark</item>
+        <item name="android:topBright">@color/ab_background_material_dark</item>
+        <item name="android:centerBright">@color/ab_background_material_dark</item>
+        <item name="android:bottomBright">@color/ab_background_material_dark</item>
+        <item name="android:bottomMedium">@color/ab_background_material_dark</item>
+        <item name="android:centerMedium">@color/ab_background_material_dark</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Color.OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/l_more_blk</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Cyan" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#00acc1</item>
+        <item name="colorPrimaryDark">#007c91</item>
+        <item name="colorPrimaryLight">#5ddef4</item>
+    </style>
+    <style name="AppTheme.Dark.Material.DarkGrey" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#424242</item>
+        <item name="colorPrimaryDark">#1b1b1b</item>
+        <item name="colorPrimaryLight">#8e8e8e</item>
+    </style>
+    <style name="AppTheme.Dark.Material.DeepOrange" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#c25e00</item>
+        <item name="colorPrimaryDark">#b91400</item>
+        <item name="colorPrimaryLight">#ff844c</item>
+    </style>
+    <style name="AppTheme.Dark.Material.DeepPurple" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#5e35b1</item>
+        <item name="colorPrimaryDark">#280680</item>
+        <item name="colorPrimaryLight">#9162e4</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Green" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#43a047</item>
+        <item name="colorPrimaryDark">#00701a</item>
+        <item name="colorPrimaryLight">#76d275</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Grey" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#757575</item>
+        <item name="colorPrimaryDark">#494949</item>
+        <item name="colorPrimaryLight">#a4a4a4</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Indigo" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#3949ab</item>
+        <item name="colorPrimaryDark">#00227b</item>
+        <item name="colorPrimaryLight">#6f74dd</item>
+    </style>
+    <style name="AppTheme.Dark.Material.LightBlue" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#039be5</item>
+        <item name="colorPrimaryDark">#006db3</item>
+        <item name="colorPrimaryLight">#63ccff</item>
+    </style>
+    <style name="AppTheme.Dark.Material.LightGreen" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#7cb342</item>
+        <item name="colorPrimaryDark">#4b830d</item>
+        <item name="colorPrimaryLight">#aee571</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Lime" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#c0ca33</item>
+        <item name="colorPrimaryDark">#8c9900</item>
+        <item name="colorPrimaryLight">#f5fd67</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Orange" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#fb8c00</item>
+        <item name="colorPrimaryDark">#c25e00</item>
+        <item name="colorPrimaryLight">#ffbd45</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Pink" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#d81b60</item>
+        <item name="colorPrimaryDark">#a00037</item>
+        <item name="colorPrimaryLight">#ff5c8d</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Purple" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#8e24aa</item>
+        <item name="colorPrimaryDark">#5c007a</item>
+        <item name="colorPrimaryLight">#c158dc</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Teal" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#00897b</item>
+        <item name="colorPrimaryDark">#005b4f</item>
+        <item name="colorPrimaryLight">#4ebaaa</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Yellow" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="colorPrimary">#fdd835</item>
+        <item name="colorPrimaryDark">#c6a700</item>
+        <item name="colorPrimaryLight">#ffff6b</item>
+    </style>
+    <style name="AppTheme.DayNight" parent="@style/AppTheme.Light" />
+    <style name="AppTheme.DayNight.Amber" parent="@style/AppTheme.Light.Material.Amber" />
+    <style name="AppTheme.DayNight.Blue" parent="@style/AppTheme.Light.Material.Blue" />
+    <style name="AppTheme.DayNight.BlueGrey" parent="@style/AppTheme.Light.Material.BlueGrey" />
+    <style name="AppTheme.DayNight.Brown" parent="@style/AppTheme.Light.Material.Brown" />
+    <style name="AppTheme.DayNight.Cyan" parent="@style/AppTheme.Light.Material.Cyan" />
+    <style name="AppTheme.DayNight.DarkGrey" parent="@style/AppTheme.Light.Material.DarkGrey" />
+    <style name="AppTheme.DayNight.DeepOrange" parent="@style/AppTheme.Light.Material.DeepOrange" />
+    <style name="AppTheme.DayNight.DeepPurple" parent="@style/AppTheme.Light.Material.DeepPurple" />
+    <style name="AppTheme.DayNight.Green" parent="@style/AppTheme.Light.Material.Green" />
+    <style name="AppTheme.DayNight.Grey" parent="@style/AppTheme.Light.Material.Grey" />
+    <style name="AppTheme.DayNight.Indigo" parent="@style/AppTheme.Light.Material.Indigo" />
+    <style name="AppTheme.DayNight.LightBlue" parent="@style/AppTheme.Light.Material.LightBlue" />
+    <style name="AppTheme.DayNight.LightGreen" parent="@style/AppTheme.Light.Material.LightGreen" />
+    <style name="AppTheme.DayNight.Lime" parent="@style/AppTheme.Light.Material.Lime" />
+    <style name="AppTheme.DayNight.Orange" parent="@style/AppTheme.Light.Material.Orange" />
+    <style name="AppTheme.DayNight.Pink" parent="@style/AppTheme.Light.Material.Pink" />
+    <style name="AppTheme.DayNight.Purple" parent="@style/AppTheme.Light.Material.Purple" />
+    <style name="AppTheme.DayNight.Teal" parent="@style/AppTheme.Light.Material.Teal" />
+    <style name="AppTheme.DayNight.Yellow" parent="@style/AppTheme.Light.Material.Yellow" />
+    <style name="AppTheme.Light" parent="@style/Base.Light">
+        <item name="iconNavigationDown">@drawable/ic_down</item>
+        <item name="menuIconAddFile">@drawable/ic_menu_add_file</item>
+        <item name="menuIconAddToFavorite">@drawable/ic_menu_star</item>
+        <item name="menuIconCancel">@drawable/ic_menu_close_clear_cancel</item>
+        <item name="menuIconClose">@drawable/ic_menu_close_clear_cancel</item>
+        <item name="menuIconComment">@drawable/ic_menu_coment</item>
+        <item name="menuIconCompress">@drawable/ic_menu_load</item>
+        <item name="menuIconCopy">@drawable/ic_menu_copy</item>
+        <item name="menuIconCut">@drawable/ic_menu_cut</item>
+        <item name="menuIconDelete">@drawable/ic_menu_delete</item>
+        <item name="menuIconExtend">@drawable/l_extend</item>
+        <item name="menuIconExtract">@drawable/ic_menu_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/ic_menu_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/ic_menu_info_details</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/content_new_email</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/content_select_all_light</item>
+        <item name="menuIconNew">@drawable/ic_menu_add</item>
+        <item name="menuIconOk">@drawable/navigation_accept</item>
+        <item name="menuIconOpen">@drawable/ic_menu_set_as</item>
+        <item name="menuIconPast">@drawable/ic_menu_paste</item>
+        <item name="menuIconPermission">@drawable/ic_permission</item>
+        <item name="menuIconRating">@drawable/rating_good</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/ic_menu_edit</item>
+        <item name="menuIconSearch">@drawable/ic_menu_search</item>
+        <item name="menuIconSelect">@drawable/ic_menu_mark</item>
+        <item name="menuIconSelectAll">@drawable/content_select_all_light</item>
+        <item name="menuIconSelectClear">@drawable/content_select_clear_light</item>
+        <item name="menuIconSelectInvert">@drawable/content_select_invert_light</item>
+        <item name="menuIconSend">@drawable/ic_menu_send</item>
+        <item name="menuIconSettings">@drawable/action_settings</item>
+        <item name="menuIconShare">@drawable/social_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/navigation_accept</item>
+        <item name="menuIconTo">@drawable/ic_menu_goto</item>
+        <item name="menuIconTool">@drawable/ic_menu_preferences</item>
+        <item name="menuIconView">@drawable/ic_menu_view</item>
+        <item name="menuIconViewMode">@drawable/ic_menu_sort</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar" parent="@style/Base.Light.DarkActionBar">
+        <item name="iconNavigationDown">@drawable/ic_down</item>
+        <item name="menuIconAddFile">@drawable/ic_menu_add_file</item>
+        <item name="menuIconAddToFavorite">@drawable/ic_menu_star</item>
+        <item name="menuIconCancel">@drawable/ic_menu_close_clear_cancel</item>
+        <item name="menuIconClose">@drawable/ic_menu_close_clear_cancel</item>
+        <item name="menuIconComment">@drawable/ic_menu_coment</item>
+        <item name="menuIconCompress">@drawable/ic_menu_load</item>
+        <item name="menuIconCopy">@drawable/ic_menu_copy</item>
+        <item name="menuIconCut">@drawable/ic_menu_cut</item>
+        <item name="menuIconDelete">@drawable/ic_menu_delete</item>
+        <item name="menuIconExtend">@drawable/l_extend</item>
+        <item name="menuIconExtract">@drawable/ic_menu_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/ic_menu_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/ic_menu_info_details</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/content_new_email</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/content_select_all_dark</item>
+        <item name="menuIconNew">@drawable/ic_menu_add</item>
+        <item name="menuIconOk">@drawable/navigation_accept</item>
+        <item name="menuIconOpen">@drawable/ic_menu_set_as</item>
+        <item name="menuIconPast">@drawable/ic_menu_paste</item>
+        <item name="menuIconPermission">@drawable/ic_permission</item>
+        <item name="menuIconRating">@drawable/rating_good</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/ic_menu_edit</item>
+        <item name="menuIconSearch">@drawable/ic_menu_search</item>
+        <item name="menuIconSelect">@drawable/ic_menu_mark</item>
+        <item name="menuIconSelectAll">@drawable/content_select_all_dark</item>
+        <item name="menuIconSelectClear">@drawable/content_select_clear_dark</item>
+        <item name="menuIconSelectInvert">@drawable/content_select_invert_dark</item>
+        <item name="menuIconSend">@drawable/ic_menu_send</item>
+        <item name="menuIconSettings">@drawable/action_settings</item>
+        <item name="menuIconShare">@drawable/social_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/navigation_accept</item>
+        <item name="menuIconTo">@drawable/ic_menu_goto</item>
+        <item name="menuIconTool">@drawable/ic_menu_preferences</item>
+        <item name="menuIconView">@drawable/ic_menu_view</item>
+        <item name="menuIconViewMode">@drawable/ic_menu_sort</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Amber" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#ffb300</item>
+        <item name="colorPrimaryDark">#c68400</item>
+        <item name="colorPrimaryLight">#ffe54c</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Blue" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#1e88e5</item>
+        <item name="colorPrimaryDark">#005cb2</item>
+        <item name="colorPrimaryLight">#6ab7ff</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.BlueGrey" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#546e7a</item>
+        <item name="colorPrimaryDark">#29434e</item>
+        <item name="colorPrimaryLight">#819ca9</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Brown" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#6d4c41</item>
+        <item name="colorPrimaryDark">#40241a</item>
+        <item name="colorPrimaryLight">#9c786c</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Color" parent="@style/AppTheme.Light.DarkActionBar">
+        <item name="android:alertDialogStyle">@style/AppTheme.Light.Material.Color.Dialog</item>
+        <item name="android:actionBarStyle">@style/AppTheme.Dark.Material.Color.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Light.DarkActionBar.Material.Color.OverFlow</item>
+        <item name="android:actionModeStyle">@style/AppTheme.Dark.Material.Color.ActionMode</item>
+        <item name="iconNavigationDown">@drawable/l_down_blk</item>
+        <item name="menuIconAddFile">@drawable/l_add</item>
+        <item name="menuIconAddToFavorite">@drawable/l_add_bookmark</item>
+        <item name="menuIconCancel">@drawable/l_close</item>
+        <item name="menuIconClose">@drawable/l_exit</item>
+        <item name="menuIconComment">@drawable/l_message</item>
+        <item name="menuIconCompress">@drawable/l_download</item>
+        <item name="menuIconCopy">@drawable/l_copy</item>
+        <item name="menuIconCut">@drawable/l_cut</item>
+        <item name="menuIconDelete">@drawable/l_delete</item>
+        <item name="menuIconExtract">@drawable/l_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/l_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/l_info</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/l_mail</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/l_all</item>
+        <item name="menuIconNew">@drawable/l_add_circles</item>
+        <item name="menuIconOk">@drawable/l_done</item>
+        <item name="menuIconOpen">@drawable/l_launch</item>
+        <item name="menuIconPast">@drawable/l_paste</item>
+        <item name="menuIconPermission">@drawable/l_permission</item>
+        <item name="menuIconRating">@drawable/l_thumbup</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/l_create</item>
+        <item name="menuIconSearch">@drawable/l_search</item>
+        <item name="menuIconSelect">@drawable/l_all</item>
+        <item name="menuIconSelectAll">@drawable/l_check_all</item>
+        <item name="menuIconSelectClear">@drawable/l_check_clear</item>
+        <item name="menuIconSelectInvert">@drawable/l_check_inv</item>
+        <item name="menuIconSend">@drawable/l_send</item>
+        <item name="menuIconSettings">@drawable/l_settings</item>
+        <item name="menuIconShare">@drawable/l_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/l_checkbox</item>
+        <item name="menuIconTo">@drawable/l_to</item>
+        <item name="menuIconTool">@drawable/l_apps</item>
+        <item name="menuIconView">@drawable/l_visibility</item>
+        <item name="menuIconViewMode">@drawable/l_view_list</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Cyan" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#00acc1</item>
+        <item name="colorPrimaryDark">#007c91</item>
+        <item name="colorPrimaryLight">#5ddef4</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.DarkGrey" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#424242</item>
+        <item name="colorPrimaryDark">#1b1b1b</item>
+        <item name="colorPrimaryLight">#8e8e8e</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.DeepOrange" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#c25e00</item>
+        <item name="colorPrimaryDark">#b91400</item>
+        <item name="colorPrimaryLight">#ff844c</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.DeepPurple" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#5e35b1</item>
+        <item name="colorPrimaryDark">#280680</item>
+        <item name="colorPrimaryLight">#9162e4</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Green" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#43a047</item>
+        <item name="colorPrimaryDark">#00701a</item>
+        <item name="colorPrimaryLight">#76d275</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Grey" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#757575</item>
+        <item name="colorPrimaryDark">#494949</item>
+        <item name="colorPrimaryLight">#a4a4a4</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Indigo" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#3949ab</item>
+        <item name="colorPrimaryDark">#00227b</item>
+        <item name="colorPrimaryLight">#6f74dd</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.LightBlue" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#039be5</item>
+        <item name="colorPrimaryDark">#006db3</item>
+        <item name="colorPrimaryLight">#63ccff</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.LightGreen" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#7cb342</item>
+        <item name="colorPrimaryDark">#4b830d</item>
+        <item name="colorPrimaryLight">#aee571</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Lime" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#c0ca33</item>
+        <item name="colorPrimaryDark">#8c9900</item>
+        <item name="colorPrimaryLight">#f5fd67</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Orange" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#fb8c00</item>
+        <item name="colorPrimaryDark">#c25e00</item>
+        <item name="colorPrimaryLight">#ffbd45</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Pink" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#d81b60</item>
+        <item name="colorPrimaryDark">#a00037</item>
+        <item name="colorPrimaryLight">#ff5c8d</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Purple" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#8e24aa</item>
+        <item name="colorPrimaryDark">#5c007a</item>
+        <item name="colorPrimaryLight">#c158dc</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Teal" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#00897b</item>
+        <item name="colorPrimaryDark">#005b4f</item>
+        <item name="colorPrimaryLight">#4ebaaa</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Yellow" parent="@style/AppTheme.Light.DarkActionBar.Material.Color">
+        <item name="colorPrimary">#fdd835</item>
+        <item name="colorPrimaryDark">#c6a700</item>
+        <item name="colorPrimaryLight">#ffff6b</item>
+    </style>
+    <style name="AppTheme.Light.EInk" parent="@style/AppTheme.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:actionMenuTextColor">#000000</item>
+        <item name="actionBarBackgroundInRoot">#fde2da</item>
+        <item name="backgroundColorFileList">@android:color/white</item>
+        <item name="backgroundColorFileListItem">#00000000</item>
+        <item name="bottomSheetStyle">@style/Base.EInk.Dialog.BottomSheet</item>
+        <item name="defaultTextColorFileList">#ff000000</item>
+        <item name="defaultTextColorFileListMessage">#ff000000</item>
+        <item name="defaultTextColorFileListSub">#ff000000</item>
+        <item name="toolbarMenuStyle">@style/Base.Light.EInk.ToolbarMenuStyle</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Amber" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#ffb300</item>
+        <item name="colorPrimaryLight">#ffe54c</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Blue" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#1e88e5</item>
+        <item name="colorPrimaryLight">#6ab7ff</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.BlueGrey" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#546e7a</item>
+        <item name="colorPrimaryLight">#819ca9</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Brown" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#6d4c41</item>
+        <item name="colorPrimaryLight">#9c786c</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Color" parent="@style/AppTheme.Light.Material.Color">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:actionMenuTextColor">#000000</item>
+        <item name="backgroundColorFileList">@android:color/white</item>
+        <item name="backgroundColorFileListItem">#00000000</item>
+        <item name="bottomSheetStyle">@style/Base.EInk.Dialog.BottomSheet</item>
+        <item name="defaultTextColorFileList">#ff000000</item>
+        <item name="defaultTextColorFileListMessage">#ff000000</item>
+        <item name="defaultTextColorFileListSub">#ff000000</item>
+        <item name="toolbarMenuStyle">@style/Base.Light.EInk.ToolbarMenuStyle</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Cyan" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#00acc1</item>
+        <item name="colorPrimaryLight">#5ddef4</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.DarkGrey" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#424242</item>
+        <item name="colorPrimaryLight">#8e8e8e</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.DeepOrange" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#c25e00</item>
+        <item name="colorPrimaryLight">#ff844c</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.DeepPurple" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#5e35b1</item>
+        <item name="colorPrimaryLight">#9162e4</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Green" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#43a047</item>
+        <item name="colorPrimaryLight">#76d275</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Grey" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#757575</item>
+        <item name="colorPrimaryLight">#a4a4a4</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Indigo" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#3949ab</item>
+        <item name="colorPrimaryLight">#6f74dd</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.LightBlue" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#039be5</item>
+        <item name="colorPrimaryLight">#63ccff</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.LightGreen" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#7cb342</item>
+        <item name="colorPrimaryLight">#aee571</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Lime" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#c0ca33</item>
+        <item name="colorPrimaryLight">#f5fd67</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Orange" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#fb8c00</item>
+        <item name="colorPrimaryLight">#ffbd45</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Pink" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#d81b60</item>
+        <item name="colorPrimaryLight">#ff5c8d</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Purple" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#8e24aa</item>
+        <item name="colorPrimaryLight">#c158dc</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Teal" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#00897b</item>
+        <item name="colorPrimaryLight">#4ebaaa</item>
+    </style>
+    <style name="AppTheme.Light.EInk.Material.Yellow" parent="@style/AppTheme.Light.EInk.Material.Color">
+        <item name="colorPrimary">#fdd835</item>
+        <item name="colorPrimaryLight">#ffff6b</item>
+    </style>
+    <style name="AppTheme.Light.Material.Amber" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#ffb300</item>
+        <item name="colorPrimaryDark">#c68400</item>
+        <item name="colorPrimaryLight">#ffe54c</item>
+    </style>
+    <style name="AppTheme.Light.Material.Blue" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#1e88e5</item>
+        <item name="colorPrimaryDark">#005cb2</item>
+        <item name="colorPrimaryLight">#6ab7ff</item>
+    </style>
+    <style name="AppTheme.Light.Material.BlueGrey" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#546e7a</item>
+        <item name="colorPrimaryDark">#29434e</item>
+        <item name="colorPrimaryLight">#819ca9</item>
+    </style>
+    <style name="AppTheme.Light.Material.Brown" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#6d4c41</item>
+        <item name="colorPrimaryDark">#40241a</item>
+        <item name="colorPrimaryLight">#9c786c</item>
+    </style>
+    <style name="AppTheme.Light.Material.Color" parent="@style/AppTheme.Light">
+        <item name="android:alertDialogStyle">@style/AppTheme.Light.Material.Color.Dialog</item>
+        <item name="android:actionBarStyle">@style/AppTheme.Light.Material.Color.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Light.Material.Color.OverFlow</item>
+        <item name="android:actionModeStyle">@style/AppTheme.Light.Material.Color.ActionMode</item>
+        <item name="iconNavigationDown">@drawable/l_down</item>
+        <item name="menuIconAddFile">@drawable/l_add</item>
+        <item name="menuIconAddToFavorite">@drawable/l_add_bookmark</item>
+        <item name="menuIconCancel">@drawable/l_close</item>
+        <item name="menuIconClose">@drawable/l_exit</item>
+        <item name="menuIconComment">@drawable/l_message</item>
+        <item name="menuIconCompress">@drawable/l_download</item>
+        <item name="menuIconCopy">@drawable/l_copy</item>
+        <item name="menuIconCut">@drawable/l_cut</item>
+        <item name="menuIconDelete">@drawable/l_delete</item>
+        <item name="menuIconExtract">@drawable/l_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/l_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/l_info</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/l_mail</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/l_all</item>
+        <item name="menuIconNew">@drawable/l_add_circles</item>
+        <item name="menuIconOk">@drawable/l_done</item>
+        <item name="menuIconOpen">@drawable/l_launch</item>
+        <item name="menuIconPast">@drawable/l_paste</item>
+        <item name="menuIconPermission">@drawable/l_permission</item>
+        <item name="menuIconRating">@drawable/l_thumbup</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/l_create</item>
+        <item name="menuIconSearch">@drawable/l_search</item>
+        <item name="menuIconSelect">@drawable/l_all</item>
+        <item name="menuIconSelectAll">@drawable/l_check_all</item>
+        <item name="menuIconSelectClear">@drawable/l_check_clear</item>
+        <item name="menuIconSelectInvert">@drawable/l_check_inv</item>
+        <item name="menuIconSend">@drawable/l_send</item>
+        <item name="menuIconSettings">@drawable/l_settings</item>
+        <item name="menuIconShare">@drawable/l_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/l_checkbox</item>
+        <item name="menuIconTo">@drawable/l_to</item>
+        <item name="menuIconTool">@drawable/l_apps</item>
+        <item name="menuIconView">@drawable/l_visibility</item>
+        <item name="menuIconViewMode">@drawable/l_view_list</item>
+    </style>
+    <style name="AppTheme.Light.Material.Color.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:backgroundSplit">?colorPrimary</item>
+    </style>
+    <style name="AppTheme.Light.Material.Color.ActionMode" parent="@android:style/Widget.Holo.ActionMode">
+        <item name="android:background">@drawable/bg_actionbar_action_light</item>
+        <item name="android:backgroundSplit">@color/ab_background_material_light</item>
+    </style>
+    <style name="AppTheme.Light.Material.Color.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:fullDark">@color/ab_background_material_light</item>
+        <item name="android:topDark">@color/ab_background_material_light</item>
+        <item name="android:centerDark">@color/ab_background_material_light</item>
+        <item name="android:bottomDark">@color/ab_background_material_light</item>
+        <item name="android:fullBright">@color/ab_background_material_light</item>
+        <item name="android:topBright">@color/ab_background_material_light</item>
+        <item name="android:centerBright">@color/ab_background_material_light</item>
+        <item name="android:bottomBright">@color/ab_background_material_light</item>
+        <item name="android:bottomMedium">@color/ab_background_material_light</item>
+        <item name="android:centerMedium">@color/ab_background_material_light</item>
+    </style>
+    <style name="AppTheme.Light.Material.Color.OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/l_more</item>
+    </style>
+    <style name="AppTheme.Light.Material.Cyan" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#00acc1</item>
+        <item name="colorPrimaryDark">#007c91</item>
+        <item name="colorPrimaryLight">#5ddef4</item>
+    </style>
+    <style name="AppTheme.Light.Material.DarkGrey" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#424242</item>
+        <item name="colorPrimaryDark">#1b1b1b</item>
+        <item name="colorPrimaryLight">#8e8e8e</item>
+    </style>
+    <style name="AppTheme.Light.Material.DeepOrange" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#c25e00</item>
+        <item name="colorPrimaryDark">#b91400</item>
+        <item name="colorPrimaryLight">#ff844c</item>
+    </style>
+    <style name="AppTheme.Light.Material.DeepPurple" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#5e35b1</item>
+        <item name="colorPrimaryDark">#280680</item>
+        <item name="colorPrimaryLight">#9162e4</item>
+    </style>
+    <style name="AppTheme.Light.Material.Green" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#43a047</item>
+        <item name="colorPrimaryDark">#00701a</item>
+        <item name="colorPrimaryLight">#76d275</item>
+    </style>
+    <style name="AppTheme.Light.Material.Grey" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#757575</item>
+        <item name="colorPrimaryDark">#494949</item>
+        <item name="colorPrimaryLight">#a4a4a4</item>
+    </style>
+    <style name="AppTheme.Light.Material.Indigo" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#3949ab</item>
+        <item name="colorPrimaryDark">#00227b</item>
+        <item name="colorPrimaryLight">#6f74dd</item>
+    </style>
+    <style name="AppTheme.Light.Material.LightBlue" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#039be5</item>
+        <item name="colorPrimaryDark">#006db3</item>
+        <item name="colorPrimaryLight">#63ccff</item>
+    </style>
+    <style name="AppTheme.Light.Material.LightGreen" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#7cb342</item>
+        <item name="colorPrimaryDark">#4b830d</item>
+        <item name="colorPrimaryLight">#aee571</item>
+    </style>
+    <style name="AppTheme.Light.Material.Lime" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#c0ca33</item>
+        <item name="colorPrimaryDark">#8c9900</item>
+        <item name="colorPrimaryLight">#f5fd67</item>
+    </style>
+    <style name="AppTheme.Light.Material.Orange" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#fb8c00</item>
+        <item name="colorPrimaryDark">#c25e00</item>
+        <item name="colorPrimaryLight">#ffbd45</item>
+    </style>
+    <style name="AppTheme.Light.Material.Pink" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#d81b60</item>
+        <item name="colorPrimaryDark">#a00037</item>
+        <item name="colorPrimaryLight">#ff5c8d</item>
+    </style>
+    <style name="AppTheme.Light.Material.Purple" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#8e24aa</item>
+        <item name="colorPrimaryDark">#5c007a</item>
+        <item name="colorPrimaryLight">#c158dc</item>
+    </style>
+    <style name="AppTheme.Light.Material.Teal" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#00897b</item>
+        <item name="colorPrimaryDark">#005b4f</item>
+        <item name="colorPrimaryLight">#4ebaaa</item>
+    </style>
+    <style name="AppTheme.Light.Material.Yellow" parent="@style/AppTheme.Light.Material.Color">
+        <item name="colorPrimary">#fdd835</item>
+        <item name="colorPrimaryDark">#c6a700</item>
+        <item name="colorPrimaryLight">#ffff6b</item>
+    </style>
+    <style name="Base.Amoled.Dialog.BottomSheet" parent="@style/Base.Dark.Dialog.BottomSheet">
+        <item name="android:colorBackground">@color/background_windows_amoled</item>
+    </style>
+    <style name="Base.Dark" parent="@style/Base.v14.Dark" />
+    <style name="Base.Dark.Dialog.BottomSheet" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:paddingLeft">1.0px</item>
+        <item name="android:paddingRight">1.0px</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+    </style>
+    <style name="Base.Dark.ToolbarMenuStyle" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:colorBackground">@color/ab_background_material_dark</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@color/ab_background_material_dark</item>
+    </style>
+    <style name="Base.EInk.Dialog.BottomSheet" parent="@style/Base.Light.Dialog.BottomSheet">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="Base.Light" parent="@style/Base.v14.Light" />
+    <style name="Base.Light.DarkActionBar" parent="@style/Base.v14.Light.DarkActionBar" />
+    <style name="Base.Light.Dialog.BottomSheet" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:paddingLeft">1.0px</item>
+        <item name="android:paddingRight">1.0px</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+    </style>
+    <style name="Base.Light.EInk.ToolbarMenuStyle" parent="@style/Base.Light.ToolbarMenuStyle">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="Base.Light.ToolbarMenuStyle" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:colorBackground">@color/ab_background_material_light</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@color/ab_background_material_light</item>
+    </style>
+    <style name="Base.v14.Dark" parent="@android:style/Theme.DeviceDefault">
+        <item name="actionBarBackgroundInRoot">#8e2809</item>
+        <item name="backgroundColorFileList">@color/background_holo_dark</item>
+        <item name="backgroundColorFileListItem">#20000000</item>
+        <item name="bottomSheetExpandIcon">@drawable/ic_up_white</item>
+        <item name="bottomSheetStyle">@style/Base.Dark.Dialog.BottomSheet</item>
+        <item name="colorAccent">@color/ui_base_light</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/ui_base</item>
+        <item name="colorPrimaryDark">@color/ui_base_dark</item>
+        <item name="colorPrimaryLight">@color/ui_base_light</item>
+        <item name="colorSelectHighlight">?colorPrimary</item>
+        <item name="defaultTextColorFileList">#ffffff</item>
+        <item name="defaultTextColorFileListMessage">#ffffff</item>
+        <item name="defaultTextColorFileListSub">#bbb</item>
+        <item name="isLightActionBar">false</item>
+        <item name="isLightTheme">false</item>
+    </style>
+    <style name="Base.v14.Light" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="actionBarBackgroundInRoot">#dd3f0e</item>
+        <item name="backgroundColorFileList">@color/background_holo_light</item>
+        <item name="backgroundColorFileListItem">#20ffffff</item>
+        <item name="bottomSheetExpandIcon">@drawable/ic_up_black</item>
+        <item name="bottomSheetStyle">@style/Base.Light.Dialog.BottomSheet</item>
+        <item name="colorAccent">@color/ui_base_dark</item>
+        <item name="colorControlNormal">@android:color/black</item>
+        <item name="colorPrimary">@color/ui_base</item>
+        <item name="colorPrimaryDark">@color/ui_base_dark</item>
+        <item name="colorPrimaryLight">@color/ui_base_light</item>
+        <item name="colorSelectHighlight">?colorPrimaryLight</item>
+        <item name="defaultTextColorFileList">#000000</item>
+        <item name="defaultTextColorFileListMessage">#000000</item>
+        <item name="defaultTextColorFileListSub">#000000</item>
+        <item name="isLightActionBar">true</item>
+        <item name="isLightTheme">true</item>
+    </style>
+    <style name="Base.v14.Light.DarkActionBar" parent="@android:style/Theme.DeviceDefault.Light.DarkActionBar">
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="actionBarBackgroundInRoot">#8e2809</item>
+        <item name="backgroundColorFileList">@color/background_holo_light</item>
+        <item name="backgroundColorFileListItem">#20ffffff</item>
+        <item name="bottomSheetExpandIcon">@drawable/ic_up_black</item>
+        <item name="bottomSheetStyle">@style/Base.Light.Dialog.BottomSheet</item>
+        <item name="colorAccent">@color/ui_base_dark</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/ui_base</item>
+        <item name="colorPrimaryDark">@color/ui_base_dark</item>
+        <item name="colorPrimaryLight">@color/ui_base_light</item>
+        <item name="colorSelectHighlight">?colorPrimaryLight</item>
+        <item name="defaultTextColorFileList">#000000</item>
+        <item name="defaultTextColorFileListMessage">#000000</item>
+        <item name="defaultTextColorFileListSub">#000000</item>
+        <item name="isLightActionBar">false</item>
+        <item name="isLightTheme">true</item>
+    </style>
+    <style name="DialogButtonStyle" parent="@style/OpenAsBottomButton">
+        <item name="android:paddingTop">10.0dp</item>
+        <item name="android:paddingBottom">10.0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FloatingActionButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/floating_action_button_margin</item>
+        <item name="android:layout_marginBottom">@dimen/floating_action_button_margin</item>
+    </style>
+    <style name="FolderTheme">
+        <item name="folderColor">@color/ui_icon_folder</item>
+        <item name="folderColorAccent">@color/ui_icon_folder_accent</item>
+        <item name="folderColorDark">@color/ui_icon_folder_dark</item>
+    </style>
+    <style name="FolderTheme.Amber" parent="@style/FolderTheme">
+        <item name="folderColor">#ffb812</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#db9900</item>
+    </style>
+    <style name="FolderTheme.Blue" parent="@style/FolderTheme">
+        <item name="folderColor">#1b7fe4</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#1565b4</item>
+    </style>
+    <style name="FolderTheme.BlueGrey" parent="@style/FolderTheme">
+        <item name="folderColor">#4f6772</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#3b4d55</item>
+    </style>
+    <style name="FolderTheme.Brown" parent="@style/FolderTheme">
+        <item name="folderColor">#6d4b40</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#50372f</item>
+    </style>
+    <style name="FolderTheme.Cyan" parent="@style/FolderTheme">
+        <item name="folderColor">#00adc1</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#008290</item>
+    </style>
+    <style name="FolderTheme.DarkGrey" parent="@style/FolderTheme">
+        <item name="folderColor">#505050</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#393939</item>
+    </style>
+    <style name="FolderTheme.DeepOrange" parent="@style/FolderTheme">
+        <item name="folderColor">#e7562a</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#c53f16</item>
+    </style>
+    <style name="FolderTheme.DeepPurple" parent="@style/FolderTheme">
+        <item name="folderColor">#5a31ba</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#472791</item>
+    </style>
+    <style name="FolderTheme.Green" parent="@style/FolderTheme">
+        <item name="folderColor">#3f9e44</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#317a34</item>
+    </style>
+    <style name="FolderTheme.Grey" parent="@style/FolderTheme">
+        <item name="folderColor">#7f7f7f</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#656565</item>
+    </style>
+    <style name="FolderTheme.Indigo" parent="@style/FolderTheme">
+        <item name="folderColor">#3546b2</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#29368a</item>
+    </style>
+    <style name="FolderTheme.LightBlue" parent="@style/FolderTheme">
+        <item name="folderColor">#0295e4</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#0274b1</item>
+    </style>
+    <style name="FolderTheme.LightGreen" parent="@style/FolderTheme">
+        <item name="folderColor">#72ae3d</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#598830</item>
+    </style>
+    <style name="FolderTheme.Lime" parent="@style/FolderTheme">
+        <item name="folderColor">#c0c530</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#979b26</item>
+    </style>
+    <style name="FolderTheme.Orange" parent="@style/FolderTheme">
+        <item name="folderColor">#f57c00</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#e65100</item>
+    </style>
+    <style name="FolderTheme.Pink" parent="@style/FolderTheme">
+        <item name="folderColor">#e01659</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#ad1457</item>
+    </style>
+    <style name="FolderTheme.Purple" parent="@style/FolderTheme">
+        <item name="folderColor">#8a23b6</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#6a1b8c</item>
+    </style>
+    <style name="FolderTheme.Red" parent="@style/FolderTheme">
+        <item name="folderColor">#d64040</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#b82727</item>
+    </style>
+    <style name="FolderTheme.Teal" parent="@style/FolderTheme">
+        <item name="folderColor">#009685</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#00695d</item>
+    </style>
+    <style name="FolderTheme.Yellow" parent="@style/FolderTheme">
+        <item name="folderColor">#fbc53c</item>
+        <item name="folderColorAccent">#ffffff</item>
+        <item name="folderColorDark">#f8b405</item>
+    </style>
+    <style name="InlineButton">
+        <item name="android:textAppearance">?android:textAppearance</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">left|clip_horizontal</item>
+        <item name="android:background">@drawable/bg_selectable_button</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:minWidth">?android:listPreferredItemHeightSmall</item>
+        <item name="android:minHeight">?android:listPreferredItemHeightSmall</item>
+        <item name="android:selectable">true</item>
+        <item name="android:contentDescription">null</item>
+    </style>
+    <style name="OpenAsBottomButton">
+        <item name="android:textAppearance">?android:textAppearanceButton</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:paddingLeft">12.0dp</item>
+        <item name="android:paddingRight">12.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/open_as_button_height</item>
+        <item name="android:minWidth">@dimen/open_as_button_min_width</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="Theme.Transparent" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

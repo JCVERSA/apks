@@ -1,0 +1,66 @@
+[
+  {
+    "file": "q0/a.java",
+    "line": 318,
+    "kind": "Activity",
+    "immutable_flag_detected": true,
+    "mutable_flag_detected": false,
+    "snippet": "PendingIntent.getActivity(zAppE, 0, new Intent(\"ru.zdevs.zarchiver.APP_INSTALL_RESULT\", hVar.s(), zAppE, ZArchiver.class), 167772160).getIntentSender())"
+  },
+  {
+    "file": "q0/a.java",
+    "line": 465,
+    "kind": "Activity",
+    "immutable_flag_detected": true,
+    "mutable_flag_detected": false,
+    "snippet": "PendingIntent.getActivity(zAppE, 0, new Intent(\"ru.zdevs.zarchiver.APP_INSTALL_RESULT\", hVar.s(), zAppE, cls), 167772160).getIntentSender())"
+  },
+  {
+    "file": "ru/zdevs/zarchiver/ZApp.java",
+    "line": 186,
+    "kind": "Service",
+    "immutable_flag_detected": false,
+    "mutable_flag_detected": false,
+    "snippet": "PendingIntent.getService(this, 0, new Intent(this, (Class<?>) ZArchiverClearTemp.class), 301989888)"
+  },
+  {
+    "file": "ru/zdevs/zarchiver/service/b.java",
+    "line": 76,
+    "kind": "Activity",
+    "immutable_flag_detected": false,
+    "mutable_flag_detected": false,
+    "snippet": "PendingIntent.getActivity(service, i3, intent, 201326592))"
+  },
+  {
+    "file": "ru/zdevs/zarchiver/service/b.java",
+    "line": 95,
+    "kind": "Activity",
+    "immutable_flag_detected": false,
+    "mutable_flag_detected": false,
+    "snippet": "PendingIntent.getActivity(service, i4, intent, 201326592))"
+  },
+  {
+    "file": "ru/zdevs/zarchiver/service/b.java",
+    "line": 132,
+    "kind": "Service",
+    "immutable_flag_detected": false,
+    "mutable_flag_detected": false,
+    "snippet": "PendingIntent.getService(service, 0, intent2, 1140850688)"
+  },
+  {
+    "file": "ru/zdevs/zarchiver/service/b.java",
+    "line": 133,
+    "kind": "Activity",
+    "immutable_flag_detected": false,
+    "mutable_flag_detected": false,
+    "snippet": "PendingIntent.getActivity(service, i2 + 60, intent, 201326592)).build()"
+  },
+  {
+    "file": "ru/zdevs/zarchiver/service/b.java",
+    "line": 138,
+    "kind": "Activity",
+    "immutable_flag_detected": false,
+    "mutable_flag_detected": false,
+    "snippet": "PendingIntent.getActivity(service, i2 + 60, intent, 201326592))"
+  }
+]

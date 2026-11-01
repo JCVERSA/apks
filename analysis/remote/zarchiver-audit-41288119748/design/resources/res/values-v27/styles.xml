@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Dark" parent="@style/Base.v27.Dark" />
+    <style name="Base.Light" parent="@style/Base.v27.Light" />
+    <style name="Base.Light.DarkActionBar" parent="@style/Base.v27.Light.DarkActionBar" />
+    <style name="Base.v27.Dark" parent="@style/Base.v21.Dark">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:navigationBarColor">#50000000</item>
+    </style>
+    <style name="Base.v27.Light" parent="@style/Base.v23.Light">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:navigationBarColor">#09000000</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="Base.v27.Light.DarkActionBar" parent="@style/Base.v21.Light.DarkActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:navigationBarColor">#09000000</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

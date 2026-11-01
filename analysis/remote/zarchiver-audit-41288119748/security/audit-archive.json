@@ -1,0 +1,29 @@
+{
+  "size_bytes": 4864570,
+  "sha256": "aab078d2ea7b80e7199d2bb988772128131848c4df078ea8c55b19df7dfc16fd",
+  "entries": 569,
+  "testzip": null,
+  "dex_files": [
+    "classes.dex"
+  ],
+  "abis": [
+    "armeabi-v7a"
+  ],
+  "meta_inf": [
+    "META-INF/com/android/build/gradle/app-metadata.properties",
+    "META-INF/CERT.SF",
+    "META-INF/CERT.RSA",
+    "META-INF/MANIFEST.MF"
+  ],
+  "signature_blocks": [
+    "META-INF/CERT.SF",
+    "META-INF/CERT.RSA"
+  ],
+  "stored_native_libs": [],
+  "total_uncompressed": 7712773,
+  "total_compressed": 4779186,
+  "duplicate_entries": [],
+  "suspicious_paths": [],
+  "kotlin_metadata": false,
+  "proguard_mapping": false
+}

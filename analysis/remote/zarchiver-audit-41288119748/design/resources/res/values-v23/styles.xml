@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Dark.Amoled" parent="@style/Base.v23.Dark.Amoled" />
+    <style name="AppTheme.Dark.Amoled.Material.Color" parent="@style/Base.v23.Dark.Amoled.Material.Color" />
+    <style name="AppTheme.Light.EInk" parent="@style/Base.v23.Light.EInk" />
+    <style name="AppTheme.Light.EInk.Material.Color" parent="@style/Base.v23.Light.EInk.Material.Color" />
+    <style name="Base.Dark.Amoled.AlertDialog" parent="@style/Base.Dark.AlertDialog">
+        <item name="android:colorBackgroundFloating">@color/background_windows_amoled</item>
+    </style>
+    <style name="Base.Light" parent="@style/Base.v23.Light" />
+    <style name="Base.Light.EInk.AlertDialog" parent="@style/Base.Light.AlertDialog">
+        <item name="android:windowBackground">@drawable/bg_eink_dialog</item>
+        <item name="android:windowElevation">0.0px</item>
+        <item name="android:colorBackgroundFloating">@android:color/white</item>
+    </style>
+    <style name="Base.v23.Dark.Amoled" parent="@style/Base.v21.Dark.Amoled">
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/primary_text</item>
+        <item name="android:textColorTertiary">@color/primary_text</item>
+        <item name="android:colorBackgroundFloating">@color/background_windows_amoled</item>
+        <item name="textColorBase">#ffffffff</item>
+    </style>
+    <style name="Base.v23.Dark.Amoled.Material.Color" parent="@style/Base.v21.Dark.Amoled.Material.Color">
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/primary_text</item>
+        <item name="android:textColorTertiary">@color/primary_text</item>
+        <item name="android:colorBackgroundFloating">@color/background_windows_amoled</item>
+        <item name="textColorBase">#ffffffff</item>
+    </style>
+    <style name="Base.v23.Light" parent="@style/Base.v21.Light">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Base.v23.Light.EInk" parent="@style/Base.v21.Light.EInk">
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/primary_text</item>
+        <item name="android:textColorTertiary">@color/primary_text</item>
+        <item name="android:colorBackgroundFloating">@android:color/white</item>
+        <item name="textColorBase">#ff000000</item>
+    </style>
+    <style name="Base.v23.Light.EInk.Material.Color" parent="@style/Base.v21.Light.EInk.Material.Color">
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/primary_text</item>
+        <item name="android:textColorTertiary">@color/primary_text</item>
+        <item name="android:colorBackgroundFloating">@android:color/white</item>
+        <item name="textColorBase">#ff000000</item>
+    </style>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding_tiny" android:paddingRight="@dimen/padding_tiny" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearance" android:gravity="start|center" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/OVERW_TEXT" />
+    <TextView android:textAppearance="?android:textAppearance" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/OVERW_SCR_FILE" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center" android:id="@id/tv_src" android:paddingLeft="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?android:textAppearance" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/OVERW_DEST_FILE" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center" android:id="@id/tv_dest" android:paddingLeft="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <CheckBox android:gravity="start|center" android:id="@id/cb_to_all" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/OVERW_TO_ALL_FILE" />
+    <HorizontalScrollView android:scrollbarAlwaysDrawHorizontalTrack="true" android:id="@id/buttonPanel2" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" style="?android:buttonBarStyle">
+        <ru.zdevs.zarchiver.ui.layout.ButtonBarLayout android:gravity="bottom" android:orientation="horizontal" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="?colorPrimary" android:id="@id/btn_cancel" android:text="@string/BTN_CANCEL" style="@style/DialogButtonStyle" />
+            <Space android:id="@id/spacer" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <Button android:textColor="?colorPrimary" android:id="@id/btn_rename" android:text="@string/MENU_RENAME" style="@style/DialogButtonStyle" />
+            <Button android:textColor="?colorPrimary" android:id="@id/btn_skip" android:text="@string/BTN_SKIP" style="@style/DialogButtonStyle" />
+            <Button android:textColor="?colorPrimary" android:id="@id/btn_replace" android:text="@string/BTN_REPLACE" style="@style/DialogButtonStyle" />
+        </ru.zdevs.zarchiver.ui.layout.ButtonBarLayout>
+    </HorizontalScrollView>
+</LinearLayout>

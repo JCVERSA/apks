@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding_tiny" android:paddingRight="@dimen/padding_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:isScrollContainer="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:gravity="start|center" android:id="@id/tvFileName" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="1,2" android:shrinkColumns="2">
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearance" android:textStyle="bold" android:ellipsize="end" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/FINFO_GENERAL_INFO" android:singleLine="true" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FINFO_TYPE" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:gravity="start|center" android:id="@id/tvFileType" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow android:id="@id/trLinkTo" android:visibility="gone">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FINFO_LINK_TO" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center" android:id="@id/tvLinkTo" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow android:id="@id/trFileCount" android:visibility="gone">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FINFO_ARCHIVE_FILE_COUNT" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:gravity="start|center" android:id="@id/tvFileCount" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FINFO_SIZE" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center" android:id="@id/tvFileSize" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FINFO_LAST_MOD" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center" android:id="@id/tvFileLastMod" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow android:id="@id/trUserGroup" android:visibility="gone">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FINFO_USER_GROUP" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center" android:id="@id/tvUserGroup" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow android:id="@id/trPermissions" android:visibility="gone">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FINFO_PERMISSIONS" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center" android:id="@id/tvPermissions" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FINFO_FS_PATH" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="start" android:gravity="start|center" android:id="@id/tvFSPath" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FINFO_FS_TYPE" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center" android:id="@id/tvFSType" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow android:id="@id/trMD5">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FINFO_MD5" android:singleLine="true" />
+        </TableRow>
+    </TableLayout>
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center" android:id="@id/tvFileMD5" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" />
+    <CheckBox android:textAppearance="?android:textAppearanceSmall" android:ellipsize="none" android:gravity="start|center" android:id="@id/cbNomedia" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FINFO_NOMEDIA" android:singleLine="true" />
+    <TableLayout android:id="@id/tlMediaInfo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="1,2" android:shrinkColumns="2">
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearance" android:textStyle="bold" android:ellipsize="end" android:gravity="start|center" android:id="@id/tvMediaHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/FINFO_IMAGE_INFO" android:singleLine="true" />
+        </TableRow>
+        <TableRow android:id="@id/trMedia1" android:visibility="gone">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:id="@id/tvTitlMedia1" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:gravity="start|center" android:id="@id/tvMedia1" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow android:id="@id/trMedia2" android:visibility="gone">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:id="@id/tvTitlMedia2" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:gravity="start|center" android:id="@id/tvMedia2" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow android:id="@id/trMedia3" android:visibility="gone">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:id="@id/tvTitlMedia3" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:gravity="start|center" android:id="@id/tvMedia3" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow android:id="@id/trMedia4" android:visibility="gone">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:id="@id/tvTitlMedia4" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:gravity="start|center" android:id="@id/tvMedia4" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+        <TableRow android:id="@id/trMedia5" android:visibility="gone">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:ellipsize="none" android:gravity="start|center" android:id="@id/tvTitlMedia5" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:gravity="start|center" android:id="@id/tvMedia5" android:paddingLeft="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textIsSelectable="true" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

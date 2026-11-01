@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?backgroundColorFileListItem" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:padding="2.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:layout_marginRight="5.0dp" android:scaleType="fitCenter" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/info" android:layout_toRightOf="@id/icon" android:layout_alignParentTop="true" android:layout_alignParentBottom="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="?defaultTextColorFileList" android:ellipsize="end" android:gravity="start|center" android:id="@id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="5" android:textIsSelectable="false" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?defaultTextColorFileList" android:ellipsize="start" android:gravity="start|center" android:id="@id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="5" android:textIsSelectable="false" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="?defaultTextColorFileList" android:gravity="end|center" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:textIsSelectable="false" />
+</RelativeLayout>

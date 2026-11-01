@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="?menuIconNew" android:id="@id/bMenuNew" android:title="@string/MENU_NEW" android:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@id/bNewFolder" android:title="@string/MENU_NEW_FOLDER" />
+            <item android:id="@id/bNewArchive" android:title="@string/MENU_NEW_ARCHIVE" />
+            <item android:id="@id/bNewFile" android:title="@string/MENU_NEW_FILE" />
+        </menu>
+    </item>
+    <item android:icon="?menuIconAddFile" android:id="@id/bMenuAdd" android:title="@string/MENU_ADD" android:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@id/bAddFile" android:title="@string/MENU_ADD_FILES" />
+            <item android:id="@id/bAddFolder" android:title="@string/MENU_ADD_FOLDER" />
+        </menu>
+    </item>
+    <item android:icon="?menuIconViewMode" android:id="@id/bMenuViewMode" android:visible="false" android:title="@string/MENU_VIEW_MODE" android:showAsAction="ifRoom" />
+    <item android:icon="?menuIconComment" android:id="@id/bArchiveCommentAdd" android:visible="false" android:title="@string/MENU_COMMENT" android:showAsAction="ifRoom" />
+    <item android:icon="?menuIconRemountRO" android:id="@id/bRemountRO" android:visible="false" android:title="@string/MENU_REMOUNT_RO" android:showAsAction="ifRoom" />
+    <item android:icon="?menuIconRemountRW" android:id="@id/bRemountRW" android:visible="false" android:title="@string/MENU_REMOUNT_RW" android:showAsAction="ifRoom" />
+</menu>

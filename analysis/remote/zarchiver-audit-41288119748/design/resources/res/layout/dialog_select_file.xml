@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="1.0dp" android:paddingTop="10.0dp" android:paddingRight="1.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlNavigation" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="match_parent" android:layout_height="?android:actionBarSize" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title" android:textColor="?android:textColorPrimary" android:gravity="start|center" android:id="@id/nTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:textIsSelectable="false" />
+            <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle" android:textColor="?android:textColorPrimary" android:ellipsize="start" android:gravity="start|center" android:id="@id/nSubtitle" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:textIsSelectable="false" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?iconNavigationDown" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <ru.zdevs.zarchiver.ui.FSSelect android:id="@id/fs_select" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="1.0dp" android:layout_above="@id/samePath" android:layout_below="@id/rlNavigation" />
+    <CheckBox android:id="@id/samePath" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/OPT_HOME_SAME" android:layout_above="@id/tabSelection" />
+    <RadioGroup android:id="@id/tabSelection" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textAppearance="?android:textAppearance" android:textColor="?defaultTextColorFileListMessage" android:gravity="center" android:id="@id/tv_empty_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/fs_select" android:layout_alignTop="@id/fs_select" android:layout_alignRight="@id/fs_select" android:layout_alignBottom="@id/fs_select" />
+</RelativeLayout>

@@ -1,0 +1,70 @@
+{
+  "apk": {
+    "size_bytes": 4864570,
+    "sha256": "aab078d2ea7b80e7199d2bb988772128131848c4df078ea8c55b19df7dfc16fd",
+    "entries": 569,
+    "testzip": null,
+    "dex_files": [
+      "classes.dex"
+    ],
+    "abis": [
+      "armeabi-v7a"
+    ],
+    "meta_inf": [
+      "META-INF/com/android/build/gradle/app-metadata.properties",
+      "META-INF/CERT.SF",
+      "META-INF/CERT.RSA",
+      "META-INF/MANIFEST.MF"
+    ],
+    "signature_blocks": [
+      "META-INF/CERT.SF",
+      "META-INF/CERT.RSA"
+    ],
+    "stored_native_libs": [],
+    "total_uncompressed": 7712773,
+    "total_compressed": 4779186,
+    "duplicate_entries": [],
+    "suspicious_paths": [],
+    "kotlin_metadata": false,
+    "proguard_mapping": false
+  },
+  "native_lib_count": 9,
+  "native_relro_full": 9,
+  "native_stack_canary": 9,
+  "native_textrel": [],
+  "components": 16,
+  "exported_components": [
+    "ru.zdevs.zarchiver.ZArchiver",
+    "ru.zdevs.zarchiver.ZSelectFile",
+    "ru.zdevs.zarchiver.activity.ExtractDlg",
+    "ru.zdevs.zarchiver.activity.InstallApksDlg",
+    "ru.zdevs.zarchiver.ZImageViewer",
+    "ru.zdevs.zarchiver.ZTextEditor",
+    "rikka.shizuku.ShizukuProvider"
+  ],
+  "code_pattern_counts": {
+    "command_exec": 3,
+    "shell_string_concat": 6,
+    "logging": 56,
+    "reflection_hidden_api": 19,
+    "sql": 12,
+    "password_handling": 81,
+    "cleartext_url": 6,
+    "deprecated_api": 25,
+    "clipboard": 17,
+    "weak_crypto": 8,
+    "external_ipc": 26,
+    "deterministic_iv": 4,
+    "keystore": 8,
+    "path_traversal_guard": 8,
+    "pending_intent_mutability": 8,
+    "temp_files": 2,
+    "strictmode_bypass": 3
+  },
+  "pending_intents_total": 8,
+  "pending_intents_without_immutable": 6,
+  "secret_candidates": 1,
+  "java_files": 472,
+  "runtime_execution": "NOT TESTED",
+  "exploit_validation": "NOT PERFORMED"
+}

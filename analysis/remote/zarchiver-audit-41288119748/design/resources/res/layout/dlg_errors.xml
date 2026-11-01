@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/padding_tiny" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="70.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearance" android:textColor="?defaultTextColorFileListMessage" android:id="@id/tvFile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" />
+    <ListView android:id="@id/lvErrors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollingCache="false" />
+</LinearLayout>

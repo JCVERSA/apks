@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Amoled.Color.ActionBar" parent="@android:style/Widget.Material.ActionBar.Solid">
+        <item name="android:background">@color/ab_background_material_dark_amoled</item>
+        <item name="android:titleTextStyle">@style/AppTheme.Material.Color.ActionBar.Title</item>
+        <item name="android:subtitleTextStyle">@style/AppTheme.Material.Color.ActionBar.Subtitle</item>
+        <item name="android:backgroundStacked">@color/ab_background_material_dark_amoled</item>
+        <item name="android:backgroundSplit">@color/ab_background_material_dark_amoled</item>
+    </style>
+    <style name="AppTheme.Dark" parent="@style/Base.Dark">
+        <item name="iconNavigationDown">@drawable/l_down_blk</item>
+        <item name="menuIconAddFile">@drawable/l_add</item>
+        <item name="menuIconAddToFavorite">@drawable/l_add_bookmark</item>
+        <item name="menuIconCancel">@drawable/l_close</item>
+        <item name="menuIconClose">@drawable/l_exit</item>
+        <item name="menuIconComment">@drawable/l_message</item>
+        <item name="menuIconCompress">@drawable/l_download</item>
+        <item name="menuIconCopy">@drawable/l_copy</item>
+        <item name="menuIconCut">@drawable/l_cut</item>
+        <item name="menuIconDelete">@drawable/l_delete</item>
+        <item name="menuIconExtend">@drawable/l_extend</item>
+        <item name="menuIconExtract">@drawable/l_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/l_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/l_info</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/l_mail</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/l_all</item>
+        <item name="menuIconNew">@drawable/l_add_circles</item>
+        <item name="menuIconOk">@drawable/l_done</item>
+        <item name="menuIconOpen">@drawable/l_launch</item>
+        <item name="menuIconPast">@drawable/l_paste</item>
+        <item name="menuIconPermission">@drawable/l_permission</item>
+        <item name="menuIconRating">@drawable/l_thumbup</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/l_create</item>
+        <item name="menuIconSearch">@drawable/l_search</item>
+        <item name="menuIconSelect">@drawable/l_all</item>
+        <item name="menuIconSelectAll">@drawable/l_check_all</item>
+        <item name="menuIconSelectClear">@drawable/l_check_clear</item>
+        <item name="menuIconSelectInvert">@drawable/l_check_inv</item>
+        <item name="menuIconSend">@drawable/l_send</item>
+        <item name="menuIconSettings">@drawable/l_settings</item>
+        <item name="menuIconShare">@drawable/l_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/l_checkbox</item>
+        <item name="menuIconTo">@drawable/l_to</item>
+        <item name="menuIconTool">@drawable/l_apps</item>
+        <item name="menuIconView">@drawable/l_visibility</item>
+        <item name="menuIconViewMode">@drawable/l_view_list</item>
+    </style>
+    <style name="AppTheme.Dark.Amoled" parent="@style/Base.v21.Dark.Amoled" />
+    <style name="AppTheme.Dark.Amoled.Material.Color" parent="@style/Base.v21.Dark.Amoled.Material.Color" />
+    <style name="AppTheme.Dark.Amoled.actionBarPopupTheme" parent="@android:style/Theme.Material">
+        <item name="android:colorBackground">@color/background_windows_amoled</item>
+    </style>
+    <style name="AppTheme.Dark.DeviceDefault.Color.OverFlow" parent="@android:style/Widget.DeviceDefault.ActionButton.Overflow">
+        <item name="android:src">@drawable/l_more_blk</item>
+    </style>
+    <style name="AppTheme.Dark.Material.AlertDialog" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:colorPrimary">?colorPrimary</item>
+        <item name="android:colorPrimaryDark">?colorPrimaryDark</item>
+        <item name="android:colorAccent">?colorPrimaryLight</item>
+        <item name="colorAccent">?colorPrimaryLight</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Color" parent="@style/AppTheme.Dark">
+        <item name="android:actionBarStyle">@style/AppTheme.Material.Color.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Dark.Material.Color.OverFlow</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.Dark.Material.AlertDialog</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="android:colorPrimary">?colorPrimary</item>
+        <item name="android:colorPrimaryDark">?colorPrimaryDark</item>
+        <item name="android:colorAccent">?colorPrimaryLight</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="colorAccent">?colorPrimaryLight</item>
+    </style>
+    <style name="AppTheme.Dark.Material.Color.OverFlow" parent="@android:style/Widget.Material.ActionButton.Overflow">
+        <item name="android:src">@drawable/l_more_blk</item>
+    </style>
+    <style name="AppTheme.EInk.Color.ActionBar" parent="@android:style/Widget.Material.ActionBar.Solid">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:titleTextStyle">@style/AppTheme.Material.Color.ActionBar.Light.Title</item>
+        <item name="android:subtitleTextStyle">@style/AppTheme.Material.Color.ActionBar.Light.Subtitle</item>
+        <item name="android:backgroundStacked">@android:color/white</item>
+        <item name="android:backgroundSplit">@android:color/white</item>
+        <item name="android:elevation">0.0px</item>
+    </style>
+    <style name="AppTheme.Light" parent="@style/Base.Light">
+        <item name="iconNavigationDown">@drawable/l_down</item>
+        <item name="menuIconAddFile">@drawable/l_add</item>
+        <item name="menuIconAddToFavorite">@drawable/l_add_bookmark</item>
+        <item name="menuIconCancel">@drawable/l_close</item>
+        <item name="menuIconClose">@drawable/l_exit</item>
+        <item name="menuIconComment">@drawable/l_message</item>
+        <item name="menuIconCompress">@drawable/l_download</item>
+        <item name="menuIconCopy">@drawable/l_copy</item>
+        <item name="menuIconCut">@drawable/l_cut</item>
+        <item name="menuIconDelete">@drawable/l_delete</item>
+        <item name="menuIconExtend">@drawable/l_extend</item>
+        <item name="menuIconExtract">@drawable/l_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/l_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/l_info</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/l_mail</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/l_all</item>
+        <item name="menuIconNew">@drawable/l_add_circles</item>
+        <item name="menuIconOk">@drawable/l_done</item>
+        <item name="menuIconOpen">@drawable/l_launch</item>
+        <item name="menuIconPast">@drawable/l_paste</item>
+        <item name="menuIconPermission">@drawable/l_permission</item>
+        <item name="menuIconRating">@drawable/l_thumbup</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/l_create</item>
+        <item name="menuIconSearch">@drawable/l_search</item>
+        <item name="menuIconSelect">@drawable/l_all</item>
+        <item name="menuIconSelectAll">@drawable/l_check_all</item>
+        <item name="menuIconSelectClear">@drawable/l_check_clear</item>
+        <item name="menuIconSelectInvert">@drawable/l_check_inv</item>
+        <item name="menuIconSend">@drawable/l_send</item>
+        <item name="menuIconSettings">@drawable/l_settings</item>
+        <item name="menuIconShare">@drawable/l_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/l_checkbox</item>
+        <item name="menuIconTo">@drawable/l_to</item>
+        <item name="menuIconTool">@drawable/l_apps</item>
+        <item name="menuIconView">@drawable/l_visibility</item>
+        <item name="menuIconViewMode">@drawable/l_view_list</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar" parent="@style/Base.Light.DarkActionBar">
+        <item name="iconNavigationDown">@drawable/l_down_blk</item>
+        <item name="menuIconAddFile">@drawable/l_add</item>
+        <item name="menuIconAddToFavorite">@drawable/l_add_bookmark</item>
+        <item name="menuIconCancel">@drawable/l_close</item>
+        <item name="menuIconClose">@drawable/l_exit</item>
+        <item name="menuIconComment">@drawable/l_message</item>
+        <item name="menuIconCompress">@drawable/l_download</item>
+        <item name="menuIconCopy">@drawable/l_copy</item>
+        <item name="menuIconCut">@drawable/l_cut</item>
+        <item name="menuIconDelete">@drawable/l_delete</item>
+        <item name="menuIconExtend">@drawable/l_extend</item>
+        <item name="menuIconExtract">@drawable/l_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/l_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/l_info</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/l_mail</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/l_all</item>
+        <item name="menuIconNew">@drawable/l_add_circles</item>
+        <item name="menuIconOk">@drawable/l_done</item>
+        <item name="menuIconOpen">@drawable/l_launch</item>
+        <item name="menuIconPast">@drawable/l_paste</item>
+        <item name="menuIconPermission">@drawable/l_permission</item>
+        <item name="menuIconRating">@drawable/l_thumbup</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/l_create</item>
+        <item name="menuIconSearch">@drawable/l_search</item>
+        <item name="menuIconSelect">@drawable/l_all</item>
+        <item name="menuIconSelectAll">@drawable/l_check_all</item>
+        <item name="menuIconSelectClear">@drawable/l_check_clear</item>
+        <item name="menuIconSelectInvert">@drawable/l_check_inv</item>
+        <item name="menuIconSend">@drawable/l_send</item>
+        <item name="menuIconSettings">@drawable/l_settings</item>
+        <item name="menuIconShare">@drawable/l_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/l_checkbox</item>
+        <item name="menuIconTo">@drawable/l_to</item>
+        <item name="menuIconTool">@drawable/l_apps</item>
+        <item name="menuIconView">@drawable/l_visibility</item>
+        <item name="menuIconViewMode">@drawable/l_view_list</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.DeviceDefault.Color.OverFlow" parent="@android:style/Widget.DeviceDefault.ActionButton.Overflow">
+        <item name="android:src">@drawable/l_more_blk</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Color" parent="@style/AppTheme.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/AppTheme.Material.Color.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Light.DarkActionBar.Material.Color.OverFlow</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.Light.Material.AlertDialog</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="android:colorPrimary">?colorPrimary</item>
+        <item name="android:colorPrimaryDark">?colorPrimaryDark</item>
+        <item name="android:colorAccent">?colorPrimaryDark</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="colorAccent">?colorPrimaryDark</item>
+        <item name="colorSelectHighlight">?colorPrimary</item>
+    </style>
+    <style name="AppTheme.Light.DarkActionBar.Material.Color.OverFlow" parent="@android:style/Widget.Material.ActionButton.Overflow">
+        <item name="android:src">@drawable/l_more_blk</item>
+    </style>
+    <style name="AppTheme.Light.DeviceDefault.Color.OverFlow" parent="@android:style/Widget.DeviceDefault.ActionButton.Overflow">
+        <item name="android:src">@drawable/l_more</item>
+    </style>
+    <style name="AppTheme.Light.EInk" parent="@style/Base.v21.Light.EInk" />
+    <style name="AppTheme.Light.EInk.Material.Color" parent="@style/Base.v21.Light.EInk.Material.Color" />
+    <style name="AppTheme.Light.EInk.actionBarPopupTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
+    <style name="AppTheme.Light.Material.AlertDialog" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorPrimary">?colorPrimary</item>
+        <item name="android:colorPrimaryDark">?colorPrimaryDark</item>
+        <item name="android:colorAccent">?colorPrimaryDark</item>
+        <item name="colorAccent">?colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.Light.Material.Color" parent="@style/AppTheme.Light">
+        <item name="android:actionBarStyle">@style/AppTheme.Material.Color.ActionBar.Light</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Light.Material.Color.OverFlow</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.Light.Material.AlertDialog</item>
+        <item name="android:actionMenuTextColor">#000000</item>
+        <item name="android:colorPrimary">?colorPrimary</item>
+        <item name="android:colorPrimaryDark">?colorPrimaryDark</item>
+        <item name="android:colorAccent">?colorPrimaryDark</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="colorAccent">?colorPrimaryDark</item>
+        <item name="colorSelectHighlight">?colorPrimary</item>
+    </style>
+    <style name="AppTheme.Light.Material.Color.OverFlow" parent="@android:style/Widget.Material.ActionButton.Overflow">
+        <item name="android:src">@drawable/l_more</item>
+    </style>
+    <style name="AppTheme.Material.Color.ActionBar" parent="@android:style/Widget.DeviceDefault.ActionBar.Solid">
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:titleTextStyle">@style/AppTheme.Material.Color.ActionBar.Title</item>
+        <item name="android:subtitleTextStyle">@style/AppTheme.Material.Color.ActionBar.Subtitle</item>
+        <item name="android:backgroundStacked">?colorPrimary</item>
+        <item name="android:backgroundSplit">?colorPrimary</item>
+    </style>
+    <style name="AppTheme.Material.Color.ActionBar.Light" parent="@android:style/Widget.DeviceDefault.ActionBar.Solid">
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:titleTextStyle">@style/AppTheme.Material.Color.ActionBar.Light.Title</item>
+        <item name="android:subtitleTextStyle">@style/AppTheme.Material.Color.ActionBar.Light.Subtitle</item>
+        <item name="android:backgroundStacked">?colorPrimary</item>
+        <item name="android:backgroundSplit">?colorPrimary</item>
+    </style>
+    <style name="AppTheme.Material.Color.ActionBar.Light.Subtitle" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="AppTheme.Material.Color.ActionBar.Light.Title" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="AppTheme.Material.Color.ActionBar.Subtitle" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="AppTheme.Material.Color.ActionBar.Title" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="AppTheme.Widget.FastScroll" parent="@android:style/Widget.DeviceDefault.FastScroll">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:minWidth">78.0dp</item>
+        <item name="android:minHeight">66.0dp</item>
+    </style>
+    <style name="AppTheme.Widget.Light.FastScroll" parent="@android:style/Widget.DeviceDefault.Light.FastScroll">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:minWidth">78.0dp</item>
+        <item name="android:minHeight">66.0dp</item>
+    </style>
+    <style name="Base.Dark" parent="@style/Base.v21.Dark" />
+    <style name="Base.Dark.ActionBar" parent="@android:style/Widget.Material.ActionBar.Solid">
+        <item name="android:background">@color/background_holo_dark</item>
+        <item name="android:titleTextStyle">@style/AppTheme.Material.Color.ActionBar.Title</item>
+        <item name="android:subtitleTextStyle">@style/AppTheme.Material.Color.ActionBar.Subtitle</item>
+        <item name="android:backgroundStacked">@color/background_holo_dark</item>
+        <item name="android:backgroundSplit">@color/background_holo_dark</item>
+    </style>
+    <style name="Base.Dark.ActionBar.Menu" parent="@android:style/Theme.Material">
+        <item name="android:colorAccent">?colorPrimaryLight</item>
+    </style>
+    <style name="Base.Dark.ActionMode" parent="@android:style/Widget.Material.ActionMode">
+        <item name="android:titleTextStyle">@style/AppTheme.Material.Color.ActionBar.Title</item>
+        <item name="android:subtitleTextStyle">@style/AppTheme.Material.Color.ActionBar.Subtitle</item>
+    </style>
+    <style name="Base.Dark.AlertDialog" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:colorAccent">?colorPrimaryLight</item>
+    </style>
+    <style name="Base.Dark.Amoled.AlertDialog" parent="@style/Base.Dark.AlertDialog">
+        <item name="android:background">@color/background_windows_amoled</item>
+    </style>
+    <style name="Base.Dark.Dialog.BottomSheet" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:paddingLeft">1.0px</item>
+        <item name="android:paddingRight">1.0px</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Base.Light" parent="@style/Base.v21.Light" />
+    <style name="Base.Light.ActionBar" parent="@android:style/Widget.Material.Light.ActionBar.Solid">
+        <item name="android:background">@color/background_holo_light</item>
+        <item name="android:titleTextStyle">@style/AppTheme.Material.Color.ActionBar.Light.Title</item>
+        <item name="android:subtitleTextStyle">@style/AppTheme.Material.Color.ActionBar.Light.Subtitle</item>
+        <item name="android:backgroundStacked">@color/background_holo_light</item>
+        <item name="android:backgroundSplit">@color/background_holo_light</item>
+    </style>
+    <style name="Base.Light.ActionBar.Menu" parent="@android:style/Theme.Material.Light">
+        <item name="android:colorAccent">?colorPrimary</item>
+    </style>
+    <style name="Base.Light.AlertDialog" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorAccent">?colorPrimaryDark</item>
+    </style>
+    <style name="Base.Light.DarkActionBar" parent="@style/Base.v21.Light.DarkActionBar" />
+    <style name="Base.Light.Dialog.BottomSheet" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:paddingLeft">1.0px</item>
+        <item name="android:paddingRight">1.0px</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Base.Light.EInk.AlertDialog" parent="@style/Base.Light.AlertDialog">
+        <item name="android:windowBackground">@drawable/bg_eink_dialog</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:windowElevation">0.0px</item>
+    </style>
+    <style name="Base.Light.EInk.PopupMenu" parent="@android:style/Widget.Material.Light.PopupMenu">
+        <item name="android:windowBackground">@drawable/bg_eink_dialog</item>
+        <item name="android:overlapAnchor">true</item>
+        <item name="android:popupElevation">0.0px</item>
+        <item name="android:windowElevation">0.0px</item>
+    </style>
+    <style name="Base.Light.EInk.PopupWindow" parent="@android:style/Widget.DeviceDefault.Light.PopupWindow">
+        <item name="android:popupElevation">0.0px</item>
+        <item name="android:windowElevation">0.0px</item>
+    </style>
+    <style name="Base.v21.Dark" parent="@style/Base.v14.Dark">
+        <item name="android:actionBarStyle">@style/Base.Dark.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Dark.DeviceDefault.Color.OverFlow</item>
+        <item name="android:alertDialogTheme">@style/Base.Dark.AlertDialog</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb</item>
+        <item name="android:fastScrollPreviewBackgroundLeft">@drawable/fastscroll_label</item>
+        <item name="android:fastScrollPreviewBackgroundRight">@drawable/fastscroll_label</item>
+        <item name="android:fastScrollStyle">@style/AppTheme.Widget.FastScroll</item>
+        <item name="android:colorAccent">?colorPrimaryLight</item>
+        <item name="android:statusBarColor">@color/status_bar_dark_color</item>
+        <item name="android:actionBarPopupTheme">@style/Base.Dark.ActionBar.Menu</item>
+        <item name="folderColor">@color/ui_icon_folder</item>
+        <item name="folderColorAccent">@color/ui_icon_folder_accent</item>
+        <item name="folderColorDark">@color/ui_icon_folder_dark</item>
+        <item name="inlineButtonRippleColor">@color/inline_button_ripple_color</item>
+        <item name="toolbarMenuStyle">@style/Base.Dark.ToolbarMenuStyle</item>
+    </style>
+    <style name="Base.v21.Dark.Amoled" parent="@style/AppTheme.Dark">
+        <item name="android:colorBackground">@color/background_windows_amoled</item>
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:textColorSecondary">#ffffffff</item>
+        <item name="android:textColorTertiary">#ffffffff</item>
+        <item name="android:actionBarStyle">@style/AppTheme.Amoled.Color.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Dark.Material.Color.OverFlow</item>
+        <item name="android:alertDialogTheme">@style/Base.Dark.Amoled.AlertDialog</item>
+        <item name="android:actionMenuTextColor">#ffffffff</item>
+        <item name="android:colorPrimary">?colorPrimary</item>
+        <item name="android:colorPrimaryDark">?colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/ab_background_material_dark_amoled</item>
+        <item name="android:progressTint">#ffffffff</item>
+        <item name="android:thumbTint">#ffffffff</item>
+        <item name="android:actionBarPopupTheme">@style/AppTheme.Dark.Amoled.actionBarPopupTheme</item>
+        <item name="backgroundColorFileList">@color/background_amoled</item>
+        <item name="backgroundColorFileListItem">#10000000</item>
+        <item name="bottomSheetStyle">@style/Base.Amoled.Dialog.BottomSheet</item>
+        <item name="colorPrimary">#ffffffff</item>
+        <item name="colorPrimaryDark">#ffffffff</item>
+        <item name="defaultTextColorFileList">#ffd8d8d8</item>
+        <item name="defaultTextColorFileListMessage">#ff7a7a7a</item>
+        <item name="defaultTextColorFileListSub">#ff808080</item>
+    </style>
+    <style name="Base.v21.Dark.Amoled.Material.Color" parent="@style/AppTheme.Dark.Material.Color">
+        <item name="android:colorBackground">@color/background_windows_amoled</item>
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:textColorSecondary">#ffffffff</item>
+        <item name="android:textColorTertiary">#ffffffff</item>
+        <item name="android:actionBarStyle">@style/AppTheme.Amoled.Color.ActionBar</item>
+        <item name="android:alertDialogTheme">@style/Base.Dark.Amoled.AlertDialog</item>
+        <item name="android:actionMenuTextColor">#ffffffff</item>
+        <item name="android:colorPrimary">?colorPrimary</item>
+        <item name="android:colorPrimaryDark">?colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/ab_background_material_dark_amoled</item>
+        <item name="android:progressTint">#ffffffff</item>
+        <item name="android:thumbTint">#ffffffff</item>
+        <item name="android:actionBarPopupTheme">@style/AppTheme.Dark.Amoled.actionBarPopupTheme</item>
+        <item name="backgroundColorFileList">@color/background_amoled</item>
+        <item name="backgroundColorFileListItem">#10000000</item>
+        <item name="bottomSheetStyle">@style/Base.Amoled.Dialog.BottomSheet</item>
+        <item name="colorPrimary">#ffffffff</item>
+        <item name="colorPrimaryDark">#ffffffff</item>
+        <item name="defaultTextColorFileList">#ffd8d8d8</item>
+        <item name="defaultTextColorFileListMessage">#ff7a7a7a</item>
+        <item name="defaultTextColorFileListSub">#ff808080</item>
+    </style>
+    <style name="Base.v21.Light" parent="@style/Base.v14.Light">
+        <item name="android:actionBarStyle">@style/Base.Light.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Light.DeviceDefault.Color.OverFlow</item>
+        <item name="android:alertDialogTheme">@style/Base.Light.AlertDialog</item>
+        <item name="android:fastScrollPreviewBackgroundLeft">@drawable/fastscroll_label</item>
+        <item name="android:fastScrollPreviewBackgroundRight">@drawable/fastscroll_label</item>
+        <item name="android:fastScrollStyle">@style/AppTheme.Widget.Light.FastScroll</item>
+        <item name="android:colorAccent">?colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/status_bar_light_color</item>
+        <item name="android:navigationBarColor">#40000000</item>
+        <item name="android:actionBarPopupTheme">@style/Base.Light.ActionBar.Menu</item>
+        <item name="folderColor">@color/ui_icon_folder</item>
+        <item name="folderColorAccent">@color/ui_icon_folder_accent</item>
+        <item name="folderColorDark">@color/ui_icon_folder_dark</item>
+        <item name="inlineButtonRippleColor">@color/inline_button_ripple_color_dark</item>
+        <item name="toolbarMenuStyle">@style/Base.Light.ToolbarMenuStyle</item>
+    </style>
+    <style name="Base.v21.Light.DarkActionBar" parent="@style/Base.v14.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Base.Dark.ActionBar</item>
+        <item name="android:actionModeCloseDrawable">@drawable/l_done</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Light.DarkActionBar.DeviceDefault.Color.OverFlow</item>
+        <item name="android:alertDialogTheme">@style/Base.Light.AlertDialog</item>
+        <item name="android:fastScrollPreviewBackgroundLeft">@drawable/fastscroll_label</item>
+        <item name="android:fastScrollPreviewBackgroundRight">@drawable/fastscroll_label</item>
+        <item name="android:actionModeStyle">@style/Base.Dark.ActionMode</item>
+        <item name="android:fastScrollStyle">@style/AppTheme.Widget.FastScroll</item>
+        <item name="android:colorAccent">?colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/status_bar_dark_color</item>
+        <item name="android:navigationBarColor">#40000000</item>
+        <item name="android:actionBarPopupTheme">@style/Base.Dark.ActionBar.Menu</item>
+        <item name="folderColor">@color/ui_icon_folder</item>
+        <item name="folderColorAccent">@color/ui_icon_folder_accent</item>
+        <item name="folderColorDark">@color/ui_icon_folder_dark</item>
+        <item name="inlineButtonRippleColor">@color/inline_button_ripple_color_dark</item>
+        <item name="toolbarMenuStyle">@style/Base.Dark.ToolbarMenuStyle</item>
+    </style>
+    <style name="Base.v21.Light.EInk" parent="@style/AppTheme.Light">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">#ff000000</item>
+        <item name="android:textColorSecondary">#ff000000</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:textColorTertiary">#ff000000</item>
+        <item name="android:actionBarStyle">@style/AppTheme.EInk.Color.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Light.Material.Color.OverFlow</item>
+        <item name="android:listPopupWindowStyle">@style/Base.Light.EInk.PopupWindow</item>
+        <item name="android:popupMenuStyle">@style/Base.Light.EInk.PopupMenu</item>
+        <item name="android:alertDialogTheme">@style/Base.Light.EInk.AlertDialog</item>
+        <item name="android:actionMenuTextColor">#ff000000</item>
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
+        <item name="android:colorPrimary">?colorPrimaryLight</item>
+        <item name="android:colorPrimaryDark">?colorPrimary</item>
+        <item name="android:statusBarColor">#ffffffff</item>
+        <item name="android:progressTint">#ff000000</item>
+        <item name="android:thumbTint">#ff000000</item>
+        <item name="android:actionBarPopupTheme">@style/AppTheme.Light.EInk.actionBarPopupTheme</item>
+        <item name="actionBarBackgroundInRoot">#fde2da</item>
+        <item name="backgroundColorFileList">@android:color/white</item>
+        <item name="backgroundColorFileListItem">#00000000</item>
+        <item name="bottomSheetStyle">@style/Base.EInk.Dialog.BottomSheet</item>
+        <item name="colorPrimary">#ff000000</item>
+        <item name="colorPrimaryLight">#ff000000</item>
+        <item name="defaultTextColorFileList">#ff000000</item>
+        <item name="defaultTextColorFileListMessage">#ff000000</item>
+        <item name="defaultTextColorFileListSub">#ff000000</item>
+        <item name="toolbarMenuStyle">@style/Base.Light.EInk.ToolbarMenuStyle</item>
+    </style>
+    <style name="Base.v21.Light.EInk.Material.Color" parent="@style/AppTheme.Light.Material.Color">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">#ff000000</item>
+        <item name="android:textColorSecondary">#ff000000</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:textColorTertiary">#ff000000</item>
+        <item name="android:actionBarStyle">@style/AppTheme.EInk.Color.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.Light.Material.Color.OverFlow</item>
+        <item name="android:listPopupWindowStyle">@style/Base.Light.EInk.PopupWindow</item>
+        <item name="android:popupMenuStyle">@style/Base.Light.EInk.PopupMenu</item>
+        <item name="android:alertDialogTheme">@style/Base.Light.EInk.AlertDialog</item>
+        <item name="android:actionMenuTextColor">#000000</item>
+        <item name="android:colorPrimary">?colorPrimaryLight</item>
+        <item name="android:colorPrimaryDark">?colorPrimary</item>
+        <item name="android:statusBarColor">#ffffffff</item>
+        <item name="android:progressTint">#ff000000</item>
+        <item name="android:thumbTint">#ff000000</item>
+        <item name="android:actionBarPopupTheme">@style/AppTheme.Light.EInk.actionBarPopupTheme</item>
+        <item name="backgroundColorFileList">@android:color/white</item>
+        <item name="backgroundColorFileListItem">#00000000</item>
+        <item name="bottomSheetStyle">@style/Base.EInk.Dialog.BottomSheet</item>
+        <item name="colorPrimary">#ff000000</item>
+        <item name="colorPrimaryLight">#ff000000</item>
+        <item name="defaultTextColorFileList">#ff000000</item>
+        <item name="defaultTextColorFileListMessage">#ff000000</item>
+        <item name="defaultTextColorFileListSub">#ff000000</item>
+        <item name="toolbarMenuStyle">@style/Base.Light.EInk.ToolbarMenuStyle</item>
+    </style>
+</resources>

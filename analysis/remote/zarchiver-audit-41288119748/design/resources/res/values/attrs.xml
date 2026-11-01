@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="actionBarBackgroundInRoot" format="color" />
+    <attr name="backgroundColorFileList" format="reference" />
+    <attr name="backgroundColorFileListItem" format="color" />
+    <attr name="bottomSheetExpandIcon" format="reference" />
+    <attr name="bottomSheetStyle" format="reference" />
+    <attr name="colorAccent" format="color" />
+    <attr name="colorControlNormal" format="color" />
+    <attr name="colorNMask" format="integer" />
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorPrimaryDark" format="color" />
+    <attr name="colorPrimaryLight" format="color" />
+    <attr name="colorSelectHighlight" format="reference" />
+    <attr name="defaultTextColorFileList" format="color" />
+    <attr name="defaultTextColorFileListMessage" format="color" />
+    <attr name="defaultTextColorFileListSub" format="color" />
+    <attr name="folderColor" format="color" />
+    <attr name="folderColorAccent" format="color" />
+    <attr name="folderColorDark" format="color" />
+    <attr name="folderSelect" format="integer" />
+    <attr name="iconNavigationDown" format="reference" />
+    <attr name="inlineButtonRippleColor" format="color" />
+    <attr name="isLightActionBar" format="boolean" />
+    <attr name="isLightTheme" format="boolean" />
+    <attr name="layout_constraintBaseline_creator" format="integer" />
+    <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_creator" format="integer" />
+    <attr name="layout_constraintBottom_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintDimensionRatio" format="string" />
+    <attr name="layout_constraintEnd_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintEnd_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintGuide_begin" format="dimension" />
+    <attr name="layout_constraintGuide_end" format="dimension" />
+    <attr name="layout_constraintGuide_percent" format="float" />
+    <attr name="layout_constraintHorizontal_bias" format="float" />
+    <attr name="layout_constraintHorizontal_chainStyle">
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+        <enum name="packed" value="2" />
+    </attr>
+    <attr name="layout_constraintHorizontal_weight" format="float" />
+    <attr name="layout_constraintLeft_creator" format="integer" />
+    <attr name="layout_constraintLeft_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintLeft_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_creator" format="integer" />
+    <attr name="layout_constraintRight_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_creator" format="integer" />
+    <attr name="layout_constraintTop_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintVertical_bias" format="float" />
+    <attr name="layout_constraintVertical_chainStyle">
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+        <enum name="packed" value="2" />
+    </attr>
+    <attr name="layout_constraintVertical_weight" format="float" />
+    <attr name="layout_editor_absoluteX" format="dimension" />
+    <attr name="layout_editor_absoluteY" format="dimension" />
+    <attr name="layout_goneMarginBottom" format="dimension" />
+    <attr name="layout_goneMarginEnd" format="dimension" />
+    <attr name="layout_goneMarginLeft" format="dimension" />
+    <attr name="layout_goneMarginRight" format="dimension" />
+    <attr name="layout_goneMarginStart" format="dimension" />
+    <attr name="layout_goneMarginTop" format="dimension" />
+    <attr name="layout_optimizationLevel">
+        <flag name="none" value="1" />
+        <flag name="all" value="2" />
+        <flag name="basic" value="4" />
+        <flag name="chains" value="8" />
+    </attr>
+    <attr name="maxValue" format="integer" />
+    <attr name="menuIconAddFile" format="reference" />
+    <attr name="menuIconAddToFavorite" format="reference" />
+    <attr name="menuIconCancel" format="reference" />
+    <attr name="menuIconClose" format="reference" />
+    <attr name="menuIconComment" format="reference" />
+    <attr name="menuIconCompress" format="reference" />
+    <attr name="menuIconCopy" format="reference" />
+    <attr name="menuIconCut" format="reference" />
+    <attr name="menuIconDelete" format="reference" />
+    <attr name="menuIconExtend" format="reference" />
+    <attr name="menuIconExtract" format="reference" />
+    <attr name="menuIconGrid" format="reference" />
+    <attr name="menuIconHelp" format="reference" />
+    <attr name="menuIconHidden" format="reference" />
+    <attr name="menuIconInfo" format="reference" />
+    <attr name="menuIconList" format="reference" />
+    <attr name="menuIconListDetail" format="reference" />
+    <attr name="menuIconMail" format="reference" />
+    <attr name="menuIconMoveUp" format="reference" />
+    <attr name="menuIconMultiSelect" format="reference" />
+    <attr name="menuIconNew" format="reference" />
+    <attr name="menuIconOk" format="reference" />
+    <attr name="menuIconOpen" format="reference" />
+    <attr name="menuIconPast" format="reference" />
+    <attr name="menuIconPermission" format="reference" />
+    <attr name="menuIconRating" format="reference" />
+    <attr name="menuIconRemountRO" format="reference" />
+    <attr name="menuIconRemountRW" format="reference" />
+    <attr name="menuIconRename" format="reference" />
+    <attr name="menuIconSearch" format="reference" />
+    <attr name="menuIconSelect" format="reference" />
+    <attr name="menuIconSelectAll" format="reference" />
+    <attr name="menuIconSelectClear" format="reference" />
+    <attr name="menuIconSelectInvert" format="reference" />
+    <attr name="menuIconSend" format="reference" />
+    <attr name="menuIconSettings" format="reference" />
+    <attr name="menuIconShare" format="reference" />
+    <attr name="menuIconSortDate" format="reference" />
+    <attr name="menuIconSortDesc" format="reference" />
+    <attr name="menuIconSortName" format="reference" />
+    <attr name="menuIconSortSize" format="reference" />
+    <attr name="menuIconSortType" format="reference" />
+    <attr name="menuIconTest" format="reference" />
+    <attr name="menuIconTo" format="reference" />
+    <attr name="menuIconTool" format="reference" />
+    <attr name="menuIconView" format="reference" />
+    <attr name="menuIconViewMode" format="reference" />
+    <attr name="minValue" format="integer" />
+    <attr name="srcCompat" format="reference" />
+    <attr name="textColorBase" format="color" />
+    <attr name="toolbarMenuStyle" format="reference" />
+    <attr name="umanoAnchorOffset" format="dimension" />
+    <attr name="umanoDragView" format="reference" />
+    <attr name="umanoFadeColor" format="color" />
+    <attr name="umanoFlingVelocity" format="integer" />
+    <attr name="umanoPanelHeight" format="dimension" />
+</resources>

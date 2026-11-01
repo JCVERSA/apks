@@ -1,0 +1,1794 @@
+{
+  "pending_intent_mutability": [
+    {
+      "file": "ru/zdevs/zarchiver/service/b.java",
+      "count": 5,
+      "sample": [
+        {
+          "line": 76,
+          "text": "bVar.f1732e.setContentIntent(PendingIntent.getActivity(service, i3, intent, 201326592));"
+        },
+        {
+          "line": 95,
+          "text": "bVar.f1732e.setContentIntent(PendingIntent.getActivity(service, i4, intent, 201326592));"
+        },
+        {
+          "line": 132,
+          "text": "PendingIntent service2 = PendingIntent.getService(service, 0, intent2, 1140850688);"
+        },
+        {
+          "line": 133,
+          "text": "Notification.Action actionBuild = new Notification.Action.Builder((Icon) null, service.getText(R.string.MENU_OPEN), PendingIntent.getActivity(service, i2 + 60, intent, 201326592)).build();"
+        },
+        {
+          "line": 138,
+          "text": "bVar.f1732e.setContentIntent(PendingIntent.getActivity(service, i2 + 60, intent, 201326592));"
+        }
+      ]
+    },
+    {
+      "file": "q0/a.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 318,
+          "text": "sessionOpenSession.commit(PendingIntent.getActivity(zAppE, 0, new Intent(\"ru.zdevs.zarchiver.APP_INSTALL_RESULT\", hVar.s(), zAppE, ZArchiver.class), 167772160).getIntentSender());"
+        },
+        {
+          "line": 465,
+          "text": "sessionOpenSession.commit(PendingIntent.getActivity(zAppE, 0, new Intent(\"ru.zdevs.zarchiver.APP_INSTALL_RESULT\", hVar.s(), zAppE, cls), 167772160).getIntentSender());"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZApp.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 186,
+          "text": "this.f1440b = PendingIntent.getService(this, 0, new Intent(this, (Class<?>) ZArchiverClearTemp.class), 301989888);"
+        }
+      ]
+    }
+  ],
+  "command_exec": [
+    {
+      "file": "a0/c.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 1285,
+          "text": "Process processExec = Runtime.getRuntime().exec(\"pm list packages\");"
+        }
+      ]
+    },
+    {
+      "file": "o0/b.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 6,
+          "text": "e(new ProcessBuilder(new String[0]).command(\"sh\").start());"
+        }
+      ]
+    },
+    {
+      "file": "o0/f.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 13,
+          "text": "e(new ProcessBuilder(new String[0]).command(\"su\").start());"
+        }
+      ]
+    }
+  ],
+  "shell_string_concat": [
+    {
+      "file": "a0/m0.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 75,
+          "text": "if (aVarC.b(\"touch '\" + strI.replace(\"'\", \"'\\\\''\") + \"'\")) {"
+        },
+        {
+          "line": 133,
+          "text": "if (aVarC.b(\"touch '\" + strI.replace(\"'\", \"'\\\\''\") + \"'\")) {"
+        }
+      ]
+    },
+    {
+      "file": "a0/c.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 1393,
+          "text": "bVar.b(\"cp \" + string + \" /data/data/ru.zdevs.zarchiver/bin/p7zbin; chmod 755 '/data/data/ru.zdevs.zarchiver/bin/p7zbin'\");"
+        }
+      ]
+    },
+    {
+      "file": "a0/w0.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 44,
+          "text": "if (aVarC.b(\"chmod \" + cVar.f1071b + \" '\" + strR.replace(\"'\", \"'\\\\''\") + '\\'')) {"
+        }
+      ]
+    },
+    {
+      "file": "n0/f.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 25,
+          "text": "if (aVarC.n(\"cat '\" + str.replace(\"'\", \"'\\\\''\") + \"' ; exit $? ;\\r\\n\")) {"
+        }
+      ]
+    },
+    {
+      "file": "p0/b.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 19,
+          "text": "string = \"mv \" + (Build.VERSION.SDK_INT < 21 ? \"\" : \"-f \") + \"'\" + str + \"' '\" + str2 + \"'\";"
+        }
+      ]
+    }
+  ],
+  "path_traversal_guard": [
+    {
+      "file": "x0/d.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 187,
+          "text": "canonicalPath = Environment.getExternalStorageDirectory().getCanonicalPath();"
+        },
+        {
+          "line": 368,
+          "text": "String canonicalPath = new File(str).getCanonicalPath();"
+        },
+        {
+          "line": 545,
+          "text": "canonicalPath = Environment.getExternalStorageDirectory().getCanonicalPath();"
+        }
+      ]
+    },
+    {
+      "file": "x0/g.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 36,
+          "text": "aVarK = d.k(new File(strSubstring).getCanonicalPath());"
+        },
+        {
+          "line": 107,
+          "text": "absolutePath = file.getCanonicalPath();"
+        },
+        {
+          "line": 186,
+          "text": "return d.k(new File(strSubstring).getCanonicalPath());"
+        }
+      ]
+    },
+    {
+      "file": "j0/a.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 279,
+          "text": "bN = n(file.getCanonicalPath(), false);"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/provider/FileProvider.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 226,
+          "text": "absolutePath = fileA.getCanonicalPath();"
+        }
+      ]
+    }
+  ],
+  "world_accessible": [],
+  "weak_crypto": [
+    {
+      "file": "i/a.java",
+      "count": 7,
+      "sample": [
+        {
+          "line": 55,
+          "text": "KeyGenerator keyGenerator = KeyGenerator.getInstance(\"AES\", \"AndroidKeyStore\");"
+        },
+        {
+          "line": 111,
+          "text": "byte[] bArrCopyOf = Arrays.copyOf(MessageDigest.getInstance(\"SHA-1\").digest(\"ZA_AP_fragment\".getBytes(\"UTF-8\")), 16);"
+        },
+        {
+          "line": 113,
+          "text": "Cipher cipher2 = Cipher.getInstance(\"AES\");"
+        },
+        {
+          "line": 122,
+          "text": "Cipher cipher3 = Cipher.getInstance(\"RSA/ECB/PKCS1Padding\", \"AndroidOpenSSL\");"
+        },
+        {
+          "line": 163,
+          "text": "byte[] bArrCopyOf = Arrays.copyOf(MessageDigest.getInstance(\"SHA-1\").digest(\"ZA_AP_fragment\".getBytes(\"UTF-8\")), 16);"
+        },
+        {
+          "line": 165,
+          "text": "Cipher cipher2 = Cipher.getInstance(\"AES\");"
+        },
+        {
+          "line": 174,
+          "text": "Cipher cipher3 = Cipher.getInstance(\"RSA/ECB/PKCS1Padding\", \"AndroidOpenSSL\");"
+        }
+      ]
+    },
+    {
+      "file": "g0/o.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 408,
+          "text": "MessageDigest messageDigest = MessageDigest.getInstance(\"MD5\");"
+        }
+      ]
+    }
+  ],
+  "deterministic_iv": [
+    {
+      "file": "i/a.java",
+      "count": 4,
+      "sample": [
+        {
+          "line": 37,
+          "text": "import javax.crypto.spec.GCMParameterSpec;"
+        },
+        {
+          "line": 56,
+          "text": "keyGenerator.init(new KeyGenParameterSpec.Builder(\"ZA_AP_fragment\", 3).setBlockModes(\"GCM\").setEncryptionPaddings(\"NoPadding\").setRandomizedEncryptionRequired(false).build());"
+        },
+        {
+          "line": 103,
+          "text": "cipher.init(2, (SecretKey) this.f1131a.getKey(\"ZA_AP_fragment\", null), new GCMParameterSpec(128, bArr));"
+        },
+        {
+          "line": 155,
+          "text": "cipher.init(1, secretKey, new GCMParameterSpec(128, bArr));"
+        }
+      ]
+    }
+  ],
+  "keystore": [
+    {
+      "file": "i/a.java",
+      "count": 8,
+      "sample": [
+        {
+          "line": 5,
+          "text": "import android.security.KeyPairGeneratorSpec;"
+        },
+        {
+          "line": 6,
+          "text": "import android.security.keystore.KeyGenParameterSpec;"
+        },
+        {
+          "line": 51,
+          "text": "KeyStore keyStore = KeyStore.getInstance(\"AndroidKeyStore\");"
+        },
+        {
+          "line": 55,
+          "text": "KeyGenerator keyGenerator = KeyGenerator.getInstance(\"AES\", \"AndroidKeyStore\");"
+        },
+        {
+          "line": 56,
+          "text": "keyGenerator.init(new KeyGenParameterSpec.Builder(\"ZA_AP_fragment\", 3).setBlockModes(\"GCM\").setEncryptionPaddings(\"NoPadding\").setRandomizedEncryptionRequired(false).build());"
+        },
+        {
+          "line": 63,
+          "text": "KeyStore keyStore2 = KeyStore.getInstance(\"AndroidKeyStore\");"
+        },
+        {
+          "line": 70,
+          "text": "KeyPairGeneratorSpec keyPairGeneratorSpecBuild = new KeyPairGeneratorSpec.Builder(context).setAlias(\"ZA_AP_fragment\").setSubject(new X500Principal(\"CN=Sample Name, O=Android Authority\")).setSerialNumber(BigInteger.ONE).setStartDate(calendar"
+        },
+        {
+          "line": 71,
+          "text": "KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(\"RSA\", \"AndroidKeyStore\");"
+        }
+      ]
+    }
+  ],
+  "insecure_random": [],
+  "cleartext_url": [
+    {
+      "file": "b/c.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 86,
+          "text": "xmlPullParserNewPullParser.setFeature(\"http://xmlpull.org/v1/doc/features.html#process-namespaces\", false);"
+        },
+        {
+          "line": 234,
+          "text": "xmlPullParserNewPullParser2.setFeature(\"http://xmlpull.org/v1/doc/features.html#process-namespaces\", true);"
+        }
+      ]
+    },
+    {
+      "file": "q0/c.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 56,
+          "text": "xmlPullParserNewPullParser.setFeature(\"http://xmlpull.org/v1/doc/features.html#process-namespaces\", true);"
+        },
+        {
+          "line": 96,
+          "text": "xmlPullParserNewPullParser.setFeature(\"http://xmlpull.org/v1/doc/features.html#process-namespaces\", true);"
+        }
+      ]
+    },
+    {
+      "file": "g0/n.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 34,
+          "text": "h1.h.e(zArchiverZ, new Intent(\"android.intent.action.VIEW\", Uri.parse(\"http://zdevs.ru/za/errors_desc.html\")));"
+        }
+      ]
+    },
+    {
+      "file": "g0/r.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 50,
+          "text": "h1.h.e(zArchiverZ, new Intent(\"android.intent.action.VIEW\", Uri.parse(\"http://zdevs.ru/za/\" + str2 + str)));"
+        }
+      ]
+    }
+  ],
+  "logging": [
+    {
+      "file": "rikka/shizuku/ShizukuProvider.java",
+      "count": 7,
+      "sample": [
+        {
+          "line": 33,
+          "text": "Log.i(\"ShizukuProvider\", \"binder received from broadcast\");"
+        },
+        {
+          "line": 43,
+          "text": "Log.d(\"ShizukuProvider\", \"request binder in non-provider process\");"
+        },
+        {
+          "line": 61,
+          "text": "Log.i(\"ShizukuProvider\", \"Binder received from other process\");"
+        },
+        {
+          "line": 91,
+          "text": "Log.d(\"ShizukuProvider\", \"sendBinder is called when already a living binder\");"
+        },
+        {
+          "line": 95,
+          "text": "Log.d(\"ShizukuProvider\", \"binder received\");"
+        },
+        {
+          "line": 98,
+          "text": "Log.d(\"ShizukuProvider\", \"broadcast binder\");"
+        },
+        {
+          "line": 137,
+          "text": "Log.d(\"ShizukuProvider\", \"Initialize Sui: \" + c.F(getContext().getPackageName()));"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/service/ZArchiverService.java",
+      "count": 4,
+      "sample": [
+        {
+          "line": 894,
+          "text": "Log.d(\"ZArchiverService\", \"Service started\");"
+        },
+        {
+          "line": 907,
+          "text": "Log.d(\"ZArchiverService\", \"Service stopped\");"
+        },
+        {
+          "line": 914,
+          "text": "Log.w(\"ZArchiverService\", \"Service restart...\");"
+        },
+        {
+          "line": 980,
+          "text": "Log.w(\"ZArchiverService\", \"Stop service...\");"
+        }
+      ]
+    },
+    {
+      "file": "x0/d.java",
+      "count": 4,
+      "sample": [
+        {
+          "line": 278,
+          "text": "Log.i(\"StorageList\", \"Found \" + f2251a.size() + \" storage\");"
+        },
+        {
+          "line": 346,
+          "text": "Log.e(\"StorageList\", e2.getMessage() + \": unknown exception while reading mounts file\");"
+        },
+        {
+          "line": 571,
+          "text": "Log.w(\"StorageList\", \"Bad path: \" + absolutePath);"
+        },
+        {
+          "line": 604,
+          "text": "Log.e(\"StorageList\", e2.getMessage() + \": unknown exception while reading mounts file\");"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZArchiver.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 1200,
+          "text": "e2.printStackTrace();"
+        },
+        {
+          "line": 1258,
+          "text": "e3.printStackTrace();"
+        },
+        {
+          "line": 3282,
+          "text": "Log.e(\"ZArchiver\", \"Low memory image cash release!\");"
+        }
+      ]
+    },
+    {
+      "file": "y0/b.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 43,
+          "text": "Log.d(\"WindowManagerWrapper\", \"WindowManager's addView(view, params) has been hooked.\");"
+        },
+        {
+          "line": 46,
+          "text": "Log.i(\"WindowManagerWrapper\", e2.getMessage());"
+        },
+        {
+          "line": 54,
+          "text": "Log.e(\"WindowManagerWrapper\", \"[addView]\", th);"
+        }
+      ]
+    },
+    {
+      "file": "z/a.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 177,
+          "text": "Log.i(\"ShizukuApplication\", \"attachApplication\");"
+        },
+        {
+          "line": 183,
+          "text": "Log.i(\"ShizukuApplication\", \"attachApplication\");"
+        },
+        {
+          "line": 185,
+          "text": "Log.w(\"ShizukuApplication\", Log.getStackTraceString(th));"
+        }
+      ]
+    },
+    {
+      "file": "a0/c.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 133,
+          "text": "Log.w(\"SystemServiceHelper\", Log.getStackTraceString(e2));"
+        },
+        {
+          "line": 156,
+          "text": "th.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "d/a.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 213,
+          "text": "Log.w(\"PathParser\", \" Points are coincident\");"
+        },
+        {
+          "line": 218,
+          "text": "Log.w(\"PathParser\", \"Points are too far apart \" + d24);"
+        }
+      ]
+    },
+    {
+      "file": "f/b.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 482,
+          "text": "Log.e(\"ViewPager\", \"arrowScroll tried to find focus based on non-child current focused view \" + sb.toString());"
+        },
+        {
+          "line": 2086,
+          "text": "Log.w(\"ViewPager\", \"Requested offscreen page limit \" + i2 + \" too small; defaulting to 1\");"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZSelectFile.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 685,
+          "text": "e2.printStackTrace();"
+        },
+        {
+          "line": 747,
+          "text": "e3.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/archiver/C2JBridge.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 69,
+          "text": "Log.e(\"C2JBridge\", \"Error on set overwrite\");"
+        },
+        {
+          "line": 82,
+          "text": "Log.e(\"SetPassword\", \"Error on set pass\");"
+        }
+      ]
+    },
+    {
+      "file": "x0/h.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 80,
+          "text": "e2.printStackTrace();"
+        },
+        {
+          "line": 135,
+          "text": "e2.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "z/c.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 23,
+          "text": "Log.e(\"ShizukuRemoteProcess\", \"linkToDeath\", e2);"
+        },
+        {
+          "line": 30,
+          "text": "Log.v(\"ShizukuRemoteProcess\", \"remote process is dead\");"
+        }
+      ]
+    },
+    {
+      "file": "a1/f.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 87,
+          "text": "Log.e(\"BottomSheet\", \"Window came back as null, unable to set defaults\");"
+        }
+      ]
+    },
+    {
+      "file": "android/support/constraint/ConstraintLayout.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 1318,
+          "text": "Log.w(\"ConstraintLayout\", \"Unknown attribute 0x\" + Integer.toHexString(index));"
+        }
+      ]
+    },
+    {
+      "file": "c/d.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 90,
+          "text": "e2.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "com/sothree/slidinguppanel/SlidingUpPanelLayout.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 944,
+          "text": "Log.d(\"SlidingUpPanelLayout\", \"View is settling. Aborting animation.\");"
+        }
+      ]
+    },
+    {
+      "file": "g0/h.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 616,
+          "text": "e2.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "g0/j.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 37,
+          "text": "e2.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "g0/n.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 37,
+          "text": "e2.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "g0/r.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 53,
+          "text": "e2.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "h1/f.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 31,
+          "text": "th.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "h1/g.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 35,
+          "text": "th.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "h1/h.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 37,
+          "text": "e2.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "l0/c.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 117,
+          "text": "e2.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "p0/a.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 72,
+          "text": "Log.w(\"coreutils\", \"Internal operation don't supported!\");"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZApp.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 88,
+          "text": "Log.d(\"ShizukuProvider\", sb.toString());"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/activity/OpenAsDlg.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 230,
+          "text": "Log.w(\"TaskResolve\", \"No activity found for \" + intent);"
+        }
+      ]
+    },
+    {
+      "file": "y0/c.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 30,
+          "text": "th.printStackTrace();"
+        }
+      ]
+    },
+    {
+      "file": "z/d.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 18,
+          "text": "Log.w(\"SystemServiceHelper\", Log.getStackTraceString(e2));"
+        }
+      ]
+    },
+    {
+      "file": "z0/c.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 142,
+          "text": "e2.printStackTrace();"
+        }
+      ]
+    }
+  ],
+  "reflection_hidden_api": [
+    {
+      "file": "q0/a.java",
+      "count": 4,
+      "sample": [
+        {
+          "line": 528,
+          "text": "Class<?> cls = Class.forName(\"android.content.res.XmlBlock\");"
+        },
+        {
+          "line": 530,
+          "text": "Method declaredMethod = cls.getDeclaredMethod(\"newParser\", new Class[0]);"
+        },
+        {
+          "line": 531,
+          "text": "constructor.setAccessible(true);"
+        },
+        {
+          "line": 532,
+          "text": "declaredMethod.setAccessible(true);"
+        }
+      ]
+    },
+    {
+      "file": "v0/b.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 27,
+          "text": "Class<?> cls = Class.forName(\"android.os.SystemProperties\");"
+        },
+        {
+          "line": 74,
+          "text": "Class<?> cls = Class.forName(\"android.os.ServiceManager\");"
+        },
+        {
+          "line": 76,
+          "text": "Class<?> cls2 = Class.forName(\"android.view.IWindowManager$Stub\");"
+        }
+      ]
+    },
+    {
+      "file": "z0/e.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 143,
+          "text": "fieldT.setAccessible(true);"
+        },
+        {
+          "line": 277,
+          "text": "Method declaredMethod = menu.getClass().getDeclaredMethod(\"setOptionalIconsVisible\", Boolean.TYPE);"
+        },
+        {
+          "line": 278,
+          "text": "declaredMethod.setAccessible(true);"
+        }
+      ]
+    },
+    {
+      "file": "j/a.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 48,
+          "text": "Method declaredMethod = Class.forName(\"android.os.SystemProperties\").getDeclaredMethod(\"get\", String.class);"
+        },
+        {
+          "line": 49,
+          "text": "declaredMethod.setAccessible(true);"
+        }
+      ]
+    },
+    {
+      "file": "x0/d.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 500,
+          "text": "Class<?> cls = Class.forName(\"android.os.storage.DiskInfo\");"
+        },
+        {
+          "line": 623,
+          "text": "cls = Class.forName(\"android.os.storage.StorageVolume\");"
+        }
+      ]
+    },
+    {
+      "file": "a0/c.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 1406,
+          "text": "return cls.getDeclaredField(str);"
+        }
+      ]
+    },
+    {
+      "file": "a0/f.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 80,
+          "text": "fieldT.setAccessible(true);"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZApp.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 147,
+          "text": "return (String) Class.forName(\"android.app.ActivityThread\").getDeclaredMethod(i2 >= 18 ? \"currentProcessName\" : \"currentPackageName\", new Class[0]).invoke(null, new Object[0]);"
+        }
+      ]
+    },
+    {
+      "file": "y0/c.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 26,
+          "text": "fieldT.setAccessible(true);"
+        }
+      ]
+    },
+    {
+      "file": "z/d.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 16,
+          "text": "f2326b = Class.forName(\"android.os.ServiceManager\").getMethod(\"getService\", String.class);"
+        }
+      ]
+    }
+  ],
+  "strictmode_bypass": [
+    {
+      "file": "v0/e.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 15,
+          "text": "import android.os.StrictMode;"
+        },
+        {
+          "line": 286,
+          "text": "Method methodW = a0.c.w(StrictMode.class, \"disableDeathOnFileUriExposure\", new Class[0]);"
+        },
+        {
+          "line": 294,
+          "text": "Method methodW2 = a0.c.w(StrictMode.class, \"vmFileUriExposureEnabled\", new Class[0]);"
+        }
+      ]
+    }
+  ],
+  "webview": [],
+  "sql": [
+    {
+      "file": "u0/a.java",
+      "count": 8,
+      "sample": [
+        {
+          "line": 3,
+          "text": "import android.database.sqlite.SQLiteDatabase;"
+        },
+        {
+          "line": 9,
+          "text": "super(zApp, \"za.db\", (SQLiteDatabase.CursorFactory) null, 3);"
+        },
+        {
+          "line": 13,
+          "text": "public final void onCreate(SQLiteDatabase sQLiteDatabase) {"
+        },
+        {
+          "line": 14,
+          "text": "sQLiteDatabase.execSQL(\"CREATE TABLE FA (ID INTEGER PRIMARY KEY,EXT TEXT,PKG TEXT,CLS TEXT,SCHEME INTEGER, TYPE INTEGER)\");"
+        },
+        {
+          "line": 18,
+          "text": "public final void onDowngrade(SQLiteDatabase sQLiteDatabase, int i2, int i3) {"
+        },
+        {
+          "line": 22,
+          "text": "public final void onUpgrade(SQLiteDatabase sQLiteDatabase, int i2, int i3) {"
+        },
+        {
+          "line": 26,
+          "text": "sQLiteDatabase.execSQL(\"DROP TABLE FA\");"
+        },
+        {
+          "line": 27,
+          "text": "sQLiteDatabase.execSQL(\"CREATE TABLE FA (ID INTEGER PRIMARY KEY,EXT TEXT,PKG TEXT,CLS TEXT,SCHEME INTEGER, TYPE INTEGER)\");"
+        }
+      ]
+    },
+    {
+      "file": "a0/c.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 10,
+          "text": "import android.database.sqlite.SQLiteDatabase;"
+        },
+        {
+          "line": 1313,
+          "text": "SQLiteDatabase readableDatabase;"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/activity/OpenAsDlg.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 11,
+          "text": "import android.database.sqlite.SQLiteDatabase;"
+        },
+        {
+          "line": 74,
+          "text": "SQLiteDatabase readableDatabase;"
+        }
+      ]
+    }
+  ],
+  "clipboard": [
+    {
+      "file": "ru/zdevs/zarchiver/ui/editor/EditableView.java",
+      "count": 10,
+      "sample": [
+        {
+          "line": 6,
+          "text": "import android.content.ClipboardManager;"
+        },
+        {
+          "line": 469,
+          "text": "private ClipboardManager getClipboardManager() {"
+        },
+        {
+          "line": 470,
+          "text": "return (ClipboardManager) getContext().getSystemService(\"clipboard\");"
+        },
+        {
+          "line": 526,
+          "text": "ClipboardManager clipboardManager = getClipboardManager();"
+        },
+        {
+          "line": 1199,
+          "text": "ClipData clipDataNewPlainText = ClipData.newPlainText(null, bVar.subSequence(iMax, iMax2));"
+        },
+        {
+          "line": 1201,
+          "text": "ClipboardManager clipboardManager = getClipboardManager();"
+        },
+        {
+          "line": 1216,
+          "text": "ClipData clipDataNewPlainText2 = ClipData.newPlainText(null, bVar.subSequence(Math.max(0, Math.min(selectionStart2, selectionEnd2)), Math.max(0, Math.max(selectionStart2, selectionEnd2))));"
+        },
+        {
+          "line": 1218,
+          "text": "ClipboardManager clipboardManager2 = getClipboardManager();"
+        },
+        {
+          "line": 1230,
+          "text": "ClipboardManager clipboardManager3 = getClipboardManager();"
+        },
+        {
+          "line": 2795,
+          "text": "startDragAndDrop(ClipData.newPlainText(null, strValueOf), new View.DragShadowBuilder(textView), new e(this, selectionEnd, selectionStart), 256);"
+        }
+      ]
+    },
+    {
+      "file": "g0/n.java",
+      "count": 4,
+      "sample": [
+        {
+          "line": 5,
+          "text": "import android.content.ClipboardManager;"
+        },
+        {
+          "line": 110,
+          "text": "ClipboardManager clipboardManager;"
+        },
+        {
+          "line": 112,
+          "text": "if (alertDialog == null || (clipboardManager = (ClipboardManager) alertDialog.getContext().getSystemService(\"clipboard\")) == null) {"
+        },
+        {
+          "line": 122,
+          "text": "clipboardManager.setPrimaryClip(ClipData.newPlainText(\"ZA Errors\", sb.length() > 1 ? sb.substring(1) : \"\"));"
+        }
+      ]
+    },
+    {
+      "file": "v0/a.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 4,
+          "text": "import android.content.ClipboardManager;"
+        },
+        {
+          "line": 18,
+          "text": "ClipboardManager clipboardManager = (ClipboardManager) context.getSystemService(\"clipboard\");"
+        },
+        {
+          "line": 23,
+          "text": "clipboardManager.setPrimaryClip(ClipData.newPlainText(str, str2));"
+        }
+      ]
+    }
+  ],
+  "external_ipc": [
+    {
+      "file": "ru/zdevs/zarchiver/service/ZArchiverService.java",
+      "count": 10,
+      "sample": [
+        {
+          "line": 77,
+          "text": "ZArchiverService.this.sendBroadcast(intentH);"
+        },
+        {
+          "line": 101,
+          "text": "ZArchiverService.this.sendBroadcast(intentH2);"
+        },
+        {
+          "line": 112,
+          "text": "ZArchiverService.this.sendBroadcast(intentH3);"
+        },
+        {
+          "line": 128,
+          "text": "ZArchiverService.this.sendBroadcast(intentH4);"
+        },
+        {
+          "line": 180,
+          "text": "ZArchiverService.this.sendBroadcast(intentH5);"
+        },
+        {
+          "line": 687,
+          "text": "sendBroadcast(intentH);"
+        },
+        {
+          "line": 717,
+          "text": "sendBroadcast(intentH);"
+        },
+        {
+          "line": 807,
+          "text": "sendBroadcast(intentH);"
+        },
+        {
+          "line": 840,
+          "text": "sendBroadcast(intentH);"
+        },
+        {
+          "line": 863,
+          "text": "sendBroadcast(intentH);"
+        }
+      ]
+    },
+    {
+      "file": "rikka/shizuku/ShizukuProvider.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 46,
+          "text": "context.registerReceiver(aVar, new IntentFilter(\"moe.shizuku.api.action.BINDER_RECEIVED\"), 4);"
+        },
+        {
+          "line": 48,
+          "text": "context.registerReceiver(aVar, new IntentFilter(\"moe.shizuku.api.action.BINDER_RECEIVED\"));"
+        },
+        {
+          "line": 99,
+          "text": "getContext().sendBroadcast(new Intent(\"moe.shizuku.api.action.BINDER_RECEIVED\").putExtra(\"moe.shizuku.privileged.api.intent.extra.BINDER\", binderContainer).setPackage(getContext().getPackageName()));"
+        }
+      ]
+    },
+    {
+      "file": "s0/b.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 244,
+          "text": "zArchiverService.sendBroadcast(intentH);"
+        },
+        {
+          "line": 334,
+          "text": "zArchiverService.sendBroadcast(intentH2);"
+        },
+        {
+          "line": 423,
+          "text": "zArchiverService.sendBroadcast(intentH3);"
+        }
+      ]
+    },
+    {
+      "file": "h1/h.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 76,
+          "text": "context.registerReceiver(c0028a, intentFilter, 4);"
+        },
+        {
+          "line": 78,
+          "text": "context.registerReceiver(c0028a, intentFilter);"
+        }
+      ]
+    },
+    {
+      "file": "l0/c.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 79,
+          "text": "ContentProviderClient contentProviderClientAcquireContentProviderClient = contentResolver.acquireContentProviderClient(str);"
+        },
+        {
+          "line": 169,
+          "text": "return zApp.getContentResolver().acquireUnstableContentProviderClient(str);"
+        }
+      ]
+    },
+    {
+      "file": "q0/f.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 148,
+          "text": "contentProviderClientAcquireContentProviderClient = ZApp.e().getContentResolver().acquireContentProviderClient(\"media\");"
+        },
+        {
+          "line": 188,
+          "text": "public final ContentProviderClient f1391a = ZApp.e().getContentResolver().acquireContentProviderClient(\"media\");"
+        }
+      ]
+    },
+    {
+      "file": "x0/d.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 870,
+          "text": "context.registerReceiver((BroadcastReceiver) aVar.f2260a, intentFilter);"
+        },
+        {
+          "line": 896,
+          "text": "context.unregisterReceiver((BroadcastReceiver) obj);"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZArchiver.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 2667,
+          "text": "unregisterReceiver(dVar.f1683c.f1555h);"
+        }
+      ]
+    },
+    {
+      "file": "s0/f.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 321,
+          "text": "zArchiverService5.sendBroadcast(intentH);"
+        }
+      ]
+    }
+  ],
+  "temp_files": [
+    {
+      "file": "ru/zdevs/zarchiver/a.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 1295,
+          "text": "zApp.getExternalCacheDirs();"
+        },
+        {
+          "line": 1936,
+          "text": "context.getExternalCacheDirs();"
+        }
+      ]
+    }
+  ],
+  "password_handling": [
+    {
+      "file": "ru/zdevs/zarchiver/R.java",
+      "count": 22,
+      "sample": [
+        {
+          "line": 611,
+          "text": "public static final int edt_password = 0x7f070063;"
+        },
+        {
+          "line": 612,
+          "text": "public static final int edt_pwd = 0x7f070064;"
+        },
+        {
+          "line": 666,
+          "text": "public static final int rl_pwd = 0x7f070099;"
+        },
+        {
+          "line": 754,
+          "text": "public static final int tv_password = 0x7f0700f1;"
+        },
+        {
+          "line": 756,
+          "text": "public static final int tv_pwd = 0x7f0700f3;"
+        },
+        {
+          "line": 776,
+          "text": "public static final int dlg_add_pwd = 0x7f080005;"
+        },
+        {
+          "line": 787,
+          "text": "public static final int dlg_enter_pwd = 0x7f080010;"
+        },
+        {
+          "line": 804,
+          "text": "public static final int dlg_saved_pwd = 0x7f080021;"
+        },
+        {
+          "line": 908,
+          "text": "public static final int CMP_ENTER_PASSWORD = 0x7f0c0036;"
+        },
+        {
+          "line": 913,
+          "text": "public static final int CMP_PASSWORD = 0x7f0c003b;"
+        }
+      ]
+    },
+    {
+      "file": "g0/h.java",
+      "count": 14,
+      "sample": [
+        {
+          "line": 27,
+          "text": "import ru.zdevs.zarchiver.ui.text.EditPassword;"
+        },
+        {
+          "line": 112,
+          "text": "EditPassword editPassword = (EditPassword) viewInflate.findViewById(R.id.edt_password);"
+        },
+        {
+          "line": 113,
+          "text": "editPassword.setHint(R.string.CMP_ENTER_PASSWORD);"
+        },
+        {
+          "line": 114,
+          "text": "editPassword.setFilters(new InputFilter[]{new InputFilter.LengthFilter(1024)});"
+        },
+        {
+          "line": 301,
+          "text": "EditPassword editPassword = (EditPassword) scrollView.findViewById(R.id.edt_password);"
+        },
+        {
+          "line": 302,
+          "text": "if (editPassword.isEnabled()) {"
+        },
+        {
+          "line": 303,
+          "text": "String string = editPassword.getText().toString();"
+        },
+        {
+          "line": 315,
+          "text": "ZApp.i(R.string.MES_SUPPORT_ONLY_ASCII_PWD);"
+        },
+        {
+          "line": 323,
+          "text": "ZApp.j(\"The WinZIP AES format has a password length limit of 128 characters.\");"
+        },
+        {
+          "line": 344,
+          "text": "EditPassword editPassword2 = (EditPassword) scrollView.findViewById(R.id.edt_password);"
+        }
+      ]
+    },
+    {
+      "file": "g0/k.java",
+      "count": 6,
+      "sample": [
+        {
+          "line": 15,
+          "text": "import ru.zdevs.zarchiver.ui.text.EditPassword;"
+        },
+        {
+          "line": 30,
+          "text": "builder.setTitle(R.string.PWD_TTL_PASSWORD);"
+        },
+        {
+          "line": 31,
+          "text": "View viewInflate = LayoutInflater.from(context).inflate(R.layout.dlg_enter_pwd, (ViewGroup) null, false);"
+        },
+        {
+          "line": 33,
+          "text": "EditPassword editPassword = (EditPassword) viewInflate.findViewById(R.id.edt_text);"
+        },
+        {
+          "line": 34,
+          "text": "editPassword.setFilters(new InputFilter[]{new InputFilter.LengthFilter(1024)});"
+        },
+        {
+          "line": 35,
+          "text": "editPassword.f1979a = true ^ (editPassword.requestFocus() && ((InputMethodManager) editPassword.getContext().getSystemService(\"input_method\")).showSoftInput(editPassword, 1));"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ui/text/EditPassword.java",
+      "count": 6,
+      "sample": [
+        {
+          "line": 8,
+          "text": "import android.text.method.PasswordTransformationMethod;"
+        },
+        {
+          "line": 15,
+          "text": "public class EditPassword extends ExEditText {"
+        },
+        {
+          "line": 25,
+          "text": "public EditPassword(Context context, AttributeSet attributeSet) {"
+        },
+        {
+          "line": 42,
+          "text": "setTransformationMethod(PasswordTransformationMethod.getInstance());"
+        },
+        {
+          "line": 50,
+          "text": "setAutofillHints(new String[]{\"password\"});"
+        },
+        {
+          "line": 82,
+          "text": "setTransformationMethod(PasswordTransformationMethod.getInstance());"
+        }
+      ]
+    },
+    {
+      "file": "g0/p.java",
+      "count": 5,
+      "sample": [
+        {
+          "line": 23,
+          "text": "import ru.zdevs.zarchiver.ui.text.EditPassword;"
+        },
+        {
+          "line": 173,
+          "text": "((RelativeLayout) viewInflate.findViewById(R.id.rl_pwd)).setVisibility(this.f1022i.findViewById(R.id.rl_pwd).getVisibility());"
+        },
+        {
+          "line": 199,
+          "text": "((RelativeLayout) this.f1022i.findViewById(R.id.rl_pwd)).setVisibility(z2 ? 0 : 8);"
+        },
+        {
+          "line": 338,
+          "text": "EditPassword editPassword = (EditPassword) this.f1022i.findViewById(R.id.edt_password);"
+        },
+        {
+          "line": 339,
+          "text": "return z2 ? editPassword.getText().toString().replace(\"\\\\\", \"\\\\\\\\\") : editPassword.getText().toString();"
+        }
+      ]
+    },
+    {
+      "file": "a0/c.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 497,
+          "text": "String strJGetPassword = \"\";"
+        },
+        {
+          "line": 548,
+          "text": "strJGetPassword = C2JBridge.jGetPassword(aVar.f1287a);"
+        },
+        {
+          "line": 552,
+          "text": "aVar.m(\"#\" + strJGetPassword);"
+        }
+      ]
+    },
+    {
+      "file": "a0/n0.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 91,
+          "text": "} catch (NArc.NArcPasswordException unused) {"
+        },
+        {
+          "line": 115,
+          "text": "} catch (NArc.NArcPasswordException unused3) {"
+        },
+        {
+          "line": 124,
+          "text": "return new z(R.string.ERROR_WRONG_PASSWORD);"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/archiver/NArc.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 63,
+          "text": "public static class NArcPasswordException extends NArcException {"
+        },
+        {
+          "line": 64,
+          "text": "public NArcPasswordException() {"
+        },
+        {
+          "line": 65,
+          "text": "super(\"Wrong password\");"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/provider/ArchiveFileProvider.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 96,
+          "text": "throw new IllegalStateException(\"Password expired\");"
+        },
+        {
+          "line": 244,
+          "text": "} catch (NArc.NArcPasswordException unused2) {"
+        },
+        {
+          "line": 245,
+          "text": "ZApp.i(R.string.ERROR_WRONG_PASSWORD);"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/service/c.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 453,
+          "text": "public final void SetPassword(int i2, String str) {"
+        },
+        {
+          "line": 633,
+          "text": "SetPassword(parcel.readInt(), parcel.readString());"
+        },
+        {
+          "line": 743,
+          "text": "void SetPassword(int i2, String str);"
+        }
+      ]
+    },
+    {
+      "file": "e0/b.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 262,
+          "text": "ZApp.i(R.string.ERROR_WRONG_PASSWORD);"
+        },
+        {
+          "line": 329,
+          "text": "ZApp.i(R.string.ERROR_WRONG_PASSWORD);"
+        }
+      ]
+    },
+    {
+      "file": "i0/a.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 233,
+          "text": "this.f1133a = R.string.ERROR_WRONG_PASSWORD;"
+        },
+        {
+          "line": 255,
+          "text": "this.f1133a = R.string.ERROR_WRONG_PASSWORD;"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/a.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 1177,
+          "text": "cVar16.SetPassword(i16, str18);"
+        },
+        {
+          "line": 1380,
+          "text": "cVar4.SetPassword(i5, \"\");"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/archiver/C2JBridge.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 82,
+          "text": "Log.e(\"SetPassword\", \"Error on set pass\");"
+        },
+        {
+          "line": 251,
+          "text": "public static String jGetPassword(int i2) {"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/service/ZArchiverService.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 62,
+          "text": "ZArchiverService.b(ZArchiverService.this, i2, a0.c.f20l[i2], R.string.NTF_REQUEST_PASSWORD, 22);"
+        },
+        {
+          "line": 595,
+          "text": "public void SetPassword(int i2, String str) {"
+        }
+      ]
+    },
+    {
+      "file": "e0/a.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 160,
+          "text": "return zApp.getString(R.string.ERROR_WRONG_PASSWORD);"
+        }
+      ]
+    },
+    {
+      "file": "g0/j.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 32,
+          "text": "kVar.f973h = new z0.d(context, view, 48, context.getString(R.string.HELP_GET_PASSWORD), z0.c.a(8), this.f970a.getPaddingTop());"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/archiver/a.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 117,
+          "text": "} catch (NArc.NArcPasswordException unused2) {"
+        }
+      ]
+    }
+  ],
+  "hardcoded_secret": [],
+  "todo_fixme": [],
+  "empty_catch": [],
+  "deprecated_api": [
+    {
+      "file": "g/d.java",
+      "count": 6,
+      "sample": [
+        {
+          "line": 14,
+          "text": "import android.os.AsyncTask;"
+        },
+        {
+          "line": 281,
+          "text": "public static class e extends AsyncTask<Void, Void, Integer> {"
+        },
+        {
+          "line": 359,
+          "text": "public static class f extends AsyncTask<Void, Void, int[]> {"
+        },
+        {
+          "line": 446,
+          "text": "public static class k extends AsyncTask<Void, Void, Bitmap> {"
+        },
+        {
+          "line": 535,
+          "text": "public static class l extends AsyncTask<Void, Void, int[]> {"
+        },
+        {
+          "line": 636,
+          "text": "this.f839o = AsyncTask.THREAD_POOL_EXECUTOR;"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/activity/SettingsDlg.java",
+      "count": 6,
+      "sample": [
+        {
+          "line": 15,
+          "text": "import android.preference.PreferenceActivity;"
+        },
+        {
+          "line": 16,
+          "text": "import android.preference.PreferenceFragment;"
+        },
+        {
+          "line": 40,
+          "text": "public class SettingsDlg extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {"
+        },
+        {
+          "line": 44,
+          "text": "public static class PluginFragment extends PreferenceFragment {"
+        },
+        {
+          "line": 76,
+          "text": "public static class SettingsFragment extends PreferenceFragment {"
+        },
+        {
+          "line": 323,
+          "text": "public final void onBuildHeaders(List<PreferenceActivity.Header> list) {"
+        }
+      ]
+    },
+    {
+      "file": "x0/d.java",
+      "count": 3,
+      "sample": [
+        {
+          "line": 187,
+          "text": "canonicalPath = Environment.getExternalStorageDirectory().getCanonicalPath();"
+        },
+        {
+          "line": 458,
+          "text": "return new a(Environment.getExternalStorageDirectory().getPath(), (byte) 0, \"primary\");"
+        },
+        {
+          "line": 545,
+          "text": "canonicalPath = Environment.getExternalStorageDirectory().getCanonicalPath();"
+        }
+      ]
+    },
+    {
+      "file": "c1/f.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 4,
+          "text": "import android.os.AsyncTask;"
+        },
+        {
+          "line": 13,
+          "text": "public final class f extends AsyncTask<Void, Void, TextClassification> implements Runnable {"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZArchiver.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 48,
+          "text": "import android.os.AsyncTask;"
+        },
+        {
+          "line": 1606,
+          "text": "new ru.zdevs.zarchiver.a.c(this, intent, z2).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]);"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/a.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 17,
+          "text": "import android.os.AsyncTask;"
+        },
+        {
+          "line": 323,
+          "text": "public static class c extends AsyncTask<Void, Void, Boolean> {"
+        }
+      ]
+    },
+    {
+      "file": "x0/f.java",
+      "count": 2,
+      "sample": [
+        {
+          "line": 4,
+          "text": "import android.os.AsyncTask;"
+        },
+        {
+          "line": 10,
+          "text": "((StorageManager) context.getSystemService(\"storage\")).registerStorageVolumeCallback(AsyncTask.THREAD_POOL_EXECUTOR, (StorageManager.StorageVolumeCallback) aVar.f2260a);"
+        }
+      ]
+    },
+    {
+      "file": "v0/f.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 138,
+          "text": "return Environment.getExternalStorageDirectory() + \"/\" + strArrSplit[1];"
+        }
+      ]
+    },
+    {
+      "file": "w0/c.java",
+      "count": 1,
+      "sample": [
+        {
+          "line": 35,
+          "text": "threadCurrentThread.setName(\"ZAsyncTask[\" + j() + \"]\");"
+        }
+      ]
+    }
+  ]
+}

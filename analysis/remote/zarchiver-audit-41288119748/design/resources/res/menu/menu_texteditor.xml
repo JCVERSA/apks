@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_search" android:id="@id/bSearch" android:title="@string/MENU_SEARCH" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_next" android:id="@id/bNext" android:visible="false" android:title="@string/MENU_SEARCH" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_save" android:id="@id/bSave" android:title="@string/MENU_SAVE" android:showAsAction="ifRoom" />
+    <item android:id="@id/bView" android:title="@string/MENU_VIEW_MODE" android:showAsAction="never">
+        <menu>
+            <item android:id="@id/bWordWrap" android:title="@string/MENU_WORD_WRAP" android:checkable="true" />
+            <item android:id="@id/bLineNumber" android:title="@string/MENU_LINE_NUMBER" android:checkable="true" />
+        </menu>
+    </item>
+    <item android:id="@id/bFont" android:title="@string/MENU_FONT" android:showAsAction="never">
+        <menu>
+            <group android:id="@id/gFontFamily" android:checkableBehavior="single">
+                <item android:id="@id/bFontSerif" android:title="Serif" />
+                <item android:id="@id/bFontSansSerif" android:title="Sans Serif" />
+                <item android:id="@id/bFontMono" android:title="Monospace" />
+                <item android:id="@id/bFontLight" android:title="Light" />
+                <item android:id="@id/bFontCondensed" android:title="Condensed" />
+            </group>
+        </menu>
+    </item>
+    <item android:id="@id/bFontSize" android:title="@string/MENU_FONT_SIZE" android:showAsAction="never">
+        <menu>
+            <group android:id="@id/gFontSize" android:checkableBehavior="single">
+                <item android:id="@id/bFontSize12" android:title="12" />
+                <item android:id="@id/bFontSize14" android:title="14" />
+                <item android:id="@id/bFontSize16" android:title="16" />
+                <item android:id="@id/bFontSize18" android:title="18" />
+                <item android:id="@id/bFontSize20" android:title="20" />
+                <item android:id="@id/bFontSize24" android:title="24" />
+                <item android:id="@id/bFontSize28" android:title="28" />
+            </group>
+        </menu>
+    </item>
+    <item android:id="@id/bCharset" android:title="@string/MENU_CHARSET" android:showAsAction="never" />
+    <item android:id="@id/bSyntax" android:title="@string/MENU_SYNTAX" android:showAsAction="never" />
+    <item android:id="@id/bExit" android:title="@string/MENU_EXIT" android:showAsAction="never" />
+</menu>

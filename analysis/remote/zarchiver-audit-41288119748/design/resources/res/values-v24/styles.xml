@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Light.EInk.actionBarPopupTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:translationZ">-200.0px</item>
+    </style>
+</resources>

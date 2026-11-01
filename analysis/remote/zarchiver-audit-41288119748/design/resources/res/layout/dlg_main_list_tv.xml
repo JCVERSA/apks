@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlTitle" android:padding="@dimen/padding_micro" android:layout_width="match_parent" android:layout_height="@dimen/action_bar_default_height" style="?android:actionBarStyle">
+        <ImageView android:id="@id/bBack" android:padding="@dimen/padding_icon" android:focusable="true" android:clickable="true" android:layout_width="@dimen/floating_action_button_size" android:layout_height="@dimen/floating_action_button_size_small" android:src="@android:drawable/ic_menu_revert" android:layout_centerVertical="true" android:contentDescription="@null" style="?android:actionButtonStyle" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:actionMenuTextColor" android:id="@id/nTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/bMenu" android:layout_toRightOf="@id/bBack" android:textIsSelectable="false" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:actionMenuTextColor" android:ellipsize="start" android:id="@id/nSubtitle" android:paddingBottom="@dimen/padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/action_bar_subtitle_top_margin" android:singleLine="true" android:layout_toLeftOf="@id/bMenu" android:layout_toRightOf="@id/bBack" android:layout_below="@id/nTitle" android:textIsSelectable="false" />
+        <ImageView android:id="@id/bMenu" android:padding="@dimen/padding_icon" android:focusable="true" android:clickable="true" android:layout_width="@dimen/floating_action_button_size_small" android:layout_height="@dimen/floating_action_button_size_small" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" style="?android:actionOverflowButtonStyle" />
+    </RelativeLayout>
+    <include layout="@layout/dlg_main_list_land_large" />
+</LinearLayout>

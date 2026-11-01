@@ -1,0 +1,233 @@
+{
+  "drawable_file_count": 419,
+  "adaptive_icons": [
+    {
+      "file": "res/mipmap-anydpi-v26/ic_launcher.xml",
+      "bytes": 325,
+      "kind": "xml",
+      "root_tag": "adaptive-icon",
+      "adaptive_layers": [
+        "background",
+        "foreground",
+        "monochrome"
+      ],
+      "has_monochrome": true
+    },
+    {
+      "file": "res/mipmap-anydpi-v26/ic_launcher_image.xml",
+      "bytes": 337,
+      "kind": "xml",
+      "root_tag": "adaptive-icon",
+      "adaptive_layers": [
+        "background",
+        "foreground",
+        "monochrome"
+      ],
+      "has_monochrome": true
+    },
+    {
+      "file": "res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "bytes": 325,
+      "kind": "xml",
+      "root_tag": "adaptive-icon",
+      "adaptive_layers": [
+        "background",
+        "foreground",
+        "monochrome"
+      ],
+      "has_monochrome": true
+    },
+    {
+      "file": "res/mipmap-anydpi-v26/ic_launcher_text.xml",
+      "bytes": 265,
+      "kind": "xml",
+      "root_tag": "adaptive-icon",
+      "adaptive_layers": [
+        "background",
+        "foreground"
+      ],
+      "has_monochrome": false
+    }
+  ],
+  "monochrome_icons": [
+    {
+      "file": "res/mipmap-anydpi-v26/ic_launcher.xml",
+      "bytes": 325,
+      "kind": "xml",
+      "root_tag": "adaptive-icon",
+      "adaptive_layers": [
+        "background",
+        "foreground",
+        "monochrome"
+      ],
+      "has_monochrome": true
+    },
+    {
+      "file": "res/mipmap-anydpi-v26/ic_launcher_image.xml",
+      "bytes": 337,
+      "kind": "xml",
+      "root_tag": "adaptive-icon",
+      "adaptive_layers": [
+        "background",
+        "foreground",
+        "monochrome"
+      ],
+      "has_monochrome": true
+    },
+    {
+      "file": "res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "bytes": 325,
+      "kind": "xml",
+      "root_tag": "adaptive-icon",
+      "adaptive_layers": [
+        "background",
+        "foreground",
+        "monochrome"
+      ],
+      "has_monochrome": true
+    }
+  ],
+  "vector_count": 191,
+  "raster_count": 205,
+  "nine_patch_count": 0,
+  "raster_by_dir": {
+    "res/drawable-hdpi": 58,
+    "res/drawable-mdpi": 51,
+    "res/drawable-nodpi": 16,
+    "res/drawable-xhdpi": 59,
+    "res/drawable-xxhdpi": 1,
+    "res/drawable-xxxhdpi": 1,
+    "res/mipmap-hdpi": 4,
+    "res/mipmap-mdpi": 3,
+    "res/mipmap-xhdpi": 4,
+    "res/mipmap-xxhdpi": 4,
+    "res/mipmap-xxxhdpi": 4
+  },
+  "largest_rasters": [
+    {
+      "file": "res/drawable-xhdpi/ic_tvbanner.png",
+      "bytes": 9614,
+      "kind": "png"
+    },
+    {
+      "file": "res/mipmap-xxxhdpi/ic_launcher_round.png",
+      "bytes": 9464,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_word.png",
+      "bytes": 9287,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_archive.png",
+      "bytes": 9100,
+      "kind": "png"
+    },
+    {
+      "file": "res/mipmap-xxxhdpi/ic_launcher.png",
+      "bytes": 9027,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_audio.png",
+      "bytes": 8375,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_web.png",
+      "bytes": 8276,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_picture.png",
+      "bytes": 7837,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_acrobat.png",
+      "bytes": 7727,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_video.png",
+      "bytes": 7513,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_powerpoint.png",
+      "bytes": 7189,
+      "kind": "png"
+    },
+    {
+      "file": "res/mipmap-xxhdpi/ic_launcher_round.png",
+      "bytes": 7075,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_apk.png",
+      "bytes": 6803,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_text.png",
+      "bytes": 6796,
+      "kind": "png"
+    },
+    {
+      "file": "res/mipmap-xxhdpi/ic_launcher.png",
+      "bytes": 6668,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_up.png",
+      "bytes": 6478,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_excel.png",
+      "bytes": 6388,
+      "kind": "png"
+    },
+    {
+      "file": "res/mipmap-xxxhdpi/ic_launcher_image.png",
+      "bytes": 6103,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_ebook.png",
+      "bytes": 4975,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_folder.png",
+      "bytes": 4761,
+      "kind": "png"
+    },
+    {
+      "file": "res/mipmap-xhdpi/ic_launcher_round.png",
+      "bytes": 4742,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-nodpi/fs_xml.png",
+      "bytes": 4628,
+      "kind": "png"
+    },
+    {
+      "file": "res/mipmap-xxhdpi/ic_launcher_image.png",
+      "bytes": 4534,
+      "kind": "png"
+    },
+    {
+      "file": "res/mipmap-xhdpi/ic_launcher.png",
+      "bytes": 4426,
+      "kind": "png"
+    },
+    {
+      "file": "res/drawable-xhdpi/folder_video.png",
+      "bytes": 4361,
+      "kind": "png"
+    }
+  ]
+}

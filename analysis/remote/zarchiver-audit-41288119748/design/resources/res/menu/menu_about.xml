@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="?menuIconRating" android:id="@id/bRatingApp" android:title="@string/MENU_RATE" android:titleCondensed="@string/MENU_RATE" android:showAsAction="ifRoom" />
+    <item android:icon="?menuIconMail" android:id="@id/bFeedback" android:title="@string/MENU_FEEDBACK" android:showAsAction="ifRoom" />
+    <item android:icon="?menuIconShare" android:id="@id/bShare" android:title="@string/MENU_SHARE_APP" android:showAsAction="ifRoom" />
+</menu>

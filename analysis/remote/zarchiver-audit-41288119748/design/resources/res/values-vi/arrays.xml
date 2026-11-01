@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="CMP_LIST_LEVELS">
+        <item>Không nén</item>
+        <item>Nhanh nhất</item>
+        <item>Nhanh</item>
+        <item>Bình thường</item>
+        <item>Tối đa</item>
+        <item>Siêu nén</item>
+    </string-array>
+    <string-array name="OPT_FS_LIST_ICON_THEME">
+        <item>Cổ điển</item>
+        <item>Phẳng</item>
+        <item>Phẳng 2</item>
+    </string-array>
+    <string-array name="OPT_LIST_BACKGROUND">
+        <item>Phông nền hệ thống</item>
+        <item>Màu rắn</item>
+        <item>Mặc định</item>
+        <item>Tuỳ chỉnh</item>
+    </string-array>
+    <string-array name="OPT_LIST_BACK_BUTTON_ACTION">
+        <item>Trở lại</item>
+        <item>Đi tới thư mục chính</item>
+        <item>Đi tới thư mục trước và hiện thư mục hiện tại ở giữa</item>
+    </string-array>
+    <string-array name="OPT_LIST_EXTERNAL_OPEN_ARCHIVE">
+        <item>Xem nội dung</item>
+        <item>Hiển thị menu với các thao tác có sẵn</item>
+        <item>Hiển thị trình đơn với các thao tác có sẵn và thoát hoàn toàn</item>
+    </string-array>
+    <string-array name="OPT_LIST_OPEN_ARCHIVE">
+        <item>Xem nội dung</item>
+        <item>Hiển thị menu với các thao tác có sẵn</item>
+    </string-array>
+    <string-array name="OPT_LIST_OPEN_FILE">
+        <item>Xem tệp</item>
+        <item>Hiển thị menu với các thao tác có sẵn</item>
+    </string-array>
+    <string-array name="OPT_LIST_THEME">
+        <item>Tối</item>
+        <item>Sáng</item>
+        <item>Sáng và Tối</item>
+        <item>Amoled</item>
+        <item>Tự động Sáng/Tối</item>
+        <item>E Ink</item>
+    </string-array>
+</resources>

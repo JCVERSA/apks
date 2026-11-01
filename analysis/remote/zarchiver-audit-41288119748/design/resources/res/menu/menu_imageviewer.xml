@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="?menuIconInfo" android:id="@id/bInfo" android:visible="false" android:title="@string/MENU_INFO" android:showAsAction="never" />
+    <item android:icon="?menuIconShare" android:id="@id/bShare" android:visible="false" android:title="@string/MENU_SHARE" android:showAsAction="never" />
+    <item android:icon="?menuIconDelete" android:id="@id/bDelete" android:visible="false" android:title="@string/MENU_DELETE" android:showAsAction="never" />
+    <item android:icon="?menuIconClose" android:id="@id/bExit" android:title="@string/MENU_EXIT" android:showAsAction="never" />
+</menu>

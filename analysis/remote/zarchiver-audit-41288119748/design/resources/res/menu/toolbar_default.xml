@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="?menuIconComment" android:id="@id/bArchiveComment" android:visible="false" android:showAsAction="always" />
+    <item android:icon="?menuIconTool" android:id="@id/bMenuTool" android:title="Tool" android:showAsAction="always">
+        <menu>
+            <item android:icon="?menuIconCompress" android:id="@id/bCompress" android:title="@string/MENU_COMPRESS_TO" />
+            <item android:icon="?menuIconExtract" android:id="@id/bExtract" android:title="@string/MENU_EXTRACT_TO" />
+            <item android:icon="?menuIconTest" android:id="@id/bTest" android:title="@string/MENU_TEST" />
+            <item android:icon="?menuIconCopy" android:id="@id/bCopy" android:title="@string/MENU_COPY" />
+            <item android:icon="?menuIconCut" android:id="@id/bCut" android:title="@string/MENU_CUT" />
+            <item android:icon="?menuIconPast" android:id="@id/bPast" android:title="@string/MENU_PAST" />
+            <item android:icon="?menuIconDelete" android:id="@id/bDelete" android:title="@string/MENU_DELETE" />
+        </menu>
+    </item>
+    <item android:icon="?menuIconViewMode" android:id="@id/bMenuViewMode" android:title="@string/MENU_VIEW_MODE" android:showAsAction="always" />
+    <item android:icon="?menuIconMultiSelect" android:id="@id/bMultiSelect" android:title="@string/MENU_MULTISELECT" android:showAsAction="ifRoom" />
+    <item android:icon="?menuIconSearch" android:id="@id/bSearch" android:visible="false" android:title="@string/MENU_SEARCH" android:showAsAction="ifRoom" />
+</menu>

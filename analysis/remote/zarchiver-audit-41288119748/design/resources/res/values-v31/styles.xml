@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Dynamic.ActionBar" parent="@android:style/Widget.DeviceDefault.ActionBar.Solid">
+        <item name="android:background">@android:color/system_accent2_800</item>
+        <item name="android:titleTextStyle">@style/AppTheme.Material.Color.ActionBar.Title</item>
+        <item name="android:subtitleTextStyle">@style/AppTheme.Material.Color.ActionBar.Subtitle</item>
+        <item name="android:backgroundStacked">@android:color/system_accent2_800</item>
+        <item name="android:backgroundSplit">@android:color/system_accent2_800</item>
+    </style>
+    <style name="AppTheme.Dynamic.ActionBar.Menu" parent="@android:style/Theme.Material">
+        <item name="android:colorBackground">@android:color/system_accent2_800</item>
+        <item name="android:colorAccent">@android:color/system_accent1_200</item>
+    </style>
+    <style name="AppTheme.Dynamic.Dark" parent="@style/Base.Dynamic.Dark">
+        <item name="iconNavigationDown">@drawable/l_down_blk</item>
+        <item name="menuIconAddFile">@drawable/l_add</item>
+        <item name="menuIconAddToFavorite">@drawable/l_add_bookmark</item>
+        <item name="menuIconCancel">@drawable/l_close</item>
+        <item name="menuIconClose">@drawable/l_exit</item>
+        <item name="menuIconComment">@drawable/l_message</item>
+        <item name="menuIconCompress">@drawable/l_download</item>
+        <item name="menuIconCopy">@drawable/l_copy</item>
+        <item name="menuIconCut">@drawable/l_cut</item>
+        <item name="menuIconDelete">@drawable/l_delete</item>
+        <item name="menuIconExtend">@drawable/l_extend</item>
+        <item name="menuIconExtract">@drawable/l_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/l_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/l_info</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/l_mail</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/l_all</item>
+        <item name="menuIconNew">@drawable/l_add_circles</item>
+        <item name="menuIconOk">@drawable/l_done</item>
+        <item name="menuIconOpen">@drawable/l_launch</item>
+        <item name="menuIconPast">@drawable/l_paste</item>
+        <item name="menuIconPermission">@drawable/l_permission</item>
+        <item name="menuIconRating">@drawable/l_thumbup</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/l_create</item>
+        <item name="menuIconSearch">@drawable/l_search</item>
+        <item name="menuIconSelect">@drawable/l_all</item>
+        <item name="menuIconSelectAll">@drawable/l_check_all</item>
+        <item name="menuIconSelectClear">@drawable/l_check_clear</item>
+        <item name="menuIconSelectInvert">@drawable/l_check_inv</item>
+        <item name="menuIconSend">@drawable/l_send</item>
+        <item name="menuIconSettings">@drawable/l_settings</item>
+        <item name="menuIconShare">@drawable/l_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/l_checkbox</item>
+        <item name="menuIconTo">@drawable/l_to</item>
+        <item name="menuIconTool">@drawable/l_apps</item>
+        <item name="menuIconView">@drawable/l_visibility</item>
+        <item name="menuIconViewMode">@drawable/l_view_list</item>
+    </style>
+    <style name="AppTheme.Dynamic.Dark.Amoled" parent="@style/AppTheme.Dark.Amoled" />
+    <style name="AppTheme.Dynamic.DayNight" parent="@style/AppTheme.Dynamic.Light" />
+    <style name="AppTheme.Dynamic.Light" parent="@style/Base.Dynamic.Light">
+        <item name="iconNavigationDown">@drawable/l_down</item>
+        <item name="menuIconAddFile">@drawable/l_add</item>
+        <item name="menuIconAddToFavorite">@drawable/l_add_bookmark</item>
+        <item name="menuIconCancel">@drawable/l_close</item>
+        <item name="menuIconClose">@drawable/l_exit</item>
+        <item name="menuIconComment">@drawable/l_message</item>
+        <item name="menuIconCompress">@drawable/l_download</item>
+        <item name="menuIconCopy">@drawable/l_copy</item>
+        <item name="menuIconCut">@drawable/l_cut</item>
+        <item name="menuIconDelete">@drawable/l_delete</item>
+        <item name="menuIconExtend">@drawable/l_extend</item>
+        <item name="menuIconExtract">@drawable/l_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/l_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/l_info</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/l_mail</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/l_all</item>
+        <item name="menuIconNew">@drawable/l_add_circles</item>
+        <item name="menuIconOk">@drawable/l_done</item>
+        <item name="menuIconOpen">@drawable/l_launch</item>
+        <item name="menuIconPast">@drawable/l_paste</item>
+        <item name="menuIconPermission">@drawable/l_permission</item>
+        <item name="menuIconRating">@drawable/l_thumbup</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/l_create</item>
+        <item name="menuIconSearch">@drawable/l_search</item>
+        <item name="menuIconSelect">@drawable/l_all</item>
+        <item name="menuIconSelectAll">@drawable/l_check_all</item>
+        <item name="menuIconSelectClear">@drawable/l_check_clear</item>
+        <item name="menuIconSelectInvert">@drawable/l_check_inv</item>
+        <item name="menuIconSend">@drawable/l_send</item>
+        <item name="menuIconSettings">@drawable/l_settings</item>
+        <item name="menuIconShare">@drawable/l_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/l_checkbox</item>
+        <item name="menuIconTo">@drawable/l_to</item>
+        <item name="menuIconTool">@drawable/l_apps</item>
+        <item name="menuIconView">@drawable/l_visibility</item>
+        <item name="menuIconViewMode">@drawable/l_view_list</item>
+    </style>
+    <style name="AppTheme.Dynamic.Light.ActionBar" parent="@android:style/Widget.DeviceDefault.Light.ActionBar.Solid">
+        <item name="android:background">@android:color/system_accent2_100</item>
+        <item name="android:titleTextStyle">@style/AppTheme.Material.Color.ActionBar.Light.Title</item>
+        <item name="android:subtitleTextStyle">@style/AppTheme.Material.Color.ActionBar.Light.Subtitle</item>
+        <item name="android:backgroundStacked">@android:color/system_accent2_100</item>
+        <item name="android:backgroundSplit">@android:color/system_accent2_100</item>
+    </style>
+    <style name="AppTheme.Dynamic.Light.ActionBar.Menu" parent="@android:style/Theme.Material.Light">
+        <item name="android:colorBackground">@android:color/system_accent2_100</item>
+        <item name="android:colorAccent">@android:color/system_accent1_700</item>
+    </style>
+    <style name="AppTheme.Dynamic.Light.DarkActionBar" parent="@style/Base.Dynamic.Light.DarkActionBar">
+        <item name="iconNavigationDown">@drawable/l_down_blk</item>
+        <item name="menuIconAddFile">@drawable/l_add</item>
+        <item name="menuIconAddToFavorite">@drawable/l_add_bookmark</item>
+        <item name="menuIconCancel">@drawable/l_close</item>
+        <item name="menuIconClose">@drawable/l_exit</item>
+        <item name="menuIconComment">@drawable/l_message</item>
+        <item name="menuIconCompress">@drawable/l_download</item>
+        <item name="menuIconCopy">@drawable/l_copy</item>
+        <item name="menuIconCut">@drawable/l_cut</item>
+        <item name="menuIconDelete">@drawable/l_delete</item>
+        <item name="menuIconExtend">@drawable/l_extend</item>
+        <item name="menuIconExtract">@drawable/l_upload</item>
+        <item name="menuIconGrid">@drawable/l_view_grid</item>
+        <item name="menuIconHelp">@drawable/l_help</item>
+        <item name="menuIconHidden">@drawable/l_show_hidden</item>
+        <item name="menuIconInfo">@drawable/l_info</item>
+        <item name="menuIconList">@drawable/l_view_list</item>
+        <item name="menuIconListDetail">@drawable/l_view_list_detail</item>
+        <item name="menuIconMail">@drawable/l_mail</item>
+        <item name="menuIconMoveUp">@drawable/l_move_up</item>
+        <item name="menuIconMultiSelect">@drawable/l_all</item>
+        <item name="menuIconNew">@drawable/l_add_circles</item>
+        <item name="menuIconOk">@drawable/l_done</item>
+        <item name="menuIconOpen">@drawable/l_launch</item>
+        <item name="menuIconPast">@drawable/l_paste</item>
+        <item name="menuIconPermission">@drawable/l_permission</item>
+        <item name="menuIconRating">@drawable/l_thumbup</item>
+        <item name="menuIconRemountRO">@drawable/l_to_ro</item>
+        <item name="menuIconRemountRW">@drawable/l_to_rw</item>
+        <item name="menuIconRename">@drawable/l_create</item>
+        <item name="menuIconSearch">@drawable/l_search</item>
+        <item name="menuIconSelect">@drawable/l_all</item>
+        <item name="menuIconSelectAll">@drawable/l_check_all</item>
+        <item name="menuIconSelectClear">@drawable/l_check_clear</item>
+        <item name="menuIconSelectInvert">@drawable/l_check_inv</item>
+        <item name="menuIconSend">@drawable/l_send</item>
+        <item name="menuIconSettings">@drawable/l_settings</item>
+        <item name="menuIconShare">@drawable/l_share</item>
+        <item name="menuIconSortDate">@drawable/l_sort_by_date</item>
+        <item name="menuIconSortDesc">@drawable/l_sort_desc</item>
+        <item name="menuIconSortName">@drawable/l_sort_by_name</item>
+        <item name="menuIconSortSize">@drawable/l_sort_by_size</item>
+        <item name="menuIconSortType">@drawable/l_sort_by_type</item>
+        <item name="menuIconTest">@drawable/l_checkbox</item>
+        <item name="menuIconTo">@drawable/l_to</item>
+        <item name="menuIconTool">@drawable/l_apps</item>
+        <item name="menuIconView">@drawable/l_visibility</item>
+        <item name="menuIconViewMode">@drawable/l_view_list</item>
+    </style>
+    <style name="AppTheme.Dynamic.Light.EInk" parent="@style/AppTheme.Light.EInk" />
+    <style name="Base.Dynamic.Dark" parent="@style/Base.Dark">
+        <item name="android:actionBarStyle">@style/AppTheme.Dynamic.ActionBar</item>
+        <item name="android:statusBarColor">?colorPrimaryDark</item>
+        <item name="android:actionBarPopupTheme">@style/AppTheme.Dynamic.ActionBar.Menu</item>
+        <item name="backgroundColorFileList">@android:color/system_neutral1_900</item>
+        <item name="colorAccent">@android:color/system_accent1_500</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@android:color/system_accent1_400</item>
+        <item name="colorPrimaryDark">@android:color/system_accent2_800</item>
+        <item name="colorPrimaryLight">@android:color/system_accent1_200</item>
+        <item name="colorSelectHighlight">@android:color/system_accent1_600</item>
+        <item name="defaultTextColorFileListMessage">@android:color/system_accent1_100</item>
+        <item name="toolbarMenuStyle">@style/Base.Dynamic.Dark.ToolbarMenuStyle</item>
+    </style>
+    <style name="Base.Dynamic.Dark.ToolbarMenuStyle" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:colorBackground">?colorPrimaryDark</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">?colorPrimaryDark</item>
+    </style>
+    <style name="Base.Dynamic.Light" parent="@style/Base.Light">
+        <item name="android:actionBarStyle">@style/AppTheme.Dynamic.Light.ActionBar</item>
+        <item name="android:statusBarColor">?colorPrimaryLight</item>
+        <item name="android:actionBarPopupTheme">@style/AppTheme.Dynamic.Light.ActionBar.Menu</item>
+        <item name="backgroundColorFileList">@android:color/system_neutral1_10</item>
+        <item name="colorAccent">@android:color/system_accent1_700</item>
+        <item name="colorControlNormal">@android:color/black</item>
+        <item name="colorPrimary">@android:color/system_accent1_500</item>
+        <item name="colorPrimaryDark">@android:color/system_accent1_700</item>
+        <item name="colorPrimaryLight">@android:color/system_accent2_100</item>
+        <item name="colorSelectHighlight">@android:color/system_accent1_300</item>
+        <item name="defaultTextColorFileListMessage">@android:color/system_accent1_900</item>
+        <item name="toolbarMenuStyle">@style/Base.Dynamic.Light.ToolbarMenuStyle</item>
+    </style>
+    <style name="Base.Dynamic.Light.DarkActionBar" parent="@style/Base.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/AppTheme.Dynamic.ActionBar</item>
+        <item name="android:statusBarColor">@android:color/system_accent2_800</item>
+        <item name="android:actionBarPopupTheme">@style/AppTheme.Dynamic.ActionBar.Menu</item>
+        <item name="backgroundColorFileList">@android:color/system_neutral1_10</item>
+        <item name="colorAccent">@android:color/system_accent1_700</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@android:color/system_accent1_500</item>
+        <item name="colorPrimaryDark">@android:color/system_accent1_700</item>
+        <item name="colorPrimaryLight">@android:color/system_accent2_100</item>
+        <item name="colorSelectHighlight">@android:color/system_accent1_300</item>
+        <item name="defaultTextColorFileListMessage">@android:color/system_accent1_900</item>
+        <item name="toolbarMenuStyle">@style/Base.Dynamic.Dark.ToolbarMenuStyle</item>
+    </style>
+    <style name="Base.Dynamic.Light.ToolbarMenuStyle" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:colorBackground">?colorPrimaryLight</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">?colorPrimaryLight</item>
+    </style>
+    <style name="FolderTheme.Dynamic" parent="@style/FolderTheme">
+        <item name="folderColor">@android:color/system_accent1_400</item>
+        <item name="folderColorAccent">@android:color/system_accent1_100</item>
+        <item name="folderColorDark">@android:color/system_accent1_500</item>
+    </style>
+</resources>

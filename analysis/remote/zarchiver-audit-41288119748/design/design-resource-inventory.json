@@ -1,0 +1,690 @@
+{
+  "dirs": [
+    {
+      "dir": "anim",
+      "type": "anim",
+      "qualifiers": "",
+      "file_count": 2,
+      "bytes": 667
+    },
+    {
+      "dir": "color-v21",
+      "type": "color",
+      "qualifiers": "v21",
+      "file_count": 1,
+      "bytes": 261
+    },
+    {
+      "dir": "color-v26",
+      "type": "color",
+      "qualifiers": "v26",
+      "file_count": 1,
+      "bytes": 240
+    },
+    {
+      "dir": "drawable",
+      "type": "drawable",
+      "qualifiers": "",
+      "file_count": 196,
+      "bytes": 192418
+    },
+    {
+      "dir": "drawable-anydpi-v21",
+      "type": "drawable",
+      "qualifiers": "anydpi-v21",
+      "file_count": 1,
+      "bytes": 482
+    },
+    {
+      "dir": "drawable-hdpi",
+      "type": "drawable",
+      "qualifiers": "hdpi",
+      "file_count": 58,
+      "bytes": 69847
+    },
+    {
+      "dir": "drawable-mdpi",
+      "type": "drawable",
+      "qualifiers": "mdpi",
+      "file_count": 51,
+      "bytes": 39623
+    },
+    {
+      "dir": "drawable-nodpi",
+      "type": "drawable",
+      "qualifiers": "nodpi",
+      "file_count": 16,
+      "bytes": 109012
+    },
+    {
+      "dir": "drawable-v21",
+      "type": "drawable",
+      "qualifiers": "v21",
+      "file_count": 6,
+      "bytes": 2162
+    },
+    {
+      "dir": "drawable-v23",
+      "type": "drawable",
+      "qualifiers": "v23",
+      "file_count": 2,
+      "bytes": 684
+    },
+    {
+      "dir": "drawable-v26",
+      "type": "drawable",
+      "qualifiers": "v26",
+      "file_count": 5,
+      "bytes": 6976
+    },
+    {
+      "dir": "drawable-xhdpi",
+      "type": "drawable",
+      "qualifiers": "xhdpi",
+      "file_count": 59,
+      "bytes": 111375
+    },
+    {
+      "dir": "drawable-xxhdpi",
+      "type": "drawable",
+      "qualifiers": "xxhdpi",
+      "file_count": 1,
+      "bytes": 1675
+    },
+    {
+      "dir": "drawable-xxxhdpi",
+      "type": "drawable",
+      "qualifiers": "xxxhdpi",
+      "file_count": 1,
+      "bytes": 2221
+    },
+    {
+      "dir": "layout",
+      "type": "layout",
+      "qualifiers": "",
+      "file_count": 49,
+      "bytes": 129720
+    },
+    {
+      "dir": "layout-sw600dp",
+      "type": "layout",
+      "qualifiers": "sw600dp",
+      "file_count": 1,
+      "bytes": 4821
+    },
+    {
+      "dir": "layout-sw720dp",
+      "type": "layout",
+      "qualifiers": "sw720dp",
+      "file_count": 1,
+      "bytes": 4821
+    },
+    {
+      "dir": "layout-v16",
+      "type": "layout",
+      "qualifiers": "v16",
+      "file_count": 5,
+      "bytes": 13414
+    },
+    {
+      "dir": "layout-v17",
+      "type": "layout",
+      "qualifiers": "v17",
+      "file_count": 38,
+      "bytes": 119502
+    },
+    {
+      "dir": "layout-v21",
+      "type": "layout",
+      "qualifiers": "v21",
+      "file_count": 3,
+      "bytes": 5711
+    },
+    {
+      "dir": "layout-v22",
+      "type": "layout",
+      "qualifiers": "v22",
+      "file_count": 2,
+      "bytes": 6546
+    },
+    {
+      "dir": "layout-v24",
+      "type": "layout",
+      "qualifiers": "v24",
+      "file_count": 1,
+      "bytes": 2147
+    },
+    {
+      "dir": "menu",
+      "type": "menu",
+      "qualifiers": "",
+      "file_count": 12,
+      "bytes": 10032
+    },
+    {
+      "dir": "mipmap-anydpi-v26",
+      "type": "mipmap",
+      "qualifiers": "anydpi-v26",
+      "file_count": 4,
+      "bytes": 1252
+    },
+    {
+      "dir": "mipmap-hdpi",
+      "type": "mipmap",
+      "qualifiers": "hdpi",
+      "file_count": 4,
+      "bytes": 10674
+    },
+    {
+      "dir": "mipmap-mdpi",
+      "type": "mipmap",
+      "qualifiers": "mdpi",
+      "file_count": 3,
+      "bytes": 4974
+    },
+    {
+      "dir": "mipmap-xhdpi",
+      "type": "mipmap",
+      "qualifiers": "xhdpi",
+      "file_count": 4,
+      "bytes": 14008
+    },
+    {
+      "dir": "mipmap-xxhdpi",
+      "type": "mipmap",
+      "qualifiers": "xxhdpi",
+      "file_count": 4,
+      "bytes": 21494
+    },
+    {
+      "dir": "mipmap-xxxhdpi",
+      "type": "mipmap",
+      "qualifiers": "xxxhdpi",
+      "file_count": 4,
+      "bytes": 28916
+    },
+    {
+      "dir": "values",
+      "type": "values",
+      "qualifiers": "",
+      "file_count": 9,
+      "bytes": 229218
+    },
+    {
+      "dir": "values-ar",
+      "type": "values",
+      "qualifiers": "ar",
+      "file_count": 3,
+      "bytes": 34890
+    },
+    {
+      "dir": "values-az",
+      "type": "values",
+      "qualifiers": "az",
+      "file_count": 3,
+      "bytes": 30391
+    },
+    {
+      "dir": "values-bg",
+      "type": "values",
+      "qualifiers": "bg",
+      "file_count": 3,
+      "bytes": 34208
+    },
+    {
+      "dir": "values-cs",
+      "type": "values",
+      "qualifiers": "cs",
+      "file_count": 3,
+      "bytes": 30018
+    },
+    {
+      "dir": "values-da",
+      "type": "values",
+      "qualifiers": "da",
+      "file_count": 3,
+      "bytes": 26819
+    },
+    {
+      "dir": "values-de",
+      "type": "values",
+      "qualifiers": "de",
+      "file_count": 3,
+      "bytes": 29567
+    },
+    {
+      "dir": "values-el",
+      "type": "values",
+      "qualifiers": "el",
+      "file_count": 3,
+      "bytes": 35536
+    },
+    {
+      "dir": "values-es",
+      "type": "values",
+      "qualifiers": "es",
+      "file_count": 3,
+      "bytes": 30770
+    },
+    {
+      "dir": "values-fa",
+      "type": "values",
+      "qualifiers": "fa",
+      "file_count": 3,
+      "bytes": 29878
+    },
+    {
+      "dir": "values-fr",
+      "type": "values",
+      "qualifiers": "fr",
+      "file_count": 3,
+      "bytes": 28659
+    },
+    {
+      "dir": "values-h720dp",
+      "type": "values",
+      "qualifiers": "h720dp",
+      "file_count": 1,
+      "bytes": 177
+    },
+    {
+      "dir": "values-hi",
+      "type": "values",
+      "qualifiers": "hi",
+      "file_count": 3,
+      "bytes": 41816
+    },
+    {
+      "dir": "values-hr",
+      "type": "values",
+      "qualifiers": "hr",
+      "file_count": 3,
+      "bytes": 29494
+    },
+    {
+      "dir": "values-hu",
+      "type": "values",
+      "qualifiers": "hu",
+      "file_count": 3,
+      "bytes": 31060
+    },
+    {
+      "dir": "values-in",
+      "type": "values",
+      "qualifiers": "in",
+      "file_count": 3,
+      "bytes": 28647
+    },
+    {
+      "dir": "values-it",
+      "type": "values",
+      "qualifiers": "it",
+      "file_count": 3,
+      "bytes": 29888
+    },
+    {
+      "dir": "values-ja",
+      "type": "values",
+      "qualifiers": "ja",
+      "file_count": 3,
+      "bytes": 32456
+    },
+    {
+      "dir": "values-ka-rGE",
+      "type": "values",
+      "qualifiers": "ka-rGE",
+      "file_count": 3,
+      "bytes": 47186
+    },
+    {
+      "dir": "values-ko",
+      "type": "values",
+      "qualifiers": "ko",
+      "file_count": 3,
+      "bytes": 29881
+    },
+    {
+      "dir": "values-ky",
+      "type": "values",
+      "qualifiers": "ky",
+      "file_count": 2,
+      "bytes": 26590
+    },
+    {
+      "dir": "values-land",
+      "type": "values",
+      "qualifiers": "land",
+      "file_count": 1,
+      "bytes": 344
+    },
+    {
+      "dir": "values-lt",
+      "type": "values",
+      "qualifiers": "lt",
+      "file_count": 3,
+      "bytes": 28255
+    },
+    {
+      "dir": "values-night",
+      "type": "values",
+      "qualifiers": "night",
+      "file_count": 1,
+      "bytes": 1889
+    },
+    {
+      "dir": "values-night-v31",
+      "type": "values",
+      "qualifiers": "night-v31",
+      "file_count": 1,
+      "bytes": 149
+    },
+    {
+      "dir": "values-pl",
+      "type": "values",
+      "qualifiers": "pl",
+      "file_count": 3,
+      "bytes": 30030
+    },
+    {
+      "dir": "values-pt-rBR",
+      "type": "values",
+      "qualifiers": "pt-rBR",
+      "file_count": 3,
+      "bytes": 29835
+    },
+    {
+      "dir": "values-ru",
+      "type": "values",
+      "qualifiers": "ru",
+      "file_count": 3,
+      "bytes": 37610
+    },
+    {
+      "dir": "values-sk",
+      "type": "values",
+      "qualifiers": "sk",
+      "file_count": 3,
+      "bytes": 30263
+    },
+    {
+      "dir": "values-sr",
+      "type": "values",
+      "qualifiers": "sr",
+      "file_count": 3,
+      "bytes": 27043
+    },
+    {
+      "dir": "values-sw500dp-land",
+      "type": "values",
+      "qualifiers": "sw500dp-land",
+      "file_count": 1,
+      "bytes": 116
+    },
+    {
+      "dir": "values-sw600dp",
+      "type": "values",
+      "qualifiers": "sw600dp",
+      "file_count": 1,
+      "bytes": 292
+    },
+    {
+      "dir": "values-th-rTH",
+      "type": "values",
+      "qualifiers": "th-rTH",
+      "file_count": 3,
+      "bytes": 41478
+    },
+    {
+      "dir": "values-tr",
+      "type": "values",
+      "qualifiers": "tr",
+      "file_count": 3,
+      "bytes": 29684
+    },
+    {
+      "dir": "values-ug",
+      "type": "values",
+      "qualifiers": "ug",
+      "file_count": 3,
+      "bytes": 29982
+    },
+    {
+      "dir": "values-uk",
+      "type": "values",
+      "qualifiers": "uk",
+      "file_count": 3,
+      "bytes": 36909
+    },
+    {
+      "dir": "values-uz",
+      "type": "values",
+      "qualifiers": "uz",
+      "file_count": 3,
+      "bytes": 29151
+    },
+    {
+      "dir": "values-v17",
+      "type": "values",
+      "qualifiers": "v17",
+      "file_count": 1,
+      "bytes": 522
+    },
+    {
+      "dir": "values-v21",
+      "type": "values",
+      "qualifiers": "v21",
+      "file_count": 1,
+      "bytes": 34788
+    },
+    {
+      "dir": "values-v22",
+      "type": "values",
+      "qualifiers": "v22",
+      "file_count": 1,
+      "bytes": 426
+    },
+    {
+      "dir": "values-v23",
+      "type": "values",
+      "qualifiers": "v23",
+      "file_count": 1,
+      "bytes": 3007
+    },
+    {
+      "dir": "values-v24",
+      "type": "values",
+      "qualifiers": "v24",
+      "file_count": 1,
+      "bytes": 312
+    },
+    {
+      "dir": "values-v27",
+      "type": "values",
+      "qualifiers": "v27",
+      "file_count": 1,
+      "bytes": 1085
+    },
+    {
+      "dir": "values-v29",
+      "type": "values",
+      "qualifiers": "v29",
+      "file_count": 2,
+      "bytes": 840
+    },
+    {
+      "dir": "values-v31",
+      "type": "values",
+      "qualifiers": "v31",
+      "file_count": 2,
+      "bytes": 15777
+    },
+    {
+      "dir": "values-vi",
+      "type": "values",
+      "qualifiers": "vi",
+      "file_count": 3,
+      "bytes": 31203
+    },
+    {
+      "dir": "values-zh-rCN",
+      "type": "values",
+      "qualifiers": "zh-rCN",
+      "file_count": 3,
+      "bytes": 27371
+    },
+    {
+      "dir": "values-zh-rTW",
+      "type": "values",
+      "qualifiers": "zh-rTW",
+      "file_count": 3,
+      "bytes": 26548
+    },
+    {
+      "dir": "xml",
+      "type": "xml",
+      "qualifiers": "",
+      "file_count": 8,
+      "bytes": 19701
+    },
+    {
+      "dir": "xml-v21",
+      "type": "xml",
+      "qualifiers": "v21",
+      "file_count": 5,
+      "bytes": 12157
+    },
+    {
+      "dir": "xml-v23",
+      "type": "xml",
+      "qualifiers": "v23",
+      "file_count": 1,
+      "bytes": 818
+    },
+    {
+      "dir": "xml-v26",
+      "type": "xml",
+      "qualifiers": "v26",
+      "file_count": 1,
+      "bytes": 2435
+    },
+    {
+      "dir": "xml-v30",
+      "type": "xml",
+      "qualifiers": "v30",
+      "file_count": 1,
+      "bytes": 1000
+    },
+    {
+      "dir": "xml-v33",
+      "type": "xml",
+      "qualifiers": "v33",
+      "file_count": 1,
+      "bytes": 3720
+    }
+  ],
+  "type_counts": {
+    "anim": 2,
+    "color": 2,
+    "drawable": 396,
+    "layout": 100,
+    "menu": 12,
+    "mipmap": 23,
+    "values": 123,
+    "xml": 17
+  },
+  "qualifier_counts": {
+    "(default)": 276,
+    "v21": 16,
+    "v26": 7,
+    "anydpi-v21": 1,
+    "hdpi": 62,
+    "mdpi": 54,
+    "nodpi": 16,
+    "v23": 4,
+    "xhdpi": 63,
+    "xxhdpi": 5,
+    "xxxhdpi": 5,
+    "sw600dp": 2,
+    "sw720dp": 1,
+    "v16": 5,
+    "v17": 39,
+    "v22": 3,
+    "v24": 2,
+    "anydpi-v26": 4,
+    "ar": 3,
+    "az": 3,
+    "bg": 3,
+    "cs": 3,
+    "da": 3,
+    "de": 3,
+    "el": 3,
+    "es": 3,
+    "fa": 3,
+    "fr": 3,
+    "h720dp": 1,
+    "hi": 3,
+    "hr": 3,
+    "hu": 3,
+    "in": 3,
+    "it": 3,
+    "ja": 3,
+    "ka-rGE": 3,
+    "ko": 3,
+    "ky": 2,
+    "land": 1,
+    "lt": 3,
+    "night": 1,
+    "night-v31": 1,
+    "pl": 3,
+    "pt-rBR": 3,
+    "ru": 3,
+    "sk": 3,
+    "sr": 3,
+    "sw500dp-land": 1,
+    "th-rTH": 3,
+    "tr": 3,
+    "ug": 3,
+    "uk": 3,
+    "uz": 3,
+    "v27": 1,
+    "v29": 2,
+    "v31": 2,
+    "vi": 3,
+    "zh-rCN": 3,
+    "zh-rTW": 3,
+    "v30": 1,
+    "v33": 1
+  },
+  "night_qualified_dirs": [
+    "values-night",
+    "values-night-v31"
+  ],
+  "v31_plus_dirs": [
+    "values-night-v31",
+    "values-v31",
+    "xml-v33"
+  ],
+  "size_orientation_dirs": [
+    "layout-sw600dp",
+    "layout-sw720dp",
+    "values-h720dp",
+    "values-land",
+    "values-sw500dp-land",
+    "values-sw600dp"
+  ],
+  "density_dirs": [
+    "drawable-anydpi-v21",
+    "drawable-hdpi",
+    "drawable-mdpi",
+    "drawable-nodpi",
+    "drawable-xhdpi",
+    "drawable-xxhdpi",
+    "drawable-xxxhdpi",
+    "mipmap-anydpi-v26",
+    "mipmap-hdpi",
+    "mipmap-mdpi",
+    "mipmap-xhdpi",
+    "mipmap-xxhdpi",
+    "mipmap-xxxhdpi"
+  ]
+}

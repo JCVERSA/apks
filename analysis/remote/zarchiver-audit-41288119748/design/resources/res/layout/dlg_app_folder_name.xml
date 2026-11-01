@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding_tiny" android:paddingRight="@dimen/padding_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:isScrollContainer="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearance" android:gravity="start|center" android:id="@id/tv_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/NF_ENTER_FOLDER_NAME" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ru.zdevs.zarchiver.ui.text.ExEditText android:gravity="start|center" android:id="@id/edt_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn_select" />
+        <Button android:id="@id/btn_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dp" android:text="@string/SELECT_PWD" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

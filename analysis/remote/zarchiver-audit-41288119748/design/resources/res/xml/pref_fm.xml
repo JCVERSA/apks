@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/OPT_SECTION_FM"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/OPT_LIST_FILE_SORT" android:title="@string/OPT_FILE_SORT" android:key="iFMSortType" android:summary="%s" android:defaultValue="0" android:dialogTitle="@string/OPT_FILE_SORT" android:entryValues="@array/OPT_LIST_FILE_SORT_VALUE" />
+    <CheckBoxPreference android:title="@string/OPT_FILE_SORT_DESC" android:key="iFMSortDesc" android:summary="@string/OPT_FILE_SORT_DESC_SETUP" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/OPT_UP_FOLDER_ITEM" android:key="iFMFolderUpItem" android:summary="@string/OPT_UP_FOLDER_ITEM_SETUP" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/OPT_HIDE_FILE" android:key="iFMHidenFile" android:summary="@string/OPT_HIDE_FILE_SETUP" android:defaultValue="false" />
+    <ListPreference android:entries="@array/OPT_LIST_LIST_MODE" android:title="@string/OPT_LIST_MODE" android:key="iListMode" android:summary="%s" android:defaultValue="0" android:dialogTitle="@string/OPT_LIST_MODE" android:entryValues="@array/OPT_LIST_MODE_VALUE" />
+    <CheckBoxPreference android:title="@string/OPT_FILE_SIZE" android:key="iFMFileSize" android:summary="@string/OPT_FILE_SIZE_SETUP" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/OPT_FILE_LAST_MOD" android:key="iFMFileLastMod" android:summary="@string/OPT_FILE_LAST_MOD_SETUP" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/OPT_FILE_LAST_MOD_TIME" android:key="iFMFileLastModTime" android:summary="@string/OPT_FILE_LAST_MOD_TIME_SETUP" android:dependency="iFMFileLastMod" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/OPT_IMG_THUMB" android:key="iFMImgThumd" android:summary="@string/OPT_IMG_THUMB_SETUP" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/OPT_VIDEO_THUMB" android:key="iFMVideoThumb" android:summary="@string/OPT_VIDEO_THUMB_SETUP" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/OPT_AUDIO_THUMB" android:key="iFMAudioThumb" android:summary="@string/OPT_AUDIO_THUMB_SETUP" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/OPT_APK_ICON" android:key="iFMApkIcon" android:summary="@string/OPT_APK_ICON_SETUP" android:defaultValue="true" />
+    <CheckBoxPreference android:enabled="false" android:title="@string/OPT_ARCHIVE_IMG_THUMB" android:key="iFMShowArchiveThumb" android:summary="@string/FREE_LIMIT_HELP" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/OPT_SQUARE_THUMB" android:key="iFMASquareThumb" android:defaultValue="false" />
+</PreferenceScreen>

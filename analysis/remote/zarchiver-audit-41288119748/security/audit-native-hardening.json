@@ -1,0 +1,315 @@
+[
+  {
+    "lib": "lib/armeabi-v7a/libcontrol.so",
+    "size": 34272,
+    "sha256": "a2fc186e45085191109e78ce5789e5463b665955cad59ba450bda350d4ba9656",
+    "elf_type": "DYN",
+    "nx_gnu_stack": true,
+    "relro": "full",
+    "bind_now": true,
+    "stack_canary": true,
+    "fortify_calls": [],
+    "textrel": false,
+    "rpath": [],
+    "needed": [
+      "libhandler.so",
+      "liblog.so",
+      "libc.so",
+      "libm.so",
+      "libstdc++.so",
+      "libdl.so"
+    ],
+    "exported_symbol_count": 24,
+    "jni_exports": [
+      "Java_ru_zdevs_zarchiver_archiver_C2JBridge_cAddFiles",
+      "Java_ru_zdevs_zarchiver_archiver_C2JBridge_cCompress",
+      "Java_ru_zdevs_zarchiver_archiver_C2JBridge_cDelFiles",
+      "Java_ru_zdevs_zarchiver_archiver_C2JBridge_cExtract",
+      "Java_ru_zdevs_zarchiver_archiver_C2JBridge_cIsExist",
+      "Java_ru_zdevs_zarchiver_archiver_C2JBridge_cList",
+      "Java_ru_zdevs_zarchiver_archiver_C2JBridge_cRename",
+      "Java_ru_zdevs_zarchiver_archiver_C2JBridge_cSetMTime",
+      "Java_ru_zdevs_zarchiver_archiver_C2JBridge_cSetOption",
+      "Java_ru_zdevs_zarchiver_archiver_C2JBridge_cSetStatus",
+      "Java_ru_zdevs_zarchiver_archiver_C2JBridge_cTest",
+      "Java_ru_zdevs_zarchiver_archiver_NArc_cArchiveOpen",
+      "Java_ru_zdevs_zarchiver_archiver_NArc_cCancel",
+      "Java_ru_zdevs_zarchiver_archiver_NArc_cClose",
+      "Java_ru_zdevs_zarchiver_archiver_NArc_cGetItem",
+      "Java_ru_zdevs_zarchiver_archiver_NArc_cGetItemCount",
+      "Java_ru_zdevs_zarchiver_archiver_NArc_cGetStream",
+      "Java_ru_zdevs_zarchiver_archiver_NArc_cSetComment",
+      "Java_ru_zdevs_zarchiver_archiver_NArc_cUpdateFile",
+      "Java_ru_zdevs_zarchiver_archiver_NArc_cWaitEndStream"
+    ],
+    "risky_apis": [
+      "memcpy",
+      "strcat",
+      "strcpy"
+    ],
+    "network_strings": [],
+    "shell_strings": [],
+    "build_id": null,
+    "gnu_stack_line": "GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10"
+  },
+  {
+    "lib": "lib/armeabi-v7a/libcoreutils.so",
+    "size": 34268,
+    "sha256": "67d1133ece5215e2a2f8efcb975b0ed4c29e738280aa0846dc09e6f14db6e403",
+    "elf_type": "DYN",
+    "nx_gnu_stack": true,
+    "relro": "full",
+    "bind_now": true,
+    "stack_canary": true,
+    "fortify_calls": [],
+    "textrel": false,
+    "rpath": [],
+    "needed": [
+      "liblog.so",
+      "libc.so",
+      "libm.so",
+      "libstdc++.so",
+      "libdl.so"
+    ],
+    "exported_symbol_count": 3,
+    "jni_exports": [],
+    "risky_apis": [
+      "memcpy",
+      "sprintf",
+      "strcpy"
+    ],
+    "network_strings": [],
+    "shell_strings": [],
+    "build_id": null,
+    "gnu_stack_line": "GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10"
+  },
+  {
+    "lib": "lib/armeabi-v7a/libhandler.so",
+    "size": 34272,
+    "sha256": "006f6eceea3883e0caf7794a06a22e91a0117b5a05ddcdfb5967c5a2f42b0818",
+    "elf_type": "DYN",
+    "nx_gnu_stack": true,
+    "relro": "full",
+    "bind_now": true,
+    "stack_canary": true,
+    "fortify_calls": [],
+    "textrel": false,
+    "rpath": [],
+    "needed": [
+      "liblog.so",
+      "libc.so",
+      "libm.so",
+      "libstdc++.so",
+      "libdl.so"
+    ],
+    "exported_symbol_count": 51,
+    "jni_exports": [
+      "Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cClear",
+      "Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cGetInfo",
+      "Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cGetItemCount",
+      "Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cGetList",
+      "Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cIsArchive",
+      "Java_ru_zdevs_zarchiver_archiver_content_ContentNative_cListStart"
+    ],
+    "risky_apis": [
+      "memcpy",
+      "strcat",
+      "strcpy"
+    ],
+    "network_strings": [],
+    "shell_strings": [],
+    "build_id": null,
+    "gnu_stack_line": "GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10"
+  },
+  {
+    "lib": "lib/armeabi-v7a/libiconv.so",
+    "size": 312808,
+    "sha256": "9c191adcfc69c0675983d89c89112e2ea3a5af900f861b6e586f2a750b2cf549",
+    "elf_type": "DYN",
+    "nx_gnu_stack": true,
+    "relro": "full",
+    "bind_now": true,
+    "stack_canary": true,
+    "fortify_calls": [],
+    "textrel": false,
+    "rpath": [],
+    "needed": [
+      "liblog.so",
+      "libc.so",
+      "libm.so",
+      "libstdc++.so",
+      "libdl.so"
+    ],
+    "exported_symbol_count": 6,
+    "jni_exports": [],
+    "risky_apis": [
+      "memcpy"
+    ],
+    "network_strings": [],
+    "shell_strings": [],
+    "build_id": null,
+    "gnu_stack_line": "GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10"
+  },
+  {
+    "lib": "lib/armeabi-v7a/libmime.so",
+    "size": 17896,
+    "sha256": "4af21afbdb7c1d4fab60202620db1c33b15adac4f46d5b96604cfdd313052d3e",
+    "elf_type": "DYN",
+    "nx_gnu_stack": true,
+    "relro": "full",
+    "bind_now": true,
+    "stack_canary": true,
+    "fortify_calls": [],
+    "textrel": false,
+    "rpath": [],
+    "needed": [
+      "liblog.so",
+      "libc.so",
+      "libm.so",
+      "libstdc++.so",
+      "libdl.so"
+    ],
+    "exported_symbol_count": 8,
+    "jni_exports": [
+      "Java_ru_zdevs_zarchiver_media_MimeLib_cGetType"
+    ],
+    "risky_apis": [
+      "memcpy"
+    ],
+    "network_strings": [],
+    "shell_strings": [],
+    "build_id": null,
+    "gnu_stack_line": "GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10"
+  },
+  {
+    "lib": "lib/armeabi-v7a/libp7zbin.so",
+    "size": 1263396,
+    "sha256": "c5d1fb9c66a16e95c76f5c313ff7c93fdaa2fae6a0baeb736567b9eaff4971e8",
+    "elf_type": "DYN",
+    "nx_gnu_stack": true,
+    "relro": "full",
+    "bind_now": true,
+    "stack_canary": true,
+    "fortify_calls": [],
+    "textrel": false,
+    "rpath": [],
+    "needed": [
+      "liblog.so",
+      "libdl.so",
+      "libc.so",
+      "libm.so",
+      "libstdc++.so"
+    ],
+    "exported_symbol_count": 9,
+    "jni_exports": [],
+    "risky_apis": [
+      "memcpy",
+      "sprintf"
+    ],
+    "network_strings": [],
+    "shell_strings": [],
+    "build_id": null,
+    "gnu_stack_line": "GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10"
+  },
+  {
+    "lib": "lib/armeabi-v7a/libp7zip.so",
+    "size": 2263008,
+    "sha256": "a5b33d4f8e7c59a51383373dbba79cc29fa440acef8cab1c2c893441d44790e9",
+    "elf_type": "DYN",
+    "nx_gnu_stack": true,
+    "relro": "full",
+    "bind_now": true,
+    "stack_canary": true,
+    "fortify_calls": [],
+    "textrel": false,
+    "rpath": [],
+    "needed": [
+      "libmime.so",
+      "libiconv.so",
+      "libhandler.so",
+      "liblog.so",
+      "libdl.so",
+      "libc.so",
+      "libm.so",
+      "libstdc++.so"
+    ],
+    "exported_symbol_count": 194,
+    "jni_exports": [],
+    "risky_apis": [
+      "memcpy",
+      "sprintf"
+    ],
+    "network_strings": [],
+    "shell_strings": [],
+    "build_id": null,
+    "gnu_stack_line": "GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10"
+  },
+  {
+    "lib": "lib/armeabi-v7a/libunegg.so",
+    "size": 332516,
+    "sha256": "29dff26f7c95ccdb3a98ce2e4e1e3e784b4cb6a2170be9c7218574d83280db47",
+    "elf_type": "DYN",
+    "nx_gnu_stack": true,
+    "relro": "full",
+    "bind_now": true,
+    "stack_canary": true,
+    "fortify_calls": [],
+    "textrel": false,
+    "rpath": [],
+    "needed": [
+      "libhandler.so",
+      "libiconv.so",
+      "liblog.so",
+      "libz.so",
+      "libdl.so",
+      "libc.so",
+      "libm.so",
+      "libstdc++.so"
+    ],
+    "exported_symbol_count": 190,
+    "jni_exports": [],
+    "risky_apis": [
+      "memcpy",
+      "sprintf",
+      "strcpy",
+      "vsprintf"
+    ],
+    "network_strings": [
+      "http://gcc.gnu.org/bugs.html):"
+    ],
+    "shell_strings": [],
+    "build_id": null,
+    "gnu_stack_line": "GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10"
+  },
+  {
+    "lib": "lib/armeabi-v7a/libunrar.so",
+    "size": 264380,
+    "sha256": "9916e39045f9e10241b67d176212cc5ca0115f126e946c73a923c63f793affb6",
+    "elf_type": "DYN",
+    "nx_gnu_stack": true,
+    "relro": "full",
+    "bind_now": true,
+    "stack_canary": true,
+    "fortify_calls": [],
+    "textrel": false,
+    "rpath": [],
+    "needed": [
+      "libhandler.so",
+      "liblog.so",
+      "libdl.so",
+      "libc.so",
+      "libm.so",
+      "libstdc++.so"
+    ],
+    "exported_symbol_count": 194,
+    "jni_exports": [],
+    "risky_apis": [
+      "memcpy",
+      "sprintf"
+    ],
+    "network_strings": [],
+    "shell_strings": [],
+    "build_id": null,
+    "gnu_stack_line": "GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10"
+  }
+]

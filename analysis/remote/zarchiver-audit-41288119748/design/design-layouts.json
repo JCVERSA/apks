@@ -1,0 +1,4244 @@
+{
+  "layout_count": 100,
+  "layouts": [
+    {
+      "file": "res/layout/dlg_select_file_land.xml",
+      "max_depth": 5,
+      "view_count": 21,
+      "tags": {
+        "LinearLayout": 3,
+        "RelativeLayout": 3,
+        "TextView": 6,
+        "ImageView": 2,
+        "FSSelect": 1,
+        "ScrollView": 1,
+        "CheckBox": 2,
+        "Spinner": 2,
+        "EditPassword": 1
+      },
+      "weighted": 2,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 5278
+    },
+    {
+      "file": "res/layout-v17/dlg_select_file_land.xml",
+      "max_depth": 5,
+      "view_count": 21,
+      "tags": {
+        "LinearLayout": 3,
+        "RelativeLayout": 3,
+        "TextView": 6,
+        "ImageView": 2,
+        "FSSelect": 1,
+        "ScrollView": 1,
+        "CheckBox": 2,
+        "Spinner": 2,
+        "EditPassword": 1
+      },
+      "weighted": 2,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 5758
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "max_depth": 4,
+      "view_count": 54,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 33,
+        "TableLayout": 2,
+        "TableRow": 17,
+        "CheckBox": 1
+      },
+      "weighted": 14,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 12402
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "max_depth": 4,
+      "view_count": 54,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 33,
+        "TableLayout": 2,
+        "TableRow": 17,
+        "CheckBox": 1
+      },
+      "weighted": 15,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 12001
+    },
+    {
+      "file": "res/layout-v17/dlg_info.xml",
+      "max_depth": 4,
+      "view_count": 54,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 33,
+        "TableLayout": 2,
+        "TableRow": 17,
+        "CheckBox": 1
+      },
+      "weighted": 14,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 13993
+    },
+    {
+      "file": "res/layout-v17/dlg_info_land.xml",
+      "max_depth": 4,
+      "view_count": 54,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 33,
+        "TableLayout": 2,
+        "TableRow": 17,
+        "CheckBox": 1
+      },
+      "weighted": 15,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 13592
+    },
+    {
+      "file": "res/layout/dlg_permissions.xml",
+      "max_depth": 4,
+      "view_count": 36,
+      "tags": {
+        "LinearLayout": 2,
+        "TextView": 13,
+        "TableLayout": 2,
+        "TableRow": 6,
+        "CheckBox": 9,
+        "EditText": 3,
+        "requestFocus": 1
+      },
+      "weighted": 2,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 5675
+    },
+    {
+      "file": "res/layout-v17/dlg_permissions.xml",
+      "max_depth": 4,
+      "view_count": 36,
+      "tags": {
+        "LinearLayout": 2,
+        "TextView": 13,
+        "TableLayout": 2,
+        "TableRow": 6,
+        "CheckBox": 9,
+        "EditText": 3,
+        "requestFocus": 1
+      },
+      "weighted": 2,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 5872
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "max_depth": 4,
+      "view_count": 34,
+      "tags": {
+        "ScrollView": 1,
+        "LinearLayout": 2,
+        "TextView": 28,
+        "View": 3
+      },
+      "weighted": 0,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 9210
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "max_depth": 4,
+      "view_count": 34,
+      "tags": {
+        "ScrollView": 1,
+        "LinearLayout": 2,
+        "TextView": 28,
+        "View": 3
+      },
+      "weighted": 0,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 10116
+    },
+    {
+      "file": "res/layout/menu_view_mode.xml",
+      "max_depth": 4,
+      "view_count": 25,
+      "tags": {
+        "ScrollView": 1,
+        "GridLayout": 1,
+        "TextView": 11,
+        "MenuToggleButton": 9,
+        "requestFocus": 1,
+        "View": 2
+      },
+      "weighted": 0,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 6290
+    },
+    {
+      "file": "res/layout/dlg_select_file.xml",
+      "max_depth": 4,
+      "view_count": 18,
+      "tags": {
+        "RelativeLayout": 3,
+        "LinearLayout": 1,
+        "TextView": 6,
+        "ImageView": 2,
+        "FSSelect": 1,
+        "CheckBox": 2,
+        "Spinner": 2,
+        "EditPassword": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 4766
+    },
+    {
+      "file": "res/layout-v17/dlg_select_file.xml",
+      "max_depth": 4,
+      "view_count": 18,
+      "tags": {
+        "RelativeLayout": 3,
+        "LinearLayout": 1,
+        "TextView": 6,
+        "ImageView": 2,
+        "FSSelect": 1,
+        "CheckBox": 2,
+        "Spinner": 2,
+        "EditPassword": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 5246
+    },
+    {
+      "file": "res/layout/dlg_ask_overwrite.xml",
+      "max_depth": 4,
+      "view_count": 14,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 5,
+        "CheckBox": 1,
+        "ScrollView": 1,
+        "ButtonBarLayout": 1,
+        "Button": 4,
+        "Space": 1
+      },
+      "weighted": 1,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 2885
+    },
+    {
+      "file": "res/layout/dlg_ask_overwrite_land.xml",
+      "max_depth": 4,
+      "view_count": 14,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 5,
+        "CheckBox": 1,
+        "HorizontalScrollView": 1,
+        "ButtonBarLayout": 1,
+        "Button": 4,
+        "Space": 1
+      },
+      "weighted": 1,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 2945
+    },
+    {
+      "file": "res/layout-v17/dlg_ask_overwrite.xml",
+      "max_depth": 4,
+      "view_count": 14,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 5,
+        "CheckBox": 1,
+        "ScrollView": 1,
+        "ButtonBarLayout": 1,
+        "Button": 4,
+        "Space": 1
+      },
+      "weighted": 1,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 3205
+    },
+    {
+      "file": "res/layout-v17/dlg_ask_overwrite_land.xml",
+      "max_depth": 4,
+      "view_count": 14,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 5,
+        "CheckBox": 1,
+        "HorizontalScrollView": 1,
+        "ButtonBarLayout": 1,
+        "Button": 4,
+        "Space": 1
+      },
+      "weighted": 1,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 3265
+    },
+    {
+      "file": "res/layout-v22/dlg_ask_overwrite.xml",
+      "max_depth": 4,
+      "view_count": 14,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 5,
+        "CheckBox": 1,
+        "ScrollView": 1,
+        "ButtonBarLayout": 1,
+        "Button": 4,
+        "Space": 1
+      },
+      "weighted": 1,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 3243
+    },
+    {
+      "file": "res/layout-v22/dlg_ask_overwrite_land.xml",
+      "max_depth": 4,
+      "view_count": 14,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 5,
+        "CheckBox": 1,
+        "HorizontalScrollView": 1,
+        "ButtonBarLayout": 1,
+        "Button": 4,
+        "Space": 1
+      },
+      "weighted": 1,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 3303
+    },
+    {
+      "file": "res/layout-v21/dlg_open_as.xml",
+      "max_depth": 4,
+      "view_count": 11,
+      "tags": {
+        "FrameLayout": 1,
+        "SlidingUpPanelLayout": 1,
+        "View": 2,
+        "RelativeLayout": 1,
+        "TextView": 1,
+        "ImageButton": 1,
+        "ListView": 1,
+        "LinearLayout": 1,
+        "Button": 2
+      },
+      "weighted": 0,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 2906
+    },
+    {
+      "file": "res/layout/dialog_select_file.xml",
+      "max_depth": 4,
+      "view_count": 10,
+      "tags": {
+        "RelativeLayout": 2,
+        "LinearLayout": 1,
+        "TextView": 3,
+        "ImageView": 1,
+        "FSSelect": 1,
+        "CheckBox": 1,
+        "RadioGroup": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2847
+    },
+    {
+      "file": "res/layout-v17/dialog_select_file.xml",
+      "max_depth": 4,
+      "view_count": 10,
+      "tags": {
+        "RelativeLayout": 2,
+        "LinearLayout": 1,
+        "TextView": 3,
+        "ImageView": 1,
+        "FSSelect": 1,
+        "CheckBox": 1,
+        "RadioGroup": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 3101
+    },
+    {
+      "file": "res/layout/dlg_split_size.xml",
+      "max_depth": 4,
+      "view_count": 6,
+      "tags": {
+        "RelativeLayout": 1,
+        "TextView": 1,
+        "LinearLayout": 1,
+        "EditText": 1,
+        "requestFocus": 1,
+        "Spinner": 1
+      },
+      "weighted": 2,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1225
+    },
+    {
+      "file": "res/layout-v17/dlg_split_size.xml",
+      "max_depth": 4,
+      "view_count": 6,
+      "tags": {
+        "RelativeLayout": 1,
+        "TextView": 1,
+        "LinearLayout": 1,
+        "EditText": 1,
+        "requestFocus": 1,
+        "Spinner": 1
+      },
+      "weighted": 2,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1333
+    },
+    {
+      "file": "res/layout/dlg_menu.xml",
+      "max_depth": 3,
+      "view_count": 8,
+      "tags": {
+        "SlidingUpPanelLayout": 1,
+        "View": 2,
+        "RelativeLayout": 1,
+        "TextView": 1,
+        "ImageView": 1,
+        "ImageButton": 1,
+        "ListView": 1
+      },
+      "weighted": 0,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 2388
+    },
+    {
+      "file": "res/layout-v17/dlg_menu.xml",
+      "max_depth": 3,
+      "view_count": 8,
+      "tags": {
+        "SlidingUpPanelLayout": 1,
+        "View": 2,
+        "RelativeLayout": 1,
+        "TextView": 1,
+        "ImageView": 1,
+        "ImageButton": 1,
+        "ListView": 1
+      },
+      "weighted": 0,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 2580
+    },
+    {
+      "file": "res/layout/dlg_main_list_tv.xml",
+      "max_depth": 3,
+      "view_count": 7,
+      "tags": {
+        "LinearLayout": 1,
+        "RelativeLayout": 1,
+        "ImageView": 2,
+        "TextView": 2,
+        "include": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2230
+    },
+    {
+      "file": "res/layout-v17/dlg_main_list_tv.xml",
+      "max_depth": 3,
+      "view_count": 7,
+      "tags": {
+        "LinearLayout": 1,
+        "RelativeLayout": 1,
+        "ImageView": 2,
+        "TextView": 2,
+        "include": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2411
+    },
+    {
+      "file": "res/layout/ctm_navigate.xml",
+      "max_depth": 3,
+      "view_count": 6,
+      "tags": {
+        "RelativeLayout": 1,
+        "LinearLayout": 1,
+        "TextView": 2,
+        "ImageView": 1,
+        "ExSearchView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1747
+    },
+    {
+      "file": "res/layout/dlg_edit_base_tv.xml",
+      "max_depth": 3,
+      "view_count": 6,
+      "tags": {
+        "LinearLayout": 1,
+        "RelativeLayout": 1,
+        "ImageView": 2,
+        "TextView": 1,
+        "include": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1731
+    },
+    {
+      "file": "res/layout/item_file_compact.xml",
+      "max_depth": 3,
+      "view_count": 6,
+      "tags": {
+        "LinearLayout": 2,
+        "ImageView": 1,
+        "TextView": 3
+      },
+      "weighted": 1,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1754
+    },
+    {
+      "file": "res/layout/item_file_search.xml",
+      "max_depth": 3,
+      "view_count": 6,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1,
+        "LinearLayout": 1,
+        "TextView": 3
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2003
+    },
+    {
+      "file": "res/layout-v17/ctm_navigate.xml",
+      "max_depth": 3,
+      "view_count": 6,
+      "tags": {
+        "RelativeLayout": 1,
+        "LinearLayout": 1,
+        "TextView": 2,
+        "ImageView": 1,
+        "ExSearchView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1929
+    },
+    {
+      "file": "res/layout-v17/dlg_edit_base_tv.xml",
+      "max_depth": 3,
+      "view_count": 6,
+      "tags": {
+        "LinearLayout": 1,
+        "RelativeLayout": 1,
+        "ImageView": 2,
+        "TextView": 1,
+        "include": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1840
+    },
+    {
+      "file": "res/layout-v17/item_file_compact.xml",
+      "max_depth": 3,
+      "view_count": 6,
+      "tags": {
+        "LinearLayout": 2,
+        "ImageView": 1,
+        "TextView": 3
+      },
+      "weighted": 1,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1843
+    },
+    {
+      "file": "res/layout-v17/item_file_search.xml",
+      "max_depth": 3,
+      "view_count": 6,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1,
+        "LinearLayout": 1,
+        "TextView": 3
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2296
+    },
+    {
+      "file": "res/layout/dlg_app_folder_name.xml",
+      "max_depth": 3,
+      "view_count": 5,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "RelativeLayout": 1,
+        "ExEditText": 1,
+        "Button": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1189
+    },
+    {
+      "file": "res/layout/dlg_bottom_process.xml",
+      "max_depth": 3,
+      "view_count": 5,
+      "tags": {
+        "SlidingUpPanelLayout": 1,
+        "View": 1,
+        "LinearLayout": 1,
+        "TextView": 1,
+        "ProgressBar": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1703
+    },
+    {
+      "file": "res/layout-v16/dlg_app_folder_name.xml",
+      "max_depth": 3,
+      "view_count": 5,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "RelativeLayout": 1,
+        "ExEditText": 1,
+        "Button": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1228
+    },
+    {
+      "file": "res/layout-v17/dlg_app_folder_name.xml",
+      "max_depth": 3,
+      "view_count": 5,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "RelativeLayout": 1,
+        "ExEditText": 1,
+        "Button": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1341
+    },
+    {
+      "file": "res/layout-v21/ad_title.xml",
+      "max_depth": 3,
+      "view_count": 5,
+      "tags": {
+        "LinearLayout": 1,
+        "RelativeLayout": 1,
+        "TextView": 1,
+        "ImageView": 1,
+        "Space": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1163
+    },
+    {
+      "file": "res/layout-v21/item_application.xml",
+      "max_depth": 3,
+      "view_count": 5,
+      "tags": {
+        "CheckableRelativeLayout": 1,
+        "ImageView": 1,
+        "LinearLayout": 1,
+        "TextView": 2
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1642
+    },
+    {
+      "file": "res/layout/dlg_enter_pwd.xml",
+      "max_depth": 3,
+      "view_count": 4,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "RelativeLayout": 1,
+        "EditPassword": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 962
+    },
+    {
+      "file": "res/layout/dlg_enter_text.xml",
+      "max_depth": 3,
+      "view_count": 4,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "ExEditText": 1,
+        "requestFocus": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 758
+    },
+    {
+      "file": "res/layout-v16/dlg_enter_pwd.xml",
+      "max_depth": 3,
+      "view_count": 4,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "RelativeLayout": 1,
+        "EditPassword": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1001
+    },
+    {
+      "file": "res/layout-v17/dlg_enter_pwd.xml",
+      "max_depth": 3,
+      "view_count": 4,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "RelativeLayout": 1,
+        "EditPassword": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1035
+    },
+    {
+      "file": "res/layout-v17/dlg_enter_text.xml",
+      "max_depth": 3,
+      "view_count": 4,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "ExEditText": 1,
+        "requestFocus": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 792
+    },
+    {
+      "file": "res/layout/dlg_compress.xml",
+      "max_depth": 2,
+      "view_count": 16,
+      "tags": {
+        "ConstraintLayout": 1,
+        "TextView": 6,
+        "BtnEditText": 1,
+        "Button": 1,
+        "Spinner": 4,
+        "EditPassword": 1,
+        "CheckBox": 2
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 4646
+    },
+    {
+      "file": "res/layout/dlg_compress_land.xml",
+      "max_depth": 2,
+      "view_count": 16,
+      "tags": {
+        "ConstraintLayout": 1,
+        "TextView": 6,
+        "BtnEditText": 1,
+        "Button": 1,
+        "Spinner": 4,
+        "EditPassword": 1,
+        "CheckBox": 2
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 5238
+    },
+    {
+      "file": "res/layout-v16/dlg_compress.xml",
+      "max_depth": 2,
+      "view_count": 16,
+      "tags": {
+        "ConstraintLayout": 1,
+        "TextView": 6,
+        "BtnEditText": 1,
+        "Button": 1,
+        "Spinner": 4,
+        "EditPassword": 1,
+        "CheckBox": 2
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 4685
+    },
+    {
+      "file": "res/layout-v16/dlg_compress_land.xml",
+      "max_depth": 2,
+      "view_count": 16,
+      "tags": {
+        "ConstraintLayout": 1,
+        "TextView": 6,
+        "BtnEditText": 1,
+        "Button": 1,
+        "Spinner": 4,
+        "EditPassword": 1,
+        "CheckBox": 2
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 5277
+    },
+    {
+      "file": "res/layout-v17/dlg_compress.xml",
+      "max_depth": 2,
+      "view_count": 16,
+      "tags": {
+        "ConstraintLayout": 1,
+        "TextView": 6,
+        "BtnEditText": 1,
+        "Button": 1,
+        "Spinner": 4,
+        "EditPassword": 1,
+        "CheckBox": 2
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 4957
+    },
+    {
+      "file": "res/layout-v17/dlg_compress_land.xml",
+      "max_depth": 2,
+      "view_count": 16,
+      "tags": {
+        "ConstraintLayout": 1,
+        "TextView": 6,
+        "BtnEditText": 1,
+        "Button": 1,
+        "Spinner": 4,
+        "EditPassword": 1,
+        "CheckBox": 2
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 5549
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "max_depth": 2,
+      "view_count": 12,
+      "tags": {
+        "ConstraintLayout": 1,
+        "ImageView": 1,
+        "FitListView": 1,
+        "View": 3,
+        "TextView": 4,
+        "FilePanelView": 1,
+        "FloatingActionMenu": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 4821
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "max_depth": 2,
+      "view_count": 12,
+      "tags": {
+        "ConstraintLayout": 1,
+        "ImageView": 1,
+        "FitListView": 1,
+        "View": 3,
+        "TextView": 4,
+        "FilePanelView": 1,
+        "FloatingActionMenu": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 4821
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "max_depth": 2,
+      "view_count": 12,
+      "tags": {
+        "ConstraintLayout": 1,
+        "ImageView": 1,
+        "FitListView": 1,
+        "View": 3,
+        "TextView": 4,
+        "FilePanelView": 1,
+        "FloatingActionMenu": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 4821
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "max_depth": 2,
+      "view_count": 10,
+      "tags": {
+        "ConstraintLayout": 1,
+        "ImageView": 1,
+        "FilePanelView": 1,
+        "View": 2,
+        "TextView": 4,
+        "FloatingActionMenu": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 4230
+    },
+    {
+      "file": "res/layout-v17/dlg_main_list_large.xml",
+      "max_depth": 2,
+      "view_count": 10,
+      "tags": {
+        "ConstraintLayout": 1,
+        "ImageView": 1,
+        "FilePanelView": 1,
+        "View": 2,
+        "TextView": 4,
+        "FloatingActionMenu": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 4454
+    },
+    {
+      "file": "res/layout/dlg_main_list_land.xml",
+      "max_depth": 2,
+      "view_count": 7,
+      "tags": {
+        "ConstraintLayout": 1,
+        "ImageView": 1,
+        "FitListView": 1,
+        "View": 2,
+        "FilePanelView": 1,
+        "FloatingActionMenu": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2375
+    },
+    {
+      "file": "res/layout/dlg_progress.xml",
+      "max_depth": 2,
+      "view_count": 7,
+      "tags": {
+        "ConstraintLayout": 1,
+        "TextView": 4,
+        "ProgressBar": 1,
+        "CheckBox": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2710
+    },
+    {
+      "file": "res/layout-v17/dlg_progress.xml",
+      "max_depth": 2,
+      "view_count": 7,
+      "tags": {
+        "ConstraintLayout": 1,
+        "TextView": 4,
+        "ProgressBar": 1,
+        "CheckBox": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2950
+    },
+    {
+      "file": "res/layout/extend_info.xml",
+      "max_depth": 2,
+      "view_count": 6,
+      "tags": {
+        "ConstraintLayout": 1,
+        "TextView": 4,
+        "ProgressBar": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2578
+    },
+    {
+      "file": "res/layout-v17/extend_info.xml",
+      "max_depth": 2,
+      "view_count": 6,
+      "tags": {
+        "ConstraintLayout": 1,
+        "TextView": 4,
+        "ProgressBar": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2714
+    },
+    {
+      "file": "res/layout/dialog_slider.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "RelativeLayout": 1,
+        "TextView": 3,
+        "SeekBar": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1259
+    },
+    {
+      "file": "res/layout/dlg_add_pwd.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 2,
+        "EditText": 1,
+        "EditPassword": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1184
+    },
+    {
+      "file": "res/layout/dlg_add_to_favotite.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 2,
+        "EditText": 1,
+        "Spinner": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1100
+    },
+    {
+      "file": "res/layout/dlg_main_list.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "ConstraintLayout": 1,
+        "ImageView": 1,
+        "FilePanelView": 1,
+        "View": 1,
+        "FloatingActionMenu": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1603
+    },
+    {
+      "file": "res/layout/item_favorite.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "ConstraintLayout": 1,
+        "ImageView": 1,
+        "TextView": 3
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1971
+    },
+    {
+      "file": "res/layout/item_file_detail.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1,
+        "TextView": 3
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1918
+    },
+    {
+      "file": "res/layout-v16/dlg_add_pwd.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 2,
+        "EditText": 1,
+        "EditPassword": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1223
+    },
+    {
+      "file": "res/layout-v17/dialog_slider.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "RelativeLayout": 1,
+        "TextView": 3,
+        "SeekBar": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1335
+    },
+    {
+      "file": "res/layout-v17/dlg_add_pwd.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 2,
+        "EditText": 1,
+        "EditPassword": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1354
+    },
+    {
+      "file": "res/layout-v17/dlg_add_to_favotite.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 2,
+        "EditText": 1,
+        "Spinner": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1232
+    },
+    {
+      "file": "res/layout-v17/item_favorite.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "ConstraintLayout": 1,
+        "ImageView": 1,
+        "TextView": 3
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2127
+    },
+    {
+      "file": "res/layout-v17/item_file_detail.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1,
+        "TextView": 3
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2207
+    },
+    {
+      "file": "res/layout-v24/ctm_navigate.xml",
+      "max_depth": 2,
+      "view_count": 5,
+      "tags": {
+        "ConstraintLayout": 1,
+        "TextView": 2,
+        "ImageView": 1,
+        "ExSearchView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 2147
+    },
+    {
+      "file": "res/layout/dlg_app_list.xml",
+      "max_depth": 2,
+      "view_count": 4,
+      "tags": {
+        "RelativeLayout": 1,
+        "ProgressBar": 1,
+        "ExEditText": 1,
+        "ListView": 1
+      },
+      "weighted": 0,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 846
+    },
+    {
+      "file": "res/layout/item_bottom_menu.xml",
+      "max_depth": 2,
+      "view_count": 4,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 2,
+        "TextView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1517
+    },
+    {
+      "file": "res/layout/item_simpe_desc.xml",
+      "max_depth": 2,
+      "view_count": 4,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1,
+        "TextView": 2
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1259
+    },
+    {
+      "file": "res/layout-v17/item_bottom_menu.xml",
+      "max_depth": 2,
+      "view_count": 4,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 2,
+        "TextView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1781
+    },
+    {
+      "file": "res/layout-v17/item_simpe_desc.xml",
+      "max_depth": 2,
+      "view_count": 4,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1,
+        "TextView": 2
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1366
+    },
+    {
+      "file": "res/layout/dlg_edit_base.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "FrameLayout": 1,
+        "EditableView": 1,
+        "ProgressBar": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 561
+    },
+    {
+      "file": "res/layout/dlg_errors.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "ListView": 1
+      },
+      "weighted": 0,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 696
+    },
+    {
+      "file": "res/layout/dlg_fix_sd.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "CheckBox": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 749
+    },
+    {
+      "file": "res/layout/dlg_root_wrn.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "CheckBox": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 803
+    },
+    {
+      "file": "res/layout/dlg_saved_pwd.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "FrameLayout": 1,
+        "ListView": 1,
+        "TextView": 1
+      },
+      "weighted": 0,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 694
+    },
+    {
+      "file": "res/layout/item_color_select.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1,
+        "TextView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 878
+    },
+    {
+      "file": "res/layout/item_error.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 2
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 622
+    },
+    {
+      "file": "res/layout/item_file_grid.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1,
+        "TextView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1038
+    },
+    {
+      "file": "res/layout/item_menu.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1,
+        "TextView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 968
+    },
+    {
+      "file": "res/layout-v17/dlg_fix_sd.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "CheckBox": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 875
+    },
+    {
+      "file": "res/layout-v17/dlg_root_wrn.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 1,
+        "CheckBox": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 871
+    },
+    {
+      "file": "res/layout-v17/item_color_select.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1,
+        "TextView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1046
+    },
+    {
+      "file": "res/layout-v17/item_error.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "LinearLayout": 1,
+        "TextView": 2
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 656
+    },
+    {
+      "file": "res/layout-v17/item_menu.xml",
+      "max_depth": 2,
+      "view_count": 3,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1,
+        "TextView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 1162
+    },
+    {
+      "file": "res/layout/item_icon.xml",
+      "max_depth": 2,
+      "view_count": 2,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 555
+    },
+    {
+      "file": "res/layout-v17/item_icon.xml",
+      "max_depth": 2,
+      "view_count": 2,
+      "tags": {
+        "RelativeLayout": 1,
+        "ImageView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 594
+    },
+    {
+      "file": "res/layout/dlg_menu_holo.xml",
+      "max_depth": 1,
+      "view_count": 1,
+      "tags": {
+        "ListView": 1
+      },
+      "weighted": 0,
+      "scrollables": 1,
+      "xml_onclick": 0,
+      "bytes": 246
+    },
+    {
+      "file": "res/layout/item_select_dialog_singlechoice.xml",
+      "max_depth": 1,
+      "view_count": 1,
+      "tags": {
+        "CheckedTextView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 666
+    },
+    {
+      "file": "res/layout-v17/item_select_dialog_singlechoice.xml",
+      "max_depth": 1,
+      "view_count": 1,
+      "tags": {
+        "CheckedTextView": 1
+      },
+      "weighted": 0,
+      "scrollables": 0,
+      "xml_onclick": 0,
+      "bytes": 724
+    }
+  ],
+  "a11y_issue_count": 43,
+  "a11y_issues": [
+    {
+      "file": "res/layout/dlg_compress.xml",
+      "tag": "TextView",
+      "id": "@id/tv_format",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/dlg_compress.xml",
+      "tag": "TextView",
+      "id": "@id/tv_level",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_format",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_level",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_encrypt",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_password",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/dlg_compress_land.xml",
+      "tag": "CheckBox",
+      "id": "@id/cb_deletefile",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/dlg_compress_land.xml",
+      "tag": "CheckBox",
+      "id": "@id/cb_separate",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "@id/tvPermissionsText",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/extend_info.xml",
+      "tag": "TextView",
+      "id": "@id/tvStorage",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/extend_info.xml",
+      "tag": "TextView",
+      "id": "@id/tvFolder",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/extend_info.xml",
+      "tag": "TextView",
+      "id": "@id/tvStorageSpace",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/extend_info.xml",
+      "tag": "TextView",
+      "id": "@id/tvFolderSize",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/item_color_select.xml",
+      "tag": "ImageView",
+      "id": "@id/iv_icon",
+      "issue": "touch target 32.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout/item_color_select.xml",
+      "tag": "ImageView",
+      "id": "@id/iv_icon",
+      "issue": "touch target 32.0dp < 48dp (android:layout_height)"
+    },
+    {
+      "file": "res/layout/item_error.xml",
+      "tag": "TextView",
+      "id": "@id/n",
+      "issue": "touch target 40.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress.xml",
+      "tag": "TextView",
+      "id": "@id/tv_format",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress.xml",
+      "tag": "TextView",
+      "id": "@id/tv_level",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_format",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_level",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_encrypt",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_password",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress_land.xml",
+      "tag": "CheckBox",
+      "id": "@id/cb_deletefile",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress_land.xml",
+      "tag": "CheckBox",
+      "id": "@id/cb_separate",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress.xml",
+      "tag": "TextView",
+      "id": "@id/tv_format",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress.xml",
+      "tag": "TextView",
+      "id": "@id/tv_level",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_format",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_level",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_encrypt",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress_land.xml",
+      "tag": "TextView",
+      "id": "@id/tv_password",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress_land.xml",
+      "tag": "CheckBox",
+      "id": "@id/cb_deletefile",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress_land.xml",
+      "tag": "CheckBox",
+      "id": "@id/cb_separate",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "@id/tvPermissionsText",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/extend_info.xml",
+      "tag": "TextView",
+      "id": "@id/tvStorage",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/extend_info.xml",
+      "tag": "TextView",
+      "id": "@id/tvFolder",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/extend_info.xml",
+      "tag": "TextView",
+      "id": "@id/tvStorageSpace",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/extend_info.xml",
+      "tag": "TextView",
+      "id": "@id/tvFolderSize",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/item_color_select.xml",
+      "tag": "ImageView",
+      "id": "@id/iv_icon",
+      "issue": "touch target 32.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v17/item_color_select.xml",
+      "tag": "ImageView",
+      "id": "@id/iv_icon",
+      "issue": "touch target 32.0dp < 48dp (android:layout_height)"
+    },
+    {
+      "file": "res/layout-v17/item_error.xml",
+      "tag": "TextView",
+      "id": "@id/n",
+      "issue": "touch target 40.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v21/ad_title.xml",
+      "tag": "ImageView",
+      "id": "@id/titleButton",
+      "issue": "missing contentDescription"
+    },
+    {
+      "file": "res/layout-v24/ctm_navigate.xml",
+      "tag": "TextView",
+      "id": "@id/nTitle",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    },
+    {
+      "file": "res/layout-v24/ctm_navigate.xml",
+      "tag": "TextView",
+      "id": "@id/nSubtitle",
+      "issue": "touch target 0.0dp < 48dp (android:layout_width)"
+    }
+  ],
+  "rtl_issue_count": 333,
+  "rtl_issues": [
+    {
+      "file": "res/layout/ctm_navigate.xml",
+      "tag": "LinearLayout",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/ctm_navigate.xml",
+      "tag": "LinearLayout",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout/ctm_navigate.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/ctm_navigate.xml",
+      "tag": "ExSearchView",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/dialog_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dialog_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dialog_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dialog_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dialog_select_file.xml",
+      "tag": "LinearLayout",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/dialog_select_file.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dialog_select_file.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/dialog_slider.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dialog_slider.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dialog_slider.xml",
+      "tag": "TextView",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/dialog_slider.xml",
+      "tag": "TextView",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_add_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_add_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_add_to_favotite.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_add_to_favotite.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_app_folder_name.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_app_folder_name.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_app_folder_name.xml",
+      "tag": "ExEditText",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout/dlg_app_folder_name.xml",
+      "tag": "Button",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/dlg_app_list.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_app_list.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_ask_overwrite.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_ask_overwrite.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_ask_overwrite.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_ask_overwrite.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_ask_overwrite_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_ask_overwrite_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_ask_overwrite_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_ask_overwrite_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_bottom_process.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_bottom_process.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_bottom_process.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_bottom_process.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_bottom_process.xml",
+      "tag": "ProgressBar",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_bottom_process.xml",
+      "tag": "ProgressBar",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_compress.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_compress.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_compress_land.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_compress_land.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_edit_base_tv.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout/dlg_edit_base_tv.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toRightOf"
+    },
+    {
+      "file": "res/layout/dlg_edit_base_tv.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/dlg_enter_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_enter_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_enter_text.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_enter_text.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_info_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_main_list_tv.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout/dlg_main_list_tv.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toRightOf"
+    },
+    {
+      "file": "res/layout/dlg_main_list_tv.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout/dlg_main_list_tv.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toRightOf"
+    },
+    {
+      "file": "res/layout/dlg_main_list_tv.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/dlg_menu.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_menu.xml",
+      "tag": "TextView",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/dlg_menu.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout/dlg_menu.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_menu.xml",
+      "tag": "ImageView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_menu.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/dlg_menu.xml",
+      "tag": "ImageButton",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/dlg_permissions.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_permissions.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_progress.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_progress.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_progress.xml",
+      "tag": "TextView",
+      "attr": "android:layout_marginLeft"
+    },
+    {
+      "file": "res/layout/dlg_progress.xml",
+      "tag": "TextView",
+      "attr": "android:layout_marginLeft"
+    },
+    {
+      "file": "res/layout/dlg_root_wrn.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_root_wrn.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_select_file.xml",
+      "tag": "LinearLayout",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/dlg_select_file.xml",
+      "tag": "LinearLayout",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout/dlg_select_file.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_select_file.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/dlg_select_file_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_select_file_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_select_file_land.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_select_file_land.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_select_file_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/dlg_select_file_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout/dlg_select_file_land.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_select_file_land.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/dlg_split_size.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/dlg_split_size.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/dlg_split_size.xml",
+      "tag": "TextView",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/extend_info.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/extend_info.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/extend_info.xml",
+      "tag": "ProgressBar",
+      "attr": "android:layout_marginLeft"
+    },
+    {
+      "file": "res/layout/extend_info.xml",
+      "tag": "ProgressBar",
+      "attr": "android:layout_marginRight"
+    },
+    {
+      "file": "res/layout/item_bottom_menu.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/item_bottom_menu.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/item_bottom_menu.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/item_bottom_menu.xml",
+      "tag": "ImageView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/item_bottom_menu.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout/item_bottom_menu.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toRightOf"
+    },
+    {
+      "file": "res/layout/item_bottom_menu.xml",
+      "tag": "ImageView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/item_bottom_menu.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_marginRight"
+    },
+    {
+      "file": "res/layout/item_bottom_menu.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/item_color_select.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/item_color_select.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/item_color_select.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/item_color_select.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toRightOf"
+    },
+    {
+      "file": "res/layout/item_favorite.xml",
+      "tag": "ImageView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/item_favorite.xml",
+      "tag": "ImageView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/item_file_compact.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/item_file_compact.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/item_file_compact.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_marginRight"
+    },
+    {
+      "file": "res/layout/item_file_detail.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/item_file_detail.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/item_file_detail.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_marginRight"
+    },
+    {
+      "file": "res/layout/item_file_detail.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toRightOf"
+    },
+    {
+      "file": "res/layout/item_file_detail.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout/item_file_detail.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/item_file_detail.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toRightOf"
+    },
+    {
+      "file": "res/layout/item_file_detail.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/item_file_detail.xml",
+      "tag": "TextView",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/item_file_search.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/item_file_search.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/item_file_search.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_marginRight"
+    },
+    {
+      "file": "res/layout/item_file_search.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/item_file_search.xml",
+      "tag": "LinearLayout",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout/item_file_search.xml",
+      "tag": "LinearLayout",
+      "attr": "android:layout_toRightOf"
+    },
+    {
+      "file": "res/layout/item_file_search.xml",
+      "tag": "TextView",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout/item_icon.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/item_menu.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/item_menu.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/item_menu.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/item_menu.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toRightOf"
+    },
+    {
+      "file": "res/layout/item_select_dialog_singlechoice.xml",
+      "tag": "CheckedTextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout/item_select_dialog_singlechoice.xml",
+      "tag": "CheckedTextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout/item_simpe_desc.xml",
+      "tag": "ImageView",
+      "attr": "android:layout_alignParentLeft"
+    },
+    {
+      "file": "res/layout/item_simpe_desc.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toRightOf"
+    },
+    {
+      "file": "res/layout/item_simpe_desc.xml",
+      "tag": "TextView",
+      "attr": "android:layout_toRightOf"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v16/dlg_add_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v16/dlg_add_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v16/dlg_app_folder_name.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v16/dlg_app_folder_name.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v16/dlg_app_folder_name.xml",
+      "tag": "ExEditText",
+      "attr": "android:layout_toLeftOf"
+    },
+    {
+      "file": "res/layout-v16/dlg_app_folder_name.xml",
+      "tag": "Button",
+      "attr": "android:layout_alignParentRight"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress_land.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress_land.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v16/dlg_enter_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v16/dlg_enter_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dialog_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dialog_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dialog_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dialog_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dialog_slider.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dialog_slider.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_about.xml",
+      "tag": "View",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_add_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_add_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_add_to_favotite.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_add_to_favotite.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_app_folder_name.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_app_folder_name.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_ask_overwrite.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_ask_overwrite.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_ask_overwrite_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_ask_overwrite_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress_land.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_compress_land.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_enter_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_enter_pwd.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_enter_text.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_enter_text.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_info.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_info.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_info_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_info_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_menu.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_menu.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_permissions.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_permissions.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_progress.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_progress.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_root_wrn.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_root_wrn.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_select_file.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_select_file_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_select_file_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_select_file_land.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_select_file_land.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/dlg_split_size.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/dlg_split_size.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/extend_info.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/extend_info.xml",
+      "tag": "ConstraintLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v17/extend_info.xml",
+      "tag": "ProgressBar",
+      "attr": "android:layout_marginLeft"
+    },
+    {
+      "file": "res/layout-v17/extend_info.xml",
+      "tag": "ProgressBar",
+      "attr": "android:layout_marginRight"
+    },
+    {
+      "file": "res/layout-v17/item_bottom_menu.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v17/item_bottom_menu.xml",
+      "tag": "RelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v21/dlg_open_as.xml",
+      "tag": "TextView",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v21/dlg_open_as.xml",
+      "tag": "TextView",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v21/item_application.xml",
+      "tag": "CheckableRelativeLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v21/item_application.xml",
+      "tag": "CheckableRelativeLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v22/dlg_ask_overwrite.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v22/dlg_ask_overwrite.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    },
+    {
+      "file": "res/layout-v22/dlg_ask_overwrite_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingLeft"
+    },
+    {
+      "file": "res/layout-v22/dlg_ask_overwrite_land.xml",
+      "tag": "LinearLayout",
+      "attr": "android:paddingRight"
+    }
+  ],
+  "unit_issue_count": 89,
+  "unit_issues": [
+    {
+      "file": "res/layout/dlg_main_list.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land.xml",
+      "id": "@id/lvFavorite",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land.xml",
+      "id": "@id/lvFavorite",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land.xml",
+      "id": "@id/vDiv",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "id": "@id/lvFavorite",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "id": "@id/lvFavorite",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "id": "@id/vDiv",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "id": "@id/vDiv2",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "id": "@id/tvStorage",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_land_large.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "id": "@id/vDiv",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "id": "@id/tvStorage",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "id": "@id/tvStorageSpace",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_main_list_large.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_menu.xml",
+      "id": "",
+      "attr": "android:layout_height",
+      "value": "1.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_progress.xml",
+      "id": "@id/tvProgressPercent",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_progress.xml",
+      "id": "@id/pbProgress",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_select_file_land.xml",
+      "id": "",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/dlg_select_file_land.xml",
+      "id": "@id/sv_bar",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/item_favorite.xml",
+      "id": "@id/text",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/item_favorite.xml",
+      "id": "@id/desc",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/item_file_compact.xml",
+      "id": "@id/label",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/item_file_detail.xml",
+      "id": "@id/info_size",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/menu_view_mode.xml",
+      "id": "",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/menu_view_mode.xml",
+      "id": "",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/menu_view_mode.xml",
+      "id": "",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout/menu_view_mode.xml",
+      "id": "",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "id": "@id/lvFavorite",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "id": "@id/lvFavorite",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "id": "@id/vDiv",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "id": "@id/vDiv2",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "id": "@id/tvStorage",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw600dp/dlg_main_list_land_large.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "id": "@id/lvFavorite",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "id": "@id/lvFavorite",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "id": "@id/vDiv",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "id": "@id/vDiv2",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "id": "@id/tvStorage",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-sw720dp/dlg_main_list_land_large.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_main_list_large.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_main_list_large.xml",
+      "id": "@id/ivParent",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_main_list_large.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_main_list_large.xml",
+      "id": "@id/fp",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_main_list_large.xml",
+      "id": "@id/vDiv",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_main_list_large.xml",
+      "id": "@id/tvStorage",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_main_list_large.xml",
+      "id": "@id/tvStorageSpace",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_main_list_large.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_main_list_large.xml",
+      "id": "@id/ibActionBg",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_menu.xml",
+      "id": "",
+      "attr": "android:layout_height",
+      "value": "1.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_progress.xml",
+      "id": "@id/tvProgressPercent",
+      "attr": "android:layout_height",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_progress.xml",
+      "id": "@id/pbProgress",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_select_file_land.xml",
+      "id": "",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/dlg_select_file_land.xml",
+      "id": "@id/sv_bar",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/item_favorite.xml",
+      "id": "@id/text",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/item_favorite.xml",
+      "id": "@id/desc",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/item_file_compact.xml",
+      "id": "@id/label",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v17/item_file_detail.xml",
+      "id": "@id/info_size",
+      "attr": "android:layout_width",
+      "value": "0.0px",
+      "issue": "absolute px"
+    },
+    {
+      "file": "res/layout-v21/dlg_open_as.xml",
+      "id": "",
+      "attr": "android:layout_height",
+      "value": "1.0px",
+      "issue": "absolute px"
+    }
+  ],
+  "hardcoded_text_count": 18,
+  "hardcoded_text": [
+    {
+      "file": "res/layout/dlg_compress.xml",
+      "tag": "Button",
+      "id": "@id/btn_path",
+      "text": "..."
+    },
+    {
+      "file": "res/layout/dlg_compress_land.xml",
+      "tag": "Button",
+      "id": "@id/btn_path",
+      "text": "..."
+    },
+    {
+      "file": "res/layout/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "",
+      "text": "R"
+    },
+    {
+      "file": "res/layout/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "",
+      "text": "W"
+    },
+    {
+      "file": "res/layout/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "",
+      "text": "X"
+    },
+    {
+      "file": "res/layout/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "",
+      "text": "UID:"
+    },
+    {
+      "file": "res/layout/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "",
+      "text": "GID:"
+    },
+    {
+      "file": "res/layout/dlg_split_size.xml",
+      "tag": "EditText",
+      "id": "@id/etSplitSize",
+      "text": "1"
+    },
+    {
+      "file": "res/layout-v16/dlg_compress.xml",
+      "tag": "Button",
+      "id": "@id/btn_path",
+      "text": "..."
+    },
+    {
+      "file": "res/layout-v16/dlg_compress_land.xml",
+      "tag": "Button",
+      "id": "@id/btn_path",
+      "text": "..."
+    },
+    {
+      "file": "res/layout-v17/dlg_compress.xml",
+      "tag": "Button",
+      "id": "@id/btn_path",
+      "text": "..."
+    },
+    {
+      "file": "res/layout-v17/dlg_compress_land.xml",
+      "tag": "Button",
+      "id": "@id/btn_path",
+      "text": "..."
+    },
+    {
+      "file": "res/layout-v17/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "",
+      "text": "R"
+    },
+    {
+      "file": "res/layout-v17/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "",
+      "text": "W"
+    },
+    {
+      "file": "res/layout-v17/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "",
+      "text": "X"
+    },
+    {
+      "file": "res/layout-v17/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "",
+      "text": "UID:"
+    },
+    {
+      "file": "res/layout-v17/dlg_permissions.xml",
+      "tag": "TextView",
+      "id": "",
+      "text": "GID:"
+    },
+    {
+      "file": "res/layout-v17/dlg_split_size.xml",
+      "tag": "EditText",
+      "id": "@id/etSplitSize",
+      "text": "1"
+    }
+  ],
+  "fitsSystemWindows_count": 0,
+  "fitsSystemWindows": []
+}

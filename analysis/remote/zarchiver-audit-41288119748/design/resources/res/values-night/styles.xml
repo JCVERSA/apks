@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.DayNight" parent="@style/AppTheme.Dark" />
+    <style name="AppTheme.DayNight.Amber" parent="@style/AppTheme.Dark.Material.Amber" />
+    <style name="AppTheme.DayNight.Blue" parent="@style/AppTheme.Dark.Material.Blue" />
+    <style name="AppTheme.DayNight.BlueGrey" parent="@style/AppTheme.Dark.Material.BlueGrey" />
+    <style name="AppTheme.DayNight.Brown" parent="@style/AppTheme.Dark.Material.Brown" />
+    <style name="AppTheme.DayNight.Cyan" parent="@style/AppTheme.Dark.Material.Cyan" />
+    <style name="AppTheme.DayNight.DarkGrey" parent="@style/AppTheme.Dark.Material.DarkGrey" />
+    <style name="AppTheme.DayNight.DeepOrange" parent="@style/AppTheme.Dark.Material.DeepOrange" />
+    <style name="AppTheme.DayNight.DeepPurple" parent="@style/AppTheme.Dark.Material.DeepPurple" />
+    <style name="AppTheme.DayNight.Green" parent="@style/AppTheme.Dark.Material.Green" />
+    <style name="AppTheme.DayNight.Grey" parent="@style/AppTheme.Dark.Material.Grey" />
+    <style name="AppTheme.DayNight.Indigo" parent="@style/AppTheme.Dark.Material.Indigo" />
+    <style name="AppTheme.DayNight.LightBlue" parent="@style/AppTheme.Dark.Material.LightBlue" />
+    <style name="AppTheme.DayNight.LightGreen" parent="@style/AppTheme.Dark.Material.LightGreen" />
+    <style name="AppTheme.DayNight.Lime" parent="@style/AppTheme.Dark.Material.Lime" />
+    <style name="AppTheme.DayNight.Orange" parent="@style/AppTheme.Dark.Material.Orange" />
+    <style name="AppTheme.DayNight.Pink" parent="@style/AppTheme.Dark.Material.Pink" />
+    <style name="AppTheme.DayNight.Purple" parent="@style/AppTheme.Dark.Material.Purple" />
+    <style name="AppTheme.DayNight.Teal" parent="@style/AppTheme.Dark.Material.Teal" />
+    <style name="AppTheme.DayNight.Yellow" parent="@style/AppTheme.Dark.Material.Yellow" />
+</resources>

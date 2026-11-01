@@ -1,0 +1,56 @@
+{
+  "resource_dirs": 83,
+  "resource_files": 675,
+  "resource_types": {
+    "anim": 2,
+    "color": 2,
+    "drawable": 396,
+    "layout": 100,
+    "menu": 12,
+    "mipmap": 23,
+    "values": 123,
+    "xml": 17
+  },
+  "styles_total": 235,
+  "themes_total": 184,
+  "colors_total": 24,
+  "dimens_total": 31,
+  "custom_attrs_total": 117,
+  "layouts_total": 100,
+  "night_qualified_dirs": [
+    "values-night",
+    "values-night-v31"
+  ],
+  "v31_plus_dirs": [
+    "values-night-v31",
+    "values-v31",
+    "xml-v33"
+  ],
+  "adaptive_icon_count": 4,
+  "monochrome_icon_count": 3,
+  "vector_count": 191,
+  "raster_count": 205,
+  "default_strings": 422,
+  "locales": 33,
+  "a11y_issues": 43,
+  "rtl_issues": 333,
+  "unit_issues": 89,
+  "hardcoded_texts": 18,
+  "code_pattern_files": {
+    "night_mode_api": 0,
+    "dynamic_color_api": 0,
+    "theme_selection": 7,
+    "config_changes": 2,
+    "force_dark": 0,
+    "edge_to_edge": 0,
+    "back_gesture": 0,
+    "text_scaling": 14,
+    "a11y_api": 1,
+    "rtl_api": 3,
+    "animation": 25
+  },
+  "evidence_files_copied": 100,
+  "evidence_bytes": 540521,
+  "runtime_execution": "NOT TESTED",
+  "visual_rendering": "NOT RENDERED; static resource/code analysis only"
+}

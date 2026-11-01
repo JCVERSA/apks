@@ -1,0 +1,887 @@
+{
+  "night_mode_api": [],
+  "dynamic_color_api": [],
+  "theme_selection": [
+    {
+      "file": "t0/b.java",
+      "hits": [
+        {
+          "line": 47,
+          "text": "public static final int[] f2095p = {R.style.AppTheme_Dark, R.style.AppTheme_Dynamic_Dark, R.style.AppTheme_Dark_Material_Pink, R.style.AppTheme_Dark_Material_Purple, R.style.AppTheme_Dark_Material_DeepPurple, R.style.App"
+        },
+        {
+          "line": 90,
+          "text": "return (i2 == 0 || i2 >= 21) ? R.style.AppTheme_Dark : f2095p[i2];"
+        },
+        {
+          "line": 351,
+          "text": "f2087h = defaultSharedPreferences.getInt(\"iActionbarColorN\", 0);"
+        },
+        {
+          "line": 353,
+          "text": "iI1 = c.i0(0, defaultSharedPreferences.getString(\"iTheme\", null)) + 1;"
+        },
+        {
+          "line": 363,
+          "text": "int i13 = f2096q[defaultSharedPreferences.getInt(\"iFolderColorN\", 0)];"
+        },
+        {
+          "line": 536,
+          "text": "editorEdit.putString(\"iTheme\", \"5\");"
+        },
+        {
+          "line": 556,
+          "text": "if (defaultSharedPreferences.getInt(\"iActionbarColorN\", 1000) != 1000) {"
+        },
+        {
+          "line": 564,
+          "text": "editorEdit.putInt(\"iActionbarColorN\", i9);"
+        },
+        {
+          "line": 687,
+          "text": "f2087h = defaultSharedPreferences.getInt(\"iActionbarColorN\", 0);"
+        },
+        {
+          "line": 689,
+          "text": "iI1 = c.i0(0, defaultSharedPreferences.getString(\"iTheme\", null)) + 1;"
+        },
+        {
+          "line": 699,
+          "text": "int i111 = f2096q[defaultSharedPreferences.getInt(\"iFolderColorN\", 0)];"
+        },
+        {
+          "line": 875,
+          "text": "editorEdit.putString(\"iTheme\", \"5\");"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZArchiver.java",
+      "hits": [
+        {
+          "line": 1128,
+          "text": "exSearchView.getContext().setTheme(t0.b.c());"
+        },
+        {
+          "line": 1488,
+          "text": "themeNewTheme.applyStyle(R.style.AppTheme_Dark, true);"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ui/ctrl/fab/FloatingActionMenu.java",
+      "hits": [
+        {
+          "line": 123,
+          "text": "themeNewTheme.applyStyle(R.style.AppTheme_Dark, true);"
+        },
+        {
+          "line": 359,
+          "text": "themeNewTheme.applyStyle(R.style.AppTheme_Dark, true);"
+        }
+      ]
+    },
+    {
+      "file": "z0/e.java",
+      "hits": [
+        {
+          "line": 56,
+          "text": "return (Build.VERSION.SDK_INT > 19 || !t0.b.k(1024)) ? new ContextThemeWrapper(context, R.style.AppTheme_Light) : new ContextThemeWrapper(context, R.style.AppTheme_Light_Material_Color);"
+        },
+        {
+          "line": 306,
+          "text": "activity.setTheme(iC);"
+        }
+      ]
+    },
+    {
+      "file": "b1/a.java",
+      "hits": [
+        {
+          "line": 293,
+          "text": "themeNewTheme.applyStyle(R.style.AppTheme_Dark, true);"
+        }
+      ]
+    },
+    {
+      "file": "g0/v.java",
+      "hits": [
+        {
+          "line": 69,
+          "text": "context = new ContextThemeWrapper(context, R.style.AppTheme_Light);"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZSelectFile.java",
+      "hits": [
+        {
+          "line": 619,
+          "text": "exSearchView.getContext().setTheme(t0.b.c());"
+        }
+      ]
+    }
+  ],
+  "config_changes": [
+    {
+      "file": "ru/zdevs/zarchiver/ZArchiver.java",
+      "hits": [
+        {
+          "line": 2418,
+          "text": "public final void onConfigurationChanged(Configuration configuration) {"
+        },
+        {
+          "line": 2425,
+          "text": "super.onConfigurationChanged(configuration);"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZSelectFile.java",
+      "hits": [
+        {
+          "line": 387,
+          "text": "public final void onConfigurationChanged(Configuration configuration) throws Throwable {"
+        },
+        {
+          "line": 388,
+          "text": "super.onConfigurationChanged(configuration);"
+        }
+      ]
+    }
+  ],
+  "force_dark": [],
+  "edge_to_edge": [],
+  "back_gesture": [],
+  "text_scaling": [
+    {
+      "file": "g0/o.java",
+      "hits": [
+        {
+          "line": 70,
+          "text": "if (resources != null && resources.getConfiguration() != null) {"
+        },
+        {
+          "line": 71,
+          "text": "oVar.v(resources.getConfiguration());"
+        },
+        {
+          "line": 721,
+          "text": "Configuration configuration = context.getResources().getConfiguration();"
+        },
+        {
+          "line": 1003,
+          "text": "Configuration configuration = context.getResources().getConfiguration();"
+        }
+      ]
+    },
+    {
+      "file": "z0/e.java",
+      "hits": [
+        {
+          "line": 70,
+          "text": "configuration = context.getResources().getConfiguration();"
+        },
+        {
+          "line": 246,
+          "text": "Configuration configuration = resources.getConfiguration();"
+        },
+        {
+          "line": 252,
+          "text": "resources.updateConfiguration(configuration, resources.getDisplayMetrics());"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZSelectFile.java",
+      "hits": [
+        {
+          "line": 416,
+          "text": "Configuration configuration = getResources().getConfiguration();"
+        },
+        {
+          "line": 421,
+          "text": "int iK = k(getResources().getConfiguration());"
+        }
+      ]
+    },
+    {
+      "file": "v0/b.java",
+      "hits": [
+        {
+          "line": 113,
+          "text": "return context.getResources().getConfiguration().orientation != 2;"
+        },
+        {
+          "line": 128,
+          "text": "return resources.getConfiguration().screenWidthDp < 360;"
+        }
+      ]
+    },
+    {
+      "file": "a0/c.java",
+      "hits": [
+        {
+          "line": 1091,
+          "text": "Locale locale = context.getResources().getConfiguration().locale;"
+        }
+      ]
+    },
+    {
+      "file": "b0/c.java",
+      "hits": [
+        {
+          "line": 159,
+          "text": "Configuration configuration = getResources().getConfiguration();"
+        }
+      ]
+    },
+    {
+      "file": "g0/c.java",
+      "hits": [
+        {
+          "line": 41,
+          "text": "Configuration configuration = zArchiver.getResources().getConfiguration();"
+        }
+      ]
+    },
+    {
+      "file": "g0/h.java",
+      "hits": [
+        {
+          "line": 86,
+          "text": "Configuration configuration = context.getResources().getConfiguration();"
+        }
+      ]
+    },
+    {
+      "file": "g0/p.java",
+      "hits": [
+        {
+          "line": 268,
+          "text": "this.f1021h = context.getResources().getConfiguration().orientation == 2 ? R.layout.dlg_select_file_land : R.layout.dlg_select_file;"
+        }
+      ]
+    },
+    {
+      "file": "g0/v.java",
+      "hits": [
+        {
+          "line": 312,
+          "text": "Configuration configuration = context.getResources().getConfiguration();"
+        }
+      ]
+    },
+    {
+      "file": "j/a.java",
+      "hits": [
+        {
+          "line": 56,
+          "text": "boolean z2 = resources.getConfiguration().orientation == 1;"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ZArchiver.java",
+      "hits": [
+        {
+          "line": 2504,
+          "text": "Configuration configuration = getResources().getConfiguration();"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ui/text/BtnEditText.java",
+      "hits": [
+        {
+          "line": 65,
+          "text": "z2 = getResources().getConfiguration().getLayoutDirection() == 1;"
+        }
+      ]
+    },
+    {
+      "file": "z0/f.java",
+      "hits": [
+        {
+          "line": 81,
+          "text": "return Build.VERSION.SDK_INT >= 17 && view.getResources().getConfiguration().getLayoutDirection() == 1;"
+        }
+      ]
+    }
+  ],
+  "a11y_api": [
+    {
+      "file": "f/b.java",
+      "hits": [
+        {
+          "line": 30,
+          "text": "import android.view.accessibility.AccessibilityNodeInfo;"
+        },
+        {
+          "line": 193,
+          "text": "public final void onInitializeAccessibilityNodeInfo(View view, AccessibilityNodeInfo accessibilityNodeInfo) {"
+        },
+        {
+          "line": 194,
+          "text": "super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfo);"
+        }
+      ]
+    }
+  ],
+  "rtl_api": [
+    {
+      "file": "android/support/constraint/ConstraintLayout.java",
+      "hits": [
+        {
+          "line": 1356,
+          "text": "boolean z2 = 1 == getLayoutDirection();"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ui/text/BtnEditText.java",
+      "hits": [
+        {
+          "line": 65,
+          "text": "z2 = getResources().getConfiguration().getLayoutDirection() == 1;"
+        }
+      ]
+    },
+    {
+      "file": "z0/f.java",
+      "hits": [
+        {
+          "line": 81,
+          "text": "return Build.VERSION.SDK_INT >= 17 && view.getResources().getConfiguration().getLayoutDirection() == 1;"
+        }
+      ]
+    }
+  ],
+  "animation": [
+    {
+      "file": "ru/zdevs/zarchiver/ui/editor/c.java",
+      "hits": [
+        {
+          "line": 9,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 38,
+          "text": "boolean onTouchEvent(MotionEvent motionEvent);"
+        },
+        {
+          "line": 87,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 196,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 282,
+          "text": "public final int a(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 300,
+          "text": "public final void d(MotionEvent motionEvent, boolean z2) {"
+        },
+        {
+          "line": 386,
+          "text": "public final boolean onDoubleTap(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 392,
+          "text": "public final boolean onDoubleTapEvent(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 397,
+          "text": "public final boolean onDown(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 408,
+          "text": "public final boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent2, float f2, float f3) {"
+        },
+        {
+          "line": 419,
+          "text": "public final void onLongPress(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 424,
+          "text": "public final boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent2, float f2, float f3) {"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ui/ctrl/fab/FloatingActionMenu.java",
+      "hits": [
+        {
+          "line": 4,
+          "text": "import android.animation.ObjectAnimator;"
+        },
+        {
+          "line": 9,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 137,
+          "text": "ObjectAnimator objectAnimatorOfFloat = ObjectAnimator.ofFloat(this.f1796k, \"rotation\", 135.0f, 0.0f);"
+        },
+        {
+          "line": 138,
+          "text": "ObjectAnimator objectAnimatorOfFloat2 = ObjectAnimator.ofFloat(this.f1796k, \"rotation\", 0.0f, 135.0f);"
+        },
+        {
+          "line": 142,
+          "text": "animatorSet2.playTogether(objectAnimatorOfFloat2, ObjectAnimator.ofFloat(this.f1788c, \"alpha\", f2, 1.0f));"
+        },
+        {
+          "line": 143,
+          "text": "animatorSet.playTogether(objectAnimatorOfFloat, ObjectAnimator.ofFloat(this.f1788c, \"alpha\", 1.0f, f2));"
+        },
+        {
+          "line": 150,
+          "text": "animatorSet2.setDuration(300L);"
+        },
+        {
+          "line": 151,
+          "text": "animatorSet.setDuration(300L);"
+        },
+        {
+          "line": 334,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ui/editor/d.java",
+      "hits": [
+        {
+          "line": 3,
+          "text": "import android.animation.ValueAnimator;"
+        },
+        {
+          "line": 11,
+          "text": "public final class d implements ValueAnimator.AnimatorUpdateListener {"
+        },
+        {
+          "line": 41,
+          "text": "public final ValueAnimator f1924o;"
+        },
+        {
+          "line": 53,
+          "text": "ValueAnimator valueAnimator = dVar.f1924o;"
+        },
+        {
+          "line": 94,
+          "text": "ValueAnimator valueAnimatorOfInt = ValueAnimator.ofInt(0, intrinsicWidth);"
+        },
+        {
+          "line": 96,
+          "text": "valueAnimatorOfInt.setDuration(250L);"
+        },
+        {
+          "line": 121,
+          "text": "public final void onAnimationUpdate(ValueAnimator valueAnimator) {"
+        }
+      ]
+    },
+    {
+      "file": "z0/f.java",
+      "hits": [
+        {
+          "line": 62,
+          "text": "this.f2350a.animate().alpha(0.0f).setDuration(300L).setListener(this.f2351b);"
+        },
+        {
+          "line": 68,
+          "text": "view.animate().alpha(0.0f).setInterpolator(new AccelerateInterpolator(2.0f)).setDuration(200).setListener(new i(view));"
+        },
+        {
+          "line": 73,
+          "text": "view.animate().alpha(1.0f).setInterpolator(new DecelerateInterpolator(2.0f)).setDuration(300).setListener(new h(view));"
+        },
+        {
+          "line": 77,
+          "text": "imageView.animate().alpha(0.3f).setInterpolator(new AccelerateInterpolator(2.0f)).setDuration(150).setListener(new j(imageView, bitmap));"
+        },
+        {
+          "line": 87,
+          "text": "view.animate().rotation(180.0f).setDuration(300L).setListener(bVar);"
+        },
+        {
+          "line": 89,
+          "text": "view.animate().rotation(180.0f).setDuration(300L).withEndAction(new c(view, bVar));"
+        },
+        {
+          "line": 130,
+          "text": "view.animate().translationY(0.0f).setInterpolator(new DecelerateInterpolator(2.0f)).setDuration(500L).setListener(new a(view));"
+        }
+      ]
+    },
+    {
+      "file": "f/b.java",
+      "hits": [
+        {
+          "line": 4,
+          "text": "import android.animation.ValueAnimator;"
+        },
+        {
+          "line": 22,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 918,
+          "text": "public final void k(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 1089,
+          "text": "public boolean onInterceptTouchEvent(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 1472,
+          "text": "public boolean onTouchEvent(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 1918,
+          "text": "postDelayed(runnable, ValueAnimator.getFrameDelay());"
+        }
+      ]
+    },
+    {
+      "file": "g/d.java",
+      "hits": [
+        {
+          "line": 21,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 171,
+          "text": "public final boolean onDoubleTap(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 220,
+          "text": "public final boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent2, float f2, float f3) {"
+        },
+        {
+          "line": 239,
+          "text": "public final boolean onSingleTapConfirmed(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 250,
+          "text": "public final boolean onSingleTapConfirmed(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 1394,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ui/FilePanelView.java",
+      "hits": [
+        {
+          "line": 10,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 223,
+          "text": "alphaAnimation.setDuration(100L);"
+        },
+        {
+          "line": 240,
+          "text": "dVar.setDuration(400L);"
+        },
+        {
+          "line": 542,
+          "text": "public final boolean onInterceptTouchEvent(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 732,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 853,
+          "text": "bVar.setDuration(200L);"
+        }
+      ]
+    },
+    {
+      "file": "c1/d.java",
+      "hits": [
+        {
+          "line": 3,
+          "text": "import android.animation.ValueAnimator;"
+        },
+        {
+          "line": 12,
+          "text": "public final ValueAnimator f450b;"
+        },
+        {
+          "line": 30,
+          "text": "ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(0.0f, 1.0f);"
+        },
+        {
+          "line": 32,
+          "text": "valueAnimatorOfFloat.setDuration(100L);"
+        },
+        {
+          "line": 44,
+          "text": "ValueAnimator valueAnimator = this.f450b;"
+        }
+      ]
+    },
+    {
+      "file": "com/sothree/slidinguppanel/SlidingUpPanelLayout.java",
+      "hits": [
+        {
+          "line": 15,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 304,
+          "text": "public final boolean dispatchTouchEvent(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 368,
+          "text": "MotionEvent motionEventObtain = MotionEvent.obtain(motionEvent);"
+        },
+        {
+          "line": 576,
+          "text": "public final boolean onInterceptTouchEvent(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 868,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "z0/d.java",
+      "hits": [
+        {
+          "line": 13,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 126,
+          "text": "linearLayout.animate().setDuration(300L).alpha(0.0f).scaleX(0.0f).scaleY(0.0f).setListener(new a());"
+        },
+        {
+          "line": 203,
+          "text": "linearLayout.animate().setDuration(300L).alpha(1.0f).scaleX(1.0f).scaleY(1.0f);"
+        },
+        {
+          "line": 208,
+          "text": "public final boolean onTouch(View view, MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "a1/h.java",
+      "hits": [
+        {
+          "line": 4,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 433,
+          "text": "public final void j(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 696,
+          "text": "public final void n(MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "c1/c.java",
+      "hits": [
+        {
+          "line": 3,
+          "text": "import android.animation.ValueAnimator;"
+        },
+        {
+          "line": 5,
+          "text": "public final class c implements ValueAnimator.AnimatorUpdateListener {"
+        },
+        {
+          "line": 14,
+          "text": "public final void onAnimationUpdate(ValueAnimator valueAnimator) {"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/activity/OpenAsDlg.java",
+      "hits": [
+        {
+          "line": 18,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 273,
+          "text": "viewFindViewById.animate().translationY(((View) viewFindViewById.getParent()).getBottom() - viewFindViewById.getTop()).setInterpolator(new DecelerateInterpolator(2.0f)).setDuration(500).setListener(new g(new a()));"
+        },
+        {
+          "line": 372,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ui/layout/b.java",
+      "hits": [
+        {
+          "line": 4,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 12,
+          "text": "public final boolean onInterceptTouchEvent(MotionEvent motionEvent) {"
+        },
+        {
+          "line": 21,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "a1/b.java",
+      "hits": [
+        {
+          "line": 3,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 19,
+          "text": "public final boolean onTouch(View view, MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "a1/f.java",
+      "hits": [
+        {
+          "line": 11,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 130,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "b0/h.java",
+      "hits": [
+        {
+          "line": 3,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 20,
+          "text": "public final boolean onTouch(View view, MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "b1/a.java",
+      "hits": [
+        {
+          "line": 20,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 254,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "e1/a.java",
+      "hits": [
+        {
+          "line": 6,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 129,
+          "text": "public final boolean onTouch(View view, MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "e1/b.java",
+      "hits": [
+        {
+          "line": 6,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 118,
+          "text": "public final boolean onTouch(View view, MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ui/editor/EditableView.java",
+      "hits": [
+        {
+          "line": 35,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 2512,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ui/text/BtnEditText.java",
+      "hits": [
+        {
+          "line": 8,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 29,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "ru/zdevs/zarchiver/ui/text/EditPassword.java",
+      "hits": [
+        {
+          "line": 10,
+          "text": "import android.view.MotionEvent;"
+        },
+        {
+          "line": 65,
+          "text": "public final boolean onTouchEvent(MotionEvent motionEvent) {"
+        }
+      ]
+    },
+    {
+      "file": "y0/c.java",
+      "hits": [
+        {
+          "line": 71,
+          "text": "public final void setDuration(int i2) {"
+        },
+        {
+          "line": 72,
+          "text": "this.f2307a.setDuration(i2);"
+        }
+      ]
+    },
+    {
+      "file": "z0/j.java",
+      "hits": [
+        {
+          "line": 32,
+          "text": "imageView.animate().alpha(1.0f).setInterpolator(new DecelerateInterpolator(2.0f)).setDuration(this.f2357c / 2);"
+        }
+      ]
+    }
+  ]
+}

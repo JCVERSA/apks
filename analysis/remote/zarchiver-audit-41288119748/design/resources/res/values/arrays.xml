@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="CMP_LIST_ENCRYPT_7Z">
+        <item>@string/CMP_ENCRYPT_AES256</item>
+        <item>@string/CMP_ENCRYPT_AES256_WITH_NAME</item>
+    </string-array>
+    <string-array name="CMP_LIST_ENCRYPT_ZIP">
+        <item>@string/CMP_ENCRYPT_ZIPCRYPT</item>
+        <item>@string/CMP_ENCRYPT_AES128</item>
+        <item>@string/CMP_ENCRYPT_AES192</item>
+        <item>@string/CMP_ENCRYPT_AES256</item>
+    </string-array>
+    <string-array name="CMP_LIST_FORMATS">
+        <item>7z</item>
+        <item>zip</item>
+        <item>tar</item>
+        <item>bzip2</item>
+        <item>gzip</item>
+        <item>xz</item>
+        <item>lz4</item>
+        <item>zstd</item>
+        <item>tar.bz2</item>
+        <item>tar.gz</item>
+        <item>tar.xz</item>
+        <item>tar.lz4</item>
+        <item>tar.zstd</item>
+    </string-array>
+    <string-array name="CMP_LIST_FORMATS_ANY">
+        <item>7z</item>
+        <item>zip</item>
+        <item>tar</item>
+        <item>tar.bz2</item>
+        <item>tar.gz</item>
+        <item>tar.xz</item>
+        <item>tar.lz4</item>
+        <item>tar.zstd</item>
+    </string-array>
+    <string-array name="CMP_LIST_FORMATS_TAR">
+        <item>7z</item>
+        <item>zip</item>
+        <item>tar</item>
+        <item>bzip2</item>
+        <item>gzip</item>
+        <item>xz</item>
+        <item>lz4</item>
+        <item>zstd</item>
+    </string-array>
+    <string-array name="CMP_LIST_LEVELS">
+        <item>No compression</item>
+        <item>Fastest</item>
+        <item>Fast</item>
+        <item>Normal</item>
+        <item>Maximum</item>
+        <item>Ultra</item>
+    </string-array>
+    <string-array name="CMP_LIST_PART_SIZE">
+        <item>@string/INFO_B</item>
+        <item>@string/INFO_KB</item>
+        <item>@string/INFO_MB</item>
+        <item>@string/INFO_GB</item>
+    </string-array>
+    <string-array name="OPT_7Z_COMPRESSION_METHOD">
+        <item>LZMA</item>
+        <item>LZMA2 (!! not recommended)</item>
+        <item>FastLZMA2 (default)</item>
+        <item>ZSTD (!! not supported by original 7zip)</item>
+        <item>PPMd</item>
+        <item>BZip2</item>
+    </string-array>
+    <string-array name="OPT_7Z_COMPRESSION_METHOD_VALUE">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="OPT_FS_LIST_ICON_THEME">
+        <item>Classic</item>
+        <item>Flat</item>
+        <item>Flat 2</item>
+    </string-array>
+    <string-array name="OPT_LIST_BACKGROUND">
+        <item>System background</item>
+        <item>Solid color</item>
+        <item>Default</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="OPT_LIST_BACKGROUND_VALUE">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="OPT_LIST_BACK_BUTTON_ACTION">
+        <item>Go back</item>
+        <item>Go to parent folder</item>
+        <item>Go to parent folder and show current dir in center</item>
+    </string-array>
+    <string-array name="OPT_LIST_BACK_BUTTON_ACTION_VALUE">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="OPT_LIST_CORE_N">
+        <item>@string/OPT_CORE_N_AUTO</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="OPT_LIST_CORE_N_VALUE">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="OPT_LIST_EXTERNAL_OPEN_ARCHIVE">
+        <item>View contents</item>
+        <item>Show menu with available actions</item>
+        <item>Show menu with available actions; exit on complete</item>
+    </string-array>
+    <string-array name="OPT_LIST_FILE_SORT">
+        <item>@string/MENU_SORT_BY_NAME</item>
+        <item>@string/MENU_SORT_BY_TYPE</item>
+        <item>@string/MENU_SORT_BY_SIZE</item>
+        <item>@string/MENU_SORT_BY_DATE</item>
+    </string-array>
+    <string-array name="OPT_LIST_FILE_SORT_VALUE">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="OPT_LIST_LANGUAGE">
+        <item>System</item>
+        <item>Arabic</item>
+        <item>Azerbaijan</item>
+        <item>Bulgarian</item>
+        <item>Chinese Simplified</item>
+        <item>Chinese Traditional</item>
+        <item>Croatian</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>English</item>
+        <item>French</item>
+        <item>Georgian</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hindi</item>
+        <item>Hungarian</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Kirghiz (Arabic)</item>
+        <item>Korean</item>
+        <item>Lithuanian</item>
+        <item>Persian</item>
+        <item>Polish</item>
+        <item>Portuguese, Brazil</item>
+        <item>Russian</item>
+        <item>Serbian</item>
+        <item>Slovak</item>
+        <item>Spanish</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Uighur</item>
+        <item>Ukrainian</item>
+        <item>Uzbek</item>
+        <item>Vietnamese</item>
+    </string-array>
+    <string-array name="OPT_LIST_LANGUAGE_VALUE">
+        <item></item>
+        <item>ar</item>
+        <item>az</item>
+        <item>bg</item>
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+        <item>hr</item>
+        <item>cs</item>
+        <item>da</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>ka_GE</item>
+        <item>de</item>
+        <item>el</item>
+        <item>hi</item>
+        <item>hu</item>
+        <item>in</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>ky</item>
+        <item>ko</item>
+        <item>lt</item>
+        <item>fa</item>
+        <item>pl</item>
+        <item>pt_BR</item>
+        <item>ru</item>
+        <item>sr</item>
+        <item>sk</item>
+        <item>es</item>
+        <item>th_TH</item>
+        <item>tr</item>
+        <item>ug</item>
+        <item>uk</item>
+        <item>uz</item>
+        <item>vi</item>
+    </string-array>
+    <string-array name="OPT_LIST_LEVELS_VALUE">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="OPT_LIST_LIST_MODE">
+        <item>@string/MENU_VIEW_DETAIL</item>
+        <item>@string/MENU_VIEW_COMPACT</item>
+        <item>@string/MENU_VIEW_GRID</item>
+    </string-array>
+    <string-array name="OPT_LIST_MODE_VALUE">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="OPT_LIST_OEMCP">
+        <item>CP720 - Arabic DOS</item>
+        <item>CP1256 - Arabic ANSI</item>
+        <item>CP775 - Baltic DOS</item>
+        <item>CP1257 - Baltic ANSI</item>
+        <item>CP936 - Chinese Simplified ANSI/OEM</item>
+        <item>CP950 - Chinese Traditional ANSI/OEM</item>
+        <item>CP855 - Cyrillic OEM</item>
+        <item>CP1251 - Cyrillic ANSI</item>
+        <item>CP852 - European Central DOS</item>
+        <item>CP1250 - European Central ANSI</item>
+        <item>CP850 - European Western DOS</item>
+        <item>CP1252 - European Western ANSI</item>
+        <item>CP863 - French OEM</item>
+        <item>CP737 - Greek DOS</item>
+        <item>CP1253 - Greek ANSI</item>
+        <item>CP862 - Hebrew DOS</item>
+        <item>CP1255 - Hebrew ANSI</item>
+        <item>CP932 - Japanese Shift_JIS</item>
+        <item>CP949 - Korean ANSI/OEM</item>
+        <item>CP865 - Nordic DOS</item>
+        <item>CP860 - Portuguese DOS</item>
+        <item>CP866 - Russian DOS</item>
+        <item>CP874 - Thai ANSI/OEM</item>
+        <item>CP857 - Turkish DOS</item>
+        <item>CP1254 - Turkish ANSI</item>
+        <item>CP1125 - Ukraine OEM</item>
+        <item>CP437 - US DOS</item>
+        <item>CP1258 - Vietnamese ANSI/OEM</item>
+    </string-array>
+    <string-array name="OPT_LIST_OEMCP_VALUE">
+        <item>720</item>
+        <item>1256</item>
+        <item>775</item>
+        <item>1257</item>
+        <item>936</item>
+        <item>950</item>
+        <item>855</item>
+        <item>1251</item>
+        <item>852</item>
+        <item>1250</item>
+        <item>850</item>
+        <item>1252</item>
+        <item>863</item>
+        <item>737</item>
+        <item>1253</item>
+        <item>862</item>
+        <item>1255</item>
+        <item>932</item>
+        <item>949</item>
+        <item>865</item>
+        <item>860</item>
+        <item>866</item>
+        <item>874</item>
+        <item>857</item>
+        <item>1254</item>
+        <item>1125</item>
+        <item>437</item>
+        <item>1258</item>
+    </string-array>
+    <string-array name="OPT_LIST_OPEN_ARCHIVE">
+        <item>View contents</item>
+        <item>Show menu with available actions</item>
+    </string-array>
+    <string-array name="OPT_LIST_OPEN_ARCHIVE_VALUE">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="OPT_LIST_OPEN_FILE">
+        <item>View file</item>
+        <item>Show menu with available actions</item>
+    </string-array>
+    <string-array name="OPT_LIST_THEME">
+        <item>Dark</item>
+        <item>Light</item>
+        <item>Light and Dark</item>
+        <item>Black</item>
+        <item>Auto Light/Dark</item>
+        <item>E Ink</item>
+    </string-array>
+    <string-array name="OPT_LIST_THEME_VALUE">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="OPT_ROOT_TYPE_VALUE">
+        <item>SU</item>
+        <item>Shizuku / SUI</item>
+    </string-array>
+</resources>

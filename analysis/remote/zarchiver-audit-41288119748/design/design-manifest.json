@@ -1,0 +1,116 @@
+{
+  "theme": "@style/AppTheme.Dark",
+  "supportsRtl": "true",
+  "appCategory": "productivity",
+  "localeConfig": "@xml/locales_config",
+  "enableOnBackInvokedCallback": null,
+  "hardwareAccelerated": "true",
+  "largeHeap": "true",
+  "resizeableActivity": null,
+  "banner": "@drawable/ic_tvbanner",
+  "roundIcon": "@mipmap/ic_launcher_round",
+  "activities": [
+    {
+      "name": "ru.zdevs.zarchiver.ZArchiver",
+      "theme": "@style/AppTheme.Dark",
+      "configChanges": "orientation|screenLayout|screenSize|smallestScreenSize",
+      "resizeableActivity": "true",
+      "screenOrientation": null,
+      "exported": "true"
+    },
+    {
+      "name": "ru.zdevs.zarchiver.activity.SettingsDlg",
+      "theme": "@style/AppTheme.Dark",
+      "configChanges": null,
+      "resizeableActivity": "true",
+      "screenOrientation": null,
+      "exported": null
+    },
+    {
+      "name": "ru.zdevs.zarchiver.activity.AboutDlg",
+      "theme": "@style/AppTheme.Dark",
+      "configChanges": null,
+      "resizeableActivity": "true",
+      "screenOrientation": null,
+      "exported": null
+    },
+    {
+      "name": "ru.zdevs.zarchiver.activity.OpenAsDlg",
+      "theme": "@style/Theme.Transparent",
+      "configChanges": null,
+      "resizeableActivity": "true",
+      "screenOrientation": null,
+      "exported": null
+    },
+    {
+      "name": "ru.zdevs.zarchiver.activity.InstallApkDlg",
+      "theme": "@style/AppTheme.Dark",
+      "configChanges": "orientation|screenLayout|screenSize|smallestScreenSize",
+      "resizeableActivity": "true",
+      "screenOrientation": null,
+      "exported": null
+    },
+    {
+      "name": "ru.zdevs.zarchiver.ZSelectFile",
+      "theme": "@style/AppTheme.Dark",
+      "configChanges": "orientation|screenLayout|screenSize|smallestScreenSize",
+      "resizeableActivity": null,
+      "screenOrientation": null,
+      "exported": "true"
+    },
+    {
+      "name": "ru.zdevs.zarchiver.activity.ExtractDlg",
+      "theme": "@style/Theme.Transparent",
+      "configChanges": "orientation|screenLayout|screenSize|smallestScreenSize",
+      "resizeableActivity": "true",
+      "screenOrientation": null,
+      "exported": "true"
+    },
+    {
+      "name": "ru.zdevs.zarchiver.activity.InstallApksDlg",
+      "theme": "@style/Theme.Transparent",
+      "configChanges": "orientation|screenLayout|screenSize|smallestScreenSize",
+      "resizeableActivity": "true",
+      "screenOrientation": null,
+      "exported": "true"
+    },
+    {
+      "name": "ru.zdevs.zarchiver.ZImageViewer",
+      "theme": null,
+      "configChanges": "orientation|screenLayout|screenSize|smallestScreenSize",
+      "resizeableActivity": null,
+      "screenOrientation": null,
+      "exported": "true"
+    },
+    {
+      "name": "ru.zdevs.zarchiver.ZTextEditor",
+      "theme": null,
+      "configChanges": "orientation|screenLayout|screenSize|smallestScreenSize",
+      "resizeableActivity": null,
+      "screenOrientation": null,
+      "exported": "true"
+    }
+  ],
+  "supports_screens": {
+    "anyDensity": "true",
+    "largeScreens": "true",
+    "normalScreens": "true",
+    "resizeable": "true",
+    "smallScreens": "true",
+    "xlargeScreens": "true"
+  },
+  "uses_features": [
+    {
+      "name": "android.hardware.touchscreen",
+      "required": "false"
+    },
+    {
+      "name": "android.hardware.type.pc",
+      "required": "false"
+    },
+    {
+      "name": "android.software.leanback",
+      "required": "false"
+    }
+  ]
+}

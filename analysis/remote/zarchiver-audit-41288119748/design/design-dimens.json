@@ -1,0 +1,171 @@
+{
+  "action_bar_default_height": {
+    "variants": {
+      "(default)": "56.0dp",
+      "-land": "48.0dp",
+      "-sw600dp": "64.0dp"
+    }
+  },
+  "action_bar_subtitle_top_margin": {
+    "variants": {
+      "(default)": "-3.0dp"
+    }
+  },
+  "bottomsheet_corners_radius": {
+    "variants": {
+      "(default)": "4.0dp",
+      "-v29": "16.0dp",
+      "-v31": "28.0dp"
+    }
+  },
+  "bottomsheet_dlg_header": {
+    "variants": {
+      "(default)": "56.0dp",
+      "-land": "32.0dp",
+      "-sw600dp": "56.0dp"
+    }
+  },
+  "bottomsheet_dlg_height": {
+    "variants": {
+      "(default)": "136.0dp",
+      "-land": "74.0dp",
+      "-sw600dp": "136.0dp"
+    }
+  },
+  "bottomsheet_dlg_width": {
+    "variants": {
+      "(default)": "0.0dp",
+      "-land": "560.0dp",
+      "-sw600dp": "560.0dp"
+    }
+  },
+  "bottomsheet_header": {
+    "variants": {
+      "(default)": "48.0dp"
+    }
+  },
+  "bottomsheet_header_big": {
+    "variants": {
+      "(default)": "56.0dp"
+    }
+  },
+  "bottomsheet_height": {
+    "variants": {
+      "(default)": "260.0dp",
+      "-land": "230.0dp"
+    }
+  },
+  "bottomsheet_width": {
+    "variants": {
+      "(default)": "0.0dp",
+      "-sw500dp-land": "460.0dp"
+    }
+  },
+  "chips_item_height": {
+    "variants": {
+      "(default)": "36.0dp"
+    }
+  },
+  "floating_action_button_margin": {
+    "variants": {
+      "(default)": "16.0dp"
+    }
+  },
+  "floating_action_button_size": {
+    "variants": {
+      "(default)": "56.0dp"
+    }
+  },
+  "floating_action_button_size_small": {
+    "variants": {
+      "(default)": "46.0dp"
+    }
+  },
+  "list_item_size": {
+    "variants": {
+      "(default)": "48.0dp"
+    }
+  },
+  "list_item_size_max": {
+    "variants": {
+      "(default)": "100.0dp"
+    }
+  },
+  "list_item_size_min": {
+    "variants": {
+      "(default)": "30.0dp"
+    }
+  },
+  "list_item_text_size": {
+    "variants": {
+      "(default)": "16.0px"
+    }
+  },
+  "list_item_text_size_max": {
+    "variants": {
+      "(default)": "40.0px"
+    }
+  },
+  "list_item_text_size_min": {
+    "variants": {
+      "(default)": "10.0px"
+    }
+  },
+  "menu_item_toggle_padding": {
+    "variants": {
+      "(default)": "8.0dp"
+    }
+  },
+  "menu_item_toggle_size": {
+    "variants": {
+      "(default)": "48.0dp"
+    }
+  },
+  "menu_item_toggle_size_max": {
+    "variants": {
+      "(default)": "62.0dp"
+    }
+  },
+  "menu_padding": {
+    "variants": {
+      "(default)": "8.0dp"
+    }
+  },
+  "open_as_button_height": {
+    "variants": {
+      "(default)": "48.0dp",
+      "-h720dp": "54.0dp"
+    }
+  },
+  "open_as_button_min_width": {
+    "variants": {
+      "(default)": "48.0dp",
+      "-h720dp": "54.0dp"
+    }
+  },
+  "padding_default": {
+    "variants": {
+      "(default)": "16.0dp"
+    }
+  },
+  "padding_icon": {
+    "variants": {
+      "(default)": "12.0dp"
+    }
+  },
+  "padding_medium": {
+    "variants": {
+      "(default)": "8.0dp"
+    }
+  },
+  "padding_micro": {
+    "variants": {
+      "(default)": "2.0dp"
+    }
+  },
+  "padding_tiny": {
+    "variants": {
+      "(default)": "4.0dp"
+    }
+  }
+}

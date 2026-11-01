@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/padding_icon" android:paddingRight="@dimen/padding_icon" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:id="@id/icon" android:paddingTop="@dimen/padding_medium" android:paddingRight="@dimen/padding_icon" android:paddingBottom="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_alignTop="@id/text" android:layout_alignBottom="@id/text" android:layout_alignParentLeft="true" android:contentDescription="@null" />
+    <TextView android:textAppearance="?android:textAppearanceListItemSmall" android:gravity="start|center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="?android:listPreferredItemHeightSmall" android:layout_toLeftOf="@id/more" android:layout_toRightOf="@id/icon" />
+    <ImageView android:id="@id/more" android:background="@null" android:paddingLeft="@dimen/padding_icon" android:paddingTop="@dimen/padding_medium" android:paddingBottom="@dimen/padding_medium" android:focusable="false" android:visibility="gone" android:layout_marginRight="-8.0dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@null" style="@style/InlineButton" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="70.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lvPopupList" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollingCache="false" />
+    <TextView android:textAppearance="?android:textAppearance" android:textColor="?defaultTextColorFileListMessage" android:layout_gravity="center" android:id="@id/tvEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MES_EMPTY" android:textIsSelectable="false" />
+</FrameLayout>

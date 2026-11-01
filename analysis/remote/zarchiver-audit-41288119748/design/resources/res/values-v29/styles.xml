@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Dark" parent="@style/Base.v29.Dark" />
+    <style name="Base.Light" parent="@style/Base.v29.Light" />
+    <style name="Base.Light.DarkActionBar" parent="@style/Base.v29.Light.DarkActionBar" />
+    <style name="Base.v29.Dark" parent="@style/Base.v27.Dark">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Base.v29.Light" parent="@style/Base.v27.Light">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Base.v29.Light.DarkActionBar" parent="@style/Base.v27.Light.DarkActionBar">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

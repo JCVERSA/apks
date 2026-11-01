@@ -1,0 +1,1928 @@
+{
+  "CMP_LIST_ENCRYPT_7Z": {
+    "variants": {
+      "(default)": [
+        "@string/CMP_ENCRYPT_AES256",
+        "@string/CMP_ENCRYPT_AES256_WITH_NAME"
+      ]
+    }
+  },
+  "CMP_LIST_ENCRYPT_ZIP": {
+    "variants": {
+      "(default)": [
+        "@string/CMP_ENCRYPT_ZIPCRYPT",
+        "@string/CMP_ENCRYPT_AES128",
+        "@string/CMP_ENCRYPT_AES192",
+        "@string/CMP_ENCRYPT_AES256"
+      ]
+    }
+  },
+  "CMP_LIST_FORMATS": {
+    "variants": {
+      "(default)": [
+        "7z",
+        "zip",
+        "tar",
+        "bzip2",
+        "gzip",
+        "xz",
+        "lz4",
+        "zstd",
+        "tar.bz2",
+        "tar.gz",
+        "tar.xz",
+        "tar.lz4",
+        "tar.zstd"
+      ]
+    }
+  },
+  "CMP_LIST_FORMATS_ANY": {
+    "variants": {
+      "(default)": [
+        "7z",
+        "zip",
+        "tar",
+        "tar.bz2",
+        "tar.gz",
+        "tar.xz",
+        "tar.lz4",
+        "tar.zstd"
+      ]
+    }
+  },
+  "CMP_LIST_FORMATS_TAR": {
+    "variants": {
+      "(default)": [
+        "7z",
+        "zip",
+        "tar",
+        "bzip2",
+        "gzip",
+        "xz",
+        "lz4",
+        "zstd"
+      ]
+    }
+  },
+  "CMP_LIST_LEVELS": {
+    "variants": {
+      "(default)": [
+        "No compression",
+        "Fastest",
+        "Fast",
+        "Normal",
+        "Maximum",
+        "Ultra"
+      ],
+      "-ar": [
+        "بدون ضغط",
+        "الأسرع",
+        "سريع",
+        "عادي",
+        "الأقصى",
+        "الفائق"
+      ],
+      "-az": [
+        "Sıxışdırma yoxdur",
+        "Ən sürətli",
+        "Sürətli",
+        "Normal",
+        "Maksimum",
+        "Ultra"
+      ],
+      "-bg": [
+        "Без компресия",
+        "Най-бързо",
+        "Бързо",
+        "Нормално",
+        "Максимално",
+        "Ултра"
+      ],
+      "-cs": [
+        "Bez komprese",
+        "Nejrychlejší",
+        "Rychlá",
+        "Normální",
+        "Maximální",
+        "Extrémní"
+      ],
+      "-da": [
+        "Ingen komprimering",
+        "Hurtigst",
+        "Hurtig",
+        "Normal",
+        "Maksimum",
+        "Ultrahøj"
+      ],
+      "-de": [
+        "Keine Kompression",
+        "Schnellste",
+        "Schnell",
+        "Normal",
+        "Maximum",
+        "Ultra"
+      ],
+      "-el": [
+        "Χωρίς συμπίεση",
+        "Ταχύτατη",
+        "Γρήγορη",
+        "Κανονική",
+        "Μέγιστη",
+        "Υπερσυμπίεση"
+      ],
+      "-es": [
+        "Sin compresión",
+        "La más rápida",
+        "Rápida",
+        "Normal",
+        "Máxima",
+        "Ultra"
+      ],
+      "-fa": [
+        "بدون فشرده سازی",
+        "خیلی سریع",
+        "سريع",
+        "متوسط",
+        "حداکثر",
+        "زیاد"
+      ],
+      "-fr": [
+        "Aucune compression",
+        "Très rapide",
+        "Rapide",
+        "Normale",
+        "Maximale",
+        "Ultra"
+      ],
+      "-hi": [
+        "कोइ कंप्रेसन नही",
+        "बहुत तेज",
+        "तेज",
+        "सामान्य",
+        "ज्यादा",
+        "बहुत ज्यादा"
+      ],
+      "-hr": [
+        "Bez kompresije",
+        "Najbrže",
+        "Brzo",
+        "Normalno",
+        "Maksimalno",
+        "Ultra"
+      ],
+      "-hu": [
+        "Nincs tömörítés",
+        "Leggyorsabb",
+        "Gyors",
+        "Normál",
+        "Maximális",
+        "Ultra"
+      ],
+      "-in": [
+        "Tanpa kompresi",
+        "Tercepat",
+        "Cepat",
+        "Normal",
+        "Maksimum",
+        "Ultra"
+      ],
+      "-it": [
+        "Nessuna compressione",
+        "Velocissima",
+        "Veloce",
+        "Normale",
+        "Massima",
+        "Ultra"
+      ],
+      "-ja": [
+        "無圧縮",
+        "最速",
+        "高速",
+        "標準",
+        "最高",
+        "超圧縮"
+      ],
+      "-ka-rGE": [
+        "შეუკუმშავი",
+        "ყველაზე სწრაფი",
+        "Სწრაფი",
+        "Ნორმალური",
+        "მაქსიმალური",
+        "ულტრა"
+      ],
+      "-ko": [
+        "압축하지 않음",
+        "가장 빠르게",
+        "빠르게",
+        "보통",
+        "최대",
+        "극한"
+      ],
+      "-ky": [
+        "قىسىلباعان",
+        "ەڭ تەز",
+        "تەز",
+        "نورماال",
+        "ۅتۅ جاقشى",
+        "ەڭ جاقشى"
+      ],
+      "-lt": [
+        "Jokio glaudinimo",
+        "Greičiausias",
+        "Greitas",
+        "Normalus",
+        "Maksimumas",
+        "Ultra"
+      ],
+      "-pl": [
+        "Bez kompresji",
+        "Najszybszy",
+        "Szybki",
+        "Normalny",
+        "maksymalny",
+        "Ultra"
+      ],
+      "-pt-rBR": [
+        "Sem compressão",
+        "Muito rápido",
+        "Rápido",
+        "Normal",
+        "Máximo",
+        "Ultra"
+      ],
+      "-ru": [
+        "Без сжатия",
+        "Скоростной",
+        "Быстрый",
+        "Нормальный",
+        "Максимальный",
+        "Ультра"
+      ],
+      "-sk": [
+        "Bez kompresie",
+        "Najrýchlejšia",
+        "Rýchla",
+        "Normálna",
+        "Maximálna",
+        "Extrémna"
+      ],
+      "-sr": [
+        "Bez kompresije",
+        "Najbrže",
+        "Brzo",
+        "Normalno",
+        "Maksimalno",
+        "Ultra"
+      ],
+      "-th-rTH": [
+        "ไม่มีการบีบอัด",
+        "เร็วที่สุด",
+        "เร็ว",
+        "ปกติ",
+        "สูงสุด",
+        "อัลตร้า"
+      ],
+      "-tr": [
+        "Sıkıştırma yok",
+        "En hızlı",
+        "Hızlı",
+        "Normal",
+        "Maksimum",
+        "Ultra"
+      ],
+      "-ug": [
+        "پرېسلىماسلىق",
+        "ئەڭ تېز پرېسلاش",
+        "تېز پرېسلاش",
+        "ئۆلچەملىك پرېسلاش",
+        "ھەر ھالدا ياخشى پرېسلاش",
+        "ئەڭ ياخشى پرېسلاش"
+      ],
+      "-uk": [
+        "Без стиснення",
+        "Швидкісний",
+        "Швидкий",
+        "Нормальний",
+        "Максимальний",
+        "Ультра"
+      ],
+      "-uz": [
+        "Siqmaslik",
+        "Tezkor",
+        "Tez",
+        "Normal",
+        "Maksimal",
+        "Ultra"
+      ],
+      "-vi": [
+        "Không nén",
+        "Nhanh nhất",
+        "Nhanh",
+        "Bình thường",
+        "Tối đa",
+        "Siêu nén"
+      ],
+      "-zh-rCN": [
+        "无压缩",
+        "最快",
+        "快速",
+        "标准",
+        "较好",
+        "最佳"
+      ],
+      "-zh-rTW": [
+        "壓縮",
+        "最快",
+        "稍快",
+        "標準",
+        "稍好",
+        "最好"
+      ]
+    }
+  },
+  "CMP_LIST_PART_SIZE": {
+    "variants": {
+      "(default)": [
+        "@string/INFO_B",
+        "@string/INFO_KB",
+        "@string/INFO_MB",
+        "@string/INFO_GB"
+      ]
+    }
+  },
+  "OPT_7Z_COMPRESSION_METHOD": {
+    "variants": {
+      "(default)": [
+        "LZMA",
+        "LZMA2 (!! not recommended)",
+        "FastLZMA2 (default)",
+        "ZSTD (!! not supported by original 7zip)",
+        "PPMd",
+        "BZip2"
+      ]
+    }
+  },
+  "OPT_7Z_COMPRESSION_METHOD_VALUE": {
+    "variants": {
+      "(default)": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    }
+  },
+  "OPT_FS_LIST_ICON_THEME": {
+    "variants": {
+      "(default)": [
+        "Classic",
+        "Flat",
+        "Flat 2"
+      ],
+      "-ar": [
+        "كلاسيكية",
+        "مسطحة",
+        "مسطحة ٢"
+      ],
+      "-az": [
+        "Klassik",
+        "Düz",
+        "Düz 2"
+      ],
+      "-bg": [
+        "Класически иконки",
+        "Плоски иконки",
+        "Плоски иконки 2"
+      ],
+      "-cs": [
+        "Klasické",
+        "Ploché",
+        "Ploché 2"
+      ],
+      "-da": [
+        "Klassisk",
+        "Flad",
+        "Flad 2"
+      ],
+      "-de": [
+        "Klassisch",
+        "Flach",
+        "Flach 2"
+      ],
+      "-el": [
+        "Κλασσικό",
+        "Επίπεδο",
+        "Επίπεδο 2"
+      ],
+      "-es": [
+        "Clásico",
+        "Simple",
+        "Simple 2"
+      ],
+      "-fa": [
+        "کلاسیک",
+        "یکنواخت",
+        "یکنواخت ۲"
+      ],
+      "-fr": [
+        "Classique",
+        "Plat",
+        "Plat 2"
+      ],
+      "-hi": [
+        "पुराना",
+        "समतल",
+        "समतल २"
+      ],
+      "-hr": [
+        "Klasično",
+        "Ravno",
+        "Ravno 2"
+      ],
+      "-hu": [
+        "Klasszikus",
+        "Egyszintű",
+        "Egyszintű 2"
+      ],
+      "-in": [
+        "Klasik",
+        "Flat",
+        "Flat 2"
+      ],
+      "-it": [
+        "Classico",
+        "Piatto",
+        "Piatto 2"
+      ],
+      "-ja": [
+        "クラシック",
+        "フラット",
+        "フラット 2"
+      ],
+      "-ka-rGE": [
+        "კლასიკური",
+        "ბრტყელი",
+        "ბრტყელი 2"
+      ],
+      "-ko": [
+        "클래식",
+        "플랫",
+        "플랫2"
+      ],
+      "-ky": [
+        "كىلاسسىك",
+        "Flat",
+        "Flat 2"
+      ],
+      "-lt": [
+        "Klasikinis",
+        "Plokščiasis",
+        "Plokščiasis 2"
+      ],
+      "-pl": [
+        "Klasyczny",
+        "Płaski",
+        "Płaski 2"
+      ],
+      "-pt-rBR": [
+        "Clássico",
+        "Simples/Liso",
+        "Simples 2"
+      ],
+      "-ru": [
+        "Классические иконки",
+        "Плоские иконки",
+        "Плоские иконки 2"
+      ],
+      "-sk": [
+        "Klasické",
+        "Ploché",
+        "Ploché 2"
+      ],
+      "-sr": [
+        "Klasična",
+        "Ravna",
+        "Ravna 2"
+      ],
+      "-th-rTH": [
+        "คลาสสิก",
+        "แบน",
+        "แบน 2"
+      ],
+      "-tr": [
+        "Klasik",
+        "Düz",
+        "Düz 2"
+      ],
+      "-ug": [
+        "كىلاسسىك",
+        "Flat",
+        "Flat 2"
+      ],
+      "-uk": [
+        "Класичні іконки",
+        "Плоскі іконки",
+        "Плоскі іконки 2"
+      ],
+      "-uz": [
+        "Klassik tugmalar",
+        "Bejirim tugmalar",
+        "Bejirim tugmalar 2"
+      ],
+      "-vi": [
+        "Cổ điển",
+        "Phẳng",
+        "Phẳng 2"
+      ],
+      "-zh-rCN": [
+        "经典",
+        "Flat",
+        "Flat 2"
+      ],
+      "-zh-rTW": [
+        "傳統",
+        "平面",
+        "平面 2"
+      ]
+    }
+  },
+  "OPT_LIST_BACKGROUND": {
+    "variants": {
+      "(default)": [
+        "System background",
+        "Solid color",
+        "Default",
+        "Custom"
+      ],
+      "-ar": [
+        "خلفية النظام",
+        "لون غامق",
+        "إفتراضي",
+        "مخصص"
+      ],
+      "-az": [
+        "Sistem arxa planı",
+        "Tünd rəng",
+        "Standart",
+        "Xüsusi"
+      ],
+      "-bg": [
+        "Системен",
+        "Плътен цвят",
+        "По подразбиране",
+        "Потребителски"
+      ],
+      "-cs": [
+        "Systémové pozadí",
+        "Jednobarevné",
+        "Výchozí",
+        "Vlastní"
+      ],
+      "-da": [
+        "Systembaggrund",
+        "Fast farve",
+        "Standard",
+        "Tilpasset"
+      ],
+      "-de": [
+        "System-Hintergrund",
+        "Einzelne Farbe",
+        "Standard",
+        "Eigener Hintergrund"
+      ],
+      "-el": [
+        "Φόντο συστήματος",
+        "Ένα χρώμα",
+        "Προεπιλογή",
+        "Προσαρμοσμένο"
+      ],
+      "-es": [
+        "Fondo del sistema",
+        "Color sólido",
+        "Por defecto",
+        "Personalizado"
+      ],
+      "-fa": [
+        "System background",
+        "پس زمینه سیستم",
+        "اصلی",
+        "شخصی"
+      ],
+      "-fr": [
+        "Arrière-plan système",
+        "Couleur unie",
+        "Par défaut",
+        "Personnalisé"
+      ],
+      "-hi": [
+        "तंत्र द्वारा चुनी पृष्ठभूमि",
+        "एकसमान रंग",
+        "स्वचालित",
+        "अपनी पसंद का रंग"
+      ],
+      "-hr": [
+        "Sistemska pozadina",
+        "Jednolično",
+        "Zadano",
+        "Prilagođeno"
+      ],
+      "-hu": [
+        "Rendszer háttere",
+        "Egyszínű",
+        "Alapértelmezett",
+        "Egyéni"
+      ],
+      "-in": [
+        "Latarbelakang sistem",
+        "Warna Solid",
+        "Bawaan",
+        "Kustom"
+      ],
+      "-it": [
+        "Sfondo di sistema",
+        "Tinta unita",
+        "Predefinito",
+        "Personalizzato"
+      ],
+      "-ja": [
+        "システム",
+        "単色",
+        "デフォルト",
+        "カスタム"
+      ],
+      "-ka-rGE": [
+        "სისტემური უკანა ფონი",
+        "სოლიდური ფერი",
+        "ნაგულისხმევი",
+        "საკუთარი"
+      ],
+      "-ko": [
+        "시스템 배경화면",
+        "단색",
+        "기본",
+        "사용자 지정"
+      ],
+      "-ky": [
+        "سەستىما كۅرۉنۉشۉ",
+        "بوز",
+        "كۅڭۉلدۅكۉ",
+        "ۅزۉ بەلگىلۅۅ"
+      ],
+      "-lt": [
+        "Sistemos fonas",
+        "Vienoda spalva",
+        "Numatytasis",
+        "Pasirinktinis"
+      ],
+      "-pl": [
+        "Tło systemowe",
+        "Jednolity kolor",
+        "Domyślne",
+        "Niestandardowe"
+      ],
+      "-pt-rBR": [
+        "Papel de parede (do usuário)",
+        "Cor sólida",
+        "Padrão",
+        "Customizado"
+      ],
+      "-ru": [
+        "Системный фон",
+        "Монотонный цвет",
+        "По умолчанию",
+        "Пользовательский"
+      ],
+      "-sk": [
+        "Systémové pozadie",
+        "Jednofarebné",
+        "Predvolené",
+        "Vlastné"
+      ],
+      "-sr": [
+        "Sistemska pozadina",
+        "Jednolična boja",
+        "Podrazumevano",
+        "Sopstvena"
+      ],
+      "-th-rTH": [
+        "พื้นหลังของระบบ",
+        "สีทึบ",
+        "แบบเริ่มต้น",
+        "ปรับแต่งเอง"
+      ],
+      "-tr": [
+        "Sistem arka planı",
+        "Koyu renk",
+        "Varsayılan",
+        "Özel"
+      ],
+      "-ug": [
+        "سىستېما مۇھىتىغا ماس رەڭ",
+        "ساپ رەڭ",
+        "كۆڭۈلدىكى رەڭ",
+        "ئاپتوماتىك رەڭ"
+      ],
+      "-uk": [
+        "Системний фон",
+        "Монотонний колір",
+        "За замовчуванням",
+        "Користувача"
+      ],
+      "-uz": [
+        "Tizim fonida",
+        "Bir xil rangda",
+        "Standart",
+        "Foydalanuvchi tanlovi"
+      ],
+      "-vi": [
+        "Phông nền hệ thống",
+        "Màu rắn",
+        "Mặc định",
+        "Tuỳ chỉnh"
+      ],
+      "-zh-rCN": [
+        "系统背景",
+        "纯色",
+        "默认",
+        "自定义"
+      ],
+      "-zh-rTW": [
+        "系统",
+        "純色",
+        "默認",
+        "自定義"
+      ]
+    }
+  },
+  "OPT_LIST_BACKGROUND_VALUE": {
+    "variants": {
+      "(default)": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  },
+  "OPT_LIST_BACK_BUTTON_ACTION": {
+    "variants": {
+      "(default)": [
+        "Go back",
+        "Go to parent folder",
+        "Go to parent folder and show current dir in center"
+      ],
+      "-ar": [
+        "الرجوع للخلف",
+        "الإنتقال إلى المجلد الأصل",
+        "أنتقل إلى المجلد الأصل وإظهر المجلد الحالي في الوسط"
+      ],
+      "-az": [
+        "Geri qayıdın",
+        "Əsas qovluğa get",
+        "Əsas qovluğa gedin və cari qovluğu mərkəzdə göstərin"
+      ],
+      "-bg": [
+        "Преход назад",
+        "Преход в главния каталог",
+        "Отиди в по-горна директория"
+      ],
+      "-cs": [
+        "Jít zpět",
+        "Přejít do nadřazené složky",
+        "Přejít do nadřazené složky a zobrazit aktuální adresář uprostřed"
+      ],
+      "-da": [
+        "Gå tilbage",
+        "Gå til hovedmappe",
+        "Gå til hovedmappe og vis aktuel mappe centreret"
+      ],
+      "-de": [
+        "Zurückgehen",
+        "Gehe zum übergeordneten Verzeichnis",
+        "Gehen Sie zum übergeordneten Verzeichnis und zeigen Sie das aktuelle Verzeichnis in der Mitte an"
+      ],
+      "-el": [
+        "Μετάβαση πίσω",
+        "Μετάβαση στον γονικό φάκελο",
+        "Μετάβαση στον γονικό κατάλογο και προβολή τρέχοντος στο κέντρο"
+      ],
+      "-es": [
+        "Ir atrás",
+        "Ir al directorio padre",
+        "Ir al directorio anterior y mostrar el directorio actual en el centro"
+      ],
+      "-fa": [
+        "بازگشت",
+        "برگشت به پوشه اصلی",
+        "Go to parent folder and show current dir in center"
+      ],
+      "-fr": [
+        "Revenir en arriére",
+        "Aller au répertoire parent",
+        "Aller au répertoire parent en cours"
+      ],
+      "-hi": [
+        "पिछे जाए",
+        "पिछले फोल्डर पर जाए",
+        "इस फोल्डर के पिछले फोल्डर पर जाए"
+      ],
+      "-hr": [
+        "Idi nazad",
+        "Idi u nadređeni direktorij",
+        "Idi u nadređeni direktorij i prikaži trenutni direktorij u sredini"
+      ],
+      "-hu": [
+        "Vissza",
+        "Vissza a szülőkönyvtárba",
+        "Ugorjon a szülőkönyvtárba és jelenítse meg az aktuális könyvtárat középen"
+      ],
+      "-in": [
+        "Kembali",
+        "Kembali ke direktori utama",
+        "pergi ke direktori induk ke saat ini"
+      ],
+      "-it": [
+        "Indietro",
+        "Vai alla directory superiore",
+        "Vai alla cartella superiore e mostra quella corrente in centro"
+      ],
+      "-ja": [
+        "ひとつ前に戻る",
+        "ひとつ上のフォルダに移動する",
+        "ひとつ上のフォルダに移動して、現在のフォルダを画面中央に表示する"
+      ],
+      "-ka-rGE": [
+        "უკან დაბრუნება",
+        "გადადი ერთი განყოფილებით ზემოთ",
+        "გადადი ერთი განყოფილებით ზემოთ და მაჩვენე ეს განყ. შუაში"
+      ],
+      "-ko": [
+        "뒤로 가기",
+        "상위 디렉토리로 가기",
+        "Go to parent directory to current"
+      ],
+      "-lt": [
+        "Grįžti",
+        "Eiti į pagrindinį katalogą",
+        "Eiti į virškatalogį ir parodyti dabartinį katalogą centre"
+      ],
+      "-pl": [
+        "Przejdź wstecz",
+        "Przejdź do katalogu nadrzędnego",
+        "Przejdź do katalogu nadrzędnego i bieżący katalog pokaż na środku"
+      ],
+      "-pt-rBR": [
+        "Pasta/Arquivo Anterior",
+        "Ir para a pasta Home",
+        "Ir para o diretório anterior e mostrar a pasta atual no centro"
+      ],
+      "-ru": [
+        "Переход назад",
+        "Переход в родительский каталог",
+        "Переход в родительский каталог к текущему"
+      ],
+      "-sk": [
+        "Ísť späť",
+        "Ísť do nadradeného priečinka",
+        "Ísť do nadradeného priečinka a zobraziť aktuálny priečinok v strede"
+      ],
+      "-sr": [
+        "Idi nazad",
+        "Idi u nadređeni direktorijum",
+        "Idi u nadređeni direktorijum i prikaži trenutni u centru"
+      ],
+      "-th-rTH": [
+        "กลับ",
+        "ไปที่โฟลเดอร์หลัก",
+        "ไปที่โฟลเดอร์หลักและแสดง dir ปัจจุบันตรงกลาง"
+      ],
+      "-tr": [
+        "Geri git",
+        "Üst dizine git",
+        "Geçerli ana dizine git"
+      ],
+      "-uk": [
+        "Перехід назад",
+        "Перехід в батьківський каталог",
+        "Перехід в батьківський каталог до поточного"
+      ],
+      "-uz": [
+        "Orqaga qaytsin",
+        "Standart papkaga oʻtsin",
+        "Joriy standart papkaga oʻtsin"
+      ],
+      "-vi": [
+        "Trở lại",
+        "Đi tới thư mục chính",
+        "Đi tới thư mục trước và hiện thư mục hiện tại ở giữa"
+      ],
+      "-zh-rCN": [
+        "返回",
+        "上级目录",
+        "转到上一级并居中显示当前文件夹"
+      ],
+      "-zh-rTW": [
+        "回一層",
+        "回主目錄",
+        "回上一層並在顯示當前目錄"
+      ]
+    }
+  },
+  "OPT_LIST_BACK_BUTTON_ACTION_VALUE": {
+    "variants": {
+      "(default)": [
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "OPT_LIST_CORE_N": {
+    "variants": {
+      "(default)": [
+        "@string/OPT_CORE_N_AUTO",
+        "1",
+        "2",
+        "4",
+        "6",
+        "8",
+        "16"
+      ]
+    }
+  },
+  "OPT_LIST_CORE_N_VALUE": {
+    "variants": {
+      "(default)": [
+        "",
+        "1",
+        "2",
+        "4",
+        "6",
+        "8",
+        "16"
+      ]
+    }
+  },
+  "OPT_LIST_EXTERNAL_OPEN_ARCHIVE": {
+    "variants": {
+      "(default)": [
+        "View contents",
+        "Show menu with available actions",
+        "Show menu with available actions; exit on complete"
+      ],
+      "-ar": [
+        "عرض المحتويات",
+        "إظهار القائمة مع الإجراءات المتاحة",
+        "إظهار القائمة مع الإجراءات المتاحة والخروج عند الاكتمال"
+      ],
+      "-az": [
+        "Məzmununu göstər",
+        "Mövcud tədbirlər ilə menyunu göstərin",
+        "Mövcud tədbirlər ilə menyunu göstərin və başa çatdıqdan sonra çıxın"
+      ],
+      "-bg": [
+        "Прегледай съдържанието",
+        "Покажи меню с възможни действия",
+        "Покажи меню с възможни действия и завърши с изход"
+      ],
+      "-cs": [
+        "Zobrazit obsah",
+        "Zobrazit menu s dostupnými akcemi",
+        "Zobrazit menu s dostupnými akcemi a ukončit po dokončení"
+      ],
+      "-da": [
+        "Vis indhold",
+        "Vis menu med relevante handlinger",
+        "Vis menu med relevante handlinger, og afslut når udført"
+      ],
+      "-de": [
+        "Zeige Inhalt",
+        "Zeige Menü mit mögl. Aktionen",
+        "Zeige Menü mit möglichen Aktionen und beenden wenn fertig"
+      ],
+      "-el": [
+        "Προβολή περιεχομένων",
+        "Προβολή μενού με τις διαθέσιμες ενέργειες",
+        "Προβολή μενού με τις διαθέσιμες λειτουργίες και έξοδος κατά την ολοκλήρωση"
+      ],
+      "-es": [
+        "Ver contenido",
+        "Mostrar un menú con acciones disponibles",
+        "Mostrar un menú con las opciones disponibles y salir al finalizar"
+      ],
+      "-fa": [
+        "نمایش محتوا",
+        "نمایش گزینه های بیشتر",
+        "Show menu with available actions and exit on compleate"
+      ],
+      "-fr": [
+        "Afficher le contenu",
+        "Afficher un menu avec les actions disponibles",
+        "Afficher le menu des actions disponibles et sur la sortie complète"
+      ],
+      "-hi": [
+        "सामग्री देखे",
+        "कार्य मेनु दिखाए",
+        "कार्य मेनु दिखाए व पुर्ण पर निकले"
+      ],
+      "-hr": [
+        "Vidi sadržaj",
+        "Prikaži izbornik sa dostupnim radnjama",
+        "Prikaži izbornik sa dostupnim radnjama i izađi po završetku"
+      ],
+      "-hu": [
+        "Tartalmak megtekintése",
+        "Menü megjelenítése a rendelkezésre álló műveletekkel",
+        "Menü megjelenítése az elérhető műveletekkel és kilépés befejezéskor"
+      ],
+      "-in": [
+        "Lihat isi",
+        "Tampilkan menu untuk aksi yang tersedia",
+        "Tampilkan menu dengan tindakan yang tersedia dan keluar saat selesai"
+      ],
+      "-it": [
+        "Visualizza contenuti",
+        "Mostra il menu delle azioni disponibili",
+        "Mostra il menu con le azioni disponibili ed esci quando terminato"
+      ],
+      "-ja": [
+        "アーカイブの内容を閲覧する",
+        "メニューから処理を選択する",
+        "メニューから処理を選択して完了後に終了する"
+      ],
+      "-ka-rGE": [
+        "შიგთავსის ჩვენება",
+        "მაჩვენე მენიუ შესაძლებელი მოქმედებებით",
+        "მაჩვენე მენიუ შესაძლებელი მოქმედებებით და გადი დასრულებისას"
+      ],
+      "-ko": [
+        "내용물 보기",
+        "가능한 동작 메뉴 표시",
+        "가능한 동작을 보여주고 완료 시 나가기"
+      ],
+      "-ky": [
+        "ئچكى مازمۇۇندۇ تەكشەرۉۉ",
+        "ىشتۅۅ تىزىمدىكتى كۅرسۅتۅي",
+        "ىشتۅۅدۅن بۉتكۅندۅ چەكىنۉۉ تىزىمدىگىن كۅرۅسۅتۅت"
+      ],
+      "-lt": [
+        "Peržiūrėti turinį",
+        "Rodyti meniu su galimais veiksmais",
+        "Rodyti meniu su galimais veiksmais ir išeiti pabaigus"
+      ],
+      "-pl": [
+        "Wyświetl zawartość",
+        "Pokaż menu z dostępnymi akcjami",
+        "Pokaż menu z dostępnymi akcjami i wyjdź po zakończeniu"
+      ],
+      "-pt-rBR": [
+        "Ver conteúdo",
+        "Mostrar menu com ações disponíveis",
+        "Mostrar menu com ações disponíveis e sair da total"
+      ],
+      "-ru": [
+        "Показать содержимое",
+        "Вывести меню возможных действий",
+        "Вывести меню возможных действий и выйти по завершению"
+      ],
+      "-sk": [
+        "Zobraziť obsah",
+        "Zobraziť ponuku s dostupnými akciami",
+        "Show menu with available actions and exit on complete"
+      ],
+      "-sr": [
+        "Pogledajte sadržaj",
+        "Prikaži meni mogućih akcija",
+        "Prikaži meni sa dostupnim akcijama i izađi po završetku"
+      ],
+      "-th-rTH": [
+        "เริ่มดูเนื้อหา",
+        "แสดงตัวเลือก ที่ดำเนินการได้",
+        "แสดงเมนูพร้อมการดำเนินการที่มีอยู่และออกเมื่อเสร็จสิ้น"
+      ],
+      "-tr": [
+        "İçindekileri göster",
+        "Kullanılabilir eylemleri içeren menüyü göster",
+        "Kullanılabilir eylemleri içeren menüyü göster ve tamamlandığında çık"
+      ],
+      "-ug": [
+        "مەزمۇن توغرىلىقىنى تەكشۈرسۇن",
+        "مەشغۇلات تىزىملىكىنى تەكشۈرسۇن",
+        "Show menu with available actions and exit on complete"
+      ],
+      "-uk": [
+        "Показати склад",
+        "Показати меню можливих дій",
+        "Показати меню можливих дій та вийти після завершення"
+      ],
+      "-uz": [
+        "Tarkibi koʻrsatilsin",
+        "Amallarni tanlash menyusi koʻrsatilsin",
+        "Amallarni tanlash menyusi koʻrsatilsin va chiqilsin"
+      ],
+      "-vi": [
+        "Xem nội dung",
+        "Hiển thị menu với các thao tác có sẵn",
+        "Hiển thị trình đơn với các thao tác có sẵn và thoát hoàn toàn"
+      ],
+      "-zh-rCN": [
+        "查看内容",
+        "显示可操作菜单",
+        "显示可操作和完全退出菜单"
+      ],
+      "-zh-rTW": [
+        "顯示壓縮檔內容",
+        "顯示可能的動作目錄",
+        "當操作完成後顯示清單"
+      ]
+    }
+  },
+  "OPT_LIST_FILE_SORT": {
+    "variants": {
+      "(default)": [
+        "@string/MENU_SORT_BY_NAME",
+        "@string/MENU_SORT_BY_TYPE",
+        "@string/MENU_SORT_BY_SIZE",
+        "@string/MENU_SORT_BY_DATE"
+      ]
+    }
+  },
+  "OPT_LIST_FILE_SORT_VALUE": {
+    "variants": {
+      "(default)": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  },
+  "OPT_LIST_LANGUAGE": {
+    "variants": {
+      "(default)": [
+        "System",
+        "Arabic",
+        "Azerbaijan",
+        "Bulgarian",
+        "Chinese Simplified",
+        "Chinese Traditional",
+        "Croatian",
+        "Czech",
+        "Danish",
+        "English",
+        "French",
+        "Georgian",
+        "German",
+        "Greek",
+        "Hindi",
+        "Hungarian",
+        "Indonesian",
+        "Italian",
+        "Japanese",
+        "Kirghiz (Arabic)",
+        "Korean",
+        "Lithuanian",
+        "Persian",
+        "Polish",
+        "Portuguese, Brazil",
+        "Russian",
+        "Serbian",
+        "Slovak",
+        "Spanish",
+        "Thai",
+        "Turkish",
+        "Uighur",
+        "Ukrainian",
+        "Uzbek",
+        "Vietnamese"
+      ]
+    }
+  },
+  "OPT_LIST_LANGUAGE_VALUE": {
+    "variants": {
+      "(default)": [
+        "",
+        "ar",
+        "az",
+        "bg",
+        "zh_CN",
+        "zh_TW",
+        "hr",
+        "cs",
+        "da",
+        "en",
+        "fr",
+        "ka_GE",
+        "de",
+        "el",
+        "hi",
+        "hu",
+        "in",
+        "it",
+        "ja",
+        "ky",
+        "ko",
+        "lt",
+        "fa",
+        "pl",
+        "pt_BR",
+        "ru",
+        "sr",
+        "sk",
+        "es",
+        "th_TH",
+        "tr",
+        "ug",
+        "uk",
+        "uz",
+        "vi"
+      ]
+    }
+  },
+  "OPT_LIST_LEVELS_VALUE": {
+    "variants": {
+      "(default)": [
+        "0",
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ]
+    }
+  },
+  "OPT_LIST_LIST_MODE": {
+    "variants": {
+      "(default)": [
+        "@string/MENU_VIEW_DETAIL",
+        "@string/MENU_VIEW_COMPACT",
+        "@string/MENU_VIEW_GRID"
+      ]
+    }
+  },
+  "OPT_LIST_MODE_VALUE": {
+    "variants": {
+      "(default)": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  },
+  "OPT_LIST_OEMCP": {
+    "variants": {
+      "(default)": [
+        "CP720 - Arabic DOS",
+        "CP1256 - Arabic ANSI",
+        "CP775 - Baltic DOS",
+        "CP1257 - Baltic ANSI",
+        "CP936 - Chinese Simplified ANSI/OEM",
+        "CP950 - Chinese Traditional ANSI/OEM",
+        "CP855 - Cyrillic OEM",
+        "CP1251 - Cyrillic ANSI",
+        "CP852 - European Central DOS",
+        "CP1250 - European Central ANSI",
+        "CP850 - European Western DOS",
+        "CP1252 - European Western ANSI",
+        "CP863 - French OEM",
+        "CP737 - Greek DOS",
+        "CP1253 - Greek ANSI",
+        "CP862 - Hebrew DOS",
+        "CP1255 - Hebrew ANSI",
+        "CP932 - Japanese Shift_JIS",
+        "CP949 - Korean ANSI/OEM",
+        "CP865 - Nordic DOS",
+        "CP860 - Portuguese DOS",
+        "CP866 - Russian DOS",
+        "CP874 - Thai ANSI/OEM",
+        "CP857 - Turkish DOS",
+        "CP1254 - Turkish ANSI",
+        "CP1125 - Ukraine OEM",
+        "CP437 - US DOS",
+        "CP1258 - Vietnamese ANSI/OEM"
+      ]
+    }
+  },
+  "OPT_LIST_OEMCP_VALUE": {
+    "variants": {
+      "(default)": [
+        "720",
+        "1256",
+        "775",
+        "1257",
+        "936",
+        "950",
+        "855",
+        "1251",
+        "852",
+        "1250",
+        "850",
+        "1252",
+        "863",
+        "737",
+        "1253",
+        "862",
+        "1255",
+        "932",
+        "949",
+        "865",
+        "860",
+        "866",
+        "874",
+        "857",
+        "1254",
+        "1125",
+        "437",
+        "1258"
+      ]
+    }
+  },
+  "OPT_LIST_OPEN_ARCHIVE": {
+    "variants": {
+      "(default)": [
+        "View contents",
+        "Show menu with available actions"
+      ],
+      "-ar": [
+        "عرض المحتويات",
+        "إظهار القائمة مع الإجراءات المتاحة"
+      ],
+      "-az": [
+        "Məzmuna bax",
+        "Mövcud tədbirlər ilə menyunu göstərin"
+      ],
+      "-bg": [
+        "Прегледай съдържанието",
+        "Покажи меню с възможни действия"
+      ],
+      "-cs": [
+        "Zobrazit obsah",
+        "Zobrazit menu s dostupnými akcemi"
+      ],
+      "-da": [
+        "Vis indhold",
+        "Vis menu med relevante handlinger"
+      ],
+      "-de": [
+        "Zeige Inhalt",
+        "Zeige Menü mit mögl. Aktionen"
+      ],
+      "-el": [
+        "Προβολή περιεχομένων",
+        "Προβολή μενού με τις διαθέσιμες ενέργειες"
+      ],
+      "-es": [
+        "Ver contenido",
+        "Mostrar un menú con acciones disponibles"
+      ],
+      "-fa": [
+        "نمایش محتوا",
+        "نمایش گزینه های بیشتر"
+      ],
+      "-fr": [
+        "Afficher le contenu",
+        "Afficher un menu avec les actions disponibles"
+      ],
+      "-hi": [
+        "सामग्री दिखाए",
+        "कार्य मेनु दिखाए"
+      ],
+      "-hr": [
+        "Vidi sadržaj",
+        "Prikaži izbornik sa dostupnim radnjama"
+      ],
+      "-hu": [
+        "Tartalmak megtekintése",
+        "Menü megjelenítése a rendelkezésre álló műveletekkel"
+      ],
+      "-in": [
+        "Lihat isi",
+        "Tampilkan menu untuk aksi yang tersedia"
+      ],
+      "-it": [
+        "Visualizza contenuti",
+        "Mostra il menu delle azioni disponibili"
+      ],
+      "-ja": [
+        "アーカイブの内容を閲覧する",
+        "メニューから処理を選択する"
+      ],
+      "-ka-rGE": [
+        "შიგთავსის ხილვა",
+        "მაჩვენე მენიუ შესაძლებელი მოქმედებებით"
+      ],
+      "-ko": [
+        "내용물 보기",
+        "가능한 동작 메뉴 표시"
+      ],
+      "-ky": [
+        "ئچكى مازمۇۇندۇ تەكشەرۉۉ",
+        "تىزىمدىكتى كۅرسۅتۅت"
+      ],
+      "-lt": [
+        "Peržiūrėti turinį",
+        "Rodyti meniu su galimais veiksmais"
+      ],
+      "-pl": [
+        "Wyświetl zawartość",
+        "Pokaż menu z dostępnymi akcjami"
+      ],
+      "-pt-rBR": [
+        "Ver Conteúdo",
+        "Mostrar menu com ações possíveis"
+      ],
+      "-ru": [
+        "Показать содержимое",
+        "Вывести меню возможных действий"
+      ],
+      "-sk": [
+        "Zobraziť obsah",
+        "Zobraziť ponuku s dostupnými akciami"
+      ],
+      "-sr": [
+        "Pogledajte sadržaj",
+        "Prikaži meni mogućih akcija"
+      ],
+      "-th-rTH": [
+        "ดูเนื้อหา",
+        "แสดงเมนู ด้วยตัวเลือกที่ใช้ได้"
+      ],
+      "-tr": [
+        "İçindekileri görüntüle",
+        "Kullanılabilir eylemleri içeren menüyü göster"
+      ],
+      "-ug": [
+        "مەزمۇن توغرىلىقىنى تەكشۈرسۇن",
+        "مەشغۇلات تىزىملىكىنى تەكشۈرسۇن"
+      ],
+      "-uk": [
+        "Показати склад",
+        "Показати меню можливих дії"
+      ],
+      "-uz": [
+        "Arxiv ichi koʻrsatilsin",
+        "Menyu koʻrsatilsin"
+      ],
+      "-vi": [
+        "Xem nội dung",
+        "Hiển thị menu với các thao tác có sẵn"
+      ],
+      "-zh-rCN": [
+        "查看内容",
+        "显示可操作菜单"
+      ],
+      "-zh-rTW": [
+        "顯示壓縮檔內容",
+        "顯示可能的動作目錄"
+      ]
+    }
+  },
+  "OPT_LIST_OPEN_ARCHIVE_VALUE": {
+    "variants": {
+      "(default)": [
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "OPT_LIST_OPEN_FILE": {
+    "variants": {
+      "(default)": [
+        "View file",
+        "Show menu with available actions"
+      ],
+      "-ar": [
+        "عرض الملف",
+        "إظهار القائمة مع الإجراءات المتاحة"
+      ],
+      "-az": [
+        "Fayla bax",
+        "Mövcud tədbirlər ilə menyunu göstərin"
+      ],
+      "-bg": [
+        "Отвори файл",
+        "Покажи меню с възможни действия"
+      ],
+      "-cs": [
+        "Zobrazit soubor",
+        "Zobrazit nabídku s dostupnými akcemi"
+      ],
+      "-da": [
+        "Vis fil",
+        "Vis menu med relevante handlinger"
+      ],
+      "-de": [
+        "Zeige Inhalt",
+        "Zeige Menü mit mögl. Aktionen"
+      ],
+      "-el": [
+        "Προβολή αρχείου",
+        "Προβολή μενού με τις διαθέσιμες ενέργειες"
+      ],
+      "-es": [
+        "Ver fichero",
+        "Mostrar un menú con acciones disponibles"
+      ],
+      "-fa": [
+        "نمایش فایل",
+        "نمایش منو با اقدامات در دسترس"
+      ],
+      "-fr": [
+        "Afficher le fichier",
+        "Afficher le menu avec les actions disponibles"
+      ],
+      "-hi": [
+        "फाइल देखे",
+        "कार्य मेनु दिखाए"
+      ],
+      "-hr": [
+        "Vidi datoteku",
+        "Prikaži izbornik sa dostupnim radnjama"
+      ],
+      "-hu": [
+        "Fájl megtekintése",
+        "Menü megjelenítése a rendelkezésre álló műveletekkel"
+      ],
+      "-in": [
+        "Tampilkan Berkas",
+        "Tampilkan Menu yang tersedia"
+      ],
+      "-it": [
+        "Visualizza file",
+        "Mostra un menu con le azioni disponibili"
+      ],
+      "-ja": [
+        "ファイルの内容を閲覧する",
+        "メニューから処理を選択する"
+      ],
+      "-ka-rGE": [
+        "ფაილის გახსნა",
+        "შესაძლო მოქმედებების მენიუს გახსნა"
+      ],
+      "-ko": [
+        "파일 보기",
+        "가능한 동작 메뉴 표시"
+      ],
+      "-ky": [
+        "ۅجۅت تەكشەرۉۉ",
+        "تىزىمدىكتى كۅرسۅتۅت"
+      ],
+      "-lt": [
+        "Peržiūrėti failą",
+        "Rodyti meniu su galimais veiksmais"
+      ],
+      "-pl": [
+        "Otwórz plik",
+        "Pokaż menu z dostępnymi akcjami"
+      ],
+      "-pt-rBR": [
+        "Ver Arquivo",
+        "Mostrar menu com ações disponíveis"
+      ],
+      "-ru": [
+        "Открыть файл",
+        "Вывести меню возможных действий"
+      ],
+      "-sk": [
+        "Zobraziť súbor",
+        "Zobraziť ponuku s dostupnými akciami"
+      ],
+      "-sr": [
+        "Pogledaj fajl",
+        "Prikaži meni sa dostupnim akcijama"
+      ],
+      "-th-rTH": [
+        "ดูไฟล์",
+        "แสดงเมนู ด้วยตัวเลือกที่ใช้ได้"
+      ],
+      "-tr": [
+        "Dosyayı görüntüle",
+        "Kullanılabilir eylemleri içeren menüyü göster"
+      ],
+      "-ug": [
+        "ھۆججەتنى تەكشۈرسۇن",
+        "مەشغۇلات تىزىملىكىنى تەكشۈرسۇن"
+      ],
+      "-uk": [
+        "Відкрити файл",
+        "Показати меню можливих дій"
+      ],
+      "-uz": [
+        "Fayl ochilsin",
+        "Menyu koʻrsatilsin"
+      ],
+      "-vi": [
+        "Xem tệp",
+        "Hiển thị menu với các thao tác có sẵn"
+      ],
+      "-zh-rCN": [
+        "查看文件",
+        "显示可用操作菜单"
+      ],
+      "-zh-rTW": [
+        "檢視文件",
+        "顯示可用操作清單"
+      ]
+    }
+  },
+  "OPT_LIST_THEME": {
+    "variants": {
+      "(default)": [
+        "Dark",
+        "Light",
+        "Light and Dark",
+        "Black",
+        "Auto Light/Dark",
+        "E Ink"
+      ],
+      "-ar": [
+        "داكن",
+        "فاتح",
+        "فاتح وداكن",
+        "أموليد",
+        "تلقائي فاتح / داكن",
+        "E Ink"
+      ],
+      "-az": [
+        "Qaranlıq",
+        "Parlaqlıq",
+        "Parlaqlıq və Qaranlıq",
+        "Amoled",
+        "Auto Light/Dark",
+        "E Ink"
+      ],
+      "-bg": [
+        "Тъмна",
+        "Светла",
+        "Светло-тъмна",
+        "Amoled",
+        "Автом Светла/Тъмна",
+        "E Ink"
+      ],
+      "-cs": [
+        "Tmavé",
+        "Světlé",
+        "Světlé + tmavé",
+        "Amoled",
+        "Automaticky světlé/tmavé",
+        "E Ink"
+      ],
+      "-da": [
+        "Mørkt",
+        "Lyst",
+        "Lyst og mørkt",
+        "Amoled",
+        "Auto Lyst/Mørkt",
+        "E Ink"
+      ],
+      "-de": [
+        "Dunkel",
+        "Hell",
+        "Hell und Dunkel",
+        "Amoled",
+        "Hell/Dunkel (Auto)",
+        "E Ink"
+      ],
+      "-el": [
+        "Σκοτεινό",
+        "Φωτεινό",
+        "Light and Dark",
+        "Amoled",
+        "Auto Light/Dark",
+        "E Ink"
+      ],
+      "-es": [
+        "Oscuro",
+        "Claro",
+        "Claro y Oscuro",
+        "Amoled",
+        "Auto Light/Dark",
+        "Tinta electrónica"
+      ],
+      "-fa": [
+        "سیاه",
+        "سفید",
+        "Light and Dark",
+        "Amoled",
+        "Auto Light/Dark",
+        "جوهر الکترونیکی"
+      ],
+      "-fr": [
+        "Sombre",
+        "Clair",
+        "Clair et sombre",
+        "Amoled",
+        "Lumière/Obscurité automatique",
+        "E Ink"
+      ],
+      "-hi": [
+        "गहरा काला",
+        "सफेद",
+        "सफेद और गहरा काला",
+        "अमोलेड",
+        "स्वत काला/सफेद",
+        "E Ink"
+      ],
+      "-hr": [
+        "Tamno",
+        "Svijetlo",
+        "Svijetlo i tamno",
+        "Amoled",
+        "Auto Svijetla/Tamna",
+        "E tinta"
+      ],
+      "-hu": [
+        "Sötét",
+        "Világos",
+        "Világos és sötét",
+        "Amoled",
+        "Automatikus fény/sötét",
+        "E Ink"
+      ],
+      "-in": [
+        "Gelap",
+        "Cerah",
+        "Terang dan gelap",
+        "Amoled",
+        "Otomatis Gelap/Terang",
+        "E Ink"
+      ],
+      "-it": [
+        "Scuro",
+        "Chiaro",
+        "Chiaroscuro",
+        "Amoled",
+        "Chiaro/Scuro automatico",
+        "E Ink"
+      ],
+      "-ja": [
+        "ダーク",
+        "ライト",
+        "ライト & ダーク",
+        "Amoled",
+        "ライト & ダーク (自動)",
+        "E Ink"
+      ],
+      "-ka-rGE": [
+        "მუქი",
+        "ნათელი",
+        "ღია მუქზე",
+        "Amoled",
+        "ღია/მუქი ფერის ავტომატური არჩევა",
+        "E Ink"
+      ],
+      "-ko": [
+        "다크",
+        "라이트",
+        "다크/라이트",
+        "블랙",
+        "자동 라이트/다크",
+        "E잉크"
+      ],
+      "-ky": [
+        "قارا",
+        "اق",
+        "ىراڭسىز",
+        "Amoled",
+        "Auto Light/Dark",
+        "E Ink"
+      ],
+      "-lt": [
+        "Tamsi",
+        "Šviesi",
+        "Šviesi ir tamsi",
+        "Amoled",
+        "Auto nakties režimas",
+        "E Ink"
+      ],
+      "-pl": [
+        "Ciemny",
+        "Jasny",
+        "Jasny & Ciemny",
+        "Amoled",
+        "Motyw automatyczny Jasny/Ciemny",
+        "E Ink"
+      ],
+      "-pt-rBR": [
+        "Escuro",
+        "Claro",
+        "Claro e Escuro",
+        "Amoled",
+        "Temas automático Light/Dark",
+        "E Ink"
+      ],
+      "-ru": [
+        "Тёмная",
+        "Светлая",
+        "Светло-тёмная",
+        "Amoled",
+        "Cветлая/тёмная (авто)",
+        "E Ink"
+      ],
+      "-sk": [
+        "Tmavá",
+        "Svetlá",
+        "Svetlá a tmavá",
+        "Amoled",
+        "Auto Light/Dark",
+        "E papier"
+      ],
+      "-sr": [
+        "Tamna",
+        "Svetla",
+        "Svetla i Tamna",
+        "Amoled",
+        "Auto Svetlo/Tamno",
+        "E Ink"
+      ],
+      "-th-rTH": [
+        "มืด",
+        "สว่าง",
+        "สว่างและมืด",
+        "Amoled",
+        "สว่าง/มืด อัตโนมัติ",
+        "E Ink"
+      ],
+      "-tr": [
+        "Karanlık",
+        "Aydınlık",
+        "Aydınlık ve Karanlık",
+        "Amoled",
+        "Otomatik Açık/Koyu",
+        "E Mürekkep"
+      ],
+      "-ug": [
+        "قارا رەڭلىك",
+        "ئاق رەڭلىك",
+        "رەڭسىز",
+        "Amoled",
+        "Auto Light/Dark",
+        "E Ink"
+      ],
+      "-uk": [
+        "Темна",
+        "Світла",
+        "Світло-темна",
+        "Amoled",
+        "Світла/темна (авто)",
+        "E Ink"
+      ],
+      "-uz": [
+        "Qora",
+        "Och",
+        "Kul rang",
+        "Amoled",
+        "Auto Light/Dark",
+        "E Ink"
+      ],
+      "-vi": [
+        "Tối",
+        "Sáng",
+        "Sáng và Tối",
+        "Amoled",
+        "Tự động Sáng/Tối",
+        "E Ink"
+      ],
+      "-zh-rCN": [
+        "黑色",
+        "白色",
+        "黑白",
+        "Amoled",
+        "自动 白天/夜晚",
+        "电子墨水"
+      ],
+      "-zh-rTW": [
+        "純黑背景",
+        "純白背景",
+        "黑白混和",
+        "Amoled",
+        "Auto Light/Dark",
+        "E Ink"
+      ]
+    }
+  },
+  "OPT_LIST_THEME_VALUE": {
+    "variants": {
+      "(default)": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    }
+  },
+  "OPT_ROOT_TYPE_VALUE": {
+    "variants": {
+      "(default)": [
+        "SU",
+        "Shizuku / SUI"
+      ]
+    }
+  }
+}

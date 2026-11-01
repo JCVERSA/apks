@@ -1,0 +1,173 @@
+{
+  "colors": {
+    "ab_background_material_dark": {
+      "(default)": {
+        "raw": "#ff303030",
+        "hex": "#ff303030",
+        "note": "literal"
+      }
+    },
+    "ab_background_material_dark_amoled": {
+      "(default)": {
+        "raw": "#ff202020",
+        "hex": "#ff202020",
+        "note": "literal"
+      }
+    },
+    "ab_background_material_light": {
+      "(default)": {
+        "raw": "#ffeeeeee",
+        "hex": "#ffeeeeee",
+        "note": "literal"
+      }
+    },
+    "background_amoled": {
+      "(default)": {
+        "raw": "#ff000000",
+        "hex": "#ff000000",
+        "note": "literal"
+      }
+    },
+    "background_holo_dark": {
+      "(default)": {
+        "raw": "#ff303030",
+        "hex": "#ff303030",
+        "note": "literal"
+      }
+    },
+    "background_holo_light": {
+      "(default)": {
+        "raw": "#fff3f3f3",
+        "hex": "#fff3f3f3",
+        "note": "literal"
+      }
+    },
+    "background_windows_amoled": {
+      "(default)": {
+        "raw": "#ff202020",
+        "hex": "#ff202020",
+        "note": "literal"
+      }
+    },
+    "inline_button_ripple_color": {
+      "(default)": {
+        "raw": "#50ffffff",
+        "hex": "#50ffffff",
+        "note": "literal"
+      }
+    },
+    "inline_button_ripple_color_dark": {
+      "(default)": {
+        "raw": "#50000000",
+        "hex": "#50000000",
+        "note": "literal"
+      }
+    },
+    "status_bar_dark_color": {
+      "(default)": {
+        "raw": "#ff303030",
+        "hex": "#ff303030",
+        "note": "literal"
+      }
+    },
+    "status_bar_light_color": {
+      "(default)": {
+        "raw": "#fff3f3f3",
+        "hex": "#fff3f3f3",
+        "note": "literal"
+      }
+    },
+    "ui_base": {
+      "(default)": {
+        "raw": "#5fa80c",
+        "hex": "#ff5fa80c",
+        "note": "literal"
+      }
+    },
+    "ui_base_dark": {
+      "(default)": {
+        "raw": "#0a7e07",
+        "hex": "#ff0a7e07",
+        "note": "literal"
+      }
+    },
+    "ui_base_light": {
+      "(default)": {
+        "raw": "#80cc28",
+        "hex": "#ff80cc28",
+        "note": "literal"
+      }
+    },
+    "ui_icon_bg": {
+      "(default)": {
+        "raw": "#4a8108",
+        "hex": "#ff4a8108",
+        "note": "literal"
+      }
+    },
+    "ui_icon_bg_d": {
+      "(default)": {
+        "raw": "#5da20b",
+        "hex": "#ff5da20b",
+        "note": "literal"
+      }
+    },
+    "ui_icon_bg_d2": {
+      "(default)": {
+        "raw": "#53900a",
+        "hex": "#ff53900a",
+        "note": "literal"
+      }
+    },
+    "ui_icon_bg_l": {
+      "(default)": {
+        "raw": "#68b50d",
+        "hex": "#ff68b50d",
+        "note": "literal"
+      }
+    },
+    "ui_icon_folder": {
+      "(default)": {
+        "raw": "#ffa726",
+        "hex": "#ffffa726",
+        "note": "literal"
+      }
+    },
+    "ui_icon_folder_accent": {
+      "(default)": {
+        "raw": "#859900",
+        "hex": "#ff859900",
+        "note": "literal"
+      }
+    },
+    "ui_icon_folder_dark": {
+      "(default)": {
+        "raw": "#ef6c00",
+        "hex": "#ffef6c00",
+        "note": "literal"
+      }
+    },
+    "ui_icon_tint": {
+      "(default)": {
+        "raw": "#eff7e6",
+        "hex": "#ffeff7e6",
+        "note": "literal"
+      }
+    },
+    "ui_icon_tr_from": {
+      "(default)": {
+        "raw": "#502c4e05",
+        "hex": "#502c4e05",
+        "note": "literal"
+      }
+    },
+    "ui_icon_tr_to": {
+      "(default)": {
+        "raw": "#802c4e05",
+        "hex": "#802c4e05",
+        "note": "literal"
+      }
+    }
+  },
+  "color_resource_count": 24
+}

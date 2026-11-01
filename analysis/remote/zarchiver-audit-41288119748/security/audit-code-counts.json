@@ -1,0 +1,19 @@
+{
+  "command_exec": 3,
+  "shell_string_concat": 6,
+  "logging": 56,
+  "reflection_hidden_api": 19,
+  "sql": 12,
+  "password_handling": 81,
+  "cleartext_url": 6,
+  "deprecated_api": 25,
+  "clipboard": 17,
+  "weak_crypto": 8,
+  "external_ipc": 26,
+  "deterministic_iv": 4,
+  "keystore": 8,
+  "path_traversal_guard": 8,
+  "pending_intent_mutability": 8,
+  "temp_files": 2,
+  "strictmode_bypass": 3
+}

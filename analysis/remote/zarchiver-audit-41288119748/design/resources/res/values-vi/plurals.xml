@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="FINFO_FILE_COUNT">
+        <item quantity="other">%d tệp</item>
+    </plurals>
+    <plurals name="FINFO_FOLDER_COUNT">
+        <item quantity="other">%d thư mục</item>
+    </plurals>
+    <plurals name="FINFO_ITEM_COUNT">
+        <item quantity="other">%d mục</item>
+    </plurals>
+</resources>

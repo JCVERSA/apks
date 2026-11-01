@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="?menuIconSettings" android:id="@id/bSettings" android:title="@string/MENU_SETTINGS" android:showAsAction="ifRoom" />
+    <item android:icon="?menuIconHelp" android:id="@id/bAbout" android:title="@string/MENU_ABOUT" android:showAsAction="never" />
+    <item android:icon="?menuIconClose" android:id="@id/bExit" android:title="@string/MENU_EXIT" android:showAsAction="never" />
+</menu>
