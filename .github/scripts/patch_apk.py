@@ -36,6 +36,53 @@ W25_BODY = [
     "return-object v0",
 ]
 
+# Revision 4: keep the server-delivered extractor plugin functional, but resolve
+# only the official-warning / signature-gate classes from the patched host app.
+# This avoids revision 3's download regression while still suppressing the popup.
+JZ5_WARNING_HOST_BODY = [
+    ".locals 2",
+    "",
+    'const-string v0, "com.snaptube.extractor.pluginlib.piratical.OfficialWarningDialog"',
+    "invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z",
+    "move-result v0",
+    "if-nez v0, :warning_host",
+    "",
+    'const-string v0, "o.xi7"',
+    "invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z",
+    "move-result v0",
+    "if-nez v0, :warning_host",
+    "",
+    'const-string v0, "com.snaptube.premium.dialog.PiraticalApkWarningDialogFragment"',
+    "invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z",
+    "move-result v0",
+    "if-eqz v0, :plugin_first",
+    "",
+    ":warning_host",
+    "iget-object v0, p0, Lo/jz5;->b:Ljava/lang/ClassLoader;",
+    "",
+    ":try_start_host",
+    "invoke-virtual {v0, p1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;",
+    "move-result-object p1",
+    ":try_end_host",
+    ".catch Ljava/lang/ClassNotFoundException; {:try_start_host .. :try_end_host} :plugin_first",
+    "return-object p1",
+    "",
+    ":plugin_first",
+    ":try_start_0",
+    "invoke-super {p0, p1}, Ldalvik/system/DexClassLoader;->findClass(Ljava/lang/String;)Ljava/lang/Class;",
+    "move-result-object p1",
+    ":try_end_0",
+    ".catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0",
+    "return-object p1",
+    "",
+    ":catch_0",
+    "iget-object v0, p0, Lo/jz5;->b:Ljava/lang/ClassLoader;",
+    "invoke-virtual {v0, p1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;",
+    "move-result-object p1",
+    "return-object p1",
+]
+LZ5_WARNING_HOST_BODY = [line.replace("Lo/jz5;->b:", "Lo/lz5;->a:") for line in JZ5_WARNING_HOST_BODY]
+
 PATCHES = [
     {
         "id": "force_update_r_false",
@@ -159,19 +206,22 @@ PATCHES = [
         "body": FALSE_BODY,
         "reason": "Global 'is not an official version' predicate returns false. This is the shared gate behind PiraticalApkWarningDialogFragment (upgrade/force-update/About) and crack telemetry, so the official-app upgrade screen cannot be triggered by certificate mismatch on any path.",
     },
+
     {
-        "id": "site_extractor_plugin_load_false",
-        "class": "com/snaptube/plugin/PluginId$2",
-        "header": ".method public load(Ljava/lang/String;)Z",
-        "body": FALSE_BODY,
-        "reason": "Pin video extraction to the bundled, patched extractor. The SITE_EXTRACTOR hot-swap plugin is loaded through a child-first DexClassLoader (o/jz5) and replaces the extractor via o/lg7.h; a server-downloaded plugin would reintroduce unpatched official-app blocking. Refusing to load it keeps the patched bundled ExtractorWrapper in charge.",
+        "id": "site_extractor_classloader_warning_host_jz5",
+        "class": "o/jz5",
+        "header": ".method public findClass(Ljava/lang/String;)Ljava/lang/Class;",
+        "body": JZ5_WARNING_HOST_BODY,
+        "required_tokens": ["invoke-super {p0, p1}, Ldalvik/system/DexClassLoader;->findClass(Ljava/lang/String;)Ljava/lang/Class;", ".catch Ljava/lang/ClassNotFoundException;"],
+        "reason": "Restore the SITE_EXTRACTOR hot-swap plugin (needed for working downloads), but resolve only official-warning/signature-gate classes from the patched host classloader. All extractor/transfer classes still load child-first from the server plugin, so revision 3's download regression is avoided while the plugin cannot re-deliver the official-app popup.",
     },
     {
-        "id": "site_extractor_plugin_download_false",
-        "class": "com/snaptube/plugin/PluginId$2",
-        "header": ".method public shouldDownload()Z",
-        "body": FALSE_BODY,
-        "reason": "Stop downloading the SITE_EXTRACTOR hot-swap plugin so the official-app block cannot be re-delivered from the server after install. Bundled site extractors remain available.",
+        "id": "site_extractor_classloader_warning_host_lz5",
+        "class": "o/lz5",
+        "header": ".method public findClass(Ljava/lang/String;)Ljava/lang/Class;",
+        "body": LZ5_WARNING_HOST_BODY,
+        "required_tokens": ["invoke-super {p0, p1}, Ldalvik/system/DexClassLoader;->findClass(Ljava/lang/String;)Ljava/lang/Class;", ".catch Ljava/lang/ClassNotFoundException;"],
+        "reason": "Same targeted host-first warning-class resolution for the second plugin DexClassLoader wrapper, preserving normal plugin-first extraction/transfer behavior.",
     },
     {
         "id": "extractor_warning_helper_c_false",
@@ -317,6 +367,20 @@ def verify_roundtrip_method(redecoded: Path, patch: dict) -> dict:
         ok = ok and "new-instance" in body and "PiraticalApkWarningDialogFragment;-><init>()V" in body
     elif patch["id"] == "w25_h_dummy":
         ok = "Lo/w25;->d:Lo/w25$a;" in body and "Lo/w25;->b:Lo/ne3;" in body and "return-object" in body
+    elif patch["id"] in {"site_extractor_classloader_warning_host_jz5", "site_extractor_classloader_warning_host_lz5"}:
+        field = "Lo/jz5;->b:Ljava/lang/ClassLoader;" if patch["class"] == "o/jz5" else "Lo/lz5;->a:Ljava/lang/ClassLoader;"
+        ok = all(token in body for token in (
+            'const-string v0, "com.snaptube.extractor.pluginlib.piratical.OfficialWarningDialog"',
+            "Ljava/lang/String;->startsWith(Ljava/lang/String;)Z",
+            'const-string v0, "o.xi7"',
+            "Ljava/lang/String;->equals(Ljava/lang/Object;)Z",
+            'const-string v0, "com.snaptube.premium.dialog.PiraticalApkWarningDialogFragment"',
+            field,
+            "Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;",
+            "invoke-super {p0, p1}, Ldalvik/system/DexClassLoader;->findClass(Ljava/lang/String;)Ljava/lang/Class;",
+            ".catch Ljava/lang/ClassNotFoundException;",
+            "return-object p1",
+        ))
     elif header.endswith(")V"):
         ok = "return-void" in body and "invoke-" not in body
     elif header.endswith(")Z"):
@@ -468,9 +532,9 @@ def main() -> None:
         "original": {"path": str(apk), "sha256": original_hash, "size_bytes": apk.stat().st_size, "zip_members": original_members, "metadata": orig_meta},
         "patched": {"path": str(patched), "filename": patched.name, "sha256": patched_hash, "size_bytes": patched.stat().st_size, "zip_members": patched_members, "metadata": patched_meta},
         "patched_method_count": len(PATCHES),
-        "revision": 3,
-        "scope": ["disable app ad gates", "block forced update", "remove official-app warning at video extraction and upgrade/crack paths", "pin bundled extractor by disabling the server-delivered SITE_EXTRACTOR hot-swap plugin"],
-        "official_warning_note": "Root cause: the input is an ApkSignatureKillerEx repack whose embedded google/origin.apk is only a signature oracle (native open() redirect + PackageManager spoof), not executed code. The permanence hole was the hot-swappable SITE_EXTRACTOR plugin, loaded child-first and able to re-deliver unpatched official-app blocking from the server. Revision 3 keeps the revision-1/2 ad/force-update/warning patches, forces the shared xi7 official-check false, disables SITE_EXTRACTOR download+load so the patched bundled extractor stays in charge, fully disables the extractor warning helper (c/i/j), and neutralizes the EXIT_FOR_CRACK toast/exit. The embedded origin.apk is intentionally left byte-for-byte intact to preserve the signature oracle. No device testing performed.",
+        "revision": 4,
+        "scope": ["disable app ad gates", "block forced update", "remove official-app warning at video extraction and upgrade/crack paths", "restore server-delivered SITE_EXTRACTOR plugin updates while resolving only warning/signature classes from the patched host"],
+        "official_warning_note": "Revision 3 disabled SITE_EXTRACTOR download+load to stop the server plugin re-delivering the official-app popup. Isolated emulator A/B evidence showed the original app downloaded site_extractor_2.24.505 while revision 3 did not, and the user reported downloads starting then failing on multiple sites. Revision 4 therefore restores normal SITE_EXTRACTOR download/load and instead patches the plugin DexClassLoaders (o/jz5, o/lz5) so only OfficialWarningDialog, o.xi7, and PiraticalApkWarningDialogFragment classes resolve from the patched host; extractor/transfer classes still load from the server plugin. All revision-1/2 ad/force-update/warning patches remain, xi7 is forced false, the extractor warning helper (c/i/j) is disabled, and EXIT_FOR_CRACK toast/exit is neutralized. The embedded google/origin.apk signature oracle is left byte-for-byte intact. Build/static verification only; runtime emulator verification is tracked separately.",
         "changed_smali_files": actually_changed,
         "identity_checks": identity_checks,
         "roundtrip_checks_ok": all(r["ok"] for r in roundtrip),

@@ -57,6 +57,8 @@ jobs:
 
       - name: Patch, rebuild, sign, verify
         shell: bash
+        env:
+          PATCH_LABEL: adfree-noforce-official-removed-r4
         run: python3 .github/scripts/patch_apk.py
 
       - name: Publish patch evidence to repository
@@ -78,7 +80,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: snaptube-patched-apk-official-removed
+          name: snaptube-patched-apk-official-removed-r4
           path: |
             ${{ env.OUTPUT_DIR }}/*.apk
             ${{ env.REPORT_DIR }}
@@ -95,9 +97,9 @@ jobs:
           test -n "$apk"
           tag="snaptube-patched-${GITHUB_RUN_ID}"
           sha="$(sha256sum "$apk" | awk '{print $1}')"
-          notes="$(printf 'Patched SnapTube %s — revision 3 (official-app screen removed).\n\nChanges: retain all revision-1/2 ad and forced-update suppression and official-warning patches; force the shared xi7 official-version check false; disable download+load of the server-delivered SITE_EXTRACTOR hot-swap plugin so the patched bundled extractor stays in charge (this was the permanence hole); fully disable the extractor official-warning helper (c/i/j); neutralize the EXIT_FOR_CRACK toast/exit path. The embedded google/origin.apk signature oracle is left byte-for-byte intact. Normal video extraction logic is preserved.\nOriginal APK preserved unchanged.\nSHA-256: %s\n\nWARNING: signed with a NEW ephemeral key, different from the original app and every previous patched release. It cannot install over them. Uninstall first (may erase app data). No device testing was performed.\n\nEvidence: analysis/remote/patch-%s in the repository.\n' '7.52.0.75250210' "$sha" "$GITHUB_RUN_ID")"
+          notes="$(printf 'Patched SnapTube %s — revision 4 (download-regression fix).\n\nChanges: fixes the revision-3 regression where video/audio downloads could start then fail. Revision 3 had disabled download+load of the server-delivered SITE_EXTRACTOR plugin; isolated emulator evidence showed the original app fetched site_extractor_2.24.505 while revision 3 did not. Revision 4 restores normal SITE_EXTRACTOR plugin download/load and instead patches the plugin DexClassLoaders (o/jz5, o/lz5) so only OfficialWarningDialog, o.xi7, and PiraticalApkWarningDialogFragment classes resolve from the patched host. Extractor/transfer classes still load from the server plugin. All ad/forced-update/official-warning suppressions remain, and the embedded google/origin.apk signature oracle is byte-for-byte intact.\nOriginal APK preserved unchanged.\nSHA-256: %s\n\nWARNING: signed with a NEW ephemeral key, different from the original app and every previous patched release. It cannot install over them. Uninstall first (may erase app data). Build/static verification is not a runtime download guarantee; isolated emulator verification is tracked separately.\n\nEvidence: analysis/remote/patch-%s in the repository.\n' '7.52.0.75250210' "$sha" "$GITHUB_RUN_ID")"
           gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
-            --title "SnapTube revision 3 — official-app screen removed — run ${GITHUB_RUN_ID}" \
+            --title "SnapTube revision 4 — download-regression fix — run ${GITHUB_RUN_ID}" \
             --notes "$notes" "$apk" "$REPORT_DIR/build-report.json"
           url="https://github.com/${GITHUB_REPOSITORY}/releases/download/${tag}/$(basename "$apk")"
           echo "RELEASE_APK_URL=$url" >> "$GITHUB_ENV"
@@ -108,5 +110,5 @@ jobs:
             echo "- APK: ${url}"
             echo "- SHA-256: \`${sha}\`"
             echo ""
-            echo "**New signing key:** cannot install over the original app or the previous patched release. Uninstalling first may erase app data. No device testing performed."
+            echo "**New signing key:** cannot install over the original app or the previous patched release. Uninstalling first may erase app data. Runtime download verification is tracked separately in the isolated emulator workflow."
           } >> "$GITHUB_STEP_SUMMARY"
