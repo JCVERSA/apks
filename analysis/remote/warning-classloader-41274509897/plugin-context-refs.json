@@ -1,0 +1,32 @@
+[
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a.smali",
+    "method": "",
+    "line": 7,
+    "text": "value = Lcom/snaptube/extractor/pluginlib/utils/PluginContextUtil;->checkOfficialWarning()V"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a.smali",
+    "method": "public a()V",
+    "line": 30,
+    "text": "invoke-static {}, Lcom/snaptube/extractor/pluginlib/utils/PluginContextUtil;->access$000()Landroid/content/Context;"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a.smali",
+    "method": "public a()V",
+    "line": 43,
+    "text": "invoke-static {}, Lcom/snaptube/extractor/pluginlib/utils/PluginContextUtil;->access$000()Landroid/content/Context;"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a.smali",
+    "method": "public a()V",
+    "line": 57,
+    "text": "invoke-static {}, Lcom/snaptube/extractor/pluginlib/utils/PluginContextUtil;->access$000()Landroid/content/Context;"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.smali",
+    "method": "public static setAppContext(Landroid/content/Context;)V",
+    "line": 228,
+    "text": "invoke-static {}, Lcom/snaptube/extractor/pluginlib/utils/PluginContextUtil;->checkOfficialWarning()V"
+  }
+]

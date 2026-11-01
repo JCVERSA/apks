@@ -1,0 +1,98 @@
+[
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/ExtractorWrapper.smali",
+    "method": "public extract(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;",
+    "line": 585,
+    "text": "invoke-static {v3}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->h(Landroid/content/Context;)Z"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$Companion$TRANSLATES$2.smali",
+    "method": "static constructor <clinit>()V",
+    "line": 56,
+    "text": "invoke-direct {v0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$Companion$TRANSLATES$2;-><init>()V"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a.smali",
+    "method": "public synthetic constructor <init>(Lo/pg1;)V",
+    "line": 28,
+    "text": "invoke-direct {p0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a;-><init>()V"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a.smali",
+    "method": "public static final d(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a;Landroid/app/Activity;)V",
+    "line": 75,
+    "text": "invoke-direct {p0, p1, v0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;-><init>(Landroid/content/Context;Ljava/lang/String;)V"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a.smali",
+    "method": "public final g(Ljava/lang/String;)Ljava/lang/String;",
+    "line": 302,
+    "text": "invoke-virtual {p0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a;->h()Ljava/util/Map;"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$createView$1$1$10.smali",
+    "method": "",
+    "line": 10,
+    "text": "value = Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->n()Landroid/view/View;"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$createView$1$1$6.smali",
+    "method": "",
+    "line": 10,
+    "text": "value = Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->n()Landroid/view/View;"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali",
+    "method": "static constructor <clinit>()V",
+    "line": 39,
+    "text": "invoke-direct {v0, v1}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a;-><init>(Lo/pg1;)V"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali",
+    "method": "public static final synthetic f(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;)V",
+    "line": 121,
+    "text": "invoke-virtual {p0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->v()V"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali",
+    "method": "public static final synthetic g(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;)V",
+    "line": 129,
+    "text": "invoke-virtual {p0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->w()V"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali",
+    "method": "public static final o(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;Landroid/view/View;)V",
+    "line": 165,
+    "text": "invoke-virtual {p0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->v()V"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali",
+    "method": "public final n()Landroid/view/View;",
+    "line": 540,
+    "text": "invoke-direct {v9, v0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$createView$1$1$6;-><init>(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;)V"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali",
+    "method": "public final n()Landroid/view/View;",
+    "line": 664,
+    "text": "invoke-direct {v4, v0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$createView$1$1$10;-><init>(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;)V"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali",
+    "method": "public onCreate(Landroid/os/Bundle;)V",
+    "line": 749,
+    "text": "invoke-virtual {p0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->n()Landroid/view/View;"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali",
+    "method": "public onStart()V",
+    "line": 769,
+    "text": "invoke-virtual {p0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->u()V"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a.smali",
+    "method": "public a()V",
+    "line": 34,
+    "text": "invoke-static {v0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->x(Landroid/content/Context;)Z"
+  }
+]

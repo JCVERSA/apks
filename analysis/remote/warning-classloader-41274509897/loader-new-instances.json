@@ -1,0 +1,20 @@
+[
+  {
+    "file": "smali_classes2/com/google/ads/interactivemedia/v3/internal/afj.smali",
+    "method": "public static declared-synchronized a(Ljava/lang/String;Landroid/content/Context;Lcom/google/ads/interactivemedia/v3/internal/afo;)V",
+    "line": 419,
+    "text": "new-instance v5, Ldalvik/system/DexClassLoader;"
+  },
+  {
+    "file": "smali_classes3/com/snaptube/plugin/PluginId$5.smali",
+    "method": "public final d(Ljava/io/File;)Z",
+    "line": 82,
+    "text": "new-instance v2, Ldalvik/system/DexClassLoader;"
+  },
+  {
+    "file": "smali_classes4/com/snaptube/search/b.smali",
+    "method": "public final t()Lo/ej3;",
+    "line": 1365,
+    "text": "new-instance v1, Ldalvik/system/DexClassLoader;"
+  }
+]

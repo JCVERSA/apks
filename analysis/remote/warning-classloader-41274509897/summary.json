@@ -1,0 +1,10 @@
+{
+  "status": "EVIDENCE_COLLECTED",
+  "apk": "/home/runner/work/apks/apks/google_drive/SnapTube.apk",
+  "smali_files_scanned": 43100,
+  "dex_classloader_subclasses": [],
+  "dex_classloader_new_instance_count": 3,
+  "official_warning_ref_count": 16,
+  "plugin_context_ref_count": 5,
+  "copied_smali_files": 11
+}
