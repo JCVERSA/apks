@@ -1,0 +1,179 @@
+[
+  {
+    "id": "force_update_r_false",
+    "class": "com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper",
+    "header": ".method public final r(Landroid/content/Context;Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;Ljava/lang/String;)Z",
+    "ok": true,
+    "smali_file": "smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali"
+  },
+  {
+    "id": "force_update_o_false",
+    "class": "com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper",
+    "header": ".method public final o(Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;Ljava/lang/String;)Z",
+    "ok": true,
+    "smali_file": "smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali"
+  },
+  {
+    "id": "splash_i1_false",
+    "class": "com/snaptube/ads/activity/SplashAdActivity",
+    "header": ".method public static i1(Landroid/content/Context;ZLjava/lang/String;Ljava/lang/String;ZLjava/util/Map;)Z",
+    "ok": true,
+    "smali_file": "smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali"
+  },
+  {
+    "id": "splash_l1_false",
+    "class": "com/snaptube/ads/activity/SplashAdActivity",
+    "header": ".method public static l1(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z",
+    "ok": true,
+    "smali_file": "smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali"
+  },
+  {
+    "id": "splash_m1_false",
+    "class": "com/snaptube/ads/activity/SplashAdActivity",
+    "header": ".method public static m1(Landroid/content/Context;ZLjava/lang/String;Ljava/lang/String;)Z",
+    "ok": true,
+    "smali_file": "smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali"
+  },
+  {
+    "id": "hot_splash_e_false",
+    "class": "com/snaptube/premium/ads/splash/HotSplashAdManager",
+    "header": ".method public static final e()Z",
+    "ok": true,
+    "smali_file": "smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali"
+  },
+  {
+    "id": "hot_splash_g_void",
+    "class": "com/snaptube/premium/ads/splash/HotSplashAdManager",
+    "header": ".method public static final g()V",
+    "ok": true,
+    "smali_file": "smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali"
+  },
+  {
+    "id": "start_download_z_void",
+    "class": "com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel",
+    "header": ".method public static final z(Landroid/os/Bundle;Ljava/lang/String;)V",
+    "ok": true,
+    "smali_file": "smali_classes3/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel.smali"
+  },
+  {
+    "id": "start_download_w_false",
+    "class": "com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel",
+    "header": ".method public final w(Landroid/os/Bundle;)Z",
+    "ok": true,
+    "smali_file": "smali_classes3/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel.smali"
+  },
+  {
+    "id": "od_v_false",
+    "class": "o/od",
+    "header": ".method public static v(Ljava/lang/String;)Z",
+    "ok": true,
+    "smali_file": "smali_classes3/o/od.smali"
+  },
+  {
+    "id": "od_c_false",
+    "class": "o/od",
+    "header": ".method public static c(Ljava/lang/String;)Z",
+    "ok": true,
+    "smali_file": "smali_classes3/o/od.smali"
+  },
+  {
+    "id": "w25_h_dummy",
+    "class": "o/w25",
+    "header": ".method public h()Lo/ne3;",
+    "ok": true,
+    "smali_file": "smali_classes4/o/w25.smali"
+  },
+  {
+    "id": "config_P2_false",
+    "class": "com/snaptube/premium/configs/Config",
+    "header": ".method public static P2()Z",
+    "ok": true,
+    "smali_file": "smali_classes4/com/snaptube/premium/configs/Config.smali"
+  },
+  {
+    "id": "extractor_official_warning_gate_false",
+    "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog",
+    "header": ".method public static final h(Landroid/content/Context;)Z",
+    "ok": true,
+    "smali_file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali"
+  },
+  {
+    "id": "extractor_official_warning_show_void",
+    "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+    "header": ".method public static final d(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a;Landroid/app/Activity;)V",
+    "ok": true,
+    "smali_file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a.smali"
+  },
+  {
+    "id": "upgrade_official_warning_branch_skip",
+    "class": "com/snaptube/premium/selfupgrade/BaseUpgradeActivity",
+    "header": ".method public onCreate(Landroid/os/Bundle;)V",
+    "ok": true,
+    "smali_file": "smali_classes4/com/snaptube/premium/selfupgrade/BaseUpgradeActivity.smali",
+    "control_flow_evidence": [
+      "if-eqz v1, :cond_0",
+      "goto :goto_0",
+      "goto :goto_1",
+      ":cond_0",
+      "goto :goto_2",
+      "if-nez p1, :cond_1",
+      ":cond_1",
+      "if-eqz v0, :cond_2",
+      ":cond_2",
+      "invoke-static {p0, p1}, Lo/xi7;->c(Landroid/content/Context;Z)Z",
+      "goto :goto_3",
+      "invoke-direct {p1}, Lcom/snaptube/premium/dialog/PiraticalApkWarningDialogFragment;-><init>()V",
+      "invoke-static {v1, v2}, Lo/xi7;->c(Landroid/content/Context;Z)Z",
+      "invoke-virtual {p0}, Lcom/snaptube/premium/selfupgrade/BaseUpgradeActivity;->K1()V"
+    ]
+  },
+  {
+    "id": "official_signature_gate_false",
+    "class": "o/xi7",
+    "header": ".method public static c(Landroid/content/Context;Z)Z",
+    "ok": true,
+    "smali_file": "smali_classes4/o/xi7.smali"
+  },
+  {
+    "id": "site_extractor_classloader_warning_host_jz5",
+    "class": "o/jz5",
+    "header": ".method public findClass(Ljava/lang/String;)Ljava/lang/Class;",
+    "ok": false,
+    "smali_file": "smali_classes4/o/jz5.smali"
+  },
+  {
+    "id": "site_extractor_classloader_warning_host_lz5",
+    "class": "o/lz5",
+    "header": ".method public findClass(Ljava/lang/String;)Ljava/lang/Class;",
+    "ok": false,
+    "smali_file": "smali_classes3/o/lz5.smali"
+  },
+  {
+    "id": "extractor_warning_helper_c_false",
+    "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+    "header": ".method public final c(Landroid/content/Context;)Z",
+    "ok": true,
+    "smali_file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a.smali"
+  },
+  {
+    "id": "extractor_warning_helper_i_false",
+    "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+    "header": ".method public final i(Landroid/content/Context;)Z",
+    "ok": true,
+    "smali_file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a.smali"
+  },
+  {
+    "id": "extractor_warning_helper_j_false",
+    "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+    "header": ".method public final j(Landroid/content/Context;)Z",
+    "ok": true,
+    "smali_file": "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a.smali"
+  },
+  {
+    "id": "crack_exit_toast_void",
+    "class": "com/snaptube/premium/activity/ExploreActivity",
+    "header": ".method public final m1(Landroid/content/Context;Z)V",
+    "ok": true,
+    "smali_file": "smali_classes4/com/snaptube/premium/activity/ExploreActivity.smali"
+  }
+]
