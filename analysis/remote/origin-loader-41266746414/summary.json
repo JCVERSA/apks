@@ -1,0 +1,79 @@
+{
+  "outer_scanned": 43100,
+  "outer_counts": {
+    "origin_asset": 1,
+    "loader_api": 72
+  },
+  "outer_origin_classes": [
+    "com/google/LaunchApp"
+  ],
+  "inner_scanned": 43086,
+  "inner_counts": {
+    "official_warning": 193,
+    "origin_asset": 0
+  },
+  "inner_target_checks": [
+    {
+      "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog",
+      "header": ".method public static final h(Landroid/content/Context;)Z",
+      "matches": [
+        "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali"
+      ],
+      "ok": true
+    },
+    {
+      "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+      "header": ".method public static final d(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a;Landroid/app/Activity;)V",
+      "matches": [
+        "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a.smali"
+      ],
+      "ok": true
+    },
+    {
+      "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+      "header": ".method public final c(Landroid/content/Context;)Z",
+      "matches": [
+        "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a.smali"
+      ],
+      "ok": true
+    },
+    {
+      "class": "com/snaptube/premium/selfupgrade/BaseUpgradeActivity",
+      "header": ".method public onCreate(Landroid/os/Bundle;)V",
+      "matches": [
+        "smali_classes4/com/snaptube/premium/selfupgrade/BaseUpgradeActivity.smali"
+      ],
+      "ok": true
+    },
+    {
+      "class": "com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper",
+      "header": ".method public final r(Landroid/content/Context;Lcom/snaptube/premium/selfupgrade/incremental_upgrade/UpgradeConfig;Ljava/lang/String;)Z",
+      "matches": [
+        "smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali"
+      ],
+      "ok": true
+    },
+    {
+      "class": "com/snaptube/premium/configs/Config",
+      "header": ".method public static P2()Z",
+      "matches": [
+        "smali_classes4/com/snaptube/premium/configs/Config.smali"
+      ],
+      "ok": true
+    }
+  ],
+  "outer_google_members": [
+    "google/origin.apk",
+    "google/protobuf/any.proto",
+    "google/protobuf/api.proto",
+    "google/protobuf/duration.proto",
+    "google/protobuf/empty.proto",
+    "google/protobuf/field_mask.proto",
+    "google/protobuf/source_context.proto",
+    "google/protobuf/struct.proto",
+    "google/protobuf/timestamp.proto",
+    "google/protobuf/type.proto",
+    "google/protobuf/wrappers.proto"
+  ],
+  "copied_count": 206
+}

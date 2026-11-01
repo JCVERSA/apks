@@ -1,0 +1,2 @@
+file	line	method	text
+smali_classes5/com/google/LaunchApp.smali	19	.method static constructor <clinit>()V	"    const-string v0, ""google/origin.apk"""

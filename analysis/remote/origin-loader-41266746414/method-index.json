@@ -1,0 +1,398 @@
+[
+  {
+    "class": "androidx/appcompat/app/AppCompatActivity",
+    "header": ".method public attachBaseContext(Landroid/content/Context;)V",
+    "line": 189,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/androidx/appcompat/app/AppCompatActivity/attachBaseContext-189.smali"
+  },
+  {
+    "class": "androidx/media/MediaBrowserServiceCompat$h$b",
+    "header": ".method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat$h;Landroid/content/Context;)V",
+    "line": 25,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/androidx/media/MediaBrowserServiceCompat_h_b/_init_-25.smali"
+  },
+  {
+    "class": "com/bytedance/sdk/component/utils/du",
+    "header": ".method public static EW(Landroid/content/res/AssetManager;Ljava/lang/String;)Z",
+    "line": 121,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/bytedance/sdk/component/utils/du/EW-121.smali"
+  },
+  {
+    "class": "o/lm6",
+    "header": ".method public final d(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Context;",
+    "line": 147,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/o/lm6/d-147.smali"
+  },
+  {
+    "class": "o/x51",
+    "header": ".method public attachBaseContext(Landroid/content/Context;)V",
+    "line": 134,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/o/x51/attachBaseContext-134.smali"
+  },
+  {
+    "class": "com/dywx/dyframework/base/DyApplication",
+    "header": ".method public attachBaseContext(Landroid/content/Context;)V",
+    "line": 92,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/dywx/dyframework/base/DyApplication/attachBaseContext-92.smali"
+  },
+  {
+    "class": "com/google/ads/interactivemedia/v3/internal/afj",
+    "header": ".method public static declared-synchronized a(Ljava/lang/String;Landroid/content/Context;Lcom/google/ads/interactivemedia/v3/internal/afo;)V",
+    "line": 258,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/google/ads/interactivemedia/v3/internal/afj/a-258.smali"
+  },
+  {
+    "class": "com/google/android/gms/common/GooglePlayServicesUtilLight",
+    "header": ".method public static getRemoteContext(Landroid/content/Context;)Landroid/content/Context;",
+    "line": 423,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/google/android/gms/common/GooglePlayServicesUtilLight/getRemoteContext-423.smali"
+  },
+  {
+    "class": "com/google/android/gms/dynamite/DynamiteModule",
+    "header": ".method private static zzg(Landroid/content/Context;)Lcom/google/android/gms/dynamite/zzq;",
+    "line": 2627,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/google/android/gms/dynamite/DynamiteModule/zzg-2627.smali"
+  },
+  {
+    "class": "com/google/android/gms/dynamite/zzc",
+    "header": ".method public constructor <init>(Ljava/lang/String;Ljava/lang/ClassLoader;)V",
+    "line": 6,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/google/android/gms/dynamite/zzc/_init_-6.smali"
+  },
+  {
+    "class": "com/google/android/gms/dynamite/zzc",
+    "header": ".method public final loadClass(Ljava/lang/String;Z)Ljava/lang/Class;",
+    "line": 16,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/google/android/gms/dynamite/zzc/loadClass-16.smali"
+  },
+  {
+    "class": "com/pgl/ssdk/t",
+    "header": ".method public static c()Ljava/lang/String;",
+    "line": 1280,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/pgl/ssdk/t/c-1280.smali"
+  },
+  {
+    "class": "com/snaptube/ads/keeper/DaemonApplication",
+    "header": ".method public final attachBaseContext(Landroid/content/Context;)V",
+    "line": 36,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/ads/keeper/DaemonApplication/attachBaseContext-36.smali"
+  },
+  {
+    "class": "com/snaptube/ads/keeper/DaemonApplication",
+    "header": ".method public attachBaseContextByDaemon(Landroid/content/Context;)V",
+    "line": 61,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/ads/keeper/DaemonApplication/attachBaseContextByDaemon-61.smali"
+  },
+  {
+    "class": "com/snaptube/base/BaseApplication",
+    "header": ".method public attachBaseContext(Landroid/content/Context;)V",
+    "line": 90,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/base/BaseApplication/attachBaseContext-90.smali"
+  },
+  {
+    "class": "com/snaptube/extractor/pluginlib/common/AvailabilityChecker",
+    "header": ".method public loadPluginImpl(Ljava/lang/ClassLoader;)V",
+    "line": 810,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/loadPluginImpl-810.smali"
+  },
+  {
+    "class": "com/snaptube/extractor/pluginlib/common/QuickDownloadConfigProvider",
+    "header": ".method public loadPlugin(Ljava/lang/ClassLoader;)V",
+    "line": 468,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/extractor/pluginlib/common/QuickDownloadConfigProvider/loadPlugin-468.smali"
+  },
+  {
+    "class": "com/snaptube/extractor/pluginlib/sites/extract/BackgroundWebExtractProvider",
+    "header": ".method public loadPlugin(Ljava/lang/ClassLoader;)V",
+    "line": 223,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/extractor/pluginlib/sites/extract/BackgroundWebExtractProvider/loadPlugin-223.smali"
+  },
+  {
+    "class": "com/snaptube/player_guide/view/PreDownloadHelper$preDownloadApk$1",
+    "header": ".method public constructor <init>(Lkotlin/coroutines/Continuation;)V",
+    "line": 59,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/player_guide/view/PreDownloadHelper_preDownloadApk_1/_init_-59.smali"
+  },
+  {
+    "class": "com/snaptube/player_guide/view/PreDownloadHelper$preDownloadApk$1",
+    "header": ".method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;",
+    "line": 80,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/player_guide/view/PreDownloadHelper_preDownloadApk_1/create-80.smali"
+  },
+  {
+    "class": "com/snaptube/player_guide/view/PreDownloadHelper$preDownloadApk$1",
+    "header": ".method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+    "line": 112,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/player_guide/view/PreDownloadHelper_preDownloadApk_1/invoke-112.smali"
+  },
+  {
+    "class": "com/snaptube/player_guide/view/PreDownloadHelper$preDownloadApk$1",
+    "header": ".method public final invoke(Lo/w61;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
+    "line": 126,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/player_guide/view/PreDownloadHelper_preDownloadApk_1/invoke-126.smali"
+  },
+  {
+    "class": "com/snaptube/player_guide/view/PreDownloadHelper$preDownloadApk$1",
+    "header": ".method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;",
+    "line": 166,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/player_guide/view/PreDownloadHelper_preDownloadApk_1/invokeSuspend-166.smali"
+  },
+  {
+    "class": "com/snaptube/player_guide/view/PreDownloadHelper",
+    "header": ".method public static final declared-synchronized c()V",
+    "line": 212,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/player_guide/view/PreDownloadHelper/c-212.smali"
+  },
+  {
+    "class": "com/snaptube/plugin/PluginId$2",
+    "header": ".method public load(Ljava/lang/String;)Z",
+    "line": 51,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/plugin/PluginId_2/load-51.smali"
+  },
+  {
+    "class": "com/snaptube/plugin/PluginId$5",
+    "header": ".method public final d(Ljava/io/File;)Z",
+    "line": 55,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/plugin/PluginId_5/d-55.smali"
+  },
+  {
+    "class": "com/snaptube/plugin/a",
+    "header": ".method public final o(Landroid/content/Context;[Lcom/snaptube/plugin/PluginId;Ljava/lang/String;)Z",
+    "line": 1208,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/plugin/a/o-1208.smali"
+  },
+  {
+    "class": "com/snaptube/plugin/a",
+    "header": ".method public final p(Landroid/content/Context;Lcom/snaptube/plugin/PluginId;Ljava/lang/String;Z)Z",
+    "line": 1321,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/plugin/a/p-1321.smali"
+  },
+  {
+    "class": "o/lz5",
+    "header": ".method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)V",
+    "line": 12,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/o/lz5/_init_-12.smali"
+  },
+  {
+    "class": "o/lz5",
+    "header": ".method public findClass(Ljava/lang/String;)Ljava/lang/Class;",
+    "line": 36,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/o/lz5/findClass-36.smali"
+  },
+  {
+    "class": "o/tg3",
+    "header": ".method public abstract loadPlugin(Ljava/lang/ClassLoader;)V",
+    "line": 9,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/o/tg3/loadPlugin-9.smali"
+  },
+  {
+    "class": "o/xl",
+    "header": ".method public static b(Landroid/content/Context;)Ljava/security/cert/X509Certificate;",
+    "line": 92,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/o/xl/b-92.smali"
+  },
+  {
+    "class": "com/snaptube/premium/activity/BaseSwipeBackActivity",
+    "header": ".method public attachBaseContext(Landroid/content/Context;)V",
+    "line": 139,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/premium/activity/BaseSwipeBackActivity/attachBaseContext-139.smali"
+  },
+  {
+    "class": "com/snaptube/premium/activity/NoSwipeBackBaseActivity",
+    "header": ".method public attachBaseContext(Landroid/content/Context;)V",
+    "line": 78,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/premium/activity/NoSwipeBackBaseActivity/attachBaseContext-78.smali"
+  },
+  {
+    "class": "com/snaptube/premium/activity/VaultActivity",
+    "header": ".method public attachBaseContext(Landroid/content/Context;)V",
+    "line": 141,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/premium/activity/VaultActivity/attachBaseContext-141.smali"
+  },
+  {
+    "class": "com/snaptube/premium/activity/b",
+    "header": ".method public d(Landroid/content/Context;Z)V",
+    "line": 301,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/premium/activity/b/d-301.smali"
+  },
+  {
+    "class": "com/snaptube/premium/app/PhoenixApplication",
+    "header": ".method public attachBaseContext(Landroid/content/Context;)V",
+    "line": 1298,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/premium/app/PhoenixApplication/attachBaseContext-1298.smali"
+  },
+  {
+    "class": "com/snaptube/premium/preview/audio/LocalMediaPreviewActivity",
+    "header": ".method public attachBaseContext(Landroid/content/Context;)V",
+    "line": 735,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/premium/preview/audio/LocalMediaPreviewActivity/attachBaseContext-735.smali"
+  },
+  {
+    "class": "com/snaptube/search/b",
+    "header": ".method public final t()Lo/ej3;",
+    "line": 1325,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/snaptube/search/b/t-1325.smali"
+  },
+  {
+    "class": "com/wandoujia/base/config/GlobalConfig",
+    "header": ".method public static isDownloadPluginInMobileNetworkEnabled()Z",
+    "line": 5269,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/com/wandoujia/base/config/GlobalConfig/isDownloadPluginInMobileNetworkEnabled-5269.smali"
+  },
+  {
+    "class": "o/jz5",
+    "header": ".method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)V",
+    "line": 12,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/o/jz5/_init_-12.smali"
+  },
+  {
+    "class": "o/jz5",
+    "header": ".method public findClass(Ljava/lang/String;)Ljava/lang/Class;",
+    "line": 34,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/o/jz5/findClass-34.smali"
+  },
+  {
+    "class": "o/u39",
+    "header": ".method public static b(Landroid/app/Application;)V",
+    "line": 48,
+    "patterns": [
+      "loader_api"
+    ],
+    "file": "outer-methods/o/u39/b-48.smali"
+  },
+  {
+    "class": "com/google/LaunchApp",
+    "header": ".method static constructor <clinit>()V",
+    "line": 10,
+    "patterns": [
+      "origin_asset"
+    ],
+    "file": "outer-methods/com/google/LaunchApp/_clinit_-10.smali"
+  }
+]
