@@ -1,0 +1,29 @@
+{
+  "scanned": 43100,
+  "classes": [
+    "com/snaptube/extractor/pluginlib/common/AvailabilityChecker",
+    "com/snaptube/extractor/pluginlib/common/QuickDownloadConfigProvider",
+    "com/snaptube/extractor/pluginlib/sites/extract/BackgroundWebExtractProvider",
+    "com/snaptube/extractor/pluginlib/utils/PluginContextUtil",
+    "com/snaptube/extractor/pluginlib/ExtractorWrapper",
+    "com/snaptube/extractor/pluginlib/PluginProvider",
+    "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a",
+    "com/snaptube/premium/activity/ExploreActivity",
+    "o/xi7",
+    "o/lg7",
+    "com/snaptube/plugin/PluginId",
+    "com/snaptube/plugin/PluginId$2",
+    "com/snaptube/plugin/a",
+    "com/snaptube/plugin/c16",
+    "com/snaptube/premium/app/PhoenixApplication",
+    "o/nd2",
+    "o/lz5",
+    "o/jz5",
+    "o/kz5",
+    "o/c16",
+    "o/dv8",
+    "o/qh3"
+  ],
+  "hit_methods": 151,
+  "copied": 191
+}

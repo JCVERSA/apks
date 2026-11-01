@@ -1,0 +1,152 @@
+class	header	line	file
+com/google/android/gms/auth/api/proxy/AuthApiStatusCodes	.method public static getStatusCodeString(I)Ljava/lang/String;	59	methods/com/google/android/gms/auth/api/proxy/AuthApiStatusCodes/getStatusCodeString-59.smali
+com/snaptube/premium/ClipMonitor/ClipMonitorDownloadActivity	.method private final I0()V	153	methods/com/snaptube/premium/ClipMonitor/ClipMonitorDownloadActivity/I0-153.smali
+com/phoenix/slog/record/log/ILog$CommonInfo	.method public toString()Ljava/lang/String;	248	methods/com/phoenix/slog/record/log/ILog_CommonInfo/toString-248.smali
+com/snaptube/extractor/pluginlib/ExtractorWrapper	.method private buildForbiddenResult(Lcom/snaptube/extractor/pluginlib/models/PageContext;)Lcom/snaptube/extractor/pluginlib/models/ExtractResult;	104	methods/com/snaptube/extractor/pluginlib/ExtractorWrapper/buildForbiddenResult-104.smali
+com/snaptube/extractor/pluginlib/ExtractorWrapper	.method public extract(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;	390	methods/com/snaptube/extractor/pluginlib/ExtractorWrapper/extract-390.smali
+com/snaptube/extractor/pluginlib/PluginProvider$a	.method public a(Ljava/lang/Class;)Ljava/lang/Object;	40	methods/com/snaptube/extractor/pluginlib/PluginProvider_a/a-40.smali
+com/snaptube/extractor/pluginlib/PluginProvider	.method private isUnSupportedVersion(Landroid/content/Context;)Z	102	methods/com/snaptube/extractor/pluginlib/PluginProvider/isUnSupportedVersion-102.smali
+com/snaptube/extractor/pluginlib/PluginProvider	.method public getExtractor(Ljava/lang/String;)Lo/fc3;	215	methods/com/snaptube/extractor/pluginlib/PluginProvider/getExtractor-215.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker$a	.method public run()V	36	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker_a/run-36.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker$b	.method public run()V	36	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker_b/run-36.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker$c	.method public run()V	36	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker_c/run-36.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method private constructor <init>(Landroid/content/Context;)V	55	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/_init_-55.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$000(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;)Ljava/util/concurrent/atomic/AtomicBoolean;	128	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$000-128.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$100(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;)Ljava/lang/Boolean;	136	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$100-136.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$1000(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;)Ljava/util/concurrent/CountDownLatch;	144	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$1000-144.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$102(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;Ljava/lang/Boolean;)Ljava/lang/Boolean;	152	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$102-152.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$200(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;)V	160	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$200-160.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$300(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;)Ljava/lang/String;	168	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$300-168.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$400(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;)Landroid/content/Context;	178	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$400-178.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$500(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;IJ)V	186	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$500-186.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$600(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;ILjava/lang/String;Ljava/lang/String;)V	194	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$600-194.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$700(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;)Ljava/lang/Runnable;	202	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$700-202.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$800(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;)Landroid/os/Handler;	210	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$800-210.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static synthetic access$900(Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;)V	218	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/access$900-218.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method private calculateRemoteCheckDuration()J	226	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/calculateRemoteCheckDuration-226.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method private doCheck()V	240	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/doCheck-240.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method private getNetworkCountryIso()Ljava/lang/String;	302	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/getNetworkCountryIso-302.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method private getResultFormPlugin()Ljava/lang/Boolean;	409	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/getResultFormPlugin-409.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method private isSessionNeedRefresh()Z	471	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/isSessionNeedRefresh-471.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method private logFail(ILjava/lang/String;Ljava/lang/String;)V	529	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/logFail-529.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method private logSuc(IJ)V	541	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/logSuc-541.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method private scheduleNextCheck()V	553	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/scheduleNextCheck-553.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method private updateContext(Landroid/content/Context;)V	582	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/updateContext-582.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public static with(Landroid/content/Context;)Lcom/snaptube/extractor/pluginlib/common/AvailabilityChecker;	605	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/with-605.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public check()V	664	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/check-664.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public checkAndWait(J)Z	683	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/checkAndWait-683.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public forceCheck()V	716	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/forceCheck-716.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public getLastHttpStatusCode()I	743	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/getLastHttpStatusCode-743.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public isAvailable()Z	751	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/isAvailable-751.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public isAvailable(Z)Z	778	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/isAvailable-778.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public loadPluginImpl(Ljava/lang/ClassLoader;)V	810	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/loadPluginImpl-810.smali
+com/snaptube/extractor/pluginlib/common/AvailabilityChecker	.method public onStoragePermissionGranted()V	867	methods/com/snaptube/extractor/pluginlib/common/AvailabilityChecker/onStoragePermissionGranted-867.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$Companion$TRANSLATES$2	.method static constructor <clinit>()V	51	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_Companion_TRANSLATES_2/_clinit_-51.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$Companion$TRANSLATES$2	.method public bridge synthetic invoke()Ljava/lang/Object;	75	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_Companion_TRANSLATES_2/invoke-75.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a	.method public synthetic constructor <init>(Lo/pg1;)V	25	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_a/_init_-25.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a	.method public static synthetic a(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a;Landroid/app/Activity;)V	33	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_a/a-33.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a	.method public static final synthetic b(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a;Ljava/lang/String;)Ljava/lang/String;	41	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_a/b-41.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a	.method public static final d(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a;Landroid/app/Activity;)V	51	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_a/d-51.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a	.method public final c(Landroid/content/Context;)Z	127	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_a/c-127.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a	.method public final g(Ljava/lang/String;)Ljava/lang/String;	299	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_a/g-299.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a	.method public final h()Ljava/util/Map;	359	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_a/h-359.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a	.method public final i(Landroid/content/Context;)Z	375	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_a/i-375.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a	.method public final j(Landroid/content/Context;)Z	413	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_a/j-413.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$createView$1$1$10	.method public constructor <init>(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;)V	49	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_createView_1_1_10/_init_-49.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$createView$1$1$10	.method public bridge synthetic invoke()Ljava/lang/Object;	63	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_createView_1_1_10/invoke-63.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$createView$1$1$10	.method public final invoke()V	73	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_createView_1_1_10/invoke-73.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$createView$1$1$6	.method public constructor <init>(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;)V	49	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_createView_1_1_6/_init_-49.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$createView$1$1$6	.method public bridge synthetic invoke()Ljava/lang/Object;	63	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_createView_1_1_6/invoke-63.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$createView$1$1$6	.method public final invoke()V	73	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog_createView_1_1_6/invoke-73.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method static constructor <clinit>()V	32	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/_clinit_-32.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V	62	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/_init_-62.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public static synthetic a(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;Landroid/view/View;)V	78	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/a-78.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public static synthetic b(Lo/bx2;Landroid/view/View;)V	86	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/b-86.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public static final synthetic c()Z	94	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/c-94.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public static final synthetic d()Lo/t14;	102	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/d-102.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public static final synthetic e()Ljava/util/concurrent/ConcurrentHashMap;	110	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/e-110.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public static final synthetic f(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;)V	118	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/f-118.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public static final synthetic g(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;)V	126	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/g-126.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public static final h(Landroid/content/Context;)Z	134	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/h-134.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public static final o(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;Landroid/view/View;)V	158	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/o-158.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public static final r(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;	170	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/r-170.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public static final x(Landroid/content/Context;)Z	182	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/x-182.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public final j(Ljava/lang/String;ZLo/bx2;)Landroid/widget/Button;	224	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/j-224.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public final n()Landroid/view/View;	354	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/n-354.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public onCreate(Landroid/os/Bundle;)V	733	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/onCreate-733.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public onStart()V	764	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/onStart-764.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public final p()Landroid/graphics/drawable/Drawable;	774	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/p-774.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public final q()Ljava/lang/CharSequence;	810	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/q-810.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public final s()Ljava/lang/String;	905	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/s-905.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public final t()Ljava/lang/CharSequence;	933	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/t-933.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public final v()V	1064	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/v-1064.smali
+com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog	.method public final w()V	1164	methods/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog/w-1164.smali
+com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a	.method public a()V	27	methods/com/snaptube/extractor/pluginlib/utils/PluginContextUtil_a/a-27.smali
+com/snaptube/player/OnlineMediaQueueManager	.method public final D()Lo/zd3;	370	methods/com/snaptube/player/OnlineMediaQueueManager/D-370.smali
+com/snaptube/plugin/PluginId$1	.method public shouldDownload()Z	64	methods/com/snaptube/plugin/PluginId_1/shouldDownload-64.smali
+com/snaptube/plugin/PluginId$2	.method public load(Ljava/lang/String;)Z	51	methods/com/snaptube/plugin/PluginId_2/load-51.smali
+com/snaptube/plugin/PluginId$2	.method public shouldDownload()Z	169	methods/com/snaptube/plugin/PluginId_2/shouldDownload-169.smali
+com/snaptube/plugin/PluginId$3	.method public shouldDownload()Z	215	methods/com/snaptube/plugin/PluginId_3/shouldDownload-215.smali
+com/snaptube/plugin/PluginId$4	.method public shouldDownload()Z	130	methods/com/snaptube/plugin/PluginId_4/shouldDownload-130.smali
+com/snaptube/plugin/PluginId$5	.method public shouldDownload()Z	240	methods/com/snaptube/plugin/PluginId_5/shouldDownload-240.smali
+com/snaptube/plugin/PluginId	.method static constructor <clinit>()V	77	methods/com/snaptube/plugin/PluginId/_clinit_-77.smali
+com/snaptube/plugin/PluginId	.method public static asyncLoadAll()V	315	methods/com/snaptube/plugin/PluginId/asyncLoadAll-315.smali
+com/snaptube/plugin/PluginId	.method public abstract shouldDownload()Z	1146	methods/com/snaptube/plugin/PluginId/shouldDownload-1146.smali
+com/snaptube/plugin/PluginId	.method public declared-synchronized tryFirstLoad()V	1167	methods/com/snaptube/plugin/PluginId/tryFirstLoad-1167.smali
+com/snaptube/plugin/PluginId	.method public declared-synchronized tryLoadNewestVersion(Lcom/snaptube/plugin/PluginInstallationStatus;)V	1205	methods/com/snaptube/plugin/PluginId/tryLoadNewestVersion-1205.smali
+com/snaptube/plugin/a$a$a	.method public run()V	44	methods/com/snaptube/plugin/a_a_a/run-44.smali
+com/snaptube/plugin/a	.method public final o(Landroid/content/Context;[Lcom/snaptube/plugin/PluginId;Ljava/lang/String;)Z	1208	methods/com/snaptube/plugin/a/o-1208.smali
+com/snaptube/plugin/a	.method public final p(Landroid/content/Context;Lcom/snaptube/plugin/PluginId;Ljava/lang/String;Z)Z	1321	methods/com/snaptube/plugin/a/p-1321.smali
+com/snaptube/plugin/extension/nonlifecycle/metasearch/MetaSearchContentViewModel	.method public final d0(Landroidx/fragment/app/Fragment;Ljava/lang/String;Lcom/snaptube/extractor/pluginlib/models/VideoInfo;)Lrx/c;	788	methods/com/snaptube/plugin/extension/nonlifecycle/metasearch/MetaSearchContentViewModel/d0-788.smali
+com/snaptube/plugin/extension/nonlifecycle/root/ChooseFormatFragment	.method private final F3()V	427	methods/com/snaptube/plugin/extension/nonlifecycle/root/ChooseFormatFragment/F3-427.smali
+com/snaptube/plugin/extension/nonlifecycle/root/ChooseFormatFragment	.method public final S3(Lcom/snaptube/extractor/pluginlib/models/VideoInfo;)V	1783	methods/com/snaptube/plugin/extension/nonlifecycle/root/ChooseFormatFragment/S3-1783.smali
+com/snaptube/plugin/extension/nonlifecycle/root/ChooseFormatFragment	.method public final v3(Lcom/snaptube/extractor/pluginlib/models/VideoInfo;)V	2853	methods/com/snaptube/plugin/extension/nonlifecycle/root/ChooseFormatFragment/v3-2853.smali
+com/snaptube/plugin/extension/nonlifecycle/root/ChooseFormatViewModel$b	.method public final d(Ljava/lang/String;)Z	169	methods/com/snaptube/plugin/extension/nonlifecycle/root/ChooseFormatViewModel_b/d-169.smali
+com/snaptube/premium/action/d	.method public static s(Ljava/lang/String;Ljava/lang/String;ZLcom/snaptube/premium/action/OpenMediaFileAction$From;Z)Z	821	methods/com/snaptube/premium/action/d/s-821.smali
+o/do0	.method public final g(Lcom/snaptube/extractor/pluginlib/models/VideoInfo;Ljava/lang/String;Lo/oy8;)V	338	methods/o/do0/g-338.smali
+o/fs2	.method public static final f(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Lrx/c;	221	methods/o/fs2/f-221.smali
+o/fs2	.method public final H(Lcom/snaptube/extractor/pluginlib/models/VideoInfo;Lo/uj8$b;Lo/y05;)Lo/uj8$b;	1919	methods/o/fs2/H-1919.smali
+o/hg7	.method public static final a(Ljava/lang/String;)Z	118	methods/o/hg7/a-118.smali
+o/i64	.method public g(Landroid/support/v4/media/session/MediaSessionCompat$QueueItem;ZJLandroid/os/Bundle;ZZZ)V	357	methods/o/i64/g-357.smali
+o/kz5	.method static constructor <clinit>()V	12	methods/o/kz5/_clinit_-12.smali
+o/kz5	.method public static final a(Ljava/lang/ClassLoader;)V	38	methods/o/kz5/a-38.smali
+o/pf5	.method public synthetic constructor <init>(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;)V	13	methods/o/pf5/_init_-13.smali
+o/pf5	.method public final onClick(Landroid/view/View;)V	25	methods/o/pf5/onClick-25.smali
+o/qf5	.method public final onClick(Landroid/view/View;)V	25	methods/o/qf5/onClick-25.smali
+o/rf5	.method public synthetic constructor <init>(Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a;Landroid/app/Activity;)V	15	methods/o/rf5/_init_-15.smali
+o/rf5	.method public final run()V	29	methods/o/rf5/run-29.smali
+o/xb2	.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)V	25	methods/o/xb2/_init_-25.smali
+o/xb9	.method public static h(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Class;	33	methods/o/xb9/h-33.smali
+com/snaptube/premium/activity/ExploreActivity$f	.method public call()V	36	methods/com/snaptube/premium/activity/ExploreActivity_f/call-36.smali
+com/snaptube/premium/app/PhoenixApplication	.method public static E()Lcom/snaptube/media/MediaFileScanner;	391	methods/com/snaptube/premium/app/PhoenixApplication/E-391.smali
+com/snaptube/premium/fragment/VideoWebViewFragment	.method private F4(Ljava/lang/String;)V	343	methods/com/snaptube/premium/fragment/VideoWebViewFragment/F4-343.smali
+com/snaptube/premium/fragment/VideoWebViewFragment	.method public static W3(Ljava/lang/String;)Z	734	methods/com/snaptube/premium/fragment/VideoWebViewFragment/W3-734.smali
+com/snaptube/premium/fragment/VideoWebViewFragment	.method public final b5(Ljava/lang/String;)V	4428	methods/com/snaptube/premium/fragment/VideoWebViewFragment/b5-4428.smali
+com/snaptube/premium/manager/SearchHistoryManager	.method public final h(Ljava/lang/String;)Z	451	methods/com/snaptube/premium/manager/SearchHistoryManager/h-451.smali
+com/snaptube/premium/preview/audio/viewmodel/AudioPreviewViewModel$getMetaFromPlayId$2	.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;	173	methods/com/snaptube/premium/preview/audio/viewmodel/AudioPreviewViewModel_getMetaFromPlayId_2/invokeSuspend-173.smali
+com/snaptube/premium/preview/bar/MusicBarFragment$getPlaylistIdByFilePath$2	.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;	174	methods/com/snaptube/premium/preview/bar/MusicBarFragment_getPlaylistIdByFilePath_2/invokeSuspend-174.smali
+com/snaptube/premium/search/HotQueryFragment$showClipboardPrompt$1	.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;	241	methods/com/snaptube/premium/search/HotQueryFragment_showClipboardPrompt_1/invokeSuspend-241.smali
+com/snaptube/premium/search/viewmodel/ClipboardLinkViewModel$extractThumbnail$3	.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;	218	methods/com/snaptube/premium/search/viewmodel/ClipboardLinkViewModel_extractThumbnail_3/invokeSuspend-218.smali
+com/snaptube/premium/search/viewmodel/ClipboardLinkViewModel	.method public final e0(Ljava/lang/String;)Z	341	methods/com/snaptube/premium/search/viewmodel/ClipboardLinkViewModel/e0-341.smali
+com/snaptube/premium/utils/CopyLinkDownloadUtils	.method public final a(Ljava/lang/String;)Z	157	methods/com/snaptube/premium/utils/CopyLinkDownloadUtils/a-157.smali
+com/snaptube/premium/webview/a	.method public final g(Ljava/lang/String;)V	150	methods/com/snaptube/premium/webview/a/g-150.smali
+com/snaptube/premium/webview/a	.method public j(Landroid/webkit/WebView;Ljava/lang/String;)V	230	methods/com/snaptube/premium/webview/a/j-230.smali
+com/snaptube/premium/webview/c	.method public constructor <init>(Landroid/os/Handler;Lcom/snaptube/dataadapter/IYouTubeDataAdapter;)V	35	methods/com/snaptube/premium/webview/c/_init_-35.smali
+com/snaptube/premium/webview/c	.method public B(Landroid/content/Context;Landroid/webkit/WebView;)V	95	methods/com/snaptube/premium/webview/c/B-95.smali
+com/snaptube/search/b	.method public final t()Lo/ej3;	1325	methods/com/snaptube/search/b/t-1325.smali
+com/snaptube/taskManager/notification/TaskReceiver	.method public static synthetic k(JLandroid/content/Context;Landroid/content/Intent;)V	88	methods/com/snaptube/taskManager/notification/TaskReceiver/k-88.smali
+com/snaptube/taskManager/task/video/AdditionExtractManager	.method public final d(Lcom/snaptube/taskManager/datasets/TaskInfo;)Lrx/c;	106	methods/com/snaptube/taskManager/task/video/AdditionExtractManager/d-106.smali
+com/snaptube/taskManager/task/video/g	.method public final B1(Z)Lrx/c;	857	methods/com/snaptube/taskManager/task/video/g/B1-857.smali
+com/snaptube/taskManager/task/video/g	.method public final u1(Lcom/snaptube/extractor/pluginlib/models/VideoInfo;Lcom/snaptube/extractor/pluginlib/models/Format;I)Lrx/c;	4398	methods/com/snaptube/taskManager/task/video/g/u1-4398.smali
+com/wandoujia/download/rpc/f$g	.method public run()V	81	methods/com/wandoujia/download/rpc/f_g/run-81.smali
+com/wandoujia/feedback/model/FeedbackCustomId$commonNameIdMap$2	.method public final invoke()Ljava/util/HashMap;	86	methods/com/wandoujia/feedback/model/FeedbackCustomId_commonNameIdMap_2/invoke-86.smali
+o/dv8	.method public D(Ljava/lang/ClassLoader;)Z	32	methods/o/dv8/D-32.smali
+o/fn0	.method public final c(Ljava/lang/String;Landroid/os/Bundle;Landroid/view/View;Ljava/lang/Runnable;)V	74	methods/o/fn0/c-74.smali
+o/k08	.method public final z(Lcom/snaptube/taskManager/task/TaskError;Ljava/lang/String;Ljava/lang/String;I)V	2091	methods/o/k08/z-2091.smali
+o/kh2	.method public d()Landroid/os/Bundle;	287	methods/o/kh2/d-287.smali
+o/nd2	.method public static a(Ljava/lang/String;)Ljava/lang/ClassLoader;	18	methods/o/nd2/a-18.smali
+o/pz	.method public run()V	19	methods/o/pz/run-19.smali
+o/rt1	.method public static n(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V	950	methods/o/rt1/n-950.smali
+o/y56	.method public static f(Ljava/lang/String;)Lrx/c;	338	methods/o/y56/f-338.smali
+net/pubnative/mediation/config/PubnativeConfigManager	.method private shouldDownloadConfig()Z	709	methods/net/pubnative/mediation/config/PubnativeConfigManager/shouldDownloadConfig-709.smali
+net/pubnative/mediation/config/PubnativeConfigManager	.method public declared-synchronized downloadConfig(Lnet/pubnative/mediation/config/model/PubnativeConfigRequestModel;)V	1217	methods/net/pubnative/mediation/config/PubnativeConfigManager/downloadConfig-1217.smali
