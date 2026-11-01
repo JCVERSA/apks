@@ -1,0 +1,26 @@
+{
+  "scope": "Temporary GitHub Actions emulator only; fresh installs; public open-movie tests; no accounts",
+  "test_cases": [
+    {
+      "tag": "dailymotion-video",
+      "url": "https://www.dailymotion.com/video/x80bs9c",
+      "prefer": "video"
+    },
+    {
+      "tag": "dailymotion-audio",
+      "url": "https://www.dailymotion.com/video/x80bs9c",
+      "prefer": "audio"
+    },
+    {
+      "tag": "vimeo-video",
+      "url": "https://vimeo.com/1084537",
+      "prefer": "video"
+    }
+  ],
+  "variants": {
+    "original": "RUNTIME_EVIDENCE_COLLECTED",
+    "revision5": "RUNTIME_EVIDENCE_COLLECTED"
+  },
+  "status": "EVIDENCE_COLLECTED_REVIEW_REQUIRED",
+  "note": "A collected run is not a pass/fail verdict; inspect UI, task DB, logs and media metadata."
+}
