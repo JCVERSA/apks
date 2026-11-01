@@ -1,0 +1,13 @@
+=== plugin warning evidence wrapper ===
+Sun Nov  1 05:44:23 UTC 2026
+APK=\
+OUT=/home/runner/work/_temp/plugin-warning-runtime
+PLUGIN_DIR=/home/runner/work/_temp/plugin-warning-plugins
+ls: cannot access '\': No such file or directory
+List of devices attached
+emulator-5554          device product:sdk_gphone64_x86_64 model:sdk_gphone64_x86_64 device:emu64xa transport_id:1
+
+=== python script ===
+{"t": 1793511866.944, "kind": "install", "rc": 1, "output": "Performing Streamed Install\nadb: filename doesn't end .apk or .apex: \\\n"}
+install failed
+=== python exit code: 1 ===
