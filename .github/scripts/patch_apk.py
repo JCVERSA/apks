@@ -36,14 +36,20 @@ W25_BODY = [
     "return-object v0",
 ]
 
-# Revision 4: keep the server-delivered extractor plugin functional, but resolve
-# only the official-warning / signature-gate classes from the patched host app.
-# This avoids revision 3's download regression while still suppressing the popup.
+# Revision 5: keep the server-delivered extractor plugin functional, but resolve
+# the whole official-warning / signature-hash package from the patched host app.
+# Also make the host signature-hash helper return the embedded official cert hash,
+# dismiss any residual warning dialog, and block the infomobi ad plugin.
 JZ5_WARNING_HOST_BODY = [
     ".locals 2",
     "",
-    'const-string v0, "com.snaptube.extractor.pluginlib.piratical.OfficialWarningDialog"',
+    'const-string v0, "com.snaptube.extractor.pluginlib.piratical."',
     "invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z",
+    "move-result v0",
+    "if-nez v0, :warning_host",
+    "",
+    'const-string v0, "o.xl"',
+    "invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z",
     "move-result v0",
     "if-nez v0, :warning_host",
     "",
@@ -208,6 +214,66 @@ PATCHES = [
     },
 
     {
+        "id": "official_signature_hash_return_embedded_cert",
+        "class": "o/xl",
+        "header": ".method public static c(Landroid/content/Context;)Ljava/lang/String;",
+        "body": [
+            ".locals 1",
+            "",
+            'const-string v0, "be135353437d704f3a37e2b413d040a5ddff4f19"',
+            "return-object v0",
+        ],
+        "reason": "Return the embedded official wandoujia certificate SHA-1 so host/plugin signature comparisons no longer classify this authorized local copy as unofficial.",
+    },
+    {
+        "id": "plugin_context_check_official_warning_void",
+        "class": "com/snaptube/extractor/pluginlib/utils/PluginContextUtil",
+        "header": ".method private static checkOfficialWarning()V",
+        "body": VOID_BODY,
+        "reason": "Do not schedule the host-side official-warning/guide-image task when the plugin context is initialized.",
+    },
+    {
+        "id": "plugin_context_warning_runnable_void",
+        "class": "com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a",
+        "header": ".method public a()V",
+        "body": VOID_BODY,
+        "reason": "Neutralize the scheduled official-warning runnable itself, including guide-image prefetch.",
+    },
+    {
+        "id": "extractor_warning_helper_x_false",
+        "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog",
+        "header": ".method public static final x(Landroid/content/Context;)Z",
+        "body": FALSE_BODY,
+        "reason": "Directly disable the public official-warning check used by PluginContextUtil, not only its nested helper.",
+    },
+    {
+        "id": "official_warning_dialog_onstart_dismiss",
+        "class": "com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog",
+        "header": ".method public onStart()V",
+        "body": [
+            ".locals 0",
+            "",
+            "invoke-super {p0}, Landroid/app/Dialog;->onStart()V",
+            "invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V",
+            "return-void",
+        ],
+        "reason": "If any code path still constructs and shows the host warning dialog, dismiss it immediately instead of blocking extraction.",
+    },
+    {
+        "id": "ad_infomobi_plugin_load_false",
+        "class": "com/snaptube/plugin/PluginId$5",
+        "header": ".method public load(Ljava/lang/String;)Z",
+        "body": FALSE_BODY,
+        "reason": "Do not initialize the downloaded infomobi advertising plugin.",
+    },
+    {
+        "id": "ad_infomobi_plugin_download_false",
+        "class": "com/snaptube/plugin/PluginId$5",
+        "header": ".method public shouldDownload()Z",
+        "body": FALSE_BODY,
+        "reason": "Do not download the infomobi advertising plugin.",
+    },
+    {
         "id": "site_extractor_classloader_warning_host_jz5",
         "class": "o/jz5",
         "header": ".method public findClass(Ljava/lang/String;)Ljava/lang/Class;",
@@ -370,8 +436,9 @@ def verify_roundtrip_method(redecoded: Path, patch: dict) -> dict:
     elif patch["id"] in {"site_extractor_classloader_warning_host_jz5", "site_extractor_classloader_warning_host_lz5"}:
         field = "Lo/jz5;->b:Ljava/lang/ClassLoader;" if patch["class"] == "o/jz5" else "Lo/lz5;->a:Ljava/lang/ClassLoader;"
         ok = all(token in body for token in (
-            'const-string v0, "com.snaptube.extractor.pluginlib.piratical.OfficialWarningDialog"',
+            'const-string v0, "com.snaptube.extractor.pluginlib.piratical."',
             "Ljava/lang/String;->startsWith(Ljava/lang/String;)Z",
+            'const-string v0, "o.xl"',
             'const-string v0, "o.xi7"',
             "Ljava/lang/String;->equals(Ljava/lang/Object;)Z",
             'const-string v0, "com.snaptube.premium.dialog.PiraticalApkWarningDialogFragment"',
@@ -381,6 +448,10 @@ def verify_roundtrip_method(redecoded: Path, patch: dict) -> dict:
             ".catch Ljava/lang/ClassNotFoundException;",
             "return-object p1",
         ))
+    elif patch["id"] == "official_signature_hash_return_embedded_cert":
+        ok = 'const-string v0, "be135353437d704f3a37e2b413d040a5ddff4f19"' in body and "return-object v0" in body
+    elif patch["id"] == "official_warning_dialog_onstart_dismiss":
+        ok = "invoke-super {p0}, Landroid/app/Dialog;->onStart()V" in body and "invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V" in body and "return-void" in body
     elif header.endswith(")V"):
         ok = "return-void" in body and "invoke-" not in body
     elif header.endswith(")Z"):
@@ -532,16 +603,16 @@ def main() -> None:
         "original": {"path": str(apk), "sha256": original_hash, "size_bytes": apk.stat().st_size, "zip_members": original_members, "metadata": orig_meta},
         "patched": {"path": str(patched), "filename": patched.name, "sha256": patched_hash, "size_bytes": patched.stat().st_size, "zip_members": patched_members, "metadata": patched_meta},
         "patched_method_count": len(PATCHES),
-        "revision": 4,
-        "scope": ["disable app ad gates", "block forced update", "remove official-app warning at video extraction and upgrade/crack paths", "restore server-delivered SITE_EXTRACTOR plugin updates while resolving only warning/signature classes from the patched host"],
-        "official_warning_note": "Revision 3 disabled SITE_EXTRACTOR download+load to stop the server plugin re-delivering the official-app popup. Isolated emulator A/B evidence showed the original app downloaded site_extractor_2.24.505 while revision 3 did not, and the user reported downloads starting then failing on multiple sites. Revision 4 therefore restores normal SITE_EXTRACTOR download/load and instead patches the plugin DexClassLoaders (o/jz5, o/lz5) so only OfficialWarningDialog, o.xi7, and PiraticalApkWarningDialogFragment classes resolve from the patched host; extractor/transfer classes still load from the server plugin. All revision-1/2 ad/force-update/warning patches remain, xi7 is forced false, the extractor warning helper (c/i/j) is disabled, and EXIT_FOR_CRACK toast/exit is neutralized. The embedded google/origin.apk signature oracle is left byte-for-byte intact. Build/static verification only; runtime emulator verification is tracked separately.",
+        "revision": 5,
+        "scope": ["disable app ad gates", "block forced update", "remove official-app warning at video extraction and upgrade/crack paths", "restore server-delivered SITE_EXTRACTOR plugin updates while resolving warning/signature-hash classes from the patched host", "block infomobi ad plugin download/load"],
+        "official_warning_note": "Revision 3 disabled SITE_EXTRACTOR download+load and caused a download regression. Revision 4 restored the plugin and host-resolved only OfficialWarningDialog/xi7/PiraticalApkWarningDialogFragment, but isolated emulator A/B still showed the official-app screen. Revision 5 keeps SITE_EXTRACTOR download/load enabled, broadens host-first resolution to the whole com.snaptube.extractor.pluginlib.piratical package plus o.xl/o.xi7, makes o.xl.c return the embedded official wandoujia certificate SHA-1, disables PluginContextUtil official-warning scheduling, forces OfficialWarningDialog.x false, dismisses any residual host warning dialog in onStart, and blocks the infomobi ad plugin. Extractor/transfer classes still load child-first from the server plugin. The embedded google/origin.apk signature oracle is byte-for-byte intact. Build/static verification only; runtime emulator verification is tracked separately.",
         "changed_smali_files": actually_changed,
         "identity_checks": identity_checks,
         "roundtrip_checks_ok": all(r["ok"] for r in roundtrip),
         "signature_schemes": {"v1": True, "v2": True, "v3": True},
         "zipalign": {"four_byte": True, "sixteen_kb_pages": True},
         "signing_note": "Signed with a NEW ephemeral key. Android will refuse to install this over an existing SnapTube install signed with a different key; uninstalling first would erase app data. No device install was performed.",
-        "device_testing": "NOT PERFORMED (requires separate approval).",
+        "device_testing": "Separate isolated GitHub Actions emulator A/B runs are tracked under analysis/remote/emulator-ab-*; this build performs no device actions.",
     }
     (report / "build-report.json").write_text(json.dumps(build_report, indent=2) + "\n")
     log(json.dumps(build_report, indent=2))
