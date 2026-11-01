@@ -1,0 +1,163 @@
+11-01 04:30:57.159  5901  5901 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-01 04:30:57.521  5901  5901 E Reflection: java.lang.reflect.InvocationTargetException
+11-01 04:30:57.521  5901  5901 E Reflection: 	at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1403)
+11-01 04:30:57.521  5901  5901 E Reflection: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2416)
+11-01 04:30:57.521  5901  5901 E Reflection: Caused by: java.lang.NoSuchMethodException: dalvik.system.VMRuntime.setHiddenApiExemptions [class [Ljava.lang.String;]
+11-01 04:30:57.523  5901  5950 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e916400000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pref.switches.crc]
+11-01 04:30:57.516  5901  5901 W naptube.premium: type=1400 audit(0.0:58): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=759 scontext=u:r:untrusted_app:s0:c210,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=com.snaptube.premium
+11-01 04:30:57.544  5901  5901 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e911a04000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/com.snaptube.premium_preferences.crc]
+11-01 04:30:57.546  5901  5955 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90ede5000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pref_id_day_times.crc]
+11-01 04:30:57.516  5901  5901 W naptube.premium: type=1400 audit(0.0:59): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=759 scontext=u:r:untrusted_app:s0:c210,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=com.snaptube.premium
+11-01 04:30:57.516  5901  5901 W naptube.premium: type=1400 audit(0.0:60): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=759 scontext=u:r:untrusted_app:s0:c210,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=com.snaptube.premium
+11-01 04:30:57.560  5901  5960 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90ea25000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/com.snaptube.premium.sensor]
+11-01 04:30:57.561  5901  5960 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90ea24000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/com.snaptube.premium.sensor.crc]
+11-01 04:30:57.568  5901  5965 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90e974000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pref.ad_log_attribution_cache.crc]
+11-01 04:30:57.571  5901  5949 D LaunchStart-doInitQueue: run PluginIdInitTask
+11-01 04:30:57.589  5901  5955 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x83], /data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM
+11-01 04:30:57.589  5901  5955 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90e7f4000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM]
+11-01 04:30:57.590  5901  5955 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x84], /data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM.crc
+11-01 04:30:57.590  5901  5955 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90e7f3000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM.crc]
+11-01 04:30:57.597  5901  5955 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90e8f4000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/com.sensorsdata.analytics.android.sdk.SensorsDataAPI]
+11-01 04:30:57.624  5901  5955 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90c3f5000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/CookiePrefsFile]
+11-01 04:30:57.624  5901  5955 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90c3f4000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/CookiePrefsFile.crc]
+11-01 04:30:57.666  5901  5988 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90afb4000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/specialCharacter/[long-token-redacted]]
+11-01 04:30:57.682  5901  5960 W System.err: java.lang.SecurityException: getSubscriberIdForSubscriber: The uid 10210 does not meet the requirements to access device identifiers.
+11-01 04:30:57.682  5901  5960 W System.err: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3242)
+11-01 04:30:57.683  5901  5960 W System.err: 	at android.os.Parcel.createException(Parcel.java:3226)
+11-01 04:30:57.683  5901  5960 W System.err: 	at android.os.Parcel.readException(Parcel.java:3209)
+11-01 04:30:57.683  5901  5960 W System.err: 	at android.os.Parcel.readException(Parcel.java:3151)
+11-01 04:30:57.685  5901  5955 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90af85000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/com.google.firebase.crashlytics]
+11-01 04:30:57.686  5901  5955 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90af84000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/com.google.firebase.crashlytics.crc]
+11-01 04:30:57.733  5901  5901 I cr_CombinedPProvider: #registerProvider() provider:WV.V7@f73360f isPolicyCacheEnabled:false policyProvidersSize:0
+11-01 04:30:57.737  5901  5999 W FirebaseCrashlytics: Failed to initialize Crashlytics NDK for session [long-token-redacted]
+11-01 04:30:57.750  5901  5901 I cr_CombinedPProvider: #linkNativeInternal() 1
+11-01 04:30:57.752  5901  5901 I cr_CombinedPProvider: #onSettingsAvailable() 0
+11-01 04:30:57.752  5901  5901 I cr_CombinedPProvider: #flushPolicies()
+11-01 04:30:57.998  5901  5901 D PluginGlobalConfig: reflectAppContext: invoke=com.snaptube.premium.app.PhoenixApplication@16c295c
+11-01 04:30:57.999  5901  5978 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-01 04:30:58.164  5901  5976 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x12e], /data/user/0/com.snaptube.premium/files/mmkv/download.event.persistent
+11-01 04:30:58.164  5901  5976 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e902885000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/download.event.persistent]
+11-01 04:30:58.165  5901  5976 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x12f], /data/user/0/com.snaptube.premium/files/mmkv/download.event.persistent.crc
+11-01 04:30:58.167  5901  5976 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e902884000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/download.event.persistent.crc]
+11-01 04:30:58.167  5901  5976 I MMKV    : <MMKV_IO.cpp:84::loadFromFile> loading [download.event.persistent] with 0 actual size, file size 4096, InterProcess 0, meta info version:0
+11-01 04:30:58.167  5901  5976 I MMKV    : <MMKV_IO.cpp:133::loadFromFile> loaded [download.event.persistent] with 0 key-values
+11-01 04:30:58.244  5901  5986 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8fd425000], oldPtr [0x73e8ff241000], [/data/user/0/com.snaptube.premium/files/mmkv/pref.fan]
+11-01 04:30:58.264  5901  5986 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8f9de0000], oldPtr [0x73e8fd425000], [/data/user/0/com.snaptube.premium/files/mmkv/pref.fan]
+11-01 04:30:58.296  5901  6099 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8ff244000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pag_sp_prop_switch]
+11-01 04:30:58.309  5901  6106 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8ff205000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/app_set_id_storage]
+11-01 04:30:58.310  5901  6106 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8ff204000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/app_set_id_storage.crc]
+11-01 04:30:58.321  5901  6111 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8ff164000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/ss_app_config]
+11-01 04:30:58.498  5901  6143 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:58.514  5901  6143 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:58.534  5901  6143 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:58.639  5901  6143 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:58.652  5901  6143 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:58.668  5901  6143 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:58.692  5901  6143 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:58.754  5901  6143 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:58.771  5901  6143 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:58.799  5901  6113 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:58.812  5901  5943 I HWUI    : Davey! duration=900ms; Flags=1, FrameTimelineVsyncId=16518, IntendedVsync=548518340773, Vsync=548701674099, InputEventId=0, HandleInputStart=548716565631, AnimationStart=548716566192, PerformTraversalsStart=548716580518, DrawStart=548843593720, FrameDeadline=548535007439, FrameInterval=548716430338, FrameStartTime=16666666, SyncQueued=548844971914, SyncStart=548845212932, IssueDrawCommandsStart=548845505047, SwapBuffers=549242527358, FrameCompleted=549419567899, DequeueBufferDuration=3507, QueueBufferDuration=146042, GpuCompleted=549419567899, SwapBuffersCompleted=549416573654, DisplayPresentTime=0, CommandSubmissionCompleted=549242527358, 
+11-01 04:30:58.841  5901  6113 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:58.944  5901  6174 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e90e894000], oldPtr [0x73e90e93f000], [/data/user/0/com.snaptube.premium/files/mmkv/pref.fan]
+11-01 04:30:58.960  5901  6174 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8fd87a000], oldPtr [0x73e90e894000], [/data/user/0/com.snaptube.premium/files/mmkv/pref.fan]
+11-01 04:30:58.967  5901  6113 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:59.036  5901  6113 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:59.123  5901  6113 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:59.158  5901  6128 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:59.161  5901  6113 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:59.671  5901  6196 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:30:59.744  5901  6194 I HWUI    : Davey! duration=802ms; Flags=1, FrameTimelineVsyncId=16669, IntendedVsync=549485007401, Vsync=549585007397, InputEventId=0, HandleInputStart=549586928397, AnimationStart=549586928788, PerformTraversalsStart=549586928958, DrawStart=549587412952, FrameDeadline=549501674067, FrameInterval=549586745105, FrameStartTime=16666666, SyncQueued=549588530820, SyncStart=549590666759, IssueDrawCommandsStart=549590751067, SwapBuffers=550031353705, FrameCompleted=550289598991, DequeueBufferDuration=4208, QueueBufferDuration=798522, GpuCompleted=550289598991, SwapBuffersCompleted=550274201995, DisplayPresentTime=0, CommandSubmissionCompleted=550031353705, 
+11-01 04:30:59.776  5901  6194 I HWUI    : Davey! duration=888ms; Flags=1, FrameTimelineVsyncId=16669, IntendedVsync=549485007401, Vsync=549585007397, InputEventId=0, HandleInputStart=549586928397, AnimationStart=549586928788, PerformTraversalsStart=549586928958, DrawStart=550274719091, FrameDeadline=549501674067, FrameInterval=549586745105, FrameStartTime=16666666, SyncQueued=550274724251, SyncStart=550274936948, IssueDrawCommandsStart=550275055729, SwapBuffers=550275890978, FrameCompleted=550373887321, DequeueBufferDuration=2305, QueueBufferDuration=450912, GpuCompleted=550373816599, SwapBuffersCompleted=550373887321, DisplayPresentTime=0, CommandSubmissionCompleted=550275890978, 
+11-01 04:31:00.334  5901  6189 D TrafficStats: tagSocket(400) with statsTag=0xffffffff, statsUid=-1
+11-01 04:31:00.500  5901  6205 W naptube.premium: Accessing hidden method Landroid/os/storage/StorageVolume;->getPath()Ljava/lang/String; (max-target-q,test-api, reflection, denied)
+11-01 04:31:00.500  5901  6205 W naptube.premium: If this is a platform test consider enabling VMRuntime.ALLOW_TEST_API_ACCESS change id for this package.
+11-01 04:31:00.500  5901  6205 W System.err: java.lang.NoSuchMethodException: android.os.storage.StorageVolume.getPath []
+11-01 04:31:00.500  5901  6205 W System.err: 	at java.lang.Class.getMethod(Class.java:2950)
+11-01 04:31:00.500  5901  6205 W System.err: 	at java.lang.Class.getMethod(Class.java:2450)
+11-01 04:31:00.500  5901  6205 W System.err: 	at o.hs7.p(Unknown Source:67)
+11-01 04:31:00.500  5901  6205 W System.err: 	at o.hs7.g(Unknown Source:0)
+11-01 04:31:00.500  5901  6205 W System.err: 	at o.hs7$a.run(Unknown Source:7)
+11-01 04:31:00.500  5901  6205 W System.err: 	at o.y48.j(Unknown Source:23)
+11-01 04:31:00.500  5901  6205 W System.err: 	at o.y48.l(Unknown Source:0)
+11-01 04:31:00.500  5901  6205 W System.err: 	at o.hs7.c(Unknown Source:5)
+11-01 04:31:00.500  5901  6205 W System.err: 	at o.hs7.<init>(Unknown Source:53)
+11-01 04:31:00.500  5901  6205 W System.err: 	at o.hs7.n(Unknown Source:13)
+11-01 04:31:00.500  5901  6205 W System.err: 	at o.rl5.run(Unknown Source:4)
+11-01 04:31:00.500  5901  6205 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-01 04:31:00.500  5901  6205 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-01 04:31:00.500  5901  6205 W System.err: 	at java.lang.Thread.run(Thread.java:1012)
+11-01 04:31:00.700  5901  5901 W RxDB-4  : type=1400 audit(0.0:61): avc:  denied  { ioctl } for  path="/storage/emulated/0/snaptube/db/app_database.db" dev="fuse" ino=65579 ioctlcmd=0xf50c scontext=u:r:untrusted_app:s0:c210,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=com.snaptube.premium
+11-01 04:31:00.928  5901  5901 W RxDB-4  : type=1400 audit(0.0:62): avc:  denied  { ioctl } for  path="/storage/emulated/0/snaptube/db/app_database.db" dev="fuse" ino=65579 ioctlcmd=0xf50c scontext=u:r:untrusted_app:s0:c210,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=com.snaptube.premium
+11-01 04:31:00.980  5901  5901 W RxDB-4  : type=1400 audit(0.0:63): avc:  denied  { ioctl } for  path="/storage/emulated/0/snaptube/db/app_database.db" dev="fuse" ino=65579 ioctlcmd=0xf50c scontext=u:r:untrusted_app:s0:c210,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=com.snaptube.premium
+11-01 04:31:01.353  5901  6116 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8fd640000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/[long-token-redacted]]
+11-01 04:31:01.403  5901  5976 I MMKV    : <MMKV.cpp:1170::sync> MMKV::sync, SyncFlag = 0
+11-01 04:31:01.403  5901  5976 I MMKV    : <MMKV.cpp:1170::sync> MMKV::sync, SyncFlag = 0
+11-01 04:31:01.881  5901  6279 I RequestAddCookies: Cookie store not available in HTTP context
+11-01 04:31:02.037  5901  6279 I ResponseProcessCookies: Cookie store not available in HTTP context
+11-01 04:31:02.216  5901  6304 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.video_search_engine_1.4.70.apk to null
+11-01 04:31:02.218  5901  6049 W ziparchive: Unable to open '/data/user/0/com.snaptube.premium/app_plugins/video_search_engine_1.4.70/video_search_engine_1.4.70.dm': No such file or directory
+11-01 04:31:02.438  5901  6279 I RequestAddCookies: Cookie store not available in HTTP context
+11-01 04:31:02.446  5901  6279 I ResponseProcessCookies: Cookie store not available in HTTP context
+11-01 04:31:02.682  5901  6304 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.site_extractor_2.24.505.apk to null
+11-01 04:31:02.716  5901  6304 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.site_extractor_2.24.505.apk to null
+11-01 04:31:02.905  5901  6052 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8fd400000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/slog_record.crc]
+11-01 04:31:02.907  5901  6312 I RequestAddCookies: Cookie store not available in HTTP context
+11-01 04:31:02.970  5901  6312 I ResponseProcessCookies: Cookie store not available in HTTP context
+11-01 04:31:03.414  5901  6304 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.ffmpeg_6.0.12.apk to null
+11-01 04:31:03.416  5901  6215 I MMKV    : <MMKV.cpp:1170::sync> MMKV::sync, SyncFlag = 0
+11-01 04:31:03.419  5901  6304 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.ffmpeg_6.0.12.apk to null
+11-01 04:31:03.654  5901  6279 I RequestAddCookies: Cookie store not available in HTTP context
+11-01 04:31:04.154  5901  6279 I ResponseProcessCookies: Cookie store not available in HTTP context
+11-01 04:31:04.277  5901  6304 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.youtube-data-adapter_1.1.101.apk to null
+11-01 04:31:04.282  5901  6304 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.youtube-data-adapter_1.1.101.apk to null
+11-01 04:31:04.296  5901  6333 D PluginGlobalConfig: reflectAppContext: invoke=com.snaptube.premium.app.PhoenixApplication@16c295c
+11-01 04:31:04.489  5901  6312 I RequestAddCookies: Cookie store not available in HTTP context
+11-01 04:31:04.739  5901  6312 I ResponseProcessCookies: Cookie store not available in HTTP context
+11-01 04:31:04.843  5901  6344 W ziparchive: Unable to open '/data/user/0/com.snaptube.premium/app_plugins/ad_infomobi_1.0.149/ad_infomobi_1.0.149.dm': No such file or directory
+11-01 04:31:04.846  5901  6304 D MediaScannerConnection: Scanned /data/user/0/com.snaptube.premium/files/plugin/com.snaptube.premium.plugins.ad_infomobi_1.0.149.apk to null
+11-01 04:31:04.858  5901  5901 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x1fb], /data/user/0/com.snaptube.premium/files/mmkv/pref.plugin_infomobi
+11-01 04:31:04.858  5901  5901 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8ff191000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pref.plugin_infomobi]
+11-01 04:31:04.860  5901  5901 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x1f9], /data/user/0/com.snaptube.premium/files/mmkv/pref.plugin_infomobi.crc
+11-01 04:31:04.860  5901  5901 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8ff190000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pref.plugin_infomobi.crc]
+11-01 04:31:04.860  5901  5901 I MMKV    : <MMKV_IO.cpp:84::loadFromFile> loading [pref.plugin_infomobi] with 0 actual size, file size 4096, InterProcess 0, meta info version:0
+11-01 04:31:04.860  5901  5901 I MMKV    : <MMKV_IO.cpp:133::loadFromFile> loaded [pref.plugin_infomobi] with 0 key-values
+11-01 04:31:04.860  5901  5901 I MMKV    : <MMKV_IO.cpp:515::writeActualSize> [pref.plugin_infomobi] increase sequence to 1, crc 3583624194, actualSize 4
+11-01 04:31:05.169  5901  6062 W System.err: 	at com.snaptube.dataadapter.plugin.i.b(SourceFile:9)
+11-01 04:31:05.169  5901  6062 W System.err: 	at com.snaptube.dataadapter.plugin.i.a(SourceFile:54)
+11-01 04:31:05.169  5901  6062 W System.err: 	at com.snaptube.dataadapter.plugin.g.invoke(SourceFile:37)
+11-01 04:31:05.169  5901  6062 W System.err: 	at com.snaptube.dataadapter.plugin.c.e(SourceFile:5)
+11-01 04:31:05.169  5901  6062 W System.err: 	at com.snaptube.dataadapter.plugin.f.invoke(SourceFile:44)
+11-01 04:31:05.480  5901  6103 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:31:05.838  5901  5901 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x73e8ff245000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/filtered_card_hash_code.crc]
+11-01 04:31:06.452  5901  6378 E pangle-encrypt: encrypt exception No implementation found for byte[] com.bytedance.sdk.component.embedapplog.PangleEncryptUtils.ttEncrypt(byte[], int) (tried [long-token-redacted] and [long-token-redacted]) - is the library loaded, e.g. System.loadLibrary?
+11-01 04:31:07.281  5901  6378 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-01 04:31:18.400  5901  5976 I MMKV    : <MMKV.cpp:1170::sync> MMKV::sync, SyncFlag = 0
+11-01 04:31:18.630  5901  5901 W ResourcesCompat: java.lang.UnsupportedOperationException: Failed to resolve attribute at index 0: TypedValue{t=0x2/d=0x7f040121 a=-1}, theme={InheritanceMap=[id=0x7f12018dcom.snaptube.premium:style/P4.Theme.ChooseFormat, id=0x7f12012ccom.snaptube.premium:style/DayNight, id=0x7f1201fecom.snaptube.premium:style/ST.Design, id=0x7f1202c8com.snaptube.premium:style/Theme.AppCompat.DayNight, id=0x7f1202d5com.snaptube.premium:style/Theme.AppCompat.Light, id=0x7f120061com.snaptube.premium:style/Base.Theme.AppCompat.Light, id=0x7f1200a9com.snaptube.premium:style/Base.V28.Theme.AppCompat.Light, id=0x7f1200a6com.snaptube.premium:style/Base.V26.Theme.AppCompat.Light, id=0x7f1200a4com.snaptube.premium:style/Base.V23.Theme.AppCompat.Light, id=0x7f1200a2com.snaptube.premium:style/Base.V22.Theme.AppCompat.Light, id=0x7f120099com.snaptube.premium:style/Base.V21.Theme.AppCompat.Light, id=0x7f1200accom.snaptube.premium:style/Base.V7.Theme.AppCompat.Light, id=0x7f1201b5com.snaptube.premium:style/Platform.AppCompat.Light, id=0x7f1201c0com.snaptube.premium:style/Platform.V25.AppCompat.Light, id=0x1030241android:style/Theme.Material.Light.NoActionBar, id=0x1030237android:style/Theme.Material.Light, id=0x103000candroid:style/Theme.Light, id=0x1030005android:style/Theme], Themes=[com.snaptube.premium:style/P4.Theme.ChooseFormat, forced, com.snaptube.premium:style/Theme.AppCompat.Empty, forced, android:style/Theme.DeviceDefault.Light.DarkActionBar, forced]}
+11-01 04:31:18.630  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment$special$$inlined$viewBinding$1.invoke(Unknown Source:27)
+11-01 04:31:18.630  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment$special$$inlined$viewBinding$1.invoke(Unknown Source:0)
+11-01 04:31:18.630  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment.p3(Unknown Source:2)
+11-01 04:31:18.637  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment.onCreateView(Unknown Source:5)
+11-01 04:31:18.699  5901  5901 V CommonPopupView: smoothScrollY, toScrollY=-1554, velocity=0, duration=400
+11-01 04:31:18.861  5901  6209 W okhttp.OkHttpClient: A connection to https://api-event.falconnet.app/[redacted] was leaked. Did you forget to close a response body? To see where this was allocated, set the OkHttpClient logger level to FINE: Logger.getLogger(OkHttpClient.class.getName()).setLevel(Level.FINE);
+11-01 04:31:19.467  5901  6174 I MMKV    : <MMKV_IO.cpp:515::writeActualSize> [pref.fan] increase sequence to 20, crc 1026964163, actualSize 65520
+11-01 04:31:19.739  5901  5901 V CommonPopupView: smoothScrollY, toScrollY=-1857, velocity=0, duration=400
+11-01 04:33:53.214  5901  5901 V CommonPopupView: smoothScrollY, toScrollY=-2340, velocity=0, duration=400
+11-01 04:33:53.263  5901  5901 W ResourcesCompat: java.lang.UnsupportedOperationException: Failed to resolve attribute at index 0: TypedValue{t=0x2/d=0x7f040121 a=-1}, theme={InheritanceMap=[id=0x7f12018dcom.snaptube.premium:style/P4.Theme.ChooseFormat, id=0x7f12012ccom.snaptube.premium:style/DayNight, id=0x7f1201fecom.snaptube.premium:style/ST.Design, id=0x7f1202c8com.snaptube.premium:style/Theme.AppCompat.DayNight, id=0x7f1202d5com.snaptube.premium:style/Theme.AppCompat.Light, id=0x7f120061com.snaptube.premium:style/Base.Theme.AppCompat.Light, id=0x7f1200a9com.snaptube.premium:style/Base.V28.Theme.AppCompat.Light, id=0x7f1200a6com.snaptube.premium:style/Base.V26.Theme.AppCompat.Light, id=0x7f1200a4com.snaptube.premium:style/Base.V23.Theme.AppCompat.Light, id=0x7f1200a2com.snaptube.premium:style/Base.V22.Theme.AppCompat.Light, id=0x7f120099com.snaptube.premium:style/Base.V21.Theme.AppCompat.Light, id=0x7f1200accom.snaptube.premium:style/Base.V7.Theme.AppCompat.Light, id=0x7f1201b5com.snaptube.premium:style/Platform.AppCompat.Light, id=0x7f1201c0com.snaptube.premium:style/Platform.V25.AppCompat.Light, id=0x1030241android:style/Theme.Material.Light.NoActionBar, id=0x1030237android:style/Theme.Material.Light, id=0x103000candroid:style/Theme.Light, id=0x1030005android:style/Theme], Themes=[com.snaptube.premium:style/P4.Theme.ChooseFormat, forced, com.snaptube.premium:style/Theme.AppCompat.Empty, forced, android:style/Theme.DeviceDefault.Light.DarkActionBar, forced]}
+11-01 04:33:53.263  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment$special$$inlined$viewBinding$1.invoke(Unknown Source:27)
+11-01 04:33:53.263  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment$special$$inlined$viewBinding$1.invoke(Unknown Source:0)
+11-01 04:33:53.263  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment.p3(Unknown Source:2)
+11-01 04:33:53.263  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment.onCreateView(Unknown Source:5)
+11-01 04:33:53.341  5901  5901 V CommonPopupView: smoothScrollY, toScrollY=-1554, velocity=0, duration=400
+11-01 04:33:53.498  5901  5901 V CommonPopupView: smoothScrollY, toScrollY=-1857, velocity=0, duration=400
+11-01 04:34:49.598  5901  5987 I MMKV    : <MMKV_IO.cpp:515::writeActualSize> [sensorsdata.exit] increase sequence to 10, crc 4165831797, actualSize 286
+11-01 04:36:27.631  5901  5901 V CommonPopupView: smoothScrollY, toScrollY=-2340, velocity=0, duration=400
+11-01 04:36:27.642  5901  5901 W ResourcesCompat: java.lang.UnsupportedOperationException: Failed to resolve attribute at index 0: TypedValue{t=0x2/d=0x7f040121 a=-1}, theme={InheritanceMap=[id=0x7f12018dcom.snaptube.premium:style/P4.Theme.ChooseFormat, id=0x7f12012ccom.snaptube.premium:style/DayNight, id=0x7f1201fecom.snaptube.premium:style/ST.Design, id=0x7f1202c8com.snaptube.premium:style/Theme.AppCompat.DayNight, id=0x7f1202d5com.snaptube.premium:style/Theme.AppCompat.Light, id=0x7f120061com.snaptube.premium:style/Base.Theme.AppCompat.Light, id=0x7f1200a9com.snaptube.premium:style/Base.V28.Theme.AppCompat.Light, id=0x7f1200a6com.snaptube.premium:style/Base.V26.Theme.AppCompat.Light, id=0x7f1200a4com.snaptube.premium:style/Base.V23.Theme.AppCompat.Light, id=0x7f1200a2com.snaptube.premium:style/Base.V22.Theme.AppCompat.Light, id=0x7f120099com.snaptube.premium:style/Base.V21.Theme.AppCompat.Light, id=0x7f1200accom.snaptube.premium:style/Base.V7.Theme.AppCompat.Light, id=0x7f1201b5com.snaptube.premium:style/Platform.AppCompat.Light, id=0x7f1201c0com.snaptube.premium:style/Platform.V25.AppCompat.Light, id=0x1030241android:style/Theme.Material.Light.NoActionBar, id=0x1030237android:style/Theme.Material.Light, id=0x103000candroid:style/Theme.Light, id=0x1030005android:style/Theme], Themes=[com.snaptube.premium:style/P4.Theme.ChooseFormat, forced, com.snaptube.premium:style/Theme.AppCompat.Empty, forced, android:style/Theme.DeviceDefault.Light.DarkActionBar, forced]}
+11-01 04:36:27.642  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment$special$$inlined$viewBinding$1.invoke(Unknown Source:27)
+11-01 04:36:27.642  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment$special$$inlined$viewBinding$1.invoke(Unknown Source:0)
+11-01 04:36:27.642  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment.p3(Unknown Source:2)
+11-01 04:36:27.642  5901  5901 W ResourcesCompat: 	at com.snaptube.plugin.extension.nonlifecycle.root.ChooseFormatFragment.onCreateView(Unknown Source:5)
+11-01 04:36:27.660  5901  5901 V CommonPopupView: smoothScrollY, toScrollY=-1554, velocity=0, duration=400
+11-01 04:36:28.147  5901  5901 V CommonPopupView: smoothScrollY, toScrollY=-1857, velocity=0, duration=400
+11-01 04:36:31.843  5901  5987 I MMKV    : <MMKV_IO.cpp:515::writeActualSize> [sensorsdata.exit] increase sequence to 14, crc 2850070664, actualSize 286
+11-01 04:36:57.875  5901  5987 I MMKV    : <MMKV_IO.cpp:515::writeActualSize> [sensorsdata.exit] increase sequence to 15, crc 1774030407, actualSize 286

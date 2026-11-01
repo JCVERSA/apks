@@ -1,0 +1,444 @@
+[
+  {
+    "t": 1793507456.883,
+    "kind": "install",
+    "rc": 0,
+    "output": "Performing Streamed Install\nSuccess\n"
+  },
+  {
+    "t": 1793507471.576,
+    "kind": "capture",
+    "stage": "launch-0",
+    "visible": [
+      "Viewing full screen",
+      "To exit, swipe down from the top of your screen",
+      "Got it"
+    ]
+  },
+  {
+    "t": 1793507471.604,
+    "kind": "tap",
+    "label": "Got it"
+  },
+  {
+    "t": 1793507475.906,
+    "kind": "capture",
+    "stage": "launch-1",
+    "visible": [
+      "Downloading",
+      "Space song",
+      "5.2MB/s",
+      "77%",
+      "PAR\u00d3DIA | MALVADA - Z\u00c9 FELIPE",
+      "3.1MB/s",
+      "63%",
+      "Eu Navegarei",
+      "3.6MB/s",
+      "25%",
+      "Sendo assim / Muito estranho (Cuida bem de mim)",
+      "2.3MB/s",
+      "69%",
+      "Ready for Love",
+      "6.2MB/s",
+      "50%",
+      "DOWNLOAD",
+      "Simple and fast",
+      "Next \u2192"
+    ]
+  },
+  {
+    "t": 1793507478.231,
+    "kind": "capture",
+    "stage": "prepared",
+    "visible": [
+      "Downloading",
+      "Space song",
+      "5.2MB/s",
+      "77%",
+      "PAR\u00d3DIA | MALVADA - Z\u00c9 FELIPE",
+      "3.1MB/s",
+      "63%",
+      "Eu Navegarei",
+      "3.6MB/s",
+      "25%",
+      "Sendo assim / Muito estranho (Cuida bem de mim)",
+      "2.3MB/s",
+      "69%",
+      "Ready for Love",
+      "6.2MB/s",
+      "50%",
+      "DOWNLOAD",
+      "Simple and fast",
+      "Next \u2192"
+    ]
+  },
+  {
+    "t": 1793507478.231,
+    "kind": "attempt_start",
+    "tag": "dailymotion-video",
+    "url_host": "www.dailymotion.com",
+    "prefer": "video"
+  },
+  {
+    "t": 1793507496.639,
+    "kind": "capture",
+    "stage": "dailymotion-video-shared-0",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507496.639,
+    "kind": "format_not_found",
+    "prefer": "video"
+  },
+  {
+    "t": 1793507498.923,
+    "kind": "capture",
+    "stage": "dailymotion-video-before-download-tap",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507498.923,
+    "kind": "download_button_not_found",
+    "tag": "dailymotion-video"
+  },
+  {
+    "t": 1793507521.299,
+    "kind": "capture",
+    "stage": "dailymotion-video-progress-0",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507543.621,
+    "kind": "capture",
+    "stage": "dailymotion-video-progress-1",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507565.917,
+    "kind": "capture",
+    "stage": "dailymotion-video-progress-2",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507588.211,
+    "kind": "capture",
+    "stage": "dailymotion-video-progress-3",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507610.505,
+    "kind": "capture",
+    "stage": "dailymotion-video-progress-4",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507632.807,
+    "kind": "capture",
+    "stage": "dailymotion-video-progress-5",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507632.829,
+    "kind": "attempt_end",
+    "tag": "dailymotion-video"
+  },
+  {
+    "t": 1793507632.829,
+    "kind": "attempt_start",
+    "tag": "dailymotion-audio",
+    "url_host": "www.dailymotion.com",
+    "prefer": "audio"
+  },
+  {
+    "t": 1793507651.161,
+    "kind": "capture",
+    "stage": "dailymotion-audio-shared-0",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507651.161,
+    "kind": "format_not_found",
+    "prefer": "audio"
+  },
+  {
+    "t": 1793507653.447,
+    "kind": "capture",
+    "stage": "dailymotion-audio-before-download-tap",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507653.447,
+    "kind": "download_button_not_found",
+    "tag": "dailymotion-audio"
+  },
+  {
+    "t": 1793507675.732,
+    "kind": "capture",
+    "stage": "dailymotion-audio-progress-0",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507698.04,
+    "kind": "capture",
+    "stage": "dailymotion-audio-progress-1",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507720.337,
+    "kind": "capture",
+    "stage": "dailymotion-audio-progress-2",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507742.647,
+    "kind": "capture",
+    "stage": "dailymotion-audio-progress-3",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507764.937,
+    "kind": "capture",
+    "stage": "dailymotion-audio-progress-4",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507787.239,
+    "kind": "capture",
+    "stage": "dailymotion-audio-progress-5",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507787.256,
+    "kind": "attempt_end",
+    "tag": "dailymotion-audio"
+  },
+  {
+    "t": 1793507787.256,
+    "kind": "attempt_start",
+    "tag": "vimeo-video",
+    "url_host": "vimeo.com",
+    "prefer": "video"
+  },
+  {
+    "t": 1793507805.594,
+    "kind": "capture",
+    "stage": "vimeo-video-shared-0",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507805.594,
+    "kind": "format_not_found",
+    "prefer": "video"
+  },
+  {
+    "t": 1793507807.889,
+    "kind": "capture",
+    "stage": "vimeo-video-before-download-tap",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507807.889,
+    "kind": "download_button_not_found",
+    "tag": "vimeo-video"
+  },
+  {
+    "t": 1793507830.181,
+    "kind": "capture",
+    "stage": "vimeo-video-progress-0",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507852.482,
+    "kind": "capture",
+    "stage": "vimeo-video-progress-1",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507874.788,
+    "kind": "capture",
+    "stage": "vimeo-video-progress-2",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507897.087,
+    "kind": "capture",
+    "stage": "vimeo-video-progress-3",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507919.39,
+    "kind": "capture",
+    "stage": "vimeo-video-progress-4",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507941.696,
+    "kind": "capture",
+    "stage": "vimeo-video-progress-5",
+    "visible": [
+      "Please Install the\nOfficial Snaptube",
+      "1. Download official version from Snaptube.com",
+      "Go to download",
+      "2. Uninstall current version",
+      "Go to uninstall"
+    ]
+  },
+  {
+    "t": 1793507941.713,
+    "kind": "attempt_end",
+    "tag": "vimeo-video"
+  },
+  {
+    "t": 1793507941.776,
+    "kind": "log_lines",
+    "count": 163
+  },
+  {
+    "t": 1793507941.883,
+    "kind": "db_tables",
+    "count": 9
+  },
+  {
+    "t": 1793507941.899,
+    "kind": "media_files",
+    "count": 0
+  }
+]
