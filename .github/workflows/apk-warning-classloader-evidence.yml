@@ -1,0 +1,63 @@
+name: APK warning classloader evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths:
+      - '.github/workflows/apk-warning-classloader-evidence.yml'
+      - '.github/scripts/warning_classloader_evidence.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apk-warning-classloader-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Decode original APK on runner
+        shell: bash
+        run: |
+          set -euo pipefail
+          WORK_ROOT="${RUNNER_TEMP}/warning-classloader"
+          TOOLS_ROOT="${RUNNER_TEMP}/warning-classloader-tools"
+          mkdir -p "$WORK_ROOT" "$TOOLS_ROOT"
+          V=3.0.3
+          SHA=dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423
+          curl --fail --location --retry 3 -o "$TOOLS_ROOT/apktool.jar" "https://github.com/iBotPeaches/Apktool/releases/download/v${V}/apktool_${V}.jar"
+          printf '%s  %s\n' "$SHA" "$TOOLS_ROOT/apktool.jar" | sha256sum -c -
+          java -Xmx6g -jar "$TOOLS_ROOT/apktool.jar" d -f -o "$WORK_ROOT/decoded" google_drive/SnapTube.apk > "$WORK_ROOT/decode.log" 2>&1
+          {
+            echo "WORK_ROOT=$WORK_ROOT"
+            echo "REPORT_DIR=$WORK_ROOT/report"
+          } >> "$GITHUB_ENV"
+      - name: Scan classloaders and warning paths
+        run: python3 .github/scripts/warning_classloader_evidence.py
+      - name: Publish evidence
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/warning-classloader-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          if [ -d "$REPORT_DIR" ]; then cp -a "$REPORT_DIR/." "$dest/"; fi
+          printf 'run_outcome=%s\nrun_id=%s\n' '${{ job.status }}' "$GITHUB_RUN_ID" > "$dest/run-status.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          if ! git diff --cached --quiet; then
+            git commit -m "Add warning/classloader evidence (run ${GITHUB_RUN_ID}) [skip ci]"
+            git fetch origin arena/7234f8d6-apks
+            git rebase FETCH_HEAD
+            git push origin HEAD:arena/7234f8d6-apks
+          fi
