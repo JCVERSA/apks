@@ -1,0 +1,987 @@
+file	class	signature	start	end
+smali/smali/app/fast/ssh/AboutActivity.smali	AboutActivity	.method public constructor <init>()V	7	13
+smali/smali/app/fast/ssh/AboutActivity.smali	AboutActivity	.method public onCreate(Landroid/os/Bundle;)V	17	51
+smali/smali/app/fast/ssh/AppOpenAdManager$1$1.smali	AppOpenAdManager$1$1	.method constructor <init>(Lapp/fast/ssh/AppOpenAdManager$1;)V	22	38
+smali/smali/app/fast/ssh/AppOpenAdManager$1$1.smali	AppOpenAdManager$1$1	.method public onAdDismissedFullScreenContent()V	42	87
+smali/smali/app/fast/ssh/AppOpenAdManager$1$1.smali	AppOpenAdManager$1$1	.method public onAdFailedToShowFullScreenContent(Lcom/google/android/gms/ads/AdError;)V	89	97
+smali/smali/app/fast/ssh/AppOpenAdManager$1$1.smali	AppOpenAdManager$1$1	.method public onAdShowedFullScreenContent()V	99	107
+smali/smali/app/fast/ssh/AppOpenAdManager$1.smali	AppOpenAdManager$1	.method constructor <init>(Lapp/fast/ssh/AppOpenAdManager;)V	22	38
+smali/smali/app/fast/ssh/AppOpenAdManager$1.smali	AppOpenAdManager$1	.method public onAdFailedToLoad(Lcom/google/android/gms/ads/LoadAdError;)V	42	52
+smali/smali/app/fast/ssh/AppOpenAdManager$1.smali	AppOpenAdManager$1	.method public onAdLoaded(Lcom/google/android/gms/ads/appopen/AppOpenAd;)V	54	86
+smali/smali/app/fast/ssh/AppOpenAdManager$1.smali	AppOpenAdManager$1	.method public bridge synthetic onAdLoaded(Ljava/lang/Object;)V	88	104
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method static constructor <clinit>()V	31	51
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public constructor <init>(Lapp/fast/ssh/FastSSH;)V	53	81
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method static synthetic access$000(Lapp/fast/ssh/AppOpenAdManager;)Lcom/google/android/gms/ads/appopen/AppOpenAd;	83	89
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method static synthetic access$002(Lapp/fast/ssh/AppOpenAdManager;Lcom/google/android/gms/ads/appopen/AppOpenAd;)Lcom/google/android/gms/ads/appopen/AppOpenAd;	91	97
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method static synthetic access$102(Lapp/fast/ssh/AppOpenAdManager;J)J	99	105
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method static synthetic access$202(Z)Z	107	113
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method private getAdRequest()Lcom/google/android/gms/ads/AdRequest;	115	127
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method private wasLoadTimeLessThanNHoursAgo(J)Z	129	161
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public fetchAd()V	165	221
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public isAdAvailable()Z	223	247
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V	249	253
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public onActivityDestroyed(Landroid/app/Activity;)V	255	263
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public onActivityPaused(Landroid/app/Activity;)V	265	269
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public onActivityResumed(Landroid/app/Activity;)V	271	277
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V	279	283
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public onActivityStarted(Landroid/app/Activity;)V	285	291
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public onActivityStopped(Landroid/app/Activity;)V	293	297
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public onStart()V	299	322
+smali/smali/app/fast/ssh/AppOpenAdManager.smali	AppOpenAdManager	.method public showAdIfAvailable()V	324	392
+smali/smali/app/fast/ssh/AppsActivity$1.smali	AppsActivity$1	.method constructor <init>(Lapp/fast/ssh/AppsActivity;)V	25	41
+smali/smali/app/fast/ssh/AppsActivity$1.smali	AppsActivity$1	.method public onClick(Landroid/content/DialogInterface;I)V	45	53
+smali/smali/app/fast/ssh/AppsActivity.smali	AppsActivity	.method public constructor <init>()V	7	13
+smali/smali/app/fast/ssh/AppsActivity.smali	AppsActivity	.method static synthetic access$000(Lapp/fast/ssh/AppsActivity;)V	15	21
+smali/smali/app/fast/ssh/AppsActivity.smali	AppsActivity	.method private requestApp()V	23	133
+smali/smali/app/fast/ssh/AppsActivity.smali	AppsActivity	.method protected onCreate(Landroid/os/Bundle;)V	137	297
+smali/smali/app/fast/ssh/AppsActivity.smali	AppsActivity	.method public onCreateOptionsMenu(Landroid/view/Menu;)Z	299	315
+smali/smali/app/fast/ssh/AppsActivity.smali	AppsActivity	.method public onOptionsItemSelected(Landroid/view/MenuItem;)Z	317	395
+smali/smali/app/fast/ssh/AppsFragment$AdapterTask$$ExternalSyntheticLambda0.smali	AppsFragment$AdapterTask$$ExternalSyntheticLambda0	.method public synthetic constructor <init>()V	10	16
+smali/smali/app/fast/ssh/AppsFragment$AdapterTask$$ExternalSyntheticLambda0.smali	AppsFragment$AdapterTask$$ExternalSyntheticLambda0	.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I	20	32
+smali/smali/app/fast/ssh/AppsFragment$AdapterTask.smali	AppsFragment$AdapterTask	.method private constructor <init>(Lapp/fast/ssh/AppsFragment;)V	40	52
+smali/smali/app/fast/ssh/AppsFragment$AdapterTask.smali	AppsFragment$AdapterTask	.method synthetic constructor <init>(Lapp/fast/ssh/AppsFragment;Lapp/fast/ssh/AppsFragment$1;)V	54	60
+smali/smali/app/fast/ssh/AppsFragment$AdapterTask.smali	AppsFragment$AdapterTask	.method static synthetic lambda$doInBackground$0(Lapp/fast/ssh/adapter/AppsAdapter$App;Lapp/fast/ssh/adapter/AppsAdapter$App;)I	62	74
+smali/smali/app/fast/ssh/AppsFragment$AdapterTask.smali	AppsFragment$AdapterTask	.method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;	78	94
+smali/smali/app/fast/ssh/AppsFragment$AdapterTask.smali	AppsFragment$AdapterTask	.method protected varargs doInBackground([Ljava/lang/Object;)Ljava/lang/String;	96	170
+smali/smali/app/fast/ssh/AppsFragment$AdapterTask.smali	AppsFragment$AdapterTask	.method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V	172	188
+smali/smali/app/fast/ssh/AppsFragment$AdapterTask.smali	AppsFragment$AdapterTask	.method protected onPostExecute(Ljava/lang/String;)V	190	254
+smali/smali/app/fast/ssh/AppsFragment.smali	AppsFragment	.method public constructor <init>(Ljava/lang/String;I)V	27	37
+smali/smali/app/fast/ssh/AppsFragment.smali	AppsFragment	.method static synthetic access$100(Landroid/content/Context;Ljava/lang/String;I)Ljava/util/List;	39	47
+smali/smali/app/fast/ssh/AppsFragment.smali	AppsFragment	.method static synthetic access$200(Lapp/fast/ssh/AppsFragment;)Lapp/fast/ssh/adapter/AppsAdapter;	49	55
+smali/smali/app/fast/ssh/AppsFragment.smali	AppsFragment	.method static synthetic access$202(Lapp/fast/ssh/AppsFragment;Lapp/fast/ssh/adapter/AppsAdapter;)Lapp/fast/ssh/adapter/AppsAdapter;	57	63
+smali/smali/app/fast/ssh/AppsFragment.smali	AppsFragment	.method static synthetic access$300(Lapp/fast/ssh/AppsFragment;)Landroid/view/View;	65	71
+smali/smali/app/fast/ssh/AppsFragment.smali	AppsFragment	.method static synthetic access$400(Lapp/fast/ssh/AppsFragment;)Landroidx/recyclerview/widget/RecyclerView;	73	79
+smali/smali/app/fast/ssh/AppsFragment.smali	AppsFragment	.method private static initApps(Landroid/content/Context;Ljava/lang/String;I)Ljava/util/List;	81	236
+smali/smali/app/fast/ssh/AppsFragment.smali	AppsFragment	.method private static readResource(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;	238	335
+smali/smali/app/fast/ssh/AppsFragment.smali	AppsFragment	.method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;	339	411
+smali/smali/app/fast/ssh/AppsFragment_Backup$AdapterTask$1.smali	AppsFragment_Backup$AdapterTask$1	.method constructor <init>(Lapp/fast/ssh/AppsFragment_Backup$AdapterTask;)V	34	50
+smali/smali/app/fast/ssh/AppsFragment_Backup$AdapterTask$1.smali	AppsFragment_Backup$AdapterTask$1	.method public compare(Lapp/fast/ssh/adapter/AppsAdapter$App;Lapp/fast/ssh/adapter/AppsAdapter$App;)I	54	66
+smali/smali/app/fast/ssh/AppsFragment_Backup$AdapterTask$1.smali	AppsFragment_Backup$AdapterTask$1	.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I	68	90
+smali/smali/app/fast/ssh/AppsFragment_Backup$AdapterTask.smali	AppsFragment_Backup$AdapterTask	.method private constructor <init>(Lapp/fast/ssh/AppsFragment_Backup;)V	40	52
+smali/smali/app/fast/ssh/AppsFragment_Backup$AdapterTask.smali	AppsFragment_Backup$AdapterTask	.method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;	56	74
+smali/smali/app/fast/ssh/AppsFragment_Backup$AdapterTask.smali	AppsFragment_Backup$AdapterTask	.method protected varargs doInBackground([Ljava/lang/String;)Ljava/lang/String;	76	260
+smali/smali/app/fast/ssh/AppsFragment_Backup$AdapterTask.smali	AppsFragment_Backup$AdapterTask	.method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V	262	278
+smali/smali/app/fast/ssh/AppsFragment_Backup$AdapterTask.smali	AppsFragment_Backup$AdapterTask	.method protected onPostExecute(Ljava/lang/String;)V	280	360
+smali/smali/app/fast/ssh/AppsFragment_Backup.smali	AppsFragment_Backup	.method public constructor <init>()V	25	31
+smali/smali/app/fast/ssh/AppsFragment_Backup.smali	AppsFragment_Backup	.method static synthetic access$000(Lapp/fast/ssh/AppsFragment_Backup;)Lapp/fast/ssh/adapter/AppsAdapter;	33	39
+smali/smali/app/fast/ssh/AppsFragment_Backup.smali	AppsFragment_Backup	.method static synthetic access$002(Lapp/fast/ssh/AppsFragment_Backup;Lapp/fast/ssh/adapter/AppsAdapter;)Lapp/fast/ssh/adapter/AppsAdapter;	41	47
+smali/smali/app/fast/ssh/AppsFragment_Backup.smali	AppsFragment_Backup	.method static synthetic access$100(Lapp/fast/ssh/AppsFragment_Backup;)Landroid/view/View;	49	55
+smali/smali/app/fast/ssh/AppsFragment_Backup.smali	AppsFragment_Backup	.method static synthetic access$200(Lapp/fast/ssh/AppsFragment_Backup;)Lcom/google/android/material/switchmaterial/SwitchMaterial;	57	63
+smali/smali/app/fast/ssh/AppsFragment_Backup.smali	AppsFragment_Backup	.method static synthetic access$300(Lapp/fast/ssh/AppsFragment_Backup;)Landroidx/recyclerview/widget/RecyclerView;	65	71
+smali/smali/app/fast/ssh/AppsFragment_Backup.smali	AppsFragment_Backup	.method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;	75	87
+smali/smali/app/fast/ssh/BillingManager$$ExternalSyntheticLambda0.smali	BillingManager$$ExternalSyntheticLambda0	.method public synthetic constructor <init>(Lapp/fast/ssh/BillingManager;Z)V	16	26
+smali/smali/app/fast/ssh/BillingManager$$ExternalSyntheticLambda0.smali	BillingManager$$ExternalSyntheticLambda0	.method public final onQueryPurchasesResponse(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V	30	40
+smali/smali/app/fast/ssh/BillingManager$$ExternalSyntheticLambda1.smali	BillingManager$$ExternalSyntheticLambda1	.method public synthetic constructor <init>(Lapp/fast/ssh/BillingManager;Landroid/app/Activity;)V	16	26
+smali/smali/app/fast/ssh/BillingManager$$ExternalSyntheticLambda1.smali	BillingManager$$ExternalSyntheticLambda1	.method public final onProductDetailsResponse(Lcom/android/billingclient/api/BillingResult;Lcom/android/billingclient/api/QueryProductDetailsResult;)V	30	40
+smali/smali/app/fast/ssh/BillingManager$$ExternalSyntheticLambda2.smali	BillingManager$$ExternalSyntheticLambda2	.method public synthetic constructor <init>(Lapp/fast/ssh/BillingManager;)V	14	22
+smali/smali/app/fast/ssh/BillingManager$$ExternalSyntheticLambda2.smali	BillingManager$$ExternalSyntheticLambda2	.method public final onProductDetailsResponse(Lcom/android/billingclient/api/BillingResult;Lcom/android/billingclient/api/QueryProductDetailsResult;)V	26	34
+smali/smali/app/fast/ssh/BillingManager$1.smali	BillingManager$1	.method constructor <init>(Lapp/fast/ssh/BillingManager;Lapp/fast/ssh/BillingManager$StateListener;Lapp/fast/ssh/BillingManager$State;Ljava/lang/String;)V	31	65
+smali/smali/app/fast/ssh/BillingManager$1.smali	BillingManager$1	.method public run()V	69	81
+smali/smali/app/fast/ssh/BillingManager$2.smali	BillingManager$2	.method constructor <init>(Lapp/fast/ssh/BillingManager;)V	25	41
+smali/smali/app/fast/ssh/BillingManager$2.smali	BillingManager$2	.method public run()V	45	73
+smali/smali/app/fast/ssh/BillingManager$3.smali	BillingManager$3	.method constructor <init>(Lapp/fast/ssh/BillingManager;Landroid/app/Activity;Lcom/android/billingclient/api/BillingFlowParams;)V	29	59
+smali/smali/app/fast/ssh/BillingManager$3.smali	BillingManager$3	.method public run()V	63	176
+smali/smali/app/fast/ssh/BillingManager$4.smali	BillingManager$4	.method constructor <init>(Lapp/fast/ssh/BillingManager;)V	25	41
+smali/smali/app/fast/ssh/BillingManager$4.smali	BillingManager$4	.method public onInvalid()V	45	105
+smali/smali/app/fast/ssh/BillingManager$4.smali	BillingManager$4	.method public onUnreachable()V	107	133
+smali/smali/app/fast/ssh/BillingManager$4.smali	BillingManager$4	.method public onValid(Ljava/lang/String;J)V	135	197
+smali/smali/app/fast/ssh/BillingManager$SessionControl.smali	BillingManager$SessionControl	.method public abstract isConnected()Z	18	19
+smali/smali/app/fast/ssh/BillingManager$SessionControl.smali	BillingManager$SessionControl	.method public abstract sendSubToken(Ljava/lang/String;)V	21	22
+smali/smali/app/fast/ssh/BillingManager$State.smali	BillingManager$State	.method private static synthetic $values()[Lapp/fast/ssh/BillingManager$State;	38	70
+smali/smali/app/fast/ssh/BillingManager$State.smali	BillingManager$State	.method static constructor <clinit>()V	72	138
+smali/smali/app/fast/ssh/BillingManager$State.smali	BillingManager$State	.method private constructor <init>(Ljava/lang/String;I)V	140	162
+smali/smali/app/fast/ssh/BillingManager$State.smali	BillingManager$State	.method public static valueOf(Ljava/lang/String;)Lapp/fast/ssh/BillingManager$State;	164	184
+smali/smali/app/fast/ssh/BillingManager$State.smali	BillingManager$State	.method public static values()[Lapp/fast/ssh/BillingManager$State;	186	198
+smali/smali/app/fast/ssh/BillingManager$StateListener.smali	BillingManager$StateListener	.method public abstract onBillingState(Lapp/fast/ssh/BillingManager$State;Ljava/lang/String;)V	18	19
+smali/smali/app/fast/ssh/BillingManager$SubscriptionStore.smali	BillingManager$SubscriptionStore	.method public abstract clear()V	18	19
+smali/smali/app/fast/ssh/BillingManager$SubscriptionStore.smali	BillingManager$SubscriptionStore	.method public abstract getPurchaseToken()Ljava/lang/String;	21	22
+smali/smali/app/fast/ssh/BillingManager$SubscriptionStore.smali	BillingManager$SubscriptionStore	.method public abstract getRefreshWindowMillis()J	24	25
+smali/smali/app/fast/ssh/BillingManager$SubscriptionStore.smali	BillingManager$SubscriptionStore	.method public abstract getSubscriptionToken()Ljava/lang/String;	27	28
+smali/smali/app/fast/ssh/BillingManager$SubscriptionStore.smali	BillingManager$SubscriptionStore	.method public abstract getTokenExpiresAtMillis()J	30	31
+smali/smali/app/fast/ssh/BillingManager$SubscriptionStore.smali	BillingManager$SubscriptionStore	.method public abstract save(Ljava/lang/String;J)V	33	34
+smali/smali/app/fast/ssh/BillingManager$SubscriptionStore.smali	BillingManager$SubscriptionStore	.method public abstract savePurchaseToken(Ljava/lang/String;)V	36	37
+smali/smali/app/fast/ssh/BillingManager$TokenExchange$Callback.smali	BillingManager$TokenExchange$Callback	.method public abstract onInvalid()V	18	19
+smali/smali/app/fast/ssh/BillingManager$TokenExchange$Callback.smali	BillingManager$TokenExchange$Callback	.method public abstract onUnreachable()V	21	22
+smali/smali/app/fast/ssh/BillingManager$TokenExchange$Callback.smali	BillingManager$TokenExchange$Callback	.method public abstract onValid(Ljava/lang/String;J)V	24	25
+smali/smali/app/fast/ssh/BillingManager$TokenExchange.smali	BillingManager$TokenExchange	.method public abstract redeem(Ljava/lang/String;Ljava/lang/String;Lapp/fast/ssh/BillingManager$TokenExchange$Callback;)V	24	25
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method static constructor <clinit>()V	63	83
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public constructor <init>(Landroid/content/Context;Lapp/fast/ssh/BillingManager$TokenExchange;Lapp/fast/ssh/BillingManager$SubscriptionStore;Ljava/lang/String;)V	85	151
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method static synthetic access$000(Lapp/fast/ssh/BillingManager;)Lcom/android/billingclient/api/BillingClient;	153	159
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method static synthetic access$100(I)Ljava/lang/String;	161	169
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method static synthetic access$200(Lapp/fast/ssh/BillingManager;Lapp/fast/ssh/BillingManager$State;Ljava/lang/String;)V	171	177
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method static synthetic access$300(Lapp/fast/ssh/BillingManager;)Lapp/fast/ssh/BillingManager$SubscriptionStore;	179	185
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method static synthetic access$400(Lapp/fast/ssh/BillingManager;)Lapp/fast/ssh/BillingManager$SessionControl;	187	193
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method private static describe(I)Ljava/lang/String;	195	347
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method private launch(Landroid/app/Activity;Lcom/android/billingclient/api/ProductDetails;)V	349	576
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method private redeem(Ljava/lang/String;)V	578	586
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method private redeem(Ljava/lang/String;Z)V	588	638
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method private scheduleReconnect()V	640	666
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method private setState(Lapp/fast/ssh/BillingManager$State;Ljava/lang/String;)V	668	688
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method private warmProduct()V	690	746
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public getState()Lapp/fast/ssh/BillingManager$State;	750	756
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method synthetic lambda$purchase$1$app-fast-ssh-BillingManager(Landroid/app/Activity;Lcom/android/billingclient/api/BillingResult;Lcom/android/billingclient/api/QueryProductDetailsResult;)V	758	955
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method synthetic lambda$restore$2$app-fast-ssh-BillingManager(ZLcom/android/billingclient/api/BillingResult;Ljava/util/List;)V	957	1054
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method synthetic lambda$warmProduct$0$app-fast-ssh-BillingManager(Lcom/android/billingclient/api/BillingResult;Lcom/android/billingclient/api/QueryProductDetailsResult;)V	1056	1172
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public onBillingServiceDisconnected()V	1174	1180
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public onBillingSetupFinished(Lcom/android/billingclient/api/BillingResult;)V	1182	1206
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public onPurchasesUpdated(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V	1208	1292
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public onServerRequestedRefresh()V	1294	1344
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public purchase(Landroid/app/Activity;)V	1346	1538
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public refreshIfNeeded()V	1540	1591
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public restore()V	1593	1601
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public restore(Z)V	1603	1633
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public setSessionControl(Lapp/fast/ssh/BillingManager$SessionControl;)V	1635	1641
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public setStateListener(Lapp/fast/ssh/BillingManager$StateListener;)V	1643	1649
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public start()V	1651	1669
+smali/smali/app/fast/ssh/BillingManager.smali	BillingManager	.method public stop()V	1671	1685
+smali/smali/app/fast/ssh/BuildConfig.smali	BuildConfig	.method static constructor <clinit>()V	19	47
+smali/smali/app/fast/ssh/BuildConfig.smali	BuildConfig	.method public constructor <init>()V	49	55
+smali/smali/app/fast/ssh/ExceptionActivity$1.smali	ExceptionActivity$1	.method constructor <init>(Lapp/fast/ssh/ExceptionActivity;)V	25	41
+smali/smali/app/fast/ssh/ExceptionActivity$1.smali	ExceptionActivity$1	.method public onClick(Landroid/view/View;)V	45	65
+smali/smali/app/fast/ssh/ExceptionActivity.smali	ExceptionActivity	.method public constructor <init>()V	7	13
+smali/smali/app/fast/ssh/ExceptionActivity.smali	ExceptionActivity	.method protected onCreate(Landroid/os/Bundle;)V	17	87
+smali/smali/app/fast/ssh/ExceptionHandler.smali	ExceptionHandler	.method public constructor <init>(Landroid/app/Activity;)V	16	32
+smali/smali/app/fast/ssh/ExceptionHandler.smali	ExceptionHandler	.method public uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V	36	225
+smali/smali/app/fast/ssh/ExportActivity$$ExternalSyntheticApiModelOutline0.smali	ExportActivity$$ExternalSyntheticApiModelOutline0	.method public static synthetic m(Ljava/lang/String;Ljava/lang/CharSequence;I)Landroid/app/NotificationChannel;	7	15
+smali/smali/app/fast/ssh/ExportActivity$$ExternalSyntheticApiModelOutline0.smali	ExportActivity$$ExternalSyntheticApiModelOutline0	.method public static bridge synthetic m(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/ComponentName;	17	25
+smali/smali/app/fast/ssh/ExportActivity$$ExternalSyntheticApiModelOutline0.smali	ExportActivity$$ExternalSyntheticApiModelOutline0	.method public static bridge synthetic m()Landroid/net/Uri;	27	33
+smali/smali/app/fast/ssh/ExportActivity$$ExternalSyntheticApiModelOutline0.smali	ExportActivity$$ExternalSyntheticApiModelOutline0	.method public static synthetic m()V	35	41
+smali/smali/app/fast/ssh/ExportActivity$$ExternalSyntheticApiModelOutline0.smali	ExportActivity$$ExternalSyntheticApiModelOutline0	.method public static bridge synthetic m(Landroid/app/NotificationChannel;Z)V	43	49
+smali/smali/app/fast/ssh/ExportActivity$$ExternalSyntheticApiModelOutline0.smali	ExportActivity$$ExternalSyntheticApiModelOutline0	.method public static bridge synthetic m(Landroid/app/NotificationManager;Landroid/app/NotificationChannel;)V	51	57
+smali/smali/app/fast/ssh/ExportActivity$$ExternalSyntheticApiModelOutline0.smali	ExportActivity$$ExternalSyntheticApiModelOutline0	.method public static bridge synthetic m(Landroid/app/NotificationChannel;)Z	59	67
+smali/smali/app/fast/ssh/ExportActivity$$ExternalSyntheticLambda1.smali	ExportActivity$$ExternalSyntheticLambda1	.method public synthetic constructor <init>(Lapp/fast/ssh/ExportActivity;)V	14	22
+smali/smali/app/fast/ssh/ExportActivity$$ExternalSyntheticLambda1.smali	ExportActivity$$ExternalSyntheticLambda1	.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V	26	34
+smali/smali/app/fast/ssh/ExportActivity$1.smali	ExportActivity$1	.method constructor <init>(Lapp/fast/ssh/ExportActivity;)V	25	41
+smali/smali/app/fast/ssh/ExportActivity$1.smali	ExportActivity$1	.method public onClick(Landroid/view/View;)V	45	133
+smali/smali/app/fast/ssh/ExportActivity$2$1.smali	ExportActivity$2$1	.method constructor <init>(Lapp/fast/ssh/ExportActivity$2;Lapp/fast/ssh/ExportActivity$TextQuery;Landroid/widget/CompoundButton;)V	29	59
+smali/smali/app/fast/ssh/ExportActivity$2$1.smali	ExportActivity$2$1	.method public onClick(Landroid/content/DialogInterface;I)V	63	119
+smali/smali/app/fast/ssh/ExportActivity$2$2.smali	ExportActivity$2$2	.method constructor <init>(Lapp/fast/ssh/ExportActivity$2;Landroid/widget/CompoundButton;)V	27	53
+smali/smali/app/fast/ssh/ExportActivity$2$2.smali	ExportActivity$2$2	.method public onClick(Landroid/content/DialogInterface;I)V	57	67
+smali/smali/app/fast/ssh/ExportActivity$2$3.smali	ExportActivity$2$3	.method constructor <init>(Lapp/fast/ssh/ExportActivity$2;Landroid/widget/CompoundButton;)V	27	53
+smali/smali/app/fast/ssh/ExportActivity$2$3.smali	ExportActivity$2$3	.method public onCancel(Landroid/content/DialogInterface;)V	57	67
+smali/smali/app/fast/ssh/ExportActivity$2$4.smali	ExportActivity$2$4	.method constructor <init>(Lapp/fast/ssh/ExportActivity$2;Lapp/fast/ssh/ExportActivity$TextQuery;Landroid/widget/CompoundButton;)V	29	59
+smali/smali/app/fast/ssh/ExportActivity$2$4.smali	ExportActivity$2$4	.method public onClick(Landroid/content/DialogInterface;I)V	63	119
+smali/smali/app/fast/ssh/ExportActivity$2$5.smali	ExportActivity$2$5	.method constructor <init>(Lapp/fast/ssh/ExportActivity$2;Landroid/widget/CompoundButton;)V	27	53
+smali/smali/app/fast/ssh/ExportActivity$2$5.smali	ExportActivity$2$5	.method public onClick(Landroid/content/DialogInterface;I)V	57	85
+smali/smali/app/fast/ssh/ExportActivity$2$6.smali	ExportActivity$2$6	.method constructor <init>(Lapp/fast/ssh/ExportActivity$2;Landroid/widget/CompoundButton;)V	27	53
+smali/smali/app/fast/ssh/ExportActivity$2$6.smali	ExportActivity$2$6	.method public onCancel(Landroid/content/DialogInterface;)V	57	85
+smali/smali/app/fast/ssh/ExportActivity$2$7.smali	ExportActivity$2$7	.method constructor <init>(Lapp/fast/ssh/ExportActivity$2;Landroid/widget/CompoundButton;Lcom/google/android/material/datepicker/MaterialDatePicker;)V	38	68
+smali/smali/app/fast/ssh/ExportActivity$2$7.smali	ExportActivity$2$7	.method public onPositiveButtonClick(Ljava/lang/Long;)V	72	154
+smali/smali/app/fast/ssh/ExportActivity$2$7.smali	ExportActivity$2$7	.method public bridge synthetic onPositiveButtonClick(Ljava/lang/Object;)V	156	172
+smali/smali/app/fast/ssh/ExportActivity$2$8.smali	ExportActivity$2$8	.method constructor <init>(Lapp/fast/ssh/ExportActivity$2;Landroid/widget/CompoundButton;)V	27	53
+smali/smali/app/fast/ssh/ExportActivity$2$8.smali	ExportActivity$2$8	.method public onClick(Landroid/view/View;)V	57	77
+smali/smali/app/fast/ssh/ExportActivity$2$9.smali	ExportActivity$2$9	.method constructor <init>(Lapp/fast/ssh/ExportActivity$2;Landroid/widget/CompoundButton;)V	27	53
+smali/smali/app/fast/ssh/ExportActivity$2$9.smali	ExportActivity$2$9	.method public onCancel(Landroid/content/DialogInterface;)V	57	77
+smali/smali/app/fast/ssh/ExportActivity$2.smali	ExportActivity$2	.method constructor <init>(Lapp/fast/ssh/ExportActivity;)V	25	41
+smali/smali/app/fast/ssh/ExportActivity$2.smali	ExportActivity$2	.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V	45	290
+smali/smali/app/fast/ssh/ExportActivity$TextQuery.smali	ExportActivity$TextQuery	.method constructor <init>(Landroid/content/Context;)V	26	72
+smali/smali/app/fast/ssh/ExportActivity$TextQuery.smali	ExportActivity$TextQuery	.method public getResult()Ljava/lang/String;	76	90
+smali/smali/app/fast/ssh/ExportActivity$TextQuery.smali	ExportActivity$TextQuery	.method public setTitle(Ljava/lang/String;)V	92	100
+smali/smali/app/fast/ssh/ExportActivity$TextQuery.smali	ExportActivity$TextQuery	.method public show()V	102	110
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method static constructor <clinit>()V	39	59
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method public constructor <init>()V	61	73
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method static synthetic access$000(Lapp/fast/ssh/ExportActivity;)Z	75	83
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method static synthetic access$100(Lapp/fast/ssh/ExportActivity;)Lcom/google/android/material/textfield/TextInputEditText;	85	91
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method static synthetic access$200(Lapp/fast/ssh/ExportActivity;)Ljava/lang/String;	93	101
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method static synthetic access$300(Lapp/fast/ssh/ExportActivity;)Ljava/lang/String;	103	109
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method static synthetic access$302(Lapp/fast/ssh/ExportActivity;Ljava/lang/String;)Ljava/lang/String;	111	117
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method static synthetic access$400(Lapp/fast/ssh/ExportActivity;)Ljava/lang/String;	119	125
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method static synthetic access$402(Lapp/fast/ssh/ExportActivity;Ljava/lang/String;)Ljava/lang/String;	127	133
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method static synthetic access$502(Lapp/fast/ssh/ExportActivity;Ljava/lang/Long;)Ljava/lang/Long;	135	141
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method private checkedListener()Landroid/widget/CompoundButton$OnCheckedChangeListener;	143	151
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method private exportConfig()Z	153	390
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method private getAbsoluteFile()Ljava/io/File;	392	410
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method private getContent()[B	412	779
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method private getExportPath()Ljava/lang/String;	781	825
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method private initAds()V	827	861
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method private requestNewAdBanner(Lcom/google/android/gms/ads/AdView;)V	863	881
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method private writeConfig(Ljava/io/File;)V	883	908
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method synthetic lambda$onCreate$0$app-fast-ssh-ExportActivity(Landroid/widget/CompoundButton;Z)V	912	920
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method public onBackPressed()V	922	930
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method protected onCreate(Landroid/os/Bundle;)V	932	1133
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method public onCreateOptionsMenu(Landroid/view/Menu;)Z	1135	1151
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method public onOptionsItemSelected(Landroid/view/MenuItem;)Z	1153	1218
+smali/smali/app/fast/ssh/ExportActivity.smali	ExportActivity	.method protected onResume()V	1220	1230
+smali/smali/app/fast/ssh/FastSSH$$ExternalSyntheticLambda0.smali	FastSSH$$ExternalSyntheticLambda0	.method public synthetic constructor <init>()V	10	16
+smali/smali/app/fast/ssh/FastSSH$$ExternalSyntheticLambda0.smali	FastSSH$$ExternalSyntheticLambda0	.method public final onInitializationComplete(Lcom/google/android/gms/ads/initialization/InitializationStatus;)V	20	26
+smali/smali/app/fast/ssh/FastSSH$1.smali	FastSSH$1	.method constructor <init>(Lapp/fast/ssh/FastSSH;)V	25	41
+smali/smali/app/fast/ssh/FastSSH$1.smali	FastSSH$1	.method public isConnected()Z	45	53
+smali/smali/app/fast/ssh/FastSSH$1.smali	FastSSH$1	.method public sendSubToken(Ljava/lang/String;)V	55	73
+smali/smali/app/fast/ssh/FastSSH.smali	FastSSH	.method static constructor <clinit>()V	27	39
+smali/smali/app/fast/ssh/FastSSH.smali	FastSSH	.method public constructor <init>()V	41	47
+smali/smali/app/fast/ssh/FastSSH.smali	FastSSH	.method private applyTheme()V	49	105
+smali/smali/app/fast/ssh/FastSSH.smali	FastSSH	.method private deviceId()Ljava/lang/String;	107	125
+smali/smali/app/fast/ssh/FastSSH.smali	FastSSH	.method public static getContext()Landroid/content/Context;	127	139
+smali/smali/app/fast/ssh/FastSSH.smali	FastSSH	.method static synthetic lambda$onCreate$0(Lcom/google/android/gms/ads/initialization/InitializationStatus;)V	141	145
+smali/smali/app/fast/ssh/FastSSH.smali	FastSSH	.method private setTLSVersion()V	147	295
+smali/smali/app/fast/ssh/FastSSH.smali	FastSSH	.method public getBillingManager()Lapp/fast/ssh/BillingManager;	299	305
+smali/smali/app/fast/ssh/FastSSH.smali	FastSSH	.method public onCreate()V	307	496
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda0.smali	HomeFragment$$ExternalSyntheticLambda0	.method public synthetic constructor <init>(Lapp/fast/ssh/HomeFragment;J)V	16	26
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda0.smali	HomeFragment$$ExternalSyntheticLambda0	.method public final onCancel(Landroid/content/DialogInterface;)V	30	40
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda1.smali	HomeFragment$$ExternalSyntheticLambda1	.method public synthetic constructor <init>(Lapp/fast/ssh/HomeFragment;)V	14	22
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda1.smali	HomeFragment$$ExternalSyntheticLambda1	.method public final onClick(Landroid/view/View;)V	26	34
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda2.smali	HomeFragment$$ExternalSyntheticLambda2	.method public synthetic constructor <init>(Lapp/fast/ssh/HomeFragment;)V	14	22
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda2.smali	HomeFragment$$ExternalSyntheticLambda2	.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V	26	34
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda3.smali	HomeFragment$$ExternalSyntheticLambda3	.method public synthetic constructor <init>(Lapp/fast/ssh/HomeFragment;)V	14	22
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda3.smali	HomeFragment$$ExternalSyntheticLambda3	.method public final onClick(Landroid/view/View;)V	26	34
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda4.smali	HomeFragment$$ExternalSyntheticLambda4	.method public synthetic constructor <init>(Lapp/fast/ssh/HomeFragment;)V	14	22
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda4.smali	HomeFragment$$ExternalSyntheticLambda4	.method public final onClick(Landroid/view/View;)V	26	34
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda5.smali	HomeFragment$$ExternalSyntheticLambda5	.method public synthetic constructor <init>(Lapp/fast/ssh/HomeFragment;)V	14	22
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda5.smali	HomeFragment$$ExternalSyntheticLambda5	.method public final onClick(Landroid/view/View;)V	26	34
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda6.smali	HomeFragment$$ExternalSyntheticLambda6	.method public synthetic constructor <init>(Lapp/fast/ssh/HomeFragment;)V	14	22
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda6.smali	HomeFragment$$ExternalSyntheticLambda6	.method public final onUserEarnedReward(Lcom/google/android/gms/ads/rewarded/RewardItem;)V	26	34
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda7.smali	HomeFragment$$ExternalSyntheticLambda7	.method public synthetic constructor <init>(Lapp/fast/ssh/HomeFragment;)V	14	22
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda7.smali	HomeFragment$$ExternalSyntheticLambda7	.method public final onClick(Landroid/view/View;)V	26	34
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda8.smali	HomeFragment$$ExternalSyntheticLambda8	.method public synthetic constructor <init>(Lapp/fast/ssh/HomeFragment;)V	14	22
+smali/smali/app/fast/ssh/HomeFragment$$ExternalSyntheticLambda8.smali	HomeFragment$$ExternalSyntheticLambda8	.method public final onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z	26	36
+smali/smali/app/fast/ssh/HomeFragment$1$1.smali	HomeFragment$1$1	.method constructor <init>(Lapp/fast/ssh/HomeFragment$1;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$1$1.smali	HomeFragment$1$1	.method public onClick(Landroid/view/View;)V	45	73
+smali/smali/app/fast/ssh/HomeFragment$1.smali	HomeFragment$1	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$1.smali	HomeFragment$1	.method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V	45	269
+smali/smali/app/fast/ssh/HomeFragment$1.smali	HomeFragment$1	.method public onNothingSelected(Landroid/widget/AdapterView;)V	271	282
+smali/smali/app/fast/ssh/HomeFragment$10.smali	HomeFragment$10	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$10.smali	HomeFragment$10	.method public onClick(Landroid/content/DialogInterface;I)V	45	83
+smali/smali/app/fast/ssh/HomeFragment$11.smali	HomeFragment$11	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$11.smali	HomeFragment$11	.method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V	45	96
+smali/smali/app/fast/ssh/HomeFragment$11.smali	HomeFragment$11	.method public onNothingSelected(Landroid/widget/AdapterView;)V	98	109
+smali/smali/app/fast/ssh/HomeFragment$12.smali	HomeFragment$12	.method constructor <init>(Lapp/fast/ssh/HomeFragment;JJ)V	29	59
+smali/smali/app/fast/ssh/HomeFragment$12.smali	HomeFragment$12	.method public run()V	63	95
+smali/smali/app/fast/ssh/HomeFragment$13.smali	HomeFragment$13	.method constructor <init>(Lapp/fast/ssh/HomeFragment;Lapp/fast/ssh/core/VpnStatus$VpnState;Lapp/fast/ssh/Subscription;)V	29	59
+smali/smali/app/fast/ssh/HomeFragment$13.smali	HomeFragment$13	.method public run()V	63	421
+smali/smali/app/fast/ssh/HomeFragment$14.smali	HomeFragment$14	.method constructor <init>(Lapp/fast/ssh/HomeFragment;Ljava/lang/String;)V	27	53
+smali/smali/app/fast/ssh/HomeFragment$14.smali	HomeFragment$14	.method public run()V	57	77
+smali/smali/app/fast/ssh/HomeFragment$15$1.smali	HomeFragment$15$1	.method constructor <init>(Lapp/fast/ssh/HomeFragment$15;JJ)V	22	42
+smali/smali/app/fast/ssh/HomeFragment$15$1.smali	HomeFragment$15$1	.method public onFinish()V	46	50
+smali/smali/app/fast/ssh/HomeFragment$15$1.smali	HomeFragment$15$1	.method public onTick(J)V	52	271
+smali/smali/app/fast/ssh/HomeFragment$15.smali	HomeFragment$15	.method constructor <init>(Lapp/fast/ssh/HomeFragment;JLapp/fast/ssh/Subscription;)V	29	59
+smali/smali/app/fast/ssh/HomeFragment$15.smali	HomeFragment$15	.method public run()V	63	124
+smali/smali/app/fast/ssh/HomeFragment$16.smali	HomeFragment$16	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$16.smali	HomeFragment$16	.method public run()V	45	49
+smali/smali/app/fast/ssh/HomeFragment$17.smali	HomeFragment$17	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$17.smali	HomeFragment$17	.method public onClick(Landroid/view/View;)V	45	53
+smali/smali/app/fast/ssh/HomeFragment$18.smali	HomeFragment$18	.method constructor <init>(Lapp/fast/ssh/HomeFragment;Lapp/fast/ssh/ExportActivity$TextQuery;Lorg/json/JSONObject;Ljava/lang/String;)V	31	65
+smali/smali/app/fast/ssh/HomeFragment$18.smali	HomeFragment$18	.method public onClick(Landroid/content/DialogInterface;I)V	69	213
+smali/smali/app/fast/ssh/HomeFragment$19.smali	HomeFragment$19	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$19.smali	HomeFragment$19	.method public onClick(Landroid/content/DialogInterface;I)V	45	49
+smali/smali/app/fast/ssh/HomeFragment$2.smali	HomeFragment$2	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$2.smali	HomeFragment$2	.method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V	45	488
+smali/smali/app/fast/ssh/HomeFragment$2.smali	HomeFragment$2	.method public onNothingSelected(Landroid/widget/AdapterView;)V	490	501
+smali/smali/app/fast/ssh/HomeFragment$20.smali	HomeFragment$20	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$20.smali	HomeFragment$20	.method public onCancel(Landroid/content/DialogInterface;)V	45	49
+smali/smali/app/fast/ssh/HomeFragment$21.smali	HomeFragment$21	.method constructor <init>(Lapp/fast/ssh/HomeFragment;Ljava/lang/String;)V	27	53
+smali/smali/app/fast/ssh/HomeFragment$21.smali	HomeFragment$21	.method public onClick(Landroid/content/DialogInterface;I)V	57	85
+smali/smali/app/fast/ssh/HomeFragment$22.smali	HomeFragment$22	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$22.smali	HomeFragment$22	.method public onClick(Landroid/content/DialogInterface;I)V	45	83
+smali/smali/app/fast/ssh/HomeFragment$23.smali	HomeFragment$23	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$23.smali	HomeFragment$23	.method public onClick(Landroid/content/DialogInterface;I)V	45	49
+smali/smali/app/fast/ssh/HomeFragment$24$1.smali	HomeFragment$24$1	.method constructor <init>(Lapp/fast/ssh/HomeFragment$24;)V	22	38
+smali/smali/app/fast/ssh/HomeFragment$24$1.smali	HomeFragment$24$1	.method public onAdClicked()V	42	46
+smali/smali/app/fast/ssh/HomeFragment$24$1.smali	HomeFragment$24$1	.method public onAdDismissedFullScreenContent()V	48	60
+smali/smali/app/fast/ssh/HomeFragment$24$1.smali	HomeFragment$24$1	.method public onAdFailedToShowFullScreenContent(Lcom/google/android/gms/ads/AdError;)V	62	74
+smali/smali/app/fast/ssh/HomeFragment$24$1.smali	HomeFragment$24$1	.method public onAdImpression()V	76	80
+smali/smali/app/fast/ssh/HomeFragment$24$1.smali	HomeFragment$24$1	.method public onAdShowedFullScreenContent()V	82	86
+smali/smali/app/fast/ssh/HomeFragment$24.smali	HomeFragment$24	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	22	38
+smali/smali/app/fast/ssh/HomeFragment$24.smali	HomeFragment$24	.method public onAdFailedToLoad(Lcom/google/android/gms/ads/LoadAdError;)V	42	52
+smali/smali/app/fast/ssh/HomeFragment$24.smali	HomeFragment$24	.method public onAdLoaded(Lcom/google/android/gms/ads/interstitial/InterstitialAd;)V	54	74
+smali/smali/app/fast/ssh/HomeFragment$24.smali	HomeFragment$24	.method public bridge synthetic onAdLoaded(Ljava/lang/Object;)V	76	92
+smali/smali/app/fast/ssh/HomeFragment$25$1.smali	HomeFragment$25$1	.method constructor <init>(Lapp/fast/ssh/HomeFragment$25;)V	22	38
+smali/smali/app/fast/ssh/HomeFragment$25$1.smali	HomeFragment$25$1	.method public onAdClicked()V	42	46
+smali/smali/app/fast/ssh/HomeFragment$25$1.smali	HomeFragment$25$1	.method public onAdDismissedFullScreenContent()V	48	60
+smali/smali/app/fast/ssh/HomeFragment$25$1.smali	HomeFragment$25$1	.method public onAdFailedToShowFullScreenContent(Lcom/google/android/gms/ads/AdError;)V	62	74
+smali/smali/app/fast/ssh/HomeFragment$25$1.smali	HomeFragment$25$1	.method public onAdImpression()V	76	80
+smali/smali/app/fast/ssh/HomeFragment$25$1.smali	HomeFragment$25$1	.method public onAdShowedFullScreenContent()V	82	86
+smali/smali/app/fast/ssh/HomeFragment$25.smali	HomeFragment$25	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	22	38
+smali/smali/app/fast/ssh/HomeFragment$25.smali	HomeFragment$25	.method public onAdFailedToLoad(Lcom/google/android/gms/ads/LoadAdError;)V	42	52
+smali/smali/app/fast/ssh/HomeFragment$25.smali	HomeFragment$25	.method public onAdLoaded(Lcom/google/android/gms/ads/interstitial/InterstitialAd;)V	54	74
+smali/smali/app/fast/ssh/HomeFragment$25.smali	HomeFragment$25	.method public bridge synthetic onAdLoaded(Ljava/lang/Object;)V	76	92
+smali/smali/app/fast/ssh/HomeFragment$26$1.smali	HomeFragment$26$1	.method constructor <init>(Lapp/fast/ssh/HomeFragment$26;Ljava/lang/String;)V	27	53
+smali/smali/app/fast/ssh/HomeFragment$26$1.smali	HomeFragment$26$1	.method public onClick(Landroid/view/View;)V	57	85
+smali/smali/app/fast/ssh/HomeFragment$26.smali	HomeFragment$26	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	34	50
+smali/smali/app/fast/ssh/HomeFragment$26.smali	HomeFragment$26	.method public bridge synthetic onResponse(Ljava/lang/Object;)V	54	70
+smali/smali/app/fast/ssh/HomeFragment$26.smali	HomeFragment$26	.method public onResponse(Lorg/json/JSONObject;)V	72	147
+smali/smali/app/fast/ssh/HomeFragment$27.smali	HomeFragment$27	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$27.smali	HomeFragment$27	.method public onErrorResponse(Lcom/android/volley/VolleyError;)V	45	77
+smali/smali/app/fast/ssh/HomeFragment$28.smali	HomeFragment$28	.method static constructor <clinit>()V	24	151
+smali/smali/app/fast/ssh/HomeFragment$3.smali	HomeFragment$3	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$3.smali	HomeFragment$3	.method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V	45	121
+smali/smali/app/fast/ssh/HomeFragment$3.smali	HomeFragment$3	.method public onNothingSelected(Landroid/widget/AdapterView;)V	123	134
+smali/smali/app/fast/ssh/HomeFragment$4.smali	HomeFragment$4	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$4.smali	HomeFragment$4	.method public onClick(Landroid/view/View;)V	45	83
+smali/smali/app/fast/ssh/HomeFragment$5$1.smali	HomeFragment$5$1	.method constructor <init>(Lapp/fast/ssh/HomeFragment$5;JJ)V	22	42
+smali/smali/app/fast/ssh/HomeFragment$5$1.smali	HomeFragment$5$1	.method public onFinish()V	46	72
+smali/smali/app/fast/ssh/HomeFragment$5$1.smali	HomeFragment$5$1	.method public onTick(J)V	74	212
+smali/smali/app/fast/ssh/HomeFragment$5.smali	HomeFragment$5	.method constructor <init>(Lapp/fast/ssh/HomeFragment;Landroid/widget/TextView;)V	27	53
+smali/smali/app/fast/ssh/HomeFragment$5.smali	HomeFragment$5	.method public onShow(Landroid/content/DialogInterface;)V	57	231
+smali/smali/app/fast/ssh/HomeFragment$6$1.smali	HomeFragment$6$1	.method constructor <init>(Lapp/fast/ssh/HomeFragment$6;Landroid/widget/TextView;)V	27	53
+smali/smali/app/fast/ssh/HomeFragment$6$1.smali	HomeFragment$6$1	.method public onClick(Landroid/content/DialogInterface;I)V	57	95
+smali/smali/app/fast/ssh/HomeFragment$6$2.smali	HomeFragment$6$2	.method constructor <init>(Lapp/fast/ssh/HomeFragment$6;Landroid/widget/TextView;)V	27	53
+smali/smali/app/fast/ssh/HomeFragment$6$2.smali	HomeFragment$6$2	.method public onClick(Landroid/content/DialogInterface;I)V	57	95
+smali/smali/app/fast/ssh/HomeFragment$6.smali	HomeFragment$6	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$6.smali	HomeFragment$6	.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V	45	185
+smali/smali/app/fast/ssh/HomeFragment$7.smali	HomeFragment$7	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$7.smali	HomeFragment$7	.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V	45	71
+smali/smali/app/fast/ssh/HomeFragment$8.smali	HomeFragment$8	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$8.smali	HomeFragment$8	.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V	45	71
+smali/smali/app/fast/ssh/HomeFragment$9$$ExternalSyntheticLambda0.smali	HomeFragment$9$$ExternalSyntheticLambda0	.method public synthetic constructor <init>(Lapp/fast/ssh/HomeFragment$9;)V	14	22
+smali/smali/app/fast/ssh/HomeFragment$9$$ExternalSyntheticLambda0.smali	HomeFragment$9$$ExternalSyntheticLambda0	.method public final run()V	26	34
+smali/smali/app/fast/ssh/HomeFragment$9$1.smali	HomeFragment$9$1	.method constructor <init>(Lapp/fast/ssh/HomeFragment$9;Ljava/lang/String;)V	27	53
+smali/smali/app/fast/ssh/HomeFragment$9$1.smali	HomeFragment$9$1	.method public run()V	57	73
+smali/smali/app/fast/ssh/HomeFragment$9$2.smali	HomeFragment$9$2	.method constructor <init>(Lapp/fast/ssh/HomeFragment$9;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$9$2.smali	HomeFragment$9$2	.method public run()V	45	65
+smali/smali/app/fast/ssh/HomeFragment$9.smali	HomeFragment$9	.method constructor <init>(Lapp/fast/ssh/HomeFragment;)V	25	41
+smali/smali/app/fast/ssh/HomeFragment$9.smali	HomeFragment$9	.method synthetic lambda$onClick$0$app-fast-ssh-HomeFragment$9()V	45	102
+smali/smali/app/fast/ssh/HomeFragment$9.smali	HomeFragment$9	.method public onClick(Landroid/view/View;)V	104	118
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static constructor <clinit>()V	223	385
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public constructor <init>()V	387	423
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$000(Lapp/fast/ssh/HomeFragment;)Lapp/fast/ssh/adapter/ServerAdapter;	425	431
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$100(Lapp/fast/ssh/HomeFragment;)Landroid/content/SharedPreferences;	433	439
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1000(Lapp/fast/ssh/HomeFragment;)Lapp/fast/ssh/adapter/MethodAdapter;	441	447
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1102(Lapp/fast/ssh/HomeFragment;Z)Z	449	455
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1200(Lapp/fast/ssh/HomeFragment;)Landroid/os/CountDownTimer;	457	463
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1202(Lapp/fast/ssh/HomeFragment;Landroid/os/CountDownTimer;)Landroid/os/CountDownTimer;	465	471
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1300(Lapp/fast/ssh/HomeFragment;)Lcom/google/android/material/textfield/TextInputEditText;	473	479
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1400(J)Ljava/lang/String;	481	489
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1500(Lapp/fast/ssh/HomeFragment;)Landroid/widget/TextView;	491	497
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1600(Lapp/fast/ssh/HomeFragment;)Landroid/widget/TextView;	499	505
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1700(Lapp/fast/ssh/HomeFragment;)Landroid/widget/Button;	507	513
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1800(Lapp/fast/ssh/HomeFragment;Z)V	515	521
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1900(Lapp/fast/ssh/HomeFragment;)Lcom/google/android/gms/ads/interstitial/InterstitialAd;	523	529
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$1902(Lapp/fast/ssh/HomeFragment;Lcom/google/android/gms/ads/interstitial/InterstitialAd;)Lcom/google/android/gms/ads/interstitial/InterstitialAd;	531	537
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$200(Lapp/fast/ssh/HomeFragment;)Landroidx/appcompat/widget/AppCompatSpinner;	539	545
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2000(Lapp/fast/ssh/HomeFragment;Lcom/google/android/gms/ads/interstitial/InterstitialAd;Landroid/app/Activity;)V	547	553
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2100(Lapp/fast/ssh/HomeFragment;)V	555	561
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2200(Lapp/fast/ssh/HomeFragment;)Lcom/google/android/gms/ads/interstitial/InterstitialAd;	563	569
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2202(Lapp/fast/ssh/HomeFragment;Lcom/google/android/gms/ads/interstitial/InterstitialAd;)Lcom/google/android/gms/ads/interstitial/InterstitialAd;	571	577
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2300(Lapp/fast/ssh/HomeFragment;)V	579	585
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2400(Lapp/fast/ssh/HomeFragment;)Landroid/widget/Button;	587	593
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2500()Landroid/os/CountDownTimer;	595	601
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2502(Landroid/os/CountDownTimer;)Landroid/os/CountDownTimer;	603	609
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2600()Z	611	617
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2602(Z)Z	619	625
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2700(Lapp/fast/ssh/HomeFragment;)Landroid/widget/LinearLayout;	627	633
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2800()Ljava/lang/ref/WeakReference;	635	641
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2802(Ljava/lang/ref/WeakReference;)Ljava/lang/ref/WeakReference;	643	649
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$2900(Lapp/fast/ssh/HomeFragment;)Landroid/widget/TextView;	651	657
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$300(Lapp/fast/ssh/HomeFragment;)Lapp/fast/ssh/adapter/MethodAdapter;	659	665
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$3000(Lapp/fast/ssh/HomeFragment;)Lapp/fast/ssh/RewardedAdSyncController;	667	673
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$3100(Lapp/fast/ssh/HomeFragment;)Ljava/lang/String;	675	683
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$3200(Lapp/fast/ssh/HomeFragment;Ljava/lang/String;)V	685	691
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$3300(Lapp/fast/ssh/HomeFragment;Ljava/lang/String;)V	693	699
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$3400(Lapp/fast/ssh/HomeFragment;)Landroid/widget/TextView;	701	707
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$400(Lapp/fast/ssh/HomeFragment;)Landroid/widget/LinearLayout;	709	715
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$500(Lapp/fast/ssh/HomeFragment;)Landroid/widget/LinearLayout;	717	723
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$600(Lapp/fast/ssh/HomeFragment;)Landroid/widget/LinearLayout;	725	731
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$700(Lapp/fast/ssh/HomeFragment;)Landroid/widget/LinearLayout;	733	739
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$800(Lapp/fast/ssh/HomeFragment;)Landroid/widget/LinearLayout;	741	747
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method static synthetic access$900(Lapp/fast/ssh/HomeFragment;)Lcom/google/android/material/textview/MaterialTextView;	749	755
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private appVersionCode()I	757	790
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private appVersionName()Ljava/lang/String;	792	833
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private deviceId()Ljava/lang/String;	835	857
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private fetchAndShowTicker()V	859	889
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private finishImport(Ljava/lang/String;)V	891	957
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private getAdSize()Lcom/google/android/gms/ads/AdSize;	959	999
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public static getAuid()Ljava/lang/String;	1001	1007
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private getPortsAdapter(I)Landroid/widget/ArrayAdapter;	1009	1035
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private initAds()V	1037	1059
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private initApps(Ljava/lang/String;)Ljava/util/List;	1061	1201
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private initMethods()V	1203	1308
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private initMethodsLite()V	1310	1498
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private initServers()V	1500	1749
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private isStoragePermissionGranted(Ljava/lang/String;)Z	1751	1782
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private joinTelegram()V	1784	1868
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private loadConnectedInterstitialAd()V	1870	1928
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private loadDisConnectedInterstitialAd()V	1930	1988
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private openLink(Ljava/lang/String;)V	1990	2012
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private playSound()V	2014	2039
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private playVibrate()V	2041	2070
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private portSelectListener()Landroid/widget/AdapterView$OnItemSelectedListener;	2072	2080
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private prepareProfile()Lapp/fast/ssh/core/VpnProfile;	2082	2791
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private processImport(Ljava/lang/String;)V	2793	2858
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private readResource(Ljava/lang/String;)Ljava/lang/String;	2860	2961
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private requestNewAdBanner(Lcom/google/android/gms/ads/AdView;)V	2963	2981
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private saveEntries()V	2983	3099
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private setConnected(Z)V	3101	3208
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private showAd(Lcom/google/android/gms/ads/interstitial/InterstitialAd;Landroid/app/Activity;)V	3210	3278
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private showRewarded(Lcom/google/android/gms/ads/rewarded/RewardedAd;)V	3280	3387
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private stopAndHideTimer()V	3389	3407
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private static toRoundedUnit(J)Ljava/lang/String;	3409	3521
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private toggleCustom(Z)V	3523	3678
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private userFacing(Ljava/lang/String;)Ljava/lang/String;	3680	3781
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method private whatsNew()V	3783	3913
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public GetVpnConnectionHelper()Lapp/fast/ssh/core/VpnConnectionHelper;	3917	3923
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public dismissLoading(J)V	3925	3966
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public exportConfig()V	3968	4092
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public importConfig()V	4094	4183
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public isLoadingVisible(J)Z	4185	4213
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method synthetic lambda$onCreate$0$app-fast-ssh-HomeFragment(Landroid/view/View;)V	4215	4260
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method synthetic lambda$onCreate$1$app-fast-ssh-HomeFragment(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z	4262	4288
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method synthetic lambda$onCreateView$2$app-fast-ssh-HomeFragment(Landroid/view/View;)V	4290	4318
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method synthetic lambda$onCreateView$3$app-fast-ssh-HomeFragment(Landroid/widget/CompoundButton;Z)V	4320	4326
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method synthetic lambda$onCreateView$4$app-fast-ssh-HomeFragment(Landroid/view/View;)V	4328	4336
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method synthetic lambda$onCreateView$5$app-fast-ssh-HomeFragment(Landroid/view/View;)V	4338	4372
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method synthetic lambda$onCreateView$6$app-fast-ssh-HomeFragment(Landroid/view/View;)V	4374	4412
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method synthetic lambda$showLoading$7$app-fast-ssh-HomeFragment(JLandroid/content/DialogInterface;)V	4414	4422
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method synthetic lambda$showRewarded$8$app-fast-ssh-HomeFragment(Lcom/google/android/gms/ads/rewarded/RewardItem;)V	4424	4492
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onAccessTopUp()V	4494	4504
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onActivityResult(IILandroid/content/Intent;)V	4506	4761
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onAttach(Landroid/content/Context;)V	4763	4769
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onBillingState(Lapp/fast/ssh/BillingManager$State;Ljava/lang/String;)V	4771	4917
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onByteCount(JJ)V	4919	4939
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onCreate(Landroid/os/Bundle;)V	4941	5069
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;	5071	5732
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onDestroy()V	5734	5750
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onExpiredState()V	5752	5766
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onGenerated(Ljava/lang/String;)V	5768	5821
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onMessageReceived(Ljava/lang/String;)V	5823	5837
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onPause()V	5839	5847
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onRemindState()V	5849	5853
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onRequestPermissionsResult(I[Ljava/lang/String;[I)V	5855	5888
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onResume()V	5890	5928
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onStartCountdown(J)V	5930	5960
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onStickyMessageReceived(Ljava/lang/String;)V	5962	5966
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public onUpdateState(Lapp/fast/ssh/core/VpnStatus$VpnState;)V	5968	5994
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public processImportString(Ljava/lang/String;Landroid/content/Context;)V	5996	6204
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public showLoadFailed(JLcom/google/android/gms/ads/LoadAdError;)V	6206	6252
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method public showLoading(J)V	6254	6357
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method startCurrentProfile()V	6359	6371
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method stopCurrentProfile()V	6373	6381
+smali/smali/app/fast/ssh/HomeFragment.smali	HomeFragment	.method stopService()V	6383	6391
+smali/smali/app/fast/ssh/HttpTokenExchange$1.smali	HttpTokenExchange$1	.method constructor <init>(Lapp/fast/ssh/HttpTokenExchange;Ljava/lang/String;Ljava/lang/String;Lapp/fast/ssh/BillingManager$TokenExchange$Callback;)V	31	65
+smali/smali/app/fast/ssh/HttpTokenExchange$1.smali	HttpTokenExchange$1	.method public run()V	69	83
+smali/smali/app/fast/ssh/HttpTokenExchange.smali	HttpTokenExchange	.method static constructor <clinit>()V	24	36
+smali/smali/app/fast/ssh/HttpTokenExchange.smali	HttpTokenExchange	.method public constructor <init>(Ljava/lang/String;)V	38	52
+smali/smali/app/fast/ssh/HttpTokenExchange.smali	HttpTokenExchange	.method static synthetic access$000(Lapp/fast/ssh/HttpTokenExchange;Ljava/lang/String;Ljava/lang/String;Lapp/fast/ssh/BillingManager$TokenExchange$Callback;)V	54	60
+smali/smali/app/fast/ssh/HttpTokenExchange.smali	HttpTokenExchange	.method private call(Ljava/lang/String;Ljava/lang/String;Lapp/fast/ssh/BillingManager$TokenExchange$Callback;)V	62	443
+smali/smali/app/fast/ssh/HttpTokenExchange.smali	HttpTokenExchange	.method private static readAll(Ljava/io/InputStream;)Ljava/lang/String;	445	493
+smali/smali/app/fast/ssh/HttpTokenExchange.smali	HttpTokenExchange	.method public redeem(Ljava/lang/String;Ljava/lang/String;Lapp/fast/ssh/BillingManager$TokenExchange$Callback;)V	497	509
+smali/smali/app/fast/ssh/ImportActivity$$ExternalSyntheticLambda0.smali	ImportActivity$$ExternalSyntheticLambda0	.method public synthetic constructor <init>(Lapp/fast/ssh/ImportActivity;)V	14	22
+smali/smali/app/fast/ssh/ImportActivity$$ExternalSyntheticLambda0.smali	ImportActivity$$ExternalSyntheticLambda0	.method public final onClick(I)V	26	34
+smali/smali/app/fast/ssh/ImportActivity.smali	ImportActivity	.method static constructor <clinit>()V	27	39
+smali/smali/app/fast/ssh/ImportActivity.smali	ImportActivity	.method public constructor <init>()V	41	47
+smali/smali/app/fast/ssh/ImportActivity.smali	ImportActivity	.method private handleIntentIf()V	49	136
+smali/smali/app/fast/ssh/ImportActivity.smali	ImportActivity	.method private showFiles(Ljava/lang/String;)V	138	289
+smali/smali/app/fast/ssh/ImportActivity.smali	ImportActivity	.method synthetic lambda$showFiles$0$app-fast-ssh-ImportActivity(I)V	293	339
+smali/smali/app/fast/ssh/ImportActivity.smali	ImportActivity	.method public onBackPressed()V	341	349
+smali/smali/app/fast/ssh/ImportActivity.smali	ImportActivity	.method protected onCreate(Landroid/os/Bundle;)V	351	419
+smali/smali/app/fast/ssh/LibFastSSH.smali	LibFastSSH	.method public constructor <init>()V	6	12
+smali/smali/app/fast/ssh/LibFastSSH.smali	LibFastSSH	.method public static native a(I)J	14	15
+smali/smali/app/fast/ssh/LibFastSSH.smali	LibFastSSH	.method public static native a(ILjava/lang/Object;)J	17	18
+smali/smali/app/fast/ssh/LibFastSSH.smali	LibFastSSH	.method public static native a(I)Ljava/lang/Object;	20	21
+smali/smali/app/fast/ssh/LibFastSSH.smali	LibFastSSH	.method public static native a(ILjava/lang/Object;)Ljava/lang/Object;	23	24
+smali/smali/app/fast/ssh/LibFastSSH.smali	LibFastSSH	.method public static native a(ILjava/lang/Object;)V	26	27
+smali/smali/app/fast/ssh/LibFastSSH.smali	LibFastSSH	.method public static native a(ILjava/lang/Object;I)V	29	30
+smali/smali/app/fast/ssh/LibFastSSH.smali	LibFastSSH	.method public static native a(ILjava/lang/Object;JJ)V	32	33
+smali/smali/app/fast/ssh/LibFastSSH.smali	LibFastSSH	.method public static native a(ILjava/lang/Object;Ljava/lang/Object;)V	35	36
+smali/smali/app/fast/ssh/LibFastSSH.smali	LibFastSSH	.method public static native a(ILjava/lang/Object;Z)V	38	39
+smali/smali/app/fast/ssh/LibFastSSH.smali	LibFastSSH	.method public static native a(ILjava/lang/Object;Ljava/lang/Object;)Z	41	42
+smali/smali/app/fast/ssh/LogFragment$1.smali	LogFragment$1	.method constructor <init>(Lapp/fast/ssh/LogFragment;Ljava/lang/String;)V	27	53
+smali/smali/app/fast/ssh/LogFragment$1.smali	LogFragment$1	.method public run()V	57	79
+smali/smali/app/fast/ssh/LogFragment$2.smali	LogFragment$2	.method constructor <init>(Lapp/fast/ssh/LogFragment;Ljava/util/List;)V	27	53
+smali/smali/app/fast/ssh/LogFragment$2.smali	LogFragment$2	.method public run()V	57	123
+smali/smali/app/fast/ssh/LogFragment.smali	LogFragment	.method public constructor <init>()V	34	46
+smali/smali/app/fast/ssh/LogFragment.smali	LogFragment	.method static synthetic access$000(Lapp/fast/ssh/LogFragment;)Ljava/util/LinkedList;	48	54
+smali/smali/app/fast/ssh/LogFragment.smali	LogFragment	.method static synthetic access$100(Lapp/fast/ssh/LogFragment;)Landroid/widget/ArrayAdapter;	56	62
+smali/smali/app/fast/ssh/LogFragment.smali	LogFragment	.method static synthetic access$200(Lapp/fast/ssh/LogFragment;)Landroid/widget/ListView;	64	70
+smali/smali/app/fast/ssh/LogFragment.smali	LogFragment	.method public clear()V	74	88
+smali/smali/app/fast/ssh/LogFragment.smali	LogFragment	.method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;	90	132
+smali/smali/app/fast/ssh/LogFragment.smali	LogFragment	.method public onDebugReceived(Ljava/lang/String;)V	134	148
+smali/smali/app/fast/ssh/LogFragment.smali	LogFragment	.method public declared-synchronized onDebugRestore(Ljava/util/List;)V	150	190
+smali/smali/app/fast/ssh/LogFragment.smali	LogFragment	.method public onDestroy()V	192	200
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda0.smali	MainActivity$$ExternalSyntheticLambda0	.method public synthetic constructor <init>()V	10	16
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda0.smali	MainActivity$$ExternalSyntheticLambda0	.method public final onApplyWindowInsets(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;	20	28
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda1.smali	MainActivity$$ExternalSyntheticLambda1	.method public synthetic constructor <init>(Lapp/fast/ssh/MainActivity;)V	14	22
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda1.smali	MainActivity$$ExternalSyntheticLambda1	.method public final onSuccess(Ljava/lang/Object;)V	26	36
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda2.smali	MainActivity$$ExternalSyntheticLambda2	.method public synthetic constructor <init>()V	10	16
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda2.smali	MainActivity$$ExternalSyntheticLambda2	.method public final onApplyWindowInsets(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;	20	28
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda3.smali	MainActivity$$ExternalSyntheticLambda3	.method public synthetic constructor <init>(Lapp/fast/ssh/MainActivity;Ljava/lang/String;Lcom/google/android/material/navigation/NavigationView;)V	18	30
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda3.smali	MainActivity$$ExternalSyntheticLambda3	.method public final onClick(Landroid/content/DialogInterface;I)V	34	46
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda4.smali	MainActivity$$ExternalSyntheticLambda4	.method public synthetic constructor <init>()V	10	16
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda4.smali	MainActivity$$ExternalSyntheticLambda4	.method public final onActivityResult(Ljava/lang/Object;)V	20	28
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda5.smali	MainActivity$$ExternalSyntheticLambda5	.method public synthetic constructor <init>(Lapp/fast/ssh/MainActivity;)V	14	22
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda5.smali	MainActivity$$ExternalSyntheticLambda5	.method public final onSuccess(Ljava/lang/Object;)V	26	36
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda6.smali	MainActivity$$ExternalSyntheticLambda6	.method public synthetic constructor <init>(Lapp/fast/ssh/MainActivity;Lcom/google/android/material/navigation/NavigationView;)V	16	26
+smali/smali/app/fast/ssh/MainActivity$$ExternalSyntheticLambda6.smali	MainActivity$$ExternalSyntheticLambda6	.method public final onNavigationItemSelected(Landroid/view/MenuItem;)Z	30	42
+smali/smali/app/fast/ssh/MainActivity$1.smali	MainActivity$1	.method constructor <init>(Lapp/fast/ssh/MainActivity;)V	25	41
+smali/smali/app/fast/ssh/MainActivity$1.smali	MainActivity$1	.method public onErrorOccurred()V	45	49
+smali/smali/app/fast/ssh/MainActivity$1.smali	MainActivity$1	.method public onResponseReceived(Lorg/json/JSONObject;)V	51	68
+smali/smali/app/fast/ssh/MainActivity$2.smali	MainActivity$2	.method constructor <init>(Lapp/fast/ssh/MainActivity;Lapp/fast/ssh/Subscription;Landroid/app/ProgressDialog;)V	29	59
+smali/smali/app/fast/ssh/MainActivity$2.smali	MainActivity$2	.method public onErrorOccurred()V	63	87
+smali/smali/app/fast/ssh/MainActivity$2.smali	MainActivity$2	.method public onResponseReceived(Lorg/json/JSONObject;)V	89	161
+smali/smali/app/fast/ssh/MainActivity$3.smali	MainActivity$3	.method constructor <init>(Lapp/fast/ssh/MainActivity;)V	25	41
+smali/smali/app/fast/ssh/MainActivity$3.smali	MainActivity$3	.method public onClick(Landroid/content/DialogInterface;I)V	45	87
+smali/smali/app/fast/ssh/MainActivity$4.smali	MainActivity$4	.method constructor <init>(Lapp/fast/ssh/MainActivity;)V	25	41
+smali/smali/app/fast/ssh/MainActivity$4.smali	MainActivity$4	.method public onClick(Landroid/content/DialogInterface;I)V	45	55
+smali/smali/app/fast/ssh/MainActivity$5$1.smali	MainActivity$5$1	.method constructor <init>(Lapp/fast/ssh/MainActivity$5;)V	22	38
+smali/smali/app/fast/ssh/MainActivity$5$1.smali	MainActivity$5$1	.method public onAdClicked()V	42	46
+smali/smali/app/fast/ssh/MainActivity$5$1.smali	MainActivity$5$1	.method public onAdDismissedFullScreenContent()V	48	60
+smali/smali/app/fast/ssh/MainActivity$5$1.smali	MainActivity$5$1	.method public onAdFailedToShowFullScreenContent(Lcom/google/android/gms/ads/AdError;)V	62	74
+smali/smali/app/fast/ssh/MainActivity$5$1.smali	MainActivity$5$1	.method public onAdImpression()V	76	80
+smali/smali/app/fast/ssh/MainActivity$5$1.smali	MainActivity$5$1	.method public onAdShowedFullScreenContent()V	82	86
+smali/smali/app/fast/ssh/MainActivity$5.smali	MainActivity$5	.method constructor <init>(Lapp/fast/ssh/MainActivity;)V	22	38
+smali/smali/app/fast/ssh/MainActivity$5.smali	MainActivity$5	.method public onAdFailedToLoad(Lcom/google/android/gms/ads/LoadAdError;)V	42	52
+smali/smali/app/fast/ssh/MainActivity$5.smali	MainActivity$5	.method public onAdLoaded(Lcom/google/android/gms/ads/interstitial/InterstitialAd;)V	54	74
+smali/smali/app/fast/ssh/MainActivity$5.smali	MainActivity$5	.method public bridge synthetic onAdLoaded(Ljava/lang/Object;)V	76	92
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method static constructor <clinit>()V	43	63
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method public constructor <init>()V	65	77
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method static synthetic access$000(Lapp/fast/ssh/MainActivity;Lorg/json/JSONObject;)Z	79	92
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method static synthetic access$100(Lapp/fast/ssh/MainActivity;)Lcom/google/android/gms/ads/interstitial/InterstitialAd;	94	100
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method static synthetic access$102(Lapp/fast/ssh/MainActivity;Lcom/google/android/gms/ads/interstitial/InterstitialAd;)Lcom/google/android/gms/ads/interstitial/InterstitialAd;	102	108
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method static synthetic access$200(Lapp/fast/ssh/MainActivity;)Lapp/fast/ssh/HomeFragment;	110	116
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method static synthetic access$302(Lapp/fast/ssh/MainActivity;Z)Z	118	124
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private appVersionCode()I	126	151
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private appVersionName()Ljava/lang/String;	153	186
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private deviceId()Ljava/lang/String;	188	206
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private fixAppBarInset()V	208	234
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private fixDrawerInset()V	236	262
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private getAdSize()Lcom/google/android/gms/ads/AdSize;	264	296
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private handleImportIntent(Landroid/content/Intent;)V	298	328
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private initAds()V	330	370
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method static synthetic lambda$fixAppBarInset$0(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;	372	400
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method static synthetic lambda$fixDrawerInset$1(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;	402	430
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method static synthetic lambda$onCreate$2(Ljava/lang/Boolean;)V	432	436
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private loadUpdateSuccessInterstitialAd()V	438	468
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private openLink(Ljava/lang/String;)V	470	492
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private processUpdate(Lorg/json/JSONObject;)Z	494	694
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private readLatest(Ljava/lang/String;Lapp/fast/ssh/util/DBHelper$Resource;)Ljava/lang/String;	696	818
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private readResource(Ljava/lang/String;)Ljava/lang/String;	820	917
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private showRenewAccess()V	919	929
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method private startResourceUpdate()V	931	1020
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method public debugState()Ljava/lang/String;	1024	1112
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method public hideBannerAd()V	1114	1124
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method synthetic lambda$onCreate$3$app-fast-ssh-MainActivity(Lcom/google/android/play/core/appupdate/AppUpdateInfo;)V	1126	1164
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method synthetic lambda$onCreate$4$app-fast-ssh-MainActivity(Ljava/lang/String;Lcom/google/android/material/navigation/NavigationView;Landroid/content/DialogInterface;I)V	1166	1214
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method synthetic lambda$onCreate$5$app-fast-ssh-MainActivity(Lcom/google/android/material/navigation/NavigationView;Landroid/view/MenuItem;)Z	1216	1374
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method synthetic lambda$onResume$6$app-fast-ssh-MainActivity(Lcom/google/android/play/core/appupdate/AppUpdateInfo;)V	1376	1408
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method protected onActivityResult(IILandroid/content/Intent;)V	1410	1430
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method public onBackPressed()V	1432	1456
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method protected onCreate(Landroid/os/Bundle;)V	1458	1787
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method public onCreateOptionsMenu(Landroid/view/Menu;)Z	1789	1805
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method protected onNewIntent(Landroid/content/Intent;)V	1807	1815
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method public onOptionsItemSelected(Landroid/view/MenuItem;)Z	1817	1924
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method protected onPause()V	1926	1950
+smali/smali/app/fast/ssh/MainActivity.smali	MainActivity	.method protected onResume()V	1952	2043
+smali/smali/app/fast/ssh/PrefsSubscriptionStore.smali	PrefsSubscriptionStore	.method static constructor <clinit>()V	26	62
+smali/smali/app/fast/ssh/PrefsSubscriptionStore.smali	PrefsSubscriptionStore	.method public constructor <init>(Landroid/content/Context;)V	64	88
+smali/smali/app/fast/ssh/PrefsSubscriptionStore.smali	PrefsSubscriptionStore	.method public clear()V	92	134
+smali/smali/app/fast/ssh/PrefsSubscriptionStore.smali	PrefsSubscriptionStore	.method public getPurchaseToken()Ljava/lang/String;	136	170
+smali/smali/app/fast/ssh/PrefsSubscriptionStore.smali	PrefsSubscriptionStore	.method public getRefreshWindowMillis()J	172	178
+smali/smali/app/fast/ssh/PrefsSubscriptionStore.smali	PrefsSubscriptionStore	.method public getSubscriptionToken()Ljava/lang/String;	180	214
+smali/smali/app/fast/ssh/PrefsSubscriptionStore.smali	PrefsSubscriptionStore	.method public getTokenExpiresAtMillis()J	216	234
+smali/smali/app/fast/ssh/PrefsSubscriptionStore.smali	PrefsSubscriptionStore	.method public save(Ljava/lang/String;J)V	236	268
+smali/smali/app/fast/ssh/PrefsSubscriptionStore.smali	PrefsSubscriptionStore	.method public savePurchaseToken(Ljava/lang/String;)V	270	292
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method static constructor <clinit>()V	38	505
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method public constructor <init>()V	507	513
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static BmAr(I)I	515	549
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static BnH([BI)[B	551	647
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static CF(Lapp/fast/ssh/ProtectedFastSSH$HomeFragment$5$1;I[BILapp/fast/ssh/ProtectedFastSSH$HomeFragment$5$1;)V	649	737
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method public static Ef([BII)Z	739	769
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method static HHv(ZI[II)I	771	791
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method static It([B[BI)V	793	999
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method public static Iu([BIZII)Landroid/graphics/Bitmap;	1001	1015
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method static bhtm(II[B)V	1017	1204
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method public static cHxg(I)I	1206	1224
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static cjA(I)I	1226	1246
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method static csB(I[II)V	1248	1270
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static d([BII)Z	1272	1328
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static fyFi(I[B)V	1330	1411
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static gIJ(IIII[B)V	1413	1446
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method public static ind([B)I	1448	1485
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static kd([BIIZ)V	1487	1507
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static l(I[B)V	1509	1629
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method static m(II)Z	1631	1650
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method static md(Lapp/fast/ssh/ProtectedFastSSH$HomeFragment$5$1;ILapp/fast/ssh/ProtectedFastSSH$HomeFragment$5$1;II)V	1652	1662
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method static md([II[III)V	1664	1678
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method static mir([B)[B	1680	1723
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static noF([BI)V	1725	2034
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static p([BI[B)V	2036	2154
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static r([BIIZ)V	2156	2286
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method public static rj(B)I	2288	2294
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method static s([B)J	2296	2665
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static scs(BB)B	2667	2712
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static sn(II[BI)I	2714	2757
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static tFs(I)I	2759	2827
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method public static tht([BIZ)[B	2829	3111
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static tklC(II)I	3113	3153
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method public static uBC([BIII)Landroid/graphics/Bitmap;	3155	3337
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static utnd(I[I)I	3339	3407
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static v(III)I	3409	3495
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method static w([II)I	3497	3597
+smali/smali/app/fast/ssh/ProtectedFastSSH$ExportActivity$2$8.smali	ProtectedFastSSH$ExportActivity$2$8	.method private static zy([BII[B)V	3599	3725
+smali/smali/app/fast/ssh/ProtectedFastSSH$HomeFragment$5$1.smali	ProtectedFastSSH$HomeFragment$5$1	.method public constructor <init>([B)V	12	24
+smali/smali/app/fast/ssh/ProtectedFastSSH$HomeFragment$5$1.smali	ProtectedFastSSH$HomeFragment$5$1	.method public constructor <init>([BI)V	26	36
+smali/smali/app/fast/ssh/ProtectedFastSSH$HomeFragment$5$1.smali	ProtectedFastSSH$HomeFragment$5$1	.method Cc([BI)V	40	56
+smali/smali/app/fast/ssh/ProtectedFastSSH$HomeFragment$5$1.smali	ProtectedFastSSH$HomeFragment$5$1	.method m(IB)V	58	70
+smali/smali/app/fast/ssh/ProtectedFastSSH$HomeFragment$5$1.smali	ProtectedFastSSH$HomeFragment$5$1	.method public r(II)V	72	86
+smali/smali/app/fast/ssh/ProtectedFastSSH$HomeFragment$5$1.smali	ProtectedFastSSH$HomeFragment$5$1	.method tks(I)I	88	104
+smali/smali/app/fast/ssh/ProtectedFastSSH$HomeFragment$5$1.smali	ProtectedFastSSH$HomeFragment$5$1	.method public uiGk(I)Lapp/fast/ssh/ProtectedFastSSH$HomeFragment$5$1;	106	120
+smali/smali/app/fast/ssh/ProtectedFastSSH$HomeFragment$5$1.smali	ProtectedFastSSH$HomeFragment$5$1	.method xzy(II)[B	122	138
+smali/smali/app/fast/ssh/ProtectedFastSSH$HomeFragment$5$1.smali	ProtectedFastSSH$HomeFragment$5$1	.method yp(I)B	140	152
+smali/smali/app/fast/ssh/ProtectedFastSSH$HomeFragment$5$1.smali	ProtectedFastSSH$HomeFragment$5$1	.method public zc(I)V	154	164
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method static constructor <clinit>()V	47	59
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method public constructor <init>()V	61	71
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method public static CFhs()Z	73	95
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private static HG()I	97	105
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private Jxdg(I)I	107	123
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private varargs ee([Ljava/lang/String;)Landroid/graphics/drawable/Drawable;	125	212
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private gi(Ljava/lang/String;)[I	214	292
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private varargs i(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;	294	349
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private varargs kg(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/Integer;	351	420
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private mu(Landroid/widget/LinearLayout;)V	422	464
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method public static oiFk(Landroid/content/Context;ILjava/lang/String;)V	466	484
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private static oznh()Landroid/content/Intent;	486	508
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private qdD()V	510	749
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private t(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Float;	751	808
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private toxt(Ljava/lang/String;)Ljava/lang/Float;	810	1092
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private varargs uwAa([Ljava/lang/String;)[I	1094	1204
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private wi(Ljava/lang/String;)Landroid/text/Spanned;	1206	1231
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private ym()Ljava/lang/String;	1233	1260
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method private zq(I)Ljava/lang/String;	1262	1282
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method iBjB()[B	1286	1387
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method public onClick(Landroid/view/View;)V	1389	1420
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method protected onCreate(Landroid/os/Bundle;)V	1422	1745
+smali/smali/app/fast/ssh/ProtectedFastSSH$MainActivity$3.smali	ProtectedFastSSH$MainActivity$3	.method r(I)Landroid/graphics/drawable/Drawable;	1747	1763
+smali/smali/app/fast/ssh/ProtectedFastSSH.smali	ProtectedFastSSH	.method public constructor <init>()V	10	18
+smali/smali/app/fast/ssh/ProtectedFastSSH.smali	ProtectedFastSSH	.method public static native a(Ljava/lang/Object;Ljava/lang/String;)Ljava/io/InputStream;	20	21
+smali/smali/app/fast/ssh/ProtectedFastSSH.smali	ProtectedFastSSH	.method public static a([B)[B	23	586
+smali/smali/app/fast/ssh/ProtectedFastSSH.smali	ProtectedFastSSH	.method private b()V	588	741
+smali/smali/app/fast/ssh/ProtectedFastSSH.smali	ProtectedFastSSH	.method private static native c()V	743	744
+smali/smali/app/fast/ssh/ProtectedFastSSH.smali	ProtectedFastSSH	.method public static native s(Ljava/lang/String;)Ljava/lang/String;	746	747
+smali/smali/app/fast/ssh/ProtectedFastSSH.smali	ProtectedFastSSH	.method protected attachBaseContext(Landroid/content/Context;)V	751	773
+smali/smali/app/fast/ssh/ProtectedFastSSH.smali	ProtectedFastSSH	.method public onCreate()V	775	793
+smali/smali/app/fast/ssh/R$anim.smali	R$anim	.method private constructor <init>()V	115	121
+smali/smali/app/fast/ssh/R$animator.smali	R$animator	.method private constructor <init>()V	99	105
+smali/smali/app/fast/ssh/R$array.smali	R$array	.method private constructor <init>()V	41	47
+smali/smali/app/fast/ssh/R$attr.smali	R$attr	.method private constructor <init>()V	3079	3085
+smali/smali/app/fast/ssh/R$bool.smali	R$bool	.method private constructor <init>()V	39	45
+smali/smali/app/fast/ssh/R$color.smali	R$color	.method private constructor <init>()V	1989	1995
+smali/smali/app/fast/ssh/R$dimen.smali	R$dimen	.method private constructor <init>()V	2287	2293
+smali/smali/app/fast/ssh/R$drawable.smali	R$drawable	.method private constructor <init>()V	685	691
+smali/smali/app/fast/ssh/R$id.smali	R$id	.method private constructor <init>()V	1409	1415
+smali/smali/app/fast/ssh/R$integer.smali	R$integer	.method private constructor <init>()V	171	177
+smali/smali/app/fast/ssh/R$interpolator.smali	R$interpolator	.method private constructor <init>()V	55	61
+smali/smali/app/fast/ssh/R$layout.smali	R$layout	.method private constructor <init>()V	349	355
+smali/smali/app/fast/ssh/R$menu.smali	R$menu	.method private constructor <init>()V	29	35
+smali/smali/app/fast/ssh/R$mipmap.smali	R$mipmap	.method private constructor <init>()V	23	29
+smali/smali/app/fast/ssh/R$plurals.smali	R$plurals	.method private constructor <init>()V	21	27
+smali/smali/app/fast/ssh/R$raw.smali	R$raw	.method private constructor <init>()V	27	33
+smali/smali/app/fast/ssh/R$string.smali	R$string	.method private constructor <init>()V	535	541
+smali/smali/app/fast/ssh/R$style.smali	R$style	.method private constructor <init>()V	3119	3125
+smali/smali/app/fast/ssh/R$styleable.smali	R$styleable	.method public static constructor <clinit>()V	4867	8972
+smali/smali/app/fast/ssh/R$styleable.smali	R$styleable	.method private constructor <init>()V	8974	8980
+smali/smali/app/fast/ssh/R$xml.smali	R$xml	.method private constructor <init>()V	39	45
+smali/smali/app/fast/ssh/R.smali	R	.method private constructor <init>()V	33	39
+smali/smali/app/fast/ssh/RewardedAdSyncController$$ExternalSyntheticLambda0.smali	RewardedAdSyncController$$ExternalSyntheticLambda0	.method public synthetic constructor <init>(Lapp/fast/ssh/RewardedAdSyncController;Landroid/app/Activity;Lapp/fast/ssh/RewardedAdSyncController$Ui;)V	18	30
+smali/smali/app/fast/ssh/RewardedAdSyncController$$ExternalSyntheticLambda0.smali	RewardedAdSyncController$$ExternalSyntheticLambda0	.method public final run()V	34	46
+smali/smali/app/fast/ssh/RewardedAdSyncController$$ExternalSyntheticLambda1.smali	RewardedAdSyncController$$ExternalSyntheticLambda1	.method public synthetic constructor <init>(Lapp/fast/ssh/RewardedAdSyncController;Landroid/app/Activity;Lapp/fast/ssh/RewardedAdSyncController$Ui;)V	18	30
+smali/smali/app/fast/ssh/RewardedAdSyncController$$ExternalSyntheticLambda1.smali	RewardedAdSyncController$$ExternalSyntheticLambda1	.method public final run()V	34	46
+smali/smali/app/fast/ssh/RewardedAdSyncController$1.smali	RewardedAdSyncController$1	.method constructor <init>(Lapp/fast/ssh/RewardedAdSyncController;Lapp/fast/ssh/RewardedAdSyncController$Ui;)V	24	44
+smali/smali/app/fast/ssh/RewardedAdSyncController$1.smali	RewardedAdSyncController$1	.method public onAdFailedToLoad(Lcom/google/android/gms/ads/LoadAdError;)V	48	144
+smali/smali/app/fast/ssh/RewardedAdSyncController$1.smali	RewardedAdSyncController$1	.method public onAdLoaded(Lcom/google/android/gms/ads/rewarded/RewardedAd;)V	146	262
+smali/smali/app/fast/ssh/RewardedAdSyncController$1.smali	RewardedAdSyncController$1	.method public bridge synthetic onAdLoaded(Ljava/lang/Object;)V	264	280
+smali/smali/app/fast/ssh/RewardedAdSyncController$Ui.smali	RewardedAdSyncController$Ui	.method public abstract dismissLoading(J)V	18	19
+smali/smali/app/fast/ssh/RewardedAdSyncController$Ui.smali	RewardedAdSyncController$Ui	.method public abstract isLoadingVisible(J)Z	21	22
+smali/smali/app/fast/ssh/RewardedAdSyncController$Ui.smali	RewardedAdSyncController$Ui	.method public abstract showLoadFailed(JLcom/google/android/gms/ads/LoadAdError;)V	24	25
+smali/smali/app/fast/ssh/RewardedAdSyncController$Ui.smali	RewardedAdSyncController$Ui	.method public abstract showLoading(J)V	27	28
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method static constructor <clinit>()V	39	51
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method public constructor <init>(Ljava/lang/String;)V	53	61
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method public constructor <init>(Ljava/lang/String;J)V	63	89
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method static synthetic access$000(Lapp/fast/ssh/RewardedAdSyncController;)Ljava/util/concurrent/locks/ReentrantLock;	91	97
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method static synthetic access$102(Lapp/fast/ssh/RewardedAdSyncController;Lcom/google/android/gms/ads/rewarded/RewardedAd;)Lcom/google/android/gms/ads/rewarded/RewardedAd;	99	105
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method static synthetic access$202(Lapp/fast/ssh/RewardedAdSyncController;J)J	107	113
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method static synthetic access$302(Lapp/fast/ssh/RewardedAdSyncController;Z)Z	115	121
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method static synthetic access$400(Lapp/fast/ssh/RewardedAdSyncController;)J	123	129
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method static synthetic access$500(Lapp/fast/ssh/RewardedAdSyncController;)J	131	137
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method static synthetic access$600(Ljava/lang/String;)V	139	145
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method private static debug(Ljava/lang/String;)V	147	151
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method private dropExpiredLocked()V	153	197
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method private startLoadOnMain(Landroid/app/Activity;Lapp/fast/ssh/RewardedAdSyncController$Ui;)V	199	247
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method public hasValidCachedAd()Z	251	336
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method synthetic lambda$onUserClick$0$app-fast-ssh-RewardedAdSyncController(Landroid/app/Activity;Lapp/fast/ssh/RewardedAdSyncController$Ui;)V	338	344
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method synthetic lambda$prefetch$1$app-fast-ssh-RewardedAdSyncController(Landroid/app/Activity;Lapp/fast/ssh/RewardedAdSyncController$Ui;)V	346	352
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method public onDialogCancelled(J)V	354	408
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method public onUserClick(Landroid/app/Activity;Lapp/fast/ssh/RewardedAdSyncController$Ui;)V	410	607
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method public prefetch(Landroid/app/Activity;Lapp/fast/ssh/RewardedAdSyncController$Ui;)V	609	732
+smali/smali/app/fast/ssh/RewardedAdSyncController.smali	RewardedAdSyncController	.method public tryConsumeCached()Lcom/google/android/gms/ads/rewarded/RewardedAd;	734	782
+smali/smali/app/fast/ssh/SettingsActivity$1.smali	SettingsActivity$1	.method constructor <init>(Lapp/fast/ssh/SettingsActivity;)V	25	41
+smali/smali/app/fast/ssh/SettingsActivity$1.smali	SettingsActivity$1	.method public onClick(Landroid/content/DialogInterface;I)V	45	85
+smali/smali/app/fast/ssh/SettingsActivity.smali	SettingsActivity	.method public constructor <init>()V	7	13
+smali/smali/app/fast/ssh/SettingsActivity.smali	SettingsActivity	.method public onBackPressed()V	17	25
+smali/smali/app/fast/ssh/SettingsActivity.smali	SettingsActivity	.method protected onCreate(Landroid/os/Bundle;)V	27	81
+smali/smali/app/fast/ssh/SettingsActivity.smali	SettingsActivity	.method public onCreateOptionsMenu(Landroid/view/Menu;)Z	83	99
+smali/smali/app/fast/ssh/SettingsActivity.smali	SettingsActivity	.method public onOptionsItemSelected(Landroid/view/MenuItem;)Z	101	167
+smali/smali/app/fast/ssh/SettingsFragment$$ExternalSyntheticLambda0.smali	SettingsFragment$$ExternalSyntheticLambda0	.method public synthetic constructor <init>(Landroidx/preference/EditTextPreference;)V	14	22
+smali/smali/app/fast/ssh/SettingsFragment$$ExternalSyntheticLambda0.smali	SettingsFragment$$ExternalSyntheticLambda0	.method public final onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z	26	36
+smali/smali/app/fast/ssh/SettingsFragment$$ExternalSyntheticLambda1.smali	SettingsFragment$$ExternalSyntheticLambda1	.method public synthetic constructor <init>()V	10	16
+smali/smali/app/fast/ssh/SettingsFragment$$ExternalSyntheticLambda1.smali	SettingsFragment$$ExternalSyntheticLambda1	.method public final onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z	20	28
+smali/smali/app/fast/ssh/SettingsFragment$1.smali	SettingsFragment$1	.method constructor <init>(Lapp/fast/ssh/SettingsFragment;Landroidx/preference/EditTextPreference;Landroidx/preference/EditTextPreference;)V	29	59
+smali/smali/app/fast/ssh/SettingsFragment$1.smali	SettingsFragment$1	.method public onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z	63	87
+smali/smali/app/fast/ssh/SettingsFragment$2.smali	SettingsFragment$2	.method constructor <init>(Lapp/fast/ssh/SettingsFragment;Landroidx/preference/EditTextPreference;)V	27	53
+smali/smali/app/fast/ssh/SettingsFragment$2.smali	SettingsFragment$2	.method public onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z	57	99
+smali/smali/app/fast/ssh/SettingsFragment$3.smali	SettingsFragment$3	.method constructor <init>(Lapp/fast/ssh/SettingsFragment;Landroidx/preference/EditTextPreference;)V	27	53
+smali/smali/app/fast/ssh/SettingsFragment$3.smali	SettingsFragment$3	.method public onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z	57	99
+smali/smali/app/fast/ssh/SettingsFragment$4.smali	SettingsFragment$4	.method constructor <init>(Lapp/fast/ssh/SettingsFragment;)V	25	41
+smali/smali/app/fast/ssh/SettingsFragment$4.smali	SettingsFragment$4	.method public onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z	45	83
+smali/smali/app/fast/ssh/SettingsFragment$5.smali	SettingsFragment$5	.method constructor <init>(Lapp/fast/ssh/SettingsFragment;Landroidx/preference/ListPreference;)V	27	53
+smali/smali/app/fast/ssh/SettingsFragment$5.smali	SettingsFragment$5	.method public onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z	57	110
+smali/smali/app/fast/ssh/SettingsFragment$6.smali	SettingsFragment$6	.method constructor <init>(Lapp/fast/ssh/SettingsFragment;Landroidx/preference/ListPreference;)V	27	53
+smali/smali/app/fast/ssh/SettingsFragment$6.smali	SettingsFragment$6	.method public onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z	57	79
+smali/smali/app/fast/ssh/SettingsFragment$7.smali	SettingsFragment$7	.method constructor <init>(Lapp/fast/ssh/SettingsFragment;Landroidx/preference/Preference;)V	27	53
+smali/smali/app/fast/ssh/SettingsFragment$7.smali	SettingsFragment$7	.method public onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z	57	73
+smali/smali/app/fast/ssh/SettingsFragment$8.smali	SettingsFragment$8	.method constructor <init>(Lapp/fast/ssh/SettingsFragment;)V	25	41
+smali/smali/app/fast/ssh/SettingsFragment$8.smali	SettingsFragment$8	.method public onPreferenceClick(Landroidx/preference/Preference;)Z	45	61
+smali/smali/app/fast/ssh/SettingsFragment$9.smali	SettingsFragment$9	.method constructor <init>(Lapp/fast/ssh/SettingsFragment;Landroidx/preference/ListPreference;)V	27	53
+smali/smali/app/fast/ssh/SettingsFragment$9.smali	SettingsFragment$9	.method public onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z	57	202
+smali/smali/app/fast/ssh/SettingsFragment.smali	SettingsFragment	.method public constructor <init>()V	7	13
+smali/smali/app/fast/ssh/SettingsFragment.smali	SettingsFragment	.method static synthetic access$000(Ljava/lang/String;)Z	15	23
+smali/smali/app/fast/ssh/SettingsFragment.smali	SettingsFragment	.method private static isValidIPAddress(Ljava/lang/String;)Z	25	55
+smali/smali/app/fast/ssh/SettingsFragment.smali	SettingsFragment	.method static synthetic lambda$onCreatePreferences$0(Landroidx/preference/EditTextPreference;Landroidx/preference/Preference;Ljava/lang/Object;)Z	57	71
+smali/smali/app/fast/ssh/SettingsFragment.smali	SettingsFragment	.method static synthetic lambda$onCreatePreferences$1(Landroidx/preference/Preference;Ljava/lang/Object;)Z	73	79
+smali/smali/app/fast/ssh/SettingsFragment.smali	SettingsFragment	.method public onCreatePreferences(Landroid/os/Bundle;Ljava/lang/String;)V	83	385
+smali/smali/app/fast/ssh/Subscription.smali	Subscription	.method public constructor <init>(Landroid/content/Context;)V	11	23
+smali/smali/app/fast/ssh/Subscription.smali	Subscription	.method public constructor <init>(Lapp/fast/ssh/BillingManager$SubscriptionStore;)V	25	33
+smali/smali/app/fast/ssh/Subscription.smali	Subscription	.method public isActive()Z	37	63
+smali/smali/app/fast/ssh/Subscription.smali	Subscription	.method public shouldRequestAds()Z	65	75
+smali/smali/app/fast/ssh/Subscription.smali	Subscription	.method public shouldShowAddTime()Z	77	87
+smali/smali/app/fast/ssh/Subscription.smali	Subscription	.method public shouldShowTimer()Z	89	99
+smali/smali/app/fast/ssh/Subscription.smali	Subscription	.method public token()Ljava/lang/String;	101	111
+smali/smali/app/fast/ssh/TimerConf.smali	TimerConf	.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;III)V	21	39
+smali/smali/app/fast/ssh/VoucherActivity$$ExternalSyntheticLambda0.smali	VoucherActivity$$ExternalSyntheticLambda0	.method public synthetic constructor <init>(Lapp/fast/ssh/VoucherActivity;)V	14	22
+smali/smali/app/fast/ssh/VoucherActivity$$ExternalSyntheticLambda0.smali	VoucherActivity$$ExternalSyntheticLambda0	.method public final onClick(Landroid/view/View;)V	26	34
+smali/smali/app/fast/ssh/VoucherActivity$$ExternalSyntheticLambda1.smali	VoucherActivity$$ExternalSyntheticLambda1	.method public synthetic constructor <init>(Lapp/fast/ssh/VoucherActivity;Ljava/nio/ByteBuffer;)V	16	26
+smali/smali/app/fast/ssh/VoucherActivity$$ExternalSyntheticLambda1.smali	VoucherActivity$$ExternalSyntheticLambda1	.method public final run()V	30	40
+smali/smali/app/fast/ssh/VoucherActivity$1.smali	VoucherActivity$1	.method constructor <init>(Lapp/fast/ssh/VoucherActivity;)V	25	41
+smali/smali/app/fast/ssh/VoucherActivity$1.smali	VoucherActivity$1	.method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V	45	65
+smali/smali/app/fast/ssh/VoucherActivity$1.smali	VoucherActivity$1	.method public onServiceDisconnected(Landroid/content/ComponentName;)V	67	77
+smali/smali/app/fast/ssh/VoucherActivity$2$1.smali	VoucherActivity$2$1	.method constructor <init>(Lapp/fast/ssh/VoucherActivity$2;)V	25	41
+smali/smali/app/fast/ssh/VoucherActivity$2$1.smali	VoucherActivity$2$1	.method public run()V	45	73
+smali/smali/app/fast/ssh/VoucherActivity$2$2.smali	VoucherActivity$2$2	.method constructor <init>(Lapp/fast/ssh/VoucherActivity$2;)V	25	41
+smali/smali/app/fast/ssh/VoucherActivity$2$2.smali	VoucherActivity$2$2	.method public run()V	45	73
+smali/smali/app/fast/ssh/VoucherActivity$2.smali	VoucherActivity$2	.method constructor <init>(Lapp/fast/ssh/VoucherActivity;)V	25	41
+smali/smali/app/fast/ssh/VoucherActivity$2.smali	VoucherActivity$2	.method public onRedeemResult(I)V	45	78
+smali/smali/app/fast/ssh/VoucherActivity$3.smali	VoucherActivity$3	.method constructor <init>(Lapp/fast/ssh/VoucherActivity;Ljava/lang/Exception;)V	27	53
+smali/smali/app/fast/ssh/VoucherActivity$3.smali	VoucherActivity$3	.method public run()V	57	93
+smali/smali/app/fast/ssh/VoucherActivity$4.smali	VoucherActivity$4	.method constructor <init>(Lapp/fast/ssh/VoucherActivity;)V	25	41
+smali/smali/app/fast/ssh/VoucherActivity$4.smali	VoucherActivity$4	.method public run()V	45	53
+smali/smali/app/fast/ssh/VoucherActivity$5.smali	VoucherActivity$5	.method static constructor <clinit>()V	22	83
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method public constructor <init>()V	18	34
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method static synthetic access$002(Lapp/fast/ssh/VoucherActivity;Lapp/fast/ssh/core/VpnConnection;)Lapp/fast/ssh/core/VpnConnection;	36	42
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method private getAdSize()Lcom/google/android/gms/ads/AdSize;	44	76
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method private initAds()V	78	118
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method public static isValidUUID(Ljava/lang/String;)Z	120	137
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method synthetic lambda$onCreate$0$app-fast-ssh-VoucherActivity(Ljava/nio/ByteBuffer;)V	141	172
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method synthetic lambda$onCreate$1$app-fast-ssh-VoucherActivity(Landroid/view/View;)V	174	300
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method public onAccessTopUp()V	302	306
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method protected onCreate(Landroid/os/Bundle;)V	308	356
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method public onExpiredState()V	358	362
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method public onOptionsItemSelected(Landroid/view/MenuItem;)Z	364	388
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method public onRemindState()V	390	394
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method protected onResume()V	396	402
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method protected onStart()V	404	424
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method public onStartCountdown(J)V	426	430
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method protected onStop()V	432	444
+smali/smali/app/fast/ssh/VoucherActivity.smali	VoucherActivity	.method public onUpdateState(Lapp/fast/ssh/core/VpnStatus$VpnState;)V	446	480
+smali/smali/app/fast/ssh/adapter/AppsAdapter$1.smali	AppsAdapter$1	.method constructor <init>(Lapp/fast/ssh/adapter/AppsAdapter;Lapp/fast/ssh/adapter/AppsAdapter$App;)V	27	53
+smali/smali/app/fast/ssh/adapter/AppsAdapter$1.smali	AppsAdapter$1	.method public onClick(Landroid/view/View;)V	57	107
+smali/smali/app/fast/ssh/adapter/AppsAdapter$App.smali	AppsAdapter$App	.method public constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;)V	26	38
+smali/smali/app/fast/ssh/adapter/AppsAdapter$ViewHolder.smali	AppsAdapter$ViewHolder	.method public constructor <init>(Landroid/view/View;)V	28	72
+smali/smali/app/fast/ssh/adapter/AppsAdapter$ViewHolder.smali	AppsAdapter$ViewHolder	.method static synthetic access$000(Lapp/fast/ssh/adapter/AppsAdapter$ViewHolder;)Landroid/widget/ImageView;	74	80
+smali/smali/app/fast/ssh/adapter/AppsAdapter$ViewHolder.smali	AppsAdapter$ViewHolder	.method static synthetic access$100(Lapp/fast/ssh/adapter/AppsAdapter$ViewHolder;)Landroid/widget/TextView;	82	88
+smali/smali/app/fast/ssh/adapter/AppsAdapter$ViewHolder.smali	AppsAdapter$ViewHolder	.method static synthetic access$200(Lapp/fast/ssh/adapter/AppsAdapter$ViewHolder;)Landroid/widget/TextView;	90	96
+smali/smali/app/fast/ssh/adapter/AppsAdapter$ViewHolder.smali	AppsAdapter$ViewHolder	.method static synthetic access$400(Lapp/fast/ssh/adapter/AppsAdapter$ViewHolder;)Landroid/view/View;	98	104
+smali/smali/app/fast/ssh/adapter/AppsAdapter.smali	AppsAdapter	.method public constructor <init>(Landroid/content/Context;Ljava/util/List;)V	38	57
+smali/smali/app/fast/ssh/adapter/AppsAdapter.smali	AppsAdapter	.method static synthetic access$300(Lapp/fast/ssh/adapter/AppsAdapter;)Landroid/content/Context;	59	65
+smali/smali/app/fast/ssh/adapter/AppsAdapter.smali	AppsAdapter	.method private static greyOut(Landroid/widget/ImageView;Z)V	67	94
+smali/smali/app/fast/ssh/adapter/AppsAdapter.smali	AppsAdapter	.method public getItemCount()I	98	108
+smali/smali/app/fast/ssh/adapter/AppsAdapter.smali	AppsAdapter	.method public getItemId(I)J	110	116
+smali/smali/app/fast/ssh/adapter/AppsAdapter.smali	AppsAdapter	.method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V	118	136
+smali/smali/app/fast/ssh/adapter/AppsAdapter.smali	AppsAdapter	.method public onBindViewHolder(Lapp/fast/ssh/adapter/AppsAdapter$ViewHolder;I)V	138	184
+smali/smali/app/fast/ssh/adapter/AppsAdapter.smali	AppsAdapter	.method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;	186	204
+smali/smali/app/fast/ssh/adapter/AppsAdapter.smali	AppsAdapter	.method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lapp/fast/ssh/adapter/AppsAdapter$ViewHolder;	206	228
+smali/smali/app/fast/ssh/adapter/FileAdapter$$ExternalSyntheticLambda0.smali	FileAdapter$$ExternalSyntheticLambda0	.method public synthetic constructor <init>(Lapp/fast/ssh/adapter/FileAdapter;I)V	16	26
+smali/smali/app/fast/ssh/adapter/FileAdapter$$ExternalSyntheticLambda0.smali	FileAdapter$$ExternalSyntheticLambda0	.method public final onClick(Landroid/view/View;)V	30	40
+smali/smali/app/fast/ssh/adapter/FileAdapter$ImportItem.smali	FileAdapter$ImportItem	.method public constructor <init>(ILjava/lang/String;)V	24	34
+smali/smali/app/fast/ssh/adapter/FileAdapter$OnItemClickListener.smali	FileAdapter$OnItemClickListener	.method public abstract onClick(I)V	18	19
+smali/smali/app/fast/ssh/adapter/FileAdapter$ViewHolder.smali	FileAdapter$ViewHolder	.method constructor <init>(Landroid/view/View;)V	26	54
+smali/smali/app/fast/ssh/adapter/FileAdapter.smali	FileAdapter	.method public constructor <init>(Ljava/util/List;)V	39	55
+smali/smali/app/fast/ssh/adapter/FileAdapter.smali	FileAdapter	.method public getItemCount()I	59	69
+smali/smali/app/fast/ssh/adapter/FileAdapter.smali	FileAdapter	.method public getItemId(I)J	71	77
+smali/smali/app/fast/ssh/adapter/FileAdapter.smali	FileAdapter	.method public getItemViewType(I)I	79	83
+smali/smali/app/fast/ssh/adapter/FileAdapter.smali	FileAdapter	.method synthetic lambda$onBindViewHolder$0$app-fast-ssh-adapter-FileAdapter(ILandroid/view/View;)V	85	97
+smali/smali/app/fast/ssh/adapter/FileAdapter.smali	FileAdapter	.method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V	99	117
+smali/smali/app/fast/ssh/adapter/FileAdapter.smali	FileAdapter	.method public onBindViewHolder(Lapp/fast/ssh/adapter/FileAdapter$ViewHolder;I)V	119	159
+smali/smali/app/fast/ssh/adapter/FileAdapter.smali	FileAdapter	.method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;	161	179
+smali/smali/app/fast/ssh/adapter/FileAdapter.smali	FileAdapter	.method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lapp/fast/ssh/adapter/FileAdapter$ViewHolder;	181	205
+smali/smali/app/fast/ssh/adapter/FileAdapter.smali	FileAdapter	.method public setItemClickListener(Lapp/fast/ssh/adapter/FileAdapter$OnItemClickListener;)V	207	213
+smali/smali/app/fast/ssh/adapter/MethodAdapter$SpinnerItem.smali	MethodAdapter$SpinnerItem	.method public constructor <init>()V	28	34
+smali/smali/app/fast/ssh/adapter/MethodAdapter$ViewHolder.smali	MethodAdapter$ViewHolder	.method private constructor <init>()V	28	34
+smali/smali/app/fast/ssh/adapter/MethodAdapter$ViewHolder.smali	MethodAdapter$ViewHolder	.method synthetic constructor <init>(Lapp/fast/ssh/adapter/MethodAdapter$1;)V	36	42
+smali/smali/app/fast/ssh/adapter/MethodAdapter.smali	MethodAdapter	.method public constructor <init>(Landroid/content/Context;Ljava/util/List;)V	32	55
+smali/smali/app/fast/ssh/adapter/MethodAdapter.smali	MethodAdapter	.method private getImageResourceId(Ljava/lang/String;)I	57	89
+smali/smali/app/fast/ssh/adapter/MethodAdapter.smali	MethodAdapter	.method public getCount()I	93	103
+smali/smali/app/fast/ssh/adapter/MethodAdapter.smali	MethodAdapter	.method public getItem(I)Ljava/lang/Object;	105	115
+smali/smali/app/fast/ssh/adapter/MethodAdapter.smali	MethodAdapter	.method public getItemId(I)J	117	123
+smali/smali/app/fast/ssh/adapter/MethodAdapter.smali	MethodAdapter	.method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;	125	261
+smali/smali/app/fast/ssh/adapter/MethodAdapter.smali	MethodAdapter	.method public setPosition(I)V	263	269
+smali/smali/app/fast/ssh/adapter/MyPagerAdapter.smali	MyPagerAdapter	.method public constructor <init>(Ljava/util/List;Ljava/util/List;Landroidx/fragment/app/FragmentManager;I)V	29	52
+smali/smali/app/fast/ssh/adapter/MyPagerAdapter.smali	MyPagerAdapter	.method public getCount()I	56	66
+smali/smali/app/fast/ssh/adapter/MyPagerAdapter.smali	MyPagerAdapter	.method public getItem(I)Landroidx/fragment/app/Fragment;	68	80
+smali/smali/app/fast/ssh/adapter/MyPagerAdapter.smali	MyPagerAdapter	.method public getPageTitle(I)Ljava/lang/CharSequence;	82	94
+smali/smali/app/fast/ssh/adapter/ServerAdapter$SpinnerItem.smali	ServerAdapter$SpinnerItem	.method public constructor <init>()V	38	44
+smali/smali/app/fast/ssh/adapter/ServerAdapter$ViewHolder.smali	ServerAdapter$ViewHolder	.method private constructor <init>()V	28	34
+smali/smali/app/fast/ssh/adapter/ServerAdapter$ViewHolder.smali	ServerAdapter$ViewHolder	.method synthetic constructor <init>(Lapp/fast/ssh/adapter/ServerAdapter$1;)V	36	42
+smali/smali/app/fast/ssh/adapter/ServerAdapter.smali	ServerAdapter	.method public constructor <init>(Landroid/content/Context;Ljava/util/List;)V	32	55
+smali/smali/app/fast/ssh/adapter/ServerAdapter.smali	ServerAdapter	.method private getImageResourceId(Ljava/lang/String;)I	57	125
+smali/smali/app/fast/ssh/adapter/ServerAdapter.smali	ServerAdapter	.method public getCount()I	129	139
+smali/smali/app/fast/ssh/adapter/ServerAdapter.smali	ServerAdapter	.method public getItem(I)Ljava/lang/Object;	141	151
+smali/smali/app/fast/ssh/adapter/ServerAdapter.smali	ServerAdapter	.method public getItemId(I)J	153	159
+smali/smali/app/fast/ssh/adapter/ServerAdapter.smali	ServerAdapter	.method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;	161	297
+smali/smali/app/fast/ssh/adapter/ServerAdapter.smali	ServerAdapter	.method public setPosition(I)V	299	305
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$1$1.smali	AddTimeDialog$1$1	.method constructor <init>(Lapp/fast/ssh/dialog/AddTimeDialog$1;JJ)V	22	42
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$1$1.smali	AddTimeDialog$1$1	.method public onFinish()V	46	76
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$1$1.smali	AddTimeDialog$1$1	.method public onTick(J)V	78	218
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$1.smali	AddTimeDialog$1	.method constructor <init>(Lapp/fast/ssh/dialog/AddTimeDialog;)V	25	41
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$1.smali	AddTimeDialog$1	.method public onShow(Landroid/content/DialogInterface;)V	45	193
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$2$1.smali	AddTimeDialog$2$1	.method constructor <init>(Lapp/fast/ssh/dialog/AddTimeDialog$2;)V	25	41
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$2$1.smali	AddTimeDialog$2$1	.method public onUserEarnedReward(Lcom/google/android/gms/ads/rewarded/RewardItem;)V	45	101
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$2.smali	AddTimeDialog$2	.method constructor <init>(Lapp/fast/ssh/dialog/AddTimeDialog;Landroid/app/ProgressDialog;)V	24	44
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$2.smali	AddTimeDialog$2	.method public onAdFailedToLoad(Lcom/google/android/gms/ads/LoadAdError;)V	48	141
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$2.smali	AddTimeDialog$2	.method public onAdLoaded(Lcom/google/android/gms/ads/rewarded/RewardedAd;)V	143	252
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$2.smali	AddTimeDialog$2	.method public bridge synthetic onAdLoaded(Ljava/lang/Object;)V	254	270
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$3.smali	AddTimeDialog$3	.method constructor <init>(Lapp/fast/ssh/dialog/AddTimeDialog;)V	22	38
+smali/smali/app/fast/ssh/dialog/AddTimeDialog$3.smali	AddTimeDialog$3	.method public onAdLoaded()V	42	58
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method static constructor <clinit>()V	35	55
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method public constructor <init>(Landroid/content/Context;)V	57	159
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method static synthetic access$000(Lapp/fast/ssh/dialog/AddTimeDialog;)Landroid/widget/Button;	161	167
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method static synthetic access$100(Lapp/fast/ssh/dialog/AddTimeDialog;)Landroid/os/CountDownTimer;	169	175
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method static synthetic access$102(Lapp/fast/ssh/dialog/AddTimeDialog;Landroid/os/CountDownTimer;)Landroid/os/CountDownTimer;	177	183
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method static synthetic access$200(Lapp/fast/ssh/dialog/AddTimeDialog;)I	185	193
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method static synthetic access$300(Lapp/fast/ssh/dialog/AddTimeDialog;)Ljava/lang/String;	195	203
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method static synthetic access$400(Lapp/fast/ssh/dialog/AddTimeDialog;)Landroid/content/Context;	205	211
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method static synthetic access$500(Lapp/fast/ssh/dialog/AddTimeDialog;)Landroid/widget/TextView;	213	219
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method static synthetic access$600(Lapp/fast/ssh/dialog/AddTimeDialog;)Landroid/widget/LinearLayout;	221	227
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method private appVersionCode()I	229	258
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method public static configure(Lorg/json/JSONObject;)V	260	347
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method private deviceId()Ljava/lang/String;	349	369
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method private initAds()V	371	415
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method private requestNewAdBanner(Lcom/google/android/gms/ads/AdView;)V	417	421
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method private requestRewardedAd()V	423	469
+smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali	AddTimeDialog	.method public show()V	473	481
+smali/smali/app/fast/ssh/dialog/PayloadGen$1.smali	PayloadGen$1	.method constructor <init>(Lapp/fast/ssh/dialog/PayloadGen;)V	25	41
+smali/smali/app/fast/ssh/dialog/PayloadGen$1.smali	PayloadGen$1	.method public onClick(Landroid/view/View;)V	45	53
+smali/smali/app/fast/ssh/dialog/PayloadGen$2.smali	PayloadGen$2	.method constructor <init>(Lapp/fast/ssh/dialog/PayloadGen;[Landroid/widget/CheckBox;)V	27	53
+smali/smali/app/fast/ssh/dialog/PayloadGen$2.smali	PayloadGen$2	.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V	57	75
+smali/smali/app/fast/ssh/dialog/PayloadGen$3.smali	PayloadGen$3	.method constructor <init>(Lapp/fast/ssh/dialog/PayloadGen;[Landroid/widget/CheckBox;)V	27	53
+smali/smali/app/fast/ssh/dialog/PayloadGen$3.smali	PayloadGen$3	.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V	57	73
+smali/smali/app/fast/ssh/dialog/PayloadGen$4.smali	PayloadGen$4	.method constructor <init>(Lapp/fast/ssh/dialog/PayloadGen;)V	25	41
+smali/smali/app/fast/ssh/dialog/PayloadGen$4.smali	PayloadGen$4	.method public onClick(Landroid/view/View;)V	45	73
+smali/smali/app/fast/ssh/dialog/PayloadGen$5.smali	PayloadGen$5	.method constructor <init>(Lapp/fast/ssh/dialog/PayloadGen;Lcom/google/android/material/textfield/TextInputEditText;)V	27	53
+smali/smali/app/fast/ssh/dialog/PayloadGen$5.smali	PayloadGen$5	.method public onClick(Landroid/view/View;)V	57	117
+smali/smali/app/fast/ssh/dialog/PayloadGen$6.smali	PayloadGen$6	.method constructor <init>(Lapp/fast/ssh/dialog/PayloadGen;Lcom/google/android/material/textfield/TextInputEditText;)V	27	53
+smali/smali/app/fast/ssh/dialog/PayloadGen$6.smali	PayloadGen$6	.method public onClick(Landroid/view/View;)V	57	87
+smali/smali/app/fast/ssh/dialog/PayloadGen$7.smali	PayloadGen$7	.method constructor <init>(Lapp/fast/ssh/dialog/PayloadGen;Landroid/widget/CheckBox;)V	27	53
+smali/smali/app/fast/ssh/dialog/PayloadGen$7.smali	PayloadGen$7	.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V	57	79
+smali/smali/app/fast/ssh/dialog/PayloadGen$8.smali	PayloadGen$8	.method constructor <init>(Lapp/fast/ssh/dialog/PayloadGen;Landroid/widget/CheckBox;)V	27	53
+smali/smali/app/fast/ssh/dialog/PayloadGen$8.smali	PayloadGen$8	.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V	57	79
+smali/smali/app/fast/ssh/dialog/PayloadGen$GeneratorListener.smali	PayloadGen$GeneratorListener	.method public abstract onGenerated(Ljava/lang/String;)V	18	19
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method public constructor <init>(Landroid/content/Context;Lapp/fast/ssh/dialog/PayloadGen$GeneratorListener;)V	31	205
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method static synthetic access$000(Lapp/fast/ssh/dialog/PayloadGen;)V	207	213
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method static synthetic access$100(Lapp/fast/ssh/dialog/PayloadGen;)Landroid/widget/LinearLayout;	215	221
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method static synthetic access$200(Lapp/fast/ssh/dialog/PayloadGen;)Landroid/widget/LinearLayout;	223	229
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method static synthetic access$300(Lapp/fast/ssh/dialog/PayloadGen;Z)V	231	237
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method static synthetic access$400(Lapp/fast/ssh/dialog/PayloadGen;)Landroid/content/Context;	239	245
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method static synthetic access$500(Lapp/fast/ssh/dialog/PayloadGen;)Landroid/view/View;	247	253
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method static synthetic access$600(Lapp/fast/ssh/dialog/PayloadGen;)Lapp/fast/ssh/dialog/PayloadGen$GeneratorListener;	255	261
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method static synthetic access$700(Lapp/fast/ssh/dialog/PayloadGen;)Landroidx/appcompat/app/AlertDialog;	263	269
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method private generate()V	271	843
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method private showButtons(Z)V	845	890
+smali/smali/app/fast/ssh/dialog/PayloadGen.smali	PayloadGen	.method public show()V	894	958
+smali/smali/app/fast/ssh/dialog/ProxySettings$1.smali	ProxySettings$1	.method constructor <init>(Lapp/fast/ssh/dialog/ProxySettings;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/content/Context;)V	31	65
+smali/smali/app/fast/ssh/dialog/ProxySettings$1.smali	ProxySettings$1	.method public onClick(Landroid/content/DialogInterface;I)V	69	179
+smali/smali/app/fast/ssh/dialog/ProxySettings$2.smali	ProxySettings$2	.method constructor <init>(Lapp/fast/ssh/dialog/ProxySettings;)V	25	41
+smali/smali/app/fast/ssh/dialog/ProxySettings$2.smali	ProxySettings$2	.method public onClick(Landroid/content/DialogInterface;I)V	45	49
+smali/smali/app/fast/ssh/dialog/ProxySettings.smali	ProxySettings	.method static constructor <clinit>()V	21	41
+smali/smali/app/fast/ssh/dialog/ProxySettings.smali	ProxySettings	.method public constructor <init>(Landroid/content/Context;)V	43	161
+smali/smali/app/fast/ssh/dialog/ProxySettings.smali	ProxySettings	.method static synthetic access$000(Lapp/fast/ssh/dialog/ProxySettings;)Landroid/content/SharedPreferences;	163	169
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog$$ExternalSyntheticLambda0.smali	RenewAccessDialog$$ExternalSyntheticLambda0	.method public synthetic constructor <init>(Lapp/fast/ssh/dialog/RenewAccessDialog;)V	14	22
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog$$ExternalSyntheticLambda0.smali	RenewAccessDialog$$ExternalSyntheticLambda0	.method public final onClick(Landroid/view/View;)V	26	34
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog$1.smali	RenewAccessDialog$1	.method constructor <init>(Lapp/fast/ssh/dialog/RenewAccessDialog;)V	25	41
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog$1.smali	RenewAccessDialog$1	.method public onClick(Landroid/view/View;)V	45	58
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog$2$1.smali	RenewAccessDialog$2$1	.method constructor <init>(Lapp/fast/ssh/dialog/RenewAccessDialog$2;)V	25	41
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog$2$1.smali	RenewAccessDialog$2$1	.method public onUserEarnedReward(Lcom/google/android/gms/ads/rewarded/RewardItem;)V	45	111
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog$2.smali	RenewAccessDialog$2	.method constructor <init>(Lapp/fast/ssh/dialog/RenewAccessDialog;Landroid/app/ProgressDialog;)V	24	44
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog$2.smali	RenewAccessDialog$2	.method public onAdFailedToLoad(Lcom/google/android/gms/ads/LoadAdError;)V	48	141
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog$2.smali	RenewAccessDialog$2	.method public onAdLoaded(Lcom/google/android/gms/ads/rewarded/RewardedAd;)V	143	278
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog$2.smali	RenewAccessDialog$2	.method public bridge synthetic onAdLoaded(Ljava/lang/Object;)V	280	296
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method public constructor <init>(Landroid/content/Context;)V	33	145
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method static synthetic access$000(Lapp/fast/ssh/dialog/RenewAccessDialog;)I	147	155
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method static synthetic access$100(Lapp/fast/ssh/dialog/RenewAccessDialog;)Landroid/content/SharedPreferences;	157	163
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method static synthetic access$200(Lapp/fast/ssh/dialog/RenewAccessDialog;)Ljava/lang/String;	165	173
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method static synthetic access$300(Lapp/fast/ssh/dialog/RenewAccessDialog;)Landroid/content/Context;	175	181
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method static synthetic access$400(Lapp/fast/ssh/dialog/RenewAccessDialog;)Landroid/widget/TextView;	183	189
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method static synthetic access$500(Lapp/fast/ssh/dialog/RenewAccessDialog;)Landroid/view/View;	191	197
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method static synthetic access$600(Lapp/fast/ssh/dialog/RenewAccessDialog;)Landroid/view/View;	199	205
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method static synthetic access$700(Lapp/fast/ssh/dialog/RenewAccessDialog;)Landroid/widget/Button;	207	213
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method private appVersionCode()I	215	244
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method private deviceId()Ljava/lang/String;	246	266
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method private initAds()V	268	272
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method private requestNewAdBanner(Lcom/google/android/gms/ads/AdView;)V	274	278
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method private requestRewardedAd()V	280	326
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method public dismiss()V	330	343
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method public isShowing()Z	345	364
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method synthetic lambda$new$0$app-fast-ssh-dialog-RenewAccessDialog(Landroid/view/View;)V	366	398
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method public setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V	400	408
+smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali	RenewAccessDialog	.method public show()V	410	436
+smali/smali/app/fast/ssh/util/AESEncryption.smali	AESEncryption	.method static constructor <clinit>()V	11	23
+smali/smali/app/fast/ssh/util/AESEncryption.smali	AESEncryption	.method public constructor <init>()V	25	31
+smali/smali/app/fast/ssh/util/AESEncryption.smali	AESEncryption	.method public static decrypt(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;	33	108
+smali/smali/app/fast/ssh/util/AESEncryption.smali	AESEncryption	.method public static encrypt(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;	110	187
+smali/smali/app/fast/ssh/util/AESEncryption.smali	AESEncryption	.method public static md5(Ljava/lang/String;)Ljava/lang/String;	189	260
+smali/smali/app/fast/ssh/util/ApkInfoExtractor.smali	ApkInfoExtractor	.method public constructor <init>()V	7	13
+smali/smali/app/fast/ssh/util/ApkInfoExtractor.smali	ApkInfoExtractor	.method public static compareVersion(Ljava/lang/String;Ljava/lang/String;)I	15	128
+smali/smali/app/fast/ssh/util/ApkInfoExtractor.smali	ApkInfoExtractor	.method public static getAppIcon(Ljava/lang/String;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;	130	159
+smali/smali/app/fast/ssh/util/ApkInfoExtractor.smali	ApkInfoExtractor	.method public static getAppName(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;	161	194
+smali/smali/app/fast/ssh/util/ApkInfoExtractor.smali	ApkInfoExtractor	.method public static getBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;	196	232
+smali/smali/app/fast/ssh/util/ApkInfoExtractor.smali	ApkInfoExtractor	.method public static getGreyBitmap(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;	234	335
+smali/smali/app/fast/ssh/util/ApkInfoExtractor.smali	ApkInfoExtractor	.method public static getPackages(Landroid/content/Context;)Ljava/util/List;	337	429
+smali/smali/app/fast/ssh/util/ApkInfoExtractor.smali	ApkInfoExtractor	.method public static toGrayscale(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;	431	473
+smali/smali/app/fast/ssh/util/ApkInfoExtractor.smali	ApkInfoExtractor	.method public isSystemPackage(Landroid/content/pm/ResolveInfo;)Z	477	499
+smali/smali/app/fast/ssh/util/B64.smali	B64	.method static constructor <clinit>()V	11	27
+smali/smali/app/fast/ssh/util/B64.smali	B64	.method public constructor <init>()V	29	35
+smali/smali/app/fast/ssh/util/B64.smali	B64	.method public static fromBase64([B)[B	37	54
+smali/smali/app/fast/ssh/util/B64.smali	B64	.method public static fromBase64([BII)[B	56	213
+smali/smali/app/fast/ssh/util/B64.smali	B64	.method public static toBase64([B)[B	215	227
+smali/smali/app/fast/ssh/util/B64.smali	B64	.method public static toBase64([BII)[B	229	439
+smali/smali/app/fast/ssh/util/B64.smali	B64	.method private static val(B)B	441	478
+smali/smali/app/fast/ssh/util/CustomNativeLoader2.smali	CustomNativeLoader2	.method static constructor <clinit>()V	11	23
+smali/smali/app/fast/ssh/util/CustomNativeLoader2.smali	CustomNativeLoader2	.method public constructor <init>()V	25	31
+smali/smali/app/fast/ssh/util/CustomNativeLoader2.smali	CustomNativeLoader2	.method private static getNativeLibraryDir(Landroid/content/Context;)Ljava/lang/String;	33	43
+smali/smali/app/fast/ssh/util/CustomNativeLoader2.smali	CustomNativeLoader2	.method private static loadFromZip(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;)Z	45	365
+smali/smali/app/fast/ssh/util/CustomNativeLoader2.smali	CustomNativeLoader2	.method public static loadNativeBinary(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;	367	560
+smali/smali/app/fast/ssh/util/CustomNativeLoader2.smali	CustomNativeLoader2	.method private static setExecutable(Ljava/io/File;)V	562	578
+smali/smali/app/fast/ssh/util/DBHelper$Resource.smali	DBHelper$Resource	.method private static synthetic $values()[Lapp/fast/ssh/util/DBHelper$Resource;	38	70
+smali/smali/app/fast/ssh/util/DBHelper$Resource.smali	DBHelper$Resource	.method static constructor <clinit>()V	72	138
+smali/smali/app/fast/ssh/util/DBHelper$Resource.smali	DBHelper$Resource	.method private constructor <init>(Ljava/lang/String;I)V	140	162
+smali/smali/app/fast/ssh/util/DBHelper$Resource.smali	DBHelper$Resource	.method public static valueOf(Ljava/lang/String;)Lapp/fast/ssh/util/DBHelper$Resource;	164	184
+smali/smali/app/fast/ssh/util/DBHelper$Resource.smali	DBHelper$Resource	.method public static values()[Lapp/fast/ssh/util/DBHelper$Resource;	186	198
+smali/smali/app/fast/ssh/util/DBHelper.smali	DBHelper	.method static constructor <clinit>()V	23	35
+smali/smali/app/fast/ssh/util/DBHelper.smali	DBHelper	.method public constructor <init>(Landroid/content/Context;)V	37	55
+smali/smali/app/fast/ssh/util/DBHelper.smali	DBHelper	.method public getResource(Lapp/fast/ssh/util/DBHelper$Resource;)Ljava/lang/String;	59	154
+smali/smali/app/fast/ssh/util/DBHelper.smali	DBHelper	.method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V	156	238
+smali/smali/app/fast/ssh/util/DBHelper.smali	DBHelper	.method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V	240	254
+smali/smali/app/fast/ssh/util/DBHelper.smali	DBHelper	.method public updateResource(Lapp/fast/ssh/util/DBHelper$Resource;Ljava/lang/String;)V	256	320
+smali/smali/app/fast/ssh/util/HideUtil.smali	HideUtil	.method public constructor <init>()V	7	13
+smali/smali/app/fast/ssh/util/HideUtil.smali	HideUtil	.method public static hide(Ljava/lang/String;)Ljava/lang/String;	15	39
+smali/smali/app/fast/ssh/util/HideUtil.smali	HideUtil	.method public static unhide(Ljava/lang/String;)Ljava/lang/String;	41	65
+smali/smali/app/fast/ssh/util/ResourceUpdater$1.smali	ResourceUpdater$1	.method constructor <init>(Lapp/fast/ssh/util/ResourceUpdater;Lapp/fast/ssh/util/ResourceUpdater$UpdateListener;)V	36	62
+smali/smali/app/fast/ssh/util/ResourceUpdater$1.smali	ResourceUpdater$1	.method public bridge synthetic onResponse(Ljava/lang/Object;)V	66	82
+smali/smali/app/fast/ssh/util/ResourceUpdater$1.smali	ResourceUpdater$1	.method public onResponse(Lorg/json/JSONObject;)V	84	92
+smali/smali/app/fast/ssh/util/ResourceUpdater$2.smali	ResourceUpdater$2	.method constructor <init>(Lapp/fast/ssh/util/ResourceUpdater;Lapp/fast/ssh/util/ResourceUpdater$UpdateListener;)V	27	53
+smali/smali/app/fast/ssh/util/ResourceUpdater$2.smali	ResourceUpdater$2	.method public onErrorResponse(Lcom/android/volley/VolleyError;)V	57	65
+smali/smali/app/fast/ssh/util/ResourceUpdater$UpdateListener.smali	ResourceUpdater$UpdateListener	.method public abstract onErrorOccurred()V	18	19
+smali/smali/app/fast/ssh/util/ResourceUpdater$UpdateListener.smali	ResourceUpdater$UpdateListener	.method public abstract onResponseReceived(Lorg/json/JSONObject;)V	21	22
+smali/smali/app/fast/ssh/util/ResourceUpdater.smali	ResourceUpdater	.method static constructor <clinit>()V	25	37
+smali/smali/app/fast/ssh/util/ResourceUpdater.smali	ResourceUpdater	.method public constructor <init>(Landroid/content/Context;)V	39	53
+smali/smali/app/fast/ssh/util/ResourceUpdater.smali	ResourceUpdater	.method public requestUpdate(Lapp/fast/ssh/util/ResourceUpdater$UpdateListener;)V	57	87
+smali/smali/app/fast/ssh/util/XOREncryption.smali	XOREncryption	.method static constructor <clinit>()V	11	23
+smali/smali/app/fast/ssh/util/XOREncryption.smali	XOREncryption	.method public constructor <init>()V	25	31
+smali/smali/app/fast/ssh/util/XOREncryption.smali	XOREncryption	.method public static xor_value_with_key(Ljava/lang/String;Ljava/lang/StringBuilder;)V	33	78

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "/home/runner/work/_temp/hatunnel-analysis/jadx/sources/app/fast/ssh",
+    "destination": "/home/runner/work/_temp/hatunnel-analysis/reports/targeted/jadx/app/fast/ssh",
+    "files": 79,
+    "bytes": 1200347,
+    "skipped": []
+  },
+  {
+    "source": "/home/runner/work/_temp/hatunnel-analysis/decoded/smali/app/fast/ssh",
+    "destination": "/home/runner/work/_temp/hatunnel-analysis/reports/targeted/smali/smali/app/fast/ssh",
+    "files": 231,
+    "bytes": 1983164,
+    "skipped": []
+  }
+]

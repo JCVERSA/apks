@@ -1,0 +1,177 @@
+[
+  {
+    "key": "FastSSH",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/FastSSH.smali"
+    ],
+    "java_lines": 142,
+    "java_bytes": 5460,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "ProtectedFastSSH",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/ProtectedFastSSH.smali"
+    ],
+    "java_lines": 70,
+    "java_bytes": 5202,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "HomeFragment",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/HomeFragment.smali"
+    ],
+    "java_lines": 2118,
+    "java_bytes": 93987,
+    "jadx_error_markers": 4
+  },
+  {
+    "key": "MainActivity",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/MainActivity.smali"
+    ],
+    "java_lines": 658,
+    "java_bytes": 27374,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "BillingManager",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/BillingManager.smali"
+    ],
+    "java_lines": 465,
+    "java_bytes": 18322,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "Subscription",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/Subscription.smali"
+    ],
+    "java_lines": 36,
+    "java_bytes": 892,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "PrefsSubscriptionStore",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/PrefsSubscriptionStore.smali"
+    ],
+    "java_lines": 60,
+    "java_bytes": 1983,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "HttpTokenExchange",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/HttpTokenExchange.smali"
+    ],
+    "java_lines": 243,
+    "java_bytes": 10209,
+    "jadx_error_markers": 29
+  },
+  {
+    "key": "TimerConf",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/TimerConf.smali"
+    ],
+    "java_lines": 19,
+    "java_bytes": 532,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "AppOpenAdManager",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/AppOpenAdManager.smali"
+    ],
+    "java_lines": 168,
+    "java_bytes": 5386,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "RewardedAdSyncController",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/RewardedAdSyncController.smali"
+    ],
+    "java_lines": 282,
+    "java_bytes": 10432,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "VoucherActivity",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/VoucherActivity.smali"
+    ],
+    "java_lines": 249,
+    "java_bytes": 8350,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "dialog/AddTimeDialog",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/dialog/AddTimeDialog.smali"
+    ],
+    "java_lines": 267,
+    "java_bytes": 11340,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "dialog/RenewAccessDialog",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/dialog/RenewAccessDialog.smali"
+    ],
+    "java_lines": 238,
+    "java_bytes": 9142,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "dialog/PayloadGen",
+    "java_present": true,
+    "smali_files": [
+      "smali/smali/app/fast/ssh/dialog/PayloadGen.smali"
+    ],
+    "java_lines": 274,
+    "java_bytes": 11447,
+    "jadx_error_markers": 0
+  },
+  {
+    "key": "core/VpnConnection",
+    "java_present": false,
+    "smali_files": []
+  },
+  {
+    "key": "core/SSHTunnelService",
+    "java_present": false,
+    "smali_files": []
+  },
+  {
+    "key": "core/VpnStatus",
+    "java_present": false,
+    "smali_files": []
+  },
+  {
+    "key": "core/connection/SSHTunnelConnection",
+    "java_present": false,
+    "smali_files": []
+  },
+  {
+    "key": "core/connection/LoadBalancer",
+    "java_present": false,
+    "smali_files": []
+  }
+]

@@ -1,0 +1,17 @@
+stage	exit_code	log
+java_version	0	logs/java_version.log
+python_version	0	logs/python_version.log
+apktool_version	0	logs/apktool_version.log
+jadx_version	0	logs/jadx_version.log
+apksigner_version	0	logs/apksigner_version.log
+original_signature	0	logs/original_signature.log
+zipalign_4byte_check	0	logs/zipalign_4byte_check.log
+zipalign_16kb_page_check	0	logs/zipalign_16kb_page_check.log
+aapt_badging	0	logs/aapt_badging.log
+apkanalyzer_version	0	logs/apkanalyzer_version.log
+apkanalyzer_summary	0	logs/apkanalyzer_summary.log
+apkanalyzer_manifest	0	logs/apkanalyzer_manifest.log
+apkanalyzer_permissions	0	logs/apkanalyzer_permissions.log
+apkanalyzer_dex_packages	0	logs/apkanalyzer_dex_packages.log
+apktool_decode	0	logs/apktool_decode.log
+jadx_decompile	3	logs/jadx_decompile.log
