@@ -1,0 +1,88 @@
+name: APK embedded origin loader evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths:
+      - '.github/workflows/apk-origin-loader-evidence.yml'
+      - '.github/scripts/origin_loader_evidence.py'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: apk-origin-loader-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  trace-origin:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: snaptube-static-trees
+          run-id: '41155692929'
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/static-trees
+      - name: Prepare pinned Apktool and extract embedded origin.apk
+        shell: bash
+        run: |
+          set -euo pipefail
+          WORK="${RUNNER_TEMP}/origin-evidence"
+          TOOLS="${RUNNER_TEMP}/origin-tools"
+          mkdir -p "$WORK" "$TOOLS"
+          V=3.0.3
+          SHA=dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423
+          curl --fail --location --retry 3 -o "$TOOLS/apktool.jar" "https://github.com/iBotPeaches/Apktool/releases/download/v${V}/apktool_${V}.jar"
+          printf '%s  %s\n' "$SHA" "$TOOLS/apktool.jar" | sha256sum -c -
+          python3 - <<'PY'
+          import zipfile, pathlib, os
+          work=pathlib.Path(os.environ['RUNNER_TEMP'])/'origin-evidence'
+          with zipfile.ZipFile('google_drive/SnapTube.apk') as z:
+              data=z.read('google/origin.apk')
+          (work/'origin.apk').write_bytes(data)
+          print('extracted google/origin.apk', len(data))
+          PY
+          SDK_ROOT="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"
+          BT="$(find "$SDK_ROOT/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -n 1)"
+          "$BT/aapt" dump badging "$WORK/origin.apk" > "$WORK/origin-badging.log" 2>&1 || true
+          "$BT/apksigner" verify --verbose --print-certs "$WORK/origin.apk" > "$WORK/origin-signature.log" 2>&1 || true
+          java -Xmx4g -jar "$TOOLS/apktool.jar" d -f -o "$WORK/inner-decoded" "$WORK/origin.apk" > "$WORK/inner-decode.log" 2>&1
+          {
+            echo "WORK=$WORK"
+            echo "APKTOOL_JAR=$TOOLS/apktool.jar"
+            echo "BUILD_TOOLS_BIN=$BT"
+          } >> "$GITHUB_ENV"
+      - name: Trace loader and inner warning gates
+        shell: bash
+        run: |
+          python3 .github/scripts/origin_loader_evidence.py \
+            '${{ runner.temp }}/static-trees' \
+            "$WORK/inner-decoded" \
+            'google_drive/SnapTube.apk' \
+            "$WORK/evidence"
+          cp "$WORK/origin-badging.log" "$WORK/origin-signature.log" "$WORK/inner-decode.log" "$WORK/evidence/" || true
+      - name: Publish origin-loader evidence
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/origin-loader-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          src="${RUNNER_TEMP}/origin-evidence/evidence"
+          if [ -d "$src" ]; then cp -a "$src/." "$dest/"; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          if ! git diff --cached --quiet; then
+            git commit -m "Trace embedded origin.apk loader and inner gates (run ${GITHUB_RUN_ID}) [skip ci]"
+            git push origin HEAD:arena/7234f8d6-apks
+          fi
