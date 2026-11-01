@@ -1,0 +1,50 @@
+--- a/smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a.smali
++++ b/smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a.smali
+@@ -1,46 +1,6 @@
+ .method public a()V
+-    .locals 2
++    .locals 0
+ 
+-    invoke-static {}, Lcom/snaptube/extractor/pluginlib/utils/PluginContextUtil;->access$000()Landroid/content/Context;
+-
+-    move-result-object v0
+-
+-    invoke-static {v0}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->x(Landroid/content/Context;)Z
+-
+-    move-result v0
+-
+-    if-nez v0, :cond_0
+-
+-    return-void
+-
+-    :cond_0
+-    invoke-static {}, Lcom/snaptube/extractor/pluginlib/utils/PluginContextUtil;->access$000()Landroid/content/Context;
+-
+-    move-result-object v0
+-
+-    const-string v1, "guide_download"
+-
+-    invoke-static {v0, v1}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->r(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
+-
+-    move-result-object v0
+-
+-    const-string v1, "https://intranet.thejeu.com/cmchvh6zg0001070ul7bc7nog"
+-
+-    invoke-static {v1, v0}, Lo/xj3;->a(Ljava/lang/String;Ljava/io/File;)V
+-
+-    invoke-static {}, Lcom/snaptube/extractor/pluginlib/utils/PluginContextUtil;->access$000()Landroid/content/Context;
+-
+-    move-result-object v0
+-
+-    const-string v1, "guide_uninstall"
+-
+-    invoke-static {v0, v1}, Lcom/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog;->r(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
+-
+-    move-result-object v0
+-
+-    const-string v1, "https://intranet.thejeu.com/cmchvnc060002070u9x1ny5sg"
+-
+-    invoke-static {v1, v0}, Lo/xj3;->a(Ljava/lang/String;Ljava/io/File;)V
+ 
+     return-void
+ .end method

@@ -1,0 +1,15 @@
+--- a/smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.smali
++++ b/smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.smali
+@@ -1,11 +1,6 @@
+ .method private static checkOfficialWarning()V
+-    .locals 1
++    .locals 0
+ 
+-    new-instance v0, Lcom/snaptube/extractor/pluginlib/utils/PluginContextUtil$a;
+-
+-    invoke-direct {v0}, Lcom/snaptube/extractor/pluginlib/utils/PluginContextUtil$a;-><init>()V
+-
+-    invoke-static {v0}, Lo/y48;->k(Ljava/lang/Runnable;)V
+ 
+     return-void
+ .end method

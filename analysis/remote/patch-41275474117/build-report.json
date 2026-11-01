@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "original": {
+    "path": "/home/runner/work/apks/apks/google_drive/SnapTube.apk",
+    "sha256": "34a8689824044252135ebecdfa432f2c07dc1d95ec91623730c36fc72dc3aff3",
+    "size_bytes": 51708137,
+    "zip_members": 3924,
+    "metadata": {
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        "android.permission.GET_PACKAGE_SIZE",
+        "android.permission.INTERNET",
+        "android.permission.KILL_BACKGROUND_PROCESSES",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.REORDER_TASKS",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "com.snaptube.premium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      ],
+      "native_code": [
+        "arm64-v8a",
+        "armeabi-v7a"
+      ],
+      "package": "com.snaptube.premium",
+      "versionCode": "75250210",
+      "versionName": "7.52.0.75250210",
+      "sdkVersion": "21",
+      "targetSdkVersion": "35"
+    }
+  },
+  "patched": {
+    "path": "/home/runner/work/_temp/snaptube-patch/outputs/SnapTube-7.52.0.75250210-adfree-noforce-official-removed-r5.apk",
+    "filename": "SnapTube-7.52.0.75250210-adfree-noforce-official-removed-r5.apk",
+    "sha256": "19b8a9a7b0524922b21c6a8d62864bc211c3552befe91bc42599cdf9de56eaca",
+    "size_bytes": 51708139,
+    "zip_members": 3924,
+    "metadata": {
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        "android.permission.GET_PACKAGE_SIZE",
+        "android.permission.INTERNET",
+        "android.permission.KILL_BACKGROUND_PROCESSES",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.REORDER_TASKS",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "com.snaptube.premium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      ],
+      "native_code": [
+        "arm64-v8a",
+        "armeabi-v7a"
+      ],
+      "package": "com.snaptube.premium",
+      "versionCode": "75250210",
+      "versionName": "7.52.0.75250210",
+      "sdkVersion": "21",
+      "targetSdkVersion": "35"
+    }
+  },
+  "patched_method_count": 30,
+  "revision": 5,
+  "scope": [
+    "disable app ad gates",
+    "block forced update",
+    "remove official-app warning at video extraction and upgrade/crack paths",
+    "restore server-delivered SITE_EXTRACTOR plugin updates while resolving warning/signature-hash classes from the patched host",
+    "block infomobi ad plugin download/load"
+  ],
+  "official_warning_note": "Revision 3 disabled SITE_EXTRACTOR download+load and caused a download regression. Revision 4 restored the plugin and host-resolved only OfficialWarningDialog/xi7/PiraticalApkWarningDialogFragment, but isolated emulator A/B still showed the official-app screen. Revision 5 keeps SITE_EXTRACTOR download/load enabled, broadens host-first resolution to the whole com.snaptube.extractor.pluginlib.piratical package plus o.xl/o.xi7, makes o.xl.c return the embedded official wandoujia certificate SHA-1, disables PluginContextUtil official-warning scheduling, forces OfficialWarningDialog.x false, dismisses any residual host warning dialog in onStart, and blocks the infomobi ad plugin. Extractor/transfer classes still load child-first from the server plugin. The embedded google/origin.apk signature oracle is byte-for-byte intact. Build/static verification only; runtime emulator verification is tracked separately.",
+  "changed_smali_files": [
+    "smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali",
+    "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a.smali",
+    "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali",
+    "smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil$a.smali",
+    "smali_classes3/com/snaptube/extractor/pluginlib/utils/PluginContextUtil.smali",
+    "smali_classes3/com/snaptube/plugin/PluginId$5.smali",
+    "smali_classes3/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel.smali",
+    "smali_classes3/o/lz5.smali",
+    "smali_classes3/o/od.smali",
+    "smali_classes3/o/xl.smali",
+    "smali_classes4/com/snaptube/premium/activity/ExploreActivity.smali",
+    "smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali",
+    "smali_classes4/com/snaptube/premium/configs/Config.smali",
+    "smali_classes4/com/snaptube/premium/selfupgrade/BaseUpgradeActivity.smali",
+    "smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali",
+    "smali_classes4/o/jz5.smali",
+    "smali_classes4/o/w25.smali",
+    "smali_classes4/o/xi7.smali"
+  ],
+  "identity_checks": {
+    "package": true,
+    "versionCode": true,
+    "versionName": true,
+    "sdkVersion": true,
+    "targetSdkVersion": true,
+    "permissions": true,
+    "native_code": true
+  },
+  "roundtrip_checks_ok": true,
+  "signature_schemes": {
+    "v1": true,
+    "v2": true,
+    "v3": true
+  },
+  "zipalign": {
+    "four_byte": true,
+    "sixteen_kb_pages": true
+  },
+  "signing_note": "Signed with a NEW ephemeral key. Android will refuse to install this over an existing SnapTube install signed with a different key; uninstalling first would erase app data. No device install was performed.",
+  "device_testing": "Separate isolated GitHub Actions emulator A/B runs are tracked under analysis/remote/emulator-ab-*; this build performs no device actions."
+}

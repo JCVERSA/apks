@@ -1,0 +1,54 @@
+--- a/smali_classes3/o/od.smali
++++ b/smali_classes3/o/od.smali
+@@ -1,48 +1,8 @@
+ .method public static c(Ljava/lang/String;)Z
+-    .locals 5
++    .locals 1
+ 
+-    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+ 
+-    move-result v0
++    const/4 v0, 0x0
+ 
+-    const/4 v1, 0x0
+-
+-    if-eqz v0, :cond_0
+-
+-    const/4 v4, 0x2
+-
+-    return v1
+-
+-    :cond_0
+-    invoke-static {}, Lo/od;->p()Landroid/content/SharedPreferences;
+-
+-    move-result-object v0
+-
+-    const/4 v4, 0x2
+-
+-    new-instance v2, Ljava/lang/StringBuilder;
+-
+-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+-
+-    const-string v3, "/preload_switch/"
+-
+-    const/4 v4, 0x0
+-
+-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+-
+-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+-
+-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+-
+-    move-result-object p0
+-
+-    const/4 v4, 0x5
+-
+-    invoke-interface {v0, p0, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+-
+-    move-result p0
+-
+-    const/4 v4, 0x4
+-
+-    return p0
++    return v0
+ .end method

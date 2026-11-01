@@ -1,0 +1,21 @@
+Verifies
+Verified using v1 scheme (JAR signing): true
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v3.2 scheme (APK Signature Scheme v3.2): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+V3.0 Signer: certificate DN: CN=SnapTube Local Patch, OU=Local, O=Local, C=US
+V3.0 Signer: certificate SHA-256 digest: 332d1a012c5f20df6fac0b3789d6b8ece32a9387a7421eb3a73398a8a86f16dc
+V3.0 Signer: certificate SHA-1 digest: e1cd956ef2b8dffb7a3b293b1460cef479157393
+V3.0 Signer: certificate MD5 digest: 8013334cb572f9848fab0e7145b9d3f5
+V3.0 Signer: key algorithm: RSA
+V3.0 Signer: key size (bits): 2048
+V3.0 Signer: public key SHA-256 digest: 1577eaf08b0583a33b4cd5998f3b63da8ce9b04d859c7dde0b6e17160151a7d5
+V3.0 Signer: public key SHA-1 digest: 426077e2b39236d4dbe8ed02687b991b5bb6cf81
+V3.0 Signer: public key MD5 digest: c0b94479e1cfdb27588019b4f8ca2592
+WARNING: META-INF/services/o.rh4 not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/services/com.sensorsdata.analytics.android.sdk.core.mediator.protocol.SAModuleProtocol not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/services/o.r61 not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.

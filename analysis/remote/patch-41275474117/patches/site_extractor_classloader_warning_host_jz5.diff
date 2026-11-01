@@ -1,0 +1,57 @@
+--- a/smali_classes4/o/jz5.smali
++++ b/smali_classes4/o/jz5.smali
+@@ -1,21 +1,48 @@
+ .method public findClass(Ljava/lang/String;)Ljava/lang/Class;
+-    .locals 1
++    .locals 2
+ 
++
++    const-string v0, "com.snaptube.extractor.pluginlib.piratical."
++    invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
++    move-result v0
++    if-nez v0, :warning_host
++
++    const-string v0, "o.xl"
++    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
++    move-result v0
++    if-nez v0, :warning_host
++
++    const-string v0, "o.xi7"
++    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
++    move-result v0
++    if-nez v0, :warning_host
++
++    const-string v0, "com.snaptube.premium.dialog.PiraticalApkWarningDialogFragment"
++    invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
++    move-result v0
++    if-eqz v0, :plugin_first
++
++    :warning_host
++    iget-object v0, p0, Lo/jz5;->b:Ljava/lang/ClassLoader;
++
++    :try_start_host
++    invoke-virtual {v0, p1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
++    move-result-object p1
++    :try_end_host
++    .catch Ljava/lang/ClassNotFoundException; {:try_start_host .. :try_end_host} :plugin_first
++    return-object p1
++
++    :plugin_first
+     :try_start_0
+     invoke-super {p0, p1}, Ldalvik/system/DexClassLoader;->findClass(Ljava/lang/String;)Ljava/lang/Class;
+-
+     move-result-object p1
+     :try_end_0
+     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+-
+     return-object p1
+ 
+     :catch_0
+     iget-object v0, p0, Lo/jz5;->b:Ljava/lang/ClassLoader;
+-
+     invoke-virtual {v0, p1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+-
+     move-result-object p1
+-
+     return-object p1
+ .end method

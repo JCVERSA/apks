@@ -1,0 +1,45 @@
+--- a/smali_classes3/com/snaptube/plugin/PluginId$5.smali
++++ b/smali_classes3/com/snaptube/plugin/PluginId$5.smali
+@@ -1,40 +1,8 @@
+ .method public load(Ljava/lang/String;)Z
+     .locals 1
+ 
+-    invoke-static {}, Lcom/snaptube/util/ProductionEnv;->isLoggable()Z
+ 
+-    sget-object v0, Lcom/snaptube/plugin/PluginId;->AD_INFOMOBI:Lcom/snaptube/plugin/PluginId;
++    const/4 v0, 0x0
+ 
+-    invoke-virtual {v0}, Lcom/snaptube/plugin/PluginId;->getName()Ljava/lang/String;
+-
+-    move-result-object v0
+-
+-    invoke-static {v0, p1}, Lo/c16;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
+-
+-    move-result-object p1
+-
+-    if-eqz p1, :cond_1
+-
+-    invoke-virtual {p1}, Ljava/io/File;->exists()Z
+-
+-    move-result v0
+-
+-    if-nez v0, :cond_0
+-
+-    goto :goto_0
+-
+-    :cond_0
+-    invoke-virtual {p1}, Ljava/io/File;->setReadOnly()Z
+-
+-    invoke-virtual {p0, p1}, Lcom/snaptube/plugin/PluginId$5;->d(Ljava/io/File;)Z
+-
+-    move-result p1
+-
+-    return p1
+-
+-    :cond_1
+-    :goto_0
+-    const/4 p1, 0x0
+-
+-    return p1
++    return v0
+ .end method

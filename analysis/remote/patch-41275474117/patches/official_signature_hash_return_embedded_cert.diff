@@ -1,0 +1,48 @@
+--- a/smali_classes3/o/xl.smali
++++ b/smali_classes3/o/xl.smali
+@@ -1,43 +1,7 @@
+ .method public static c(Landroid/content/Context;)Ljava/lang/String;
+-    .locals 2
++    .locals 1
+ 
+-    const/4 v1, 0x6
+ 
+-    sget-object v0, Lo/xl;->a:Ljava/lang/String;
+-
+-    const/4 v1, 0x3
+-
+-    if-eqz v0, :cond_0
+-
++    const-string v0, "be135353437d704f3a37e2b413d040a5ddff4f19"
+     return-object v0
+-
+-    :cond_0
+-    const-string v0, "HA1S"
+-
+-    const-string v0, "SHA1"
+-
+-    invoke-static {p0, v0}, Lo/xl;->d(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+-
+-    move-result-object p0
+-
+-    const/4 v1, 0x4
+-
+-    sput-object p0, Lo/xl;->a:Ljava/lang/String;
+-
+-    if-nez p0, :cond_1
+-
+-    const-string p0, ""
+-
+-    const-string p0, ""
+-
+-    const/4 v1, 0x2
+-
+-    sput-object p0, Lo/xl;->a:Ljava/lang/String;
+-
+-    :cond_1
+-    sget-object p0, Lo/xl;->a:Ljava/lang/String;
+-
+-    const/4 v1, 0x4
+-
+-    return-object p0
+ .end method
