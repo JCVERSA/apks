@@ -1,0 +1,18 @@
+{
+  "changed_smali_files": [
+    "smali_classes3/com/snaptube/ads/activity/SplashAdActivity.smali",
+    "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog$a.smali",
+    "smali_classes3/com/snaptube/extractor/pluginlib/piratical/OfficialWarningDialog.smali",
+    "smali_classes3/com/snaptube/plugin/PluginId$2.smali",
+    "smali_classes3/com/snaptube/plugin/extension/nonlifecycle/ad/StartDownloadAdViewModel.smali",
+    "smali_classes3/o/od.smali",
+    "smali_classes4/com/snaptube/premium/activity/ExploreActivity.smali",
+    "smali_classes4/com/snaptube/premium/ads/splash/HotSplashAdManager.smali",
+    "smali_classes4/com/snaptube/premium/configs/Config.smali",
+    "smali_classes4/com/snaptube/premium/selfupgrade/BaseUpgradeActivity.smali",
+    "smali_classes4/com/snaptube/premium/selfupgrade/force/AppForceUpdateHelper.smali",
+    "smali_classes4/o/w25.smali",
+    "smali_classes4/o/xi7.smali"
+  ],
+  "patched_method_count": 23
+}

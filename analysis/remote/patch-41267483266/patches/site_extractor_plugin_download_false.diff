@@ -1,0 +1,12 @@
+--- a/smali_classes3/com/snaptube/plugin/PluginId$2.smali
++++ b/smali_classes3/com/snaptube/plugin/PluginId$2.smali
+@@ -1,7 +1,8 @@
+ .method public shouldDownload()Z
+     .locals 1
+ 
+-    const/4 v0, 0x1
++
++    const/4 v0, 0x0
+ 
+     return v0
+ .end method
