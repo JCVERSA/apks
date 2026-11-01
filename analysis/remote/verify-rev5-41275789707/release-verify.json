@@ -1,0 +1,13 @@
+{
+  "apk": "/home/runner/work/_temp/rev5-verify/SnapTube-7.52.0.75250210-adfree-noforce-official-removed-r5.apk",
+  "apk_sha256": "19b8a9a7b0524922b21c6a8d62864bc211c3552befe91bc42599cdf9de56eaca",
+  "apk_sha256_matches": true,
+  "zip_members": 3924,
+  "origin_apk_size": 27677460,
+  "origin_apk_size_matches": true,
+  "origin_apk_sha256": "b478bd1a741743382d2f0f1621e2de6895dd0c6de1a339ec369bfece7a99f2ee",
+  "origin_apk_sha256_matches": true,
+  "patched_method_count": 30,
+  "roundtrip_ok_count": 30,
+  "all_roundtrip_ok": true
+}
