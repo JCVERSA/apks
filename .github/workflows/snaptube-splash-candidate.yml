@@ -1,0 +1,77 @@
+name: SnapTube Android 12 splash candidate
+on:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths: ['.github/workflows/snaptube-splash-candidate.yml', '.github/scripts/snaptube_splash_candidate.py']
+permissions:
+  contents: write
+jobs:
+  candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Build candidate from revision 5 on runner
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          export WORK_ROOT="$RUNNER_TEMP/splash-candidate"
+          mkdir -p "$WORK_ROOT/apk" "$WORK_ROOT/report"
+          echo "WORK_ROOT=$WORK_ROOT" >> "$GITHUB_ENV"
+          gh release download snaptube-patched-41275474117 --repo "$GITHUB_REPOSITORY" --pattern '*r5.apk' --dir "$WORK_ROOT/apk"
+          apk="$WORK_ROOT/apk/SnapTube-7.52.0.75250210-adfree-noforce-official-removed-r5.apk"
+          echo '19b8a9a7b0524922b21c6a8d62864bc211c3552befe91bc42599cdf9de56eaca  '"$apk" | sha256sum -c -
+          curl -fsSL --retry 3 -o "$WORK_ROOT/apktool.jar" https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar
+          echo 'dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423  '"$WORK_ROOT/apktool.jar" | sha256sum -c -
+          java -Xmx6g -jar "$WORK_ROOT/apktool.jar" d -f -o "$WORK_ROOT/decoded" "$apk" > "$WORK_ROOT/report/decode.log" 2>&1
+          python3 .github/scripts/snaptube_splash_candidate.py | tee "$WORK_ROOT/report/patch.log"
+          java -Xmx6g -jar "$WORK_ROOT/apktool.jar" b "$WORK_ROOT/decoded" -o "$WORK_ROOT/unsigned.apk" > "$WORK_ROOT/report/build.log" 2>&1
+          bt="$(find "${ANDROID_HOME}/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -n1)"
+          "$bt/zipalign" -f -P 16 4 "$WORK_ROOT/unsigned.apk" "$WORK_ROOT/aligned.apk"
+          keytool -genkeypair -keystore "$WORK_ROOT/key.jks" -storepass android -keypass android -alias candidate -keyalg RSA -keysize 2048 -validity 3650 -dname 'CN=Isolated Test Candidate' >/dev/null 2>&1
+          "$bt/apksigner" sign --ks "$WORK_ROOT/key.jks" --ks-pass pass:android --key-pass pass:android --out "$WORK_ROOT/candidate.apk" "$WORK_ROOT/aligned.apk"
+          "$bt/apksigner" verify --verbose "$WORK_ROOT/candidate.apk" > "$WORK_ROOT/report/signature.txt"
+          sha256sum "$WORK_ROOT/candidate.apk" > "$WORK_ROOT/report/candidate-sha256.txt"
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Test candidate lifecycle on Android 12
+        uses: ReactiveCircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d
+        with:
+          api-level: 32
+          target: google_apis
+          arch: x86_64
+          profile: pixel_5
+          cores: 2
+          ram-size: 4096M
+          heap-size: 512M
+          disk-size: 8192M
+          force-avd-creation: true
+          emulator-boot-timeout: 900
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
+          disable-animations: true
+          script: python3 .github/scripts/snaptube_startup_diagnostic.py --apk "$WORK_ROOT/candidate.apk" --out "$WORK_ROOT/report/runtime"
+      - name: Publish diagnostic evidence
+        if: always()
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/snaptube-splash-candidate-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          if [ -d "${WORK_ROOT:-/nonexistent}/report" ]; then cp -a "$WORK_ROOT/report/." "$dest/"; fi
+          printf 'run_outcome=%s\nrun_id=%s\n' '${{ job.status }}' "$GITHUB_RUN_ID" > "$dest/run-status.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          if ! git diff --cached --quiet; then
+            git commit -m "Add splash candidate evidence (run ${GITHUB_RUN_ID}) [skip ci]"
+            git fetch origin arena/7234f8d6-apks
+            git rebase FETCH_HEAD
+            git push origin HEAD:arena/7234f8d6-apks
+          fi
