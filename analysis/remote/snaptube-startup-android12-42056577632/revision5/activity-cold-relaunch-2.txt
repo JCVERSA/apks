@@ -1,0 +1,35 @@
+  * Task{b8eb72 #13 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+    topResumedActivity=ActivityRecord{ca10dc5 u0 com.snaptube.premium/.activity.ExploreActivity t13}
+    * Hist  #0: ActivityRecord{ca10dc5 u0 com.snaptube.premium/.activity.ExploreActivity t13}
+      packageName=com.snaptube.premium processName=com.snaptube.premium
+      app=ProcessRecord{4dd3e4b 8899:com.snaptube.premium/u0a149}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.snaptube.premium/.activity.ExploreActivity }
+      rootOfTask=true task=Task{b8eb72 #13 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      taskAffinity=10149:com.snaptube.premium
+      mActivityComponent=com.snaptube.premium/.activity.ExploreActivity
+      baseDir=/data/app/~~x0rCTRcr5bobjAnTMhAKbA==/com.snaptube.premium-hkcwf8xJ8QJvA_wq3WQLkg==/base.apk
+      dataDir=/data/user/0/com.snaptube.premium
+      windows=[Window{6d736f6 u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}, Window{b89c141 u0 Splash Screen com.snaptube.premium}]
+      startingWindow=Window{b89c141 u0 Splash Screen com.snaptube.premium} startingSurface=com.android.server.wm.StartingSurfaceController$ShellStartingSurface@3c98fd9 startingDisplayed=true startingMoved=false [long-token-redacted]=false
+    Resumed: ActivityRecord{ca10dc5 u0 com.snaptube.premium/.activity.ExploreActivity t13}
+  ResumedActivity: ActivityRecord{ca10dc5 u0 com.snaptube.premium/.activity.ExploreActivity t13}
+  topDisplayFocusedRootTask=Task{b8eb72 #13 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+  deepestLastOrientationSource=ActivityRecord{ca10dc5 u0 com.snaptube.premium/.activity.ExploreActivity t13}
+  mCurrentFocus=Window{6d736f6 u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+  mFocusedApp=ActivityRecord{ca10dc5 u0 com.snaptube.premium/.activity.ExploreActivity t13}
+      mPreferredTopFocusableRootTask=Task{b8eb72 #13 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      mLastFocusedRootTask=Task{b8eb72 #13 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      * Task{b8eb72 #13 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+        * ActivityRecord{ca10dc5 u0 com.snaptube.premium/.activity.ExploreActivity t13}
+    mFocusedWindow=Window{6d736f6 u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+    mTopFullscreenOpaqueWindowState=Window{b89c141 u0 Splash Screen com.snaptube.premium}
+    mNavBarColorWindowCandidate=Window{b89c141 u0 Splash Screen com.snaptube.premium}
+    mNavBarBackgroundWindow=Window{b89c141 u0 Splash Screen com.snaptube.premium}
+      Window{b89c141 u0 Splash Screen com.snaptube.premium}
+      Window{b89c141 u0 Splash Screen com.snaptube.premium}
+      ITYPE_NAVIGATION_BAR -> Window{6d736f6 u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+      ITYPE_STATUS_BAR -> Window{6d736f6 u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+        mControlTarget=Window{6d736f6 u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+        mControlTarget=Window{6d736f6 u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+        (fullscreen) Task{b8eb72 #13 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+  VisibleActivityProcess:[ ProcessRecord{4dd3e4b 8899:com.snaptube.premium/u0a149}]

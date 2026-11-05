@@ -1,0 +1,796 @@
+[
+  {
+    "t": 1793893080.78,
+    "kind": "install",
+    "rc": 0,
+    "output": "Performing Streamed Install\nSuccess\n",
+    "sha256": "19b8a9a7b0524922b21c6a8d62864bc211c3552befe91bc42599cdf9de56eaca"
+  },
+  {
+    "t": 1793893081.649,
+    "kind": "launch",
+    "stage": "first",
+    "rc": 0,
+    "output": "  bash arg: -p\n  bash arg: com.snaptube.premium\n  bash arg: -c\n  bash arg: android.intent.category.LAUNCHER\n  bash arg: 1\nargs: [-p, com.snaptube.premium, -c, android.intent.category.LAUNCHER, 1]\n arg: \"-p\"\n arg: \"com.snaptube.premium\"\n arg: \"-c\"\n arg: \"android.intent.category.LAUNCHER\"\n arg: \"1\"\ndata=\"com.snaptube.premium\"\ndata=\"android.intent.category.LAUNCHER\"\nEvents injected: 1\n## Network stats: elapsed time=20ms (0ms mobile, 0ms wifi, 20ms not connected)\n"
+  },
+  {
+    "t": 1793893092.742,
+    "kind": "capture",
+    "stage": "first-0",
+    "visible": [
+      "Viewing full screen",
+      "To exit, swipe down from the top.",
+      "Got it"
+    ]
+  },
+  {
+    "t": 1793893092.785,
+    "kind": "pid",
+    "stage": "first",
+    "iteration": 0,
+    "running": true
+  },
+  {
+    "t": 1793893092.87,
+    "kind": "tap_system_dismiss",
+    "label": "Got it",
+    "id": "android:id/ok"
+  },
+  {
+    "t": 1793893105.561,
+    "kind": "capture",
+    "stage": "first-1",
+    "visible": [
+      "Downloading",
+      "Space song",
+      "5.2MB/s",
+      "77%",
+      "PAR\u00d3DIA | MALVADA - Z\u00c9 FELIPE",
+      "3.1MB/s",
+      "63%",
+      "Eu Navegarei",
+      "3.6MB/s",
+      "25%",
+      "Sendo assim / Muito estranho (Cuida bem de mim)",
+      "2.3MB/s",
+      "69%",
+      "Ready for Love",
+      "6.2MB/s",
+      "50%",
+      "DOWNLOAD",
+      "Simple and fast",
+      "Next \u2192"
+    ]
+  },
+  {
+    "t": 1793893105.583,
+    "kind": "pid",
+    "stage": "first",
+    "iteration": 1,
+    "running": true
+  },
+  {
+    "t": 1793893105.626,
+    "kind": "tap_onboarding_action",
+    "label": "Next \u2192",
+    "id": "com.snaptube.premium:id/tv_action_btn"
+  },
+  {
+    "t": 1793893118.194,
+    "kind": "capture",
+    "stage": "first-2",
+    "visible": [
+      "Download as",
+      "Music",
+      "Video",
+      "Image",
+      "DOWNLOAD",
+      "All formats",
+      "Next \u2192"
+    ]
+  },
+  {
+    "t": 1793893118.212,
+    "kind": "pid",
+    "stage": "first",
+    "iteration": 2,
+    "running": true
+  },
+  {
+    "t": 1793893118.256,
+    "kind": "tap_onboarding_action",
+    "label": "Next \u2192",
+    "id": "com.snaptube.premium:id/tv_action_btn"
+  },
+  {
+    "t": 1793893137.813,
+    "kind": "capture",
+    "stage": "first-3",
+    "visible": [
+      "Search",
+      "Video",
+      "Music",
+      "More",
+      "YouTube",
+      "TikTok",
+      "Instagram",
+      "WhatsApp",
+      "Facebook",
+      "Twitter/X",
+      "Pinterest",
+      "Kwai",
+      "Threads",
+      "SnapChat",
+      "SoundCloud",
+      "More",
+      "DOWNLOAD",
+      "Everything",
+      "Enjoy now"
+    ]
+  },
+  {
+    "t": 1793893137.838,
+    "kind": "pid",
+    "stage": "first",
+    "iteration": 3,
+    "running": true
+  },
+  {
+    "t": 1793893137.888,
+    "kind": "tap_onboarding_action",
+    "label": "Enjoy now",
+    "id": "com.snaptube.premium:id/tv_action_btn"
+  },
+  {
+    "t": 1793893157.331,
+    "kind": "capture",
+    "stage": "first-4",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893157.354,
+    "kind": "pid",
+    "stage": "first",
+    "iteration": 4,
+    "running": true
+  },
+  {
+    "t": 1793893174.623,
+    "kind": "capture",
+    "stage": "first-5",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893174.637,
+    "kind": "pid",
+    "stage": "first",
+    "iteration": 5,
+    "running": true
+  },
+  {
+    "t": 1793893191.87,
+    "kind": "capture",
+    "stage": "first-6",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893191.885,
+    "kind": "pid",
+    "stage": "first",
+    "iteration": 6,
+    "running": true
+  },
+  {
+    "t": 1793893209.158,
+    "kind": "capture",
+    "stage": "first-7",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893209.173,
+    "kind": "pid",
+    "stage": "first",
+    "iteration": 7,
+    "running": true
+  },
+  {
+    "t": 1793893212.478,
+    "kind": "launch",
+    "stage": "resume-home",
+    "rc": 0,
+    "output": "  bash arg: -p\n  bash arg: com.snaptube.premium\n  bash arg: -c\n  bash arg: android.intent.category.LAUNCHER\n  bash arg: 1\nargs: [-p, com.snaptube.premium, -c, android.intent.category.LAUNCHER, 1]\n arg: \"-p\"\n arg: \"com.snaptube.premium\"\n arg: \"-c\"\n arg: \"android.intent.category.LAUNCHER\"\n arg: \"1\"\ndata=\"com.snaptube.premium\"\ndata=\"android.intent.category.LAUNCHER\"\nEvents injected: 1\n## Network stats: elapsed time=27ms (0ms mobile, 0ms wifi, 27ms not connected)\n"
+  },
+  {
+    "t": 1793893222.76,
+    "kind": "capture",
+    "stage": "resume-home-0",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893222.774,
+    "kind": "pid",
+    "stage": "resume-home",
+    "iteration": 0,
+    "running": true
+  },
+  {
+    "t": 1793893233.015,
+    "kind": "capture",
+    "stage": "resume-home-1",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893233.029,
+    "kind": "pid",
+    "stage": "resume-home",
+    "iteration": 1,
+    "running": true
+  },
+  {
+    "t": 1793893243.31,
+    "kind": "capture",
+    "stage": "resume-home-2",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893243.323,
+    "kind": "pid",
+    "stage": "resume-home",
+    "iteration": 2,
+    "running": true
+  },
+  {
+    "t": 1793893260.595,
+    "kind": "capture",
+    "stage": "resume-home-3",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893260.608,
+    "kind": "pid",
+    "stage": "resume-home",
+    "iteration": 3,
+    "running": true
+  },
+  {
+    "t": 1793893277.861,
+    "kind": "capture",
+    "stage": "resume-home-4",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893277.877,
+    "kind": "pid",
+    "stage": "resume-home",
+    "iteration": 4,
+    "running": true
+  },
+  {
+    "t": 1793893295.169,
+    "kind": "capture",
+    "stage": "resume-home-5",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893295.183,
+    "kind": "pid",
+    "stage": "resume-home",
+    "iteration": 5,
+    "running": true
+  },
+  {
+    "t": 1793893312.456,
+    "kind": "capture",
+    "stage": "resume-home-6",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893312.47,
+    "kind": "pid",
+    "stage": "resume-home",
+    "iteration": 6,
+    "running": true
+  },
+  {
+    "t": 1793893329.736,
+    "kind": "capture",
+    "stage": "resume-home-7",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893329.751,
+    "kind": "pid",
+    "stage": "resume-home",
+    "iteration": 7,
+    "running": true
+  },
+  {
+    "t": 1793893333.044,
+    "kind": "launch",
+    "stage": "cold-relaunch-1",
+    "rc": 0,
+    "output": "  bash arg: -p\n  bash arg: com.snaptube.premium\n  bash arg: -c\n  bash arg: android.intent.category.LAUNCHER\n  bash arg: 1\nargs: [-p, com.snaptube.premium, -c, android.intent.category.LAUNCHER, 1]\n arg: \"-p\"\n arg: \"com.snaptube.premium\"\n arg: \"-c\"\n arg: \"android.intent.category.LAUNCHER\"\n arg: \"1\"\ndata=\"com.snaptube.premium\"\ndata=\"android.intent.category.LAUNCHER\"\nEvents injected: 1\n## Network stats: elapsed time=28ms (0ms mobile, 0ms wifi, 28ms not connected)\n"
+  },
+  {
+    "t": 1793893343.262,
+    "kind": "capture",
+    "stage": "cold-relaunch-1-0",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893343.282,
+    "kind": "pid",
+    "stage": "cold-relaunch-1",
+    "iteration": 0,
+    "running": true
+  },
+  {
+    "t": 1793893353.491,
+    "kind": "capture",
+    "stage": "cold-relaunch-1-1",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893353.504,
+    "kind": "pid",
+    "stage": "cold-relaunch-1",
+    "iteration": 1,
+    "running": true
+  },
+  {
+    "t": 1793893363.703,
+    "kind": "capture",
+    "stage": "cold-relaunch-1-2",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893363.717,
+    "kind": "pid",
+    "stage": "cold-relaunch-1",
+    "iteration": 2,
+    "running": true
+  },
+  {
+    "t": 1793893380.915,
+    "kind": "capture",
+    "stage": "cold-relaunch-1-3",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893380.931,
+    "kind": "pid",
+    "stage": "cold-relaunch-1",
+    "iteration": 3,
+    "running": true
+  },
+  {
+    "t": 1793893398.127,
+    "kind": "capture",
+    "stage": "cold-relaunch-1-4",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893398.14,
+    "kind": "pid",
+    "stage": "cold-relaunch-1",
+    "iteration": 4,
+    "running": true
+  },
+  {
+    "t": 1793893415.331,
+    "kind": "capture",
+    "stage": "cold-relaunch-1-5",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893415.346,
+    "kind": "pid",
+    "stage": "cold-relaunch-1",
+    "iteration": 5,
+    "running": true
+  },
+  {
+    "t": 1793893432.555,
+    "kind": "capture",
+    "stage": "cold-relaunch-1-6",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893432.57,
+    "kind": "pid",
+    "stage": "cold-relaunch-1",
+    "iteration": 6,
+    "running": true
+  },
+  {
+    "t": 1793893449.82,
+    "kind": "capture",
+    "stage": "cold-relaunch-1-7",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893449.835,
+    "kind": "pid",
+    "stage": "cold-relaunch-1",
+    "iteration": 7,
+    "running": true
+  },
+  {
+    "t": 1793893453.114,
+    "kind": "launch",
+    "stage": "cold-relaunch-2",
+    "rc": 0,
+    "output": "  bash arg: -p\n  bash arg: com.snaptube.premium\n  bash arg: -c\n  bash arg: android.intent.category.LAUNCHER\n  bash arg: 1\nargs: [-p, com.snaptube.premium, -c, android.intent.category.LAUNCHER, 1]\n arg: \"-p\"\n arg: \"com.snaptube.premium\"\n arg: \"-c\"\n arg: \"android.intent.category.LAUNCHER\"\n arg: \"1\"\ndata=\"com.snaptube.premium\"\ndata=\"android.intent.category.LAUNCHER\"\nEvents injected: 1\n## Network stats: elapsed time=9ms (0ms mobile, 0ms wifi, 9ms not connected)\n"
+  },
+  {
+    "t": 1793893463.312,
+    "kind": "capture",
+    "stage": "cold-relaunch-2-0",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893463.327,
+    "kind": "pid",
+    "stage": "cold-relaunch-2",
+    "iteration": 0,
+    "running": true
+  },
+  {
+    "t": 1793893473.519,
+    "kind": "capture",
+    "stage": "cold-relaunch-2-1",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893473.534,
+    "kind": "pid",
+    "stage": "cold-relaunch-2",
+    "iteration": 1,
+    "running": true
+  },
+  {
+    "t": 1793893483.737,
+    "kind": "capture",
+    "stage": "cold-relaunch-2-2",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893483.751,
+    "kind": "pid",
+    "stage": "cold-relaunch-2",
+    "iteration": 2,
+    "running": true
+  },
+  {
+    "t": 1793893500.949,
+    "kind": "capture",
+    "stage": "cold-relaunch-2-3",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893500.962,
+    "kind": "pid",
+    "stage": "cold-relaunch-2",
+    "iteration": 3,
+    "running": true
+  },
+  {
+    "t": 1793893518.155,
+    "kind": "capture",
+    "stage": "cold-relaunch-2-4",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893518.17,
+    "kind": "pid",
+    "stage": "cold-relaunch-2",
+    "iteration": 4,
+    "running": true
+  },
+  {
+    "t": 1793893535.364,
+    "kind": "capture",
+    "stage": "cold-relaunch-2-5",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893535.378,
+    "kind": "pid",
+    "stage": "cold-relaunch-2",
+    "iteration": 5,
+    "running": true
+  },
+  {
+    "t": 1793893552.578,
+    "kind": "capture",
+    "stage": "cold-relaunch-2-6",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893552.592,
+    "kind": "pid",
+    "stage": "cold-relaunch-2",
+    "iteration": 6,
+    "running": true
+  },
+  {
+    "t": 1793893569.796,
+    "kind": "capture",
+    "stage": "cold-relaunch-2-7",
+    "visible": [
+      "Search to download",
+      "Search",
+      "YouTube",
+      "Music",
+      "More",
+      "Download",
+      "Play",
+      "Settings"
+    ]
+  },
+  {
+    "t": 1793893569.81,
+    "kind": "pid",
+    "stage": "cold-relaunch-2",
+    "iteration": 7,
+    "running": true
+  },
+  {
+    "t": 1793893569.896,
+    "kind": "log_lines",
+    "count": 53
+  },
+  {
+    "t": 1793893570.01,
+    "kind": "db_tables",
+    "count": 9
+  },
+  {
+    "t": 1793893570.024,
+    "kind": "media_files",
+    "count": 0
+  }
+]

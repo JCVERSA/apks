@@ -1,0 +1,37 @@
+  * Task{d69ca3a #11 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+    mLastPausedActivity: ActivityRecord{89badbd u0 com.snaptube.premium/.guide.launch.LaunchGuideActivity t-1 f}}
+    topResumedActivity=ActivityRecord{60449b2 u0 com.snaptube.premium/.activity.ExploreActivity t11}
+    * Hist  #0: ActivityRecord{60449b2 u0 com.snaptube.premium/.activity.ExploreActivity t11}
+      packageName=com.snaptube.premium processName=com.snaptube.premium
+      app=ProcessRecord{c924999 3093:com.snaptube.premium/u0a149}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.snaptube.premium/.activity.ExploreActivity }
+      rootOfTask=true task=Task{d69ca3a #11 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      taskAffinity=10149:com.snaptube.premium
+      mActivityComponent=com.snaptube.premium/.activity.ExploreActivity
+      baseDir=/data/app/~~x0rCTRcr5bobjAnTMhAKbA==/com.snaptube.premium-hkcwf8xJ8QJvA_wq3WQLkg==/base.apk
+      dataDir=/data/user/0/com.snaptube.premium
+      windows=[Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}]
+    Resumed: ActivityRecord{60449b2 u0 com.snaptube.premium/.activity.ExploreActivity t11}
+  ResumedActivity: ActivityRecord{60449b2 u0 com.snaptube.premium/.activity.ExploreActivity t11}
+  topDisplayFocusedRootTask=Task{d69ca3a #11 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+  deepestLastOrientationSource=ActivityRecord{60449b2 u0 com.snaptube.premium/.activity.ExploreActivity t11}
+  mCurrentFocus=Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+  mFocusedApp=ActivityRecord{60449b2 u0 com.snaptube.premium/.activity.ExploreActivity t11}
+      mPreferredTopFocusableRootTask=Task{d69ca3a #11 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      mLastFocusedRootTask=Task{d69ca3a #11 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      * Task{d69ca3a #11 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+        * ActivityRecord{60449b2 u0 com.snaptube.premium/.activity.ExploreActivity t11}
+    mFocusedWindow=Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+    mTopFullscreenOpaqueWindowState=Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+    mNavBarColorWindowCandidate=Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+    mNavBarBackgroundWindow=Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+      Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+      Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+      ITYPE_IME -> Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+      ITYPE_NAVIGATION_BAR -> Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+      ITYPE_STATUS_BAR -> Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+        mControlTarget=Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+        mControlTarget=Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+        mControlTarget=Window{b920c5c u0 com.snaptube.premium/com.snaptube.premium.activity.ExploreActivity}
+        (fullscreen) Task{d69ca3a #11 type=standard A=10149:com.snaptube.premium U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+  VisibleActivityProcess:[ ProcessRecord{c924999 3093:com.snaptube.premium/u0a149}]
