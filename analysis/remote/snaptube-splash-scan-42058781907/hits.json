@@ -1,0 +1,3166 @@
+[
+  {
+    "path": "smali_classes5/it/sephiroth/android/library/tooltip/Tooltip$TooltipViewImpl.smali",
+    "hits": [
+      {
+        "line": 126,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".field public final w0:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 303,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v0, p0, Lit/sephiroth/android/library/tooltip/Tooltip$TooltipViewImpl;->w0:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 305,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes5/com/zhihu/matisse/R$attr.smali",
+    "hits": [
+      {
+        "line": 1018,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes5/com/zhihu/matisse/R$styleable.smali",
+    "hits": [
+      {
+        "line": 468,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 1850,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 1852,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 2715,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v0, Lcom/zhihu/matisse/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes5/me/zhanghai/android/materialprogressbar/R$attr.smali",
+    "hits": [
+      {
+        "line": 571,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes5/me/zhanghai/android/materialprogressbar/R$styleable.smali",
+    "hits": [
+      {
+        "line": 477,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 777,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 779,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1326,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lme/zhanghai/android/materialprogressbar/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes3/com/snaptube/ads/view/AdPlayerContainer.smali",
+    "hits": [
+      {
+        "line": 1187,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p2, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes3/com/snaptube/ads/view/AdPlayerContainer$b.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 45,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes3/com/mopub/mraid/b$a.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes3/com/mopub/mraid/a$j$a$a$a.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 49,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes3/com/mopub/mraid/b.smali",
+    "hits": [
+      {
+        "line": 21,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".field public final c:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 94,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iput-object p2, p0, Lcom/mopub/mraid/b;->c:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 318,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object p2, p0, Lcom/mopub/mraid/b;->c:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 320,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p1, p2}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes3/com/mopub/mraid/a$j$a$a.smali",
+    "hits": [
+      {
+        "line": 77,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v4, v5}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes3/com/mbridge/msdk/mbnative/controller/c$3.smali",
+    "hits": [
+      {
+        "line": 70,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-static {v1}, Lcom/mbridge/msdk/mbnative/controller/c;->c(Lcom/mbridge/msdk/mbnative/controller/c;)Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 78,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-static {v1}, Lcom/mbridge/msdk/mbnative/controller/c;->c(Lcom/mbridge/msdk/mbnative/controller/c;)Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 82,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes3/com/mbridge/msdk/mbnative/controller/c$1.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes3/com/mbridge/msdk/mbnative/controller/c.smali",
+    "hits": [
+      {
+        "line": 34,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".field private c:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 72,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iput-object v2, p0, Lcom/mbridge/msdk/mbnative/controller/c;->c:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 112,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iput-object p1, p0, Lcom/mbridge/msdk/mbnative/controller/c;->c:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 209,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".method public static synthetic c(Lcom/mbridge/msdk/mbnative/controller/c;)Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 212,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object p0, p0, Lcom/mbridge/msdk/mbnative/controller/c;->c:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 342,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v1, p0, Lcom/mbridge/msdk/mbnative/controller/c;->c:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 344,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 356,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iput-object v0, p0, Lcom/mbridge/msdk/mbnative/controller/c;->c:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/o/s36.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 54,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p0, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 85,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/dayuwuxian/ui_adapt/R$attr.smali",
+    "hits": [
+      {
+        "line": 570,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/dayuwuxian/ui_adapt/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 752,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 754,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1309,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lcom/dayuwuxian/ui_adapt/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/dayuwuxian/clean/ui/widget/CleanProgressView$b.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 49,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/dayuwuxian/clean/ui/widget/CleanProgressView.smali",
+    "hits": [
+      {
+        "line": 534,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/google/android/material/R$attr.smali",
+    "hits": [
+      {
+        "line": 1786,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/google/android/material/R$styleable.smali",
+    "hits": [
+      {
+        "line": 500,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 2528,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 2530,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 4091,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v5, Lcom/google/android/material/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/google/android/material/floatingactionbutton/a.smali",
+    "hits": [
+      {
+        "line": 44,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".field public E:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 336,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p0}, Lcom/google/android/material/floatingactionbutton/a;->q()Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 340,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 358,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/a;->E:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 362,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 366,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iput-object v0, p0, Lcom/google/android/material/floatingactionbutton/a;->E:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 1400,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".method public final q()Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 1403,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/a;->E:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 1411,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iput-object v0, p0, Lcom/google/android/material/floatingactionbutton/a;->E:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 1414,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/a;->E:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/google/android/material/floatingactionbutton/a$e.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 10,
+        "kinds": [
+          "draw"
+        ],
+        "text": "value = Lcom/google/android/material/floatingactionbutton/a;->q()Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/google/android/material/transformation/ExpandableBehavior.smali",
+    "hits": [
+      {
+        "line": 240,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/google/android/material/transformation/ExpandableBehavior$a.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 57,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/google/android/material/timepicker/ClockFaceView.smali",
+    "hits": [
+      {
+        "line": 198,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/google/android/material/timepicker/ClockFaceView$a.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 58,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/google/firebase/perf/R$attr.smali",
+    "hits": [
+      {
+        "line": 564,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/google/firebase/perf/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 738,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 740,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1279,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lcom/google/firebase/perf/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/example/em_snap_cleaner/R$attr.smali",
+    "hits": [
+      {
+        "line": 552,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/example/em_snap_cleaner/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 730,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 732,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1275,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lcom/example/em_snap_cleaner/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/ethanhua/skeleton/shimmerlayout/ShimmerLayout.smali",
+    "hits": [
+      {
+        "line": 36,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".field public p:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 952,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iput-object v0, p0, Lcom/ethanhua/skeleton/shimmerlayout/ShimmerLayout;->p:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 958,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v1, p0, Lcom/ethanhua/skeleton/shimmerlayout/ShimmerLayout;->p:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 960,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 1007,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v0, p0, Lcom/ethanhua/skeleton/shimmerlayout/ShimmerLayout;->p:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 1015,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v1, p0, Lcom/ethanhua/skeleton/shimmerlayout/ShimmerLayout;->p:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 1017,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/ethanhua/skeleton/shimmerlayout/ShimmerLayout$a.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 45,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/dywx/hybrid/R$attr.smali",
+    "hits": [
+      {
+        "line": 534,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/dywx/hybrid/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 738,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 740,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1279,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lcom/dywx/hybrid/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/dywx/dyframework/R$attr.smali",
+    "hits": [
+      {
+        "line": 1886,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/dywx/dyframework/R$styleable.smali",
+    "hits": [
+      {
+        "line": 500,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 2612,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 2614,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 4439,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v3, Lcom/dywx/dyframework/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/dywx/qa/loginspector/R$attr.smali",
+    "hits": [
+      {
+        "line": 552,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/dywx/qa/loginspector/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 730,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 732,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1275,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lcom/dywx/qa/loginspector/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/intercom/input/gallery/R$attr.smali",
+    "hits": [
+      {
+        "line": 1817,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes2/com/intercom/input/gallery/R$styleable.smali",
+    "hits": [
+      {
+        "line": 511,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 2553,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 2555,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 4152,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v5, Lcom/intercom/input/gallery/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "res/values/styles.xml",
+    "hits": [
+      {
+        "line": 39,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@null</item>"
+      },
+      {
+        "line": 376,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/background_material_dark</item>"
+      },
+      {
+        "line": 408,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/background_material_light</item>"
+      },
+      {
+        "line": 424,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@drawable/mtrl_dialog_background</item>"
+      },
+      {
+        "line": 873,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 1109,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowActionModeOverlay\">false</item>"
+      },
+      {
+        "line": 1118,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@drawable/abc_dialog_material_background</item>"
+      },
+      {
+        "line": 1135,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowActionModeOverlay\">true</item>"
+      },
+      {
+        "line": 1254,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowActionModeOverlay\">false</item>"
+      },
+      {
+        "line": 1263,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@drawable/abc_dialog_material_background</item>"
+      },
+      {
+        "line": 1280,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowActionModeOverlay\">true</item>"
+      },
+      {
+        "line": 1284,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@drawable/abc_dialog_material_background</item>"
+      },
+      {
+        "line": 1301,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowActionModeOverlay\">true</item>"
+      },
+      {
+        "line": 1693,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 2160,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 2231,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent</item>"
+      },
+      {
+        "line": 2548,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/splash_color</item>"
+      },
+      {
+        "line": 2553,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent</item>"
+      },
+      {
+        "line": 2557,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 2568,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/bg</item>"
+      },
+      {
+        "line": 2578,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent</item>"
+      },
+      {
+        "line": 2583,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent</item>"
+      },
+      {
+        "line": 2607,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 2618,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/background_primary_color</item>"
+      },
+      {
+        "line": 2641,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/background_primary_color</item>"
+      },
+      {
+        "line": 2645,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 2653,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/background_block_normal_color</item>"
+      },
+      {
+        "line": 2663,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent</item>"
+      },
+      {
+        "line": 2685,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/background_block_normal_color</item>"
+      },
+      {
+        "line": 2717,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/background_content_color</item>"
+      },
+      {
+        "line": 2721,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/splash_color</item>"
+      },
+      {
+        "line": 2726,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@drawable/window_bg</item>"
+      },
+      {
+        "line": 2759,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowActionModeOverlay\">true</item>"
+      },
+      {
+        "line": 2764,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowActionModeOverlay\">true</item>"
+      },
+      {
+        "line": 2768,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"postSplashScreenTheme\">@style/P4.Theme.Splash.Explore</item>"
+      },
+      {
+        "line": 2769,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowSplashScreenAnimatedIcon\">@drawable/splash_icon</item>"
+      },
+      {
+        "line": 2770,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowSplashScreenBackground\">@color/splash_color</item>"
+      },
+      {
+        "line": 2773,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent</item>"
+      },
+      {
+        "line": 2790,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowActionModeOverlay\">true</item>"
+      },
+      {
+        "line": 2795,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowActionModeOverlay\">true</item>"
+      },
+      {
+        "line": 2823,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@drawable/bg_explore_card_normal</item>"
+      },
+      {
+        "line": 3041,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 3166,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 3510,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 3894,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 3924,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 3942,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 3957,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 3963,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 3979,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 3988,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 3992,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 4001,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 4048,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 4105,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/bg</item>"
+      },
+      {
+        "line": 4114,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowActionModeOverlay\">true</item>"
+      },
+      {
+        "line": 4118,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 4134,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 4146,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"postSplashScreenTheme\">?android:theme</item>"
+      },
+      {
+        "line": 4147,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowSplashScreenAnimatedIcon\">@android:drawable/sym_def_app_icon</item>"
+      },
+      {
+        "line": 4148,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowSplashScreenAnimationDuration\">@integer/default_icon_animation_duration</item>"
+      },
+      {
+        "line": 4149,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowSplashScreenBackground\">?android:colorBackground</item>"
+      },
+      {
+        "line": 4152,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@drawable/compat_splash_screen_no_icon_background</item>"
+      },
+      {
+        "line": 4163,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@drawable/compat_splash_screen</item>"
+      },
+      {
+        "line": 4170,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent_black</item>"
+      },
+      {
+        "line": 4173,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent_grey</item>"
+      },
+      {
+        "line": 4301,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/bg</item>"
+      },
+      {
+        "line": 4309,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 4559,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 4565,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent</item>"
+      },
+      {
+        "line": 4571,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent</item>"
+      },
+      {
+        "line": 4776,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:background\">?android:windowBackground</item>"
+      },
+      {
+        "line": 5776,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 5789,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 6014,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent_black</item>"
+      },
+      {
+        "line": 6018,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 6096,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowActionModeOverlay\">true</item>"
+      },
+      {
+        "line": 6154,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@drawable/shape_corner_8dp_bg</item>"
+      },
+      {
+        "line": 6160,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 6258,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@drawable/mbridge_shape_btn</item>"
+      },
+      {
+        "line": 6267,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 6276,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 6344,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 6359,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 6472,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 6479,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 6491,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/tt_000000</item>"
+      },
+      {
+        "line": 6497,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/tt_88000000</item>"
+      },
+      {
+        "line": 6504,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/tt_88000000</item>"
+      },
+      {
+        "line": 6511,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/tt_ffffff</item>"
+      },
+      {
+        "line": 6517,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      },
+      {
+        "line": 6525,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      }
+    ]
+  },
+  {
+    "path": "res/values-v31/styles.xml",
+    "hits": [
+      {
+        "line": 7,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowSplashScreenBrandingImage\">@drawable/splash_snaptube</item>"
+      },
+      {
+        "line": 8,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"postSplashScreenTheme\">@style/P4.Theme.Splash.Explore</item>"
+      },
+      {
+        "line": 9,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowSplashScreenAnimatedIcon\">@drawable/splash_icon</item>"
+      },
+      {
+        "line": 10,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowSplashScreenBackground\">@color/splash_color</item>"
+      },
+      {
+        "line": 13,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowSplashScreenBackground\">?windowSplashScreenBackground</item>"
+      },
+      {
+        "line": 14,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowSplashScreenAnimatedIcon\">?windowSplashScreenAnimatedIcon</item>"
+      },
+      {
+        "line": 15,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowSplashScreenAnimationDuration\">?windowSplashScreenAnimationDuration</item>"
+      },
+      {
+        "line": 18,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowSplashScreenIconBackgroundColor\">?windowSplashScreenIconBackgroundColor</item>"
+      }
+    ]
+  },
+  {
+    "path": "res/values-v28/styles.xml",
+    "hits": [
+      {
+        "line": 23,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/splash_color</item>"
+      },
+      {
+        "line": 29,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@drawable/window_bg</item>"
+      },
+      {
+        "line": 63,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"windowActionModeOverlay\">true</item>"
+      },
+      {
+        "line": 66,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@color/transparent</item>"
+      }
+    ]
+  },
+  {
+    "path": "res/values-v26/styles.xml",
+    "hits": [
+      {
+        "line": 26,
+        "kinds": [
+          "resource"
+        ],
+        "text": "<item name=\"android:windowBackground\">@android:color/transparent</item>"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/o/vl3.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/vungle/ads/internal/ImpressionTracker.smali",
+    "hits": [
+      {
+        "line": 59,
+        "kinds": [
+          "draw"
+        ],
+        "text": "\"Landroid/view/ViewTreeObserver$OnPreDrawListener;\","
+      },
+      {
+        "line": 60,
+        "kinds": [
+          "draw"
+        ],
+        "text": "\"onPreDrawListener\","
+      },
+      {
+        "line": 61,
+        "kinds": [
+          "draw"
+        ],
+        "text": "\"Landroid/view/ViewTreeObserver$OnPreDrawListener;\","
+      },
+      {
+        "line": 62,
+        "kinds": [
+          "draw"
+        ],
+        "text": "\"getOnPreDrawListener\","
+      },
+      {
+        "line": 63,
+        "kinds": [
+          "draw"
+        ],
+        "text": "\"()Landroid/view/ViewTreeObserver$OnPreDrawListener;\","
+      },
+      {
+        "line": 64,
+        "kinds": [
+          "draw"
+        ],
+        "text": "\"getOnPreDrawListener$annotations\","
+      },
+      {
+        "line": 116,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".field private final onPreDrawListener:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 274,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iput-object p2, p0, Lcom/vungle/ads/internal/ImpressionTracker;->onPreDrawListener:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 359,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".method public static synthetic getOnPreDrawListener$annotations()V"
+      },
+      {
+        "line": 691,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object p2, p0, Lcom/vungle/ads/internal/ImpressionTracker;->onPreDrawListener:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 693,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p1, p2}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 794,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v1, p0, Lcom/vungle/ads/internal/ImpressionTracker;->onPreDrawListener:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 796,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 806,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".method public final getOnPreDrawListener()Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 811,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v0, p0, Lcom/vungle/ads/internal/ImpressionTracker;->onPreDrawListener:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/spf/R$attr.smali",
+    "hits": [
+      {
+        "line": 552,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/spf/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 730,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 732,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1275,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lcom/snaptube/spf/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/ui/anim/ViewAnimator$b.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 57,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/ui/anim/ViewAnimator.smali",
+    "hits": [
+      {
+        "line": 495,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/premium/batch_download/BatchVideoSelectManager$e.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 53,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/premium/batch_download/BatchVideoSelectManager.smali",
+    "hits": [
+      {
+        "line": 1842,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/premium/sites/SpeedDialFragment$g.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 109,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/premium/sites/SpeedDialFragment.smali",
+    "hits": [
+      {
+        "line": 1772,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p2, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/premium/view/SpectrumView$a.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 51,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/premium/view/SpectrumView.smali",
+    "hits": [
+      {
+        "line": 304,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/premium/comment/fragment/InputReplyBottomFragment$b.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 71,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/premium/comment/fragment/InputReplyBottomFragment.smali",
+    "hits": [
+      {
+        "line": 187,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/premium/playback/window/PlayerWindowController$g.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 49,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali_classes4/com/snaptube/premium/playback/window/PlayerWindowController.smali",
+    "hits": [
+      {
+        "line": 779,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/xn7$c$b.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 66,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/xn7$b$a.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 66,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/k69$b.smali",
+    "hits": [
+      {
+        "line": 30,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p0, p1}, Landroid/view/Window;->setDecorFitsSystemWindows(Z)V"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/xn7$c.smali",
+    "hits": [
+      {
+        "line": 17,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".field public h:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 114,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v1, p0, Lo/xn7$c;->h:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 124,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v1, p0, Lo/xn7$c;->h:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 126,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 133,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iput-object v1, p0, Lo/xn7$c;->h:Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 135,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 140,
+        "kinds": [
+          "platform"
+        ],
+        "text": ".method public final j(Landroid/window/SplashScreenView;)Z"
+      },
+      {
+        "line": 167,
+        "kinds": [
+          "platform"
+        ],
+        "text": "invoke-static {p1}, Lo/bo7;->a(Landroid/window/SplashScreenView;)Landroid/view/View;"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/uw2.smali",
+    "hits": [
+      {
+        "line": 31,
+        "kinds": [
+          "draw"
+        ],
+        "text": "const-string v0, \"reportFullyDrawn\""
+      }
+    ]
+  },
+  {
+    "path": "smali/o/py8$a.smali",
+    "hits": [
+      {
+        "line": 165,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 230,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/py8$a$a.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/ni5.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 51,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 91,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 102,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/bo7.smali",
+    "hits": [
+      {
+        "line": 6,
+        "kinds": [
+          "platform"
+        ],
+        "text": ".method public static bridge synthetic a(Landroid/window/SplashScreenView;)Landroid/view/View;"
+      },
+      {
+        "line": 9,
+        "kinds": [
+          "platform"
+        ],
+        "text": "invoke-virtual {p0}, Landroid/window/SplashScreenView;->getRootView()Landroid/view/View;"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/xn7$c$a.smali",
+    "hits": [
+      {
+        "line": 51,
+        "kinds": [
+          "platform"
+        ],
+        "text": "invoke-static {p2}, Lo/do7;->a(Ljava/lang/Object;)Landroid/window/SplashScreenView;"
+      },
+      {
+        "line": 55,
+        "kinds": [
+          "platform"
+        ],
+        "text": "invoke-virtual {p1, p2}, Lo/xn7$c;->j(Landroid/window/SplashScreenView;)Z"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/gb1$a.smali",
+    "hits": [
+      {
+        "line": 165,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 230,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/xn7$b.smali",
+    "hits": [
+      {
+        "line": 112,
+        "kinds": [
+          "androidx",
+          "resource"
+        ],
+        "text": "sget v2, Landroidx/core/splashscreen/R$attr;->windowSplashScreenBackground:I"
+      },
+      {
+        "line": 139,
+        "kinds": [
+          "androidx",
+          "resource"
+        ],
+        "text": "sget v2, Landroidx/core/splashscreen/R$attr;->windowSplashScreenAnimatedIcon:I"
+      },
+      {
+        "line": 156,
+        "kinds": [
+          "androidx"
+        ],
+        "text": "sget v2, Landroidx/core/splashscreen/R$attr;->splashScreenIconSize:I"
+      },
+      {
+        "line": 166,
+        "kinds": [
+          "androidx"
+        ],
+        "text": "sget v4, Landroidx/core/splashscreen/R$dimen;->splashscreen_icon_size_with_background:I"
+      },
+      {
+        "line": 213,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 229,
+        "kinds": [
+          "androidx",
+          "resource"
+        ],
+        "text": "sget v0, Landroidx/core/splashscreen/R$attr;->postSplashScreenTheme:I"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/do7.smali",
+    "hits": [
+      {
+        "line": 6,
+        "kinds": [
+          "platform"
+        ],
+        "text": ".method public static bridge synthetic a(Ljava/lang/Object;)Landroid/window/SplashScreenView;"
+      },
+      {
+        "line": 9,
+        "kinds": [
+          "platform"
+        ],
+        "text": "check-cast p0, Landroid/window/SplashScreenView;"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/gb1$a$a.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      }
+    ]
+  },
+  {
+    "path": "smali/o/co7.smali",
+    "hits": [
+      {
+        "line": 9,
+        "kinds": [
+          "platform"
+        ],
+        "text": "instance-of p0, p0, Landroid/window/SplashScreenView;"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/activity/ComponentActivity.smali",
+    "hits": [
+      {
+        "line": 115,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".field final mReportFullyDrawnExecutor:Landroidx/activity/ComponentActivity$f;"
+      },
+      {
+        "line": 164,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iput-object v1, p0, Landroidx/activity/ComponentActivity;->mReportFullyDrawnExecutor:Landroidx/activity/ComponentActivity$f;"
+      },
+      {
+        "line": 380,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p0}, Landroidx/activity/ComponentActivity;->reportFullyDrawn()V"
+      },
+      {
+        "line": 445,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v0, p0, Landroidx/activity/ComponentActivity;->mReportFullyDrawnExecutor:Landroidx/activity/ComponentActivity$f;"
+      },
+      {
+        "line": 1848,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".method public reportFullyDrawn()V"
+      },
+      {
+        "line": 1858,
+        "kinds": [
+          "draw"
+        ],
+        "text": "const-string v0, \"reportFullyDrawn() for ComponentActivity\""
+      },
+      {
+        "line": 1871,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-super {p0}, Landroid/app/Activity;->reportFullyDrawn()V"
+      },
+      {
+        "line": 1898,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v0, p0, Landroidx/activity/ComponentActivity;->mReportFullyDrawnExecutor:Landroidx/activity/ComponentActivity$f;"
+      },
+      {
+        "line": 1928,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v0, p0, Landroidx/activity/ComponentActivity;->mReportFullyDrawnExecutor:Landroidx/activity/ComponentActivity$f;"
+      },
+      {
+        "line": 1966,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object v0, p0, Landroidx/activity/ComponentActivity;->mReportFullyDrawnExecutor:Landroidx/activity/ComponentActivity$f;"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/activity/ComponentActivity$3.smali",
+    "hits": [
+      {
+        "line": 68,
+        "kinds": [
+          "draw"
+        ],
+        "text": "iget-object p1, p1, Landroidx/activity/ComponentActivity;->mReportFullyDrawnExecutor:Landroidx/activity/ComponentActivity$f;"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/appcompat/R$attr.smali",
+    "hits": [
+      {
+        "line": 536,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/appcompat/R$styleable.smali",
+    "hits": [
+      {
+        "line": 438,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 616,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 618,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1069,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v2, Landroidx/appcompat/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/transition/R$attr.smali",
+    "hits": [
+      {
+        "line": 534,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/transition/e$a.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      },
+      {
+        "line": 50,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/transition/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 752,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 754,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1309,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Landroidx/transition/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/transition/e.smali",
+    "hits": [
+      {
+        "line": 170,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {p0, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/preference/R$attr.smali",
+    "hits": [
+      {
+        "line": 672,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/preference/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 804,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 806,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1631,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v8, Landroidx/preference/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/core/splashscreen/R$style.smali",
+    "hits": [
+      {
+        "line": 1,
+        "kinds": [
+          "androidx"
+        ],
+        "text": ".class public final Landroidx/core/splashscreen/R$style;"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/core/splashscreen/R$drawable.smali",
+    "hits": [
+      {
+        "line": 1,
+        "kinds": [
+          "androidx"
+        ],
+        "text": ".class public final Landroidx/core/splashscreen/R$drawable;"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/core/splashscreen/R$dimen.smali",
+    "hits": [
+      {
+        "line": 1,
+        "kinds": [
+          "androidx"
+        ],
+        "text": ".class public final Landroidx/core/splashscreen/R$dimen;"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/core/splashscreen/R$attr.smali",
+    "hits": [
+      {
+        "line": 1,
+        "kinds": [
+          "androidx"
+        ],
+        "text": ".class public final Landroidx/core/splashscreen/R$attr;"
+      },
+      {
+        "line": 6,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final postSplashScreenTheme:I = 0x7f040427"
+      },
+      {
+        "line": 10,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowSplashScreenAnimatedIcon:I = 0x7f04065b"
+      },
+      {
+        "line": 12,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowSplashScreenAnimationDuration:I = 0x7f04065c"
+      },
+      {
+        "line": 14,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowSplashScreenBackground:I = 0x7f04065d"
+      },
+      {
+        "line": 16,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowSplashScreenIconBackgroundColor:I = 0x7f04065e"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/core/splashscreen/R$layout.smali",
+    "hits": [
+      {
+        "line": 1,
+        "kinds": [
+          "androidx"
+        ],
+        "text": ".class public final Landroidx/core/splashscreen/R$layout;"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/core/splashscreen/R$id.smali",
+    "hits": [
+      {
+        "line": 1,
+        "kinds": [
+          "androidx"
+        ],
+        "text": ".class public final Landroidx/core/splashscreen/R$id;"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/core/splashscreen/R$integer.smali",
+    "hits": [
+      {
+        "line": 1,
+        "kinds": [
+          "androidx"
+        ],
+        "text": ".class public final Landroidx/core/splashscreen/R$integer;"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/coordinatorlayout/widget/CoordinatorLayout.smali",
+    "hits": [
+      {
+        "line": 2428,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 3075,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 3780,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      },
+      {
+        "line": 3826,
+        "kinds": [
+          "draw"
+        ],
+        "text": "invoke-virtual {v1, v2}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/coordinatorlayout/widget/CoordinatorLayout$f.smali",
+    "hits": [
+      {
+        "line": 5,
+        "kinds": [
+          "draw"
+        ],
+        "text": ".implements Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/appcompat/app/AppCompatDelegateImpl.smali",
+    "hits": [
+      {
+        "line": 2483,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sget v1, Landroidx/appcompat/R$styleable;->AppCompatTheme_windowActionModeOverlay:I"
+      },
+      {
+        "line": 2791,
+        "kinds": [
+          "resource"
+        ],
+        "text": "const-string v2, \", windowActionModeOverlay: \""
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/preference/ktx/R$attr.smali",
+    "hits": [
+      {
+        "line": 672,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/preference/ktx/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 804,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 806,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1631,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v8, Landroidx/preference/ktx/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/constraintlayout/widget/R$attr.smali",
+    "hits": [
+      {
+        "line": 918,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali/androidx/constraintlayout/widget/R$styleable.smali",
+    "hits": [
+      {
+        "line": 464,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 1794,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 1796,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 2565,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v0, Landroidx/constraintlayout/widget/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali/com/bytedance/R$attr.smali",
+    "hits": [
+      {
+        "line": 626,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali/com/bytedance/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 810,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 812,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1405,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lcom/bytedance/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali/com/bumptech/glide/R$attr.smali",
+    "hits": [
+      {
+        "line": 552,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali/com/bumptech/glide/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 730,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 732,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1275,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lcom/bumptech/glide/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali/com/airbnb/lottie/R$attr.smali",
+    "hits": [
+      {
+        "line": 588,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali/com/airbnb/lottie/R$styleable.smali",
+    "hits": [
+      {
+        "line": 466,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 774,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 776,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1327,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lcom/airbnb/lottie/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali/com/bytedance/sdk/openadsdk/mediation/adapter/vungle/R$attr.smali",
+    "hits": [
+      {
+        "line": 637,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali/com/bytedance/sdk/openadsdk/mediation/adapter/vungle/R$styleable.smali",
+    "hits": [
+      {
+        "line": 477,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 821,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 823,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1416,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lcom/bytedance/sdk/openadsdk/mediation/adapter/vungle/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  },
+  {
+    "path": "smali/com/bytedance/sdk/openadsdk/mediation/adapter/mintegral/R$attr.smali",
+    "hits": [
+      {
+        "line": 671,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final windowActionModeOverlay:I = 0x7f040653"
+      }
+    ]
+  },
+  {
+    "path": "smali/com/bytedance/sdk/openadsdk/mediation/adapter/mintegral/R$styleable.smali",
+    "hits": [
+      {
+        "line": 477,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final AppCompatTheme_windowActionModeOverlay:I = 0x77"
+      },
+      {
+        "line": 821,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState:[I"
+      },
+      {
+        "line": 823,
+        "kinds": [
+          "resource"
+        ],
+        "text": ".field public static final PopupWindowBackgroundState_state_above_anchor:I = 0x0"
+      },
+      {
+        "line": 1446,
+        "kinds": [
+          "resource"
+        ],
+        "text": "sput-object v1, Lcom/bytedance/sdk/openadsdk/mediation/adapter/mintegral/R$styleable;->PopupWindowBackgroundState:[I"
+      }
+    ]
+  }
+]
