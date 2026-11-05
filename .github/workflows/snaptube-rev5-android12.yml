@@ -1,0 +1,58 @@
+name: SnapTube revision 5 Android 12 diagnostic
+on:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths:
+      - '.github/workflows/snaptube-rev5-android12.yml'
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Download revision 5
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/apk"
+          gh release download snaptube-patched-41275474117 --repo "$GITHUB_REPOSITORY" --pattern '*r5.apk' --dir "$RUNNER_TEMP/apk"
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Test revision 5 only on isolated emulator
+        uses: ReactiveCircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d
+        with:
+          api-level: 32
+          target: google_apis
+          arch: x86_64
+          profile: pixel_5
+          cores: 2
+          ram-size: 4096M
+          heap-size: 512M
+          disk-size: 8192M
+          force-avd-creation: true
+          emulator-boot-timeout: 900
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
+          disable-animations: true
+          script: python3 .github/scripts/snaptube_rev5_diagnostic.py --apk "$RUNNER_TEMP/apk/SnapTube-7.52.0.75250210-adfree-noforce-official-removed-r5.apk" --out "$RUNNER_TEMP/rev5-diagnostic"
+      - name: Publish diagnostic evidence
+        if: always()
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/snaptube-rev5-android12-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          if [ -d "$RUNNER_TEMP/rev5-diagnostic" ]; then cp -a "$RUNNER_TEMP/rev5-diagnostic/." "$dest/"; fi
+          printf 'run_outcome=%s\nrun_id=%s\n' '${{ job.status }}' "$GITHUB_RUN_ID" > "$dest/run-status.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          if ! git diff --cached --quiet; then
+            git commit -m "Add revision 5 Android 12 evidence (run ${GITHUB_RUN_ID}) [skip ci]"
+            git fetch origin arena/7234f8d6-apks
+            git rebase FETCH_HEAD
+            git push origin HEAD:arena/7234f8d6-apks
+          fi
