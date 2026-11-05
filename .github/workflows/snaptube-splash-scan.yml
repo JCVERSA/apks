@@ -31,6 +31,7 @@ jobs:
           curl --fail --location --retry 3 -o "$WORK_ROOT/apktool.jar" https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar
           echo 'dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423  '"$WORK_ROOT/apktool.jar" | sha256sum -c -
           java -Xmx6g -jar "$WORK_ROOT/apktool.jar" d -f -o "$WORK_ROOT/decoded" "$apk" > "$WORK_ROOT/report/decode.log" 2>&1 || { tail -80 "$WORK_ROOT/report/decode.log"; exit 1; }
+          export WORK_ROOT REPORT_DIR="$WORK_ROOT/report"
           python3 .github/scripts/snaptube_splash_scan.py
       - name: Publish evidence
         if: always()
