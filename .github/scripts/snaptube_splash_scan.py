@@ -4,6 +4,7 @@ import os,re,json,shutil
 from pathlib import Path
 root=Path(os.environ['WORK_ROOT'])/'decoded'; out=Path(os.environ['REPORT_DIR']); out.mkdir(parents=True,exist_ok=True)
 patterns={
+ 'splash_compat_refs':re.compile(r'Lo/xn7(?:\$[a-z])?;|Lo/yn7;'),
  'platform':re.compile(r'getSplashScreen|setOnExitAnimationListener|clearOnExitAnimationListener|SplashScreenView|setSplashScreenTheme|android/window/SplashScreen',re.I),
  'androidx':re.compile(r'androidx/core/splashscreen|installSplashScreen|setKeepOnScreenCondition|setOnExitAnimationListener',re.I),
  'draw':re.compile(r'reportFullyDrawn|OnPreDrawListener|setDecorFitsSystemWindows|setDrawsSystemBarBackgrounds',re.I),
