@@ -22,6 +22,7 @@ jobs:
           set -euo pipefail
           WORK_ROOT="$RUNNER_TEMP/splash-scan"
           mkdir -p "$WORK_ROOT/apk" "$WORK_ROOT/report"
+          exec > >(tee "$WORK_ROOT/report/runner.log") 2>&1
           echo "WORK_ROOT=$WORK_ROOT" >> "$GITHUB_ENV"
           echo "REPORT_DIR=$WORK_ROOT/report" >> "$GITHUB_ENV"
           gh release download snaptube-patched-41275474117 --repo "$GITHUB_REPOSITORY" --pattern '*r5.apk' --dir "$WORK_ROOT/apk"
@@ -29,7 +30,7 @@ jobs:
           echo '19b8a9a7b0524922b21c6a8d62864bc211c3552befe91bc42599cdf9de56eaca  '"$apk" | sha256sum -c -
           curl --fail --location --retry 3 -o "$WORK_ROOT/apktool.jar" https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar
           echo 'dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423  '"$WORK_ROOT/apktool.jar" | sha256sum -c -
-          java -Xmx6g -jar "$WORK_ROOT/apktool.jar" d -f -o "$WORK_ROOT/decoded" "$apk" > "$WORK_ROOT/decode.log" 2>&1
+          java -Xmx6g -jar "$WORK_ROOT/apktool.jar" d -f -o "$WORK_ROOT/decoded" "$apk" > "$WORK_ROOT/report/decode.log" 2>&1 || { tail -80 "$WORK_ROOT/report/decode.log"; exit 1; }
           python3 .github/scripts/snaptube_splash_scan.py
       - name: Publish evidence
         if: always()
