@@ -1,0 +1,50 @@
+11-05 15:07:42.947  6296  6296 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-05 15:07:43.432  6296  6296 E Reflection: java.lang.reflect.InvocationTargetException
+11-05 15:07:43.432  6296  6296 E Reflection: 	at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1403)
+11-05 15:07:43.432  6296  6296 E Reflection: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2416)
+11-05 15:07:43.432  6296  6296 E Reflection: Caused by: java.lang.NoSuchMethodException: dalvik.system.VMRuntime.setHiddenApiExemptions [class [Ljava.lang.String;]
+11-05 15:07:43.444  6296  6311 I MMKV    : <MMKV_IO.cpp:89::loadFromFile> loading [pref.switches] with crc 215500957 sequence 3 version 4
+11-05 15:07:43.424  6296  6296 W naptube.premium: type=1400 audit(0.0:57): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=796 scontext=u:r:untrusted_app:s0:c209,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=com.snaptube.premium
+11-05 15:07:43.424  6296  6296 W naptube.premium: type=1400 audit(0.0:58): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=796 scontext=u:r:untrusted_app:s0:c209,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=com.snaptube.premium
+11-05 15:07:43.424  6296  6296 W naptube.premium: type=1400 audit(0.0:59): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=796 scontext=u:r:untrusted_app:s0:c209,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=com.snaptube.premium
+11-05 15:07:43.474  6296  6325 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x720000d54000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pref.content_config.crc]
+11-05 15:07:43.475  6296  6316 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x720000d40000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/com.snaptube.licensing]
+11-05 15:07:43.476  6296  6316 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x720000c94000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/com.snaptube.premium.crc]
+11-05 15:07:43.476  6296  6316 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x720000c64000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/ad.event.persistent]
+11-05 15:07:43.476  6296  6316 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x78], /data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM
+11-05 15:07:43.476  6296  6316 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x720000c2d000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM]
+11-05 15:07:43.476  6296  6316 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x79], /data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM.crc
+11-05 15:07:43.476  6296  6316 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x720000c2c000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/plugins_PACM.crc]
+11-05 15:07:43.490  6296  6310 D LaunchStart-doInitQueue: run PluginIdInitTask
+11-05 15:07:43.498  6296  6326 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x720000af5000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pref.fan.crc]
+11-05 15:07:43.499  6296  6335 E chromium: [1105/150743.499021:ERROR:variations_seed_loader.cc(37)] Seed missing signature.
+11-05 15:07:43.500  6296  6316 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x90], /data/user/0/com.snaptube.premium/files/mmkv/app_quick_start_pref
+11-05 15:07:43.508  6296  6316 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x720000a50000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pref_id_pref_search_history.crc]
+11-05 15:07:43.511  6296  6326 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x71fca0f64000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/net.pubnative.mediation]
+11-05 15:07:43.538  6296  6341 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x71fffb3e4000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/specialCharacter/[long-token-redacted]]
+11-05 15:07:43.545  6296  6318 W System.err: java.lang.SecurityException: getSubscriberIdForSubscriber: The uid 10209 does not meet the requirements to access device identifiers.
+11-05 15:07:43.545  6296  6318 W System.err: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3242)
+11-05 15:07:43.545  6296  6318 W System.err: 	at android.os.Parcel.createException(Parcel.java:3226)
+11-05 15:07:43.545  6296  6318 W System.err: 	at android.os.Parcel.readException(Parcel.java:3209)
+11-05 15:07:43.545  6296  6318 W System.err: 	at android.os.Parcel.readException(Parcel.java:3151)
+11-05 15:07:43.546  6296  6352 W System.err: java.io.FileNotFoundException: /storage/emulated/0/.config/.udid: open failed: ENOENT (No such file or directory)
+11-05 15:07:43.546  6296  6352 W System.err: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-05 15:07:43.603  6296  6296 I cr_CombinedPProvider: #registerProvider() provider:WV.V7@d7b32f0 isPolicyCacheEnabled:false policyProvidersSize:0
+11-05 15:07:43.609  6296  6296 I cr_CombinedPProvider: #linkNativeInternal() 1
+11-05 15:07:43.610  6296  6296 I cr_CombinedPProvider: #onSettingsAvailable() 0
+11-05 15:07:43.610  6296  6296 I cr_CombinedPProvider: #flushPolicies()
+11-05 15:07:43.635  6296  6392 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x71fff7f74000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/app_set_id_storage.crc]
+11-05 15:07:43.644  6296  6385 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x71fff7ed5000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/FirebaseHeartBeatW0RFRkFVTFRd+[long-token-redacted]]
+11-05 15:07:43.644  6296  6385 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x71fff7ed4000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/FirebaseHeartBeatW0RFRkFVTFRd+[long-token-redacted].crc]
+11-05 15:07:43.688  6296  6375 E chromium: [ERROR:simple_file_enumerator.cc(21)] opendir /data/user/0/com.snaptube.premium/cache/WebView/Default/HTTP Cache/Code Cache/js: No such file or directory (2)
+11-05 15:07:43.689  6296  6375 E chromium: [ERROR:simple_index_file.cc(614)] Could not reconstruct index from disk
+11-05 15:07:43.797  6296  6403 W naptube.premium: Long monitor contention with owner Firebase Background Thread #1 (6385) at java.lang.Void com.google.firebase.heartbeatinfo.a.k()(:-1) waiters=1 in java.lang.Void com.google.firebase.heartbeatinfo.a.k() for 145ms
+11-05 15:07:43.798  6296  6461 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x71fff1674000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pag_adn_strategy_center.crc]
+11-05 15:07:43.859  6296  6296 D PluginGlobalConfig: reflectAppContext: invoke=com.snaptube.premium.app.PhoenixApplication@5fc1c1a
+11-05 15:07:43.902  6296  6333 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-05 15:07:43.924  6296  6414 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x71ffed965000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pref_id_pref_filter_app]
+11-05 15:07:43.925  6296  6414 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x71ffed964000], oldPtr [0x0], [/data/user/0/com.snaptube.premium/files/mmkv/pref_id_pref_filter_app.crc]
+11-05 15:07:44.061  6296  6316 D PluginGlobalConfig: reflectAppContext: invoke=com.snaptube.premium.app.PhoenixApplication@5fc1c1a
+11-05 15:07:44.149  6296  6451 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+11-05 15:07:51.431  6296  6566 E pangle-encrypt: encrypt exception No implementation found for byte[] com.bytedance.sdk.component.embedapplog.PangleEncryptUtils.ttEncrypt(byte[], int) (tried [long-token-redacted] and [long-token-redacted]) - is the library loaded, e.g. System.loadLibrary?
+11-05 15:07:52.200  6296  6566 E ignored : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
