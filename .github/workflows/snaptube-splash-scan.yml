@@ -1,0 +1,50 @@
+name: SnapTube revision 5 splash analysis
+on:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths: ['.github/workflows/snaptube-splash-scan.yml', '.github/scripts/snaptube_splash_scan.py']
+permissions:
+  contents: write
+jobs:
+  scan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Decode published revision 5 on runner
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          WORK_ROOT="$RUNNER_TEMP/splash-scan"
+          mkdir -p "$WORK_ROOT/apk" "$WORK_ROOT/report"
+          echo "WORK_ROOT=$WORK_ROOT" >> "$GITHUB_ENV"
+          echo "REPORT_DIR=$WORK_ROOT/report" >> "$GITHUB_ENV"
+          gh release download snaptube-patched-41275474117 --repo "$GITHUB_REPOSITORY" --pattern '*r5.apk' --dir "$WORK_ROOT/apk"
+          apk="$WORK_ROOT/apk/SnapTube-7.52.0.75250210-adfree-noforce-official-removed-r5.apk"
+          echo '19b8a9a7b0524922b21c6a8d62864bc211c3552befe91bc42599cdf9de56eaca  '"$apk" | sha256sum -c -
+          curl --fail --location --retry 3 -o "$WORK_ROOT/apktool.jar" https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar
+          echo 'dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423  '"$WORK_ROOT/apktool.jar" | sha256sum -c -
+          java -Xmx6g -jar "$WORK_ROOT/apktool.jar" d -f -o "$WORK_ROOT/decoded" "$apk" > "$WORK_ROOT/decode.log" 2>&1
+          python3 .github/scripts/snaptube_splash_scan.py
+      - name: Publish evidence
+        if: always()
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/snaptube-splash-scan-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          if [ -d "${REPORT_DIR:-/nonexistent}" ]; then cp -a "$REPORT_DIR/." "$dest/"; fi
+          printf 'run_outcome=%s\nrun_id=%s\n' '${{ job.status }}' "$GITHUB_RUN_ID" > "$dest/run-status.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          if ! git diff --cached --quiet; then
+            git commit -m "Add splash scan evidence (run ${GITHUB_RUN_ID}) [skip ci]"
+            git fetch origin arena/7234f8d6-apks
+            git rebase FETCH_HEAD
+            git push origin HEAD:arena/7234f8d6-apks
+          fi
