@@ -58,10 +58,21 @@ jobs:
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
           disable-animations: true
           script: python3 .github/scripts/snaptube_startup_diagnostic.py --apk "$WORK_ROOT/candidate.apk" --out "$WORK_ROOT/report/runtime"
+      - name: Upload candidate and evidence for recovery
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: splash-candidate-${{ github.run_id }}
+          path: |
+            ${{ env.WORK_ROOT }}/candidate.apk
+            ${{ env.WORK_ROOT }}/report
+          if-no-files-found: warn
+          retention-days: 7
       - name: Publish diagnostic evidence
         if: always()
         run: |
           set -euo pipefail
+          exec > >(tee "$RUNNER_TEMP/publish-splash.log") 2>&1
           dest="analysis/remote/snaptube-splash-candidate-${GITHUB_RUN_ID}"
           mkdir -p "$dest"
           if [ -d "${WORK_ROOT:-/nonexistent}/report" ]; then cp -a "$WORK_ROOT/report/." "$dest/"; fi
@@ -75,3 +86,16 @@ jobs:
             git rebase FETCH_HEAD
             git push origin HEAD:arena/7234f8d6-apks
           fi
+      - name: Publish error details if evidence push failed
+        if: failure()
+        run: |
+          set +e
+          git rebase --abort 2>/dev/null || true
+          git reset --mixed origin/arena/7234f8d6-apks
+          dest="analysis/remote/snaptube-splash-publish-error-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          cp "$RUNNER_TEMP/publish-splash.log" "$dest/" 2>/dev/null || true
+          git add -f "$dest"
+          git commit -m "Record candidate publication failure (run ${GITHUB_RUN_ID}) [skip ci]"
+          git pull --rebase origin arena/7234f8d6-apks
+          git push origin HEAD:arena/7234f8d6-apks
