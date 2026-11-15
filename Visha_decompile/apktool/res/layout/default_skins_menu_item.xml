@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="95.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.RoundFrameLayout android:id="@id/fl_skin_menu" android:layout_width="match_parent" android:layout_height="80.0dp" app:round_corner="12.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.transsion.widgets.RoundImageView android:id="@id/iv_skin_menu" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="6.0dp" app:round_corner="@dimen/skin_menu_radius" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/textview_select_color" android:ellipsize="end" android:gravity="start" android:id="@id/tv_skin_menu_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textDirection="locale" />
+        </LinearLayout>
+    </com.transsion.playercommon.widgets.RoundFrameLayout>
+</LinearLayout>

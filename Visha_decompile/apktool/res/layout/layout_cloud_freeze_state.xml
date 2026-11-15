@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_freeze_state" android:background="@color/os_bg_primary_color" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="30.0dp" android:paddingEnd="30.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_freeze_icon" android:layout_width="200.0dp" android:layout_height="140.0dp" android:layout_marginTop="-148.0dp" android:src="@drawable/icon_limits_of_authority" android:contentDescription="@null" app:tint="@color/os_text_tertiary_color" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/os_text_info_hios" android:gravity="center" android:id="@id/tv_freeze_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/freeze_dialog_msg" android:lineSpacingExtra="4.0dp" android:textFontWeight="400" />
+</LinearLayout>

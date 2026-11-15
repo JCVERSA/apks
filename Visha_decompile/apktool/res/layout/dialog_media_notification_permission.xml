@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/os_primary_text_dark" android:id="@id/tv1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/show_media_notifications" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/iv_media_notification_preview" android:layout_width="256.0dp" android:layout_height="52.0dp" android:layout_marginTop="14.0dp" android:src="@drawable/ic_notificaiton_permission_dialog" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv1" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/os_text_secondary_color" android:id="@id/description" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:layout_marginBottom="18.0dp" android:text="@string/show_media_notifications_description" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_media_notification_preview" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

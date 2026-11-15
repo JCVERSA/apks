@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.widgetslib.widget.OSPopupPressLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/os_space125"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/os_popup_item_content" android:background="@drawable/os_popup_item_bg" android:paddingTop="@dimen/os_space150" android:paddingBottom="@dimen/os_space150" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/os_popup_item_min_height" android:paddingStart="@dimen/os_space125" android:paddingEnd="@dimen/os_space125">
+        <com.transsion.widgetslib.widget.OSIconTextView android:textSize="@dimen/os_fontsize_icon" android:textColor="@color/os_popup_menu_text_color" android:id="@id/os_list_popup_left_text_icon" android:visibility="gone" android:layout_width="@dimen/os_fontsize_icon" android:layout_height="@dimen/os_fontsize_icon" android:layout_marginEnd="@dimen/os_space150" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/os_popup_menu_size" android:textColor="@color/os_popup_menu_text_color" android:ellipsize="end" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" />
+            <TextView android:textSize="@dimen/os_popup_menu_subtext_size" android:textColor="@color/os_popup_menu_subtext_color" android:ellipsize="end" android:id="@id/os_list_popup_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="2" />
+        </LinearLayout>
+        <com.transsion.widgetslib.widget.OSIconTextView android:textSize="@dimen/os_popup_menu_size" android:textColor="@color/os_popup_menu_text_color" android:id="@id/os_list_popup_right_text_icon" android:visibility="gone" android:layout_width="@dimen/os_popup_menu_size" android:layout_height="@dimen/os_popup_menu_size" android:text="@string/os_back" android:layout_marginStart="@dimen/os_space150" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/os_list_popup_group_divider_frame" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/os_space250">
+        <View android:layout_gravity="center_vertical" android:id="@id/os_list_popup_group_divider" android:background="@drawable/os_list_divider" android:layout_width="match_parent" android:layout_height="1.0dp" android:paddingStart="@dimen/os_space250" android:paddingEnd="@dimen/os_space250" />
+    </FrameLayout>
+</com.transsion.widgetslib.widget.OSPopupPressLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bubble_option_item" android:background="@drawable/mgmi_checkboxt_bg_shape" android:layout_width="150.0dp" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginTop="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/leftArea" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/leftImage" android:layout_width="11.0dp" android:layout_height="11.0dp" android:src="@drawable/mgmi_radio_unchecked" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="11.0sp" android:textColor="#ffffff" android:id="@id/leftText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="不回家" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/rightArea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/rightImage" android:layout_width="11.0dp" android:layout_height="11.0dp" android:src="@drawable/mgmi_radio_unchecked" />
+        <TextView android:textSize="11.0sp" android:textColor="#ffffff" android:id="@id/rightText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="带笔记本回" />
+    </LinearLayout>
+</RelativeLayout>

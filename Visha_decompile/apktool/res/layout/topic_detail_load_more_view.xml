@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:paddingVertical="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/loading_view" android:layout_width="match_parent" android:layout_height="24.0dp">
+        <com.transsion.widgetslib.view.LoadingView android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_video_loading" android:layout_marginStart="10.0dp" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/load_fail_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="24.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:layout_gravity="center" android:id="@id/tv_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_video_load_fail" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/load_more_load_end_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_video_load_end" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mgadplus.brower.ImgoAdWebView android:id="@id/h5_pause_ad_web" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/itemimage_wb" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/mgmi_ad_vol" android:visibility="visible" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="9.0dp" android:layout_marginBottom="6.0dp" android:src="@drawable/mgmi_icon_ad_voice_close" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/mgmi_font_8" android:textColor="@color/mgmi_white" android:gravity="center" android:id="@id/mgmi_ad_dec_wb" android:background="@drawable/mgmi_supper_ad_tx_bg" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="11.0dp" android:layout_marginLeft="5.0dp" android:layout_marginBottom="5.0dp" android:shadowColor="@color/mgmi_color_000000_66" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    </FrameLayout>
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

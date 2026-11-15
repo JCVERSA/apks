@@ -1,0 +1,11 @@
+package io.appmetrica.analytics.impl;
+
+import io.appmetrica.analytics.coreutils.internal.time.SystemTimeProvider;
+
+public final class C2761oa extends AbstractC2551g {
+    public static final String g = "foreground";
+
+    public C2761oa(C2706m5 c2706m5, C2920uk c2920uk, C3020yk c3020yk, Fj fj, SystemTimeProvider systemTimeProvider) {
+        super(c2706m5, c2920uk, c3020yk, C2895tk.a(EnumC3045zk.FOREGROUND).a(), fj, systemTimeProvider);
+    }
+}

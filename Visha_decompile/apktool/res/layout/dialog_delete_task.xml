@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/dp18"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/os_text_primary_color" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="123465" android:layout_marginStart="@dimen/dp4" app:layout_constraintTop_toTopOf="parent" />
+    <CheckBox android:id="@id/cb_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title" />
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/os_text_primary_color" android:id="@id/tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123465" android:layout_marginStart="@dimen/dp5" app:layout_constraintBottom_toBottomOf="@id/cb_delete" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toEndOf="@id/cb_delete" app:layout_constraintTop_toTopOf="@id/cb_delete" />
+</androidx.constraintlayout.widget.ConstraintLayout>

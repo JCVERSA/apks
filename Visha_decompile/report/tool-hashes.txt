@@ -1,0 +1,2 @@
+/home/runner/work/_temp/visha-decompile/tools/apktool.jar: OK
+/home/runner/work/_temp/visha-decompile/tools/jadx.zip: OK

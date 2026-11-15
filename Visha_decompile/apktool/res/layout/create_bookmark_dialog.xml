@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.widgetslib.widget.editext.OSMaterialEditText android:id="@id/et_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/os_dialog_padding_left_right" app:os_et_bg_color="@color/os_gray_quaternary_color" app:os_et_dialog_mode="true" app:os_et_label="@string/download_bookmark_name" app:os_et_right_show_delete="true" />
+    <com.transsion.widgetslib.widget.editext.OSMaterialEditText android:id="@id/et_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginHorizontal="@dimen/os_dialog_padding_left_right" app:os_et_bg_color="@color/os_gray_quaternary_color" app:os_et_dialog_mode="true" app:os_et_label="@string/download_bookmark_url" app:os_et_right_show_delete="true" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="os_dimen_small_dialog_title_size">48.0px</dimen>
+    <dimen name="os_gdpr_dialog_inset">36.0px</dimen>
+</resources>

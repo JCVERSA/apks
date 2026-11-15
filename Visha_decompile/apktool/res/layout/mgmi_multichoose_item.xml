@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="144.0dp" android:layout_height="25.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_content" android:background="@drawable/ad_multichoose_item_shape" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:id="@id/left" android:background="@drawable/mgmi_circle_common" android:layout_width="4.0dp" android:layout_height="4.0dp" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/mgmi_id_title_text_2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

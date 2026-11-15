@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_logo" android:layout_width="92.16998dp" android:layout_height="20.0dp" android:layout_marginTop="18.014984dp" android:layout_marginBottom="20.349976dp" android:src="@drawable/ic_brand_logo" android:layout_marginStart="24.0dp" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/os_text_primary_color" android:gravity="center_vertical" android:id="@id/tv_logo_text" android:layout_width="wrap_content" android:layout_height="56.0dp" android:text="@string/setting" android:fontFamily="sans-serif-medium" android:layout_marginStart="24.0dp" android:textFontWeight="600" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.transsion.widgetslib.view.OverBoundNestedScrollView android:id="@id/sv_content" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="90.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_icon_root_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginHorizontal="22.0dp">
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_theme" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" android:paddingEnd="5.0dp">
+                        <FrameLayout android:id="@id/fl_theme" android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_weight="1.0" android:contentDescription="@string/themes">
+                            <com.transsion.playercommon.widgets.RoundFrameLayout android:id="@id/fl_skin" android:layout_width="match_parent" android:layout_height="match_parent" app:round_corner="@dimen/more_board_radius" app:solid_color="@color/transparent" app:stroke_color="@color/transparent" app:stroke_width="0.0dp">
+                                <ImageView android:id="@id/imv_theme" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_icon_default_theme1" android:scaleType="fitXY" />
+                            </com.transsion.playercommon.widgets.RoundFrameLayout>
+                            <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="start|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/themes" android:maxLines="1" android:minLines="1" android:fontFamily="sans-serif-medium" android:layoutDirection="locale" android:layout_marginHorizontal="@dimen/dp_10" android:layout_marginVertical="@dimen/dp_10" />
+                        </FrameLayout>
+                        <FrameLayout android:id="@id/fl_private" android:visibility="gone" android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_marginTop="10.0dp" android:layout_weight="1.0" android:contentDescription="@string/privacy_space" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/video_to_mp3_btn">
+                            <com.transsion.playercommon.widgets.RoundFrameLayout android:id="@id/fl_frame" android:layout_width="match_parent" android:layout_height="match_parent" app:round_corner="@dimen/more_board_radius" app:solid_color="@color/transparent" app:stroke_color="@color/transparent" app:stroke_width="0.0dp">
+                                <ImageView android:id="@id/imv_private" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_tools_private" android:scaleType="centerCrop" />
+                            </com.transsion.playercommon.widgets.RoundFrameLayout>
+                            <TextView android:textSize="@dimen/sp_16" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="start|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_space" android:maxLines="1" android:minLines="1" android:fontFamily="sans-serif-medium" android:layoutDirection="locale" android:layout_marginHorizontal="@dimen/dp_10" android:layout_marginVertical="@dimen/dp_10" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_others" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" android:paddingStart="5.0dp">
+                        <FrameLayout android:id="@id/fl_video_to_mp3" android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_marginBottom="5.0dp" android:layout_weight="1.0" android:contentDescription="@string/convert_to_audio">
+                            <com.transsion.playercommon.widgets.RoundFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:round_corner="@dimen/more_board_radius" app:solid_color="@color/transparent" app:stroke_color="@color/transparent" app:stroke_width="0.0dp">
+                                <ImageView android:id="@id/imv_video_to_mp3" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_video_to_mp3" android:scaleType="centerCrop" />
+                            </com.transsion.playercommon.widgets.RoundFrameLayout>
+                            <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="start|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/convert_to_audio" android:maxLines="2" android:minLines="1" android:fontFamily="sans-serif-medium" android:layoutDirection="locale" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="1.0sp" android:autoSizeMinTextSize="12.0sp" android:layout_marginHorizontal="@dimen/dp_10" android:layout_marginVertical="@dimen/dp_10" android:autoSizeMaxTextSize="@dimen/sp_16" />
+                        </FrameLayout>
+                        <FrameLayout android:id="@id/fl_download_manage" android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_marginTop="5.0dp" android:layout_weight="1.0" android:contentDescription="@string/download_manager" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/video_to_mp3_btn">
+                            <com.transsion.playercommon.widgets.RoundFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:round_corner="@dimen/more_board_radius" app:solid_color="@color/transparent" app:stroke_color="@color/transparent" app:stroke_width="0.0dp">
+                                <ImageView android:id="@id/imv_downloads" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_download_management" android:scaleType="centerCrop" />
+                            </com.transsion.playercommon.widgets.RoundFrameLayout>
+                            <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="start|top" android:id="@id/tv_downloads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_manager" android:maxLines="2" android:minLines="1" android:fontFamily="sans-serif-medium" android:layoutDirection="locale" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="1.0sp" android:autoSizeMinTextSize="12.0sp" android:layout_marginHorizontal="@dimen/dp_10" android:layout_marginVertical="@dimen/dp_10" android:autoSizeMaxTextSize="@dimen/sp_16" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/setting_list" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_setting" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="@dimen/dp_10">
+                        <com.transsion.widgetslib.widget.OSIconTextView android:text="@string/os_settings" style="@style/moreItemSrcStyle" />
+                        <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textAppearance="@style/os_medium_fontweight" android:text="@string/setting" style="@style/setting_MenuItemTvStyle" />
+                        </FrameLayout>
+                        <com.transsion.widgets.BadgeView android:id="@id/bv_settings_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_arrow_setting" android:text="@string/os_arrow_right1" app:os_icon_support_rtl="true" style="@style/OSIconTextArrowRightViewStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_file_trans" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="60.0dp">
+                        <com.transsion.widgetslib.widget.OSIconTextView android:text="@string/os_move" style="@style/moreItemSrcStyle" />
+                        <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textAppearance="@style/os_medium_fontweight" android:text="@string/visha_file_trans" style="@style/setting_MenuItemTvStyle" />
+                        </FrameLayout>
+                        <com.transsion.widgets.BadgeView android:id="@id/bv_file_trans_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_arrow_file_trans" android:text="@string/os_arrow_right1" app:os_icon_support_rtl="true" style="@style/OSIconTextArrowRightViewStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_widget" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="60.0dp">
+                        <com.transsion.widgetslib.widget.OSIconTextView android:text="@string/os_Layout" style="@style/moreItemSrcStyle" />
+                        <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textAppearance="@style/os_medium_fontweight" android:id="@id/tv_widget" android:text="@string/visha_widget" style="@style/setting_MenuItemTvStyle" />
+                        </FrameLayout>
+                        <com.transsion.widgets.BadgeView android:id="@id/bv_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_arrow_widget" android:text="@string/os_arrow_right1" app:os_icon_support_rtl="true" style="@style/OSIconTextArrowRightViewStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_go_rating" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="60.0dp">
+                        <com.transsion.widgetslib.widget.OSIconTextView android:text="@string/os_collect" style="@style/moreItemSrcStyle" />
+                        <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textAppearance="@style/os_medium_fontweight" android:text="@string/go_gp_rating_please" style="@style/setting_MenuItemTvStyle" />
+                        </FrameLayout>
+                        <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_arrow_go_rating" android:text="@string/os_arrow_right1" app:os_icon_support_rtl="true" style="@style/OSIconTextArrowRightViewStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_hide" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="60.0dp">
+                        <com.transsion.widgetslib.widget.OSIconTextView android:text="@string/os_Vault" style="@style/moreItemSrcStyle" />
+                        <TextView android:id="@id/tv_hide" android:text="@string/hide" style="@style/settingMenuItemTvStyle" />
+                        <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_arrow_hide" android:text="@string/os_arrow_right1" app:os_icon_support_rtl="true" style="@style/OSIconTextArrowRightViewStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_feedback" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="60.0dp">
+                        <com.transsion.widgetslib.widget.OSIconTextView android:text="@string/os_feedback" style="@style/moreItemSrcStyle" />
+                        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textAppearance="@style/os_medium_fontweight" android:id="@id/tv_feedback" android:text="@string/feedback_and_help" style="@style/setting_MenuItemTvStyle" />
+                        </LinearLayout>
+                        <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_arrow_feedback" android:text="@string/os_arrow_right1" app:os_icon_support_rtl="true" style="@style/OSIconTextArrowRightViewStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_update" android:background="?selectableItemBackground" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60.0dp">
+                        <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_setting_menu" android:text="@string/os_to_top" style="@style/moreItemSrcStyle" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textAppearance="@style/os_medium_fontweight" android:id="@id/tv_check_update" android:text="@string/version_update" android:drawablePadding="8.0dp" style="@style/setting_MenuItemTvStyle" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/tv_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawablePadding="2.0dp" android:textDirection="firstStrong" android:layout_marginStart="16.0dp" />
+                        </LinearLayout>
+                        <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_arrow_update" android:text="@string/os_arrow_right1" app:os_icon_support_rtl="true" style="@style/OSIconTextArrowRightViewStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_about_us" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="60.0dp">
+                        <com.transsion.widgetslib.widget.OSIconTextView android:text="@string/os_info" style="@style/moreItemSrcStyle" />
+                        <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textAppearance="@style/os_medium_fontweight" android:text="@string/about" style="@style/setting_MenuItemTvStyle" />
+                        </FrameLayout>
+                        <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_arrow_about_us" android:text="@string/os_arrow_right1" app:os_icon_support_rtl="true" style="@style/OSIconTextArrowRightViewStyle" />
+                    </LinearLayout>
+                    <androidx.constraintlayout.widget.Placeholder android:layout_width="match_parent" android:layout_height="@dimen/dp60" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.transsion.widgetslib.view.OverBoundNestedScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.LoopSchemeView android:id="@id/loopshcemeview" android:clickable="true" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="190.0dp" android:layout_height="match_parent" android:layout_marginRight="15.0dp">
+        <com.mgmi.ViewGroup.convenientbanner.MgConvenientBanner android:id="@id/convenientBanner" android:layout_width="190.0dp" android:layout_height="190.0dp" />
+        <RelativeLayout android:id="@id/contentLayout" android:background="#282828" android:layout_width="190.0dp" android:layout_height="match_parent" android:layout_below="@id/convenientBanner">
+            <TextView android:textSize="15.0sp" android:textColor="#ff5f00" android:ellipsize="end" android:id="@id/title" android:paddingTop="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dp" android:maxLines="1" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/logbar" android:background="#181818" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_marginTop="6.0dp" android:layout_alignParentBottom="true" />
+            <RelativeLayout android:id="@id/googView" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginBottom="3.0dp" android:layout_above="@id/logbar" android:layout_centerHorizontal="true">
+                <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tvAdDetail" android:background="@drawable/shceme_bg" android:layout_width="88.0dp" android:layout_height="26.0dp" android:text="@string/mgmi_player_learn_More" />
+                <ImageButton android:id="@id/dianzanButton" android:background="#00000000" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginLeft="86.0dp" android:src="@null" android:scaleType="fitXY" android:adjustViewBounds="true" android:cropToPadding="true" />
+            </RelativeLayout>
+            <com.mgadplus.dynamicview.AutoLineTextView android:textSize="12.0sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="7.0dp" android:maxLines="3" android:layout_above="@id/googView" android:layout_below="@id/title" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/small_icon" android:layout_width="40.0dp" android:layout_height="40.0dp" />
+</com.mgadplus.viewgroup.dynamicview.LoopSchemeView>

@@ -1,0 +1,26 @@
+.class public interface abstract Lcom/transsion/liblan/interfaces/ITranLANVout$VoutCallback;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/transsion/liblan/interfaces/ITranLANVout;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "VoutCallback"
+.end annotation
+
+
+# virtual methods
+.method public abstract onSurfacesCreated(Lcom/transsion/liblan/interfaces/ITranLANVout;)V
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+.end method
+
+.method public abstract onSurfacesDestroyed(Lcom/transsion/liblan/interfaces/ITranLANVout;)V
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+.end method

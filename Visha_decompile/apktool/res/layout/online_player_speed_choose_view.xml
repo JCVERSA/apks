@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/player_speed_choose_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tv_play_speed" android:background="@drawable/bg_progress_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="59.0dp" android:layout_centerHorizontal="true" android:paddingHorizontal="16.0dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_width="36.0dp" android:layout_height="36.0dp" app:lottie_autoPlay="true" app:lottie_fileName="night/gesture_speed_data.json" app:lottie_loop="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_candwhile_primary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_play_speed_circle_2.0" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_speed" android:visibility="gone" android:layout_width="280.0dp" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

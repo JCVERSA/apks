@@ -1,0 +1,52 @@
+.class Lcom/mgtv/thirdsdk/playcore/b/b$2;
+.super Landroid/os/Handler;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/mgtv/thirdsdk/playcore/b/b;-><init>()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/mgtv/thirdsdk/playcore/b/b;
+
+
+# direct methods
+.method public constructor <init>(Lcom/mgtv/thirdsdk/playcore/b/b;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/mgtv/thirdsdk/playcore/b/b$2;->a:Lcom/mgtv/thirdsdk/playcore/b/b;
+
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 1
+
+    iget p1, p1, Landroid/os/Message;->what:I
+
+    const/4 v0, 0x2
+
+    if-eq p1, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p0, p0, Lcom/mgtv/thirdsdk/playcore/b/b$2;->a:Lcom/mgtv/thirdsdk/playcore/b/b;
+
+    invoke-static {p0}, Lcom/mgtv/thirdsdk/playcore/b/b;->c(Lcom/mgtv/thirdsdk/playcore/b/b;)V
+
+    :goto_0
+    return-void
+.end method

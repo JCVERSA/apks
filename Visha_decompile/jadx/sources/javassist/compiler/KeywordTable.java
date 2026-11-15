@@ -1,0 +1,18 @@
+package javassist.compiler;
+
+import java.util.HashMap;
+
+public final class KeywordTable extends HashMap<String, Integer> {
+    private static final long serialVersionUID = 1;
+
+    public void append(String str, int i) {
+        put(str, Integer.valueOf(i));
+    }
+
+    public int lookup(String str) {
+        if (containsKey(str)) {
+            return get(str).intValue();
+        }
+        return -1;
+    }
+}

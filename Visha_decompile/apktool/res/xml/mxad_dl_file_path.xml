@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path name="wpr_sdk_download_path" path="WPRDOWNLOAD" />
+        <external-path name="wpr_sdk_download_path" path="funad/ADDOWNLOAD" />
+    </paths>
+</resources>

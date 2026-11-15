@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:orientation="horizontal" android:paddingLeft="5.0dp" android:paddingBottom="10.0dp" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ad_pause_timer_bg" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/mgmi_font_10" android:textColor="#d9ffffff" android:id="@id/mgmi_ad_dec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="广告" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        <View android:id="@id/mgmi_ad_line" android:background="#d9ffffff" android:layout_width="1.0dp" android:layout_height="10.0dp" android:layout_marginLeft="2.0dp" />
+        <View android:id="@id/closeAdIcon" android:background="@drawable/ic_baseline_close_12" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="2.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/mgmi_ad_voice" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/mgmi_icon_ad_voice_open" android:layout_above="@id/empty_line" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="@dimen/mgmi_font_12" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@id/tv_pause_detail" android:background="@drawable/ad_text_bg_shape_yellow" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginRight="7.0dp" android:text="@string/mgmi_template_detail" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

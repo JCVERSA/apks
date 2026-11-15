@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="219.0dp" android:width="390.0dp" android:viewportWidth="390.0" android:viewportHeight="219.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#dedede" android:pathData="M0,0h390v219h-390z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffff" android:pathData="M195,57.59C224.17,57.59 247.81,81.19 247.81,110.31C247.81,139.43 224.17,163.03 195,163.03C165.83,163.03 142.19,139.43 142.19,110.31C142.19,81.19 165.83,57.59 195,57.59ZM195,72.35C174,72.35 156.98,89.35 156.98,110.31C156.98,131.28 174,148.27 195,148.27C216,148.27 233.02,131.28 233.02,110.31C233.02,89.35 216,72.35 195,72.35Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffff" android:pathData="M178.12,99.85l0.19,29.36l34.12,-18.9z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffff" android:pathData="M208.64,101.43L217.92,107.17C220.3,108.64 221.04,111.77 219.57,114.15C219.12,114.87 218.5,115.47 217.76,115.89L185.89,134.03C183.46,135.41 180.36,134.56 178.98,132.13C178.54,131.36 178.31,130.5 178.31,129.62L178.31,118.99L208.12,101.77C208.3,101.66 208.47,101.55 208.64,101.43Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffff" android:pathData="M183.16,86.29C184.08,86.28 184.99,86.53 185.78,87.01L218.49,106.59C220.89,108.03 221.67,111.15 220.23,113.55C219.81,114.26 219.21,114.86 218.49,115.29L209.22,120.86L178.15,102.95L178.11,91.37C178.1,88.58 180.36,86.3 183.16,86.29Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffff" android:pathData="M247.81,110.31L247.81,157.96C247.81,160.76 245.54,163.03 242.74,163.03L195,163.03L195,148.27C216,148.27 233.02,131.28 233.02,110.31L247.81,110.31Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

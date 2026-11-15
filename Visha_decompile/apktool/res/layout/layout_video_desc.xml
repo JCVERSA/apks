@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_des_expend" android:visibility="visible" android:layout_width="match_parent" android:layout_height="43.0dp" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_000000" android:ellipsize="end" android:id="@id/tv_v_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:maxLines="1" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_des_expend_tips" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/color888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/introduction" />
+            <ImageView android:id="@id/iv_expend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_system_more_unflod" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_info_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="10.0dp" />
+    <View android:id="@id/view_bottom_line" android:background="@color/colorEAEAEA" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="10.0dp" android:text="正片" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_play_list" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

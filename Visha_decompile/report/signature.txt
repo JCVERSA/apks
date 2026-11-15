@@ -1,0 +1,38 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): false
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): true
+Verified using v3.2 scheme (APK Signature Scheme v3.2): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: true
+Number of signers: 1
+V3.1 Signer: (minSdkVersion=33, maxSdkVersion=2147483647) certificate DN: EMAILADDRESS=changkun.wu@reallytek, CN=ChangKun Wu, OU=SW, O=TECNO, L=PuDong, ST=ShangHai, C=CN
+V3.1 Signer: (minSdkVersion=33, maxSdkVersion=2147483647) certificate SHA-256 digest: 551675ded81df05e26a52c01717fb6eba9a6c0551f61bcba93c264b1cec82b13
+V3.1 Signer: (minSdkVersion=33, maxSdkVersion=2147483647) certificate SHA-1 digest: 8c5ba62c95b4c83a671e063656bcf3923decc063
+V3.1 Signer: (minSdkVersion=33, maxSdkVersion=2147483647) certificate MD5 digest: 5aaf9cb8df5a69f2d3b458c387263b8e
+V3.1 Signer: (minSdkVersion=33, maxSdkVersion=2147483647) key algorithm: RSA
+V3.1 Signer: (minSdkVersion=33, maxSdkVersion=2147483647) key size (bits): 2048
+V3.1 Signer: (minSdkVersion=33, maxSdkVersion=2147483647) public key SHA-256 digest: e7d8732a2d08ed121742fa5022a37a203db8d632fc37a1687f3dd7629b735f9e
+V3.1 Signer: (minSdkVersion=33, maxSdkVersion=2147483647) public key SHA-1 digest: c54544ecb110b5af9599d728f60729450217d003
+V3.1 Signer: (minSdkVersion=33, maxSdkVersion=2147483647) public key MD5 digest: 2e20ce0d1323efcb05a7ae2aa2d16e7f
+V3.0 Signer: (minSdkVersion=24, maxSdkVersion=32) certificate DN: EMAILADDRESS=changkun.wu@reallytek, CN=ChangKun Wu, OU=SW, O=TECNO, L=PuDong, ST=ShangHai, C=CN
+V3.0 Signer: (minSdkVersion=24, maxSdkVersion=32) certificate SHA-256 digest: 657b6fb2244774fca8e7fed225cddea8b99221993ded2f3665bd9a98dd27d828
+V3.0 Signer: (minSdkVersion=24, maxSdkVersion=32) certificate SHA-1 digest: 4819d1569bd064ad339461737932fb761c1be177
+V3.0 Signer: (minSdkVersion=24, maxSdkVersion=32) certificate MD5 digest: 89b9f3be5f3b39055c5ce33b47428905
+V3.0 Signer: (minSdkVersion=24, maxSdkVersion=32) key algorithm: RSA
+V3.0 Signer: (minSdkVersion=24, maxSdkVersion=32) key size (bits): 2048
+V3.0 Signer: (minSdkVersion=24, maxSdkVersion=32) public key SHA-256 digest: 4791b95325eae46548f1d6add93411f3a7261a64888459ef3e658ad08dd3587f
+V3.0 Signer: (minSdkVersion=24, maxSdkVersion=32) public key SHA-1 digest: ca198817c22875686674ec5285da94f9f702dbe0
+V3.0 Signer: (minSdkVersion=24, maxSdkVersion=32) public key MD5 digest: 1522eff720a91ed22cac6fe3124bcc03
+Source Stamp Signer: certificate DN: CN=Android, OU=Android, O=Google Inc., L=Mountain View, ST=California, C=US
+Source Stamp Signer: certificate SHA-256 digest: 3257d599a49d2c961a471ca9843f59d341a405884583fc087df4237b733bbd6d
+Source Stamp Signer: certificate SHA-1 digest: b1af3a0bf998aeede1a8716a539e5a59da1d86d6
+Source Stamp Signer: certificate MD5 digest: 577b8a9fbc7e308321aec6411169d2fb
+Source Stamp Signer: key algorithm: RSA
+Source Stamp Signer: key size (bits): 4096
+Source Stamp Signer: public key SHA-256 digest: 4c53c1d28f2ecceadcb1351603f0b702615b3454b6e30070de759359f241b802
+Source Stamp Signer: public key SHA-1 digest: 188b067a9ee881bde55dabe0f8f7ecb320b1a091
+Source Stamp Signer: public key MD5 digest: 965afac83f033aa037a54482eb6922d5
+Source Stamp Timestamp: 1788173008
+INFO: SourceStamp: No digests are available in the source stamp for signature scheme: 31

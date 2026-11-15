@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/xn_full_margin_start" android:layout_marginEnd="@dimen/xn_full_margin_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <Button android:enabled="false" android:id="@id/next" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xn_next" android:layout_above="@id/placeholder" android:layout_marginStart="72.0dp" android:layout_marginEnd="72.0dp" style="@style/OS.Widget.Button.Contained.Big.Single" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="12.0dp" android:layout_above="@id/next">
+        <com.transsion.widgetslib.view.OverBoundNestedScrollView android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/xn_item_padding_start" android:paddingEnd="@dimen/xn_item_padding_end">
+                <TextView android:textAppearance="@style/font_black_12_t40" android:id="@id/note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elegantTextHeight="true" />
+                <com.transsion.xuanniao.account.comm.widget.AccountInput android:id="@id/accountInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_below="@id/note" />
+                <com.transsion.xuanniao.account.comm.widget.CaptchaCodeInput android:id="@id/captchaCodeInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_below="@id/accountInput" />
+                <com.transsion.xuanniao.account.comm.widget.SmsCodeInput android:id="@id/smsCodeInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_below="@id/captchaCodeInput" />
+                <com.transsion.xuanniao.account.comm.widget.ErrorView android:id="@id/errorView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/smsCodeInput" />
+                <TextView android:textAppearance="@style/font_primary_12x" android:id="@id/verifyPwd" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:text="@string/xn_verify_pwd" android:layout_below="@id/errorView" android:elegantTextHeight="true" />
+            </RelativeLayout>
+        </com.transsion.widgetslib.view.OverBoundNestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

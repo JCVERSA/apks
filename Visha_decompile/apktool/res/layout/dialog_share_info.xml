@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.RoundFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:round_corner="@dimen/dp20" app:solid_color="@color/transparent">
+        <ImageView android:id="@id/iv_video_cover" android:layout_width="280.0dp" android:layout_height="157.0dp" android:scaleType="fitXY" />
+        <ImageView android:background="@color/circle_foreground_color" android:layout_width="280.0dp" android:layout_height="157.0dp" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_start_play" android:layout_width="42.0dp" android:layout_height="42.0dp" android:src="@drawable/ic_video_cover_play" />
+    </com.transsion.playercommon.widgets.RoundFrameLayout>
+    <TextView android:textAppearance="@style/os_semibold_font" android:textSize="@dimen/sp18" android:textColor="@color/os_text_primary_color" android:gravity="center" android:id="@id/tv_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:text="The Demon Children Make" />
+    <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="@dimen/sp14" android:textColor="@color/os_text_tertiary_color" android:gravity="center" android:id="@id/tv_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp6" android:layout_marginBottom="@dimen/dp8" android:text="100M" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_share_from" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/dp18" android:layout_height="@dimen/dp18" android:src="@drawable/ic_public_share_small" />
+        <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="@dimen/sp14" android:textColor="@color/os_text_tertiary_color" android:gravity="center" android:id="@id/tv_share_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share from: Lion" android:layout_marginStart="@dimen/dp6" />
+    </LinearLayout>
+    <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="@dimen/sp14" android:textColor="@color/os_text_tertiary_color" android:gravity="center" android:id="@id/tv_login_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_cloud_drive_share_login_hint" android:layout_marginStart="@dimen/dp6" />
+</LinearLayout>

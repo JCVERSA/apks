@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/fl_stack" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="?screen_edge_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

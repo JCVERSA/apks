@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/os_foot_opt_space" android:layout_width="@dimen/os_foot_bar_item_icon_size" android:layout_height="@dimen/os_foot_bar_item_icon_size" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/os_fob_layout" android:layout_width="72.0dp" android:layout_height="60.0dp" android:layout_centerInParent="true" android:paddingStart="@dimen/os_foot_bar_item_text_start_end_padding" android:paddingEnd="@dimen/os_foot_bar_item_text_start_end_padding">
+        <FrameLayout android:gravity="center_horizontal" android:layout_width="36.0dp" android:layout_height="wrap_content">
+            <com.transsion.playercommon.widgets.OSMaskImageView android:layout_gravity="center" android:id="@id/os_foot_opt_bar_item_icon" android:layout_width="@dimen/os_foot_bar_item_icon_size" android:layout_height="@dimen/os_foot_bar_item_icon_size" />
+            <ImageView android:layout_gravity="center" android:id="@id/os_foot_opt_bar_item_icon_model" android:visibility="gone" android:layout_width="@dimen/os_foot_bar_item_icon_size" android:layout_height="@dimen/os_foot_bar_item_icon_size" />
+            <ImageView android:layout_gravity="center" android:id="@id/custom_os_foot_opt_bar_item_image_fold" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="36.0dp" android:scaleType="centerInside" />
+        </FrameLayout>
+        <TextView android:textSize="12.0dp" android:ellipsize="end" android:id="@id/os_foot_opt_bar_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/os_foot_bar_item_text_paddingTop" android:minHeight="@dimen/os_foot_bar_item_text_height" android:maxLines="1" android:fontFamily="sans-serif" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/custom_os_foot_opt_bar_item_image" android:visibility="gone" android:layout_width="72.0dp" android:layout_height="60.0dp" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    <ViewStub android:id="@id/os_stub_fpb_red_point" android:layout="@layout/os_foot_opt_bar_item_red_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dp" android:layout_alignTop="@id/os_foot_opt_space" android:layout_marginStart="-2.0dp" android:layout_toEndOf="@id/os_foot_opt_space" />
+</RelativeLayout>

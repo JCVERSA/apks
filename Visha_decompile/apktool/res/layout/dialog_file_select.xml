@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_convert_dialog" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40.0dp">
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_select_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/none_select" android:singleLine="true" android:layout_weight="1.0" android:textDirection="locale" android:paddingStart="@dimen/def_screen_margin" />
+        <CheckBox android:id="@id/iv_bucket_fragment_checkBox" android:background="@drawable/ic_list_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:layout_marginStart="16.0dp" android:layout_marginEnd="17.0dp" />
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="10.0dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_select_list" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button android:layout_gravity="bottom" android:id="@id/bt_start_converting" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/download" android:layout_marginHorizontal="72.0dp" style="@style/BigButtonStyle" />
+</LinearLayout>

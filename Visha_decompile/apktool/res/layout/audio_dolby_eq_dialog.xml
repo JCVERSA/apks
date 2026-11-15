@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dp">
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="18.0sp" android:textColor="@color/os_text_primary_color" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/audio_dolby_sound" android:lines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.transsion.widgets.InterceptLinearLayout android:orientation="vertical" android:id="@id/ll_content" android:paddingBottom="48.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0dp" android:textColor="@color/os_text_primary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/eq" android:maxLines="1" android:lines="1" android:fontFamily="Roboto Medium" android:layout_marginStart="24.0dp" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_style" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" android:paddingHorizontal="16.0dp" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="180.0dp" android:layout_marginStart="24.0dp">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+15db" android:lines="1" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0db" android:lines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-15db" android:lines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <com.transsion.widgets.DisableDragLinearLayout android:orientation="horizontal" android:id="@id/ll_cannot_drag" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="10.0dp">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                            <com.transsion.playercommon.widgets.VerticalSeekBarWrapper android:layout_width="match_parent" android:layout_height="180.0dp" android:layout_weight="1.0">
+                                <com.transsion.playercommon.widgets.VerticalOSSeekBar android:id="@id/seekbar1" android:layout_width="match_parent" android:layout_height="match_parent" android:max="30" android:paddingHorizontal="7.0dp" app:osSeekbarMax="80.0" app:osSeekbarMin="-80.0" app:osSeekbarProgress="0.0" app:seekBarRotation="CW270" />
+                            </com.transsion.playercommon.widgets.VerticalSeekBarWrapper>
+                            <TextView android:textSize="12.0dp" android:textColor="@color/os_text_primary_color" android:id="@id/tv_hz1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/eq_60hz" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                            <com.transsion.playercommon.widgets.VerticalSeekBarWrapper android:layout_width="match_parent" android:layout_height="170.0dp" android:layout_weight="1.0">
+                                <com.transsion.playercommon.widgets.VerticalOSSeekBar android:id="@id/seekbar2" android:layout_width="match_parent" android:layout_height="match_parent" android:max="30" android:paddingHorizontal="7.0dp" app:osSeekbarMax="80.0" app:osSeekbarMin="-80.0" app:osSeekbarProgress="0.0" app:seekBarRotation="CW270" />
+                            </com.transsion.playercommon.widgets.VerticalSeekBarWrapper>
+                            <TextView android:textSize="12.0dp" android:textColor="@color/os_text_primary_color" android:id="@id/tv_hz2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/eq_230hz" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                            <com.transsion.playercommon.widgets.VerticalSeekBarWrapper android:layout_width="match_parent" android:layout_height="170.0dp" android:layout_weight="1.0">
+                                <com.transsion.playercommon.widgets.VerticalOSSeekBar android:id="@id/seekbar3" android:layout_width="match_parent" android:layout_height="match_parent" android:max="30" android:paddingHorizontal="7.0dp" app:osSeekbarMax="80.0" app:osSeekbarMin="-80.0" app:osSeekbarProgress="0.0" app:seekBarRotation="CW270" />
+                            </com.transsion.playercommon.widgets.VerticalSeekBarWrapper>
+                            <TextView android:textSize="12.0dp" android:textColor="@color/os_text_primary_color" android:id="@id/tv_hz3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/eq_910hz" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                            <com.transsion.playercommon.widgets.VerticalSeekBarWrapper android:layout_width="match_parent" android:layout_height="170.0dp" android:layout_weight="1.0">
+                                <com.transsion.playercommon.widgets.VerticalOSSeekBar android:id="@id/seekbar4" android:layout_width="match_parent" android:layout_height="match_parent" android:max="30" android:paddingHorizontal="7.0dp" app:osSeekbarMax="80.0" app:osSeekbarMin="-80.0" app:osSeekbarProgress="0.0" app:seekBarRotation="CW270" />
+                            </com.transsion.playercommon.widgets.VerticalSeekBarWrapper>
+                            <TextView android:textSize="12.0dp" android:textColor="@color/os_text_primary_color" android:id="@id/tv_hz4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/eq_3600hz" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                            <com.transsion.playercommon.widgets.VerticalSeekBarWrapper android:layout_width="match_parent" android:layout_height="170.0dp" android:layout_weight="1.0">
+                                <com.transsion.playercommon.widgets.VerticalOSSeekBar android:id="@id/seekbar5" android:layout_width="match_parent" android:layout_height="match_parent" android:max="30" android:paddingHorizontal="7.0dp" app:osSeekbarMax="80.0" app:osSeekbarMin="-80.0" app:osSeekbarProgress="0.0" app:seekBarRotation="CW270" />
+                            </com.transsion.playercommon.widgets.VerticalSeekBarWrapper>
+                            <TextView android:textSize="12.0dp" android:textColor="@color/os_text_primary_color" android:id="@id/tv_hz5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/eq_14000hz" />
+                        </LinearLayout>
+                    </com.transsion.widgets.DisableDragLinearLayout>
+                </LinearLayout>
+            </com.transsion.widgets.InterceptLinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_dolby_set" android:background="@drawable/dolby_set_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:layout_marginHorizontal="35.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audio_dolby_close_notice" android:maxLines="2" android:layout_weight="1.0" android:paddingHorizontal="16.0dp" android:paddingVertical="15.0dp" />
+                <TextView android:textSize="16.0sp" android:textColor="?os_platform_basic_color" android:id="@id/tv_go" android:padding="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dp" android:text="@string/setting_auto_play_stream_dialog_ok" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

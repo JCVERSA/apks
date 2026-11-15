@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:id="@id/ad_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/image_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/bottom_bar" android:background="@drawable/icon_bottom_shadow" android:paddingLeft="10.0dp" android:paddingTop="50.0dp" android:paddingRight="10.0dp" android:paddingBottom="55.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/mgmi_white" android:ellipsize="end" android:gravity="left|center" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:text="" android:maxLines="1" android:shadowColor="@color/mgmi_color_000000_66" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+            <TextView android:textSize="@dimen/mgmi_font_11" android:textColor="@color/mgmi_white" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgmi_template_ad" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="left|center" android:id="@id/tvTitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:layout_marginRight="50.0dp" android:text="" android:shadowColor="@color/mgmi_color_000000_66" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        <androidx.cardview.widget.CardView android:gravity="left|center" android:id="@id/tvAdDetail_parent" android:layout_width="200.0dp" android:layout_height="33.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="50.0dp" app:cardBackgroundColor="#191a1b" app:cardCornerRadius="8.0dp" app:cardElevation="0.0dp" app:cardMaxElevation="0.0dp" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true"
+          xmlns:app="http://schemas.android.com/apk/res-auto">
+            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/tvOpenAdDetail" android:paddingLeft="10.0dp" android:layout_width="200.0dp" android:layout_height="33.0dp" android:layout_marginRight="5.0dp" android:text="@string/mgmi_template_detail" android:maxLines="1" />
+            <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="13.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/icon_immer_detail" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <ImageView android:id="@id/righttvAdIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mgmi_dp_3" android:layout_marginRight="@dimen/mgmi_dp_3" android:src="@drawable/mgmi_chat_close" android:layout_alignParentRight="true" />
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

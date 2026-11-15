@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_multi_video_dialog_content" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="334.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/close" android:paddingBottom="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36.0dp" android:src="@drawable/bg_playlist_close_line_hor" android:scaleType="centerInside" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_sniff_multi_video" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_bottom_go" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="16.0sp" android:textColor="@color/os_text_primary2_color" android:gravity="center" android:id="@id/tv_viewlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_bottom_view_downloadlist" />
+        <com.transsion.widgets.BadgeView android:layout_gravity="center_vertical" android:id="@id/bv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6.0dp" app:osRedPointTextViewType="@integer/OSRedPointTypeNumSmall" />
+    </LinearLayout>
+</LinearLayout>

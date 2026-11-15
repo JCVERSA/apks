@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="48.0dp" android:minWidth="196.0dp" android:paddingHorizontal="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_head" android:visibility="invisible" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_check_right" android:layout_marginEnd="6.0dp" />
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/iv_sort_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textDirection="locale" />
+        <com.transsion.widgets.BadgeView android:id="@id/iv_theme_menu_red_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp5" android:layout_alignTop="@id/iv_sort_name" android:layout_marginStart="@dimen/dp5" android:layout_toEndOf="@id/iv_sort_name" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_sort_icon" android:visibility="invisible" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_sescend_dec_down" android:layout_marginStart="3.0dp" android:layout_marginEnd="8.0dp" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="56.0dp">
+        <ImageView android:id="@id/iv_back" android:src="?os_ic_back" android:layout_marginStart="10.0dp" style="@style/videoButton" />
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="18.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/visha_smart_edit" android:layout_weight="1.0" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" android:paddingVertical="1.0dp" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nsv_smart_edit_content" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp56">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" app:cardCornerRadius="@dimen/dp30" app:cardElevation="@dimen/dp8">
+                <com.transsion.widgets.RoundImageView android:id="@id/iv_cover" android:layout_width="128.0dp" android:layout_height="128.0dp" app:corner_radius="30.0dp" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+                <ImageView android:enabled="false" android:id="@id/iv_delete_cover" android:src="@drawable/bg_ic_audio_delete_cover_selector" style="@style/videoButton" />
+                <ImageView android:id="@id/iv_edit_cover" android:src="@drawable/ic_audio_edit_cover" android:layout_marginStart="30.0dp" style="@style/videoButton" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/os_text_secondary_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/audio_edit_title" android:paddingHorizontal="22.0dp" />
+            <com.transsion.widgetslib.widget.editext.OSMaterialEditText android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:id="@id/et_title" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="22.0dp" app:os_et_bg_color="@color/os_gray_quaternary_color" app:os_et_dialog_mode="true" app:os_et_right_show_delete="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/os_text_secondary_color" android:id="@id/tv_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/audio_edit_artist" android:paddingHorizontal="22.0dp" />
+            <com.transsion.widgetslib.widget.editext.OSMaterialEditText android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:id="@id/et_artist" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="22.0dp" app:os_et_bg_color="@color/os_gray_quaternary_color" app:os_et_dialog_mode="true" app:os_et_right_show_delete="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/os_text_secondary_color" android:id="@id/tv_album" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/audio_edit_album" android:paddingHorizontal="22.0dp" />
+            <com.transsion.widgetslib.widget.editext.OSMaterialEditText android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:id="@id/et_album" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="22.0dp" app:os_et_bg_color="@color/os_gray_quaternary_color" app:os_et_dialog_mode="true" app:os_et_right_show_delete="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/os_text_secondary_color" android:id="@id/tv_year" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/visha_audio_album_date" android:paddingHorizontal="22.0dp" />
+            <com.transsion.widgetslib.widget.editext.OSMaterialEditText android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:id="@id/et_year" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="22.0dp" app:os_et_bg_color="@color/os_gray_quaternary_color" app:os_et_dialog_mode="true" app:os_et_right_show_delete="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:layout_marginBottom="38.0dp">
+                <TextView android:id="@id/tv_smart_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_one_click_to_match_audio_info" android:layout_marginStart="12.0dp" style="@style/OS.Widget.Button.Contained.Big.Double" />
+                <TextView android:enabled="false" android:id="@id/tv_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Save" android:layout_marginStart="12.0dp" style="@style/OS.Widget.Button.Contained.Big.Double" />
+            </LinearLayout>
+            <View android:id="@id/v_ime_scroll_space" android:layout_width="match_parent" android:layout_height="0.0dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.cardview.widget.CardView android:layout_gravity="end|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:layout_marginBottom="80.0dp" android:scaleType="centerInside" android:layout_marginEnd="24.0dp" app:cardCornerRadius="@dimen/dp50" app:cardElevation="@dimen/dp2">
+        <com.transsion.widgets.RoundImageView android:id="@id/iv_smart_edit" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/ic_smart_edit" />
+    </androidx.cardview.widget.CardView>
+    <View android:id="@id/v_smart_match_loading_blocker" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

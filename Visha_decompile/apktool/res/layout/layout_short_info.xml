@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="@dimen/sp20" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textDirection="locale" app:layout_constraintBottom_toTopOf="@id/scroll_content" app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView android:id="@id/scroll_content" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="true" app:layout_constraintBottom_toTopOf="@id/tv_collapse">
+        <TextView android:textSize="@dimen/sp12" android:textColor="@color/color_short_video_desc_text" android:gravity="center_vertical" android:id="@id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/dp2" android:lineSpacingExtra="4.0dp" android:textDirection="locale" />
+    </ScrollView>
+    <TextView android:textAppearance="@style/os_semibold_font" android:textSize="@dimen/sp12" android:textColor="@color/white" android:gravity="end" android:id="@id/tv_collapse" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/visha_collapse" android:textDirection="locale" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.playercommon.widgets.SortGroup android:orientation="vertical" android:id="@id/sort_by_group" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:video="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_order_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/visha_number" video:sort_value="6" video:title="@string/visha_number" />
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/by_date" video:sort_value="0" video:title="@string/by_date" />
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/by_name" video:sort_value="1" video:title="@string/by_name" />
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/by_length" video:sort_value="3" video:title="@string/duration" />
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/by_size" video:sort_value="2" video:title="@string/by_size" />
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/by_count" video:sort_value="4" video:title="@string/by_count" />
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_manual" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/manual_sorting" video:arrow_icon="@drawable/ic_manual_sort" video:sort_value="5" video:title="@string/manual_sorting" />
+</com.transsion.playercommon.widgets.SortGroup>

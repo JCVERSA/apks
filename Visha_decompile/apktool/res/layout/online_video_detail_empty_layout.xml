@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/empty_view" android:background="?OsBgPrimary" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_loading_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/loading_error_animation" android:layout_width="200.0dp" android:layout_height="140.0dp" android:src="@drawable/ic_video_empty_illustration" android:importantForAccessibility="no" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/tv_no_privacy_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/online_video_loading_error" android:textAlignment="center" android:layout_marginHorizontal="27.0dp" />
+        <Button android:id="@id/tv_toview" android:visibility="visible" android:text="@string/online_video_no_network_retry" style="@style/EmptyStateActionButtonStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_no_wifi" android:background="?OsBgPrimary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/no_wifi_animation" android:layout_width="200.0dp" android:layout_height="140.0dp" android:src="@drawable/ic_wifi_empty_illustration" android:importantForAccessibility="no" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/tv_no_network_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/net_not_connect" />
+        <Button android:id="@id/tv_retry" android:visibility="visible" android:text="@string/online_video_no_network_retry" style="@style/EmptyStateActionButtonStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/loading_container" android:background="?OsBgPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18.0sp" android:textColor="@color/os_text_primary_color" android:gravity="center_vertical" android:id="@id/loading_video_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:fontFamily="sans-serif-medium" android:paddingHorizontal="24.0dp" android:paddingVertical="8.0dp" />
+        <include layout="@layout/player_detail_empty_shimmer_view" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

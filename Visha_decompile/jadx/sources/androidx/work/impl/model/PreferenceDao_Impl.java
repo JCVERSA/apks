@@ -1,0 +1,105 @@
+package androidx.work.impl.model;
+
+import android.database.Cursor;
+import androidx.p004lifecycle.LiveData;
+import androidx.room.EntityInsertionAdapter;
+import androidx.room.RoomDatabase;
+import androidx.room.RoomSQLiteQuery;
+import androidx.room.util.DBUtil;
+import androidx.sqlite.db.SupportSQLiteStatement;
+import java.util.concurrent.Callable;
+
+public final class PreferenceDao_Impl implements PreferenceDao {
+    private final RoomDatabase __db;
+    private final EntityInsertionAdapter<Preference> __insertionAdapterOfPreference;
+
+    public PreferenceDao_Impl(RoomDatabase roomDatabase) {
+        this.__db = roomDatabase;
+        this.__insertionAdapterOfPreference = new EntityInsertionAdapter<Preference>(roomDatabase) {
+            @Override
+            public String createQuery() {
+                return "INSERT OR REPLACE INTO `Preference` (`key`,`long_value`) VALUES (?,?)";
+            }
+
+            @Override
+            public void bind(SupportSQLiteStatement supportSQLiteStatement, Preference preference) {
+                String str = preference.mKey;
+                if (str == null) {
+                    supportSQLiteStatement.bindNull(1);
+                } else {
+                    supportSQLiteStatement.bindString(1, str);
+                }
+                Long l = preference.mValue;
+                if (l == null) {
+                    supportSQLiteStatement.bindNull(2);
+                } else {
+                    supportSQLiteStatement.bindLong(2, l.longValue());
+                }
+            }
+        };
+    }
+
+    @Override
+    public Long getLongValue(String str) {
+        RoomSQLiteQuery roomSQLiteQueryAcquire = RoomSQLiteQuery.acquire("SELECT long_value FROM Preference where `key`=?", 1);
+        if (str == null) {
+            roomSQLiteQueryAcquire.bindNull(1);
+        } else {
+            roomSQLiteQueryAcquire.bindString(1, str);
+        }
+        this.__db.assertNotSuspendingTransaction();
+        Long lValueOf = null;
+        Cursor cursorQuery = DBUtil.query(this.__db, roomSQLiteQueryAcquire, false, null);
+        try {
+            if (cursorQuery.moveToFirst() && !cursorQuery.isNull(0)) {
+                lValueOf = Long.valueOf(cursorQuery.getLong(0));
+            }
+            return lValueOf;
+        } finally {
+            cursorQuery.close();
+            roomSQLiteQueryAcquire.release();
+        }
+    }
+
+    @Override
+    public LiveData<Long> getObservableLongValue(String str) {
+        final RoomSQLiteQuery roomSQLiteQueryAcquire = RoomSQLiteQuery.acquire("SELECT long_value FROM Preference where `key`=?", 1);
+        if (str == null) {
+            roomSQLiteQueryAcquire.bindNull(1);
+        } else {
+            roomSQLiteQueryAcquire.bindString(1, str);
+        }
+        return this.__db.getInvalidationTracker().createLiveData(new String[]{"Preference"}, false, new Callable<Long>() {
+            public void finalize() {
+                roomSQLiteQueryAcquire.release();
+            }
+
+            /* JADX WARN: Can't rename method to resolve collision */
+            @Override
+            public Long call() throws Exception {
+                Long lValueOf = null;
+                Cursor cursorQuery = DBUtil.query(PreferenceDao_Impl.this.__db, roomSQLiteQueryAcquire, false, null);
+                try {
+                    if (cursorQuery.moveToFirst() && !cursorQuery.isNull(0)) {
+                        lValueOf = Long.valueOf(cursorQuery.getLong(0));
+                    }
+                    return lValueOf;
+                } finally {
+                    cursorQuery.close();
+                }
+            }
+        });
+    }
+
+    @Override
+    public void insertPreference(Preference preference) {
+        this.__db.assertNotSuspendingTransaction();
+        this.__db.beginTransaction();
+        try {
+            this.__insertionAdapterOfPreference.insert(preference);
+            this.__db.setTransactionSuccessful();
+        } finally {
+            this.__db.endTransaction();
+        }
+    }
+}

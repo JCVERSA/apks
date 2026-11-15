@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/subtitle_root" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tracks_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.transsion.magicvideo.subtitle.widgets.SubtitleVideoTextView android:textSize="@dimen/subtitle_text_size_medium" android:textColor="@color/subtitle_default_text_color" android:gravity="center_vertical" android:id="@id/subtitle_view" android:background="@drawable/background_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:paddingHorizontal="16.0dp" android:paddingVertical="6.0dp" app:isFirstSubtitle="true" />
+        <com.transsion.magicvideo.subtitle.widgets.SubtitleVideoTextView android:textSize="@dimen/subtitle_text_size_medium" android:textColor="@color/subtitle_default_text_color" android:gravity="center_vertical" android:id="@id/second_subtitle_view" android:background="@drawable/background_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:fontFamily="sans-serif-medium" android:paddingHorizontal="16.0dp" android:paddingVertical="6.0dp" />
+    </LinearLayout>
+    <View android:id="@id/drag_view" android:background="@drawable/background_drag" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignBottom="@id/tracks_view" android:layout_alignStart="@id/subtitle_root" android:layout_alignEnd="@id/subtitle_root" />
+</RelativeLayout>

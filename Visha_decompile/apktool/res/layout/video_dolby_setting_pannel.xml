@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_pannel" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="20.0dp" android:paddingStart="24.0dp" android:paddingEnd="22.0dp">
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="18.0sp" android:textColor="#dedede" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/audio_dolby_sound" android:lines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.transsion.widgets.InterceptLinearLayout android:orientation="vertical" android:id="@id/ll_content" android:paddingBottom="48.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_sger1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+                    <TextView android:textSize="15.0sp" android:textColor="#dedede" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audio_conversation_enhancement" android:maxLines="1" android:lines="1" android:layout_marginHorizontal="24.0dp" />
+                    <com.transsion.playercommon.widgets.CustomOsSeekbar android:id="@id/sb_bassboot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:max="1000" android:layout_marginHorizontal="14.0dp" android:paddingHorizontal="@dimen/dp_10" app:osSeekbarMax="0.0" app:osSeekbarMin="16.0" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="24.0dp">
+                        <TextView android:textSize="12.0sp" android:textColor="#87dedede" android:gravity="start" android:id="@id/tv_bassboot" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="0%" android:layout_weight="1.0" />
+                        <TextView android:textSize="12.0sp" android:textColor="#87dedede" android:gravity="end" android:layout_gravity="end" android:id="@id/tv_max_bassboot" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="100%" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.transsion.widgets.InterceptLinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_dolby_set" android:background="@drawable/dolby_set_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="35.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audio_dolby_close_notice" android:maxLines="2" android:layout_weight="1.0" android:paddingHorizontal="16.0dp" android:paddingVertical="15.0dp" />
+                <TextView android:textSize="16.0sp" android:textColor="?os_platform_basic_color" android:id="@id/tv_go" android:padding="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dp" android:text="@string/setting_auto_play_stream_dialog_ok" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,32 @@
+.class public Lcom/mgtv/data/aphone/core/bean/EventBean;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/mgtv/json/JsonInterface;
+
+
+# instance fields
+.field public bid:Ljava/lang/String;
+
+.field public create_time:Ljava/lang/String;
+
+.field public eventId:Ljava/lang/String;
+
+.field public method:Ljava/lang/String;
+
+.field public params:Ljava/lang/String;
+
+.field public status:I
+
+.field public url:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

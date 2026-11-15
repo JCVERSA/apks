@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/sv_no_content_view" android:background="@color/os_bg_primary_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rl_title_bar"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="100.0dp">
+        <include layout="@layout/cloud_info_layout" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dp" android:src="@drawable/icon_notlogin_pic" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/os_text_tertiary_color" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/visha_no_video_uploaded" android:maxLines="1" android:layout_marginHorizontal="35.0dp" />
+        <Button android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/btn_upload" android:layout_width="216.0dp" android:layout_height="36.0dp" android:layout_marginTop="81.0dp" android:text="@string/visha_upload_now" style="@style/OS.Widget.Button.Contained.Big.Single" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

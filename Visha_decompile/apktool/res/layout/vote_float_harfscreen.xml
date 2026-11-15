@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.VoteFloatView android:clickable="true" android:clipChildren="false" android:layout_width="298.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content" android:layout_width="265.0dp" android:layout_height="wrap_content">
+        <ImageView android:id="@id/mainBg" android:layout_width="265.0dp" android:layout_height="46.0dp" android:layout_marginTop="18.0dp" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="8.0sp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/logbar" android:background="@drawable/vote_title_bg" android:paddingLeft="19.0dp" android:layout_width="155.0dp" android:layout_height="16.0dp" android:layout_marginLeft="58.0dp" android:layout_marginTop="56.0dp" android:maxLines="1" />
+        <ImageView android:id="@id/logIcon" android:layout_width="19.0dp" android:layout_height="19.0dp" android:layout_marginLeft="54.0dp" android:layout_marginTop="54.0dp" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/listview" android:layout_width="wrap_content" android:layout_height="56.0dp" android:layout_marginLeft="35.0dp" android:layout_marginRight="35.0dp" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/closeAdIcon" android:layout_width="13.0dp" android:layout_height="13.0dp" android:layout_marginLeft="14.0dp" android:src="@drawable/scheme_close" android:layout_toRightOf="@id/content" />
+</com.mgadplus.viewgroup.dynamicview.VoteFloatView>

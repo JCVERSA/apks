@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/mgmi_skin_color_content_bg_primary" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/contentframe" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/style_image_ivImage" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="40.0dp" android:layout_height="match_parent" android:layout_marginLeft="7.0dp" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/mgmi_font_15" android:textColor="@color/mgmi_skin_color_title_text_minor" android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="fsdafsffsdafsfsafsdafsfsafsdafsfsafsdafsfsasafsdafsffsdafsfsafsdafsfsafsdafsfsafsdafsfsasafsdafsffsdafsfsafsdafsfsafsdafsfsafsdafsfsasafsdafsffsdafsfsafsdafsfsafsdafsfsafsdafsfsasa" android:maxLines="2" android:layout_toRightOf="@id/style_image_ivImage" />
+        <ImageView android:id="@id/tvAdIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dp" android:layout_marginBottom="7.0dp" android:src="@drawable/mgmi_ad_more" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/mgmi_font_8" android:textColor="@color/mgmi_skin_color_second_color_minor" android:ellipsize="end" android:id="@id/adOrigin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginBottom="8.0dp" android:maxLines="1" android:layout_toRightOf="@id/style_image_ivImage" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

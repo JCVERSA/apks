@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/move_horizon_progress" android:background="@drawable/bg_video_time_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="92.0dp" android:paddingHorizontal="16.0dp" android:paddingVertical="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="14.0sp" android:textColor="?os_platform_basic_color" android:ellipsize="end" android:gravity="center" android:id="@id/mv_current_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/mv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

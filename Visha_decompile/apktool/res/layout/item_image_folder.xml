@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="90.0dp" android:paddingHorizontal="22.0dp" android:paddingVertical="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.RoundFrameLayout android:layout_width="70.0dp" android:layout_height="70.0dp" app:round_corner="8.0dp">
+        <ImageView android:id="@id/iv_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </com.transsion.playercommon.widgets.RoundFrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp">
+        <TextView android:textSize="15.0sp" android:textColor="@color/os_text_secondary_color" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="所有照片" android:maxLines="2" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/os_text_quaternary_color" android:id="@id/tv_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:text="28" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

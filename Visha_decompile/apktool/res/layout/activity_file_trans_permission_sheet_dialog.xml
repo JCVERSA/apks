@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp5" android:layout_width="match_parent" android:layout_height="@dimen/file_trans_dialog_height" android:nestedScrollingEnabled="true" android:paddingHorizontal="@dimen/dp24">
+        <TextView android:textSize="@dimen/sp14" android:textColor="@color/os_text_secondary_color" android:id="@id/tv_file_trans_send_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/visha_file_trans_send_info" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_file_trans_permission" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:layout_marginBottom="32.0dp">
+            <TextView android:id="@id/tv_cancel" android:layout_width="150.0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/dp0" android:text="@string/cancel" style="@style/OS.Widget.Button.Contained.Big.Single.Gray" />
+            <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <TextView android:id="@id/tv_confirm" android:layout_width="150.0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/dp0" android:text="@string/download_guide_button_2" style="@style/BigButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

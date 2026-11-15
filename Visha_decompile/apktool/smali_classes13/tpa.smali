@@ -1,0 +1,34 @@
+.class public final synthetic Ltpa;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic b:Lcom/transsion/tools/fragments/ToolsFragment;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/transsion/tools/fragments/ToolsFragment;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ltpa;->b:Lcom/transsion/tools/fragments/ToolsFragment;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 0
+
+    iget-object p0, p0, Ltpa;->b:Lcom/transsion/tools/fragments/ToolsFragment;
+
+    invoke-static {p0}, Lcom/transsion/tools/fragments/ToolsFragment;->k0(Lcom/transsion/tools/fragments/ToolsFragment;)V
+
+    return-void
+.end method

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="100.0dp" android:layout_marginTop="@dimen/dimen_8" android:layout_marginStart="@dimen/dimen_8" android:layout_marginEnd="@dimen/dimen_8">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_8" android:paddingEnd="@dimen/dimen_8">
+            <TextView android:textAppearance="@style/font_black_14_t65" android:id="@id/note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+            <com.transsion.xuanniao.account.comm.widget.FormatView android:id="@id/formatView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_below="@id/note" />
+        </RelativeLayout>
+    </ScrollView>
+    <com.transsion.xuanniao.account.comm.widget.AccountIdInput android:id="@id/accountIdInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/scrollView" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16" />
+</RelativeLayout>

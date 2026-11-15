@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/video_root_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/video_main_layout" android:focusable="true" android:visibility="gone" android:fitsSystemWindows="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/app_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$Behavior">
+                    <RelativeLayout android:id="@id/rl_title_bar" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginBottom="8.0dp" app:layout_scrollFlags="scroll|enterAlways">
+                        <View android:id="@id/view_padding_start" android:layout_width="24.0dp" android:layout_height="56.0dp" android:layout_alignParentStart="true" />
+                        <com.transsion.widgetslib.widget.OSIconTextView android:textColor="@color/default_secondary_icon_color" android:id="@id/title_bar_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:text="@string/os_close" android:layout_centerVertical="true" android:contentDescription="@string/talkback_close" android:layout_marginEnd="6.0dp" android:layout_toEndOf="@id/view_padding_start" />
+                        <ImageView android:id="@id/iv_logo" android:clickable="false" android:longClickable="false" android:layout_width="92.16998dp" android:layout_height="20.0dp" android:src="@drawable/ic_brand_logo" android:layout_centerVertical="true" android:layout_toEndOf="@id/view_padding_start" />
+                        <TextView android:textSize="16.0dp" android:textColor="@color/os_text_primary_color" android:id="@id/tv_logo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" android:layout_toEndOf="@id/view_padding_start" android:textFontWeight="600" />
+                        <TextView android:textSize="18.0dp" android:textColor="@color/os_text_primary_color" android:id="@id/tv_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video" android:maxLines="1" android:lines="1" android:minLines="1" android:layout_weight="1.0" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" android:layout_toEndOf="@id/title_bar_back" />
+                        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" layout="@layout/top_menu_layout" />
+                    </RelativeLayout>
+                    <ViewStub android:id="@id/top_history_view_ll" android:layout="@layout/top_history_view_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|enterAlways" />
+                    <include layout="@layout/video_custom_tab_layout_point" />
+                </com.google.android.material.appbar.AppBarLayout>
+                <androidx.viewpager2.widget.ViewPager2 android:id="@id/show_video_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/video_main_empty_view" android:fitsSystemWindows="false" android:clickable="true" android:layout="@layout/main_empty_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ViewStub android:id="@id/tv_bubble_layout" android:layout="@layout/theme_tv_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_drag_animation_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.transsion.widgets.RoundImageView android:id="@id/iv_play_shuffle" android:visibility="gone" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginBottom="76.0dp" android:src="@drawable/ic_btn_shuffle" android:layout_marginEnd="22.0dp" app:corner_radius="@dimen/dp50" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

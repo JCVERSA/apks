@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_detail_player" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/post_detail_nested_scroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_width="match_parent" android:layout_height="200.0dp" />
+            <TextView android:textSize="16.0sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="test" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.transsion.vishaplayersdk.vishaplayer.VishaPlayer android:id="@id/detail_player" android:layout_width="match_parent" android:layout_height="200.0dp" />
+</RelativeLayout>

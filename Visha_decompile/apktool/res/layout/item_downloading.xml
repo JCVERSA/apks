@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.RoundFrameLayout android:id="@id/ll_bucket_fragment_item" android:layout_width="110.0dp" android:layout_height="62.0dp" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:layout_marginStart="22.0dp" android:layout_marginEnd="@dimen/dp_10" app:round_corner="5.0dp" app:solid_color="@color/transparent" app:stroke_color="@color/os_gray_tertiary_color" app:stroke_width="0.0px">
+        <ImageView android:id="@id/iv_bucket_fragment_item" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/main_fragment_placeholder" android:scaleType="centerCrop" />
+        <View android:id="@id/selected_background" android:background="#66000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.transsion.playercommon.widgets.RoundFrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="17.0dp">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/tv_main_fragment_item_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true" android:layout_toEndOf="@id/ll_bucket_fragment_item" android:layout_alignParentEnd="true">
+            <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="15.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_main_fragment_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" android:textDirection="locale" />
+            <ProgressBar android:id="@id/progressBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.5999756dp" android:max="100" android:progressDrawable="@drawable/round_progress" style="@style/customProgressBarHorizontalStyle" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:gravity="left|center" android:layout_gravity="start|center" android:id="@id/tv_main_fragment_item_speed" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:textDirection="locale" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:gravity="right|center" android:layout_gravity="end|center" android:id="@id/tv_main_fragment_item_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minEms="4" android:textDirection="locale" />
+            </LinearLayout>
+        </LinearLayout>
+        <CheckBox android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/iv_bucket_fragment_checkBox" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginStart="16.0dp" />
+    </LinearLayout>
+</LinearLayout>

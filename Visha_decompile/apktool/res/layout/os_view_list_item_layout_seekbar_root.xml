@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/lil_seekbar_root_layout" android:paddingBottom="14.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/os_fontsize_subhead" android:textColor="?os_text_info" android:gravity="center" android:id="@id/lil_seekbar_value_below_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/os_space050" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/lil_sub_seekbar" android:layout_width="0.0dp" android:layout_height="@dimen/os_list_item_right_seekbar_height" android:layout_weight="1.0" layout="@layout/os_view_list_item_layout_sub_seekbar" />
+        <com.transsion.widgetslib.widget.seekbar.OSSectionSeekbar android:id="@id/lil_sub_section_seekbar" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="@dimen/os_list_item_right_seekbar_height" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/os_fontsize_subhead" android:textColor="?os_text_info" android:gravity="end" android:id="@id/lil_seekbar_value_no_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/os_space100" />
+    </LinearLayout>
+</LinearLayout>

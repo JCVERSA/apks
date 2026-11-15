@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/titlebar_layout" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_history_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_bar" android:paddingHorizontal="?screen_edge_size" />
+    <ViewStub android:id="@id/empty_view" android:layout="@layout/privacy_empty_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ViewStub android:id="@id/bottom_action_bar" android:layout="@layout/history_bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/view_no_histroy" android:layout="@layout/view_webview_histroy_empty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

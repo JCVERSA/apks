@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/lil_main_title_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/lil_left_icon_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/os_list_item_left_layout_margin_end">
+        <ViewStub android:id="@id/lil_stub_left_layout" android:layout="@layout/os_view_list_item_layout_left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/lil_stub_left_text_icon_layout" android:layout="@layout/os_view_list_item_layout_left_text_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/lil_stub_left_image_badge" android:layout="@layout/os_view_list_item_layout_left_layout_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/lil_title_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lil_title_row" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="@dimen/os_h2_font" android:textColor="?os_text_primary" android:id="@id/lil_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="22.0dp" android:layout_weight="1.0" android:lineHeight="@dimen/os_dimen_h2_font_line_height" />
+            <TextView android:textSize="@dimen/os_fontsize_subhead" android:textColor="?os_text_info" android:gravity="end" android:id="@id/lil_seekbar_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/os_space100" />
+        </LinearLayout>
+        <ViewStub android:id="@id/lil_stub_subtitle" android:layout="@layout/os_view_list_item_layout_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" />
+        <ViewStub android:id="@id/lil_stub_sub_progressbar" android:layout="@layout/os_view_list_item_layout_sub_progressbar" android:layout_width="match_parent" android:layout_height="@dimen/os_list_item_right_seekbar_height" android:layout_marginTop="@dimen/os_list_item_right_seekbar_margin_top" />
+    </LinearLayout>
+</LinearLayout>

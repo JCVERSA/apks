@@ -1,0 +1,84 @@
+.class public final Lcom/yandex/mobile/ads/impl/ca;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private a:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/yandex/mobile/ads/impl/ca;->a:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public final a(Ljava/lang/String;)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_2
+
+    .line 2
+    invoke-static {p1}, Lj1a;->o0(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    iget-object v1, p0, Lcom/yandex/mobile/ads/impl/ca;->a:Ljava/lang/String;
+
+    if-eqz v1, :cond_1
+
+    invoke-static {v1, p1}, Ly45;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    .line 4
+    new-array p0, v0, [Ljava/lang/Object;
+
+    const-string p1, "Ad Unit Id can\'t be set twice."
+
+    invoke-static {p1, p0}, Lcom/yandex/mobile/ads/impl/hp0;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    goto :goto_1
+
+    .line 5
+    :cond_1
+    iput-object p1, p0, Lcom/yandex/mobile/ads/impl/ca;->a:Ljava/lang/String;
+
+    goto :goto_1
+
+    .line 6
+    :cond_2
+    :goto_0
+    new-array p0, v0, [Ljava/lang/Object;
+
+    const-string p1, "Ad Unit Id can\'t be null or empty."
+
+    invoke-static {p1, p0}, Lcom/yandex/mobile/ads/impl/hp0;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    :goto_1
+    return-void
+.end method

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="os_dimen_dialog_announcement_bottom">6.0px</dimen>
+    <dimen name="os_dimen_rl_button_padding_bottom">36.0px</dimen>
+    <dimen name="os_dimen_rl_button_padding_top">36.0px</dimen>
+    <dimen name="os_dimen_rl_title_margin_bottom">36.0px</dimen>
+    <dimen name="os_dimen_rl_title_margin_top">54.0px</dimen>
+    <dimen name="os_dimen_small_dialog_button_space">36.0px</dimen>
+    <dimen name="os_dimen_small_dialog_top_bottom_inset">48.0px</dimen>
+    <dimen name="os_gdpr_btn_confirm_margin_start">0.0px</dimen>
+    <dimen name="os_gdpr_btn_height">132.0px</dimen>
+    <dimen name="os_gdpr_btn_layout_padding_hor">36.0px</dimen>
+    <dimen name="os_gdpr_btn_max_height">126.0px</dimen>
+    <dimen name="os_gdpr_btn_min_height">108.0px</dimen>
+    <dimen name="os_gdpr_btn_radius">63.0px</dimen>
+    <dimen name="os_gdpr_btn_text_size">42.0px</dimen>
+    <dimen name="os_gdpr_dialog_bg_radius_os14">48.0px</dimen>
+    <dimen name="os_gdpr_dialog_bottom_margin_with_navigation_bar">36.0px</dimen>
+    <dimen name="os_gdpr_dialog_title_size">48.0px</dimen>
+    <dimen name="os_gdpr_message_text_line_height">45.0px</dimen>
+    <dimen name="os_gdpr_message_text_size">42.0px</dimen>
+</resources>

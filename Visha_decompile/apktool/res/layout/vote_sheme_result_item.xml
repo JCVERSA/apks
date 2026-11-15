@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="33.0dp" android:layout_marginBottom="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tc="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/good_best" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="11.0dp" android:layout_marginLeft="7.0dp" android:src="@drawable/good_result" android:layout_toRightOf="@id/name" />
+    <include android:layout_width="138.0dp" android:layout_height="21.0dp" android:layout_marginTop="8.0dp" android:layout_below="@id/name" android:layout_alignParentLeft="true" layout="@layout/vote_image_progress01" />
+</RelativeLayout>

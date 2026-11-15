@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mgadplus.viewgroup.dynamicview.ScreenOrientationContainer android:id="@id/playerContainer" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/webviewContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/playerContainer" />
+    <ImageView android:id="@id/mgmi_back_button" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:src="@drawable/mgmi_back_icon" />
+</RelativeLayout>

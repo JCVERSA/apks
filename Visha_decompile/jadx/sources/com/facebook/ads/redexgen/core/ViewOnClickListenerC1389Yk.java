@@ -1,0 +1,23 @@
+package com.facebook.ads.redexgen.core;
+
+import android.view.View;
+
+public class ViewOnClickListenerC1389Yk implements View.OnClickListener {
+    public final LV A00;
+
+    public ViewOnClickListenerC1389Yk(LV lv) {
+        this.A00 = lv;
+    }
+
+    @Override
+    public final void onClick(View view) throws Throwable {
+        if (AbstractC1314Vl.A02(this)) {
+            return;
+        }
+        try {
+            this.A00.A0B.AEC(O4.A06);
+        } catch (Throwable th) {
+            AbstractC1314Vl.A00(th, this);
+        }
+    }
+}

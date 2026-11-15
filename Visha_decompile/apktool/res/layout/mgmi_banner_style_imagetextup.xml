@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_head_info">
+        <FrameLayout android:id="@id/style_ad_ivImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/mgmi_font_8" android:textColor="@color/mgmi_skin_color_text_minor" android:id="@id/mgmi_ad_dec" android:background="@color/mgmi_ad_text_bg" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mgmi_dp_5" android:layout_marginTop="@dimen/mgmi_dp_5" android:shadowRadius="1.0" />
+        <ImageView android:textColor="@color/mgmi_white" android:layout_gravity="right|bottom" android:id="@id/tvAdIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mgmi_dp_7" android:layout_marginRight="@dimen/mgmi_dp_3" android:src="@drawable/mgmi_ad_more" android:layout_alignParentBottom="true" />
+        <com.mgadplus.viewgroup.dynamicview.ContainerLayout android:layout_gravity="bottom" android:id="@id/bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp">
+            <TextView android:textSize="@dimen/mgmi_font_10" android:textColor="@color/mgmi_skin_color_title_text_minor" android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </com.mgadplus.viewgroup.dynamicview.ContainerLayout>
+    </FrameLayout>
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

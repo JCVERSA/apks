@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.FlipRelative android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/connerTitleLayout" android:background="@drawable/connerad_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:layout_centerVertical="true">
+        <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/connerTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dp" android:singleLine="true" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="5.0dp" android:layout_height="8.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/mgmi_common_more_icon" />
+    </LinearLayout>
+    <TextView android:textSize="9.0sp" android:textColor="@color/mgmi_color_FFFFFF" android:id="@id/mgmi_ad_dec" android:background="@color/mgmi_ad_text_bg" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:shadowColor="@color/mgmi_color_000000_66" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_below="@id/image_container" />
+    <FrameLayout android:id="@id/image_container" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginTop="10.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/closeAdIcon" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginLeft="5.0dp" android:src="@drawable/mgmi_icon_corner_float_close" android:layout_toRightOf="@id/connerTitleLayout" android:layout_alignParentTop="true" />
+</com.mgadplus.viewgroup.dynamicview.FlipRelative>

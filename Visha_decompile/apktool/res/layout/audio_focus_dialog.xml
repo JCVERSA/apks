@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary2_color" android:layout_gravity="start" android:id="@id/tv_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+    <LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/ll_not_prompt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp">
+        <CheckBox android:id="@id/cb_do_not_reminder" android:background="@drawable/ic_list_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_prompting" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+</LinearLayout>

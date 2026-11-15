@@ -1,0 +1,77 @@
+package com.hisavana.common.base;
+
+import android.app.Activity;
+import android.content.Context;
+import android.util.Log;
+import com.hisavana.common.bean.Network;
+import com.hisavana.common.interfacz.IadVideo;
+import com.hisavana.common.utils.AdLogUtil;
+import java.lang.ref.WeakReference;
+
+public abstract class BaseInterstitialRewardedVideo extends BaseAd implements IadVideo {
+    public BaseInterstitialRewardedVideo(Context context, Network network) {
+        super(context, network);
+    }
+
+    public boolean canShow() {
+        return true;
+    }
+
+    @Override
+    public void destroyAd() {
+        super.destroyAd();
+    }
+
+    @Override
+    public int getAdType() {
+        return 8;
+    }
+
+    public abstract void initVideo();
+
+    public boolean isLoaded() {
+        return false;
+    }
+
+    @Override
+    public boolean isOfflineAd() {
+        return false;
+    }
+
+    @Override
+    public void loadAd() {
+        super.loadAd();
+        initVideo();
+        onVideoStartLoad();
+    }
+
+    public abstract void onVideoShow(Activity activity);
+
+    public abstract void onVideoStartLoad();
+
+    @Override
+    public void show(WeakReference<Context> weakReference, String str, String str2) {
+        if (weakReference == null) {
+            AdLogUtil.Log().e("video", "show,activity is null");
+            return;
+        }
+        try {
+            if (isLoaded()) {
+                logTrigerShow(str, str2);
+                if (weakReference.get() instanceof Activity) {
+                    onVideoShow((Activity) weakReference.get());
+                }
+            } else {
+                AdLogUtil.Log().w("video", "BaseInterstitialRewardedVideo --> interstitial  is not ready" + getLogString());
+            }
+        } catch (Throwable th) {
+            AdLogUtil.Log().e("video", "BaseInterstitialRewardedVideo --> show exception:" + Log.getStackTraceString(th));
+        }
+    }
+
+    public void showVideo(Activity activity, String str, String str2) {
+        WeakReference<Context> weakReference = new WeakReference<>(activity);
+        this.mContext = weakReference;
+        show(weakReference, str, str2);
+    }
+}

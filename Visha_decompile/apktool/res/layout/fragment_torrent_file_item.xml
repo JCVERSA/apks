@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="54.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_title_select" android:visibility="gone" android:layout_width="match_parent" android:layout_height="54.0dp" android:paddingStart="14.0dp" android:paddingEnd="17.0dp">
+            <ImageView android:id="@id/iv_close_select" android:src="?os_ic_close" style="@style/videoButton" />
+            <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="6.0dp">
+                <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="@dimen/os_h1_font" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/tv_title_select" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bt_title" android:maxLines="1" android:textDirection="locale" />
+            </RelativeLayout>
+            <CheckBox android:id="@id/cb_select" android:background="@drawable/ic_list_checkbox" android:layout_width="24.0dp" android:layout_height="24.0dp" android:button="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_title" android:layout_width="match_parent" android:layout_height="54.0dp" android:paddingStart="14.0dp" android:paddingEnd="22.0dp">
+            <ImageView android:id="@id/iv_back" android:src="?os_ic_back" style="@style/videoButton" />
+            <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="6.0dp">
+                <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="@dimen/os_h1_font" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bt_title" android:maxLines="1" android:textDirection="locale" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="60.0dp" />
+        <ViewStub android:layout_gravity="bottom" android:id="@id/bottom_action_bar" android:layout="@layout/bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="bottom" android:id="@id/ll_size_info" android:layout_width="match_parent" android:layout_height="60.0dp">
+            <TextView android:textColor="@color/os_text_secondary_color" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/tv_size_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60.0dp" android:layout_marginHorizontal="14.0dp" android:paddingVertical="14.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

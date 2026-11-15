@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/settings_menu_item_bg" android:layout_width="match_parent" android:layout_height="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_media_operate_menu_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginStart="22.0dp" />
+    <com.transsion.widgetslib.widget.OSIconTextView android:textSize="24.0dp" android:textColor="@color/os_icon_secondary" android:id="@id/icon_text" android:layout_width="24.0dp" android:layout_height="24.0dp" android:text="@string/os_add" android:layout_marginStart="@dimen/def_screen_margin" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/menu_item_text_color" android:ellipsize="end" android:id="@id/tv_media_operate_menu_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_to" android:lines="1" android:layout_marginStart="12.0dp" />
+    <com.transsion.widgets.BadgeView android:layout_gravity="top" android:id="@id/bv_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:layout_marginStart="@dimen/dp5" />
+</LinearLayout>

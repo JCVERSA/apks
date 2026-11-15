@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="8.0dp" android:layout_marginVertical="7.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.RectRoundFrameLayout android:layout_gravity="center" android:id="@id/round_frame" android:layout_width="68.0dp" android:layout_height="68.0dp" app:round_corner="16.0dp" app:stroke_color="@color/transparent" app:stroke_width="0.0dp">
+        <com.makeramen.roundedimageview.RoundedImageView android:gravity="center" android:id="@id/round_icon" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </com.transsion.playercommon.widgets.RectRoundFrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_name" android:layout_width="68.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:minWidth="100.0dp" android:lines="1" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.LoopSchemeView android:id="@id/loopshcemeview" android:clickable="true" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/allFrame" android:layout_width="430.0dp" android:layout_height="190.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="30.0dp">
+        <com.mgmi.ViewGroup.convenientbanner.MgConvenientBanner android:id="@id/convenientBanner" android:layout_width="190.0dp" android:layout_height="190.0dp" />
+        <RelativeLayout android:id="@id/contentLayout" android:background="#282828" android:layout_width="240.0dp" android:layout_height="190.0dp" android:layout_toRightOf="@id/convenientBanner">
+            <LinearLayout android:orientation="vertical" android:id="@id/logbar" android:background="#131313" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="50.0dp" android:layout_height="match_parent" android:layout_alignParentRight="true" />
+            <RelativeLayout android:id="@id/contentFrame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/logbar">
+                <TextView android:textSize="18.0sp" android:textColor="#ff5f00" android:ellipsize="end" android:id="@id/title" android:paddingTop="25.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:maxLines="1" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:maxLines="4" android:layout_below="@id/title" android:layout_alignLeft="@id/title" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginBottom="25.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tvAdDetail" android:background="@drawable/shceme_bg" android:layout_width="88.0dp" android:layout_height="26.0dp" android:text="@string/mgmi_player_learn_More" />
+                    <ImageButton android:id="@id/dianzanButton" android:background="#00000000" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginLeft="86.0dp" android:src="@null" android:scaleType="fitXY" android:adjustViewBounds="true" android:cropToPadding="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/small_icon" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="10.0dp" />
+    <ImageView android:id="@id/schemeClose" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="5.0dp" android:src="@drawable/scheme_close" android:layout_toRightOf="@id/allFrame" />
+</com.mgadplus.viewgroup.dynamicview.LoopSchemeView>

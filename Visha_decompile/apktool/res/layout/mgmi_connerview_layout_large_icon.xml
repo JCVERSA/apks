@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.LargeIconCornerView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/image_container" android:layout_width="128.0dp" android:layout_height="40.0dp" />
+    <TextView android:textSize="9.0sp" android:textColor="@color/mgmi_white" android:id="@id/mgmi_ad_dec" android:background="@color/mgmi_ad_text_bg" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:shadowColor="@color/mgmi_color_000000_66" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_below="@id/image_container" />
+    <ImageView android:id="@id/closeAdIcon" android:layout_width="17.0dp" android:layout_height="17.0dp" android:src="@drawable/mgmi_icon_corner_float_close" android:layout_toRightOf="@id/image_container" />
+</com.mgadplus.viewgroup.dynamicview.LargeIconCornerView>

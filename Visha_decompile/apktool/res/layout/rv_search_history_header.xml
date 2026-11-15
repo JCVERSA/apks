@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="34.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/main_count" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/search_history_title" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_clear_history" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_delete1" android:scaleType="centerCrop" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container_episode" android:background="@drawable/bg_episodes_round_5dp" android:layout_width="42.0dp" android:layout_height="42.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/os_text_secondary_color" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/tv_episode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp42" android:fontFamily="sans-serif-medium" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/iv_vip" android:layout_width="16.699982dp" android:layout_height="10.299988dp" android:src="@drawable/ic_vip_half" />
+</FrameLayout>

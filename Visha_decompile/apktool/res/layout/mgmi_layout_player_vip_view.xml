@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/mgmi_color_000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/mgmi_rlVipLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/mgmi_white" android:id="@id/mgmi_tvVipTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgmi_player_default_viptitle" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff4500" android:gravity="center_horizontal" android:id="@id/mgmi_tvVipBubble" android:background="@drawable/mgmi_player_vip_desc" android:padding="8.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:text="会员买三赠一" android:layout_below="@id/mgmi_tvVipTitle" android:layout_centerHorizontal="true" />
+        <Button android:textSize="13.0sp" android:textColor="@color/mgmi_white" android:id="@id/mgmi_btnVip" android:background="@drawable/ad_text_bg_shape_yellow" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginTop="8.0dp" android:text="@string/mgmi_player_default_vipplay" android:layout_below="@id/mgmi_tvVipBubble" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/mgmi_backImage" android:background="@drawable/mgmi_back_button" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="15.0dp" android:layout_marginTop="15.0dp" />
+</RelativeLayout>

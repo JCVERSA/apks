@@ -1,0 +1,63 @@
+.class public Lcom/transsion/visha/ai/AIServiceManager$n;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/transsion/visha/ai/AIService$c;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/transsion/visha/ai/AIServiceManager;->v(Ljava/lang/String;Lcom/transsion/visha/ai/IAudioPlayCallback;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/transsion/visha/ai/IAudioPlayCallback;
+
+.field public final synthetic b:Lcom/transsion/visha/ai/AIServiceManager;
+
+
+# direct methods
+.method public constructor <init>(Lcom/transsion/visha/ai/AIServiceManager;Lcom/transsion/visha/ai/IAudioPlayCallback;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/transsion/visha/ai/AIServiceManager$n;->b:Lcom/transsion/visha/ai/AIServiceManager;
+
+    iput-object p2, p0, Lcom/transsion/visha/ai/AIServiceManager$n;->a:Lcom/transsion/visha/ai/IAudioPlayCallback;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lcom/transsion/dbdata/beans/media/PlayAudioData;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/transsion/visha/ai/AIServiceManager$n;->b:Lcom/transsion/visha/ai/AIServiceManager;
+
+    iget-object p0, p0, Lcom/transsion/visha/ai/AIServiceManager$n;->a:Lcom/transsion/visha/ai/IAudioPlayCallback;
+
+    invoke-virtual {v0, p0, p1}, Lcom/transsion/visha/ai/AIServiceManager;->i(Lcom/transsion/visha/ai/IAudioPlayCallback;Lcom/transsion/dbdata/beans/media/PlayAudioData;)V
+
+    return-void
+.end method
+
+.method public onError(Ljava/lang/String;)V
+    .locals 0
+
+    iget-object p1, p0, Lcom/transsion/visha/ai/AIServiceManager$n;->b:Lcom/transsion/visha/ai/AIServiceManager;
+
+    iget-object p0, p0, Lcom/transsion/visha/ai/AIServiceManager$n;->a:Lcom/transsion/visha/ai/IAudioPlayCallback;
+
+    invoke-virtual {p1, p0}, Lcom/transsion/visha/ai/AIServiceManager;->g(Lcom/transsion/visha/ai/IAudioPlayCallback;)V
+
+    return-void
+.end method

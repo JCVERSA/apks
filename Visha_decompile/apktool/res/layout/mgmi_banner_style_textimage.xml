@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:DownloadProgressViewStyle="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/mgmi_head_info" />
+    <RelativeLayout android:id="@id/bannerContentFrame" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_head_info">
+        <RelativeLayout android:id="@id/top_bar" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@color/mgmi_skin_color_title_text_minor" android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/mgmi_dp_btwidth" android:maxLines="1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/mgmi_skin_color_text_minor" android:ellipsize="end" android:id="@id/subTvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:maxWidth="@dimen/mgmi_dp_btwidth" android:maxLines="1" android:layout_below="@id/tvTitle" />
+            <ImageView android:id="@id/tvAdIcon" android:paddingTop="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mgmi_dp_7" android:src="@drawable/mgmi_ad_more" android:layout_toRightOf="@id/tvTitle" />
+            <FrameLayout android:id="@id/button_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/mgmi_font_13" android:textColor="@color/mgmi_color_ffff5f00" android:gravity="center" android:id="@id/buttonDetail" android:background="@drawable/banner_ad_text_bg_shape_yellow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="@string/mgmi_template_detail" />
+            </FrameLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/resource_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mgmi_dp_7" android:layout_below="@id/top_bar">
+            <ImageView android:id="@id/style_ad_ivImage" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.mgadplus.brower.ImgoAdWebView android:id="@id/banner_webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <TextView android:textSize="@dimen/mgmi_font_8" android:textColor="@color/mgmi_skin_color_title_text_minor" android:id="@id/mgmi_ad_dec" android:background="@color/mgmi_ad_text_bg" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mgmi_dp_5" android:layout_marginTop="@dimen/mgmi_dp_5" android:shadowRadius="1.0" />
+        </FrameLayout>
+    </RelativeLayout>
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

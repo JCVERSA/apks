@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_web_layout" />
+    <SeekBar android:id="@id/sb_web" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="2.0dp" android:progressDrawable="@drawable/web_progress" android:thumb="@null" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" />
+</LinearLayout>

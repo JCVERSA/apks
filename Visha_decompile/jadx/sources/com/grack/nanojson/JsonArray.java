@@ -1,0 +1,135 @@
+package com.grack.nanojson;
+
+import defpackage.aa5;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+
+public class JsonArray extends ArrayList<Object> {
+    private static final long serialVersionUID = 1;
+
+    public JsonArray() {
+    }
+
+    public static aa5 builder() {
+        return new aa5(new JsonArray());
+    }
+
+    public static JsonArray from(Object... objArr) {
+        return new JsonArray(Arrays.asList(objArr));
+    }
+
+    @Override
+    public Object get(int i) {
+        if (i < size()) {
+            return super.get(i);
+        }
+        return null;
+    }
+
+    public JsonArray getArray(int i) {
+        return getArray(i, new JsonArray());
+    }
+
+    public boolean getBoolean(int i) {
+        return getBoolean(i, Boolean.FALSE);
+    }
+
+    public double getDouble(int i) {
+        return getDouble(i, 0.0d);
+    }
+
+    public float getFloat(int i) {
+        return getFloat(i, 0.0f);
+    }
+
+    public int getInt(int i) {
+        return getInt(i, 0);
+    }
+
+    public long getLong(int i) {
+        return getLong(i, 0L);
+    }
+
+    public Number getNumber(int i) {
+        return getNumber(i, null);
+    }
+
+    public JsonObject getObject(int i) {
+        return getObject(i, new JsonObject());
+    }
+
+    public String getString(int i) {
+        return getString(i, null);
+    }
+
+    public boolean has(int i) {
+        return i < size();
+    }
+
+    public boolean isBoolean(int i) {
+        return get(i) instanceof Boolean;
+    }
+
+    public boolean isNull(int i) {
+        return i < size() && get(i) == null;
+    }
+
+    public boolean isNumber(int i) {
+        return get(i) instanceof Number;
+    }
+
+    public boolean isString(int i) {
+        return get(i) instanceof String;
+    }
+
+    public JsonArray(int i) {
+        super(i);
+    }
+
+    public JsonArray getArray(int i, JsonArray jsonArray) {
+        return get(i) instanceof JsonArray ? (JsonArray) get(i) : jsonArray;
+    }
+
+    public boolean getBoolean(int i, Boolean bool) {
+        Object obj = get(i);
+        return obj instanceof Boolean ? ((Boolean) obj).booleanValue() : bool.booleanValue();
+    }
+
+    public double getDouble(int i, double d) {
+        Object obj = get(i);
+        return obj instanceof Number ? ((Number) obj).doubleValue() : d;
+    }
+
+    public float getFloat(int i, float f) {
+        Object obj = get(i);
+        return obj instanceof Number ? ((Number) obj).floatValue() : f;
+    }
+
+    public int getInt(int i, int i2) {
+        Object obj = get(i);
+        return obj instanceof Number ? ((Number) obj).intValue() : i2;
+    }
+
+    public long getLong(int i, long j) {
+        Object obj = get(i);
+        return obj instanceof Number ? ((Number) obj).longValue() : j;
+    }
+
+    public Number getNumber(int i, Number number) {
+        Object obj = get(i);
+        return obj instanceof Number ? (Number) obj : number;
+    }
+
+    public JsonObject getObject(int i, JsonObject jsonObject) {
+        return get(i) instanceof JsonObject ? (JsonObject) get(i) : jsonObject;
+    }
+
+    public String getString(int i, String str) {
+        return get(i) instanceof String ? (String) get(i) : str;
+    }
+
+    public JsonArray(Collection<? extends Object> collection) {
+        super(collection);
+    }
+}

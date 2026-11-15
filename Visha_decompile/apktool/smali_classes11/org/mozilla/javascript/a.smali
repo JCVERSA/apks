@@ -1,0 +1,27 @@
+.class public Lorg/mozilla/javascript/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public a:Lorg/mozilla/javascript/MemberBox;
+
+.field public b:Lorg/mozilla/javascript/MemberBox;
+
+.field public c:Lorg/mozilla/javascript/NativeJavaMethod;
+
+
+# direct methods
+.method public constructor <init>(Lorg/mozilla/javascript/MemberBox;Lorg/mozilla/javascript/MemberBox;Lorg/mozilla/javascript/NativeJavaMethod;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lorg/mozilla/javascript/a;->a:Lorg/mozilla/javascript/MemberBox;
+
+    iput-object p2, p0, Lorg/mozilla/javascript/a;->b:Lorg/mozilla/javascript/MemberBox;
+
+    iput-object p3, p0, Lorg/mozilla/javascript/a;->c:Lorg/mozilla/javascript/NativeJavaMethod;
+
+    return-void
+.end method

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dp" android:paddingVertical="19.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:id="@id/tv_search_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+</LinearLayout>

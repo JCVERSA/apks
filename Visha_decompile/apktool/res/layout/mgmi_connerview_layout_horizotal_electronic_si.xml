@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.Electroniclayout android:layout_width="313.0dp" android:layout_height="78.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content" android:background="@drawable/mgmi_electronic_bg" android:layout_width="235.0dp" android:layout_height="58.0dp" android:layout_marginTop="20.0dp">
+        <FrameLayout android:id="@id/image_container" android:layout_width="58.0dp" android:layout_height="58.0dp" />
+        <TextView android:textSize="11.0sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="6.0dp" android:text="fadsfasfasdf" android:maxLines="1" android:layout_toRightOf="@id/image_container" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff4202" android:id="@id/message01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="20000" android:layout_below="@id/title" android:layout_alignLeft="@id/title" />
+        <TextView android:textSize="12.0sp" android:textColor="#5e5e5e" android:id="@id/message02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="6.0dp" android:text="29999" android:layout_toRightOf="@id/message01" android:layout_below="@id/title" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/detaiButton" android:background="@drawable/rectangle_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详情" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="6.0sp" android:textColor="@color/mgmi_color_888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginRight="2.0dp" android:text="@string/mgmi_player_ad" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/closeAdIcon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="6.0dp" android:src="@drawable/scheme_close" android:layout_toRightOf="@id/content" />
+</com.mgadplus.viewgroup.dynamicview.Electroniclayout>

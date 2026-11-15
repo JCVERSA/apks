@@ -1,0 +1,25 @@
+{
+  "sha256": "d69577e8af65fb4953cefa75b8fdec18b6b48e0c14a64cca6910ae98be9ba22a",
+  "bytes": 97807991,
+  "entries": 4789,
+  "dex_files": [
+    "classes.dex",
+    "classes10.dex",
+    "classes11.dex",
+    "classes12.dex",
+    "classes13.dex",
+    "classes14.dex",
+    "classes15.dex",
+    "classes16.dex",
+    "classes17.dex",
+    "classes18.dex",
+    "classes2.dex",
+    "classes3.dex",
+    "classes4.dex",
+    "classes5.dex",
+    "classes6.dex",
+    "classes7.dex",
+    "classes8.dex",
+    "classes9.dex"
+  ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/player_speed_choose_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/logo" android:layout_width="87.0dp" android:layout_height="19.0dp" android:src="@drawable/ic_visha_ott" />
+        <com.transsion.widgetslib.view.LoadingView android:id="@id/loading_view" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="18.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/os_candwhile_primary_color" android:gravity="center" android:id="@id/net_speed" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="147Kb/s" android:paddingHorizontal="22.0dp" android:paddingVertical="10.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/load_back" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="8.0dp" android:src="@drawable/ic_back_land_ott" android:scaleType="centerInside" android:layout_marginStart="22.0dp" />
+</FrameLayout>

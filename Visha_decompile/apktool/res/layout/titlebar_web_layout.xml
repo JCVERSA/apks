@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_bar" android:layout_width="match_parent" android:layout_height="54.0dp" android:paddingHorizontal="?screen_edge_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.widgetslib.widget.OSIconTextView android:gravity="center" android:id="@id/title_bar_back" android:text="@string/os_back" android:contentDescription="@string/talkback_back" android:layout_marginStart="6.0dp" app:os_icon_support_rtl="true" style="@style/OSIconTextViewStyle" />
+    <ImageView android:id="@id/iv_logo_title" android:visibility="gone" android:layout_width="92.16998dp" android:layout_height="20.0dp" android:src="@drawable/ic_brand_logo" android:layout_centerVertical="true" android:layout_marginStart="24.0dp" />
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="6.0dp">
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="@dimen/os_h1_font" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/title_bar_title" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" android:textDirection="locale" />
+    </RelativeLayout>
+    <com.transsion.widgetslib.widget.OSIconTextView android:textColor="@color/default_icon_color" android:gravity="center" android:layout_gravity="end" android:id="@id/iv_close_web" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="44.0dp" android:text="@string/os_close" android:layout_marginEnd="6.0dp" />
+</LinearLayout>

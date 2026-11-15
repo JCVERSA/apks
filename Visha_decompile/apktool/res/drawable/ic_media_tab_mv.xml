@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="18.0dp" android:width="18.0dp" android:viewportWidth="18.0" android:viewportHeight="18.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/custom_img_tab_img_color" android:pathData="M14.79,3C15.458,3 16,3.56 16,4.25L16,13.75C16,14.44 15.458,15 14.79,15L2.21,15C1.542,15 1,14.44 1,13.75L1,4.25C1,3.56 1.542,3 2.21,3L14.79,3ZM14.5,4.385L2.5,4.385L2.5,13.615L14.5,13.615L14.5,4.385ZM10.918,9.368C10.862,9.465 10.782,9.545 10.685,9.6L7.32,11.523C7.02,11.695 6.638,11.591 6.467,11.291C6.413,11.196 6.385,11.09 6.385,10.981V7.135C6.385,6.79 6.665,6.51 7.01,6.51C7.119,6.51 7.225,6.538 7.32,6.592L10.685,8.515C10.985,8.686 11.089,9.068 10.918,9.368ZM9.115,9.058L7.634,8.212V9.904L9.115,9.058Z" android:fillType="evenOdd" />
+</vector>

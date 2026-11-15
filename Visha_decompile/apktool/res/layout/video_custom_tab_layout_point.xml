@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.widgets.CustomTabLayoutNew android:id="@id/tab_layout" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginStart="14.0dp" app:customTabSelectedSize="16.0dp" app:customTabTextColor="@color/custom_img_tab_text_color" app:customTabUnSelectedSize="18.0dp" app:showBadgeViewRedPoint="true" style="@style/customTabLayout" />
+</LinearLayout>

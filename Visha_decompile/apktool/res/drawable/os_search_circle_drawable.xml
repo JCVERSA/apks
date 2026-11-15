@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/os_space250" />
+            <solid android:color="@color/os_searchbar_input_area_color" />
+        </shape>
+    </item>
+</selector>

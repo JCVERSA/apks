@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ad_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/creative_img" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <com.mgadplus.brower.ImgoAdWebView android:id="@id/creative_webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/creative_close" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp" android:src="@drawable/mgmi_icon_corner_float_close" />
+    </LinearLayout>
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

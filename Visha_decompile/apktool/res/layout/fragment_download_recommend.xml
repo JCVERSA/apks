@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/stick_header_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.transsion.widgets.CustomSwipeRefreshLayout android:id="@id/pull_refresh_layout" android:scrollbars="vertical" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="always">
+            <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ViewStub android:id="@id/search_bar_stub" android:layout="@layout/search_title" android:inflatedId="@id/search_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginHorizontal="22.0dp" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_search" android:background="@drawable/os_search_circle_drawable" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="@dimen/dp8" android:layout_marginHorizontal="20.0dp">
+                        <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_actionbar_search" android:layout_marginStart="12.0dp" />
+                        <ViewStub android:id="@id/avf_view_stub" android:layout="@layout/download_recommend_flipper" android:inflatedId="@id/avf_view" android:layout_width="match_parent" android:layout_height="40.0dp" />
+                    </LinearLayout>
+                    <include android:id="@id/web_pop_up_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp5" android:layout_marginHorizontal="@dimen/dp22" layout="@layout/web_pop_up_layout_new" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_recommend" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp10" android:nestedScrollingEnabled="false" />
+                    <View android:id="@id/diver_mediaLibrary" android:background="@color/divler_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginHorizontal="@dimen/os_space300" android:layout_marginVertical="@dimen/dp12" />
+                    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_mediaLibrary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.transsion.widgets.CustomSwipeRefreshLayout>
+    </RelativeLayout>
+</FrameLayout>

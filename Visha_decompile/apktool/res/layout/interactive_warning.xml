@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/interact_warning" android:background="@drawable/interact_warning" android:layout_width="70.0dp" android:layout_height="70.0dp" android:text="别着急\n   有情况！" android:shadowColor="@color/mgmi_color_000000" android:shadowDx="2.0" android:shadowDy="2.0" android:layout_centerInParent="true" />
+</RelativeLayout>

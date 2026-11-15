@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/top_history_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_short_videos_title" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:paddingStart="22.0dp">
+        <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/os_primary_text_dark" android:gravity="center_vertical" android:id="@id/tv_short_videos_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/visha_short_video" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_short_videos_arrow" android:src="@drawable/ic_icon_medium_size_list_next" android:importantForAccessibility="no" android:layout_marginEnd="10.0dp" style="@style/videoButton" />
+    </LinearLayout>
+    <com.transsion.playercommon.widgets.VideoShortRecyclerView android:orientation="horizontal" android:id="@id/rv_short_videos" android:visibility="visible" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="22.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_long_videos_title" android:layout_width="match_parent" android:layout_height="@dimen/video_top_long_title_height" android:importantForAccessibility="yes" android:paddingStart="22.0dp">
+        <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/os_primary_text_dark" android:gravity="center_vertical" android:id="@id/tv_long_videos_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/visha_long_video" android:includeFontPadding="false" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

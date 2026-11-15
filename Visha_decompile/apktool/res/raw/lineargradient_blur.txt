@@ -1,0 +1,46 @@
+uniform shader inputImage;
+uniform float2 u_blurDirection;
+uniform float u_maxRadius;
+uniform float2 u_gradientStart;
+uniform float2 u_gradientEnd;
+uniform float2 u_size;
+
+const int MAX_SAMPLE_COUNT = 35;
+
+half4 main(float2 coord) {
+    float2 gradDir = u_gradientEnd - u_gradientStart;
+    float lengthSq = dot(gradDir, gradDir);
+    float t = clamp(dot(coord - u_gradientStart, gradDir) / max(lengthSq, 1e-5), 0.0, 1.0);
+
+    // Ease-in-out first, then slow down the tail growth near the end.
+    // This avoids a sudden perceived "boldening" at the gradient end.
+    float easedFactor = smoothstep(0.0, 1.0, t);
+    float tailDamping = 1.0 - 0.18 * smoothstep(0.78, 1.0, t);
+    float radius = easedFactor * tailDamping * (u_maxRadius * 0.88);
+    float sigma = max(radius * 0.5, 1e-3);
+    float invTwoSigmaSq = 1.0 / (2.0 * sigma * sigma);
+
+    int sampleCount = int(min(ceil(radius * 2.5), float(MAX_SAMPLE_COUNT)));
+
+    half4 color = inputImage.eval(coord);
+    float weightSum = 1.0;
+
+    float ratio = exp(-12.0 * invTwoSigmaSq);      // i=2 时的 r(2)
+    float ratioMul = exp(-8.0 * invTwoSigmaSq);    // 相邻 r 的公比
+    float weight = exp(-4.0 * invTwoSigmaSq);      // w(2)
+    float2 maxCoord = u_size - float2(1.0);
+
+    for (int i = 2; i <= MAX_SAMPLE_COUNT; i += 2) {
+        if (i > sampleCount) break;
+        float fi = float(i);
+        float2 offset = u_blurDirection * fi;
+        float2 posPos = clamp(coord + offset, float2(0.0), maxCoord);
+        float2 posNeg = clamp(coord - offset, float2(0.0), maxCoord);
+        color += inputImage.eval(posPos) * weight;
+        color += inputImage.eval(posNeg) * weight;
+        weightSum += 2.0 * weight;
+        weight *= ratio;
+        ratio *= ratioMul;
+    }
+    return color / weightSum;
+}

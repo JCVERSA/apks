@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/titlebar_layout" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="24.0dp">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="55.0dp" android:layout_height="55.0dp" android:layout_marginTop="5.0dp" android:src="@drawable/icon_whatapp_logo" />
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/fl_link" android:background="@drawable/shape_link_whatapp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginHorizontal="24.0dp" android:paddingHorizontal="36.0dp">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?os_platform_basic_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="36.0dp" android:text="@string/wahtsapp_link" android:lines="1" />
+            </FrameLayout>
+            <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="18.0sp" android:textColor="@color/os_text_secondary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dp" android:text="@string/wahtsapp_instruct" android:lines="1" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp">
+                <ImageView android:id="@id/iv_s1" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginTop="3.0dp" android:src="@drawable/ic_step1" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="14.0sp" android:textColor="@color/os_text_primary_color" android:id="@id/tv_s1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="@id/iv_s1" app:layout_constraintStart_toEndOf="@id/iv_s1" app:layout_constraintTop_toTopOf="@id/iv_s1" />
+                <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/tv_content1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/wahtsapp_step1_content" android:breakStrategy="simple" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/tv_s1" app:layout_constraintTop_toBottomOf="@id/tv_s1" />
+                <ImageView android:layout_width="266.0dp" android:layout_height="167.0dp" android:layout_marginTop="6.0dp" android:src="@drawable/whats_step1_n" android:scaleType="fitXY" app:layout_constraintStart_toStartOf="@id/tv_content1" app:layout_constraintTop_toBottomOf="@id/tv_content1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <ImageView android:id="@id/iv_s2" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginTop="3.0dp" android:src="@drawable/ic_step2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="14.0sp" android:textColor="@color/os_text_primary_color" android:id="@id/tv_s2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="@id/iv_s2" app:layout_constraintStart_toEndOf="@id/iv_s2" app:layout_constraintTop_toTopOf="@id/iv_s2" />
+                <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/tv_content2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/wahtsapp_step2_content" android:breakStrategy="simple" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/tv_s2" app:layout_constraintTop_toBottomOf="@id/tv_s2" />
+                <ImageView android:layout_width="262.0dp" android:layout_height="254.0dp" android:layout_marginTop="6.0dp" android:src="@drawable/whats_step2_n" android:scaleType="fitXY" app:layout_constraintStart_toStartOf="@id/tv_content2" app:layout_constraintTop_toBottomOf="@id/tv_content2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

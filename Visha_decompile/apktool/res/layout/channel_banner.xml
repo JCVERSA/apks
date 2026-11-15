@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhpan.bannerview.BannerViewPager android:id="@id/banner" android:layout_width="match_parent" android:layout_height="415.0dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:bvp_indicator_visibility="gone" app:bvp_interval="5000" app:bvp_scroll_duration="1000" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/banner_dots" android:layout_width="wrap_content" android:layout_height="6.0dp" android:layout_marginBottom="29.0dp" android:layout_alignBottom="@id/banner" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/live_mute" android:focusable="true" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginBottom="55.0dp" android:src="@drawable/selector_mute" android:scaleType="centerInside" android:layout_alignBottom="@id/banner" android:layout_marginEnd="14.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

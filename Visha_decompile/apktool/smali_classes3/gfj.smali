@@ -1,0 +1,186 @@
+.class public final Lgfj;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lffj;
+
+
+# static fields
+.field public static final a:Lq1j;
+
+.field public static final b:Lq1j;
+
+.field public static final c:Lq1j;
+
+.field public static final d:Lq1j;
+
+.field public static final e:Lq1j;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    new-instance v0, Ly0j;
+
+    const-string v1, "com.google.android.gms.measurement"
+
+    invoke-static {v1}, Lc0j;->a(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ly0j;-><init>(Landroid/net/Uri;)V
+
+    invoke-virtual {v0}, Ly0j;->a()Ly0j;
+
+    move-result-object v0
+
+    const-string v1, "measurement.test.boolean_flag"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Ly0j;->f(Ljava/lang/String;Z)Lq1j;
+
+    move-result-object v1
+
+    sput-object v1, Lgfj;->a:Lq1j;
+
+    const-string v1, "measurement.test.double_flag"
+
+    const-wide/high16 v2, -0x3ff8000000000000L    # -3.0
+
+    invoke-virtual {v0, v1, v2, v3}, Ly0j;->c(Ljava/lang/String;D)Lq1j;
+
+    move-result-object v1
+
+    sput-object v1, Lgfj;->b:Lq1j;
+
+    const-string v1, "measurement.test.int_flag"
+
+    const-wide/16 v2, -0x2
+
+    invoke-virtual {v0, v1, v2, v3}, Ly0j;->d(Ljava/lang/String;J)Lq1j;
+
+    move-result-object v1
+
+    sput-object v1, Lgfj;->c:Lq1j;
+
+    const-string v1, "measurement.test.long_flag"
+
+    const-wide/16 v2, -0x1
+
+    invoke-virtual {v0, v1, v2, v3}, Ly0j;->d(Ljava/lang/String;J)Lq1j;
+
+    move-result-object v1
+
+    sput-object v1, Lgfj;->d:Lq1j;
+
+    const-string v1, "measurement.test.string_flag"
+
+    const-string v2, "---"
+
+    invoke-virtual {v0, v1, v2}, Ly0j;->e(Ljava/lang/String;Ljava/lang/String;)Lq1j;
+
+    move-result-object v0
+
+    sput-object v0, Lgfj;->e:Lq1j;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zza()D
+    .locals 2
+
+    sget-object p0, Lgfj;->b:Lq1j;
+
+    invoke-virtual {p0}, Lq1j;->b()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Double;
+
+    invoke-virtual {p0}, Ljava/lang/Double;->doubleValue()D
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public final zzb()J
+    .locals 2
+
+    sget-object p0, Lgfj;->c:Lq1j;
+
+    invoke-virtual {p0}, Lq1j;->b()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Long;
+
+    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public final zzc()J
+    .locals 2
+
+    sget-object p0, Lgfj;->d:Lq1j;
+
+    invoke-virtual {p0}, Lq1j;->b()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Long;
+
+    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public final zzd()Ljava/lang/String;
+    .locals 0
+
+    sget-object p0, Lgfj;->e:Lq1j;
+
+    invoke-virtual {p0}, Lq1j;->b()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public final zze()Z
+    .locals 0
+
+    sget-object p0, Lgfj;->a:Lq1j;
+
+    invoke-virtual {p0}, Lq1j;->b()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    return p0
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_switch_ai_subtitle" android:padding="2.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="92.0dp" android:minHeight="30.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_ai" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_text_ai" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="2.0dp" />
+    <TextView android:textSize="12.0dp" android:textColor="#73ffffff" android:gravity="center" android:id="@id/tv_local" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_text_local" android:singleLine="true" android:layout_weight="1.0" />
+</LinearLayout>

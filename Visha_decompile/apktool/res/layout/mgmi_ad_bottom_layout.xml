@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_text" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/mgmi_font_13" android:textStyle="bold" android:textColor="@color/mg_tx_color_black" android:ellipsize="end" android:id="@id/tvTitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:shadowColor="@color/mgmi_color_000000_66" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentLeft="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <TextView android:textSize="@dimen/mgmi_font_11" android:textColor="@color/mg_detial_tx_color" android:ellipsize="end" android:id="@id/subTvTitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="20" android:shadowColor="@color/mgmi_color_000000_66" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/ll_left_bottom" android:background="@drawable/mgmi_ad_more" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_volume" android:background="@drawable/media_play_vertical_bg" android:layout_width="36.0dp" android:layout_height="wrap_content" android:paddingVertical="15.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/volume_iv_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play_volume2" />
+    <ImageView android:id="@id/volume_iv_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="8.0dp" android:src="@drawable/video_play_volume2" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="@dimen/video_volume_seekbar_height" android:layout_marginBottom="14.0dp">
+        <com.transsion.widgetslib.widget.seekbar.OSSeekbar android:layout_gravity="center_horizontal" android:id="@id/seekbar_vertical_right" android:layout_width="@dimen/video_volume_seekbar_height" android:layout_height="@dimen/video_volume_seekbar_height" android:maxHeight="9.0dp" android:max="100" android:minHeight="9.0dp" android:rotation="270.0" android:importantForAccessibility="no" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:osSeekbarNoThumb="true" app:osSeekbarOnlyHiOSStyle="true" app:osSeekbarSecondTrackColor="@color/white" app:osSeekbarTrackColor="@color/os_color_white4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="12.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/volume_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="24.0dp" android:lines="1" android:includeFontPadding="false" />
+    <ImageView android:id="@id/right_volume_iv" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_public_volume" />
+</LinearLayout>

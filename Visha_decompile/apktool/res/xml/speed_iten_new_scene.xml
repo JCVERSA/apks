@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <ConstraintSet android:id="@id/start">
+        <Constraint android:id="@id/speed_touch_view1" android:layout_width="match_parent" android:layout_height="150.0dp" android:importantForAccessibility="no" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:orientation="horizontal" android:id="@id/speed_list_view" android:layout_width="wrap_content" android:layout_height="wrap_content" motion:layout_constraintBottom_toTopOf="@id/seekView" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toBottomOf="@id/speed_touch_view1" motion:layout_constraintVertical_chainStyle="packed" />
+        <Constraint android:id="@id/seekView" android:layout_width="328.0dp" android:layout_height="107.0dp" android:layout_marginTop="60.0dp" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toBottomOf="@id/speed_list_view" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/land">
+        <Constraint android:id="@id/speed_touch_view1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="150.0dp" android:importantForAccessibility="no" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:orientation="horizontal" android:id="@id/speed_list_view" android:layout_width="wrap_content" android:layout_height="wrap_content" motion:layout_constraintBottom_toTopOf="@id/seekView" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintVertical_chainStyle="packed" />
+        <Constraint android:id="@id/seekView" android:layout_width="328.0dp" android:layout_height="107.0dp" android:layout_marginTop="60.0dp" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toBottomOf="@id/speed_list_view" />
+    </ConstraintSet>
+</MotionScene>

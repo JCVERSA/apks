@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="12.0dp" app:cardCornerRadius="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mgtv.ssp.playdetail.SspRationFramelayout android:orientation="vertical" android:id="@id/player_container" android:background="#000000" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <com.mgtv.ssp.widget.CoverView android:id="@id/prepare_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.mgtv.ssp.playdetail.SspRationFramelayout>
+        <RelativeLayout android:id="@id/layout_bottom" android:background="@color/mg_to_detial_bottom_bg" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/player_container">
+            <androidx.cardview.widget.CardView android:id="@id/image_icon" android:layout_width="29.0dp" android:layout_height="40.0dp" android:layout_centerVertical="true" app:cardCornerRadius="10.0dp" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="false">
+                <ImageView android:id="@id/image_small" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dp" android:layout_marginRight="10.0dp" android:layout_toLeftOf="@id/to_detail" android:layout_toRightOf="@id/image_icon" android:layout_centerVertical="true">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/mg_tx_color_black" android:ellipsize="end" android:id="@id/title_tx_frist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.5dp" android:text="" android:maxLines="1" />
+                <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/mg_detial_tx_color" android:ellipsize="end" android:id="@id/title_tx_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dp" android:text="" android:maxLines="1" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/three_dd" android:background="@drawable/icon_mg_vod_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textColor="#ffff4500" android:ellipsize="end" android:gravity="center" android:id="@id/to_detail" android:background="@drawable/to_detail_bg" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dp" android:layout_marginRight="11.0dp" android:text="@string/look_main" android:layout_toLeftOf="@id/three_dd" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

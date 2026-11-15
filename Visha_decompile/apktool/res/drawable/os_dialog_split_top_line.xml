@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:color="@color/os_dialog_divider_color"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="top" android:height="1.0px">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/os_dialog_divider_color" />
+        </shape>
+    </item>
+</layer-list>

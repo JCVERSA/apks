@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?OsBgPrimary" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/title_bar" android:layout="@layout/titlebar_layout" android:layout_width="match_parent" android:layout_height="56.0dp" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/top_bar" android:background="?OsBgPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <FrameLayout android:orientation="vertical" android:id="@id/fl_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="30.0dp" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_type" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/topic_tag_empty_shimmer_view" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/ll_filter" android:background="?OsBgPrimary" android:layout_width="match_parent" android:layout_height="30.0dp">
+                    <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_tag_filter" />
+                    <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_icon_down_drag" />
+                </LinearLayout>
+            </FrameLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.transsion.widgets.CustomSwipeRefreshLayout android:id="@id/topic_pull_damping_layout" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="always" app:layout_anchorGravity="center_vertical" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_media" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="13.0dp" />
+        </com.transsion.widgets.CustomSwipeRefreshLayout>
+        <ViewStub android:id="@id/online_video_empty_view" android:layout="@layout/online_status_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

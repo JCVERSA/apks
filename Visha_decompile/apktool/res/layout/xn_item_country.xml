@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content" android:background="@drawable/os_press_primary_bg" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60.0dp" android:paddingStart="@dimen/xn_item_padding_start" android:paddingEnd="@dimen/xn_item_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/radio" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <TextView android:textAppearance="@style/font_black_15" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="232.0dp" android:minHeight="60.0dp" android:maxLines="2" android:singleLine="false" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="@style/font_black_15" android:id="@id/code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_8" android:layout_marginEnd="2.0dp" android:layout_toStartOf="@id/radio" android:layout_toEndOf="@id/name" />
+</RelativeLayout>

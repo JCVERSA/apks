@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="area">
+        <item>@string/area_cn</item>
+        <item>@string/area_en</item>
+        <item>@string/area_hk_tw_mo</item>
+        <item>@string/area_indonesia</item>
+        <item>@string/area_malaysia</item>
+        <item>@string/area_thailand</item>
+        <item>@string/area_vietnam</item>
+        <item>@string/area_self</item>
+    </string-array>
+    <string-array name="areas">
+        <item>NONE</item>
+        <item>INDONESIA</item>
+        <item>Philippines</item>
+        <item>Myanmar</item>
+        <item>Thailand</item>
+        <item>VIET NAM</item>
+        <item>Malaysia</item>
+        <item>Nigeria</item>
+        <item>Ghana</item>
+        <item>COTE DIVOIRE</item>
+        <item>Kenya</item>
+        <item>China</item>
+        <item>SINGAPORE</item>
+        <item>MACAU</item>
+        <item>HONG KONG</item>
+        <item>Iraq</item>
+        <item>Egypt</item>
+        <item>Lebanon</item>
+        <item>Jordan</item>
+        <item>Saudi Arabia</item>
+        <item>Tunisia</item>
+        <item>UAE</item>
+        <item>PAKISTAN</item>
+        <item>BANGLADESH</item>
+        <item>RUSSIAN FEDERATION</item>
+        <item>MOROCCO</item>
+        <item>INDIA</item>
+        <item>UGANDA</item>
+        <item>TANZANIA</item>
+    </string-array>
+    <integer-array name="areas_code">
+        <item>-1</item>
+        <item>102</item>
+        <item>170</item>
+        <item>147</item>
+        <item>210</item>
+        <item>231</item>
+        <item>130</item>
+        <item>157</item>
+        <item>85</item>
+        <item>56</item>
+        <item>112</item>
+        <item>44</item>
+        <item>192</item>
+        <item>46</item>
+        <item>45</item>
+        <item>104</item>
+        <item>67</item>
+        <item>120</item>
+        <item>110</item>
+        <item>188</item>
+        <item>215</item>
+        <item>222</item>
+        <item>163</item>
+        <item>18</item>
+        <item>178</item>
+        <item>145</item>
+        <item>101</item>
+        <item>220</item>
+        <item>209</item>
+    </integer-array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="audio_tab_list">
+        <item>@string/visha_all</item>
+        <item>@string/playlists</item>
+        <item>@string/folders</item>
+        <item>@string/visha_audio_mv_title</item>
+        <item>@string/albums</item>
+        <item>@string/artists</item>
+        <item>@string/audio_most_likes</item>
+        <item>@string/recently_played</item>
+    </string-array>
+    <string-array name="band_array">
+        <item>@string/eq_band_preset1</item>
+        <item>@string/eq_band_preset2</item>
+        <item>@string/eq_band_preset11</item>
+        <item>@string/eq_band_preset10</item>
+        <item>@string/eq_band_preset8</item>
+        <item>@string/eq_band_preset3</item>
+        <item>@string/eq_band_preset4</item>
+        <item>@string/eq_band_preset5</item>
+        <item>@string/eq_band_preset9</item>
+        <item>@string/eq_band_preset7</item>
+        <item>@string/eq_band_preset6</item>
+    </string-array>
+    <string-array name="band_video_array">
+        <item>@string/eq_band_preset1</item>
+        <item>@string/eq_band_preset2</item>
+        <item>@string/eq_band_preset11</item>
+        <item>@string/eq_band_preset10</item>
+        <item>@string/eq_band_preset8</item>
+        <item>@string/eq_band_preset3</item>
+        <item>@string/eq_band_preset4</item>
+        <item>@string/eq_band_preset5</item>
+        <item>@string/eq_band_preset9</item>
+        <item>@string/eq_band_preset7</item>
+        <item>@string/eq_band_preset6</item>
+    </string-array>
+    <integer-array name="batterymeter_color_levels">
+        <item>15</item>
+        <item>100</item>
+    </integer-array>
+    <array name="batterymeter_color_values">
+        <item>#cc0000</item>
+        <item>@android:color/white</item>
+    </array>
+    <string-array name="break_point_settings">
+        <item>@string/continue_with_toast</item>
+        <item>@string/continue_without_toast</item>
+        <item>@string/no_continue</item>
+    </string-array>
+    <string-array name="country_code">
+        <item>CN</item>
+        <item>ID</item>
+        <item>PH</item>
+        <item>MM</item>
+        <item>TH</item>
+        <item>VN</item>
+        <item>MY</item>
+        <item>NG</item>
+        <item>GH</item>
+        <item>BE</item>
+        <item>KE</item>
+        <item>CN</item>
+        <item>SG</item>
+        <item>MO</item>
+        <item>HK</item>
+        <item>IQ</item>
+        <item>EG</item>
+        <item>LB</item>
+        <item>JO</item>
+        <item>SA</item>
+        <item>TN</item>
+        <item>AE</item>
+        <item>PK</item>
+        <item>BD</item>
+        <item>RU</item>
+        <item>MA</item>
+        <item>IN</item>
+        <item>UG</item>
+        <item>TZ</item>
+    </string-array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="default_theme">
+        <item>@string/default_skin</item>
+        <item>@string/local_skin_1</item>
+        <item>@string/local_skin_2</item>
+        <item>@string/local_skin_3</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="dev_environment">
+        <item>Pre environment</item>
+        <item>Host environment</item>
+    </string-array>
+    <string-array name="dev_gslb_support">
+        <item>Close</item>
+        <item>Open</item>
+    </string-array>
+    <string-array name="dev_push_environment">
+        <item>Push Host Env</item>
+        <item>Push Test Env</item>
+    </string-array>
+    <string-array name="dolby_band_array">
+        <item>@string/eq_band_preset2</item>
+        <item>@string/eq_band_preset11</item>
+        <item>@string/eq_band_preset10</item>
+        <item>@string/eq_band_preset8</item>
+        <item>@string/eq_band_preset3</item>
+        <item>@string/eq_band_preset4</item>
+        <item>@string/eq_band_preset5</item>
+        <item>@string/eq_band_preset9</item>
+        <item>@string/eq_band_preset7</item>
+        <item>@string/eq_band_preset6</item>
+    </string-array>
+    <string-array name="dolby_preset_array">
+        <item>@string/eq_reverb1</item>
+        <item>@string/eq_reverb2</item>
+        <item>@string/eq_reverb3</item>
+        <item>@string/eq_reverb4</item>
+        <item>@string/eq_reverb5</item>
+        <item>@string/eq_reverb6</item>
+        <item>@string/eq_reverb7</item>
+    </string-array>
+    <string-array name="download_main_tabs">
+        <item>@string/download_main_tab_recommend</item>
+        <item>@string/download_main_tab_bookmark</item>
+    </string-array>
+    <string-array name="download_menu">
+        <item>@string/photo_video_loaded</item>
+        <item>@string/mv_download</item>
+    </string-array>
+    <string-array name="download_simul">
+        <item>@string/download_simul_1</item>
+        <item>@string/download_simul_2</item>
+        <item>@string/download_simul_3</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="file_trans_tab_list">
+        <item>@string/video</item>
+        <item>@string/music</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <integer-array name="hour">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </integer-array>
+    <string-array name="image_tabs">
+        <item>@string/image_all</item>
+        <item>@string/image_gallery</item>
+    </string-array>
+    <string-array name="kt_menu">
+        <item>@string/visha_uploaded</item>
+        <item>@string/go_download_manager</item>
+    </string-array>
+    <string-array name="language_entries">
+        <item>Shqip</item>
+        <item>العربية</item>
+        <item>বাংলা</item>
+        <item>Bosanski (latinica)</item>
+        <item>Български</item>
+        <item>မြန်မာ</item>
+        <item>中文</item>
+        <item>Croatian</item>
+        <item>Čeština</item>
+        <item>Dansk</item>
+        <item>Nederlands</item>
+        <item>English</item>
+        <item>Eesti</item>
+        <item>Filipino(Tagalog)</item>
+        <item>Suomi</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Ελληνικά</item>
+        <item>עִבְרִית</item>
+        <item>हिंदी</item>
+        <item>Islenska</item>
+        <item>Indonesia</item>
+        <item>Italiano</item>
+        <item>日本語</item>
+        <item>қазақ тілі</item>
+        <item>ខ្មែរ</item>
+        <item>한국인</item>
+        <item>Latviesu</item>
+        <item>Lietuviu</item>
+        <item>Letzebuergesch</item>
+        <item>Bahasa Melayu</item>
+        <item>മലയാളം</item>
+        <item>Norsk bokmal</item>
+        <item>فارسی</item>
+        <item>Polski</item>
+        <item>português</item>
+        <item>Română</item>
+        <item>русский</item>
+        <item>සිංහල</item>
+        <item>Slovenčina</item>
+        <item>Español</item>
+        <item>Kiswahili</item>
+        <item>Svenska</item>
+        <item>தமிழ்</item>
+        <item>తెలుగు</item>
+        <item>ไทย</item>
+        <item>Türkçe</item>
+        <item>українська</item>
+        <item>اردو</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>alb</item>
+        <item>ara</item>
+        <item>ben</item>
+        <item>bos</item>
+        <item>bul</item>
+        <item>bur</item>
+        <item>chi</item>
+        <item>hrv</item>
+        <item>cze</item>
+        <item>dan</item>
+        <item>dut</item>
+        <item>eng</item>
+        <item>est</item>
+        <item>tgl</item>
+        <item>fin</item>
+        <item>fre</item>
+        <item>ger</item>
+        <item>ell</item>
+        <item>heb</item>
+        <item>hin</item>
+        <item>ice</item>
+        <item>ind</item>
+        <item>ita</item>
+        <item>jpn</item>
+        <item>kaz</item>
+        <item>khm</item>
+        <item>kor</item>
+        <item>lav</item>
+        <item>lit</item>
+        <item>ltz</item>
+        <item>may</item>
+        <item>mal</item>
+        <item>nor</item>
+        <item>per</item>
+        <item>pol</item>
+        <item>por</item>
+        <item>rum</item>
+        <item>rus</item>
+        <item>sin</item>
+        <item>slo</item>
+        <item>spa</item>
+        <item>swa</item>
+        <item>swe</item>
+        <item>tam</item>
+        <item>tel</item>
+        <item>tha</item>
+        <item>tur</item>
+        <item>ukr</item>
+        <item>urd</item>
+        <item>vie</item>
+    </string-array>
+    <string-array name="location_array">
+        <item>@string/subtitle_customize_location_center</item>
+        <item>@string/subtitle_customize_location_top</item>
+        <item>@string/subtitle_customize_location_bottom</item>
+    </string-array>
+    <integer-array name="minute">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </integer-array>
+    <string-array name="mv_main_tab">
+        <item>@string/photo_video_template</item>
+        <item>@string/photo_video_loaded</item>
+    </string-array>
+    <string-array name="picture_chooser">
+        <item>@string/picture_selector_camera</item>
+        <item>@string/image_select</item>
+    </string-array>
+    <string-array name="piece_size_entries">
+        <item>@string/piece_size_entries_0</item>
+        <item>@string/piece_size_entries_1</item>
+        <item>@string/piece_size_entries_2</item>
+        <item>@string/piece_size_entries_3</item>
+        <item>@string/piece_size_entries_4</item>
+        <item>@string/piece_size_entries_5</item>
+        <item>@string/piece_size_entries_6</item>
+        <item>@string/piece_size_entries_7</item>
+        <item>@string/piece_size_entries_8</item>
+        <item>@string/piece_size_entries_9</item>
+        <item>@string/piece_size_entries_10</item>
+        <item>@string/piece_size_entries_11</item>
+        <item>@string/piece_size_entries_12</item>
+    </string-array>
+    <string-array name="pref_enc_mode_entries_value">
+        <item>@string/pref_enc_mode_prefer_value</item>
+        <item>@string/pref_enc_mode_require_value</item>
+        <item>@string/pref_enc_mode_disable_value</item>
+    </string-array>
+    <string-array name="pref_feed_keep_items_time_entry_values">
+        <item>86400000</item>
+        <item>172800000</item>
+        <item>345600000</item>
+        <item>604800000</item>
+        <item>1209600000</item>
+        <item>2592000000</item>
+        <item>5270400000</item>
+        <item>7862400000</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="pref_feed_refresh_intervals_values">
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>7200000</item>
+        <item>21600000</item>
+        <item>43200000</item>
+        <item>86400000</item>
+    </string-array>
+    <string-array name="pref_foreground_notify_sorting_entries_value">
+        <item>@string/pref_foreground_notify_sorting_name_asc_value</item>
+        <item>@string/pref_foreground_notify_sorting_name_desc_value</item>
+        <item>@string/pref_foreground_notify_sorting_date_added_asc_value</item>
+        <item>@string/pref_foreground_notify_sorting_date_added_desc_value</item>
+        <item>@string/pref_foreground_notify_sorting_size_asc_value</item>
+        <item>@string/pref_foreground_notify_sorting_size_desc_value</item>
+        <item>@string/pref_foreground_notify_sorting_progress_asc_value</item>
+        <item>@string/pref_foreground_notify_sorting_progress_desc_value</item>
+        <item>@string/pref_foreground_notify_sorting_eta_asc_value</item>
+        <item>@string/pref_foreground_notify_sorting_eta_desc_value</item>
+        <item>@string/pref_foreground_notify_sorting_peers_asc_value</item>
+        <item>@string/pref_foreground_notify_sorting_peers_desc_value</item>
+        <item>@string/pref_foreground_notify_sorting_no_sorting_value</item>
+    </string-array>
+    <string-array name="pref_foreground_notify_status_filter_entries_value">
+        <item>@string/pref_foreground_notify_status_all_value</item>
+        <item>@string/pref_foreground_notify_status_downloading_value</item>
+        <item>@string/pref_foreground_notify_status_downloaded_value</item>
+        <item>@string/pref_foreground_notify_status_downloading_metadata_value</item>
+        <item>@string/pref_foreground_notify_status_error_value</item>
+    </string-array>
+    <string-array name="pref_proxy_type_entries_value">
+        <item>@string/pref_proxy_type_none_value</item>
+        <item>@string/pref_proxy_type_socks4_value</item>
+        <item>@string/pref_proxy_type_socks5_value</item>
+        <item>@string/pref_proxy_type_http_value</item>
+    </string-array>
+    <string-array name="pref_theme_entries">
+        <item>@string/pref_theme_entries_0</item>
+        <item>@string/pref_theme_entries_1</item>
+        <item>@string/pref_theme_entries_2</item>
+    </string-array>
+    <string-array name="pref_theme_entries_value">
+        <item>@string/pref_theme_light_value</item>
+        <item>@string/pref_theme_dark_value</item>
+        <item>@string/pref_theme_black_value</item>
+    </string-array>
+    <string-array name="preset_array">
+        <item>@string/eq_reverb1</item>
+        <item>@string/eq_reverb2</item>
+        <item>@string/eq_reverb3</item>
+        <item>@string/eq_reverb4</item>
+        <item>@string/eq_reverb5</item>
+        <item>@string/eq_reverb6</item>
+        <item>@string/eq_reverb7</item>
+    </string-array>
+    <string-array name="preset_video_array">
+        <item>@string/eq_reverb1</item>
+        <item>@string/eq_reverb2</item>
+        <item>@string/eq_reverb3</item>
+        <item>@string/eq_reverb4</item>
+        <item>@string/eq_reverb5</item>
+        <item>@string/eq_reverb6</item>
+        <item>@string/eq_reverb7</item>
+    </string-array>
+    <string-array name="standard_language_values">
+        <item>sq</item>
+        <item>ar</item>
+        <item>bn</item>
+        <item>bs</item>
+        <item>bg</item>
+        <item>my</item>
+        <item>zh</item>
+        <item>hr</item>
+        <item>cs</item>
+        <item>da</item>
+        <item>nl</item>
+        <item>en</item>
+        <item>et</item>
+        <item>fil</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>el</item>
+        <item>he</item>
+        <item>hi</item>
+        <item>is</item>
+        <item>in</item>
+        <item>ita</item>
+        <item>ja</item>
+        <item>kk</item>
+        <item>km</item>
+        <item>ko</item>
+        <item>lv</item>
+        <item>lt</item>
+        <item>lb</item>
+        <item>ms</item>
+        <item>ml</item>
+        <item>no</item>
+        <item>fa</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>si</item>
+        <item>sl</item>
+        <item>es</item>
+        <item>sw</item>
+        <item>sv</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>vi</item>
+    </string-array>
+    <string-array name="text_alignment_array">
+        <item>@string/subtitle_customize_alignment_center</item>
+        <item>@string/subtitle_customize_alignment_left</item>
+        <item>@string/subtitle_customize_alignment_right</item>
+    </string-array>
+    <string-array name="video_convert_menu">
+        <item>@string/video_converted</item>
+        <item>@string/video_converting</item>
+    </string-array>
+    <string-array name="video_tab_list">
+        <item>@string/visha_all</item>
+        <item>@string/playlists</item>
+        <item>@string/folders</item>
+        <item>@string/visha_short_video</item>
+        <item>@string/whatsapp</item>
+    </string-array>
+    <string-array name="vip_environment">
+        <item>no vip version</item>
+        <item>vip version</item>
+    </string-array>
+    <string-array name="whatsapp_tabs">
+        <item>@string/tab_all</item>
+        <item>@string/video</item>
+        <item>@string/wahtsapp_image</item>
+    </string-array>
+</resources>

@@ -1,0 +1,33 @@
+package defpackage;
+
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.widget.ImageView;
+
+public final class pp4 {
+    public static final pp4 a = new pp4();
+
+    public static final void a(ImageView imageView) {
+        Bitmap bitmap;
+        if (imageView != null) {
+            try {
+                if (imageView.getDrawable() == null || hi4.a.d()) {
+                    return;
+                }
+                if (!(imageView.getDrawable() instanceof BitmapDrawable)) {
+                    imageView.setImageDrawable(null);
+                    return;
+                }
+                Drawable drawable = imageView.getDrawable();
+                BitmapDrawable bitmapDrawable = drawable instanceof BitmapDrawable ? (BitmapDrawable) drawable : null;
+                if (bitmapDrawable == null || (bitmap = bitmapDrawable.getBitmap()) == null || bitmap.isRecycled()) {
+                    return;
+                }
+                bitmap.recycle();
+            } catch (Throwable th) {
+                ja1.Log().w("HisavanaImageLoader", "destroyImageView error msg = " + th.getMessage());
+            }
+        }
+    }
+}

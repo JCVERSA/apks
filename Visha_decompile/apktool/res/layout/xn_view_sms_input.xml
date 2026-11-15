@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/smsCodeL" android:layout_width="match_parent" android:layout_height="@dimen/dimen_38" android:paddingStart="@dimen/dimen_12" android:paddingEnd="@dimen/dimen_12">
+        <TextView android:enabled="false" android:textAppearance="@style/font_get_code_disable_medium" android:ellipsize="end" android:gravity="end|center" android:id="@id/getCode" android:background="@drawable/xn_get_code" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_38" android:maxWidth="120.0dp" android:text="@string/xn_get_code" android:maxLines="1" android:layout_alignParentEnd="true" android:elegantTextHeight="true" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/smsLogo" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:src="@null" android:tint="@color/xn_input_logo_color" android:layout_centerVertical="true" />
+        <EditText android:textSize="15.0sp" android:textColor="@color/os_text_primary_color" android:textColorHint="@color/os_text_quaternary_color" android:ellipsize="end" android:id="@id/smsEdit" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/dimen_38" android:hint="@string/xn_code_hint" android:singleLine="true" android:maxLength="6" android:digits="@string/xn_num_digits" android:layout_centerVertical="true" android:inputType="phone|textNoSuggestions" android:textDirection="anyRtl" android:textAlignment="viewStart" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_8" android:layout_toStartOf="@id/getCode" android:layout_toEndOf="@id/smsLogo" android:importantForAutofill="no" />
+    </RelativeLayout>
+    <View android:layout_gravity="bottom" android:id="@id/smsLine" android:background="@color/xn_line" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/smsCodeL" />
+</RelativeLayout>

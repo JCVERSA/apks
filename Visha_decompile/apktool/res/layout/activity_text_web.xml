@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_web_with_seekbar_layout" />
+    <FrameLayout android:id="@id/fl_content_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <ViewStub android:id="@id/no_network_view" android:layout="@layout/no_network_web_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

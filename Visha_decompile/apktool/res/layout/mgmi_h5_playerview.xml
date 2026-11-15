@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mgadplus.brower.ImgoAdWebView android:id="@id/ad_h5_webview" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <com.mgmi.ads.api.render.MySimpleDraweeView android:id="@id/ad_h5_style_imagetext_ivImageup" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" />
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

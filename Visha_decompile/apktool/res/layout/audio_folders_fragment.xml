@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:fitsSystemWindows="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="?screen_edge_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" android:visibility="gone" layout="@layout/titlebar_layout" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_bar">
+        <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_bar" layout="@layout/fast_scroller_recyclerview" />
+        <ViewStub android:layout_gravity="center_vertical" android:id="@id/main_empty_view" android:layout="@layout/list_empty_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

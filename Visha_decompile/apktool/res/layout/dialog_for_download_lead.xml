@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:src="@drawable/pic_download_lead_new" android:scaleType="centerCrop" android:maxHeight="280.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/os_text_primary2_color" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/download_guide_dialog_hint_new" android:includeFontPadding="false" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="1.0sp" android:autoSizeMinTextSize="12.0sp" android:autoSizeMaxTextSize="14.0sp" />
+</LinearLayout>

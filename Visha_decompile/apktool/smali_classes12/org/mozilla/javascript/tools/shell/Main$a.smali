@@ -1,0 +1,115 @@
+.class public Lorg/mozilla/javascript/tools/shell/Main$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/mozilla/javascript/ContextAction;
+.implements Lorg/mozilla/javascript/tools/shell/QuitAction;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/mozilla/javascript/tools/shell/Main;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field public b:I
+
+.field public c:[Ljava/lang/String;
+
+.field public d:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, Lorg/mozilla/javascript/tools/shell/Main$a;->b:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public quit(Lorg/mozilla/javascript/Context;I)V
+    .locals 0
+
+    iget p0, p0, Lorg/mozilla/javascript/tools/shell/Main$a;->b:I
+
+    const/4 p1, 0x3
+
+    if-ne p0, p1, :cond_0
+
+    invoke-static {p2}, Ljava/lang/System;->exit(I)V
+
+    return-void
+
+    :cond_0
+    invoke-static {}, Lorg/mozilla/javascript/Kit;->codeBug()Ljava/lang/RuntimeException;
+
+    move-result-object p0
+
+    throw p0
+.end method
+
+.method public run(Lorg/mozilla/javascript/Context;)Ljava/lang/Object;
+    .locals 3
+
+    sget-boolean v0, Lorg/mozilla/javascript/tools/shell/Main;->useRequire:Z
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lorg/mozilla/javascript/tools/shell/Main;->global:Lorg/mozilla/javascript/tools/shell/Global;
+
+    sget-object v1, Lorg/mozilla/javascript/tools/shell/Main;->modulePath:Ljava/util/List;
+
+    sget-boolean v2, Lorg/mozilla/javascript/tools/shell/Main;->sandboxed:Z
+
+    invoke-virtual {v0, p1, v1, v2}, Lorg/mozilla/javascript/tools/shell/Global;->installRequire(Lorg/mozilla/javascript/Context;Ljava/util/List;Z)Lorg/mozilla/javascript/commonjs/module/Require;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/mozilla/javascript/tools/shell/Main;->require:Lorg/mozilla/javascript/commonjs/module/Require;
+
+    :cond_0
+    iget v0, p0, Lorg/mozilla/javascript/tools/shell/Main$a;->b:I
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_1
+
+    iget-object p0, p0, Lorg/mozilla/javascript/tools/shell/Main$a;->c:[Ljava/lang/String;
+
+    invoke-static {p1, p0}, Lorg/mozilla/javascript/tools/shell/Main;->processFiles(Lorg/mozilla/javascript/Context;[Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_2
+
+    iget-object p0, p0, Lorg/mozilla/javascript/tools/shell/Main$a;->d:Ljava/lang/String;
+
+    invoke-static {p1, p0}, Lorg/mozilla/javascript/tools/shell/Main;->evalInlineScript(Lorg/mozilla/javascript/Context;Ljava/lang/String;)V
+
+    :goto_0
+    const/4 p0, 0x0
+
+    return-object p0
+
+    :cond_2
+    invoke-static {}, Lorg/mozilla/javascript/Kit;->codeBug()Ljava/lang/RuntimeException;
+
+    move-result-object p0
+
+    throw p0
+.end method

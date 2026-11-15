@@ -1,0 +1,77 @@
+package com.transsion.playercommon.vishaapis.onlinevideo;
+
+public class OnlineVideoApiConfig {
+    public static final String CLOUD_DRIVE_HOST = "https://cloud-drive.palm.tech";
+    public static final String CLOUD_DRIVE_TEST_HOST = "https://test-cloud-disk.palm.tech";
+    public static final String HOST = "https://api.vishavideo.com";
+    public static final String PRE_HOST = "https://test-visha.transsion-os.com";
+    public static final String RECOMMEND_MANGO_URL = "https://ounion.bz.mgtv.com/media/videoRelated";
+    public static final String RECOMMEND_MARK = "https://test-ccdata.transsion-os.com/buried-point";
+
+    public static final class API {
+        public static final String API_APP_CONFIG_GET_IP_INFO = "/visha/api/config/ip/info";
+        public static final String API_BT_CONFIG = "/visha/api/bt-config";
+        public static final String API_CANCEL_SUBSCRIBE = "/visha/api/pay/visha-vip/cancel-renewal";
+        public static final String API_CHECK_TOKEN = "/visha/api/user/sync/info";
+        public static final String API_CLOUD_SEARCH = "/visha/api/search/mediaLibrary/search";
+        public static final String API_DELETE_PLAY_RECORD = "/visha/api/cloud-storage/delete-play-record";
+        public static final String API_DOWNLOAD_MAIN_RECOMMEND = "/visha/api/sniff/website/";
+        public static final String API_DOWNLOAD_MAIN_RECOMMEND_NEW = "/visha/api/sniff/v2/website";
+        public static final String API_GET_ADVERTISE = "/visha/api/advertising/get";
+        public static final String API_GET_BOOKMARKS = "/visha/api/sniff/website/";
+        public static final String API_GET_BY_CHANNEL = "/visha/api/topic/get-by-channel";
+        public static final String API_GET_BY_MEDIA = "/visha/api/video/play";
+        public static final String API_GET_BY_TOPIC = "/visha/api/topic/get";
+        public static final String API_GET_LAYOUT = "/visha/api/config/layout/get";
+        public static final String API_GET_PLAYHISTORY = "/visha/api/video/user/history/list";
+        public static final String API_GET_RECOMMEND = "/visha/api/video/recommend/list";
+        public static final String API_GET_REFRESH_VISHA_TOKEN = "/visha/oauth/token/refresh";
+        public static final String API_GET_SEARCH_KEYS = "/visha/api/sniff/key-word";
+        public static final String API_GET_SHORT_VIDEO_SKETCH = "/visha/api/video/sketch/get";
+        public static final String API_GET_SKINS = "/visha/api/theme/skin/list";
+        public static final String API_GET_START_AD = "/visha/api/launch-screen/get";
+        public static final String API_GET_TAG = "/visha/api/tag/list";
+        public static final String API_GET_USER_INFO = "/visha/api/pay/visha-vip/get";
+        public static final String API_GET_VIDEO_BY_TAG = "/visha/api/video/list";
+        public static final String API_GET_VIDEO_LIST = "/visha/api/cloud-storage/get-video-list";
+        public static final String API_GET_VISHA_ADS = "/visha/api/advertising/space/get";
+        public static final String API_GET_VISHA_OAUTH_TOKEN = "/visha/oauth/token";
+        public static final String API_GET_YTB_CONFIG = "/visha/api/local-video-play-control";
+        public static final String API_HISTORY_EMPTY_RECOMMEND = "/visha/api/video/superior/list";
+        public static final String API_MI_COLLECT_ADD = "/visha/api/mediaUserCollect/add";
+        public static final String API_MI_COLLECT_CANCEL = "/visha/api/mediaUserCollect/cancel";
+        public static final String API_MI_DATA_LIST = "/visha/api/mediaLibrary/dataList";
+        public static final String API_MI_PLAY_VIDEO_DATA = "/visha/api/mediaLibrary/videoDataUrl";
+        public static final String API_MI_RECENT_PLAY_DATA_LIST = "/visha/api/recentPlay/dataList";
+        public static final String API_MI_USER_COLLECT_DATA_LIST = "/visha/api/mediaUserCollect/frontDataList";
+        public static final String API_MI_VIDEO_DATA_LIST = "/visha/api/mediaLibrary/videoDataList";
+        public static final String API_OTT_COLLECT = "/visha/api/video/user/collect/sync";
+        public static final String API_OTT_COLLECT_REMOVE = "/visha/api/video/user/collect/remove";
+        public static final String API_OTT_FARVORITE_LIST = "/visha/api/video/user/collect/list";
+        public static final String API_POST_DELETEHISTORY = "/visha/api/video/user/history/del";
+        public static final String API_POST_ENSURE_VIP_PAY_CANCEL = "/visha/api/pay/order-cancel";
+        public static final String API_POST_ENSURE_VIP_PAY_OK = "/visha/api/pay/order/trade/confirmations";
+        public static final String API_POST_PLAYHISTORY = "/visha/api/video/user/history/sync";
+        public static final String API_SUBMIT_PLAY_RECORD = "/visha/api/cloud-storage/submit-play-record";
+        public static final String API_SUBSCRIBE_DETAIL = "/visha/api/pay/visha-vip/renewal-vip-info";
+        public static final String API_TT_ACTION_LOGS = "/visha/api/tt/action/logs";
+        public static final String API_TT_DATA_STREAM = "/visha/api/tt/data/stream";
+        public static final String API_TT_PATH_PREFIX = "/visha/api/tt/";
+        public static final String API_TT_VIDEO_URL = "/visha/api/tt/video/url";
+        public static final String API_VIDEO_OUT_JUMP = "/visha/api/external-jump/get";
+        public static final String API_VIDEO_PLAY_END_RECOMMEND = "/visha/api/content-recommend/get";
+        public static final String API_VISHA_FORMAT_COPYRIGHT = "visha/api/format-copyright/get";
+        public static final String API_VISHA_HOT_SEARCH = "/visha/api/search/hot-search";
+        public static final String API_VISHA_LOGOUT = "/visha/oauth/token/logout";
+        public static final String API_VISHA_PROMOTIONS = "/visha/api/vip-operate-action/list";
+        public static final String API_VISHA_SEARCH_LYRIC = "/visha/api/search/lyric";
+        public static final String API_VISHA_VIDEO_SEARCH = "/visha/api/search/video";
+        public static final String API_VISHA_VK_RECOMMEND = "/visha/api/vk_video/detail_page/recommend";
+        public static final String API_VISHA_WORD_SEARCH = "/visha/api/search/word";
+        public static final String API_VISHA_YOUTUBE_HOT = "/visha/api/youtube/getMostPopular";
+        public static final String API_VISHA_YOUTUBE_RECOMMEND = "/visha/api/youtube/getYoutubeRecommend";
+        public static final String API_VISHA_YOUTUBE_SEARCH = "/visha/api/youtube/search";
+        public static final String API_VISHA_YOUTUBE_WORD_SEARCH = "/visha/api/youtube/suggest";
+        public static final String ONLINE_RECOMMEND = "/visha/api/video/algorithm/recommend/list";
+    }
+}

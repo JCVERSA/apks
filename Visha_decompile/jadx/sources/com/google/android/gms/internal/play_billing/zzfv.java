@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.play_billing;
+
+import java.io.IOException;
+import java.util.Locale;
+
+public final class zzfv extends IOException {
+    public zzfv() {
+        super("CodedOutputStream was writing to a flat byte array and ran out of space.");
+    }
+
+    public zzfv(long j, long j2, int i, Throwable th) {
+        super("CodedOutputStream was writing to a flat byte array and ran out of space.: ".concat(String.format(Locale.US, "Pos: %d, limit: %d, len: %d", Long.valueOf(j), Long.valueOf(j2), Integer.valueOf(i))), th);
+    }
+
+    public zzfv(Throwable th) {
+        super("CodedOutputStream was writing to a flat byte array and ran out of space.", th);
+    }
+}

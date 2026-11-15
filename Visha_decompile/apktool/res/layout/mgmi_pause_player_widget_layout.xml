@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/contentArea" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/ivAdVoice" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="9.0dp" android:layout_marginBottom="6.0dp" android:src="@drawable/mgmi_icon_ad_voice_open" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mgmi_dp_15" android:layout_marginRight="@dimen/mgmi_dp_15" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="9.0sp" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@id/play_time" android:background="@drawable/ad_mutilchoose_bg_gray_round" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/player_loading_view" android:background="@color/mgmi_color_000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.mgmi.platform.view.ViewGroup.widget.ProgressWheel android:id="@id/progress_wheel" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_centerInParent="true" wheel:matProg_barColor="@color/mgmi_color_F06000" wheel:matProg_barWidth="2.0dp" wheel:matProg_progressIndeterminate="true"
+              xmlns:wheel="http://schemas.android.com/apk/res-auto" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

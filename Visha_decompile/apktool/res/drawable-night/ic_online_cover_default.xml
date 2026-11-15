@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="134.43564dp" android:width="93.0dp" android:viewportWidth="303.0" android:viewportHeight="438.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#252525" android:pathData="M0,0h303v438h-303z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#686868" android:pathData="M152,154C187.9,154 217,183.1 217,219C217,254.9 187.9,284 152,284C116.1,284 87,254.9 87,219C87,183.1 116.1,154 152,154ZM152,172.2C126.15,172.2 105.2,193.15 105.2,219C105.2,244.85 126.15,265.8 152,265.8C177.85,265.8 198.8,244.85 198.8,219C198.8,193.15 177.85,172.2 152,172.2Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#686868" android:pathData="M131.22,206.1l0.24,36.2l42,-23.3z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#686868" android:pathData="M168.79,208.06L180.23,215.14C183.16,216.95 184.06,220.8 182.25,223.73C181.7,224.61 180.94,225.35 180.04,225.86L140.79,248.24C137.8,249.94 133.99,248.9 132.28,245.91C131.74,244.96 131.46,243.9 131.46,242.82L131.46,229.7L168.17,208.45C168.39,208.33 168.59,208.2 168.79,208.06Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#686868" android:pathData="M137.43,189.38C138.57,189.38 139.69,189.69 140.66,190.27L180.93,214.43C183.88,216.2 184.84,220.03 183.07,222.99C182.54,223.86 181.81,224.6 180.93,225.13L169.5,232L131.26,209.93L131.21,195.64C131.2,192.2 133.98,189.4 137.43,189.38Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#686868" android:pathData="M217,219L217,277.76C217,281.21 214.21,284 210.76,284L152,284L152,265.8L152,265.8C177.85,265.8 198.8,244.85 198.8,219L217,219Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

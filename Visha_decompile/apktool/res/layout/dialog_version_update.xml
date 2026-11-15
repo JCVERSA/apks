@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_logo_mini" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_apk_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/iv_logo" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="15.0sp" android:textColor="?os_text_secondary" android:id="@id/tv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_Player" />
+                <TextView android:textSize="12.0sp" android:textColor="?os_text_tertiary" android:id="@id/tv_new_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_new_version" />
+                <TextView android:textSize="12.0sp" android:textColor="?os_text_tertiary" android:id="@id/tv_version_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="14.0sp" android:textColor="?os_text_secondary" android:paddingTop="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/details" />
+        <TextView android:textSize="12.0sp" android:textColor="?os_text_tertiary" android:id="@id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

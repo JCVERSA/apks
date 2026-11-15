@@ -1,0 +1,35 @@
+.class final Lcom/mgtv/ssp/authbase/a$2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/mgtv/ssp/authbase/b$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/mgtv/ssp/authbase/a;->a(Landroid/content/Context;Lcom/mgtv/ssp/authbase/AccountInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/mgtv/ssp/authbase/MgSspAccountCallback;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = null
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onChanged(Z)V
+    .locals 0
+
+    return-void
+.end method

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/video_fragment" android:focusable="true" android:fitsSystemWindows="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="?screen_edge_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:gravity="center_vertical" android:id="@id/title_bar" android:layout="@layout/titlebar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <include android:gravity="center_vertical" android:id="@id/play_all" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_below="@id/title_bar" layout="@layout/play_all_layout" />
+    <com.transsion.widgetslib.view.damping.OSScrollbarLayout android:id="@id/scrollbar_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/fr_bottom_bar" android:layout_below="@id/play_all" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.transsion.widgets.CustomSwipeRefreshLayout android:id="@id/pull_damping_layout" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/fr_bottom_bar" android:layout_below="@id/title_bar" android:overScrollMode="always">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <include android:paddingTop="10.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" layout="@layout/fast_scroller_recyclerview_conflict" />
+                <ViewStub android:layout_gravity="center_vertical" android:id="@id/main_empty_view" android:layout="@layout/main_empty_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_bar" />
+            </FrameLayout>
+        </com.transsion.widgets.CustomSwipeRefreshLayout>
+    </com.transsion.widgetslib.view.damping.OSScrollbarLayout>
+    <FrameLayout android:id="@id/fr_bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@id/bottom_action_bar" android:layout="@layout/bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </FrameLayout>
+    <ViewStub android:id="@id/vs_video_stack" android:layout="@layout/layout_video_stack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_drag_animation_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.transsion.widgets.RoundImageView android:id="@id/iv_play_shuffle" android:visibility="gone" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginBottom="76.0dp" android:src="@drawable/ic_btn_shuffle" android:layout_alignParentBottom="true" android:layout_marginEnd="22.0dp" android:layout_alignParentEnd="true" app:corner_radius="@dimen/dp50" />
+</RelativeLayout>

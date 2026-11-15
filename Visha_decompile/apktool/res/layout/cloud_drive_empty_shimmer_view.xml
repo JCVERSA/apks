@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.cloud.weigets.VishaCloudShimmerFrameLayout android:id="@id/vls_container" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="22.0dp" app:shimmer_base_alpha="0.8" app:shimmer_highlight_alpha="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@id/view_1" android:background="@drawable/bg_shimmer_empty_rect_item" android:layout_width="match_parent" android:layout_height="74.0dp" android:layout_marginTop="29.0dp" />
+            <View android:id="@id/view_2" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="110.0dp" android:layout_height="20.0dp" android:layout_marginTop="38.0dp" android:layout_below="@id/view_1" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_view_recently" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_below="@id/view_2">
+                <View android:id="@id/view_3" android:background="@drawable/bg_shimmer_empty_rect_item" android:layout_width="0.0dp" android:layout_height="86.0dp" android:layout_weight="1.0" android:layout_marginEnd="5.0dp" />
+                <View android:id="@id/view_4" android:background="@drawable/bg_shimmer_empty_rect_item" android:layout_width="0.0dp" android:layout_height="86.0dp" android:layout_weight="1.0" android:layout_marginStart="5.0dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_view_recently_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_below="@id/ll_view_recently">
+                <View android:id="@id/view_5" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="0.0dp" android:layout_height="16.0dp" android:layout_weight="1.0" android:layout_marginEnd="5.0dp" />
+                <View android:id="@id/view_6" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="0.0dp" android:layout_height="16.0dp" android:layout_weight="1.0" android:layout_marginStart="5.0dp" />
+            </LinearLayout>
+            <View android:id="@id/view_7" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="90.0dp" android:layout_height="14.0dp" android:layout_marginTop="6.0dp" android:layout_below="@id/ll_view_recently_des" />
+            <View android:id="@id/view_8" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="92.0dp" android:layout_height="20.0dp" android:layout_marginTop="38.0dp" android:layout_below="@id/view_7" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_view_list_item1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_below="@id/view_8">
+                <View android:id="@id/view_9" android:background="@drawable/bg_shimmer_empty_rect_item" android:layout_width="0.0dp" android:layout_height="86.0dp" android:layout_weight="1.0" android:layout_marginEnd="5.0dp" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="9.0dp">
+                    <View android:id="@id/view_10" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="147.0dp" android:layout_height="16.0dp" />
+                    <View android:id="@id/view_11" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="123.0dp" android:layout_height="16.0dp" android:layout_marginTop="8.0dp" />
+                    <View android:id="@id/view_12" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="64.0dp" android:layout_height="14.0dp" android:layout_marginTop="8.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_view_list_item2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_below="@id/rl_view_list_item1">
+                <View android:id="@id/view_13" android:background="@drawable/bg_shimmer_empty_rect_item" android:layout_width="0.0dp" android:layout_height="86.0dp" android:layout_weight="1.0" android:layout_marginEnd="5.0dp" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="9.0dp">
+                    <View android:id="@id/view_14" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="147.0dp" android:layout_height="16.0dp" />
+                    <View android:id="@id/view_15" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="123.0dp" android:layout_height="16.0dp" android:layout_marginTop="8.0dp" />
+                    <View android:id="@id/view_16" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="64.0dp" android:layout_height="14.0dp" android:layout_marginTop="8.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_view_list_item3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_below="@id/rl_view_list_item2">
+                <View android:id="@id/view_17" android:background="@drawable/bg_shimmer_empty_rect_item" android:layout_width="0.0dp" android:layout_height="86.0dp" android:layout_weight="1.0" android:layout_marginEnd="5.0dp" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="9.0dp">
+                    <View android:id="@id/view_18" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="147.0dp" android:layout_height="16.0dp" />
+                    <View android:id="@id/view_19" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="123.0dp" android:layout_height="16.0dp" android:layout_marginTop="8.0dp" />
+                    <View android:id="@id/view_20" android:background="@drawable/bg_shimmer_empty_rect_item_five_corner" android:layout_width="64.0dp" android:layout_height="14.0dp" android:layout_marginTop="8.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</com.transsion.cloud.weigets.VishaCloudShimmerFrameLayout>

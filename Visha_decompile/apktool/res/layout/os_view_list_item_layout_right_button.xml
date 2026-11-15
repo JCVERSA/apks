@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:layout_width="@dimen/os_list_item_right_button_width" android:layout_height="@dimen/os_list_item_right_button_height" android:singleLine="true" style="@style/OS.Widget.SmallButton.Primary"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

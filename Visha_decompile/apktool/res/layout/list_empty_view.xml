@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_centerInParent="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/text_no_audios" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_song" android:layout_above="@id/view" android:layout_centerInParent="true" android:importantForAccessibility="no" android:layout_marginHorizontal="27.0dp" />
+    <TextView android:textSize="@dimen/sp16" android:textColor="?os_platform_basic_color" android:id="@id/text_filtered_audios" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:drawablePadding="-10.0dp" android:layout_below="@id/add_play_list_tv" android:layout_centerInParent="true" android:drawableEnd="@drawable/ic_filter_right_arrow" android:importantForAccessibility="no" />
+    <ImageView android:id="@id/lottie_no_audios_view" android:layout_width="200.0dp" android:layout_height="140.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/ic_audio_empty_illustration" android:layout_above="@id/text_no_audios" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/add_play_list_tv" android:visibility="gone" android:text="@string/add_to_playlist" android:layout_below="@id/text_no_audios" android:layout_centerHorizontal="true" style="@style/EmptyStateActionButtonStyle" />
+</RelativeLayout>

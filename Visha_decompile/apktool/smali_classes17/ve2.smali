@@ -1,0 +1,116 @@
+.class public final Lve2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Llga;
+
+
+# instance fields
+.field public final a:Lcom/yandex/div2/JsonParserComponent;
+
+
+# direct methods
+.method public constructor <init>(Lcom/yandex/div2/JsonParserComponent;)V
+    .locals 1
+
+    const-string v0, "component"
+
+    invoke-static {p1, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lve2;->a:Lcom/yandex/div2/JsonParserComponent;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic a(Lex7;Lza3;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p2, Lcom/yandex/div2/DivActionDictSetValueTemplate;
+
+    check-cast p3, Lorg/json/JSONObject;
+
+    invoke-virtual {p0, p1, p2, p3}, Lve2;->b(Lex7;Lcom/yandex/div2/DivActionDictSetValueTemplate;Lorg/json/JSONObject;)Lcom/yandex/div2/DivActionDictSetValue;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public b(Lex7;Lcom/yandex/div2/DivActionDictSetValueTemplate;Lorg/json/JSONObject;)Lcom/yandex/div2/DivActionDictSetValue;
+    .locals 10
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "template"
+
+    invoke-static {p2, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "data"
+
+    invoke-static {p3, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lcom/yandex/div2/DivActionDictSetValue;
+
+    iget-object v1, p2, Lcom/yandex/div2/DivActionDictSetValueTemplate;->a:Ltp3;
+
+    sget-object v2, Lacb;->c:Lzbb;
+
+    const-string v3, "key"
+
+    invoke-static {p1, v1, p3, v3, v2}, Lsa5;->g(Lex7;Ltp3;Lorg/json/JSONObject;Ljava/lang/String;Lzbb;)Lcom/yandex/div/json/expressions/Expression;
+
+    move-result-object v1
+
+    const-string v3, "resolveExpression(contex\u2026key\", TYPE_HELPER_STRING)"
+
+    invoke-static {v1, v3}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v5, p2, Lcom/yandex/div2/DivActionDictSetValueTemplate;->b:Ltp3;
+
+    iget-object v3, p0, Lve2;->a:Lcom/yandex/div2/JsonParserComponent;
+
+    invoke-virtual {v3}, Lcom/yandex/div2/JsonParserComponent;->d9()Lyi5;
+
+    move-result-object v8
+
+    iget-object p0, p0, Lve2;->a:Lcom/yandex/div2/JsonParserComponent;
+
+    invoke-virtual {p0}, Lcom/yandex/div2/JsonParserComponent;->b9()Lyi5;
+
+    move-result-object v9
+
+    const-string v7, "value"
+
+    move-object v4, p1
+
+    move-object v6, p3
+
+    invoke-static/range {v4 .. v9}, Lsa5;->p(Lex7;Ltp3;Lorg/json/JSONObject;Ljava/lang/String;Lyi5;Lyi5;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/yandex/div2/DivTypedValue;
+
+    iget-object p2, p2, Lcom/yandex/div2/DivActionDictSetValueTemplate;->c:Ltp3;
+
+    const-string v3, "variable_name"
+
+    invoke-static {p1, p2, p3, v3, v2}, Lsa5;->g(Lex7;Ltp3;Lorg/json/JSONObject;Ljava/lang/String;Lzbb;)Lcom/yandex/div/json/expressions/Expression;
+
+    move-result-object p1
+
+    const-string p2, "resolveExpression(contex\u2026ame\", TYPE_HELPER_STRING)"
+
+    invoke-static {p1, p2}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v1, p0, p1}, Lcom/yandex/div2/DivActionDictSetValue;-><init>(Lcom/yandex/div/json/expressions/Expression;Lcom/yandex/div2/DivTypedValue;Lcom/yandex/div/json/expressions/Expression;)V
+
+    return-object v0
+.end method

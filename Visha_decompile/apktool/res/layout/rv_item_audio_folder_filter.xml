@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="70.0dp" android:layout_marginBottom="10.0dp" android:paddingStart="22.0dp" android:paddingEnd="19.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/container" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/fl" android:layout_width="57.0dp" android:layout_height="51.0dp">
+            <com.google.android.material.imageview.ShapeableImageView android:layout_gravity="start" android:id="@id/iv_audio_folder_item" android:layout_width="56.0dp" android:layout_height="51.0dp" android:src="@drawable/ic_custom_playlist_new" android:scaleType="centerCrop" app:shapeAppearance="@style/playlist_icon_style" app:strokeColor="@null" />
+            <com.google.android.material.imageview.ShapeableImageView android:layout_gravity="start" android:id="@id/iv_cover" android:layout_width="51.0dp" android:layout_height="51.0dp" android:scaleType="centerCrop" app:shapeAppearance="@style/playlist_icon_style" app:strokeColor="@null" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/tv_item_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginHorizontal="12.0dp">
+            <TextView android:textSize="15.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_main_fragment_item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:textDirection="locale" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/tv_main_fragment_item_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:textDirection="locale" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/iv_filter" android:layout_width="30.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_no_filter_folder" android:scaleType="centerInside" />
+</LinearLayout>

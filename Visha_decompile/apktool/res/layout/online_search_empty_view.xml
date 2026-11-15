@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/lottie_no_videos_view" android:layout_width="200.0dp" android:layout_height="140.0dp" android:src="@drawable/ic_video_empty_illustration" android:importantForAccessibility="no" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/text_no_videos" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/video_search_no_result" android:paddingHorizontal="27.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/text_video_coming" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/video_search_no_result_will_coming" android:paddingHorizontal="27.0dp" />
+</LinearLayout>

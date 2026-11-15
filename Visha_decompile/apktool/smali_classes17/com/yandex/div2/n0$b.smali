@@ -1,0 +1,165 @@
+.class public final Lcom/yandex/div2/n0$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lpd9;
+.implements Lw92;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/yandex/div2/n0;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+
+# instance fields
+.field public final a:Lcom/yandex/div2/JsonParserComponent;
+
+
+# direct methods
+.method public constructor <init>(Lcom/yandex/div2/JsonParserComponent;)V
+    .locals 1
+
+    const-string v0, "component"
+
+    invoke-static {p1, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/yandex/div2/n0$b;->a:Lcom/yandex/div2/JsonParserComponent;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic a(Lex7;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p2, Lorg/json/JSONObject;
+
+    invoke-virtual {p0, p1, p2}, Lcom/yandex/div2/n0$b;->d(Lex7;Lorg/json/JSONObject;)Lcom/yandex/div2/DivCollectionItemBuilder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic b(Lex7;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p2, Lcom/yandex/div2/DivCollectionItemBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lcom/yandex/div2/n0$b;->e(Lex7;Lcom/yandex/div2/DivCollectionItemBuilder;)Lorg/json/JSONObject;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public d(Lex7;Lorg/json/JSONObject;)Lcom/yandex/div2/DivCollectionItemBuilder;
+    .locals 5
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "data"
+
+    invoke-static {p2, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v1, Lcom/yandex/div2/DivCollectionItemBuilder;
+
+    sget-object v2, Lacb;->g:Lzbb;
+
+    invoke-static {p1, p2, v0, v2}, Lpa5;->d(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Lzbb;)Lcom/yandex/div/json/expressions/Expression;
+
+    move-result-object v0
+
+    const-string v2, "readExpression(context, \u2026, TYPE_HELPER_JSON_ARRAY)"
+
+    invoke-static {v0, v2}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v2, "data_element_name"
+
+    invoke-static {p1, p2, v2}, Ltb5;->k(Lex7;Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    if-nez v2, :cond_0
+
+    sget-object v2, Lcom/yandex/div2/n0;->b:Ljava/lang/String;
+
+    :cond_0
+    iget-object p0, p0, Lcom/yandex/div2/n0$b;->a:Lcom/yandex/div2/JsonParserComponent;
+
+    invoke-virtual {p0}, Lcom/yandex/div2/JsonParserComponent;->d2()Lyi5;
+
+    move-result-object p0
+
+    sget-object v3, Lcom/yandex/div2/n0;->c:Lhm5;
+
+    const-string v4, "prototypes"
+
+    invoke-static {p1, p2, v4, p0, v3}, Ltb5;->j(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Lyi5;Lhm5;)Ljava/util/List;
+
+    move-result-object p0
+
+    const-string p1, "readList(context, data, \u2026er, PROTOTYPES_VALIDATOR)"
+
+    invoke-static {p0, p1}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v1, v0, v2, p0}, Lcom/yandex/div2/DivCollectionItemBuilder;-><init>(Lcom/yandex/div/json/expressions/Expression;Ljava/lang/String;Ljava/util/List;)V
+
+    return-object v1
+.end method
+
+.method public e(Lex7;Lcom/yandex/div2/DivCollectionItemBuilder;)Lorg/json/JSONObject;
+    .locals 3
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "value"
+
+    invoke-static {p2, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lorg/json/JSONObject;
+
+    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
+
+    iget-object v1, p2, Lcom/yandex/div2/DivCollectionItemBuilder;->a:Lcom/yandex/div/json/expressions/Expression;
+
+    const-string v2, "data"
+
+    invoke-static {p1, v0, v2, v1}, Lpa5;->p(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Lcom/yandex/div/json/expressions/Expression;)V
+
+    const-string v1, "data_element_name"
+
+    iget-object v2, p2, Lcom/yandex/div2/DivCollectionItemBuilder;->b:Ljava/lang/String;
+
+    invoke-static {p1, v0, v1, v2}, Ltb5;->v(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/Object;)V
+
+    iget-object p2, p2, Lcom/yandex/div2/DivCollectionItemBuilder;->c:Ljava/util/List;
+
+    iget-object p0, p0, Lcom/yandex/div2/n0$b;->a:Lcom/yandex/div2/JsonParserComponent;
+
+    invoke-virtual {p0}, Lcom/yandex/div2/JsonParserComponent;->d2()Lyi5;
+
+    move-result-object p0
+
+    const-string v1, "prototypes"
+
+    invoke-static {p1, v0, v1, p2, p0}, Ltb5;->z(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Ljava/util/List;Lyi5;)V
+
+    return-object v0
+.end method

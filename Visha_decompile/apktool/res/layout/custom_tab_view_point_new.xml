@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/custom_tab_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingHorizontal="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/custom_tab_item_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" />
+        <TextView android:textSize="@dimen/os_tab_second_level_title_size_new" android:textColor="#ff606060" android:id="@id/custom_tab_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:fontFamily="sans-serif" android:textDirection="locale" android:layout_marginStart="6.0dp" />
+    </LinearLayout>
+    <com.transsion.widgets.BadgeView android:id="@id/custom_tab_badgeview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="-2.0dp" app:layout_constraintStart_toEndOf="@id/custom_tab_item" app:layout_constraintTop_toTopOf="@id/custom_tab_item" app:osRedPointTextViewType="@integer/OSRedPointTypeNumSmall" />
+</merge>

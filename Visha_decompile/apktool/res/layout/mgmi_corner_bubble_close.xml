@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/mgmi_checkboxt_bg_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginTop="5.0dp" android:layout_alignLeft="@id/contactTitle">
+        <TextView android:textSize="11.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgmi_close_bubble_text" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/closeIcon" android:layout_width="9.0dp" android:layout_height="9.0dp" android:layout_marginLeft="5.0dp" android:src="@drawable/mgmi_chat_close" />
+    </LinearLayout>
+</RelativeLayout>

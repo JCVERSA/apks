@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="144.0dp" android:width="144.0dp" android:viewportWidth="144.0" android:viewportHeight="144.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_logo_audio_tab_music_shortcuts__0" android:pathData="M0,0H144V144H0V0Z" />
+    <path android:fillColor="#ffffff" android:pathData="M76.85,34.98C75.26,34.77 73.64,34.67 72,34.67C51.38,34.67 34.67,51.38 34.67,72C34.67,92.62 51.38,109.33 72,109.33C92.62,109.33 109.33,92.62 109.33,72C109.33,55.09 98.1,40.81 82.68,36.22V70.19L82.65,70.19C82.67,70.54 82.68,70.89 82.68,71.25C82.68,75.04 81.19,78.6 78.58,81.22C75.98,83.85 72.45,85.36 68.68,85.36C64.92,85.36 61.39,83.85 58.78,81.22C56.18,78.6 54.68,75.04 54.68,71.25C54.68,67.47 56.21,63.92 58.85,61.29C61.5,58.66 65.07,57.14 68.85,57.14C71.78,57.14 74.56,58.05 76.85,59.71L76.85,34.98Z" android:fillType="evenOdd" />
+</vector>

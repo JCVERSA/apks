@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/os_window_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/xn_full_margin_start" android:layout_marginEnd="@dimen/xn_full_margin_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/reLoading" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="72.0dp" android:layout_marginRight="72.0dp" android:layout_marginBottom="20.0dp" android:text="@string/xn_reloading" android:layout_alignParentBottom="true" style="@style/OS.Widget.Button.Contained.Big.Single.Gray" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_12" android:layout_above="@id/reLoading">
+        <com.transsion.widgetslib.view.OverBoundNestedScrollView android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="@style/font_black_15_t40" android:gravity="center" android:id="@id/note" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="@string/xn_no_wifi" android:layout_below="@id/logo" android:layout_marginStart="32.0dp" android:layout_marginEnd="32.0dp" android:elegantTextHeight="true" />
+            </RelativeLayout>
+        </com.transsion.widgetslib.view.OverBoundNestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

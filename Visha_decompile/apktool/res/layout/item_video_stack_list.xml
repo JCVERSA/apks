@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_video_stack" android:layout_width="198.0dp" android:layout_height="120.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@id/iv_avatar" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/main_fragment_placeholder" android:scaleType="centerCrop" app:shapeAppearanceOverlay="@style/shape_video_stack_image" />
+        <com.google.android.material.imageview.ShapeableImageView android:background="@drawable/bg_black_30" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:shapeAppearanceOverlay="@style/shape_video_stack_image" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="right|bottom" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:layout_marginBottom="20.0dp" android:text="20:30" android:layout_toRightOf="@id/iv_avatar" />
+    <com.transsion.widgets.BadgeView android:layout_gravity="end|top" android:id="@id/tv_stack_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" app:osRedPointTextViewType="@integer/OSRedPointTypeNumBig" />
+    <ImageView android:layout_gravity="end" android:id="@id/imv_not_receive" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:src="@drawable/ic_not_drag" android:layout_toRightOf="@id/iv_avatar" />
+</FrameLayout>

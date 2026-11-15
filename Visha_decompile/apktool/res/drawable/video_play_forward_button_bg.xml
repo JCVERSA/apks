@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="33.0dp" />
+            <padding android:left="18.0dp" android:right="18.0dp" />
+            <size android:height="@dimen/os_btn_min_height" android:width="64.0dp" />
+            <gradient android:startColor="@color/video_tip_bg_start_color" android:endColor="@color/video_tip_bg_end_color" android:angle="0.0" android:type="linear" />
+        </shape>
+    </item>
+</selector>

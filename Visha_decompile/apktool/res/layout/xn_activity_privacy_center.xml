@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.widgetslib.view.OverBoundNestedScrollView android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/xn_full_margin_start" android:layout_marginEnd="@dimen/xn_full_margin_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="@style/font_black_14_t40" android:gravity="center_vertical" android:id="@id/privacyHead" android:layout_width="wrap_content" android:layout_height="34.0dp" android:text="@string/xn_privacy_center" android:paddingStart="@dimen/xn_item_padding_start" android:paddingEnd="@dimen/xn_item_padding_end" android:elegantTextHeight="true" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/privacyPolicyL" android:background="@drawable/xn_ripple_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_58" android:paddingStart="@dimen/xn_item_padding_start" android:paddingEnd="@dimen/xn_item_padding_end">
+            <ImageView android:id="@id/privacyPolicyArrow" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:src="@null" android:layout_alignParentEnd="true" />
+            <TextView android:textAppearance="@style/font_black_16" android:id="@id/privacyPolicy" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xn_privacy_policy" android:textAlignment="viewStart" android:layout_toStartOf="@id/privacyPolicyArrow" android:elegantTextHeight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/userAgreementL" android:background="@drawable/xn_ripple_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_58" android:paddingStart="@dimen/xn_item_padding_start" android:paddingEnd="@dimen/xn_item_padding_end">
+            <ImageView android:id="@id/userAgreementArrow" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:src="@null" android:layout_alignParentEnd="true" />
+            <TextView android:textAppearance="@style/font_black_16" android:id="@id/userAgreement" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xn_user_agreement" android:textAlignment="viewStart" android:layout_toStartOf="@id/userAgreementArrow" android:elegantTextHeight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/faqGroup" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@id/line" android:background="@color/xn_divider_line" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/dimen_12" android:layout_marginStart="@dimen/dimen_24" android:layout_marginEnd="@dimen/dimen_24" />
+            <TextView android:textAppearance="@style/font_black_14_t40" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="34.0dp" android:text="@string/xn_help_center" android:paddingStart="@dimen/xn_item_padding_start" android:paddingEnd="@dimen/xn_item_padding_end" android:elegantTextHeight="true" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/faqL" android:background="@drawable/xn_ripple_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_58" android:paddingStart="@dimen/xn_item_padding_start" android:paddingEnd="@dimen/xn_item_padding_end">
+                <ImageView android:id="@id/faqArrow" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:src="@null" android:layout_alignParentEnd="true" />
+                <TextView android:textAppearance="@style/font_black_16" android:id="@id/faq" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xn_faq" android:textAlignment="viewStart" android:layout_toStartOf="@id/faqArrow" android:elegantTextHeight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.transsion.widgetslib.view.OverBoundNestedScrollView>

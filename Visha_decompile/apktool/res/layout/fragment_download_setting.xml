@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:fitsSystemWindows="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:gravity="center_vertical" android:id="@id/title_bar" android:layout="@layout/titlebar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.transsion.widgetslib.view.OverBoundNestedScrollView android:id="@id/sv_content" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="15.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/break_point_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="7.5dp" android:text="@string/setting_play" android:layout_below="@id/divider" android:textDirection="locale" android:textAlignment="viewStart" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp" />
+                <include layout="@layout/setting_break_point" />
+                <include layout="@layout/setting_allow_mobile_data_play" />
+                <include layout="@layout/setting_allow_auto_play_stream" />
+                <include layout="@layout/setting_allow_autopip" />
+                <include layout="@layout/setting_allow_playback" />
+                <include layout="@layout/setting_allow_show_history" />
+                <include layout="@layout/setting_allow_landscape_portrait_screen" />
+                <include layout="@layout/setting_music_fade" />
+                <View android:id="@id/divider_download_folder" android:background="@color/os_dialog_divider_color" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="28.0dp" android:layout_below="@id/ll_download_folder" android:layout_marginHorizontal="24.0dp" />
+                <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="15.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/download_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dp" android:layout_marginBottom="7.5dp" android:text="@string/download" android:textDirection="locale" android:textAlignment="viewStart" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp" />
+                <include layout="@layout/setting_allow_mobile_data" />
+                <include layout="@layout/setting_simultaneous_downloads" />
+                <include layout="@layout/setting_download_folder" />
+                <View android:background="@color/os_dialog_divider_color" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="28.0dp" android:layout_marginHorizontal="24.0dp" />
+                <TextView android:textAppearance="@style/os_regular_fontweight" android:textSize="15.0sp" android:textColor="@color/os_text_tertiary_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dp" android:text="@string/setting_private" android:textDirection="locale" android:textAlignment="viewStart" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp" />
+                <include layout="@layout/setting_privacy_browse" />
+                <include layout="@layout/setting_allow_show_privateroom" />
+                <include layout="@layout/setting_biometric_unlocking" />
+            </LinearLayout>
+        </com.transsion.widgetslib.view.OverBoundNestedScrollView>
+    </FrameLayout>
+</LinearLayout>

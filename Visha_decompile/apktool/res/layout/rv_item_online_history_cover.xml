@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bucket_fragment_item" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_launcher_foreground" android:scaleType="centerCrop" />
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/video_gradient_cover" android:scaleType="centerCrop" />
+    <SeekBar android:layout_gravity="bottom" android:id="@id/sb_history" android:visibility="gone" android:layout_width="match_parent" android:layout_height="3.0dp" android:progressDrawable="@drawable/bottom_seekbar_bg_online" android:thumb="@null" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" />
+    <CheckBox android:layout_gravity="end|bottom" android:id="@id/iv_bucket_fragment_checkBox_grid" android:background="@drawable/ic_checkbox" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginBottom="10.0dp" android:button="@null" android:layout_marginEnd="5.0dp" />
+</merge>

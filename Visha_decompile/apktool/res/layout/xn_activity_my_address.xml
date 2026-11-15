@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/contentL" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/xn_full_margin_start" android:layout_marginEnd="@dimen/xn_full_margin_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/addAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="72.0dp" android:layout_marginRight="72.0dp" android:text="@string/xn_address_add" android:layout_above="@id/placeholder" style="@style/OS.Widget.Button.Contained.Big.Single" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_12" android:layout_above="@id/addAddress">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/addressListView2" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:paddingStart="@dimen/xn_item_padding_start" android:paddingEnd="@dimen/xn_item_padding_end" />
+        <com.transsion.widgetslib.view.OverBoundNestedScrollView android:id="@id/scrollView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_gravity="center" android:id="@id/emptyL" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/emptyLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:layout_centerHorizontal="true" />
+                <TextView android:textAppearance="@style/font_black_16_t40" android:gravity="center" android:id="@id/emptyNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xn_address_empty_note" android:layout_below="@id/emptyLogo" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/dimen_32" android:layout_marginEnd="@dimen/dimen_32" />
+            </RelativeLayout>
+        </com.transsion.widgetslib.view.OverBoundNestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

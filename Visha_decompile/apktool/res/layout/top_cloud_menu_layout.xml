@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/top_menu_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_download" android:visibility="gone" android:text="@string/os_search_network" style="@style/OSIconTextViewStyle" />
+    <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_search" android:visibility="gone" android:text="@string/os_search" android:contentDescription="@string/talkback_search" style="@style/OSIconTextViewStyle" />
+    <FrameLayout android:id="@id/translate_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_translate" android:visibility="gone" android:text="@string/os_Upload_and_download" style="@style/OSIconTextViewStyle" />
+        <com.transsion.widgetslib.view.BadgeView android:layout_gravity="end|top" android:id="@id/seal_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:layout_marginEnd="3.0dp" app:osRedPointTextViewNum="0" app:osRedPointTextViewType="@integer/OSRedPointTypeNumSmall" />
+    </FrameLayout>
+    <CheckBox android:id="@id/title_bar_checkBox" android:background="@drawable/ic_list_checkbox" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:button="@null" android:layout_marginEnd="26.0dp" />
+</LinearLayout>

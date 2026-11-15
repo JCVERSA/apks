@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.playercommon.widgets.SortGroup android:orientation="vertical" android:id="@id/sort_by_group" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:video="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/by_date" video:needHead="false" video:sort_value="0" video:title="@string/by_date" />
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/by_name" video:needHead="false" video:sort_value="1" video:title="@string/by_name" />
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_length" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/by_length" video:needHead="false" video:sort_value="3" video:title="@string/duration" />
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_size" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/by_size" video:needHead="false" video:sort_value="2" video:title="@string/by_size" />
+    <com.transsion.playercommon.widgets.SortItem android:id="@id/item_by_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/by_count" video:needHead="false" video:sort_value="4" video:title="@string/by_count" />
+</com.transsion.playercommon.widgets.SortGroup>

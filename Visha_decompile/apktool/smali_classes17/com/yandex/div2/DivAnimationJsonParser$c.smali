@@ -1,0 +1,488 @@
+.class public final Lcom/yandex/div2/DivAnimationJsonParser$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lpd9;
+.implements Lgfa;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/yandex/div2/DivAnimationJsonParser;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "c"
+.end annotation
+
+
+# instance fields
+.field public final a:Lcom/yandex/div2/JsonParserComponent;
+
+
+# direct methods
+.method public constructor <init>(Lcom/yandex/div2/JsonParserComponent;)V
+    .locals 1
+
+    const-string v0, "component"
+
+    invoke-static {p1, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/yandex/div2/DivAnimationJsonParser$c;->a:Lcom/yandex/div2/JsonParserComponent;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic b(Lex7;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p2, Lcom/yandex/div2/DivAnimationTemplate;
+
+    invoke-virtual {p0, p1, p2}, Lcom/yandex/div2/DivAnimationJsonParser$c;->e(Lex7;Lcom/yandex/div2/DivAnimationTemplate;)Lorg/json/JSONObject;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic c(Lex7;Lza3;Ljava/lang/Object;)Lza3;
+    .locals 0
+
+    check-cast p2, Lcom/yandex/div2/DivAnimationTemplate;
+
+    check-cast p3, Lorg/json/JSONObject;
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/yandex/div2/DivAnimationJsonParser$c;->d(Lex7;Lcom/yandex/div2/DivAnimationTemplate;Lorg/json/JSONObject;)Lcom/yandex/div2/DivAnimationTemplate;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public d(Lex7;Lcom/yandex/div2/DivAnimationTemplate;Lorg/json/JSONObject;)Lcom/yandex/div2/DivAnimationTemplate;
+    .locals 23
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    const-string v2, "context"
+
+    move-object/from16 v3, p1
+
+    invoke-static {v3, v2}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v2, "data"
+
+    move-object/from16 v11, p3
+
+    invoke-static {v11, v2}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface/range {p1 .. p1}, Lex7;->c()Z
+
+    move-result v2
+
+    invoke-static/range {p1 .. p1}, Lfx7;->c(Lex7;)Lex7;
+
+    move-result-object v12
+
+    new-instance v13, Lcom/yandex/div2/DivAnimationTemplate;
+
+    sget-object v14, Lacb;->b:Lzbb;
+
+    const/4 v15, 0x0
+
+    if-eqz v1, :cond_0
+
+    iget-object v3, v1, Lcom/yandex/div2/DivAnimationTemplate;->a:Ltp3;
+
+    move-object v8, v3
+
+    goto :goto_0
+
+    :cond_0
+    move-object v8, v15
+
+    :goto_0
+    sget-object v16, Lcom/yandex/div/internal/parser/ParsingConvertersKt;->h:Le74;
+
+    sget-object v10, Lcom/yandex/div2/DivAnimationJsonParser;->h:Lpnb;
+
+    const-string v5, "duration"
+
+    move-object v3, v12
+
+    move-object/from16 v4, p3
+
+    move-object v6, v14
+
+    move v7, v2
+
+    move-object/from16 v9, v16
+
+    invoke-static/range {v3 .. v10}, Lra5;->v(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Lzbb;ZLtp3;Le74;Lpnb;)Ltp3;
+
+    move-result-object v10
+
+    const-string v3, "readOptionalFieldWithExp\u2026_INT, DURATION_VALIDATOR)"
+
+    invoke-static {v10, v3}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v17, Lacb;->d:Lzbb;
+
+    if-eqz v1, :cond_1
+
+    iget-object v3, v1, Lcom/yandex/div2/DivAnimationTemplate;->b:Ltp3;
+
+    move-object v8, v3
+
+    goto :goto_1
+
+    :cond_1
+    move-object v8, v15
+
+    :goto_1
+    sget-object v18, Lcom/yandex/div/internal/parser/ParsingConvertersKt;->g:Le74;
+
+    const-string v5, "end_value"
+
+    move-object v3, v12
+
+    move-object/from16 v4, p3
+
+    move-object/from16 v6, v17
+
+    move v7, v2
+
+    move-object/from16 v9, v18
+
+    invoke-static/range {v3 .. v9}, Lra5;->u(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Lzbb;ZLtp3;Le74;)Ltp3;
+
+    move-result-object v9
+
+    const-string v3, "readOptionalFieldWithExp\u2026dValue, NUMBER_TO_DOUBLE)"
+
+    invoke-static {v9, v3}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v6, Lcom/yandex/div2/DivAnimationJsonParser;->f:Lzbb;
+
+    if-eqz v1, :cond_2
+
+    iget-object v3, v1, Lcom/yandex/div2/DivAnimationTemplate;->c:Ltp3;
+
+    move-object v8, v3
+
+    goto :goto_2
+
+    :cond_2
+    move-object v8, v15
+
+    :goto_2
+    sget-object v19, Lcom/yandex/div2/DivAnimationInterpolator;->FROM_STRING:Le74;
+
+    const-string v5, "interpolator"
+
+    move-object v3, v12
+
+    move-object/from16 v4, p3
+
+    move v7, v2
+
+    move-object/from16 v20, v9
+
+    move-object/from16 v9, v19
+
+    invoke-static/range {v3 .. v9}, Lra5;->u(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Lzbb;ZLtp3;Le74;)Ltp3;
+
+    move-result-object v9
+
+    const-string v3, "readOptionalFieldWithExp\u2026Interpolator.FROM_STRING)"
+
+    invoke-static {v9, v3}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz v1, :cond_3
+
+    iget-object v3, v1, Lcom/yandex/div2/DivAnimationTemplate;->d:Ltp3;
+
+    move-object v7, v3
+
+    goto :goto_3
+
+    :cond_3
+    move-object v7, v15
+
+    :goto_3
+    iget-object v3, v0, Lcom/yandex/div2/DivAnimationJsonParser$c;->a:Lcom/yandex/div2/JsonParserComponent;
+
+    invoke-virtual {v3}, Lcom/yandex/div2/JsonParserComponent;->o1()Lyi5;
+
+    move-result-object v8
+
+    const-string v5, "items"
+
+    move-object v3, v12
+
+    move-object/from16 v4, p3
+
+    move v6, v2
+
+    invoke-static/range {v3 .. v8}, Lra5;->z(Lex7;Lorg/json/JSONObject;Ljava/lang/String;ZLtp3;Lyi5;)Ltp3;
+
+    move-result-object v8
+
+    const-string v3, "readOptionalListField(co\u2026mationJsonTemplateParser)"
+
+    invoke-static {v8, v3}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v6, Lcom/yandex/div2/DivAnimationJsonParser;->g:Lzbb;
+
+    if-eqz v1, :cond_4
+
+    iget-object v3, v1, Lcom/yandex/div2/DivAnimationTemplate;->e:Ltp3;
+
+    move-object/from16 v19, v3
+
+    goto :goto_4
+
+    :cond_4
+    move-object/from16 v19, v15
+
+    :goto_4
+    sget-object v21, Lcom/yandex/div2/DivAnimation$Name;->FROM_STRING:Le74;
+
+    const-string v5, "name"
+
+    move-object v3, v12
+
+    move-object/from16 v4, p3
+
+    move v7, v2
+
+    move-object/from16 v22, v8
+
+    move-object/from16 v8, v19
+
+    move-object/from16 v19, v9
+
+    move-object/from16 v9, v21
+
+    invoke-static/range {v3 .. v9}, Lra5;->i(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Lzbb;ZLtp3;Le74;)Ltp3;
+
+    move-result-object v9
+
+    const-string v3, "readFieldWithExpression(\u2026imation.Name.FROM_STRING)"
+
+    invoke-static {v9, v3}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz v1, :cond_5
+
+    iget-object v3, v1, Lcom/yandex/div2/DivAnimationTemplate;->f:Ltp3;
+
+    move-object v7, v3
+
+    goto :goto_5
+
+    :cond_5
+    move-object v7, v15
+
+    :goto_5
+    iget-object v0, v0, Lcom/yandex/div2/DivAnimationJsonParser$c;->a:Lcom/yandex/div2/JsonParserComponent;
+
+    invoke-virtual {v0}, Lcom/yandex/div2/JsonParserComponent;->t2()Lyi5;
+
+    move-result-object v8
+
+    const-string v5, "repeat"
+
+    move-object v3, v12
+
+    move-object/from16 v4, p3
+
+    move v6, v2
+
+    invoke-static/range {v3 .. v8}, Lra5;->s(Lex7;Lorg/json/JSONObject;Ljava/lang/String;ZLtp3;Lyi5;)Ltp3;
+
+    move-result-object v0
+
+    const-string v3, "readOptionalField(contex\u2026vCountJsonTemplateParser)"
+
+    invoke-static {v0, v3}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz v1, :cond_6
+
+    iget-object v3, v1, Lcom/yandex/div2/DivAnimationTemplate;->g:Ltp3;
+
+    move-object v8, v3
+
+    goto :goto_6
+
+    :cond_6
+    move-object v8, v15
+
+    :goto_6
+    sget-object v21, Lcom/yandex/div2/DivAnimationJsonParser;->i:Lpnb;
+
+    const-string v5, "start_delay"
+
+    move-object v3, v12
+
+    move-object/from16 v4, p3
+
+    move-object v6, v14
+
+    move v7, v2
+
+    move-object v14, v9
+
+    move-object/from16 v9, v16
+
+    move-object/from16 v16, v10
+
+    move-object/from16 v10, v21
+
+    invoke-static/range {v3 .. v10}, Lra5;->v(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Lzbb;ZLtp3;Le74;Lpnb;)Ltp3;
+
+    move-result-object v10
+
+    const-string v3, "readOptionalFieldWithExp\u2026T, START_DELAY_VALIDATOR)"
+
+    invoke-static {v10, v3}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz v1, :cond_7
+
+    iget-object v1, v1, Lcom/yandex/div2/DivAnimationTemplate;->h:Ltp3;
+
+    move-object v8, v1
+
+    goto :goto_7
+
+    :cond_7
+    move-object v8, v15
+
+    :goto_7
+    const-string v5, "start_value"
+
+    move-object v3, v12
+
+    move-object/from16 v4, p3
+
+    move-object/from16 v6, v17
+
+    move v7, v2
+
+    move-object/from16 v9, v18
+
+    invoke-static/range {v3 .. v9}, Lra5;->u(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Lzbb;ZLtp3;Le74;)Ltp3;
+
+    move-result-object v11
+
+    const-string v1, "readOptionalFieldWithExp\u2026tValue, NUMBER_TO_DOUBLE)"
+
+    invoke-static {v11, v1}, Ly45;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    move-object v3, v13
+
+    move-object/from16 v4, v16
+
+    move-object/from16 v5, v20
+
+    move-object/from16 v6, v19
+
+    move-object/from16 v7, v22
+
+    move-object v8, v14
+
+    move-object v9, v0
+
+    invoke-direct/range {v3 .. v11}, Lcom/yandex/div2/DivAnimationTemplate;-><init>(Ltp3;Ltp3;Ltp3;Ltp3;Ltp3;Ltp3;Ltp3;Ltp3;)V
+
+    return-object v13
+.end method
+
+.method public e(Lex7;Lcom/yandex/div2/DivAnimationTemplate;)Lorg/json/JSONObject;
+    .locals 4
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "value"
+
+    invoke-static {p2, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lorg/json/JSONObject;
+
+    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
+
+    iget-object v1, p2, Lcom/yandex/div2/DivAnimationTemplate;->a:Ltp3;
+
+    const-string v2, "duration"
+
+    invoke-static {p1, v0, v2, v1}, Lra5;->D(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Ltp3;)V
+
+    const-string v1, "end_value"
+
+    iget-object v2, p2, Lcom/yandex/div2/DivAnimationTemplate;->b:Ltp3;
+
+    invoke-static {p1, v0, v1, v2}, Lra5;->D(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Ltp3;)V
+
+    iget-object v1, p2, Lcom/yandex/div2/DivAnimationTemplate;->c:Ltp3;
+
+    sget-object v2, Lcom/yandex/div2/DivAnimationInterpolator;->TO_STRING:Le74;
+
+    const-string v3, "interpolator"
+
+    invoke-static {p1, v0, v3, v1, v2}, Lra5;->E(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Ltp3;Le74;)V
+
+    iget-object v1, p2, Lcom/yandex/div2/DivAnimationTemplate;->d:Ltp3;
+
+    iget-object v2, p0, Lcom/yandex/div2/DivAnimationJsonParser$c;->a:Lcom/yandex/div2/JsonParserComponent;
+
+    invoke-virtual {v2}, Lcom/yandex/div2/JsonParserComponent;->o1()Lyi5;
+
+    move-result-object v2
+
+    const-string v3, "items"
+
+    invoke-static {p1, v0, v3, v1, v2}, Lra5;->K(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Ltp3;Lyi5;)V
+
+    iget-object v1, p2, Lcom/yandex/div2/DivAnimationTemplate;->e:Ltp3;
+
+    sget-object v2, Lcom/yandex/div2/DivAnimation$Name;->TO_STRING:Le74;
+
+    const-string v3, "name"
+
+    invoke-static {p1, v0, v3, v1, v2}, Lra5;->E(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Ltp3;Le74;)V
+
+    iget-object v1, p2, Lcom/yandex/div2/DivAnimationTemplate;->f:Ltp3;
+
+    iget-object p0, p0, Lcom/yandex/div2/DivAnimationJsonParser$c;->a:Lcom/yandex/div2/JsonParserComponent;
+
+    invoke-virtual {p0}, Lcom/yandex/div2/JsonParserComponent;->t2()Lyi5;
+
+    move-result-object p0
+
+    const-string v2, "repeat"
+
+    invoke-static {p1, v0, v2, v1, p0}, Lra5;->I(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Ltp3;Lyi5;)V
+
+    const-string p0, "start_delay"
+
+    iget-object v1, p2, Lcom/yandex/div2/DivAnimationTemplate;->g:Ltp3;
+
+    invoke-static {p1, v0, p0, v1}, Lra5;->D(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Ltp3;)V
+
+    const-string p0, "start_value"
+
+    iget-object p2, p2, Lcom/yandex/div2/DivAnimationTemplate;->h:Ltp3;
+
+    invoke-static {p1, v0, p0, p2}, Lra5;->D(Lex7;Lorg/json/JSONObject;Ljava/lang/String;Ltp3;)V
+
+    return-object v0
+.end method

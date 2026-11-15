@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/ll_content" android:background="?OsBgPrimary" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.transsion.onlinevideo.widgets.VishaShimmerFrameLayout android:id="@id/label_content" android:background="?OsBgPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" app:shimmer_base_alpha="1.0" app:shimmer_duration="1500" app:shimmer_highlight_alpha="0.6" app:shimmer_repeat_count="0">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/label_recycleView" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="14.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </com.transsion.onlinevideo.widgets.VishaShimmerFrameLayout>
+    </FrameLayout>
+</LinearLayout>

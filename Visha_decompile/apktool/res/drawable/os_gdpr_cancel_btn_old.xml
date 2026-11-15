@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/os_gdpr_cancel_btn_ripple_color_old"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/os_gdpr_btn_corner_old" />
+            <solid android:color="?negativeBtnBgColorOld" />
+        </shape>
+    </item>
+</ripple>

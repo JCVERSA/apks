@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/move_horizon_progress" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/stay_visha" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginTop="1.0dp" android:text="@string/from_youtube_stay" android:singleLine="true" android:includeFontPadding="false" android:paddingHorizontal="16.0dp" />
+    <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/back" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginBottom="10.0dp" android:text="@string/from_youtube_back" android:singleLine="true" android:paddingHorizontal="16.0dp" />
+    <View android:background="@color/divler_line" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:gravity="center" android:id="@id/cancel" android:layout_width="match_parent" android:layout_height="54.0dp" android:text="@string/cancel" android:singleLine="true" />
+</LinearLayout>

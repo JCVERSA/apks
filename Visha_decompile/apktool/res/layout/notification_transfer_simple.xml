@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_transfer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <ProgressBar android:id="@id/transfer_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:max="100" android:progress="50" android:progressDrawable="@drawable/round_notify_progress" style="@style/customProgressBarHorizontalStyle" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp">
+        <TextView android:textSize="10.0sp" android:textColor="@color/os_text_secondary_color" android:ellipsize="end" android:gravity="start" android:id="@id/tv_file_transfer_size" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/os_text_secondary_color" android:ellipsize="end" android:gravity="end" android:id="@id/tv_file_transfer_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

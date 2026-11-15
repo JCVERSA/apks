@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_popwnd" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.widgets.BubbleTextView android:textSize="14.0sp" android:textColor="#ffffff" android:id="@id/tv_bubble" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_to_learn_new_functions" app:bubbleColor="?os_platform_basic_color" app:bubbleStrokeColor="?os_platform_basic_color" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.3" app:layout_constraintStart_toStartOf="parent" app:triangleDirection="top" app:triangleHeight="10.0dp" />
+</LinearLayout>

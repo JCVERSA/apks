@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="60.0dp" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/quarter_transparent" android:gravity="center" android:id="@id/all_history" android:layout_width="match_parent" android:layout_height="59.0dp" android:text="@string/all_history" />
+    <View android:background="#2fa1a1a1" android:layout_width="match_parent" android:layout_height="1.0dp" />
+</LinearLayout>

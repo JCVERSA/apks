@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/os_switch_track_radius" />
+    <solid android:color="@color/os_btn_checkbox_color_end_selector" />
+    <size android:height="?os_switch_height_attr" android:width="@dimen/os_switch_bg_width" />
+    <padding android:left="?os_switch_bg_inset_hor_attr" android:right="?os_switch_bg_inset_hor_attr" />
+</shape>

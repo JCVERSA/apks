@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_allow_play_with_mobile" android:background="@drawable/settings_menu_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60.0dp" android:layout_below="@id/download_subtitle" android:paddingVertical="7.5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="24.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_allow_play_with_mobile_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_allow_play_with_mobile_data" />
+        <Space android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Switch android:id="@id/switch_for_mobile_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dp" android:layout_marginEnd="22.0dp" style="@style/OS.Widget.Switch" />
+</LinearLayout>

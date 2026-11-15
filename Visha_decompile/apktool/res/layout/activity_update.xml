@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:gravity="center_vertical" android:id="@id/title_bar" android:layout="@layout/titlebar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_icon" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="55.0dp" android:src="@drawable/ic_icon_visha" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/os_text_tertiary_color" android:layout_gravity="center_horizontal" android:id="@id/tv_app_name" android:layout_marginTop="19.0dp" android:text="@string/visha_Player" style="@style/update_text_style" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:layout_gravity="center_horizontal" android:id="@id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ScrollView android:background="@drawable/update_view_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:layout_marginTop="32.0dp">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20.0dp">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/os_text_primary_color" android:id="@id/tv_new_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+            <TextView android:textColor="@color/os_text_secondary_color" android:id="@id/tv_size" android:layout_marginTop="8.0dp" style="@style/update_text_style_14sp" />
+            <TextView android:textColor="@color/os_text_secondary_color" android:layout_marginTop="8.0dp" android:text="@string/update_content" style="@style/update_text_style_14sp" />
+            <TextView android:textColor="@color/os_text_secondary_color" android:id="@id/tv_des" style="@style/update_text_style_14sp" />
+            <View android:background="@color/os_dialog_divider_color" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/visha_basic_color" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_update" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:text="@string/update_now" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

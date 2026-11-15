@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.widgetslib.view.OverBoundNestedScrollView android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/font_black_18_medium" android:id="@id/selectNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xn_select_reset" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/dimen_32" android:layout_marginEnd="@dimen/dimen_32" />
+        <Button android:id="@id/phoneButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/xn_phone" android:layout_below="@id/selectNote" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/dimen_32" android:layout_marginEnd="@dimen/dimen_32" style="@style/OS.Widget.Button.Contained.Big.Single.Gray" />
+        <Button android:id="@id/emailButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:text="@string/xn_email" android:layout_below="@id/phoneButton" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/dimen_32" android:layout_marginEnd="@dimen/dimen_32" style="@style/OS.Widget.Button.Contained.Big.Single.Gray" />
+    </RelativeLayout>
+</com.transsion.widgetslib.view.OverBoundNestedScrollView>

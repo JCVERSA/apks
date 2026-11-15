@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/style_ad_ivImage" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.mgadplus.viewgroup.dynamicview.ContainerLayout android:id="@id/bottom_bar" android:background="@color/mg_to_detial_bottom_bg" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/style_ad_ivImage">
+        <FrameLayout android:id="@id/fl_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <FrameLayout android:id="@id/button_area" android:layout_width="80.0dp" android:layout_height="30.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/mgmi_font_13" android:textColor="@color/mgmi_color_ffff5f00" android:gravity="center" android:id="@id/buttonDetail" android:background="@drawable/banner_ad_text_bg_shape_yellow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/mgmi_template_detail" />
+            </FrameLayout>
+        </FrameLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/fl_button" layout="@layout/mgmi_ad_bottom_layout" />
+    </com.mgadplus.viewgroup.dynamicview.ContainerLayout>
+    <ImageView android:id="@id/tvAdIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/mgmi_ad_more" android:layout_alignParentRight="true" />
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

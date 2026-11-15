@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SeekBar android:id="@id/pip_seekbar_bottom" android:background="@drawable/floating_window_bottom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="6.0px" android:progressDrawable="@drawable/video_bottom_seekbar_bg" android:minHeight="6.0px" android:thumb="@null" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" android:mirrorForRtl="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/surface_container" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/thumb" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/error_contaniner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.transsion.vishaplayersdk.widgets.LoadingLayer android:id="@id/pre_loading" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+    <TextView android:id="@id/tv_open_vip" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+    <TextView android:id="@id/vip_tip" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+</FrameLayout>

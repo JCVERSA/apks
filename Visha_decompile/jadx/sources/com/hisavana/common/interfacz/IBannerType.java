@@ -1,0 +1,7 @@
+package com.hisavana.common.interfacz;
+
+public interface IBannerType {
+    public static final int BANNER_TYPE_BOTTOM_FOLD = 2;
+    public static final int BANNER_TYPE_NORMAL = 0;
+    public static final int BANNER_TYPE_TOP_FOLD = 1;
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.FlingCornerView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/image_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/closeAdIcon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/mgmi_icon_corner_float_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="8.0sp" android:textColor="#ffffff" android:id="@id/mgmi_ad_dec" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginBottom="6.0dp" android:text="@string/mgmi_template_ad" android:shadowColor="#ff000000" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" android:layout_alignParentBottom="true" />
+</com.mgadplus.viewgroup.dynamicview.FlingCornerView>

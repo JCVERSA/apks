@@ -1,0 +1,74 @@
+package androidx.work.impl.utils;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import androidx.annotation.NonNull;
+import androidx.annotation.RestrictTo;
+import androidx.core.os.BuildCompat;
+import androidx.work.ForegroundInfo;
+import androidx.work.ForegroundUpdater;
+import androidx.work.ListenableWorker;
+import androidx.work.Logger;
+import androidx.work.impl.model.WorkSpec;
+import androidx.work.impl.utils.futures.SettableFuture;
+import androidx.work.impl.utils.taskexecutor.TaskExecutor;
+import defpackage.im5;
+
+@RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+public class WorkForegroundRunnable implements Runnable {
+    static final String TAG = Logger.tagWithPrefix("WorkForegroundRunnable");
+    final Context mContext;
+    final ForegroundUpdater mForegroundUpdater;
+    final SettableFuture<Void> mFuture = SettableFuture.create();
+    final TaskExecutor mTaskExecutor;
+    final WorkSpec mWorkSpec;
+    final ListenableWorker mWorker;
+
+    @SuppressLint({"LambdaLast"})
+    public WorkForegroundRunnable(@NonNull Context context, @NonNull WorkSpec workSpec, @NonNull ListenableWorker listenableWorker, @NonNull ForegroundUpdater foregroundUpdater, @NonNull TaskExecutor taskExecutor) {
+        this.mContext = context;
+        this.mWorkSpec = workSpec;
+        this.mWorker = listenableWorker;
+        this.mForegroundUpdater = foregroundUpdater;
+        this.mTaskExecutor = taskExecutor;
+    }
+
+    @NonNull
+    public im5 getFuture() {
+        return this.mFuture;
+    }
+
+    @Override
+    @SuppressLint({"UnsafeExperimentalUsageError"})
+    public void run() {
+        if (!this.mWorkSpec.expedited || BuildCompat.isAtLeastS()) {
+            this.mFuture.set(null);
+            return;
+        }
+        final SettableFuture settableFutureCreate = SettableFuture.create();
+        this.mTaskExecutor.getMainThreadExecutor().execute(new Runnable() {
+            @Override
+            public void run() {
+                settableFutureCreate.setFuture(WorkForegroundRunnable.this.mWorker.getForegroundInfoAsync());
+            }
+        });
+        settableFutureCreate.addListener(new Runnable() {
+            /* JADX WARN: Multi-variable type inference failed */
+            @Override
+            public void run() {
+                try {
+                    ForegroundInfo foregroundInfo = (ForegroundInfo) settableFutureCreate.get();
+                    if (foregroundInfo == null) {
+                        throw new IllegalStateException(String.format("Worker was marked important (%s) but did not provide ForegroundInfo", WorkForegroundRunnable.this.mWorkSpec.workerClassName));
+                    }
+                    Logger.get().debug(WorkForegroundRunnable.TAG, String.format("Updating notification for %s", WorkForegroundRunnable.this.mWorkSpec.workerClassName), new Throwable[0]);
+                    WorkForegroundRunnable.this.mWorker.setRunInForeground(true);
+                    WorkForegroundRunnable workForegroundRunnable = WorkForegroundRunnable.this;
+                    workForegroundRunnable.mFuture.setFuture(workForegroundRunnable.mForegroundUpdater.setForegroundAsync(workForegroundRunnable.mContext, workForegroundRunnable.mWorker.getId(), foregroundInfo));
+                } catch (Throwable th) {
+                    WorkForegroundRunnable.this.mFuture.setException(th);
+                }
+            }
+        }, this.mTaskExecutor.getMainThreadExecutor());
+    }
+}

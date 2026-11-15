@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mgmi_play_control_playpause" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/mgmi_feed_play_control_play" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/mgmi_play_control_mute" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/mgmi_icon_ad_voice_close" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="11.0dp" android:textColor="#ffffff" android:id="@id/mgmi_play_control_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:text="00:00/00:00" android:layout_toLeftOf="@id/mgmi_play_control_mute" android:layout_centerVertical="true" />
+</RelativeLayout>

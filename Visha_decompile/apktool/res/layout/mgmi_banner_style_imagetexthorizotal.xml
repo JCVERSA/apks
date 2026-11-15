@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:DownloadProgressViewStyle="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/mgmi_head_info" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_head_info">
+        <FrameLayout android:id="@id/style_ad_ivImage" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:layout_marginTop="4.0dp" android:layout_toLeftOf="@id/button_area" android:layout_toRightOf="@id/style_ad_ivImage">
+            <TextView android:textSize="@dimen/mgmi_font_13" android:textColor="@color/mgmi_skin_color_title_text_minor" android:ellipsize="end" android:id="@id/tvTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="@dimen/mgmi_font_11" android:textColor="@color/mgmi_skin_color_text_minor" android:ellipsize="end" android:id="@id/subTvTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:maxWidth="170.0dp" android:maxLines="1" android:layout_below="@id/tvTitle" />
+            <ImageView android:id="@id/tvAdIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/mgmi_ad_more" android:layout_below="@id/subTvTitle" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/mgmi_skin_color_text_minor" android:ellipsize="end" android:id="@id/mgmi_ad_dec" android:background="@color/mgmi_ad_text_bg" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="9.0dp" android:layout_marginBottom="4.0dp" android:maxWidth="150.0dp" android:maxLines="1" android:layout_toRightOf="@id/tvAdIcon" android:layout_below="@id/subTvTitle" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/button_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/mgmi_font_13" android:textColor="@color/mgmi_color_ffff5f00" android:id="@id/buttonDetail" android:background="@drawable/banner_ad_text_bg_shape_yellow" android:visibility="gone" android:layout_width="75.0dp" android:layout_height="30.0dp" android:text="@string/mgmi_template_detail" />
+        </FrameLayout>
+    </RelativeLayout>
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

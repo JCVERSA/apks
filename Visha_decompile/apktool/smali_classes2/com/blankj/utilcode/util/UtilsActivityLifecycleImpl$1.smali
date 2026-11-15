@@ -1,0 +1,62 @@
+.class Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl;->d(Landroid/app/Activity;Lcom/blankj/utilcode/util/Utils$a;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl;
+
+.field final synthetic val$activity:Landroid/app/Activity;
+
+.field final synthetic val$listener:Lcom/blankj/utilcode/util/Utils$a;
+
+
+# direct methods
+.method public constructor <init>(Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl;Landroid/app/Activity;Lcom/blankj/utilcode/util/Utils$a;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl$1;->this$0:Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl;
+
+    iput-object p2, p0, Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl$1;->val$activity:Landroid/app/Activity;
+
+    iput-object p3, p0, Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl$1;->val$listener:Lcom/blankj/utilcode/util/Utils$a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl$1;->this$0:Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl;
+
+    iget-object v1, p0, Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl$1;->val$activity:Landroid/app/Activity;
+
+    iget-object p0, p0, Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl$1;->val$listener:Lcom/blankj/utilcode/util/Utils$a;
+
+    invoke-static {v0, v1, p0}, Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl;->a(Lcom/blankj/utilcode/util/UtilsActivityLifecycleImpl;Landroid/app/Activity;Lcom/blankj/utilcode/util/Utils$a;)V
+
+    return-void
+.end method

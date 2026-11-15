@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_web_network" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="65.0dp" android:layout_marginBottom="42.0dp" android:src="@null" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/os_text_secondary_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/web_network_tip" android:paddingHorizontal="30.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/os_text_primary_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_try" android:background="@drawable/boder_refrash_btn_bg_corners" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginTop="97.0dp" android:text="@string/try_again" android:layout_marginHorizontal="72.0dp" />
+</LinearLayout>

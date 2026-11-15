@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"
+      xmlns:video="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_setting_menu" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <View android:layout_gravity="center" android:background="#1affffff" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginHorizontal="16.0dp" />
+            <LinearLayout android:orientation="vertical" android:paddingBottom="45.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/video_settings_select_item" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

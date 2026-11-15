@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dp" android:width="32.0dp" android:viewportWidth="32.0" android:viewportHeight="32.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#ffffff" android:pathData="M16,16m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0" android:fillAlpha="0.1" />
+    <path android:fillColor="@drawable/$ic_farvorited_on_music__0" android:pathData="M24.171,9.171C26.402,11.402 26.427,15.003 24.247,17.265L24.171,17.342L16.943,24.57C16.422,25.091 15.578,25.091 15.057,24.57L7.829,17.342L7.753,17.265C5.573,15.003 5.598,11.402 7.829,9.171C10.06,6.94 13.661,6.915 15.922,9.095L16,9.171L16.077,9.095C18.339,6.915 21.94,6.94 24.171,9.171Z" android:fillType="evenOdd" />
+</vector>

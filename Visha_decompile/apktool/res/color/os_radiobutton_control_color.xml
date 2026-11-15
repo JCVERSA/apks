@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="true" android:color="?osColorControlActivated" android:alpha="@dimen/os_unselected_alpha_actionbar_text" />
+    <item android:state_enabled="false" android:state_checked="false" android:color="?osColorControlNormal" android:alpha="@dimen/os_disabled_alpha_material_light" />
+    <item android:state_checked="true" android:color="?osColorControlActivated" />
+    <item android:color="?osColorControlNormal" />
+</selector>

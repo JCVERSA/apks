@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/playing_notification_big" android:layout_width="@dimen/notification_mini_cover_width" android:layout_height="@dimen/notification_mini_cover_height" android:src="@drawable/ic_notification_cover_video" android:scaleType="centerCrop" android:layout_marginEnd="16.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0dp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/playing_notification_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:fontFamily="sans-serif-medium" android:textDirection="locale" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/os_text_secondary_color" android:ellipsize="end" android:id="@id/playing_notification_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/playing_notification_title_ll" android:fontFamily="sans-serif" android:textDirection="locale" android:layout_alignStart="@id/playing_notification_title_ll" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/playing_notification_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_marginStart="15.0dp" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/playing_notification_play_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_marginStart="15.0dp" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/playing_notification_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_marginStart="15.0dp" />
+</LinearLayout>

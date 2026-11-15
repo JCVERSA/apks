@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="253.0dp" android:width="253.0dp" android:viewportWidth="760.0" android:viewportHeight="760.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$def_music_cover__0" android:pathData="M24,0L736,0A24,24 0,0 1,760 24L760,736A24,24 0,0 1,736 760L24,760A24,24 0,0 1,0 736L0,24A24,24 0,0 1,24 0z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$def_music_cover__1" android:pathData="M482.85,519.58C482.85,519.57 588.11,375.43 465.96,242.82C461.9,238.41 457.51,234.31 452.92,230.46C437.75,217.72 392.32,173.62 393.31,103L393.31,103L378.99,103L378.99,525.54C378.98,525.54 281.96,496.35 241.04,576.83C223.5,611.34 246.03,653.17 284.58,656.65C285.4,656.72 286.22,656.79 287.06,656.84C340.78,660.42 395.7,601.94 394.51,547.03C393.31,492.12 394.51,253.4 394.51,253.4C394.51,253.4 494.08,254.66 510.18,368.38C511.19,375.5 511.48,382.7 511.07,389.88C509.55,416.7 502.85,490.74 474.62,519.18L482.85,519.58Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

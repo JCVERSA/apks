@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/style_image_ivImage" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/mgmi_color_F4F5F9" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/mgmi_ad_close_button" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="18.0dp" android:layout_marginTop="30.0dp" android:src="@drawable/mgmi_icon_corner_float_close" />
+    <TextView android:textSize="12.0dp" android:textColor="#ffffff" android:id="@id/mgmi_ad_time" android:background="@drawable/mgmi_shape_round_solid_common" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginRight="20.0dp" android:layout_alignParentRight="true" />
+    <View android:id="@id/empty_line" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="12.0dp" android:textColor="#ffffff" android:id="@id/mgmi_ad_tag" android:background="@drawable/mgmi_shape_round_solid_common" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginBottom="60.0dp" android:text="@string/mgmi_template_ad" android:layout_above="@id/empty_line" android:layout_alignParentLeft="true" />
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

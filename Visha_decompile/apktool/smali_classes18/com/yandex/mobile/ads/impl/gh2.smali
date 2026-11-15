@@ -1,0 +1,61 @@
+.class final Lcom/yandex/mobile/ads/impl/gh2;
+.super Lkotlin/jvm/internal/Lambda;
+.source "SourceFile"
+
+# interfaces
+.implements Le74;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Le74;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic b:Lcom/yandex/mobile/ads/impl/hh2;
+
+
+# direct methods
+.method public constructor <init>(Lcom/yandex/mobile/ads/impl/hh2;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/yandex/mobile/ads/impl/gh2;->b:Lcom/yandex/mobile/ads/impl/hh2;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    check-cast p1, Ljava/lang/String;
+
+    const-string v0, "id"
+
+    invoke-static {p1, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object p0, p0, Lcom/yandex/mobile/ads/impl/gh2;->b:Lcom/yandex/mobile/ads/impl/hh2;
+
+    invoke-static {p0}, Lcom/yandex/mobile/ads/impl/hh2;->a(Lcom/yandex/mobile/ads/impl/hh2;)Le74;
+
+    move-result-object p0
+
+    new-instance v0, Lcom/yandex/mobile/ads/impl/dy$b;
+
+    invoke-direct {v0, p1}, Lcom/yandex/mobile/ads/impl/dy$b;-><init>(Ljava/lang/String;)V
+
+    invoke-interface {p0, v0}, Le74;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object p0, Lzfb;->a:Lzfb;
+
+    return-object p0
+.end method

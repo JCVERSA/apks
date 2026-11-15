@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/inputL" android:layout_width="match_parent" android:layout_height="@dimen/dimen_38" android:paddingStart="@dimen/dimen_12" android:paddingEnd="@dimen/dimen_12">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/captchaLogo" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:src="@null" android:tint="@color/xn_input_logo_color" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/captcha" android:layout_width="80.0dp" android:layout_height="30.0dp" android:layout_marginTop="@dimen/dimen_12" android:scaleType="fitEnd" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <EditText android:textSize="15.0sp" android:textColor="@color/os_text_primary_color" android:textColorHint="@color/os_text_quaternary_color" android:ellipsize="end" android:id="@id/edit" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/dimen_38" android:hint="@string/xn_graphic_code_hint" android:singleLine="true" android:maxLength="8" android:digits="@string/xn_num_c_digits" android:layout_centerVertical="true" android:inputType="textNoSuggestions" android:textDirection="anyRtl" android:textAlignment="viewStart" android:layout_marginStart="@dimen/dimen_16" android:layout_toStartOf="@id/captcha" android:layout_toEndOf="@id/captchaLogo" android:importantForAutofill="no" />
+    </RelativeLayout>
+    <View android:id="@id/line" android:background="@color/xn_line" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/inputL" />
+</RelativeLayout>

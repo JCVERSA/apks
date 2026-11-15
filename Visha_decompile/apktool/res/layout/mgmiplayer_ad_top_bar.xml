@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ivAdVoice" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/mgmi_icon_ad_voice_open" android:scaleType="centerInside" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_countdown" android:background="@drawable/ad_text_bg_shape_gray" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginLeft="38.0dp">
+        <TextView android:textSize="13.0sp" android:textColor="@color/mgmi_white" android:gravity="center" android:id="@id/countTime" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+        <View android:background="@color/mgmi_white" android:layout_width="1.5px" android:layout_height="10.0dp" android:layout_marginLeft="3.0dp" android:layout_marginRight="3.0dp" />
+        <TextView android:textSize="13.0dp" android:textColor="@color/mgmi_white" android:gravity="center_vertical" android:id="@id/adSkip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    </LinearLayout>
+</FrameLayout>

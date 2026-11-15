@@ -1,0 +1,40 @@
+.class public Ltg7$e;
+.super Landroidx/room/SharedSQLiteStatement;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ltg7;-><init>(Landroidx/room/RoomDatabase;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Ltg7;
+
+
+# direct methods
+.method public constructor <init>(Ltg7;Landroidx/room/RoomDatabase;)V
+    .locals 0
+
+    iput-object p1, p0, Ltg7$e;->a:Ltg7;
+
+    invoke-direct {p0, p2}, Landroidx/room/SharedSQLiteStatement;-><init>(Landroidx/room/RoomDatabase;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public createQuery()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "DELETE FROM online_user_history where is_uploaded == 0x00 or is_uploaded == 0x02"
+
+    return-object p0
+.end method

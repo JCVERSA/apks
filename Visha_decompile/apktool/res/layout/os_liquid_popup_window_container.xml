@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.widgetslib.view.liquid.effect.OSLiquidContainerRootLayoutInner android:id="@id/liquid_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" app:os_liquid_dailog="true" app:os_liquid_mixlevel="mix_l4" app:os_liquid_radius="@dimen/os_radius_xxl" app:os_liquid_shadow_level="shadow_l3" app:os_liquid_show_transition_view="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.widgetslib.view.damping.OSScrollbarLayout android:id="@id/liquid_popview" android:paddingTop="@dimen/os_space125" android:paddingBottom="@dimen/os_space125" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:os_scrollbar_style_mode="widget" />
+</com.transsion.widgetslib.view.liquid.effect.OSLiquidContainerRootLayoutInner>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/vg_landspace_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_continue_icon" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="26.0dp" android:src="@drawable/icon_player_loading_logo" />
+        <TextView android:textSize="13.0dp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/trylook_end" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffffff" android:id="@id/tv_feedback" android:background="@drawable/bg_yellow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/feedback_problem" />
+    </LinearLayout>
+    <ImageView android:id="@id/imgv_error_back" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="6.0dp" android:src="@drawable/mgmi_back_icon" android:scaleType="fitCenter" />
+</FrameLayout>

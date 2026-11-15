@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.transsion.widgets.VideoPlayerSurfaceView android:layout_gravity="center" android:id="@id/player_surface_view" android:layout_width="match_parent" android:layout_height="200.0dp" />
+    <View android:background="#4d000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:layout_marginHorizontal="22.0dp">
+        <ImageView android:id="@id/play_pause" android:layout_width="38.0dp" android:layout_height="38.0dp" android:layout_marginTop="10.0dp" android:src="@drawable/ic_pause_lrc" />
+        <SeekBar android:id="@id/play_progress" android:layout_width="match_parent" android:layout_height="3.0dp" android:layout_marginTop="22.0dp" android:progress="0" android:progressDrawable="@drawable/video_bottom_seekbar_bg" android:minHeight="3.0dp" android:thumb="@color/transparent" android:layout_marginStart="11.0dp" android:layout_toEndOf="@id/play_pause" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/play_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="00:00" android:layout_below="@id/play_progress" android:layout_marginStart="25.0dp" android:layout_toStartOf="@id/play_pause" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="00:00" android:layout_below="@id/play_progress" android:layout_marginEnd="15.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="end|bottom" android:id="@id/download_container" android:background="@drawable/bg_whatsapp_download" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginBottom="110.0dp" android:layout_marginEnd="20.0dp">
+        <ImageView android:layout_gravity="center" android:id="@id/download" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_whatspp_scan_download" />
+        <com.transsion.widgetslib.view.LoadingView android:layout_gravity="center" android:id="@id/pb_saving" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+    </FrameLayout>
+</FrameLayout>

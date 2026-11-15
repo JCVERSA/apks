@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_ad_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.transsion.widgets.VideoPlayerSurfaceView android:layout_gravity="center" android:id="@id/vw_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_ad" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:contentDescription="TODO" />
+    </FrameLayout>
+</merge>

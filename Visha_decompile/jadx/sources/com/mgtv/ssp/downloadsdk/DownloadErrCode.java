@@ -1,0 +1,48 @@
+package com.mgtv.ssp.downloadsdk;
+
+public interface DownloadErrCode {
+    public static final String ACCESS_TOKEN_EXPIRE = "6009";
+    public static final String AUTH_AUTOMATIC_RENEWAL_FAIL = "6008";
+    public static final String AUTH_DEFINITION_NOT_EXIST = "6003";
+    public static final String AUTH_DOWNLOAD_FORBIDDEN = "6005";
+    public static final String AUTH_ERR = "6099";
+    public static final String AUTH_EST_BEYOND_SHELF_LIFE = "6098";
+    public static final String AUTH_GET_DOWNLOAD_URL_FAILED = "6006";
+    public static final String AUTH_LOCATION_LIMITED = "6007";
+    public static final String AUTH_NEED_LOGIN = "6010";
+    public static final String AUTH_NOT_SUBSCRIBE_T = "6011";
+    public static final String AUTH_VIP_NEED = "6004";
+    public static final String AUTH_VOD_EPISODE_NOT_EXIST = "6002";
+    public static final String AUTH_VOD_NOT_EXIST = "6001";
+    public static final String CA_ERR = "6399";
+    public static final String CONFIG_ERR = "6699";
+    public static final String CONFIG_GET_ERR = "6603";
+    public static final String CONFIG_SET_ERR = "6602";
+    public static final String CONFIG_UNSUPPORT = "6601";
+    public static final String CREATE_TASK_ERR = "6599";
+    public static final String CREATE_TASK_NUM_LIMIT = "6503";
+    public static final String CREATE_TASK_REPEAT_ERR = "6501";
+    public static final String CREATE_TASK_SAVE_ERR = "6502";
+    public static final String DOWNLOAD_DEFAULT_ERR = "8099";
+    public static final String DOWNLOAD_NETWORK_DEFAULT_ERR = "6199";
+    public static final String DOWNLOAD_NETWORK_ERR = "6102";
+    public static final String DOWNLOAD_OBJECT_ERR = "6103";
+    public static final String DOWNLOAD_REQUEST_URL_ERR = "6101";
+    public static final String DRM_DEVICE_RESTRICTION = "6095";
+    public static final String DRM_ROOT_RESTRICTION = "6097";
+    public static final String DRM_VERSION_RESTRICTION = "6096";
+    public static final String OK = "0000";
+    public static final String PROTOCOL_ERR = "6799";
+    public static final String PROTOCOL_PARSE_ERR = "6701";
+    public static final String RUNTIME_ERR = "6499";
+    public static final String RUNTIME_INPUT_PARAM_ERR = "6402";
+    public static final String RUNTIME_LIBRARY_ERR = "6403";
+    public static final String RUNTIME_LICENSE_ERR = "6404";
+    public static final String RUNTIME_STOREPATH_NOTSET = "6401";
+    public static final String STORAGE_CAN_NOT_FIND_PATH = "6202";
+    public static final String STORAGE_ERR = "6299";
+    public static final String STORAGE_FILE_ABNORMAL = "6203";
+    public static final String STORAGE_FILE_NOT_EXIST = "6204";
+    public static final String STORAGE_FILE_WRITE_ERR = "6205";
+    public static final String STORAGE_NOT_FREE = "6201";
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="15.0sp" android:textColor="@color/os_text_primary_color" android:textColorHint="@color/os_text_quaternary_color" android:id="@id/edit" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/dimen_38" android:singleLine="true" android:layout_centerVertical="true" android:textDirection="anyRtl" android:textAlignment="viewStart" android:importantForAutofill="no" />
+    <View android:id="@id/line" android:background="@color/xn_line" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/edit" />
+</RelativeLayout>

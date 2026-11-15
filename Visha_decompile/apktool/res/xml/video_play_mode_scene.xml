@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition motion:constraintSetEnd="@id/end" motion:constraintSetStart="@id/start" motion:duration="500" motion:motionInterpolator="easeInOut" />
+    <Transition motion:constraintSetEnd="@id/start" motion:constraintSetStart="@id/end" motion:duration="500" motion:motionInterpolator="easeInOut" />
+    <ConstraintSet android:id="@id/start">
+        <Constraint android:orientation="horizontal" android:id="@id/line_cover_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.75" />
+        <Constraint android:orientation="horizontal" android:id="@id/line_mid_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.64" />
+        <Constraint android:id="@id/music_alumb_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.0dp" motion:layout_constraintBottom_toBottomOf="@id/line_cover_audio" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/flat_half_open">
+        <Constraint android:orientation="horizontal" android:id="@id/line_cover_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.6" />
+        <Constraint android:orientation="horizontal" android:id="@id/line_mid_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.676" />
+        <Constraint android:id="@id/music_alumb_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.0dp" motion:layout_constraintBottom_toBottomOf="@id/line_cover_audio" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/tv_music_tip" android:layout_width="match_parent" android:layout_marginBottom="2.0dp" android:maxLines="1" motion:layout_constraintBottom_toTopOf="@id/line_mid_audio" style="@style/tv_music_tip_style" />
+        <Constraint android:gravity="center" android:id="@id/linearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:paddingHorizontal="22.0dp" motion:layout_constraintTop_toBottomOf="@id/line_mid_audio" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/half_open">
+        <Constraint android:orientation="horizontal" android:id="@id/line_cover_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.6" />
+        <Constraint android:orientation="horizontal" android:id="@id/line_mid_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.64" />
+        <Constraint android:id="@id/music_alumb_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.0dp" motion:layout_constraintBottom_toBottomOf="@id/line_cover_audio" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/tv_music_tip" android:layout_width="match_parent" android:layout_marginBottom="2.0dp" motion:layout_constraintBottom_toTopOf="@id/line_mid_audio" style="@style/tv_music_tip_style" />
+        <Constraint android:gravity="center" android:id="@id/linearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="27.0dp" android:paddingHorizontal="22.0dp" motion:layout_constraintTop_toBottomOf="@id/line_mid_audio" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/end">
+        <Constraint android:orientation="horizontal" android:id="@id/line_cover_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.6" />
+        <Constraint android:orientation="horizontal" android:id="@id/line_mid_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.7" />
+        <Constraint android:id="@id/music_alumb_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.0dp" motion:layout_constraintBottom_toBottomOf="@id/line_cover_audio" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/fold_split">
+        <Constraint android:orientation="horizontal" android:id="@id/line_cover_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.7" />
+        <Constraint android:orientation="horizontal" android:id="@id/line_mid_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.4" />
+        <Constraint android:id="@id/music_alumb_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" motion:layout_constraintBottom_toBottomOf="@id/line_cover_audio" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/flat_split">
+        <Constraint android:orientation="horizontal" android:id="@id/line_cover_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.7" />
+        <Constraint android:orientation="horizontal" android:id="@id/line_mid_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.6" />
+        <Constraint android:id="@id/music_alumb_container" android:layout_width="match_parent" android:layout_height="0.0dp" motion:layout_constraintBottom_toBottomOf="@id/line_cover_audio" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/small_window">
+        <Constraint android:orientation="horizontal" android:id="@id/line_cover_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.75" />
+        <Constraint android:orientation="horizontal" android:id="@id/line_mid_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.62" />
+        <Constraint android:id="@id/music_alumb_container" android:layout_width="match_parent" android:layout_height="0.0dp" motion:layout_constraintBottom_toBottomOf="@id/line_cover_audio" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/small_land">
+        <Constraint android:orientation="vertical" android:id="@id/line_cover_audio_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" motion:layout_constraintGuide_percent="0.4" />
+        <Constraint android:orientation="vertical" android:id="@id/line_cover_start_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" motion:layout_constraintGuide_percent="0.05" />
+        <Constraint android:orientation="vertical" android:id="@id/line_end_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" motion:layout_constraintGuide_end="60.0dp" />
+        <Constraint android:orientation="horizontal" android:id="@id/line_mid_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.5" />
+        <Constraint android:id="@id/music_alumb_container" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="0.0dp" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="@id/line_cover_audio_vertical" motion:layout_constraintStart_toStartOf="@id/line_cover_start_vertical" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/tv_music_tip" android:layout_marginBottom="10.0dp" motion:layout_constraintBottom_toTopOf="@id/line_mid_audio" motion:layout_constraintEnd_toEndOf="@id/line_end_vertical" motion:layout_constraintStart_toStartOf="@id/line_cover_audio_vertical" style="@style/tv_music_tip_style" />
+        <Constraint android:gravity="center" android:id="@id/linearLayout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" motion:layout_constraintEnd_toEndOf="@id/line_end_vertical" motion:layout_constraintStart_toStartOf="@id/line_cover_audio_vertical" motion:layout_constraintTop_toBottomOf="@id/line_mid_audio" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/land">
+        <Constraint android:orientation="vertical" android:id="@id/line_cover_audio_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" motion:layout_constraintGuide_percent="0.4" />
+        <Constraint android:orientation="vertical" android:id="@id/line_cover_start_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" motion:layout_constraintGuide_percent="0.15" />
+        <Constraint android:orientation="vertical" android:id="@id/line_end_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" motion:layout_constraintGuide_end="120.0dp" />
+        <Constraint android:orientation="horizontal" android:id="@id/line_mid_audio" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.45" />
+        <Constraint android:id="@id/music_alumb_container" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginBottom="45.0dp" android:layout_marginEnd="70.0dp" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="@id/line_cover_audio_vertical" motion:layout_constraintStart_toStartOf="@id/line_cover_start_vertical" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/tv_music_tip" android:layout_marginBottom="10.0dp" android:layout_marginEnd="135.0dp" motion:layout_constraintBottom_toTopOf="@id/line_mid_audio" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="@id/line_cover_audio_vertical" style="@style/tv_music_tip_style" />
+        <Constraint android:gravity="center" android:id="@id/linearLayout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginEnd="135.0dp" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="@id/line_cover_audio_vertical" motion:layout_constraintTop_toBottomOf="@id/line_mid_audio" />
+    </ConstraintSet>
+</MotionScene>

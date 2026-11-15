@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_sniff_multi_video" android:layout_width="match_parent" android:layout_height="50.0dp" android:paddingStart="24.0dp" android:paddingEnd="22.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_infos" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="@color/os_text_primary_color" android:gravity="center" android:id="@id/tv_ratio" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/os_text_quaternary_color" android:gravity="center" android:id="@id/tv_mime_type" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="32.0dp" />
+        <TextView android:textSize="15.0dp" android:textColor="@color/os_text_quaternary_color" android:gravity="center" android:id="@id/tv_size" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="32.0dp" />
+        <com.transsion.widgetslib.view.LoadingView android:gravity="center" android:id="@id/lv_size_loading" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="24.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_sniff_multi_video_download_detail" android:layout_width="24.0dp" android:layout_height="wrap_content" android:src="@drawable/ic_sniff_video_download" android:scaleType="centerCrop" android:layout_marginStart="24.0dp" />
+</LinearLayout>

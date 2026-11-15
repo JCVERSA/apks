@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgmi.platform.view.ViewGroup.widget.CreativeWidgetShadow android:background="#44000000" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <View android:background="#44000000" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.mgmi.platform.view.ViewGroup.widget.CreativeWidgetShadow>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.widgets.BubbleTextView android:textSize="14.0sp" android:textColor="#ffffff" android:id="@id/tv_bubble" android:padding="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" android:text="@string/custom_theme_guide_tips" android:layout_marginEnd="12.0dp" app:bubbleColor="?os_platform_basic_color" app:bubbleStrokeColor="?os_platform_basic_color" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:triangleDirection="top" app:triangleHeight="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

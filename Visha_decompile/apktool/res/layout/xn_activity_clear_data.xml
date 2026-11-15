@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/dimen_32" android:paddingEnd="@dimen/dimen_32"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/font_black_18" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dp" android:text="@string/xn_save_data" />
+    <TextView android:textAppearance="@style/font_black_12_t40" android:id="@id/note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xn_not_select_tips" android:layout_below="@id/title" />
+    <View android:id="@id/placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/next" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xn_next" android:layout_above="@id/placeholder" style="@style/OS.Widget.Button.Contained.Big.Single" />
+    <ListView android:id="@id/listView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_12" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:layout_above="@id/next" android:layout_below="@id/note" />
+</RelativeLayout>

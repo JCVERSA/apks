@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:viewportWidth="72.0" android:viewportHeight="72.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/os_text_primary_color" android:pathData="M59.619,32.149L19.232,4.613C16.829,2.974 13.553,3.594 11.915,5.997C11.319,6.871 11,7.905 11,8.963L11,64.037C11,66.945 13.358,69.302 16.266,69.302C17.324,69.302 18.358,68.983 19.232,68.387L59.619,40.851C62.022,39.212 62.642,35.936 61.003,33.534C60.633,32.99 60.163,32.52 59.619,32.149Z" android:strokeColor="@color/visha_music_play_progress_line" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.widgets.CustomSwipeBackLayout android:id="@id/swipeBackLayout" android:layout_width="match_parent" android:layout_height="match_parent" app:directionMode="top" app:maskAlpha="25" app:swipeBackFactor="0.25"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fragment_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.transsion.widgets.CustomSwipeBackLayout>

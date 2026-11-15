@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/settings_menu_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:paddingHorizontal="22.0dp">
+        <TextView android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="23.0dp" android:lines="1" android:textDirection="locale" style="@style/os_dialog_title" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_media_info" android:background="@drawable/media_info_item_bg_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp16" android:paddingVertical="@dimen/dp13">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/os_text_primary_color" android:id="@id/tv_media_info_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Media Info" android:lines="1" android:textDirection="locale" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/os_text_secondary_hios" android:id="@id/tv_media_info_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_unknown" android:lines="1" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp7" android:alpha="0.6">
+                <TextView android:textSize="10.0sp" android:textColor="@color/os_text_secondary_hios" android:id="@id/tv_media_format" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_unknown" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/os_text_secondary_hios" android:id="@id/tv_media_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="04:49" android:layout_marginStart="@dimen/dp30" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/os_text_secondary_hios" android:id="@id/tv_media_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4.63MB" android:layout_marginStart="@dimen/dp30" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_media_album" android:background="@drawable/media_info_item_bg_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:paddingHorizontal="@dimen/dp16" android:paddingVertical="@dimen/dp14">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/os_text_primary_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/albums" android:lines="1" android:textDirection="locale" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2">
+                <ImageView android:layout_width="@dimen/dp36" android:layout_height="@dimen/dp36" android:src="@drawable/media_info_album_cover_icon" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/os_text_secondary_hios" android:id="@id/tv_media_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_unknown" android:lines="1" android:layout_marginStart="@dimen/dp10" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/os_text_secondary_hios" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:layout_marginHorizontal="@dimen/dp10" />
+                <TextView android:textSize="9.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/tv_media_album_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_unknown" android:lines="1" android:includeFontPadding="false" android:alpha="0.8" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_media_artist" android:background="@drawable/media_info_item_bg_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:paddingHorizontal="@dimen/dp16" android:paddingVertical="@dimen/dp14">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/os_text_primary_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/artists" android:lines="1" android:textDirection="locale" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2">
+                <ImageView android:layout_width="@dimen/dp36" android:layout_height="@dimen/dp36" android:src="@drawable/media_info_artist_cover_icon" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/os_text_secondary_hios" android:id="@id/tv_media_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_unknown" android:lines="1" android:layout_marginStart="@dimen/dp10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

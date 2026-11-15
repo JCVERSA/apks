@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="9.0sp" android:textColor="@color/white" android:background="@drawable/shape_item_lable_bg" android:paddingLeft="9.0dp" android:paddingTop="6.0dp" android:paddingRight="9.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="lable" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

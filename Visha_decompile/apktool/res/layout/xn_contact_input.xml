@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/contactLeftL" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_38" android:layout_toStartOf="@id/logo">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/startLogo" android:visibility="gone" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:src="@null" android:tint="@color/xn_input_logo_color" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_12" android:layout_marginEnd="@dimen/dimen_16" />
+        <EditText android:textSize="15.0sp" android:textColor="@color/os_text_primary_color" android:textColorHint="@color/os_text_quaternary_color" android:id="@id/fullNameEdit" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/dimen_38" android:hint="@string/xn_full_name" android:singleLine="true" android:maxLength="50" android:textDirection="anyRtl" android:textAlignment="viewStart" android:layout_marginEnd="@dimen/dimen_16" android:layout_toEndOf="@id/startLogo" android:importantForAutofill="no" />
+    </RelativeLayout>
+    <ImageView android:id="@id/logo" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:src="@drawable/xn_contact_person_bg" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <View android:id="@id/line" android:background="@color/xn_line" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/contactLeftL" />
+</RelativeLayout>

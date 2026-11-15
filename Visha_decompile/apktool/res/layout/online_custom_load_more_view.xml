@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loading_view" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginBottom="10.0dp">
+        <com.transsion.widgetslib.view.LoadingView android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_video_loading" android:layout_marginStart="10.0dp" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/load_fail_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="10.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:layout_gravity="center" android:id="@id/tv_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_video_load_fail" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/load_more_load_end_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="179.0dp" android:layout_marginTop="47.0dp" android:src="@null" android:scaleType="centerInside" android:layout_marginHorizontal="22.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/os_text_primary2_color" android:id="@id/tv_load_end_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46.0dp" android:text="@string/online_video_load_end_hint" android:layout_centerHorizontal="true" android:textAlignment="center" android:layout_marginHorizontal="40.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/os_text_primary_color" android:gravity="center" android:id="@id/tv_sort" android:background="@drawable/boder_refrash_btn_bg_corners_common" android:layout_width="wrap_content" android:layout_height="36.0dp" android:minWidth="216.0dp" android:text="@string/online_video_load_end_button" android:layout_below="@id/tv_load_end_hint" android:layout_centerHorizontal="true" android:textAlignment="center" android:layout_marginVertical="20.0dp" android:paddingHorizontal="20.0dp" />
+    </RelativeLayout>
+</FrameLayout>

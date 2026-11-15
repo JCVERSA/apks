@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.playercommon.widgets.RoundFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:round_corner="14.0dp" app:stroke_color="@color/transparent" app:stroke_width="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="224.0dp" android:src="@drawable/show_privateromm_warning" android:scaleType="centerCrop" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_private_warning_tips" android:id="@id/tv_show_privateromm_warning" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="14.0dp" android:fontFamily="Roboto-Regular" android:textDirection="locale" android:layout_marginHorizontal="16.0dp" />
+        <View android:background="@color/os_gray_tertiary_color" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="53.669983dp">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_private_warning_cancel" android:gravity="center" android:id="@id/cancel" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" android:fontFamily="Roboto-Regular" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/submit_color" android:gravity="center" android:id="@id/tv_close" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/setting_allow_show_privateroom_close" android:layout_weight="1.0" android:fontFamily="Roboto-Regular" />
+        </LinearLayout>
+    </LinearLayout>
+</com.transsion.playercommon.widgets.RoundFrameLayout>

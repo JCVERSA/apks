@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_app_bar_content" android:background="@drawable/bg_cloud_size" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginHorizontal="20.0dp" app:layout_scrollFlags="scroll|enterAlways"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_storage_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.transsion.playercommon.widgets.RoundFrameLayout android:id="@id/ll_icon_cloud" android:layout_width="38.0dp" android:layout_height="38.0dp" android:layout_marginHorizontal="14.0dp" android:layout_marginVertical="18.0dp" app:round_corner="100.0dp" app:solid_color="@color/transparent" app:stroke_color="@color/os_gray_tertiary_color" app:stroke_width="1.0px">
+            <ImageView android:id="@id/ri_icon" android:layout_width="38.0dp" android:layout_height="38.0dp" android:src="@drawable/icon_cloud_login_default" />
+        </com.transsion.playercommon.widgets.RoundFrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_storage_info" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textColor="@color/os_text_primary_color" android:id="@id/tv_cloud_user" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/tv_cloud_storage" app:layout_constraintEnd_toStartOf="@id/iv_cloud_storage_expand" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" style="@style/textSemiBoldH1" />
+            <TextView android:textSize="12.0sp" android:textColor="?os_text_info" android:id="@id/tv_cloud_storage" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_cloud_storage_expand" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_cloud_user" />
+            <ImageView android:id="@id/iv_cloud_storage_expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cloud_expand" android:paddingStart="8.0dp" android:paddingEnd="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <View android:id="@id/vv_cloud_space_gift" android:background="@color/os_gray_quaternary_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cl_cloud_space_gift" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:id="@id/tv_space_gift" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="20.0dp" />
+        <Button android:id="@id/bt_space_gift" android:layout_width="76.0dp" android:layout_height="wrap_content" android:minHeight="30.0dp" android:text="@string/visha_get_space" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" android:layout_marginVertical="12.0dp" style="@style/BigButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

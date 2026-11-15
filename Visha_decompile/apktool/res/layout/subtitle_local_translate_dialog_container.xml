@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mask_root_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/topPlaceHolder" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginHorizontal="24.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:minHeight="56.0dp" android:layout_marginHorizontal="22.0dp">
+        <com.transsion.widgetslib.widget.OSIconTextView android:textColor="@color/os_icon_edit_cut_color" android:id="@id/title_bar_back" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/os_back" android:contentDescription="@string/talkback_back" android:layout_marginEnd="7.0dp" app:os_icon_support_rtl="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffdedede" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/visha_subtitle_translate_subtitle" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_local_language_from" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="#e0ffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_local_language_from" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/visha_subtitle_select_subtitle_language" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="24.0dp" android:layout_marginEnd="22.0dp" />
+        <TextView android:textColor="#87dedede" android:id="@id/tv_local_from_language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dp" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_marginEnd="22.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_local_language_to" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="#e0ffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_local_language_to" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/visha_subtile_select_translate_language" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="24.0dp" android:layout_marginEnd="22.0dp" />
+        <TextView android:textColor="#87dedede" android:id="@id/tv_local_to_language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dp" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_marginEnd="22.0dp" />
+    </LinearLayout>
+</LinearLayout>

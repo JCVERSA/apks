@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/font_black_15_t40" android:textSize="@dimen/sp_15" android:gravity="center" android:id="@id/cc" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_38" android:minWidth="@dimen/dimen_24" android:paddingStart="@dimen/dimen_10" android:paddingEnd="@dimen/dimen_8" android:elegantTextHeight="true" />
+    <View android:id="@id/ccLine" android:background="@color/xn_line" android:layout_width="wrap_content" android:layout_height="1.0dp" android:layout_below="@id/cc" android:layout_alignTop="@id/line" android:layout_alignBottom="@id/line" android:layout_alignStart="@id/cc" android:layout_alignEnd="@id/cc" />
+    <EditText android:textSize="15.0sp" android:textColor="@color/os_text_primary_color" android:textColorHint="@color/os_text_quaternary_color" android:id="@id/edit" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/dimen_38" android:hint="@string/xn_phone" android:singleLine="true" android:maxLength="15" android:digits="@string/xn_num_digits" android:layout_centerVertical="true" android:inputType="phone|textNoSuggestions" android:textDirection="anyRtl" android:textAlignment="viewStart" android:layout_marginStart="@dimen/dimen_8" android:layout_toEndOf="@id/cc" android:importantForAutofill="no" />
+    <View android:id="@id/line" android:background="@color/xn_line" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/edit" android:layout_alignStart="@id/edit" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/video_fragment" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:focusable="true" android:fitsSystemWindows="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/title_bar" android:visibility="gone" layout="@layout/titlebar_layout" />
+        <include android:gravity="center_vertical" android:id="@id/tab_menu_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_below="@id/title_bar" layout="@layout/play_all_layout" />
+        <ImageView android:id="@id/iv_audio_history_clear" android:visibility="gone" android:src="@drawable/ic_clear_history_all" android:layout_below="@id/title_bar" android:layout_marginEnd="6.0dp" android:layout_alignParentEnd="true" style="@style/videoButton" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/cl_main_fragment" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/bottom_operate_layout" android:layout_below="@id/tab_menu_layout">
+            <include android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_bar" android:importantForAccessibility="no" layout="@layout/fast_scroller_recyclerview_conflict" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <ViewStub android:layout_gravity="center_vertical" android:id="@id/main_empty_view" android:layout="@layout/list_empty_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include layout="@layout/audio_bottom_operate_layout" />
+        <ViewStub android:id="@id/vs_audio_stack" android:layout="@layout/layout_audio_stack" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <com.transsion.widgets.RoundImageView android:id="@id/iv_play_shuffle" android:visibility="gone" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginBottom="76.0dp" android:src="@drawable/ic_btn_shuffle" android:layout_alignParentBottom="true" android:layout_marginEnd="22.0dp" android:layout_alignParentEnd="true" app:corner_radius="@dimen/dp50" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_drag_animation_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

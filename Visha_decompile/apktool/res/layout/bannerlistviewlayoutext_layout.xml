@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/myrecyclerview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" />
+    <View android:id="@id/line" android:background="@color/mgmi_line_bg_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_below="@id/myrecyclerview" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/logo_content" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_below="@id/line">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="11.0sp" android:textColor="@color/mgmi_banner_list_logo_text_color" android:id="@id/tvLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgmi_player_ad" />
+            <ImageView android:id="@id/ivClose" android:background="@drawable/close_banner" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

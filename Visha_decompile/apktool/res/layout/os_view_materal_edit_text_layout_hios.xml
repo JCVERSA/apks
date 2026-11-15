@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dp" android:textColor="?os_text_tertiary" android:id="@id/os_et_edit_text_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginBottom="@dimen/os_space100" />
+        <RelativeLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/os_et_second_root_layout" android:paddingTop="@dimen/os_edit_text_padding_top" android:paddingBottom="@dimen/os_edit_text_padding_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?os_et_left_right_padding" android:paddingEnd="@dimen/os_space150">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/os_et_edit_text_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.transsion.widgetslib.widget.editext.ExtendedEditText android:ellipsize="end" android:id="@id/oet_edit_text" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="34.0dp" android:singleLine="true" android:inputType="text" android:textDirection="locale" style="@style/OsEditTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/os_et_edit_text_right_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                        <View android:layout_gravity="center_vertical" android:id="@id/os_et_edit_text_divider" android:background="?os_border_default" android:visibility="gone" android:layout_width="0.6700001dp" android:layout_height="16.0dp" android:layout_marginStart="16.0dp" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/os_et_edit_delete_all" android:padding="@dimen/os_space050" android:visibility="gone" android:layout_width="@dimen/os_icon_large_size" android:layout_height="@dimen/os_icon_large_size" android:src="@drawable/os_ic_cancel" android:layout_marginStart="@dimen/os_space050" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/os_et_edit_image_button" android:padding="@dimen/os_space050" android:visibility="gone" android:layout_width="@dimen/os_icon_large_size" android:layout_height="@dimen/os_icon_large_size" android:layout_marginStart="@dimen/os_space050" />
+                        <TextView android:textSize="@dimen/os_edit_text_size" android:textColor="?os_text_primary" android:layout_gravity="center_vertical" android:id="@id/os_et_edit_text_right_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" />
+                        <Button android:textSize="@dimen/os_edit_text_size" android:layout_gravity="center_vertical" android:id="@id/os_et_edit_text_right_text_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dp" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" android:layout_marginStart="16.0dp" style="@style/OS.Widget.Button.Text" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/os_et_edit_text_left_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+                        <TextView android:textSize="@dimen/os_edit_text_size" android:textColor="?os_text_primary" android:layout_gravity="center_vertical" android:id="@id/os_et_edit_text_left_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/os_et_left_edit_image_first" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/os_et_left_edit_image_second" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginEnd="16.0dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:id="@id/os_et_underline_view" android:background="?os_border_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignBottom="@id/os_et_second_root_layout" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/os_caption_font" android:textColor="@color/os_red_basic_color" android:ellipsize="end" android:gravity="start" android:id="@id/os_et_edit_text_error_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/os_space050" android:maxLines="1" android:layout_marginStart="@dimen/os_space200" android:layout_marginEnd="@dimen/os_space200" />
+            <TextView android:textSize="@dimen/os_subhead_font" android:textColor="?os_text_tertiary" android:ellipsize="end" android:gravity="start" android:id="@id/os_et_edit_text_help_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" android:layout_marginStart="@dimen/os_space200" android:layout_marginEnd="@dimen/os_space200" />
+            <TextView android:textSize="@dimen/os_subhead_font" android:textColor="?os_text_tertiary" android:ellipsize="end" android:gravity="end" android:id="@id/os_et_edit_text_limit_hint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" android:layout_marginEnd="16.0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

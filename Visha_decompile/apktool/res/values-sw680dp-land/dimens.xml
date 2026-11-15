@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="os_dimen_fold_dialog_top_bottom_inset_pad_gesture_on">43.0dp</dimen>
+    <dimen name="os_gdpr_dialog_large_screen_width_weight">0.325</dimen>
+    <dimen name="os_gdpr_dialog_top_bottom_inset">35.0dp</dimen>
+</resources>

@@ -1,0 +1,26 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: QdC36MDTSpqchLBDNVNLVIIeUKY=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA1-Digest: Fupr91uqeVl+kKNqoKbJLFpSaqY=
+
+Name: res/drawable-tr/monetization_ads_instream_internal_click_button.
+ xml
+SHA1-Digest: jDOP1q5AdfDXnOQnnlQteXpV9xk=
+
+Name: res/drawable-tr/monetization_ads_instream_internal_skip_focused.
+ xml
+SHA1-Digest: eTXVcX4y5BEfseg4UnLKtd/SVdY=
+
+Name: res/drawable-tr/monetization_ads_instream_internal_skip_unfocuse
+ d.xml
+SHA1-Digest: rGgJr+RkkkSfJwWKjP8e/Gai8Sw=
+
+Name: resources.arsc
+SHA1-Digest: ZDPyeuFmTSA9Df7dQDNBHnwfX4g=
+
+Name: stamp-cert-sha256
+SHA1-Digest: Bs40BvDZ1xrbgQrPTD2x5w/NfHQ=
+

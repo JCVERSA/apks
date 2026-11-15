@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_history_key" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_history_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="12.0dp" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+.class public Lcom/hunantv/media/report/entity/EndEntity;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public act:Ljava/lang/String;
+
+.field public cdtp:Ljava/lang/String;
+
+.field public cip:Ljava/lang/String;
+
+.field public common:Lcom/hunantv/media/report/entity/CommonEntity;
+
+.field public dectp:Ljava/lang/String;
+
+.field public endtp:Ljava/lang/String;
+
+.field public hddc:Ljava/lang/String;
+
+.field public ptst:Ljava/lang/String;
+
+.field public umaxs:Ljava/lang/String;
+
+.field public vsravgt:Ljava/lang/String;
+
+.field public vsrcount:Ljava/lang/String;
+
+.field public vsrmaxt:Ljava/lang/String;
+
+.field public vsrmint:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-string v0, "pend"
+
+    iput-object v0, p0, Lcom/hunantv/media/report/entity/EndEntity;->act:Ljava/lang/String;
+
+    return-void
+.end method

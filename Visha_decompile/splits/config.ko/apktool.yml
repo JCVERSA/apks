@@ -1,0 +1,11 @@
+version: 3.0.3
+apkFileName: config.ko.apk
+usesFramework:
+  ids:
+  - 1
+versionInfo:
+  versionCode: 83033
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc

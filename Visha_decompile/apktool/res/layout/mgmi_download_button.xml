@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/download_background" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="14.0dp" app:cardElevation="0.0dp" app:cardMaxElevation="0.0dp" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/download_backgroundcolor" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/download_backgroundChange" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" />
+        <ImageView android:id="@id/download_progresscolor" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/content" android:paddingLeft="6.0dp" android:paddingTop="4.0dp" android:paddingRight="6.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/mgmi_dp_88">
+            <ImageView android:id="@id/download_icon" android:background="@drawable/arrow_start" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginRight="3.0dp" />
+            <TextView android:textSize="12.0sp" android:id="@id/downloadText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

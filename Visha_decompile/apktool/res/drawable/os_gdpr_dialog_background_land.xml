@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="0.0dp" android:insetRight="0.0dp" android:insetTop="20.0dp" android:insetBottom="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <corners android:radius="@dimen/os_gdpr_dialog_bg_radius" />
+        <solid android:color="@color/os_gdpr_dialog_background_color" />
+    </shape>
+</inset>

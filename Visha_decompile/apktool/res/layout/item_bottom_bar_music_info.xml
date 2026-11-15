@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/tv_info" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingEnd="3.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.transsion.widgets.MusicMarqueTextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="@color/os_text_primary_color" android:ellipsize="marquee" android:id="@id/info_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:textDirection="locale" />
+    <com.transsion.widgets.MusicMarqueTextView android:textSize="12.0dp" android:textColor="@color/os_text_tertiary_color" android:ellipsize="marquee" android:id="@id/artist" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-3.0dp" android:singleLine="true" android:textDirection="locale" />
+</LinearLayout>

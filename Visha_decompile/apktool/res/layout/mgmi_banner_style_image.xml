@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:background="@color/mgmi_skin_color_content_bg_primary" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/image_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/tvAdIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/mgmi_ad_more" android:layout_alignParentRight="true" />
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.RoundFrameLayout android:id="@id/ll_bucket_fragment_item" android:layout_width="wrap_content" android:layout_height="wrap_content" app:round_corner="@dimen/image_radius" app:solid_color="@color/transparent" app:stroke_color="@color/os_gray_tertiary_color" app:stroke_width="1.0px">
+        <include layout="@layout/rv_item_fragment_video_cover" />
+    </com.transsion.playercommon.widgets.RoundFrameLayout>
+</LinearLayout>

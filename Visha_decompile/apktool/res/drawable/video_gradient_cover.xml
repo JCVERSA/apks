@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="270.0dp" android:width="480.0dp" android:viewportWidth="480.0" android:viewportHeight="270.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$video_gradient_cover__0" android:pathData="M24.5,0.5L455.5,0.5A24,24 0,0 1,479.5 24.5L479.5,245.5A24,24 0,0 1,455.5 269.5L24.5,269.5A24,24 0,0 1,0.5 245.5L0.5,24.5A24,24 0,0 1,24.5 0.5z" android:strokeColor="#a1a1a1" android:strokeWidth="1.0" android:strokeAlpha="0.3" />
+</vector>

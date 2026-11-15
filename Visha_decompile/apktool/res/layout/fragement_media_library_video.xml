@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/titlebar_layout" />
+    <FrameLayout android:id="@id/fl_collect_status" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="92.0dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/divler_line" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <Button android:textSize="15.0dp" android:layout_gravity="center" android:id="@id/btn_save_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="266.0dp" android:text="@string/visha_save_to_cloud" android:maxLines="2" android:singleLine="false" android:includeFontPadding="false" android:paddingStart="@dimen/os_btn_text_padding" android:paddingEnd="@dimen/os_btn_text_padding" style="@style/OS.Widget.Button.Contained.Big.Single" />
+    </FrameLayout>
+    <ViewStub android:id="@id/error_layout" android:visibility="gone" android:layout="@layout/net_error_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_bar" />
+    <com.transsion.widgets.CustomSwipeRefreshLayout android:id="@id/pull_refresh_layout" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/fl_collect_status" android:layout_below="@id/title_bar" android:overScrollMode="always">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_header" android:paddingTop="@dimen/os_space150" android:paddingBottom="@dimen/os_space150" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/os_space250" android:paddingEnd="@dimen/os_space250">
+                    <com.google.android.material.imageview.ShapeableImageView android:id="@id/iv_avatar" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@drawable/ic_avator_default" android:scaleType="centerCrop" app:shapeAppearance="@style/artist_icon_style" app:strokeColor="@null" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/os_space200">
+                        <TextView android:textColor="?os_text_primary" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" style="@style/textSemiBoldH1" />
+                        <TextView android:textSize="@dimen/sp12" android:textColor="?os_text_info" android:ellipsize="end" android:id="@id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_media_library" android:paddingTop="@dimen/os_space150" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="3" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.transsion.widgets.CustomSwipeRefreshLayout>
+</RelativeLayout>

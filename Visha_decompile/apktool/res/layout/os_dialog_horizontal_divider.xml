@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:orientation="vertical" android:background="@color/os_dialog_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/os_foot_bar_line_height" android:layout_marginTop="@dimen/os_dialog_divider_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

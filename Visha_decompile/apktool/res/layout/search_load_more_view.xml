@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loading_view" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginBottom="10.0dp" />
+    <FrameLayout android:id="@id/load_fail_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="10.0dp" />
+    <RelativeLayout android:id="@id/load_more_load_end_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

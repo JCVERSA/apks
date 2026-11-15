@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/in_stack_default" android:visibility="gone" layout="@layout/item_audio_stack" />
+    <View android:id="@id/shake_view" android:background="@drawable/settings_menu_item_press" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_item" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="22.0dp" android:paddingVertical="8.0dp">
+        <ImageView android:id="@id/iv_item_icon" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_playlist_icon" android:contentDescription="@string/talkback_sort_by_pressing_and_sliding" android:layout_marginEnd="16.0dp" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/rl_icon_cover" android:background="@drawable/bg_shadow_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16.0dp">
+                <com.transsion.widgets.RoundImageView android:id="@id/iv_play_cover_icon" android:visibility="visible" android:layout_width="64.0dp" android:layout_height="64.0dp" app:corner_radius="16.0dp" />
+            </FrameLayout>
+            <com.transsion.widgets.PlayingImageView android:id="@id/iv_playing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pause_list_cover" android:layout_alignBottom="@id/rl_icon_cover" android:layout_alignEnd="@id/rl_icon_cover" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/tv_item_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="8.0dp">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:textDirection="locale" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp">
+                <TextView android:textSize="10.0sp" android:textColor="@color/playlist_delete_red" android:id="@id/tv_has_delete" android:background="@drawable/bg_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_has_delete" android:includeFontPadding="false" android:textDirection="locale" android:layout_marginEnd="5.0dp" android:paddingHorizontal="6.0dp" android:paddingVertical="3.0dp" />
+                <TextView android:textSize="7.5sp" android:textColor="?os_platform_basic_color" android:id="@id/iv_new" android:background="@drawable/new_tag_bg_stroke" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_tag" android:includeFontPadding="false" android:textDirection="locale" android:layout_marginEnd="5.0dp" android:paddingHorizontal="3.0dp" android:paddingVertical="1.5dp" />
+                <ImageView android:id="@id/iv_farvorited" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/ic_audio_farvorited" />
+                <ImageView android:id="@id/iv_mv_tag" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="16.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/ic_audio_mv_tag" />
+                <TextView android:textColor="@color/os_text_tertiary_color" android:id="@id/tv_item_duration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_play_count" android:background="@drawable/bg_play_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dp" android:paddingHorizontal="6.0dp" android:paddingVertical="0.0px">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_listen" />
+                    <TextView android:textSize="7.5sp" android:textColor="#ff7c10" android:id="@id/tv_item_playcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="Roboto-Medium" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_filter_tags" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/os_text_tertiary_color" android:ellipsize="end" android:id="@id/tv_item_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textDirection="locale" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.transsion.widgetslib.widget.OSIconTextView android:textColor="@color/os_text_primary_color_no_select" android:layout_gravity="center_vertical" android:id="@id/iv_item_more" android:text="@string/os_more" android:contentDescription="@string/talkback_more_settings" android:paddingStart="10.0dp" android:layout_marginEnd="@dimen/video_padding" style="@style/OSIconTextViewStyle" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/iv_bucket_fragment_checkBox" android:background="@drawable/ic_list_checkbox" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:button="@null" android:layout_marginEnd="@dimen/video_padding" />
+    </LinearLayout>
+</FrameLayout>

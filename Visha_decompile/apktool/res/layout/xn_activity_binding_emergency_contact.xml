@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/xn_full_margin_start" android:layout_marginEnd="@dimen/xn_full_margin_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <Button android:enabled="false" android:id="@id/bindBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xn_add_to_account" android:layout_above="@id/placeholder" android:layout_marginStart="72.0dp" android:layout_marginEnd="72.0dp" style="@style/OS.Widget.Button.Contained.Big.Single" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="12.0dp" android:layout_above="@id/bindBtn">
+        <com.transsion.widgetslib.view.OverBoundNestedScrollView android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_gravity="center" android:id="@id/inputL" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/xn_item_padding_start" android:paddingEnd="@dimen/xn_item_padding_end">
+                <com.transsion.xuanniao.account.comm.widget.ContactInput android:id="@id/contactInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" app:hint_resource="@string/xn_contact_full_name" />
+                <com.transsion.xuanniao.account.comm.widget.PhoneInput android:id="@id/phoneInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_below="@id/contactInput" app:hint_resource="@string/xn_contact_phone" app:max_length="50" />
+                <com.transsion.xuanniao.account.comm.widget.EmailInput android:id="@id/emailInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_below="@id/phoneInput" app:hint_resource="@string/xn_contact_email" />
+            </RelativeLayout>
+        </com.transsion.widgetslib.view.OverBoundNestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

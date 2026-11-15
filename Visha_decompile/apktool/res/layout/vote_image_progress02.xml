@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.VoteProgressBar android:id="@id/voteprogressbar" android:layout_width="138.0dp" android:layout_height="21.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="match_parent" android:layout_height="14.0dp" android:src="@drawable/vote_image_progress_bg" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/progresscolor" android:layout_width="2.0dp" android:layout_height="14.0dp" android:src="#bcbcbc" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/progressindicator" android:layout_width="21.0dp" android:layout_height="21.0dp" android:src="@drawable/vote_shape" />
+    <TextView android:textSize="6.0sp" android:textColor="#ffffff" android:id="@id/progressText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+</com.mgadplus.viewgroup.dynamicview.VoteProgressBar>

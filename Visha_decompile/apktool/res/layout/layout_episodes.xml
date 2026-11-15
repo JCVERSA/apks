@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_episodes" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?OsBgPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/episode_down_close" android:layout_width="match_parent" android:layout_height="55.0dp" android:layout_marginHorizontal="22.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/os_text_primary_color" android:id="@id/episode_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:text="@string/video_onlinevideo_episodes" />
+            <ImageView android:id="@id/episode_close" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="25.0dp" android:src="@drawable/ic_mg_episodes_close" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_episodes_numbers" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16.0dp" android:layout_marginStart="22.0dp" android:layout_marginEnd="@dimen/dp12" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+[{
+        "script_key": ".instagram.com",
+        "script_status": true,
+        "script_url": "https://visha-cdn.shalltry.com/script/public/instagram/instagram-1.0.0.js",
+        "script_version": "1.0.0",
+        "sniff_domain": ".instagram.com",
+        "sniff_url": "https://m.instagram.com"
+    }, {
+        "script_key": ".mxtakatak.com",
+        "script_status": true,
+        "script_url": "https://visha-cdn.shalltry.com/script/public/mxtakatak/mxtakatak-1.0.0.js",
+        "script_version": "1.0.0",
+        "sniff_domain": ".mxtakatak.com",
+        "sniff_url": "https://m.mxtakatak.com"
+    }, {
+        "script_key": ".common.com",
+        "script_status": true,
+        "script_url": "https://visha-cdn.shalltry.com/script/public/common/common-1.0.0.js",
+        "script_version": "1.0.0",
+        "sniff_domain": ".common.com",
+        "sniff_url": ".common.com"
+    }, {
+        "script_key": ".tumblr.com",
+        "script_status": true,
+        "script_url": "https://visha-cdn.shalltry.com/script/public/tumblr/tumblr-1.0.0.js",
+        "script_version": "1.0.0",
+        "sniff_domain": ".tumblr.com",
+        "sniff_url": ".tumblr.com"
+    }
+]

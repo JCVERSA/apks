@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="50.0dp" android:minHeight="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ffdedede" android:ellipsize="end" android:id="@id/tv_audio_track" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:paddingStart="1.0dp" android:paddingEnd="1.0dp" android:layout_marginEnd="@dimen/dp_10" />
+    <RadioButton android:id="@id/cb_track" android:focusable="true" android:clickable="false" android:layout_width="24.0dp" android:layout_height="24.0dp" android:checked="false" android:text="@null" android:buttonTint="@color/audio_track_check_box_color" />
+</LinearLayout>

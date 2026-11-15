@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.blur.ShapeBlurView android:id="@id/blur_view" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" app:blur_overlay_color="@color/blur_overlay_color" app:layout_constraintBottom_toBottomOf="@id/content_operation_layout" app:layout_constraintEnd_toEndOf="@id/content_operation_layout" app:layout_constraintStart_toStartOf="@id/content_operation_layout" app:layout_constraintTop_toTopOf="@id/content_operation_layout" app:support_dynamic_blur="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,7 @@
+package com.transsion.widgets.ScaleTouchView;
+
+import android.graphics.RectF;
+
+public interface OnMatrixChangedListener {
+    void onMatrixChanged(RectF rectF);
+}

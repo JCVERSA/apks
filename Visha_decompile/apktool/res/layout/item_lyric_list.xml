@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/settings_menu_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="22.0dp" android:paddingVertical="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_item_fileinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_folder" android:layout_marginEnd="12.0dp" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_item_fileinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:textDirection="locale" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+.class public abstract Lir0;
+.super Ljava/lang/Object;
+.source "SourceFile"

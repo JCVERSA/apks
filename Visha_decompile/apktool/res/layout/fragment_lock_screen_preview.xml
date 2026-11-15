@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/titlebar_layout" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_lock_screen_setting" android:background="@drawable/settings_menu_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60.0dp" android:paddingVertical="7.5dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="24.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_lock_screen_player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_lock_screen_player" />
+            <Space android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <Switch android:id="@id/switch_for_lock_screen_player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dp" android:layout_marginEnd="22.0dp" style="@style/OS.Widget.Switch" />
+    </LinearLayout>
+    <com.transsion.playercommon.widgets.RoundFrameLayout android:layout_gravity="center_horizontal" android:id="@id/fl_skin" android:layout_width="145.0dp" android:layout_height="354.0dp" android:layout_marginTop="10.0dp" app:round_corner="@dimen/skin_menu_radius" app:solid_color="@color/transparent" app:stroke_color="@color/bg_stroke_color" app:stroke_width="1.0dp">
+        <ImageView android:id="@id/iv_preview" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/lock_screen_player_preview_hd" />
+    </com.transsion.playercommon.widgets.RoundFrameLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:layout_gravity="center_horizontal" android:id="@id/tv_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/setting_lock_screen_player_style" />
+</LinearLayout>

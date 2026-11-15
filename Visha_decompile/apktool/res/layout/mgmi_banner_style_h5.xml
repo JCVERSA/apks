@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:background="@color/mgmi_skin_color_content_bg_primary" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:DownloadProgressViewStyle="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/banner_webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/button_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:layout_marginBottom="20.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/mgmi_font_13" android:textColor="@color/mgmi_color_ffff5f00" android:gravity="center" android:id="@id/buttonDetail" android:background="@drawable/banner_ad_text_bg_shape_yellow" android:visibility="gone" android:layout_width="75.0dp" android:layout_height="30.0dp" android:text="@string/mgmi_template_detail" />
+        </FrameLayout>
+    </RelativeLayout>
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

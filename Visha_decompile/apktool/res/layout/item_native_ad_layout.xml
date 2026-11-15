@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.RoundFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:round_corner="16.0dp" app:solid_color="@color/transparent" app:stroke_color="@color/os_gray_tertiary_color" app:stroke_width="0.0px">
+        <com.hisavana.mediation.ad.TAdNativeView android:id="@id/native_ad_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.transsion.playercommon.widgets.RoundFrameLayout>
+</merge>

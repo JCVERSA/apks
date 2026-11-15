@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rootView" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="?screen_edge_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/bgPrevious" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/bgNext" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/audio_player_main_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.transsion.widgetslib.view.indicator.PageIndicatorWrapper android:id="@id/page_indicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="46.0dp" android:importantForAccessibility="no" app:layout_constraintTop_toTopOf="parent" app:normalColor="#99ffffff" app:selectedColor="#ffffffff" />
+    <ViewStub android:id="@id/half_open_audio_player_layout" android:layout="@layout/audio_player_viewstub" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

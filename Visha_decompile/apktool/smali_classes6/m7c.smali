@@ -1,0 +1,210 @@
+.class public final Lm7c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lwv4;
+
+
+# instance fields
+.field public final a:Ljava/util/Map;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance v0, Lk7c;
+
+    invoke-direct {v0}, Lk7c;-><init>()V
+
+    const-class v1, Lxk8$a0;
+
+    invoke-static {v1, v0}, Labb;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    move-result-object v0
+
+    new-instance v1, Ll7c;
+
+    invoke-direct {v1}, Ll7c;-><init>()V
+
+    const-class v2, Lxk8$z;
+
+    invoke-static {v2, v1}, Labb;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    move-result-object v1
+
+    filled-new-array {v0, v1}, [Lkotlin/Pair;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkotlin/collections/a;->p([Lkotlin/Pair;)Ljava/util/Map;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lm7c;->a:Ljava/util/Map;
+
+    return-void
+.end method
+
+.method public static synthetic c(Lxk8;)Lkotlin/Pair;
+    .locals 0
+
+    invoke-static {p0}, Lm7c;->f(Lxk8;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic d(Lxk8;)Lkotlin/Pair;
+    .locals 0
+
+    invoke-static {p0}, Lm7c;->e(Lxk8;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static final e(Lxk8;)Lkotlin/Pair;
+    .locals 1
+
+    const-string v0, "input"
+
+    invoke-static {p0, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object p0, Lcom/transsion/dbdata/source/data/repository/delegate/VideoRepositoryDelegate;->INSTANCE:Lcom/transsion/dbdata/source/data/repository/delegate/VideoRepositoryDelegate;
+
+    invoke-virtual {p0}, Lcom/transsion/dbdata/source/data/repository/delegate/VideoRepositoryDelegate;->querySystemSubtitle()Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static final f(Lxk8;)Lkotlin/Pair;
+    .locals 1
+
+    const-string v0, "input"
+
+    invoke-static {p0, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v0, Lcom/transsion/dbdata/source/data/repository/delegate/VideoRepositoryDelegate;->INSTANCE:Lcom/transsion/dbdata/source/data/repository/delegate/VideoRepositoryDelegate;
+
+    check-cast p0, Lxk8$z;
+
+    invoke-virtual {v0, p0}, Lcom/transsion/dbdata/source/data/repository/delegate/VideoRepositoryDelegate;->querySubtitleUsageRecordList(Lxk8$z;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic a(Lcom/transsion/dbdata/source/DataSourceScope;Lxl8;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0, p1, p2}, Lm7c;->g(Lcom/transsion/dbdata/source/DataSourceScope;Lxl8;)Lcom/transsion/dbdata/beans/media/SubtitleTrackInfo;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public b(Lcom/transsion/dbdata/source/DataSourceScope;Lxl8;)Lkotlin/Pair;
+    .locals 1
+
+    const-string v0, "scope"
+
+    invoke-static {p1, v0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "request"
+
+    invoke-static {p2, p1}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object p0, p0, Lm7c;->a:Ljava/util/Map;
+
+    invoke-virtual {p2}, Lxl8;->a()Lxk8;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object p1
+
+    invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Le74;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p2}, Lxl8;->a()Lxk8;
+
+    move-result-object p1
+
+    invoke-interface {p0, p1}, Le74;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lkotlin/Pair;
+
+    if-nez p0, :cond_1
+
+    :cond_0
+    invoke-virtual {p2}, Lxl8;->a()Lxk8;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p2, "Unhandled action type: "
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "VideoSubtitleQueryEngine"
+
+    invoke-static {p1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 p0, 0x0
+
+    :cond_1
+    return-object p0
+.end method
+
+.method public g(Lcom/transsion/dbdata/source/DataSourceScope;Lxl8;)Lcom/transsion/dbdata/beans/media/SubtitleTrackInfo;
+    .locals 0
+
+    const-string p0, "scope"
+
+    invoke-static {p1, p0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p0, "request"
+
+    invoke-static {p2, p0}, Ly45;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    return-object p0
+.end method

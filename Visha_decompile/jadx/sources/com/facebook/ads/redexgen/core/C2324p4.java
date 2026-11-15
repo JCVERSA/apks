@@ -1,0 +1,33 @@
+package com.facebook.ads.redexgen.core;
+
+import java.util.Arrays;
+
+public final class C2324p4 {
+    public static byte[] A00;
+
+    static {
+        A01();
+    }
+
+    public static String A00(int i, int i2, int i3) {
+        byte[] bArrCopyOfRange = Arrays.copyOfRange(A00, i, i + i2);
+        for (int i4 = 0; i4 < bArrCopyOfRange.length; i4++) {
+            bArrCopyOfRange[i4] = (byte) ((bArrCopyOfRange[i4] ^ i3) ^ 86);
+        }
+        return new String(bArrCopyOfRange);
+    }
+
+    public static void A01() {
+        A00 = new byte[]{49, 53, 46, 54, 51, 52, 116, 48, 44, 55, 116, 60, 47, 52, 57, 46, 51, 53, 52, 41, 116};
+    }
+
+    public final String A02(InterfaceC07619u interfaceC07619u) {
+        String string = interfaceC07619u.getClass().getGenericInterfaces()[0].toString();
+        String strA00 = A00(0, 21, 12);
+        return string.startsWith(strA00) ? string.substring(strA00.length()) : string;
+    }
+
+    public final String A03(C1C c1c) {
+        return A02(c1c);
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="18.0dp" android:width="18.0dp" android:viewportWidth="18.0" android:viewportHeight="18.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#000000" android:pathData="M0,0h18v18h-18z" android:strokeAlpha="0.01" android:fillAlpha="0.0065" />
+    <path android:fillColor="@color/custom_img_tab_img_color" android:pathData="M5.834,5.322C6.245,5.08 6.245,4.486 5.834,4.244L3.442,2.837C3.025,2.592 2.5,2.893 2.5,3.376L2.5,6.19C2.5,6.674 3.025,6.974 3.442,6.729L5.834,5.322ZM8.094,4.251C7.749,4.251 7.469,4.531 7.469,4.876C7.469,5.221 7.749,5.501 8.094,5.501L14.844,5.501C15.189,5.501 15.469,5.221 15.469,4.876C15.469,4.531 15.189,4.251 14.844,4.251L8.094,4.251ZM2.5,9.626C2.5,9.281 2.78,9.001 3.125,9.001H14.875C15.221,9.001 15.5,9.281 15.5,9.626C15.5,9.971 15.221,10.251 14.875,10.251H3.125C2.78,10.251 2.5,9.971 2.5,9.626ZM3.125,13.751C2.78,13.751 2.5,14.031 2.5,14.376C2.5,14.721 2.78,15.001 3.125,15.001L14.875,15.001C15.221,15.001 15.5,14.721 15.5,14.376C15.5,14.031 15.221,13.751 14.875,13.751L3.125,13.751Z" android:fillType="evenOdd" />
+</vector>

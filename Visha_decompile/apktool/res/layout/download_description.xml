@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56.0dp" android:paddingHorizontal="30.0dp">
+        <com.transsion.playercommon.widgets.RoundFrameLayout android:id="@id/ll_bucket_fragment_item" android:layout_width="100.0dp" android:layout_height="56.0dp" app:round_corner="@dimen/image_radius" app:solid_color="@color/os_gray_tertiary_color" app:stroke_color="@color/os_gray_tertiary_color" app:stroke_width="1.0px">
+            <ImageView android:id="@id/iv_media_item" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_canplay_notice" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_title_canpaly" />
+        </com.transsion.playercommon.widgets.RoundFrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:layout_gravity="center_vertical" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:maxEms="40" android:layout_marginStart="16.0dp" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_choice_list" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.playercommon.widgets.RoundFrameLayout android:background="@null" android:focusable="true" android:clickable="true" android:layout_width="80.0dp" android:layout_height="80.0dp" app:round_corner="@dimen/dp16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_root" android:background="@color/video_sort_mode_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:src="@drawable/ic_public_collage" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/sp10" android:textColor="@color/os_text_tertiary_xos" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp12" android:text="text" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.transsion.playercommon.widgets.RoundFrameLayout>

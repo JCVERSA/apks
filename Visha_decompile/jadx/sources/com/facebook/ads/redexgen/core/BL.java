@@ -1,0 +1,9 @@
+package com.facebook.ads.redexgen.core;
+
+import java.io.IOException;
+
+public interface BL {
+    B8 A7i(String str) throws IOException;
+
+    C2177md A7j(int... iArr) throws IOException;
+}

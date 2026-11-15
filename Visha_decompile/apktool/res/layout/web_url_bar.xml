@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/os_search_background_drawable" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:layout_marginVertical="8.0dp">
+        <ImageView android:id="@id/iv_privacy_browse" android:focusable="true" android:clickable="true" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_privacy_browse_small" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_alignParentStart="true" android:layout_marginHorizontal="10.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/os_text_primary_color" android:textColorHighlight="?os_platform_basic_color" android:textColorHint="@color/os_text_quaternary_color" android:gravity="start|center" android:id="@id/edit_url" android:layout_width="match_parent" android:layout_height="36.0dp" android:hint="@string/download_search_hint" android:singleLine="true" android:maxLength="255" android:drawablePadding="8.0dp" android:inputType="none" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/os_edit_text_cursor" android:textDirection="locale" android:paddingEnd="38.0dp" android:layout_toEndOf="@id/iv_privacy_browse" />
+        <ImageView android:id="@id/iv_refresh" android:focusable="true" android:clickable="true" android:layout_width="38.0dp" android:layout_height="38.0dp" android:src="@drawable/ic_refresh" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_alignEnd="@id/edit_url" />
+    </RelativeLayout>
+</RelativeLayout>

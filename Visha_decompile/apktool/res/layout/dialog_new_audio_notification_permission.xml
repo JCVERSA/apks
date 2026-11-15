@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/os_primary_text_dark" android:id="@id/tv1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp6" android:text="@string/visha_notification_enable" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/os_primary_text_dark" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/visha_notification_effect_info" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+    </LinearLayout>
+</ScrollView>

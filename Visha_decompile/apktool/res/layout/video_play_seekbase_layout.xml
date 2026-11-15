@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginBottom="30.0dp" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_video_play_current_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dp" android:layout_marginStart="10.0dp" />
+    <com.transsion.widgetslib.widget.seekbar.OSSeekbar android:id="@id/seekbar_video_play_bottom" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxHeight="3.0dp" android:minHeight="3.0dp" android:layout_weight="1.0" app:osSeekbarNoThumb="true" app:osSeekbarOnlyHiOSStyle="true" app:osSeekbarSecondTrackColor="@color/white" app:osSeekbarTrackColor="@color/os_color_white4" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_video_play_total_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dp" />
+</LinearLayout>

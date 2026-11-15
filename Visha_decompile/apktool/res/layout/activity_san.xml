@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.transsion.widgets.RtlViewPager android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/back" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="22.0dp" android:src="@drawable/video_play_back" />
+</FrameLayout>

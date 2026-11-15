@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/xn_full_margin_start" android:layout_marginEnd="@dimen/xn_full_margin_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/bindBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xn_bind_email" android:layout_above="@id/placeholder" android:layout_marginStart="72.0dp" android:layout_marginEnd="72.0dp" style="@style/OS.Widget.Button.Contained.Big.Single" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="12.0dp" android:layout_above="@id/bindBtn">
+        <com.transsion.widgetslib.view.OverBoundNestedScrollView android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/xn_item_padding_start" android:paddingEnd="@dimen/xn_item_padding_end">
+                <TextView android:textAppearance="@style/font_black_15" android:id="@id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:elegantTextHeight="true" />
+                <TextView android:textAppearance="@style/font_black_12_t40" android:id="@id/tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_below="@id/title" android:elegantTextHeight="true" />
+                <RelativeLayout android:id="@id/emptyL" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/emptyLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:layout_centerHorizontal="true" />
+                    <TextView android:textAppearance="@style/font_black_15_t40" android:gravity="center" android:id="@id/unboundTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/emptyLogo" android:layout_centerHorizontal="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" android:elegantTextHeight="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.transsion.widgetslib.view.OverBoundNestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:layout_marginBottom="14.0dp" android:layout_marginEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.RoundFrameLayout android:id="@id/ll_bucket_fragment_item" android:layout_width="130.0dp" android:layout_height="73.0dp" app:round_corner="5.0dp" app:solid_color="@color/transparent" app:stroke_color="@color/os_gray_tertiary_color" app:stroke_width="1.0px">
+        <include layout="@layout/rv_item_online_history_cover" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_more" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/more" />
+        <TextView android:textSize="@dimen/sp9" android:textStyle="bold" android:textColor="#e0ffffff" android:layout_gravity="end|bottom" android:id="@id/iv_serial_tag" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dp" android:shadowColor="@color/black" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="3.0" android:layout_marginEnd="6.0dp" />
+    </com.transsion.playercommon.widgets.RoundFrameLayout>
+</LinearLayout>

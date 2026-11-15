@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="134.0dp" android:layout_height="148.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cover_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_app_widgt" android:scaleType="fitXY" />
+    <RelativeLayout android:layout_gravity="center" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/cover" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginTop="2.0dp" android:src="@drawable/ic_music_widget_cover_def" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:lines="1" android:layout_below="@id/cover" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/color_de_75" android:ellipsize="end" android:gravity="center" android:id="@id/artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:layout_below="@id/name" />
+        <ImageView android:id="@id/iv_play" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/ic_music_widget_play" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layoutDirection="ltr" android:layout_marginHorizontal="20.0dp" />
+        <ImageView android:id="@id/iv_pre" android:padding="1.0dp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_music_widget_pre" android:layout_toLeftOf="@id/iv_play" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/iv_next" android:padding="1.0dp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_music_widget_next" android:layout_toRightOf="@id/iv_play" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

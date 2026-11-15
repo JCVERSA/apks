@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/control_area" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/mgmi_play_control_playpause" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/mgmi_feed_play_control_play" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="11.0dp" android:textColor="#ffffff" android:id="@id/mgmi_play_control_current_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="00:00" android:layout_toRightOf="@id/mgmi_play_control_playpause" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/rightcontent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="11.0dp" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@id/mgmi_play_control_total_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:text="00:00" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/mgmi_play_control_mute" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/mgmi_icon_ad_voice_close" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/mgmi_play_control_screen" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/mgmi_screen_icon" />
+        </LinearLayout>
+        <SeekBar android:id="@id/sbProgress" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:layout_toLeftOf="@id/rightcontent" android:layout_toRightOf="@id/mgmi_play_control_current_time" android:layout_centerVertical="true" style="@style/mgmi_video_progress_seekbar_style" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA1-Digest: Gv0+cGqfXVDcnl3PNLpf4xYjERA=
+
+Name: res/drawable-en/monetization_ads_instream_internal_click_button.
+ xml
+SHA1-Digest: 5nBZLcW37ojqVYFyB8xdj3ktphk=
+
+Name: res/drawable-en/monetization_ads_instream_internal_skip_focused.
+ xml
+SHA1-Digest: w7OyOchVHmVXaTVvWGzBwGBFWm0=
+
+Name: res/drawable-en/monetization_ads_instream_internal_skip_unfocuse
+ d.xml
+SHA1-Digest: 95adCfyqjiJHiFp7L0LYC/pjqjU=
+
+Name: resources.arsc
+SHA1-Digest: KdsiRnQwI9Bydw3YRkPCGDV8KYg=
+
+Name: stamp-cert-sha256
+SHA1-Digest: 5vTkm69vqAbusD/fho7oWwc7j+I=
+

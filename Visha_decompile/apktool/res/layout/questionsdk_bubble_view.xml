@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/questionsdk_bubble" android:layout_width="76.0dp" android:layout_height="70.0dp" android:src="@drawable/questionsdk_ic_bubble" />
+    <ImageView android:id="@id/questionsdk_bubble_close" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="-20.0dp" android:src="@drawable/questionsdk_ic_close_bubble" android:layout_toRightOf="@id/questionsdk_bubble" />
+</RelativeLayout>

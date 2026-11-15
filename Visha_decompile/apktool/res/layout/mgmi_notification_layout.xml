@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout" android:background="@color/mgmi_color_F4F5F9" android:paddingLeft="3.0dp" android:paddingTop="3.0dp" android:paddingRight="8.0dp" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="@dimen/mgmi_dp_59" android:layout_height="@dimen/mgmi_dp_59" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dp" android:layout_toRightOf="@id/image" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/mgmi_font_15" android:textColor="@color/mgmi_color_333333" android:id="@id/notification_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgmi_template_ad" android:maxLines="1" />
+        <TextView android:textSize="@dimen/mgmi_font_12" android:textColor="@color/mgmi_color_666666" android:id="@id/notification_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mgmi_dp_9" android:text="@string/mgmi_template_ad" android:layout_below="@id/notification_title" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/mgmi_font_10" android:textColor="@color/mgmi_color_666666" android:background="@drawable/mgmi_shape_round_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:text="@string/mgmi_template_ad" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

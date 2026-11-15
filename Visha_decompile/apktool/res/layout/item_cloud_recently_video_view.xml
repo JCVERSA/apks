@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.RoundFrameLayout android:id="@id/ll_icon_cloud" android:layout_width="153.0dp" android:layout_height="86.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:round_corner="@dimen/image_radius" app:solid_color="@color/transparent" app:stroke_color="@color/os_gray_tertiary_color" app:stroke_width="1.0px">
+        <include layout="@layout/rv_item_fragment_video_cover" />
+    </com.transsion.playercommon.widgets.RoundFrameLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/os_text_primary2_color" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:maxLines="1" app:layout_constraintEnd_toEndOf="@id/ll_icon_cloud" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_icon_cloud" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/os_text_tertiary_color" android:id="@id/tv_desc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" app:layout_constraintEnd_toEndOf="@id/ll_icon_cloud" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

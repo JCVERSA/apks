@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/dp5" android:layout_width="match_parent" android:layout_height="@dimen/file_trans_dialog_height" android:nestedScrollingEnabled="true" android:paddingHorizontal="@dimen/dp24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_root_search" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/sp14" android:textColor="@color/os_text_secondary_color" android:gravity="start|top" android:id="@id/tv_search_tips" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_search" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_send_search" android:visibility="gone" android:layout_width="match_parent" android:layout_height="152.0dp" android:layout_marginTop="@dimen/dp48" android:src="@drawable/ic_file_trans_send_search" android:contentDescription="@string/visha_file_trans" />
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_search_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="152.0dp" android:layout_marginTop="@dimen/dp48">
+                <ImageView android:id="@id/phone_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_file_trans_phone_by_receive_searching" android:layout_centerInParent="true" />
+                <ProgressBar android:id="@id/circular_progress" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="100.0dp" android:layout_height="100.0dp" android:indeterminate="true" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/sp12" android:textColor="@color/os_text_info_hios" android:gravity="center" android:id="@id/tv_searching" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:text="@string/visha_file_trans_searching_device" android:textAlignment="center" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="48.0" />
+            <ImageView android:id="@id/iv_empty" android:layout_width="match_parent" android:layout_height="140.0dp" android:layout_marginTop="@dimen/dp48" android:src="@drawable/ic_file_trans_search_fail" android:contentDescription="@string/visha_file_trans" />
+            <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="77.0" />
+            <TextView android:id="@id/tv_btn_retry" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dp" android:minHeight="36.0dp" android:text="@string/visha_file_trans_retry_search_device" style="@style/BigButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_search_result" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_connect" android:paddingTop="80.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:id="@id/connect_phone_icon" android:layout_width="@dimen/file_trans_device_icon_size" android:layout_height="@dimen/file_trans_device_icon_size" android:src="@drawable/ic_file_trans_phone" />
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="@dimen/sp16" android:textColor="@color/os_text_primary_color" android:id="@id/tv_name" android:layout_width="@dimen/file_trans_device_name_size" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:includeFontPadding="false" android:textAlignment="center" />
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="@dimen/sp13" android:textColor="@color/os_text_info_hios" android:gravity="center" android:id="@id/tv_confirming" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:text="@string/visha_file_trans_waiting_receive_confirm" />
+        <com.transsion.widgetslib.view.OSLoadingView android:layout_gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" />
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <TextView android:id="@id/tv_btn_connect_retry" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="36.0dp" android:text="@string/retry" style="@style/BigButtonStyle" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

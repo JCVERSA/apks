@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="17.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ViewStub android:layout_gravity="center_vertical" android:id="@id/main_empty_view" android:layout="@layout/main_empty_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="20.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_loading" android:paddingBottom="60.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.transsion.widgetslib.view.LoadingView android:layout_width="@dimen/os_loading_medium_size" android:layout_height="@dimen/os_loading_medium_size" android:layout_marginTop="15.0dp" />
+        <TextView android:textColor="@color/os_text_primary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/online_video_loading" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

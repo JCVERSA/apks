@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/settings_menu_item_bg_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_subtitle" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginEnd="16.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffdedede" android:id="@id/tv_subtitle_name" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="1.0dp" android:paddingEnd="1.0dp" />
+    <RadioButton android:id="@id/cb_subtitle" android:focusable="true" android:layout_width="24.0dp" android:layout_height="24.0dp" android:checked="false" android:text="@null" android:layout_marginStart="16.0dp" />
+    <ImageView android:id="@id/iv_subtitle_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_marginStart="0.0dp" />
+</LinearLayout>

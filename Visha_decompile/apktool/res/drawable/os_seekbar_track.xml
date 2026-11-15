@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <size android:height="2.0dp" />
+            <solid android:color="@color/os_fill_weaker_hios" />
+            <corners android:radius="4.0dp" />
+        </shape>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/secondaryProgress">
+        <scale android:scaleWidth="100%">
+            <selector>
+                <item android:state_enabled="false" android:drawable="@android:color/transparent" />
+                <item>
+                    <shape android:tint="?os_platform_basic_color" android:shape="rectangle">
+                        <size android:height="2.0dp" />
+                        <solid android:color="@color/os_seekbar_disable_color" />
+                        <corners android:radius="4.0dp" />
+                    </shape>
+                </item>
+            </selector>
+        </scale>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <selector>
+                <item android:state_enabled="false">
+                    <shape android:shape="rectangle">
+                        <size android:height="2.0dp" />
+                        <solid android:color="?os_brand_disabled" />
+                        <corners android:radius="4.0dp" />
+                    </shape>
+                </item>
+                <item>
+                    <shape android:tint="?os_platform_basic_color" android:shape="rectangle">
+                        <size android:height="2.0dp" />
+                        <solid android:color="@color/os_seekbar_thumb_color" />
+                        <corners android:radius="4.0dp" />
+                    </shape>
+                </item>
+            </selector>
+        </scale>
+    </item>
+</layer-list>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="90.0dp" android:width="228.0dp" android:viewportWidth="228.0" android:viewportHeight="90.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_icon_default_download_tablet__0" android:pathData="M0,0h228v90h-228z" />
+    <path android:fillColor="#8154cc" android:pathData="M198.12,43.65C196.68,40.2 193.3,37.95 189.56,37.95H161.33C156.95,37.95 153.55,41.77 154.06,46.13V46.13H199.15L198.12,43.65Z" android:fillType="evenOdd" />
+    <path android:fillColor="#8b59df" android:pathData="M186.03,19.2C187.57,16.53 190.99,15.62 193.65,17.16L219.2,31.93C221.87,33.47 222.78,36.88 221.24,39.54L204.15,69.19C202.61,71.86 199.19,72.78 196.52,71.23L170.98,56.47C168.31,54.92 167.4,51.52 168.94,48.85L186.03,19.2Z" android:fillType="evenOdd" />
+    <path android:fillColor="#9864ee" android:pathData="M177.49,23.26C179.04,20.59 182.45,19.68 185.12,21.22L210.66,35.99C213.33,37.53 214.24,40.94 212.71,43.6L195.61,73.25C194.07,75.92 190.66,76.83 187.99,75.29L162.44,60.52C159.78,58.98 158.86,55.58 160.4,52.91L177.49,23.26Z" android:fillType="evenOdd" />
+    <path android:fillColor="#ab7afc" android:pathData="M220.19,78.09C220.21,80.77 218.04,82.94 215.36,82.94H158.67C156,82.94 153.84,80.78 153.84,78.11V43.52H215.23C217.89,43.52 220.05,45.68 220.07,48.34L220.19,78.09Z" android:fillType="evenOdd" />
+    <path android:fillColor="#eeeeee" android:pathData="M189.79,64.05H192.15C193.05,64.05 193.55,65.11 192.97,65.8L187.72,72.13C187.29,72.64 186.5,72.64 186.07,72.13L180.82,65.8C180.24,65.11 180.74,64.05 181.65,64.05H184V56.83C184,55.23 185.3,53.94 186.9,53.94C188.49,53.94 189.79,55.23 189.79,56.83V64.05Z" android:fillType="evenOdd" />
+</vector>

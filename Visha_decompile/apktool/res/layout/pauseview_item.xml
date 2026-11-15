@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.ContainerLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/itemimage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/mgmi_font_8" android:textColor="@color/mgmi_white" android:id="@id/mgmi_ad_dec" android:background="@drawable/mgmi_pause_ad_icon" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dp" android:layout_marginTop="6.0dp" android:text="广告" android:shadowColor="@color/mgmi_color_000000_66" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</com.mgadplus.viewgroup.dynamicview.ContainerLayout>

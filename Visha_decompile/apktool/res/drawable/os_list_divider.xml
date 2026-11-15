@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/os_list_divider_left_right_padding" android:insetRight="@dimen/os_list_divider_left_right_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <solid android:color="@color/os_list_divider_color" />
+        <size android:height="@dimen/os_list_divider_height" />
+    </shape>
+</inset>

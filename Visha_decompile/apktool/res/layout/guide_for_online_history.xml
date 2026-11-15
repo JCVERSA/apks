@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="57.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/h_line" android:background="#ffffff" android:layout_width="52.0dp" android:layout_height="0.33000004dp" android:layout_alignTop="@id/v_line" android:layout_toEndOf="@id/v_line" />
+    <View android:id="@id/v_line" android:background="#ffffff" android:layout_width="0.33000004dp" android:layout_height="182.0dp" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/dot" android:layout_width="9.0dp" android:layout_height="9.0dp" android:src="@drawable/bg_shape_oval_color_ffffff" android:layout_below="@id/v_line" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#dedede" android:gravity="center" android:id="@id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:text="@string/online_history_guide" android:layout_below="@id/dot" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ok" android:background="@drawable/boder_refrash_btn_bg_corners" android:layout_width="150.0dp" android:layout_height="36.0dp" android:layout_marginTop="20.0dp" android:text="@string/got_it" android:layout_below="@id/hint" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/list_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mgtv.ssp.widget.LoadMoreRecycleView android:id="@id/rv" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/mg_tx_color_black" android:gravity="center" android:id="@id/tv_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/load_failed_retry" />
+    <com.mgtv.ssp.widget.VideoLoadingView android:id="@id/loading" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

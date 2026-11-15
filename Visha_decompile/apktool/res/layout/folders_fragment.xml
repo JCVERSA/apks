@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:focusable="true" android:fitsSystemWindows="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="?screen_edge_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/tab_menu_layout" android:visibility="gone" layout="@layout/tablayout_menu_layout" />
+    <ViewStub android:layout_gravity="center_vertical" android:id="@id/main_empty_view" android:layout="@layout/main_empty_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.transsion.widgetslib.view.damping.OSScrollbarLayout android:id="@id/scrollbar_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/tab_menu_layout" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.transsion.widgets.CustomSwipeRefreshLayout android:id="@id/pull_damping_layout" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="always">
+            <include android:paddingTop="10.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" layout="@layout/fast_scroller_recyclerview" />
+        </com.transsion.widgets.CustomSwipeRefreshLayout>
+    </com.transsion.widgetslib.view.damping.OSScrollbarLayout>
+</RelativeLayout>

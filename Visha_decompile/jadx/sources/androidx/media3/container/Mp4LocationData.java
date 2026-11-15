@@ -1,0 +1,39 @@
+package androidx.media3.container;
+
+import androidx.annotation.FloatRange;
+import androidx.annotation.Nullable;
+import androidx.media3.common.Metadata;
+import androidx.media3.common.util.Assertions;
+import androidx.media3.common.util.UnstableApi;
+import com.google.common.primitives.Floats;
+
+@UnstableApi
+public final class Mp4LocationData implements Metadata.Entry {
+    public final float latitude;
+    public final float longitude;
+
+    public Mp4LocationData(@FloatRange(from = -90.0d, to = 90.0d) float f, @FloatRange(from = -180.0d, to = 180.0d) float f2) {
+        Assertions.checkArgument(f >= -90.0f && f <= 90.0f && f2 >= -180.0f && f2 <= 180.0f, "Invalid latitude or longitude");
+        this.latitude = f;
+        this.longitude = f2;
+    }
+
+    public boolean equals(@Nullable Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || Mp4LocationData.class != obj.getClass()) {
+            return false;
+        }
+        Mp4LocationData mp4LocationData = (Mp4LocationData) obj;
+        return this.latitude == mp4LocationData.latitude && this.longitude == mp4LocationData.longitude;
+    }
+
+    public int hashCode() {
+        return ((527 + Floats.c(this.latitude)) * 31) + Floats.c(this.longitude);
+    }
+
+    public String toString() {
+        return "xyz: latitude=" + this.latitude + ", longitude=" + this.longitude;
+    }
+}

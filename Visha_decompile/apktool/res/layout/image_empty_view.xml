@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/lottie_view" android:layout_width="200.0dp" android:layout_height="140.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/ic_image_empty_illustration" android:layout_above="@id/view" android:layout_centerHorizontal="true" android:importantForAccessibility="no" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/os_text_tertiary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/no_image" android:layout_below="@id/view" android:layout_centerInParent="true" />
+</RelativeLayout>

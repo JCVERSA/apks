@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#e6000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mgmi_feed_answer_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/mgmi_font_12" android:textColor="@color/mgmi_white" android:id="@id/mgmi_cover_left_botton" android:background="@drawable/ad_shape_bg_gray_round_common" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgmi_feed_replay" android:drawableLeft="@drawable/mgmi_feed_replay" android:drawablePadding="4.0dp" />
+        <TextView android:textSize="@dimen/mgmi_font_12" android:textColor="@color/mgmi_white" android:id="@id/mgmi_cover_right_botton" android:background="@drawable/ad_text_bg_shape_yellow" android:paddingLeft="12.0dp" android:paddingTop="5.0dp" android:paddingRight="12.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="查看详情" android:layout_toRightOf="@id/mgmi_cover_left_botton" />
+    </RelativeLayout>
+</RelativeLayout>

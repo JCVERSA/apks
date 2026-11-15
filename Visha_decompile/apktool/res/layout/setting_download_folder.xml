@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_download_folder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_simultaneous_downloads" android:paddingHorizontal="24.0dp" android:paddingVertical="7.5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_download_folder" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/setting_download_folder" android:textDirection="locale" android:textAlignment="viewStart" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:ellipsize="end" android:id="@id/tv_download_folder_path" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/setting_allow_download_with_mobile_data" android:singleLine="true" android:textDirection="locale" android:textAlignment="viewStart" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/titlebar_layout" />
+    <com.transsion.widgets.CustomSwipeRefreshLayout android:id="@id/pull_refresh_layout" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_bar" android:overScrollMode="always">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_media_library" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </com.transsion.widgets.CustomSwipeRefreshLayout>
+</RelativeLayout>

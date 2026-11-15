@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.onlinevideo.widgets.VishaShimmerFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp" app:shimmer_base_alpha="0.8" app:shimmer_highlight_alpha="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/view_1" android:background="@drawable/background_shimmer_empty_rect_item" android:layout_width="110.0dp" android:layout_height="20.0dp" android:layout_marginTop="12.0dp" android:layout_alignParentStart="true" />
+        <View android:id="@id/view_2" android:background="@drawable/background_shimmer_empty_rect_item" android:layout_width="87.0dp" android:layout_height="20.0dp" android:layout_marginTop="17.0dp" android:layout_below="@id/view_1" />
+        <View android:id="@id/view_3" android:background="@drawable/background_shimmer_empty_rect_item" android:layout_width="87.0dp" android:layout_height="20.0dp" android:layout_marginTop="17.0dp" android:layout_below="@id/view_1" android:layout_marginStart="16.0dp" android:layout_toEndOf="@id/view_2" />
+        <View android:id="@id/view_4" android:background="@drawable/background_shimmer_empty_rect_item" android:layout_width="87.0dp" android:layout_height="20.0dp" android:layout_marginTop="17.0dp" android:layout_below="@id/view_1" android:layout_marginStart="16.0dp" android:layout_toEndOf="@id/view_3" />
+        <View android:background="@drawable/background_shimmer_empty_rect_item" android:layout_width="328.0dp" android:layout_height="20.0dp" android:layout_marginTop="17.0dp" android:layout_marginBottom="30.0dp" android:layout_below="@id/view_2" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</com.transsion.onlinevideo.widgets.VishaShimmerFrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_container" android:background="?OsBgPrimary" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/title_bar" android:layout="@layout/titlebar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <SeekBar android:id="@id/sb_web" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="2.0dp" android:progressDrawable="@drawable/web_progress" android:thumb="@null" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" />
+    </LinearLayout>
+    <com.just.agentweb.jsbridge.BridgeWebView android:id="@id/wb" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    <ViewStub android:id="@id/no_network_view" android:layout="@layout/no_network_web_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

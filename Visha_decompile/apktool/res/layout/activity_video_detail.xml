@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/detail_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="200.0dp">
+        <include layout="@layout/layout_video_detail" />
+        <include layout="@layout/online_video_detail_empty_layout" />
+    </FrameLayout>
+    <com.transsion.vishaplayersdk.vishaplayer.VishaPlayer android:id="@id/detail_player" android:layout_width="match_parent" android:layout_height="200.0dp" />
+    <ImageView android:id="@id/activity_back" android:padding="3.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="11.0dp" android:src="@drawable/ic_back_bg" android:layout_marginStart="21.0dp" />
+</FrameLayout>

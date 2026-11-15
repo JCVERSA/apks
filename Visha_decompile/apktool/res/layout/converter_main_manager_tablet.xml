@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/container_ll" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/title_bar" layout="@layout/titlebar_layout" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/tab_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56.0dp">
+            <com.transsion.widgets.CustomTabLayout android:id="@id/tab_layout" android:fadingEdge="horizontal" android:layout_width="0.0dp" android:layout_height="56.0dp" android:layout_weight="1.0" android:layout_marginStart="14.0dp" app:customTabIndicatorColor="?os_platform_basic_color" app:customTabIndicatorFullWidth="false" app:customTabIndicatorGravity="bottom" app:customTabIndicatorHeight="2.0dp" app:customTabIndicatorWidth="20.0dp" app:customTabMode="scrollable" app:customTabPaddingBottom="8.0dp" app:customTabPaddingEnd="8.0dp" app:customTabPaddingStart="8.0dp" app:customTabTextColor="@color/custom_tab_text_color" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_bar" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/audio_convert_sort" android:padding="10.0dp" android:layout_width="44.0dp" android:layout_height="44.0dp" android:src="@drawable/ic_tab_menu_sort" android:layout_marginEnd="4.0dp" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.transsion.widgets.RtlViewPager android:id="@id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ViewStub android:layout_gravity="center_vertical" android:id="@id/activity_empty_view" android:layout="@layout/main_empty_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="20.0dp" />
+        </FrameLayout>
+        <com.transsion.widgetslib.view.OSBigButton android:id="@id/select_and_convert" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_and_convert" android:maxLines="2" android:singleLine="false" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:paddingStart="@dimen/os_btn_text_padding" android:paddingEnd="@dimen/os_btn_text_padding" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="2.0sp" android:autoSizeMinTextSize="@dimen/sp_12" android:autoSizeMaxTextSize="@dimen/sp_16" style="@style/BigButtonStyleForPad" />
+        <ViewStub android:id="@id/bottom_convert_action_bar" android:layout="@layout/bottom_audio_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_drag_animation_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout" android:background="@color/mgmi_color_F4F5F9" android:paddingLeft="3.0dp" android:paddingTop="3.0dp" android:paddingRight="3.0dp" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/mgmi_font_10" android:textColor="@color/mgmi_white" android:background="@drawable/mgmi_shape_channel_ad_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:text="@string/mgmi_template_ad" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

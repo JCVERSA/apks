@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/sniffer_download_background" />
+            <corners android:topLeftRadius="33.0dp" android:topRightRadius="0.0dp" android:bottomLeftRadius="33.0dp" android:bottomRightRadius="0.0dp" />
+        </shape>
+    </item>
+</layer-list>

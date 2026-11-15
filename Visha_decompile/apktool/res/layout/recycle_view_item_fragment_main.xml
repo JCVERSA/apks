@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="3.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="4.0dp" android:src="@null" android:scaleType="matrix" />
+    <com.transsion.playercommon.widgets.RoundFrameLayout android:layout_width="match_parent" android:layout_height="88.0dp" app:round_corner="@dimen/image_radius" app:solid_color="@color/transparent" app:stroke_color="#4da1a1a1" app:stroke_width="1.0px">
+        <ImageView android:id="@id/iv_main_fragment_item" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <CheckBox android:layout_gravity="left|top" android:id="@id/iv_bucket_list_checkBox" android:visibility="gone" style="@style/videoButton" />
+    </com.transsion.playercommon.widgets.RoundFrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+        <TextView android:textSize="15.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_main_fragment_item_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:textDirection="locale" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:layout_gravity="end|center" android:id="@id/tv_main_fragment_item_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" />
+    </LinearLayout>
+</LinearLayout>

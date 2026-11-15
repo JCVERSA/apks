@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end|center" android:orientation="vertical" android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_series" android:paddingTop="28.0dp" android:visibility="gone" android:layout_width="330.0dp" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_episodes" android:visibility="gone" android:layout_width="330.0dp" android:layout_height="match_parent" android:layout_marginRight="22.0dp" android:layout_marginVertical="20.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_trivia" android:visibility="gone" android:layout_width="287.0dp" android:layout_height="match_parent" android:layout_marginRight="22.0dp" android:layout_marginVertical="20.0dp" />
+</LinearLayout>

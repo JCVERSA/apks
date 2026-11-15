@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout android:orientation="horizontal" android:id="@id/ll_audio_play" android:layout_width="match_parent" android:layout_height="wrap_content" android:foregroundGravity="center_vertical" app:alignItems="center" app:flexDirection="row" app:justifyContent="space_between"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.widgetslib.widget.OSIconTextView android:textSize="20.0dp" android:textColor="#a6ffffff" android:gravity="center" android:id="@id/iv_media_play_repeat" android:layout_width="44.0dp" android:layout_height="44.0dp" android:text="@string/os_play" android:contentDescription="@string/talkback_playback_order" />
+    <ImageView android:id="@id/iv_media_play_previous" android:src="@drawable/music_play_previous_selector" android:contentDescription="@string/talkback_previous" style="@style/videoButton" />
+    <ImageView android:id="@id/iv_media_play_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_play_play_new" android:scaleType="centerInside" />
+    <ImageView android:id="@id/iv_media_play_next" android:src="@drawable/music_play_next_selector" android:contentDescription="@string/talkback_next" style="@style/videoButton" />
+    <com.transsion.widgetslib.widget.OSIconTextView android:textSize="20.0dp" android:textColor="#a6ffffff" android:gravity="center" android:id="@id/iv_media_operate_menu" android:layout_width="44.0dp" android:layout_height="44.0dp" android:text="@string/os_more" android:contentDescription="@string/talkback_next" />
+</com.google.android.flexbox.FlexboxLayout>

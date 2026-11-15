@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/black" />
+    <item android:gravity="center" android:height="50.0dp" android:width="50.0dp" android:drawable="@drawable/ic_logo_page" android:bottom="100.0dp" />
+    <item android:gravity="center" android:height="20.0dp" android:width="110.0dp" android:drawable="@drawable/ic_visha_tv" android:top="17.0dp" />
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="190.0dp" android:width="153.0dp" android:viewportWidth="153.0" android:viewportHeight="190.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0,0h153v190h-153z" />
+        <path android:fillColor="@drawable/$ic_icon_default_theme1__0" android:pathData="M12,0L141,0A12,12 0,0 1,153 12L153,178A12,12 0,0 1,141 190L12,190A12,12 0,0 1,0 178L0,12A12,12 0,0 1,12 0z" />
+    </group>
+    <path android:fillColor="#2eab7f" android:pathData="M13.59,135.48C11.65,132.81 12.24,129.07 14.92,127.14L48.39,102.89C51.05,100.96 54.78,101.55 56.71,104.2L86.48,145.05C88.42,147.72 87.83,151.46 85.16,153.4L51.68,177.65C49.02,179.58 45.3,178.99 43.36,176.33L13.59,135.48Z" android:fillType="evenOdd" />
+    <path android:fillColor="#31b888" android:pathData="M28.72,116.3C27.48,113.24 28.96,109.76 32.02,108.53L70.39,93.07C73.44,91.84 76.91,93.31 78.15,96.36L100.59,151.75C101.83,154.8 100.35,158.29 97.29,159.52L58.92,174.98C55.86,176.21 52.39,174.74 51.16,171.69L28.72,116.3Z" android:fillType="evenOdd" />
+    <path android:fillColor="#36c995" android:pathData="M68.4,85L136.86,85A5.97,5.97 0,0 1,142.82 90.97L142.82,173.29A5.97,5.97 0,0 1,136.86 179.26L68.4,179.26A5.97,5.97 0,0 1,62.43 173.29L62.43,90.97A5.97,5.97 0,0 1,68.4 85z" />
+    <group>
+        <clip-path android:pathData="M68.4,85L136.86,85A5.97,5.97 0,0 1,142.82 90.97L142.82,173.29A5.97,5.97 0,0 1,136.86 179.26L68.4,179.26A5.97,5.97 0,0 1,62.43 173.29L62.43,90.97A5.97,5.97 0,0 1,68.4 85z" />
+        <path android:fillColor="#ffffff" android:pathData="M118.82,143.14C119.08,143.14 119.24,142.86 119.11,142.64L109.53,126.86C109.4,126.65 109.09,126.65 108.96,126.86L99.38,142.64C99.25,142.86 99.41,143.14 99.66,143.14H118.82Z" android:fillAlpha="0.7" android:fillType="evenOdd" />
+        <path android:fillColor="#ffffff" android:pathData="M114.57,143.25C114.83,143.25 114.99,142.97 114.85,142.75L101.25,120.23C101.12,120.02 100.81,120.02 100.68,120.23L87.08,142.75C86.95,142.97 87.1,143.25 87.36,143.25H114.57Z" android:fillAlpha="0.8" android:fillType="evenOdd" />
+    </group>
+</vector>

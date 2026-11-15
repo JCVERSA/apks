@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/rl_language_setting_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_setting" android:layout_alignParentStart="true">
+        <TextView android:textSize="14.0dp" android:textColor="#bfffffff" android:id="@id/tv_from_language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dp" android:singleLine="true" android:paddingVertical="13.0dp" />
+        <ImageView android:id="@id/iv_icon_translate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ai_subtitle" android:layout_marginHorizontal="10.0dp" />
+        <TextView android:textSize="14.0dp" android:textColor="#bfffffff" android:id="@id/tv_to_language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="30.0dp" android:singleLine="true" android:paddingVertical="13.0dp" />
+    </LinearLayout>
+    <com.transsion.widgetslib.widget.OSIconTextView android:textColor="#59ffffff" android:id="@id/iv_setting" android:text="@string/os_settings" android:layout_centerVertical="true" android:contentDescription="@string/talkback_settings" android:layout_alignParentEnd="true" style="@style/OSIconTextViewStyle" />
+</RelativeLayout>

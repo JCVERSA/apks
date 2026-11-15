@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/os_radiobutton_control_color" android:height="24.0dp" android:width="24.0dp" android:autoMirrored="true" android:viewportWidth="72.0" android:viewportHeight="72.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="gp_outer_ring" android:pivotX="36.0" android:pivotY="36.0" android:scaleX="0.7" android:scaleY="0.7">
+        <path android:name="gp_outer_ring_path" android:pathData="M36,36m-25.5,0a25.5,25.5 0,1 1,51 0a25.5,25.5 0,1 1,-51 0" android:strokeColor="#ff000000" android:strokeWidth="25.71" android:strokeAlpha="1.0" />
+    </group>
+    <group android:name="gp_inner_circle" android:pivotX="36.0" android:pivotY="36.0">
+        <path android:name="gp_inner_circle_path" android:fillColor="#ff000000" android:pathData="M36,36m-9,0a9,9 0,1 1,18 0a9,9 0,1 1,-18 0" android:fillAlpha="0.0" />
+    </group>
+</vector>

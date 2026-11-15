@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_gradient_user" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/title_bar" android:layout="@layout/titlebar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.transsion.widgets.CustomSwipeRefreshLayout android:id="@id/user_pull_damping_layout" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_bar" android:overScrollMode="always">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/ll_vip_progress_hint" android:background="#ff272727" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar" android:paddingVertical="18.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="#ffdedede" android:ellipsize="end" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/membership_open_in_progress" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="24.0dp" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffdedede" android:id="@id/tv_vip_feedback" android:background="@drawable/background_vip_feedback_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/membership_feedback" android:layout_marginStart="24.0dp" android:layout_marginEnd="22.0dp" android:paddingHorizontal="12.0dp" />
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                <ImageView android:id="@id/iv_user_image_frame" android:visibility="gone" android:layout_width="82.0dp" android:layout_height="102.0dp" android:src="@drawable/ic_vip_user_frame" />
+                <ImageView android:layout_gravity="center|bottom" android:id="@id/iv_user_image" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginBottom="1.0dp" android:src="@drawable/ic_empty_user_image" android:scaleType="centerInside" />
+            </FrameLayout>
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_vip_user_name" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/palm_id_login_hint" android:singleLine="true" android:layout_marginHorizontal="39.0dp" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:paddingHorizontal="34.0dp">
+                <ImageView android:id="@id/iv_vip_logo" android:layout_width="13.0dp" android:layout_height="12.0dp" android:layout_marginTop="2.0dp" android:src="@drawable/ic_vip_logo" android:layout_marginEnd="4.0dp" android:layout_toStartOf="@id/tv_vip_tips" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_vip_hint" android:ellipsize="end" android:id="@id/tv_vip_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/membership_hint" android:maxLines="2" android:includeFontPadding="false" android:layout_centerHorizontal="true" android:textAlignment="viewStart" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_vip_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" />
+        </LinearLayout>
+    </com.transsion.widgets.CustomSwipeRefreshLayout>
+</RelativeLayout>

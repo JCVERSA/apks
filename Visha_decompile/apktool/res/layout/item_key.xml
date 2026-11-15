@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="@color/os_text_quaternary_color" android:textColorHighlight="?os_platform_basic_color" android:textColorHint="@color/os_text_quaternary_color" android:gravity="start|center" android:id="@id/tv_item" android:layout_width="match_parent" android:layout_height="40.0dp" android:singleLine="true" android:maxLength="255" android:inputType="none" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/os_edit_text_cursor" android:fontFamily="text_quaternary" android:textDirection="locale" android:paddingStart="10.0dp" android:paddingEnd="30.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

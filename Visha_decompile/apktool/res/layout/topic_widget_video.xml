@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_topic" android:layout_width="match_parent" android:layout_height="54.0dp">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_topic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="24.0dp" />
+        <Space android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_refrash" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_refrash" android:layout_marginEnd="22.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:gravity="center_vertical" android:id="@id/tv_topic_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_video_all" android:drawablePadding="-6.0dp" android:layout_marginEnd="22.0dp" app:drawableEndCompat="@drawable/ic_icon_medium_size_list_next" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_media" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="19.0dp" />
+    <include layout="@layout/topic_expand_btn_view" />
+</LinearLayout>

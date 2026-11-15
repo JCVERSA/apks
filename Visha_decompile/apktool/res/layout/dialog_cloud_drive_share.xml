@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp24">
+            <TextView android:textAppearance="@style/os_semibold_font" android:textSize="@dimen/sp18" android:textColor="@color/os_text_primary_color" android:id="@id/tv_share_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/visha_share_cloud_link" android:maxLines="1" android:paddingVertical="@dimen/dp16" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_validity_period" android:background="?android:selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/dp14">
+                <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="@dimen/sp16" android:textColor="@color/os_text_primary_color" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/visha_link_validity_period" android:maxLines="1" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="?os_text_info" android:id="@id/tv_validity_period" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="a week" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_sharing_scope" android:background="?android:selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/dp14">
+                <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="@dimen/sp16" android:textColor="@color/os_text_primary_color" android:id="@id/tv_sharing_scope_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/visha_share_scope" android:maxLines="1" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="?os_text_info" android:ellipsize="end" android:gravity="end" android:id="@id/tv_sharing_scope" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/visha_public_to_all" android:maxLines="2" />
+                    <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_cloud_file_share_link" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:layout_marginBottom="@dimen/dp24" android:paddingHorizontal="@dimen/dp16" android:paddingVertical="@dimen/dp13">
+                <TextView android:textSize="@dimen/sp12" android:textColor="@color/os_text_tertiary_color" android:ellipsize="end" android:id="@id/tv_share_link" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="https://www.youtube.com/watch?v=l80y11225514145555..." android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_copy_link" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_public_copy" android:layout_marginStart="8.0dp" app:tint="@color/os_text_secondary_color" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_share_platforms" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

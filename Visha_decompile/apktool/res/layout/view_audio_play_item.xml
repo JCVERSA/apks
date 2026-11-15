@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.CircleImageView android:id="@id/circleView" android:layout_width="0.0dp" android:layout_height="0.0dp" android:src="@drawable/item_audio_disk" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.transsion.playercommon.widgets.CircleImageView android:id="@id/civ_music_cover" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/circleView" app:layout_constraintDimensionRatio="w,1:1" app:layout_constraintEnd_toEndOf="@id/circleView" app:layout_constraintStart_toStartOf="@id/circleView" app:layout_constraintTop_toTopOf="@id/circleView" app:layout_constraintWidth_percent="0.38" />
+</androidx.constraintlayout.widget.ConstraintLayout>

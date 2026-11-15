@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/contactIcon" android:layout_width="31.0dp" android:layout_height="31.0dp" />
+    <TextView android:textSize="11.0sp" android:textColor="#ffffff" android:id="@id/contactTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:shadowColor="#ff000000" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" android:layout_toRightOf="@id/contactIcon" />
+    <ImageView android:id="@id/content" android:layout_width="150.0dp" android:layout_height="90.0dp" android:layout_marginTop="5.0dp" android:layout_below="@id/contactTitle" android:layout_alignLeft="@id/contactTitle" />
+</RelativeLayout>

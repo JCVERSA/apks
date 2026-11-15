@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/bookmark" android:title="@string/download_main_tab_bookmark" app:showAsAction="never" />
+    <item android:id="@id/history" android:title="@string/sniffer_history" app:showAsAction="never" />
+    <item android:id="@id/turn_on_privacy_browse" android:title="@string/download_privacy_browsing_turn_on" app:showAsAction="never" />
+    <item android:id="@id/turn_off_privacy_browse" android:title="@string/download_privacy_browsing_turn_off" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,243 @@
+package com.just.agentweb;
+
+import android.graphics.Bitmap;
+import android.net.http.SslError;
+import android.os.Message;
+import android.view.KeyEvent;
+import android.webkit.ClientCertRequest;
+import android.webkit.HttpAuthHandler;
+import android.webkit.RenderProcessGoneDetail;
+import android.webkit.SslErrorHandler;
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceResponse;
+import android.webkit.WebView;
+import androidx.annotation.RequiresApi;
+
+public class WebViewClientDelegate extends android.webkit.WebViewClient {
+    private static final String TAG = "WebViewClientDelegate";
+    private android.webkit.WebViewClient mDelegate;
+
+    public WebViewClientDelegate(android.webkit.WebViewClient webViewClient) {
+        this.mDelegate = webViewClient;
+    }
+
+    @Override
+    public void doUpdateVisitedHistory(WebView webView, String str, boolean z) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.doUpdateVisitedHistory(webView, str, z);
+        } else {
+            super.doUpdateVisitedHistory(webView, str, z);
+        }
+    }
+
+    public android.webkit.WebViewClient getDelegate() {
+        return this.mDelegate;
+    }
+
+    @Override
+    public void onFormResubmission(WebView webView, Message message, Message message2) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onFormResubmission(webView, message, message2);
+        } else {
+            super.onFormResubmission(webView, message, message2);
+        }
+    }
+
+    @Override
+    public void onLoadResource(WebView webView, String str) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onLoadResource(webView, str);
+        } else {
+            super.onLoadResource(webView, str);
+        }
+    }
+
+    @Override
+    public void onPageCommitVisible(WebView webView, String str) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onPageCommitVisible(webView, str);
+        } else {
+            super.onPageCommitVisible(webView, str);
+        }
+    }
+
+    @Override
+    public void onPageFinished(WebView webView, String str) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onPageFinished(webView, str);
+        } else {
+            super.onPageFinished(webView, str);
+        }
+    }
+
+    @Override
+    public void onPageStarted(WebView webView, String str, Bitmap bitmap) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onPageStarted(webView, str, bitmap);
+        } else {
+            super.onPageStarted(webView, str, bitmap);
+        }
+    }
+
+    @Override
+    public void onReceivedClientCertRequest(WebView webView, ClientCertRequest clientCertRequest) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onReceivedClientCertRequest(webView, clientCertRequest);
+        } else {
+            super.onReceivedClientCertRequest(webView, clientCertRequest);
+        }
+    }
+
+    @Override
+    @Deprecated
+    public void onReceivedError(WebView webView, int i, String str, String str2) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onReceivedError(webView, i, str, str2);
+        } else {
+            super.onReceivedError(webView, i, str, str2);
+        }
+    }
+
+    @Override
+    public void onReceivedHttpAuthRequest(WebView webView, HttpAuthHandler httpAuthHandler, String str, String str2) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onReceivedHttpAuthRequest(webView, httpAuthHandler, str, str2);
+        } else {
+            super.onReceivedHttpAuthRequest(webView, httpAuthHandler, str, str2);
+        }
+    }
+
+    @Override
+    public void onReceivedHttpError(WebView webView, WebResourceRequest webResourceRequest, WebResourceResponse webResourceResponse) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onReceivedHttpError(webView, webResourceRequest, webResourceResponse);
+        } else {
+            super.onReceivedHttpError(webView, webResourceRequest, webResourceResponse);
+        }
+    }
+
+    @Override
+    public void onReceivedLoginRequest(WebView webView, String str, String str2, String str3) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onReceivedLoginRequest(webView, str, str2, str3);
+        } else {
+            super.onReceivedLoginRequest(webView, str, str2, str3);
+        }
+    }
+
+    @Override
+    public void onReceivedSslError(WebView webView, SslErrorHandler sslErrorHandler, SslError sslError) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onReceivedSslError(webView, sslErrorHandler, sslError);
+        } else {
+            super.onReceivedSslError(webView, sslErrorHandler, sslError);
+        }
+    }
+
+    @Override
+    @RequiresApi(api = 26)
+    public boolean onRenderProcessGone(WebView webView, RenderProcessGoneDetail renderProcessGoneDetail) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient == null) {
+            return true;
+        }
+        webViewClient.onRenderProcessGone(webView, renderProcessGoneDetail);
+        return true;
+    }
+
+    @Override
+    public void onScaleChanged(WebView webView, float f, float f2) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onScaleChanged(webView, f, f2);
+        } else {
+            super.onScaleChanged(webView, f, f2);
+        }
+    }
+
+    @Override
+    @Deprecated
+    public void onTooManyRedirects(WebView webView, Message message, Message message2) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onTooManyRedirects(webView, message, message2);
+        } else {
+            super.onTooManyRedirects(webView, message, message2);
+        }
+    }
+
+    @Override
+    public void onUnhandledKeyEvent(WebView webView, KeyEvent keyEvent) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onUnhandledKeyEvent(webView, keyEvent);
+        } else {
+            super.onUnhandledKeyEvent(webView, keyEvent);
+        }
+    }
+
+    public void setDelegate(android.webkit.WebViewClient webViewClient) {
+        this.mDelegate = webViewClient;
+    }
+
+    @Override
+    @Deprecated
+    public WebResourceResponse shouldInterceptRequest(WebView webView, String str) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        return webViewClient != null ? webViewClient.shouldInterceptRequest(webView, str) : super.shouldInterceptRequest(webView, str);
+    }
+
+    @Override
+    public boolean shouldOverrideKeyEvent(WebView webView, KeyEvent keyEvent) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        return webViewClient != null ? webViewClient.shouldOverrideKeyEvent(webView, keyEvent) : super.shouldOverrideKeyEvent(webView, keyEvent);
+    }
+
+    @Override
+    @Deprecated
+    public boolean shouldOverrideUrlLoading(WebView webView, String str) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        return webViewClient != null ? webViewClient.shouldOverrideUrlLoading(webView, str) : super.shouldOverrideUrlLoading(webView, str);
+    }
+
+    @Override
+    public void onReceivedError(WebView webView, WebResourceRequest webResourceRequest, WebResourceError webResourceError) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            webViewClient.onReceivedError(webView, webResourceRequest, webResourceError);
+        } else {
+            super.onReceivedError(webView, webResourceRequest, webResourceError);
+        }
+    }
+
+    @Override
+    public WebResourceResponse shouldInterceptRequest(WebView webView, WebResourceRequest webResourceRequest) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            return webViewClient.shouldInterceptRequest(webView, webResourceRequest);
+        }
+        return super.shouldInterceptRequest(webView, webResourceRequest);
+    }
+
+    @Override
+    public boolean shouldOverrideUrlLoading(WebView webView, WebResourceRequest webResourceRequest) {
+        android.webkit.WebViewClient webViewClient = this.mDelegate;
+        if (webViewClient != null) {
+            return webViewClient.shouldOverrideUrlLoading(webView, webResourceRequest);
+        }
+        return super.shouldOverrideUrlLoading(webView, webResourceRequest);
+    }
+}

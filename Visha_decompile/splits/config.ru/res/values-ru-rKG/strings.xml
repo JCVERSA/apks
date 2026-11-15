@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="am">AM</string>
+    <string name="apr">Апр.</string>
+    <string name="aug">Авг.</string>
+    <string name="dec">Дек.</string>
+    <string name="feb">Фев.</string>
+    <string name="jan">Янв.</string>
+    <string name="jul">Июль</string>
+    <string name="jun">Июнь</string>
+    <string name="mar">Мар.</string>
+    <string name="may">Май</string>
+    <string name="nov">Нояб.</string>
+    <string name="oct">Окт.</string>
+    <string name="os_dampingl_down_pull_refresh">Потяните вниз, чтобы обновить</string>
+    <string name="os_dampingl_refresh_finish">Обновление завершено</string>
+    <string name="os_dampingl_refreshing">Обновление</string>
+    <string name="os_dampingl_release_for_refresh">Сбросьте, чтобы обновить...</string>
+    <string name="os_dialog_input_tip_max">Достигнут лимит на количество символов</string>
+    <string name="os_foot_opt_bar_more">Больше</string>
+    <string name="os_gdpr_accept_btn">Принимаю</string>
+    <string name="os_gdpr_cancel_btn">Отмена</string>
+    <string name="os_gdpr_default_privacy_link">https://cdn.transsion-os.com/transsionholdings/rurKG/policy.html</string>
+    <string name="os_gdpr_default_privacy_link_hios">https://cdn.transsion-os.com/transsionholdings/rurKG/hios/policy.html</string>
+    <string name="os_gdpr_default_privacy_link_itelos">https://cdn.transsion-os.com/transsionholdings/rurKG/itelOS/policy.html</string>
+    <string name="os_gdpr_default_privacy_link_xos">https://cdn.transsion-os.com/transsionholdings/rurKG/xos/policy.html</string>
+    <string name="os_gdpr_privacy_announcement" formatted="false">Нажимая Принимаю, Вы выражаете свое согласие с положениями %s и %s.</string>
+    <string name="os_gdpr_privacy_announcement_splash">Благодарим Вас за доверие к нашей компании и использование нашей продукции и услуг. Нажимая Принимаю, Вы выражаете свое согласие с положениями Пользовательского соглашения и Политики конфиденциальности.</string>
+    <string name="os_gdpr_privacy_content">Благодарим Вас за доверие к нашей компании и использование нашей продукции и услуг. Чтобы мы могли предоставлять Вам наши продукты и услуги, Вам необходимо иметь доступ к Интернету и настроить ряд разрешений на Вашем телефоне; кроме того, нам нужно производить сбор и использование некоторых данных о Вас. Сбор и обработка данных производятся с целью улучшения удобства использования нашей продукции и для предоставления Вам наших услуг. Правовым основанием для обработки Ваших данных являются Ваше согласие или применимые законы.</string>
+    <string name="os_gdpr_privacy_policy">Политики конфиденциальности</string>
+    <string name="os_gdpr_privacy_title">Уведомления</string>
+    <string name="os_gdpr_shalltry_holding_privacy_link">http://cdn.shalltry.com/shalltrygroup/ru1/policy</string>
+    <string name="os_gdpr_tip_screen_pin">Это удержит его в поле зрения, пока вы не открепите его. Нажмите и удерживайте Назад и Обзор чтобы открепить.</string>
+    <string name="os_gdpr_tip_screen_pin_gesture">Для открепления приложения смахните вверх и задержите палец</string>
+    <string name="os_gdpr_user_agreement">Пользовательского соглашения</string>
+    <string name="os_gdpr_user_agreement_link">https://cdn.transsion-os.com/transsionholdings/rurKG/TC.html</string>
+    <string name="os_gdpr_user_agreement_link_hios">https://cdn.transsion-os.com/transsionholdings/rurKG/hios/TC.html</string>
+    <string name="os_gdpr_user_agreement_link_itelos">https://cdn.transsion-os.com/transsionholdings/rurKG/itelOS/TC.html</string>
+    <string name="os_gdpr_user_agreement_link_xos">https://cdn.transsion-os.com/transsionholdings/rurKG/xos/TC.html</string>
+    <string name="os_preference_dialog_negative_string">Отмена</string>
+    <string name="os_preference_dialog_positive_string">ОК</string>
+    <string name="pm">PM</string>
+    <string name="sep">Сен</string>
+</resources>

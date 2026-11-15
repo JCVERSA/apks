@@ -1,0 +1,98 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: C2vHDfmIdsQo7T4puGbDvSEJ0M4=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA1-Digest: UDx7IxuiHBrdTyemTXdIQAGJjUw=
+
+Name: lib/arm64-v8a/libFlowReporter.so
+SHA1-Digest: 3hhx5m4nkLmfxdDm6Ib/sdWxpNg=
+
+Name: lib/arm64-v8a/libImgoFfmpeg4.so
+SHA1-Digest: 0rlvgHDxiTrS4YIRVO3mGs3h/ws=
+
+Name: lib/arm64-v8a/libImgoHelp.so
+SHA1-Digest: E5xSsJQ0bpDA/R5bLJZr6v5l9GI=
+
+Name: lib/arm64-v8a/libImgoMediaPlayer_5.5.3.so
+SHA1-Digest: nf2IZR1f56lcCNAzza8Br7qcKW0=
+
+Name: lib/arm64-v8a/libImgoexs.so
+SHA1-Digest: hrt6tyJpH2Sx0Q+nNluf5uPM3zE=
+
+Name: lib/arm64-v8a/libavcodec.so
+SHA1-Digest: cymEs3z50ISTnoJqJMvU/qLvHec=
+
+Name: lib/arm64-v8a/libavformat.so
+SHA1-Digest: 7wn8WrRN3EpPlxggSSv0pJ/zeAE=
+
+Name: lib/arm64-v8a/libavutil.so
+SHA1-Digest: fjGc/cgEDUE5sROTrziffkh/fWw=
+
+Name: lib/arm64-v8a/libcrypto.1.1.so
+SHA1-Digest: u0LhR+QWNhdg3bLDRGhq1QA1x+8=
+
+Name: lib/arm64-v8a/libdatastore_shared_counter.so
+SHA1-Digest: 2QroeYLrBWw5bbYB9vLjZMnYZKg=
+
+Name: lib/arm64-v8a/libfpcalc.so
+SHA1-Digest: r0WA2sE+58NgfBHiHJP8kl9bjHg=
+
+Name: lib/arm64-v8a/libglide-webp.so
+SHA1-Digest: 6nkf8o1y0IBbKKPFMXMRd2UxBD4=
+
+Name: lib/arm64-v8a/libjnidispatch.so
+SHA1-Digest: 8hec0e4Rmplmxsu1wc4IHIEVLgA=
+
+Name: lib/arm64-v8a/liblogan.so
+SHA1-Digest: qIeC6xkop+zPsWePVOq5jYVvfsg=
+
+Name: lib/arm64-v8a/libm3u8Convertor.so
+SHA1-Digest: c4hYN7HipVs8621Dk69iCJE6O0s=
+
+Name: lib/arm64-v8a/libmgtvp2p.so
+SHA1-Digest: hNDDS74Dnnz6EBaI2eWnLkRx9LQ=
+
+Name: lib/arm64-v8a/libmmkv.so
+SHA1-Digest: dE6Dm2SwZiB8y0kpGXbUb1gSAK4=
+
+Name: lib/arm64-v8a/librtmp-jni.so
+SHA1-Digest: mVToiLheCMxArifVGA4AcI3CIz0=
+
+Name: lib/arm64-v8a/libssl.1.1.so
+SHA1-Digest: Jt9oXjU9JV3YtbufhHGDrx40cUU=
+
+Name: lib/arm64-v8a/libswresample.so
+SHA1-Digest: W6ak3ptK5SMNS8+fAHd6pOOnBog=
+
+Name: lib/arm64-v8a/libswscale.so
+SHA1-Digest: H0C1OHxHTsib23IN4pyDWcSJGUw=
+
+Name: lib/arm64-v8a/libtorrent4j.so
+SHA1-Digest: g5DfDadYsB5emCSQeQsGxruXYV0=
+
+Name: lib/arm64-v8a/libtranretriever.so
+SHA1-Digest: G/P6EDI8E3W1n5b+nwwhXvKb5cw=
+
+Name: lib/arm64-v8a/libtrantranscoder.so
+SHA1-Digest: Y+9U5kjU10EDrIrs5UaqzcYYwKk=
+
+Name: lib/arm64-v8a/libucrop.so
+SHA1-Digest: t5sKOnlJLzU6MwzWdAngLPNYZ1g=
+
+Name: lib/arm64-v8a/libvlc.so
+SHA1-Digest: xo27nEv3LWJRwZu1FfVy4XAFLWM=
+
+Name: lib/arm64-v8a/libvlcffmpeg.so
+SHA1-Digest: LZPyVgxRj56GG6Njprd+r3nSWA0=
+
+Name: lib/arm64-v8a/libvlcjni.so
+SHA1-Digest: opDZaY1Fdnh92hOxYWwuCjec8fc=
+
+Name: lib/arm64-v8a/libwbcrypto_wrapper_oscloud_client.so
+SHA1-Digest: 70h1P8dtQZYroA159IURXnoNtH0=
+
+Name: stamp-cert-sha256
+SHA1-Digest: Bs40BvDZ1xrbgQrPTD2x5w/NfHQ=
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_allow_landscape_portrait_screen" android:background="@drawable/settings_menu_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60.0dp" android:paddingVertical="7.5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/setting_tv_allow_video_play_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_playback_orientation_title" android:layout_marginStart="24.0dp" />
+        <com.transsion.widgets.BadgeView android:layout_gravity="center" android:id="@id/setting_iv_theme_menu_red_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp5" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_marginEnd="22.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:ellipsize="end" android:gravity="end" android:layout_gravity="end|center" android:id="@id/setting_tv_land_portrait_setting_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="34.0dp" />
+    </FrameLayout>
+</LinearLayout>

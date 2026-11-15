@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_create_wifi_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="create_wifi_group" />
+            <Button android:id="@id/btn_remove_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="remove_group" />
+            <Button android:id="@id/btn_search_devices" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="search_devices" />
+            <Button android:id="@id/btn_connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="connect" />
+            <Button android:id="@id/btn_disconnect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="disconnect" />
+            <Button android:id="@id/btn_sendDataToServer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="sendDataToServer" />
+            <Button android:id="@id/btn_send_coversation_to_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="sendcoversation" />
+            <Button android:id="@id/btn_send_coversation_to_client" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="sendcoversationToClient" />
+            <Button android:id="@id/btn_getConnectInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="sendcoversationToClient" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

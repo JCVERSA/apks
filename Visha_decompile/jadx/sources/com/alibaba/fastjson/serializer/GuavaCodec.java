@@ -1,0 +1,50 @@
+package com.alibaba.fastjson.serializer;
+
+import com.alibaba.fastjson.parser.DefaultJSONParser;
+import com.alibaba.fastjson.parser.deserializer.ObjectDeserializer;
+import com.google.common.collect.ArrayListMultimap;
+import defpackage.at6;
+import java.io.IOException;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
+public class GuavaCodec implements ObjectSerializer, ObjectDeserializer {
+    public static GuavaCodec instance = new GuavaCodec();
+
+    /* JADX WARN: Type inference failed for: r1v4, types: [T, com.google.common.collect.ArrayListMultimap] */
+    @Override
+    public <T> T deserialze(DefaultJSONParser defaultJSONParser, Type type, Object obj) {
+        if (type instanceof ParameterizedType) {
+            type = ((ParameterizedType) type).getRawType();
+        }
+        if (type != ArrayListMultimap.class) {
+            return null;
+        }
+        ?? r1 = (T) ArrayListMultimap.create();
+        for (Map.Entry<String, Object> entry : defaultJSONParser.parseObject().entrySet()) {
+            Object value = entry.getValue();
+            if (value instanceof Collection) {
+                r1.putAll(entry.getKey(), (List) value);
+            } else {
+                r1.put(entry.getKey(), value);
+            }
+        }
+        return r1;
+    }
+
+    @Override
+    public int getFastMatchToken() {
+        return 0;
+    }
+
+    @Override
+    public void write(JSONSerializer jSONSerializer, Object obj, Object obj2, Type type, int i) throws IOException {
+        SerializeWriter serializeWriter = jSONSerializer.out;
+        if (obj instanceof at6) {
+            jSONSerializer.write(((at6) obj).asMap());
+        }
+    }
+}

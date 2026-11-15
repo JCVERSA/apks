@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:video="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/video_timer_title" android:layout_marginTop="12.0dp" android:text="@string/play_timer" android:layout_marginStart="24.0dp" style="@style/videoSettingTextStyle" />
+    <HorizontalScrollView android:layout_gravity="center_vertical" android:scrollbars="none" android:fadingEdge="horizontal" android:fadingEdgeLength="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:requiresFadingEdge="horizontal">
+        <RadioGroup android:orientation="horizontal" android:id="@id/video_timer_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp">
+            <com.transsion.playercommon.widgets.CustomRadioButton android:id="@id/video_timer_close" android:text="@string/music_timer_close" video:value="0.0" style="@style/timerRadioButton" />
+            <com.transsion.playercommon.widgets.CustomRadioButton android:id="@id/video_timer_fifteen_min" video:isTimer="true" video:value="15.0" style="@style/timerRadioButton" />
+            <com.transsion.playercommon.widgets.CustomRadioButton android:id="@id/video_timer_thirty_min" video:isTimer="true" video:value="30.0" style="@style/timerRadioButton" />
+            <com.transsion.playercommon.widgets.CustomRadioButton android:id="@id/video_timer_fortyfive_min" video:isTimer="true" video:value="45.0" style="@style/timerRadioButton" />
+            <com.transsion.playercommon.widgets.CustomRadioButton android:id="@id/video_timer_sixty_min" video:isTimer="true" video:value="60.0" style="@style/timerRadioButton" />
+            <com.transsion.playercommon.widgets.CustomRadioButton android:id="@id/video_timer_custom" android:text="@string/timer_custom" style="@style/timerRadioButton" />
+        </RadioGroup>
+    </HorizontalScrollView>
+    <TextView android:id="@id/loop_title" android:text="@string/loop" android:layout_marginStart="24.0dp" style="@style/videoSettingTextStyle" />
+    <HorizontalScrollView android:layout_gravity="center_vertical" android:scrollbars="none" android:fadingEdge="horizontal" android:fadingEdgeLength="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:requiresFadingEdge="horizontal">
+        <RadioGroup android:orientation="horizontal" android:id="@id/loop_mode_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp">
+            <com.transsion.playercommon.widgets.CustomRadioButton android:id="@id/loop_auto_pause" android:text="@string/video_auto_pause" video:value="@integer/video_repeat_auto_pause" style="@style/timerRadioButton" />
+            <com.transsion.playercommon.widgets.CustomRadioButton android:id="@id/loop_list" android:text="@string/video_repeat_all" video:value="@integer/video_repeat_list" style="@style/timerRadioButton" />
+            <com.transsion.playercommon.widgets.CustomRadioButton android:id="@id/loop_one" android:text="@string/video_repeat_single" video:value="@integer/video_repeat_one" style="@style/timerRadioButton" />
+            <com.transsion.playercommon.widgets.CustomRadioButton android:id="@id/loop_auto_next" android:text="@string/video_auto_playnext" video:value="@integer/video_repeat_auto_next" style="@style/timerRadioButton" />
+        </RadioGroup>
+    </HorizontalScrollView>
+    <Space android:layout_width="match_parent" android:layout_height="40.0dp" />
+</merge>

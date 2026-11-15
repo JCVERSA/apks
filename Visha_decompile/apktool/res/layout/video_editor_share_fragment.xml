@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff121212" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_bar" android:paddingBottom="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/video_operate_views_start" android:paddingEnd="@dimen/video_operate_views_end">
+        <ImageView android:id="@id/iv_video_play_back" android:src="@drawable/video_play_back" style="@style/videoButton" />
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_video_play_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textDirection="locale" android:layout_marginStart="6.0dp" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="6.0">
+        <FrameLayout android:id="@id/player_frame_layout" android:clickable="true" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_max="wrap" app:layout_constraintHeight_percent="0.8" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.transsion.magicvideo.widgets.VideoPlayerMediaView android:layout_gravity="center" android:id="@id/player_media_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <View android:id="@id/black_cover" android:background="#ff121212" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vector_play_btn" />
+        </FrameLayout>
+        <TextView android:textColor="#87dedede" android:id="@id/tv_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/save_video" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/player_frame_layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/share_options_v2" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="16.0dp" android:layout_weight="2.0">
+        <Button android:layout_gravity="center_vertical" android:id="@id/btn_share_more" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:text="@string/cut_success_share_to" android:layout_alignParentBottom="true" android:layout_marginHorizontal="72.0dp" style="@style/OS.Widget.Button.Contained.Big.Single" />
+    </LinearLayout>
+</LinearLayout>

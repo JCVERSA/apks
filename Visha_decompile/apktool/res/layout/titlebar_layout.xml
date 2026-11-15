@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_bar" android:layout_width="match_parent" android:layout_height="54.0dp" android:paddingHorizontal="?screen_edge_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/title_bar_back" android:text="@string/os_back" android:contentDescription="@string/talkback_back" android:layout_marginStart="6.0dp" app:os_icon_support_rtl="true" style="@style/OSIconTextViewStyle" />
+    <com.transsion.widgetslib.widget.OSIconTextView android:textColor="@color/default_icon_color" android:gravity="center" android:id="@id/title_bar_close_multiple_select" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="44.0dp" android:text="@string/os_close" android:contentDescription="@string/talkback_close" android:layout_marginStart="7.0dp" />
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="6.0dp">
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="@dimen/os_h1_font" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/title_bar_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:textDirection="locale" />
+    </RelativeLayout>
+    <CheckBox android:id="@id/title_bar_checkBox" android:background="@drawable/ic_list_checkbox" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:button="@null" android:layout_marginEnd="17.0dp" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/videoButton">
+        <com.transsion.widgetslib.widget.OSIconTextView android:layout_gravity="end|center" android:id="@id/iv_sort" android:visibility="gone" android:text="@string/os_sort" android:contentDescription="@string/talkback_order" android:layout_marginEnd="@dimen/dp10" style="@style/OSIconTextViewStyle" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/iv_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:src="@drawable/music_point" />
+    </FrameLayout>
+    <ImageView android:id="@id/iv_add_song" android:visibility="gone" android:src="@drawable/ic_add" android:contentDescription="@string/add_to_playlist" android:layout_marginEnd="6.0dp" style="@style/videoButton" />
+    <ImageView android:id="@id/menu_more" android:visibility="gone" android:src="@drawable/ic_more_title" android:contentDescription="@string/talkback_more_settings" android:layout_marginEnd="@dimen/video_button_padding" style="@style/videoButton" />
+    <com.transsion.widgetslib.widget.OSIconTextView android:id="@id/iv_setting" android:visibility="gone" android:text="@string/os_settings" android:contentDescription="@string/talkback_settings" android:layout_marginEnd="@dimen/video_button_padding" style="@style/OSIconTextViewStyle" />
+    <ImageView android:id="@id/iv_history_clear" android:visibility="gone" android:src="@drawable/ic_clear_history_all" android:contentDescription="@string/clear" android:layout_marginEnd="@dimen/video_button_padding" style="@style/videoButton" />
+    <ImageView android:id="@id/iv_bookmark_edit" android:visibility="gone" android:src="@drawable/ic_title_edit" android:contentDescription="@string/download_bookmark_operate" android:layout_marginEnd="@dimen/video_button_padding" style="@style/videoButton" />
+    <ImageView android:id="@id/iv_faq" android:visibility="gone" android:src="@drawable/ic_online_faq" android:layout_marginEnd="@dimen/video_button_padding" style="@style/videoButton" />
+    <ImageView android:id="@id/iv_pay_history" android:visibility="gone" android:src="@drawable/ic_payment_history" android:layout_marginEnd="@dimen/video_button_padding" style="@style/videoButton" />
+    <ImageView android:id="@id/iv_file_trans_history" android:visibility="gone" android:src="@drawable/ic_public_recent" android:layout_marginEnd="@dimen/dp10" style="@style/videoButton" />
+</LinearLayout>

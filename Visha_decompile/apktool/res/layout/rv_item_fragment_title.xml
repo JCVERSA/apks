@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?screen_edge_size" android:paddingVertical="7.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/os_text_primary_color" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="56.0dp" android:text="@string/video_onlinevideo_recommend_tip" android:fontFamily="sans-serif-medium" />
+</LinearLayout>

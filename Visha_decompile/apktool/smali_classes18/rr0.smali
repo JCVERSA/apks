@@ -1,0 +1,6 @@
+.class public interface abstract Lrr0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ltm9;

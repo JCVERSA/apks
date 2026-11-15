@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/look_up_top_view" android:layout_width="wrap_content" android:layout_height="29.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="15.0dp" android:layout_alignParentRight="true">
+        <TextView android:textSize="12.0dp" android:textColor="@color/mgmi_color_FFFFFF" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvRemind" android:background="@drawable/mgmi_shape_player_justlook" android:paddingLeft="15.0dp" android:paddingTop="6.0dp" android:paddingRight="25.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="58.0dp" android:text="@string/mgmi_try_look_tips_default" android:maxLines="1" android:maxEms="15" android:singleLine="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llBut" android:background="@drawable/mgmi_shape_player_justlook_btn" android:paddingLeft="6.0dp" android:paddingRight="7.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:layout_marginRight="2.0dp" android:src="@drawable/mgmi_player_vip_button" />
+            <TextView android:textSize="12.0dp" android:textColor="@drawable/selector_white_gray_color" android:ellipsize="end" android:gravity="center" android:id="@id/tvBut" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/mgmi_buy_vip" android:maxLines="1" android:maxEms="12" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

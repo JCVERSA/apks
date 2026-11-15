@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/font_black_14_t65" android:id="@id/note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16" android:layout_marginStart="@dimen/dimen_16" android:elegantTextHeight="true" />
+    <TextView android:textAppearance="@style/font_primary_14" android:id="@id/forgetPwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xn_forget_pwd" android:layout_below="@id/note" android:layout_alignStart="@id/note" android:elegantTextHeight="true" />
+    <com.transsion.xuanniao.account.comm.widget.PasswordInput android:id="@id/passwordInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_below="@id/forgetPwd" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+    <com.transsion.xuanniao.account.comm.widget.ErrorView android:id="@id/pwdErrorView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_below="@id/passwordInput" android:layout_alignStart="@id/passwordInput" />
+</RelativeLayout>

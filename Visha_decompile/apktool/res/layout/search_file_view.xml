@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:background="@color/search_view_cover_color" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_bar" android:background="?OsBgPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <include android:id="@id/search_file" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/search_file" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/search_content" android:background="?OsBgPrimary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/search_bar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_search_list" android:background="?OsBgPrimary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/search_bar" />
+        <ViewStub android:layout_gravity="center_vertical" android:id="@id/main_empty_view" android:layout="@layout/empty_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/search_bar" />
+    </LinearLayout>
+</merge>

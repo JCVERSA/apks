@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp15"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/platform_icon" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_share" android:scaleType="centerCrop" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/os_text_secondary_color" android:id="@id/platform_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="Platform Name" />
+</LinearLayout>

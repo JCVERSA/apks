@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition motion:constraintSetEnd="@id/end" motion:constraintSetStart="@id/start" motion:duration="500">
+        <KeyFrameSet />
+    </Transition>
+    <ConstraintSet android:id="@id/start">
+        <Constraint android:orientation="horizontal" android:id="@id/middle_line" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.5" />
+        <Constraint android:id="@id/hinge_placeholder" android:layout_width="match_parent" android:layout_height="40.0dp" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:textSize="18.0sp" android:textColor="@color/os_candwhile_primary_color" android:id="@id/ll_play_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="92.0dp" android:text="@string/play_speed_circle_2.0" android:drawablePadding="10.0dp" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent">
+            <PropertySet android:visibility="gone" motion:visibilityMode="ignore" />
+        </Constraint>
+        <Constraint android:id="@id/rv_speed" android:visibility="gone" android:layout_width="280.0dp" android:layout_height="wrap_content" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintTop_toTopOf="parent">
+            <PropertySet android:visibility="gone" motion:visibilityMode="ignore" />
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/half_up">
+        <Constraint android:orientation="horizontal" android:id="@id/middle_line" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.5" />
+        <Constraint android:id="@id/hinge_placeholder" android:layout_width="match_parent" android:layout_height="40.0dp" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:textSize="18.0sp" android:textColor="@color/os_candwhile_primary_color" android:id="@id/ll_play_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="92.0dp" android:text="@string/play_speed_circle_2.0" android:drawablePadding="10.0dp" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent">
+            <PropertySet android:visibility="gone" motion:visibilityMode="ignore" />
+        </Constraint>
+        <Constraint android:id="@id/rv_speed" android:visibility="gone" android:layout_width="280.0dp" android:layout_height="wrap_content" motion:layout_constraintBottom_toTopOf="@id/hinge_placeholder" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintTop_toTopOf="parent">
+            <PropertySet android:visibility="gone" motion:visibilityMode="ignore" />
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/half_down">
+        <Constraint android:orientation="horizontal" android:id="@id/middle_line" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.5" />
+        <Constraint android:id="@id/hinge_placeholder" android:layout_width="match_parent" android:layout_height="40.0dp" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:textSize="18.0sp" android:textColor="@color/os_candwhile_primary_color" android:id="@id/ll_play_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="92.0dp" android:text="@string/play_speed_circle_2.0" android:drawablePadding="10.0dp" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent">
+            <PropertySet android:visibility="gone" motion:visibilityMode="ignore" />
+        </Constraint>
+        <Constraint android:id="@id/rv_speed" android:visibility="gone" android:layout_width="280.0dp" android:layout_height="wrap_content" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintTop_toBottomOf="@id/hinge_placeholder">
+            <PropertySet android:visibility="gone" motion:visibilityMode="ignore" />
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/land">
+        <Constraint android:orientation="horizontal" android:id="@id/middle_line" android:layout_width="match_parent" android:layout_height="wrap_content" motion:layout_constraintGuide_percent="0.5" />
+        <Constraint android:id="@id/hinge_placeholder" android:layout_width="match_parent" android:layout_height="40.0dp" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:textSize="18.0sp" android:textColor="@color/os_candwhile_primary_color" android:id="@id/ll_play_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56.0dp" android:text="@string/play_speed_circle_2.0" android:drawablePadding="10.0dp" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent">
+            <PropertySet android:visibility="gone" motion:visibilityMode="ignore" />
+        </Constraint>
+        <Constraint android:id="@id/rv_speed" android:visibility="gone" android:layout_width="280.0dp" android:layout_height="wrap_content" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintTop_toTopOf="parent">
+            <PropertySet android:visibility="gone" motion:visibilityMode="ignore" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

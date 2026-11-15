@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/top_menu_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end" android:id="@id/iv_music_theme_menu" android:visibility="gone" android:src="@drawable/ic_theme_remain_music_icon" android:contentDescription="@string/themes" style="@style/videoButton" />
+    <ImageView android:layout_gravity="end" android:id="@id/iv_audio_shortcut" android:visibility="gone" android:src="@drawable/ic_public_send_to_desktop" android:contentDescription="@string/talkback_search" style="@style/videoButton" />
+    <ImageView android:layout_gravity="end" android:id="@id/iv_ad_tip_menu" android:src="@drawable/ic_ad_tip_icon" style="@style/videoButton" />
+    <com.transsion.widgetslib.widget.OSIconTextView android:layout_gravity="end" android:id="@id/audio_filter" android:visibility="gone" android:text="@string/os_filter" style="@style/OSIconTextViewStyle" />
+    <FrameLayout android:id="@id/ll_sort_layout" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="wrap_content">
+        <com.transsion.widgetslib.widget.OSIconTextView android:layout_gravity="end|center" android:id="@id/audio_main_sort" android:text="@string/os_sort" android:contentDescription="@string/talkback_order" style="@style/OSIconTextViewStyle" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/iv_main_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:src="@drawable/music_point" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ll_collect_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.transsion.widgetslib.widget.OSIconTextView android:layout_gravity="end|center" android:id="@id/iv_video_collect" android:text="@string/os_Layout" android:contentDescription="@string/visha_layout" style="@style/OSIconTextViewStyle" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/iv_video_collect_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:src="@drawable/music_point" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ll_history_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.transsion.widgetslib.widget.OSIconTextView android:layout_gravity="end|center" android:id="@id/iv_video_history" android:text="@string/os_recent" android:contentDescription="@string/history_list" style="@style/OSIconTextViewStyle" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/iv_history_main_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:src="@drawable/music_point" />
+    </FrameLayout>
+    <com.transsion.widgetslib.widget.OSIconTextView android:layout_gravity="end" android:id="@id/iv_search" android:text="@string/os_search" android:contentDescription="@string/talkback_search" style="@style/OSIconTextViewStyle" />
+    <com.transsion.widgetslib.widget.OSIconTextView android:layout_gravity="end" android:id="@id/menu_more" android:visibility="gone" android:text="@string/os_more" style="@style/OSIconTextViewStyle" />
+    <CheckBox android:id="@id/title_bar_checkBox" android:background="@drawable/ic_list_checkbox" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:button="@null" android:layout_marginEnd="9.0dp" />
+</LinearLayout>

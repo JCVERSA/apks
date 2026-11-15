@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="300.0dp" android:layout_height="wrap_content" app:cardBackgroundColor="@color/os_layer_high_hios" app:cardCornerRadius="@dimen/dp20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <TextView android:textColor="@color/os_text_primary_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/visha_layout" android:includeFontPadding="false" android:layout_marginHorizontal="@dimen/dp24" style="@style/os_dialog_title" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_video_collect" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:layout_marginHorizontal="@dimen/dp22" />
+        <TextView android:textColor="@color/os_text_primary_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24" android:text="@string/visha_sort" android:layout_marginHorizontal="@dimen/dp24" style="@style/os_dialog_title" />
+        <include android:id="@id/video_sort_item_list" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="@dimen/dp12" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/dp8" layout="@layout/video_sort_mode_item_list" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64.0dp">
+            <TextView android:textSize="@dimen/sp18" android:textColor="@color/os_text_tertiary_hios" android:gravity="center" android:id="@id/tv_video_collect_cancel" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/os_dialog_title" />
+            <View android:layout_gravity="center" android:background="@color/os_fill_weaker_hios" android:layout_width="1.0dp" android:layout_height="16.0dp" />
+            <TextView android:textColor="?os_platform_basic_color" android:gravity="center" android:id="@id/tv_video_collect_confirm" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/confirm" android:layout_weight="1.0" style="@style/os_dialog_title" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

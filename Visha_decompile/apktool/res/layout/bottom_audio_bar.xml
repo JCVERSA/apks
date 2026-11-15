@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.audio.widgets.AudioAppFootActionBar android:layout_gravity="bottom" android:id="@id/bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:foot_init_show="true" app:isFootActionBar="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

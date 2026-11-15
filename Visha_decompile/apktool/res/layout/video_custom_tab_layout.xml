@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="56.0dp" android:layout_weight="1.0">
+        <com.transsion.widgets.CustomTabLayout android:id="@id/tab_layout" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="14.0dp" app:customTabIndicatorColor="?os_platform_basic_color" app:customTabIndicatorGravity="bottom" app:customTabIndicatorHeight="2.0dp" app:customTabIndicatorWidth="20.0dp" app:customTabMode="scrollable" app:customTabPaddingBottom="8.0dp" app:customTabPaddingEnd="8.0dp" app:customTabPaddingStart="8.0dp" app:customTabTextColor="@color/custom_tab_text_color" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_bar" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:id="@id/menu_tab_layout" android:layout_width="wrap_content" android:layout_height="@dimen/tab_menu_layout_height" android:layout_marginStart="10.0dp" android:layout_marginEnd="6.0dp">
+        <com.transsion.widgetslib.widget.OSIconTextView android:layout_gravity="end|center" android:id="@id/iv_sort" android:text="@string/os_sort" android:contentDescription="@string/talkback_order" style="@style/OSIconTextViewStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_FFFFFF" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:orientation="horizontal" android:id="@id/lay_detail_player" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <com.mgtv.ssp.widget.CoverView android:id="@id/prepare_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.mgtv.ssp.widget.LoadMoreRecycleView android:id="@id/rv_play_detail" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/detail_progressBar" android:layout_width="20.0dp" android:layout_height="20.0dp" android:indeterminateTint="@color/color_FF4500" android:indeterminateTintMode="src_atop" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/tv_bottom_open" android:background="@drawable/bg_ff45" android:visibility="gone" android:layout_width="170.0dp" android:layout_height="45.0dp" android:layout_marginBottom="40.0dp" android:text="@string/app_inner_open" android:maxLines="1" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lay_detail_error" android:background="@color/color_FFFFFF" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/color888888" android:gravity="center" android:layout_gravity="center" android:id="@id/textView_empty" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" android:drawableTop="@drawable/icon_empty" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_FF4500" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_error_retry" android:background="@drawable/bg_stroke_ff45" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:minWidth="80.0dp" android:text="@string/retry" android:maxLines="1" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_p_top_back" android:visibility="visible" android:layout_width="25.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/mgmi_back_icon" android:scaleType="fitCenter" />
+</FrameLayout>

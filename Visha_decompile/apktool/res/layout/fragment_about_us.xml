@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_layout" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_privacy" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="58.0dp">
+        <TextView android:text="@string/privacy_policy" style="@style/settingMenuItemTvStyle" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_marginEnd="16.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_agreement" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="58.0dp">
+        <TextView android:text="@string/user_agreement" style="@style/settingMenuItemTvStyle" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_marginEnd="16.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_change_environment" android:background="?selectableItemBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="58.0dp">
+        <TextView android:text="@string/change_dev_environment" style="@style/settingMenuItemTvStyle" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_marginEnd="16.0dp" />
+    </LinearLayout>
+</LinearLayout>

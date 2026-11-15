@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_custom_guide" android:layout_alignParentTop="true" android:layout_marginEnd="30.0dp" android:layout_alignParentEnd="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/thumb_preview_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_close">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_thumb_preview_guide" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginHorizontal="22.0dp">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:text="TAB" android:layout_marginStart="24.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="#66000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Play with you" android:layout_marginStart="24.0dp" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="69.0dp" android:layout_marginTop="27.0dp" android:layout_marginHorizontal="14.0dp">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_video" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/iv_video_crop_thumb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+                        <ImageView android:id="@id/iv_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:src="@drawable/ic_tab_video_thumb_preview" />
+                        <TextView android:textSize="9.0sp" android:textColor="#ff21e6d9" android:id="@id/tv_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_music" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:src="@drawable/ic_tab_music" />
+                        <TextView android:textSize="9.0sp" android:textColor="#66000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_download" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:src="@drawable/ic_tab_download" />
+                        <TextView android:textSize="9.0sp" android:textColor="#66000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_more" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:src="@drawable/ic_tab_tools" />
+                        <TextView android:textSize="9.0sp" android:textColor="#66000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/anim_views" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="36.0dp" android:layout_marginHorizontal="14.0dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_thumb_preview_guide" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dp" android:layout_marginHorizontal="22.0dp">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:text="Seekbar" android:layout_marginStart="24.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="#66000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Play with you" android:layout_marginStart="24.0dp" />
+            <SeekBar android:id="@id/preview_sb" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginTop="22.0dp" android:layout_marginBottom="20.0dp" android:maxHeight="3.0dp" android:progressDrawable="@drawable/thumb_preview_progress" android:thumb="@drawable/thumb_custom" android:paddingStart="7.0dp" android:paddingEnd="7.0dp" android:layout_marginHorizontal="18.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="27.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dp" android:text="@string/custom_theme_guide_title" android:includeFontPadding="false" android:layout_below="@id/thumb_preview_content" android:fontFamily="sans-serif-medium" android:layout_marginHorizontal="44.0dp" />
+    <TextView android:textSize="14.0dp" android:textColor="#b3dedede" android:gravity="center_horizontal" android:id="@id/tv_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dp" android:text="@string/custom_theme_guide_hint" android:includeFontPadding="false" android:layout_below="@id/tv_title" android:layout_marginHorizontal="41.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/btn_confirm" android:background="@drawable/background_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="36.0dp" android:text="@string/custom_theme_guide_btn" android:layout_alignParentBottom="true" android:fontFamily="sans-serif-medium" android:layout_marginHorizontal="72.0dp" android:paddingVertical="9.0dp" />
+</RelativeLayout>

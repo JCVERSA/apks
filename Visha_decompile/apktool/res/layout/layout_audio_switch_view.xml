@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_music" android:background="@drawable/bg_switch_selected" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/music" android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_video" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/video" android:layout_weight="1.0" />
+</merge>

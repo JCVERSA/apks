@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="90.0dp" android:width="124.0dp" android:viewportWidth="124.0" android:viewportHeight="90.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_icon_default_video2mp3_tablet_port__0" android:pathData="M124,90l-124,-0l-0,-90l124,-0z" />
+    <path android:fillColor="#e35c00" android:pathData="M52.95,27.38C52.7,25.34 54.28,23.52 56.34,23.51L109.72,23.38C111.49,23.37 112.97,24.73 113.09,26.5C113.5,32.2 114.3,44.37 114.3,51.91C114.3,59.54 113.48,72.72 113.08,78.71C112.96,80.48 111.49,81.85 109.72,81.86L56.36,81.99C54.3,82 52.7,80.17 52.96,78.12C53.74,72.08 55.1,60.34 55.1,52.86C55.1,45.36 53.73,33.46 52.95,27.38Z" android:fillType="evenOdd" />
+    <group>
+        <clip-path android:pathData="M39,81.97l0,-58.64l78,-0l0,58.64z" />
+        <path android:fillColor="#ea6509" android:pathData="M67.01,80.67a28.2,28.01 90,1 0,0 -56.4a28.2,28.01 90,1 0,0 56.4z" />
+        <path android:fillColor="#d55802" android:pathData="M67.01,65a12.53,12.45 90,1 0,0 -25.07a12.53,12.45 90,1 0,0 25.07z" />
+        <path android:fillColor="#ff760d" android:pathData="M55.57,23.33L110.53,23.33C113.63,23.33 116.18,25.76 116.32,28.86C116.6,35.12 117,45.31 117,51.94C117,58.7 116.58,69.79 116.3,76.44C116.17,79.54 113.61,81.97 110.51,81.97L55.57,81.97C55.57,81.97 58.31,63.21 58.31,52.76C58.31,42.3 55.57,23.33 55.57,23.33Z" android:fillType="evenOdd" />
+        <path android:fillColor="#ffffff" android:pathData="M89.97,42.45C90.3,42.43 90.63,42.55 90.88,42.79L94.86,46.7C95.33,47.16 95.35,47.92 94.89,48.4C94.42,48.89 93.65,48.9 93.16,48.43L91.94,47.22L93.06,53.22L90.7,53.69L88.77,43.95C88.64,43.29 89.05,42.64 89.71,42.49C89.77,42.47 89.83,42.46 89.89,42.46C89.91,42.45 89.93,42.45 89.95,42.45C89.96,42.45 89.96,42.45 89.97,42.45Z" />
+        <path android:fillColor="#ffffff" android:pathData="M85.78,47.64C89.97,47.64 93.36,51.08 93.36,55.33C93.36,59.58 89.97,63.03 85.78,63.03C81.6,63.03 78.21,59.58 78.21,55.33C78.21,51.08 81.6,47.64 85.78,47.64Z" />
+    </group>
+</vector>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_introduce" android:background="?OsBgPrimary" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/intro_nest" android:paddingTop="54.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="22.0dp" android:paddingEnd="20.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/vk_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp5" android:maxLines="2" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:ellipsize="end" android:id="@id/vk_short_desc" android:layout_width="match_parent" android:layout_height="match_parent" android:lines="1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/os_text_secondary_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/vk_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp5" android:maxLines="2" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View android:id="@id/intro_scrol" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/intro_down_close" android:layout_width="match_parent" android:layout_height="64.0dp" android:paddingStart="22.0dp" android:paddingEnd="20.0dp">
+        <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="18.0sp" android:textColor="@color/os_text_primary_color" android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Details" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/intro_close" android:layout_width="14.0dp" android:layout_height="7.0dp" android:layout_marginTop="10.0dp" android:src="@drawable/ic_vk_intro_close" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

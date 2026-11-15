@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.transsion.playercommon.widgets.RoundFrameLayout android:id="@id/fl_skin" android:layout_width="match_parent" android:layout_height="242.0dp" app:round_corner="@dimen/skin_menu_radius" app:solid_color="@color/transparent" app:stroke_color="#dedede" app:stroke_width="1.0dp">
+            <ImageView android:id="@id/iv_skin_menu" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        </com.transsion.playercommon.widgets.RoundFrameLayout>
+        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:layout_gravity="start|top" android:id="@id/tv_theme_new" android:background="@drawable/them_new_tag_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/new_tag" android:includeFontPadding="false" android:layout_marginStart="12.0dp" android:paddingHorizontal="7.0dp" android:paddingVertical="1.5dp" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/iv_ad_theme" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:src="@drawable/ic_ad_tip_icon" android:scaleType="centerInside" android:layout_marginEnd="12.0dp" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/iv_theme_tab" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:src="@drawable/ic_theme_tab" android:scaleType="centerInside" android:layout_marginHorizontal="23.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/textview_select_color" android:ellipsize="end" android:gravity="start" android:id="@id/iv_skin_menu_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:singleLine="true" android:textDirection="locale" />
+</LinearLayout>

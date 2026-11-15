@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mgadplus.viewgroup.dynamicview.AutoplayerLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/mgmi_ad_dec">
+        <com.mgadplus.viewgroup.dynamicview.AutoplayerRecyclerView android:id="@id/autoplayerview" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/closeIcon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/mgmi_icon_corner_float_close" android:layout_toRightOf="@id/autoplayerview" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/mgmi_font_8" android:textColor="@color/mgmi_white" android:id="@id/mgmi_ad_dec" android:background="@drawable/mgmi_marquee_ad_icon" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="广告" android:shadowColor="@color/mgmi_color_000000_66" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentBottom="true" />
+</com.mgadplus.viewgroup.dynamicview.AutoplayerLayout>

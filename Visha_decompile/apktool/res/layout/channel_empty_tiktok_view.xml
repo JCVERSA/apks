@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsion.onlinevideo.widgets.VishaShimmerFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:shimmer_base_alpha="0.8" app:shimmer_highlight_alpha="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/background_structure_tiktok" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.transsion.onlinevideo.widgets.VishaShimmerFrameLayout>

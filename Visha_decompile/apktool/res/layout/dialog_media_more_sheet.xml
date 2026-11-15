@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp">
+        <TextView android:textStyle="bold" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="28.0dp" android:lines="1" android:textDirection="locale" android:layout_marginHorizontal="@dimen/dp22" style="@style/os_dialog_title" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_operate_list_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_operate_list_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

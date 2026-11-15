@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/os_medium_fontweight" android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="title" android:maxLines="1" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="name" android:maxLines="1" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:max="100" android:progressDrawable="@drawable/round_notify_progress" style="@style/customProgressBarHorizontalStyle" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp">
+        <TextView android:textSize="10.0sp" android:textColor="@color/os_text_secondary_color" android:layout_gravity="start" android:id="@id/tv_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:maxLines="1" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/os_text_secondary_color" android:layout_gravity="end" android:id="@id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:maxLines="1" />
+    </FrameLayout>
+</LinearLayout>

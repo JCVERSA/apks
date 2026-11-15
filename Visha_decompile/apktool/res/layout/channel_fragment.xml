@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingBottom="60.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/stick_header_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.transsion.widgets.CustomSwipeRefreshLayout android:id="@id/channel_pull_damping_layout" android:scrollbars="vertical" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="always">
+            <com.transsion.onlinevideo.widgets.OnlineTopicRecyclerView android:id="@id/rv_topic" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.transsion.widgets.CustomSwipeRefreshLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/online_video_empty_view" android:layout="@layout/online_video_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center|bottom" android:id="@id/tv_toast" android:background="@drawable/os_toast_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dp" />
+</FrameLayout>

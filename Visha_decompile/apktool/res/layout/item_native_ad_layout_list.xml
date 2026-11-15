@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?screen_edge_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:id="@id/cl_item_ad" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/video_list_padding" android:paddingVertical="7.0dp">
+        <include layout="@layout/item_native_ad_layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

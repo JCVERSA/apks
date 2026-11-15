@@ -1,0 +1,296 @@
+{
+  "bundle_sha256": "467b5a7e08dedc7901d3f52576232c0c889000d5c65a0470b0f23ed231a62d66",
+  "bundle_size": 129763700,
+  "manifest": {
+    "xapk_version": 2,
+    "package_name": "com.transsion.magicshow",
+    "name": "Visha Player",
+    "version_code": "83033",
+    "version_name": "8.3.0.33",
+    "min_sdk_version": "29",
+    "target_sdk_version": "36",
+    "permissions": [
+      "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "android.permission.READ_MEDIA_AUDIO",
+      "android.permission.READ_MEDIA_VIDEO",
+      "android.permission.READ_MEDIA_IMAGES",
+      "android.permission.CAMERA",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.INTERNET",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.WAKE_LOCK",
+      "android.permission.DISABLE_KEYGUARD",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "com.android.launcher.permission.INSTALL_SHORTCUT",
+      "com.android.launcher.permission.UNINSTALL_SHORTCUT",
+      "com.android.vending.BILLING",
+      "android.permission.BLUETOOTH",
+      "android.permission.VIBRATE",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "android.permission.WRITE_SETTINGS",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "com.transsion.aicore.main.permission.MM_PROVIDER",
+      "com.transsion.aicore.main.permission.LM_RECEIVER",
+      "com.xui.xhide.permission.WRITE_DATA",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.NEARBY_WIFI_DEVICES",
+      "android.permission.CHANGE_WIFI_STATE",
+      "android.permission.CHANGE_NETWORK_STATE",
+      "android.permission.USE_FINGERPRINT",
+      "android.permission.USE_BIOMETRIC",
+      "com.google.android.gms.permission.AD_ID",
+      "hoffnung.permission.READ_DEVICE_INFO",
+      "com.palm.id.READ_ACCOUNT_PROVIDER",
+      "com.palm.id.old.READ_ACCOUNT_PROVIDER",
+      "hyperion.permission.USE_SECURE_STORAGE",
+      "hyperion.permission.USE_SECURE_CRYPTO",
+      "android.permission.ACCESS_ADSERVICES_AD_ID",
+      "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+      "android.permission.ACCESS_ADSERVICES_TOPICS",
+      "com.transsion.tpush.permission.WRITE_PROVIDER",
+      "com.transsion.tpush.permission.READ_PROVIDER",
+      "com.google.android.c2dm.permission.RECEIVE",
+      "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+      "com.transsion.dataservice.permission.READ",
+      "com.transsion.dataservice.permission.WRITE",
+      "com.transsion.magicshow.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "com.google.android.providers.gsf.permission.READ_GSERVICES",
+      "com.google.android.gms.AD_ID"
+    ],
+    "split_configs": [
+      "config.ar",
+      "config.arm64_v8a",
+      "config.de",
+      "config.en",
+      "config.es",
+      "config.fr",
+      "config.hi",
+      "config.in",
+      "config.it",
+      "config.ja",
+      "config.ko",
+      "config.my",
+      "config.pt",
+      "config.ru",
+      "config.th",
+      "config.tr",
+      "config.vi",
+      "config.xxhdpi",
+      "config.zh"
+    ],
+    "total_size": 129580853,
+    "icon": "icon.png",
+    "split_apks": [
+      {
+        "file": "com.transsion.magicshow.apk",
+        "id": "base"
+      },
+      {
+        "file": "config.ar.apk",
+        "id": "config.ar"
+      },
+      {
+        "file": "config.arm64_v8a.apk",
+        "id": "config.arm64_v8a"
+      },
+      {
+        "file": "config.de.apk",
+        "id": "config.de"
+      },
+      {
+        "file": "config.en.apk",
+        "id": "config.en"
+      },
+      {
+        "file": "config.es.apk",
+        "id": "config.es"
+      },
+      {
+        "file": "config.fr.apk",
+        "id": "config.fr"
+      },
+      {
+        "file": "config.hi.apk",
+        "id": "config.hi"
+      },
+      {
+        "file": "config.in.apk",
+        "id": "config.in"
+      },
+      {
+        "file": "config.it.apk",
+        "id": "config.it"
+      },
+      {
+        "file": "config.ja.apk",
+        "id": "config.ja"
+      },
+      {
+        "file": "config.ko.apk",
+        "id": "config.ko"
+      },
+      {
+        "file": "config.my.apk",
+        "id": "config.my"
+      },
+      {
+        "file": "config.pt.apk",
+        "id": "config.pt"
+      },
+      {
+        "file": "config.ru.apk",
+        "id": "config.ru"
+      },
+      {
+        "file": "config.th.apk",
+        "id": "config.th"
+      },
+      {
+        "file": "config.tr.apk",
+        "id": "config.tr"
+      },
+      {
+        "file": "config.vi.apk",
+        "id": "config.vi"
+      },
+      {
+        "file": "config.xxhdpi.apk",
+        "id": "config.xxhdpi"
+      },
+      {
+        "file": "config.zh.apk",
+        "id": "config.zh"
+      }
+    ]
+  },
+  "splits": [
+    {
+      "id": "base",
+      "file": "com.transsion.magicshow.apk",
+      "sha256": "d69577e8af65fb4953cefa75b8fdec18b6b48e0c14a64cca6910ae98be9ba22a",
+      "size": 97807991
+    },
+    {
+      "id": "config.ar",
+      "file": "config.ar.apk",
+      "sha256": "e04417e00c7c6d2d02bcc7eb48709e43e5e9d6579dba6c4fd62d5a82c59a3556",
+      "size": 315801
+    },
+    {
+      "id": "config.arm64_v8a",
+      "file": "config.arm64_v8a.apk",
+      "sha256": "7d57723bda66151bc7a2a7cde3e231a1888153b198ea79003c1e09e09c10f88d",
+      "size": 25881083
+    },
+    {
+      "id": "config.de",
+      "file": "config.de.apk",
+      "sha256": "6ed4328b24818e4ca73ccabf34174eeed7ff330ca154e165104d766e0f40f477",
+      "size": 242073
+    },
+    {
+      "id": "config.en",
+      "file": "config.en.apk",
+      "sha256": "83f131ad050c08e737eee586ba26364f23c55ab69d668095f7521a4088320dc6",
+      "size": 320238
+    },
+    {
+      "id": "config.es",
+      "file": "config.es.apk",
+      "sha256": "ec125782fbfd9cbade735070da284f67bd7c574bc9f658ff15138de33a0ff02d",
+      "size": 373145
+    },
+    {
+      "id": "config.fr",
+      "file": "config.fr.apk",
+      "sha256": "38e6d64938b3d1df5bedb258779426825c543f389bc18ae7f7d519faeb27c276",
+      "size": 254361
+    },
+    {
+      "id": "config.hi",
+      "file": "config.hi.apk",
+      "sha256": "423c4197153a2fe6c145fa98ba2ce1e8666d400e52e80b7298d526d7a0681207",
+      "size": 307609
+    },
+    {
+      "id": "config.in",
+      "file": "config.in.apk",
+      "sha256": "63e4f6e9c9a9f5f1d688c59e31cca81a0bbde02082fd1950a9d0e24ea9fb2cf0",
+      "size": 237977
+    },
+    {
+      "id": "config.it",
+      "file": "config.it.apk",
+      "sha256": "ef109fc93927cc074063b9071b820062fb93d9968035f8b32170a7e5fc980240",
+      "size": 237977
+    },
+    {
+      "id": "config.ja",
+      "file": "config.ja.apk",
+      "sha256": "3274ef50684a1c67a48bc8d2012dfb8e62945da9c05fe0d6726931551b4008a3",
+      "size": 65945
+    },
+    {
+      "id": "config.ko",
+      "file": "config.ko.apk",
+      "sha256": "b17828a944fa7d1c7b6a81b16dcc687d18419c2bbb11ce41a6c1191d508c3298",
+      "size": 197017
+    },
+    {
+      "id": "config.my",
+      "file": "config.my.apk",
+      "sha256": "e5af9f576947d8890c22b17040f6c1313933b2cc65530c053f581d6a1c6bbdb3",
+      "size": 643481
+    },
+    {
+      "id": "config.pt",
+      "file": "config.pt.apk",
+      "sha256": "9b64f8d16695631786a5fba58debbcedb23d28bfc077a069f3d5043563b8ab09",
+      "size": 356761
+    },
+    {
+      "id": "config.ru",
+      "file": "config.ru.apk",
+      "sha256": "f0266b359c51e65c2a82fbfd84d662c1fb686394d346092b89b1197adb408f9a",
+      "size": 295321
+    },
+    {
+      "id": "config.th",
+      "file": "config.th.apk",
+      "sha256": "8f76a414b4cb5443e6444eb1b92639438c0cab6c02358b00e2bdf346d439abcc",
+      "size": 323993
+    },
+    {
+      "id": "config.tr",
+      "file": "config.tr.apk",
+      "sha256": "be9340e7511c524bd2dc46dff52793c9ab7634a88b64dde9eec84e6d0147a085",
+      "size": 246510
+    },
+    {
+      "id": "config.vi",
+      "file": "config.vi.apk",
+      "sha256": "6e858793930371676550b4759075a6c119d423c9f9f1e3ebb2f917e090a695a0",
+      "size": 254361
+    },
+    {
+      "id": "config.xxhdpi",
+      "file": "config.xxhdpi.apk",
+      "sha256": "fb624434840c61434e95d3c42b7648035f8a64790c67232bf78e65db19ad7943",
+      "size": 846064
+    },
+    {
+      "id": "config.zh",
+      "file": "config.zh.apk",
+      "sha256": "77ef5ead213f50f6a80fa7b8d909ca66b04aa98688e478d38ffac9c2e80723f6",
+      "size": 373145
+    }
+  ]
+}

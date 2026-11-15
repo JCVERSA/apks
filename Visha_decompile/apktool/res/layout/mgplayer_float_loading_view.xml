@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_gradient_flayer_float" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivLoadingLogo" android:layout_width="100.0dp" android:layout_height="26.0dp" android:layout_marginBottom="5.0dp" android:src="@drawable/icon_player_loading_logo" android:layout_above="@id/progressBar" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_centerInParent="true" android:indeterminateTint="@color/color_FF4500" android:indeterminateTintMode="src_atop" />
+    <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dp" android:layout_above="@id/progressBar" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/font_24" android:textColor="@color/loading_tip_text" android:id="@id/tv_net_speed_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_below="@id/progressBar" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/font_24" android:textColor="@color/loading_tip_text" android:gravity="center" android:id="@id/tvLoadingText" android:paddingLeft="38.0dp" android:paddingRight="38.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:maxLines="2" android:layout_below="@id/tv_net_speed_tips" android:layout_centerHorizontal="true" />
+</RelativeLayout>

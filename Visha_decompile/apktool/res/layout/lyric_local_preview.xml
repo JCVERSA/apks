@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingBottom="30.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10.0dp" android:layout_above="@id/tv_btn" android:layout_alignParentTop="true" android:nestedScrollingEnabled="true" android:layout_marginHorizontal="24.0dp">
+        <TextView android:textSize="18.0sp" android:textColor="@color/os_text_secondary_color" android:gravity="center_horizontal" android:id="@id/tv_preview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </ScrollView>
+    <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_btn" android:background="@drawable/all_textview_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lyric_local_setting_add" android:layout_alignParentBottom="true" android:layout_marginHorizontal="72.0dp" android:paddingVertical="11.0dp" />
+</RelativeLayout>

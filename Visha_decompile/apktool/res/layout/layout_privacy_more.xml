@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_privacy_more" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_add_video" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="48.0dp" android:minWidth="144.0dp" android:paddingHorizontal="16.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_more_menu_add_video" android:singleLine="true" android:layout_weight="1.0" android:textDirection="locale" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_change_password" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="48.0dp" android:minWidth="144.0dp" android:paddingHorizontal="16.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_more_menu_change_password" android:singleLine="true" android:layout_weight="1.0" android:textDirection="locale" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_open_close_biometricdialog" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="48.0dp" android:minWidth="144.0dp" android:paddingHorizontal="16.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_open_close_biometricdialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enable_biometric_unlock" android:singleLine="true" android:layout_weight="1.0" android:textDirection="locale" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_change_email" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="48.0dp" android:minWidth="144.0dp" android:paddingHorizontal="16.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_more_menu_change_email" android:singleLine="true" android:layout_weight="1.0" android:textDirection="locale" />
+    </LinearLayout>
+</LinearLayout>

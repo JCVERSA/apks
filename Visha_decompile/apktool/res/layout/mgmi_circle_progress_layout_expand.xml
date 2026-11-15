@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="170.0dp" android:layout_height="115.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tc="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/b_empty_line" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <View android:id="@id/view_skip_expand" android:background="@android:color/transparent" android:layout_width="170.0dp" android:layout_height="115.0dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:gravity="center" android:id="@id/layout_boot_skip" android:background="@drawable/ad_boot_skip_bg" android:layout_width="104.0dp" android:layout_height="32.0dp" android:layout_marginTop="48.5dp" android:layout_marginRight="@dimen/mgmi_dp_20" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/mgmi_font_15" android:textStyle="bold" android:textColor="@color/mgmi_progress_text_color" android:gravity="center" android:id="@id/mgmi_ad_countDown" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/mgmi_font_15" android:textStyle="bold" android:textColor="@color/mgmi_white" android:gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgmi_skip_ad_time" android:layout_toRightOf="@id/mgmi_ad_countDown" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

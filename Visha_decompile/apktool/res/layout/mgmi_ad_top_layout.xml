@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_logo" android:background="@drawable/ad_right_top_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="8.0sp" android:textColor="@color/mgmi_ad_text_bg" android:id="@id/mgmi_ad_right_top_logo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgmi_template_ad" android:shadowColor="#ff000000" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" />
+    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/arrow" android:layout_width="5.0dp" android:layout_height="7.0dp" android:layout_marginLeft="2.0dp" />
+</LinearLayout>

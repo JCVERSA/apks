@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.widgetslib.widget.editext.OSMaterialEditText android:id="@id/et_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/os_dialog_padding_left_right" app:os_et_bg_color="@color/os_gray_quaternary_color" app:os_et_dialog_mode="true" app:os_et_label="@string/lyric_search_song_name" app:os_et_right_show_delete="true" />
+    <com.transsion.widgetslib.widget.editext.OSMaterialEditText android:id="@id/et_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginHorizontal="@dimen/os_dialog_padding_left_right" app:os_et_bg_color="@color/os_gray_quaternary_color" app:os_et_dialog_mode="true" app:os_et_label="@string/lyric_search_artist" app:os_et_right_show_delete="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_save_title_artist" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:layout_marginHorizontal="@dimen/os_dialog_padding_left_right">
+        <CheckBox android:id="@id/cb_save" android:background="@drawable/ic_list_checkbox" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:button="@null" />
+        <TextView android:textColor="@color/os_text_tertiary_color" android:ellipsize="end" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visha_edit_save_to_audio_info" android:maxLines="2" android:layout_marginStart="@dimen/dp9" />
+    </LinearLayout>
+</LinearLayout>

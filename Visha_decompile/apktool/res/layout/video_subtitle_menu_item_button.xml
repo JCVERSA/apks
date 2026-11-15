@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/settings_menu_item_bg" android:layout_width="match_parent" android:layout_height="58.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_setting_menu" android:layout_marginStart="16.0dp" style="@style/settingMenuItemSrcStyle" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/textview_select_color" android:ellipsize="end" android:id="@id/iv_setting_menu_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="1.0dp" android:paddingEnd="1.0dp" android:layout_marginStart="16.0dp" />
+</LinearLayout>

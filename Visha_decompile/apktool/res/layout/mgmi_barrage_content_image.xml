@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:scrollbars="none" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="@dimen/mgmi_dp_36"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <HorizontalScrollView android:orientation="horizontal" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="@dimen/mgmi_dp_36">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_bg" android:background="@drawable/barrage_shape_bg" android:layout_width="wrap_content" android:layout_height="@dimen/mgmi_dp_36" android:layout_marginRight="@dimen/mgmi_dp_10" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:id="@id/tv_content" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+                <TextView android:id="@id/tvButton" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+                <ImageView android:id="@id/circleImageView" android:layout_width="wrap_content" android:layout_height="@dimen/mgmi_dp_36" android:scaleType="fitXY" />
+            </LinearLayout>
+            <TextView android:textSize="9.0sp" android:textColor="@color/mgmi_white" android:gravity="center" android:layout_gravity="center" android:id="@id/mgmi_ad_tag" android:background="@drawable/ad_shape_bg_barrage" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mgmi_dp_10" android:text="@string/mgmi_template_ad" android:shadowColor="@color/mgmi_color_000000_66" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_toRightOf="@id/ll_bg" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+</LinearLayout>

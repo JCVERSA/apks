@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="100.0dp" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/ivAdVoice" android:layout_width="@dimen/mgmi_dp_25" android:layout_height="@dimen/mgmi_dp_25" android:layout_marginTop="@dimen/mgmi_dp_3" android:layout_marginRight="15.0dp" android:src="@drawable/mgmi_icon_ad_voice_open" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/mgmi_font_15" android:textColor="@color/mgmi_white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/adSkip" android:background="@drawable/ad_text_bg_shape_yellow" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/mgmi_player_ad_skip" />
+    </LinearLayout>
+    <ImageView android:id="@id/ivAdLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:layout_marginBottom="@dimen/mgmi_dp_3" android:src="@drawable/mgmi_icon_player_to_fullscreen" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

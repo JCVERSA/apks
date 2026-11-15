@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/rl_container" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?screen_edge_size" android:paddingVertical="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.playercommon.widgets.RoundFrameLayout android:id="@id/ll_bucket_fragment_item" android:background="@drawable/ic_launcher_foreground" android:layout_width="@dimen/video_cover_width" android:layout_height="@dimen/video_cover_height" android:layout_centerVertical="true" android:layout_marginStart="@dimen/video_list_padding" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" app:round_corner="@dimen/image_radius" app:solid_color="@color/transparent" app:stroke_color="@color/os_gray_tertiary_color" app:stroke_width="1.0px">
+        <ImageView android:id="@id/iv_bucket_fragment_item" android:layout_width="160.0dp" android:layout_height="90.0dp" android:src="@drawable/ic_launcher_foreground" android:scaleType="centerCrop" />
+        <View android:id="@id/selected_background" android:background="#66000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.transsion.playercommon.widgets.RoundFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/tv_main_fragment_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/list_item_operate_view" android:layout_toEndOf="@id/ll_bucket_fragment_item">
+        <TextView android:textSize="16.0sp" android:textColor="@color/os_text_primary_color" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:maxLines="2" android:includeFontPadding="false" android:textDirection="locale" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/os_text_tertiary_color" android:layout_gravity="center_vertical" android:id="@id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:textDirection="locale" android:paddingStart="5.0dp" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/list_item_operate_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="17.0dp" android:layout_alignParentEnd="true">
+        <CheckBox android:id="@id/iv_bucket_fragment_checkBox" android:background="@drawable/ic_list_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_marginStart="16.0dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+package com.mgadplus.a;
+
+public enum b {
+    SCALE,
+    SCALEMIDDLE,
+    SCALERIGHTBOTTOM,
+    SCALERIGHTBOTTOMINVER,
+    TRANSLATIONX,
+    ALPHE,
+    ALPHE1,
+    TRANSLATIONXOUT
+}

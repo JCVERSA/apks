@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlNotifyLayout" android:background="@drawable/mgmi_shape_next_video_notify_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="#dbb058" android:ellipsize="end" android:gravity="center" android:id="@id/tvNotifyTips" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:maxWidth="320.0dp" android:text="@string/mgmi_notice_skipad_str" android:maxLines="1" android:drawableLeft="@drawable/mgmi_player_vipnoad_icon" android:drawablePadding="5.0dp" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/ivNotifyCloser" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mgmi_icon_halfscreen_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

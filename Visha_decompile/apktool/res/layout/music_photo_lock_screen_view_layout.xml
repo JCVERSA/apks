@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.utils.widget.ImageFilterView android:id="@id/album_shadow" android:layout_width="294.0dp" android:layout_height="60.0dp" android:src="@drawable/ic_music_playing_shadow" android:scaleType="fitXY" app:layout_constraintEnd_toEndOf="@id/siv_album" app:layout_constraintStart_toStartOf="@id/siv_album" app:layout_constraintTop_toBottomOf="@id/siv_album" />
+    <com.transsion.playercommon.widgets.CircleImageView android:id="@id/circleView" android:layout_width="212.0dp" android:layout_height="212.0dp" android:src="@drawable/pic_music_disk_audio" app:layout_constraintBottom_toBottomOf="@id/siv_album" app:layout_constraintEnd_toEndOf="@id/siv_album" app:layout_constraintStart_toStartOf="@id/siv_album" app:layout_constraintTop_toTopOf="@id/siv_album" />
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/siv_album" android:layout_width="224.0dp" android:layout_height="224.0dp" android:src="@drawable/def_music_cover" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="h,1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:shapeAppearance="@style/album_style" app:strokeColor="@null" />
+</merge>

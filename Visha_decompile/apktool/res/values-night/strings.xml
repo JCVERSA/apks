@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sniff_download_disabled_button_guide">dark/sniff_download_disabled_guide.json</string>
+    <string name="sniff_download_disabled_button_guide_image">sniff_download_disabled_button_image</string>
+</resources>

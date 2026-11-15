@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titleView" layout="@layout/mgmi_part_title_view" />
+    <ImageView android:id="@id/ivProgress" android:background="#ff00ff" android:layout_width="1.0dp" android:layout_height="2.0dp" android:layout_below="@id/titleView" />
+    <com.mgadplus.brower.ImgoAdWebView android:id="@id/webViewPage" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ivProgress" />
+    <RelativeLayout android:id="@id/rlLoadingError" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ivProgress">
+        <TextView android:textSize="20.0sp" android:textColor="#888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgmi_load_failed_please_try_again" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

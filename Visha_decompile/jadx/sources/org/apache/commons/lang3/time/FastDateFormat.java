@@ -1,0 +1,217 @@
+package org.apache.commons.lang3.time;
+
+import io.appmetrica.analytics.coreutils.internal.StringUtils;
+import java.text.FieldPosition;
+import java.text.Format;
+import java.text.ParseException;
+import java.text.ParsePosition;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+import java.util.TimeZone;
+
+public class FastDateFormat extends Format implements DateParser, DatePrinter {
+    public static final int FULL = 0;
+    public static final int LONG = 1;
+    public static final int MEDIUM = 2;
+    public static final int SHORT = 3;
+    private static final FormatCache<FastDateFormat> cache = new FormatCache<FastDateFormat>() {
+        @Override
+        public FastDateFormat createInstance(String str, TimeZone timeZone, Locale locale) {
+            return new FastDateFormat(str, timeZone, locale);
+        }
+    };
+    private static final long serialVersionUID = 2;
+    private final FastDateParser parser;
+    private final FastDatePrinter printer;
+
+    public FastDateFormat(String str, TimeZone timeZone, Locale locale) {
+        this(str, timeZone, locale, null);
+    }
+
+    public static FastDateFormat getDateInstance(int i) {
+        return (FastDateFormat) cache.getDateInstance(i, null, null);
+    }
+
+    public static FastDateFormat getDateTimeInstance(int i, int i2) {
+        return (FastDateFormat) cache.getDateTimeInstance(i, i2, (TimeZone) null, (Locale) null);
+    }
+
+    public static FastDateFormat getInstance() {
+        return (FastDateFormat) cache.getInstance();
+    }
+
+    public static FastDateFormat getTimeInstance(int i) {
+        return (FastDateFormat) cache.getTimeInstance(i, null, null);
+    }
+
+    @Deprecated
+    public StringBuffer applyRules(Calendar calendar, StringBuffer stringBuffer) {
+        return this.printer.applyRules(calendar, stringBuffer);
+    }
+
+    public boolean equals(Object obj) {
+        if (obj instanceof FastDateFormat) {
+            return this.printer.equals(((FastDateFormat) obj).printer);
+        }
+        return false;
+    }
+
+    @Override
+    public StringBuffer format(Object obj, StringBuffer stringBuffer, FieldPosition fieldPosition) {
+        stringBuffer.append(this.printer.format(obj));
+        return stringBuffer;
+    }
+
+    @Override
+    public Locale getLocale() {
+        return this.printer.getLocale();
+    }
+
+    public int getMaxLengthEstimate() {
+        return this.printer.getMaxLengthEstimate();
+    }
+
+    @Override
+    public String getPattern() {
+        return this.printer.getPattern();
+    }
+
+    @Override
+    public TimeZone getTimeZone() {
+        return this.printer.getTimeZone();
+    }
+
+    public int hashCode() {
+        return this.printer.hashCode();
+    }
+
+    @Override
+    public Date parse(String str) throws ParseException {
+        return this.parser.parse(str);
+    }
+
+    @Override
+    public Object parseObject(String str, ParsePosition parsePosition) {
+        return this.parser.parseObject(str, parsePosition);
+    }
+
+    public String toString() {
+        return "FastDateFormat[" + this.printer.getPattern() + StringUtils.COMMA + this.printer.getLocale() + StringUtils.COMMA + this.printer.getTimeZone().getID() + "]";
+    }
+
+    public FastDateFormat(String str, TimeZone timeZone, Locale locale, Date date) {
+        this.printer = new FastDatePrinter(str, timeZone, locale);
+        this.parser = new FastDateParser(str, timeZone, locale, date);
+    }
+
+    public static FastDateFormat getDateInstance(int i, Locale locale) {
+        return (FastDateFormat) cache.getDateInstance(i, null, locale);
+    }
+
+    public static FastDateFormat getDateTimeInstance(int i, int i2, Locale locale) {
+        return (FastDateFormat) cache.getDateTimeInstance(i, i2, (TimeZone) null, locale);
+    }
+
+    public static FastDateFormat getInstance(String str) {
+        return (FastDateFormat) cache.getInstance(str, null, null);
+    }
+
+    public static FastDateFormat getTimeInstance(int i, Locale locale) {
+        return (FastDateFormat) cache.getTimeInstance(i, null, locale);
+    }
+
+    @Override
+    public String format(long j) {
+        return this.printer.format(j);
+    }
+
+    @Override
+    public Date parse(String str, ParsePosition parsePosition) {
+        return this.parser.parse(str, parsePosition);
+    }
+
+    public static FastDateFormat getDateInstance(int i, TimeZone timeZone) {
+        return (FastDateFormat) cache.getDateInstance(i, timeZone, null);
+    }
+
+    public static FastDateFormat getDateTimeInstance(int i, int i2, TimeZone timeZone) {
+        return getDateTimeInstance(i, i2, timeZone, null);
+    }
+
+    public static FastDateFormat getInstance(String str, TimeZone timeZone) {
+        return (FastDateFormat) cache.getInstance(str, timeZone, null);
+    }
+
+    public static FastDateFormat getTimeInstance(int i, TimeZone timeZone) {
+        return (FastDateFormat) cache.getTimeInstance(i, timeZone, null);
+    }
+
+    @Override
+    public String format(Date date) {
+        return this.printer.format(date);
+    }
+
+    @Override
+    public boolean parse(String str, ParsePosition parsePosition, Calendar calendar) {
+        return this.parser.parse(str, parsePosition, calendar);
+    }
+
+    public static FastDateFormat getDateInstance(int i, TimeZone timeZone, Locale locale) {
+        return (FastDateFormat) cache.getDateInstance(i, timeZone, locale);
+    }
+
+    public static FastDateFormat getDateTimeInstance(int i, int i2, TimeZone timeZone, Locale locale) {
+        return (FastDateFormat) cache.getDateTimeInstance(i, i2, timeZone, locale);
+    }
+
+    public static FastDateFormat getInstance(String str, Locale locale) {
+        return (FastDateFormat) cache.getInstance(str, null, locale);
+    }
+
+    public static FastDateFormat getTimeInstance(int i, TimeZone timeZone, Locale locale) {
+        return (FastDateFormat) cache.getTimeInstance(i, timeZone, locale);
+    }
+
+    @Override
+    public String format(Calendar calendar) {
+        return this.printer.format(calendar);
+    }
+
+    public static FastDateFormat getInstance(String str, TimeZone timeZone, Locale locale) {
+        return (FastDateFormat) cache.getInstance(str, timeZone, locale);
+    }
+
+    @Override
+    @Deprecated
+    public StringBuffer format(long j, StringBuffer stringBuffer) {
+        return this.printer.format(j, stringBuffer);
+    }
+
+    @Override
+    @Deprecated
+    public StringBuffer format(Date date, StringBuffer stringBuffer) {
+        return this.printer.format(date, stringBuffer);
+    }
+
+    @Override
+    @Deprecated
+    public StringBuffer format(Calendar calendar, StringBuffer stringBuffer) {
+        return this.printer.format(calendar, stringBuffer);
+    }
+
+    @Override
+    public <B extends Appendable> B format(long j, B b) {
+        return (B) this.printer.format(j, b);
+    }
+
+    @Override
+    public <B extends Appendable> B format(Date date, B b) {
+        return (B) this.printer.format(date, b);
+    }
+
+    @Override
+    public <B extends Appendable> B format(Calendar calendar, B b) {
+        return (B) this.printer.format(calendar, b);
+    }
+}

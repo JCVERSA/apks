@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_player" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <SurfaceView android:id="@id/lan_display_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <SurfaceView android:id="@id/lan_subtitle_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/iv_video_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    </FrameLayout>
+    <com.transsion.magicvideo.widgets.ScaleStatusView android:layout_gravity="center|top" android:id="@id/state_scale_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

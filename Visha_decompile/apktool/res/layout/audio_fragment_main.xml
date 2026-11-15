@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/audio_fragment_main_layout" android:layout="@layout/audio_fragment_main_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_drag_animation_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

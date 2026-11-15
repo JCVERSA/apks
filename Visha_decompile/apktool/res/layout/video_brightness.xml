@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/app_video_brightness_box" android:background="@drawable/video_play_vertical_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="34.0dp" android:paddingHorizontal="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/app_vol_bri_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/video_play_brightness" />
+    <SeekBar android:layout_gravity="center_vertical" android:id="@id/app_video_brightness" android:background="@null" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="160.0dp" android:layout_height="wrap_content" android:maxHeight="4.0dp" android:max="100" android:progressDrawable="@drawable/video_vertical_progress" android:minHeight="4.0dp" android:thumb="@null" android:layout_weight="1.0" android:paddingStart="5.0dp" android:paddingEnd="5.0dp" android:layout_marginStart="8.0dp" />
+</LinearLayout>

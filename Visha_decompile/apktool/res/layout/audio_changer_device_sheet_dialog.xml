@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="380.0dp">
+        <TextView android:textColor="@color/os_primary_text_dark" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="8.0dp" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/nowDeviceIcon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/mine_phone_device_icon" />
+            <TextView android:textColor="@color/os_primary_text_dark" android:layout_gravity="center_vertical" android:id="@id/nowDeviceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginVertical="8.0dp" />
+        </LinearLayout>
+        <View android:id="@id/audio_device_view" android:background="#bfbfbf" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginVertical="8.0dp" />
+        <TextView android:textColor="@color/os_primary_text_dark" android:id="@id/can_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="8.0dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/mine_phone_device" android:paddingTop="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/selectMinePhoneNowDeviceIcon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/mine_phone_device_icon" />
+            <TextView android:textColor="@color/os_primary_text_dark" android:layout_gravity="center_vertical" android:id="@id/selectMinePhoneNowDeviceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginVertical="8.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/wired_headphones_ll" android:paddingTop="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/wired_headphones_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/bluetooth_device_icon" />
+            <TextView android:textColor="@color/os_primary_text_dark" android:layout_gravity="center_vertical" android:id="@id/wired_headphones_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginVertical="8.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/mine_bluetooth_device" android:paddingTop="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/selectBluetoothNowDeviceIcon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/bluetooth_device_icon" />
+            <TextView android:textColor="@color/os_primary_text_dark" android:layout_gravity="center_vertical" android:id="@id/selectBluetoothNowDeviceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginVertical="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

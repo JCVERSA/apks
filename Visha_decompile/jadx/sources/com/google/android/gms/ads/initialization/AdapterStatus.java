@@ -1,0 +1,19 @@
+package com.google.android.gms.ads.initialization;
+
+import androidx.annotation.NonNull;
+
+public interface AdapterStatus {
+
+    public enum State {
+        NOT_READY,
+        READY
+    }
+
+    @NonNull
+    String getDescription();
+
+    @NonNull
+    State getInitializationState();
+
+    int getLatency();
+}

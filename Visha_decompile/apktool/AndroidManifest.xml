@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.transsion.magicshow" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <queries>
+        <package android:name="com.whatsapp"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="com.facebook.orca"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.google.android.apps.messaging"/>
+        <package android:name="com.gallery20"/>
+        <package android:name="com.transsion.filemanagerx"/>
+        <provider android:authorities="com.transsion.XOSLauncher.unreadprovider"/>
+        <provider android:authorities="com.transsion.hilauncher.unreadprovider"/>
+        <provider android:authorities="com.transsion.itel.launcher.unreadprovider"/>
+        <provider android:authorities="com.transsion.walauncher.unreadprovider"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <package android:name="com.android.contacts"/>
+        <package android:name="com.sh.smart.caller"/>
+        <package android:name="com.google.android.contacts"/>
+        <intent>
+            <action android:name="itel.intent.action.REPAIR_CARD"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.camera.action.CROP"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <package android:name="com.android.chrome"/>
+        <intent>
+            <action android:name="intent.action.PALM_ACCOUNT_AUTH"/>
+        </intent>
+        <package android:name="tech.palm.id"/>
+        <package android:name="com.rlk.mi"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.transsnet.store"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT"/>
+            <data android:mimeType="vnd.android.cursor.dir/event"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="sms"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+            <data android:path="tel:"/>
+        </intent>
+        <package android:name="com.transsion.magicshow"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="message/rfc822"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND_MULTIPLE"/>
+            <data android:mimeType="message/rfc822"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+        </intent>
+        <package android:name="com.transsion.livecaption"/>
+    </queries>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.transsion.aicore.main.permission.MM_PROVIDER"/>
+    <uses-permission android:name="com.transsion.aicore.main.permission.LM_RECEIVER"/>
+    <uses-permission android:name="com.xui.xhide.permission.WRITE_DATA"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <meta-data android:name="tran_widgets_widgetBottomSheet_version" android:value="17.0.0.7-alpha30"/>
+    <meta-data android:name="tran_mark_point_version" android:value="17.0.0.7-alpha30"/>
+    <meta-data android:name="tran_gdpr_version" android:value="17.0.0.7-alpha30"/>
+    <meta-data android:name="tran_widgets_listitemlayout_version" android:value="17.0.0.7-alpha30"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="hoffnung.permission.READ_DEVICE_INFO"/>
+    <meta-data android:name="tran_widgets_version" android:value="17.0.0.7-alpha30"/>
+    <meta-data android:name="tran_widgets_widgets_themes_version" android:value="17.0.0.7-alpha30"/>
+    <meta-data android:name="tran_widgets_rec_animation_version" android:value="17.0.0.7-alpha30"/>
+    <meta-data android:name="tran_widgets_motion_version" android:value="17.0.0.7-alpha30"/>
+    <uses-permission android:name="com.palm.id.READ_ACCOUNT_PROVIDER"/>
+    <uses-permission android:name="com.palm.id.old.READ_ACCOUNT_PROVIDER"/>
+    <uses-permission android:name="hyperion.permission.USE_SECURE_STORAGE"/>
+    <uses-permission android:name="hyperion.permission.USE_SECURE_CRYPTO"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <uses-permission android:name="com.transsion.tpush.permission.WRITE_PROVIDER"/>
+    <uses-permission android:name="com.transsion.tpush.permission.READ_PROVIDER"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.transsion.dataservice.permission.READ"/>
+    <uses-permission android:name="com.transsion.dataservice.permission.WRITE"/>
+    <meta-data android:name="tran_athena_version" android:value="3.1.1.2"/>
+    <permission android:name="com.transsion.magicshow.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.transsion.magicshow.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <meta-data android:name="tran_http_version" android:value="1.0.53.10"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <meta-data android:name="tran_gslb_version" android:value="1.0.2.6"/>
+    <meta-data android:name="tran_coreutil_version" android:value="1.0.61.09"/>
+    <meta-data android:name="tran_json_version" android:value="1.0.5.01"/>
+    <meta-data android:name="tran_widgets_core_version" android:value="17.0.0.7-alpha30"/>
+    <permission android:name="com.transsion.magicshow.permission.SAFE_ACCESS" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.google.android.gms.AD_ID"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:colorMode="wideColorGamut" android:extractNativeLibs="true" android:icon="@drawable/ic_logo" android:label="@string/visha_Player" android:largeHeap="true" android:name="com.transsion.magicshow.application.VideoPlayerApplication" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true" android:usesNonSdkApi="false">
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:name="com.transsion.magicmovie.activity.TRSplashActivity" android:resizeableActivity="true" android:screenOrientation="fullSensor" android:theme="@style/SplashBgTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="com.transsion.foldscreen.allow_rotation_on_inner_screen" android:value="true"/>
+        </activity>
+        <receiver android:name="com.transsion.magicvideo.receiver.ShortcutReceiver"/>
+        <meta-data android:name="tpush_test_env" android:value="false"/>
+        <activity android:colorMode="wideColorGamut" android:exported="false" android:name="com.transsion.magicmovie.activity.SplashActivity" android:resizeableActivity="true" android:screenOrientation="fullSensor" android:theme="@style/AppTheme">
+            <meta-data android:name="com.transsion.foldscreen.allow_rotation_on_inner_screen" android:value="true"/>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:exported="false" android:name="com.transsion.magicmovie.activity.MarketingSplashActivity" android:resizeableActivity="true" android:screenOrientation="fullSensor" android:theme="@style/AppTheme">
+            <meta-data android:name="com.transsion.foldscreen.allow_rotation_on_inner_screen" android:value="true"/>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.transsion.magicmovie.activity.ShortcutActivity" android:resizeableActivity="true" android:screenOrientation="fullSensor" android:theme="@style/SplashBgTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.transsion.magicmovie.START_OPEN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.transsion.foldscreen.allow_rotation_on_inner_screen" android:value="true"/>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:enableOnBackInvokedCallback="true" android:exported="true" android:launchMode="singleTask" android:name="com.transsion.magicmovie.activity.VideoPlayerMainActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="com.transsion.foldscreen.allow_rotation_on_inner_screen" android:value="true"/>
+            <intent-filter>
+                <action android:name="com.transsion.magicmovie.video_player_main_activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.transsion.magicshow.OPEN_MAGICSHOW_MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.transsion.magicshow" android:path="/main_tab" android:scheme="visha"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.transsion.magicshow" android:path="/kt_share" android:scheme="visha"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.transsion.magicshow" android:path="/ott_play" android:scheme="visha"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-4655263103034693~5380481502"/>
+        <meta-data android:name="feature_support_ai_subtitle" android:value="true"/>
+        <meta-data android:name="com.transsion.appkey" android:value="YSSEEvkeTJj1jbEDhJB1h5eHvlrSzUvLELKgiMa4tRDUFdW66pbzdr52OCUHPiiPmGdihskj2zwzGxAHm/8QkPcTL3qj2CG72hHQO3PPxPrybV8jGYbNAzwQQvoDKGCj51+c8a4L/0heFJq1S9smwC7omBqd/nJAeVUUUzkUEX8="/>
+        <provider android:authorities="com.transsion.magicshow.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/mgmi_file_paths"/>
+        </provider>
+        <provider android:authorities="com.transsion.magicshow.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="mediaPlayback" android:name="com.transsion.mediasession.MediaSessionService">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.transsion.magicshow.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:exported="false" android:name="com.transsion.audio.appwidgt.AppWidgetMusicProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.transsion.magicshow.PLAY_PAUSE"/>
+                <action android:name="com.transsion.magicshow.widget.next"/>
+                <action android:name="com.transsion.magicshow.widget.previous"/>
+                <action android:name="com.transsion.magicshow.farvorite"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/music_widget_info"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.transsion.audio.appwidgt.AppWidgetMusicSecondProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.transsion.magicshow.PLAY_PAUSE"/>
+                <action android:name="com.transsion.magicshow.widget.next"/>
+                <action android:name="com.transsion.magicshow.widget.previous"/>
+                <action android:name="com.transsion.magicshow.farvorite"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/simple_widget_info_second"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.transsion.audio.appwidgt.AppWidgetMusicThirdProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.transsion.magicshow.PLAY_PAUSE"/>
+                <action android:name="com.transsion.magicshow.widget.next"/>
+                <action android:name="com.transsion.magicshow.widget.previous"/>
+                <action android:name="com.transsion.magicshow.farvorite"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/simple_widget_info_third"/>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:name="com.transsion.visha.ai.AIService">
+            <intent-filter>
+                <action android:name="com.transsion.magicshow.AIService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.tools.activities.UpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.tools.activities.SkinsPreviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.tools.activities.SkinsCustomizeActivity" android:screenOrientation="portrait" android:theme="@style/CustomThemePageTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.tools.activities.SkinsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.tools.activities.SettingActivity" android:screenOrientation="portrait" android:theme="@style/FirstTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.transsion.tools.activities.SettingActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.tools.activities.AboutUsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.tools.activities.SkinsGuideActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.tools.activities.ConverterMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.transsion.tools.activities.ConverterMainActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.tools.activities.NewFeatureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.tools.activities.LockScreenPlayerPreviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.transsion.tools.activities.LockScreenPlayerPreviewActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.transsion.tools.filetrans.activities.FileTransSheetDialogActivity" android:theme="@style/AppThemeSheet" android:windowSoftInputMode="adjustResize"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.tools.filetrans.activities.FileTransPermissionSheetDialogActivity" android:theme="@style/AppThemeSheet" android:windowSoftInputMode="adjustResize"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.tools.activities.PrivacyFileActivity" android:screenOrientation="portrait"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.tools.activities.PasswordSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible">
+            <intent-filter>
+                <action android:name="com.transsion.tools.activities.PasswordSettingActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.transsion.cloud.upload.service.UploadService"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.cloud.share.CloudDriveBottomShareActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.transsion.cloud.activity.SearchCloudActivity" android:theme="@style/AppThemeCloudSearch"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.cloud.updownload.activity.TransferSheetDialogActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="standard" android:name="com.transsion.cloud.activity.CloudPaymentWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.transsion.sniffer_load.DownloadManagerActivity" android:screenOrientation="portrait" android:taskAffinity="com.transsion.magicshow.dtask" android:theme="@style/dialogStyle"/>
+        <activity android:colorMode="wideColorGamut" android:launchMode="singleTask" android:name="com.transsion.sniffer_load.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.transsion.sniffer_load.WebActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:taskAffinity="com.transsion.magicshow.web" android:theme="@style/AppThemeSheet">
+            <intent-filter>
+                <action android:name="com.transsion.sniffer_load.web_activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.sniffer_load.DownloadGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.sniffer_load.WebBookmarkActivity" android:screenOrientation="portrait" android:theme="@style/dialogStyle"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.sniffer_load.MultiWebDialogActivity" android:screenOrientation="portrait" android:theme="@style/dialogStyle"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.sniffer_load.WebHistoryActivity" android:screenOrientation="portrait" android:theme="@style/dialogStyle"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.sniffer_load.WhatsAppSaveActivity" android:screenOrientation="portrait"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.sniffer_load.WhatsAppGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="standard" android:name="com.transsion.playercommon.vishaweb.VishaWebViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.transsion.sniffer_load.open_html_url"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.transsion.sniffer_load.DownloadService"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.sniffer_load.SniffMultiVideoSheetActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.sniffer_load.DownloadLeadActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.sniffer_load.DownloadTipActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.sniffer_load.DownloadFeedBackActivity" android:theme="@style/AppThemeSheet" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.sniffer_load.dialog.WhatsAppGuideDialog" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|smallestScreenSize" android:name="com.transsion.sniffer_load.SSYoutubeDialogActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.transsion.sniffer_load.whatsappscan.ScanActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.transsion.magicmovie.preview_img_video"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.sniffer_load.dialog.SnifferForbidSheetDialog" android:theme="@style/AppThemeSheet"/>
+        <receiver android:exported="false" android:name="com.transsion.playercommon.receiver.NotificationClickReceiver">
+            <intent-filter>
+                <action android:name="com.transsion.sniffer_load.NOTIFICATION_CLICKED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.sniffer_load.whatsapp.WhatsAppDownManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="true" android:launchMode="standard" android:name="com.transsion.onlinevideo.mangotv.shorts.ShortPlayerDetailActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:supportsPictureInPicture="true">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.mangotv.shorts.ShortPlayerDetailActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.transsion.onlinevideo.mangotv.PlayerDetailActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/SplashBgTheme">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.mangotv.PlayerDetailActivity"/>
+                <action android:name="com.transsion.magicmovie.start_ott_player"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.onlinevideo.history.OnlineVideoHistoryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.history.OnlineVideoHistoryActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.onlinevideo.collect.OnlineVideoCollectActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.collect.OnlineVideoCollectActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.onlinevideo.webcast.WebcastActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.webcast.WebcastActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.onlinevideo.membership.UserCenterActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.membership.UserCenterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.transsion.onlinevideo.topic.TopicDetailActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.topic.TopicDetailActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.transsion.onlinevideo.web.VipWebActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.web.VipWebActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.transsion.onlinevideo.web.VipHelpActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.web.VipHelpActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.transsion.onlinevideo.membership.SubscribeDatailActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.membership.SubscribeDatailActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.transsion.magicvideo.receiver.OttVideoShortCutReceiver"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.onlinevideo.search.OnlineVideoSearchActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.search.OnlineVideoSearchActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.onlinevideo.search.OnlineVideoSerialsActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true">
+            <intent-filter>
+                <action android:name="com.transsion.onlinevideo.search.OnlineVideoSerialsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.btdownload.activiy.TorrentDownloadActivity" android:screenOrientation="portrait" android:theme="@style/VideoTheme" android:windowSoftInputMode="adjustPan"/>
+        <service android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.transsion.btdownload.service.TorrentService" android:screenOrientation="portrait" android:theme="@style/VideoTheme" android:windowSoftInputMode="adjustPan"/>
+        <provider android:authorities="com.transsion.magicshow" android:exported="false" android:name="com.transsion.magicvideo.provider.VideoProvider"/>
+        <meta-data android:name="design_width_in_dp" android:value="360"/>
+        <meta-data android:name="design_height_in_dp" android:value="720"/>
+        <meta-data android:name="feature_support_video" android:value="true"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.transsion.magicvideo.activities.VideoPlayerActivity" android:resizeableActivity="true" android:supportsPictureInPicture="true" android:theme="@style/PlayerDetailVideoTheme">
+            <meta-data android:name="android.supports_config_changes_assets_paths" android:value="true"/>
+            <meta-data android:name="com.transsion.feature.rotation.force_respect_requested_orientation" android:value="true"/>
+            <intent-filter>
+                <action android:name="com.transsion.magicshow.OPEN_VIDEO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="rtsp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="video/mpeg4"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/3gp"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/3gpp2"/>
+                <data android:mimeType="video/webm"/>
+                <data android:mimeType="video/avi"/>
+                <data android:mimeType="application/sdp"/>
+                <data android:mimeType="video/x-ms-wmv"/>
+                <data android:mimeType="video/x-ms-asf"/>
+                <data android:mimeType="video/x-msvideo"/>
+                <data android:mimeType="video/quicktime"/>
+                <data android:mimeType="video/x-f4v"/>
+                <data android:mimeType="video/x-m4v"/>
+                <data android:mimeType="video/x-flv"/>
+                <data android:mimeType="video/x-ms-vob"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:mimeType="audio/x-mpegurl"/>
+                <data android:mimeType="audio/mpegurl"/>
+                <data android:mimeType="application/vnd.apple.mpegurl"/>
+                <data android:mimeType="application/x-mpegurl"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="text/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.transsion.magicvideo.edit.EditMainActivity" android:screenOrientation="portrait" android:theme="@style/VideoDetailTheme"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.transsion.magicvideo.activities.SubtitleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:name="com.transsion.magicvideo.activities.FarvoritesActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/VideoTheme"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.transsion.magicvideo.activities.SubtitleManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.transsion.magicvideo.activities.SubtitleSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.magicvideo.activities.VideoSheetDialogActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.magicvideo.activities.MultiVideoResolutionSheetDialog" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.magicvideo.activities.VideoPlayListSheetDialogActivity" android:theme="@style/AppThemeSheet"/>
+        <service android:name="com.transsion.magicvideo.services.VideosService"/>
+        <receiver android:exported="false" android:name="com.transsion.playercommon.receiver.HeadsetsControllerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.magicvideo.activities.MediaTimerDialogSheetActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:exported="false" android:launchMode="singleInstance" android:name="com.transsion.audio.activities.LaunchTempActivity" android:theme="@style/AppThemeSheet">
+            <intent-filter>
+                <action android:name="com.transsion.audio.ACTION_START_AUDIO_NEW_NOTIFICATION_TEMP_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.transsion.audio.CATEGORY_AUDIO_NEW_NOTIFICATION"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.transsion.magicmovie.ACION_START_AUDIO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="feature_audio_auto_search_play_from_s61" android:value="true"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.audio.activities.FilterResultActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.audio.activities.LyricEditActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.transsion.audio.activities.AudioPlayerActivityInner" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/AudioTheme">
+            <meta-data android:name="android.supports_config_changes_assets_paths" android:value="true"/>
+            <meta-data android:name="com.transsion.foldscreen.allow_rotation_on_inner_screen" android:value="true"/>
+            <intent-filter>
+                <action android:name="com.transsion.magicshow.OPEN_AUDIO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.transsion.audio.activities.AudioPlayerActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/AppThemeSheet" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.supports_config_changes_assets_paths" android:value="true"/>
+            <meta-data android:name="com.transsion.foldscreen.allow_rotation_on_inner_screen" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="ftp"/>
+                <data android:scheme="rtsp"/>
+                <data android:scheme="rtmp"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="tcp"/>
+                <data android:scheme="udp"/>
+                <data android:scheme="gopher"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/flac"/>
+                <data android:mimeType="application/x-flac"/>
+                <data android:mimeType="application/ape"/>
+                <data android:mimeType="application/x-ape"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="ftp"/>
+                <data android:scheme="rtsp"/>
+                <data android:scheme="rtmp"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="tcp"/>
+                <data android:scheme="udp"/>
+                <data android:scheme="gopher"/>
+                <data android:host="*"/>
+                <data android:pathPattern="/.*.aac"/>
+                <data android:pathPattern="/.*.flac"/>
+                <data android:pathPattern="/.*.m4a"/>
+                <data android:pathPattern="/.*.mid"/>
+                <data android:pathPattern="/.*.mp3"/>
+                <data android:pathPattern="/.*.ogg"/>
+                <data android:pathPattern="/.*.wav"/>
+                <data android:pathPattern="/.*.ac3"/>
+                <data android:pathPattern="/.*.ac4"/>
+                <data android:pathPattern="/.*.wma"/>
+                <data android:pathPattern="/.*.vorbis"/>
+                <data android:pathPattern="/.*.opus"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.transsion.audio.service.MusicService"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.AudioSheetDialogActivity" android:theme="@style/AppThemeSheet" android:windowSoftInputMode="adjustResize"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.AudioShortcutGuideActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.AudioSpeedSettingActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.AudioAddAllPlayListDialogActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.AudioPlayListSheetDialogActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.AudioRingSheetDialogActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.TimerDialogSheetActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.widgets.EqDialog" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.SearchLyricDialogActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.AudioFilterMainActivity" android:theme="@style/AppTheme"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.AudioFilterFolderActivity" android:theme="@style/AppTheme"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.AudioFilterTypeActivity" android:theme="@style/AppTheme"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.audio.activities.AudioFolderListDialogActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:launchMode="singleInstance" android:name="com.transsion.audio.activities.LockScreenActivity" android:screenOrientation="portrait" android:taskAffinity="com.lock.LockScreenActivity" android:theme="@style/AppThemeSheet" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <receiver android:name="com.transsion.audio.shortcut.AudioShortcutReceiver"/>
+        <receiver android:name="com.transsion.audio.utils.FindNewAudioNotificationHelper$NewAudioBroadcastReceiver"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.transsion.audio.activities.AudioBucketListActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="standard" android:name="com.transsion.audio.activities.AudioWebViewActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:exported="false" android:name="com.transsion.vishaads.activity.SplashAdActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:colorMode="wideColorGamut" android:exported="false" android:name="com.transsion.mediationads.activity.MediaAdsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.transsion.vishatransfers.service.TransferService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.transsion.vishaplayersdk.playertest.DetailPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.transsion.playercommon.gallery.GalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.transsion.playercommon.gallery.ImageFolderActivity" android:screenOrientation="portrait"/>
+        <activity android:colorMode="wideColorGamut" android:name="com.transsion.playercommon.utils.meida.TransMp3OkSheetActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:exported="false" android:name="com.transsion.playercommon.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/UCropTheme">
+            <meta-data android:name="com.transsion.foldscreen.allow_rotation_on_inner_screen" android:value="true"/>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:name="com.transsion.playercommon.widgets.DolbyEqDialog" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.transsion.playercommon.activities.MediaInfoSheetDialogActivity" android:theme="@style/AppThemeSheet"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="mcc|mnc|keyboard|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.transsion.playercommon.activities.MediaOperateMenuDialogActivity" android:theme="@style/AppThemeSheet" android:windowSoftInputMode="adjustResize"/>
+        <activity android:colorMode="wideColorGamut" android:exported="true" android:name="com.transsion.vishatransfer.activity.WifiActivity"/>
+        <provider android:authorities="com.transsion.magicshow.AgentWebFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.just.agentweb.AgentWebFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/web_files_public"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.just.agentweb.AgentActionFragment" android:theme="@style/actionActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="com.transsion.utils.OkHttpAppGlideModule" android:value="AppGlideModule"/>
+        <meta-data android:name="com.transsion.utils.SvgModule" android:value="AppGlideModule"/>
+        <activity android:colorMode="wideColorGamut" android:name="com.transsion.playercommon.activities.BaseActivity"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.blankj.utilcode.util.MessengerUtils$ServerService">
+            <intent-filter>
+                <action android:name="com.transsion.magicshow.messenger"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.transsion.xuanniao.account.login.view.LoginActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.transsion.magicshow" android:pathPrefix="/thirdLogin" android:scheme="palmid"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.transsion.xuanniao.account.auth.view.PalmAuthActivity" android:theme="@style/XNTranslucent">
+            <intent-filter>
+                <action android:name="intent.action.PALM_ID_AUTH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.transsion.xuanniao.account.auth.view.PalmAuthActivity2" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:name="com.transsion.xuanniao.account.auth.view.PalmPrevActivity" android:screenOrientation="locked" android:theme="@style/XNTranslucent">
+            <intent-filter>
+                <action android:name="intent.action.PALM_ID_PREV"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.transsion.xuanniao.account.center.view.UserCenterActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.login.view.CountrySelectActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.login.view.LoginSuccessfullyActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.pwd.view.SelectResetMethodActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.verify.view.VerifyEmailActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.verify.view.VerifyPhoneActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.center.view.PersonInfoActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.help.view.PrivacyCenterActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.center.view.SafeCenterActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.transsion.xuanniao.account.pwd.view.SetPwdActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.center.view.MyAddressActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.center.view.EditAddressActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.pwd.view.VerifyPwdActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.bind.phone.view.ManagePhoneActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.bind.phone.view.BindingPhoneActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.bind.email.view.ManageEmailActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.bind.email.view.BindingEmailActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.bind.contact.view.ManageEmergencyContactActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.bind.contact.view.BindingEmergencyContactActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.transsion.xuanniao.account.bind.third.view.TripartiteListActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.transsion.magicshow" android:pathPrefix="/thirdBind" android:scheme="palmid"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.verify.view.VerifyAccountActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.help.view.WebViewActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.center.view.PortraitPreviewActivity" android:screenOrientation="locked" android:theme="@style/XNBlackTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.transsion.xuanniao.account.pwd.view.SettingVerifyPwdActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.transsion.xuanniao.account.center.view.ClearDataActivity" android:screenOrientation="locked" android:theme="@style/XNAppTheme"/>
+        <provider android:authorities="com.transsion.magicshow.xn.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.transsion.xuanniao.account.provider.PalmFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/xn_file_paths"/>
+        </provider>
+        <receiver android:exported="true" android:name="com.transsion.xuanniao.account.login.view.MySmsBroadcastReceiver" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.transsion.palmsdk.auth.PalmAuthService">
+            <intent-filter>
+                <action android:name="intent.action.PALM_ACCOUNT_AUTH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.transsion.magicshow.PalmAccProvider" android:exported="false" android:name="com.transsion.palmsdk.account.PalmAccProvider"/>
+        <meta-data android:name="palm_sdk_version" android:value="2.0.1.03"/>
+        <provider android:authorities="com.transsion.magicshow.utilcode.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.blankj.utilcode.util.UtilsFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <meta-data android:name="tran_hisavana_version" android:value="3.6.6.1"/>
+        <provider android:authorities="com.transsion.magicshow.HisavanaConfigContentProvider" android:exported="false" android:name="com.hisavana.mediation.config.ConfigContentProvider"/>
+        <activity android:exported="false" android:name="com.cloud.hisavana.sdk.common.activity.AdvertiserLinkActivity" android:screenOrientation="behind" android:theme="@style/NoTranslucentStatusBar"/>
+        <activity android:exported="false" android:multiprocess="true" android:name="com.cloud.hisavana.sdk.common.activity.PersonalCloseAdActivity" android:screenOrientation="behind" android:theme="@style/NoTranslucentStatusBar"/>
+        <activity android:exported="false" android:name="com.cloud.hisavana.sdk.common.activity.OfflineLandingActivity" android:screenOrientation="behind" android:theme="@style/NoTranslucentStatusBar"/>
+        <activity android:exported="false" android:name="com.cloud.hisavana.sdk.common.activity.AgentPageLandingActivity" android:screenOrientation="behind" android:theme="@style/NoTranslucentStatusBar"/>
+        <activity android:exported="false" android:name="com.cloud.hisavana.sdk.common.activity.EWOfficialActivity" android:screenOrientation="behind" android:theme="@style/NoTranslucentStatusBar"/>
+        <activity android:exported="false" android:name="com.cloud.hisavana.sdk.common.activity.OnlineLandingActivity" android:screenOrientation="behind" android:theme="@style/NoTranslucentStatusBar"/>
+        <activity android:exported="false" android:name="com.cloud.hisavana.sdk.common.activity.OnlinePreloadLandingPageActivity" android:screenOrientation="behind" android:theme="@style/NoTranslucentStatusBar"/>
+        <meta-data android:name="com.google.android.gms.ads.INTEGRATION_MANAGER" android:value="webview"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTask" android:multiprocess="true" android:name="com.cloud.hisavana.sdk.common.activity.TAdInterstitialActivity" android:screenOrientation="behind" android:theme="@style/InterstitialStyle"/>
+        <activity android:configChanges="locale|layoutDirection" android:exported="false" android:launchMode="singleTask" android:name="com.cloud.hisavana.sdk.common.activity.TAdWebFormsActivity" android:screenOrientation="behind" android:theme="@style/TranslucentStyle"/>
+        <activity android:configChanges="locale|layoutDirection" android:name="com.cloud.hisavana.sdk.common.activity.HisavanaSplashActivity" android:theme="@style/AppCompatTranscutes"/>
+        <activity android:configChanges="locale|layoutDirection" android:exported="false" android:launchMode="singleTask" android:name="com.cloud.hisavana.sdk.common.activity.MiniAppPopUpActivity" android:screenOrientation="behind" android:theme="@style/CustomDialog"/>
+        <activity android:documentLaunchMode="always" android:excludeFromRecents="true" android:exported="false" android:launchMode="standard" android:name="com.cloud.hisavana.sdk.common.activity.MiniAppSchemeActivity" android:theme="@style/MiniAppSchemeStyle"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTask" android:multiprocess="true" android:name="com.cloud.hisavana.sdk.common.activity.HisavanaRewardedActivity" android:screenOrientation="behind" android:theme="@style/NoTranslucentStatusBar"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTask" android:multiprocess="true" android:name="com.cloud.hisavana.sdk.common.activity.HisavanaInterstitialRewardedActivity" android:screenOrientation="behind" android:theme="@style/NoTranslucentStatusBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTask" android:multiprocess="true" android:name="com.cloud.hisavana.sdk.common.activity.HisavanaInterstitialTemplateActivity" android:theme="@style/InterstitialStyle"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTask" android:multiprocess="true" android:name="com.cloud.hisavana.sdk.common.activity.HisavanaRewardedTemplateActivity" android:theme="@style/NoTranslucentStatusBar"/>
+        <provider android:authorities="com.transsion.magicshow.HisavanaContentProvider" android:exported="false" android:name="com.cloud.hisavana.sdk.database.HisavanaContentProvider"/>
+        <provider android:authorities="com.transsion.magicshow.HisavanaFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.cloud.hisavana.sdk.common.HisavanaFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/hisavana_provider_paths"/>
+        </provider>
+        <meta-data android:name="com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION" android:value="false"/>
+        <provider android:authorities="com.transsion.magicshow.appmetrica.preloadinfo.retail" android:enabled="true" android:exported="false" android:name="io.appmetrica.analytics.internal.PreloadInfoContentProvider" android:process=":AppMetrica"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enableOnBackInvokedCallback="false" android:name="com.yandex.mobile.ads.common.AdActivity" android:theme="@style/MonetizationAdsInternal.AdActivity"/>
+        <provider android:authorities="com.transsion.magicshow.MobileAdsInitializeProvider" android:exported="false" android:name="com.yandex.mobile.ads.core.initializer.MobileAdsInitializeProvider"/>
+        <activity android:enableOnBackInvokedCallback="false" android:exported="false" android:name="com.yandex.mobile.ads.features.debugpanel.ui.IntegrationInspectorActivity" android:theme="@style/DebugPanelTheme"/>
+        <provider android:authorities="com.transsion.magicshow.monetization.ads.inspector.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.yandex.mobile.ads.features.debugpanel.data.local.DebugPanelFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/debug_panel_file_paths"/>
+        </provider>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" android:value="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:multiprocess="true" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.transsion.magicshow.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.transsion.magicshow.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.transsion.magicshow.ipc_business_init" android:exported="false" android:name="com.transsion.aicore.nexusflow.utils.IpcBusinessInitProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:multiprocess="true" android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.transsion.pushui.activity.TransparentActivity" android:taskAffinity="com.transsion.pushui" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:name="com.transsion.pushui.activity.PushActivity">
+            <intent-filter>
+                <action android:name="tpush.intent.action.TPUSH"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.transsion.push.broadcast.FCMMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.transsion.push.service.PushJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.transsion.push.broadcast.HandlerBroadcastReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="tpush.intent.action.TPUSH_MSG_RECEIVER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="tran_push_version" android:value="2.0.5.02"/>
+        <meta-data android:name="tpush_app_id" android:value="52a89908b30741bebc51034d9452f9fc"/>
+        <meta-data android:name="tpush_app_key" android:value="85f5899508da4dcaa3ab88f82927d231"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="9.1.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:enabled="true" android:exported="false" android:name="io.appmetrica.analytics.internal.AppMetricaService" android:process=":AppMetrica">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="io.appmetrica.analytics.IAppMetricaService"/>
+                <data android:scheme="appmetrica"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <provider android:authorities="com.transsion.magicshow.AudienceNetworkContentProvider" android:exported="false" android:name="com.facebook.ads.AudienceNetworkContentProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.bumptech.glide.integration.webp.WebpGlideModule" android:value="GlideModule"/>
+        <service android:name="com.transsion.athena.aidl.AthenaTrackService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="org.acra.dialog.CrashReportDialog" android:process=":acra" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="@bool/acra_enable_legacy_service" android:exported="false" android:name="org.acra.sender.LegacySenderService" android:process=":acra"/>
+        <service android:enabled="@bool/acra_enable_job_service" android:exported="false" android:name="org.acra.sender.JobSenderService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":acra"/>
+        <provider android:authorities="com.transsion.magicshow.acra" android:exported="false" android:grantUriPermissions="true" android:name="org.acra.attachment.AcraContentProvider" android:process=":acra"/>
+        <provider android:authorities="com.transsion.magicshow.tray" android:exported="false" android:multiprocess="false" android:name="net.grandcentrix.tray.provider.TrayContentProvider"/>
+        <meta-data android:name="OxygenBusVersion" android:value="1.5.135"/>
+        <service android:exported="true" android:name="com.transsion.apiinvoke.ipc.connect.CommonRouterApiService"/>
+        <meta-data android:name="trans_crypto_sdk_version" android:value="1.0.9.01"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="SQ_CHANNEL" android:value="amsdk"/>
+        <service android:name="com.doman.core.ig.manager.WebService"/>
+        <service android:name="com.doman.core.ig.proxy.MqttService"/>
+        <activity android:name="com.doman.core.manager.SplashActivity"/>
+        <activity android:name="com.mgadplus.brower.CustomWebActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="false" android:name="com.mgmi.notification.NotificationReceiver">
+            <intent-filter>
+                <action android:name="mgmi_notification.apk.download.delete"/>
+                <action android:name="mgmi_notification.apk.download.click"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:name="com.mgmi.activity.IncentiveVideoActivity" android:screenOrientation="portrait" android:theme="@style/MgmiFullScreenThemebackgound"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize" android:exported="false" android:name="com.mgtv.ssp.playdetail.SspPlayDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize" android:exported="false" android:name="com.mgtv.ssp.activity.SspVipWebActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|orientation|uiMode|screenSize" android:exported="false" android:name="com.mgtv.ssp.activity.SspCommonWebActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <receiver android:exported="false" android:name="com.mgtv.ssp.apkDownload.NotificationReceiver">
+            <intent-filter>
+                <action android:name="ssp.notification.apk.download.delete"/>
+                <action android:name="ssp.notification.apk.download.click"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.mgtv.ssp.utils.language.LanguageChangeReceiver">
+            <intent-filter>
+                <action android:name="ssp.language.change"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.transsion.magicshow.InitProvider" android:exported="false" android:multiprocess="true" android:name="com.hoffnung.tpms_sdk.InitProvider"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>
