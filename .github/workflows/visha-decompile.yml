@@ -1,0 +1,45 @@
+name: Download and decompile Visha
+on:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths: ['.github/workflows/visha-decompile.yml', '.github/scripts/visha_decompile.sh']
+permissions:
+  contents: write
+jobs:
+  decompile:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Download and decompile on runner
+        run: bash .github/scripts/visha_decompile.sh
+      - name: Commit requested folder
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f Visha_decompile
+          git commit --quiet -m "Add Visha decompiled folder (run ${GITHUB_RUN_ID}) [skip ci]"
+          git fetch origin arena/7234f8d6-apks
+          git rebase FETCH_HEAD
+          git push origin HEAD:arena/7234f8d6-apks
+      - name: Publish diagnostics if failed
+        if: failure()
+        run: |
+          set -euo pipefail
+          git rebase --abort 2>/dev/null || true
+          git reset --mixed origin/arena/7234f8d6-apks --quiet
+          dest="analysis/remote/visha-decompile-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          if [ -d "$RUNNER_TEMP/visha-decompile/report" ]; then cp -a "$RUNNER_TEMP/visha-decompile/report/." "$dest/"; fi
+          printf 'run_id=%s\njob_status=failure\n' "$GITHUB_RUN_ID" > "$dest/run-status.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          git commit --quiet -m "Record Visha decompilation failure (run ${GITHUB_RUN_ID}) [skip ci]"
+          git pull --rebase origin arena/7234f8d6-apks
+          git push origin HEAD:arena/7234f8d6-apks
