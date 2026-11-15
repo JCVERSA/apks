@@ -1,0 +1,48 @@
+name: MovieBox static decompilation
+on:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths: ['.github/workflows/moviebox-decompile.yml', '.github/scripts/moviebox_decompile.sh']
+permissions:
+  contents: write
+jobs:
+  decompile:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Download and statically decompile on runner
+        run: bash .github/scripts/moviebox_decompile.sh
+      - name: Upload decompiled files
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: moviebox-decompiled-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/moviebox-decompile/MovieBox-decompiled.zip
+            ${{ runner.temp }}/moviebox-decompile/report/
+          if-no-files-found: warn
+          retention-days: 14
+          compression-level: 0
+      - name: Publish small status report
+        if: always()
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/moviebox-decompile-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          report="$RUNNER_TEMP/moviebox-decompile/report"
+          if [ -d "$report" ]; then cp -a "$report/." "$dest/"; fi
+          printf 'job_status=%s\nrun_id=%s\n' '${{ job.status }}' "$GITHUB_RUN_ID" > "$dest/run-status.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          if ! git diff --cached --quiet; then
+            git commit -m "Add MovieBox decompilation status (run ${GITHUB_RUN_ID}) [skip ci]"
+            git fetch origin arena/7234f8d6-apks
+            git rebase FETCH_HEAD
+            git push origin HEAD:arena/7234f8d6-apks
+          fi
