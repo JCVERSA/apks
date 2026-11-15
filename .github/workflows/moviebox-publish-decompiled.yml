@@ -1,0 +1,67 @@
+name: Publish MovieBox decompiled folder
+on:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths: ['.github/workflows/moviebox-publish-decompiled.yml']
+permissions:
+  actions: read
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Download existing decompilation artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/moviebox-artifact"
+          gh run download 43662136109 --repo "$GITHUB_REPOSITORY" --name moviebox-decompiled-43662136109 --dir "$RUNNER_TEMP/moviebox-artifact"
+          archive="$RUNNER_TEMP/moviebox-artifact/MovieBox-decompiled.zip"
+          printf '%s  %s\n' 1457b6afdb320b8855e68170921b37b5c695e66212a6f3dec4d76ecf12f8bc58 "$archive" | sha256sum -c -
+      - name: Extract and commit requested folder
+        env:
+          ARCHIVE: ${{ runner.temp }}/moviebox-artifact/MovieBox-decompiled.zip
+        run: |
+          set -euo pipefail
+          test ! -e MovieBox_decompile
+          python3 - <<'PY'
+          import os, stat, zipfile
+          from pathlib import Path, PurePosixPath
+          root = Path('MovieBox_decompile')
+          with zipfile.ZipFile(os.environ['ARCHIVE']) as z:
+              members = z.infolist()
+              total = sum(i.file_size for i in members)
+              if total > 8_000_000_000:
+                  raise SystemExit(f'Archive exceeds 8 GB extracted limit: {total}')
+              for item in members:
+                  path = PurePosixPath(item.filename)
+                  mode = item.external_attr >> 16
+                  if path.is_absolute() or '..' in path.parts or stat.S_ISLNK(mode):
+                      raise SystemExit(f'Unsafe archive entry: {item.filename}')
+                  if item.file_size > 95_000_000:
+                      raise SystemExit(f'File exceeds GitHub size limit: {item.filename}')
+              z.extractall(root)
+          print(f'Extracted {len(members)} entries; {total} bytes')
+          PY
+          cat > MovieBox_decompile/LISEZ-MOI.md <<'README'
+          # MovieBox décompilé
+
+          Fichiers issus de la décompilation statique de l'APK MovieBox 4.0.02.0831.03 fourni par l'utilisateur.
+
+          - `apktool/` : manifest, ressources décodées et code Smali.
+          - `jadx/` : code Java reconstruit. JADX a signalé **197 erreurs** ; certaines méthodes peuvent être incomplètes ou incorrectes. Consulter le Smali en cas de doute.
+          - `report/` : identité, empreinte et journaux de décompilation.
+
+          APK d'entrée SHA-256 : `f8f34aaf540975b935ebd0e0d3e3cff9146652465a29d5f8e74cf9fdaeec71cb`.
+          La décompilation n'est pas le code source original. Aucun test d'exécution n'a été effectué.
+          README
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f MovieBox_decompile
+          git commit --quiet -m 'Add MovieBox decompiled folder (run 43662136109) [skip ci]'
+          git fetch origin arena/7234f8d6-apks
+          git rebase FETCH_HEAD
+          git push origin HEAD:arena/7234f8d6-apks
