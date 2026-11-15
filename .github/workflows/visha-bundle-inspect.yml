@@ -1,0 +1,43 @@
+name: Inspect Visha download bundle
+on:
+  push:
+    branches: [arena/7234f8d6-apks]
+    paths: ['.github/workflows/visha-bundle-inspect.yml']
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Inspect download without executing app
+        run: |
+          set -euo pipefail
+          dest="analysis/remote/visha-bundle-${GITHUB_RUN_ID}"
+          mkdir -p "$dest"
+          for kind in APK XAPK; do
+            url="https://d.cdnpure.com/b/${kind}/com.transsion.magicshow?version=latest"
+            if curl -fsSL --retry 2 --max-time 300 --max-filesize 800000000 -o "$RUNNER_TEMP/input-$kind" "$url" 2>"$dest/curl-$kind.log"; then
+              KIND="$kind" DEST="$dest" python3 - <<'PY'
+          import json,hashlib,os,zipfile
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/('input-'+os.environ['KIND']); d=Path(os.environ['DEST']); h=hashlib.sha256()
+          with p.open('rb') as f:
+              for c in iter(lambda:f.read(1024*1024),b''):h.update(c)
+          obj={'size':p.stat().st_size,'sha256':h.hexdigest(),'is_zip':zipfile.is_zipfile(p)}
+          if obj['is_zip']:
+              with zipfile.ZipFile(p) as z:
+                  obj['entries']=[{'name':i.filename,'size':i.file_size} for i in z.infolist()][:300]
+                  if 'manifest.json' in z.namelist(): obj['manifest_json']=z.read('manifest.json').decode('utf-8','replace')[:50000]
+          (d/(os.environ['KIND']+'.json')).write_text(json.dumps(obj,indent=2)+'\n')
+          PY
+            fi
+          done
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$dest"
+          git commit --quiet -m "Record Visha bundle metadata (run ${GITHUB_RUN_ID}) [skip ci]"
+          git fetch origin arena/7234f8d6-apks
+          git rebase FETCH_HEAD
+          git push origin HEAD:arena/7234f8d6-apks
