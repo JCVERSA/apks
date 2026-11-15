@@ -1,0 +1,7 @@
+package com.cloud.hisavana.sdk.api.listener;
+
+import com.cloud.hisavana.sdk.common.bean.TaNativeInfo;
+
+public abstract class e extends d {
+    public abstract void a(TaNativeInfo taNativeInfo);
+}

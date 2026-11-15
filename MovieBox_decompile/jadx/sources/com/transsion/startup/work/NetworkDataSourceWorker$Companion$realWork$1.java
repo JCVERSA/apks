@@ -1,0 +1,28 @@
+package com.transsion.startup.work;
+
+import com.vungle.ads.internal.protos.Sdk$SDKMetric;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+
+@Metadata(k = 3, mv = {2, 1, 0}, xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+@DebugMetadata(c = "com.transsion.startup.work.NetworkDataSourceWorker$Companion", f = "NetworkDataSourceWorker.kt", l = {21, 22}, m = "realWork")
+final class NetworkDataSourceWorker$Companion$realWork$1 extends ContinuationImpl {
+    int label;
+    Object result;
+    final NetworkDataSourceWorker.Companion this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    NetworkDataSourceWorker$Companion$realWork$1(NetworkDataSourceWorker.Companion companion, Continuation<? super NetworkDataSourceWorker$Companion$realWork$1> continuation) {
+        super(continuation);
+        this.this$0 = companion;
+    }
+
+    @Override
+    public final Object invokeSuspend(Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        return this.this$0.a(this);
+    }
+}

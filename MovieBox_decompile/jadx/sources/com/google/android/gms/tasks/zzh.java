@@ -1,0 +1,38 @@
+package com.google.android.gms.tasks;
+
+import androidx.annotation.NonNull;
+import java.util.concurrent.Executor;
+
+final class zzh implements zzq {
+    private final Executor zza;
+    private final Object zzb = new Object();
+    private OnCanceledListener zzc;
+
+    public zzh(@NonNull Executor executor, @NonNull OnCanceledListener onCanceledListener) {
+        this.zza = executor;
+        this.zzc = onCanceledListener;
+    }
+
+    @Override
+    public final void zzc() {
+        synchronized (this.zzb) {
+            this.zzc = null;
+        }
+    }
+
+    @Override
+    public final void zzd(@NonNull Task task) {
+        if (task.isCanceled()) {
+            synchronized (this.zzb) {
+                try {
+                    if (this.zzc == null) {
+                        return;
+                    }
+                    this.zza.execute(new zzg(this));
+                } catch (Throwable th2) {
+                    throw th2;
+                }
+            }
+        }
+    }
+}

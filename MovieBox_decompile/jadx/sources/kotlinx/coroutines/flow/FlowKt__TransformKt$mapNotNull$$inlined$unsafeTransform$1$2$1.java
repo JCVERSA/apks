@@ -1,0 +1,27 @@
+package kotlinx.coroutines.flow;
+
+import com.vungle.ads.internal.protos.Sdk$SDKMetric;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+
+@Metadata(k = 3, mv = {2, 0, 0}, xi = 176)
+@DebugMetadata(c = "kotlinx.coroutines.flow.FlowKt__TransformKt$mapNotNull$$inlined$unsafeTransform$1$2", f = "Transform.kt", l = {50, Sdk$SDKMetric.SDKMetricType.AD_REWARD_USER_VALUE}, m = "emit")
+public final class FlowKt__TransformKt$mapNotNull$$inlined$unsafeTransform$1$2$1 extends ContinuationImpl {
+    Object L$0;
+    int label;
+    Object result;
+    final p0 this$0;
+
+    public FlowKt__TransformKt$mapNotNull$$inlined$unsafeTransform$1$2$1(p0 p0Var, Continuation continuation) {
+        super(continuation);
+    }
+
+    @Override
+    public final Object invokeSuspend(Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        throw null;
+    }
+}

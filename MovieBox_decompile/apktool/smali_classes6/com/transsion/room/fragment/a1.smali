@@ -1,0 +1,46 @@
+.class public final synthetic Lcom/transsion/room/fragment/a1;
+.super Ljava/lang/Object;
+.source "source.java"
+
+# interfaces
+.implements Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$j;
+
+
+# instance fields
+.field public final synthetic a:Lcom/transsion/room/fragment/RoomHomeFragment;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/transsion/room/fragment/RoomHomeFragment;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/transsion/room/fragment/a1;->a:Lcom/transsion/room/fragment/RoomHomeFragment;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/transsion/room/fragment/a1;->a:Lcom/transsion/room/fragment/RoomHomeFragment;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/transsion/room/fragment/RoomHomeFragment;->D0(Lcom/transsion/room/fragment/RoomHomeFragment;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

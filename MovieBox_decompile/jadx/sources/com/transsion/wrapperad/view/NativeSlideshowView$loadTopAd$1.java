@@ -1,0 +1,66 @@
+package com.transsion.wrapperad.view;
+
+import android.content.Context;
+import android.os.Handler;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.p009lifecycle.LifecycleCoroutineScope;
+import androidx.p009lifecycle.v;
+import com.hisavana.common.bean.TAdErrorCode;
+import com.transsion.ad.bidding.base.BiddingIntermediateMaterialBean;
+import com.transsion.ad.bidding.nativead.BiddingNativeManager;
+import com.transsion.ad.view.native_ad.NativeWrapperAdView;
+
+public final class NativeSlideshowView$loadTopAd$1 extends oh.a {
+
+    final NativeSlideshowView f56071d;
+
+    NativeSlideshowView$loadTopAd$1(NativeSlideshowView nativeSlideshowView) {
+        this.f56071d = nativeSlideshowView;
+    }
+
+    public static final void y(NativeSlideshowView nativeSlideshowView) {
+        NativeWrapperAdView nativeWrapperAdView = nativeSlideshowView.vTop;
+        if (nativeWrapperAdView != null) {
+            nativeWrapperAdView.setVisibility(0);
+        }
+        NativeWrapperAdView nativeWrapperAdView2 = nativeSlideshowView.vBottom;
+        if (nativeWrapperAdView2 != null) {
+            nativeWrapperAdView2.setVisibility(8);
+        }
+        BiddingNativeManager biddingNativeManager = nativeSlideshowView.bottomNative;
+        if (biddingNativeManager != null) {
+            biddingNativeManager.U();
+        }
+        nativeSlideshowView.bottomNative = null;
+    }
+
+    @Override
+    public void i(TAdErrorCode tAdErrorCode) {
+        super.i(tAdErrorCode);
+        this.f56071d.i(true);
+    }
+
+    @Override
+    public void j(BiddingIntermediateMaterialBean biddingIntermediateMaterialBean) {
+        LifecycleCoroutineScope lifecycleCoroutineScopeA;
+        super.j(biddingIntermediateMaterialBean);
+        Context context = this.f56071d.getContext();
+        if (context != null) {
+            NativeSlideshowView nativeSlideshowView = this.f56071d;
+            Context context2 = nativeSlideshowView.getContext();
+            AppCompatActivity appCompatActivity = context2 instanceof AppCompatActivity ? (AppCompatActivity) context2 : null;
+            if (appCompatActivity != null && (lifecycleCoroutineScopeA = v.a(appCompatActivity)) != null) {
+                kotlinx.coroutines.k.d(lifecycleCoroutineScopeA, null, null, new NativeSlideshowView$loadTopAd$1$onBiddingLoad$1$1(context, nativeSlideshowView, biddingIntermediateMaterialBean, null), 3, null);
+            }
+        }
+        Handler handler = this.f56071d.mHandler;
+        final NativeSlideshowView nativeSlideshowView2 = this.f56071d;
+        handler.postDelayed(new Runnable() {
+            @Override
+            public final void run() {
+                NativeSlideshowView$loadTopAd$1.y(nativeSlideshowView2);
+            }
+        }, 300L);
+        NativeSlideshowView.j(this.f56071d, false, 1, null);
+    }
+}

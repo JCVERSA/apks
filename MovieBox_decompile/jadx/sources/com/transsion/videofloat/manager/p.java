@@ -1,0 +1,4 @@
+package com.transsion.videofloat.manager;
+
+public abstract class p {
+}

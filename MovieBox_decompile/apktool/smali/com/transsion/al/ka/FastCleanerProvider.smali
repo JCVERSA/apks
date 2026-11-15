@@ -1,0 +1,162 @@
+.class public Lcom/transsion/al/ka/FastCleanerProvider;
+.super Landroid/content/ContentProvider;
+.source "source.java"
+
+
+# static fields
+.field private static final TAG:Ljava/lang/String; = "FastCleanerProvider"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+    .locals 0
+    .param p1    # Landroid/net/Uri;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # [Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return p1
+.end method
+
+.method public getType(Landroid/net/Uri;)Ljava/lang/String;
+    .locals 0
+    .param p1    # Landroid/net/Uri;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+    .locals 0
+    .param p1    # Landroid/net/Uri;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/content/ContentValues;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method public onCreate()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    .locals 0
+    .param p1    # Landroid/net/Uri;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # [Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # [Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p5    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    const-string p1, "FastCleanerProvider"
+
+    .line 2
+    .line 3
+    const-string p2, "query"
+
+    .line 4
+    .line 5
+    invoke-static {p1, p2}, Lcom/transsion/al/ka/c;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    const/4 p1, 0x0
+
+    .line 9
+    return-object p1
+.end method
+
+.method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+    .locals 0
+    .param p1    # Landroid/net/Uri;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/content/ContentValues;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # [Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return p1
+.end method

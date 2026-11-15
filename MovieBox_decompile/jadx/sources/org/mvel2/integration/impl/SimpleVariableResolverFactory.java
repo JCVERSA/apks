@@ -1,0 +1,89 @@
+package org.mvel2.integration.impl;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import org.mvel2.integration.VariableResolver;
+import org.mvel2.integration.VariableResolverFactory;
+
+public class SimpleVariableResolverFactory extends BaseVariableResolverFactory {
+    public SimpleVariableResolverFactory(Map<String, Object> map) {
+        for (Map.Entry<String, Object> entry : map.entrySet()) {
+            createVariable(entry.getKey(), entry.getValue());
+        }
+    }
+
+    @Override
+    public VariableResolver createIndexedVariable(int i10, String str, Object obj) {
+        return null;
+    }
+
+    @Override
+    public VariableResolver createVariable(String str, Object obj) {
+        if (this.variableResolvers == null) {
+            this.variableResolvers = new HashMap(5, 0.6f);
+        }
+        SimpleValueResolver simpleValueResolver = new SimpleValueResolver(obj);
+        this.variableResolvers.put(str, simpleValueResolver);
+        return simpleValueResolver;
+    }
+
+    @Override
+    public Set<String> getKnownVariables() {
+        return this.variableResolvers.keySet();
+    }
+
+    @Override
+    public VariableResolver getVariableResolver(String str) {
+        VariableResolver variableResolver = this.variableResolvers.get(str);
+        if (variableResolver != null) {
+            return variableResolver;
+        }
+        VariableResolverFactory variableResolverFactory = this.nextFactory;
+        if (variableResolverFactory == null) {
+            return null;
+        }
+        return variableResolverFactory.getVariableResolver(str);
+    }
+
+    @Override
+    public boolean isIndexedFactory() {
+        return false;
+    }
+
+    @Override
+    public boolean isResolveable(String str) {
+        VariableResolverFactory variableResolverFactory;
+        return this.variableResolvers.containsKey(str) || ((variableResolverFactory = this.nextFactory) != null && variableResolverFactory.isResolveable(str));
+    }
+
+    @Override
+    public boolean isTarget(String str) {
+        return this.variableResolvers.containsKey(str);
+    }
+
+    @Override
+    public VariableResolver setIndexedVariableResolver(int i10, VariableResolver variableResolver) {
+        return null;
+    }
+
+    @Override
+    public int variableIndexOf(String str) {
+        return 0;
+    }
+
+    @Override
+    public VariableResolver createIndexedVariable(int i10, String str, Object obj, Class<?> cls) {
+        return null;
+    }
+
+    @Override
+    public VariableResolver createVariable(String str, Object obj, Class<?> cls) {
+        if (this.variableResolvers == null) {
+            this.variableResolvers = new HashMap(5, 0.6f);
+        }
+        SimpleSTValueResolver simpleSTValueResolver = new SimpleSTValueResolver(obj, cls);
+        this.variableResolvers.put(str, simpleSTValueResolver);
+        return simpleSTValueResolver;
+    }
+}

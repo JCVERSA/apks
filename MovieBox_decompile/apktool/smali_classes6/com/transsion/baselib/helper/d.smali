@@ -1,0 +1,303 @@
+.class public final Lcom/transsion/baselib/helper/d;
+.super Ljava/lang/Object;
+.source "source.java"
+
+
+# static fields
+.field public static final a:Lcom/transsion/baselib/helper/d;
+
+.field private static final b:Lkotlin/Lazy;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/transsion/baselib/helper/d;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/transsion/baselib/helper/d;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/transsion/baselib/helper/d;->a:Lcom/transsion/baselib/helper/d;
+
+    .line 7
+    .line 8
+    new-instance v0, Lcom/transsion/baselib/helper/c;
+
+    .line 9
+    .line 10
+    invoke-direct {v0}, Lcom/transsion/baselib/helper/c;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-static {v0}, Lkotlin/LazyKt;->b(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    sput-object v0, Lcom/transsion/baselib/helper/d;->b:Lkotlin/Lazy;
+
+    .line 18
+    .line 19
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic a()Lcom/tencent/mmkv/MMKV;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/transsion/baselib/helper/d;->e()Lcom/tencent/mmkv/MMKV;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method private final b()Lcom/tencent/mmkv/MMKV;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/transsion/baselib/helper/d;->b:Lkotlin/Lazy;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/tencent/mmkv/MMKV;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method private static final e()Lcom/tencent/mmkv/MMKV;
+    .locals 2
+
+    .line 1
+    const-string v0, "LocalVideoPlayerConfig"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/tencent/mmkv/MMKV;->I(Ljava/lang/String;)Lcom/tencent/mmkv/MMKV;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const-string v1, "mmkvWithID(...)"
+
+    .line 8
+    .line 9
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final c()Lcom/transsion/player/enum/ScaleMode;
+    .locals 3
+
+    .line 1
+    invoke-direct {p0}, Lcom/transsion/baselib/helper/d;->b()Lcom/tencent/mmkv/MMKV;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const-string v1, "ScaleMode"
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    invoke-virtual {v0, v1, v2}, Lcom/tencent/mmkv/MMKV;->getInt(Ljava/lang/String;I)I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    sget-object v1, Lcom/transsion/player/enum/ScaleMode;->SCALE_ASPECT_FIT:Lcom/transsion/player/enum/ScaleMode;
+
+    .line 13
+    .line 14
+    invoke-virtual {v1}, Lcom/transsion/player/enum/ScaleMode;->getValue()I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v2
+
+    .line 18
+    if-ne v2, v0, :cond_0
+
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_0
+    sget-object v1, Lcom/transsion/player/enum/ScaleMode;->SCALE_ASPECT_FILL:Lcom/transsion/player/enum/ScaleMode;
+
+    .line 22
+    .line 23
+    invoke-virtual {v1}, Lcom/transsion/player/enum/ScaleMode;->getValue()I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v2
+
+    .line 27
+    if-ne v2, v0, :cond_1
+
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :cond_1
+    sget-object v1, Lcom/transsion/player/enum/ScaleMode;->SCALE_TO_FILL:Lcom/transsion/player/enum/ScaleMode;
+
+    .line 31
+    .line 32
+    :goto_0
+    return-object v1
+.end method
+
+.method public final d()F
+    .locals 3
+
+    .line 1
+    invoke-direct {p0}, Lcom/transsion/baselib/helper/d;->b()Lcom/tencent/mmkv/MMKV;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const-string v1, "speed"
+
+    .line 6
+    .line 7
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, v1, v2}, Lcom/tencent/mmkv/MMKV;->getFloat(Ljava/lang/String;F)F
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+.end method
+
+.method public final f(Lcom/transsion/player/enum/ScaleMode;)V
+    .locals 2
+
+    .line 1
+    const-string v0, "mode"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0}, Lcom/transsion/baselib/helper/d;->b()Lcom/tencent/mmkv/MMKV;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    const-string v1, "ScaleMode"
+
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Lcom/transsion/player/enum/ScaleMode;->getValue()I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result p1
+
+    .line 16
+    invoke-virtual {v0, v1, p1}, Lcom/tencent/mmkv/MMKV;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+.end method
+
+.method public final g(F)V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Lcom/transsion/baselib/helper/d;->b()Lcom/tencent/mmkv/MMKV;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const-string v1, "speed"
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1, p1}, Lcom/tencent/mmkv/MMKV;->putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method

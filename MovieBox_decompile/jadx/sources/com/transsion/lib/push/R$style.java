@@ -1,0 +1,10 @@
+package com.transsion.lib.push;
+
+public final class R$style {
+    public static int Push_Notification_Content = 2131952042;
+    public static int Push_Notification_Content_2Line = 2131952043;
+    public static int Push_Notification_Title = 2131952044;
+
+    private R$style() {
+    }
+}

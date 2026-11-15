@@ -1,0 +1,2 @@
+/home/runner/work/_temp/moviebox-decompile/tools/apktool.jar: OK
+/home/runner/work/_temp/moviebox-decompile/tools/jadx.zip: OK

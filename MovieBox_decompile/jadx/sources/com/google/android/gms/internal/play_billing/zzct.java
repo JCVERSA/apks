@@ -1,0 +1,14 @@
+package com.google.android.gms.internal.play_billing;
+
+import java.util.Comparator;
+import java.util.Map;
+
+final class zzct implements Comparator {
+    zzct() {
+    }
+
+    @Override
+    public final int compare(Object obj, Object obj2) {
+        return ((String) ((Map.Entry) obj).getKey()).compareTo((String) ((Map.Entry) obj2).getKey());
+    }
+}

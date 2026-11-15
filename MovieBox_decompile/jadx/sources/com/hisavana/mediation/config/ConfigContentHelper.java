@@ -1,0 +1,139 @@
+package com.hisavana.mediation.config;
+
+import android.text.TextUtils;
+import android.util.Log;
+import com.cloud.sdk.commonutil.util.HSScopeHelper;
+import com.hisavana.common.bean.Network;
+import com.hisavana.common.constant.ComConstants;
+import com.hisavana.common.utils.AdLogUtil;
+import com.hisavana.common.utils.MediaLogUtil;
+import com.hisavana.mediation.bean.CloudControlConfig;
+import ee.e;
+import ee.f;
+import ee.g;
+import ee.j;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class ConfigContentHelper {
+
+    public final j f32404a;
+
+    public final g f32405b;
+
+    public static class a {
+
+        public static final ConfigContentHelper f32406a = new ConfigContentHelper();
+    }
+
+    public static ConfigContentHelper g() {
+        return a.f32406a;
+    }
+
+    public void b() {
+        this.f32405b.b();
+    }
+
+    public void c() {
+        this.f32405b.b();
+        this.f32404a.a();
+    }
+
+    public List d() {
+        return this.f32404a.c();
+    }
+
+    public CloudControlConfig.CodeSeat e(String str) {
+        if (TextUtils.isEmpty(str)) {
+            MediaLogUtil.e("ConfigContentHelper", "getConfig,codeSeatId is empty");
+            AdLogUtil.Log().e("ConfigContentHelper", "getConfig,codeSeatId is empty");
+            return null;
+        }
+        MediaLogUtil.d("ConfigContentHelper", "getConfig " + str);
+        try {
+            CloudControlConfig.CodeSeat codeSeatA = this.f32405b.a(str);
+            if (codeSeatA == null) {
+                HSScopeHelper.f22503a.g(new Runnable() {
+                    @Override
+                    public void run() {
+                        ConfigContentHelper.this.h();
+                    }
+                });
+            }
+            if (codeSeatA != null || !TextUtils.equals(TAdManager.getAhaChannel(), ComConstants.AHA_CHANNEL)) {
+                return codeSeatA;
+            }
+            Network network = new Network();
+            CloudControlConfig.CodeSeat codeSeat = new CloudControlConfig.CodeSeat();
+            ArrayList arrayList = new ArrayList();
+            codeSeat.setNetworks(arrayList);
+            arrayList.add(network);
+            codeSeat.setCodeSeatId(str);
+            network.setCodeSeatId(str);
+            network.setPrice(Double.valueOf(0.0d));
+            network.setSource(1);
+            AdLogUtil.Log().d("ConfigContentHelper", "aha channel return default config");
+            return codeSeat;
+        } catch (Exception e10) {
+            AdLogUtil.Log().e("ConfigContentHelper", "ex " + Log.getStackTraceString(e10));
+            MediaLogUtil.d("ConfigContentHelper", "getConfig,codeSeatId " + str + ",codeSeat is null");
+            return null;
+        }
+    }
+
+    public long f() {
+        return this.f32404a.b();
+    }
+
+    public void h() {
+        AdLogUtil.Log().d("ConfigContentHelper", "getConfig from database");
+        this.f32405b.c(this.f32404a.c());
+    }
+
+    public boolean i(List list) {
+        AdLogUtil.Log().d("ConfigContentHelper", "insert ");
+        List<CloudControlConfig.CodeSeat> listD = d();
+        if (listD != null && !listD.isEmpty()) {
+            for (CloudControlConfig.CodeSeat codeSeat : listD) {
+                if (codeSeat != null) {
+                    Iterator it = list.iterator();
+                    while (it.hasNext()) {
+                        CloudControlConfig.CodeSeat codeSeat2 = (CloudControlConfig.CodeSeat) it.next();
+                        if (codeSeat2 != null && TextUtils.equals(codeSeat.getCodeSeatId(), codeSeat2.getCodeSeatId())) {
+                            codeSeat2.setCurrentHourZeroClock(codeSeat.getCurrentHourZeroClock());
+                            codeSeat2.setLastShowTime(codeSeat.getLastShowTime());
+                            codeSeat2.setCurrentHourShowTimes(codeSeat.getCurrentHourShowTimes());
+                            codeSeat2.setTodayZeroClock(codeSeat.getTodayZeroClock());
+                            codeSeat2.setTodayShowTimes(codeSeat.getTodayShowTimes());
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        this.f32405b.c(list);
+        return this.f32404a.a(list);
+    }
+
+    public void j(final CloudControlConfig.CodeSeat codeSeat) {
+        AdLogUtil.Log().d("ConfigContentHelper", "updateConfig " + codeSeat);
+        HSScopeHelper.f22503a.g(new Runnable() {
+            @Override
+            public void run() {
+                if (ConfigContentHelper.this.f32404a != null) {
+                    ConfigContentHelper.this.f32404a.a(codeSeat);
+                }
+            }
+        });
+    }
+
+    public ConfigContentHelper() {
+        this.f32405b = g.d();
+        if (TextUtils.equals(TAdManager.getAhaChannel(), ComConstants.AHA_CHANNEL)) {
+            this.f32404a = f.d();
+        } else {
+            this.f32404a = e.d();
+        }
+    }
+}

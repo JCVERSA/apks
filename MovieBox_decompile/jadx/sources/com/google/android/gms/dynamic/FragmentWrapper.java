@@ -1,0 +1,171 @@
+package com.google.android.gms.dynamic;
+
+import android.annotation.SuppressLint;
+import android.app.Fragment;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.gms.common.annotation.KeepForSdk;
+import com.google.android.gms.common.internal.Preconditions;
+
+@KeepForSdk
+@SuppressLint({"NewApi"})
+public final class FragmentWrapper extends IFragmentWrapper.Stub {
+    private final Fragment zza;
+
+    private FragmentWrapper(Fragment fragment) {
+        this.zza = fragment;
+    }
+
+    @Nullable
+    @KeepForSdk
+    public static FragmentWrapper wrap(@Nullable Fragment fragment) {
+        if (fragment != null) {
+            return new FragmentWrapper(fragment);
+        }
+        return null;
+    }
+
+    @Override
+    public final boolean zzA() {
+        return this.zza.isVisible();
+    }
+
+    @Override
+    public final int zzb() {
+        return this.zza.getId();
+    }
+
+    @Override
+    public final int zzc() {
+        return this.zza.getTargetRequestCode();
+    }
+
+    @Override
+    @Nullable
+    public final Bundle zzd() {
+        return this.zza.getArguments();
+    }
+
+    @Override
+    @Nullable
+    public final IFragmentWrapper zze() {
+        return wrap(this.zza.getParentFragment());
+    }
+
+    @Override
+    @Nullable
+    public final IFragmentWrapper zzf() {
+        return wrap(this.zza.getTargetFragment());
+    }
+
+    @Override
+    @NonNull
+    public final IObjectWrapper zzg() {
+        return ObjectWrapper.wrap(this.zza.getActivity());
+    }
+
+    @Override
+    @NonNull
+    public final IObjectWrapper zzh() {
+        return ObjectWrapper.wrap(this.zza.getResources());
+    }
+
+    @Override
+    @NonNull
+    public final IObjectWrapper zzi() {
+        return ObjectWrapper.wrap(this.zza.getView());
+    }
+
+    @Override
+    @Nullable
+    public final String zzj() {
+        return this.zza.getTag();
+    }
+
+    @Override
+    public final void zzk(@NonNull IObjectWrapper iObjectWrapper) {
+        View view = (View) ObjectWrapper.unwrap(iObjectWrapper);
+        Preconditions.checkNotNull(view);
+        this.zza.registerForContextMenu(view);
+    }
+
+    @Override
+    public final void zzl(boolean z10) {
+        this.zza.setHasOptionsMenu(z10);
+    }
+
+    @Override
+    public final void zzm(boolean z10) {
+        this.zza.setMenuVisibility(z10);
+    }
+
+    @Override
+    public final void zzn(boolean z10) {
+        this.zza.setRetainInstance(z10);
+    }
+
+    @Override
+    public final void zzo(boolean z10) {
+        this.zza.setUserVisibleHint(z10);
+    }
+
+    @Override
+    public final void zzp(@NonNull Intent intent) {
+        this.zza.startActivity(intent);
+    }
+
+    @Override
+    public final void zzq(@NonNull Intent intent, int i10) {
+        this.zza.startActivityForResult(intent, i10);
+    }
+
+    @Override
+    public final void zzr(@NonNull IObjectWrapper iObjectWrapper) {
+        View view = (View) ObjectWrapper.unwrap(iObjectWrapper);
+        Preconditions.checkNotNull(view);
+        this.zza.unregisterForContextMenu(view);
+    }
+
+    @Override
+    public final boolean zzs() {
+        return this.zza.getRetainInstance();
+    }
+
+    @Override
+    public final boolean zzt() {
+        return this.zza.getUserVisibleHint();
+    }
+
+    @Override
+    public final boolean zzu() {
+        return this.zza.isAdded();
+    }
+
+    @Override
+    public final boolean zzv() {
+        return this.zza.isDetached();
+    }
+
+    @Override
+    public final boolean zzw() {
+        return this.zza.isHidden();
+    }
+
+    @Override
+    public final boolean zzx() {
+        return this.zza.isInLayout();
+    }
+
+    @Override
+    public final boolean zzy() {
+        return this.zza.isRemoving();
+    }
+
+    @Override
+    public final boolean zzz() {
+        return this.zza.isResumed();
+    }
+}

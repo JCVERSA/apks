@@ -1,0 +1,155 @@
+package com.aliyun.player;
+
+import android.content.Context;
+import com.aliyun.player.nativeclass.JniListPlayerBase;
+import com.aliyun.player.nativeclass.JniSaasListPlayer;
+import com.aliyun.player.source.LiveSts;
+import com.aliyun.player.source.StsInfo;
+import com.aliyun.player.source.VidAuth;
+import com.aliyun.player.source.VidMps;
+import com.aliyun.player.source.VidSts;
+import com.cicada.player.utils.Logger;
+
+class ApsaraVideoListPlayer extends UrlVideoListPlayer implements AliListPlayer, AliPlayer {
+    private static final String TAG = "NativePlayerBase_ApsaraVideListPlayer";
+    private ApsaraVideoPlayer mSaasVideoPlayer;
+
+    public ApsaraVideoListPlayer(Context context, String str) {
+        super(context, str);
+        this.mSaasVideoPlayer = null;
+    }
+
+    @Override
+    public void addVid(String str, String str2) {
+        JniListPlayerBase corePlayer = getCorePlayer();
+        if (corePlayer instanceof JniSaasListPlayer) {
+            Logger.v(TAG, "addVid = " + str + " , uid = " + str2);
+            ((JniSaasListPlayer) corePlayer).addVid(str, str2);
+        }
+    }
+
+    @Override
+    protected JniListPlayerBase createListPlayer(Context context, String str, long j10) {
+        return new JniSaasListPlayer(context, j10);
+    }
+
+    @Override
+    protected IPlayer getNativePlayer(Context context, String str) {
+        if (this.mSaasVideoPlayer == null) {
+            this.mSaasVideoPlayer = new ApsaraVideoPlayer(context, str);
+        }
+        return this.mSaasVideoPlayer;
+    }
+
+    @Override
+    public void invokeComponent(String str) {
+        IPlayer nativePlayer = getNativePlayer();
+        if (nativePlayer instanceof ApsaraVideoPlayer) {
+            ((ApsaraVideoPlayer) nativePlayer).invokeComponent(str);
+        }
+    }
+
+    @Override
+    public boolean moveTo(String str, StsInfo stsInfo) {
+        JniListPlayerBase corePlayer = getCorePlayer();
+        if (!(corePlayer instanceof JniSaasListPlayer)) {
+            return false;
+        }
+        Logger.v(TAG, "moveTo sts uid = " + str);
+        return ((JniSaasListPlayer) corePlayer).moveTo(str, stsInfo);
+    }
+
+    @Override
+    public boolean moveToNext(StsInfo stsInfo) {
+        JniListPlayerBase corePlayer = getCorePlayer();
+        if (!(corePlayer instanceof JniSaasListPlayer)) {
+            return false;
+        }
+        Logger.v(TAG, "moveToNext sts ");
+        return ((JniSaasListPlayer) corePlayer).moveToNext(stsInfo);
+    }
+
+    @Override
+    public boolean moveToPrev(StsInfo stsInfo) {
+        JniListPlayerBase corePlayer = getCorePlayer();
+        if (!(corePlayer instanceof JniSaasListPlayer)) {
+            return false;
+        }
+        Logger.v(TAG, "moveToPrev sts ");
+        return ((JniSaasListPlayer) corePlayer).moveToPrev(stsInfo);
+    }
+
+    @Override
+    public void setDataSource(VidSts vidSts) {
+        IPlayer nativePlayer = getNativePlayer();
+        if (nativePlayer instanceof ApsaraVideoPlayer) {
+            ((ApsaraVideoPlayer) nativePlayer).setDataSource(vidSts);
+        }
+    }
+
+    @Override
+    public void setDefinition(String str) {
+        JniListPlayerBase corePlayer = getCorePlayer();
+        if (corePlayer instanceof JniSaasListPlayer) {
+            Logger.v(TAG, "setDefinition = " + str);
+            ((JniSaasListPlayer) corePlayer).setDefinition(str);
+        }
+    }
+
+    @Override
+    public void setOnVerifyTimeExpireCallback(AliPlayer.OnVerifyTimeExpireCallback onVerifyTimeExpireCallback) {
+        IPlayer nativePlayer = getNativePlayer();
+        if (nativePlayer instanceof ApsaraVideoPlayer) {
+            ((ApsaraVideoPlayer) nativePlayer).setOnVerifyTimeExpireCallback(onVerifyTimeExpireCallback);
+        }
+    }
+
+    @Override
+    public void stop() {
+        super.stop();
+        JniListPlayerBase corePlayer = getCorePlayer();
+        if (corePlayer instanceof JniSaasListPlayer) {
+            ((JniSaasListPlayer) corePlayer).stop();
+        }
+    }
+
+    @Override
+    public void updateStsInfo(StsInfo stsInfo) {
+        IPlayer nativePlayer = getNativePlayer();
+        if (nativePlayer instanceof ApsaraVideoPlayer) {
+            ((ApsaraVideoPlayer) nativePlayer).updateStsInfo(stsInfo);
+        }
+    }
+
+    @Override
+    public void updateVidAuth(VidAuth vidAuth) {
+        IPlayer nativePlayer = getNativePlayer();
+        if (nativePlayer instanceof ApsaraVideoPlayer) {
+            ((ApsaraVideoPlayer) nativePlayer).updateVidAuth(vidAuth);
+        }
+    }
+
+    @Override
+    public void setDataSource(VidAuth vidAuth) {
+        IPlayer nativePlayer = getNativePlayer();
+        if (nativePlayer instanceof ApsaraVideoPlayer) {
+            ((ApsaraVideoPlayer) nativePlayer).setDataSource(vidAuth);
+        }
+    }
+
+    @Override
+    public void setDataSource(VidMps vidMps) {
+        IPlayer nativePlayer = getNativePlayer();
+        if (nativePlayer instanceof ApsaraVideoPlayer) {
+            ((ApsaraVideoPlayer) nativePlayer).setDataSource(vidMps);
+        }
+    }
+
+    @Override
+    public void setDataSource(LiveSts liveSts) {
+        IPlayer nativePlayer = getNativePlayer();
+        if (nativePlayer instanceof ApsaraVideoPlayer) {
+            ((ApsaraVideoPlayer) nativePlayer).setDataSource(liveSts);
+        }
+    }
+}

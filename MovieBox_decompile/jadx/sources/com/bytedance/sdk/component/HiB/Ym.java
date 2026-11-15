@@ -1,0 +1,21 @@
+package com.bytedance.sdk.component.HiB;
+
+import java.util.Map;
+
+public interface Ym<T> {
+    Map<String, String> EjP();
+
+    boolean HiB();
+
+    int Jcg();
+
+    String Sj();
+
+    void Sj(T t10);
+
+    T TKC();
+
+    T sP();
+
+    boolean vS();
+}

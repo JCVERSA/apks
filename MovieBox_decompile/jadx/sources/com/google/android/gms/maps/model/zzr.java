@@ -1,0 +1,35 @@
+package com.google.android.gms.maps.model;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelReader;
+
+public final class zzr implements Parcelable.Creator<Tile> {
+    @Override
+    public final Tile createFromParcel(Parcel parcel) {
+        int iValidateObjectHeader = SafeParcelReader.validateObjectHeader(parcel);
+        int i10 = 0;
+        byte[] bArrCreateByteArray = null;
+        int i11 = 0;
+        while (parcel.dataPosition() < iValidateObjectHeader) {
+            int header = SafeParcelReader.readHeader(parcel);
+            int fieldId = SafeParcelReader.getFieldId(header);
+            if (fieldId == 2) {
+                i10 = SafeParcelReader.readInt(parcel, header);
+            } else if (fieldId == 3) {
+                i11 = SafeParcelReader.readInt(parcel, header);
+            } else if (fieldId != 4) {
+                SafeParcelReader.skipUnknownField(parcel, header);
+            } else {
+                bArrCreateByteArray = SafeParcelReader.createByteArray(parcel, header);
+            }
+        }
+        SafeParcelReader.ensureAtEnd(parcel, iValidateObjectHeader);
+        return new Tile(i10, i11, bArrCreateByteArray);
+    }
+
+    @Override
+    public final Tile[] newArray(int i10) {
+        return new Tile[i10];
+    }
+}

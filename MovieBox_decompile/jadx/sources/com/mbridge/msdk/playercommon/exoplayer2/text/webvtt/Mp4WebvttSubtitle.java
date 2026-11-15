@@ -1,0 +1,36 @@
+package com.mbridge.msdk.playercommon.exoplayer2.text.webvtt;
+
+import com.mbridge.msdk.playercommon.exoplayer2.text.Cue;
+import com.mbridge.msdk.playercommon.exoplayer2.text.Subtitle;
+import com.mbridge.msdk.playercommon.exoplayer2.util.Assertions;
+import java.util.Collections;
+import java.util.List;
+
+final class Mp4WebvttSubtitle implements Subtitle {
+    private final List<Cue> cues;
+
+    public Mp4WebvttSubtitle(List<Cue> list) {
+        this.cues = Collections.unmodifiableList(list);
+    }
+
+    @Override
+    public List<Cue> getCues(long j10) {
+        return j10 >= 0 ? this.cues : Collections.emptyList();
+    }
+
+    @Override
+    public long getEventTime(int i10) {
+        Assertions.checkArgument(i10 == 0);
+        return 0L;
+    }
+
+    @Override
+    public int getEventTimeCount() {
+        return 1;
+    }
+
+    @Override
+    public int getNextEventTimeIndex(long j10) {
+        return j10 < 0 ? 0 : -1;
+    }
+}

@@ -1,0 +1,8 @@
+package com.google.android.exoplayer2;
+
+public final class R$font {
+    public static int roboto_medium_numbers = 2131296260;
+
+    private R$font() {
+    }
+}

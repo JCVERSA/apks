@@ -1,0 +1,15 @@
+package com.cloud.tmc.kernel.proxy.eventcenter;
+
+public interface IEventCenter {
+    boolean containsEventKey(String str);
+
+    void destroy();
+
+    void postEvent(String str, IEvent iEvent);
+
+    void register(String str, IEventSubscriber iEventSubscriber);
+
+    void unregister(String str);
+
+    void unregister(String str, IEventSubscriber iEventSubscriber);
+}

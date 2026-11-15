@@ -1,0 +1,45 @@
+package im;
+
+import com.transsion.memberapi.MemberCheckResult;
+import kotlin.jvm.internal.Intrinsics;
+
+public interface a {
+
+    public static final class C0761a {
+        public static void a(a aVar, MemberCheckResult memberCheckResult) {
+        }
+
+        public static void b(a aVar, String errorMsg) {
+            Intrinsics.h(errorMsg, "errorMsg");
+        }
+
+        public static void c(a aVar) {
+        }
+
+        public static void d(a aVar, MemberCheckResult memberCheckResult) {
+        }
+
+        public static void e(a aVar, MemberCheckResult memberCheckResult) {
+        }
+
+        public static void f(a aVar, MemberCheckResult memberCheckResult) {
+        }
+
+        public static void g(a aVar, MemberCheckResult memberCheckResult) {
+        }
+    }
+
+    void a(MemberCheckResult memberCheckResult);
+
+    void b(MemberCheckResult memberCheckResult);
+
+    void c(MemberCheckResult memberCheckResult);
+
+    void d(MemberCheckResult memberCheckResult);
+
+    void e();
+
+    void f(MemberCheckResult memberCheckResult);
+
+    void onFail(String str);
+}

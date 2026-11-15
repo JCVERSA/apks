@@ -1,0 +1,60 @@
+package com.bytedance.sdk.openadsdk.core.model;
+
+import android.text.TextUtils;
+
+public class uvD {
+    private double EjP;
+    private boolean HiB;
+    private String Sj;
+    private int TKC;
+    private int sP;
+    private String vS;
+
+    public double EjP() {
+        return this.EjP;
+    }
+
+    public boolean HiB() {
+        return !TextUtils.isEmpty(this.Sj) && this.sP > 0 && this.TKC > 0;
+    }
+
+    public String Jcg() {
+        return this.vS;
+    }
+
+    public String Sj() {
+        return this.Sj;
+    }
+
+    public int TKC() {
+        return this.TKC;
+    }
+
+    public int sP() {
+        return this.sP;
+    }
+
+    public boolean vS() {
+        return this.HiB;
+    }
+
+    public void Sj(String str) {
+        this.Sj = str;
+    }
+
+    public void sP(int i10) {
+        this.TKC = i10;
+    }
+
+    public void Sj(int i10) {
+        this.sP = i10;
+    }
+
+    public void sP(String str) {
+        this.vS = str;
+    }
+
+    public void Sj(boolean z10) {
+        this.HiB = z10;
+    }
+}

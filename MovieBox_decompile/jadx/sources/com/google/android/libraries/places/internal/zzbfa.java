@@ -1,0 +1,57 @@
+package com.google.android.libraries.places.internal;
+
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+final class zzbfa implements zzbpq {
+    private static final Logger zza = Logger.getLogger(zzbfa.class.getName());
+    private final ScheduledExecutorService zzb;
+    private final zzbdw zzc;
+    private zzbdv zzd;
+    private final zzbij zze;
+    private zzbik zzf;
+
+    zzbfa(zzbij zzbijVar, ScheduledExecutorService scheduledExecutorService, zzbdw zzbdwVar) {
+        this.zze = zzbijVar;
+        this.zzb = scheduledExecutorService;
+        this.zzc = zzbdwVar;
+    }
+
+    final void zza() {
+        zzbdv zzbdvVar = this.zzd;
+        if (zzbdvVar != null && zzbdvVar.zzb()) {
+            zzbdvVar.zza();
+        }
+        this.zzf = null;
+    }
+
+    @Override
+    public final void zzb() {
+        this.zzc.zzd();
+        Runnable runnable = new Runnable() {
+            @Override
+            public final void run() {
+                this.zza.zza();
+            }
+        };
+        zzbdw zzbdwVar = this.zzc;
+        zzbdwVar.zzc(runnable);
+        zzbdwVar.zzb();
+    }
+
+    @Override
+    public final void zzc(Runnable runnable) {
+        this.zzc.zzd();
+        if (this.zzf == null) {
+            this.zzf = new zzbik();
+        }
+        zzbdv zzbdvVar = this.zzd;
+        if (zzbdvVar == null || !zzbdvVar.zzb()) {
+            long jZza = this.zzf.zza();
+            this.zzd = this.zzc.zza(runnable, jZza, TimeUnit.NANOSECONDS, this.zzb);
+            zza.logp(Level.FINE, "io.grpc.internal.BackoffPolicyRetryScheduler", "schedule", "Scheduling DNS resolution backoff for {0}ns", Long.valueOf(jZza));
+        }
+    }
+}

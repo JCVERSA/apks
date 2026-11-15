@@ -1,0 +1,16 @@
+package com.transsion.infra.gateway.core.bean;
+
+import com.cloud.tmc.offline.download.constants.OfflineConstantsKt;
+import nl.a;
+
+public class GatewayResponse {
+
+    @a(name = "data")
+    public String data;
+
+    @a(name = "error_code")
+    public String errorCode;
+
+    @a(name = OfflineConstantsKt.TRACK_KEY_PRE_ERROR_MSG)
+    public String errorMsg;
+}

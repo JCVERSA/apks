@@ -1,0 +1,13 @@
+package com.mbridge.msdk.scheme.applet;
+
+import java.io.Serializable;
+
+public interface IAppletSchemeCallBack extends Serializable {
+    void onAppletSchemeRequestFailed(int i10, String str, String str2);
+
+    void onAppletSchemeRequestStart();
+
+    void onAppletSchemeRequestSuccess(String str);
+
+    void onNetworkError(int i10, String str, String str2);
+}

@@ -1,0 +1,17 @@
+package ml;
+
+import java.lang.reflect.Type;
+
+public class h implements com.transsion.json.o {
+    @Override
+    public Object a(com.transsion.json.m mVar, Object obj, Type type, Class cls) {
+        if (obj instanceof Number) {
+            return Float.valueOf(((Number) obj).floatValue());
+        }
+        try {
+            return Float.valueOf(Float.parseFloat(obj.toString()));
+        } catch (Exception unused) {
+            throw mVar.q(obj, Float.class);
+        }
+    }
+}

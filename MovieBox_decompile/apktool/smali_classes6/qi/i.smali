@@ -1,0 +1,14 @@
+.class public interface abstract Lqi/i;
+.super Ljava/lang/Object;
+.source "source.java"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+.end method
+
+.method public abstract b(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+.end method
+
+.method public abstract getAccount()Lkotlin/Pair;
+.end method

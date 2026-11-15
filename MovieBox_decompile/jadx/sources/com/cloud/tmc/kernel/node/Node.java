@@ -1,0 +1,41 @@
+package com.cloud.tmc.kernel.node;
+
+import android.os.Parcelable;
+import android.view.View;
+import androidx.annotation.Nullable;
+import com.cloud.tmc.kernel.security.Accessor;
+
+public interface Node extends Accessor, Parcelable {
+    void addFixedView(View view);
+
+    @Nullable
+    <T extends Node> T bubbleFindNode(Class<T> cls);
+
+    Node getChild(long j10);
+
+    Node getChildAt(int i10);
+
+    int getChildCount();
+
+    int getIndexOfChild(Node node);
+
+    long getNodeId();
+
+    Node getParentNode();
+
+    boolean isChildless();
+
+    void onFinalized();
+
+    void onInitialized();
+
+    Node peekChild();
+
+    Node popChild();
+
+    void pushChild(Node node);
+
+    boolean removeChild(Node node);
+
+    void setParentNode(Node node);
+}

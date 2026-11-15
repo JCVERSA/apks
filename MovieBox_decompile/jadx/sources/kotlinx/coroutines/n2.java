@@ -1,0 +1,7 @@
+package kotlinx.coroutines;
+
+public abstract class n2 {
+    public static final m2 a(ThreadLocal threadLocal, Object obj) {
+        return new kotlinx.coroutines.internal.h0(obj, threadLocal);
+    }
+}

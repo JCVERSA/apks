@@ -1,0 +1,44 @@
+package com.transsion.shorttv_pugc.base.image.blurhash;
+
+import android.content.Context;
+import android.graphics.drawable.BitmapDrawable;
+import android.util.LruCache;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.k;
+import kotlinx.coroutines.n0;
+import kotlinx.coroutines.o0;
+import kotlinx.coroutines.y0;
+
+public final class BlurHash {
+
+    private Context f51756a;
+
+    private float f51757b;
+
+    private LruCache f51758c;
+
+    private final n0 f51759d;
+
+    public BlurHash(Context context, int i10, float f10) {
+        Intrinsics.h(context, "context");
+        this.f51756a = context;
+        this.f51757b = f10;
+        this.f51758c = new LruCache(i10);
+        this.f51759d = o0.a(y0.c());
+    }
+
+    public final void e(String str, BitmapDrawable bitmapDrawable) {
+        this.f51758c.put(str, bitmapDrawable);
+    }
+
+    public final BitmapDrawable g(String str) {
+        return (BitmapDrawable) this.f51758c.get(str);
+    }
+
+    public final void f(String blurString, int i10, int i11, Function1 response) {
+        Intrinsics.h(blurString, "blurString");
+        Intrinsics.h(response, "response");
+        k.d(this.f51759d, null, null, new BlurHash$execute$1(this, blurString, response, i10, i11, null), 3, null);
+    }
+}

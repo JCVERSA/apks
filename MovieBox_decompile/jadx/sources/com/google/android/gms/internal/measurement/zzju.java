@@ -1,0 +1,29 @@
+package com.google.android.gms.internal.measurement;
+
+final class zzju implements zzkz {
+    private static final zzju zza = new zzju();
+
+    private zzju() {
+    }
+
+    public static zzju zza() {
+        return zza;
+    }
+
+    @Override
+    public final boolean zzb(Class<?> cls) {
+        return zzjt.class.isAssignableFrom(cls);
+    }
+
+    @Override
+    public final zzla zza(Class<?> cls) {
+        if (!zzjt.class.isAssignableFrom(cls)) {
+            throw new IllegalArgumentException("Unsupported message type: " + cls.getName());
+        }
+        try {
+            return (zzla) zzjt.zza(cls.asSubclass(zzjt.class)).zza(zzjt.zze.zzc, (Object) null, (Object) null);
+        } catch (Exception e10) {
+            throw new RuntimeException("Unable to get message info for " + cls.getName(), e10);
+        }
+    }
+}

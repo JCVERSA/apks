@@ -1,0 +1,57 @@
+package com.transsion.shorttv._channel.ui.adapter;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import com.alibaba.sdk.android.oss.common.RequestParameters;
+import com.chad.library.adapter.base.BaseProviderMultiAdapter;
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.viewholder.BaseViewHolder;
+import com.transsion.shorttv.bean.Staff;
+import com.vungle.ads.internal.protos.Sdk$SDKMetric;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import t6.f;
+import t6.h;
+import t6.i;
+
+@Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010!\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0007\u0018\u0000 \u00172\b\u0012\u0004\u0012\u00020\u00020\u00012\u00020\u0003:\u0001\u0018B\u001f\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0006¢\u0006\u0004\b\b\u0010\tJ%\u0010\u000e\u001a\u00020\f2\f\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00020\n2\u0006\u0010\r\u001a\u00020\fH\u0014¢\u0006\u0004\b\u000e\u0010\u000fJ\u0017\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0011\u001a\u00020\u0010H\u0016¢\u0006\u0004\b\u0013\u0010\u0014R\u0016\u0010\u0007\u001a\u0004\u0018\u00010\u00068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0016¨\u0006\u0019"}, d2 = {"Lcom/transsion/shorttv/_channel/ui/adapter/a;", "Lcom/chad/library/adapter/base/BaseProviderMultiAdapter;", "Lcom/transsion/shorttv/bean/Staff;", "Lt6/i;", "", "datas", "Lbr/b;", "exposureHelper", "<init>", "(Ljava/util/List;Lbr/b;)V", "", "data", "", RequestParameters.POSITION, "N1", "(Ljava/util/List;I)I", "Lcom/chad/library/adapter/base/viewholder/BaseViewHolder;", "holder", "", "B0", "(Lcom/chad/library/adapter/base/viewholder/BaseViewHolder;)V", "G", "Lbr/b;", "H", "a", "shortTvLib_release"}, k = 1, mv = {2, 1, 0}, xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+public final class a extends BaseProviderMultiAdapter<Staff> implements i {
+    public static final int I = 1;
+    public static final int J = 2;
+
+    private final br.b exposureHelper;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a(List<Staff> datas, br.b bVar) {
+        super(datas);
+        Intrinsics.h(datas, "datas");
+        this.exposureHelper = bVar;
+        F1(new vq.b());
+        F1(new vq.a());
+    }
+
+    @Override
+    public void onViewAttachedToWindow(BaseViewHolder holder) {
+        Intrinsics.h(holder, "holder");
+        super.onViewAttachedToWindow(holder);
+        int bindingAdapterPosition = holder.getBindingAdapterPosition();
+        br.b bVar = this.exposureHelper;
+        if (bVar != null) {
+            RecyclerView.m layoutManager = getRecyclerView().getLayoutManager();
+            Intrinsics.f(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
+            br.b.h(bVar, (LinearLayoutManager) layoutManager, bindingAdapterPosition, true, false, 8, null);
+        }
+    }
+
+    @Override
+    protected int N1(List<? extends Staff> data, int position) {
+        Intrinsics.h(data, "data");
+        return data.get(position).getNonAdDelegate() != null ? 2 : 1;
+    }
+
+    @Override
+    public f b(BaseQuickAdapter baseQuickAdapter) {
+        return h.a(this, baseQuickAdapter);
+    }
+}

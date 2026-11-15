@@ -1,0 +1,18 @@
+{
+  "sha256": "f8f34aaf540975b935ebd0e0d3e3cff9146652465a29d5f8e74cf9fdaeec71cb",
+  "bytes": 64138531,
+  "entries": 5711,
+  "dex_files": [
+    "classes.dex",
+    "classes10.dex",
+    "classes2.dex",
+    "classes3.dex",
+    "classes4.dex",
+    "classes5.dex",
+    "classes6.dex",
+    "classes7.dex",
+    "classes8.dex",
+    "classes9.dex"
+  ],
+  "package": "unknown until badging"
+}

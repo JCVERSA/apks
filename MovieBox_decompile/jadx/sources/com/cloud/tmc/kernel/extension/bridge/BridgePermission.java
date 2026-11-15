@@ -1,0 +1,27 @@
+package com.cloud.tmc.kernel.extension.bridge;
+
+import com.cloud.tmc.kernel.security.Permission;
+
+public class BridgePermission implements Permission {
+    private String authority;
+    private String description;
+
+    public BridgePermission(String str, String str2) {
+        this.authority = str;
+        this.description = str2;
+    }
+
+    @Override
+    public String authority() {
+        return this.authority;
+    }
+
+    @Override
+    public String description() {
+        return this.description;
+    }
+
+    public String toString() {
+        return "authority=" + this.authority + ",description=" + this.description;
+    }
+}

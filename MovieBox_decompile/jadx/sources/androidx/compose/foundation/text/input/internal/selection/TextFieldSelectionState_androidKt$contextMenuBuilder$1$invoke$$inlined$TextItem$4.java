@@ -1,0 +1,32 @@
+package androidx.compose.foundation.text.input.internal.selection;
+
+import com.vungle.ads.internal.protos.Sdk$SDKMetric;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.SourceDebugExtension;
+import o.a;
+
+@Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002¨\u0006\u0003"}, d2 = {"<anonymous>", "", "invoke", "androidx/compose/foundation/text/ContextMenu_androidKt$TextItem$2"}, k = 3, mv = {1, 8, 0}, xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+@SourceDebugExtension
+public final class TextFieldSelectionState_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$4 extends Lambda implements Function0<Unit> {
+    final a $state;
+    final TextFieldSelectionState $this_contextMenuBuilder$inlined;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public TextFieldSelectionState_androidKt$contextMenuBuilder$1$invoke$$inlined$TextItem$4(a aVar, TextFieldSelectionState textFieldSelectionState) {
+        super(0);
+        this.$state = aVar;
+    }
+
+    @Override
+    public Object invoke() {
+        m59invoke();
+        return Unit.f64096a;
+    }
+
+    public final void m59invoke() {
+        throw null;
+    }
+}

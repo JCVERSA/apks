@@ -1,0 +1,11 @@
+.class public interface abstract Lcom/cloud/tmc/miniapp/bluetooth/listener/OooOO0O;
+.super Ljava/lang/Object;
+.source "source.java"
+
+
+# virtual methods
+.method public abstract OooO00o(Ljava/lang/String;)V
+.end method
+
+.method public abstract OooO00o(ZZ)V
+.end method

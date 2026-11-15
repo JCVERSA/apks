@@ -1,0 +1,8 @@
+.class public interface abstract Lcom/cloud/tmc/kernel/security/Guard;
+.super Ljava/lang/Object;
+.source "source.java"
+
+
+# virtual methods
+.method public abstract permit()Lcom/cloud/tmc/kernel/security/Permission;
+.end method

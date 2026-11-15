@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pay_abandon_transaction">Yi watsi da wannan ciniki?</string>
+    <string name="pay_amount">%s</string>
+    <string name="pay_cancel">Soke</string>
+    <string name="pay_cnic_number">lambar CNIC</string>
+    <string name="pay_confirm">Tabbatar</string>
+    <string name="pay_desc" formatted="false">%s hi %s</string>
+    <string name="pay_frequently_used">Ana yawan amfani dashi</string>
+    <string name="pay_method">Hanyar biyan kuɗi: %s</string>
+    <string name="pay_now">Biya yanzu</string>
+    <string name="pay_online_payment">Biyan kuɗi akan layi</string>
+    <string name="pay_order">Lambar oda: %s</string>
+    <string name="pay_phone_code">+%s</string>
+    <string name="pay_phone_number">Lambar tarho</string>
+    <string name="pay_please_choose_a_payment_method">Don Allah, Zabi hanyar biyan kudi</string>
+    <string name="pay_please_fill_in_your_information">Da fatan za a cika bayanan ku kuma danna biya kammala siyan</string>
+    <string name="pay_recommend">Shawara</string>
+    <string name="upgrade_sdk_text_details">Cikakken bayani</string>
+    <string name="upgrade_sdk_text_later">Daga Baya</string>
+    <string name="upgrade_sdk_text_later_force">Fita Aikace-aikace</string>
+    <string name="upgrade_sdk_text_new_version">Akwai Sabuwar Siga</string>
+    <string name="upgrade_sdk_text_size">Girma</string>
+    <string name="upgrade_sdk_text_update">Sabunta</string>
+    <string name="upgrade_sdk_text_version">version</string>
+</resources>

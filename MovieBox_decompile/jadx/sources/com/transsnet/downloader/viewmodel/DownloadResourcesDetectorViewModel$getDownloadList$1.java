@@ -1,0 +1,261 @@
+package com.transsnet.downloader.viewmodel;
+
+import com.tn.lib.net.bean.BaseDto;
+import com.transsion.moviedetailapi.DownloadItem;
+import com.transsnet.downloader.bean.DownloadListBean;
+import com.vungle.ads.internal.protos.Sdk$SDKError;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.Boxing;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.n0;
+
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"Lkotlinx/coroutines/n0;", "", "<anonymous>", "(Lkotlinx/coroutines/n0;)V"}, k = 3, mv = {2, 1, 0})
+@DebugMetadata(c = "com.transsnet.downloader.viewmodel.DownloadResourcesDetectorViewModel$getDownloadList$1", f = "DownloadResourcesDetectorViewModel.kt", l = {Sdk$SDKError.Reason.AD_CLOSED_MISSING_HEARTBEAT_VALUE}, m = "invokeSuspend")
+final class DownloadResourcesDetectorViewModel$getDownloadList$1 extends SuspendLambda implements Function2<n0, Continuation<? super Unit>, Object> {
+    final int $endPosition;
+    final int $epFrom;
+    final int $epTo;
+    final String $nextPage;
+    final int $pagerMode;
+    final int $perPage;
+    final int $resolution;
+    final int $se;
+    final int $startPosition;
+    final String $subjectId;
+    final String $subjectTitle;
+    int label;
+    final DownloadResourcesDetectorViewModel this$0;
+
+    @Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0003\u001a\u00020\u0002*\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0000H\n¢\u0006\u0004\b\u0003\u0010\u0004"}, d2 = {"Lkotlinx/coroutines/flow/b;", "Lcom/transsnet/downloader/bean/DownloadListBean;", "", "<anonymous>", "(Lkotlinx/coroutines/flow/b;)V"}, k = 3, mv = {2, 1, 0})
+    @DebugMetadata(c = "com.transsnet.downloader.viewmodel.DownloadResourcesDetectorViewModel$getDownloadList$1$1", f = "DownloadResourcesDetectorViewModel.kt", l = {Sdk$SDKError.Reason.AD_EXPIRED_VALUE, Sdk$SDKError.Reason.DEEPLINK_OPEN_FAILED_VALUE, Sdk$SDKError.Reason.LINK_COMMAND_OPEN_FAILED_VALUE}, m = "invokeSuspend")
+    static final class AnonymousClass1 extends SuspendLambda implements Function2<kotlinx.coroutines.flow.b, Continuation<? super Unit>, Object> {
+        final int $endPosition;
+        final int $epFrom;
+        final int $epTo;
+        final String $nextPage;
+        final int $pagerMode;
+        final int $perPage;
+        final int $resolution;
+        final int $se;
+        final int $startPosition;
+        final String $subjectId;
+        private Object L$0;
+        int label;
+        final DownloadResourcesDetectorViewModel this$0;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        AnonymousClass1(DownloadResourcesDetectorViewModel downloadResourcesDetectorViewModel, String str, String str2, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17, Continuation<? super AnonymousClass1> continuation) {
+            super(2, continuation);
+            this.this$0 = downloadResourcesDetectorViewModel;
+            this.$subjectId = str;
+            this.$nextPage = str2;
+            this.$perPage = i10;
+            this.$startPosition = i11;
+            this.$endPosition = i12;
+            this.$pagerMode = i13;
+            this.$resolution = i14;
+            this.$se = i15;
+            this.$epFrom = i16;
+            this.$epTo = i17;
+        }
+
+        @Override
+        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+            AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.this$0, this.$subjectId, this.$nextPage, this.$perPage, this.$startPosition, this.$endPosition, this.$pagerMode, this.$resolution, this.$se, this.$epFrom, this.$epTo, continuation);
+            anonymousClass1.L$0 = obj;
+            return anonymousClass1;
+        }
+
+        @Override
+        public final Object invokeSuspend(Object obj) {
+            Object objC;
+            Object obj2;
+            kotlinx.coroutines.flow.b bVar;
+            Object objF = IntrinsicsKt.f();
+            int i10 = this.label;
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    kotlinx.coroutines.flow.b bVar2 = (kotlinx.coroutines.flow.b) this.L$0;
+                    ResultKt.b(obj);
+                    bVar = bVar2;
+                    obj2 = objF;
+                    objC = obj;
+                } else {
+                    if (i10 != 2 && i10 != 3) {
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                    }
+                    ResultKt.b(obj);
+                }
+                return Unit.f64096a;
+            }
+            ResultKt.b(obj);
+            kotlinx.coroutines.flow.b bVar3 = (kotlinx.coroutines.flow.b) this.L$0;
+            cx.a aVarC = this.this$0.C();
+            String strA = gg.a.f61067a.a();
+            String str = this.$subjectId;
+            String str2 = this.$nextPage;
+            int i11 = this.$perPage;
+            int i12 = this.$startPosition;
+            int i13 = this.$endPosition;
+            int i14 = this.$pagerMode;
+            Integer numD = Boxing.d(this.$resolution);
+            int i15 = this.$se;
+            int i16 = this.$epFrom;
+            int i17 = this.$epTo;
+            this.L$0 = bVar3;
+            this.label = 1;
+            objC = cx.a.C0695a.c(aVarC, strA, str, str2, i11, 0, i12, i13, i14, numD, i15, i16, i17, this, 16, null);
+            obj2 = objF;
+            if (objC == obj2) {
+                return obj2;
+            }
+            bVar = bVar3;
+            BaseDto baseDto = (BaseDto) objC;
+            if (Intrinsics.c(baseDto.getCode(), "0")) {
+                Object data = baseDto.getData();
+                this.L$0 = null;
+                this.label = 3;
+                if (bVar.emit(data, this) == obj2) {
+                    return obj2;
+                }
+            } else {
+                this.L$0 = null;
+                this.label = 2;
+                if (bVar.emit(null, this) == obj2) {
+                    return obj2;
+                }
+            }
+            return Unit.f64096a;
+        }
+
+        @Override
+        public final Object invoke(kotlinx.coroutines.flow.b bVar, Continuation<? super Unit> continuation) {
+            return ((AnonymousClass1) create(bVar, continuation)).invokeSuspend(Unit.f64096a);
+        }
+    }
+
+    @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0003\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0005\u001a\u00020\u0004*\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u00002\u0006\u0010\u0003\u001a\u00020\u0002H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"Lkotlinx/coroutines/flow/b;", "Lcom/transsnet/downloader/bean/DownloadListBean;", "", "it", "", "<anonymous>", "(Lkotlinx/coroutines/flow/b;Ljava/lang/Throwable;)V"}, k = 3, mv = {2, 1, 0})
+    @DebugMetadata(c = "com.transsnet.downloader.viewmodel.DownloadResourcesDetectorViewModel$getDownloadList$1$2", f = "DownloadResourcesDetectorViewModel.kt", l = {Sdk$SDKError.Reason.AD_CLOSED_TEMPLATE_ERROR_VALUE}, m = "invokeSuspend")
+    static final class AnonymousClass2 extends SuspendLambda implements Function3<kotlinx.coroutines.flow.b, Throwable, Continuation<? super Unit>, Object> {
+        private Object L$0;
+        int label;
+
+        AnonymousClass2(Continuation<? super AnonymousClass2> continuation) {
+            super(3, continuation);
+        }
+
+        @Override
+        public final Object invokeSuspend(Object obj) {
+            Object objF = IntrinsicsKt.f();
+            int i10 = this.label;
+            if (i10 == 0) {
+                ResultKt.b(obj);
+                kotlinx.coroutines.flow.b bVar = (kotlinx.coroutines.flow.b) this.L$0;
+                this.label = 1;
+                if (bVar.emit(null, this) == objF) {
+                    return objF;
+                }
+            } else {
+                if (i10 != 1) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                ResultKt.b(obj);
+            }
+            return Unit.f64096a;
+        }
+
+        @Override
+        public final Object invoke(kotlinx.coroutines.flow.b bVar, Throwable th2, Continuation<? super Unit> continuation) {
+            AnonymousClass2 anonymousClass2 = new AnonymousClass2(continuation);
+            anonymousClass2.L$0 = bVar;
+            return anonymousClass2.invokeSuspend(Unit.f64096a);
+        }
+    }
+
+    static final class a implements kotlinx.coroutines.flow.b {
+
+        final String f57814a;
+
+        final DownloadResourcesDetectorViewModel f57815b;
+
+        a(String str, DownloadResourcesDetectorViewModel downloadResourcesDetectorViewModel) {
+            this.f57814a = str;
+            this.f57815b = downloadResourcesDetectorViewModel;
+        }
+
+        @Override
+        public final Object emit(DownloadListBean downloadListBean, Continuation continuation) {
+            List<DownloadItem> items;
+            Integer numD = null;
+            String title = downloadListBean != null ? downloadListBean.getTitle() : null;
+            if ((title == null || title.length() == 0) && downloadListBean != null) {
+                downloadListBean.setTitle(this.f57814a);
+            }
+            wf.a.C0922a c0922a = wf.a.f74274a;
+            if (downloadListBean != null && (items = downloadListBean.getItems()) != null) {
+                numD = Boxing.d(items.size());
+            }
+            wf.a.C0922a.f(c0922a, "DownloadReDetector", "getBottomList, on get data , size= " + numD, false, 4, null);
+            this.f57815b.s().n(downloadListBean);
+            return Unit.f64096a;
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    DownloadResourcesDetectorViewModel$getDownloadList$1(int i10, String str, int i11, int i12, int i13, DownloadResourcesDetectorViewModel downloadResourcesDetectorViewModel, String str2, int i14, int i15, int i16, int i17, String str3, Continuation<? super DownloadResourcesDetectorViewModel$getDownloadList$1> continuation) {
+        super(2, continuation);
+        this.$resolution = i10;
+        this.$subjectId = str;
+        this.$startPosition = i11;
+        this.$endPosition = i12;
+        this.$pagerMode = i13;
+        this.this$0 = downloadResourcesDetectorViewModel;
+        this.$nextPage = str2;
+        this.$perPage = i14;
+        this.$se = i15;
+        this.$epFrom = i16;
+        this.$epTo = i17;
+        this.$subjectTitle = str3;
+    }
+
+    @Override
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new DownloadResourcesDetectorViewModel$getDownloadList$1(this.$resolution, this.$subjectId, this.$startPosition, this.$endPosition, this.$pagerMode, this.this$0, this.$nextPage, this.$perPage, this.$se, this.$epFrom, this.$epTo, this.$subjectTitle, continuation);
+    }
+
+    @Override
+    public final Object invokeSuspend(Object obj) {
+        Object objF = IntrinsicsKt.f();
+        int i10 = this.label;
+        if (i10 == 0) {
+            ResultKt.b(obj);
+            wf.a.C0922a.v(wf.a.f74274a, "DownloadReDetector", "getBottomList, resolution：" + this.$resolution + ",subjectId:" + this.$subjectId + ", start:" + this.$startPosition + ", end:" + this.$endPosition + ", pagerMode:" + this.$pagerMode + " ", false, 4, null);
+            kotlinx.coroutines.flow.a aVarE = kotlinx.coroutines.flow.c.e(kotlinx.coroutines.flow.c.r(new AnonymousClass1(this.this$0, this.$subjectId, this.$nextPage, this.$perPage, this.$startPosition, this.$endPosition, this.$pagerMode, this.$resolution, this.$se, this.$epFrom, this.$epTo, null)), new AnonymousClass2(null));
+            a aVar = new a(this.$subjectTitle, this.this$0);
+            this.label = 1;
+            if (aVarE.a(aVar, this) == objF) {
+                return objF;
+            }
+        } else {
+            if (i10 != 1) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            ResultKt.b(obj);
+        }
+        return Unit.f64096a;
+    }
+
+    @Override
+    public final Object invoke(n0 n0Var, Continuation<? super Unit> continuation) {
+        return ((DownloadResourcesDetectorViewModel$getDownloadList$1) create(n0Var, continuation)).invokeSuspend(Unit.f64096a);
+    }
+}

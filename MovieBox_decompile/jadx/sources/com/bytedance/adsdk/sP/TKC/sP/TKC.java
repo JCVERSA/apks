@@ -1,0 +1,5 @@
+package com.bytedance.adsdk.sP.TKC.sP;
+
+public interface TKC {
+    com.bytedance.adsdk.sP.Sj.Sj.TKC Sj(com.bytedance.adsdk.sP.uA uAVar, com.bytedance.adsdk.sP.Jcg jcg, com.bytedance.adsdk.sP.TKC.TKC.Sj sj2);
+}

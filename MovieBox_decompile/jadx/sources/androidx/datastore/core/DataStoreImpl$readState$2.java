@@ -1,0 +1,75 @@
+package androidx.datastore.core;
+
+import com.vungle.ads.internal.protos.Sdk$SDKError;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.n0;
+
+@Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0003\u001a\b\u0012\u0004\u0012\u00028\u00000\u0002\"\u0004\b\u0000\u0010\u0000*\u00020\u0001H\u008a@¢\u0006\u0004\b\u0003\u0010\u0004"}, d2 = {"T", "Lkotlinx/coroutines/n0;", "Landroidx/datastore/core/v;", "<anonymous>", "(Lkotlinx/coroutines/n0;)Landroidx/datastore/core/v;"}, k = 3, mv = {1, 8, 0})
+@DebugMetadata(c = "androidx.datastore.core.DataStoreImpl$readState$2", f = "DataStoreImpl.kt", l = {Sdk$SDKError.Reason.MRAID_JS_DOES_NOT_EXIST_VALUE, 226}, m = "invokeSuspend")
+final class DataStoreImpl$readState$2 extends SuspendLambda implements Function2<n0, Continuation<? super v>, Object> {
+    final boolean $requireLock;
+    int label;
+    final DataStoreImpl this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    DataStoreImpl$readState$2(DataStoreImpl dataStoreImpl, boolean z10, Continuation<? super DataStoreImpl$readState$2> continuation) {
+        super(2, continuation);
+        this.this$0 = dataStoreImpl;
+        this.$requireLock = z10;
+    }
+
+    @Override
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new DataStoreImpl$readState$2(this.this$0, this.$requireLock, continuation);
+    }
+
+    @Override
+    public final Object invokeSuspend(Object obj) {
+        Object objF = IntrinsicsKt.f();
+        int i10 = this.label;
+        try {
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    ResultKt.b(obj);
+                } else {
+                    if (i10 != 2) {
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                    }
+                    ResultKt.b(obj);
+                }
+                return (v) obj;
+            }
+            ResultKt.b(obj);
+            if (this.this$0.f8257h.a() instanceof k) {
+                return this.this$0.f8257h.a();
+            }
+            DataStoreImpl dataStoreImpl = this.this$0;
+            this.label = 1;
+            if (dataStoreImpl.v(this) == objF) {
+                return objF;
+            }
+            DataStoreImpl dataStoreImpl2 = this.this$0;
+            boolean z10 = this.$requireLock;
+            this.label = 2;
+            obj = dataStoreImpl2.w(z10, this);
+            if (obj == objF) {
+                return objF;
+            }
+            return (v) obj;
+        } catch (Throwable th2) {
+            return new r(th2, -1);
+        }
+    }
+
+    @Override
+    public final Object invoke(n0 n0Var, Continuation<? super v> continuation) {
+        return ((DataStoreImpl$readState$2) create(n0Var, continuation)).invokeSuspend(Unit.f64096a);
+    }
+}

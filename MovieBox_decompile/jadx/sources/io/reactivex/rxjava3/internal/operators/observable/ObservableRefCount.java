@@ -1,0 +1,30 @@
+package io.reactivex.rxjava3.internal.operators.observable;
+
+import io.reactivex.rxjava3.internal.disposables.DisposableHelper;
+import java.util.concurrent.atomic.AtomicReference;
+
+public abstract class ObservableRefCount extends io.reactivex.rxjava3.core.j {
+
+    static final class RefConnection extends AtomicReference<io.reactivex.rxjava3.disposables.c> implements Runnable, yx.f {
+        private static final long serialVersionUID = -4552101107598366241L;
+        boolean connected;
+        boolean disconnectedEarly;
+        final ObservableRefCount parent;
+        long subscriberCount;
+        io.reactivex.rxjava3.disposables.c timer;
+
+        RefConnection(ObservableRefCount observableRefCount) {
+        }
+
+        @Override
+        public void run() {
+            throw null;
+        }
+
+        @Override
+        public void accept(io.reactivex.rxjava3.disposables.c cVar) {
+            DisposableHelper.replace(this, cVar);
+            throw null;
+        }
+    }
+}

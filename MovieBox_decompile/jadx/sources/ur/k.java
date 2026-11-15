@@ -1,0 +1,7 @@
+package ur;
+
+import androidx.fragment.app.Fragment;
+
+public interface k {
+    void a(Fragment fragment, String str, String str2, String str3);
+}

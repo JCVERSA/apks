@@ -1,0 +1,41 @@
+.class public Lcom/cloud/tmc/kernel/extension/bridge/BridgeGuard;
+.super Ljava/lang/Object;
+.source "source.java"
+
+# interfaces
+.implements Lcom/cloud/tmc/kernel/security/Guard;
+
+
+# instance fields
+.field private permission:Lcom/cloud/tmc/kernel/security/Permission;
+
+
+# direct methods
+.method public constructor <init>(Lcom/cloud/tmc/kernel/security/Permission;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/cloud/tmc/kernel/extension/bridge/BridgeGuard;->permission:Lcom/cloud/tmc/kernel/security/Permission;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public permit()Lcom/cloud/tmc/kernel/security/Permission;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/cloud/tmc/kernel/extension/bridge/BridgeGuard;->permission:Lcom/cloud/tmc/kernel/security/Permission;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

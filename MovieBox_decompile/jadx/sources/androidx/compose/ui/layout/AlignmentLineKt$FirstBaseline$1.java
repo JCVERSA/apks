@@ -1,0 +1,25 @@
+package androidx.compose.ui.layout;
+
+import com.vungle.ads.internal.protos.Sdk$SDKMetric;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.math.MathKt;
+
+@Metadata(k = 3, mv = {1, 8, 0}, xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+class AlignmentLineKt$FirstBaseline$1 extends FunctionReferenceImpl implements Function2<Integer, Integer, Integer> {
+    public static final AlignmentLineKt$FirstBaseline$1 INSTANCE = new AlignmentLineKt$FirstBaseline$1();
+
+    AlignmentLineKt$FirstBaseline$1() {
+        super(2, MathKt.class, "min", "min(II)I", 1);
+    }
+
+    public final Integer invoke(int i10, int i11) {
+        return Integer.valueOf(Math.min(i10, i11));
+    }
+
+    @Override
+    public Object invoke(Object obj, Object obj2) {
+        return invoke(((Number) obj).intValue(), ((Number) obj2).intValue());
+    }
+}

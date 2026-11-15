@@ -1,0 +1,4 @@
+apktool_exit=0
+jadx_exit=3
+java_files=31931
+smali_files=60450

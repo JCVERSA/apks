@@ -1,0 +1,28 @@
+package com.google.android.libraries.places.internal;
+
+final class zzbjy implements Runnable {
+    final zzbkb zza;
+
+    zzbjy(zzbkb zzbkbVar) {
+        this.zza = zzbkbVar;
+    }
+
+    @Override
+    public final void run() {
+        this.zza.zzc.zzy = null;
+        zzbkb zzbkbVar = this.zza;
+        zzbkd zzbkdVar = zzbkbVar.zzc;
+        if (zzbkdVar.zzw != null) {
+            zzmt.zzp(zzbkdVar.zzu == null, "Unexpected non-null activeTransport");
+            zzbkb zzbkbVar2 = this.zza;
+            zzbkbVar2.zza.zzd(zzbkbVar2.zzc.zzw);
+        } else {
+            zzbgf zzbgfVar = zzbkbVar.zza;
+            if (zzbkdVar.zzt == zzbgfVar) {
+                zzbkdVar.zzu = zzbgfVar;
+                this.zza.zzc.zzt = null;
+                zzbkd.zzA(this.zza.zzc, zzaze.READY);
+            }
+        }
+    }
+}

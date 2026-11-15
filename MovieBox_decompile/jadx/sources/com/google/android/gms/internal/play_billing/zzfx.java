@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.play_billing;
+
+final class zzfx {
+    zzfx() {
+    }
+
+    public static final Object zza(Object obj, Object obj2) {
+        zzfw zzfwVarZzb = (zzfw) obj;
+        zzfw zzfwVar = (zzfw) obj2;
+        if (!zzfwVar.isEmpty()) {
+            if (!zzfwVarZzb.zze()) {
+                zzfwVarZzb = zzfwVarZzb.zzb();
+            }
+            zzfwVarZzb.zzd(zzfwVar);
+        }
+        return zzfwVarZzb;
+    }
+}

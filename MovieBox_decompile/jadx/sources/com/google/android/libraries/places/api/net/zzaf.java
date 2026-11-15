@@ -1,0 +1,38 @@
+package com.google.android.libraries.places.api.net;
+
+import com.google.android.libraries.places.api.model.Place;
+import java.util.List;
+
+final class zzaf extends SearchNearbyResponse {
+    private final List zza;
+
+    zzaf(List list) {
+        if (list == null) {
+            throw new NullPointerException("Null places");
+        }
+        this.zza = list;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj instanceof SearchNearbyResponse) {
+            return this.zza.equals(((SearchNearbyResponse) obj).getPlaces());
+        }
+        return false;
+    }
+
+    @Override
+    public final List<Place> getPlaces() {
+        return this.zza;
+    }
+
+    public final int hashCode() {
+        return this.zza.hashCode() ^ 1000003;
+    }
+
+    public final String toString() {
+        return "SearchNearbyResponse{places=" + this.zza.toString() + "}";
+    }
+}

@@ -1,0 +1,40 @@
+package u;
+
+import java.util.Map;
+import kotlin.collections.AbstractMutableSet;
+
+public abstract class a extends AbstractMutableSet {
+    public final boolean a(Map.Entry entry) {
+        if ((entry instanceof Object ? entry : null) instanceof Map.Entry) {
+            return c(entry);
+        }
+        return false;
+    }
+
+    public abstract boolean c(Map.Entry entry);
+
+    @Override
+    public final boolean contains(Object obj) {
+        if (obj instanceof Map.Entry) {
+            return a((Map.Entry) obj);
+        }
+        return false;
+    }
+
+    public final boolean e(Map.Entry entry) {
+        if ((entry instanceof Object ? entry : null) instanceof Map.Entry) {
+            return f(entry);
+        }
+        return false;
+    }
+
+    public abstract boolean f(Map.Entry entry);
+
+    @Override
+    public final boolean remove(Object obj) {
+        if (obj instanceof Map.Entry) {
+            return e((Map.Entry) obj);
+        }
+        return false;
+    }
+}

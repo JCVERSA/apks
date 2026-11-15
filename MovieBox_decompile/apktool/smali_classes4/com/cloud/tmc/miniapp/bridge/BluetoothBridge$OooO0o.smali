@@ -1,0 +1,187 @@
+.class public final Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge$OooO0o;
+.super Ljava/lang/Object;
+.source "source.java"
+
+# interfaces
+.implements Lcom/cloud/tmc/miniapp/bluetooth/listener/OooO0O0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;->onBLECharacteristicValueChange(Lcom/cloud/tmc/kernel/bridge/extension/BridgeCallback;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic OooO00o:Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;
+
+.field public final synthetic OooO0O0:Lcom/cloud/tmc/kernel/bridge/extension/BridgeCallback;
+
+
+# direct methods
+.method public constructor <init>(Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;Lcom/cloud/tmc/kernel/bridge/extension/BridgeCallback;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge$OooO0o;->OooO00o:Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge$OooO0o;->OooO0O0:Lcom/cloud/tmc/kernel/bridge/extension/BridgeCallback;
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public OooO00o(Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "callbackId"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 11
+    iget-object p1, p0, Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge$OooO0o;->OooO00o:Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;
+
+    invoke-static {p1}, Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;->access$getTAG$p(Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "onBLECharacteristicValueChange close -> "
+
+    invoke-static {p1, v0}, Lcom/cloud/tmc/kernel/log/TmcLogger;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 12
+    iget-object p1, p0, Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge$OooO0o;->OooO0O0:Lcom/cloud/tmc/kernel/bridge/extension/BridgeCallback;
+
+    invoke-interface {p1}, Lcom/cloud/tmc/kernel/bridge/extension/BridgeCallback;->close()V
+
+    return-void
+.end method
+
+.method public OooO00o(Ljava/lang/String;Ljava/lang/String;[B)V
+    .locals 7
+
+    const-string v0, "serviceUUID"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v1, "characteristicUUID"
+
+    invoke-static {p2, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v2, "value"
+
+    invoke-static {p3, v2}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v3, p0, Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge$OooO0o;->OooO00o:Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;
+
+    invoke-static {v3}, Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;->access$getTAG$p(Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;)Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 2
+    invoke-static {p3}, Lcom/cloud/tmc/miniutils/util/HexUtil;->formatHexString([B)Ljava/lang/String;
+
+    move-result-object v4
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "onBLECharacteristicValueChange notify -> serviceUUID: "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v6, " ; characteristicUUID: "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v6, " ; value: "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 3
+    invoke-static {v3, v4}, Lcom/cloud/tmc/kernel/log/TmcLogger;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 4
+    iget-object v3, p0, Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge$OooO0o;->OooO00o:Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;
+
+    .line 5
+    iget-object v4, p0, Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge$OooO0o;->OooO0O0:Lcom/cloud/tmc/kernel/bridge/extension/BridgeCallback;
+
+    sget-object v5, Lcom/cloud/tmc/miniapp/bluetooth/BluetoothCode;->OK:Lcom/cloud/tmc/miniapp/bluetooth/BluetoothCode;
+
+    invoke-virtual {v5}, Lcom/cloud/tmc/miniapp/bluetooth/BluetoothCode;->getCode()J
+
+    move-result-wide v5
+
+    .line 6
+    invoke-static {v0, p1}, Lkotlin/TuplesKt;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    move-result-object p1
+
+    .line 7
+    invoke-static {v1, p2}, Lkotlin/TuplesKt;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    move-result-object p2
+
+    .line 8
+    invoke-static {p3}, Lcom/cloud/tmc/miniutils/util/HexUtil;->formatHexString([B)Ljava/lang/String;
+
+    move-result-object p3
+
+    invoke-static {v2, p3}, Lkotlin/TuplesKt;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    move-result-object p3
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [Lkotlin/Pair;
+
+    const/4 v1, 0x0
+
+    aput-object p1, v0, v1
+
+    const/4 p1, 0x1
+
+    aput-object p2, v0, p1
+
+    const/4 p1, 0x2
+
+    aput-object p3, v0, p1
+
+    .line 9
+    invoke-static {v0}, Lkotlin/collections/MapsKt;->j([Lkotlin/Pair;)Ljava/util/HashMap;
+
+    move-result-object p1
+
+    .line 10
+    invoke-static {v3, v4, v5, v6, p1}, Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;->access$sendSuccess(Lcom/cloud/tmc/miniapp/bridge/BluetoothBridge;Lcom/cloud/tmc/kernel/bridge/extension/BridgeCallback;JLjava/util/Map;)V
+
+    return-void
+.end method

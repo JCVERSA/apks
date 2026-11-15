@@ -1,0 +1,55 @@
+package com.google.android.libraries.places.internal;
+
+import java.net.InetSocketAddress;
+import java.net.SocketAddress;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ScheduledExecutorService;
+import javax.net.SocketFactory;
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.SSLSocketFactory;
+
+final class zzbru implements zzbfw {
+    final Executor zza;
+    final ScheduledExecutorService zzb;
+    final zzbqw zzc;
+    final SSLSocketFactory zzd;
+    final zzbsz zze;
+    private final zzbeo zzf = new zzbeo("keepalive time nanos", Long.MAX_VALUE);
+    private boolean zzg;
+    private final zzbqn zzh;
+    private final zzbqn zzi;
+
+    /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Object, java.util.concurrent.Executor] */
+    zzbru(zzbqn zzbqnVar, zzbqn zzbqnVar2, SocketFactory socketFactory, SSLSocketFactory sSLSocketFactory, HostnameVerifier hostnameVerifier, zzbsz zzbszVar, int i10, boolean z10, long j10, long j11, int i11, boolean z11, int i12, zzbqw zzbqwVar, boolean z12, zzbrt zzbrtVar) {
+        this.zzh = zzbqnVar;
+        this.zza = zzbqnVar.zzb();
+        this.zzi = zzbqnVar2;
+        this.zzb = (ScheduledExecutorService) zzbqnVar2.zzb();
+        this.zzd = sSLSocketFactory;
+        this.zze = zzbszVar;
+        this.zzc = zzbqwVar;
+    }
+
+    @Override
+    public final void close() {
+        if (this.zzg) {
+            return;
+        }
+        this.zzg = true;
+        this.zzh.zzc(this.zza);
+        this.zzi.zzc(this.zzb);
+    }
+
+    @Override
+    public final zzbgf zza(SocketAddress socketAddress, zzbfv zzbfvVar, zzaym zzaymVar) {
+        if (this.zzg) {
+            throw new IllegalStateException("The transport factory is closed.");
+        }
+        return new zzbsf(this, (InetSocketAddress) socketAddress, zzbfvVar.zzg(), null, zzbfvVar.zza(), zzbfvVar.zzb(), new zzbrs(this, this.zzf.zza()));
+    }
+
+    @Override
+    public final ScheduledExecutorService zzb() {
+        return this.zzb;
+    }
+}

@@ -1,0 +1,51 @@
+package io.reactivex.rxjava3.internal.operators.single;
+
+import io.reactivex.rxjava3.core.q;
+import io.reactivex.rxjava3.core.r;
+import io.reactivex.rxjava3.disposables.c;
+import io.reactivex.rxjava3.internal.disposables.DisposableHelper;
+import io.reactivex.rxjava3.internal.disposables.SequentialDisposable;
+import java.util.concurrent.atomic.AtomicReference;
+
+final class SingleSubscribeOn$SubscribeOnObserver<T> extends AtomicReference<c> implements q, c, Runnable {
+    private static final long serialVersionUID = 7000911171163930287L;
+    final q downstream;
+    final r source;
+    final SequentialDisposable task = new SequentialDisposable();
+
+    SingleSubscribeOn$SubscribeOnObserver(q qVar, r rVar) {
+        this.downstream = qVar;
+        this.source = rVar;
+    }
+
+    @Override
+    public void dispose() {
+        DisposableHelper.dispose(this);
+        this.task.dispose();
+    }
+
+    @Override
+    public boolean isDisposed() {
+        return DisposableHelper.isDisposed(get());
+    }
+
+    @Override
+    public void onError(Throwable th2) {
+        this.downstream.onError(th2);
+    }
+
+    @Override
+    public void onSubscribe(c cVar) {
+        DisposableHelper.setOnce(this, cVar);
+    }
+
+    @Override
+    public void onSuccess(T t10) {
+        this.downstream.onSuccess(t10);
+    }
+
+    @Override
+    public void run() {
+        this.source.a(this);
+    }
+}

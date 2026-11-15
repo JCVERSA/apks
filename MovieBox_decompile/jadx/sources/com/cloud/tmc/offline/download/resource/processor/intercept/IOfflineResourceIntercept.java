@@ -1,0 +1,162 @@
+package com.cloud.tmc.offline.download.resource.processor.intercept;
+
+import com.cloud.tmc.offline.download.constants.OfflineConstantsKt;
+import com.mbridge.msdk.playercommon.exoplayer2.text.ttml.TtmlNode;
+import com.vungle.ads.internal.protos.Sdk$SDKMetric;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+@Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\bf\u0018\u00002\u00020\u0001:\u0003\u0006\u0007\bJ\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H&¨\u0006\t"}, d2 = {"Lcom/cloud/tmc/offline/download/resource/processor/intercept/IOfflineResourceIntercept;", "", "intercept", "Lcom/cloud/tmc/offline/download/resource/processor/intercept/IOfflineResourceIntercept$Result;", "chain", "Lcom/cloud/tmc/offline/download/resource/processor/intercept/IOfflineResourceIntercept$Chain;", "Chain", "Params", "Result", "com.cloud.tmc.offline_download"}, k = 1, mv = {1, 8, 0}, xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+public interface IOfflineResourceIntercept {
+
+    @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H&J\u0010\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0002\u001a\u00020\u0003H&¨\u0006\u0006"}, d2 = {"Lcom/cloud/tmc/offline/download/resource/processor/intercept/IOfflineResourceIntercept$Chain;", "", "params", "Lcom/cloud/tmc/offline/download/resource/processor/intercept/IOfflineResourceIntercept$Params;", "proceed", "Lcom/cloud/tmc/offline/download/resource/processor/intercept/IOfflineResourceIntercept$Result;", "com.cloud.tmc.offline_download"}, k = 1, mv = {1, 8, 0}, xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+    public interface Chain {
+        Params params();
+
+        Result proceed(Params params);
+    }
+
+    @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\u001d\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u0005J\u000b\u0010\f\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\r\u001a\u0004\u0018\u00010\u0003HÆ\u0003J!\u0010\u000e\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010\u000f\u001a\u00020\u00102\b\u0010\u0011\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0012\u001a\u00020\u0013HÖ\u0001J\t\u0010\u0014\u001a\u00020\u0003HÖ\u0001R\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u0007\"\u0004\b\u000b\u0010\t¨\u0006\u0015"}, d2 = {"Lcom/cloud/tmc/offline/download/resource/processor/intercept/IOfflineResourceIntercept$Params;", "", "appId", "", "url", "(Ljava/lang/String;Ljava/lang/String;)V", "getAppId", "()Ljava/lang/String;", "setAppId", "(Ljava/lang/String;)V", "getUrl", "setUrl", "component1", "component2", "copy", "equals", "", OfflineConstantsKt.OFFLINE_DOWNLOAD_CHANNEL_MODE_OTHER, "hashCode", "", "toString", "com.cloud.tmc.offline_download"}, k = 1, mv = {1, 8, 0}, xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+    public static final class Params {
+        private String appId;
+        private String url;
+
+        /* JADX WARN: Multi-variable type inference failed */
+        public Params() {
+            this(null, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+        }
+
+        public static Params copy$default(Params params, String str, String str2, int i10, Object obj) {
+            if ((i10 & 1) != 0) {
+                str = params.appId;
+            }
+            if ((i10 & 2) != 0) {
+                str2 = params.url;
+            }
+            return params.copy(str, str2);
+        }
+
+        public final String getAppId() {
+            return this.appId;
+        }
+
+        public final String getUrl() {
+            return this.url;
+        }
+
+        public final Params copy(String appId, String url) {
+            return new Params(appId, url);
+        }
+
+        public boolean equals(Object other) {
+            if (this == other) {
+                return true;
+            }
+            if (!(other instanceof Params)) {
+                return false;
+            }
+            Params params = (Params) other;
+            return Intrinsics.c(this.appId, params.appId) && Intrinsics.c(this.url, params.url);
+        }
+
+        public final String getAppId() {
+            return this.appId;
+        }
+
+        public final String getUrl() {
+            return this.url;
+        }
+
+        public int hashCode() {
+            String str = this.appId;
+            int iHashCode = (str == null ? 0 : str.hashCode()) * 31;
+            String str2 = this.url;
+            return iHashCode + (str2 != null ? str2.hashCode() : 0);
+        }
+
+        public final void setAppId(String str) {
+            this.appId = str;
+        }
+
+        public final void setUrl(String str) {
+            this.url = str;
+        }
+
+        public String toString() {
+            return "Params(appId=" + this.appId + ", url=" + this.url + ")";
+        }
+
+        public Params(String str, String str2) {
+            this.appId = str;
+            this.url = str2;
+        }
+
+        public Params(String str, String str2, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+            this((i10 & 1) != 0 ? null : str, (i10 & 2) != 0 ? null : str2);
+        }
+    }
+
+    @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\b\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\u0011\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0001¢\u0006\u0002\u0010\u0003J\u000b\u0010\u0007\u001a\u0004\u0018\u00010\u0001HÆ\u0003J\u0015\u0010\b\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0001HÆ\u0001J\u0013\u0010\t\u001a\u00020\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\f\u001a\u00020\rHÖ\u0001J\t\u0010\u000e\u001a\u00020\u000fHÖ\u0001R\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0001X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0004\u0010\u0005\"\u0004\b\u0006\u0010\u0003¨\u0006\u0010"}, d2 = {"Lcom/cloud/tmc/offline/download/resource/processor/intercept/IOfflineResourceIntercept$Result;", "", TtmlNode.TAG_BODY, "(Ljava/lang/Object;)V", "getBody", "()Ljava/lang/Object;", "setBody", "component1", "copy", "equals", "", OfflineConstantsKt.OFFLINE_DOWNLOAD_CHANNEL_MODE_OTHER, "hashCode", "", "toString", "", "com.cloud.tmc.offline_download"}, k = 1, mv = {1, 8, 0}, xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+    public static final class Result {
+        private Object body;
+
+        /* JADX WARN: Illegal instructions before constructor call */
+        public Result() {
+            DefaultConstructorMarker defaultConstructorMarker = null;
+            this(defaultConstructorMarker, 1, defaultConstructorMarker);
+        }
+
+        public static Result copy$default(Result result, Object obj, int i10, Object obj2) {
+            if ((i10 & 1) != 0) {
+                obj = result.body;
+            }
+            return result.copy(obj);
+        }
+
+        public final Object getBody() {
+            return this.body;
+        }
+
+        public final Result copy(Object body) {
+            return new Result(body);
+        }
+
+        public boolean equals(Object other) {
+            if (this == other) {
+                return true;
+            }
+            return (other instanceof Result) && Intrinsics.c(this.body, ((Result) other).body);
+        }
+
+        public final Object getBody() {
+            return this.body;
+        }
+
+        public int hashCode() {
+            Object obj = this.body;
+            if (obj == null) {
+                return 0;
+            }
+            return obj.hashCode();
+        }
+
+        public final void setBody(Object obj) {
+            this.body = obj;
+        }
+
+        public String toString() {
+            return "Result(body=" + this.body + ")";
+        }
+
+        public Result(Object obj) {
+            this.body = obj;
+        }
+
+        public Result(Object obj, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+            this((i10 & 1) != 0 ? null : obj);
+        }
+    }
+
+    Result intercept(Chain chain);
+}

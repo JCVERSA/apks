@@ -1,0 +1,9 @@
+package com.github.lzyzsd.jsbridge;
+
+import android.content.Context;
+
+public interface IWebView {
+    Context getContext();
+
+    void loadUrl(String str);
+}

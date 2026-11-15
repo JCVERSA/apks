@@ -1,0 +1,59 @@
+package ow;
+
+import android.content.Context;
+import com.transsion.wrapperad.R$id;
+import com.transsion.wrapperad.R$layout;
+import kotlin.jvm.internal.Intrinsics;
+
+public final class e extends com.transsion.ad.bidding.base.r {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public e(Context context) {
+        super(context);
+        Intrinsics.h(context, "context");
+    }
+
+    @Override
+    public Integer c() {
+        return Integer.valueOf(R$id.adChoicesView);
+    }
+
+    @Override
+    public Integer h() {
+        return Integer.valueOf(R$id.store_mark_view);
+    }
+
+    @Override
+    public Integer i() {
+        return Integer.valueOf(R$id.adIcon);
+    }
+
+    @Override
+    public Integer l() {
+        return Integer.valueOf(R$id.call_to_action);
+    }
+
+    @Override
+    public Integer m() {
+        return null;
+    }
+
+    @Override
+    public Integer s() {
+        return null;
+    }
+
+    @Override
+    public int t() {
+        return R$layout.native_download_page_top_card_ad_layout;
+    }
+
+    @Override
+    public Integer v() {
+        return Integer.valueOf(R$id.coverview);
+    }
+
+    @Override
+    public Integer z() {
+        return null;
+    }
+}

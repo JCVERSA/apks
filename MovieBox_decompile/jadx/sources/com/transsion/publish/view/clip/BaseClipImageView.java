@@ -1,0 +1,38 @@
+package com.transsion.publish.view.clip;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+
+public class BaseClipImageView extends AppCompatImageView {
+    public BaseClipImageView(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        Bitmap bitmap;
+        try {
+            Drawable drawable = getDrawable();
+            if ((drawable instanceof BitmapDrawable) && (bitmap = ((BitmapDrawable) drawable).getBitmap()) != null && bitmap.isRecycled()) {
+                return;
+            }
+            super.onDraw(canvas);
+        } catch (Exception unused) {
+        }
+    }
+
+    public BaseClipImageView(@NonNull Context context) {
+        super(context);
+    }
+
+    public BaseClipImageView(@NonNull Context context, @Nullable AttributeSet attributeSet, int i10) {
+        super(context, attributeSet, i10);
+    }
+}

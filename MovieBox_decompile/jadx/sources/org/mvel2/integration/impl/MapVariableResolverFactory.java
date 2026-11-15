@@ -1,0 +1,108 @@
+package org.mvel2.integration.impl;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import org.mvel2.UnresolveablePropertyException;
+import org.mvel2.integration.VariableResolver;
+import org.mvel2.integration.VariableResolverFactory;
+
+public class MapVariableResolverFactory extends BaseVariableResolverFactory {
+    protected Map<String, Object> variables;
+
+    public MapVariableResolverFactory() {
+        this.variables = new HashMap();
+    }
+
+    protected VariableResolver addResolver(String str, VariableResolver variableResolver) {
+        this.variableResolvers.put(str, variableResolver);
+        return variableResolver;
+    }
+
+    public void clear() {
+        this.variableResolvers.clear();
+        this.variables.clear();
+    }
+
+    @Override
+    public VariableResolver createVariable(String str, Object obj) {
+        try {
+            VariableResolver variableResolver = getVariableResolver(str);
+            variableResolver.setValue(obj);
+            return variableResolver;
+        } catch (UnresolveablePropertyException unused) {
+            MapVariableResolver mapVariableResolver = new MapVariableResolver(this.variables, str);
+            addResolver(str, mapVariableResolver).setValue(obj);
+            return mapVariableResolver;
+        }
+    }
+
+    @Override
+    public Set<String> getKnownVariables() {
+        if (this.nextFactory == null) {
+            return this.variables != null ? new HashSet(this.variables.keySet()) : new HashSet(0);
+        }
+        return this.variables != null ? new HashSet(this.variables.keySet()) : new HashSet(0);
+    }
+
+    @Override
+    public VariableResolver getVariableResolver(String str) {
+        VariableResolver variableResolver = this.variableResolvers.get(str);
+        if (variableResolver != null) {
+            return variableResolver;
+        }
+        if (this.variables.containsKey(str)) {
+            Map<String, VariableResolver> map = this.variableResolvers;
+            MapVariableResolver mapVariableResolver = new MapVariableResolver(this.variables, str);
+            map.put(str, mapVariableResolver);
+            return mapVariableResolver;
+        }
+        VariableResolverFactory variableResolverFactory = this.nextFactory;
+        if (variableResolverFactory != null) {
+            return variableResolverFactory.getVariableResolver(str);
+        }
+        throw new UnresolveablePropertyException("unable to resolve variable '" + str + "'");
+    }
+
+    @Override
+    public boolean isResolveable(String str) {
+        Map<String, Object> map;
+        VariableResolverFactory variableResolverFactory;
+        return this.variableResolvers.containsKey(str) || ((map = this.variables) != null && map.containsKey(str)) || ((variableResolverFactory = this.nextFactory) != null && variableResolverFactory.isResolveable(str));
+    }
+
+    @Override
+    public boolean isTarget(String str) {
+        return this.variableResolvers.containsKey(str);
+    }
+
+    public MapVariableResolverFactory(Map map) {
+        this.variables = map;
+    }
+
+    @Override
+    public VariableResolver createVariable(String str, Object obj, Class<?> cls) {
+        VariableResolver variableResolver;
+        try {
+            variableResolver = getVariableResolver(str);
+        } catch (UnresolveablePropertyException unused) {
+            variableResolver = null;
+        }
+        if (variableResolver != null && variableResolver.getType() != null) {
+            throw new RuntimeException("variable already defined within scope: " + variableResolver.getType() + " " + str);
+        }
+        MapVariableResolver mapVariableResolver = new MapVariableResolver(this.variables, str, cls);
+        addResolver(str, mapVariableResolver).setValue(obj);
+        return mapVariableResolver;
+    }
+
+    public MapVariableResolverFactory(Map<String, Object> map, VariableResolverFactory variableResolverFactory) {
+        this.variables = map;
+        this.nextFactory = variableResolverFactory;
+    }
+
+    public MapVariableResolverFactory(Map<String, Object> map, boolean z10) {
+        this.variables = map;
+    }
+}

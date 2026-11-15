@@ -1,0 +1,63 @@
+package com.google.android.gms.internal.auth;
+
+import com.google.android.gms.internal.auth.zzes;
+import com.google.android.gms.internal.auth.zzeu;
+
+public class zzes<MessageType extends zzeu<MessageType, BuilderType>, BuilderType extends zzes<MessageType, BuilderType>> extends zzdo<MessageType, BuilderType> {
+    protected zzeu zza;
+    protected boolean zzb = false;
+    private final zzeu zzc;
+
+    protected zzes(MessageType messagetype) {
+        this.zzc = messagetype;
+        this.zza = (zzeu) messagetype.zzi(4, null, null);
+    }
+
+    private static final void zzj(zzeu zzeuVar, zzeu zzeuVar2) {
+        zzge.zza().zzb(zzeuVar.getClass()).zzf(zzeuVar, zzeuVar2);
+    }
+
+    @Override
+    protected final zzdo zzb(zzdp zzdpVar) {
+        zze((zzeu) zzdpVar);
+        return this;
+    }
+
+    @Override
+    public final zzes clone() {
+        zzes zzesVar = (zzes) this.zzc.zzi(5, null, null);
+        zzesVar.zze(zzg());
+        return zzesVar;
+    }
+
+    public final zzes zze(zzeu zzeuVar) {
+        if (this.zzb) {
+            zzi();
+            this.zzb = false;
+        }
+        zzj(this.zza, zzeuVar);
+        return this;
+    }
+
+    @Override
+    public MessageType zzg() {
+        if (this.zzb) {
+            return (MessageType) this.zza;
+        }
+        zzeu zzeuVar = this.zza;
+        zzge.zza().zzb(zzeuVar.getClass()).zze(zzeuVar);
+        this.zzb = true;
+        return (MessageType) this.zza;
+    }
+
+    @Override
+    public final zzfw zzh() {
+        return this.zzc;
+    }
+
+    protected void zzi() {
+        zzeu zzeuVar = (zzeu) this.zza.zzi(4, null, null);
+        zzj(zzeuVar, this.zza);
+        this.zza = zzeuVar;
+    }
+}

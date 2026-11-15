@@ -1,0 +1,9 @@
+package com.cloud.tmc.miniapp.utils.athena.strategy.steps;
+
+public interface OooOO0 {
+
+    public interface OooO00o {
+    }
+
+    com.cloud.tmc.miniapp.utils.athena.strategy.OooO00o OooO00o(OooO00o oooO00o);
+}

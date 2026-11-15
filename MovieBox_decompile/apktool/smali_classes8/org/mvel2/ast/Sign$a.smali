@@ -1,0 +1,14 @@
+.class abstract synthetic Lorg/mvel2/ast/Sign$a;
+.super Ljava/lang/Object;
+.source "source.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/mvel2/ast/Sign;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

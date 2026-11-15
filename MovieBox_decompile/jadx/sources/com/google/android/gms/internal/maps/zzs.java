@@ -1,0 +1,50 @@
+package com.google.android.gms.internal.maps;
+
+import android.os.IBinder;
+import android.os.Parcel;
+import android.os.RemoteException;
+
+public final class zzs extends zza implements zzq {
+    zzs(IBinder iBinder) {
+        super(iBinder, "com.google.android.gms.maps.model.internal.IIndoorLevelDelegate");
+    }
+
+    @Override
+    public final void activate() throws RemoteException {
+        zzb(3, zza());
+    }
+
+    @Override
+    public final String getName() throws RemoteException {
+        Parcel parcelZza = zza(1, zza());
+        String string = parcelZza.readString();
+        parcelZza.recycle();
+        return string;
+    }
+
+    @Override
+    public final String getShortName() throws RemoteException {
+        Parcel parcelZza = zza(2, zza());
+        String string = parcelZza.readString();
+        parcelZza.recycle();
+        return string;
+    }
+
+    @Override
+    public final boolean zzb(zzq zzqVar) throws RemoteException {
+        Parcel parcelZza = zza();
+        zzc.zza(parcelZza, zzqVar);
+        Parcel parcelZza2 = zza(4, parcelZza);
+        boolean zZza = zzc.zza(parcelZza2);
+        parcelZza2.recycle();
+        return zZza;
+    }
+
+    @Override
+    public final int zzj() throws RemoteException {
+        Parcel parcelZza = zza(5, zza());
+        int i10 = parcelZza.readInt();
+        parcelZza.recycle();
+        return i10;
+    }
+}

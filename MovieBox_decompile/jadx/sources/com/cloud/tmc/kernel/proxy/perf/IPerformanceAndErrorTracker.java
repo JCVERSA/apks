@@ -1,0 +1,14 @@
+package com.cloud.tmc.kernel.proxy.perf;
+
+import android.content.Context;
+import com.cloud.tmc.kernel.proxy.Proxiable;
+
+public interface IPerformanceAndErrorTracker extends Proxiable {
+    void sendErr(Context context, ErrReportBean errReportBean);
+
+    void sendPerf(String str, String str2);
+
+    void sendPerfStageLog(String str, String str2);
+
+    void sendPerfV2(String str);
+}

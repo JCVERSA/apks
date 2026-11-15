@@ -1,0 +1,43 @@
+package com.google.android.gms.internal.identity;
+
+import android.os.RemoteException;
+import com.google.android.gms.common.api.internal.ListenerHolder;
+import com.google.android.gms.location.LocationAvailability;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.zzv;
+
+final class zzdv extends zzv {
+    private final zzdr zza;
+
+    zzdv(zzdr zzdrVar) {
+        this.zza = zzdrVar;
+    }
+
+    final zzdv zzc(ListenerHolder listenerHolder) {
+        this.zza.zzb(listenerHolder);
+        return this;
+    }
+
+    @Override
+    public final void zzd(LocationResult locationResult) throws RemoteException {
+        this.zza.zza().notifyListener(new zzds(this, locationResult));
+    }
+
+    @Override
+    public final void zze(LocationAvailability locationAvailability) throws RemoteException {
+        this.zza.zza().notifyListener(new zzdt(this, locationAvailability));
+    }
+
+    @Override
+    public final void zzf() {
+        this.zza.zza().notifyListener(new zzdu(this));
+    }
+
+    final void zzg() {
+        this.zza.zza().clear();
+    }
+
+    final zzdr zzh() {
+        return this.zza;
+    }
+}

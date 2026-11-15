@@ -1,0 +1,13 @@
+package com.transsnet.downloader.core.task;
+
+import com.transsion.baselib.db.download.DownloadBean;
+
+public interface c {
+    void I(DownloadBean downloadBean);
+
+    void b(DownloadBean downloadBean);
+
+    void c(DownloadBean downloadBean, boolean z10);
+
+    void f(DownloadBean downloadBean);
+}

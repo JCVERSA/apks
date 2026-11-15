@@ -1,0 +1,43 @@
+package com.google.android.libraries.places.internal;
+
+import android.content.Context;
+
+final class zzjl implements zzjp {
+    private Context zza;
+    private zzjs zzb;
+    private zzkb zzc;
+
+    private zzjl() {
+        throw null;
+    }
+
+    @Override
+    public final zzjp zza(zzjs zzjsVar) {
+        this.zzb = zzjsVar;
+        return this;
+    }
+
+    @Override
+    public final zzjp zzb(zzkb zzkbVar) {
+        this.zzc = zzkbVar;
+        return this;
+    }
+
+    @Override
+    public final zzjp zzc(Context context) {
+        context.getClass();
+        this.zza = context;
+        return this;
+    }
+
+    @Override
+    public final zzjq zzd() {
+        zzaxx.zzb(this.zza, Context.class);
+        zzaxx.zzb(this.zzb, zzjs.class);
+        zzaxx.zzb(this.zzc, zzkb.class);
+        return new zzjn(this.zza, this.zzb, this.zzc, null);
+    }
+
+    zzjl(zzjk zzjkVar) {
+    }
+}

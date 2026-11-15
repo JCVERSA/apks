@@ -1,0 +1,107 @@
+package com.google.android.gms.internal.identity;
+
+import java.io.Serializable;
+import java.util.AbstractCollection;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Spliterator;
+import java.util.Spliterators;
+
+public abstract class zzeu extends AbstractCollection implements Serializable {
+    private static final Object[] zza = new Object[0];
+
+    zzeu() {
+    }
+
+    @Override
+    @Deprecated
+    public final boolean add(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    @Deprecated
+    public final boolean addAll(Collection collection) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    @Deprecated
+    public final void clear() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    @Deprecated
+    public final boolean remove(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    @Deprecated
+    public final boolean removeAll(Collection collection) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    @Deprecated
+    public final boolean retainAll(Collection collection) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public final Spliterator spliterator() {
+        return Spliterators.spliterator(this, 1296);
+    }
+
+    @Override
+    public final Object[] toArray() {
+        return toArray(zza);
+    }
+
+    @Override
+    public abstract zzez iterator();
+
+    Object[] zzb() {
+        throw null;
+    }
+
+    int zzc() {
+        throw null;
+    }
+
+    int zzd() {
+        throw null;
+    }
+
+    public zzex zze() {
+        throw null;
+    }
+
+    abstract boolean zzf();
+
+    int zzg(Object[] objArr, int i10) {
+        throw null;
+    }
+
+    @Override
+    public final Object[] toArray(Object[] objArr) {
+        objArr.getClass();
+        int size = size();
+        int length = objArr.length;
+        if (length < size) {
+            Object[] objArrZzb = zzb();
+            if (objArrZzb != null) {
+                return Arrays.copyOfRange(objArrZzb, zzc(), zzd(), objArr.getClass());
+            }
+            if (length != 0) {
+                objArr = Arrays.copyOf(objArr, 0);
+            }
+            objArr = Arrays.copyOf(objArr, size);
+        } else if (length > size) {
+            objArr[size] = null;
+        }
+        zzg(objArr, 0);
+        return objArr;
+    }
+}

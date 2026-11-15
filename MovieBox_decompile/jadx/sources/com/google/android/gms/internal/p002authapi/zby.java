@@ -1,0 +1,24 @@
+package com.google.android.gms.internal.p002authapi;
+
+import android.os.Parcel;
+import android.os.RemoteException;
+import com.google.android.gms.auth.api.identity.AuthorizationResult;
+import com.google.android.gms.common.api.Status;
+
+public abstract class zby extends zbb implements zbz {
+    public zby() {
+        super("com.google.android.gms.auth.api.identity.internal.IAuthorizationCallback");
+    }
+
+    @Override
+    protected final boolean zba(int i10, Parcel parcel, Parcel parcel2, int i11) throws RemoteException {
+        if (i10 != 1) {
+            return false;
+        }
+        Status status = (Status) zbc.zba(parcel, Status.CREATOR);
+        AuthorizationResult authorizationResult = (AuthorizationResult) zbc.zba(parcel, AuthorizationResult.CREATOR);
+        zbc.zbb(parcel);
+        zbb(status, authorizationResult);
+        return true;
+    }
+}

@@ -1,0 +1,9 @@
+package com.transsion.play.detail;
+
+public final class R$id {
+    public static int tv_title = 2131365569;
+    public static int v_dot = 2131365703;
+
+    private R$id() {
+    }
+}

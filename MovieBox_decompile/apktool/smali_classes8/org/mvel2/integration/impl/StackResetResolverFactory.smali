@@ -1,0 +1,371 @@
+.class public Lorg/mvel2/integration/impl/StackResetResolverFactory;
+.super Ljava/lang/Object;
+.source "source.java"
+
+# interfaces
+.implements Lorg/mvel2/integration/VariableResolverFactory;
+
+
+# instance fields
+.field private delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+
+# direct methods
+.method public constructor <init>(Lorg/mvel2/integration/VariableResolverFactory;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    invoke-interface {p1, v0}, Lorg/mvel2/integration/VariableResolverFactory;->setTiltFlag(Z)V
+
+    .line 6
+    .line 7
+    .line 8
+    iput-object p1, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public createIndexedVariable(ILjava/lang/String;Ljava/lang/Object;)Lorg/mvel2/integration/VariableResolver;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    invoke-interface {v0, p1, p2, p3}, Lorg/mvel2/integration/VariableResolverFactory;->createIndexedVariable(ILjava/lang/String;Ljava/lang/Object;)Lorg/mvel2/integration/VariableResolver;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public createIndexedVariable(ILjava/lang/String;Ljava/lang/Object;Ljava/lang/Class;)Lorg/mvel2/integration/VariableResolver;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            "Ljava/lang/Class<",
+            "*>;)",
+            "Lorg/mvel2/integration/VariableResolver;"
+        }
+    .end annotation
+
+    .line 2
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    invoke-interface {v0, p1, p2, p3, p4}, Lorg/mvel2/integration/VariableResolverFactory;->createIndexedVariable(ILjava/lang/String;Ljava/lang/Object;Ljava/lang/Class;)Lorg/mvel2/integration/VariableResolver;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public createVariable(Ljava/lang/String;Ljava/lang/Object;)Lorg/mvel2/integration/VariableResolver;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    invoke-interface {v0, p1, p2}, Lorg/mvel2/integration/VariableResolverFactory;->createVariable(Ljava/lang/String;Ljava/lang/Object;)Lorg/mvel2/integration/VariableResolver;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public createVariable(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Class;)Lorg/mvel2/integration/VariableResolver;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            "Ljava/lang/Class<",
+            "*>;)",
+            "Lorg/mvel2/integration/VariableResolver;"
+        }
+    .end annotation
+
+    .line 2
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    invoke-interface {v0, p1, p2, p3}, Lorg/mvel2/integration/VariableResolverFactory;->createVariable(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Class;)Lorg/mvel2/integration/VariableResolver;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getDelegate()Lorg/mvel2/integration/VariableResolverFactory;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getIndexedVariableResolver(I)Lorg/mvel2/integration/VariableResolver;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lorg/mvel2/integration/VariableResolverFactory;->getIndexedVariableResolver(I)Lorg/mvel2/integration/VariableResolver;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public getKnownVariables()Ljava/util/Set;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lorg/mvel2/integration/VariableResolverFactory;->getKnownVariables()Ljava/util/Set;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getNextFactory()Lorg/mvel2/integration/VariableResolverFactory;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lorg/mvel2/integration/VariableResolverFactory;->getNextFactory()Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getVariableResolver(Ljava/lang/String;)Lorg/mvel2/integration/VariableResolver;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lorg/mvel2/integration/VariableResolverFactory;->getVariableResolver(Ljava/lang/String;)Lorg/mvel2/integration/VariableResolver;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public isIndexedFactory()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lorg/mvel2/integration/VariableResolverFactory;->isIndexedFactory()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public isResolveable(Ljava/lang/String;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lorg/mvel2/integration/VariableResolverFactory;->isResolveable(Ljava/lang/String;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
+.method public isTarget(Ljava/lang/String;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lorg/mvel2/integration/VariableResolverFactory;->isTarget(Ljava/lang/String;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
+.method public setIndexedVariableResolver(ILorg/mvel2/integration/VariableResolver;)Lorg/mvel2/integration/VariableResolver;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1, p2}, Lorg/mvel2/integration/VariableResolverFactory;->setIndexedVariableResolver(ILorg/mvel2/integration/VariableResolver;)Lorg/mvel2/integration/VariableResolver;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public setNextFactory(Lorg/mvel2/integration/VariableResolverFactory;)Lorg/mvel2/integration/VariableResolverFactory;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lorg/mvel2/integration/VariableResolverFactory;->setNextFactory(Lorg/mvel2/integration/VariableResolverFactory;)Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public setTiltFlag(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lorg/mvel2/integration/VariableResolverFactory;->tiltFlag()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 10
+    .line 11
+    invoke-interface {v0, p1}, Lorg/mvel2/integration/VariableResolverFactory;->setTiltFlag(Z)V
+
+    .line 12
+    .line 13
+    .line 14
+    :cond_0
+    return-void
+.end method
+
+.method public tiltFlag()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lorg/mvel2/integration/VariableResolverFactory;->tiltFlag()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public variableIndexOf(Ljava/lang/String;)I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/mvel2/integration/impl/StackResetResolverFactory;->delegate:Lorg/mvel2/integration/VariableResolverFactory;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lorg/mvel2/integration/VariableResolverFactory;->variableIndexOf(Ljava/lang/String;)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method

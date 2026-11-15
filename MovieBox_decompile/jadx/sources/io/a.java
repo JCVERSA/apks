@@ -1,0 +1,14 @@
+package io;
+
+import android.view.View;
+import kotlin.jvm.functions.Function1;
+
+public interface a {
+    void i(Function1 function1);
+
+    boolean s();
+
+    void u(View view);
+
+    void updateCommentCount(long j10);
+}

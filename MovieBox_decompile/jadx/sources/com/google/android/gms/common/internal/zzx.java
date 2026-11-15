@@ -1,0 +1,15 @@
+package com.google.android.gms.common.internal;
+
+import android.os.IBinder;
+import android.os.RemoteException;
+
+public final class zzx extends com.google.android.gms.internal.common.zza implements ICancelToken {
+    zzx(IBinder iBinder) {
+        super(iBinder, "com.google.android.gms.common.internal.ICancelToken");
+    }
+
+    @Override
+    public final void cancel() throws RemoteException {
+        zzD(2, zza());
+    }
+}

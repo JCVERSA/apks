@@ -1,0 +1,52 @@
+package androidx.compose.foundation.lazy;
+
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function4;
+import kotlin.jvm.functions.Function5;
+import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\u0010\u0007\u001a\u00020\u0004\"\u0004\b\u0000\u0010\u0000*\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0002H\u000b¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"T", "Landroidx/compose/foundation/lazy/b;", "", "it", "", "invoke", "(Landroidx/compose/foundation/lazy/b;ILandroidx/compose/runtime/i;I)V", "<anonymous>"}, k = 3, mv = {1, 8, 0})
+@SourceDebugExtension
+public final class LazyDslKt$itemsIndexed$8 extends Lambda implements Function4<b, Integer, androidx.compose.runtime.i, Integer, Unit> {
+    final Function5<b, Integer, Object, androidx.compose.runtime.i, Integer, Unit> $itemContent;
+    final Object[] $items;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* JADX WARN: Multi-variable type inference failed */
+    public LazyDslKt$itemsIndexed$8(Function5<? super b, ? super Integer, Object, ? super androidx.compose.runtime.i, ? super Integer, Unit> function5, Object[] objArr) {
+        super(4);
+        this.$itemContent = function5;
+        this.$items = objArr;
+    }
+
+    @Override
+    public Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
+        invoke((b) obj, ((Number) obj2).intValue(), (androidx.compose.runtime.i) obj3, ((Number) obj4).intValue());
+        return Unit.f64096a;
+    }
+
+    public final void invoke(b bVar, int i10, androidx.compose.runtime.i iVar, int i11) {
+        int i12;
+        if ((i11 & 6) == 0) {
+            i12 = (iVar.O(bVar) ? 4 : 2) | i11;
+        } else {
+            i12 = i11;
+        }
+        if ((i11 & 48) == 0) {
+            i12 |= iVar.c(i10) ? 32 : 16;
+        }
+        if ((i12 & 147) == 146 && iVar.h()) {
+            iVar.G();
+            return;
+        }
+        if (androidx.compose.runtime.k.H()) {
+            androidx.compose.runtime.k.Q(1600639390, i12, -1, "androidx.compose.foundation.lazy.itemsIndexed.<anonymous> (LazyDsl.kt:260)");
+        }
+        this.$itemContent.invoke(bVar, Integer.valueOf(i10), this.$items[i10], iVar, Integer.valueOf(i12 & 126));
+        if (androidx.compose.runtime.k.H()) {
+            androidx.compose.runtime.k.P();
+        }
+    }
+}

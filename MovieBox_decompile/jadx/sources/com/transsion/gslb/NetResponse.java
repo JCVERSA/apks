@@ -1,0 +1,23 @@
+package com.transsion.gslb;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+public class NetResponse<T> {
+    public static final String EMPTY_RESPONSE = "{}";
+    public int code;
+    public T data;
+
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface ResponseCode {
+        public static final int ERROR = -1;
+        public static final int NOT_MODIFIED = 1;
+        public static final int OK = 0;
+        public static final int SDK_ERROR = 2;
+    }
+
+    public NetResponse(int i10, T t10) {
+        this.code = i10;
+        this.data = t10;
+    }
+}

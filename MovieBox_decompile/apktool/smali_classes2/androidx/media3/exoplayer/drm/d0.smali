@@ -1,0 +1,20 @@
+.class public abstract synthetic Landroidx/media3/exoplayer/drm/d0;
+.super Ljava/lang/Object;
+.source "source.java"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/media/MediaDrm;[B)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/MediaDrm;->getSecurityLevel([B)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method

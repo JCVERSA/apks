@@ -1,0 +1,28 @@
+package com.google.android.gms.common.api.internal;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+
+final class zaj implements GoogleApiClient.OnConnectionFailedListener {
+    public final int zaa;
+    public final GoogleApiClient zab;
+
+    @Nullable
+    public final GoogleApiClient.OnConnectionFailedListener zac;
+    final zak zad;
+
+    public zaj(zak zakVar, int i10, @Nullable GoogleApiClient googleApiClient, GoogleApiClient.OnConnectionFailedListener onConnectionFailedListener) {
+        this.zad = zakVar;
+        this.zaa = i10;
+        this.zab = googleApiClient;
+        this.zac = onConnectionFailedListener;
+    }
+
+    @Override
+    public final void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+        "beginFailureResolution for ".concat(String.valueOf(connectionResult));
+        this.zad.zah(connectionResult, this.zaa);
+    }
+}

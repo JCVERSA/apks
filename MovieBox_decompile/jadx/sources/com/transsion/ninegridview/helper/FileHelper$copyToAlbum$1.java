@@ -1,0 +1,29 @@
+package com.transsion.ninegridview.helper;
+
+import com.vungle.ads.internal.protos.Sdk$SDKMetric;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+
+@Metadata(k = 3, mv = {2, 1, 0}, xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+@DebugMetadata(c = "com.transsion.ninegridview.helper.FileHelper", f = "FileHelper.kt", l = {69}, m = "copyToAlbum")
+final class FileHelper$copyToAlbum$1 extends ContinuationImpl {
+    Object L$0;
+    int label;
+    Object result;
+    final FileHelper this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    FileHelper$copyToAlbum$1(FileHelper fileHelper, Continuation<? super FileHelper$copyToAlbum$1> continuation) {
+        super(continuation);
+        this.this$0 = fileHelper;
+    }
+
+    @Override
+    public final Object invokeSuspend(Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        return this.this$0.e(null, null, null, null, false, this);
+    }
+}

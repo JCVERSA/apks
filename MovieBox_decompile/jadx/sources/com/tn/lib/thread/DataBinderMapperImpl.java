@@ -1,0 +1,43 @@
+package com.tn.lib.thread;
+
+import android.util.SparseIntArray;
+import android.view.View;
+import androidx.databinding.ViewDataBinding;
+import androidx.databinding.f;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class DataBinderMapperImpl extends androidx.databinding.e {
+
+    private static final SparseIntArray f39886a = new SparseIntArray(0);
+
+    private static class a {
+
+        static final HashMap f39887a = new HashMap(0);
+    }
+
+    @Override
+    public List a() {
+        ArrayList arrayList = new ArrayList(1);
+        arrayList.add(new androidx.databinding.library.baseAdapters.DataBinderMapperImpl());
+        return arrayList;
+    }
+
+    @Override
+    public ViewDataBinding b(f fVar, View view, int i10) {
+        if (f39886a.get(i10) <= 0 || view.getTag() != null) {
+            return null;
+        }
+        throw new RuntimeException("view must have a tag");
+    }
+
+    @Override
+    public int c(String str) {
+        Integer num;
+        if (str == null || (num = (Integer) a.f39887a.get(str)) == null) {
+            return 0;
+        }
+        return num.intValue();
+    }
+}

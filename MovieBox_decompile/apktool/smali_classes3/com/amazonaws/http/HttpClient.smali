@@ -1,0 +1,11 @@
+.class public interface abstract Lcom/amazonaws/http/HttpClient;
+.super Ljava/lang/Object;
+.source "source.java"
+
+
+# virtual methods
+.method public abstract a(Lcom/amazonaws/http/HttpRequest;)Lcom/amazonaws/http/HttpResponse;
+.end method
+
+.method public abstract shutdown()V
+.end method
