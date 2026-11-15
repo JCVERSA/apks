@@ -12,7 +12,7 @@ p=sys.argv[1]
 try:
  with zipfile.ZipFile(p) as z:
   names=z.namelist()
-  assert 'AndroidManifest.xml' in names and any(x.startswith('classes') and x.endswith('.dex') for x in names)
+  assert ('AndroidManifest.xml' in names and any(x.startswith('classes') and x.endswith('.dex') for x in names)) or ('manifest.json' in names and 'com.transsion.magicshow.apk' in names)
 except (OSError,ValueError,AssertionError,zipfile.BadZipFile):
  sys.exit(1)
 PY
@@ -27,12 +27,39 @@ download() {
 # is APKPure's latest APK endpoint for the exact package; validate with aapt.
 if download page 'https://apkpure.com/visha-video-player-all-formats/com.transsion.magicshow/download'; then
   echo page > "$report/download-source.txt"
-elif download cdnpure 'https://d.cdnpure.com/b/APK/com.transsion.magicshow?version=latest'; then
+elif download cdnpure 'https://d.cdnpure.com/b/XAPK/com.transsion.magicshow?version=latest'; then
   echo cdnpure_latest > "$report/download-source.txt"
 else
   echo 'Neither source returned a valid standalone APK.' >&2
   exit 1
 fi
+# Pin the bundle inspected in run 43662889032; refuse silent version drift.
+mv "$WORK/input.apk" "$WORK/download.xapk"
+python3 - "$WORK/download.xapk" "$WORK" "$report" <<'PY'
+import hashlib,json,shutil,sys,zipfile
+from pathlib import Path
+p,work,report=map(Path,sys.argv[1:]); h=hashlib.sha256()
+with p.open('rb') as f:
+ for c in iter(lambda:f.read(1024*1024),b''): h.update(c)
+sha=h.hexdigest()
+if sha != '467b5a7e08dedc7901d3f52576232c0c889000d5c65a0470b0f23ed231a62d66': raise SystemExit('Bundle changed since inspection; refusing to continue')
+with zipfile.ZipFile(p) as z:
+ manifest=json.loads(z.read('manifest.json'))
+ if manifest.get('package_name') != 'com.transsion.magicshow' or str(manifest.get('version_code')) != '83033': raise SystemExit('Unexpected bundle identity')
+ splits=manifest['split_apks']; (work/'splits').mkdir()
+ rows=[]
+ for entry in splits:
+  name=entry['file']; ident=entry['id']
+  if Path(name).name != name or not name.endswith('.apk') or '/' in ident or '..' in ident: raise SystemExit('Unsafe split filename')
+  target=work/'splits'/name
+  with z.open(name) as src, target.open('wb') as dst: shutil.copyfileobj(src,dst)
+  h=hashlib.sha256()
+  with target.open('rb') as f:
+   for c in iter(lambda:f.read(1024*1024),b''):h.update(c)
+  rows.append({'id':ident,'file':name,'sha256':h.hexdigest(),'size':target.stat().st_size})
+ shutil.copyfile(work/'splits/com.transsion.magicshow.apk',work/'input.apk')
+ (report/'bundle.json').write_text(json.dumps({'bundle_sha256':sha,'bundle_size':p.stat().st_size,'manifest':manifest,'splits':rows},indent=2)+'\n')
+PY
 python3 - "$WORK/input.apk" "$report" <<'PY'
 import hashlib,json,sys,zipfile
 from pathlib import Path
@@ -68,12 +95,34 @@ find Visha_decompile -type f -name '*.smali' | wc -l | xargs printf 'smali_files
 # JADX exit 3 means some decompilation errors; keep output but mark it partial.
 if (( apktool_rc != 0 || (jadx_rc != 0 && jadx_rc != 3) )); then echo 'A decompiler failed or timed out.' >&2; exit 1; fi
 if ! test -d Visha_decompile/jadx/sources || ! test -f Visha_decompile/apktool/AndroidManifest.xml; then echo 'Expected output missing.' >&2; exit 1; fi
+# Decode configuration splits; retain a labelled raw fallback if decoding fails.
+mkdir -p Visha_decompile/splits
+: > "$report/split-status.tsv"
+for split in "$WORK"/splits/config.*.apk; do
+  name="$(basename "$split" .apk)"
+  if timeout 120 java -Xmx3g -jar "$WORK/tools/apktool.jar" d -f -o "Visha_decompile/splits/$name" "$split" > "$report/split-$name.log" 2>&1; then
+    printf '%s\tdecoded\n' "$name" >> "$report/split-status.tsv"
+  else
+    mkdir -p "Visha_decompile/splits/$name-raw"
+    SPLIT="$split" DEST="Visha_decompile/splits/$name-raw" python3 - <<'PY'
+import os,stat,zipfile
+from pathlib import PurePosixPath
+with zipfile.ZipFile(os.environ['SPLIT']) as z:
+ for i in z.infolist():
+  p=PurePosixPath(i.filename)
+  if p.is_absolute() or '..' in p.parts or stat.S_ISLNK(i.external_attr >> 16): raise SystemExit('Unsafe split content')
+ z.extractall(os.environ['DEST'])
+PY
+    printf '%s\traw-fallback\n' "$name" >> "$report/split-status.tsv"
+  fi
+done
 cp -a "$report" Visha_decompile/report
 cat > Visha_decompile/LISEZ-MOI.md <<'TXT'
 # Visha Video Player décompilé
 
 - `apktool/` : manifest décodé, ressources et Smali.
 - `jadx/` : code Java reconstruit, qui ne correspond pas nécessairement au code source original.
+- `splits/` : configurations du XAPK (langues, arm64 et densité). Voir `report/split-status.tsv` ; `raw-fallback` signifie non décodé.
 - `report/` : empreinte de l'APK, signature, identité et journaux de décompilation.
 
 Les erreurs ou avertissements de JADX sont consignés dans `report/jadx.log` et son code de retour dans `report/decompile-status.txt`. Consulter le Smali pour les parties incertaines. Aucune exécution de l'application n'a été effectuée.
